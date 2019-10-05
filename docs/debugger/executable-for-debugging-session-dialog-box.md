@@ -1,5 +1,5 @@
 ---
-title: デバッグ セッション ダイアログ ボックスの実行可能ファイル |Microsoft Docs
+title: '[デバッグセッションの実行可能ファイル] ダイアログボックス |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b93ae19afd54b6e22458d1ba12029d5bb93cf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14d4ac95aae860e0750af66aec6adb2969434f11
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849959"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211048"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>[デバッグ セッションで実行可能] ダイアログ ボックス
 
-このダイアログ ボックスは、ダイナミック リンク ライブラリ (DLL: Dynamic-Link Library) をデバッグするときに、実行可能ファイルが指定されていない場合に表示されます。 Visual Studio で DLL を直接起動することはできません。 代わりに、Visual Studio は、指定された実行可能ファイルを起動します。 実行可能ファイルによって呼び出された場合は、DLL をデバッグできます。
+このダイアログ ボックスは、ダイナミック リンク ライブラリ (DLL: Dynamic-Link Library) をデバッグするときに、実行可能ファイルが指定されていない場合に表示されます。 Visual Studio は DLL を直接起動できません。 代わりに、指定した実行可能ファイルが Visual Studio によって起動されます。 DLL は、実行可能ファイルによって呼び出されたときにデバッグできます。
 
- **実行可能ファイル名**をデバッグしている DLL を呼び出す実行可能ファイルへのパス名を入力します。
+ **実行可能ファイル名**デバッグしている DLL を呼び出す実行可能ファイルのパス名を入力します。
 
- **プロジェクトにアクセスする URL (ATL Server のみ)** ATL Server の DLL をデバッグする場合の URL を入力、プロジェクトの場所します。
+ **プロジェクトにアクセスできる URL (ATL Server のみ)** ATL Server DLL をデバッグする場合は、プロジェクトが存在する場所の URL を入力します。
 
- 入力した後、後続のデバッグ セッションを再入力する必要はありませんので、これらの設定がプロジェクト プロパティ ページに格納されます。 設定変更が必要な場合は [プロパティ ページ] を開いて値を変更できます。 デバッグ セッションで実行可能ファイルを指定する方法の詳細については、「[DLL のデバッグ](../debugger/how-to-debug-from-a-dll-project.md)」を参照してください。
+ 入力が完了すると、これらの設定はプロジェクトのプロパティページに格納されるため、後続のデバッグセッションで再入力する必要はありません。 設定変更が必要な場合は [プロパティ ページ] を開いて値を変更できます。 デバッグ セッションで実行可能ファイルを指定する方法の詳細については、「[DLL のデバッグ](../debugger/how-to-debug-from-a-dll-project.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

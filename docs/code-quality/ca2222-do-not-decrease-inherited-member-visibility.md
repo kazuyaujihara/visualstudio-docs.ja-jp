@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d63f4509872cc117ae03ff3a668d38a6efb07ef9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c737a30569ab4cd59931a3fca0e500ebe96e62de
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541823"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230978"
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222:継承されたメンバーの参照範囲を縮小しません
 
@@ -31,27 +31,27 @@ ms.locfileid: "62541823"
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-封印されていない型のプライベート メソッドには、基本データ型で宣言されたパブリック メソッドと同じである署名があります。 プライベート メソッドは、最終版ではありません。
+シールされていない型のプライベートメソッドには、基本型で宣言されたパブリックメソッドと同一のシグネチャがあります。 プライベートメソッドは final ではありません。
 
 ## <a name="rule-description"></a>規則の説明
 
-継承されたメンバーのアクセス修飾子を変更しないでください。 継承メンバーをプライベートに変更しても、呼び出し元はメソッドの基本クラスの実装にアクセスできます。 メンバーがプライベートにする型が封印されていない場合は、継承する型と、メソッドの最後のパブリックの実装が継承階層で呼び出すことができます。 アクセス修飾子を変更する必要があります、メソッドは、最終的なマークする必要がありますか、またはメソッドがオーバーライドされることを防ぐためにその型をシールする必要があります。
+継承されたメンバーのアクセス修飾子は変更しないでください。 継承メンバーをプライベートに変更しても、呼び出し元はメソッドの基本クラスの実装にアクセスできます。 メンバーがプライベートになり、型がシールされていない場合、継承する型は継承階層内のメソッドの最後のパブリック実装を呼び出すことができます。 アクセス修飾子を変更する必要がある場合は、メソッドを final に設定するか、メソッドがオーバーライドされないようにその型を sealed にする必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、プライベート以外へのアクセスを変更します。 または、使用するプログラミング言語がサポートする場合行うことができます、メソッド最終的です。
+この規則違反を修正するには、アクセスを非プライベートに変更します。 または、プログラミング言語でサポートされている場合は、メソッドを final にすることができます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
 
-次の例では、この規則に違反する型を示します。
+次の例は、この規則に違反する型を示しています。
 
 [!code-vb[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/VisualBasic/ca2222-do-not-decrease-inherited-member-visibility_1.vb)]
 [!code-csharp[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/CSharp/ca2222-do-not-decrease-inherited-member-visibility_1.cs)]

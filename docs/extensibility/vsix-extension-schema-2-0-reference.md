@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870820"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252180"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 拡張機能スキーマ2.0 リファレンス
 Vsix 配置マニフェストファイルは、VSIX パッケージの内容を記述します。 ファイル形式は、スキーマによって管理されます。 このスキーマのバージョン2.0 では、カスタム型と属性の追加がサポートされています。  マニフェストのスキーマは拡張可能です。 マニフェストローダーは、認識されない XML 要素と属性を無視します。
@@ -90,7 +90,7 @@ Vsix 配置マニフェストファイルは、VSIX パッケージの内容を�
 
 - `SystemComponent`-この省略可能な属性は、このパッケージをシステムコンポーネントと見なす必要があるかどうかを指定します。 システムコンポーネントは、拡張機能マネージャーの UI に表示されないため、更新できません。 既定では、この属性は false です。これは、パッケージがシステムコンポーネントではないことを指定します。
 
-- `AnyAttribute*`-要素`Installation`は、実行時に名前と値のペアのディクショナリとして公開される、オープンエンドの属性のセットを受け入れます。
+- `AnyAttribute*`-要素`Installation`は、名前と値のペアのディクショナリとして実行時に公開される、オープンエンドの属性のセットを受け入れます。
 
 - `<InstallationTarget>`-この要素は、VSIX インストーラーによってパッケージがインストールされる場所を制御します。 `Scope`属性の値が "productextension" の場合、パッケージは SKU をターゲットにする必要があります。これにより、マニフェストファイルがコンテンツの一部としてインストールされ、拡張機能への可用性が提供されます。 属性に明示的な値または既定値 "productextension" が指定されて`<InstallationTarget>`いる場合、要素には次の属性が`Scope`あります。
 
@@ -158,7 +158,7 @@ Vsix 配置マニフェストファイルは、VSIX パッケージの内容を�
 
   - `Location`-この省略可能な属性は、この VSIX 内で入れ子になった VSIX パッケージへの相対パス、または依存関係のダウンロード先の URL を指定します。 この属性は、ユーザーが前提条件となるパッケージを見つけられるようにするために使用されます。
 
-  - `AnyAttribute*`-要素`Dependency`は、実行時に名前と値のペアのディクショナリとして公開される、オープンエンドの属性のセットを受け入れます。
+  - `AnyAttribute*`-要素`Dependency`は、名前と値のペアのディクショナリとして実行時に公開される、オープンエンドの属性のセットを受け入れます。
 
 ### <a name="assets-element"></a>Assets 要素
  この要素には、この`<Asset>`パッケージによって表示される各拡張機能またはコンテンツ要素のタグの一覧が含まれます。

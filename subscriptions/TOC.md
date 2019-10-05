@@ -41,6 +41,7 @@
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Windows 開発者アカウント](vs-windows-dev.md)
 #### プロフェッショナルな開発
+##### [CODE マガジン](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [MSDN マガジンの定期購読](vs-msdn.md)

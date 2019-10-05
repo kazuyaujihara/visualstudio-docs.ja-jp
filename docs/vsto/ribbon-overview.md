@@ -18,49 +18,49 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5067a52fb9d6a0b6d8991b68a2fce8cdbae987c9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446963"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255938"
 ---
 # <a name="ribbon-overview"></a>リボンの概要
-  リボンは、関連するコマンドを見つけやすいように整理する方法です。 コマンドは、リボン上のコントロールとして表示されます。 コントロールで構成された*グループ*アプリケーション ウィンドウの上端に水平方向のストリップです。 関連するグループは、タブに整理されます。
+  リボンは、関連するコマンドを簡単に見つけられるように整理する方法です。 コマンドは、リボン上のコントロールとして表示されます。 コントロールは、アプリケーションウィンドウの上端にある水平ストリップに沿って*グループ化*されます。 関連するグループは、タブに整理されます。
 
- 以前のバージョンの Microsoft Office system でメニューおよびツールバーを使用してアクセスしていた機能の多くは、リボンを使用して今すぐアクセスできます。 詳細については、技術記事を参照してください。 [、2007 Microsoft Office system のユーザー インターフェイスの開発者向け概要](http://go.microsoft.com/fwlink/?LinkID=70860)します。
+ 以前のバージョンの Microsoft Office システムのメニューとツールバーを使用してアクセスされた機能のほとんどは、リボンを使用してアクセスできるようになりました。 詳細については、技術記事「 [2007 Microsoft Office システム用のユーザーインターフェイスの開発者向け概要](http://go.microsoft.com/fwlink/?LinkID=70860)」を参照してください。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-## <a name="customize-the-microsoft-office-ribbon"></a>Microsoft Office のリボンをカスタマイズします。
- リボンをカスタマイズするには、Office プロジェクトに次のリボン項目の 1 つを追加します。
+## <a name="customize-the-microsoft-office-ribbon"></a>Microsoft Office リボンをカスタマイズする
+ リボンをカスタマイズするには、次のいずれかのリボン項目を Office プロジェクトに追加します。
 
-- **リボン (ビジュアル デザイナー)**
+- **リボン (ビジュアルデザイナー)**
 
 - **リボン (XML)**
 
   たとえば、Excel のリボンをカスタマイズするには、Excel VSTO アドイン プロジェクトにリボン項目を追加します。
 
-### <a name="ribbon-visual-designer-item"></a>リボン (ビジュアル デザイナー) 項目
- **リボン (ビジュアル デザイナー)** 項目には、設計およびカスタムのリボンを開発するためのより簡単にする高度なツールが用意されています。 使用して、**リボン (ビジュアル デザイナー)** 項目は、次の方法でリボンをカスタマイズします。
+### <a name="ribbon-visual-designer-item"></a>リボン (ビジュアルデザイナー) 項目
+ **リボン (ビジュアルデザイナー)** 項目には、カスタムリボンのデザインと開発を容易にする高度なツールが用意されています。 リボン **(ビジュアルデザイナー)** 項目を使用して、次の方法でリボンをカスタマイズします。
 
-- カスタムまたは組み込みタブをリボンに追加します。
+- カスタムタブまたは組み込みタブをリボンに追加します。
 
 - カスタム タブまたは組み込みタブにカスタム グループを追加します。
 
   > [!NOTE]
-  > グループまたは組み込みタブは、Microsoft Office アプリケーションのリボンに既に存在する 1 つです。 たとえば、**データ**タブは、Excel の組み込みタブ。 **接続**グループは、組み込みのグループ、**データ**タブ。
+  > 組み込みのタブまたはグループは、Microsoft Office アプリケーションのリボンに既に存在しています。 たとえば、 **[データ]** タブは Excel の組み込みタブです。 **接続**グループは、 **[データ]** タブの組み込みグループです。
 
 - カスタム コントロールをカスタム グループに追加します。
 
 - Backstage ビューにカスタム コントロールを追加します。
 
-  使用してリボンをカスタマイズする方法について、**リボン (ビジュアル デザイナー)** 項目は、「[リボン デザイナー](../vsto/ribbon-designer.md)します。
+  リボン **(ビジュアルデザイナー)** 項目を使用してリボンをカスタマイズする方法の詳細については、「[リボンデザイナー](../vsto/ribbon-designer.md)」を参照してください。
 
 ### <a name="ribbon-xml-item"></a>リボン (XML) 項目
- 使用して、**リボン (XML)** 項目でサポートされていない方法でリボンをカスタマイズする場合、**リボン (ビジュアル デザイナー)** 項目。 使用して、**リボン (XML)** 項目は、次の方法でリボンをカスタマイズします。
+ リボン **(ビジュアルデザイナー)** 項目でサポートされていない方法でリボンをカスタマイズする場合は、**リボン (XML)** 項目を使用します。 リボン **(XML)** 項目を使用して、次の方法でリボンをカスタマイズします。
 
-- 追加*組み込み*をカスタム タブまたは組み込みタブ グループ。
+- *組み込み*のグループをカスタムタブまたは組み込みタブに追加します。
 
 - 組み込みコントロールをカスタム グループに追加します。
 
@@ -70,43 +70,43 @@ ms.locfileid: "63446963"
 
 - 修飾 ID を使用して、VSTO アドイン間でリボンのカスタマイズを共有します。
 
-  使用してリボンをカスタマイズする方法について、**リボン (XML)** 項目は、「[リボン XML](../vsto/ribbon-xml.md)します。
+  リボン **(xml)** 項目を使用してリボンをカスタマイズする方法の詳細については、「[リボン xml](../vsto/ribbon-xml.md)」を参照してください。
 
-## <a name="export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>リボン デザイナーからリボン XML にエクスポートします。
- リボンをリボン デザイナーを使用して作成し、場合の方法でリボンをカスタマイズすることを**リボン (ビジュアル デザイナー)** 項目はサポートしていません、リボンを XML にエクスポートすることができます。
+## <a name="export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>リボンデザイナーからリボン XML にリボンをエクスポートする
+ リボンデザイナーを使用してリボンを作成し、リボン **(ビジュアルデザイナー)** 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボンを XML にエクスポートします。
 
- Visual Studio が自動的に作成、**リボン (XML)** 項目し、リボン上の各コントロールの要素と属性を持つリボン XML ファイルに入力します。
+ Visual Studio では、リボン **(xml)** 項目が自動的に作成され、リボン XML ファイルに、リボン上の各コントロールの要素と属性が設定されます。
 
- すべてのプロパティに含まれる、**プロパティ**リボン デザイナーのウィンドウは、リボン XML ファイルに転送されます。  たとえば、Visual Studio がの値をエクスポートしません、**イメージ**または**テキスト**プロパティ。 これは、コントロールのイメージを割り当てたり、コントロールのテキストを設定したりするには、エクスポートしたプロジェクトのリボン コード ファイルにコールバック メソッドを作成する必要があるためです。 Visual Studio で、エクスポート プロセスの一部としてコールバック メソッドが自動的に生成されることはありません。
+ リボンデザイナーの **[プロパティ]** ウィンドウに表示されるプロパティのすべてが、リボン XML ファイルに転送されるわけではありません。  たとえば、Visual Studio では、 **Image**または**Text**プロパティの値はエクスポートされません。 これは、コントロールのイメージを割り当てたり、コントロールのテキストを設定したりするには、エクスポートしたプロジェクトのリボン コード ファイルにコールバック メソッドを作成する必要があるためです。 Visual Studio で、エクスポート プロセスの一部としてコールバック メソッドが自動的に生成されることはありません。
 
  また、既定値から変更されていないプロパティ値は、結果として得られるリボン XML ファイルには含められません。
 
- リボンを XML にエクスポートする方法の詳細については、次を参照してください。[方法。リボン デザイナーからリボン XML にエクスポート](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)します。
+ リボンを XML にエクスポートする方法の詳細については[、「方法:リボンをリボンデザイナーからリボン XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)にエクスポートします。
 
-### <a name="update-the-code"></a>コードを更新します
- 新しいリボン コード ファイルに追加されます**ソリューション エクスプ ローラー**します。 このファイルにはリボン XML クラスが含まれています。 ボタンのクリックなどのユーザー操作を処理するには、このクラスの `Ribbon Callbacks` 領域にコールバック メソッドを作成する必要があります。 イベント ハンドラーからこれらのコールバック メソッドにコードを移動し、リボン機能拡張 (RibbonX) プログラミング モデルで動作するようにコードを変更します。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。
+### <a name="update-the-code"></a>コードを更新する
+ 新しいリボンコードファイルが**ソリューションエクスプローラー**に追加されます。 このファイルにはリボン XML クラスが含まれています。 ボタンのクリックなどのユーザー操作を処理するには、このクラスの `Ribbon Callbacks` 領域にコールバック メソッドを作成する必要があります。 イベント ハンドラーからこれらのコールバック メソッドにコードを移動し、リボン機能拡張 (RibbonX) プログラミング モデルで動作するようにコードを変更します。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。
 
  さらに、`ThisAddIn`、`ThisWorkbook`、または `ThisDocument` のいずれかのクラスに、`CreateRibbonExtensibilityObject` メソッドをオーバーライドして Office アプリケーションにリボン XML クラスを返すコードを追加する必要もあります。
 
  詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。
 
-## <a name="add-multiple-ribbon-items-to-a-project"></a>複数のリボン項目をプロジェクトに追加します。
+## <a name="add-multiple-ribbon-items-to-a-project"></a>複数のリボン項目をプロジェクトに追加する
  1 つのプロジェクトに複数のリボン項目を追加することができます。 これは、次の 2 つのタスクのいずれかを実行する場合に便利です。
 
-- Outlook のリボンを作成*インスペクター*します。 詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
+- Outlook*インスペクター*用のリボンを作成します。 詳細については、「 [Outlook のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)」を参照してください。
 
     > [!NOTE]
     > インスペクターは、ユーザーが電子メール メッセージを作成するなど、特定のタスクを実行するときに表示されるウィンドウです。
 
 - 実行時に表示するリボンを選択します。
 
-### <a name="select-which-ribbons-to-display-at-runtime"></a>実行時に表示するには、どのリボンを選択します。
- プロジェクトは、1 つ以上のリボンを含めることができます、ためには、実行時に表示するリボンを選択できます。
+### <a name="select-which-ribbons-to-display-at-run-time"></a>実行時に表示するリボンを選択する
+ 1つのプロジェクトに複数のリボンを含めることができるため、実行時に表示するリボンを選択できます。
 
- 実行時に表示するリボンを選択するには、オーバーライド、`CreateRibbonExtensibilityObject`メソッドで、 `ThisAddin`、 `ThisWorkbook`、または`ThisDocument`プロジェクトと戻り値を表示するリボンのクラス。 次の例は、という名前のフィールドの値を確認します。`myCondition`し、適切なリボンを返します。
+ 実行時に表示するリボンを選択するには、 `CreateRibbonExtensibilityObject`プロジェクトの`ThisAddin`、 `ThisWorkbook`、または`ThisDocument`クラスのメソッドをオーバーライドし、表示するリボンを返します。 次の例では、という名前`myCondition`のフィールドの値をチェックし、適切なリボンを返します。
 
 > [!NOTE]
-> この例で使用されている構文を使用して作成されたリボンを返します、**リボン (ビジュアル デザイナー)** 項目。 使用して作成されるリボンを返すため、構文、**リボン (XML)** 項目は若干異なります。 返すの詳細については、**リボン (XML)** 項目は、「[リボン XML](../vsto/ribbon-xml.md)します。
+> この例で使用する構文は、**リボン (ビジュアルデザイナー)** 項目を使用して作成されたリボンを返します。 **リボン (XML)** 項目を使用して作成されたリボンを返す構文は少し異なります。 **リボン (xml)** 項目を返す方法の詳細については、「[リボン xml](../vsto/ribbon-xml.md)」を参照してください。
 
  次のコードを追加します。
 
@@ -117,18 +117,18 @@ ms.locfileid: "63446963"
 
 |タイトル|説明|
 |-----------|-----------------|
-|[方法: リボンのカスタマイズの概要します。](../vsto/how-to-get-started-customizing-the-ribbon.md)|Microsoft Office アプリケーションのリボンのカスタマイズを追加する方法を示します、**リボン (ビジュアル デザイナー)** または**リボン (XML)** を Office プロジェクトの項目。|
-|[リボン デザイナー](../vsto/ribbon-designer.md)|リボン デザイナーを使用して、Microsoft Office アプリケーションのリボンにカスタム タブ、グループ、およびコントロールを追加する方法について説明します。|
-|[チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|リボン デザイナーを使用してカスタム リボン タブを作成する方法について説明します。 リボン デザイナーを使用すると、カスタム タブにコントロールを追加し、位置を設定することができます。|
-|[リボン オブジェクト モデルの概要](../vsto/ribbon-object-model-overview.md)|取得および実行時にリボン コントロールのプロパティを設定するのに使用できる厳密に型指定されたオブジェクト モデルの概要を示します。|
-|[チュートリアル: 実行時にリボン上のコントロールを更新します。](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Office アプリケーションにリボンを読み込んだ後に、リボン オブジェクト モデルを使用してリボン上のコントロールを更新する方法について説明します。|
-|[Outlook のリボンをカスタマイズします。](../vsto/customizing-a-ribbon-for-outlook.md)|Microsoft Office Outlook でリボンをカスタマイズするためのガイダンスを提供します。|
-|[InfoPath のリボンをカスタマイズします。](../vsto/customizing-a-ribbon-for-infopath.md)|Microsoft Office InfoPath のリボンをカスタマイズするためのガイダンスを提供します。|
-|[実行時にリボンへのアクセスします。](../vsto/accessing-the-ribbon-at-run-time.md)|表示、非表示には、リボンを変更し、カスタム作業ウィンドウ、操作ウィンドウ、または Outlook フォーム領域のコントロールからコードを実行するユーザーを有効にする方法を示します。|
-|[方法: リボンのタブの位置を変更します。](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|リボン タブの順序を変更する方法を示します。|
-|[方法: 組み込みタブをカスタマイズします。](../vsto/how-to-customize-a-built-in-tab.md)|組み込みタブにグループやコントロールを追加する方法について説明します。|
-|[方法: Backstage ビューにコントロールを追加します。](../vsto/how-to-add-controls-to-the-backstage-view.md)|クリックするときに表示されるメニューにコントロールを追加する方法を示しています、**ファイル**します。|
-|[方法: リボン グループにダイアログ ボックス起動ツールを追加します。](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|リボン上の任意のグループにダイアログ ボックス起動ツールを追加するには示しています。|
-|[方法: リボン デザイナーからリボン XML にエクスポートします。](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|デザイナーからリボンをリボン XML にエクスポートして、高度な方法でリボンをカスタマイズする方法を示しています。|
+|[方法: リボンのカスタマイズの開始](../vsto/how-to-get-started-customizing-the-ribbon.md)|Microsoft Office アプリケーションのリボンをカスタマイズし、**リボン (ビジュアルデザイナー)** または**リボン (XML)** 項目を Office プロジェクトに追加する方法について説明します。|
+|[リボンデザイナー](../vsto/ribbon-designer.md)|リボンデザイナーを使用して、Microsoft Office アプリケーションのリボンにカスタムタブ、グループ、およびコントロールを追加する方法について説明します。|
+|[チュートリアル: リボンデザイナーを使用してカスタムタブを作成する](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|リボン デザイナーを使用してカスタム リボン タブを作成する方法について説明します。 リボン デザイナーを使用すると、カスタム タブにコントロールを追加し、位置を設定することができます。|
+|[リボンオブジェクトモデルの概要](../vsto/ribbon-object-model-overview.md)|実行時にリボン コントロールのプロパティを取得および設定するために使用できる厳密に型指定されたオブジェクト モデルの概要について説明します。|
+|[チュートリアル: 実行時にリボンのコントロールを更新する](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Office アプリケーションにリボンを読み込んだ後に、リボン オブジェクト モデルを使用してリボン上のコントロールを更新する方法について説明します。|
+|[Outlook のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)|Outlook Microsoft Office でリボンをカスタマイズするためのガイダンスを示します。|
+|[InfoPath のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-infopath.md)|InfoPath Microsoft Office でリボンをカスタマイズするためのガイダンスを示します。|
+|[実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)|リボンを表示、非表示、および変更する方法と、ユーザーがカスタム作業ウィンドウ、操作ウィンドウ、または Outlook フォーム領域のコントロールからコードを実行できるようにする方法について説明します。|
+|[方法: リボンのタブの位置を変更する](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|リボンのタブの順序を変更する方法について説明します。|
+|[方法: 組み込みタブをカスタマイズする](../vsto/how-to-customize-a-built-in-tab.md)|組み込みタブにグループやコントロールを追加する方法について説明します。|
+|[方法: Backstage ビューにコントロールを追加する](../vsto/how-to-add-controls-to-the-backstage-view.md)|**ファイル**をクリックしたときに開かれるメニューにコントロールを追加する方法について説明します。|
+|[方法: ダイアログボックスランチャーをリボングループに追加する](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|リボン上の任意のグループにダイアログボックスランチャーを追加する方法を示します。|
+|[方法: リボンデザイナーからリボン XML にリボンをエクスポートする](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|リボンをデザイナーからリボン XML にエクスポートすることによって、高度な方法でリボンをカスタマイズする方法について説明します。|
 |[Ribbon XML](../vsto/ribbon-xml.md)|リボン XML を使用してリボンをカスタマイズする方法について説明します。|
-|[チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|使用してカスタム リボン タブを作成する方法を示します、**リボン (XML)** 項目。|
+|[チュートリアル: リボンデザイナーを使用してカスタムタブを作成する](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|**リボン (XML)** 項目を使用してカスタムリボンタブを作成する方法を示します。|

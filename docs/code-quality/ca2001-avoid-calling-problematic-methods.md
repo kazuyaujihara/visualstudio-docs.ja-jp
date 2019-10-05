@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abef0067a58225eea6110d4cc2f7257bc605463
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95209067f3821b6446b64dc7990e189720d20cea
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808388"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233195"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001:問題が発生する可能性のあるメソッドは呼び出しません
 
@@ -36,23 +36,23 @@ ms.locfileid: "62808388"
 
 ## <a name="rule-description"></a>規則の説明
 
-不要なおよび危険のメソッドの呼び出しを回避します。 この規則違反は、メンバーは、次のメソッドのいずれかを呼び出すときに発生します。
+不要で危険性のあるメソッド呼び出しを行わないようにします。 この規則違反は、メンバーが次のいずれかのメソッドを呼び出した場合に発生します。
 
 |メソッド|説明|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|GC を呼び出しています。収集は、アプリケーションのパフォーマンスに大きく影響し、必要はほとんどありません。 詳細については、次を参照してください。 [Rico Mariani のパフォーマンスに関するニュース](http://go.microsoft.com/fwlink/?LinkId=169256)msdn ブログ エントリ。|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend および Thread.Resume が、予期しない動作のために使用されなくなりました。  他のクラスを使用して、<xref:System.Threading>名前空間など<xref:System.Threading.Monitor>、<xref:System.Threading.Mutex>と<xref:System.Threading.Semaphore>スレッドを同期またはリソースを保護します。|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|DangerousGetHandle メソッドでは、無効なハンドルを返すことができますので、セキュリティ リスクが生じます。 参照してください、<xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A>と<xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A>DangerousGetHandle メソッドを安全に使用する方法の詳細についてのメソッド。|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|これらのメソッドは、予期しない場所からアセンブリを読み込むことができます。 たとえば、Suzanne Cook の .NET CLR のノートのブログ投稿を参照して[LoadFile vs します。LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450)と[バインド コンテキストを選択する](http://go.microsoft.com/fwlink/?LinkId=164451)アセンブリを読み込む方法についてはします。|
-|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|ユーザー コードがマネージ プロセスで実行を開始するのには遅すぎます CoSetProxyBlanket を確実に呼び出すです。 共通言語ランタイム (CLR) は、次の位置からユーザーの P/invoke を妨げる可能性のある初期化アクションを実行します。<br /><br /> マネージ アプリケーションの CoSetProxyBlanket を呼び出すを持っている場合は、ネイティブ コード (C++) の実行可能ファイルを使用して、プロセスを開始し、CoSetProxyBlanket を呼び出すネイティブ コードでのプロセスでマネージ コード アプリケーションを起動ことを勧めします。 (するランタイムのバージョン番号を指定してください)。|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|GC を呼び出しています。Collect はアプリケーションのパフォーマンスに大きな影響を与える可能性があり、ほとんど必要ありません。 詳細については、MSDN の[プエルトリコ Mariani の Performance ちょっと](http://go.microsoft.com/fwlink/?LinkId=169256)に関するブログ記事をご覧ください。|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|予期しない動作が原因で、スレッドの中断と再開が非推奨とされました。  <xref:System.Threading> <xref:System.Threading.Monitor>、 、<xref:System.Threading.Mutex>などの名前空間の他のクラスを使用して、スレッドを同期したりリソースを保護したりします。 <xref:System.Threading.Semaphore>|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Safehandle.dangerousgethandle メソッドは、無効なハンドルを返す可能性があるため、セキュリティ上のリスクが生じます。 Safehandle.dangerousgethandle メソッドを安全<xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A>に使用する方法の詳細については、「」および「」のメソッドを参照してください。<xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A>|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|これらのメソッドは、予期しない場所からアセンブリを読み込むことができます。 例については、「Suzanne クックの .net CLR [に関するブログの投稿 LoadFile とアセンブリ](http://go.microsoft.com/fwlink/?LinkId=164450)を読み込むメソッドに関する情報のために、LoadFrom と[バインドコンテキストを選択](http://go.microsoft.com/fwlink/?LinkId=164451)します。|
+|[Cosetproxyblanket](http://go.microsoft.com/fwlink/?LinkID=169250)Ole32<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255)Ole32|マネージプロセスでユーザーコードの実行が開始されるまでに、CoSetProxyBlanket を確実に呼び出すには遅すぎます。 共通言語ランタイム (CLR) は、ユーザーの P/Invoke の成功を妨げる可能性がある初期化アクションを実行します。<br /><br /> マネージアプリケーションに CoSetProxyBlanket を呼び出す必要がある場合は、ネイティブコード (C++) 実行可能ファイルを使用してプロセスを開始し、ネイティブコードで CoSetProxyBlanket を呼び出して、マネージコードアプリケーションをプロセスで開始することをお勧めします。 (必ずランタイムバージョン番号を指定してください。)|
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、削除するか、危険性または問題のあるメソッドの呼び出しを置き換えます。
+この規則違反を修正するには、危険なメソッドまたは問題のあるメソッドへの呼び出しを削除するか置き換えます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-問題のある方法の代替手段が使用できない場合にのみ、この規則からのメッセージを抑制する必要があります。
+この規則のメッセージは、問題のあるメソッドに代わる手段がない場合にのみ、非表示にする必要があります。
 
 ## <a name="see-also"></a>関連項目
 

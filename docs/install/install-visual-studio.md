@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293703"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095363"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 
@@ -236,7 +236,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 3. プロジェクトの種類を選択します。
 
-   たとえば、[C++ アプリをビルドする](../ide/getting-started-with-cpp-in-visual-studio.md)には、 **[インストール済み]** を選択し、 **[Visual C++]** を展開して、ビルドする C++ プロジェクトの種類を選択します。
+   たとえば、[C++ アプリをビルドする](/cpp/get-started/tutorial-console-cpp)には、 **[インストール済み]** を選択し、 **[Visual C++]** を展開して、ビルドする C++ プロジェクトの種類を選択します。
 
    [C# アプリをビルドする](../get-started/csharp/tutorial-console.md)には、 **[インストール済み]** を選択し、 **[Visual C#]** を展開して、ビルドする C# プロジェクトの種類を選択します。
 

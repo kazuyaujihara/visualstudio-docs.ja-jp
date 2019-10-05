@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894431"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211080"
 ---
 # <a name="how-to-debug-an-activex-control"></a>方法: ActiveX コントロールをデバッグする
 
@@ -42,15 +42,15 @@ ActiveX コントロールをデバッグするには、そのコントロール
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。
 
-2. **ビュー** ] メニューの [選択**プロパティ ページ**します。
+2. **[表示]** メニューの **[プロパティページ]** をクリックします。
 
-3. **[プロジェクト プロパティ ページ]** ダイアログ ボックスで、**[構成プロパティ]** フォルダーを開き、**[デバッグ]** を選択します。
+3. **[プロジェクト プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** フォルダーを開き、 **[デバッグ]** を選択します。
 
 4. **[デバッグ]** カテゴリの **[コマンド]** プロパティを探します。
 
 5. コンテナーのパス名を指定します。 たとえば、「C:\Program Files\Internet Explorer\IEXPLORE.EXE」のように指定します。
 
-6. Internet Explorer をコンテナーとして指定し、アクティブ デスクトップを使用している場合は、**[コマンド引数]** ボックスに「`/new`」と入力します。
+6. Internet Explorer をコンテナーとして指定し、アクティブ デスクトップを使用している場合は、 **[コマンド引数]** ボックスに「`/new`」と入力します。
 
 7. **[OK]** をクリックします。
 
@@ -61,5 +61,5 @@ ActiveX コントロールをデバッグするには、そのコントロール
 - [ActiveX コントロール](/cpp/mfc/activex-controls)
 - [テスト コンテナーでのプロパティとイベントのテスト](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

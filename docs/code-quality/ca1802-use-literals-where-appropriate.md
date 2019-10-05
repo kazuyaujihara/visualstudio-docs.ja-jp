@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547066"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253360"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:適切な場所にリテラルを使用します
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547066"
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
-|Category|Microsoft.Performance|
+|カテゴリ|Microsoft.Performance|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -43,9 +43,9 @@ ms.locfileid: "69547066"
 
 `static readonly`フィールドの値は、宣言する型の静的コンストラクターが呼び出されるときに、実行時に計算されます。 `static readonly`フィールドが宣言時に初期化され、静的コンストラクターが明示的に宣言されていない場合、コンパイラは静的コンストラクターを生成してフィールドを初期化します。
 
-`const`フィールドの値はコンパイル時に計算され、メタデータに格納されます。これにより、 `static readonly`フィールドと比較したときの実行時のパフォーマンスが向上します。
+`const`フィールドの値はコンパイル時に計算され、メタデータに格納されます。これにより、 `static readonly`フィールドと比較すると実行時のパフォーマンスが向上します。
 
-コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、 `const`宣言をフィールドに変更して、実行時ではなくコンパイル時に値が計算されるようにします。
+コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、 `const`値が実行時ではなくコンパイル時に計算されるように、宣言をフィールドに変更します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 

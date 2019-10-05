@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922132"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234894"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401:P/Invoke は参照可能であることはできません
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922132"
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|Category|Microsoft. 相互運用性|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

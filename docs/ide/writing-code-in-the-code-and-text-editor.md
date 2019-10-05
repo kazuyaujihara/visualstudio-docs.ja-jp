@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531670"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095283"
 ---
 # <a name="features-of-the-code-editor"></a>コード エディターの機能
 
@@ -90,6 +90,6 @@ JavaScript 固有のエディター オプションについては、[JavaScript
 
 - [ソース エディター (Visual Studio for Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
-- [Visual Studio での C++ の概要](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Visual Studio での C++ の概要](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio での C# および ASP.NET の概要](../get-started/csharp/tutorial-aspnet-core.md)
 - [Visual Studio での Python の概要](../ide/quickstart-python.md)

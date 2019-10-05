@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557420"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253764"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -44,7 +44,7 @@ Dotfuscator は、元のアプリケーションの動作を維持しながら�
 リバース エンジニアリングだけでなく、犯罪者がアプリケーションの違法コピーを作成したり、実行時のアプリケーションの動作を変更したり、データを操作したりしようとすることもあります。
 Dotfuscator は、改ざん、サード パーティによるデバッグ、ルート化されたデバイスを含め、[許可のない使用を検出し、それに対応する][checks]機能をアプリケーションに注入します。
 
-保護されたソフトウェア開発ライフサイクルに Dotfuscator が適合するしくみの詳細については、PreEmptive Solution の「[SDL App Protection (SDL アプリの保護)][sdl-protection]」のページを参照してください。
+保護されたソフトウェア開発ライフサイクルに Dotfuscator が適合するしくみの詳細については、PreEmptive Solution の「[SDL App Protection][sdl-protection]」(SDL アプリの保護) のページを参照してください。
 
 ## <a name="about-dotfuscator-community"></a>Dotfuscator Community について
 
@@ -57,7 +57,7 @@ Dotfuscator Community は、広範な[ソフトウェアの保護と強化][soft
 * 識別子の *[名前の変更][renaming]* により、コンパイル済みアセンブリのリバース エンジニアリングをさらに難しくします。
 * *[改ざん防止][tamper]* 機能により、改ざんされたアプリケーションの実行が検出され、改ざんされたセッションが終了または対処されます。
 * *[デバッグ防止][debug]* 機能により、実行中のアプリケーションに対するデバッガーの添付ファイルが検出され、デバッグ セッションが終了または対処されます。
-* *[ルート化されたデバイスの防止][root]* 機能により、ルート化された Android デバイスで実行されているアプリケーションが検出され、そのデバイスでのセッションが終了または対処されます。
+* *[ルート化されたデバイスの防止][root]* 機能により、そのようなルート化された Android デバイスで実行されているアプリケーションが検出され、そのデバイスでのセッションが終了または対処されます。
 * *[アプリケーションの有効期限の動作][shelflife]* は、"有効期限" の日付をエンコードし、期限切れのアプリケーション セッションを終了します。
 
 お客様のアプリケーション保護戦略にどのように適合するかを含めた、これらの機能の詳細については、[機能に関するページ][capabilities]を参照してください。

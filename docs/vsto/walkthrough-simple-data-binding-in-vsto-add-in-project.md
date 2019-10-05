@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: VSTO アドイン プロジェクトでの単純データ バインディング'
+title: 'チュートリアル: VSTO アドインプロジェクトでの単純なデータバインディング'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0e174782c46d24b7743d50faa9fac69d38c3d6c6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825218"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255182"
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドイン プロジェクトでの単純データ バインディング
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでの単純なデータバインディング
 
-VSTO アドイン プロジェクトでは、ホスト コントロールと Windows フォーム コントロールにデータをバインドできます。 このチュートリアルでは、Microsoft Office Word 文書にコントロールを追加し、実行時にデータをコントロールにバインドする方法を示します。
+VSTO アドイン プロジェクトでは、ホスト コントロールと Windows フォーム コントロールにデータをバインドできます。 このチュートリアルでは、実行時に Microsoft Office Word 文書にコントロールを追加して、そのコントロールをデータにバインドする方法を示します。
 
 [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
 
 このチュートリアルでは、次の作業について説明します。
 
-- 追加、<xref:Microsoft.Office.Tools.Word.ContentControl>実行時にドキュメントにします。
+- 実行時にドキュメントに <xref:Microsoft.Office.Tools.Word.ContentControl> を追加する。
 
 - コントロールをデータセットのインスタンスに接続する <xref:System.Windows.Forms.BindingSource> を作成する。
 
@@ -45,11 +45,11 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] または [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。
 
-- `AdventureWorksLT` サンプル データベースがアタッチされた SQL Server 2005 または SQL Server 2005 Express の実行中のインスタンスへのアクセス。 ダウンロードすることができます、`AdventureWorksLT`からデータベース、 [CodePlex web サイト](http://go.microsoft.com/fwlink/?LinkId=115611)します。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
+- `AdventureWorksLT` サンプル データベースがアタッチされた SQL Server 2005 または SQL Server 2005 Express の実行中のインスタンスへのアクセス。 データベースは`AdventureWorksLT` 、 [CodePlex web サイト](http://go.microsoft.com/fwlink/?LinkId=115611)からダウンロードできます。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
 
-  - データベースをアタッチするには、SQL Server Management Studio または SQL Server Management Studio Express を使用して、参照してください。[方法。データベース (SQL Server Management Studio) をアタッチする](/sql/relational-databases/databases/attach-a-database)します。
+  - SQL Server Management Studio または SQL Server Management Studio Express を使用してデータベースをアタッチ[する方法については、「」を参照してください。データベースをアタッチします (](/sql/relational-databases/databases/attach-a-database)SQL Server Management Studio)。
 
-  - コマンドラインを使用してデータベースをアタッチする、次を参照してください。[方法。SQL Server Express データベース ファイルを添付](/previous-versions/sql/)します。
+  - コマンドラインを使用してデータベースをアタッチする方法[については、「」を参照してください。SQL Server Express](/previous-versions/sql/)にデータベースファイルをアタッチします。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
@@ -61,9 +61,9 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
      詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio を開き、 *ThisAddIn.vb*または*ThisAddIn.cs*ファイルし、追加、 **Populating Documents from データベース**プロジェクトを**ソリューション エクスプ ローラー**.
+     Visual Studio によって、 *ThisAddIn*ファイルまたは*ThisAddIn.cs*ファイルが開かれ、データベースプロジェクトの**ドキュメント**が**ソリューションエクスプローラー**に追加されます。
 
-2. 場合、プロジェクトのターゲット、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]への参照を追加、 *Microsoft.Office.Tools.Word.v4.0.Utilities.dll*アセンブリ。 この参照は、このチュートリアルの後半でプログラムを使用して Windows フォーム コントロールをドキュメントに追加するのに必要です。
+2. プロジェクトが[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]またはを対象としている場合は、参照を追加して、「」を参照して*ください。* この参照は、このチュートリアルの後半でプログラムを使用して Windows フォーム コントロールをドキュメントに追加するのに必要です。
 
 ## <a name="create-a-data-source"></a>データ ソースの作成
 
@@ -71,7 +71,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>型指定されたデータセットをプロジェクトに追加するには
 
-1. 場合、**データソース**ウィンドウが表示されない、メニュー バーで 表示することによって、**ビュー** > **その他の Windows**  >  **データ ソース**します。
+1. **[データソース]** ウィンドウが表示されていない場合は、メニューバーの [**他の Windows** > **データソース**の**表示** > ] をクリックして表示します。
 
 2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
 
@@ -79,7 +79,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 4. `AdventureWorksLT` データベースへの既存の接続がある場合は、その接続を選んで **[次へ]** をクリックします。
 
-    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
+    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
 5. **[アプリケーション構成ファイルへの接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
@@ -87,19 +87,19 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 7. **[完了]** をクリックします。
 
-    *AdventureWorksLTDataSet.xsd*ファイルに追加されます**ソリューション エクスプ ローラー**します。 このファイルでは、次の項目を定義します。
+    *Adventureworksltdataset.xsd*ファイルが**ソリューションエクスプローラー**に追加されます。 このファイルでは、次の項目を定義します。
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの **Customer (SalesLT)** テーブルの内容を表します。
 
-   - という名前の TableAdapter`CustomerTableAdapter`します。 この TableAdapter データを読み書きするために使用できます、`AdventureWorksLTDataSet`します。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
+   - という名前`CustomerTableAdapter`の TableAdapter。 この TableAdapter を使用して、の`AdventureWorksLTDataSet`データの読み取りと書き込みを行うことができます。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
 
      これらのオブジェクトは、どちらもこのチュートリアルの後半で使用します。
 
-## <a name="create-controls-and-binding-controls-to-data"></a>コントロールとデータ バインド コントロールを作成します。
+## <a name="create-controls-and-binding-controls-to-data"></a>コントロールを作成し、データにコントロールをバインドする
 
-このチュートリアルでは、データベース レコードを表示するためのインターフェイスは、basic、およびドキュメントの内部の右側に作成されます。 1 つの <xref:Microsoft.Office.Tools.Word.ContentControl> には一度に 1 つのデータベース レコードが表示されます。2 つの <xref:Microsoft.Office.Tools.Word.Controls.Button> コントロールを使用してレコードを前後にスクロールできます。 コンテンツ コントロールは <xref:System.Windows.Forms.BindingSource> を使用して、データベースに接続します。
+このチュートリアルでは、データベースレコードを表示するためのインターフェイスは基本的なものであり、ドキュメント内に作成されます。 1 つの <xref:Microsoft.Office.Tools.Word.ContentControl> には一度に 1 つのデータベース レコードが表示されます。2 つの <xref:Microsoft.Office.Tools.Word.Controls.Button> コントロールを使用してレコードを前後にスクロールできます。 コンテンツ コントロールは <xref:System.Windows.Forms.BindingSource> を使用して、データベースに接続します。
 
-データ バインド コントロールの詳細については、次を参照してください。 [Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。
+コントロールをデータにバインドする方法の詳細については、「[データを Office ソリューションのコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
 ### <a name="to-create-the-interface-in-the-document"></a>ドキュメントでインターフェイスを作成するには
 
@@ -113,7 +113,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3. `ThisAddIn_Startup` メソッドに次のコードを追加します。 これによりホスト項目が生成され、ドキュメントの機能が拡張されます。 詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
+3. `ThisAddIn_Startup` メソッドに次のコードを追加します。 これによりホスト項目が生成され、ドキュメントの機能が拡張されます。 詳細については、「 [VSTO アドインでの実行時の Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
@@ -138,7 +138,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
 
-## <a name="test-the-add-in"></a>アドインのテストします。
+## <a name="test-the-add-in"></a>アドインのテスト
 
 Word を開くと、コンテンツ コントロールに `AdventureWorksLTDataSet` データセットからのデータが表示されます。 **[次へ]** と **[前へ]** ボタンをクリックして、データベース レコードをスクロールします。
 
@@ -152,20 +152,20 @@ Word を開くと、コンテンツ コントロールに `AdventureWorksLTDataS
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションにおけるデータ](../vsto/data-in-office-solutions.md)
-- [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [方法: データベースからデータをワークシートに読み込む](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [方法: データベースからデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [方法: サービスからデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Office ソリューションのデータ](../vsto/data-in-office-solutions.md)
+- [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [方法: データベースのデータをワークシートに設定する](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [方法: データベースのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [方法: サービスからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
 - [方法: オブジェクトからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [方法: ワークシート内のデータベース レコードをスクロールします。](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [方法: ホスト コントロールからのデータでデータ ソースを更新します。](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [チュートリアル: ドキュメント レベルのプロジェクトでの単純データ バインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
-- [チュートリアル: ドキュメント レベルのプロジェクトで複合データ バインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
-- [Office ソリューションの概要でのローカル データベース ファイルを使用します。](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [方法: ワークシート内のデータベースレコードをスクロールする](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [方法: ホストコントロールのデータを使用してデータソースを更新する](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [チュートリアル: ドキュメントレベルのプロジェクトでの単純なデータバインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
+- [Office ソリューションのローカルデータベースファイルの使用の概要](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [方法: オブジェクトからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [方法: ホスト コントロールからのデータでデータ ソースを更新します。](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Office ソリューションの概要でのローカル データベース ファイルを使用します。](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [方法: ホストコントロールのデータを使用してデータソースを更新する](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Office ソリューションのローカルデータベースファイルの使用の概要](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b0bbe31f0431b259f60c1fe68a8d9edeffc572d9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920084"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237908"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:シリアル化メソッドを正しく実装します
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920084"
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断-メソッドがアセンブリの外部で参照可能な場合。<br /><br /> 非中断-メソッドがアセンブリの外部で参照できない場合。|
+|互換性に影響する変更点|中断-メソッドがアセンブリの外部で参照可能な場合。<br /><br /> 非互換性-メソッドがアセンブリの外部で参照できない場合。|
 
 ## <a name="cause"></a>原因
 シリアル化イベントを処理するメソッドに、適切なシグネチャ、戻り値の型、または参照範囲がありません。

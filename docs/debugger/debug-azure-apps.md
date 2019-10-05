@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563361"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211263"
 ---
-# <a name="debug-azure-services-in-visual-studio"></a>Visual Studio での Azure サービスをデバッグします。
+# <a name="debug-azure-services-in-visual-studio"></a>Visual Studio での Azure サービスのデバッグ
 
-Visual Studio を使用して、さまざまなシナリオでの Azure サービスをデバッグすることができます。
+Visual Studio を使用して、さまざまなシナリオで Azure サービスをデバッグできます。
 
-- Azure App Service でホストされている運用アプリをデバッグするを参照してください。[デバッグ スナップショット デバッガーを使用して ASP.NET アプリのライブ](../debugger/debug-live-azure-applications.md)します。
+- Azure App Service でホストされている実稼働アプリをデバッグするには、「[スナップショットデバッガーを使用したライブ ASP.NET アプリのデバッグ](../debugger/debug-live-azure-applications.md)」を参照してください。
 
-- Azure 仮想マシンまたは Azure の仮想マシン スケール セットでホストされている実稼働アプリをデバッグするを参照してください。[デバッグ中の ASP.NET Azure 仮想マシンと Azure の仮想マシン スケール セットのスナップショット デバッガーを使用して](../debugger/debug-live-azure-virtual-machines.md)します。
+- Azure 仮想マシンまたは Azure 仮想マシンスケールセットでホストされている実稼働アプリをデバッグするには、「[スナップショットデバッガーを使用したライブ ASP.NET azure 仮想マシンと azure 仮想マシンスケールセットのデバッグ](../debugger/debug-live-azure-virtual-machines.md)」を参照してください。
 
-- Azure Kubernetes サービスでホストされている運用アプリをデバッグするを参照してください。[デバッグ スナップショット デバッガーを使用して ASP.NET Azure Kubernetes サービスのライブ](../debugger/debug-live-azure-kubernetes.md)します。
+- Azure Kubernetes Service でホストされている実稼働アプリをデバッグするには、「[スナップショットデバッガーを使用したライブ ASP.NET Azure Kubernetes Services のデバッグ](../debugger/debug-live-azure-kubernetes.md)」を参照してください。
 
-- Application Insights を使用して実稼働アプリのデバッグと Azure App Service または Service Fabric でホストされている[.NET アプリでの例外でのデバッグ スナップショット](/azure/application-insights/app-insights-snapshot-debugger)します。
+- Application Insights を使用し、Azure App Service または Service Fabric でホストされている実稼働アプリをデバッグするには、「 [.net アプリでの例外のデバッグスナップショット](/azure/application-insights/app-insights-snapshot-debugger)」を参照してください。
 
-- (Azure App Service または Azure VM) の IIS で ASP.NET のリモート デバッグを参照してください。 [Remote Debugging ASP.NET on Azure](remote-debugging-azure.md)します。
+- IIS (Azure App Service または Azure VM) で ASP.NET をリモートデバッグする方法については、「 [azure でのリモートデバッグ ASP.NET](remote-debugging-azure.md)」を参照してください。
 
-- Azure Service Fabric での ASP.NET のリモート デバッグを参照してください[リモート Service Fabric アプリケーションのデバッグ。](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Azure Service Fabric で ASP.NET をリモートデバッグする方法については、「[リモート Service Fabric アプリケーションのデバッグ](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)

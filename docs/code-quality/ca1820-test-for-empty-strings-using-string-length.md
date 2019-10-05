@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b197cacc764f1f5472d3eb074ac89199db508408
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744649"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233428"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820:文字列の長さを使用して空の文字列をテストします
 
@@ -32,24 +32,24 @@ ms.locfileid: "66744649"
 
 ## <a name="cause"></a>原因
 
-使用して文字列が空の文字列と比較<xref:System.Object.Equals%2A?displayProperty=nameWithType>します。
+文字列は、を使用<xref:System.Object.Equals%2A?displayProperty=nameWithType>して空の文字列と比較されます。
 
 ## <a name="rule-description"></a>規則の説明
 
-使用して文字列を比較する、<xref:System.String.Length%2A?displayProperty=nameWithType>プロパティまたは<xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>メソッドが使用するよりも高速<xref:System.Object.Equals%2A>します。 これは、ため<xref:System.Object.Equals%2A>いずれかのよりもはるかに多くの MSIL 命令を実行<xref:System.String.IsNullOrEmpty%2A>または取得するために実行する命令の数、<xref:System.String.Length%2A>プロパティ値し、比較して 0。
+プロパティ<xref:System.String.Length%2A?displayProperty=nameWithType> <xref:System.Object.Equals%2A>またはメソッドを使用した文字列の比較は、を使用するよりも高速です。 <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> これは、 <xref:System.Object.Equals%2A>が、 <xref:System.String.Length%2A>プロパティ値を取得し<xref:System.String.IsNullOrEmpty%2A>て0と比較するために実行された命令のいずれかまたはの数よりもはるかに多くの MSIL 命令を実行するためです。
 
-Null 文字列は、<xref:System.Object.Equals%2A>と`<string>.Length == 0`動作が異なる。 値を取得しようとする場合、<xref:System.String.Length%2A>プロパティは、null 文字列を共通言語ランタイムがスローされます、<xref:System.NullReferenceException?displayProperty=fullName>します。 Null 文字列と空の文字列の比較を実行する場合、共通言語ランタイムは、例外はスローされませんし、返します`false`します。 Null をテストする 2 つの方法の相対的なパフォーマンスが大幅に影響しません。 .NET Framework 2.0 以降を対象とするときに使用して、<xref:System.String.IsNullOrEmpty%2A>メソッド。 それ以外の場合、使用、 <xref:System.String.Length%2A> 0 比較可能な限り = =。
+Null 文字列の場合<xref:System.Object.Equals%2A>は`<string>.Length == 0` 、との動作が異なります。 Null 文字列の<xref:System.String.Length%2A>プロパティの値を取得しようとすると、共通言語ランタイムはを<xref:System.NullReferenceException?displayProperty=fullName>スローします。 Null 文字列と空の文字列の比較を実行しても、共通言語ランタイムは例外をスローせず、を`false`返します。 Null のテストは、これらの2つの方法の相対的なパフォーマンスに大きな影響を与えません。 .NET Framework 2.0 以降を対象とする場合は<xref:System.String.IsNullOrEmpty%2A> 、メソッドを使用します。 それ以外の場合<xref:System.String.Length%2A>は、可能な限り = = 0 の比較を使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、使用する比較を変更、<xref:System.String.IsNullOrEmpty%2A>メソッド。
+この規則違反を修正するには、 <xref:System.String.IsNullOrEmpty%2A>メソッドを使用するように比較を変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-パフォーマンスに問題がない場合は、この規則による警告を抑制するのには安全です。
+パフォーマンスが問題にならない場合は、このルールからの警告を抑制することが安全です。
 
 ## <a name="example"></a>例
 
-次の例では、空の文字列を検索に使用されるさまざまな手法を示します。
+次の例は、空の文字列を検索するために使用されるさまざまな手法を示しています。
 
 [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

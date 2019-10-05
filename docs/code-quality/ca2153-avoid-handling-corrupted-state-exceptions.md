@@ -1,5 +1,5 @@
 ---
-title: Ca 2153 コード分析ルールは、破損状態例外を
+title: 破損状態例外のコード分析ルール CA2153
 ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
@@ -7,45 +7,45 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542158"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253220"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:破損状態例外の処理を回避します。
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:破損状態の例外の処理を回避する
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-[破損状態例外 (Cse)](https://msdn.microsoft.com/magazine/dd419661.aspx)そのメモリ破損がプロセス内に存在します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。
+[破損状態の例外 (CSEs)](https://msdn.microsoft.com/magazine/dd419661.aspx)は、メモリの破損がプロセス内に存在することを示します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。
 
 ## <a name="rule-description"></a>規則の説明
 
-CSE は、プロセスが破損状態にあり、システムによってキャッチされていないことを示します。 破損した状態では、汎用ハンドラーのみが例外をキャッチでメソッドをマークする場合、<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName>属性。 既定で、[共通言語ランタイム (CLR)](/dotnet/standard/clr) Cse の catch ハンドラーは呼び出されません。
+CSE は、プロセスが破損状態にあり、システムによってキャッチされていないことを示します。 破損状態のシナリオでは、 <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName>属性を使用してメソッドをマークした場合にのみ、一般的なハンドラーが例外をキャッチします。 既定では、[共通言語ランタイム (CLR)](/dotnet/standard/clr)は、cses の catch ハンドラーを呼び出しません。
 
-最も安全なオプションでは、これらの種類の例外をキャッチせず、プロセスがクラッシュするを許可します。 コードのログ記録もメモリ破損のバグを悪用する攻撃者を許可できます。
+最も安全なオプションは、この種の例外をキャッチせずにプロセスをクラッシュさせることです。 ログコードでも、攻撃者はメモリ破損のバグを悪用できます。
 
-たとえば、すべての例外をキャッチする汎用ハンドラーで Cse をキャッチするときに、この警告がトリガー`catch (System.Exception e)`または`catch`ありません例外パラメーターを使用します。
+この警告は、すべての例外をキャッチする汎用ハンドラーを使用して、または`catch (System.Exception e)` `catch`例外パラメーターを指定せずに、cses をキャッチするときにトリガーされます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
 この警告を解決するには、次のいずれかの操作を行います。
 
-- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 属性を削除します。 これにより、CSE を catch ハンドラーに渡さない既定の実行時の動作に戻ります。
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 属性を削除します。 これにより、CSEs が catch ハンドラーに渡されない既定の実行時の動作に戻ります。
 
-- 特定の例外の種類をキャッチするハンドラーではなく汎用 catch ハンドラーを削除します。 Cse は、ハンドラーのコードに処理できる安全な場合 (まれな) 場合があります。
+- 特定の例外の種類をキャッチするハンドラーではなく汎用 catch ハンドラーを削除します。 これには、ハンドラーコードが安全に処理できる (まれ) と仮定して、CSEs を含めることができます。
 
-- Catch ハンドラーに、呼び出し元に例外を渡し、実行中のプロセスを終了すると、する必要があります CSE を再スローします。
+- 例外を呼び出し元に渡し、実行中のプロセスを終了する必要がある catch ハンドラーで CSE を再スローします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
@@ -71,9 +71,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1---remove-the-attribute"></a>解決策 1 - 属性を削除します。
+### <a name="solution-1---remove-the-attribute"></a>解決策 1-属性を削除する
 
-削除、<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>属性により、破損状態例外は、メソッドによって処理されません。
+属性を<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>削除すると、メソッドによって破損状態の例外が処理されなくなります。
 
 ```csharp
 void TestMethod1()
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2---catch-specific-exceptions"></a>解決策 2 - 特定の例外をキャッチします。
+### <a name="solution-2---catch-specific-exceptions"></a>解決策 2-特定の例外をキャッチする
 
 汎用 catch ハンドラーを削除し、特定の例外の種類のみをキャッチします。
 
@@ -111,7 +111,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3---rethrow"></a>解決策 3 - を再スローします。
+### <a name="solution-3---rethrow"></a>解決策 3-再スロー
 
 例外を再スローします。
 

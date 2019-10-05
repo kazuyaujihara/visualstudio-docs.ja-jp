@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6bcf32401abdeae499097bc5187d11154e7dfc6e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841468"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237418"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002:XSS の脆弱性のコード レビュー
 
@@ -24,39 +24,39 @@ ms.locfileid: "65841468"
 |TypeName|ReviewCodeForXssVulnerabilities|
 |CheckId|CA3002|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力では、生の HTML 出力に到達します。
+信頼できない可能性のある HTTP 要求入力が、未加工の HTML 出力になります。
 
 ## <a name="rule-description"></a>規則の説明
 
-Web 要求から信頼されていない入力を使用する場合はあるクロスサイト スクリプティング (XSS) 攻撃に注意してください。 XSS 攻撃は、攻撃者が悪意のあるスクリプトの実行や、悪意のある web ページのコンテンツを変更できる生の HTML 出力に、信頼できない入力を挿入します。 一般的な手法を配置する`<script>`入力で悪意のあるコードを持つ要素。 詳細については、次を参照してください。 [OWASP の XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))します。
+Web 要求から信頼されていない入力を処理する場合は、クロスサイトスクリプティング (XSS) 攻撃に注意する必要があります。 XSS 攻撃によって、信頼できない入力が未加工の HTML 出力に挿入され、攻撃者が悪意のあるスクリプトを実行したり、web ページのコンテンツを改ざんしたりする可能性があります。 一般的な手法では`<script>` 、要素を入力に悪意のあるコードと共に配置します。 詳細については、「 [Owasp の XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))」を参照してください。
 
-このルールは、生の HTML 出力に到達する HTTP 要求からの入力を検索しようとします。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合は、1 つのアセンブリは、HTTP 要求の入力を読み取って、生の HTML を出力する別のアセンブリに渡されます、このルールは警告を生成しません。
+このルールは、未加工の HTML 出力に到達する HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求の入力を読み取り、生の HTML を出力する別のアセンブリにそのアセンブリを渡す場合、この規則は警告を生成しません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- 生の HTML を出力するには、代わりにそのその最初を HTML エンコードの入力メソッドまたはプロパティを使用します。
-- HTML エンコードでは、生の HTML を出力する前にデータを信頼されていません。
+- 生の HTML を出力するのではなく、最初に入力を HTML エンコードするメソッドまたはプロパティを使用します。
+- 生の HTML を出力する前に、信頼されていないデータを HTML エンコードします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-場合、この規則による警告を抑制しても安全です。
-- 既知の安全な HTML が含まれていない文字のセットに対して、入力を検証することがわかります。
-- このルールで検出されない方法で HTML でエンコードされたデータがわかります。
+次の場合は、この規則による警告を抑制しても安全です。
+- 入力は、HTML を含まない既知の安全な文字セットに対して検証されていることがわかります。
+- この規則で検出されない方法でデータが HTML エンコードされていることがわかっています。
 
 > [!NOTE]
-> この規則は偽陽性のいくつかのメソッドまたはプロパティをレポートがその HTML エンコードが入力されます。
+> このルールは、入力を HTML エンコードするメソッドまたはプロパティについて、偽陽性を報告する場合があります。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 

@@ -1,5 +1,5 @@
 - name: デバッガー向けドキュメント
-  href: index.md
+  href: index.yml
 - name: 概要
   items:
     - name: デバッグとは
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Microsoft Store アプリ用コンテンツのプリフェッチ
               href: prefetch-content-for-windows-store-apps.md
-        - name: マネージド コード
+        - name: 'マネージド コード (C#、Visual Basic、F#)'
           items:
             - name: マネージド コードをデバッグする
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'F# のデバッグ'
               href: debugging-f-hash.md
-        - name: '[ネイティブ コード]'
+        - name: C/C++ コード
           items:
             - name: ネイティブ コードをデバッグする
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: 挿入されたコードをデバッグする
               href: how-to-debug-injected-code.md
-        - name: GPU コードのデバッグ
+        - name: GPU コード
           href: debugging-gpu-code.md
         - name: グラフィックス診断
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Web サーバーは正しく構成されていません。
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript および TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Web アプリ
           items:
             - name: Web アプリケーションをデバッグする
@@ -662,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: セルフホストされている WCF サービスをデバッグする
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: 共同作業
+      items:
+        - name: Live Share を使用したコードの記述とデバッグ
+          href: /visualstudio/liveshare/use/vs
     - name: ダンプ ファイル
       items:
         - name: ダンプ ファイルの使用
@@ -670,7 +678,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: デバッガーのセキュリティ
       href: debugger-security.md
-- name: 関連項目
+- name: 参照
   items:
     - name: デバッグ用ユーザー インターフェイス リファレンス
       items:

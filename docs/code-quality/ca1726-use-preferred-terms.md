@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921581"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233917"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726:適切な用語を使用します
 
@@ -26,7 +26,7 @@ ms.locfileid: "68921581"
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|中断-アセンブリで発生した場合<br /><br /> 中断なし-型パラメーターで発生した場合|
 
 ## <a name="cause"></a>原因
@@ -47,7 +47,7 @@ ms.locfileid: "68921581"
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` または `Flags`|置換語句はありません。 使わないでください。|
+|`Flag` または `Flags`|置換語句はありません。 使用しないでください。|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

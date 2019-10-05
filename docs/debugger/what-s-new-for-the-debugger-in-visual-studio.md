@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 のデバッガーの新機能については |Microsoft Docs
+title: Visual Studio 2017 でのデバッガーの新機能 |Microsoft Docs
 titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
@@ -20,18 +20,18 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901392"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71210590"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 のデバッガーの新機能
 
-デバッガーには、これらの新機能が含まれています。
+デバッガーには、次の新機能があります。
 
-- バージョン 15.5 の新機能、**スナップショット デバッガー**興味のあるコードを実行するときに、運用環境でのアプリのスナップショットを取得します。 スナップショットを取得するようにデバッガーに指示するには、コードでスナップショットとログポイントを設定します。 デバッガーでは、実稼働アプリケーションのトラフィックに影響を与えることなく、問題を正確に確認できます。 スナップショット デバッガーは、実稼働環境で発生する問題の解決にかかる時間を大幅に短縮するのに役立ちます。
+- バージョン15.5 の新動作では、対象となるコードが実行されるときに、**スナップショットデバッガー**は実稼働アプリのスナップショットを取得します。 スナップショットを取得するようにデバッガーに指示するには、コードでスナップショットとログポイントを設定します。 デバッガーでは、実稼働アプリケーションのトラフィックに影響を与えることなく、問題を正確に確認できます。 スナップショット デバッガーは、実稼働環境で発生する問題の解決にかかる時間を大幅に短縮するのに役立ちます。
 
     スナップショット コレクションは、Azure App Service で実行されている次の Web アプリで利用できます。
 
@@ -40,37 +40,37 @@ ms.locfileid: "62901392"
 
     詳細については、「[Debug live ASP.NET apps using the Snapshot Debugger](../debugger/debug-live-azure-applications.md)」(スナップショット デバッガーを使用してライブ ASP.NET アプリをデバッグする) を参照してください。
 
-- バージョン 15.5 Visual Studio Enterprise でのみで、新しい**IntelliTrace ステップ バック**ステップ イベント、アプリケーションのすべてのブレークポイントとデバッガーのスナップショットを自動的に取得します。 記録されたスナップショットにより、前のブレークポイントまたはステップに戻り、過去の時点でのアプリケーションの状態を確認できるようになります。 IntelliTrace ステップ バックでは、以前のアプリケーションの状態を確認したいが、デバッグの再開や必要なアプリ状態の再作成は必要でない場合に時間を節約できます。
+- Visual Studio Enterprise のみのバージョン15.5 で新しくなった**IntelliTrace ステップバック**では、すべてのブレークポイントとデバッガーステップイベントで、アプリケーションのスナップショットが自動的に取得されます。 記録されたスナップショットにより、前のブレークポイントまたはステップに戻り、過去の時点でのアプリケーションの状態を確認できるようになります。 IntelliTrace ステップ バックでは、以前のアプリケーションの状態を確認したいが、デバッグの再開や必要なアプリ状態の再作成は必要でない場合に時間を節約できます。
 
-    スナップショット間を移動して表示するには、デバッグ ツールバーの **[前に戻る]** ボタンと **[次へ進む]** ボタンを使用します。 これらのボタンを使用して、**[診断ツール]** ウィンドウの **[イベント]** タブに表示されるイベント間を移動します。
+    スナップショット間を移動して表示するには、デバッグ ツールバーの **[前に戻る]** ボタンと **[次へ進む]** ボタンを使用します。 これらのボタンを使用して、 **[診断ツール]** ウィンドウの **[イベント]** タブに表示されるイベント間を移動します。
 
     ![[前に戻る] ボタンと [次へ進む] ボタン](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
 
     詳細について、[IntelliTrace を使用して以前のアプリの状態を検査する](../debugger/view-historical-application-state.md)方法に関するページを参照してください。
 
-- **例外ヘルパー**例外処理アシスタントを置き換えるし、エラーが発生した非モーダル ダイアログ ボックスが表示されます。 **例外ヘルパー** 、内部例外、(該当する場合)、デバッガーによって追加の分析にすばやくアクセスしにすぐにアクセスを提供します、**例外設定**例外。 例外ヘルパーを表示することによってブロックされている場合浮動ビューにドラッグできます。
+- 例外**ヘルパー**は、例外処理アシスタントを置き換え、エラーが発生した非モーダルダイアログボックスに表示されます。 **例外ヘルパー**を使用すると、内部例外にすばやくアクセスでき、デバッガーによる追加の分析 (利用可能な場合) が可能になり、例外の**例外設定**にすぐにアクセスできるようになります。 例外ヘルパーは、表示する必要があるものをブロックしている場合に、フローティングビューにドラッグすることもできます。
 
-    たとえば、 **NullReferenceException**を null 参照 (余分な情報) を持つ変数が表示されます。
+    たとえば、 **NullReferenceException**は、null 参照 (追加情報) を持つ変数を表示するようになりました。
 
-    ![デバッガーの例外ヘルパー](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
+    ![デバッガーの例外ヘルパー](../debugger/media/dbg-exception-helper.png "Dbgexceptionhelper")
 
     詳細については、「[Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)」 (Visual Studio で新しい例外ヘルパーを使用する) のブログの投稿を参照してください。
 
-- 選択して、デバッガーで一時停止中のコード行を実行して、**ここまで実行**(アイコンが表示のコード行を合わせたとき)、緑色の矢印アイコン。 これにより、一時的なブレークポイントを設定する必要があります。
+- デバッガーで一時停止中にコード行を実行できるようになりました。**この**緑色の矢印アイコンをクリックすると、コード行の上にカーソルを置くとアイコンが表示されます。 これにより、一時的なブレークポイントを設定する必要がなくなります。
 
-    ![デバッガーのクリックで実行](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
+    ![デバッガーの実行をクリックし]ます(../debugger/media/dbg-run-to-click.png "Dbgruntoclick")
 
-- 例外で条件を設定することができます、**例外設定** ダイアログ ボックス (を使用してこれを行う、**条件を編集する**アイコンを右クリック メニューを使用して例外設定 ダイアログ ボックスで、例外です。)現在サポートされている条件には、例外の追加または除外モジュール名が含まれます。
+- 例外 **[設定]** ダイアログボックスで例外の条件を設定できます (これを行うには、例外設定 ダイアログボックスの **[条件の編集]** アイコンを使用するか、例外の右クリックメニューを使用します)。現在サポートされている条件には、例外に含めたり除外したりするモジュール名が含まれます。
 
-    ![例外条件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+    ![例外に関する条件](../debugger/media/dbg-conditional-exception.png "Dbgconditionalexception")
 
-- プロセスにアタッチ ダイアログ ボックスにはより迅速にアタッチする必要のあるプロセスを特定するのに役立つ新しい検索機能が含まれています。
+- [プロセスにアタッチ] ダイアログボックスには、アタッチする必要があるプロセスをより迅速に識別するのに役立つ新しい検索機能が追加されています。
 
-    ![検索では、プロセスにアタッチ](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
+    ![プロセスにアタッチして検索](../debugger/media/dbg-attach-to-process-search.png "Dbgattachtoprocesssearch")
 
-これらの新機能の詳細については、次を参照してください。、[のリリース ノート[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes)します。
+これらの新機能の詳細については、「」 [ [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]のリリースノート](/visualstudio/releasenotes/vs2017-relnotes)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

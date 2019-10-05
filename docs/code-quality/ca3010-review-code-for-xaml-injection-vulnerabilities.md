@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 965e0d800bd7c725236d96499d2bf2d441b40412
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: efd30a783f534d76f7f7f3fa18fd181dbe7e98a1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841090"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237232"
 ---
 # <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010:XAML インジェクションの脆弱性のコード レビュー
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841090"
 |TypeName|ReviewCodeForXamlInjectionVulnerabilities|
 |CheckId|CA3010|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力に達すると、 <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> Load メソッド。
+信頼できない可能性のある HTTP <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType>要求入力が Load メソッドに到達した場合。
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力を使用する場合は、XAML のインジェクション攻撃の考慮あります。 XAML は、オブジェクトのインスタンス化と実行を直接表すマークアップ言語です。 つまり、XAML で作成された要素は、システム リソース (たとえば、ネットワーク アクセスとファイル システム IO) とやり取りできます。 攻撃者への入力を制御できる場合、<xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType>攻撃者がコードを実行し、メソッドの呼び出しをロードします。
+信頼されていない入力を扱う場合は、XAML インジェクション攻撃に注意してください。 XAML は、オブジェクトのインスタンス化と実行を直接表すマークアップ言語です。 つまり、XAML で作成された要素は、システムリソース (ネットワークアクセスやファイルシステム IO など) とやり取りできます。 攻撃者が<xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType>読み込みメソッド呼び出しへの入力を制御できる場合、攻撃者はコードを実行できます。
 
-このルールに到達する HTTP 要求からの入力を検出しようとしています、 <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> Load メソッド。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば、1 つのアセンブリが HTTP 要求の入力を読み取り、別のアセンブリを XAML に渡されます場合は、このルールは警告を生成しません。
+このルールは、 <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> Load メソッドに到達した HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求の入力を読み取り、XAML を読み込む別のアセンブリにそのアセンブリを渡す場合、この規則は警告を生成しません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-信頼されていない XAML をロードしません。
+信頼されていない XAML は読み込まないでください。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告を抑制はありません。
+このルールからの警告を抑制しないでください。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 

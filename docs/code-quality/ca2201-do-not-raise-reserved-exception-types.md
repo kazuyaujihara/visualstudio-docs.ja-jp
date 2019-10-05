@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1648d2ae3c46fa8382a96b497f307b370a8d345c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3d9b787a4e50f43867b5d9b4ec7a11aba03f8599
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820574"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231666"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:予約された例外の種類を発生させません
 
@@ -32,11 +32,11 @@ ms.locfileid: "66820574"
 
 ## <a name="cause"></a>原因
 
-メソッドは、一般的すぎるか、ランタイムによって予約されている例外の種類を発生させます。
+メソッドによって、汎用的またはランタイムによって予約されている例外の種類が発生します。
 
 ## <a name="rule-description"></a>規則の説明
 
-次の例外の種類は、ユーザーに十分な情報を提供する汎用的です。
+次の例外の種類は、ユーザーに十分な情報を提供するには一般的ではありません。
 
 - <xref:System.Exception?displayProperty=fullName>
 
@@ -44,7 +44,7 @@ ms.locfileid: "66820574"
 
 - <xref:System.SystemException?displayProperty=fullName>
 
-次の例外の種類は予約されており、共通言語ランタイムによってのみスローする必要があります。
+次の例外の種類は予約されており、共通言語ランタイムによってのみスローされる必要があります。
 
 - <xref:System.AccessViolationException?displayProperty=fullName>
 
@@ -64,42 +64,42 @@ ms.locfileid: "66820574"
 
 - <xref:System.StackOverflowException?displayProperty=fullName>
 
-**一般的な例外をスローしないでください。**
+**一般的な例外をスローしない**
 
-など、一般的な例外型をスローするかどうかは<xref:System.Exception>または<xref:System.SystemException>が強制的にライブラリまたはフレームワークでは、すべてをキャッチするコンシューマーを処理する方法がわからない不明な例外を含む例外。
+ライブラリまたはフレームワーク内で<xref:System.Exception>や<xref:System.SystemException>などの一般的な例外の種類をスローすると、コンシューマーは、処理方法がわからない不明な例外も含め、すべての例外をキャッチするように強制されます。
 
-代わりに、framework では、既に存在するより強い派生型をスローまたはのいずれかから派生した独自の型を作成する<xref:System.Exception>します。
+代わりに、フレームワークに既に存在する派生型をスローするか、から<xref:System.Exception>派生する独自の型を作成します。
 
-**特定の例外をスローします。**
+**特定の例外をスローする**
 
-次の表に、パラメーターとプロパティの set アクセサーに値パラメーターを含め、パラメーターを検証する場合にスローされる例外。
+次の表に、パラメーターを検証したときにスローされる例外と、プロパティの set アクセサーの value パラメーターを示します。
 
 |パラメーターの説明|例外|
 |---------------------------|---------------|
-|`null` 参照|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|(コレクションまたはリストのインデックス) などの値の許容範囲外|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|無効な`enum`値|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|メソッドのパラメーターの仕様を満たしていない形式が含まれています (などの書式指定文字列`ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
-|それ以外の場合が無効です。|<xref:System.ArgumentException?displayProperty=fullName>|
+|`null`「|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|許容範囲外の値 (コレクションまたはリストのインデックスなど)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|無効`enum`な値|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|には、メソッドのパラメーター指定を満たさない形式 (の`ToString(String)`書式設定文字列など) が含まれています。|<xref:System.FormatException?displayProperty=fullName>|
+|それ以外の場合は無効|<xref:System.ArgumentException?displayProperty=fullName>|
 
-操作が、オブジェクトのスローの現在の状態の有効な場合 <xref:System.InvalidOperationException?displayProperty=fullName>
+操作がオブジェクトスローの現在の状態に対して無効な場合<xref:System.InvalidOperationException?displayProperty=fullName>
 
-操作が破棄されているオブジェクトで実行されるとスローします。 <xref:System.ObjectDisposedException?displayProperty=fullName>
+破棄されたオブジェクトに対して操作が実行された場合<xref:System.ObjectDisposedException?displayProperty=fullName>
 
-操作がサポートされていない場合 (このようなようにオーバーライドされた**Stream.Write**読み取り用に開く Stream で) をスロー <xref:System.NotSupportedException?displayProperty=fullName>
+操作がサポートされていない場合 (オーバーライドされたストリームのなど) は、読み取り用に開かれたストリームに書き込むことが**できます。** <xref:System.NotSupportedException?displayProperty=fullName>
 
-変換すると、オーバーフロー (明示的なキャスト演算子のオーバー ロードなど) で、ときにスローします。 <xref:System.OverflowException?displayProperty=fullName>
+変換によってオーバーフローが発生する場合 (明示的なキャスト演算子のオーバーロードの場合など)、スローされます。<xref:System.OverflowException?displayProperty=fullName>
 
-その他のすべての状況から派生した独自の型の作成を検討して<xref:System.Exception>をスローします。
+それ以外の場合は、から<xref:System.Exception>派生する独自の型を作成し、それをスローすることを検討してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、予約の種類のいずれかではない特定の型に、スローされた例外の種類を変更します。
+この規則違反を修正するには、スローされた例外の型を、予約済みの型ではない特定の型に変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1031:一般的な例外の種類はキャッチしません](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+- [CA1031一般的な例外の種類をキャッチしない](../code-quality/ca1031-do-not-catch-general-exception-types.md)

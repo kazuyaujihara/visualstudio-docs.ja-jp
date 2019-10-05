@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797350"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234267"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別子はアンダースコアを含むことはできません
 
@@ -28,27 +28,27 @@ ms.locfileid: "62797350"
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |カテゴリ|Microsoft.Naming|
-|互換性に影響する変更点|重大なアセンブリで発生したときに<br /><br /> 非的な型パラメーターで発生したときに|
+|互換性に影響する変更点|中断 (アセンブリで発生した場合)<br /><br /> 非中断 (型パラメーターで発生した場合)|
 
 ## <a name="cause"></a>原因
 
-識別子の名前にアンダー スコアが含まれています (\_) 文字。
+識別子の名前にアンダースコア (\_) 文字が含まれています。
 
 ## <a name="rule-description"></a>規則の説明
 
-慣例により、識別子名を含まない、アンダー スコア (\_) 文字。 このルールは、名前空間、型、メンバー、およびパラメーターを確認します。
+規則により、識別子名にはアンダースコア (\_) 文字は含まれません。 このルールは、名前空間、型、メンバー、およびパラメーターを確認します。
 
 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-名前からは、すべてのアンダー スコア文字を削除します。
+名前からすべてのアンダースコア文字を削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709識別子は正しく使用する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別子の大文字と小文字の区別が異なる場合](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

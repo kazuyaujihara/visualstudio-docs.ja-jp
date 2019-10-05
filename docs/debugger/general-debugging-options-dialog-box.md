@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03634b5a2bd1417e75f843fd9026712313f1923d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: db4756107bb9f5e7e766634897013649db351faa
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987628"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211029"
 ---
 # <a name="general-debugging-options"></a>一般的なデバッグオプション
 
@@ -99,7 +99,7 @@ Visual Studio デバッガーのオプションを設定するには、[**ツー
 
 **モジュールの読み込み中に JIT 最適化を抑制する (マネージドのみ)** : デバッガーをアタッチするとき、モジュールの読み込み中 (および JIT のコンパイル中) にマネージド コードの JIT 最適化を無効にします。 最適化を無効にした場合、一部の問題のデバッグは簡単になりますが、パフォーマンスは低下します。 [マイ コードのみ] を使用しているときに JIT 最適化を抑制すると、非ユーザー コードがユーザー コード ("マイ コード") として表示される可能性があります。 詳細については、「 [JIT の最適化とデバッグ](../debugger/jit-optimization-and-debugging.md)」を参照してください。
 
-**ASP.NET (Chrome、Microsoft Edge、および IE) の JavaScript のデバッグを有効にする**:ASP.NET アプリのスクリプトデバッガーを有効にします。 Chrome で初めて使用する場合は、ブラウザーにサインインして、インストールした Chrome 拡張機能を有効にすることが必要になる場合があります。 レガシ動作に戻すには、このオプションを無効にします。
+**ASP.NET の JavaScript のデバッグを有効にする (Chrome、Microsoft Edge、IE)** : ASP.NET アプリのスクリプトデバッガーを有効にします。 Chrome で初めて使用する場合は、ブラウザーにサインインして、インストールした Chrome 拡張機能を有効にすることが必要になる場合があります。 レガシ動作に戻すには、このオプションを無効にします。
 
 **UWP JavaScript アプリ向けの Edge 開発者ツール (試験段階)** : Microsoft Edge の UWP JavaScript アプリの開発者ツールを有効にします。
 
@@ -176,5 +176,5 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

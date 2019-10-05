@@ -1,5 +1,5 @@
 ---
-title: 動的メニュー項目の追加 |Microsoft Docs
+title: メニュー項目を動的に追加する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 136ee925f1ee7505e7058eb643d7bac3a9222c06
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624480"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252352"
 ---
-# <a name="dynamically-add-menu-items"></a>メニュー項目を動的に追加します。
-実行時に指定して、メニュー項目を追加することができます、`DynamicItemStart`コマンド フラグを Visual Studio コマンド テーブルのプレース ホルダー ボタンの定義 ( *.vsct*) ファイル、し (コード) で表示するメニュー項目の数を定義してコマンドを処理します。 VSPackage が読み込まれるときに、プレース ホルダーは動的メニュー項目に置き換えられます。
+# <a name="dynamically-add-menu-items"></a>メニュー項目を動的に追加する
+実行時にメニュー項目を追加するには、 `DynamicItemStart` Visual Studio のコマンドテーブル (*vsct*) ファイルのプレースホルダーボタンの定義に対してコマンドフラグを指定し、(コード内で) コマンドを表示および処理するメニュー項目の数を定義します。 VSPackage が読み込まれると、プレースホルダーは動的メニュー項目に置き換えられます。
 
- Visual Studio での動的リストを使用して、**最近使用した**(MRU) の一覧は、最近開かれたドキュメントの名前を表示するには、および**Windows**一覧で、windows の名前を表示します現在開かれています。   `DynamicItemStart`コマンド定義のフラグは、コマンドは、VSPackage が開かれるまでのプレース ホルダーを指定します。 VSPackage が開かれたときに、プレース ホルダーは、0 または実行時に作成され、動的な一覧に追加されるその他のコマンドに置き換えられます。 VSPackage が開かれるまで、動的な一覧が表示されるメニューの位置を表示することはできません。  Visual Studio を動的リストを設定するには、最初の文字は、プレース ホルダーの ID と同じ ID を持つコマンドを検索する VSPackage を確認します。 Visual Studio には、一致するコマンドが検出されると、コマンドの名前を動的な一覧に追加します。 次に、ID をインクリメントし、以上ない動的なコマンドがあるまで、動的な一覧に追加するもう 1 つの一致するコマンドを探します。
+ Visual Studio では、最近使用した (MRU) リストに動的なリストが使用**さ**れます。この一覧には、最近開いたドキュメントの名前と、現在開いているウィンドウの名前が表示される**windows**の一覧が表示されます。   コマンド`DynamicItemStart`定義のフラグは、VSPackage が開かれるまで、コマンドがプレースホルダーであることを指定します。 VSPackage を開くと、プレースホルダーは実行時に作成され、動的リストに追加される0個以上のコマンドに置き換えられます。 VSPackage が開かれるまで、動的なリストが表示されるメニュー上の位置を確認できない場合があります。  動的リストを設定するために、Visual Studio は VSPackage に対して、最初の文字がプレースホルダーの ID と同じであることを示す ID を持つコマンドを検索するように要求します。 一致するコマンドが見つかると、Visual Studio は動的な一覧にコマンドの名前を追加します。 次に、ID を増やし、動的なコマンドがなくなるまで、動的リストに追加する別の一致するコマンドを探します。
 
- このチュートリアルでコマンドを使用して Visual Studio ソリューションのスタートアップ プロジェクトを設定する方法を示しています、**ソリューション エクスプ ローラー**ツールバー。 アクティブなソリューションで、プロジェクトの動的なドロップダウン リストを持つメニュー コント ローラーを使用します。 ソリューションがない場合にこのコマンドを保持するが開いてまたはソリューションに複数のプロジェクトがある場合にのみ、開いているソリューションに 1 つしかプロジェクトがある場合、VSPackage が読み込まれます。
+ このチュートリアルでは、 **[ソリューションエクスプローラー]** ツールバーのコマンドを使用して、Visual Studio ソリューションのスタートアッププロジェクトを設定する方法について説明します。 アクティブソリューション内のプロジェクトの動的ドロップダウンリストを持つメニューコントローラーを使用します。 ソリューションが開かれていない場合や、開いているソリューションにプロジェクトが1つしかない場合にこのコマンドが表示されないようにするには、ソリューションに複数のプロジェクトがある場合にのみ、VSPackage を読み込みます。
 
- 詳細については *.vsct*ファイルを参照してください[Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+ *Vsct*ファイルの詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
 
-## <a name="create-an-extension-with-a-menu-command"></a>メニュー コマンドを使用して拡張機能を作成します。
+## <a name="create-an-extension-with-a-menu-command"></a>メニューコマンドを使用して拡張機能を作成する
 
-1. という名前の VSIX プロジェクトを作成する`DynamicMenuItems`します。
+1. という名前`DynamicMenuItems`の VSIX プロジェクトを作成します。
 
-2. カスタム コマンドの項目テンプレートを追加し、名前、プロジェクトが開いたら、 **DynamicMenu**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
+2. プロジェクトが開いたら、カスタムコマンド項目テンプレートを追加し、 **Dynamicmenu**という名前を指定します。 詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-## <a name="setting-up-the-elements-in-the-vsct-file"></a>内の要素の設定、 *.vsct*ファイル
- ツールバーにある動的メニュー項目にメニュー コント ローラーを作成するには、次の要素を指定します。
+## <a name="setting-up-the-elements-in-the-vsct-file"></a>*Vsct*ファイル内の要素の設定
+ ツールバーに動的メニュー項目を含むメニューコントローラーを作成するには、次の要素を指定します。
 
-- 2 つのコマンド グループ、メニュー コント ローラーが含まれていると、ドロップダウン リストでのメニュー項目を含む別
+- 2つのコマンドグループ。1つはメニューコントローラーを格納し、もう1つはドロップダウンリストにメニュー項目を格納します。
 
-- 型の要素を 1 つのメニュー `MenuController`
+- 型の1つのメニュー要素`MenuController`
 
-- 2 つのボタン、アイコンとツールバーのヒントを提供する別のメニュー項目のプレース ホルダーとして機能する 1 つ。
+- 2つのボタン。メニュー項目のプレースホルダーとして機能し、もう1つは、ツールバーのアイコンとツールヒントを提供します。
 
-1. *DynamicMenuPackage.vsct*コマンドの Id を定義します。 Symbols セクションに移動し、IDSymbol 要素を交換して、 **guidDynamicMenuPackageCmdSet** GuidSymbol ブロックします。 2 つのグループ、メニュー コント ローラー、プレース ホルダーのコマンドおよびアンカー コマンドの IDSymbol 要素を定義する必要があります。
+1. *DynamicMenuPackage*で、コマンド id を定義します。 シンボルのセクションにアクセスし、 **Guiddynamicmenupackagecmdset** guidsymbol ブロックの idsymbol 要素を置き換えます。 IDSymbol 要素は、メニューコントローラー、プレースホルダーコマンド、およびアンカーコマンドの2つのグループに対して定義する必要があります。
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -58,7 +58,7 @@ ms.locfileid: "67624480"
     </GuidSymbol>
     ```
 
-2. Groups セクションで、既存のグループを削除し、定義した 2 つのグループを追加します。
+2. [グループ] セクションで、既存のグループを削除し、先ほど定義した2つのグループを追加します。
 
     ```xml
     <Groups>
@@ -75,7 +75,7 @@ ms.locfileid: "67624480"
     </Groups>
     ```
 
-     MenuController を追加します。 常に表示されていないため、DynamicVisibility コマンド フラグを設定します。 ButtonText は表示されません。
+     MenuController を追加します。 常に表示されないため、DynamicVisibility コマンドフラグを設定します。 ButtonText は表示されません。
 
     ```xml
     <Menus>
@@ -91,14 +91,14 @@ ms.locfileid: "67624480"
     </Menus>
     ```
 
-3. MenuController の動的メニュー項目のプレース ホルダーとしてとアンカーとしての 2 つのボタンを追加します。
+3. 2つのボタンを追加します。1つは、動的メニュー項目のプレースホルダーとして、もう1つは MenuController のアンカーとして使用します。
 
-     プレース ホルダーのボタンの親は、 **MyMenuControllerGroup**します。 DynamicItemStart、DynamicVisibility を追加し、プレース ホルダーのボタンに TextChanges コマンド フラグを設定します。 ButtonText は表示されません。
+     プレースホルダーボタンの親は**Mymenuコントローラーグループ**です。 DynamicItemStart、DynamicVisibility、および TextChanges の各コマンドフラグをプレースホルダーボタンに追加します。 ButtonText は表示されません。
 
-     アンカーのボタンは、アイコン、およびツールヒントのテキストを保持します。 アンカーのボタンの親はまた、 **MyMenuControllerGroup**します。 ボタンがメニュー コント ローラーのドロップダウンで、実際に表示されないかどうかを確認する NoShowOnMenuController コマンド フラグと永続的なアンカーに FixMenuController コマンド フラグを追加するとします。
+     アンカーボタンは、アイコンとツールヒントのテキストを保持します。 アンカーボタンの親は、 **Mymenuコントローラーグループ**でもあります。 NoShowOnMenuController コマンドフラグを追加して、ボタンが実際にメニューコントローラーのドロップダウンに表示されないようにします。また、FixMenuController コマンドフラグを使用して、永続的なアンカーにします。
 
     ```xml
-    <!-- The placeholder for the dynamic items that expand to N items at runtime. -->
+    <!-- The placeholder for the dynamic items that expand to N items at run time. -->
     <Buttons>
         <Button guid="guidDynamicMenuPackageCmdSet" id="cmdidMyDynamicStartCommand" priority="0x1000" >
           <Parent guid="guidDynamicMenuPackageCmdSet" id="MyMenuControllerGroup" />
@@ -128,9 +128,9 @@ ms.locfileid: "67624480"
     </Buttons>
     ```
 
-4. アイコンをプロジェクトに追加 (で、*リソース*フォルダー) への参照を追加し、 *.vsct*ファイル。 このチュートリアルでは、プロジェクト テンプレートに含まれている矢印アイコンを使用します。
+4. ( *Resources*フォルダー内の) プロジェクトにアイコンを追加し、そのファイルへの参照を*vsct*ファイルに追加します。 このチュートリアルでは、プロジェクトテンプレートに含まれている矢印アイコンを使用します。
 
-5. 直前の Symbols セクションにコマンドのセクションの外部 VisibilityConstraints セクションを追加します。 (シンボルの後に追加する場合、警告を get に可能性があります。)このセクションでは、メニュー コント ローラーは、複数のプロジェクトを含むソリューションが読み込まれるときにのみが表示されることを確認します。
+5. VisibilityConstraints セクションを、Symbols セクションの直前の Commands セクションの外側に追加します。 (シンボルの後に追加すると、警告が表示される場合があります)。このセクションでは、複数のプロジェクトを含むソリューションが読み込まれた場合にのみ、メニューコントローラーが表示されるようにします。
 
     ```xml
     <VisibilityConstraints>
@@ -139,10 +139,10 @@ ms.locfileid: "67624480"
     </VisibilityConstraints>
     ```
 
-## <a name="implement-the-dynamic-menu-command"></a>動的メニュー コマンドを実装します。
- 継承する動的メニュー コマンド クラスを作成する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>します。 この実装では、コンス トラクターは、コマンドの照合に使用する述語を指定します。 オーバーライドする必要があります、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>この述語を使用して設定するメソッド、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>プロパティで、呼び出されるコマンドを識別します。
+## <a name="implement-the-dynamic-menu-command"></a>動的メニューコマンドを実装する
+ を<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>継承する動的メニューコマンドクラスを作成します。 この実装では、コンストラクターは、照合コマンドに使用する述語を指定します。 この述語を使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>して、呼び出すコマンドを識別する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>プロパティを設定するには、メソッドをオーバーライドする必要があります。
 
-1. 新しい c# クラスという名前のファイルを作成する*DynamicItemMenuCommand.cs*、という名前のクラスを追加および**DynamicItemMenuCommand**から継承する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:
+1. DynamicItemMenuCommand.cs というC#名前の新しいクラスファイルを作成し、から<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>継承する**dynamicitemmenucommand**という名前のクラスを追加します。
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -152,7 +152,7 @@ ms.locfileid: "67624480"
 
     ```
 
-2. 次の追加ステートメントを使用します。
+2. 次の using ステートメントを追加します。
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -160,14 +160,14 @@ ms.locfileid: "67624480"
     using System.ComponentModel.Design;
     ```
 
-3. 一致する述語を格納するプライベート フィールドを追加します。
+3. 次のように、一致述語を格納するプライベートフィールドを追加します。
 
     ```csharp
     private Predicate<int> matches;
 
     ```
 
-4. 継承するコンス トラクターを追加、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>コンス トラクターとコマンド ハンドラーを指定します、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>ハンドラー。 コマンドに一致するための述語を追加します。
+4. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>コンストラクターを継承するコンストラクターを追加し、コマンドハンドラー <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>とハンドラーを指定します。 次のコマンドと一致する述語を追加します。
 
     ```csharp
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)
@@ -182,7 +182,7 @@ ms.locfileid: "67624480"
     }
     ```
 
-5. 上書き、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>その it 述語とセットの一致では、メソッド、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>プロパティ。
+5. 一致する<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>述語を呼び出して<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>プロパティを設定するように、メソッドをオーバーライドします。
 
     ```csharp
     public override bool DynamicItemMatch(int cmdId)
@@ -202,17 +202,17 @@ ms.locfileid: "67624480"
     }
     ```
 
-## <a name="add-the-command"></a>コマンドを追加します
- DynamicMenu コンス トラクターは、動的メニューとメニュー項目を含むメニュー コマンドを設定します。
+## <a name="add-the-command"></a>コマンドを追加します。
+ DynamicMenu コンストラクターは、動的メニューやメニュー項目など、メニューコマンドを設定する場所です。
 
-1. *DynamicMenuPackage.cs*、コマンド セットの GUID とコマンド ID を追加します。
+1. *DynamicMenuPackage.cs*で、コマンドセットの GUID とコマンド ID を追加します。
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. *DynamicMenu.cs*ファイルに追加し、次のステートメントを使用します。
+2. *DynamicMenu.cs*ファイルで、次の using ステートメントを追加します。
 
     ```csharp
     using EnvDTE;
@@ -220,7 +220,7 @@ ms.locfileid: "67624480"
     using System.ComponentModel.Design;
     ```
 
-3. `DynamicMenu`クラスにプライベート フィールドを追加**dte2**します。
+3. クラスに、プライベートフィールド dte2 を追加します。 `DynamicMenu`
 
     ```csharp
     private DTE2 dte2;
@@ -232,7 +232,7 @@ ms.locfileid: "67624480"
     private int rootItemId = 0;
     ```
 
-5. DynamicMenu コンス トラクターでは、メニュー コマンドを追加します。 次のセクションでは、コマンド ハンドラーを定義します、`BeforeQueryStatus`イベント ハンドラー、および一致する述語。
+5. DynamicMenu コンストラクターにメニューコマンドを追加します。 次のセクションでは、コマンドハンドラー `BeforeQueryStatus` 、イベントハンドラー、および一致述語を定義します。
 
     ```csharp
     private DynamicMenu(Package package)
@@ -260,10 +260,10 @@ ms.locfileid: "67624480"
     }
     ```
 
-## <a name="implement-the-handlers"></a>ハンドラーを実装します。
- メニュー コント ローラーで動的メニュー項目を実装するには、動的な項目がクリックされたときにコマンドを処理する必要があります。 メニュー項目の状態を設定するロジックを実装することも必要があります。 ハンドラーを追加、`DynamicMenu`クラス。
+## <a name="implement-the-handlers"></a>ハンドラーを実装する
+ メニューコントローラーに動的メニュー項目を実装するには、動的項目がクリックされたときにコマンドを処理する必要があります。 メニュー項目の状態を設定するロジックを実装する必要もあります。 ハンドラーを`DynamicMenu`クラスに追加します。
 
-1. 実装する、**スタートアップ プロジェクトに設定**コマンドを追加、 **OnInvokedDynamicItem**イベント ハンドラー。 呼び出されたでの絶対パスを設定して、スタートアップ プロジェクトとして設定するコマンドのテキストと同じ名前を持つプロジェクトを探し、<xref:EnvDTE.SolutionBuild.StartupProjects%2A>プロパティ。
+1. **[スタートアッププロジェクトの設定]** コマンドを実装するには、 **OnInvokedDynamicItem**イベントハンドラーを追加します。 このメソッドは、呼び出されたコマンドのテキストと同じ名前を持つプロジェクトを検索し、プロパティの絶対パスを設定する<xref:EnvDTE.SolutionBuild.StartupProjects%2A>ことによって、スタートアッププロジェクトとして設定します。
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -286,7 +286,7 @@ ms.locfileid: "67624480"
     }
     ```
 
-2. 追加、`OnBeforeQueryStatusDynamicItem`イベント ハンドラー。 これは、前に呼び出されるハンドラーを`QueryStatus`イベント。 メニュー項目には、プレース ホルダー項目ではなく、「実際の」項目があるかどうかを判断するかどうか、項目は既にチェックされている (つまり、プロジェクトがスタートアップ プロジェクトとしてを既に設定されている) とします。
+2. イベントハンドラー `OnBeforeQueryStatusDynamicItem`を追加します。 これは、イベントの`QueryStatus`前に呼び出されるハンドラーです。 このメソッドは、メニュー項目が "実際" の項目 (プレースホルダー項目ではない) であるかどうか、および項目が既にチェックされている (つまり、プロジェクトがスタートアッププロジェクトとして設定されている) かどうかを判断します。
 
     ```csharp
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)
@@ -316,9 +316,9 @@ ms.locfileid: "67624480"
     }
     ```
 
-## <a name="implement-the-command-id-match-predicate"></a>コマンド ID の一致述部を実装します。
+## <a name="implement-the-command-id-match-predicate"></a>コマンド ID の一致述語を実装します。
 
-これで、一致する述語を実装します。 2 つのことを確認する必要があります。 最初に、かどうか、コマンド ID が有効 (それが宣言されたコマンド ID 以上)、と 2 番目、かどうか (これは、ソリューション内のプロジェクトの数より小さい) 可能なプロジェクトを指定します。
+次に、match 述語を実装します。 まず、コマンド ID が有効である (宣言されたコマンド ID 以上である) かどうか、2つ目の方法 (ソリューション内のプロジェクト数よりも小さい) があるかどうかを判断する必要があります。
 
 ```csharp
 private bool IsValidDynamicItem(int commandId)
@@ -330,8 +330,8 @@ private bool IsValidDynamicItem(int commandId)
 }
 ```
 
-## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>ソリューションに複数のプロジェクトがある場合にのみ読み込む VSPackage を設定します。
- **スタートアップ プロジェクトに設定**コマンドは、アクティブなソリューションには、1 つ以上のプロジェクトが含まれていない場合、意味がないため、そのケースでのみ自動読み込みするように VSPackage を設定することができます。 使用する<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>UI コンテキストと共に<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>します。 *DynamicMenuPackage.cs*ファイル DynamicMenuPackage クラスに次の属性を追加します。
+## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>ソリューションに複数のプロジェクトがある場合にのみ VSPackage を読み込むように設定する
+ **スタートアッププロジェクトの設定**コマンドは、アクティブなソリューションに複数のプロジェクトが含まれていなければ意味がないため、その場合にのみ、VSPackage を自動読み込みに設定できます。 を UI <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>コンテキスト<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>と共に使用します。 *DynamicMenuPackage.cs*ファイルで、次の属性を DynamicMenuPackage クラスに追加します。
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -343,19 +343,19 @@ public sealed class DynamicMenuItemsPackage : Package
 {}
 ```
 
-## <a name="test-the-set-startup-project-command"></a>テスト セットのスタートアップ プロジェクト コマンド
- これで、コードをテストできます。
+## <a name="test-the-set-startup-project-command"></a>[スタートアッププロジェクトの設定] コマンドをテストする
+ これで、コードをテストできるようになりました。
 
 1. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-2. 実験用インスタンスでは、1 つ以上のプロジェクトを含むソリューションを開きます。
+2. 実験用インスタンスで、複数のプロジェクトを含むソリューションを開きます。
 
-     矢印アイコンを表示する必要があります、**ソリューション エクスプ ローラー**ツールバー。 を展開すると、ソリューション内の別のプロジェクトを表すメニュー項目が表示されます。
+     **ソリューションエクスプローラー**ツールバーに矢印アイコンが表示されます。 展開すると、ソリューション内の異なるプロジェクトを表すメニュー項目が表示されます。
 
-3. プロジェクトのいずれかをチェックすると、スタートアップ プロジェクトになります。
+3. プロジェクトの1つを確認すると、それがスタートアッププロジェクトになります。
 
-4. ソリューションを閉じますか、または 1 つしかプロジェクトが含まれるソリューションを開くと、ツール バー アイコンが表示されなくなります。
+4. ソリューションを閉じるか、プロジェクトが1つしかないソリューションを開くと、ツールバーのアイコンが非表示になります。
 
 ## <a name="see-also"></a>関連項目
-- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
-- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Vspackage のユーザーインターフェイス要素の追加方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

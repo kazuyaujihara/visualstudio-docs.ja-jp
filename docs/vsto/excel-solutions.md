@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c9af0a0c90d042d5720423150899971ffca8ec9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 532689afe4e07c3151be6eac923f2b591aa34f46
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551522"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253619"
 ---
 # <a name="excel-solutions"></a>Excel ソリューション
   Visual Studio には、Microsoft Office Excel のドキュメント レベルのカスタマイズおよび VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 これらのソリューションを使用して、Excel の自動化、Excel の機能拡張、Excel のユーザー インターフェイス (UI) のカスタマイズを行うことができます。 ドキュメント レベルのカスタマイズと VSTO アドインの違いの詳細については、次の [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) を参照してください。
@@ -72,7 +72,7 @@ ms.locfileid: "69551522"
 
  Excel 用 VSTO アドイン プロジェクトを作成するには、Visual Studio の**新しいプロジェクト**ダイアログ ボックスで、 Excel ブックまたは Excel テンプレート プロジェクト テンプレートを使用します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
- VSTO アドインが機能するしくみの概要については、次の [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md) を参照してください。
+ VSTO アドインが機能するしくみの概要については、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
 
 ### <a name="excel-add-in-programming-model"></a>Excel アドインのプログラミングモデル
  Excel VSTO アドイン プロジェクトを作成すると、 `ThisAddIn`と呼ばれる、ソリューションの基礎となるクラスが Visual Studio によって生成されます。 このクラスは、コードを記述するための開始点となり、Excel のオブジェクト モデルを VSTO アドインに公開します。
@@ -115,6 +115,6 @@ ms.locfileid: "69551522"
 | [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md) | Windows フォーム コントロールを Excel ワークシートに追加する方法について説明します。 |
 | [チュートリアル: Excel 用のドキュメントレベルのカスタマイズを初めて作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) | Excel 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。 |
 | [チュートリアル: 初めての Excel 用 VSTO アドインを作成する](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | Excel 用の基本的な VSTO アドインを作成する方法を示します。 |
-| [チュートリアル: VSTO アドインプロジェクトの実行時にワークシートにコントロールを追加する](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | VSTO アドインを使用して、 Windows フォームのボタン、 <xref:Microsoft.Office.Tools.Excel.NamedRange>、および<xref:Microsoft.Office.Tools.Excel.ListObject>を、実行時にワークシートへ追加する方法を示します。 |
+| [チュートリアル: 実行時に VSTO アドインプロジェクトのワークシートにコントロールを追加する](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | VSTO アドインを使用して、実行時に Windows フォームのボタン、 <xref:Microsoft.Office.Tools.Excel.NamedRange>、および <xref:Microsoft.Office.Tools.Excel.ListObject> をワークシートに追加する方法を示します。 |
 | [共同作成とアドインについて](./understanding-coauthoring-and-addins.md) | 共同作成に対応するためにソリューションに対して行う必要がある調整について説明します。 |
 | [Office 開発における Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199011) | Excel ソリューションの開発に関する記事およびリファレンス ドキュメントへのリンクを提供します。 Visual Studio を使用した Office 開発だけの情報ではありません。 |

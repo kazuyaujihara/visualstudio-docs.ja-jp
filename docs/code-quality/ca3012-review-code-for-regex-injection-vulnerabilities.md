@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841037"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237186"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012:RegEx インジェクションの脆弱性のコード レビュー
 
@@ -24,38 +24,38 @@ ms.locfileid: "65841037"
 |TypeName|ReviewCodeForRegexInjectionVulnerabilities|
 |CheckId|CA3012|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力では、正規表現に到達します。
+信頼できない可能性のある HTTP 要求入力が正規表現に到達した場合。
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力を使用する場合は、正規表現のインジェクション攻撃の考慮あります。 攻撃者は、正規表現の挿入を使用して、悪意のある、意図しない結果に一致する正規表現を作成したり、サービス拒否攻撃にその結果、過剰な CPU を消費する正規表現を作成、正規表現を変更します。
+信頼できない入力を使用する場合は、regex インジェクション攻撃に注意してください。 攻撃者は、regex インジェクションを使用して正規表現を故意に変更したり、regex が意図しない結果に一致するようにしたり、regex が過剰な CPU を消費してサービス拒否攻撃を受ける可能性があります。
 
-このルールは、正規表現に到達する HTTP 要求からの入力を検索しようとします。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば、1 つのアセンブリが HTTP 要求の入力を読み取り、正規表現を作成する別のアセンブリに渡されます場合は、このルールは警告を生成しません。
+このルールは、正規表現に到達する HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求入力を読み取り、それを正規表現を作成する別のアセンブリに渡す場合、この規則は警告を生成しません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-正規表現のインジェクションに対するいくつかの軽減策は次のとおりです。
+Regex インジェクションに対する軽減策は次のとおりです。
 
-- 常に使用して、[一致タイムアウト](/dotnet/standard/base-types/best-practices#use-time-out-values)正規表現を使用する場合。
-- ユーザー入力に基づいて正規表現を使用しないでください。
-- ユーザー入力から呼び出すことによって特殊文字をエスケープ<xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName>または別の方法です。
-- ユーザー入力からのみ特別な文字を許可します。
+- 正規表現を使用する場合は、常に[一致のタイムアウト](/dotnet/standard/base-types/best-practices#use-time-out-values)を使用します。
+- ユーザー入力に基づいて正規表現を使用することは避けてください。
+- または別のメソッドを呼び出す<xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName>ことによって、ユーザー入力から特殊文字をエスケープします。
+- ユーザー入力からの特殊文字以外の文字のみを許可します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-使用することがわかっている場合、[一致タイムアウト](/dotnet/standard/base-types/best-practices#use-time-out-values)とユーザー入力は特殊文字の無料、この警告を抑制しても問題ありません。
+[一致のタイムアウト](/dotnet/standard/base-types/best-practices#use-time-out-values)を使用していることがわかっていて、ユーザー入力が特殊文字を使用していないことがわかっている場合は、この警告を非表示にすることができます。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82146c2ac997a0202c20e15492becb89a293f427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6763fd9f8999bd590511026f6571db6a747c43bc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541924"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231854"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204:リテラルに正しいスペルを要求
 
@@ -28,29 +28,29 @@ ms.locfileid: "62541924"
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-リテラル文字列がローカライズ可能なパラメーターの場合、またはローカライズ可能なプロパティの引数として渡され、文字列に Microsoft スペル チェック ライブラリで認識されない 1 つまたは複数の単語が含まれています。
+リテラル文字列は、ローカライズ可能なパラメーターの引数として、またはローカライズ可能なプロパティに渡されます。文字列には、Microsoft スペルチェックライブラリで認識されない1つ以上の単語が含まれています。
 
 ## <a name="rule-description"></a>規則の説明
 
-このルールは、パラメーターまたは 1 つのプロパティに値として渡されたリテラル文字列を確認します。 または、true は、次の場合の詳細。
+このルールでは、次のケースの1つ以上が当てはまる場合に、パラメーターまたはプロパティに値として渡されるリテラル文字列をチェックします。
 
-- <xref:System.ComponentModel.LocalizableAttribute>パラメーターまたはプロパティの属性が設定を true にします。
+- パラメーター <xref:System.ComponentModel.LocalizableAttribute>またはプロパティの属性が true に設定されています。
 
-- パラメーターまたはプロパティ名には、"Text"、"Message"または「キャプション」が含まれています。
+- パラメーターまたはプロパティ名には、"Text"、"Message"、または "Caption" が含まれています。
 
-- 渡される文字列変数の名前、<xref:System.Console.Write%2A>または<xref:System.Console.WriteLine>メソッドは"value"または「形式」のいずれか。
+- <xref:System.Console.Write%2A>または<xref:System.Console.WriteLine>メソッドに渡される文字列変数の名前は、"value" または "format" のいずれかになります。
 
-このルールは、複合語をトークン化の単語にリテラル文字列を解析し、各単語またはトークンのスペルを確認します。 解析のアルゴリズムについては、次を参照してください。 [ca 1704。識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)します。
+このルールは、リテラル文字列を単語に解析し、複合語をトークン化して、各単語またはトークンのスペルをチェックします。 解析アルゴリズムの詳細については[、CA1704 を参照してください。識別子は正しく](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)入力されている必要があります。
 
 ## <a name="language"></a>言語
 
-スペル チェックは現在英語ベースのカルチャのディクショナリのみに対して確認します。 追加することで、プロジェクト ファイルで、プロジェクトのカルチャを変更することができます、 **CodeAnalysisCulture**要素。
+スペルチェックでは、現在、英語ベースのカルチャディクショナリのみがチェックされます。 プロジェクトファイル内のプロジェクトのカルチャを変更するには、 **CodeAnalysisCulture**要素を追加します。
 
-例:
+次に例を示します。
 
 ```xml
 <Project ...>
@@ -59,17 +59,17 @@ ms.locfileid: "62541924"
 ```
 
 > [!IMPORTANT]
-> 英語ベースのカルチャ以外に、カルチャを設定すると、このコード分析規則はサイレント モードで無効になっています。
+> カルチャを英語ベースのカルチャ以外に設定した場合、このコード分析規則は警告なしで無効になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、単語のスペルを訂正またはカスタム辞書に単語を追加します。 ユーザー辞書を使用する方法については、次を参照してください。[方法。コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)します。
+この規則違反を修正するには、単語のスペルを修正するか、またはカスタム辞書に単語を追加します。 カスタム辞書の使用方法の詳細について[は、「」を参照してください。コード分析辞書](../code-quality/how-to-customize-the-code-analysis-dictionary.md)をカスタマイズします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 正しくスペルの単語は、新しいソフトウェア ライブラリに必要な学習曲線を削減します。
+この規則による警告は抑制しないでください。 正しい綴りの単語を使用すると、新しいソフトウェアライブラリに必要な学習曲線を減らすことができます。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1704:識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1704識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1703リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

@@ -1,5 +1,5 @@
 ---
-title: フォーム領域を Outlook メッセージ クラスに関連付ける
+title: フォーム領域を Outlook メッセージクラスに関連付ける
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,98 +15,98 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440359"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254575"
 ---
-# <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージ クラスに関連付ける
-  Microsoft Office Outlook アイテム フォーム領域を各項目のメッセージ クラスに関連付けることによって、フォーム領域を表示するを指定することができます。 たとえば、メール アイテムの下部にフォーム領域を追加する場合は、フォーム領域を関連付けることができます、 `IPM.Note` message クラス。
+# <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージクラスに関連付ける
+  フォーム領域を各項目のメッセージクラスに関連付けることによって、フォーム領域を表示する Outlook アイテム Microsoft Office を指定できます。 たとえば、メールアイテムの下部にフォーム領域を追加する場合は、フォーム領域を`IPM.Note` message クラスに関連付けることができます。
 
- 関連付けるメッセージ クラスを使用してフォーム領域には、メッセージのクラス名を指定、**新しい Outlook フォーム領域**ウィザードか、フォーム領域ファクトリ クラスに属性を適用します。
+ フォーム領域をメッセージクラスに関連付けるには、**新しい Outlook フォーム領域**ウィザードでメッセージクラス名を指定するか、フォーム領域ファクトリクラスに属性を適用します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="understand-outlook-message-classes"></a>Outlook メッセージ クラスを理解します。
- Outlook メッセージ クラスは、Outlook アイテムの種類を識別します。 次の表では、8 種類の標準項目とのメッセージ クラス名の一覧表示します。
+## <a name="understand-outlook-message-classes"></a>Outlook メッセージクラスについて
+ Outlook メッセージクラスは、Outlook アイテムの種類を識別します。 次の表に、これら8種類の標準の項目とそのメッセージクラス名を示します。
 
-|Outlook アイテムの種類|メッセージ クラス名|
+|Outlook アイテムの種類|メッセージクラス名|
 |-----------------------|------------------------|
 |AppointmentItem|`IPM.Appointment`|
 |ContactItem|`IPM.Contact`|
-|配布リスト|`IPM.DistList`|
+|DistListItem|`IPM.DistList`|
 |JournalItem|`IPM.Activity`|
 |MailItem|`IPM.Note`|
 |PostItem|`IPM.Post` または `IPM.Post.RSS`|
 |TaskItem|`IPM.Task`|
 
- カスタム メッセージ クラスの名前を指定することもできます。 カスタム メッセージ クラスは、Outlook で定義したカスタムのフォームを識別します。
+ カスタムメッセージクラスの名前を指定することもできます。 カスタムメッセージクラスは、Outlook で定義するカスタムフォームを識別します。
 
 > [!NOTE]
-> 置換およびすべて置換フォーム領域では、新しいカスタム メッセージ クラス名を指定できます。 既存のカスタム フォームのメッセージ クラス名を使用する必要はありません。 カスタム メッセージ クラスの名前は一意である必要があります。 名前が一意であることを確認する方法の 1 つは、次のような名前付け規則を使用します。\<*StandardMessageClassName*>.\<*会社*>.\<*MessageClassName*> (例: `IPM.Note.Contoso.MyMessageClass`)。
+> 置換フォーム領域およびすべて置換フォーム領域では、新しいカスタムメッセージクラス名を指定できます。 既存のカスタムフォームのメッセージクラス名を使用する必要はありません。 カスタムメッセージクラスの名前は一意である必要があります。 名前が一意であることを確認する方法の1つは、次のような名前付け規則を使用することです。\<*StandardMessageClassName*>。会社の >。 \<MessageClassName > (例: `IPM.Note.Contoso.MyMessageClass`)。 \<
 
-## <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージ クラスに関連付ける
- 関連付けるメッセージ クラスのフォーム領域の 2 つの方法はあります。
+## <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージクラスに関連付ける
+ フォーム領域とメッセージクラスを関連付けるには、次の2つの方法があります。
 
-- 使用して、**新しい Outlook フォーム領域**ウィザード。
+- **新しい Outlook フォーム領域**ウィザードを使用します。
 
-- クラスの属性を適用します。
+- クラス属性を適用します。
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>新しい Outlook フォーム領域ウィザードの使用
- 最後のページで、**新しい Outlook フォーム領域**ウィザードの標準のメッセージ クラスを選択し、フォーム領域に関連付けるカスタム メッセージ クラスの名前を入力することができます。
+ **新しい Outlook フォーム領域**ウィザードの最後のページでは、標準のメッセージクラスを選択し、フォーム領域に関連付けるカスタムメッセージクラスの名前を入力できます。
 
- 標準のメッセージ クラスは全体のフォームまたはフォームの既定のページを置換するフォーム領域が設計されている場合に使用できません。 フォームに新しいページを追加するか、フォームの下部に追加されるフォームに対してのみ、標準のメッセージ クラス名を指定できます。 詳細については、「[方法 :フォーム領域を Outlook アドイン プロジェクトに追加](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)します。
+ フォーム領域がフォーム全体またはフォームの既定のページを置き換えるように設計されている場合、標準のメッセージクラスは使用できません。 標準のメッセージクラス名は、フォームに新しいページを追加したり、フォームの下部に追加したりするフォームに対してのみ指定できます。 詳細については、「[方法 :フォーム領域を Outlook アドインプロジェクト](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)に追加します。
 
- 1 つまたは複数のカスタム メッセージ クラスを含めるでその名前を入力、**カスタム メッセージ クラスは、このフォーム領域を表示するか。** ボックス。
+ 1つ以上のカスタムメッセージクラスを含めるには、 **[このフォーム領域を表示するカスタムメッセージクラス]** ボックスに名前を入力します。
 
- 入力した名前は、次のガイドラインに準拠する必要があります。
+ 入力する名前は、次のガイドラインに準拠している必要があります。
 
-- メッセージの完全修飾クラス名を使用して (例。"IPM します。Note.Contoso")。
+- 完全修飾メッセージクラス名を使用します (例:IPM.TASK.TASKFORMREGION.注: Contoso ")。
 
-- セミコロンを使用して、複数のメッセージ クラス名を区切ります。
+- 複数のメッセージクラス名を区切るには、セミコロンを使用します。
 
-- "IPM など、標準の Outlook メッセージ クラスが含まれていません。注"または"IPM します。Contact"です。 "IPM などのカスタム メッセージ クラスのみを含めます。Note.Contoso"。
+- "IPM" などの標準の Outlook メッセージクラスは含めないでください。注 "または" IPM.連絡先」にアクセスしてください。 "IPM" などのカスタムメッセージクラスのみを含めます。注: Contoso ".
 
-- 単独では、基本メッセージ クラスを指定しない (例。"IPM")。
+- 基本メッセージクラスを単独で指定しないでください (例:"IPM")。
 
-- 各メッセージ クラス名の 256 文字をを超えてはなりません。
+- メッセージクラス名ごとに256文字を超えないようにしてください。
 
-  **新しい Outlook フォーム領域**をクリックすると、ウィザードは、入力の形式を検証**完了**します。
+  **[完了]** をクリックすると、**新しい Outlook フォーム領域**ウィザードによって入力の形式が検証されます。
 
 > [!NOTE]
-> **新しい Outlook フォーム領域**ウィザードが提供するメッセージ クラス名は正確性や有効なことを確認していません。
+> **新しい Outlook フォーム領域**ウィザードでは、指定したメッセージクラス名が正しいか有効であるかは検証されません。
 
- ウィザードを完了すると、**新しい Outlook フォーム領域**ウィザードでは、指定されたメッセージ クラス名が含まれているフォーム領域クラスに属性が適用されます。 これらの属性を手動で適用することもできます。
+ ウィザードを完了すると、**新しい Outlook フォーム領域**ウィザードによって、指定したメッセージクラス名を含むフォーム領域クラスに属性が適用されます。 これらの属性は手動で適用することもできます。
 
-### <a name="apply-class-attributes"></a>クラスの属性を適用します。
- 完了した後、Outlook メッセージ クラスをフォーム領域を関連付けることができます、**新しい Outlook フォーム領域**ウィザード。 これを行うには、属性をフォーム領域ファクトリ クラスに適用します。
+### <a name="apply-class-attributes"></a>クラス属性の適用
+ **新しい Outlook フォーム領域**ウィザードを完了した後で、フォーム領域を outlook メッセージクラスに関連付けることができます。 これを行うには、フォーム領域ファクトリクラスに属性を適用します。
 
- 次の例では 2 つ<xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute>という名前のフォーム領域ファクトリ クラスに適用されている属性`myFormRegion`します。 最初の属性は、メール メッセージの形式の標準のメッセージ クラスを使用して、フォーム領域を関連付けます。 2 番目の属性は、という名前のカスタム メッセージ クラスを使用してフォーム領域を関連付けます`IPM.Task.Contoso`します。
+ 次の例は、 <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute>という名前`myFormRegion`のフォーム領域ファクトリクラスに適用されている2つの属性を示しています。 最初の属性は、フォーム領域をメールメッセージフォームの標準のメッセージクラスに関連付けます。 2番目の属性は、フォーム領域をという名前`IPM.Task.Contoso`のカスタムメッセージクラスに関連付けます。
 
  [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
  [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]
 
- 属性は、次のガイドラインに準拠する必要があります。
+ 属性は、次のガイドラインに従う必要があります。
 
-- カスタム メッセージ クラスに、メッセージの完全修飾クラス名を使用します (例。"IPM します。Note.Contoso")。
+- カスタムメッセージクラスの場合は、完全修飾メッセージクラス名を使用します (例:IPM.TASK.TASKFORMREGION.注: Contoso ")。
 
-- 単独では、基本メッセージ クラスを指定しない (例。"IPM")。
+- 基本メッセージクラスを単独で指定しないでください (例:"IPM")。
 
-- 各メッセージ クラス名の 256 文字をを超えてはなりません。
+- メッセージクラス名ごとに256文字を超えないようにしてください。
 
-- フォーム領域全体のフォームまたはフォームの既定のページを置き換える場合は、標準のメッセージ クラスの名前を含めないでください。 フォームに新しいページを追加するか、フォームの下部に追加されるフォームに対してのみ、標準のメッセージ クラス名を指定できます。 詳細については、「[方法 :フォーム領域を Outlook アドイン プロジェクトに追加](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)します。
+- フォーム領域がフォーム全体またはフォームの既定のページに置き換わる場合は、標準のメッセージクラスの名前を含めないでください。 標準のメッセージクラス名は、フォームに新しいページを追加したり、フォームの下部に追加したりするフォームに対してのみ指定できます。 詳細については、「[方法 :フォーム領域を Outlook アドインプロジェクト](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)に追加します。
 
-  Visual Studio は、プロジェクトをビルドするときに、メッセージのクラス名の形式を検証します。
+  プロジェクトをビルドすると、Visual Studio によってメッセージクラス名の形式が検証されます。
 
 > [!NOTE]
-> Visual Studio では、指定したメッセージ クラス名は正確性や有効なことは検証しません。
+> Visual Studio では、指定したメッセージクラス名が正しいか、有効であるかは検証されません。
 
 ## <a name="see-also"></a>関連項目
-- [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)
+- [実行時のフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
-- [チュートリアル: Outlook フォーム領域をデザインします。](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Outlook フォーム領域を作成するためのガイドライン](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [フォームの名前とメッセージ クラスの概要](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)
-- [フォームとアイテムを連携させる方法](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)
+- [フォーム名とメッセージクラスの概要](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)
+- [Outlook フォームとアイテムの連携のしくみ](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)

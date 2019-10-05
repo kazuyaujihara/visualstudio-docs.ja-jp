@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034f80c9198ab098070e6642f4a4d96cff1744c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5af6b7872f0fa05183334e6acd2bc4922f84990
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541859"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231161"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220:ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません
 
@@ -28,27 +28,27 @@ ms.locfileid: "62541859"
 |TypeName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-オーバーライドする型<xref:System.Object.Finalize%2A?displayProperty=fullName>呼び出しません、<xref:System.Object.Finalize%2A>基本クラス メソッド。
+をオーバーライド<xref:System.Object.Finalize%2A?displayProperty=fullName>する型は、その基底<xref:System.Object.Finalize%2A>クラスのメソッドを呼び出しません。
 
 ## <a name="rule-description"></a>規則の説明
 
-終了処理は、継承の階層構造を使用して反映する必要があります。 これを確実に型が基本クラスを呼び出す必要があります<xref:System.Object.Finalize%2A>メソッド独自内から<xref:System.Object.Finalize%2A>メソッド。 C# コンパイラでは、基本クラスのファイナライザーの呼び出しが自動的に追加します。
+終了処理は、継承の階層構造を使用して反映する必要があります。 これを実現するには、型は独自<xref:System.Object.Finalize%2A> <xref:System.Object.Finalize%2A>のメソッド内から基底クラスのメソッドを呼び出す必要があります。 コンパイラC#は、基本クラスのファイナライザーに自動的に呼び出しを追加します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、呼び出す基本型の<xref:System.Object.Finalize%2A>からメソッド、<xref:System.Object.Finalize%2A>メソッド。
+この規則違反を修正するには、 <xref:System.Object.Finalize%2A> <xref:System.Object.Finalize%2A>メソッドから基本型のメソッドを呼び出します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 共通言語ランタイムを対象とする一部のコンパイラでは、Microsoft intermediate language (MSIL) に、基本型のファイナライザーの呼び出しを挿入します。 この規則による警告が報告された場合、コンパイラは、呼び出しを挿入できませんし、コードに追加する必要があります。
+この規則による警告は抑制しないでください。 共通言語ランタイムを対象とする一部のコンパイラは、基本型のファイナライザーへの呼び出しを Microsoft 中間言語 (MSIL) に挿入します。 この規則からの警告が報告された場合、コンパイラは呼び出しを挿入せず、コードに追加する必要があります。
 
 ## <a name="example"></a>例
 
-次の Visual Basic の例は、型を示しています。`TypeB`を正しく呼び出す、 <xref:System.Object.Finalize%2A> 、基本クラス メソッド。
+次の Visual Basic 例は、基底`TypeB`クラスで<xref:System.Object.Finalize%2A>メソッドを正しく呼び出す型を示しています。
 
 [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]
 

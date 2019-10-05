@@ -1,5 +1,5 @@
 ---
-title: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。
+title: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 40ff277ff5102c436a6815af3b542894c8061e56
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328341"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255604"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。
-  このチュートリアルでは、一意のインスタンスが作成または開かれた各電子メール メッセージと共にカスタム作業ウィンドウの表示方法を示します。 ユーザーは、各電子メール メッセージのリボンにあるボタンを使用して、カスタム作業ウィンドウを表示または非表示にすることができます。
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>チュートリアル: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する
+  このチュートリアルでは、作成または開かれた各電子メールメッセージを使用して、カスタム作業ウィンドウの一意のインスタンスを表示する方法について説明します。 ユーザーは、各電子メール メッセージのリボンにあるボタンを使用して、カスタム作業ウィンドウを表示または非表示にすることができます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- 複数のエクスプローラーやインスペクターのウィンドウでカスタム作業ウィンドウを表示するには、開いているそれぞれのウィンドウに対してカスタム作業ウィンドウのインスタンスを作成する必要があります。 Outlook のウィンドウでカスタム作業ウィンドウの動作に関する詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+ 複数のエクスプローラーやインスペクターのウィンドウでカスタム作業ウィンドウを表示するには、開いているそれぞれのウィンドウに対してカスタム作業ウィンドウのインスタンスを作成する必要があります。 Outlook ウィンドウのカスタム作業ウィンドウの動作の詳細については、「[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」を参照してください。
 
 > [!NOTE]
 > このチュートリアルでは、コードのロジックについての説明をわかりやすくするために、VSTO アドイン コードを小さなセクションで提示します。
@@ -39,7 +39,7 @@ ms.locfileid: "67328341"
 
 - カスタム リボン UI の作成。
 
-- 電子メール メッセージと共にカスタム リボン UI を表示します。
+- 電子メールメッセージと共にカスタムリボン UI を表示する。
 
 - インスペクター ウィンドウとカスタム作業ウィンドウを管理するクラスの作成。
 
@@ -57,10 +57,10 @@ ms.locfileid: "67328341"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] または Microsoft Outlook 2010。
 
-  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Outlook で作業ウィンドウを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130309)。
+  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。Outlook で作業ウィンドウを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130309)。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
- カスタム作業ウィンドウは、VSTO アドインに実装されています。Outlook 用 VSTO アドイン プロジェクトを作成して開始します。
+ カスタム作業ウィンドウは、VSTO アドインに実装されています。まず、Outlook 用の VSTO アドインプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
@@ -68,7 +68,7 @@ ms.locfileid: "67328341"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 *ThisAddIn.cs* コード ファイルまたは *ThisAddIn.vb* コード ファイルが開かれ、 **ソリューション エクスプローラー** に **OutlookMailItemTaskPane**プロジェクトが追加されます。
 
-## <a name="design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザー インターフェイスをデザインします。
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザーインターフェイスの設計
  カスタム作業ウィンドウにはビジュアルなデザイナーはありませんが、お好きな UI を使用してユーザー コントロールを設計できます。 この VSTO アドインのカスタム作業ウィンドウには、 <xref:System.Windows.Forms.TextBox> コントロールを含む単純な UI が装備されています。 この後に説明するチュートリアルでは、ユーザー コントロールをカスタム作業ウィンドウに追加します。
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザー インターフェイスを設計するには
@@ -83,8 +83,8 @@ ms.locfileid: "67328341"
 
 4. **[ツールボックス]** の **[コモン コントロール]** タブから、 **TextBox** コントロールをユーザー コントロールにドラッグします。
 
-## <a name="design-the-user-interface-of-the-ribbon"></a>リボンのユーザー インターフェイスをデザインします。
- この VSTO アドインの目標の 1 つは、各電子メール メッセージのリボンからカスタム作業ウィンドウを表示または非表示にする方法をユーザーに付与します。 ユーザー インターフェイスを提供するには、カスタム リボン UI を作成して、カスタム作業ウィンドウを表示または非表示にするためにクリックするトグル ボタンを表示します。
+## <a name="design-the-user-interface-of-the-ribbon"></a>リボンのユーザーインターフェイスをデザインする
+ この VSTO アドインの目標の1つは、各電子メールメッセージのリボンからカスタム作業ウィンドウを表示または非表示にする方法をユーザーに提供することです。 ユーザー インターフェイスを提供するには、カスタム リボン UI を作成して、カスタム作業ウィンドウを表示または非表示にするためにクリックするトグル ボタンを表示します。
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>カスタム リボン UI を作成するには
 
@@ -106,27 +106,27 @@ ms.locfileid: "67328341"
 
 8. **[プロパティ]** ウィンドウで、 **[ラベル]** プロパティを **[作業ウィンドウの表示]** に設定します。
 
-## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>電子メール メッセージと共にカスタム リボン ユーザー インターフェイスを表示します。
+## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>電子メールメッセージと共にカスタムリボンユーザーインターフェイスを表示する
  このチュートリアルで作成したカスタム作業ウィンドウは、電子メール メッセージを含むインスペクター ウィンドウでのみ表示されるよう設計されています。 そのため、これらのウィンドウでのみ、カスタム リボン UI を表示するようプロパティを設定します。
 
-### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>電子メール メッセージと共にカスタム リボン UI を表示するには
+### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>電子メールメッセージと共にカスタムリボン UI を表示するには
 
 1. リボン デザイナーで、 **[ManageTaskPaneRibbon]** リボンをクリックします。
 
 2. **[プロパティ]** ウィンドウで、 **[RibbonType]** の隣にあるドロップダウン リストをクリックして、 **Microsoft.Outlook.Mail.Compose** と **Microsoft.Outlook.Mail.Read**を選択します。
 
-## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>インスペクター ウィンドウとカスタム作業ウィンドウを管理するクラスを作成します。
- VSTO アドインをする必要があります識別どのカスタム作業ウィンドウは特定の電子メール メッセージに関連付けられたいくつかのケースがあります。 たとえば、次のようなケースがあります。
+## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>インスペクターウィンドウとカスタム作業ウィンドウを管理するクラスを作成する
+ 特定の電子メールメッセージに関連付けられているカスタム作業ウィンドウを VSTO アドインが識別する必要がある場合があります。 たとえば、次のようなケースがあります。
 
-- ユーザーが電子メール メッセージを閉じるとき。 この場合、VSTO アドインで、対応するカスタム作業ウィンドウを削除して、VSTO アドインで使用されるリソースが適切にクリーンアップされるようにする必要があります。
+- ユーザーが電子メールメッセージを閉じるとき。 この場合、VSTO アドインで、対応するカスタム作業ウィンドウを削除して、VSTO アドインで使用されるリソースが適切にクリーンアップされるようにする必要があります。
 
-- ユーザーがカスタム作業ウィンドウを閉じるとき。 この場合は、VSTO アドインは、電子メール メッセージのリボンにトグル ボタンの状態を更新する必要があります。
+- ユーザーがカスタム作業ウィンドウを閉じるとき。 この場合、VSTO アドインは、電子メールメッセージのリボンのトグルボタンの状態を更新する必要があります。
 
-- ユーザーがリボンのトグル ボタンをクリックするとします。 この場合、VSTO アドインで、対応する作業ウィンドウを非表示にしたり、表示したりする必要があります。
+- ユーザーがリボンのトグルボタンをクリックしたとき。 この場合、VSTO アドインで、対応する作業ウィンドウを非表示にしたり、表示したりする必要があります。
 
-  カスタム作業ウィンドウが開いている電子メール メッセージごとに関連付けられているを追跡する VSTO アドインを有効にするには、ペアをラップするカスタム クラスを作成<xref:Microsoft.Office.Interop.Outlook.Inspector>と<xref:Microsoft.Office.Tools.CustomTaskPane>オブジェクト。 このクラスが電子メール メッセージごとに、新しいカスタム作業ウィンドウ オブジェクトを作成し、対応する電子メール メッセージが閉じられたときに、カスタム作業ウィンドウを削除します。
+  VSTO アドインで、各電子メールメッセージに関連付けられているカスタム作業ウィンドウを追跡できるようにするには、オブジェクトと<xref:Microsoft.Office.Interop.Outlook.Inspector> <xref:Microsoft.Office.Tools.CustomTaskPane>オブジェクトのペアをラップするカスタムクラスを作成します。 このクラスは、電子メールメッセージごとに新しいカスタム作業ウィンドウオブジェクトを作成し、対応する電子メールメッセージが閉じられたときに、カスタム作業ウィンドウを削除します。
 
-### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>インスペクター ウィンドウとカスタム作業ウィンドウを管理するクラスを作成するには
+### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>インスペクターウィンドウとカスタム作業ウィンドウを管理するクラスを作成するには
 
 1. **ソリューション エクスプローラー**で、 *ThisAddIn.cs* または *ThisAddIn.vb* ファイルを右クリックし、 **[コードの表示]** をクリックします。
 
@@ -150,7 +150,7 @@ ms.locfileid: "67328341"
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. 前の手順で追加したコードの後に、次のメソッドを追加します。 このメソッドは、イベント ハンドラーを<xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>のイベント、<xref:Microsoft.Office.Interop.Outlook.Inspector>を現在の電子メール メッセージを含むオブジェクト。 イベント ハンドラーは、電子メール メッセージが閉じられたときに、リソースを解放します。 またイベント ハンドラーは、 `CustomTaskPanes` コレクションから現在のカスタム作業ウィンドウを削除します。 これは、次の電子メール メッセージが開かれたときに、カスタム作業ウィンドウの複数のインスタンスを回避できます。
+6. 前の手順で追加したコードの後に、次のメソッドを追加します。 このメソッドは、現在の電子メール<xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>メッセージを含む<xref:Microsoft.Office.Interop.Outlook.Inspector>オブジェクトのイベントのイベントハンドラーです。 イベントハンドラーは、電子メールメッセージが閉じられたときにリソースを解放します。 またイベント ハンドラーは、 `CustomTaskPanes` コレクションから現在のカスタム作業ウィンドウを削除します。 これにより、次の電子メールメッセージを開いたときに、カスタム作業ウィンドウの複数のインスタンスを防ぐことができます。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -160,8 +160,8 @@ ms.locfileid: "67328341"
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
-## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>初期化し、アドインで使用されるリソースをクリーンアップします。
- コードを `ThisAddIn` クラスに追加して、VSTO アドインを読み込む際に初期化し、また VSTO アドインをアンロードする際には使用したリソースをクリーンアップします。 イベント ハンドラーを設定して、VSTO アドインを初期化する、<xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>イベントと、既存のすべての電子メール メッセージをこのイベント ハンドラーに渡すことによって。 VSTO アドインを読み込む際に、イベント ハンドラーをデタッチして、VSTO アドインで使用されたオブジェクトをクリーンアップします。
+## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>アドインによって使用されるリソースを初期化してクリーンアップする
+ コードを `ThisAddIn` クラスに追加して、VSTO アドインを読み込む際に初期化し、また VSTO アドインをアンロードする際には使用したリソースをクリーンアップします。 VSTO アドインを初期化するには、 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>イベントのイベントハンドラーを設定し、すべての既存の電子メールメッセージをこのイベントハンドラーに渡します。 VSTO アドインを読み込む際に、イベント ハンドラーをデタッチして、VSTO アドインで使用されたオブジェクトをクリーンアップします。
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>VSTO アドインで使用されるリソースの初期化とクリーンアップをするには
 
@@ -176,7 +176,7 @@ ms.locfileid: "67328341"
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
 
-3. `ThisAddIn_Startup` メソッドを次のコードに置き換えます。 このコードは、イベント ハンドラーを <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> イベントにアタッチし、すべての既存の <xref:Microsoft.Office.Interop.Outlook.Inspector> オブジェクトをそのイベント ハンドラーに渡します。 ユーザーは、Outlook が既に実行されていた後 VSTO アドインを読み込み、VSTO アドインはこの情報を使用して既に開いているすべての電子メール メッセージのカスタム作業ウィンドウを作成します。
+3. `ThisAddIn_Startup` メソッドを次のコードに置き換えます。 このコードは、イベント ハンドラーを <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> イベントにアタッチし、すべての既存の <xref:Microsoft.Office.Interop.Outlook.Inspector> オブジェクトをそのイベント ハンドラーに渡します。 Outlook が既に実行されている場合にユーザーが VSTO アドインを読み込むと、VSTO アドインはこの情報を使用して、既に開いているすべての電子メールメッセージに対してカスタム作業ウィンドウを作成します。
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
@@ -186,7 +186,7 @@ ms.locfileid: "67328341"
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. 次の <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> イベント ハンドラーを `ThisAddIn` クラスに追加します。 場合、新しい<xref:Microsoft.Office.Interop.Outlook.Inspector>が電子メール メッセージに含まれています、メソッドの新しいインスタンスを作成`InspectorWrapper`電子メール メッセージと対応する作業ウィンドウ間のリレーションシップを管理するオブジェクト。
+5. 次の <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> イベント ハンドラーを `ThisAddIn` クラスに追加します。 新しい<xref:Microsoft.Office.Interop.Outlook.Inspector>に電子メールメッセージが含まれている場合、メソッドは、電子`InspectorWrapper`メールメッセージと対応する作業ウィンドウの間の関係を管理するために、新しいオブジェクトのインスタンスを作成します。
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
@@ -203,7 +203,7 @@ ms.locfileid: "67328341"
 
 1. **ソリューション エクスプローラー**で、 **OutlookMailItemTaskPane** プロジェクトを右クリックし、 **[ビルド]** をクリックします。 プロジェクトのコンパイルでエラーが発生しないことを確認します。
 
-## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>カスタム作業ウィンドウとリボンのトグル ボタンを同期します。
+## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>リボンのトグルボタンとカスタム作業ウィンドウの同期
  作業ウィンドウが表示されている場合、トグル ボタンは押されているように見え、作業ウィンドウが非表示になっている場合は、押されていないように見えます。 ボタンの状態をカスタム作業ウィンドウと同期させるには、トグル ボタンの <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> イベント ハンドラーを変更します。
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>カスタム作業ウィンドウをトグル ボタンと同期させるには
@@ -222,18 +222,18 @@ ms.locfileid: "67328341"
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
 
-## <a name="test-the-project"></a>プロジェクトをテストします。
- プロジェクトのデバッグを開始すると、Outlook が開き、VSTO アドインが読み込まれます。 VSTO アドインが開かれている各電子メール メッセージと共にカスタム作業ウィンドウの一意のインスタンスを表示します。 コードをテストするいくつかの新しい電子メール メッセージを作成します。
+## <a name="test-the-project"></a>プロジェクトをテストする
+ プロジェクトのデバッグを開始すると、Outlook が開き、VSTO アドインが読み込まれます。 VSTO アドインでは、開いている各電子メールメッセージと共に、カスタム作業ウィンドウの一意のインスタンスが表示されます。 コードをテストする新しい電子メールメッセージをいくつか作成します。
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO アドインをテストするには
 
 1. **F5**キーを押します。
 
-2. Outlook では、次のようにクリックします。**新規**新しい電子メール メッセージを作成します。
+2. Outlook で、 **[新規]** をクリックして新しい電子メールメッセージを作成します。
 
-3. 電子メール メッセージのリボンのをクリックして、**アドイン** タブをクリックして、**作業ウィンドウの表示**ボタンをクリックします。
+3. 電子メールメッセージのリボンで、 **[アドイン]** タブをクリックし、 **[作業ウィンドウの表示]** ボタンをクリックします。
 
-    いることを確認、タイトルの作業ウィンドウ**個人用作業ウィンドウ**電子メール メッセージが表示されます。
+    **[個人用作業ウィンドウ]** というタイトルの作業ウィンドウが電子メールメッセージと共に表示されていることを確認します。
 
 4. 作業ウィンドウで、テキスト ボックスに「 **最初の作業ウィンドウ** 」と入力します。
 
@@ -245,34 +245,34 @@ ms.locfileid: "67328341"
 
     作業ウィンドウが開き、テキスト ボックスにも、「 **最初の作業ウィンドウ**」という文字列が含まれていることを確認します。
 
-7. Outlook では、次のようにクリックします。**新規**、2 番目の電子メール メッセージを作成します。
+7. Outlook で、 **[新規]** をクリックして、2番目の電子メールメッセージを作成します。
 
-8. 電子メール メッセージのリボンのをクリックして、**アドイン** タブをクリックして、**作業ウィンドウの表示**ボタンをクリックします。
+8. 電子メールメッセージのリボンで、 **[アドイン]** タブをクリックし、 **[作業ウィンドウの表示]** ボタンをクリックします。
 
-    確認しますというタイトルの作業ウィンドウ**個人用作業ウィンドウ**電子メール メッセージと共に表示されると、この作業ウィンドウで、テキスト ボックスは空。
+    **[個人用作業ウィンドウ]** というタイトルの作業ウィンドウが電子メールメッセージと共に表示され、この作業ウィンドウのテキストボックスが空であることを確認します。
 
 9. 作業ウィンドウで、テキスト ボックスに「 **2 番目の作業ウィンドウ** 」と入力します。
 
-10. 最初の電子メール メッセージにフォーカスを変更します。
+10. 最初の電子メールメッセージにフォーカスを移動します。
 
-     この電子メール メッセージに関連付けられている作業ウィンドウが表示することを確認**最初の作業ウィンドウ**テキスト ボックスにします。
+     この電子メールメッセージに関連付けられている作業ウィンドウに、テキストボックスに**最初の作業ウィンドウ**が表示されていることを確認します。
 
-    また、この VSTO アドインでは、より高度なシナリオも試すことができます。 使用して電子メールを表示するときに、動作をテストするなど、**次の項目**と**前の項目**ボタン。 VSTO アドインのアンロードをいくつかの電子メール メッセージを開いてと VSTO アドインを再読み込みし、、動作をテストすることもできます。
+    また、この VSTO アドインでは、より高度なシナリオも試すことができます。 たとえば、 **[次の項目**] ボタンと **[前の項目]** ボタンを使用して、電子メールを表示するときの動作をテストできます。 VSTO アドインをアンロードしたときの動作をテストし、いくつかの電子メールメッセージを開いて、VSTO アドインを再度読み込むこともできます。
 
 ## <a name="next-steps"></a>次の手順
  カスタム作業ウィンドウを作成する方法の詳細については、次のトピックで説明します。
 
-- 別のアプリケーションの VSTO アドインでカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+- 別のアプリケーション用の VSTO アドインにカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、「[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」を参照してください。
 
-- カスタム作業ウィンドウを使用して、Microsoft Office アプリケーションを自動化します。 詳細については、「[チュートリアル:カスタム作業ウィンドウからアプリケーションを自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)します。
+- カスタム作業ウィンドウを使用して、Microsoft Office アプリケーションを自動化します。 詳細については、「[チュートリアル:カスタム作業ウィンドウ](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)からアプリケーションを自動化します。
 
-- Excel にリボン ボタンを作成して、カスタム作業ウィンドウの非表示または表示に使用できるようにします。 詳細については、「[チュートリアル:リボン ボタンとカスタム作業ウィンドウを同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)します。
+- Excel にリボン ボタンを作成して、カスタム作業ウィンドウの非表示または表示に使用できるようにします。 詳細については、「[チュートリアル:カスタム作業ウィンドウをリボンボタン](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)と同期します。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)
-- [方法: アプリケーションにカスタム作業ウィンドウを追加します。](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [チュートリアル: カスタム作業ウィンドウからアプリケーションを自動化します。](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [チュートリアル: リボン ボタンとカスタム作業ウィンドウを同期します。](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [方法: カスタム作業ウィンドウをアプリケーションに追加する](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [チュートリアル: カスタム作業ウィンドウからのアプリケーションの自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [チュートリアル: カスタム作業ウィンドウとリボンボタンの同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)
-- [実行時にリボンへのアクセスします。](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)
+- [実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)

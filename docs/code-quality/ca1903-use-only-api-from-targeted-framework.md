@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921297"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233267"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:対象のフレームワークから API のみを使用します
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921297"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Category|Microsoft. 移植性|
+|カテゴリ|Microsoft. 移植性|
 |互換性に影響する変更点|中断-外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> 非中断-メソッドの本体で発生した場合。|
 
 ## <a name="cause"></a>原因

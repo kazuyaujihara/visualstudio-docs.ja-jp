@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74484c5f014c9a677c321a0d9fed649f016ea3c9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b52d98716a774c05ca085e2b7023a5d1faa69baa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546885"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237962"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:文字列の代わりに System.Uri オブジェクトを渡します
 
@@ -31,8 +31,8 @@ ms.locfileid: "69546885"
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|Category|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Usage|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 

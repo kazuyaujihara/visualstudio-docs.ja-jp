@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac8a9201e375877c1b586bd6415dd81764f5d2b
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: d148efb87c8516b34342a8c9d16b63364a2eae16
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739232"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231005"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:シリアル化コンストラクターを実装します
 
@@ -28,7 +28,7 @@ ms.locfileid: "70739232"
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 この型は<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイスを実装し、はデリゲートまたはインターフェイスではなく、次のいずれかの条件に該当します。

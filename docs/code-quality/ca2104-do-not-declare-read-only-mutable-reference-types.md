@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4f165b4b00f46b478907c9affca672b4c7f113
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545356"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232953"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:読み取り専用の変更可能な参照型を宣言しません
 
@@ -35,7 +35,7 @@ ms.locfileid: "62545356"
 |互換性に影響する変更点|なし|
 
 > [!NOTE]
-> Ca 2104 のルールは廃止され、Visual Studio の将来のバージョンで削除される予定です。 として実装しない、[アナライザー](roslyn-analyzers-overview.md)型の実際の不変性を判断するために必要な複雑な分析のためです。
+> Rule CA2104 は互換性のために残されていますが、今後のバージョンの Visual Studio では削除される予定です。 型の実際の不変性を判断するために必要な複雑な分析により、[アナライザー](roslyn-analyzers-overview.md)として実装されることはありません。
 
 ## <a name="cause"></a>原因
 
@@ -43,25 +43,25 @@ ms.locfileid: "62545356"
 
 ## <a name="rule-description"></a>規則の説明
 
-変更可能な型とは、インスタンス データを変更できる型です。 <xref:System.Text.StringBuilder?displayProperty=fullName>クラスは、変更可能な参照型の例を示します。 クラスのインスタンスの値を変更できるメンバーが含まれています。 変更不可の参照型の例は、<xref:System.String?displayProperty=fullName>クラス。 インスタンス化された後、その値は変化しません。
+変更可能な型とは、インスタンス データを変更できる型です。 <xref:System.Text.StringBuilder?displayProperty=fullName>クラスは、変更可能な参照型の一例です。 このクラスには、クラスのインスタンスの値を変更できるメンバーが含まれています。 変更できない参照型の例とし<xref:System.String?displayProperty=fullName>て、クラスがあります。 インスタンス化された後は、その値を変更することはできません。
 
-読み取り専用修飾子 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)でC#、 [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) Visual basic でと[const](/cpp/cpp/const-cpp) C++ で) 参照型のフィールド (または C++ でのポインター) により、フィールドから参照型の別のインスタンスを置き換えられます。 ただし、修飾子は、参照型を変更できないよう、フィールドのインスタンス データを妨げません。
+参照型フィールド (またはのC++ポインター C#) に対する読み取り専用修飾子 (でC++は[readonly](/dotnet/csharp/language-reference/keywords/readonly) [、Visual Basic](/dotnet/visual-basic/language-reference/modifiers/readonly) 、および[const](/cpp/cpp/const-cpp) ) では、フィールドを参照型の別のインスタンスに置き換えることができません。 ただし、修飾子を使用しても、フィールドのインスタンスデータが参照型によって変更されるのを防ぐことはできません。
 
-このルールが誤って表示の種類の違反は、実際には、変更できません。 その場合は、警告を抑制しても安全です。
+このルールでは、誤って変更できない型の違反が誤って表示されることがあります。 その場合は、警告を抑制しても安全です。
 
-読み取り専用配列フィールドはこの規則から除外されますが、代わりに、違反が発生、 [ca 2105。配列フィールドを読み取ることができませんのみ](../code-quality/ca2105-array-fields-should-not-be-read-only.md)ルール。
+読み取り専用配列フィールドはこの規則から除外されますが、 [代わりに CA2105 の違反が発生します。配列フィールドを読み取り](../code-quality/ca2105-array-fields-should-not-be-read-only.md)専用ルールにすることはできません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、読み取り専用修飾子を削除するか、重大な変更が許容される場合は、変更不可の型でフィールドを置き換えます。
+この規則違反を修正するには、読み取り専用の修飾子を削除するか、互換性に影響する変更が許容される場合は、フィールドを変更できない型に置き換えます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-フィールドの種類は変更可能なは場合、この規則による警告を抑制するのには安全です。
+フィールドの種類が不変である場合は、このルールからの警告を抑制するのが安全です。
 
 ## <a name="example"></a>例
 
-次の例では、この規則違反の原因となるフィールド宣言を示します。
+次の例は、この規則に違反するフィールド宣言を示しています。
 
 [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
 [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]

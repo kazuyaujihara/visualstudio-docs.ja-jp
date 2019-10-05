@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159940"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273361"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Visual Studio でデータベースを作成し、テーブルを追加する
 
@@ -68,6 +68,9 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
 - または、[**サーバーエクスプローラー**の**表示** > ] を選択することもできます (そのウィンドウがまだ開いていない場合)。 **[データ接続]** ノードを展開して [ *sampledatabase. .mdf*] を右クリックし、 **[プロパティ]** を選択して、プロパティウィンドウを開きます。
 
+  > [!TIP]
+  > データ接続 ノードを展開できない場合、または SampleDatabase. .mdf 接続が表示されていない場合は、サーバーエクスプローラーツールバーの **データベースへの接続** をクリックします。 **[接続の追加]** ダイアログボックスで、 **[データソース]** の下の**Microsoft SQL Server データベースファイル**が選択されていることを確認し、sampledatabase .mdf ファイルを参照して選択します。 **[OK]** を選択して、接続の追加を完了します。
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>テーブルデザイナーを使用したテーブルとキーの作成
 
 このセクションでは、2つのテーブル、各テーブルの主キー、およびいくつかのサンプルデータを作成します。 また、外部キーを作成して、1つのテーブル内のレコードが他のテーブルのレコードにどのように対応するかを指定します。
@@ -75,6 +78,8 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 ### <a name="create-the-customers-table"></a>Customers テーブルを作成する
 
 1. **サーバーエクスプローラー**で、 **[データ接続]** ノードを展開し、 **[sampledatabase. .mdf]** ノードを展開します。
+
+   データ接続 ノードを展開できない場合、または SampleDatabase. .mdf 接続が表示されていない場合は、サーバーエクスプローラーツールバーの **データベースへの接続** をクリックします。 **[接続の追加]** ダイアログボックスで、 **[データソース]** の下の**Microsoft SQL Server データベースファイル**が選択されていることを確認し、sampledatabase .mdf ファイルを参照して選択します。 **[OK]** を選択して、接続の追加を完了します。
 
 2. **[テーブル]** を右クリックし、 **[新しいテーブルの追加]** をクリックします。
 
