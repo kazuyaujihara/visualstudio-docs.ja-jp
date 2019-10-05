@@ -1,5 +1,5 @@
 ---
-title: マネージ コードのチェックイン ポリシーの分析のカスタム コード
+title: マネージコード用のカスタムコード分析チェックインポリシー
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260837"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975032"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>マネージド コード用のカスタム コード分析チェックイン ポリシーを実装する
 
@@ -58,7 +58,7 @@ Azure DevOps プロジェクトの設定、カスタム ルールを作成する
 
 1. **ソース管理エクスプ ローラー**、新しいフォルダーを右クリックし、クリックして**フォルダーに項目の追加**します。
 
-     詳細については、[Git と Azure リポジトリ](/azure/devops/repos/git/overview?view=vsts)を参照してください。
+     詳細については、次を参照してください。 [Git と Azure リポジトリ](/azure/devops/repos/git/overview?view=vsts)します。
 
 2. 規則セットを作成したファイルをクリックおよびクリック**完了**します。
 
@@ -110,10 +110,18 @@ Azure DevOps プロジェクトの設定、カスタム ルールを作成する
 
 4. 必要に応じて、適切なオプションをクリックします。、**構成**と**プラットフォーム**を一覧表示します。
 
-5. 指定した構成を使用してコード プロジェクトをビルドするたびにコード分析を実行するには、選択、**を有効にするビルドに対するコード分析 (CODE_ANALYSIS 定数を定義します)** チェック ボックスをオンします。
+::: moniker range="vs-2017"
 
-6. 他の企業からのコンポーネントのコードを無視する選択、**結果生成されたコードを表示しない**チェック ボックスをオンします。
+5. 指定された構成を使用してコードプロジェクトがビルドされるたびにコード分析を実行するには、[**ビルド時にコード分析を有効に**する] チェックボックスをオンにします。
 
-7. **この規則セットを実行**一覧で、  **\<参照... >** します。
+::: moniker-end
 
-8. チェックイン ポリシーの規則セット ファイルのローカル バージョンを指定します。
+::: moniker range=">=vs-2019"
+
+5. 指定された構成を使用してコードプロジェクトがビルドされるたびにコード分析を実行するには、 **[バイナリアナライザー]** セクションの **[ビルドで実行]** を選択します。
+
+::: moniker-end
+
+6. [**この規則セットを実行**します] の一覧で、 **\<Browse を参照**します。
+
+8. チェックインポリシー規則セットファイルのローカルバージョンを選択します。

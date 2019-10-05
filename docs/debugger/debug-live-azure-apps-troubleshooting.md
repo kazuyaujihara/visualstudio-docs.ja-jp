@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211242"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962938"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグに関するトラブルシューティングと既知の問題
 
-この記事で説明されている手順で問題を解決できない場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)で問題を検索するか、[**ヘルプ** > ] [**フィードバック** > の送信] [Visual で**問題を報告する**] の順に選択して、新しい問題を報告します。Studio.
+この記事で説明されている手順に従っても問題が解決しない場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)で問題を検索するか、Visual Studio で [**ヘルプ**@no__t]-2 [フィードバック**の** **送信**]  >  を選択して新しい問題を報告してください。
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題:"Attach スナップショットデバッガー" で HTTP 状態コードエラーが発生する
 
@@ -34,7 +34,7 @@ ms.locfileid: "71211242"
 
 次の手順を実行します。
 
-* Visual Studio の個人用設定アカウントに、アタッチ先の Azure サブスクリプションとリソースへのアクセス許可があることを確認します。 これを簡単に確認するには、[**デバッグ** > ] [**アタッチスナップショットデバッガー** ...] の [リソース] がダイアログボックスに表示されているかどうかを確認します。Azure リソースで > は、 **[既存**] または [Cloud Explorer] を選択します。  > 
+* Visual Studio の個人用設定アカウントに、アタッチ先の Azure サブスクリプションとリソースへのアクセス許可があることを確認します。 これを簡単に確認するには、ダイアログボックスで、リソースが**デバッグ** > **Attach スナップショットデバッガー...**  > **Azure リソース** >  既存の、または Cloud Explorer で**選択し**ます。
 * このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
 ### <a name="403-forbidden"></a>(403) 許可されていません
@@ -54,7 +54,8 @@ ms.locfileid: "71211242"
 次の手順を実行します。
 
 * 接続している App Service リソースに web サイトがデプロイされ、実行されていることを確認します。
-* サイトが https://\<resource\>. azurewebsites.net で利用可能であることを確認します。
+* サイトが https://\<resource\>.azurewebsites.net で利用可能であることを確認します。
+* カスタム web アプリケーションを正しく実行すると、 https://\<resource\>.azurewebsites.net でアクセスしたときに、状態コード404が返されないことを確認します。
 * このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
 ### <a name="406-not-acceptable"></a>(406) 許容できません
@@ -63,7 +64,7 @@ ms.locfileid: "71211242"
 
 次の手順を実行します。
 
-* サイトが https://\<resource\>. azurewebsites.net で利用可能であることを確認します。
+* サイトが https://\<resource\>.azurewebsites.net で利用可能であることを確認します。
 * サイトが新しいインスタンスに移行されていないことを確認します。 スナップショットデバッガーでは、特定のインスタンスに要求をルーティングするために ARRAffinity の概念を使用します。これにより、このエラーが断続的に発生する可能性があります。
 * このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
@@ -156,11 +157,11 @@ ms.locfileid: "71211242"
 
 Visual Studio 2019 では、Azure App Service のスナップショットデバッガーサイト拡張機能の新しいバージョンが必要です。  このバージョンは、Visual Studio 2017 で使用される古いバージョンのスナップショットデバッガーサイト拡張機能と互換性がありません。  Visual studio 2019 のスナップショットデバッガーを Visual Studio 2017 のスナップショットデバッガーによって既にデバッグされている Azure App Service にアタッチしようとすると、次のエラーが表示されます。
 
-![互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2019")
+![互換性のないスナップショットデバッガーサイト拡張機能 Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "スナップショットデバッガーサイト拡張機能に互換性がありません visual studio 2019")
 
 逆に、visual Studio 2017 を使用して、Visual Studio 2019 のスナップショットデバッガーによって以前にデバッグされていた Azure App Service にスナップショットデバッガーをアタッチすると、次のエラーが表示されます。
 
-![互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2017")
+![互換性のないスナップショットデバッガーサイト拡張機能 Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "スナップショットデバッガーサイト拡張機能に互換性がありません visual studio 2017")
 
 これを修正するには、Azure portal で次のアプリ設定を削除し、スナップショット デバッガーを再度アタッチします。
 
@@ -180,7 +181,7 @@ Visual Studio 2019 では、Azure App Service のスナップショットデバ�
   - App Service の Kudu サイト (つまり yourappservice.**scm**.azurewebsites.net) にアクセスし、[デバッグ コンソール] に移動します。
   - エージェントのログは、次のディレクトリに格納されます。D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - VM にサインインすると、エージェントのログは次のように格納されます。C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version > \ snapshotデバッガ agent_ * .txt
+  - VM にサインインすると、エージェントのログは次のように格納されます。C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \ snapshotデバッガ agent_ * .txt
 - AKS
   - /tmp/diag/AgentLogs/* ディレクトリに移動します
 
@@ -189,7 +190,7 @@ Visual Studio 2019 では、Azure App Service のスナップショットデバ�
 インストルメンテーション ログは次の場所にあります。
 
 - App Service:
-  - エラーログは D:\Home\LogFiles\eventlog.xml に自動的に送信され、イベント`<Provider Name="Instrumentation Engine" />`はまたは "運用ブレークポイント" でマークされます。
+  - エラーログは D:\Home\LogFiles\eventlog.xml に自動的に送信され、イベントは `<Provider Name="Instrumentation Engine" />` または "運用ブレークポイント" でマークされます。
 - VM/VMSS:
   - VM にサインインし、イベント ビューアーを開きます。
   - 次のビューを開きます。*Windows は > アプリケーションをログに記録*します。

@@ -1,37 +1,45 @@
 ---
-title: コード分析を有効または無効にする
-ms.date: 10/25/2018
+title: レガシコード分析を無効にする
+ms.date: 10/04/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- dotnet
-ms.openlocfilehash: ec0a8a3f04830115d343fcef611cfbd338163395
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551039"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975070"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: マネージコードの自動コード分析を有効または無効にする
+# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>方法: マネージコードのバイナリコード分析を有効または無効にする
 
-マネージコードプロジェクトの各ビルドの後に実行するように (静的) コード分析を構成できます。 デバッグやリリースなど、ビルド構成ごとに異なるコード分析プロパティを設定できます。
+マネージコードプロジェクトの各ビルドの後に実行するように、レガシコード分析 (バイナリ分析) を構成できます。 また、デバッグやリリースなど、ビルド構成ごとに異なる設定を使用することもできます。
 
-この記事は、[コードアナライザー](roslyn-analyzers-overview.md)を使用した、ライブコード分析ではなく、レガシ分析にのみ適用されます。
+> [!NOTE]
+> レガシ分析は、.NET Core や .NET Standard アプリなどの新しいプロジェクトの種類では使用できません。 これらのプロジェクトでは、 [.NET Compiler Platform ベースのコードアナライザー](roslyn-analyzers-overview.md)を使用して、コードをライブとビルド時の両方で分析します。 これらのプロジェクトでソースコード分析を無効にする方法の詳細については、「[ソースコード分析を無効にする方法](disable-code-analysis.md)」を参照してください。
 
-## <a name="to-enable-or-disable-automatic-code-analysis"></a>自動コード分析を有効または無効にするには
+レガシコード分析を有効または無効にするには:
 
 1. **ソリューション エクスプ ローラー** で、プロジェクトを右クリックし、**プロパティ**を選択します。
 
-1. プロジェクトの プロパティ ダイアログボックスで、**コード分析** タブを選択します。
+2. プロジェクトの プロパティ ダイアログボックスで、**コード分析** タブを選択します。
 
-   > [!TIP]
-   > .NET Core や .NET Standard アプリケーションなどの新しいプロジェクトの種類には、 **[コード分析]** タブがありません。レガシ分析は、これらの種類のプロジェクトでは使用できませんが、 [.NET Compiler Platform ベースのコードアナライザー](roslyn-analyzers-overview.md)を使用してライブコード分析を行うことができます。 コードアナライザーからの警告を非表示にするには、この記事の最後にあるメモを参照してください。
+3. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
 
-1. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。
+::: moniker range="vs-2017"
 
-1. 自動コード分析を有効または無効にするには、**ビルドに対するコード分析を有効にする**のチェック ボックスをオンまたはオフします。
+4. 自動コード分析を有効または無効にするには、**ビルドに対するコード分析を有効にする**のチェック ボックスをオンまたはオフします。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. 自動コード分析を有効または無効にするには、 **[バイナリアナライザー]** セクションの **[ビルド時に実行]** チェックボックスをオンまたはオフにします。
+
+   ![Visual Studio でのビルドオプションでのバイナリコード分析の実行](media/run-on-build-binary-analyzers.png)
+
+::: moniker-end
 
 > [!NOTE]
-> **[ビルドでコード分析を有効にする]** チェックボックスは、レガシ分析にのみ影響します。 [.NET Compiler Platform ベースのコードアナライザー](roslyn-analyzers-overview.md)には影響しません。 NuGet パッケージとしてインストールした場合は、常にビルドで実行されます。 **エラー一覧**からアナライザーのエラーをクリアする場合は、メニューバーの [**実行コード分析を** **分析** > し、アクティブな問題を抑制する] を選択して、現在のすべての違反を抑制することができます。 詳細については、「[違反の抑制](use-roslyn-analyzers.md#suppress-violations)」を参照してください。
+> ビルドでバイナリコード分析を無効にしても、 [.NET Compiler Platform ベースのコードアナライザー](roslyn-analyzers-overview.md)には影響しません。これは、NuGet パッケージとしてインストールした場合、常にビルドで実行されます。 これらのアナライザーからの分析を無効にする方法については、「[ソースコード分析を無効にする方法](disable-code-analysis.md)」を参照してください。

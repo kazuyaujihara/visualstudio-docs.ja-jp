@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185954"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974703"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>アナライザー パッケージの規則セット
 
@@ -36,7 +36,7 @@ ms.locfileid: "71185954"
 
 ## <a name="use-analyzer-package-rule-sets"></a>アナライザーパッケージの規則セットを使用する
 
-[NuGet analyzer パッケージをインストール](install-roslyn-analyzers.md)したら、*そのルールセットディレクトリで*定義済みのルールセットを見つけます。 `Microsoft.CodeAnalysis.FxCopAnalyzers`たとえば、アナライザーパッケージを参照した場合は、% USERPROFILE% *\\\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\<バージョンでそのルールセットディレクトリを見つけることができます。\\>ルールセット*。 そこから、1つまたは複数のルールセットをコピーし、Visual Studio プロジェクトが格納されているディレクトリまたは**ソリューションエクスプローラー**に直接貼り付けます。
+[NuGet analyzer パッケージをインストール](install-roslyn-analyzers.md)したら、*そのルールセットディレクトリで*定義済みのルールセットを見つけます。 たとえば、`Microsoft.CodeAnalysis.FxCopAnalyzers` アナライザーパッケージを参照した場合は、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t @ no__t-6\rulesets*に、その*ルールセット*ディレクトリが見つかります。 そこから、1つまたは複数のルールセットをコピーし、Visual Studio プロジェクトが格納されているディレクトリまたは**ソリューションエクスプローラー**に直接貼り付けます。
 
 また、[定義済みの規則セット](how-to-create-a-custom-rule-set.md)を自分の好みに合わせてカスタマイズすることもできます。 たとえば、1つまたは複数のルールの重要度を変更して、**エラー一覧**に違反がエラーまたは警告として表示されるようにすることができます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "71185954"
 
 ### <a name="net-core"></a>.NET Core
 
-.NET Core または .NET Standard プロジェクトで、分析用のアクティブな規則セットを規則に設定するには、 **CodeAnalysisRuleSet**プロパティをプロジェクトファイルに手動で追加します。 たとえば、次のコードスニペットは、 `HelloWorld.ruleset`アクティブな規則セットとしてを設定します。
+.NET Core または .NET Standard プロジェクトで、分析用のアクティブな規則セットを規則に設定するには、 **CodeAnalysisRuleSet**プロパティをプロジェクトファイルに手動で追加します。 たとえば、次のコードスニペットは、アクティブなルールセットとして `HelloWorld.ruleset` を設定します。
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ ms.locfileid: "71185954"
 
 ### <a name="net-framework"></a>.NET Framework
 
-.NET Framework のプロジェクトで、分析用のアクティブな規則セットを規則に設定するには**ソリューションエクスプローラー**でプロジェクトを右クリックし、 **[プロパティ]** をクリックします。 プロジェクトのプロパティページで、 **[コード分析]** タブを選択します。 **[この規則セットを実行]** で、 **[参照]** を選択し、プロジェクトディレクトリにコピーした規則セットを選択します。 これで、選択した規則セットで有効になっている規則に対する規則違反のみが表示されるようになりました。
+.NET Framework プロジェクトで分析のためのアクティブな規則セットを規則に設定するには、次のようにします。
+
+- **ソリューションエクスプローラー**でプロジェクトを右クリックし、 **[プロパティ]** を選択します。
+
+- プロジェクトのプロパティページで、 **[コード分析]** タブを選択します。
+
+::: moniker range="vs-2017"
+
+- **[この規則セットを実行]** で、 **[参照]** を選択し、プロジェクトディレクトリにコピーした規則セットを選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- **[アクティブな規則]** で **[参照]** を選択し、プロジェクトディレクトリにコピーした規則セットを選択します。
+
+::: moniker-end
+
+   これで、選択した規則セットで有効になっている規則に対する規則違反のみが表示されるようになりました。
 
 ## <a name="available-rule-sets"></a>使用可能な規則セット
 
-定義済みアナライザーの規則セットには、パッケージ&mdash;内のすべての規則に影響する3つの規則セットが含まれています。これにより、すべてを無効にして、各規則の既定の重要度と有効化の設定を受け入れます。
+定義済みアナライザーの規則セットには、パッケージ内のすべての規則に影響を与える3つのルールセットが含まれています。これは、すべてのルールを無効にするものと、各ルールの既定の重大度および有効化設定を許可するルールを no__t します。
 
 - All規則が有効になりました。ルールセット
 - All規則が無効になりました。ルールセット

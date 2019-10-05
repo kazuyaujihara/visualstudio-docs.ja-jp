@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: HT
+ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177328"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962973"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
@@ -83,7 +83,7 @@ Azure SDK 2.5 から Azure SDK 2.6 以降に移行するとき、.wadcfgx ファ
 5. **[診断構成]** ダイアログ ボックスを表示するには、 **[構成]** を選択します。 **[全般]** と **[ログ ディレクトリ]** を除く各タブは、収集できる診断データのソースを表します。 既定の **[全般]** タブでは、診断データの収集オプションとして、 **[エラーのみ]** 、 **[すべての情報]** 、 **[カスタム プラン]** が提供されます。 既定の **[エラーのみ]** オプションでは、警告またはトレース メッセージが転送されないため、必要とするストレージ容量が最小限で済みます。 **[すべての情報]** オプションは最も多くの情報を転送し、最も多くのストレージを使用するため、コストが最も高いオプションです。
 
    > [!NOTE]
-   > [ディスク クォータ (MB)] のサポートされる最小サイズは 4 GB です。 ただし、メモリ ダンプを収集する場合は、10 GB のような高い値に増やしてください。
+   > [ディスククォータ (MB)] でサポートされる最小サイズは 50 MB で、既定のサイズは 4 GB です。 ただし、メモリ ダンプを収集する場合は、10 GB のような高い値に増やしてください。
    >
 
     ![Enable Azure diagnostics and configuration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)

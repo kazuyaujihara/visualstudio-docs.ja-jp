@@ -14,34 +14,45 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fcb13c978d614d40964bd8d6da21e8cf41f00f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 670150053053a2e556e0f111312247f243c2a8c0
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551082"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975050"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を表示しない
 
-多くの場合、警告が適用されないことを示すと便利です。 これは、コードがレビューされたことと、警告を抑制できることをチームメンバーに示します。 ソース内抑制 (ISS) では、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性を使用して警告を抑制します。 属性は、警告を生成したコードセグメントの近くに配置できます。 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性を入力してソースファイルに追加することも、**エラー一覧**の警告のショートカットメニューを使用して自動的に追加することもできます。
+多くの場合、警告が適用されないことを示すと便利です。 これは、コードがレビューされたことと、警告を抑制できることをチームメンバーに示します。 ソース内抑制 (ISS) では、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性を使用して警告を抑制します。 属性は、警告を生成したコードセグメントの近くに配置できます。 @No__t-0 属性を入力することによってソースファイルに追加できます。また、**エラー一覧**の警告のショートカットメニューを使用して、自動的に追加することもできます。
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性は、コンパイル時に CODE_ANALYSIS コンパイルシンボルが定義されている場合にのみ、マネージコードアセンブリの IL メタデータに含まれる条件付き属性です。
+@No__t-0 属性は、コンパイル時に CODE_ANALYSIS コンパイルシンボルが定義されている場合にのみ、マネージコードアセンブリの IL メタデータに含まれる条件付き属性です。
 
-/Cli C++では、マクロ\_CA\_の [メッセージを表示し\_ない] または [ca\_グローバル SUPPRESS_MESSAGE] をヘッダーファイルで使用して、属性を追加します。
+/Cli C++では、マクロ CA @ NO__T-1suppress NO__T-2message または ca @ NO__T-3global @ NO__T-4SUPPRESS_MESSAGE を使用して、属性を追加します。
 
 > [!NOTE]
 > ソース内の抑制メタデータが誤って配布されるのを防ぐために、リリースビルドでは、ソース内の抑制を使用しないでください。 また、ソース内抑制の処理コストが原因で、アプリケーションのパフォーマンスが低下する可能性があります。
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 または Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[実行コード分析の**分析** > ]**を選択し、[アクティブな問題を抑制**する] を選択して、すべての警告を抑制できます。
+> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[**分析**@no__t] を選択してすべての警告を非表示にすることができます。-1**コード分析を実行し、アクティブな問題を非**表示にします。
 >
 > ![Visual Studio でコード分析を実行し、問題を抑制する](media/suppress-active-issues.png)
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[@no__t の**分析**] を選択し、**アクティブな問題を抑制**することによって、すべての警告を非表示にすることができます。
+
+::: moniker-end
+
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性
 
-**エラー一覧**でコード分析の警告のコンテキストまたは右クリックメニューから [**抑制**] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性がコードまたはプロジェクトのグローバル抑制ファイルのいずれかに追加されます。
+**エラー一覧**でコード分析の警告のコンテキストまたは右クリックメニューから **[抑制]** を選択すると、コードまたはプロジェクトのグローバル抑制ファイルのいずれかに @no__t の2つの属性が追加されます。
 
-属性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>の形式は次のとおりです。
+@No__t-0 属性の形式は次のとおりです。
 
 ```vb
 <Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>
@@ -77,19 +88,19 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - `namespace`-このスコープでは、名前空間自体に対する警告が抑制されます。 名前空間内の型に対する警告は抑制されません。
 
-  - `namespaceanddescendants`-(Visual Studio 2019 の新) このスコープでは、名前空間とそのすべての子孫シンボルで警告が抑制されます。 この`namespaceanddescendants`値は、レガシ分析では無視されます。
+  - `namespaceanddescendants`-(Visual Studio 2019 では New) このスコープでは、名前空間とそのすべての子孫シンボルで警告が抑制されます。 @No__t 0 の値は、レガシ分析では無視されます。
 
 - **Target** -警告が抑制されるターゲットを指定するために使用される識別子。 完全修飾項目名が含まれている必要があります。
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage の使用法
 
-コード分析の警告は、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性が適用されるレベルでは抑制されます。 たとえば、属性は、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用できます。 この目的は、違反が発生したコードに対して抑制情報を密に結合することです。
+コード分析の警告は、@no__t 0 属性が適用されているレベルでは抑制されます。 たとえば、属性は、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用できます。 この目的は、違反が発生したコードに対して抑制情報を密に結合することです。
 
-抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 例:
+抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 以下に例を示します。
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 例:
+ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 以下に例を示します。
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -97,11 +108,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 ## <a name="suppress-selective-violations-within-a-method-body"></a>メソッド本体内の選択的違反を抑制する
 
-抑制属性はメソッドに適用できますが、メソッド本体内に埋め込むことはできません。 これは、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性をメソッドに追加した場合に、特定の規則のすべての違反が抑制されることを意味します。
+抑制属性はメソッドに適用できますが、メソッド本体内に埋め込むことはできません。 これは、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性をメソッドに追加した場合に、特定の規則のすべての違反が抑制されることを意味します。
 
-場合によっては、将来のコードがコード分析ルールから自動的に除外されるように、違反の特定のインスタンスを抑制することが必要になることがあります。 特定のコード分析規則を使用すると、 `MessageId` <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性のプロパティを使用してこれを行うことができます。 一般に、特定のシンボル (ローカル変数またはパラメーター) に対する違反に関する従来の`MessageId`ルールでは、プロパティが尊重されます。 [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)は、このようなルールの一例です。 ただし、実行可能コード (非シンボル) での違反に関する従来の規則で`MessageId`は、プロパティは考慮されません。 また、.NET Compiler Platform ("roslyn") アナライザーでは、プロパティ`MessageId`は考慮されません。
+場合によっては、将来のコードがコード分析ルールから自動的に除外されるように、違反の特定のインスタンスを抑制することが必要になることがあります。 特定のコード分析規則を使用すると、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性の @no__t 0 のプロパティを使用してこれを行うことができます。 一般に、特定のシンボル (ローカル変数またはパラメーター) に対する違反に関する従来のルールでは、`MessageId` プロパティが優先されます。 [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)は、このようなルールの一例です。 ただし、実行可能コード (非シンボル) の違反に関する従来のルールでは、`MessageId` プロパティは考慮されません。 さらに、.NET Compiler Platform ("Roslyn") アナライザーでは、`MessageId` プロパティは考慮されません。
 
-規則の特定のシンボル違反を抑制するには、 `MessageId` <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性のプロパティのシンボル名を指定します。 次の例は、2つの CA1500 の違反を含むコードを`name`示しています。 `age`変数の場合は[VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;、変数の場合は1です。 `age`シンボルの違反のみが抑制されます。
+規則の特定のシンボル違反を抑制するには、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性の `MessageId` プロパティにシンボル名を指定します。 次の例は、2つの CA1500 の違反を含むコードを示しています[: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash; 1 @no__t 変数、`age` 変数。 @No__t-0 シンボルの違反のみが抑制されます。
 
 ```vb
 Public Class Animal
@@ -138,21 +149,21 @@ public class Animal
 
 ## <a name="generated-code"></a>生成されたコード
 
-マネージコードコンパイラと一部のサードパーティツールでは、コードの迅速な開発を容易にするコードが生成されます。 ソースファイルに表示されるコンパイラで生成されたコードは`GeneratedCodeAttribute` 、通常、属性でマークされます。
+マネージコードコンパイラと一部のサードパーティツールでは、コードの迅速な開発を容易にするコードが生成されます。 ソースファイルに表示されるコンパイラによって生成されるコードは、通常、`GeneratedCodeAttribute` 属性でマークされます。
 
-生成されたコードのコード分析の警告とエラーを非表示にするかどうかを選択できます。 このような警告やエラーを抑制する方法の詳細[については、「」を参照してください。生成されたコード](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)の警告を非表示にします。
+生成されたコードのコード分析の警告とエラーを非表示にするかどうかを選択できます。 このような警告やエラーを抑制する方法の詳細については、「@no__t」を参照してください。生成されたコード @ no__t の警告を非表示にします。
 
 > [!NOTE]
-> コード分析は`GeneratedCodeAttribute` 、アセンブリ全体または単一のパラメーターのいずれかに適用されるときに無視されます。
+> コード分析は、アセンブリ全体または単一のパラメーターのいずれかに適用されている場合に `GeneratedCodeAttribute` を無視します。
 
 ## <a name="global-level-suppressions"></a>グローバルレベルの抑制
 
-マネージコード分析ツールは、 `SuppressMessage`アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用される属性を調べます。 また、リソースと名前空間に対する違反も発生します。 これらの違反はグローバルレベルで適用される必要があり、スコープが設定され、対象となります。 たとえば、次のメッセージでは、名前空間違反が抑制されます。
+マネージコード分析ツールは、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用される @no__t 0 の属性を調べます。 また、リソースと名前空間に対する違反も発生します。 これらの違反はグローバルレベルで適用される必要があり、スコープが設定され、対象となります。 たとえば、次のメッセージでは、名前空間違反が抑制されます。
 
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> スコープで`namespace`警告を非表示にすると、名前空間自体に対して警告が抑制されます。 名前空間内の型に対して警告が抑制されることはありません。
+> @No__t 0 のスコープで警告を非表示にすると、名前空間自体に対して警告が抑制されます。 名前空間内の型に対して警告が抑制されることはありません。
 
 明示的なスコープを指定することで、任意の抑制を表現できます。 これらの抑制はグローバルレベルで有効である必要があります。 型を修飾することによって、メンバーレベルの抑制を指定することはできません。
 
@@ -161,11 +172,11 @@ public class Animal
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`常に、完全修飾された項目名を含みます。
+> `Target` には、常に完全修飾項目名が含まれます。
 
 ## <a name="global-suppression-file"></a>グローバル抑制ファイル
 
-グローバル抑制ファイルは、グローバルレベルの抑制またはターゲットを指定しない抑制のいずれかである抑制を保持します。 たとえば、アセンブリレベルの違反の抑制は、このファイルに格納されます。 また、一部の ASP.NET 抑制は、フォームの分離コードではプロジェクトレベルの設定が使用できないため、このファイルに格納されます。 グローバル抑制ファイルが作成され、プロジェクトに追加されます。その際、[**エラー一覧**] ウィンドウで [**抑制**] コマンドの [**プロジェクトの抑制ファイルを**使用する] オプションを初めて選択します。
+グローバル抑制ファイルは、グローバルレベルの抑制またはターゲットを指定しない抑制のいずれかである抑制を保持します。 たとえば、アセンブリレベルの違反の抑制は、このファイルに格納されます。 また、一部の ASP.NET 抑制は、フォームの分離コードではプロジェクトレベルの設定が使用できないため、このファイルに格納されます。 グローバル抑制ファイルが作成され、プロジェクトに追加されます。その際、 **[エラー一覧]** ウィンドウで **[抑制]** コマンドの **[プロジェクトの抑制ファイルを]** 使用する オプションを初めて選択します。
 
 ## <a name="see-also"></a>関連項目
 

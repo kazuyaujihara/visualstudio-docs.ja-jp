@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: e1d26886eecf09ff8195b7a38338fa62e7f1d0bf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322549"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974959"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>デバッグ中に XAML のプロパティを調べます。
 **Live Visual Tree** および **Live Property Explorer** により、実行中の XAML コードのリアルタイム ビューを取得できます。 これらのツールは、実行中の XAML アプリケーションの UI 要素のツリー ビューを提供し、選択した UI 要素のランタイム プロパティを表示します。
@@ -71,20 +71,22 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 プロジェクトをビルドし、デバッグを開始します。 (ビルド構成はリリースではなくデバッグでなければなりません。 ビルド構成の詳細については、「[ビルド構成について](../ide/understanding-build-configurations.md)」を参照してください。
 
-ウィンドウが表示されたら、 **[項目の追加]** ボタンを数回クリックします。 次のように表示されます。
+ウィンドウが表示されると、実行中のアプリケーション内にアプリ内ツールバーが表示されます。 
 
-![アプリのメインウィンドウ](../debugger/media/livevisualtree-app.png "LiveVIsualTree-アプリ")
+![アプリ LiveVIsualTree のメインウィンドウ](../debugger/media/livevisualtree-app.png "-アプリ")
 
-次に **Live Visual Tree** ウィンドウを開きます ( **[デバッグ] > [Windows] > [Live Visual Tree]** 、または IDE の左側で探します)。 このウィンドウをドッキング位置からドラッグして離し、 **[Live Properties]** ウィンドウと横並びになるようにします。 **[Live Visual Tree]** ウィンドウで、 **[ContentPresenter]** ノードを展開します。 これにはボタンとリスト ボックスのノードが含まれます。 リスト ボックスを展開し (その後 **ScrollContentPresenter** と **ItemsPresenter** を展開して)、リスト ボックスの項目を検索します。 ウィンドウは、次のようになります。
+次に、 **[項目の追加]** ボタンを数回クリックして、一覧に新しい項目を追加します。
 
-![ライブビジュアルツリー内の Listboxitems](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
+次に、アプリ内 ツールバーの左側のボタンをクリックして (または  **Windows > ライブビジュアルツリーのデバッグ >** )、**ライブビジュアルツリー**ウィンドウを開きます。 開いたら、ドッキング位置からドラッグして、このウィンドウと**ライブプロパティ**ウィンドウを並べて表示できるようにします。 **[Live Visual Tree]** ウィンドウで、 **[ContentPresenter]** ノードを展開します。 これにはボタンとリスト ボックスのノードが含まれます。 リスト ボックスを展開し (その後 **ScrollContentPresenter** と **ItemsPresenter** を展開して)、リスト ボックスの項目を検索します。 ウィンドウは、次のようになります。
+
+![ライブビジュアルツリーの listboxitems](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-listboxitems")
 
 アプリケーション ウィンドウに戻り、さらにいくつかの項目を追加します。 **[Live Visual Tree]** に、リスト ボックス項目がさらに表示されます。
 
-次に、いずれかのリスト ボックス項目のプロパティを検討します。 **[Live Visual Tree]** 内の最初のリスト ボックス項目を選択して、ツールバーの **[プロパティの表示]** アイコンをクリックします。 **Live Property Explorer** が表示されます。 **コンテンツ**フィールドが "Item1" であり、[**背景** > **色**] フィールドが **#FFFFFFE0**であることに注意してください。 **[Live Visual Tree]** に戻り、2 番目のリスト ボックス項目を選択します。 **ライブプロパティエクスプローラー**に、**コンテンツ**フィールドが "Item2" で、**背景** > **色**フィールドが **#FFD3D3D3**ことが示されます。
+次に、いずれかのリスト ボックス項目のプロパティを検討します。 **[Live Visual Tree]** 内の最初のリスト ボックス項目を選択して、ツールバーの **[プロパティの表示]** アイコンをクリックします。 **Live Property Explorer** が表示されます。 **コンテンツ**フィールドが "Item1" であり、**背景** > **色**フィールドが **#FFFFFFE0**であることに注意してください。 **[Live Visual Tree]** に戻り、2 番目のリスト ボックス項目を選択します。 **ライブプロパティエクスプローラー**では、**コンテンツ**フィールドが "Item2" であり、[**背景** > **色**] フィールドが **#FFD3D3D3**ことが示されます。
 
 > [!NOTE]
-> **ライブプロパティエクスプローラー**でプロパティを囲む黄色い枠は、プロパティ値がのような`Color = {BindingExpression}`バインディングによって設定されることを意味します。 緑の境界線は、などのリソース`Color = {StaticResource MyBrush}`を使用して値が設定されることを意味します。
+> **ライブプロパティエクスプローラー**でプロパティを囲む黄色い枠は、プロパティ値が `Color = {BindingExpression}` などのバインディングによって設定されることを意味します。 緑の境界線は、値がリソース (`Color = {StaticResource MyBrush}` など) を使用して設定されていることを示します。
 
 XAML の実際の構造にはご自分に直接関係のない多数の要素が含まれていて、コードをよく理解していない場合は、ツリーを参照して検索対象を見つけることが困難となる可能性があります。 そのため、**Live Visual Tree** には、ご自分でアプリケーションの UI を使用して検討対象の要素を見つけるために役立ついくつかの手段が備わっています。
 
@@ -92,7 +94,7 @@ XAML の実際の構造にはご自分に直接関係のない多数の要素が
 
 **実行中のアプリケーションでレイアウトの装飾を表示する**。 選択を有効にするためのボタンのすぐ右にあるボタンを選択すると、このモードを有効にすることができます。 **レイアウトの装飾の表示**がオンのときは、アプリケーション ウィンドウには選択されたオブジェクトの境界に沿って水平と垂直の線が表示され、何に揃えて配置されているかが確認できます。さらに、余白を示すための四角形も表示されます。 たとえば、 **[選択範囲を有効にする]** と **[Display layout]\(レイアウト表示\)** の両方をオンにして、アプリケーションの **[項目の追加]** テキスト ブロックを選択します。 **Live Visual Tree** にテキスト ブロック ノードが表示され、**Live Property Viewer** にテキスト ブロック プロパティが表示されます。さらに、テキスト ブロックの境界に垂直な線と水平な線が示されます。
 
-![DisplayLayout の displaylayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
+![Displaylayout LiveVisualTreeLivePropertyViewer の displaylayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "-displaylayout")
 
 **選択のプレビュー**。 このモードを有効にするには、Visual Tree ツールバーで左端から 3 番目のボタンを選択します。 このモードは、アプリケーションのソース コードにアクセスできる場合に、要素が宣言されている XAML を示します。 **[選択範囲を有効にする]** と **[Preview Selection]\(選択のプレビュー\)** を選択してから、テスト アプリケーションのボタンを選択します。 MainWindow.xaml ファイルが Visual Studio で開き、ボタンが定義されている行にカーソルが置かれます。
 
