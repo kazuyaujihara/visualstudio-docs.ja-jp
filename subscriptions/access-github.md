@@ -1,21 +1,21 @@
 ---
-title: Visual Studio + GitHub バンドル |Microsoft Docs
+title: Visual Studio + GitHub のオファー | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: 新しい Visual Studio + GitHub バンドルの詳細情報
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: 新しい Visual Studio + GitHub オファーの詳細情報
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377652"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238143"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の概要  
 
-Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション バンドルを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
+Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
 
 - お使いの IDE およびワークフローにオープン ソース コード、コミュニティ、およびベスト プラクティスを安全に取り込むことで、Visual Studio と GitHub に合わせたスケールで革新を行います。
 - 最も包括的な一連のリソースと共に、開発者向けのクラス最高の開発ツールおよびサービスを使用して、優れたアプリケーションを作成、デプロイ、および管理します。 
@@ -28,11 +28,11 @@ Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visu
 - Visual Studio Enterprise with GitHub Enterprise
 - Visual Studio Professional with GitHub Enterprise
 
-まだ更新予定でない EA が組織にある場合は、"ステップアップ" SKU を購入して、既存の Visual Studio Enterprise サブスクリプションまたは Visual Studio Professional サブスクリプションに GitHub Enterprise を追加できます。  その後、契約が更新されたら、バンドルを購入できます。
+まだ更新予定でない EA が組織にある場合は、"ステップアップ" SKU を購入して、既存の Visual Studio Enterprise サブスクリプションまたは Visual Studio Professional サブスクリプションに GitHub Enterprise を追加できます。 その後、契約が更新されたら、オファーを購入できます。
 
 Visual Studio Enterprise、Visual Studio Professional、および GitHub Enterprise の既存の SKU は、引き続き個別に利用できます。 
 
-メリット、オプション、および価格の詳細については、 https://visualstudio.microsoft.com/subscriptions/visual-studio-github にアクセスしてください。 
+メリットとオプションの詳細については、 https://visualstudio.microsoft.com/subscriptions/visual-studio-github にアクセスしてください。 
 
 ## <a name="getting-your-subscriptions"></a>サブスクリプションの取得
 
@@ -40,7 +40,7 @@ Visual Studio + GitHub Enterprise サブスクリプションは、次の 2 つ�
 1. Visual Studio サブスクリプション (Enterprise または Professional)
 2. GitHub Enterprise サブスクリプション
 
-組織がサブスクリプションを購入すると、管理者によってサブスクリプションが割り当てられます。  Visual Studio サブスクリプションと GitHub Enterprise サブスクリプションは、個別に割り当てられます。  
+組織がサブスクリプションを購入すると、管理者によってサブスクリプションが割り当てられます。 Visual Studio サブスクリプションと GitHub Enterprise サブスクリプションは、個別に割り当てられます。  
 
 お客様に Visual Studio + GitHub サブスクリプションが割り当てられている場合は、Visual Studio サブスクリプション管理者によってサブスクリプションが割り当てられたことを知らせる電子メールを受け取ります。  その時点で、 https://my.visualstudio.com/subscriptions でそのサブスクリプションを確認できます。  
 

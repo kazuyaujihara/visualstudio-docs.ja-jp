@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb338caa145ad8186b7a27fe94a7822e94c09a02
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913293"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693022"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -38,11 +38,11 @@ IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テ
 
 ::: moniker range=">=vs-2019"
 
-IDE で実行設定ファイルを指定するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 *.runsettings* ファイルを参照し、選択します。
+IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[設定ファイルの選択]** の順に選択します。 *.runsettings* ファイルを参照し、選択します。
 
-![Visual Studio 2019 の [テスト設定ファイルの選択] メニュー](media/vs-2019/select-test-settings-file.png)
+![Visual Studio 2019 の [テスト設定ファイルの選択] メニュー](media/vs-2019/select-settings-file.png)
 
-ファイルはテスト エクスプローラーの [設定] メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
+ファイルは、[テスト] メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ IDE で実行設定ファイルを指定するには、**テスト エクスプ�
 
 ::: moniker range=">=vs-2019"
 
-3. 実行設定ファイルを選択するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 作成した *.runsettings* ファイルを参照して、 **[OK]** を選択します。
+3. 実行設定ファイルを選択するには、 **[テスト]**  >  **[設定ファイルの選択]** の順に選択します。 作成した *.runsettings* ファイルを参照して、 **[OK]** を選択します。
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ IDE で実行設定ファイルを指定するには、**テスト エクスプ�
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -149,7 +149,7 @@ IDE で実行設定ファイルを指定するには、**テスト エクスプ�
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-
+            
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -157,15 +157,16 @@ IDE で実行設定ファイルを指定するには、**テスト エクスプ�
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           
+            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />
+          </MediaRecorder>
         </Configuration>
       </DataCollector>
-
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -256,7 +257,7 @@ IDE で実行設定ファイルを指定するには、**テスト エクスプ�
 </TestRunParameters>
 ```
 
-テスト実行パラメーターは、実行時にテストで使用できる変数と値の定義方法を提供します。 パラメーターには <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> プロパティを使用してアクセスします。
+テスト実行パラメーターでは、実行時にテストで使用できる変数と値の定義方法が指定します。 パラメーターには <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> プロパティを使用してアクセスします。
 
 ```csharp
 [TestMethod]

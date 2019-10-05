@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: MSBuild プロジェクト SDK の参照
               href: how-to-use-project-sdk.md
-        - name: '[タスク]'
+        - name: タスク
           items:
             - name: MSBuild タスク
               href: msbuild-tasks.md
@@ -88,7 +88,7 @@
       items:
         - name: MSBuild の詳細な概念
           href: msbuild-advanced-concepts.md
-        - name: バッチ処理
+        - name: バッチ
           items:
             - name: MSBuild バッチ
               href: msbuild-batching.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension 基本クラス
               href: tooltaskextension-base-class.md
+            - name: タスク エラーの診断
+              href: diagnosing-task-failures.md
             - name: AL (アセンブリ リンカー) タスク
               href: al-assembly-linker-task.md
             - name: AspNetCompiler タスク

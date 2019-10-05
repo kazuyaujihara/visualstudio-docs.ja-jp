@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440004"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238197"
 ---
 # <a name="task-writing"></a>タスクの作成
 タスクでは、ビルド プロセスの間に実行するコードを指定します。 タスクはターゲットに含まれます。 一般的なタスクのライブラリは [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に付属します。独自のタスクを作成することもできます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] に付属するタスク ライブラリの詳細については、[タスク リファレンス](../msbuild/msbuild-task-reference.md)を参照してください。
 
-## <a name="tasks"></a>[タスク]
+## <a name="tasks"></a>タスク
  タスクには、1 つまたは複数のファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などがあります。 各タスクは、*Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装する .NET クラスとして実装されます。
 
  タスクを実装するには 2 つの方法があります。
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  `[Required]` 属性は <xref:Microsoft.Build.Framework> 名前空間の <xref:Microsoft.Build.Framework.RequiredAttribute> によって定義されます。
 
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によるタスクの呼び出し方法
+
+タスクを呼び出すと、まず [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によってタスク クラスがインスタンス化され、次にプロジェクト ファイルのタスク要素内で設定されたタスク パラメーター用のオブジェクトのプロパティ セッターが呼び出されます。 タスク要素によってパラメーターが指定されていない場合、または要素内で指定された式によって空の文字列であると評価された場合、プロパティ セッターは呼び出されません。
+
+たとえば、プロジェクトでは次のようになります
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+`Input3` のセッターのみが呼び出されます。
+
+タスクは、パラメータープロパティ セッター呼び出しの相対順序に依存しないようにする必要があります。
+
+### <a name="task-parameter-types"></a>タスク パラメーターの型
+
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、`string`、`bool`、`ITaskItem`、`ITaskItem[]` の型のプロパティが処理されます。 タスクが別の型のパラメーターを受け入れる場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によって <xref:System.Convert.ChangeType%2A> が呼び出され、`string` (すべてのプロパティと項目の参照が展開された状態で) から変換先の型に変換されます。 入力パラメーターの変換に失敗した場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] によってエラーが出力されます。タスクの `Execute()` メソッドは呼び出されません。
+
 ## <a name="example"></a>例
 
 ### <a name="description"></a>説明
- 次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生されるタスクを示します。 このタスクは成功を示す `true` を返します。
+
+次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生されるタスクを示します。 このタスクは成功を示す `true` を返します。
 
 ### <a name="code"></a>コード
 
@@ -168,7 +193,8 @@ namespace SimpleTask1
 ## <a name="example"></a>例
 
 ### <a name="description"></a>説明
- 次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するタスクを示します。 このタスクは成功を示す `true` を返します。
+
+次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するタスクを示します。 このタスクは成功を示す `true` を返します。
 
 ### <a name="code"></a>コード
 
@@ -203,15 +229,18 @@ namespace SimpleTask2
 ## <a name="example"></a>例
 
 ### <a name="description"></a>説明
- この [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生されるタスクを示します。 必須の文字列プロパティがあり、登録されているすべてのロガーで表示されるイベントを生成します。
+
+この [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラスは、<xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生されるタスクを示します。 必須の文字列プロパティがあり、登録されているすべてのロガーで表示されるイベントを生成します。
 
 ### <a name="code"></a>コード
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
 ## <a name="example"></a>例
 
 ### <a name="description"></a>説明
- 次は、前のサンプル タスク SimpleTask3 を呼び出すプロジェクト ファイルの例です。
+
+次は、前のサンプル タスク SimpleTask3 を呼び出すプロジェクト ファイルの例です。
 
 ### <a name="code"></a>コード
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

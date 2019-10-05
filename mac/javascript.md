@@ -6,18 +6,18 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 13aa6e595deb83344d40dff396c7e106bdcbc67e
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 7ffe24d26af91d7d6733ec1540c2f2d810425e1e
+ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108042"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175421"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript および TypeScript のサポート
 
 Visual Studio for Mac では、構文の強調表示、コードの書式設定、IntelliSense で JavaScript と TypeScript を利用できます。
 
-![TypeScript エディター サポート](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![TypeScript エディター サポート](/media/tsjseditor-2019.gif)
 
 JavaScript のコード記述に関する詳細については、[JavaScript でのコードの記述](/scripting/javascript/writing-javascript-code)に関するガイドを参照してください。
 
@@ -41,7 +41,7 @@ Visual Studio for Mac の JavaScript IntelliSense は、型の推定、JSDoc、�
 - **JSDoc** - 型の推定では正しい型情報が与えられないことがあります。 そのような場合、型情報は [JSDoc](https://jsdoc.app/about-getting-started.html) 注釈によって明示的に指定できます。 詳細については、Visual Studio の [JSDoc に基づいた IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) に関するセクションを参照してください。
 - **TypeScript 宣言ファイル** - `.d.ts` ファイルを利用し、JavaScript IntelliSense の値が与えられます。 そのファイルに宣言されている型を JSDoc コメントで型として使用できます。 詳細については、「[TypeScript 宣言ファイルに基づく IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)」の Visual Studio のセクションを参照してください。
 
-    ![TypeScript 定義ファイルの追加](media/javascript-image3.png)
+    ![TypeScript 定義ファイルの追加](media/javascript-type-intellisense-2019.gif)
 
 ## <a name="see-also"></a>関連項目
 

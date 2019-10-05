@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957425"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251702"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
@@ -184,7 +184,7 @@ error | このスタイルに準拠していないとき、**エラー一覧**�
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 バージョン 16.2 以降では、EditorConfig ファイルで名前付け規則が定義されている順序は関係ありません。 代わりに、Visual Studio で、規則自体の定義に従って、名前付け規則が自動的に並べ替えられます。 [EditorConfig 言語サービス拡張機能](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)では、EditorConfig ファイルを分析して、ファイルでの規則の順序が実行時にコンパイラが使う順序と異なる場合に報告できます。
+Visual Studio 2019 バージョン 16.2 以降では、EditorConfig ファイルで名前付け規則が定義されている順序は関係ありません。 代わりに、Visual Studio で、規則自体の定義に従って、名前付け規則が自動的に並べ替えられます。 [EditorConfig 言語サービス拡張機能](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)では、EditorConfig ファイルを分析して、ファイルでの規則の順序が実行時にコンパイラで使用される順序と異なる場合に報告できます。
 
 以前のバージョンの Visual Studio を使っている場合、名前付け規則は、EditorConfig ファイル内で固有度の高いものから低いものの順に並べる必要があります。 適用可能な最初に検出されたルールのみが適用されます。 ただし、同じ名前のルールの "*プロパティ*" が複数ある場合は、その名前の最も最近見つかったプロパティが優先されます。 詳細については、「[File hierarchy and precedence (ファイルの階層と優先順位)](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)」を参照してください。
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976759"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342359"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -40,7 +40,7 @@ ms.locfileid: "69976759"
 
 ::: moniker range=">=vs-2019"
 
-3. 実行設定ファイルを選択するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
+3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
 
 ::: moniker-end
 
@@ -59,11 +59,11 @@ ms.locfileid: "69976759"
 
 ::: moniker range=">=vs-2019"
 
-カスタム設定のオンとオフを切り替えるには、**テスト エクスプローラー**の **[設定]** メニューでファイルを選択したり選択解除したりします。
+カスタム設定のオンとオフを切り替えるには、 **[テスト]** メニューで、ファイルを選択したり選択解除したりします。
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>シンボル検索パスの指定
+## <a name="symbol-search-paths"></a>シンボルの検索パス
 
 コード カバレッジには、アセンブリのシンボル ファイル ( *.pdb* ファイル) が必要です。 ソリューションによってビルドされたアセンブリには、通常、バイナリ ファイルと共にシンボル ファイルも存在しており、コード カバレッジは自動的に動作します。 場合によっては、参照されるアセンブリをコード カバレッジ分析に追加したいこともあります。 そのような場合、 *.pdb* ファイルがバイナリと同じ場所にないこともありますが、シンボル検索パスを *.runsettings* ファイルで指定できます。
 
@@ -77,9 +77,11 @@ ms.locfileid: "69976759"
 > [!NOTE]
 > シンボルの解決には、特に多数のアセンブリでリモートのファイルの場所を使用している場合、時間がかかることがあります。 そのため、 *.pdb* ファイルをバイナリ ( *.dll* または *.exe*) ファイルと同じローカルの場所にコピーすることを検討してください。
 
-### <a name="exclude-and-include"></a>Exclude (除外) と Include (包含)
+## <a name="include-or-exclude-assemblies-and-members"></a>アセンブリやメンバーを含めるか除外する
 
-指定したアセンブリをコード カバレッジ分析から除外できます。 次に例を示します。
+アセンブリまたは特定の型とメンバーをコード カバレッジ分析に含めたり、コード カバレッジ分析から除外したりできます。 **[含める]** セクションが空か省略されている場合、読み込まれ、PDB ファイルが関連付けられているアセンブリがすべて含まれます。 アセンブリまたはメンバーが **[除外する]** セクションの句に一致する場合、それはコード カバレッジから除外されます。 **[除外する]** セクションは **[含める]** セクションに優先します。あるアセンブリが **[含める]** と **[除外する]** の両方に記載されている場合、コード カバレッジには含まれません。
+
+たとえば、次の XML では、その名前を指定することで 1 つのアセンブリが除外されます。
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ ms.locfileid: "69976759"
 </ModulePaths>
 ```
 
-逆に、どのアセンブリが包含されるかを指定することもできます。 この方法には、ソリューションにアセンブリを追加するときに、それらを一覧にも忘れずに追加しなければならない欠点があります。
+次の例では、アセンブリを 1 つだけコード カバレッジに含めると指定されます。
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ ms.locfileid: "69976759"
 </ModulePaths>
 ```
 
-**Include** が空の場合、 *.pdb* ファイルが見つかる読み込まれるすべてのアセンブリでコード カバレッジは処理されます。 コード カバレッジには、**Exclude** リスト内の句に一致する項目が含まれません。 **Include** は **Exclude** の前に処理されます。
+次の表では、コード カバレッジに含めるか、コード カバレッジから除外する目的でアセンブリやメンバーを照合するさまざまな方法をまとめています。
+
+| XML 要素 | 一致対象 |
+| - | - |
+| ModulePath | アセンブリ名またはファイル パスで指定されたアセンブリと一致します。 |
+| CompanyName | **Company** 属性でアセンブリと一致します。 |
+| PublicKeyToken | 公開キー トークンで署名付きアセンブリと一致します。 |
+| ソース | 要素が定義されているソース ファイルのパス名で要素と一致します。 |
+| 属性 | 指定された属性を持つ要素と一致します。 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>` など、属性の完全な名前を指定します。<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 属性を除外すると、`async`、`await`、`yield return` などの言語機能を使用するコードと、自動実装プロパティがコード カバレッジ分析から除外されます。 真に生成されたコードを除外するには、<xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 属性のみを除外します。 |
+| 関数 | パラメーター リストなど、完全修飾名でプロシージャ、関数、またはメソッドと一致します。 [正規表現](#regular-expressions)を利用し、名前の一部を照合することもできます。<br/><br/>次に例を示します。<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>正規表現
 
-Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 詳細については、[Visual Studio で正規表現を使用する](../ide/using-regular-expressions-in-visual-studio.md)方法に関するページを参照してください。 次に例をいくつか示します。
+Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 次に例をいくつか示します。
 
 - **.\*** は任意の文字の文字列と一致します
 
@@ -119,9 +130,7 @@ Include ノードと Exclude ノードでは、ワイルドカードとは異な
 
 - **$** は文字列の末尾と一致します
 
-すべての一致で、大文字と小文字が区別されます。
-
-次に例を示します。
+次の XML では、正規表現を利用し、特定のアセンブリを含める方法と除外する方法を確認できます。
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ Include ノードと Exclude ノードでは、ワイルドカードとは異な
 </ModulePaths>
 ```
 
+次の XML では、正規表現を利用し、特定の関数を含める方法と除外する方法を確認できます。
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > 正規表現にエラー (エスケープされていない、または一致しないかっこなど) がある場合、コード カバレッジ分析は実行されません。
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>要素を包含または除外するための別の方法
-
-- **ModulePath** - アセンブリ ファイル パスで指定されたアセンブリと一致します。
-
-- **CompanyName** - **Company** 属性でアセンブリと一致します。
-
-- **PublicKeyToken** - 公開キー トークンで、署名付きアセンブリと一致します。
-
-- **Source** - 要素が定義されているソース ファイルのパス名で要素と一致します。
-
-- **Attribute** - 特定の属性のアタッチ先の要素と一致します。 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>` など、属性の完全な名前を指定します。
-
-  > [!TIP]
-  > <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 属性を除外すると、`async`、`await`、`yield return` などの言語機能を使用するコードと、自動実装プロパティがコード カバレッジ分析から除外されます。 真に生成されたコードを除外するには、<xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 属性のみを除外します。
-
-- **Function** - 完全修飾名でプロシージャ、関数、またはメソッドに一致します。 関数名を一致させるには、正規表現が、名前空間、クラス名、メソッド名、およびパラメーター リストを含む関数の完全修飾名と一致する必要があります。 次に例を示します。
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+正規表現の詳細については、「[Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)」を参照してください。
 
 ## <a name="sample-runsettings-file"></a>サンプル .runsettings ファイル
 
@@ -282,9 +270,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

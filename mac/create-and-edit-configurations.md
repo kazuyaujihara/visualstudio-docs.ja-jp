@@ -3,33 +3,36 @@ title: ビルド構成の作成と編集
 description: この記事では、Visual Studio for Mac でビルド構成を作成する方法について説明します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 26f6e25bfe1284fc31bcd484b905bf5d75c2ba15
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693074"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128433"
 ---
 # <a name="creating-and-editing-build-configurations"></a>ビルド構成の作成と編集
 
-ビルド構成は、個々のプロジェクトに対して作成するか、ソリューション全体に対して作成できます。 これらの構成によりビルドを正確に制御できます。
+ビルド構成を利用すると、ビルドを厳密に制御し、さまざまなテスト状況や配布状況に合わせた構成を作成できます。 ビルド構成は、個々のプロジェクトに対して作成するか、ソリューション全体に対して作成できます。
 
-プロジェクトとソリューションの両方のオプション メニューには、新しい構成と既存の構成を作成し、編集するための領域があります。
+[プロジェクト オプション] ダイアログを利用し、プロジェクトとソリューションの両方に対して新しい構成を作成したり、既存の構成を編集したりできます。
 
-## <a name="creating-a-project-build-configurations"></a>プロジェクトのビルド構成の作成
+>[!NOTE]
+>このトピックは、Visual Studio for Mac に適用されます。 Windows の Visual Studio については、「[方法:構成を作成および編集する](/visualstudio/ide/how-to-create-and-edit-configurations)」を参照してください。
+
+## <a name="creating-a-project-build-configuration"></a>プロジェクトのビルド構成の作成
 
 プロジェクトのビルド構成は次の手順で作成します。
 
-1. プロジェクト ノードを右クリックし、 **[オプション]** を選択します。
+1. プロジェクト ノードを右クリックし、 **[オプション]** を選択します。 プロジェクト ノードをダブルクリックして [プロジェクト オプション] ダイアログを表示することもできます。
 
 2. [プロジェクト オプション] ダイアログで、 **[ビルド]、[構成]** の順に選択します。
 
     ![プロジェクト オプションの構成マネージャー](media/create-and-edit-configurations-image2.png)
 
-3. 新しい構成を作成するには、 **[追加]** を選択します。 あるいは、既存の構成の 1 つをコピーできます。
+3. 新しい構成を作成するには **[追加]** を選択します。 既存の構成をコピーすることもできます。
 
 構成が作成されたら、プロジェクト オプションの **[ビルド]** セクションを利用し、構成に合わせてプロパティを調整できます。
 
@@ -39,27 +42,29 @@ ms.locfileid: "67693074"
 
 ソリューションのビルド構成は次の手順で作成します。
 
-1. ソリューション ノードを右クリックし、 **[オプション]** を選択します。
+1. ソリューション ノードを右クリックし、 **[オプション]** を選択します。 ソリューション ノードをダブルクリックして [ソリューション オプション] ダイアログを表示することもできます。
 
 2. [ソリューション オプション] ダイアログで、 **[ビルド]、[構成]** の順に選択します。
 
     ![ソリューション オプションの構成マネージャー](media/create-and-edit-configurations-image1.png)
 
-3. 新しい構成を作成するには、 **[追加]** を選択します。 あるいは、既存の構成の 1 つをコピーできます。
+3. 新しい構成を作成するには **[追加]** を選択します。 既存の構成をコピーすることもできます。
 
-構成が作成されたら、各プロジェクトのオプションの **[ビルド]** セクションを利用し、構成に合わせてプロパティを調整できます。
+構成が作成されたら、各プロジェクトの [プロジェクト オプション] ダイアログの **[ビルド]** セクションを利用し、構成に合わせてプロパティを調整できます。
 
 ![ビルド オプションの構成](media/create-and-edit-configurations-image3.png)
 
-## <a name="editing-a-build-configuration"></a>ビルド構成の編集
+## <a name="renaming-a-build-configuration"></a>ビルド構成の名前変更
 
-構成の名前を変更するには、プロジェクトまたはソリューション オプションの構成一覧から構成を選択します。
+構成の名前を変更するには、プロジェクトまたはソリューション オプションで **[ビルド]、[構成]** の順に選択し、構成一覧から構成を選択します。
 
 ![構成一覧](media/create-and-edit-configurations-image4.png)
 
 **[名前の変更]** ボタンを選択します。
 
 ![[名前の変更] ダイアログ](media/create-and-edit-configurations-image5.png)
+
+次に、 **[OK]** をクリックして確定します。
 
 ## <a name="related-video"></a>関連ビデオ
 

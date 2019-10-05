@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676727"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253040"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 
@@ -77,9 +77,9 @@ MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定�
 
 3. **[Framework のバージョン]** ドロップダウンを使用して、目的のバージョンを選択します。
 
-4. 既定では、メソッドは、カーソルの位置に挿入されます。 または、**[挿入ポイント]** ドロップダウンの値を目的の位置に変更することで、クラス内に既に実装されている任意のメソッドの後ろに挿入することを選択できます。
+4. 既定では、メソッドは、カーソルの位置に挿入されます。 または、 **[挿入ポイント]** ドロップダウンの値を目的の位置に変更することで、クラス内に既に実装されている任意のメソッドの後ろに挿入することを選択できます。
 
-5. 選択したメソッドについてウィザードがコメントを生成するように指定するには、**[メソッドのコメントを生成]** チェック ボックスをオンにします。 これらのコメントは、メソッドを呼び出すタイミングやメソッドの全般的な役割について説明するためのものです。
+5. 選択したメソッドについてウィザードがコメントを生成するように指定するには、 **[メソッドのコメントを生成]** チェック ボックスをオンにします。 これらのコメントは、メソッドを呼び出すタイミングやメソッドの全般的な役割について説明するためのものです。
 
 6. **[OK]** ボタンを選択すると、ウィザードが終了し、コードにメソッドが挿入されます。
 
@@ -91,7 +91,7 @@ MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定�
 
 Unity Project Explorer にはすべての Unity プロジェクト ファイルとディレクトリが、Unity エディターで表示されるのと同じ方法で表示されます。 これは、通常の Visual Studio ソリューション エクスプローラーを使用して Unity スクリプト間を移動するのとは異なります。そこではそれらが Visual Studio によって生成されるプロジェクトとソリューションに編成されます。
 
-- Visual Studio のメイン メニューで、**[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット:**Alt** + **Shift** + **E**
+- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット:**Alt** + **Shift** + **E**
 
    ![Unity プロジェクト エクスプローラー ウィンドウを表示します。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -107,7 +107,7 @@ Visual Studio Tools for Unity では、Visual Studio の強力なデバッガー
 
    ![Visual Studio で [再生] をクリックする](media/vstu_play-button.png)
 
-2. Unity に切り替えた後、**[Play]\(再生\)** ボタンをクリックしてエディターでゲームを実行します。
+2. Unity に切り替えた後、 **[Play]\(再生\)** ボタンをクリックしてエディターでゲームを実行します。
 
    ![Unity で [Play]\(再生\) をクリックする](media/vstu_unity-play-button.png)
 
@@ -123,7 +123,7 @@ Visual Studio でのデバッグの詳細については、「[First look at the
 
 #### <a name="attach-to-unity-and-play"></a>Unity にアタッチして再生
 
-さらに使いやすくするために、**[Unity にアタッチ]** ボタンを **[Unity にアタッチして再生]** モードに変更できます。
+さらに使いやすくするために、 **[Unity にアタッチ]** ボタンを **[Unity にアタッチして再生]** モードに変更できます。
 
 1. **[Unity にアタッチ]** ボタンの横の小さな**下向き矢印**をクリックします。
 
@@ -141,15 +141,15 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
 #### <a name="enable-script-debugging-in-a-unity-player"></a>Unity プレーヤーでのスクリプトのデバッグを有効にする
 
-1. Unity で、**[File]\(ファイル\) > [Build Settings]\(ビルド設定\)** を選択して、ビルド設定を開きます。
+1. Unity で、 **[File]\(ファイル\) > [Build Settings]\(ビルド設定\)** を選択して、ビルド設定を開きます。
 
-2. [Build Settings]\(ビルド設定\) ウィンドウで、**[Development Build]\(開発ビルド\)** と **[Script Debugging]\(スクリプトのデバッグ\)** の各チェック ボックスをオンにします。
+2. [Build Settings]\(ビルド設定\) ウィンドウで、 **[Development Build]\(開発ビルド\)** と **[Script Debugging]\(スクリプトのデバッグ\)** の各チェック ボックスをオンにします。
 
    ![デバッグのための Unity のビルド設定を構成します。](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>デバッガーをアタッチする Unity インスタンスを選択する
 
-- Visual Studio のメイン メニューで、**[デバッグ] > [Attach Unity Debugger]\(Unity デバッガーにアタッチ\)** を選択します。
+- Visual Studio のメイン メニューで、 **[デバッグ] > [Attach Unity Debugger]\(Unity デバッガーにアタッチ\)** を選択します。
 
    ![Unity のデバッガーをアタッチします。](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
@@ -187,7 +187,7 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
    どちらの場合も Visual Studio Tools for Unity によってプロジェクト参照が保持されるため、プロジェクト ファイルとソリューション ファイルを再生成する必要がある場合でも、これらの手順は 1 回実行するだけ済みます。
 
-2. DLL プロジェクトで、適切な Unity フレームワーク プロファイルを参照します。 Visual Studio では、DLL プロジェクトのプロパティで、**[対象のフレームワーク]** プロパティを、使用している Unity フレームワークのバージョンに設定します。 これは、Unity フル、Micro、または Web 基底クラス ライブラリなど、プロジェクトが対象とする API 互換性と一致する Unity 基底クラス ライブラリです。 この設定により、他のフレームワークまたは互換性レベルに存在するが、使用している Unity フレームワークのバージョンには存在しないフレームワーク メソッドを DLL が呼び出すことを防止できます。
+2. DLL プロジェクトで、適切な Unity フレームワーク プロファイルを参照します。 Visual Studio では、DLL プロジェクトのプロパティで、 **[対象のフレームワーク]** プロパティを、使用している Unity フレームワークのバージョンに設定します。 これは、Unity フル、Micro、または Web 基底クラス ライブラリなど、プロジェクトが対象とする API 互換性と一致する Unity 基底クラス ライブラリです。 この設定により、他のフレームワークまたは互換性レベルに存在するが、使用している Unity フレームワークのバージョンには存在しないフレームワーク メソッドを DLL が呼び出すことを防止できます。
 
 > [!NOTE]
 > Unity のレガシ ランタイムを使用している場合にのみ、以下が必要です。 新しい Unity ランタイムを使用している場合は、このような専用の 3.5 プロファイルを使用する必要はありません。 お使いの Unity バージョンと互換性のある .NET 4.x プロファイルを使用してください。
@@ -201,7 +201,7 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
    - DLL プロジェクトのビルド設定を変更して、出力フォルダーを自分の Unity プロジェクトの **Assets** フォルダーに設定します。 DLL ファイルと PDB ファイルの両方が **Assets** フォルダーに置かれます。
 
    PDB ファイルには DLL のデバッグのシンボルや、DLL コードからソース コード フォームへのマップが格納されているため、デバッグには PDB ファイルが必要です。 レガシ ランタイムをターゲットにしている場合、Visual Studio Tools for Unity は、DLL と PDB からの情報を使用して DLL.MDB ファイルを作成します。このファイルは、レガシ Unity スクリプト エンジンが使用するデバッグ シンボル形式になっています。 新しいランタイムをターゲットにしていて、Portable-PDB を使用している場合、新しい Unity ランタイムは Portable-PDB をネイティブで使用できるため、Visual Studio Tools for Unity ではシンボル変換が試行されません。
-   
+
    PDB 生成の詳細については、[ここ](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)を参照してください。 新しいランタイムをターゲットにしている場合は、Portable-PDB を適切に生成するために、[Debugging Information]\(デバッグ情報\) が [移植可能] に設定されていることを確認します。 レガシ ランタイムをターゲットにしている場合は、[全体] を使用する必要があります。
 
 4. コードをデバッグします。 これで、Unity プロジェクトのソース コードと DLL ソース コードを一緒にしてデバッグできるようになりました。ブレークポイントやコードのステップ実行など、いつも使用しているデバッグ機能をすべて使用できます。

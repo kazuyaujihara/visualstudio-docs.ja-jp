@@ -1,5 +1,5 @@
 ---
-title: オブジェクトのカスタム ビューの作成 |Microsoft Docs
+title: オブジェクトのカスタムビューを作成する |Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,33 +23,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744798"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814299"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>オブジェクトのカスタム ビューの作成 (C#、Visual Basic、 C++)
+# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>オブジェクトのカスタムビューの作成C#(、Visual Basic F#、 C++、/cli)
 Visual Studio でデバッガーの変数ウィンドウにデータ型を表示する方法をカスタマイズできます。
-
-## <a name="native-code"></a>ネイティブ コード
-
-C++コード、」の説明に従って、Natvis フレームワークを使用してカスタム データ型の展開を追加できます[カスタム ビューの作成C++デバッガーでオブジェクト](/visualstudio/debugger/create-custom-views-of-native-objects)します。 C++/CLI コードも属性を使用して、この記事では、ここで説明します。
 
 ## <a name="attributes"></a>属性
 
-C#、Visual Basic、およびC++(C++/CLI コードのみ)、カスタム データを使用するための拡張を追加する<xref:System.Diagnostics.DebuggerTypeProxyAttribute>、<xref:System.Diagnostics.DebuggerDisplayAttribute>と<xref:System.Diagnostics.DebuggerBrowsableAttribute>。
+、 C#、Visual Basic F# C++ (C++/cli コードのみ) では、<xref:System.Diagnostics.DebuggerTypeProxyAttribute>、<xref:System.Diagnostics.DebuggerDisplayAttribute>、および @no__t を使用して、カスタムデータの展開を追加できます。
 
-.NET Framework 2.0 のコードでは、Visual Basic は DebuggerBrowsable 属性機能をサポートしていません。 この制限は、.NET Framework の新しいバージョンで解除されています。
+.NET Framework 2.0 コードでは、Visual Basic はデバッガ参照可能属性をサポートしていません。 この制限は、.NET Framework の新しいバージョンで解除されています。
 
 ## <a name="visualizers"></a>ビジュアライザー
 
 マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法 :ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
 
+> [!NOTE]
+> コードC++の場合、「[デバッガーでのオブジェクトのカスタムビューの作成C++ ](/visualstudio/debugger/create-custom-views-of-native-objects)」で説明されているように、Natvis フレームワークを使用してカスタムデータ型の展開を追加できます。
+
 ## <a name="see-also"></a>関連項目
 
-- [DebuggerDisplay 属性を使用して表示するものをデバッガーに通知します。](../debugger/using-the-debuggerdisplay-attribute.md)
-- [DebuggerTypeProxy 属性の使用を表示するには、どのような型をデバッガーに通知します。](../debugger/using-debuggertypeproxy-attribute.md)
+- [デバッガ Display 属性を使用して、表示する内容をデバッガーに通知します](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Debugger Typeproxy 属性を使用して表示する型をデバッガーに通知する](../debugger/using-debuggertypeproxy-attribute.md)
 - [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)
 - [デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

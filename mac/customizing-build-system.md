@@ -3,22 +3,20 @@ title: ビルド システムのカスタマイズ
 description: この記事は、Visual Studio for Mac で利用される MSBuild ビルド システムの概要です
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/14/2017
+ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693016"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128387"
 ---
 # <a name="customizing-the-build-system"></a>ビルド システムのカスタマイズ
 
-MSBuild は Microsoft が開発したビルド エンジンです。主に .NET アプリケーションのビルドを可能にします。 Mono フレームワークはまた、Microsoft のビルド エンジンを独自に実装しています。それが **xbuild** です。 ただし、xbuild は廃止となり、すべてのオペレーティング システムで MSBuild が使用されています。
+Microsoft Build Engine は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれているこのエンジンは Microsoft によって開発され、.NET アプリケーションの構築を可能にします。 Mono フレームワークはまた、Microsoft のビルド エンジンを独自に実装しています。それが **xbuild** です。 ただし、現時点では xbuild は廃止となり、すべてのオペレーティング システムで MSBuild が使用されています。
 
-**MSBuild** は、Visual Studio for Mac のプロジェクト用のビルド システムとして主に使用されます。
-
-MSBuild は、ソース ファイルなど、一連の入力を受け取ることで動作し、入力を実行可能ファイルなどの出力に変換します。 この出力は、コンパイラのようなツールを呼び出して行われます。
+**MSBuild** は、Visual Studio for Mac でプロジェクトのビルド システムとして使用されており、ソース ファイルなど、一連の入力を受け取ることで動作し、入力を実行可能ファイルなどの出力に変換し、コンパイラのようなツールを呼び出すことでその出力を実行します。 この出力は、コンパイラのようなツールを呼び出して行われます。
 
 ## <a name="msbuild-file"></a>MSBuild ファイル
 

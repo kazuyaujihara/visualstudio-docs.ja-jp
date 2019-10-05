@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,101 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661954"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185991"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4330"></a>4.3.3.0
+
+リリース日: 2019 年 9 月 23 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - 軽量ビルドに関するエラーおよび警告報告を修正しました。
+
+## <a name="4320"></a>4.3.2.0
+
+リリース日: 2019 年 9 月 16 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - Unity に固有の新しい診断を追加することによって、Visual Studio が Unity プロジェクトをより深く理解できるようにしました。 また、Unity プロジェクトには適用されない一般的な C# 診断を抑制することで、IDE をよりスマートにしました。 たとえば、IDE では、インスペクター変数 `readonly` を変更するクイック修正は表示されません。これにより、Unity エディターで変数を変更できなくなります。
+    - `UNT0001`:Unity メッセージは空の場合でもランタイムによって呼び出されます。それらのメッセージを宣言する場合は、不要な処理を Unity ランタイムが回避するようにしないでください。
+    - `UNT0002`:文字列の等価性を使用したタグ比較は、組み込みの CompareTag メソッドよりも遅くなります。
+    - `UNT0003`:型の安全性のため、GetComponent のフォームは汎用的なものを使用することが推奨されています。
+    - `UNT0004`:更新メッセージはフレームレートに依存しているため、Time.fixedDeltaTime ではなく Time.deltaTime instead を使用する必要があります。
+    - `UNT0005`:FixedUpdate メッセージはフレームレートに依存しないため、Time.deltaTime ではなく Time.fixedDeltaTime を使用する必要があります。
+    - `UNT0006`:この Unity メッセージに対して無効なメソッド署名が検出されました。
+    - `UNT0007`:Unity では、null 合体演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
+    - `UNT0008`:Unity では、null 反映演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
+    - `UNT0009`:InitializeOnLoad 属性をクラスに適用する場合は、静的コンストラクターを指定する必要があります。 InitializeOnLoad 属性を使用すると、エディターの起動時にそれが確実に呼び出されます。
+    - `UNT0010`:MonoBehaviours は、AddComponent() を使用してのみ作成する必要があります。 MonoBehaviour はコンポーネントであり、GameObject にアタッチする必要があります。
+    - `UNT0011`:ScriptableObject は CreateInstance() を使用してのみ作成する必要があります。 Unity メッセージ メソッドを処理するには、Unity エンジンによって ScriptableObject を作成する必要があります。
+    - `IDE0029` の `USP0001`:Unity オブジェクトでは、null 合体演算子を使用しないでください。
+    - `IDE0031` の `USP0002`:Unity オブジェクトでは null 反映演算子を使用しなきでください。
+    - `IDE0051` の `USP0003`:Unity メッセージは Unity ランタイムによって呼び出されます。
+    - `IDE0044` の `USP0004`:SerializeField 属性を持つフィールドを読み取り専用にしないでください。
+
+## <a name="4310"></a>4.3.1.0
+
+リリース日: 2019 年 9 月 4 日
+
+### <a name="new-features"></a>新機能
+
+- **評価:**
+
+  - 型の表示を改善するためのサポートが追加されました。すなわち、`List'1[[System.Object, <corlib...>]]` ではなく `List<object>` になりました。
+
+  - ポインター メンバー アクセスのサポートが追加されました。すなわち、`p->data->member` のようになりました。
+
+  - 配列初期化子での暗黙的な変換のサポートが追加されました。すなわち、`new byte [] {1,2,3,4}` のようになりました。
+
+## <a name="4300"></a>4.3.0.0
+
+リリース日: 2019 年 8 月 13 日
+
+### <a name="new-features"></a>新機能
+
+- **デバッガー:**
+
+  - MDS プロトコル 2.51 のサポートが追加されました。
+
+- **統合:**
+
+  - "Unity にアタッチ インスタンス" ウィンドウの並べ替え、検索、更新機能が改善されました。 ローカル プレーヤーの場合でも PID が表示されるようになりました (システム上でリスニング ソケットを問い合わせ、所有プロセスを取得します)。
+
+  - asmdef ファイルのサポートが追加されました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity プレーヤーとの通信中の誤った形式のメッセージの処理を修正しました。
+
+- **評価:**
+
+  - 式の名前空間の処理を修正しました。
+
+  - IntPtr 型を使用した検査を修正しました。
+  
+  - 例外とともにステップ実行の問題を修正しました。
+
+  - 擬似識別子 ($exception など) の評価を修正しました。
+
+  - 無効なアドレスを逆参照するときにクラッシュしないようにします。  
+
+  - アンロードされた AppDomain の問題を修正しました。
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -79,7 +164,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - Unity 2019.x によるプロジェクト名抽出メカニズムを更新しました。
 
-  - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (```Packages``` フォルダー内の manifest.json を使用して) とローカル パッケージ (```Packages``` フォルダーに埋め込まれた) のみが表示されます。
+  - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (`Packages` フォルダー内の manifest.json を使用して) とローカル パッケージ (`Packages` フォルダーに埋め込まれた) のみが表示されます。
 
 - **プロジェクトの生成:**
 
@@ -89,7 +174,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - 別名で修飾された名前 (現在のところグローバル名前空間のみ) のサポートを追加しました。 そのため、式エバリュエーターで形式 global::namespace.type を使用した型を受け付けるようになりました。
 
-  - ```pointer[index]``` 形式のサポートを追加しました。これはポインター逆参照 ```*(pointer+index)``` 形式と同じ意味です。
+  - `pointer[index]` 形式のサポートを追加しました。これはポインター逆参照 `*(pointer+index)` 形式と同じ意味です。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -129,7 +214,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - インストール時に Unity プロセスを適切に検出するためのサポートを追加し、セットアップ エンジンによるファイル ロックの処理を改善できるようにしました。
 
-  - ScriptableObject API を更新しました。
+  - `ScriptableObject` API を更新しました。
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **プロジェクトの生成:**
 
-  - パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 CS0649 および IDE0051 のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
+  - パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 `CS0649` および `IDE0051` のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
 
 - **統合:**
 
   - Unity エディターとプレーヤー インスタンスを表示するユーザー エクスペリエンスを改善しました (ウィンドウのサイズが変更可能になり、均一な余白が使用され、サイズ変更グリップが表示されます)。 Unity エディターのプロセス ID 情報を追加しました。
 
-  - MonoBehaviour API を更新しました。
+  - `MonoBehaviour` API を更新しました。
 
 - **評価:**
 

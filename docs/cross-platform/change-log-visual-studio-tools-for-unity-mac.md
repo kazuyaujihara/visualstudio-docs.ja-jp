@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661820"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185968"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="2330"></a>2.3.3.0
+
+リリース日: 2019 年 9 月 23 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - 未使用パラメーターを削除するためのクイック修正が IDE に表示されないよう、IDE0060 用に新しい非表示機能が追加されました。
+    - `IDE0060` の `USP0005`:Unity メッセージは Unity ランタイムによって呼び出されます。
+
+## <a name="2320"></a>2.3.2.0
+
+リリース日: 2019 年 9 月 16 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - Unity に固有の新しい診断を追加することによって、Visual Studio が Unity プロジェクトをより深く理解できるようにしました。 また、Unity プロジェクトには適用されない一般的な C# 診断を抑制することで、IDE をよりスマートにしました。 たとえば、IDE では、インスペクター変数 `readonly` を変更するクイック修正は表示されません。これにより、Unity エディターで変数を変更できなくなります。
+    - `UNT0001`:Unity メッセージは空の場合でもランタイムによって呼び出されます。それらのメッセージを宣言する場合は、不要な処理を Unity ランタイムが回避するようにしないでください。
+    - `UNT0002`:文字列の等価性を使用したタグ比較は、組み込みの CompareTag メソッドよりも遅くなります。
+    - `UNT0003`:型の安全性のため、GetComponent のフォームは汎用的なものを使用することが推奨されています。
+    - `UNT0004`:更新メッセージはフレームレートに依存しているため、Time.fixedDeltaTime ではなく Time.deltaTime instead を使用する必要があります。
+    - `UNT0005`:FixedUpdate メッセージはフレームレートに依存しないため、Time.deltaTime ではなく Time.fixedDeltaTime を使用する必要があります。
+    - `UNT0006`:この Unity メッセージに対して無効なメソッド署名が検出されました。
+    - `UNT0007`:Unity では、null 合体演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
+    - `UNT0008`:Unity では、null 反映演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
+    - `UNT0009`:InitializeOnLoad 属性をクラスに適用する場合は、静的コンストラクターを指定する必要があります。 InitializeOnLoad 属性を使用すると、エディターの起動時にそれが確実に呼び出されます。
+    - `UNT0010`:MonoBehaviours は、AddComponent() を使用してのみ作成する必要があります。 MonoBehaviour はコンポーネントであり、GameObject にアタッチする必要があります。
+    - `UNT0011`:ScriptableObject は CreateInstance() を使用してのみ作成する必要があります。 Unity メッセージ メソッドを処理するには、Unity エンジンによって ScriptableObject を作成する必要があります。
+    - `IDE0029` の `USP0001`:Unity オブジェクトでは、null 合体演算子を使用しないでください。
+    - `IDE0031` の `USP0002`:Unity オブジェクトでは null 反映演算子を使用しなきでください。
+    - `IDE0051` の `USP0003`:Unity メッセージは Unity ランタイムによって呼び出されます。
+    - `IDE0044` の `USP0004`:SerializeField 属性を持つフィールドを読み取り専用にしないでください。
+
+## <a name="2310"></a>2.3.1.0
+
+リリース日: 2019 年 9 月 4 日
+
+### <a name="new-features"></a>新機能
+
+- **評価:**
+
+  - 型の表示を改善するためのサポートが追加されました。すなわち、`List'1[[System.Object, <corlib...>]]` ではなく `List<object>` になりました。
+
+  - ポインター メンバー アクセスのサポートが追加されました。すなわち、`p->data->member` のようになりました。
+
+  - 配列初期化子での暗黙的な変換のサポートが追加されました。すなわち、`new byte [] {1,2,3,4}` のようになりました。
+
+  - バイト配列と文字列を検査するときの 16 進エディターのサポートが追加されました。
+
+## <a name="2300"></a>2.3.0.0
+
+リリース日: 2019 年 8 月 13 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **評価:**
+
+  - 例外とともにステップ実行の問題を修正しました。
+
+  - 擬似識別子 ($exception など) の評価を修正しました。
+
+  - 無効なアドレスを逆参照するときにクラッシュしないようにします。  
+
+  - アンロードされた AppDomain の問題を修正しました。
 
 ## <a name="2200"></a>2.2.0.0
 
@@ -103,7 +171,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - IntelliSense エラーと警告の使用を優先して、Unity プロジェクトのフル ビルドを無効にしました。 Indeed Unity では、Unity が内部で実行していることを表すクラス ライブラリ プロジェクトによって Visual Studio ソリューションが作成されます。 ただし、Visual Studio でのビルドの結果は、Unity によって使用されたり、選択されたりすることはありません。それらのコンパイル パイプラインが閉じているためです。 Visual Studio でのビルドによって、何もしなくてもリソースが消費されます。 フル ビルドに依存するツールまたは設定があるため、フル ビルドを必要とする場合は、この最適化を無効にできます ([設定]/[Tools for Unity]/[プロジェクトのフル ビルドを無効にする])。
   
-  - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (パッケージ フォルダー内の manifest.json を使用して) とローカル パッケージ (パッケージ フォルダーに埋め込まれた) のみが表示されます。
+  - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (`Packages` フォルダー内の manifest.json を使用して) とローカル パッケージ (`Packages` フォルダーに埋め込まれた) のみが表示されます。
 
 ## <a name="2021"></a>2.0.2.1
 
@@ -164,6 +232,12 @@ Visual Studio Tools for Unity の変更ログです。
 - **プロジェクトの生成:**
 
   - ソリューション ファイルを処理するときに、外部のプロパティを保持します。
+  
+- **評価:**
+
+  - 別名で修飾された名前 (現在のところグローバル名前空間のみ) のサポートを追加しました。 そのため、式エバリュエーターで形式 global::namespace.type を使用した型を受け付けるようになりました。
+
+  - `pointer[index]` 形式のサポートを追加しました。これはポインター逆参照 `*(pointer+index)` 形式と同じ意味です。
 
 ## <a name="2004"></a>2.0.0.4
 
@@ -173,7 +247,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - ScriptableObject API を更新しました。
+  - `ScriptableObject` API を更新しました。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -189,7 +263,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **プロジェクトの生成:**
 
-  - パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 CS0649 および IDE0051 のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
+  - パブリック フィールドとシリアル化されたフィールドで、警告が発行されなくなりました。 `CS0649` および `IDE0051` のメッセージを作成していた Unity プロジェクトでは、これらのコンパイラの警告を自動抑制しました。
 
 - **統合:**
 

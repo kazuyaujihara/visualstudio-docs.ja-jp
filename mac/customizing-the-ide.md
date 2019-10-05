@@ -1,21 +1,21 @@
 ---
 title: IDE のカスタマイズ
-description: Visual Studio for Mac はさまざまな方法でカスタマイズできます。効率性とデザイン性の両方のニーズを満たす環境でアプリを開発できます。 このトピックでは、Visual Studio for Mac を自分のニーズに合わせてカスタマイズするためのさまざまな方法を紹介します。
+description: Visual Studio for Mac はさまざまな方法でカスタマイズできます。効率性とデザイン性の両方のニーズを満たす環境でアプリを開発できます。 この記事では、Visual Studio for Mac を自分のニーズに合わせてカスタマイズするためのさまざまな方法を紹介します。
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691835"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213740"
 ---
 # <a name="customizing-the-ide"></a>IDE のカスタマイズ
 
-Visual Studio for Mac はさまざまな方法でカスタマイズできます。効率性とデザイン性の両方のニーズを満たす環境でアプリを開発できます。 この記事では、Visual Studio for Mac を自分のニーズに合わせてカスタマイズするためのさまざまな方法を紹介します。
+Visual Studio for Mac は、ユーザーが効率性とデザイン性の両方のニーズを満たす環境でアプリを開発できるようにカスタマイズすることができます。 この記事では、Visual Studio for Mac を自分のニーズに合わせてカスタマイズするためのさまざまな方法を紹介します。
 
 ## <a name="dark-theme"></a>ダーク テーマ
 
@@ -58,17 +58,21 @@ Visual Studio for Mac の表示言語を変更するには、次の図のよう�
 
 ![標準ヘッダー オプション](media/customizing-the-ide-image8a.png)
 
-Visual Studio for Mac のバージョン管理からコミットが行われた場合、そのコミットで、 **[名前]** フィールドと **[電子メール]** フィールドに入力されたデータが利用されます。 このフィールドにデータを入力していない場合、バージョン管理の利用時、Visual Studio for Mac から入力が求められます。
+Visual Studio for Mac のバージョン管理からコミットが行われた場合、そのコミットで、 **[名前]** フィールドと **[電子メール]** フィールドに入力されたデータが利用されます。 このフィールドにデータを入力していない場合、バージョン管理を利用するときに、Visual Studio for Mac から入力が求められます。
 
 ## <a name="key-bindings"></a>キー バインド
 
-キー バインドを利用することで、より効率的に Visual Studio for Mac を操作できるように開発環境を調整できます。 Visual Studio (Windows)、ReSharper、Visual Studio Code、Xcode など、人気のある多くの IDE 用に使い慣れたキー バインドが提供されています。
+キー バインドまたはキーボード ショートカットを利用することで、より効率的に Visual Studio for Mac を操作できるように開発環境を調整できます。 Visual Studio (Windows)、ReSharper、Visual Studio Code、Xcode など、人気のある多くの IDE 用に使い慣れたキー バインドが提供されています。
 
 次の図のように、 **[Visual Studio]、[ユーザー設定]、[環境]、[キー バインド]** の順に選択し、キー バインドを設定できます。
 
 ![キー バインドの設定](media/customizing-the-ide-image10a.png)
 
 ここからキー バインドの組み合わせを検索したり、競合するバインドを表示したり、新しいバインドを追加したり、既存のバインドを編集したりできます。
+
+これらのバインドは、Visual Studio for Mac の初回セットアップ中に、 **[キーボードの選択]** 画面を使用して設定することもできます。
+
+![キーバインドの設定、最初の実行](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>ワークスペースのレイアウト
 
@@ -108,7 +112,7 @@ Visual Studio for Mac のパッドには追加情報、ツール、ナビゲー�
 
 1 つのレイアウトが常に有効になります。レイアウト内を変更すると、たとえば、パッドを追加したり、パッドの位置を変更したりすると、そのとき有効なレイアウトだけが変更されます。 Visual Studio for Mac を閉じると、変更は保存されません。
 
-ただし、新しいレイアウトを作成することができます。 **[表示]、[Save Current Layout]\(現在のレイアウトを保存\)** メニュー項目を使用します。 これで現在のレイアウトがメニューに追加されます。追加したレイアウトはいつでも選択できます。
+ただし、新しいレイアウトを作成することができます。 **[表示]、[Save Current Layout]\(現在のレイアウトを保存\)** メニュー項目を使用します。 このコマンドを実行すると、現在のレイアウトがメニューに追加され、いつでも選択できるようになります。
 
 ![現在のレイアウトを保存する](media/customizing-the-ide-image6a.png)
 
@@ -116,7 +120,7 @@ Visual Studio for Mac のパッドには追加情報、ツール、ナビゲー�
 
 Visual Studio for Mac では、テキスト エディターを並べて開いたり、エディターを別のウィンドウとして表示したりできます。
 
-2 列モードは [表示] メニュー項目から有効にできます。 **[表示]、[エディター列]、[2 列]** の順に選択するか、エディター領域の 1 つの端にエディター タブをドラッグします。
+2 列モードは、 **[表示] > [エディター列] > [2 columns]\(2 列\)** を選択するか、[エディター] タブをエディター領域のいずれかの端にドラッグすることで、[表示] メニュー項目を介して有効にすることができます。
 
 ![2 列のサイド バイ サイド モード](media/customizing-the-ide-sbs.png)
 

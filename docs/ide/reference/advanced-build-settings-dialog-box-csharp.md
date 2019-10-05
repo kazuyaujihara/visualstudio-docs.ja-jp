@@ -1,6 +1,6 @@
 ---
 title: '[ビルドの詳細設定] ダイアログ ボックス (C#)'
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461880"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186787"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
 
-**プロジェクト デザイナー**の **[ビルドの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトにのみ適用されます。
+**プロジェクト デザイナー**の **[ビルドの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、C# プロジェクトにのみ適用されます。
 
 ## <a name="general"></a>全般
 
@@ -30,19 +30,19 @@ ms.locfileid: "68461880"
 
 **言語バージョン**
 
-使用する言語のバージョンを指定します。 機能セットはバージョンによって異なるので、このオプションを使用して、コンパイラが特定の実装機能のみを許可するように強制したり、既存の標準と互換性のある機能のみを有効にしたりすることができます。 この設定には、次のオプションがあります。
+::: moniker range=">=vs-2019"
 
-- **default**
+[/langversion (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option) のリンク。プロジェクトのターゲット フレームワークに基づいて既定の言語バージョンが選択されるしくみに関する情報が提供されます。
 
-   現在のバージョンをターゲットにします。
+::: moniker-end
 
-- **ISO-1** と **ISO-2**
+::: moniker range="vs-2017"
 
-   それぞれ、標準機能の ISO-1 と ISO-2 をターゲットにします。
+使用する言語のバージョンを指定します。 機能セットはバージョンによって異なるので、このオプションを使用して、コンパイラが特定の実装機能のみを許可するように強制したり、既存の標準と互換性のある機能のみを有効にしたりすることができます。
 
-- **C# [バージョン番号]**
+既定値は C# 7.0 です。
 
-   特定のバージョンの C# をターゲットにします。 詳しくは、「[/langversion (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)」をご覧ください。
+::: moniker-end
 
 **内部コンパイル エラー報告**
 
