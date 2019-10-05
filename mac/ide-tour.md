@@ -3,28 +3,28 @@ title: Visual Studio for Mac ツアー
 description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: aabb6b575edb68f3e72cad06f2497b8176e950fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691496"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213700"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac ツアー
 
 Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_です。 Visual Studio for Mac には、期待されている標準エディターおよびデバッガーなどの機能に加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
 
 Visual Studio for Mac は、`.csproj`、`.fsproj`、または `.sln` など、対応する Windows 版と同じ種類のファイルを多くサポートしています。また、EditorConfig などの機能もサポートしており、これはご自分に最適な IDE を使用できることを意味しています。
-Windows で Visual Studio を使用したことがあれば、使い慣れた方法でアプリの作成、起動、開発を行うことができます。 また、Visual Studio for Mac は、Windows 版を強力な IDE にしている強力なツールの多くを採用しています。 Roslyn コンパイラ プラットフォームは、リファクタリングと IntelliSense に使用されます。 そのプロジェクト システムとビルド エンジンは MSBuild を使用し、ソース エディターは TextMate バンドルをサポートしています。 Xamarin アプリと .NET Core アプリに同じデバッグ エンジンを使用し、Xamarin.iOS と Xamarin.Android に同じデザイナーを使用しています。
+Windows で Visual Studio を使用したことがあれば、使い慣れた方法でアプリの作成、起動、開発を行うことができます。 また、Visual Studio for Mac は、Windows 版を強力な IDE にしている強力なツールの多くを採用しています。 Roslyn コンパイラ プラットフォームは、リファクタリングと IntelliSense に使用されます。 そのプロジェクト システムとビルド エンジンでは MSBuild が使用されており、ソース エディターでは、Windows での Visual Studio と同じ基盤が使用されています。 Xamarin アプリと .NET Core アプリに同じデバッグ エンジンを使用し、Xamarin.iOS と Xamarin.Android に同じデザイナーを使用しています。
 
 ## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Visual Studio for Mac で実行できること
 
 Visual Studio for Mac では、次の種類での開発をサポートしています。
 
-- C#、F# を使用した ASP.NET Core Web アプリケーション、および Razor ページ、JavaScript および TypeScript のサポート
+- C#、F# を使用した ASP.NET Core Web アプリケーション、および Razor ページ、JavaScript、TypeScript のサポート
 - C# または F# を使用した .NET Core コンソール アプリケーション
 - C# を使用したクロスプラットフォーム Unity ゲームおよびアプリケーション
 - C# または F# および XAML を使用した Xamarin での Android、iOS、tvOS および watchOS アプリケーション
@@ -36,11 +36,15 @@ Visual Studio for Mac では、次の種類での開発をサポートしてい�
 
 Visual Studio for Mac は、アプリケーションのファイルと設定の管理、アプリケーション ノードの作成、およびデバッグのセクションに分かれています。
 
-## <a name="start-window"></a>スタート ウィンドウ
+## <a name="getting-started"></a>作業の開始
 
-Visual Studio 2019 for Mac を起動すると、新規ユーザーにはサインイン ウィンドウが表示されます。 ご自分の Microsoft アカウントでサインインして、有料ライセンス (ある場合) をアクティブ化するか、Azure サブスクリプションにリンクします。 **[スキップ]** を押して、後で **[Visual Studio] > [サインイン]** メニュー項目を使用してサインインすることができます。
+Visual Studio 2019 for Mac を起動すると、新規ユーザーにはサインイン ウィンドウが表示されます。 ご自分の Microsoft アカウントでサインインして、有料ライセンス (ある場合) をアクティブ化するか、Azure サブスクリプションにリンクします。 **[後で行う]** を押し、**Visual Studio > [サインイン]** メニュー項目を使用して、後でサインインすることができます。
 
 ![Microsoft アカウントにサインインする](media/ide-tour-2019-start-signin.png)
+
+次に、優先するキーボード ショートカットを選択すると、IDE をカスタマイズするためのオプションが表示されます: Visual Studio for Mac、Visual Studio、Visual Studio Code、または Xcode。
+
+![お気に入りのキーボード ショートカットを選択する](media/ide-tour-2019-keyboard-shortcut.png)
 
 サインインしたユーザーには、新しい_スタート ウィンドウ_が表示されます。このウィンドウには、最近使用したプロジェクトの一覧と、既存のプロジェクトを開いたり、新しいプロジェクトを作成するためのボタンが表示されます。
 
@@ -87,6 +91,31 @@ NuGet は、.NET 開発用の最も人気のあるパッケージ マネージ�
 ![NuGet パッケージの追加](media/ide-tour-image21.png)
 
 アプリケーションで NuGet パッケージを使用する方法については、「[プロジェクトに NuGet パッケージを含める](/visualstudio/mac/nuget-walkthrough)」を参照してください。
+
+## <a name="source-editor"></a>ソース エディター
+
+C#、XAML、Javascript のいずれで作成するかに関係なく、コード エディターは、完全にネイティブなユーザー インターフェイスを備え、Visual Studio Windows と同じコア コンポーネントを共有します。
+
+これには、次のような利点がいくつかあります。
+
+* ネイティブ macOS (Cocoa ベース) のユーザー インターフェイス (ツールヒント、エディター画面、余白のデザイン、テキストのレンダリング、IntelliSense)
+* IntelliSense の型によるフィルター処理と "インポート項目を表示"
+* ネイティブ テキスト入力のサポート
+* RTL/BiDi 言語のサポート
+* Roslyn 3
+* マルチキャレットのサポート
+* 右端で折り返す
+* 更新された IntelliSense UI
+* 改善された検索/置換
+* スニペットのサポート 
+* 選択範囲のフォーマット
+* インラインの電球
+
+Visual Studio for Mac でのソース エディターの使用に関する詳細については、「[ソース エディター](/visualstudio/mac/source-editor)」のドキュメントを参照してください。
+
+タブを常に表示しておくには、ピン留めを利用できます。 これにより、プロジェクトを起動するたびに、必要なタブが常に表示されるようになります。 タブをピン留めするには、タブの上にマウス ポインターを移動し、_ピン_ アイコンをクリックします。
+
+![タブのピン留め](media/ide-tour-tabpin.png)
 
 ## <a name="refactoring"></a>リファクタリング
 

@@ -1,5 +1,5 @@
 ---
-title: '方法: データに ListObject コントロールを塗りつぶす'
+title: '方法: データを使用した ListObject コントロールの塗りつぶし'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967985"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255892"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>方法: データに ListObject コントロールを塗りつぶす
+# <a name="how-to-fill-listobject-controls-with-data"></a>方法: データを使用した ListObject コントロールの塗りつぶし
   データ バインディングを使用すると、ドキュメントにデータをすばやく追加できます。 リスト オブジェクトにデータをバインドした後、リスト オブジェクトを切断すると、データは表示されますが、データ ソースとのバインドは解除されます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。SharePoint リストに接続されている Excel でリストを作成しますか](http://go.microsoft.com/fwlink/?LinkID=130263)。
+ ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。SharePoint リストに接続されている Excel でリストを作成しますか](http://go.microsoft.com/fwlink/?LinkID=130263)。
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>ListObject コントロールにデータをバインドするには
 
@@ -50,7 +50,7 @@ ms.locfileid: "62967985"
 
 ### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>データ ソースから ListObject コントロールを切断するには
 
-1. <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> の `List1` メソッドを呼び出します。
+1. <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> の `List1`メソッドを呼び出します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]
@@ -59,12 +59,12 @@ ms.locfileid: "62967985"
  このコード例では、このコードがあるワークシートに、 <xref:Microsoft.Office.Tools.Excel.ListObject> という名前の既存の `list1` があることを前提としています。
 
 ## <a name="see-also"></a>関連項目
-- [Word 文書と Excel ブックを実行時に VSTO アドインで拡張します。](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [実行時に VSTO アドインの Word 文書と Excel ブックを拡張する](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
-- [実行時に Office ドキュメントにコントロールを追加します。](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [方法: データに ListObject 列をマップします。](../vsto/how-to-map-listobject-columns-to-data.md)
+- [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [方法: ListObject 列をデータにマップする](../vsto/how-to-map-listobject-columns-to-data.md)
 - [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject コントロール](../vsto/listobject-control.md)
-- [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [方法: データベースからデータをワークシートに読み込む](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [方法: サービスからデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [方法: データベースのデータをワークシートに設定する](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [方法: サービスからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)

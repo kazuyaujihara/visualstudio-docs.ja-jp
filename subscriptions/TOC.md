@@ -31,6 +31,7 @@
 ##### [CAST の強調表示](vs-cast.md)
 ##### [CloudPilot](vs-cloudpilot.md)
 ##### [Enterprise Mobility + Security](vs-ems.md)
+##### [Microsoft 365](vs-m365.md)
 ##### [Office 365 開発者サブスクリプション](vs-office-dev.md)
 ##### [Office 365 サブスクリプション](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
@@ -41,6 +42,7 @@
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Windows 開発者アカウント](vs-windows-dev.md)
 #### プロフェッショナルな開発
+##### [CODE マガジン](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [MSDN マガジンの定期購読](vs-msdn.md)

@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926680"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255698"
 ---
 # <a name="actions-pane-overview"></a>操作ウィンドウの概要
-  操作ウィンドウは、特定の Microsoft Office Word 文書または Microsoft Office Excel ブックに添付された、カスタマイズ可能な**ドキュメントアクション**作業ウィンドウです。 操作ウィンドウは、Office 作業ウィンドウ内で、Excel の [ **XML ソース**] 作業ウィンドウや Word の [**スタイルと書式設定**] 作業ウィンドウなどの他の組み込み作業ウィンドウと共にホストされます。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。
+  操作ウィンドウは、特定の Microsoft Office Word 文書または Microsoft Office Excel ブックに添付された、カスタマイズ可能な**ドキュメントアクション**作業ウィンドウです。 操作ウィンドウは、Office 作業ウィンドウ内で、Excel の **[XML ソース]** 作業ウィンドウや Word の **[スタイルと書式設定]** 作業ウィンドウなどの他の組み込み作業ウィンドウと共にホストされます。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "68926680"
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- 操作ウィンドウは、コントロールを明示的に追加するとすぐに、実行時に表示されます。 操作ウィンドウが表示された後は、ユーザーの操作に応じてコントロールを動的に追加または削除できます。 通常は、ユーザーが初めてドキュメントを開くときに操作ウィンドウが表示されるように、操作ウィンドウを表示するコードを `ThisDocument` または `ThisWorkbook` の `Startup` イベント ハンドラーに追加します。 しかし、ドキュメント内でのユーザーの操作に応じてのみ操作ウィンドウを表示することもできます。 たとえば、ドキュメント上のコントロールの `Click` イベントにコードを追加できます。
+ 操作ウィンドウは、実行時にコントロールを明示的に追加するとすぐに表示されます。 操作ウィンドウが表示された後は、ユーザーの操作に応じてコントロールを動的に追加または削除できます。 通常は、ユーザーが初めてドキュメントを開くときに操作ウィンドウが表示されるように、操作ウィンドウを表示するコードを `ThisDocument` または `ThisWorkbook` の `Startup` イベント ハンドラーに追加します。 しかし、ドキュメント内でのユーザーの操作に応じてのみ操作ウィンドウを表示することもできます。 たとえば、ドキュメント上のコントロールの `Click` イベントにコードを追加できます。
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>操作ウィンドウに複数のコントロールを追加する
  操作ウィンドウに複数のコントロールを追加する場合は、コントロールをユーザーコントロールにグループ化してから、 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>プロパティにユーザーコントロールを追加する必要があります。 このプロセスには、次の手順が含まれます。
@@ -86,9 +86,9 @@ ms.locfileid: "68926680"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Word または Excel の UI を使用して操作ウィンドウを表示するには
 
-1. リボンの [**表示**] タブをクリックします。
+1. リボンの **[表示]** タブをクリックします。
 
-2. [**表示/非**表示] グループで、[**ドキュメントアクション**] トグルボタンをクリックします。
+2. **[表示/非]** 表示 グループで、 **[ドキュメントアクション]** トグルボタンをクリックします。
 
 ## <a name="program-actions-pane-events"></a>プログラム操作ウィンドウのイベント
  操作ウィンドウに複数のユーザー コントロールを追加し、ドキュメント上のイベントに応答するコードを作成して、ユーザー コントロールを表示したり非表示にしたりすることができます。 XML スキーマ要素をドキュメントにマップした場合は、XML 要素の 1 つにカーソルが置かれた時点で、操作ウィンドウに特定のユーザー コントロールを表示するようにできます。 詳細については、「[方法 :スキーマを Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)内の Word 文書にマップし、 [次の操作を行います。スキーマを Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)内のワークシートにマップします。
@@ -122,7 +122,7 @@ ms.locfileid: "68926680"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>アンカーコントロール
- ユーザーが実行時に操作ウィンドウのサイズを変更した場合、コントロールは操作ウィンドウでサイズを変更できます。 Windows フォーム コントロールの <xref:System.Windows.Forms.Control.Anchor%2A> プロパティを使用すると、コントロールを操作ウィンドウに固定できます。 同じように、Windows フォーム コントロールをユーザー コントロールに固定することもできます。 詳細については、「[方法 :Windows フォーム](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)上のコントロールを固定します。
+ ユーザーが実行時に操作ウィンドウのサイズを変更した場合に、操作ウィンドウと一緒にコントロールのサイズも変更されるように設定できます。 Windows フォーム コントロールの <xref:System.Windows.Forms.Control.Anchor%2A> プロパティを使用すると、コントロールを操作ウィンドウに固定できます。 同じように、Windows フォーム コントロールをユーザー コントロールに固定することもできます。 詳細については、「[方法 :Windows フォーム](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)上のコントロールを固定します。
 
 ## <a name="resize-the-actions-pane"></a>操作ウィンドウのサイズを変更する
  <xref:Microsoft.Office.Tools.ActionsPane> は作業ウィンドウに埋め込まれているため、<xref:Microsoft.Office.Tools.ActionsPane> のサイズを直接変更することはできません。 ただし、作業ウィンドウを表す <xref:Microsoft.Office.Core.CommandBar> の <xref:Microsoft.Office.Core.CommandBar.Width%2A> プロパティを設定すると、プログラムによって作業ウィンドウの幅を変更できます。 作業ウィンドウの高さは、作業ウィンドウが水平にドッキングされている場合、または浮動している場合に変更できます。

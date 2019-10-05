@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680631"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252530"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロンコレクターの使用 (C#、Visual Basic)
 
@@ -90,7 +90,7 @@ ms.locfileid: "68680631"
 
      3. IntelliTraceCollector.exe を実行します。 IntelliTraceCollection.cab ファイルが抽出されます。
 
-        \- または -
+        \- または
 
    - **Visual Studio インストール フォルダー**:
 
@@ -121,7 +121,7 @@ ms.locfileid: "68680631"
 
 1. ご利用のアプリのサーバーで、管理者としてコマンド プロンプト ウィンドウを開きます。
 
-2. Windows の **icacls** コマンドを使用して、サーバー管理者に、コレクター ディレクトリに対する完全なアクセス許可を与えます。 例えば:
+2. Windows の **icacls** コマンドを使用して、サーバー管理者に、コレクター ディレクトリに対する完全なアクセス許可を与えます。 次に例を示します。
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -129,13 +129,13 @@ ms.locfileid: "68680631"
 
     1. IntelliTrace PowerShell コマンドレットを実行するユーザーに、コレクター ディレクトリに対する完全なアクセス許可を与えます。
 
-         例えば:
+         次に例を示します。
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Web アプリまたは SharePoint アプリケーションのアプリケーション プールに、コレクター ディレクトリに対する読み取りおよび実行アクセス許可を与えます。
 
-         例えば:
+         次に例を示します。
 
         - **DefaultAppPool** アプリケーション プールの Web アプリの場合:
 
@@ -165,7 +165,7 @@ ms.locfileid: "68680631"
 
     2. PowerShell コマンド ウィンドウで、 **Import-Module** コマンドを使用して **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**をインポートします。
 
-         例えば:
+         次に例を示します。
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -183,7 +183,7 @@ ms.locfileid: "68680631"
 
 2. Web アプリまたは SharePoint アプリケーションのアプリケーション プールに、.iTrace ファイル ディレクトリに対する完全なアクセス許可を与えます。 Windows の **icacls** コマンドまたはエクスプローラー (またはファイル エクスプローラー) を使用できます。
 
-    例えば:
+    次に例を示します。
 
    - Windows の **icacls** コマンドを使用してアクセス許可を設定するには:
 
@@ -315,7 +315,7 @@ ms.locfileid: "68680631"
 
   - アプリに関連しないイベントを無効にすると、起動時間を短縮できます。 たとえば、Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。
 
-  - レジストリにアクセスするアプリのレジストリ イベントを無効にすると、起動およびランタイムのパフォーマンスは向上し、レジストリ設定に関する問題は見られません。
+  - レジストリにアクセスするアプリのレジストリイベントを無効にしても、起動時と実行時の両方のパフォーマンスを向上させることができますが、レジストリ設定の問題は表示されません。
 
 - IntelliTrace がデータを収集する収集計画のモジュールを確認します。 目的のモジュールのみ含めるように収集計画を編集します。
 

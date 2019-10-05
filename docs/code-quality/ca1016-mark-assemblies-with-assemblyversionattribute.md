@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e09a670ac85d37bc2c0297201db93462f64ca1
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714460"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236309"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:アセンブリに AssemblyVersionAttribute を設定します
 
@@ -36,7 +36,7 @@ ms.locfileid: "66714460"
 
 ## <a name="cause"></a>原因
 
-アセンブリのバージョン番号ではありません。
+アセンブリにバージョン番号がありません。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -48,21 +48,21 @@ ms.locfileid: "66714460"
 
 - カルチャ
 
-- (厳密な名前付きアセンブリの場合) の公開キー。
+- 公開キー (厳密な名前を持つアセンブリの場合)。
 
-.NET は、アセンブリを一意に識別するために、厳密な名前付きアセンブリの型にバインドして、バージョン番号を使用します。 バージョン番号は、バージョンと発行者のポリシーと共に使用されます。 既定で、アプリケーションは、ビルドされたアセンブリのバージョンでのみ実行されます。
+.NET では、バージョン番号を使用してアセンブリを一意に識別し、厳密な名前を持つアセンブリの型にバインドします。 バージョン番号は、バージョンと発行者のポリシーと共に使用されます。 既定で、アプリケーションは、ビルドされたアセンブリのバージョンでのみ実行されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するを使用して、アセンブリにバージョン番号を追加します。、<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>属性。
+この規則違反を修正するには、 <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>属性を使用してバージョン番号をアセンブリに追加します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-サード パーティによって、または運用環境で使用されているアセンブリは、この規則による警告を抑制しないでください。
+サードパーティまたは運用環境で使用されているアセンブリについては、この規則による警告を抑制しないでください。
 
 ## <a name="example"></a>例
 
-次の例では、アセンブリが、<xref:System.Reflection.AssemblyVersionAttribute>属性が適用されています。
+次の例は、 <xref:System.Reflection.AssemblyVersionAttribute>属性が適用されているアセンブリを示しています。
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
@@ -71,4 +71,4 @@ ms.locfileid: "66714460"
 ## <a name="see-also"></a>関連項目
 
 - [アセンブリのバージョン管理](/dotnet/framework/app-domains/assembly-versioning)
-- [方法: 発行者ポリシーを作成します。](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+- [方法: 発行者ポリシーを作成する](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

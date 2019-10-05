@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7000e8a95dbe115e5afe853c9dd55a797d23ec3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842306"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251712"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目はビルド システムへの入力であり、通常はファイルを表します (ファイルは `Include` 属性で指定します)。 項目は要素名に基づいてアイテムの種類にグループ化されます。 項目の種類は項目の名前付きリストであり、タスクのパラメーターとして使用できます。 タスクは項目値を使用して、ビルド処理のステップを実行します。
@@ -139,7 +139,7 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
  アイテムの種類に追加した項目には、既知のメタデータが割り当てられます。 たとえば、すべての項目には既知のメタデータ %(\<Filename>) があり、その値は項目のファイル名です。 詳細については、「[既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)」を参照してください。
 
 ### <a name="BKMK_Transforming"></a> メタデータを使用してアイテムの種類を変換する
- メタデータを使用して、項目リストを新しい項目リストに変換できます。 たとえば、式 `@(CppFiles -> '%(Filename).obj')` を使用すると、*.cpp* ファイルを表す項目を持つアイテムの種類 `CppFiles` を、*.obj* ファイルの対応するリストに変換できます。
+ メタデータを使用して、項目リストを新しい項目リストに変換できます。 たとえば、式 `@(CppFiles -> '%(Filename).obj')` を使用すると、 *.cpp* ファイルを表す項目を持つアイテムの種類 `CppFiles` を、 *.obj* ファイルの対応するリストに変換できます。
 
  次のコードでは `CultureResource` というアイテムの種類を作成し、`Culture` メタデータを持つすべての `EmbeddedResource` 項目のコピーをそこに含めます。 `Culture` メタデータの値は、新しいメタデータ `CultureResource.TargetDirectory` の値になります。
 
@@ -179,7 +179,7 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
  .NET Framework 3.5 以降では、項目要素を格納できる [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素を `Target` 要素に含めることができます。 このセクションの属性は、`Target` にある `ItemGroup` の項目に指定されている場合に有効です。
 
 ### <a name="BKMK_RemoveAttribute"></a> Remove 属性
- `Remove` 属性では、項目の種類から特定の項目 (ファイル) が削除されます。 この属性は .NET Framework 3.5 で導入されましたが、MSBuild 15.0 まではターゲット内でのみサポートされていました。
+ `Remove` 属性では、項目の種類から特定の項目 (ファイル) が削除されます。 この属性は、.NET Framework 3.5 で導入されました (ターゲット内部のみ)。 ターゲット内部と外部の両方が、MSBuild 15.0 以降でサポートされます。
 
  次の例では、アイテムの種類 Compile からすべての *.config* ファイルを削除します。
 

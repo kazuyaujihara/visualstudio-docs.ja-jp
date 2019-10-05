@@ -1,5 +1,5 @@
 ---
-title: '方法: フォーム領域を Outlook アドイン プロジェクトに追加します。'
+title: '方法: フォーム領域を Outlook アドインプロジェクトに追加する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c1a9c9201050bf4ccb3bd6beb2ada837c2b808b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427892"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255960"
 ---
-# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>方法: フォーム領域を Outlook アドイン プロジェクトに追加します。
+# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>方法: フォーム領域を Outlook アドインプロジェクトに追加する
   **新しい Outlook フォーム領域** ウィザードを使用して、標準またはカスタムの Microsoft Office Outlook フォームを拡張するフォーム領域を作成します。 新しいフォーム領域を作成して Visual Studio でユーザー インターフェイスをデザインするか、または Outlook でデザインしたフォーム領域をインポートして Visual Basic または C# コードを追加することができます。
 
- 別の Outlook プロジェクトで使用した Outlook フォーム領域がある場合は、 **[既存項目の追加]** ダイアログ ボックスを使用して、そのフォーム領域を現在の Outlook VSTO アドイン プロジェクトで再利用できます。 詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+ 別の Outlook プロジェクトで使用した Outlook フォーム領域がある場合は、 **[既存項目の追加]** ダイアログ ボックスを使用して、そのフォーム領域を現在の Outlook VSTO アドイン プロジェクトで再利用できます。 詳細については、「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -43,18 +43,18 @@ ms.locfileid: "63427892"
 
 5. **[名前]** ボックスにフォーム領域の名前を入力してから、 **[追加]** をクリックします。
 
-     **NewOutlook フォーム領域**ウィザードが起動します。
+     **Newoutlook フォーム領域**ウィザードが起動します。
 
 6. **[フォーム領域を作成する方法を選択します]** ページで、マネージド コントロールをビジュアル デザイナーまでドラッグしてフォーム領域をデザインするか、Outlook でデザインしたフォーム領域からインポートするかを選択します。
 
     > [!NOTE]
-    > Outlook でデザインしたフォーム領域をインポートするかどうかは、Outlook Form Storage の場所を指定する必要があります (*.ofs*) ファイル。 Outlook でデザインしたフォーム領域にマネージド コントロールを追加することはできません。既存の UI にコードを追加することはできます。 詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+    > Outlook でデザインしたフォーム領域をインポートする場合は、Outlook Form Storage ( *.ofs*) ファイルの場所を指定する必要があります。 Outlook でデザインしたフォーム領域にマネージド コントロールを追加することはできません。既存の UI にコードを追加することはできます。 詳細については、「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
 
-7. **[作成するフォーム領域の種類を選択します]** ページでフォーム領域の種類を確認し、種類を 1 つ選択してから、 **[次へ]** をクリックします。 フォーム領域の種類の詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+7. **[作成するフォーム領域の種類を選択します]** ページでフォーム領域の種類を確認し、種類を 1 つ選択してから、 **[次へ]** をクリックします。 フォーム領域の種類の詳細については、「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
 
 8. **[説明用のテキストを指定し、表示設定を選択します]** ページで、 **[名前]** ボックスにフォーム領域の名前を入力します。 フォーム領域の種類として [置換] および [すべて置換] を選択した場合は、 **[タイトル]** ボックスと **[説明]** ボックスにも入力できます。
 
-     名前、タイトル、および説明フォーム領域を展開するときの Outlook が表示される場所については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+     フォーム領域を配置するときに Outlook で名前、タイトル、および説明を表示する方法については、「 [outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
 
 9. フォーム領域を表示するときの表示モードを 1 つ以上選択します。
 
@@ -62,13 +62,13 @@ ms.locfileid: "63427892"
 
 10. **[次へ]** をクリックします。
 
-11. **[このフォーム領域を表示するメッセージのクラスを識別します]** ページで、標準の Outlook メッセージ クラスを選択するか、または 1 つ以上のカスタム メッセージ クラスの名前を入力してから、 **[完了]** をクリックします。 詳細については、次を参照してください。[フォーム領域を Outlook メッセージ クラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)します。
+11. **[このフォーム領域を表示するメッセージのクラスを識別します]** ページで、標準の Outlook メッセージ クラスを選択するか、または 1 つ以上のカスタム メッセージ クラスの名前を入力してから、 **[完了]** をクリックします。 詳細については、「[フォーム領域を Outlook メッセージクラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)
+- [実行時のフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook ソリューション](../vsto/outlook-solutions.md)
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
 - [Outlook フォーム領域を作成するためのガイドライン](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [チュートリアル: Outlook フォーム領域をデザインします。](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [チュートリアル: Outlook でデザインしたフォーム領域をインポートします。](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Outlook フォーム領域のカスタム アクション](../vsto/custom-actions-in-outlook-form-regions.md)
+- [チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [チュートリアル: Outlook でデザインされたフォーム領域をインポートする](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Outlook フォーム領域のカスタムアクション](../vsto/custom-actions-in-outlook-form-regions.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ccdb9120a1964f5c55e2d533406eedf01a88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4aecd052e86a4c0366a1a43cb985ad50ab8862d8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540847"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236959"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350:脆弱な暗号アルゴリズムを使用しないでください
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540847"
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
 |カテゴリ|Microsoft.Cryptography|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 > [!NOTE]
 > この警告の最終更新は 2015 年 11 月です。
@@ -47,11 +47,11 @@ ms.locfileid: "62540847"
 
 - SHA1 または RIPEMD160 のハッシュ関数の場合、 [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) ファミリのいずれか ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) を使用します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 データに必要な保護レベルがセキュリティ保証を必要としない場合には、この規則による警告を抑制してください。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 この記事の執筆時点では、次の擬似コード サンプルはこの規則によって検出されたパターンを示しています。
 
@@ -63,7 +63,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA1.Create();
 ```
 
-解決方法 : 
+解決方法 :
 
 ```csharp
 using System.Security.Cryptography;
@@ -79,7 +79,7 @@ using System.Security.Cryptography;
 var hashAlg = RIPEMD160Managed.Create();
 ```
 
-解決方法 : 
+解決方法 :
 
 ```csharp
 using System.Security.Cryptography;
@@ -98,7 +98,7 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-解決方法 : 
+解決方法 :
 
 ```csharp
 using System.Security.Cryptography;

@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872347"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211476"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
 [Xamarin](/xamarin) のファーストクラス サポートにより、Android、macOS、iOS、tvOS、watchOS のために機能が豊富なネイティブ エクスペリエンスを開発できます。 Xamarin.Forms のクロスプラットフォーム アプリケーションにより、ネイティブ機能へのアクセスを制限することなく、Android、iOS、macOS 間で XAML ベースの UI コードを共有できます。
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Visual Studio for Mac バージョン 8.3 以降では、Xamarin.Forms 用の XAML ホット リロードがビルドされています。 この機能を有効にすると、ファイルを保存するたびに、変更が実行中のアプリに直ちに反映されます。
+
+**Visual Studio > [基本設定] > [プロジェクト] > [Xamarin ホット リロード]** で **[Enable Xamarin Hot Reload]\(Xamarin ホット リロードを有効にする\)** チェックボックスをオンすることで、XAML ホット リロードを有効にすることができます。
+
+ホット リロードの詳細については、ドキュメント内の [Xamarin. Forms の XAML ホット リロードについてのガイド](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload)を参照してください。
 
 ## <a name="android"></a>Android
 

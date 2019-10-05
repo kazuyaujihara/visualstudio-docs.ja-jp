@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 57450f80a8c630e2186de8804f8bb88974564e46
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922007"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234875"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407:Com 参照可能な型で静的メンバーを使用しません
 
@@ -27,7 +27,7 @@ ms.locfileid: "68922007"
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
-|Category|Microsoft. 相互運用性|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

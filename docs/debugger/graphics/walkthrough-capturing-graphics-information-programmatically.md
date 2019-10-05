@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 187328e4ef4d1de0c865120400f84e65385160fc
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848524"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252888"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>チュートリアル: プログラムによるグラフィックス情報のキャプチャ
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断を使用すると、Direct3D アプリケーションからプログラムによってグラフィックス情報をキャプチャできます。
@@ -23,7 +23,7 @@ ms.locfileid: "62848524"
 
 - アプリケーションがまったくレンダリングしないとき (DirectCompute を使用して計算を実行するときなど)、プログラムによるキャプチャを開始します。
 
-- レンダリングの問題を予測して手動テストでキャプチャすることは難しいものの、実行時にアプリケーションの状態に関する情報を使用してプログラムで予測できるときは、 `CaptureCurrentFrame`を呼び出します。
+- レンダリング`CaptureCurrentFrame`の問題を手動テストで予測およびキャプチャするのが困難であるが、実行時にアプリの状態に関する情報を使用してプログラムで予測できる場合は、を呼び出します。
 
 ## <a name="CaptureDX11_2"></a> Windows 10 のプログラムによるキャプチャ
 このチュートリアルのパートでは、Windows 10 で DirectX 11.2 API を使用するアプリケーションでのプログラムによるキャプチャについて説明します。ここでは、堅牢なキャプチャ方法を使用します。
@@ -37,7 +37,7 @@ ms.locfileid: "62848524"
 - グラフィックス情報をキャプチャする
 
 > [!NOTE]
-> プログラムによるキャプチャの以前の実装は、Remote Tools for Visual Studio をいました[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]キャプチャ機能を提供します。
+> プログラムによるキャプチャの以前の実装で[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、キャプチャ機能を提供するために Remote Tools for Visual Studio が使用されていました。
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>プログラムによるキャプチャを使用するためにアプリケーションを準備する
 アプリケーションでプログラムによるキャプチャを使用するには、必要なヘッダーをインクルードすることが必要です。 これらのヘッダーは、Windows 10 の SDK の一部です。
@@ -54,7 +54,7 @@ ms.locfileid: "62848524"
     ```
 
     > [!IMPORTANT]
-    > ご利用の Windows 10 アプリケーションでプログラムによるキャプチャを実行するには、ヘッダー ファイル vsgcapture.h をインクルードしないでください。このファイルでサポートされているのは Windows 8.0 以前でのプログラムによるキャプチャです。 このヘッダーは DirectX 11.2 で使用することはできません。 D3d11_2.h ヘッダーが含まれる後にこのファイルが含まれる場合は、コンパイラは警告を発行します。 Vsgcapture.h が d3d11_2.h する前に含まれている場合、アプリは起動しません。
+    > ご利用の Windows 10 アプリケーションでプログラムによるキャプチャを実行するには、ヘッダー ファイル vsgcapture.h をインクルードしないでください。このファイルでサポートされているのは Windows 8.0 以前でのプログラムによるキャプチャです。 このヘッダーは DirectX 11.2 で使用することはできません。 D3d11_2 ヘッダーの後にこのファイルが含まれている場合、コンパイラは警告を発行します。 D3d11_2 の前に vsgcapture が含まれている場合、アプリは起動しません。
 
     > [!NOTE]
     > コンピューターに June 2010 DirectX SDK がインストールされており、プロジェクトのインクルード パスに `%DXSDK_DIR%includex86`が含まれている場合は、それをインクルード パスの最後に移動します。 ライブラリ パスでも同様にします。
@@ -63,7 +63,7 @@ ms.locfileid: "62848524"
 DirectX 11.2 からグラフィックス情報をキャプチャする前に、DXGI デバッグ インターフェイスを取得する必要があります。
 
 > [!IMPORTANT]
-> グラフィックス診断の下でアプリを実行するプログラムによるキャプチャを使用する場合もする必要があります (alt キーを押しながら f5 キーで[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) または 、[コマンド ライン キャプチャ ツール](command-line-capture-tool.md)します。
+> プログラムによるキャプチャを使用する場合は、引き続きグラフィックス診断 (の[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]場合は Alt + F5 キー) または[コマンドラインキャプチャツール](command-line-capture-tool.md)の下でアプリを実行する必要があります。
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis インターフェイスを取得するには
 
@@ -74,7 +74,7 @@ DirectX 11.2 からグラフィックス情報をキャプチャする前に、D
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  確認してください、`HRESULT`によって返される[DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1)使用する前に、有効なインターフェイスを取得するために。
+  使用する前に有効`HRESULT`なインターフェイスを取得するために、 [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1)によって返されるを必ず確認してください。
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -84,7 +84,7 @@ DirectX 11.2 からグラフィックス情報をキャプチャする前に、D
   ```
 
   > [!NOTE]
-  > 場合`DXGIGetDebugInterface1`返します`E_NOINTERFACE`(`error: E_NOINTERFACE No such interface supported`)、アプリがグラフィックス診断の下で実行されていることを確認 (alt キーを押しながら f5 キーで[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
+  > が`DXGIGetDebugInterface1` ( `E_NOINTERFACE` [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) を返す場合は、アプリがグラフィックス診断で実行されていることを確認してください (で Alt + F5 キーを押します)。`error: E_NOINTERFACE No such interface supported`
 
 ### <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 これで、正しい `IDXGraphicsAnalysis` インターフェイスを取得できたので、 `BeginCapture` および `EndCapture` を使用してグラフィックス情報をキャプチャできます。
@@ -107,12 +107,12 @@ DirectX 11.2 からグラフィックス情報をキャプチャする前に、D
     ...
     ```
 
-- 呼び出し後`EndCapture`、グラフィックス オブジェクトを解放します。
+- を`EndCapture`呼び出した後、グラフィックスオブジェクトを解放します。
 
 ## <a name="next-steps"></a>次の手順
 このチュートリアルでは、プログラムでグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。
 
-- グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](overview-of-visual-studio-graphics-diagnostics.md)します。
+- グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 「[概要](overview-of-visual-studio-graphics-diagnostics.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: グラフィックス情報をキャプチャする](walkthrough-capturing-graphics-information.md)

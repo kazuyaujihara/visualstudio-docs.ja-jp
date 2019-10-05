@@ -1,0 +1,84 @@
+### YamlMime:Landing
+title: Visual Studio デバッガーのドキュメント
+summary: Visual Studio デバッガーを使用すると、プログラムの実行時の動作を確認し、問題を見つけることができます。
+metadata:
+  title: Visual Studio でのデバッグ
+  description: Visual Studio を使用してアプリケーションとコードをデバッグする方法について説明します。
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 9ddd78b13e3281c4285d0bb2aaf4ee0a34af5369
+  ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71814303"
+landingContent:
+- title: デバッグについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: デバッグとは
+      url: what-is-debugging.md
+    - text: デバッグの技術とツール
+      url: write-better-code-with-visual-studio.md
+    - text: デバッガーでのはじめに
+      url: debugger-feature-tour.md
+    - text: デバッグ タスクの検索
+      url: find-your-debugging-task.md
+- title: 作業開始
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 入門者向けのデバッグ
+      url: debugging-absolute-beginners.md
+    - text: C# のデバッグ方法を学習する
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: C++ のデバッグ方法を学習する
+      url: getting-started-with-the-debugger-cpp.md
+    - text: Visual Basic のデバッグ方法を学習する
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: デバッガーで Python コードを実行する >>
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: 一時停止とコード間の移動
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバッガーでのコード間の移動
+      url: navigating-through-code-with-the-debugger.md
+    - text: ブレークポイントの使用
+      url: using-breakpoints.md
+    - text: コードを編集してデバッグを続行する
+      url: edit-and-continue.md
+- title: データの検査
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 変数の検査
+      url: autos-and-locals-windows.md
+    - text: ウォッチ変数を設定する
+      url: watch-and-quickwatch-windows.md
+    - text: 呼び出し履歴の表示
+      url: how-to-use-the-call-stack-window.md
+- title: デバッガーを詳しく理解する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバッガーのヒントと秘訣
+      url: debugger-tips-and-tricks.md
+    - text: 実行中の XAML コードを記述およびデバッグする
+      url: xaml-hot-reload.md
+    - text: ライブ Azure アプリをデバッグする
+      url: debug-live-azure-applications.md
+    - text: 表示するものをデバッガーに通知する
+      url: using-the-debuggerdisplay-attribute.md
+    - text: リモート デバッグ
+      url: remote-debugging.md
+- title: 共同作業
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Live Share を使用したコードの記述とデバッグ >>
+      url: /visualstudio/liveshare/use/vs

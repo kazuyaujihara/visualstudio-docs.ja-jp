@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328797"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150171"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig で移植可能なカスタム エディター設定を作成する
 
@@ -20,7 +20,20 @@ ms.locfileid: "67328797"
 
 EditorConfig の設定は、Visual Studio など、多くのコード エディターと IDE でサポートされています。 この設定は、コードと共に移動する移植可能なコンポーネントであり、Visual Studio の外部であってもコーディング スタイルを適用できます。
 
-Visual Studio のプロジェクトに EditorConfig ファイルを追加するときに、ドキュメントの書式を設定しない限り、既存のコードの書式設定は変更されません (既定のプロファイルの場合は **[編集]**  >  **[詳細設定]**  >  **[ドキュメントのフォーマット]** 、または **Ctrl**+**K**、**Ctrl**+**D**)。 ただし、新しいコード行はすべて、EditorConfig の設定に従って書式設定されます。
+::: moniker range=">=vs-2019"
+
+Visual Studio でプロジェクトに EditorConfig ファイルを追加すると、新しいコード行は EditorConfig 設定に従って書式設定されます。 次のコマンドのいずれかを実行しない限り、既存コードの書式設定は変更されません。
+
+ - [[コードのクリーンアップ]](../ide/code-styles-and-code-cleanup.md) (**Ctrl** + **K**、**Ctrl** + **E**)。あらゆる空白設定 (インデント スタイルなど) と選択されているコード スタイル設定 (`using` ステートメントの並べ替え方法など) が適用されます。
+ - **[編集]** > **[詳細]** > **[ドキュメントのフォーマット]** (または **Ctrl**+**K**、**Ctrl**+**D**、既定のプロファイルの場合)。インデント スタイルなど、空白設定のみが適用されます。
+ 
+ ::: moniker-end
+ 
+::: moniker range="=vs-2017"
+
+Visual Studio でプロジェクトに EditorConfig ファイルを追加すると、新しいコード行は EditorConfig 設定に従って書式設定されます。 ドキュメントの書式を設定しない限り、既存のコードの書式設定は変更されません (既定のプロファイルの場合は **[編集]**  >  **[詳細設定]**  >  **[ドキュメントのフォーマット]** 、または **Ctrl**+**K**、**Ctrl**+**D**)。 [追加のコード クリーンアップを実行する](../ide/code-styles-and-code-cleanup.md#apply-code-styles)ように [ドキュメントのフォーマット] を構成していない限り、ドキュメントをフォーマットしても影響を受けるのはインデント スタイルなどの空白設定だけです。
+ 
+ ::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +72,7 @@ EditorConfig エディター設定は、XML を除き、Visual Studio 対応の�
 
 ## <a name="add-and-remove-editorconfig-files"></a>EditorConfig ファイルの追加と削除
 
-プロジェクトまたはコードベースに EditorConfig ファイルを追加すると、記述した新しいコード行は、EditorConfig ファイルに従って書式設定されます。 ただし、EditorConfig ファイルを追加しても、ドキュメントを書式設定するまでは、既存のスタイルが新しいスタイルに変換されることはありません。 たとえば、タブで書式設定されているインデントがファイル内にあり、スペースでインデントする EditorConfig ファイルを追加する場合、インデント文字は自動的にスペースに変換されません。 ドキュメントの書式を設定すると ( **[編集]**  >  **[詳細設定]**  >  **[ドキュメントのフォーマット]** 、または **Ctrl** + **K**、**Ctrl** + **D**)、EditorConfig ファイルの設定が既存のコード行に適用されます。
+プロジェクトまたはコードベースに EditorConfig ファイルを追加すると、記述した新しいコード行は、EditorConfig ファイルに従って書式設定されます。 ただし、EditorConfig ファイルを追加しても、ドキュメントを書式設定するか、[[コードのクリーンアップ]](../ide/code-styles-and-code-cleanup.md) を実行するまでは、既存のスタイルが新しいスタイルに変換されることはありません。 たとえば、タブで書式設定されているインデントがファイル内にあり、スペースでインデントする EditorConfig ファイルを追加する場合、インデント文字は自動的にスペースに変換されません。 ドキュメントの書式を設定すると ( **[編集]**  >  **[詳細設定]**  >  **[ドキュメントのフォーマット]** 、または **Ctrl** + **K**、**Ctrl** + **D**)、EditorConfig ファイルの空白設定が既存のコード行に適用されます。
 
 EditorConfig ファイルをプロジェクトまたはコードベースから削除し、新しいコード行がグローバル エディターの設定に従って書式設定されるようにする場合は、開いているコード ファイルをすべて閉じてから再度開く必要があります。
 

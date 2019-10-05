@@ -3,14 +3,14 @@ title: Visual Studio for Mac にサインインする
 description: Visual Studio for Mac にサインインする方法
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957362"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213666"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
 
@@ -29,17 +29,17 @@ Visual Studio for Mac にサインインすると、[サブスクリプション
 > [!TIP]
 > インターネットに接続していることを確認してから Visual Studio for Mac にサインインします。 > サブスクリプションは、オンラインでのみアクティブ化できます。 接続されていない場合は [後で行う] を選択し、接続されたときにメニューからログインします。
 
-Visual Studio for Mac にサインインするには、次の手順を実行します。
+初回起動時に Visual Studio for Mac にサインインするには、次の手順を行います。
 
 1. サインイン ウィンドウの **[Microsoft アカウントでサインイン]** ボタンをクリックします。
 
-    ![Visual Studio for Mac の [アカウント] ダイアログ](media/signing-in-image12.png)
+    ![Visual Studio for Mac の [アカウント] ダイアログ](media/ide-tour-2019-start-signin.png)
 
 2. Microsoft の資格情報を入力します。
 
     ![Microsoft の [資格情報] ダイアログ](media/signing-in-image13.png)
 
-3. ログインすると、Visual Studio 2019 for Mac のスタート ウィンドウが表示されます。 ここから、プロジェクトを開くか、新しいプロジェクトを作成できます。
+4. ログインすると、キーボード ショートカットを選択するためのオプションが表示されます。 使用するオプションを選択して、 **[続行]** を選択します。 Visual Studio 2019 for Mac のスタート ウィンドウが表示されます。 ここから、プロジェクトを開くか、新しいプロジェクトを作成できます。
 
     ![サインイン成功](media/signing-in-image14.png)
 

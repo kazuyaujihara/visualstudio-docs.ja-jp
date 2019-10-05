@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 56c2281f76b9064427d1d651523b9cda441eb029
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236011"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列挙子は厳密に型指定されていなければなりません
 
@@ -27,7 +27,7 @@ ms.locfileid: "68922889"
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
-|Category|Microsoft.Design|
+|カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

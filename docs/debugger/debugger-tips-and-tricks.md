@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70987762"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio でのデバッガーの生産性に関するヒントとテクニックについて説明します。
@@ -33,15 +33,15 @@ ms.locfileid: "70987762"
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>コードを編集してデバッグをC#続行する ( C++、VB、)
 
-Visual Studio でサポートされているほとんどの言語では、デバッグセッション中にコードを編集してデバッグを続行できます。 この機能を使用するには、デバッガーで一時停止中にカーソルを使用してコードをクリックし、編集を行い、 **F5**キー、 **F10**キー、または**F11**キーを押してデバッグを続行します。
+Visual Studio でサポートされているほとんどの言語で、デバッグ セッション中にコードを編集し、デバッグを続行できます。 この機能を使用するには、デバッガーの一時停止中にカーソルを使用してコードをクリックし、編集を行い、**F5**、**F10**、または **F11** キーを押してデバッグを続行します。
 
-![エディットコンティニュのデバッグ](../debugger/media/dbg-tips-edit-and-continue.gif "Editandcontinue")
+![エディット コンティニュのデバッグ](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
-機能の使用と機能の制限事項の詳細については、「[エディットコンティニュ](../debugger/edit-and-continue.md)」を参照してください。
+機能の使用および機能制限の詳細については、[エディット コンティニュ](../debugger/edit-and-continue.md)に関するページを参照してください。
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>XAML コードを編集してデバッグを続行する
 
-デバッグセッション中に XAML コードを変更するには、「 [Xaml ホットリロードを使用した実行中の xaml コードの書き込みとデバッグ](xaml-hot-reload.md)」を参照してください。
+デバッグ セッション中に XAML コードを変更するには、[XAML ホット リロードで実行中の XAML コードを記述およびデバッグする](xaml-hot-reload.md)方法に関するページを参照してください。
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>再現するのが困難な問題をデバッグする
 

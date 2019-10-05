@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541872"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231251"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:破棄可能な型はファイナライザーを宣言しなければなりません
 
@@ -28,15 +28,15 @@ ms.locfileid: "62541872"
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-実装する型<xref:System.IDisposable?displayProperty=fullName>、およびアンマネージ リソースの使用を提案するフィールドを持つ、による記述では、ファイナライザーを実装しません<xref:System.Object.Finalize%2A?displayProperty=fullName>します。
+を実装<xref:System.IDisposable?displayProperty=fullName>し、アンマネージリソースの使用を提案するフィールドを持つ型は、「」で<xref:System.Object.Finalize%2A?displayProperty=fullName>説明されているように、ファイナライザーを実装しません。
 
 ## <a name="rule-description"></a>規則の説明
 
-破棄可能な型には、次の種類のフィールドが含まれている場合は、この規則違反が報告されます。
+このルールの違反は、破棄可能な型に次の型のフィールドが含まれている場合に報告されます。
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,25 +46,25 @@ ms.locfileid: "62541872"
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、実装を呼び出すファイナライザー、<xref:System.IDisposable.Dispose%2A>メソッド。
+この規則違反を修正するには、 <xref:System.IDisposable.Dispose%2A>メソッドを呼び出すファイナライザーを実装します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-型が実装していない場合、この規則による警告を抑制するのには安全では<xref:System.IDisposable>アンマネージ リソースを解放するためにします。
+アンマネージリソースを解放するために型がを実装<xref:System.IDisposable>していない場合は、この規則による警告を抑制することが安全です。
 
 ## <a name="example"></a>例
 
-次の例では、この規則に違反する型を示します。
+次の例は、この規則に違反する型を示しています。
 
 [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA 2115:GC を呼び出します。KeepAlive ネイティブ リソースを使用する場合](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA 1816:GC を呼び出します。SuppressFinalize 正しく](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816GC を呼び出します。Gc.suppressfinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA 1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049ネイティブリソースを所有する型は、破棄可能である必要があります](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547184"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234071"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別子は正しいプレフィックスを含んでいなければなりません
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547184"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|中断-インターフェイスで発生した場合。<br /><br /> 非中断 (ジェネリック型パラメーターで発生した場合)。|
 
 ## <a name="cause"></a>原因

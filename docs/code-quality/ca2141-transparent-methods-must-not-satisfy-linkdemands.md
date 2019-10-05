@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920515"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232129"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: 透過的メソッドは、LinkDemand を満たしてはならない
 
@@ -23,7 +23,7 @@ ms.locfileid: "68920515"
 |-|-|
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
-|Category|Microsoft.Security|
+|カテゴリ|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

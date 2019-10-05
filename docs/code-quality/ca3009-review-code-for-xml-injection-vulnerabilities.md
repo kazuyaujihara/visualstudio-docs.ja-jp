@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841068"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237244"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009:XML インジェクションの脆弱性のコード レビュー
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841068"
 |TypeName|ReviewCodeForXmlInjectionVulnerabilities|
 |CheckId|CA3009|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力では、生の XML 出力に到達します。
+信頼できない可能性のある HTTP 要求入力が未加工の XML 出力に到達します。
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力を使用する場合は、XML インジェクション攻撃の考慮あります。 攻撃者は、XML インジェクションを使用して、ドキュメントを無効なため、XML ドキュメントに特殊文字を挿入する XML。 または、攻撃者は、任意の XML ノードを挿入悪意を持ってできます。
+信頼されていない入力を使用する場合は、XML インジェクション攻撃に注意してください。 攻撃者は xml インジェクションを使用して XML ドキュメントに特殊文字を挿入し、ドキュメントの XML を無効にすることができます。 また、攻撃者は、選択した XML ノードを故意に挿入することもできます。
 
-このルールは、生の XML の書き込みに到達する HTTP 要求からの入力を検索しようとします。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合は、1 つのアセンブリは、HTTP 要求の入力を読み取って、生の XML の書き込みを行う別のアセンブリに渡されます、このルールは警告を生成しません。
+このルールは、未加工の XML 書き込みに到達する HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求の入力を読み取り、生の XML を書き込む別のアセンブリに渡すと、このルールによって警告が生成されることはありません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-生の XML を記述しません。 代わりに、メソッドまたはプロパティを使用する XML エンコードが入力されます。
+未加工の XML は記述しないでください。 代わりに、入力を XML エンコードするメソッドまたはプロパティを使用します。
 
-または、XML エンコードを生の XML を書き込む前に入力します。
+または、未加工の XML を書き込む前に XML エンコード入力を行います。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告を抑制はありません。
+このルールからの警告を抑制しないでください。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 

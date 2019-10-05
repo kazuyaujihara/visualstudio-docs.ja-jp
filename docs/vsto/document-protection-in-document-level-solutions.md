@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a894f1e0fb9d5e9d55f46c442bc975de0bd900d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872069"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253807"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>ドキュメントレベルのソリューションにおけるドキュメントの保護
   ドキュメントレベルのプロジェクトで Microsoft Office Word および Excel Microsoft Office の保護機能を使用できます。 これらの機能は、承認されていないユーザーがドキュメントの保護された部分を変更できないようにします。

@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740121"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254053"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでサービスからのデータにバインドする
   VSTO アドイン プロジェクトでは、データをホスト コントロールにバインドできます。 このチュートリアルでは、実行時に Microsoft Office の Word ドキュメントにコントロールを追加し、それらのコントロールを MSDN コンテンツ サービスから取得されたデータにバインドして、イベントに応答する方法について説明します。
 
- **適用対象:** このトピックの情報は、Word 2010 のアプリケーションレベルのプロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
+ **適用対象:** このトピックの情報は、Word 2010 のアプリケーションレベルのプロジェクトに適用されます。 詳細については、「 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
  このチュートリアルでは、次の作業について説明します。
 
-- 実行時<xref:Microsoft.Office.Tools.Word.RichTextContentControl>のドキュメントへのコントロールの追加。
+- 実行時にドキュメントに <xref:Microsoft.Office.Tools.Word.RichTextContentControl> コントロールを追加する
 
 - <xref:Microsoft.Office.Tools.Word.RichTextContentControl>コントロールを web サービスのデータにバインドする。
 
@@ -73,8 +73,8 @@ ms.locfileid: "68740121"
 
 6. **[参照の追加ウィザード]** ダイアログ ボックスで **[完了]** をクリックします。
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>実行時にコンテンツコントロールを追加してデータにバインドする
- VSTO アドインプロジェクトでは、実行時にコントロールを追加してバインドします。 このチュートリアルでは、ユーザーがコントロール内をクリックしたときに web サービスからデータを取得するようにコンテンツコントロールを構成します。
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>実行時にコンテンツコントロールを追加してデータにバインドする
+ VSTO アドイン プロジェクトでは、実行時にコントロールを追加してバインドします。 このチュートリアルでは、ユーザーがコントロール内をクリックしたときに web サービスからデータを取得するようにコンテンツコントロールを構成します。
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>コンテンツ コントロールを追加してデータにバインドするには
 

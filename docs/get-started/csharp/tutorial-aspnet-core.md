@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180472"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252466"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -129,9 +129,9 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
    ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'MyCoreApp' という名前を付けます。](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 2.1** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
+1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 3.0** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
 
-   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Visual Studio によってその新しいプロジェクトが開かれます。
 
@@ -141,6 +141,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 このソリューションは **Razor ページ** デザイン パターンに従っています。 これは [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) デザイン パターンとは異なり、モデルとコント ローラーのコードが Razor ページ自体の中に含まれるよう効率化されています。
 
+::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>ソリューションのツアーを体験する
 
  1. プロジェクト テンプレートでは、_MyCoreApp_ という名前の単一の ASP.NET Core プロジェクトを使用してソリューションを作成します。 **ソリューション エクスプローラー** タブを選択してそのコンテンツを表示させます。
@@ -216,7 +217,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
      public void OnGet()
      {
          string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
+         Message = String.Format("Your directory is {0}.", directory);
      }
     ```
 
@@ -239,6 +240,110 @@ Visual Studio を既にインストールしている場合は、最新のリリ
    ![加えた変更が含まれる更新後の About ページを表示する](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
 1. Web ブラウザーを閉じ、**Shift**+**F5** キーを押してデバッグ モードを停止したら、Visual Studio を閉じます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="tour-your-solution"></a>ソリューションのツアーを体験する
+
+ 1. プロジェクト テンプレートでは、_MyCoreApp_ という名前の単一の ASP.NET Core プロジェクトを使用してソリューションを作成します。 **ソリューション エクスプローラー** タブを選択してそのコンテンツを表示させます。
+
+    ![MyCoreApp という名前の Visual Studio の Razor Pages ソリューション用 ASP.NET ソリューション エクスプローラー](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+
+ 1. **[Pages]** フォルダーを展開します。
+
+     ![ソリューション エクスプローラーの Pages フォルダー](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+
+ 1. コード エディターで **Index.cshtml** ファイルを表示します。
+
+     ![Visual Studio コード エディターで Index.cshtml ファイルを表示する](media/vs-2019/csharp-aspnet-index-cshtml.png)
+
+ 1. 各 .cshtml ファイルには、関連付けられたコード ファイルがあります。 エディターでコード ファイルを開くには、ソリューション エクスプローラーで **Index.cshtml** ノードを展開して、**Index.cshtml.cs** ファイルを選択します。
+
+     ![Visual Studio コード エディターで Index.cshtml.cs ファイルを選択する](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+
+ 1. コード エディターで **Index.cshtml.cs** ファイルを表示します。
+
+     ![Visual Studio コード エディターで About.cshtml ファイルを表示する](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+
+ 1. プロジェクトには、Web サイトのルートとなる **wwwroot** フォルダーが含まれます。 その内容を表示するには、フォルダーを展開します。
+
+     ![Visual Studio のソリューション エクスプローラーの wwwroot フォルダー](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+
+    &mdash;CSS、イメージ、JavaScript ライブラリなど&mdash;の静的サイト コンテンツを、任意のパスに直接配置することができます。
+
+ 1. プロジェクトには、実行時に Web アプリを管理する構成ファイルも含まれます。 既定のアプリケーション[構成](/aspnet/core/fundamentals/configuration)は *appsettings.json* に格納されます。 しかし、*appsettings.Development.json* を使用して、これらの設定をオーバーライドすることができます。 **appsettings.Development.json** ファイルを表示するには、**appsettings.json** ファイルを展開します。
+
+     ![Visual Studio のソリューション エクスプローラーの構成ファイル](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+
+## <a name="run-debug-and-make-changes"></a>実行、デバッグ、および変更
+
+1. IDE の **[IIS Express]** ボタンを選択して、デバッグ モードでアプリをビルドして実行します (または、**F5** キーを押すか、メニュー バーから **[デバッグ]**  >  **[デバッグの開始]** の順に選択します)。
+
+     ![Visual Studio の [IIS Express] ボタンを選択する](media/csharp-aspnet-razor-iisexpress.png)
+
+     > [!NOTE]
+     > "**Web サーバー 'IIS Express' に接続できませんでした**" というエラー メッセージが表示された場合は、Visual Studio を閉じて、右クリックまたはコンテキスト メニューから **[管理者として実行]** オプションを使用して Visual Studio を開きます。 その後、アプリケーションをもう一度実行します。
+     >
+     > IIS SSL Express の証明書を受け入れるかどうかをたずねるメッセージが表示される場合もあります。 Web ブラウザーでコードを表示するには、 **[はい]** を選択し、フォロー アップ セキュリティ警告メッセージを受信する場合はさらに **[はい]** を選択します。
+
+1. Visual Studio でブラウザー ウィンドウが起動します。 その後、メニュー バーに **Home** ページと **Privacy** ページが表示されます。
+
+1. メニュー バーから **[Privacy]** を選択します。
+
+   ブラウザーで見た **Privacy** ページには、*Privacy.cshtml* ファイルに設定されているテキストが表示されます。
+
+   ![Privacy ページでテキストを表示する](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+
+1. Visual Studio に戻り、**Shift + F5** を押してデバッグ モードを停止します。 これにより、ブラウザー ウィンドウ内のプロジェクトも閉じられます。
+
+1. Visual Studio で **Privacy.cshtml** を開いて編集します。 次に、"_サイトのプライバシー ポリシーを詳しく説明するには、このページを使用してください_" の文章を削除して、その場所に "_このページは、@ViewData["TimeStamp"]_ 時点、作成中です" という文章を追加します。
+
+    ![Privacy.cshtml ファイル内のテキストを変更する](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+
+1. それでは、コードを変更してみましょう。 **Privacy.cshtml.cs** を選択します。 次に、次のショートカットを使用して、ファイルの上部にある `using` ディレクティブをクリーンアップします。
+
+   灰色表示の `using` ディレクティブのいずれかを選択すると、キャレットのすぐ下、または左余白に[クイック アクション](../../ide/quick-actions.md) (電球) が表示されます。 電球を選択してから、 **[不要な using の削除]** にマウス ポインターを移動します。
+
+   ![Privacy.cshtml.cs の不要な using を削除する](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+
+   ここで、 **[変更のプレビュー]** を選択して、変更内容を確認します。
+
+   ![変更のプレビュー](media/vs-2019/csharp-aspnet-preview-changes.png)
+
+   **[適用]** を選択します。 Visual Studio では、ファイルから不要な `using` ディレクティブが削除されます。
+
+1. 次に、`OnGet()` メソッドの本体を次のコードに変更します。
+
+     ```csharp
+     public void OnGet()
+     {
+        string dateTime = DateTime.Now.ToShortDateString();
+        ViewData["TimeStamp"] = dateTime;
+     }
+    ```
+
+1. **DateTime** の下に波形の下線が 2 本表示されることに注意してください。 波形の下線が表示されるのは、これらの種類がスコープに含まれないためです。
+
+   ![OnGet メソッドで波形の下線でマークされたエラー](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+
+    **[エラー一覧]** ツール バーを開くと、そこに同じエラーが一覧表示されます ( **[エラー一覧]** ツール バーが表示されない場合は、上部のメニュー バーで **[表示]**  >  **[エラー一覧]** の順に選択します)。
+
+   ![Visual Studio の [エラー一覧]](media/vs-2019/csharp-aspnet-error-list.png)
+
+1. これを修正しましょう。 コードエディターで、エラーを含むいずれかの行にカーソルを置いた後、左余白のクイック アクション (電球) を選択します。 次に、ドロップダウン メニューから、 **[using System;]** を選択してファイルの先頭にこのディレクティブを追加し、エラーを解決します。
+
+   !["using System;" ディレクティブを追加する](media/vs-2019/csharp-aspnet-add-usings.png)
+
+1. **F5** キーを押して、Web ブラウザーでプロジェクトを開きます。
+
+1. Web サイトの上部で **[Privacy]** を選択し、変更を確認します。
+
+   ![加えた変更が含まれる、更新後の Privacy ページを表示する](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+
+1. Web ブラウザーを閉じ、**Shift**+**F5** キーを押してデバッグ モードを停止したら、Visual Studio を閉じます。
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>FAQ に対する簡単な回答
 

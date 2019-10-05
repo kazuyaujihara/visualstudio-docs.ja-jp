@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841454"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238117"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001:SQL インジェクションの脆弱性のコード レビュー
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841454"
 |TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
 |CheckId|CA3001|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力では、SQL コマンドのテキストに到達します。
+信頼できない可能性のある HTTP 要求入力が SQL コマンドのテキストに到達した場合。
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃の考慮あります。 SQL インジェクション攻撃を受けるには、セキュリティとアプリケーションの整合性を損なうこと、SQL の悪意のあるコマンドを実行できます。 標準的な方法には、一重引用符またはアポストロフィを使用して、コメントを記述する 2 つのダッシュおよびステートメントの末尾のセミコロン区切りのリテラル文字列が含まれます。 詳細については、次を参照してください。 [SQL インジェクション](/sql/relational-databases/security/sql-injection)します。
+信頼されていない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃に注意してください。 SQL インジェクション攻撃によって、悪意のある SQL コマンドを実行し、アプリケーションのセキュリティと整合性を損なう可能性があります。 一般的な手法としては、リテラル文字列の区切りに単一引用符またはアポストロフィを使用したり、コメントに2つのダッシュを使用したり、ステートメントの最後にセミコロンを使用したりする方法があります。 詳細については、「 [SQL インジェクション](/sql/relational-databases/security/sql-injection)」を参照してください。
 
-このルールは、SQL コマンドのテキストに到達する HTTP 要求からの入力を検索しようとします。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合は、1 つのアセンブリは、HTTP 要求の入力を読み取って、SQL コマンドを実行する別のアセンブリに渡されます、このルールは警告を生成しません。
+このルールは、SQL コマンドのテキストに到達する HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求の入力を読み取り、それを SQL コマンドを実行する別のアセンブリに渡す場合、この規則は警告を生成しません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-パラメーター化された SQL コマンドまたはストアド プロシージャを使用して、信頼できない入力を含むパラメーターを使用します。
+パラメーター化された SQL コマンドまたはストアドプロシージャを、信頼できない入力を含むパラメーターと共に使用します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-入力が、既知の安全な文字のセットに対して検証が常にわかっている場合、この規則による警告を抑制するのには安全です。
+入力が既知の安全な文字セットに対して常に検証されることがわかっている場合は、この規則による警告を抑制しても安全です。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 
@@ -165,7 +165,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="stored-procedure-solution"></a>ストアド プロシージャのソリューション
+### <a name="stored-procedure-solution"></a>ストアドプロシージャソリューション
 
 ```csharp
 using System;

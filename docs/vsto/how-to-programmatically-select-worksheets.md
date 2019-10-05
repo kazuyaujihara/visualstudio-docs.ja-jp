@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムによってワークシートを選択します。'
+title: '方法: プログラムによってワークシートを選択する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,31 +13,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b56df406049f3f4076f6e4d1efebcf0eb2abb18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962295"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255626"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>方法: プログラムによってワークシートを選択します。
+# <a name="how-to-programmatically-select-worksheets"></a>方法: プログラムによってワークシートを選択する
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> メソッドは指定されたオブジェクトを選択します。これにより、ユーザーの選択が新しいオブジェクトに移動します。 ユーザーの選択を変更せずにフォーカスをオブジェクトに移動する場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> メソッドを使用します。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- VSTO アドインで既存のワークシートを選択するか、ワークシートは、ドキュメント レベルのカスタマイズの実行時に作成されている場合、Excel を使用してアクセスする必要があります<xref:Microsoft.Office.Interop.Excel.Sheets>Excel ブックのコレクション、にアクセスする場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet>ホスト項目に直接します。
+ VSTO アドインで既存のワークシートを選択する場合、または、ドキュメント レベルのカスタマイズでワークシートが実行時に作成された場合は、Excel ブックの Excel <xref:Microsoft.Office.Interop.Excel.Sheets> コレクションを使用してこれにアクセスする必要があります。それ以外の場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目に直接アクセスできます。
 
-## <a name="use-the-worksheet-host-item"></a>ワークシート ホスト項目を使用します。
- ドキュメント レベルのカスタマイズで次のコードを追加*Sheet1.vb*または*Sheet1.cs*します。
+## <a name="use-the-worksheet-host-item"></a>ワークシートのホスト項目を使用する
+ ドキュメントレベルのカスタマイズで、 *Sheet1*または*Sheet1.cs*に次のコードを追加します。
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>ホスト項目を使用してブック内の最初のワークシートを選択するには
 
-1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> の `Sheet1` メソッドを呼び出します。
+1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> の `Sheet1`メソッドを呼び出します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]
 
-## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの sheets コレクションを使用して、
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの sheets コレクションを使用する
  Excel の <xref:Microsoft.Office.Interop.Excel.Sheets> コレクションを使用して、ワークシートにアクセスします。
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの Sheets コレクションを使用して、ブック内の最初のワークシートを選択するには
@@ -48,13 +48,13 @@ ms.locfileid: "62962295"
      [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートを印刷します。](../vsto/how-to-programmatically-print-worksheets.md)
-- [方法: プログラムによってブックからワークシートを削除します。](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [方法: プログラムによってワークシートを非表示します。](../vsto/how-to-programmatically-hide-worksheets.md)
-- [方法: プログラムによってワークシートを保護します。](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Worksheet ホスト項目](../vsto/worksheet-host-item.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: プログラムによってワークシートを印刷する](../vsto/how-to-programmatically-print-worksheets.md)
+- [方法: プログラムによってブックからワークシートを削除する](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [方法: プログラムによってワークシートを非表示にする](../vsto/how-to-programmatically-hide-worksheets.md)
+- [方法: プログラムによってワークシートを保護する](../vsto/how-to-programmatically-protect-worksheets.md)
+- [ワークシートホスト項目](../vsto/worksheet-host-item.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)

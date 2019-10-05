@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 93470ebcea306d3cea762d60e061994b2bf27cc8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872033"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253850"
 ---
 # <a name="program-vsto-add-ins"></a>プログラム VSTO アドイン
   VSTO アドインを作成して Microsoft Office アプリケーションを拡張するときは、プロジェクトの `ThisAddIn` クラスに対して直接コードを記述します。 このクラスを使用し、Microsoft Office ホスト アプリケーションのオブジェクト モデルにアクセスする、アプリケーションのユーザー インターフェイス (UI) をカスタマイズする、その他の Office ソリューションに VSTO アドインのオブジェクトを公開するなどの作業を実行できます。
@@ -49,7 +49,7 @@ ms.locfileid: "68872033"
  VSTO アドインと、Visual Studio の Office 開発ツールを使用して作成できるその他の種類のソリューションに関する一般的な情報については、「 [office ソリューション開発の&#40;概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
 ## <a name="use-the-thisaddin-class"></a>ThisAddIn クラスを使用する
- VSTO アドイン コードの記述は `ThisAddIn` クラスから開始することができます。 Visual Studio は、VSTO アドインプロジェクトの ThisAddIn.cs (の[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]場合) または ( C#) コードファイルにこのクラスを自動的に生成します。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、Microsoft Office アプリケーションが VSTO アドインを読み込むと、このクラスを自動的にインスタンス化します。
+ VSTO アドイン コードの記述は `ThisAddIn` クラスから開始することができます。 Visual Studio*は、VSTO*アドインプロジェクトの ThisAddIn.cs (の[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]場合) または ( C#) コードファイルにこのクラスを自動的に生成します。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、Microsoft Office アプリケーションが VSTO アドインを読み込むと、このクラスを自動的にインスタンス化します。
 
  `ThisAddIn` クラスには既定のイベント ハンドラーが 2 つあります。 VSTO アドインが読み込まれるときにコードを実行するには、 `ThisAddIn_Startup` イベント ハンドラーにコードを追加します。 VSTO アドインが読み込み解除される直前にコードを実行するには、 `ThisAddIn_Shutdown` イベント ハンドラーにコードを追加します。 これらのイベントハンドラーの詳細については、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 
@@ -136,7 +136,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  クラスとデザイナーでサポートされない方法でこれらの機能をカスタマイズする場合、VSTO アドインに *拡張機能インターフェイス* を実装する方法でカスタマイズすることもできます。 詳細については、「[機能拡張インターフェイスを使用して UI 機能をカスタマイズする](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)」を参照してください。
 
- さらに、文書やブックの動作を拡張するホスト項目を生成する方法で Word 文書や Excel ブックを変更できます。 この方法で、管理されているコントロールを文書とワークシートに追加できます。 詳細については、「[実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
+ さらに、文書やブックの動作を拡張するホスト項目を生成する方法で Word 文書や Excel ブックを変更できます。 この方法で、管理されているコントロールを文書とワークシートに追加できます。 詳細については、「 [VSTO アドインでの実行時の Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
 ## <a name="call-code-in-vsto-add-ins-from-other-solutions"></a>他のソリューションから VSTO アドインのコードを呼び出す
  VSTO アドインのオブジェクトを、他の Microsoft Office ソリューションを含む、他のソリューションに公開できます。 このことは、VSTO アドインが他のソリューションで使用可能なサービスを含む場合に便利です。 たとえば、web サービスからの財務データに対して計算を実行する Microsoft Office Excel 用の VSTO アドインがある場合、他のソリューションは、実行時に Excel VSTO アドインを呼び出すことによって、これらの計算を実行できます。
@@ -145,7 +145,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
-- [実行時に VSTO アドインで Word 文書と Excel ブックを拡張する](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [実行時に VSTO アドインの Word 文書と Excel ブックを拡張する](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [他の Office ソリューションから VSTO アドインのコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [チュートリアル: VSTO アドインのコードを VBA から呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [機能拡張インターフェイスを使用した UI 機能のカスタマイズ](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

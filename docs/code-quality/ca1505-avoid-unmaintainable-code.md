@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797329"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234544"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:メンテナンスできないコードを使用しないでください
 
@@ -27,7 +27,7 @@ ms.locfileid: "62797329"
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|カテゴリ|Microsoft.Maintainability|
+|カテゴリ|Microsoft の保守容易性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -36,19 +36,19 @@ ms.locfileid: "62797329"
 
 ## <a name="rule-description"></a>規則の説明
 
-保守容易性指数は、次のメトリックを使用して計算されます。 行のコード、プログラムのボリューム、およびサイクロマティック複雑度。 プログラムのボリュームは、型または演算子とオペランドのコードの数に基づいているメソッドの理解の難しさの尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの基準です。 コード メトリックに関する詳細については、[複雑さとマネージ コードの保守性の測定](../code-quality/code-metrics-values.md)します。
+保守容易性のインデックスは、コード行、プログラムボリューム、およびサイクロマティック複雑性の各メトリックを使用して計算されます。 プログラムボリュームは、コード内の演算子とオペランドの数に基づいて、型またはメソッドを理解しづらいことを示す尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの尺度です。 コードメトリックスの詳細については[、「マネージコードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)」を参照してください。
 
-保守性が低いインデックスことを示します型またはメソッドを維持するが困難な可能性が再設計に適した候補となります。
+保守性の低いインデックスは、型またはメソッドの保守が困難であり、再設計するのが適切であることを示しています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この違反を修正するには、型またはメソッドを再設計し、小さくなりより対象を絞った型またはメソッドに分割することをお試しください。
+この違反を修正するには、型またはメソッドを再設計し、それをより小さな、フォーカスのある型またはメソッドに分割します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この警告を抑制するには、分割できない型またはメソッド、またはサイズが大きくて保守しやすいと見なされます。
+型またはメソッドを分割できない場合、またはサイズが大きいにもかかわらず保守可能と見なされる場合は、この警告を抑制できます。
 
 ## <a name="see-also"></a>関連項目
 
-- [保守性に関する警告](../code-quality/maintainability-warnings.md)
+- [保守容易性に関する警告](../code-quality/maintainability-warnings.md)
 - [マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)

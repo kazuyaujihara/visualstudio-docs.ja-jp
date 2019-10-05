@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c94eaeffee285fcc5d17d5de8bcec0711f2b39b
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: 323f941ddb4672de8d52d56cf4e07910531c3df8
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864831"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095392"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE へようこそ
 
@@ -42,7 +42,7 @@ ms.locfileid: "70864831"
 
 - [Visual Studio を使用して初めての Node.js Web アプリを作成する](../ide/quickstart-nodejs.md)
 
-- [Visual Studio での C++ の概要](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Visual Studio を使用して初めての C++ コンソール アプリを作成する](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>関連項目
 

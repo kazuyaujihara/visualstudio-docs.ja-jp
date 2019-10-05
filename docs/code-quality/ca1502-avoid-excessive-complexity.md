@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797399"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253296"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:メソッドの実装を複雑にしすぎないでください
 
@@ -31,46 +31,46 @@ ms.locfileid: "62797399"
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|カテゴリ|Microsoft.Maintainability|
+|カテゴリ|Microsoft の保守容易性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-メソッドは、サイクロマティック複雑です。
+メソッドには、過剰なサイクロマティック複雑度があります。
 
 ## <a name="rule-description"></a>規則の説明
 
-*サイクロマティック複雑度*線形独立のメソッド、条件付き分岐の複雑さと数によって決定される経路の数を計測します。 低サイクロマティック複雑度には、理解、テスト、および保守しやすい方法通常を示します。 サイクロマティック複雑度を使用して、メソッドの制御フロー グラフから計算されますが、次のように指定します。
+*サイクロマティック複雑度*は、メソッドを使用して線形的に独立したパスの数を測定します。これは、条件分岐の数と複雑さによって決まります。 サイクロマティック複雑度が低いのは、一般に、理解、テスト、および保守が容易なメソッドであることを示しています。 サイクロマティック複雑度は、メソッドの制御フローグラフから計算され、次のように指定されます。
 
-サイクロマティック複雑度エッジ - ノード数 + 1 の数を =
+サイクロマティック複雑度 = エッジの数-ノードの数 + 1
 
-A*ノード*ロジックの分岐ポイントを表す、 *edge*ノード間の線を表します。
+*ノード*はロジックの分岐点を表し、*エッジ*はノード間の線を表します。
 
-ルールは、サイクロマティック複雑度が 25 を超える場合、違反を報告します。
+このルールは、サイクロマティック複雑度が25を超える場合に違反を報告します。
 
-コード メトリックに関する詳細については、[マネージ コードの複雑さを測定](../code-quality/code-metrics-values.md)します。
+コードメトリックスの詳細については、「[マネージコードの複雑さの測定](../code-quality/code-metrics-values.md)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、サイクロマティック複雑度を減らすための方法をリファクタリングします。
+この規則違反を修正するには、メソッドをリファクタリングして、サイクロマティック複雑度を下げます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告を抑制する場合は、複雑さを軽減することはできません簡単にして、メソッドが理解し、テスト、および保守を容易に安全です。 特に、大規模なを含むメソッド`switch`(`Select`で[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ステートメントは、候補の除外です。 コード ベースで以前にリリース済みのコードの実行時の動作で予期しない変更を導入したり、開発サイクルの後半は、コードのリファクタリングの保守容易性のメリットを上回る場合がありますが不安定になるリスクです。
+複雑さを簡単に軽減できず、メソッドを簡単に理解、テスト、保守できる場合は、この規則による警告を抑制することが安全です。 特に、大規模`switch`な (`Select`の[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ステートメントを含むメソッドは、除外の候補です。 開発サイクルの後半でコードベースを安定性するリスク、または以前に出荷されたコードで実行時の動作に予期しない変更を導入するリスクは、コードをリファクタリングすることによって、保守容易性の利点を上回る可能性があります。
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>サイクロマティック複雑度の計算方法
 
-サイクロマティック複雑度は、次に 1 を加算して計算されます。
+サイクロマティック複雑度は、次のように1を追加することによって計算されます。
 
-- 分岐の数 (など`if`、 `while`、および`do`)
+- ブランチの数 ( `if`、 `while` `do`、など)
 
-- 数`case`内のステートメント、 `switch`
+- 内の`case`ステートメントの数`switch`
 
 ## <a name="example"></a>例
 
-次の例では、さまざまなサイクロマティック複雑度のあるメソッドを示します。
+次の例は、さまざまなサイクロマティック複雑なメソッドを示しています。
 
-**1 のサイクロマティック複雑度**
+**サイクロマティック複雑度1**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
@@ -78,7 +78,7 @@ A*ノード*ロジックの分岐ポイントを表す、 *edge*ノード間の�
 
 ## <a name="example"></a>例
 
-**サイクロマティック複雑度 2**
+**サイクロマティック複雑度2**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
@@ -86,7 +86,7 @@ A*ノード*ロジックの分岐ポイントを表す、 *edge*ノード間の�
 
 ## <a name="example"></a>例
 
-**3 のサイクロマティック複雑度**
+**サイクロマティック複雑度3**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
@@ -94,7 +94,7 @@ A*ノード*ロジックの分岐ポイントを表す、 *edge*ノード間の�
 
 ## <a name="example"></a>例
 
-**8 のサイクロマティック複雑度**
+**サイクロマティック複雑度8**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
@@ -102,7 +102,7 @@ A*ノード*ロジックの分岐ポイントを表す、 *edge*ノード間の�
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA1501:過剰な継承を回避します。](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501過剰な継承を避ける](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>関連項目
 

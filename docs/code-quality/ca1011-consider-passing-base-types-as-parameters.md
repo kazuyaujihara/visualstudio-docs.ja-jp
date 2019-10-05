@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779548"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236407"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011:基本型をパラメーターとして渡すことを考慮します
 
@@ -36,31 +36,31 @@ ms.locfileid: "62779548"
 
 ## <a name="cause"></a>原因
 
-メソッドの宣言には、派生型では、仮パラメーターが含まれていて、メソッドは、パラメーターの基本型のメンバーだけを呼び出します。
+メソッドの宣言には、派生型の仮パラメーターが含まれています。このメソッドは、パラメーターの基本型のメンバーのみを呼び出します。
 
 ## <a name="rule-description"></a>規則の説明
 
-メソッドの宣言で基本型をパラメーターとして指定すると、その基本型から派生した型は、メソッドに対応する引数として渡すことができます。 メソッド本体内で、引数を使用する場合に実行される特定のメソッドは、引数の型に依存します。 派生型によって提供される追加機能が必要ない場合、基本データ型の使用により、メソッドのより広範囲に利用します。
+メソッドの宣言で基本型をパラメーターとして指定すると、その基本型から派生した型は、メソッドに対応する引数として渡すことができます。 引数がメソッド本体の内部で使用されている場合、実行される特定のメソッドは引数の型によって異なります。 派生型によって提供される追加機能が不要な場合は、基本型を使用することで、メソッドを広範囲に使用できます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、その基本型にパラメーターの型を変更します。
+この規則違反を修正するには、パラメーターの型をその基本型に変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-このルールから警告を抑制しても安全です。
+このルールからの警告を抑制するのは安全です。
 
-- メソッドが派生型によって提供される特定の機能が必要な場合
+- メソッドに、派生型によって提供される特定の機能が必要な場合
 
-     \- または -
+     \- または
 
-- 派生型のみ、またはより強い派生型では、適用するのには、メソッドに渡されます。
+- 派生型のみ、またはそれ以上の派生型のみがメソッドに渡されるようにするには、を適用します。
 
-このような場合は、コードは、堅牢になります、コンパイラとランタイムによって提供される厳密な型チェックのためです。
+このような場合は、コンパイラとランタイムによって提供される厳密な型チェックにより、コードがより堅牢になります。
 
 ## <a name="example"></a>例
 
-次の例では、メソッド、`ManipulateFileStream`でのみ使用できる、<xref:System.IO.FileStream>オブジェクトで、この規則に違反します。 2 番目のメソッド`ManipulateAnyStream`、置き換えることで、ルールを満たす、<xref:System.IO.FileStream>パラメーターを使用して、<xref:System.IO.Stream>します。
+次の例は、 `ManipulateFileStream` <xref:System.IO.FileStream>オブジェクトでのみ使用でき、この規則に違反するメソッドを示しています。 2番目の`ManipulateAnyStream`メソッドは、を使用<xref:System.IO.Stream>して<xref:System.IO.FileStream>パラメーターを置換することで、規則を満たします。
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
@@ -68,4 +68,4 @@ ms.locfileid: "62779548"
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA 1059:メンバーが特定の具象型に公開することはできません。](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059メンバーは特定の具象型を公開できません](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

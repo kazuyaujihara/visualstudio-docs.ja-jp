@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6850cee67a0dfed4b386eef5ed7cb021d3c76a4d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920824"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232508"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122:リンク要求を含むメソッドを間接的に公開しません
 
@@ -27,8 +27,8 @@ ms.locfileid: "68920824"
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
-|Category|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Security|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 パブリックメンバーまたはプロテクトメンバーに[リンク確認要求](/dotnet/framework/misc/link-demands)があり、セキュリティチェックを実行しないメンバーによって呼び出されています。

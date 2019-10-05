@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806538"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231311"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227:Collection プロパティは読み取り専用でなければなりません
 
@@ -36,27 +36,27 @@ ms.locfileid: "62806538"
 
 ## <a name="cause"></a>原因
 
-実装する型の外部から参照できる、書き込み可能なプロパティは、<xref:System.Collections.ICollection?displayProperty=fullName>します。 このルールは、配列、インデクサー ('Item' という名前のプロパティ)、およびアクセス許可セットは無視されます。
+外部から参照できる、書き込み可能なプロパティは、を<xref:System.Collections.ICollection?displayProperty=fullName>実装する型です。 このルールは、配列、インデクサー (' Item ' という名前のプロパティ)、およびアクセス許可セットを無視します。
 
 ## <a name="rule-description"></a>規則の説明
 
-書き込み可能なコレクション プロパティには、完全に別のコレクションで置換するユーザーができます。 読み取り専用プロパティは、置き換えられるからコレクションを停止しますが、引き続き、個々 のメンバーを設定することができます。 コレクションの置換が目標の場合、推奨される設計パターンが、コレクションからすべての要素を削除するメソッドをおよびコレクションを再作成するためのメソッドが含まれます。 参照してください、<xref:System.Collections.ArrayList.Clear%2A>と<xref:System.Collections.ArrayList.AddRange%2A>のメソッド、<xref:System.Collections.ArrayList?displayProperty=fullName>このパターンの例のクラス。
+書き込み可能なコレクションプロパティを使用すると、ユーザーはコレクションをまったく別のコレクションに置き換えることができます。 読み取り専用プロパティは、コレクションの置換を停止しますが、個々のメンバーの設定を許可します。 コレクションを置き換えることが目標である場合、推奨されるデザインパターンは、コレクションからすべての要素を削除するメソッドと、コレクションを再作成するメソッドを含めることです。 このパターンの<xref:System.Collections.ArrayList.AddRange%2A>例につい<xref:System.Collections.ArrayList?displayProperty=fullName>ては、クラスのメソッドとメソッドを参照してください。<xref:System.Collections.ArrayList.Clear%2A>
 
-バイナリおよび XML シリアル化の両方は、コレクションである読み取り専用のプロパティをサポートします。 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>クラスに実装する型の特定の要件は<xref:System.Collections.ICollection>と<xref:System.Collections.IEnumerable?displayProperty=fullName>シリアル化可能にするためにします。
+バイナリシリアル化と XML シリアル化の両方で、コレクションである読み取り専用プロパティがサポートされます。 クラスには、シリアル化可能にする<xref:System.Collections.ICollection>ため<xref:System.Collections.IEnumerable?displayProperty=fullName>にとを実装する型に対する特定の要件があります。 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、読み取り専用プロパティを作成します。 設計上必要な場合は、オフにし、コレクションを再作成するメソッドを追加します。
+この規則違反を修正するには、プロパティを読み取り専用にします。 設計に必要な場合は、コレクションをクリアして再作成するメソッドを追加します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-プロパティの一部である場合、警告を抑制することができます、[データ転送オブジェクト (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))クラス。
+プロパティが[データ転送オブジェクト (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))クラスの一部である場合は、警告を非表示にすることができます。
 
-それ以外の場合、この規則による警告を抑制しないでください。
+それ以外の場合は、このルールからの警告を抑制しないでください。
 
 ## <a name="example"></a>例
 
-次の例では、書き込み可能なコレクションのプロパティを持つ型を表示し、コレクションを直接置換する方法を示しています。 また、適切なを使用して読み取り専用のコレクション プロパティを置き換える方法を説明`Clear`と`AddRange`メソッド。
+次の例は、書き込み可能なコレクションプロパティを持つ型を示し、コレクションを直接置換する方法を示しています。 また、メソッドと`Clear` `AddRange`メソッドを使用して、読み取り専用のコレクションプロパティを置き換えることをお勧めします。
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ ms.locfileid: "62806538"
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1819:プロパティは、配列を返す必要がありますいません。](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819プロパティは配列を返すことはできません](../code-quality/ca1819-properties-should-not-return-arrays.md)

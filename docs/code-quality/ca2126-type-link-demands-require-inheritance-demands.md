@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4f01ba5af7640521333093e4bba1f36a95363b60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920763"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232461"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126:型のリンク要求には継承要求が必要です
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920763"
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |CheckId|CA2126|
-|Category|Microsoft.Security|
+|カテゴリ|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

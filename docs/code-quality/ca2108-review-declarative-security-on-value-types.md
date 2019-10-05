@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545539"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232819"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:値型での宣言セキュリティを確認します
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545539"
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-パブリックまたはプロテクトの値の型がによってセキュリティ保護、[データとモデリング](/dotnet/framework/data/index)または[リンク確認要求](/dotnet/framework/misc/link-demands)します。
+パブリックまたは保護された値型は、[データ、モデリング](/dotnet/framework/data/index)、または[リンク確認要求](/dotnet/framework/misc/link-demands)によって保護されます。
 
 ## <a name="rule-description"></a>規則の説明
 
-値の型に割り当てられ他のコンス トラクターの実行前に既定のコンス トラクターによって初期化します。 値の型が Demand または LinkDemand によってセキュリティ保護されていて、呼び出し元には、以外の任意のコンス トラクター、セキュリティ チェックに適合するアクセス許可がありません。 既定値は失敗すると、およびセキュリティ例外がスローされます。 値の型の割り当ては解除されません。既定のコンス トラクターによって設定された状態で中断するとします。 値型のインスタンスを渡す呼び出し元が作成またはインスタンスにアクセスする権限を持っているとは限りません。
+値型は、他のコンストラクターが実行される前に、既定のコンストラクターによって割り当てられ、初期化されます。 値型が Demand または LinkDemand によって保護されていて、呼び出し元にセキュリティチェックを満たすアクセス許可がない場合、既定以外のコンストラクターは失敗し、セキュリティ例外がスローされます。 値型の割り当ては解除されません。既定のコンストラクターによって設定された状態のままになります。 値型のインスタンスを渡す呼び出し元が、インスタンスを作成またはアクセスするためのアクセス許可を持っていると想定しないでください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-種類、セキュリティ チェックを削除して、その場所に使用してメソッド レベルのセキュリティを確認しますしない限り、この規則違反を修正することはできません。 この方法で、違反を修正、値型のインスタンスを取得するから不適切なアクセス許可を持つ呼び出し元が防止されることはできません。 既定の状態で、値型のインスタンスは、機密情報を公開しないと、有害な方法では使用できませんをことを確認する必要があります。
+型からセキュリティチェックを削除し、代わりにメソッドレベルのセキュリティチェックを使用しない限り、この規則の違反を修正することはできません。 このように違反を修正しても、権限が適切でない呼び出し元が値型のインスタンスを取得するのを防ぐことはできません。 値型のインスタンスが既定の状態であることを確認して、機密情報を公開しないようにし、有害な方法では使用できないようにする必要があります。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-呼び出し元は、既定の状態にある値型のインスタンスを取得するセキュリティの脅威がない場合は、この規則による警告を抑制できます。
+すべての呼び出し元が、セキュリティに対する脅威を損なうことなく既定の状態で値の型のインスタンスを取得できる場合、この規則からの警告を抑制することができます。
 
 ## <a name="example-1"></a>例 1
 
-次の例では、この規則に違反する値の型を含むライブラリを示します。 `StructureManager`型では、値型のインスタンスを渡す呼び出し元が作成またはインスタンスにアクセスする権限を持っている前提としています。
+次の例は、この規則に違反する値の型を含むライブラリを示しています。 型`StructureManager`は、値型のインスタンスを渡す呼び出し元が、インスタンスを作成またはアクセスするためのアクセス許可を持っていることを前提としています。
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>例 2
 
-次のアプリケーションでは、ライブラリの脆弱性を示しています。
+次のアプリケーションは、ライブラリの弱点を示しています。
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 

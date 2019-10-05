@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "71095262"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのトレースポイントの使用
@@ -110,7 +110,7 @@ ms.locfileid: "71095262"
 
 ![条件式のヒットカウント](../debugger/media/conditionalexpressionhitcount.png "条件式のヒットカウント")
 
-### <a name="filter"></a>Assert
+### <a name="filter"></a>フィルター
 フィルター条件として、に表示されるデバイス、プロセス、またはスレッドの出力を指定します。
 
 ![条件式フィルター](../debugger/media/conditionalexpressionfilter.png "条件式フィルター")
@@ -125,7 +125,7 @@ ms.locfileid: "71095262"
 
 文字列 (名前など) を二重引用符で囲みます。 値は、引用符なしで入力できます。 句は`&` 、(`AND`)、 `||` (`OR`)、 `!` (`NOT`)、およびかっこを使用して結合できます。
 
-## <a name="considerations"></a>考慮事項
+## <a name="considerations"></a>注意事項
 
 トレースポイントは、クリーンでスムーズなエクスペリエンスを実現することを目的としていますが、使用するタイミングに注意する必要がある考慮事項がいくつかあります。
 

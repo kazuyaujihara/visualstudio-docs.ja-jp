@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f02938aed7456762f1ef51da716b6b96bdf437
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545030"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232148"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない
 
@@ -34,45 +34,45 @@ ms.locfileid: "62545030"
 
 ## <a name="cause"></a>原因
 
-透過的なメソッド:
+透過的な方法:
 
-- セキュリティの重要なセキュリティ例外の種類を処理します。
+- セキュリティクリティカルなセキュリティ例外の種類を処理します
 
-- セキュリティ上重要な型としてマークされているパラメーターがあります。
+- セキュリティクリティカルな型としてマークされているパラメーターがある
 
-- セキュリティの重要な制約を持つジェネリック パラメーターします。
+- には、セキュリティクリティカルな制約を持つジェネリックパラメーターがあります
 
-- セキュリティ上重要な型のローカル変数を持つ
+- セキュリティクリティカルな型のローカル変数を持つ
 
-- 重要なセキュリティとしてマークされている型を参照します。
+- セキュリティクリティカルとしてマークされている型を参照します
 
-- 重要なセキュリティとしてマークされているメソッドを呼び出します
+- セキュリティクリティカルとしてマークされているメソッドを呼び出します
 
-- 重要なセキュリティとしてマークされているフィールドを参照します。
+- セキュリティクリティカルとしてマークされているフィールドを参照する
 
-- 重要なセキュリティとしてマークされている型を返します
+- セキュリティクリティカルとしてマークされている型を返します
 
 ## <a name="rule-description"></a>規則の説明
 
-マークされているコード要素、<xref:System.Security.SecurityCriticalAttribute>属性は、セキュリティ クリティカルです。 透過的なメソッドでセキュリティ上重要な要素を使用することはできません。 透過的な型がセキュリティ クリティカルな型を使用しようとしたかどうか、 <xref:System.TypeAccessException>、 <xref:System.MethodAccessException> 、または<xref:System.FieldAccessException>が発生します。
+<xref:System.Security.SecurityCriticalAttribute>属性でマークされたコード要素は、セキュリティクリティカルです。 透過的なメソッドでセキュリティ上重要な要素を使用することはできません。 透過型がセキュリティクリティカルな型<xref:System.TypeAccessException> <xref:System.MethodAccessException>を使用しようとすると、 <xref:System.FieldAccessException> 、、またはが発生します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
 この規則違反を修正するには、次のいずれかの操作を行います。
 
-- セキュリティ クリティカルなコードを使用するコード要素をマーク、<xref:System.Security.SecurityCriticalAttribute>属性
+- セキュリティクリティカルなコードを使用するコード要素を<xref:System.Security.SecurityCriticalAttribute>属性でマークします。
 
-     \- または -
+     \- または
 
-- 削除、<xref:System.Security.SecurityCriticalAttribute>から重要なセキュリティとしてマークされて、代わりにそれらをマークするコード要素、属性、<xref:System.Security.SecuritySafeCriticalAttribute>または<xref:System.Security.SecurityTransparentAttribute>属性。
+- セキュリティクリティカルとマークされているコード要素から<xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> 属性を削除し、代わりに属性または属性で<xref:System.Security.SecurityCriticalAttribute>マークします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
 
-次の例については、透過的メソッドは、セキュリティの重要なジェネリック コレクション、セキュリティ クリティカル フィールド、およびセキュリティの重要なメソッドを参照しようとします。
+次の例では、透過的メソッドは、セキュリティクリティカルなジェネリックコレクション、セキュリティクリティカルフィールド、およびセキュリティクリティカルなメソッドを参照しようとします。
 
 [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 

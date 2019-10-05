@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546907"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481773"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:演算子オーバーロードには名前付けされた代替が存在します
 
@@ -27,8 +27,8 @@ ms.locfileid: "69546907"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|Category|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Usage|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
@@ -38,58 +38,61 @@ ms.locfileid: "69546907"
 
 ## <a name="rule-description"></a>規則の説明
 
-演算子のオーバーロードでは、型の計算を表すためにシンボルを使用できます。 たとえば、追加のためにプラス記号 (+) をオーバーロードする型には、通常、"Add" という名前の代替メンバーがあります。 名前付き代替メンバーは、演算子と同じ機能へのアクセスを提供し、オーバーロードされた演算子をサポートしない言語でプログラミングする開発者向けに用意されています。
+演算子のオーバーロードでは、型の計算を表すためにシンボルを使用できます。 たとえば、プラス記号をオーバーロードする型 `+` は、通常、`Add` という名前の代替メンバーを持ちます。 名前付き代替メンバーは、演算子と同じ機能へのアクセスを提供します。 オーバーロードされた演算子をサポートしない言語でプログラミングする開発者向けに用意されています。
 
-このルールは、次の表に示す演算子を検証します。
+このルールは次を調べます。
 
-|C#|Visual Basic|C++|代替名|
-|---------|------------------|-----------|--------------------|
+- @No__t-0 および `From<typename>` という名前のメソッドをチェックすることにより、型の暗黙的および明示的なキャスト演算子。
+
+- 次の表に、演算子を示します。
+
+|C#|Visual Basic|C++|代替の方法名|
+|-|-|-|-|
 |+ (バイナリ)|+|+ (バイナリ)|追加|
 |+=|+=|+=|追加|
-|&|と|&|BitwiseAnd|
+|&|And|&|BitwiseAnd|
 |&=|および =|&=|BitwiseAnd|
 |&#124;|または|&#124;|BitwiseOr|
 |&#124;=|または =|&#124;=|BitwiseOr|
-|--|N/A|--|Decrement|
+|--|なし|--|Decrement|
 |/|/|/|除算|
 |/=|/=|/=|除算|
 |==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|Xor =|^=|Xor|
-|>|>|>|比較|
-|>=|>=|>=|比較|
-|++|N/A|++|インクリメント|
-|<>|!=|Equals|
+|>|>|>|CompareTo または比較|
+|>=|>=|>=|CompareTo または比較|
+|++|なし|++|インクリメント|
+|!=|<>|!=|Equals|
 |<<|<<|<<|から左へ|
 |<<=|<<=|<<=|から左へ|
-|<|<|<|比較|
-|<=|<=|\<=|比較|
-|&&|N/A|&&|LogicalAnd|
-|&#124;&#124;|N/A|&#124;&#124;|LogicalOr|
-|!|N/A|!|LogicalNot|
+|<|<|<|CompareTo または比較|
+|<=|<=|\<=|CompareTo または比較|
+|&&|なし|&&|LogicalAnd|
+|&#124;&#124;|なし|&#124;&#124;|LogicalOr|
+|!|なし|!|LogicalNot|
 |%|Mod|%|Mod または剰余|
-|%=|N/A|%=|Mod|
+|%=|なし|%=|Mod|
 |* (バイナリ)|*|*|乗算|
-|*=|N/A|*=|乗算|
+|*=|なし|*=|乗算|
 |~|Not|~|OnesComplement|
 |>>|>>|>>|プロパティながら|
-=|N/A|>>=|プロパティながら|
+=|なし|>>=|プロパティながら|
 |-(バイナリ)|-(バイナリ)|-(バイナリ)|減算|
-|-=|N/A|-=|減算|
-|true|IsTrue|N/A|IsTrue (プロパティ)|
-|-(単項)|N/A|-|無効|
-|+ (単項)|N/A|+|Plus|
+|-=|なし|-=|減算|
+|true|IsTrue|なし|IsTrue (プロパティ)|
+|-(単項)|なし|-|無効|
+|+ (単項)|なし|+|足|
 |False|IsFalse|False|IsTrue (プロパティ)|
 
-選択した言語では、N/A = = をオーバーロードすることはできません。
+\* N/A は、選択した言語で演算子をオーバーロードできないことを意味します。
 
-また、およびと`SomeType` `FromSomeType`いう名前`ToSomeType`のメソッドがあるかどうかをチェックすることにより、型 () の暗黙的なキャスト演算子と明示的なキャスト演算子も確認します。
-
-でC#は、二項演算子がオーバーロードされると、対応する代入演算子 (存在する場合) も暗黙的にオーバーロードされます。
+> [!NOTE]
+> でC#は、二項演算子がオーバーロードされると、対応する代入演算子 (存在する場合) も暗黙的にオーバーロードされます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、演算子に対して別の方法を実装します。推奨される代替名を使用して名前を指定します。
+この規則違反を修正するには、演算子の代替方法を実装します。 推奨される代替名を使用して名前を指定します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 

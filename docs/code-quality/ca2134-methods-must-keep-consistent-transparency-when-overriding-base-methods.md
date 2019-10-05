@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920656"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253310"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134:メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある
 
@@ -23,7 +23,7 @@ ms.locfileid: "68920656"
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
-|Category|Microsoft.Security|
+|カテゴリ|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -34,13 +34,13 @@ ms.locfileid: "68920656"
 ## <a name="rule-description"></a>規則の説明
 この規則は、継承チェーンのさらに上にあるメソッドのセキュリティアクセシビリティを変更しようとした場合に発生します。 たとえば、基底クラスの仮想メソッドが透過的またはセーフクリティカルである場合、派生クラスは透過的またはセーフクリティカルなメソッドでオーバーライドする必要があります。 逆に、仮想がセキュリティクリティカルである場合、派生クラスはセキュリティクリティカルなメソッドでそれをオーバーライドする必要があります。 インターフェイスメソッドの実装にも同じ規則が適用されます。
 
-透過性規則は、コードが実行時ではなく JIT コンパイルされる場合に適用されます。これにより、透過性の計算に動的な型情報が含まれなくなります。 したがって、透過性の計算結果は、動的な型に関係なく、JIT コンパイルされている静的な型からのみ特定できる必要があります。
+透過性ルールは、コードが実行時ではなく JIT コンパイルされる場合に適用されます。これにより、透過性の計算に動的な型情報が含まれなくなります。 したがって、透過性の計算結果は、動的な型に関係なく、JIT コンパイルされている静的な型からのみ特定できる必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 この規則違反を修正するには、仮想メソッドをオーバーライドするメソッドの透明度を変更するか、仮想メソッドまたはインターフェイスメソッドの透過性に一致するようにインターフェイスを実装します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
-この規則からの警告を抑制しないでください。 この規則を違反すると、レベル 2 <xref:System.TypeLoadException>の透過性を使用するアセンブリのランタイムが生成されます。
+この規則からの警告を抑制しないでください。 この規則に違反すると、レベル 2 <xref:System.TypeLoadException>の透過性を使用するアセンブリのランタイムが実行されます。
 
 ## <a name="examples"></a>使用例
 

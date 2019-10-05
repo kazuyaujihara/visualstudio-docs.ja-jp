@@ -11,94 +11,94 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559745"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211242"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグに関するトラブルシューティングと既知の問題
 
-この記事で説明されている手順を実行しても問題が解決しない場合、上の問題を検索[開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)を選択して、新しい問題を報告または**ヘルプ** > **フィードバックの送信**  > **問題を報告する**Visual Studio でします。
+この記事で説明されている手順で問題を解決できない場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)で問題を検索するか、[**ヘルプ** > ] [**フィードバック** > の送信] [Visual で**問題を報告する**] の順に選択して、新しい問題を報告します。Studio.
 
-## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題:HTTP 状態コード エラーが発生した「スナップショット デバッガーのアタッチ」
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題:"Attach スナップショットデバッガー" で HTTP 状態コードエラーが発生する
 
-次のエラーが表示された場合、**出力**アタッチを試行中にウィンドウで、以下に示す既知の問題があります。 策の提案をお試しくださいし、問題が引き続き保持する場合は、上記のエイリアスにお問い合わせください。
+アタッチしようとしたときに **[出力]** ウィンドウに次のエラーが表示される場合は、以下に示す既知の問題が考えられます。 提案されたソリューションを試してください。問題が解決しない場合は、前述のエイリアスに問い合わせてください。
 
 `[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
 
-### <a name="401-unauthorized"></a>(401) 許可されていません
+### <a name="401-unauthorized"></a>(401) 権限がありません
 
-このエラーは、REST の呼び出しによって発行される Visual Studio Azure 使用するには、無効な資格情報を示します。 Azure Active Directory の簡単な OAuth モジュールを使用して既知のバグには、このエラーが発生します。
+このエラーは、Visual Studio によって Azure に発行された REST 呼び出しに無効な資格情報が使用されていることを示します。 Azure Active Directory 簡易 OAuth モジュールに関する既知のバグによって、このエラーが発生することがあります。
 
 次の手順を実行します。
 
-* Visual Studio のパーソナル化アカウントが Azure サブスクリプションとを接続しているリソースに権限を持っていることを確認します。 これを確認する簡単な方法がからダイアログ ボックスで、リソースが使用できるかどうかを確認するには**デバッグ** > **スナップショット デバッガーをアタッチしています.**  >  **Azure リソース** > **既存選択**、またはクラウド エクスプ ローラー。
-* このエラーが引き続き保持する、この記事の冒頭で説明されているフィードバック チャネルのいずれかを使用します。
+* Visual Studio の個人用設定アカウントに、アタッチ先の Azure サブスクリプションとリソースへのアクセス許可があることを確認します。 これを簡単に確認するには、[**デバッグ** > ] [**アタッチスナップショットデバッガー** ...] の [リソース] がダイアログボックスに表示されているかどうかを確認します。Azure リソースで > は、 **[既存**] または [Cloud Explorer] を選択します。  > 
+* このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
 ### <a name="403-forbidden"></a>(403) 許可されていません
 
-このエラーは、アクセス許可が拒否されることを示します。 さまざまな問題の可能性があります。
+このエラーは、アクセス許可が拒否されたことを示します。 これは、さまざまな問題が原因で発生する可能性があります。
 
 次の手順を実行します。
 
-* Visual Studio アカウントに、リソースのロールベースのアクセス制御 (RBAC) アクセス許可は必要な場合は、有効な Azure サブスクリプションがあることを確認します。 App Service では、確認する権限があるかどうか[クエリ](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get)App Service プラン、アプリをホストします。
-* クライアント コンピューターのタイムスタンプが正しく、最新の状態を確認します。 15 分以上の要求のタイムスタンプは、通常、オフのタイムスタンプを使用したサーバーでは、このエラーを生成します。
-* このエラーが引き続き保持する、この記事の冒頭で説明されているフィードバック チャネルのいずれかを使用します。
+* Visual Studio アカウントに、リソースに必要なロールベースの Access Control (RBAC) アクセス許可を持つ有効な Azure サブスクリプションがあることを確認します。 AppService の場合は、アプリをホストしている App Service プランに対して[クエリ](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get)を実行するためのアクセス許可があるかどうかを確認します。
+* クライアントコンピューターのタイムスタンプが正しいことと、最新の状態であることを確認します。 タイムスタンプが要求タイムスタンプから15分以上経過しているサーバーは、通常、このエラーを生成します。
+* このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
-### <a name="404-not-found"></a>(404) Not Found
+### <a name="404-not-found"></a>(404) が見つかりません
 
-このエラーは、web サイトは、そのサーバー上に見つかりませんでしたを示します。
-
-次の手順を実行します。
-
-* Web サイトを展開してアタッチする App Service リソースで実行されている、ことを確認します。
-* サイトが https:// で使用できることを確認\<リソース\>azurewebsites.net。
-* このエラーが引き続き保持する、この記事の冒頭で説明されているフィードバック チャネルのいずれかを使用します。
-
-### <a name="406-not-acceptable"></a>(406) not Acceptable
-
-このエラーは、サーバーが要求の Accept ヘッダーの種類に応答できることを示します。
+このエラーは、web サイトがサーバー上に見つからなかったことを示します。
 
 次の手順を実行します。
 
-* サイトが https:// で使用できることを確認\<リソース\>azurewebsites.net。
-* サイトが新しいインスタンスにない移行されたことを確認します。 スナップショット デバッガーは、断続的にこのエラーを生成する特定のインスタンスへのルーティング要求を ARRAffinity の概念を使用します。
-* このエラーが引き続き保持する、この記事の冒頭で説明されているフィードバック チャネルのいずれかを使用します。
+* 接続している App Service リソースに web サイトがデプロイされ、実行されていることを確認します。
+* サイトが https://\<resource\>. azurewebsites.net で利用可能であることを確認します。
+* このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
+
+### <a name="406-not-acceptable"></a>(406) 許容できません
+
+このエラーは、サーバーが要求の Accept ヘッダーに設定されている型に応答できないことを示します。
+
+次の手順を実行します。
+
+* サイトが https://\<resource\>. azurewebsites.net で利用可能であることを確認します。
+* サイトが新しいインスタンスに移行されていないことを確認します。 スナップショットデバッガーでは、特定のインスタンスに要求をルーティングするために ARRAffinity の概念を使用します。これにより、このエラーが断続的に発生する可能性があります。
+* このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
 ### <a name="409-conflict"></a>(409) 競合
 
 このエラーは、要求が現在のサーバーの状態と競合していることを示します。
 
-これは、ユーザーが application Insights を有効にした app Service に対してスナップショット デバッガーをアタッチしようとしたときに発生する既知の問題です。 Application Insights では、この問題を引き起こしてより Visual Studio は、大文字小文字が異なると AppSettings を設定します。
+これは、ユーザーが ApplicationInsights を有効にした AppService に対してスナップショットデバッガーをアタッチしようとしたときに発生する既知の問題です。 ApplicationInsights は、この問題の原因となっている、Visual Studio とは異なる文字種の AppSettings を設定します。
 
 ::: moniker range=">= vs-2019"
-これは、Visual Studio 2019 で解決されています。
+これは Visual Studio 2019 で解決しました。
 ::: moniker-end
 
 次の手順を実行します。
 
 ::: moniker range="vs-2017"
 
-* Azure portal で SnapshotDebugger (SNAPSHOTDEBUGGER_EXTENSION_VERSION) および InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) AppSettings が大文字であることを確認します。 そうでない場合、設定の更新サイトの再起動を強制して、手動でします。
+* Azure portal で、SnapshotDebugger (SNAPSHOTDEBUGGER_EXTENSION_VERSION) と InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) の AppSettings が大文字であることを確認します。 構成されていない場合は、手動で設定を更新して、サイトを強制的に再起動します。
 ::: moniker-end
-* このエラーが引き続き保持する、この記事の冒頭で説明されているフィードバック チャネルのいずれかを使用します。
+* このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
-### <a name="500-internal-server-error"></a>(500) の内部サーバー エラー
+### <a name="500-internal-server-error"></a>(500) 内部サーバーエラー
 
-このエラーは、サイトが完全にダウンまたはサーバーが要求を処理できないことを示します。 スナップショット デバッガーのアプリケーションの実行でのみ機能します。 [Application Insights スナップショット デバッガー](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger)例外に関するスナップショットを作成を提供し、ニーズに最適なツールがあります。
+このエラーは、サイトが完全にダウンしているか、サーバーが要求を処理できないことを示します。 スナップショットデバッガー実行中のアプリケーションでのみ機能します。 [Application Insights スナップショットデバッガー](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger)では、例外のスナップショットが提供され、ニーズに最適なツールになる場合があります。
 
 ### <a name="502-bad-gateway"></a>(502) 無効なゲートウェイ
 
-このエラーは、サーバー側のネットワークの問題を示し、一時的な場合があります。
+このエラーは、サーバー側のネットワークの問題であり、一時的なものである可能性があることを示します。
 
 次の手順を実行します。
 
-* スナップショット デバッガーをもう一度接続する前に数分待機していることをお試しください。
-* このエラーが引き続き保持する、この記事の冒頭で説明されているフィードバック チャネルのいずれかを使用します。
+* スナップショットデバッガーを再度アタッチする前に、数分間待機してください。
+* このエラーが引き続き発生する場合は、この記事の冒頭で説明したフィードバックチャネルのいずれかを使用します。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>問題:スナップ ポイントを有効にしません
+## <a name="issue-snappoint-does-not-turn-on"></a>問題:スナップポイントが有効にしない
 
 通常のスナップ アイコンではなく、![スナップポイントの警告アイコン](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "スナップポイントの警告アイコン")がスナップポイントに表示される場合、スナップポイントは有効ではありません。
 
@@ -106,9 +106,9 @@ ms.locfileid: "67559745"
 
 次の手順を実行します。
 
-1. 構築し、アプリのデプロイに使用されたソース コードの同じバージョンであることを確認します。 配置の正しいシンボルを読み込んでいることを確認します。 これを行うには、スナップショットのデバッグ中に **[モジュール]** ウィンドウを表示し、デバッグ対象のモジュール用に読み込まれた .pdb ファイルが [シンボル ファイル] 列に表示されることを確認します。 スナップショット デバッガーは、配置用のシンボルを自動的にダウンロードして使用しようとします。
+1. アプリのビルドとデプロイに使用されたのと同じバージョンのソースコードがあることを確認します。 配置の正しいシンボルを読み込んでいることを確認します。 これを行うには、スナップショットのデバッグ中に **[モジュール]** ウィンドウを表示し、デバッグ対象のモジュール用に読み込まれた .pdb ファイルが [シンボル ファイル] 列に表示されることを確認します。 スナップショット デバッガーは、配置用のシンボルを自動的にダウンロードして使用しようとします。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題:スナップショットを開くと、シンボルが読み込まれない
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題:スナップショットを開いたときにシンボルが読み込まれない
 
 次のウィンドウが表示される場合、シンボルは読み込まれていません。
 
@@ -124,7 +124,7 @@ ms.locfileid: "67559745"
 
 - また、組織がシンボル サーバーを使用している場合、または別のパスにあるシンボルをドロップする場合は、シンボル設定を使用して配置の正しいシンボルを読み込みます。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題:クラウド エクスプ ローラーで、「スナップショット デバッガーのアタッチ」オプションを表示できません。
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題:Cloud Explorer に "Attach スナップショットデバッガー" オプションが表示されない
 
 次の手順を実行します。
 
@@ -143,7 +143,7 @@ ms.locfileid: "67559745"
   - Azure Kubernetes Service - Ubuntu 18.04 上の .NET Core 2.2 以降で実行されている ASP.NET Core アプリケーション。
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題:診断ツールでのスナップショットの調整のみ表示します。
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題:スロットルされたスナップショットのみが診断ツールに表示されます
 
 ![調整されたスナップポイント](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "調整されたスナップポイント")
 
@@ -152,15 +152,15 @@ ms.locfileid: "67559745"
 - スナップショットはほとんどメモリを占有しませんが、コミット チャージがかかります。 スナップショット デバッガーで、サーバーに大きなメモリ負荷がかかっていることが検出された場合は、スナップショットが取得されません。 既にキャプチャされたスナップショットを削除するには、スナップショット デバッガー セッションを停止して再試行します。
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題:エラーには複数のバージョンの Visual Studio でスナップショットのデバッグ
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題:複数バージョンの Visual Studio を使用したスナップショットデバッグでエラーが発生する
 
-Visual Studio 2019 では、Azure App Service でのスナップショット デバッガー サイト拡張機能の新しいバージョンが必要です。  このバージョンは、Visual Studio 2017 で使用されるスナップショット デバッガー サイト拡張機能の以前のバージョンで互換性がありません。  既に Visual Studio 2017 でのスナップショット デバッガーによってデバッグが完了する Azure App Service に Visual Studio 2019 のスナップショット デバッガーをアタッチしようとする場合、次のエラーが表示されます。
+Visual Studio 2019 では、Azure App Service のスナップショットデバッガーサイト拡張機能の新しいバージョンが必要です。  このバージョンは、Visual Studio 2017 で使用される古いバージョンのスナップショットデバッガーサイト拡張機能と互換性がありません。  Visual studio 2019 のスナップショットデバッガーを Visual Studio 2017 のスナップショットデバッガーによって既にデバッグされている Azure App Service にアタッチしようとすると、次のエラーが表示されます。
 
-![互換性のないスナップショット デバッガー サイト拡張機能 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "互換性のないスナップショット デバッガー サイト拡張機能 Visual Studio 2019")
+![互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2019")
 
-逆に、Visual Studio 2017 を使用して以前の Visual Studio 2019 スナップショット デバッガーによってデバッグが完了する Azure App Service へのスナップショット デバッガーをアタッチすると、次のエラーが発生します。
+逆に、visual Studio 2017 を使用して、Visual Studio 2019 のスナップショットデバッガーによって以前にデバッグされていた Azure App Service にスナップショットデバッガーをアタッチすると、次のエラーが表示されます。
 
-![互換性のないスナップショット デバッガー サイト拡張機能 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "互換性のないスナップショット デバッガー サイト拡張機能 Visual Studio 2017")
+![互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "互換性のないスナップショットデバッガーサイト拡張機能 Visual Studio 2017")
 
 これを修正するには、Azure portal で次のアプリ設定を削除し、スナップショット デバッガーを再度アタッチします。
 
@@ -168,7 +168,7 @@ Visual Studio 2019 では、Azure App Service でのスナップショット デ
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題:スナップショットのデバッグの問題があると、複数のログ記録を有効にする必要があります。
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題:スナップショットのデバッグで問題が発生したため、より多くのログ記録を有効にする必要があります
 
 ### <a name="enable-agent-logs"></a>エージェント ログを有効にする
 
@@ -180,7 +180,7 @@ Visual Studio 2019 では、Azure App Service でのスナップショット デ
   - App Service の Kudu サイト (つまり yourappservice.**scm**.azurewebsites.net) にアクセスし、[デバッグ コンソール] に移動します。
   - エージェントのログは、次のディレクトリに格納されます。D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - エージェントのログが次のように格納されている、VM にサインインします。C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<バージョン > \SnapshotDebuggerAgent_*.txt
+  - VM にサインインすると、エージェントのログは次のように格納されます。C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version > \ snapshotデバッガ agent_ * .txt
 - AKS
   - /tmp/diag/AgentLogs/* ディレクトリに移動します
 
@@ -189,10 +189,10 @@ Visual Studio 2019 では、Azure App Service でのスナップショット デ
 インストルメンテーション ログは次の場所にあります。
 
 - App Service:
-  - エラーのログ記録は D:\Home\LogFiles\eventlog.xml に自動的に送信される、イベントが付いて`<Provider Name="Instrumentation Engine" />`または"運用"ブレークポイント
+  - エラーログは D:\Home\LogFiles\eventlog.xml に自動的に送信され、イベント`<Provider Name="Instrumentation Engine" />`はまたは "運用ブレークポイント" でマークされます。
 - VM/VMSS:
   - VM にサインインし、イベント ビューアーを開きます。
-  - 次のビューを開きます。*Windows ログ > アプリケーション*します。
+  - 次のビューを開きます。*Windows は > アプリケーションをログに記録*します。
   - *[Production Breakpoints]\(運用ブレークポイント\)* または *[インストルメンテーション エンジン]* を使用して、 *[イベント ソース]* で *[現在のログをフィルター]* を実行します。
 - AKS
   - /tmp/diag/log.txt のインストルメンテーション エンジン ログ (DockerFile で MicrosoftInstrumentationEngine_FileLogPath を設定します)
@@ -219,8 +219,8 @@ Visual Studio 2019 では、Azure App Service でのスナップショット デ
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのデバッグ](../debugger/index.md)
-- [スナップショット デバッガーを使用して、ライブ ASP.NET アプリをデバッグします。](../debugger/debug-live-azure-applications.md)
-- [ライブ ASP.NET Azure 仮想 Machines\Virtual マシン スケール セットのスナップショット デバッガーを使用したデバッグします。](../debugger/debug-live-azure-virtual-machines.md)
-- [スナップショット デバッガーを使用して、ライブの ASP.NET Azure Kubernetes デバッグします。](../debugger/debug-live-azure-kubernetes.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
+- [スナップショットデバッガーを使用したライブ ASP.NET アプリのデバッグ](../debugger/debug-live-azure-applications.md)
+- [スナップショットデバッガーを使用したライブ ASP.NET Azure 仮想マシンの仮想マシンスケールセットのデバッグ](../debugger/debug-live-azure-virtual-machines.md)
+- [スナップショットデバッガーを使用して live ASP.NET Azure Kubernetes をデバッグする](../debugger/debug-live-azure-kubernetes.md)
 - [スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234151"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別子では、大文字と小文字が正しく区別されなければなりません
 
@@ -27,18 +27,18 @@ ms.locfileid: "68921779"
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|中断-アセンブリ、名前空間、型、メンバー、およびパラメーターで発生した場合。<br /><br /> 非ブレーク-ジェネリック型パラメーターで発生した場合。|
 
 ## <a name="cause"></a>原因
 
 識別子の名前の大文字と小文字が正しくありません。
 
-\- または -
+\- または
 
 識別子の名前に2文字の頭字語が含まれ、2番目の文字が小文字になっています。
 
-\- または -
+\- または
 
 識別子の名前には、3文字以上の大文字の頭字語が含まれています。
 

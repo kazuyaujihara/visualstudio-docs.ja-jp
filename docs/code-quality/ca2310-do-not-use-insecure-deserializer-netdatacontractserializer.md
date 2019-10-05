@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2310
 - DoNotUseInsecureDeserializerNetDataContractSerializer
-ms.openlocfilehash: 09496fd11945ec4d419cc215569a7436f96d71ec
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 5335e72307ea201ad77d6e59b267572d4d9aae56
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891152"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237719"
 ---
 # <a name="ca2310-do-not-use-insecure-deserializer-netdatacontractserializer"></a>CA2310:安全ではないデシリアライザー NetDataContractSerializer を使用しないでください
 
@@ -26,8 +26,8 @@ ms.locfileid: "69891152"
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerNetDataContractSerializer|
 |CheckId|CA2310|
-|Category|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Security|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
@@ -47,7 +47,7 @@ ms.locfileid: "69891152"
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>しないでください。 型リゾルバーを使用する必要がある場合は、逆シリアル化された型を予期されるリストに制限します。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-TypeNameHandling を使用します。 TypeNameHandling に別の値を使用する必要がある場合は、カスタム ISerializationBinder を使用して、逆シリアル化された型を予期されるリストに制限します。
-  - プロトコルバッファー
+  - プロトコル バッファー
 - シリアル化されたデータの改ざん防止を行います。 シリアル化後に、シリアル化されたデータに暗号署名します。 逆シリアル化する前に、暗号化署名を検証します。 暗号化キーが公開され、キーのローテーションのための設計になっていないことを防止します。
 - 逆シリアル化された型を制限します。 カスタム<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>を実装します。 で<xref:System.Runtime.Serialization.NetDataContractSerializer>逆シリアル化する前<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>に、プロパティをカスタム<xref:System.Runtime.Serialization.SerializationBinder>のインスタンスに設定します。 オーバーライド<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>されたメソッドで、型が予期しない場合は例外をスローして、逆シリアル化を停止します。
   - 逆シリアル化された型を制限する場合は、この規則を無効にして、 [CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)と[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)の規則を有効にすることをお勧めします。 ルール[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)と[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)は、 <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>逆シリアル化の前にプロパティが常に設定されていることを確認するのに役立ちます。

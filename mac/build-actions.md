@@ -3,31 +3,47 @@ title: ビルド アクション
 description: この記事では、C# プロジェクトで使用できるさまざまなビルド アクションについて説明します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691195"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128446"
 ---
 # <a name="build-actions"></a>ビルド アクション
 
-Visual Studio for Mac プロジェクト内のすべてのファイルに、ビルド アクションがあります。 これで、ビルド時にファイルに発生する内容を制御します。 下の画像のように、任意のファイルを右クリックして **[ビルド アクション]** に移動することで、この動作を設定できます。
+Visual Studio for Mac プロジェクト内のすべてのファイルに、ビルド アクションがあります。 ビルド アクションにより、ビルド時にファイルに発生する内容を制御します。 
+
+>[!NOTE]
+>このトピックは、Visual Studio for Mac に適用されます。 Windows での Visual Studio については、「[ビルド アクション](/visualstudio/ide/build-actions)」を参照してください。
+
+## <a name="set-a-build-action"></a>ビルド アクションを設定する
+
+Visual Studio for Mac でファイルのビルド アクションを設定するには、次に示すように、任意のファイルを右クリックし、 **[ビルド アクション]** を参照します。
 
 ![ソリューション エクスプローラーで [コンパイル] ビルド アクションを選択する](media/projects-and-solutions-image1.png)
 
-C# プロジェクトの一般的ビルド アクションには次のようなものがあります。
+このファイルのビルド アクションはフライアウト メニューに表示されます。 
 
-* **なし** - このファイルはいかなる形でもビルドに含まれません。IDE から簡単にアクセスできるようにプロジェクトに含まれています。
-* **コンパイル** - このファイルはソース ファイルとして C# コンパイラに渡されます。
-* **EmbeddedResource** - このファイルはアセンブリに埋め込むリソースとして C# コンパイラに渡されます。 `System.Reflection` 名前空間の [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream) を使用すると、アセンブリからファイルを読み取ることができます。
-* **コンテンツ** - ASP.NET プロジェクトの場合、展開時、このファイルはサイトの一部として追加されます。 Xamarin.iOS プロジェクトと Xamarin.Mac プロジェクトの場合、アプリ バンドルに含まれます。
+## <a name="build-action-values"></a>ビルド アクションの値
 
-ソリューション エクスプローラーでは複数のファイルを選択でき、ビルド アクションを一度に複数のファイルに設定できます。
+Visual Studio for Mac でビルドできるプロジェクトの一般的なビルド アクションには次が含まれます。
 
-また、特定のプロジェクトのビルド アクションがあります。 Xamarin.iOS プロジェクトには、**BundleResource** ビルド アクションがあります。このアクションでは、アプリ バンドルの一環としてファイルを追加します。 Xamarin.Android 固有のビルド アクションに関する詳細は、[ビルド プロセス](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) ガイドでご覧いただけます。
+|ビルド アクション | プロジェクトの種類 | 説明 |
+|--|--|--|
+| **Compile** | 任意 | ファイルはソース ファイルとして C# コンパイラに渡されます。|
+| **コンテンツ** | .NET、Xamarin | ASP.NET プロジェクトの場合、展開時に、これらのファイルはサイトの一部として含まれます。 Xamarin.iOS プロジェクトと Xamarin.Mac プロジェクトの場合、アプリ バンドルに含まれます。|
+| **Embedded Resource** | .NET | ファイルは、アセンブリに埋め込むリソースとして C# コンパイラに渡されます。 `System.Reflection` 名前空間の [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream) を使用すると、アセンブリからファイルを読み取ることができます。|
+| **None** | 任意 | このファイルはいかなる形でもビルドに含まれません。IDE から簡単にアクセスできるようにプロジェクトに含まれています。 この値は、"ReadMe" ファイルなどのドキュメント ファイルで使用できます。|
+
+> [!NOTE]
+> 特定のプロジェクトの種類に対して追加のビルド アクションを定義して、ビルドア クションのリストをプロジェクトの種類に基づくものにして、このリストに含まれない値が表示されるようにすることができます。  
+
+Xamarin.iOS プロジェクトには、**BundleResource** ビルド アクションがあります。このアクションでは、アプリ バンドルの一環としてファイルを追加します。 Xamarin.Android 固有のビルド アクションに関する詳細は、[ビルド プロセス](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) ガイドでご覧いただけます。
+
+ソリューション エクスプローラーでは複数のファイルを選択することもできます。ビルド アクションを一度に複数のファイルに設定できます。
 
 ## <a name="see-also"></a>関連項目
 

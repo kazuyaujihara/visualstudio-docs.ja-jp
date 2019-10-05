@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541118"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237115"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:安全ではない DTD の処理
 
@@ -22,7 +22,7 @@ ms.locfileid: "62541118"
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
@@ -30,48 +30,48 @@ ms.locfileid: "62541118"
 
 ## <a name="rule-description"></a>規則の説明
 
-*文書型定義 (DTD)* は、  [World Wide Web コンソーシアム (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)で定義されているように、XML パーサーが文書の妥当性を判別する 2 つの方法のうちの 1 つです。 このルールはシーク プロパティとインスタンスの可能性について開発者に警告の信頼されていないデータを受け入れている[情報漏えいが起こる](/dotnet/framework/wcf/feature-details/information-disclosure)脅威または[サービス拒否 (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service)攻撃です。 このルールは、次の場合にトリガーされます。
+*文書型定義 (DTD)* は、  [World Wide Web コンソーシアム (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)で定義されているように、XML パーサーが文書の妥当性を判別する 2 つの方法のうちの 1 つです。 このルールは、信頼されていないデータが受け入れられるプロパティとインスタンスを検索して、潜在的な[情報漏えい](/dotnet/framework/wcf/feature-details/information-disclosure)の脅威や[サービス拒否 (dos)](/dotnet/framework/wcf/feature-details/denial-of-service)攻撃について開発者に警告します。 このルールは、次の場合にトリガーされます。
 
 - <xref:System.Xml.XmlReader> を使用して外部 XML エンティティを解決する <xref:System.Xml.XmlUrlResolver>インスタンスで、DtdProcessing が有効になっている。
 
 - XML で <xref:System.Xml.XmlNode.InnerXml%2A> プロパティが設定されている。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> プロパティは、Parse に設定されます。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>プロパティが Parse に設定されています。
 
-- 使用して入力が処理される信頼されていない<xref:System.Xml.XmlResolver>の代わりに<xref:System.Xml.XmlSecureResolver>します。
+- 信頼できない入力は<xref:System.Xml.XmlResolver> 、の<xref:System.Xml.XmlSecureResolver>代わりにを使用して処理されます。
 
-- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType>メソッドが呼び出される、安全でないと<xref:System.Xml.XmlReaderSettings>インスタンスまたはすべてのインスタンスがありません。
+- セキュリティ<xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType>で保護<xref:System.Xml.XmlReaderSettings>されていないインスタンスでメソッドが呼び出されているか、まったくインスタンスがありません。
 
-- <xref:System.Xml.XmlReader> 安全でない既定の設定または値で作成されます。
+- <xref:System.Xml.XmlReader>は、セキュリティで保護されていない既定の設定または値で作成されます。
 
-それぞれの場合、結果は同じ: いずれか、ファイル システムまたはネットワーク共有から XML を処理するマシンから内容が、攻撃者に公開または DTD の処理は、DoS ベクターとして使用できます。
+このような場合、結果は同じになります。つまり、XML が処理されるコンピューターからのファイルシステムまたはネットワーク共有からの内容が攻撃者に公開されるか、または DTD 処理を DoS ベクターとして使用できます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- キャッチし、パス情報の漏えいを回避するために適切にすべての XmlTextReader 例外を処理します。
+- パス情報の漏えいを防ぐために、すべての XmlTextReader 例外をキャッチして処理します。
 
-- 使用して、 <xref:System.Xml.XmlSecureResolver> XmlTextReader がアクセスできるリソースを制限します。
+- <xref:System.Xml.XmlSecureResolver>を使用して、XmlTextReader がアクセスできるリソースを制限します。
 
 - <xref:System.Xml.XmlReader> プロパティを <xref:System.Xml.XmlResolver> null **に設定して、** がどの外部リソースも開けないようにします。
 
-- いることを確認、<xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType>プロパティが、信頼できるソースから割り当てられます。
+- <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType>プロパティが信頼できるソースから割り当てられていることを確認します。
 
 **.NET 3.5 以前**
 
-- 設定によって信頼されていないソースを扱う場合は、DTD 処理を無効にする、<xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>プロパティを**true**します。
+- プロパティを<xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> **true**に設定して、信頼されていないソースを扱う場合は、DTD 処理を無効にします。
 
 - XmlTextReader クラスには、完全信頼の継承確認要求があります。
 
 **.NET 4 以降**
 
-- 設定によって信頼されていないソースを扱う場合は、DtdProcessing を有効にしないように、<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>プロパティを**禁止**または**無視**します。
+- 信頼されていないソースを扱う場合は、プロパティ<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>を **[禁止]** または **[無視]** に設定して、DtdProcessing を有効にしないでください。
 
 - すべての InnerXml ケースで、Load() メソッドが XmlReader インスタンスを取ることを確認します。
 
 > [!NOTE]
 > このルールは、有効な XmlSecureResolver インスタンスについて誤検知を報告することがあります。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 入力が信頼できるソースからのものとわかっているのでない限り、この警告からのルールを抑制しないでください。
 

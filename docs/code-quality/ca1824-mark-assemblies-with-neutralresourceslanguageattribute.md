@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40cb2a3674884a9fb4f1449c9afa2e0a2d27050f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df5c0db4e9e141e5833893bbbb447328eab8851e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808561"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233343"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します
 
@@ -32,39 +32,39 @@ ms.locfileid: "62808561"
 
 ## <a name="cause"></a>原因
 
-アセンブリに含まれる、 **ResX**-ベースのリソースがありません、<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>を適用します。
+アセンブリには、 **ResX**ベースのリソースが含まれてい<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>ますが、それには適用されていません。
 
 ## <a name="rule-description"></a>規則の説明
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute>属性が、アプリの既定のカルチャのリソース マネージャーに通知します。 既定のカルチャのリソースが、アプリのメイン アセンブリに埋め込まれている場合と<xref:System.Resources.ResourceManager>既定のカルチャと同じカルチャに属しているリソースを取得する必要があります、<xref:System.Resources.ResourceManager>メイン アセンブリに配置されているリソースを自動的に使用されます代わりに、サテライト アセンブリを検索しています。 これは、通常のアセンブリのプローブをバイパスする、最初のリソースを読み込み、および、ワーキング セットを減らすことができますのルックアップのパフォーマンスが向上します。
+属性<xref:System.Resources.NeutralResourcesLanguageAttribute>は、アプリの既定のカルチャのリソースマネージャーに通知します。 既定のカルチャのリソースがアプリのメインアセンブリ<xref:System.Resources.ResourceManager>に埋め込まれ、既定のカルチャと同じカルチャに属するリソースを取得する必要がある場合、は<xref:System.Resources.ResourceManager>メインアセンブリにあるリソースを自動的に使用します。サテライトアセンブリを検索するのではなく、 これにより、通常のアセンブリプローブがバイパスされ、読み込む最初のリソースの参照パフォーマンスが向上し、作業セットを減らすことができます。
 
 > [!TIP]
-> 参照してください[パッケージ化とリソースのデプロイ](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps)プロセスを<xref:System.Resources.ResourceManager>リソース ファイルを探すために使用します。
+> リソースファイルをプローブするためにが使用<xref:System.Resources.ResourceManager>するプロセスについては、「[リソースのパッケージ化とデプロイ](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps)」を参照してください。
 
-## <a name="fix-violations"></a>違反を修正します。
+## <a name="fix-violations"></a>違反の修正
 
-この規則違反を修正するには、アセンブリに属性を追加し、ニュートラル カルチャのリソースの言語を指定します。
+この規則違反を修正するには、属性をアセンブリに追加し、ニュートラルカルチャのリソースの言語を指定します。
 
-### <a name="to-specify-the-neutral-language-for-resources"></a>ニュートラル言語リソースを指定するには
+### <a name="to-specify-the-neutral-language-for-resources"></a>リソースにニュートラル言語を指定するには
 
-1. **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、**プロパティ**します。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** を選択します。
 
-2. 選択、**アプリケーション**、タブを選び**アセンブリ情報**します。
+2. **[アプリケーション]** タブを選択し、 **[アセンブリ情報]** を選択します。
 
    > [!NOTE]
-   > プロジェクトが .NET Standard または .NET Core プロジェクトの場合は、選択、**パッケージ**タブ。
+   > プロジェクトが .NET Standard または .NET Core プロジェクトの場合は、 **[パッケージ]** タブを選択します。
 
-3. 言語を選択して、**ニュートラル言語**または**アセンブリのニュートラル言語**ドロップダウン リスト。
+3. **[ニュートラル言語]** ボックスまたは **[アセンブリニュートラル言語]** ドロップダウンリストから言語を選択します。
 
 4. **[OK]** を選択します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告を抑制することはできます。 ただし、起動時のパフォーマンスが低下する可能性があります。
+このルールからの警告を抑制することができます。 ただし、起動時のパフォーマンスが低下する可能性があります。
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
-- [デスクトップ アプリ (.NET) でのリソース](/dotnet/framework/resources/)
-- [Ca 1703 - リソース文字列正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 - リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [デスクトップアプリのリソース (.NET)](/dotnet/framework/resources/)
+- [CA1703-リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1701-リソース文字列の複合語は、大文字と小文字が正しく区別されます。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46cb99f00bbbd9969899121f82ba591980b5b288
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796743"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231919"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります
 
@@ -26,7 +26,7 @@ ms.locfileid: "62796743"
 
 ## <a name="cause"></a>原因
 
-透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 例:
+透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 次に例を示します。
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -48,7 +48,7 @@ ms.locfileid: "62796743"
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、マーク、フィールドに、<xref:System.Security.SecurityCriticalAttribute>属性、または型がいずれかのセキュリティまたはセーフ フィールドによって参照されている重要な。
+この規則違反を修正するには、フィールド<xref:System.Security.SecurityCriticalAttribute>に属性を設定するか、フィールドによって参照される型をセキュリティ透過的または安全クリティカルにします。
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -75,7 +75,7 @@ ms.locfileid: "62796743"
    }
 ```
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 

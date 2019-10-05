@@ -15,60 +15,60 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95561f1404da1efd71ff3418f9154392f393795c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977888"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254129"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI のカスタマイズのチュートリアル
   次に示すチュートリアルでは、ドキュメント レベルのカスタマイズと VSTO アドインを使用して、Microsoft Office アプリケーションのユーザー インターフェイス (UI) をカスタマイズする方法について説明します。
 
 ## <a name="actions-pane-walkthroughs"></a>操作ウィンドウのチュートリアル
-- [チュートリアル: 操作ウィンドウから文書にテキストを挿入](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)Word 文書に操作ウィンドウを作成する方法を示します。 この操作ウィンドウには、ユーザーの入力をドキュメントに送信するための 2 つのコントロールが含まれています。
+- [チュートリアル: [操作] ウィンドウ](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)からドキュメントにテキストを挿入する Word 文書に操作ウィンドウを作成する方法について説明します。 この操作ウィンドウには、ユーザーの入力をドキュメントに送信するための 2 つのコントロールが含まれています。
 
-- [チュートリアル: Word の操作ウィンドウ上のコントロールにデータをバインド](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)操作ウィンドウ上のコントロールを Word でデータにバインドする方法を示します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
+- [チュートリアル: Word の操作ウィンドウ](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)のコントロールにデータをバインドする word の操作ウィンドウのコントロールをデータにバインドする方法について説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
 
-- [チュートリアル: Excel の操作ウィンドウ上のコントロールにデータをバインド](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)を Excel での操作ウィンドウのデータ ソースにバインドされているコントロールを追加する方法について説明します。
+- [チュートリアル: [Excel 操作] ウィンドウ](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)のコントロールにデータをバインドするデータソースにバインドされているコントロールを excel の操作ウィンドウに追加する方法について説明します。
 
 ## <a name="custom-task-pane-walkthroughs"></a>カスタム作業ウィンドウのチュートリアル
-- [チュートリアル: カスタム作業ウィンドウからアプリケーションを自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)ユーザー コントロールをクリックしたときに、ホスト アプリケーションを自動化するコントロールを含むカスタム作業ウィンドウを作成する方法を示します。
+- [チュートリアル: 「カスタム作業ウィンドウ](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)からのアプリケーションの自動化」では、ユーザーがコントロールをクリックしたときにホストアプリケーションを自動化するコントロールを含むカスタム作業ウィンドウを作成する方法を示します。
 
-- [チュートリアル: リボン ボタンとカスタム作業ウィンドウを同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)ユーザーがリボンのトグル ボタンをクリックして表示または非表示にできるカスタム作業ウィンドウを作成する方法を示します。
+- [チュートリアル: カスタム作業ウィンドウとリボンボタン](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)の同期ユーザーがリボンのトグルボタンをクリックして表示/非表示を切り替えることができるカスタム作業ウィンドウを作成する方法を示します。
 
-- [チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)作成または Outlook で開かれている電子メール メッセージごとにカスタム作業ウィンドウの一意のインスタンスを表示する方法を示します。
+- [チュートリアル: Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)で電子メールメッセージと共にカスタム作業ウィンドウを表示するカスタム作業ウィンドウの一意のインスタンスを、outlook で作成または開いた各電子メールメッセージと共に表示する方法について説明します。
 
 ## <a name="ribbon-walkthroughs"></a>リボンのチュートリアル
-- [チュートリアル: カスタム タブをリボン デザイナーを使用して作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)リボン デザイナーを使用してカスタム リボン タブを作成する方法を示します。 このタブには、操作パネルの表示/非表示を切り替えるために使用できるボタンが含まれています。
+- [チュートリアル: リボンデザイナーを使用](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)してカスタムタブを作成するリボンデザイナーを使用してカスタムリボンタブを作成する方法を示します。 このタブには、操作パネルの表示/非表示を切り替えるために使用できるボタンが含まれています。
 
-- [チュートリアル: 実行時にリボン上のコントロールを更新](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)リボン オブジェクト モデルを使用して、リボンが Office アプリケーションに読み込まれた後、リボン上のコントロールを更新する方法を示します。
+- [チュートリアル: リボンのコントロールを実行](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)時に更新するリボンオブジェクトモデルを使用して、リボンが Office アプリケーションに読み込まれた後にリボン上のコントロールを更新する方法について説明します。
 
-- [チュートリアル: カスタム タブをリボン XML を使用して作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)リボン デザイナーを使用する代わりにリボン XML によるカスタムのリボン タブを作成する方法を示します。
+- [チュートリアル: リボン xml](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)を使用してカスタムタブを作成するリボンデザイナーを使用する代わりに、リボン xml を使用してカスタムリボンタブを作成する方法を示します。
 
-## <a name="controls-on-word-documents"></a>Word 文書上のコントロール
-- [チュートリアル: VSTO アドインで実行時にドキュメントにコントロールを追加](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)VSTO アドインを使用してドキュメントにコントロールを追加する方法を示します。
+## <a name="controls-on-word-documents"></a>Word 文書のコントロール
+- [チュートリアル: Vsto アドイン](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)の実行時にドキュメントにコントロールを追加する vsto アドインを使用してドキュメントにコントロールを追加する方法について説明します。
 
-- [チュートリアル: CheckBox コントロールを使用してドキュメントの書式設定を変更する](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)のドキュメント レベル カスタマイズでチェック ボックスを使用して、Word 文書の書式を変更する方法を示します。
+- [チュートリアル: CheckBox コントロール](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)を使用してドキュメントの書式を変更するドキュメントレベルのカスタマイズでチェックボックスを使用して、Word 文書の書式を変更する方法を示します。
 
-- [チュートリアル: ボタンを使用して、ドキュメント内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)Word 文書でボタンやテキスト ボックスを使用する方法を示します。
+- [チュートリアル: ボタン](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)を使用してドキュメント内のテキストボックスにテキストを表示する Word 文書でボタンとテキストボックスを使用する方法について説明します。
 
-- [チュートリアル: ラジオ ボタンを使用してドキュメントのグラフを更新](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)のドキュメント レベル カスタマイズでオプション ボタンを使用して Word 文書でグラフのスタイルを変更する方法を示します。
+- [チュートリアル: ドキュメントレベルのカスタマイズでオプションボタンを使用](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)して、Word 文書のグラフのスタイルを変更する方法については、ラジオボタンを使用してドキュメントのグラフを更新する方法について説明します。
 
-## <a name="controls-on-excel-worksheets"></a>Excel ワークシート上のコントロール
-- [チュートリアル: VSTO アドイン プロジェクトでの実行時にワークシートにコントロールを追加](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)VSTO アドインを使用してワークシートにコントロールを追加する方法を示します。
+## <a name="controls-on-excel-worksheets"></a>Excel ワークシートのコントロール
+- [チュートリアル: 実行時に vsto アドインプロジェクト](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)のワークシートにコントロールを追加する vsto アドインを使用してワークシートにコントロールを追加する方法を示します。
 
-- [チュートリアル: CheckBox コントロールを使用してワークシートの書式設定を変更する](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)で Excel ワークシートの書式を変更する チェック ボックスを使用する基本を示します。
+- [チュートリアル: チェックボックスコントロール](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)を使用してワークシートの書式を変更する Excel ワークシートでチェックボックスを使用して書式を変更する方法の基本について説明します。
 
-- [チュートリアル: ボタンを使用してワークシート内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)でボタンやテキスト ボックスを使用して、Excel ワークシート上での基本を示します。
+- [チュートリアル: ボタン](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)を使用してワークシートのテキストボックスにテキストを表示する Excel ワークシートでボタンやテキストボックスを使用する方法の基本について説明します。
 
-- [チュートリアル: ラジオ ボタンを使用してワークシートのグラフを更新](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)オプション ボタンを使用して、Excel ワークシートのグラフ スタイルの変更の基礎を示しています。
+- [チュートリアル: ラジオボタン](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)を使用してワークシートのグラフを更新する Excel ワークシートでオプションボタンを使用してグラフのスタイルを変更する方法の基本について説明します。
 
 ## <a name="see-also"></a>関連項目
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)
-- [Office ソリューションのチュートリアルにおけるデータ](../vsto/data-in-office-solutions-walkthroughs.md)
-- [セキュリティと配置のチュートリアル](../vsto/security-and-deployment-walkthroughs.md)
+- [Office ソリューションのチュートリアルのデータ](../vsto/data-in-office-solutions-walkthroughs.md)
+- [セキュリティとデプロイのチュートリアル](../vsto/security-and-deployment-walkthroughs.md)
 - [はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)
+- [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)

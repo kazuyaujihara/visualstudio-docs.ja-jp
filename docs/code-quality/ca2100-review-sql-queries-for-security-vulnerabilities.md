@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744811"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233062"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:SQL クエリのセキュリティ脆弱性を確認
 
@@ -37,19 +37,19 @@ ms.locfileid: "66744811"
 
 ## <a name="cause"></a>原因
 
-メソッドの設定、<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>プロパティ、メソッドに文字列の引数から構築された文字列を使用しています。
+メソッドは、文字列<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>引数から構築された文字列をメソッドに使用して、プロパティを設定します。
 
 ## <a name="rule-description"></a>規則の説明
 
-この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 SQL インジェクション攻撃では、悪意のあるユーザーは、破損または基になるデータベースへの不正アクセスを確保するために、クエリのデザインを変更する入力を提供します。 標準的な方法は、単一引用符またはアポストロフィ、SQL リテラル文字列の区切り記号; の挿入2 つのダッシュは、SQL コメント; ことを示しますセミコロンでは、新しいコマンドが続くことを示します。 攻撃のリスクを軽減する効果の順序で表示されている場合、ユーザー入力は、次のいずれかを使用して、クエリの一部である必要があります。
+この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。 SQL インジェクション攻撃では、悪意のあるユーザーが、基になるデータベースへの損傷または不正アクセスを試みるために、クエリのデザインを変更する入力を提供します。 一般的な手法としては、単一引用符またはアポストロフィの挿入があります。これは、SQL リテラル文字列の区切り記号です。2つのダッシュ。 SQL コメントを意味します。セミコロンは、新しいコマンドが続くことを示します。 ユーザー入力をクエリの一部にする必要がある場合は、次のいずれかの方法を使用して、攻撃のリスクを軽減します。
 
-- ストアド プロシージャを使用します。
+- ストアドプロシージャを使用します。
 
 - パラメーター化されたコマンド文字列を使用します。
 
-- コマンド文字列をビルドする前に、型とコンテンツの両方のユーザー入力を検証します。
+- コマンド文字列を作成する前に、型とコンテンツの両方についてユーザー入力を検証します。
 
-次の .NET 型の実装、<xref:System.Data.IDbCommand.CommandText%2A>プロパティまたは文字列引数を使用して、プロパティを設定するコンス トラクターを提供します。
+次の .net 型では<xref:System.Data.IDbCommand.CommandText%2A> 、プロパティを実装するか、文字列引数を使用してプロパティを設定するコンストラクターを指定します。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> および <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,16 +59,16 @@ ms.locfileid: "66744811"
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> および <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-明示的または暗黙的に型の ToString メソッドを使用する場合に、この規則が違反したことに注意してください。 クエリ文字列を作成します。 次に例を示します。
+型の ToString メソッドを明示的または暗黙的に使用してクエリ文字列を構築すると、この規則に違反することに注意してください。 次に例を示します。
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-悪意のあるユーザーは、ToString() メソッドをオーバーライドできるため、規則に違反します。
+悪意のあるユーザーが ToString () メソッドをオーバーライドできるため、ルールに違反します。
 
-ルールもが破ら ToString を暗黙的に使用するとします。
+ToString を暗黙的に使用した場合も、規則に違反します。
 
 ```csharp
 int x = 10;
@@ -79,13 +79,13 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 この規則違反を修正するには、パラメーター化クエリを使用します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-コマンド テキストでユーザー入力が含まれない場合は、この規則による警告を抑制するのには安全です。
+コマンドテキストにユーザー入力が含まれていない場合は、この規則による警告を抑制しても安全です。
 
 ## <a name="example"></a>例
 
-次の例では、メソッド、 `UnsafeQuery`、ルールと、メソッドに違反する`SaferQuery`、パラメーター化されたコマンド文字列を使用して、ルールを満たします。
+次の例は、パラメーター化`UnsafeQuery`されたコマンド文字列を使用して`SaferQuery`規則を満たす、規則に違反するメソッド、およびメソッドを示しています。
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

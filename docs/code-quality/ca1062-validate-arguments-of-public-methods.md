@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3868061a01572d0b1adadec6619f88269d353dff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922438"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235335"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:パブリック メソッドの引数の検証
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922438"
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
 |カテゴリ|Microsoft.Design|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 

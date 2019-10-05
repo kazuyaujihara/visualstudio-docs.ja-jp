@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796846"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231905"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200:スタック詳細を保持するために再度スローします
 
@@ -31,27 +31,27 @@ ms.locfileid: "62796846"
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-例外が再スローして、例外がで明示的に指定、`throw`ステートメント。
+例外が再スローされ、 `throw`ステートメントで例外が明示的に指定されています。
 
 ## <a name="rule-description"></a>規則の説明
 
-例外がスローされると、スタック トレースは伝達される情報の一部です。 スタック トレースは、例外をスローし、例外をキャッチするメソッドを使用して終了するメソッドで始まるメソッドの呼び出し階層の一覧を示します。 例外を指定することで、例外がスローされます再、`throw`ステートメントでは、スタック トレースは、現在のメソッドに再起動し、例外をスローした元のメソッドと、現在のメソッド間のメソッド呼び出しの一覧は失われます。 例外には、元のスタック トレース情報を保持する使用、`throw`せず、例外を指定するステートメント。
+例外がスローされると、それに含まれる情報の一部がスタックトレースになります。 スタックトレースは、例外をスローするメソッドで始まり、例外をキャッチするメソッドで終了するメソッド呼び出し階層のリストです。 `throw`ステートメントで例外を指定することによって例外が再スローされた場合、現在のメソッドでスタックトレースが再開され、例外をスローした元のメソッドと現在のメソッドとの間のメソッド呼び出しのリストが失われます。 例外と共に元のスタックトレース情報を保持するに`throw`は、例外を指定せずにステートメントを使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則の違反を修正するには、例外を明示的に指定することがなく例外を再スローします。
+この規則違反を修正するには、例外を明示的に指定せずに例外を再スローします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
 
-次の例では、メソッド、 `CatchAndRethrowExplicitly`、ルールと、メソッドに違反して`CatchAndRethrowImplicitly`規則に適合します。
+次の例は、規則に`CatchAndRethrowExplicitly`違反するメソッドと、規則を満たす`CatchAndRethrowImplicitly`メソッドを示しています。
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

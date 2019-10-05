@@ -1,5 +1,5 @@
 ---
-title: '方法: コンテンツ コントロールを使用してドキュメントを保護する. します。'
+title: '方法: コンテンツコントロールを使用してドキュメントの一部を保護する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441731"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254665"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>方法: コンテンツ コントロールを使用してドキュメントを保護する. します。
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>方法: コンテンツコントロールを使用してドキュメントの一部を保護する
   ドキュメントの一部を保護することにより、ユーザーがドキュメントのその部分を変更したり削除したりできないようにします。 コンテンツ コントロールを使用して Microsoft Office Word ドキュメントの一部を保護する方法は、いくつかあります。
 
 - コンテンツ コントロールを保護することができます。
@@ -34,26 +34,26 @@ ms.locfileid: "63441731"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a> コンテンツ コントロールを保護します。
- ユーザーを編集またはデザイン時または実行時にドキュメント レベルのプロジェクトで、コントロールのプロパティを設定してコンテンツ コントロールを削除を防ぐことができます。
+## <a name="EditDeleteControl"></a>コンテンツコントロールを保護する
+ デザイン時または実行時に文書レベルのプロジェクト内のコントロールのプロパティを設定することにより、ユーザーがコンテンツ コントロールを編集したり削除したりしないようにすることができます。
 
- VSTO アドイン プロジェクトを使用して、実行時にドキュメントに追加したコンテンツ コントロールを保護することもできます。 詳細については、「[方法 :Word 文書にコンテンツ コントロールを追加](../vsto/how-to-add-content-controls-to-word-documents.md)します。
+ VSTO アドイン プロジェクトを使用して、実行時にドキュメントに追加したコンテンツ コントロールを保護することもできます。 詳細については、「[方法 :Word 文書](../vsto/how-to-add-content-controls-to-word-documents.md)にコンテンツコントロールを追加します。
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>デザイン時に、コンテンツ コントロールを保護するには
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デザイナーでホストされているドキュメントで、保護するコンテンツ コントロールを選択します。
 
-2. **プロパティ**ウィンドウで、次のプロパティの一方または両方を設定します。
+2. **[プロパティ]** ウィンドウで、次のプロパティのいずれかまたは両方を設定します。
 
-    - ユーザーがコントロールを編集できないようにする設定**LockContents**に**True**します。
+    - ユーザーがコントロールを編集できないようにするには、 **Lockcontents**を**True**に設定します。
 
-    - ユーザーがコントロールを削除することを防ぐために次のように設定します。 **[lockcontentcontrol]** に**True**します。
+    - ユーザーがコントロールを削除できないようにするには、 **Lockcontentcontrol**を**True**に設定します。
 
 3. **[OK]** をクリックします。
 
-### <a name="to-protect-a-content-control-at-runtime"></a>実行時にコンテンツ コントロールを保護するには
+### <a name="to-protect-a-content-control-at-run-time"></a>実行時に、コンテンツ コントロールを保護するには
 
-1. 設定、`LockContents`するコンテンツ コントロールのプロパティ**true** 、コントロールを編集できないようにし、設定、`LockContentControl`プロパティを**true**をユーザーがコントロールを削除することを防ぐためにします。
+1. ユーザーがコントロールを編集できないようにするには、コンテンツコントロールの`LockContentControl` プロパティをtrueに設定し、プロパティをtrueに設定して、ユーザーがコントロールを削除できないよう`LockContents`にします。
 
      次のコード例は、ドキュメント レベル プロジェクト内の 2 つの異なる <xref:Microsoft.Office.Tools.Word.RichTextContentControl> オブジェクトのプロパティ、<xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> と <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> の使用法を示しています。 このコードを実行するには、プロジェクトの `ThisDocument` クラスにコードを追加し、 `AddProtectedContentControls` イベント ハンドラーから `ThisDocument_Startup` メソッドを呼び出します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "63441731"
      [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]
 
-## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>コンテンツ コントロールに含まれていないドキュメントの一部を保護します。
+## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>コンテンツコントロールに含まれていないドキュメントの一部を保護する
  ドキュメントのある領域を <xref:Microsoft.Office.Tools.Word.GroupContentControl> に配置することにより、ユーザーがその領域を変更できないようにすることができます。 これは、次のシナリオで役立ちます。
 
 - コンテンツ コントロールが含まれていない領域を保護する場合。
@@ -73,7 +73,7 @@ ms.locfileid: "63441731"
 - 既にコンテンツ コントロールが含まれている領域だが、保護対象のテキストまたはその他のアイテムが、コンテンツ コントロールに含まれていない場合。
 
 > [!NOTE]
-> コンテンツ コントロールが埋め込まれた <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成した場合、埋め込まれたコンテンツ コントロールは自動的には保護されません。 ユーザーが埋め込みコンテンツ コントロールを編集できないようにするには、使用、 **LockContents**コントロールのプロパティ。
+> 埋め込みコンテンツ コントロールを含む <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成する場合、埋め込みコンテンツ コントロールは自動的には保護されません。 ユーザーが埋め込みコンテンツコントロールを編集できないようにするには、コントロールの**Lockcontents**プロパティを使用します。
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>デザイン時にドキュメントのある領域を保護するには
 
@@ -82,13 +82,13 @@ ms.locfileid: "63441731"
 2. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボン](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)に [開発者] タブを表示します。
 
-3. **コントロール**グループで、、**グループ**ドロップダウン ボタン、およびクリック**グループ**します。
+3. **[コントロール]** グループの **[グループ]** ドロップダウンボタンをクリックし、 **[グループ]** をクリックします。
 
-     保護された領域を含む <xref:Microsoft.Office.Tools.Word.GroupContentControl> が、プロジェクト内の `ThisDocument` クラスに自動的に生成されます。 デザイン時に、グループ コントロールを表す枠線が表示されるが、実行時に表示される枠線はありません。
+     保護された領域を含む <xref:Microsoft.Office.Tools.Word.GroupContentControl> が、プロジェクト内の `ThisDocument` クラスに自動的に生成されます。 グループ コントロールを表す枠線は、デザイン時に表示されますが、実行時に表示される枠線はありません。
 
-### <a name="to-protect-an-area-of-a-document-at-runtime"></a>実行時にドキュメントの領域を保護するには
+### <a name="to-protect-an-area-of-a-document-at-run-time"></a>実行時にドキュメントの領域を保護するには
 
 1. プログラムを使用して、保護する領域を選択し、<xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> メソッドを呼び出すことにより <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成します。
 
@@ -103,9 +103,9 @@ ms.locfileid: "63441731"
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
 
 ## <a name="see-also"></a>関連項目
-- [拡張オブジェクトを使用して Word を自動化します。](../vsto/automating-word-by-using-extended-objects.md)
-- [コンテンツ コントロール](../vsto/content-controls.md)
-- [方法: コンテンツ コントロールを Word 文書に追加します。](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [実行時に Office ドキュメントにコントロールを追加します。](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [拡張オブジェクトを使用した Word の自動化](../vsto/automating-word-by-using-extended-objects.md)
+- [コンテンツコントロール](../vsto/content-controls.md)
+- [方法: Word 文書にコンテンツコントロールを追加する](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)

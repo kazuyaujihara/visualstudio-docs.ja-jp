@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2300
 - DoNotUseInsecureDeserializerBinaryFormatter
-ms.openlocfilehash: 8a2bc2929b53843749d939f16057a11c0e944e33
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 4ca4990308ceab21e2c6e256770ff37a3ca9a6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891221"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237955"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300:安全ではないデシリアライザー BinaryFormatter を使用しないでください
 
@@ -26,8 +26,8 @@ ms.locfileid: "69891221"
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerBinaryFormatter|
 |CheckId|CA2300|
-|Category|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Security|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
@@ -47,7 +47,7 @@ ms.locfileid: "69891221"
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>しないでください。 型リゾルバーを使用する必要がある場合は、逆シリアル化された型を予期されるリストに制限します。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-TypeNameHandling を使用します。 TypeNameHandling に別の値を使用する必要がある場合は、カスタム ISerializationBinder を使用して、逆シリアル化された型を予期されるリストに制限します。
-  - プロトコルバッファー
+  - プロトコル バッファー
 - シリアル化されたデータの改ざん防止を行います。 シリアル化後に、シリアル化されたデータに暗号署名します。 逆シリアル化する前に、暗号化署名を検証します。 暗号化キーが公開され、キーのローテーションのための設計になっていないことを防止します。
 - 逆シリアル化された型を制限します。 カスタム<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>を実装します。 で<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>逆シリアル化する前<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>に、プロパティをカスタム<xref:System.Runtime.Serialization.SerializationBinder>のインスタンスに設定します。 オーバーライド<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>されたメソッドで、型が予期しない場合は例外をスローして、逆シリアル化を停止します。
   - 逆シリアル化された型を制限する場合は、この規則を無効にして、 [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)と[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)の規則を有効にすることをお勧めします。 ルール[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)と[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)は、 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>逆シリアル化の前にプロパティが常に設定されていることを確認するのに役立ちます。

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812002"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186814"
 ---
 # <a name="quick-actions"></a>クイック アクション
 
@@ -25,7 +25,17 @@ ms.locfileid: "62812002"
 
 - [コード アナライザー](../code-quality/roslyn-analyzers-overview.md)の規則違反に対してコード修正を適用する
 
+::: moniker range=">=vs-2019"
+
+- コード アナライザーの規則違反を[抑制する](../code-quality/use-roslyn-analyzers.md#suppress-violations)か、その重要度を[構成する](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - コード アナライザーの規則違反を[抑制する](../code-quality/use-roslyn-analyzers.md#suppress-violations)
+
+::: moniker-end
 
 - リファクタリングを適用する (例: [一時変数をインライン化する](../ide/reference/inline-temporary-variable.md))
 
@@ -34,7 +44,7 @@ ms.locfileid: "62812002"
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[リファクタリング (Visual Studio for Mac)](/visualstudio/mac/refactoring)」を参照してください。
 
-クイック アクションは、電球 ![電球アイコン](media/light-bulb-icon.png) アイコンまたはねじ回し ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Ctrl**+**.** キーを押すと 利用できます。 エラーを示す赤い波線があり、Visual Studio にそのエラーに対処するために使用可能な解決策がある場合は、エラー電球 ![エラー電球アイコン](media/error-light-bulb-icon.png) が表示されます。
+クイック アクションは、電球 ![電球アイコン](media/light-bulb-icon.png) アイコンまたはねじ回し ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンを使うか、適切なコード行にカーソルを置いて **Ctrl**+ **.** キーを押すと 利用できます。 エラーを示す赤い波線があり、Visual Studio にそのエラーに対処するために使用可能な解決策がある場合は、エラー電球 ![エラー電球アイコン](media/error-light-bulb-icon.png) が表示されます。
 
 いずれの言語でも、サードパーティは、たとえば SDK の一部として、カスタマイズした診断や提案を表示できます。Visual Studio ではそれらの規則に基づいて電球マークが表示されます。
 
@@ -54,7 +64,7 @@ ms.locfileid: "62812002"
 
 行のどこかで **Ctrl** + **.** キーを押しても、 使用可能なクイック アクションとリファクタリングの一覧が表示されます。
 
-修正候補を表示するには、電球の横の下矢印を選択するか、**[修正候補を表示する]** リンクを選択します。 使用可能なクイック アクションのリストが表示されます。
+修正候補を表示するには、電球の横の下矢印を選択するか、 **[修正候補を表示する]** リンクを選択します。 使用可能なクイック アクションのリストが表示されます。
 
 ![拡大電球](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
@@ -62,6 +72,6 @@ ms.locfileid: "62812002"
 
 - [Visual Studio でのコード生成](../ide/code-generation-in-visual-studio.md)
 - [共通のクイック アクション](../ide/common-quick-actions.md)
-- [コード スタイルとクイック アクション](../ide/code-styles-and-quick-actions.md)
+- [コード スタイルとクイック アクション](../ide/code-styles-and-code-cleanup.md)
 - [コードの記述とリファクタリング (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [リファクタリング (Visual Studio for Mac)](/visualstudio/mac/refactoring)

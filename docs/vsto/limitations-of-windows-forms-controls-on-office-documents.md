@@ -1,5 +1,5 @@
 ---
-title: Office ドキュメントに Windows フォーム コントロールの制限事項
+title: Office ドキュメントの Windows フォームコントロールの制限事項
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,26 +20,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 81a7da585f49b2a2d1f7df4df11d0c78b7a35d69
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823405"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251913"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office ドキュメントに Windows フォーム コントロールの制限事項
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office ドキュメントの Windows フォームコントロールの制限事項
 
-Microsoft Office Word ドキュメントまたは Microsoft Office Excel のワークシートに追加される Windows フォーム コントロールと Windows フォームに追加される Windows フォーム コントロールの間には、いくつか違いがあります。 たとえば、追加、<xref:Microsoft.Office.Tools.Word.Controls.Button>など、ドキュメントのプロパティを制御<xref:System.Windows.Forms.Control.Dock>、 <xref:System.Windows.Forms.Control.Anchor>、および<xref:System.Windows.Forms.Control.TabIndex>予想どおりに動作しません。
+Microsoft Office Word 文書または Microsoft Office Excel ワークシートに追加される Windows フォームコントロール Windows フォームと、Windows フォームに追加されるコントロールにはいくつかの違いがあります。 たとえば、ドキュメント<xref:Microsoft.Office.Tools.Word.Controls.Button>にコントロールを追加した場合、 <xref:System.Windows.Forms.Control.Dock>、 <xref:System.Windows.Forms.Control.Anchor>、 <xref:System.Windows.Forms.Control.TabIndex>などのプロパティは、予期したとおりに動作しません。
 
-これらの相違点の多くは方法に起因してその Windows フォームのコントロールがホストされているドキュメントにします。 Windows フォーム コントロールがドキュメントに追加されたときに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]し、ドキュメント内の Windows フォーム コントロールをホストする ActiveX コントロールが埋め込まれます。 Windows フォームのコントロールがドキュメントに直接埋め込まれません。
+これらの違いの多くは、Windows フォームコントロールがドキュメントでホストされている方法によって発生します。 Windows フォームコントロールがドキュメントに追加されると、は[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ActiveX コントロールを埋め込み、ドキュメント内の Windows フォームコントロールをホストします。 Windows フォームコントロールがドキュメントに直接埋め込まれていません。
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Windows フォーム コントロールのメソッドとプロパティの制限事項
+## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Windows フォームコントロールのメソッドとプロパティの制限事項
 
-さまざまな方法と動作しないと同じ方法でドキュメントを Windows フォームの場合し、そのため、お勧めする使用できない場合が Windows フォーム コントロールのプロパティがあります。 たとえばなどのプロパティを設定<xref:System.Windows.Forms.Control.Dock>と<xref:System.Windows.Forms.Control.Anchor>に関して、ドキュメントではなく、コンテナーの ActiveX コントロール、コントロールの位置にのみ影響します。 Word および Excel 用の Windows フォーム コントロールのサポートされていないメソッドとプロパティの一覧を次には。
+Windows フォームコントロールのメソッドとプロパティには、Windows フォームの場合と同じように動作しないものがあります。そのため、これらを使用しないことをお勧めします。 たとえば、や<xref:System.Windows.Forms.Control.Dock> <xref:System.Windows.Forms.Control.Anchor>などのプロパティを設定することは、ドキュメントではなく、コンテナー ActiveX コントロールに対するコントロールの位置にのみ影響します。 Word および Excel の Windows フォームコントロールのサポートされていないメソッドとプロパティの一覧を次に示します。
 
-- Excel のコントロールのサポートされていないプロパティ:
+- Excel コントロールのサポートされていないプロパティ:
 
   - <xref:System.Windows.Forms.Control.Anchor>
   - <xref:System.Windows.Forms.Control.Dock>
@@ -48,7 +48,7 @@ Microsoft Office Word ドキュメントまたは Microsoft Office Excel のワ�
   - <xref:System.Windows.Forms.Control.TabStop>
   - <xref:System.Windows.Forms.Control.TopLevelControl>
 
-- サポートされていないメソッド、および Word コントロールのプロパティ:
+- Word コントロールのサポートされていないメソッドとプロパティ:
 
   - <xref:System.Windows.Forms.Control.Hide%2A>
   - <xref:System.Windows.Forms.Control.Show%2A>
@@ -60,47 +60,47 @@ Microsoft Office Word ドキュメントまたは Microsoft Office Excel のワ�
   - <xref:System.Windows.Forms.Control.TopLevelControl>
   - <xref:System.Windows.Forms.Control.Visible>
 
-設定することもできない、<xref:System.Windows.Forms.Control.Left>または<xref:System.Windows.Forms.Control.Top>Word 文書でテキストの範囲にある Windows フォーム コントロールのプロパティ。 Windows フォーム コントロールは、次の場合にテキストの範囲に追加されます。
+<xref:System.Windows.Forms.Control.Left>また、Word 文書で行内にある Windows フォームコントロールのプロパティまたは<xref:System.Windows.Forms.Control.Top>プロパティを設定することもできません。 Windows フォームコントロールは、次の場合にテキストと共に行に追加されます。
 
-- Word 文書にコントロールを追加して位置の範囲を指定するメソッドを使用するプログラムでは。
+- プログラムを使用して、コントロールを Word 文書に追加し、場所の範囲を指定するメソッドを使用します。
 
-- デザイン時に、Word 文書に Windows フォーム コントロールを追加します。 これは、デザイナーでコントロールを変更することで変更できます。
+- デザイン時に Word 文書に Windows フォームコントロールを追加します。 これは、デザイナーでコントロールを変更することによって変更できます。
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Office ドキュメントでの Windows フォーム コントロールの違い
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Office ドキュメントの Windows フォームコントロールの相違点
 
-Windows フォーム コントロール通常がある動作は同じ Office ドキュメントのように Windows フォーム上でこれらの操作を行いますが、いくつかの違いがあります。 次の表では、Office ドキュメントでの Windows フォーム コントロール用に存在する違いについて説明します。
+Windows フォームコントロールは、通常、Windows フォームの場合と同じように Office ドキュメントで動作しますが、いくつかの違いがあります。 次の表では、Office ドキュメントの Windows フォームコントロールに存在する違いについて説明します。
 
 |機能|相違点|
 |-------------------|----------------|
-|コントロールのタブ オーダー|Excel のワークシートまたは Word 文書上のコントロール間を移動することはできません。|
-|コントロールのグループ化|使用することはできません、 <xref:System.Windows.Forms.GroupBox> Office ドキュメントの他のコントロールを格納するコントロール。 ドキュメントを直接に複数のオプション ボタンを追加するときにラジオ ボタンが相互に排他的なされません。 相互に排他的です。 オプション ボタンを作成するコードを記述することができます。ただし、推奨されるアプローチは、ユーザー コントロールへのラジオ ボタンを追加し、ドキュメントにユーザー コントロールを追加するは。 詳細については、コントロールのサンプルを Word または Excel コントロールのサンプルで参照してください[Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。|
-|コントロール型|ドキュメントで使用される Windows フォーム コントロールが用意されているクラスにラップされます、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word 文書、Excel ワークシートにコントロール固有の追加機能を提供します。 ある場合など、**ボタン**Excel ワークシートにコントロールを型と型を指定してください<xref:Microsoft.Office.Tools.Excel.Controls.Button>なく<xref:System.Windows.Forms.Button>参照またはオブジェクトをキャストするときにします。|
-|コントロールの位置とサイズ|コントロールの位置とサイズについては、ActiveX コントロール コンテナーの一部であるプロパティによって決まります。 ActiveX コントロールのプロパティは、異なる Windows フォーム コントロールの同等のプロパティ値を取得します。 設定すると、 `Top`、 `Left`、 `Height`、または`Width`単位で、コントロールのプロパティは、ピクセル単位ではなく、ポイントします。|
-|Word 文書にコントロールの位置|フロー レイアウトにコントロールを追加する場合は、コントロールの内容、コンテンツの変更フローされることに留意してください。 ドラッグしたときに、段落にコントロールを固定することはできません、**ツールボックス**行内の Word 文書にコントロールが追加されるためです。 など、コントロールをダブルクリックすると、コントロールを追加する別のメソッドを使用する場合は、Word の画像の挿入に設定したオプションに従って、コントロールが挿入されます。<br /><br /> 設定することはできません、`Left`または`Top`行内にあるコントロールのプロパティ。<br /><br /> または、サブドキュメント内のヘッダーまたはフッターでは、コントロールを配置することはできません。|
-|コントロールのイベント|コントロールがオンの場合、次の順序でイベントを発生させます。<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> コントロールの選択を解除すると、次の順序でイベントが発生します。<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|
-|コントロールのスケーリング|100% 以外に、ドキュメントのズーム設定を変更するときにコントロールが無効になっている、ように見えますが、ドキュメントを使用して拡張します。 たとえば、ドキュメントが 130% ズーム ボタンをクリックした場合、メッセージが表示されます、ズームが 100% に設定されるまで、コントロールが無効されていること。 ズームを 100% に変更すると、コントロールは正しく機能します。|
-|コントロール プロパティの値|Windows フォームのコントロールのプロパティは、整数値に設定は、Word 文書上のコントロールの 1 つに設定されます。 Excel では、コントロールのプロパティの値が double 型の値に設定されます。 場合、`Height`と`Width`ワークシート上のコントロールのプロパティは、ワークシートまたは画面のサイズを超えています。、、の値は切り捨てられます。|
-|コントロールのサイズ変更|8 つのサイズ変更ハンドルのいずれかを使用して、ドキュメント上のコントロールのサイズを変更する場合、新しいサイズには反映されません、**プロパティ**ウィンドウ コントロールが再度選択するまでです。|
-|コントロールの動作|Excel ワークシート上のコントロールは、ワークシート ウィンドウを分割すると、予期しない動作可能性があります。 アクセスなど、<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>ワークシートの可能性がありますのみ取得できる、windows のいずれか。|
-|コントロールの名前付け|コントロールの名前に予約語を使用することはできません。 追加する場合など、<xref:Microsoft.Office.Tools.Excel.Controls.Button>ワークシートに名を変更して、**システム**プロジェクトをビルドするときにエラーが発生します。|
-|プログラムでコントロールを追加します。|実行時にドキュメントにコントロールを追加するのにコントロールのコンス トラクターを使用しないでください。 代わりに、によって提供されるヘルパー メソッドを使用して、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 たとえば、使用して、<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>ワークシートにボタンを追加するメソッド。 これらのヘルパー メソッドでサポートされていないコントロールを追加する場合は、使用、`AddControl`メソッド。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。|
-|コントロールのコピー|Windows フォーム コントロールをコピーして実行時のドキュメントに貼り付けることをドキュメントに空の ActiveX コントロール コンテナーが貼り付けられます。 Windows フォームのコントロールが新しい場所に表示されないと、元のコントロールの分離コードは ActiveX コントロール コンテナーにコピーされません。|
+|コントロールタブの順序|Excel ワークシートまたは Word 文書に配置されているコントロールを tab キーで移動することはできません。|
+|コントロールのグループ化|コントロールを<xref:System.Windows.Forms.GroupBox>使用して Office ドキュメントに他のコントロールを含めることはできません。 ドキュメントに複数のオプションボタンを直接追加する場合、オプションボタンは同時に指定できません。 オプションボタンが相互に排他的になるようにコードを記述することができます。ただし、ユーザーコントロールにオプションボタンを追加してから、ドキュメントにユーザーコントロールを追加することをお勧めします。 詳細については、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「コントロールのサンプルまたは Excel コントロールのサンプル」を参照してください。|
+|コントロール型|ドキュメントで使用される Windows フォームコントロールは、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]によって提供されるクラスでラップされます。これにより、Excel ワークシートまたは Word 文書に固有の追加機能を制御できます。 たとえば、Excel ワークシートに**ボタン**コントロールがある場合は、オブジェクトを参照またはキャスト<xref:Microsoft.Office.Tools.Excel.Controls.Button> <xref:System.Windows.Forms.Button>するときではなく、型をとして指定する必要があります。|
+|制御位置とサイズ|コントロールのサイズと位置は、コンテナー ActiveX コントロールの一部であるプロパティによって決定されます。 ActiveX コントロールのプロパティは、Windows フォームコントロールの同等のプロパティとは異なる値を受け取ります。 `Top`コントロールの`Left` `Width` 、、、またはの各プロパティを設定すると、ピクセルではなくポイント単位で測定されます。 `Height`|
+|Word 文書のコントロール位置|フローベースのレイアウトにコントロールを追加する場合は、コンテンツが変更されたときにコントロールがコンテンツと共にフローすることに注意してください。 コントロールがテキストと共に Word 文書に追加されるため、**ツールボックス**からドラッグしたときにコントロールを段落に固定することはできません。 コントロールをダブルクリックするなど、別のメソッドを使用してコントロールを追加すると、画像の挿入用に設定した Word オプションに従ってコントロールが挿入されます。<br /><br /> テキストが行内に`Left`ある`Top`コントロールのプロパティまたはプロパティを設定することはできません。<br /><br /> ヘッダー、フッター、またはサブドキュメント内にコントロールを配置することはできません。|
+|コントロールイベント|コントロールを選択すると、次の順序でイベントが発生します。<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> コントロールが選択解除されると、次の順序でイベントが発生します。<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|
+|コントロールのスケーリング|ドキュメントのズーム設定を 100% 以外の値に変更すると、コントロールは無効になりますが、ドキュメントで拡大縮小するように見えます。 たとえば、ドキュメントのサイズが 130% に達したときにボタンをクリックすると、zoom が 100% に設定されるまでコントロールが無効になっていることを示すメッセージが表示されます。 ズームを 100% に変更すると、コントロールが正しく機能します。|
+|コントロールプロパティの値|Windows フォーム上のコントロールのプロパティは、整数値に設定されますが、Word 文書のコントロールの場合は、1つのに設定されます。 Excel では、コントロールのプロパティ値が double に設定されています。 ワークシート`Height`上`Width`のコントロールのプロパティとプロパティがワークシートまたは画面のサイズを超える場合、値は切り捨てられます。|
+|コントロールのサイズ変更|8つのサイズ変更ハンドルのいずれかを使用してドキュメントのコントロールのサイズを変更した場合、コントロールが再確認されるまで、新しいコントロールの寸法は **[プロパティ]** ウィンドウに反映されません。|
+|コントロールの動作|ワークシートウィンドウが分割されると、Excel ワークシート上のコントロールが予期しない動作をする場合があります。 たとえば、ワークシート<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>上のへのアクセスは、いずれかのウィンドウでしか使用できない場合があります。|
+|コントロールの名前付け|予約語を使用してコントロールの名前を指定することはできません。 たとえば、を<xref:Microsoft.Office.Tools.Excel.Controls.Button>ワークシートに追加し、名前を**System**に変更すると、プロジェクトのビルド時にエラーが発生します。|
+|プログラムによるコントロールの追加|実行時にコントロールのコンストラクターを使用してドキュメントにコントロールを追加しないでください。 代わりに、によっ[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]て提供されるヘルパーメソッドを使用します。 たとえば、ワークシートに<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>ボタンを追加するには、メソッドを使用します。 これらのヘルパーメソッドでサポートされていないコントロールを追加する場合は、 `AddControl`メソッドを使用できます。 詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。|
+|コントロールのコピー|Windows フォームコントロールをコピーして、実行時にドキュメントに貼り付けると、空のコンテナー ActiveX コントロールがドキュメントに貼り付けられます。 Windows フォームコントロールは新しい位置に表示されません。元のコントロールの背後にあるコードは、コンテナー ActiveX コントロールにコピーされません。|
 
-## <a name="limitations-in-document-level-projects"></a>ドキュメント レベルのプロジェクトでの制限事項
+## <a name="limitations-in-document-level-projects"></a>ドキュメントレベルのプロジェクトでの制限事項
 
-ドキュメントで Windows フォーム コントロールを使用するいくつかの制限は、ドキュメント レベルのプロジェクトに固有です。
+ドキュメントレベルのプロジェクトに固有の Windows フォームコントロールの使用には、いくつかの制限があります。
 
-### <a name="control-support-at-design-time"></a>デザイン時にコントロールのサポート
+### <a name="control-support-at-design-time"></a>デザイン時のコントロールのサポート
 
-特定の Windows フォーム コントロールから削除されます、**ツールボックス**は Excel のワークシートまたは Word 文書の Visual Studio デザイナーで開きます。 これは、技術的な制限により、機能は、既に Word または Excel 内で使用できるため、または。 Excel および Word プロジェクトでは、すべての Windows フォーム コントロールおよびその他のコンポーネントに表示されるサポート、**ツールボックス**ときに、ドキュメントにフォーカスがあり、ワークシートまたは文書にサードパーティ製のコントロールを追加することもできます。
-
-> [!NOTE]
-> すべてのコントロールから削除されます、**ツールボックス**ドキュメントが保護されている場合。 ドキュメントの保護については、次を参照してください。[文書の保護をドキュメント レベルのソリューションで](../vsto/document-protection-in-document-level-solutions.md)します。
+Visual Studio デザイナーで Excel ワークシートまたは Word 文書を開いたときに、特定の Windows フォームコントロールが**ツールボックス**から削除されます。 これは、技術的な制限、または Word または Excel 内で機能が既に使用可能であるためです。 Excel および Word プロジェクトは、ドキュメントにフォーカスがあるときに**ツールボックス**に表示されるすべての Windows フォームコントロールとその他のコンポーネントをサポートします。また、ワークシートまたはドキュメントにサードパーティ製のコントロールを追加することもできます。
 
 > [!NOTE]
-> サードパーティ製のコントロールがあります、<xref:System.Runtime.InteropServices.ComVisibleAttribute>属性に設定**true** Office ソリューションで使用するためにします。
+> ドキュメントが保護されている場合、すべてのコントロールが**ツールボックス**から削除されます。 ドキュメントの保護の詳細については、「ドキュメント[レベルのソリューションにおけるドキュメントの保護](../vsto/document-protection-in-document-level-solutions.md)」を参照してください。
 
-次のコントロールおよびコンポーネントでは使用できない、**ツールボックス**:
+> [!NOTE]
+> Office ソリューションで使用するには<xref:System.Runtime.InteropServices.ComVisibleAttribute> 、サードパーティのコントロールで属性が**true**に設定されている必要があります。
+
+**ツールボックス**では、次のコントロールとコンポーネントは使用できません。
 
 - <xref:System.Windows.Forms.BindingNavigator>
 
@@ -180,11 +180,11 @@ Windows フォーム コントロール通常がある動作は同じ Office ド
 
 ### <a name="support-for-legacy-activex-controls"></a>従来の ActiveX コントロールのサポート
 
-既存の Word 文書または ActiveX コントロールを含む Excel ブックを使用するドキュメント レベルの Office プロジェクトを作成する場合、ActiveX コントロールの機能が失われます。ただし、Visual Studio 内からドキュメントを新しい ActiveX コントロールを追加するためのサポートされていません。 たとえば、Word 文書からボタンがある場合、**コントロール**Visual Basic for Applications (VBA) マクロを実行しているツールボックス、引き続き、ドキュメントを Office プロジェクトで使用した後、マクロを実行します。 ただし、ActiveX コントロールと VBA マクロを削除し、Windows フォーム コントロールで置き換えることをマネージ コードをお勧めしますが。
+ActiveX コントロールを含む既存の Word 文書または Excel ブックを使用するドキュメントレベルの Office プロジェクトを作成する場合、ActiveX コントロールの機能は失われません。ただし、Visual Studio 内からドキュメントに新しい ActiveX コントロールを追加することはサポートされていません。 たとえば、Word 文書に Visual Basic for Applications (VBA) マクロを実行する**コントロール**ツールボックスのボタンがある場合、Office プロジェクトでドキュメントが使用された後も、マクロは引き続き実行されます。 ただし、ActiveX コントロールと VBA マクロを削除して、Windows フォームコントロールとマネージコードに置き換えることをお勧めします。
 
 ## <a name="see-also"></a>関連項目
 
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
-- [Office ドキュメントの概要での Windows フォーム コントロール](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [実行時に Office ドキュメントにコントロールを追加します。](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [方法: Office ドキュメントへの Windows フォーム コントロールを追加します。](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [方法: Office ドキュメントに Windows フォームコントロールを追加する](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

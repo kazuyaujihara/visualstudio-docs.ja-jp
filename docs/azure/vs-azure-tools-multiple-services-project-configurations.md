@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260650"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253429"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
 
 Visual Studio の Azure クラウド サービス プロジェクトには、`ServiceDefinition.csdef`、`ServiceConfiguration.Local.cscfg` および `ServiceConfiguration.Cloud.cscfg` の 3 つの構成ファイルが含まれています。
 
-- `ServiceDefinition.csdef` はクラウド サービスとそのロールの要件を説明し、すべてのインスタンスに適用される設定を提供するために Azure にデプロイされます。 設定は Azure サービス ホスト ランタイム API を使用して実行時に読み込むことができます。 クラウド サービスが停止しているときにのみ、このファイルを Azure 上で更新できます。
+- `ServiceDefinition.csdef` はクラウド サービスとそのロールの要件を説明し、すべてのインスタンスに適用される設定を提供するために Azure にデプロイされます。 設定は、実行時に Azure サービスホスティングランタイム API を使用して読み取ることができます。 クラウド サービスが停止しているときにのみ、このファイルを Azure 上で更新できます。
 - `ServiceConfiguration.Local.cscfg` および `ServiceConfiguration.Cloud.cscfg` は、定義ファイル内の設定の値を指定し、各ロールが実行するインスタンスの数を指定します。 "ローカル" ファイルにはローカルでのデバッグで使用される値が含まれています。"クラウド" ファイルは Azure に `ServiceConfiguration.cscfg` としてデプロイされ、サーバー環境の設定を指定します。 このファイルは、Azure でクラウド サービスを実行しているときに更新できます。
 
 構成設定の管理と変更は、Visual Studio の適用可能なロールのプロパティ ページを使用して行われます (ロールを右クリックして **[プロパティ]** を選択するか、ロールをダブルクリックします)。 **[サービス構成]** ボックスでどの構成が選択されても、変更は適用できます。 次のセクションで説明する点を除けば、Web ロールと worker ロールのプロパティはほぼ同じです。
@@ -55,7 +55,7 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 ## <a name="settings-page"></a>設定ページ
 
-**[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロール内でコードを実行すると、[Azure マネージド ライブラリ](http://go.microsoft.com/fwlink?LinkID=171026)で提供されるクラス (具体的には [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
+**[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](http://go.microsoft.com/fwlink?LinkID=171026)によって提供されるクラス (具体的には[GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx)メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>ストレージ アカウントの接続文字列の構成
 

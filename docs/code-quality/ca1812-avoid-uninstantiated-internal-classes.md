@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f924e9530a7ee43ec2222366141c3af6be2efc29
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744699"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233611"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:インスタンス化されていない内部クラスを使用しません
 
@@ -32,13 +32,13 @@ ms.locfileid: "66744699"
 
 ## <a name="cause"></a>原因
 
-内部 (アセンブリ レベル) 型がインスタンス化されることはありません。
+内部 (アセンブリレベル) 型はインスタンス化されません。
 
 ## <a name="rule-description"></a>規則の説明
 
-このルールは、型のコンス トラクターの 1 つの呼び出しを検索しようし、呼び出しが検出されない場合は、違反を報告します。
+このルールは、型のいずれかのコンストラクターへの呼び出しを検索し、呼び出しが見つからない場合に違反を報告します。
 
-次の種類は、このルールではチェックされません。
+この規則では、次の型は検証されません。
 
 - 値型
 
@@ -50,27 +50,27 @@ ms.locfileid: "66744699"
 
 - コンパイラによって生成された配列型
 
-- 型をインスタンス化することはできず、のみを定義する[ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` Visual Basic で](/dotnet/visual-basic/language-reference/modifiers/shared)) メソッドです。
+- インスタンス化できず、([ `Shared` Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) メソッド[`static`](/dotnet/csharp/language-reference/keywords/static)のみを定義する型。
 
-適用する場合、<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>は分析されて、アセンブリをこの規則はフラグは設定されませんとしてマークされている型[ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` Visual Basic で](/dotnet/visual-basic/language-reference/modifiers/friend)) フィールドを指定することがありますので、フレンド アセンブリによって使用されます。
+を分析対象の<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>アセンブリに適用する場合、フィールドはフレンドアセンブリによって使用される可能性が[`internal`](/dotnet/csharp/language-reference/keywords/internal)あるため、この規則は ([ `Friend` Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) としてマークされている型にフラグを設定しません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、型を削除するか、それを使用するコードを追加します。 型にのみ含まれる場合`static`をコンパイラが既定のパブリック インスタンス コンス トラクターを生成するを防ぐために型に、次のいずれかのメソッドを追加します。
+この規則違反を修正するには、型を削除するか、この規則を使用するコードを追加します。 型にメソッドのみ`static`が含まれている場合は、次のいずれかを型に追加して、コンパイラが既定のパブリックインスタンスコンストラクターを生成しないようにします。
 
-- `static`の修飾子C#を .NET Framework 2.0 以降を対象とする型。
+- .NET Framework 2.0 以降C#を対象とする型の修飾子。`static`
 
-- .NET Framework version 1.0 および 1.1 を対象とする型のプライベート コンス トラクターです。
+- .NET Framework バージョン1.0 および1.1 を対象とする型のプライベートコンストラクター。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-このルールから警告を抑制しても安全です。 次の状況では、この警告を抑制することをお勧めします。
+このルールからの警告を抑制するのは安全です。 次の状況では、この警告を非表示にすることをお勧めします。
 
-- などクラスが遅延バインディング リフレクション メソッドによって作成された<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>します。
+- クラスは、などの遅延バインディングされたリフレクションメソッド<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>を使用して作成されます。
 
-- クラスは、ランタイムまたは ASP.NET によって自動的に作成されます。 自動的に作成されたクラスの例をいくつかは実装される<xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName>または<xref:System.Web.IHttpHandler?displayProperty=fullName>します。
+- クラスは、ランタイムまたは ASP.NET によって自動的に作成されます。 自動的に作成されるクラスの例とし<xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName>て<xref:System.Web.IHttpHandler?displayProperty=fullName>、またはを実装するクラスがあります。
 
-- クラスは、型のパラメーターとして渡される、 [ `new`制約](/dotnet/csharp/language-reference/keywords/new-constraint)します。 次の例は、CA1812 ルールによってフラグが設定されます。
+- クラスは、 [ `new`制約](/dotnet/csharp/language-reference/keywords/new-constraint)を持つ型パラメーターとして渡されます。 次の例は、rule CA1812 によってフラグが設定されます。
 
     ```csharp
     internal class MyClass
@@ -93,6 +93,6 @@ ms.locfileid: "66744699"
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
-- [CA 1801:未使用のパラメーターをレビューします](../code-quality/ca1801-review-unused-parameters.md)
-- [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811呼び出されるプライベートコードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801使用されていないパラメーターの確認](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804未使用のローカルの削除](../code-quality/ca1804-remove-unused-locals.md)

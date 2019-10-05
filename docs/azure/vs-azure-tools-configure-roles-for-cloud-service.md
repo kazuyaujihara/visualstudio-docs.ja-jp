@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624063"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253596"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio で Azure クラウド サービスのロールを構成する
 Azure クラウド サービスには、worker ロールまたは Web ロールを割り当てることができます。 それぞれのロールについて、そのセットアップ方法を定義すると共に、実行方法を構成する必要があります。 クラウド サービスのロールの詳細については、 [Azure Cloud Services の概要](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)を紹介した動画をご覧ください。
 
 クラウド サービスに関する情報は、次のファイルに格納されます。
 
-- **ServiceDefinition.csdef**: サービス定義ファイルは、必要なロール、エンドポイント、仮想マシンのサイズを含む、クラウド サービスのランタイム設定を定義します。 `ServiceDefinition.csdef` に格納されたデータはいずれも、ロールの実行中には変更できません。
+- **Servicedefinition. .csdef** -サービス定義ファイルは、必要なロール、エンドポイント、仮想マシンのサイズなど、クラウドサービスの実行時設定を定義します。 `ServiceDefinition.csdef` に格納されたデータはいずれも、ロールの実行中には変更できません。
 - **ServiceConfiguration.cscfg**: サービス構成ファイルでは、実行されるロールのインスタンス数とロールに対して定義される設定の値を構成します。 `ServiceConfiguration.cscfg` に格納されたデータは、ロールの実行中に変更できます。
 
 ロールの実行方法を制御する設定にさまざまな値を指定して使い分けられるように、サービス構成は複数定義することができます。 デプロイメント環境ごとに異なるサービス構成を使用できます。 たとえば、ローカル サービス構成で、ローカルの Azure ストレージ エミュレーターを使用するようにストレージ アカウントの接続文字列を設定する一方、クラウドで Azure ストレージを使用するためのサービス構成を別途作成することができます。

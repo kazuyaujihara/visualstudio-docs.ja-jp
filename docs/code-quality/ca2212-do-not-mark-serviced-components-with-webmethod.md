@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47b7e703d811ff5dce421db103af89bb3a76512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b2ace5f6e51fc7a8d29faab14cc2332fd808f93
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796437"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231651"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212:サービス コンポーネントを WebMethod に設定しません
 
@@ -32,19 +32,19 @@ ms.locfileid: "62796437"
 
 ## <a name="cause"></a>原因
 
-継承する型のメソッド<xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>でマークされた<xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>します。
+から<xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>継承される型のメソッドは、で<xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>マークされます。
 
 ## <a name="rule-description"></a>規則の説明
 
-<xref:System.Web.Services.WebMethodAttribute> ASP.NET; を使用して作成された XML web サービス内のメソッドに適用されます。これは、リモート web クライアントからメソッドを呼び出し可能にします。 メソッドとクラスは、パブリックにし、ASP.NET web アプリケーションで実行する必要があります。 <xref:System.EnterpriseServices.ServicedComponent> 種類は、COM + アプリケーションでホストされており、COM + サービスを使用することができます。 <xref:System.Web.Services.WebMethodAttribute> 適用されません<xref:System.EnterpriseServices.ServicedComponent>型同じシナリオに対する意図されていないためです。 具体的には、属性を追加する、<xref:System.EnterpriseServices.ServicedComponent>メソッドを行わない、メソッド呼び出し可能なリモートの web クライアントから。 <xref:System.Web.Services.WebMethodAttribute>と<xref:System.EnterpriseServices.ServicedComponent>メソッドがある動作が競合して、コンテキストとトランザクション フロー、メソッドの動作の要件は一部のシナリオでは不正確になります。
+<xref:System.Web.Services.WebMethodAttribute>ASP.NET を使用して作成された XML web サービス内のメソッドに適用されます。これにより、メソッドがリモート web クライアントから呼び出すことができるようになります。 メソッドとクラスはパブリックであり、ASP.NET web アプリケーションで実行されている必要があります。 <xref:System.EnterpriseServices.ServicedComponent>型は COM + アプリケーションによってホストされ、COM + サービスを使用できます。 <xref:System.Web.Services.WebMethodAttribute>は、同じシナリオ<xref:System.EnterpriseServices.ServicedComponent>を想定していないため、型には適用されません。 具体的には、 <xref:System.EnterpriseServices.ServicedComponent>メソッドに属性を追加しても、リモート web クライアントからメソッドを呼び出すことはできません。 とメソッドにはコンテキストおよびトランザクションフローの動作と要件が競合しているため<xref:System.Web.Services.WebMethodAttribute> 、メソッドの動作は一部のシナリオでは正しくありません。 <xref:System.EnterpriseServices.ServicedComponent>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するからの属性を削除、<xref:System.EnterpriseServices.ServicedComponent>メソッド。
+この規則違反を修正するには、 <xref:System.EnterpriseServices.ServicedComponent>メソッドから属性を削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 これらの要素を組み合わせることが適切であるシナリオではありません。
+この規則による警告は抑制しないでください。 これらの要素を組み合わせた方が正しいシナリオはありません。
 
 ## <a name="see-also"></a>関連項目
 

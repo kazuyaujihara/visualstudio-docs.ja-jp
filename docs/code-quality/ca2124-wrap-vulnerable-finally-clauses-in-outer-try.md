@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920799"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232449"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:脆弱性のある finally 句を外側の try でラップします
 
@@ -27,8 +27,8 @@ ms.locfileid: "68920799"
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
-|Category|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Security|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 .NET Framework のバージョン1.0 および1.1 では、パブリックメソッドまたはプロテクトメソッドに`try` `finally`ブロックが含まれてい/ `catch` /ます。 ブロックがセキュリティ状態をリセットしているように見えます`finally`が、ブロックで囲まれていません。 `finally`

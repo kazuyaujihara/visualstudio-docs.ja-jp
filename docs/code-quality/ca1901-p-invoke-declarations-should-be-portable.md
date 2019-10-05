@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921303"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233293"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣言はポータブルでなければなりません
 
@@ -27,8 +27,8 @@ ms.locfileid: "68921303"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Category|Microsoft. 移植性|
-|互換性に影響する変更点|中断-P/Invoke がアセンブリの外部で参照可能である場合。 非中断-P/Invoke がアセンブリの外部で参照できない場合。|
+|カテゴリ|Microsoft. 移植性|
+|互換性に影響する変更点|中断-P/Invoke がアセンブリの外部で参照可能である場合。 非ブレーク-P/Invoke がアセンブリの外部で参照できない場合。|
 
 ## <a name="cause"></a>原因
 このルールは、P/Invoke の各パラメーターと戻り値のサイズを評価し、32ビットおよび64ビットのプラットフォームでアンマネージコードにマーシャリングされたときのサイズが正しいことを確認します。 この規則の最も一般的な違反は、プラットフォームに依存するポインターサイズの変数が必要な固定サイズの整数を渡すことです。

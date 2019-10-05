@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377924"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095315"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 
@@ -21,8 +21,8 @@ Visual Studio サブスクリプション ポータル ([https://my.visualstudio
 
 ポータルは 6 ページで構成されています。  各ページから、サブスクリプションに含まれるさまざまな製品やサービスにアクセスできます。  6 ページの内訳は、[特典]、[ダウンロード]、[プロダクト キー]、[サブスクリプション]、[サポート]、[Marketplace] です。
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[特典](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-[特典] ページには、サブスクリプションに含まれるツールとサービスが "タイル" として表示されます。  すべてのサブスクリプションに含まれない特典もあります。 タイルは次の 3 つのカテゴリに分類されます: ツール、プロフェッショナルな開発、サポート。  Visual Studio Dev Essentials を使用している場合は、[おすすめ情報] というカテゴリも表示されます。このカテゴリには、他の 3 つのカテゴリから選ばれた特典も含まれることがあります。
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[特典](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+[特典] ページには、サブスクリプションに含まれるツールとサービスが "タイル" として表示されます。  すべてのサブスクリプションに含まれない特典もあります。 タイルは次の 3 つのカテゴリに分類されます: ツール、プロフェッショナルな開発、サポート。  
 
 ### <a name="tools"></a>ツール
 [ツール] カテゴリには、Visual Studio IDE、Azure DevOps、パートナーが提供するツールなどの主要な開発ツールが含まれます。  また、Azure や Visual Studio App Center などのサービスも表示されます。
@@ -33,15 +33,15 @@ Visual Studio サブスクリプション ポータル ([https://my.visualstudio
 ### <a name="support"></a>サポート
 Azure についてわからないことがあったら、  Azure コミュニティのフォーラムで聞いたり、Azure Advisory Chat (プレビュー) を利用したりすることができます。  コンシェルジェ チャット サービスを利用すると、テクニカル ドキュメントや製品情報を見つけることができます。また、サブスクリプションに関連する質問を聞くことができます。  また、一部のサブスクリプションには、インシデントベースのテクニカル サポートも含まれており、開発環境/テスト環境で動作するさまざまな Microsoft 製品の問題を解決するために役立ちます。
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[ダウンロード](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[ダウンロード](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 お持ちのサブスクリプションやプログラムに応じて、更新プログラムやパッチから、最新製品の広範なライブラリ、古いバージョンのソフトウェアのダウンロードにまでアクセスできるため、さまざまなシナリオでアプリケーションをテストできます。
 
 1 つのアカウントに複数のサブスクリプションが関連付けられているサブスクライバーの作業を簡単にするために、[ダウンロード] ページにアクセスすると、所有している最も高位のサブスクリプションで利用できるダウンロードが表示されます。  そのため、現在どのサブスクリプションを使用しているかにかかわらず、すべてのダウンロードを表示できます。
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[プロダクト キー](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[プロダクト キー](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 [プロダクト キー] ページにアクセスすると、製品のインストールとライセンス認証に使用するキーを取得できます。また、既に要求済みのキーも確認できます。  安全のためにすべてのキーの一覧をエクスポートすることもできます。
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[サブスクリプション](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[サブスクリプション](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 [サブスクリプション] ページには、所有するサブスクリプションの確認、サブスクリプションの切り替え、サブスクリプションの更新、新しいサブスクリプションのアクティブ化を行う機能があります。 また、Microsoft アカウントを使用してアクセスするサブスクリプションを、既存の Visual Studio IDE、Azure DevOps、または Azure リソースに既に関連付けられている代替アカウントに関連付けることもできます。
 
 ## <a name="support"></a>サポート

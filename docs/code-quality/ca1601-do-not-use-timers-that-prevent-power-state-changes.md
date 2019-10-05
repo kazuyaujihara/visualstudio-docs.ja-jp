@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b3c3fe41332d488d180ddafbedfe29da1a3855e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1300b733cbd4808359089787ceebeb0750de6723
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921789"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234343"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601:電源の状態の変更を妨げるタイマーを使用しません
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921789"
 |-|-|
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|
 |CheckId|CA1601|
-|Category|Microsoft モビリティ|
+|カテゴリ|Microsoft モビリティ|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

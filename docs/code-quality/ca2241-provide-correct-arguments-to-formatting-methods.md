@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 10a4cdaa1e2de768cadc569424a490aa4adb7135
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920003"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253212"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241:書式設定メソッドに正しい引数を提供
 
@@ -31,8 +31,8 @@ ms.locfileid: "68920003"
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
-|Category|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Usage|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 、、などのメソッドに渡された文字列引数に、各オブジェクト引数に対応する書式項目が含まれていません。また、その逆も同様です。`format` <xref:System.Console.Write%2A> <xref:System.Console.WriteLine%2A> <xref:System.String.Format%2A?displayProperty=fullName>

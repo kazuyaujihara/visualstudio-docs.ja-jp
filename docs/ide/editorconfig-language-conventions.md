@@ -1,6 +1,6 @@
 ---
 title: EditorConfig での .NET の言語規則
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551419"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186541"
 ---
 # <a name="language-conventions"></a>言語規則
 
 Visual Studio 用の EditorConfig の言語規則は、2 つのカテゴリに分類されます。Visual Basic と C# に適用されるものと、C# 固有のものです。 言語規則は、修飾子やかっこなど、プログラミング言語のさまざまな側面の使用方法に影響します。
 
 > [!TIP]
-> - 「**この記事の内容**」のリンクを使って、ページのさまざまなセクションに移動してください。
 > - 優先するプログラミング言語のコード例を表示するには、ブラウザー ウィンドウの右上隅にある言語ピッカーを使ってそれを選択します。
 >
 >   ![コード言語ピッカー コントロール](media/code-language-picker.png)
+>
+> - 「**この記事の内容**」のリンクを使って、ページのさまざまなセクションに移動してください。
 
 ## <a name="rule-format"></a>規則形式
 
@@ -36,19 +37,48 @@ Visual Studio 用の EditorConfig の言語規則は、2 つのカテゴリに�
 
 `option_name = value:severity`
 
-各言語の規則では、そのスタイルを優先する場合や状況を指定します。 多くのルールでは、`true` (このスタイルを優先する) または `false` (このスタイルを優先しない) の値が受け付けられます。それ以外では、`when_on_single_line` や `never` などの値が受け付けられます。 ルールの 2 番目の部分では、**重要度**を指定します。
+各言語の規則では、そのスタイルを優先する場合や状況を指定します。 多くのルールでは、`true` (このスタイルを優先する) または `false` (このスタイルを優先しない) の値が受け付けられます。 それ以外では、`when_on_single_line` や `never` などの値が受け付けられます。 ルールの 2 番目の部分では、[重要度](#severity-levels)を指定します。
 
-### <a name="severity"></a>重要度
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> 言語変換はアナライザーによって強制されるため、アナライザーの既定の構成構文を利用し、その重要度を設定することもできます。 この構文では `dotnet_diagnostic.<rule ID>.severity = <severity>` 形式が使用されます。たとえば、`dotnet_diagnostic.IDE0040.severity = silent` のようになります。 詳細については、「[EditorConfig ファイルで規則の重要度を設定する](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)」を参照してください。
+
+::: moniker-end
+
+## <a name="severity-levels"></a>セキュリティ レベル
 
 言語規則の重要度では、そのスタイルを強制するレベルを指定します。 次の表に、指定できる重要度の値とその効果をリストします。
 
 重要度 | 効果
 :------- | ------
-`none` | このルールに違反した場合、ユーザーには何も表示されません。 しかし、コード生成機能により、このスタイルでコードが生成されます。 重大度が `none` のルールが、 **[クイック アクションとリファクタリング]** メニューに表示されることはありません。 ほとんどの場合、これは "無効" または "無視" と見なされます。
-`silent` (Visual Studio 2017 バージョン 15.8 以降では `refactoring` も) | このルールに違反した場合、ユーザーには何も表示されません。 しかし、コード生成機能により、このスタイルでコードが生成されます。 重大度が `silent` のルールはクリーンアップに関するものであり、また **[クイック アクションとリファクタリング]** メニューに表示されます。
-`suggestion` | このスタイル ルールに違反した場合、修正候補としてユーザーに表示されます。 修正候補は、最初の 2 文字の下に 3 つの灰色のドットとして表示されます。
-`warning` | このスタイル ルールに違反した場合、コンパイラの警告が表示されます。
 `error` | このスタイル ルールに違反した場合、コンパイラ エラーが表示されます。
+`warning` | このスタイル ルールに違反した場合、コンパイラの警告が表示されます。
+`suggestion` | このスタイル ルールに違反した場合、修正候補としてユーザーに表示されます。 修正候補は、最初の 2 文字の下に 3 つの灰色のドットとして表示されます。
+`silent` | このルールに違反した場合、ユーザーには何も表示されません。 しかし、コード生成機能により、このスタイルでコードが生成されます。 重大度が `silent` のルールはクリーンアップに関するものであり、また **[クイック アクションとリファクタリング]** メニューに表示されます。
+`none` | このルールに違反した場合、ユーザーには何も表示されません。 しかし、コード生成機能により、このスタイルでコードが生成されます。 重大度が `none` のルールが、 **[クイック アクションとリファクタリング]** メニューに表示されることはありません。 ほとんどの場合、これは "無効" または "無視" と見なされます。
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>コード スタイルを自動的に構成する
+
+Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[クイック アクション]](quick-actions.md) という電球メニューからコード スタイルの規則を構成できます。
+
+コード スタイルの規則を変更するには:
+
+1. エディターで波線の上にカーソルを置き、表示された電球メニューを開きます。 **[Configure or Suppress issues]\(問題の構成または抑制\)** を選択し、 **[Configure \<rule ID> code style]\(<ルール ID> コード スタイルの構成\)** を選択します。
+
+   ![Visual Studio の電球メニューからコード スタイルを構成する](media/vs-2019/configure-code-style.png)
+
+2. そこから、いずれかのコード スタイル オプションを選択します。
+
+   ![コード スタイルの設定を構成する](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio では、次のボックスに示されているように、EditorConfig ファイルで構成設定が追加または修正されます。
+
+コード スタイル違反の重要度を変更するには、同じ手順を進めますが、 **[Configure \<rule ID> code style]\(<ルール ID> コード スタイルの構成\)** の代わりに **[Configure \<rule ID> severity]\(<ルール ID> 重要度の構成\)** を選択します。 詳細については、「[規則の重要度を自動的に構成する](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)」を参照してください。
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>.NET コード スタイルの設定
 

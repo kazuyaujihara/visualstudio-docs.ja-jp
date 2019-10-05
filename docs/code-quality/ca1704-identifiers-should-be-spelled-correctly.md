@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809409"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234290"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別子は正しく入力されなければなりません
 
@@ -32,27 +32,27 @@ ms.locfileid: "62809409"
 
 ## <a name="cause"></a>原因
 
-識別子の名前には、Microsoft のスペル チェック ライブラリで認識されない 1 つまたは複数の単語が含まれています。 このルールは、コンス トラクターまたは get などの特別な名前のメンバーを確認し、プロパティ アクセサーを設定するはありません。
+識別子の名前に、Microsoft スペルチェックライブラリで認識されない1つ以上の単語が含まれています。 この規則では、コンストラクターや、get や set プロパティアクセサーなどの特別な名前のメンバーはチェックされません。
 
 ## <a name="rule-description"></a>規則の説明
 
-このルールは、トークンに識別子を解析し、各トークンのスペルをチェックします。 解析のアルゴリズムでは、次の変換を実行します。
+このルールは、識別子をトークンに解析し、各トークンのスペルをチェックします。 解析アルゴリズムでは、次の変換が実行されます。
 
-- 大文字は、新しいトークンを開始します。 たとえば、"My"、"Name"、"Is"、"Joe"MyNameIsJoe がトークン化です。
+- 大文字は新しいトークンを開始します。 たとえば、MyNameIsJoe は、"My"、"Name"、"Is"、"Joe" になります。
 
-- 複数の大文字は、最後の大文字は、新しいトークンを開始します。 たとえば、"gui"、「エディター」GUIEditor がトークン化です。
+- 大文字を複数使用する場合は、最後の大文字の文字によって新しいトークンが開始されます。 たとえば、"GUI"、"Editor" に GUIEditor ます。
 
-- 先頭と末尾のアポストロフィは削除されます。 たとえば、"sender"を 'sender' がトークン化です。
+- 先頭と末尾のアポストロフィは削除されます。 たとえば、"sender" は "sender" にトークンを送信します。
 
-- アンダー スコアは、トークンの最後を示すし、削除されます。 「こんにちは」をトークン化 Hello_world の例では、"world"です。
+- アンダースコアはトークンの末尾を表し、削除されます。 たとえば、Hello_world は "Hello", "world" になります。
 
-- 埋め込みのアンパサンドは削除されます。 たとえば、(& a) マットが"format"にトークン化します。
+- 埋め込みアンパサンドは削除されます。 たとえば、& 台紙を "format" に設定します。
 
 ## <a name="language"></a>言語
 
-スペル チェックは現在英語ベースのカルチャのディクショナリのみに対して確認します。 追加することで、プロジェクト ファイルで、プロジェクトのカルチャを変更することができます、 **CodeAnalysisCulture**要素。
+スペルチェックでは、現在、英語ベースのカルチャディクショナリのみがチェックされます。 プロジェクトファイル内のプロジェクトのカルチャを変更するには、 **CodeAnalysisCulture**要素を追加します。
 
-例:
+次に例を示します。
 
 ```xml
 <Project ...>
@@ -61,25 +61,25 @@ ms.locfileid: "62809409"
 ```
 
 > [!IMPORTANT]
-> 英語ベースのカルチャ以外に、カルチャを設定すると、このコード分析規則はサイレント モードで無効になっています。
+> カルチャを英語ベースのカルチャ以外に設定した場合、このコード分析規則は警告なしで無効になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、単語のスペルを訂正またはカスタム辞書に単語を追加します。
+この規則違反を修正するには、単語のスペルを修正するか、またはカスタム辞書に単語を追加します。
 
-### <a name="to-add-words-to-a-custom-dictionary"></a>ユーザー辞書に単語を追加するには
+### <a name="to-add-words-to-a-custom-dictionary"></a>カスタム辞書に単語を追加するには
 
-カスタム辞書の XML ファイルの名前*CustomDictionary.xml*します。 プロジェクトのディレクトリは、ツールのインストール ディレクトリまたはユーザーのプロファイル ツールに関連付けられているディレクトリには、ディクショナリを配置 (*%USERPROFILE%\Application Data\\.*).Visual Studio でプロジェクトにカスタム辞書を追加する方法については、次を参照してください。[方法。コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)します。
+カスタム辞書 XML ファイルに「 *Customdictionary*.xml」という名前を指定します。 ツールのインストールディレクトリ、プロジェクトディレクトリ、またはユーザーのプロファイルにあるツールに関連付けられているディレクトリ ( *%USERPROFILE%\Application Data\\...* ) に辞書を配置します。Visual Studio でカスタム辞書をプロジェクトに追加する方法については、 [「」を参照してください。コード分析辞書](../code-quality/how-to-customize-the-code-analysis-dictionary.md)をカスタマイズします。
 
-- 認識単語/辞書/パスの下の違反が発生する必要がありますの単語を追加します。
+- 辞書/単語/認識されたパスで違反が発生しないようにする単語を追加します。
 
-- 認識できないワード/辞書/パスの下に違反が発生する単語を追加します。
+- 辞書/単語/認識されないパスで違反を引き起こす可能性のある単語を追加します。
 
-- 非推奨の単語/辞書/パスで不使用とフラグ必要がある単語を追加します。 関連のトピックを参照してください。 [ca 1726 適切な。適切な用語を使用して、](../code-quality/ca1726-use-preferred-terms.md)詳細についてはします。
+- [辞書/単語/非推奨のパス] の下で、不使用としてフラグが設定されている単語を追加します。 関連するルールのトピック[CA1726 を参照してください。詳細につい](../code-quality/ca1726-use-preferred-terms.md)ては、適切な用語を使用してください。
 
-- CasingExceptions 頭字語/辞書/パスに略語の大文字小文字の規則には、例外を追加します。
+- 略語の大文字と小文字の規則に、辞書/頭字語/CasingExceptions パスに例外を追加します。
 
-ユーザー辞書ファイルの構造の例を次に示します。
+カスタム辞書ファイルの構造の例を次に示します。
 
 ```xml
 <Dictionary>
@@ -104,19 +104,19 @@ ms.locfileid: "62809409"
 </Dictionary>
 ```
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-意図的にスペル ミスの単語と、限られた、ライブラリに適用している場合にのみは、この規則による警告を抑制します。 正しくスペルの単語は、新しいソフトウェア ライブラリに必要な学習曲線を削減します。
+この規則からの警告が表示されないようにするには、単語のスペルが意図的に間違っていて、その単語がライブラリの限られたセットに適用されます。 正しい綴りの単語を使用すると、新しいソフトウェアライブラリに必要な学習曲線を減らすことができます。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2204:リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA 1707:識別子はアンダー スコアを含めることはできません。](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA 1726: 適切な。用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA2204リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1703リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709識別子は正しく使用する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別子の大文字と小文字の区別が異なる場合](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707識別子にアンダースコアを含めることはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1726優先する用語を使用する](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: コード分析辞書をカスタマイズします。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)」を参照してください

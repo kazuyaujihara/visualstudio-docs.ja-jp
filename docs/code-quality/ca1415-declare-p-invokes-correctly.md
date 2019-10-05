@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921849"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234613"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415:P/Invoke を正しく宣言します
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921849"
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|Category|Microsoft. 相互運用性|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|非互換性-パラメーターを宣言する P/Invoke がアセンブリの外部に表示されない場合。 中断-パラメーターを宣言する P/Invoke がアセンブリの外部に表示される可能性があります。|
 
 ## <a name="cause"></a>原因
