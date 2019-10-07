@@ -4,7 +4,8 @@
   items:
     - name: 概要
       href: code-analysis-for-managed-code-overview.md
-    - name: コード分析
+    - name: ソース コードの分析
+      expanded: true
       items:
         - name: 概要
           displayName: 'roslyn analyzers, source analysis'
@@ -13,10 +14,35 @@
           href: install-roslyn-analyzers.md
         - name: 構成
           href: use-roslyn-analyzers.md
+        - name: コードの分析を無効にする
+          href: disable-code-analysis.md
         - name: 完全ソリューション解析を有効にする
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: よくあるご質問
           href: analyzers-faq.md
+        - name: FXCop アナライザー
+          items:
+            - name: 概要
+              displayName: fxcop analyzers
+              href: fxcop-analyzers.yml
+            - name: インストール
+              href: install-fxcop-analyzers.md
+            - name: 構成
+              items:
+                - name: 概要
+                  href: configure-fxcop-analyzers.md
+                - name: スコープ オプション
+                  href: fxcop-analyzer-options.md
+                - name: 定義済みの規則セット
+                  href: analyzer-rule-sets.md
+            - name: よくあるご質問
+              href: fxcop-analyzers-faq.md
+        - name: レガシ分析から FxCop アナライザーへの移行
+          items:
+            - name: 概要
+              href: fxcop-analyzers.yml
+            - name: 移植された規則
+              href: fxcop-rule-port-status.md
     - name: レガシ分析
       items:
         - name: 概要
@@ -112,37 +138,12 @@
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
             - name: バージョンの互換性
               href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: FXCop アナライザー
-      items:
-        - name: 概要
-          displayName: fxcop analyzers
-          href: fxcop-analyzers.yml
-        - name: インストール
-          href: install-fxcop-analyzers.md
-        - name: 構成
-          items:
-            - name: 概要
-              href: configure-fxcop-analyzers.md
-            - name: スコープ オプション
-              href: fxcop-analyzer-options.md
-            - name: 定義済みの規則セット
-              href: analyzer-rule-sets.md
-        - name: よくあるご質問
-          href: fxcop-analyzers-faq.md
-    - name: レガシ分析から FxCop アナライザーへの移行
-      items:
-        - name: 概要
-          href: fxcop-analyzers.yml
-        - name: 移植された規則
-          href: fxcop-rule-port-status.md
     - name: 規則セット
       items:
         - name: 概要
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: 規則セットを構成する
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: ASP.NET Web アプリケーション用のコード分析を構成する
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: カスタム規則セットの作成
           href: how-to-create-a-custom-rule-set.md
         - name: 規則セット エディターの使用
@@ -558,6 +559,7 @@
             - name: セキュリティの警告
               items:
                 - name: 概要
+                  displayName: security warnings
                   href: security-warnings.md
                 - name: 'CA2100:SQL クエリのセキュリティ脆弱性を確認'
                   href: ca2100-review-sql-queries-for-security-vulnerabilities.md

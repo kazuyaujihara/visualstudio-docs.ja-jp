@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577363"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481974"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash タスク
 
@@ -34,9 +34,8 @@ ms.locfileid: "62577363"
 
 |パラメーター|説明|
 |---------------|-----------------|
-|`File`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br />ハッシュ値を計算し、検証するファイル。|
+|`File`|必須の `String` 型のパラメーターです。<br /><br />ハッシュ値を計算し、検証するファイル。|
 |`Hash`|必須の `String` 型のパラメーターです。<br /><br />予想されるファイル ハッシュ。|
-|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 出力パラメーター。<br /><br />`Files` 入力と、ファイル ハッシュに設定された追加メタデータ。|
 |`Algorithm`|省略可能な `String` 型のパラメーターです。<br /><br />アルゴリズム。 許可値: `SHA256`、`SHA384`、`SHA512`。 既定値 = `SHA256`。|
 |`HashEncoding`|省略可能な `String` 型のパラメーターです。<br /><br />生成されたハッシュに使用するエンコード。 既定値は `hex` です。 許可値 = `hex`、`base64`。|
 

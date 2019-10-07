@@ -1,28 +1,28 @@
 ---
-title: Visual Basic を使用して Windows フォーム アプリを作成する
-description: Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する方法の詳細な手順を説明します。
-ms.date: 09/27/2019
+title: C# で Windows フォーム アプリを作成する
+description: Visual Studio で C# を使用して Windows フォーム アプリを作成する方法の詳細な手順を説明します。
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang: vb
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- VB
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
 ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681579"
+ms.locfileid: "71685530"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Visual Studio で C# を使用して Windows フォーム アプリを作成する
 
-ここでは、Visual Studio 統合開発環境 (IDE) の概要を示し、Windows ベースのユーザー インターフェイス (UI) を備えた簡単な Visual Basic アプリケーションを作成します。
+ここでは、Visual Studio 統合開発環境 (IDE) の概要を示し、Windows ベースのユーザー インターフェイス (UI) を備えた簡単な C# アプリケーションを作成します。
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +41,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="create-a-project"></a>プロジェクトの作成
 
-まず、Visual Basic アプリケーション プロジェクトを作成します。 このプロジェクトの種類には、必要とするすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
+まず、C# アプリケーション プロジェクトを作成します。 このプロジェクトの種類には、必要とするすべてのテンプレート ファイルが付属していますので、何も追加する必要はありません。
 
 ::: moniker range="vs-2017"
 
@@ -49,7 +49,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]** を展開し、 **[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 ファイルに `HelloWorld` という名前を付けます。
+1. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** を展開し、 **[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 ファイルに `HelloWorld` という名前を付けます。
 
      **[Windows フォーム アプリケーション (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーで **[ツール]**  >  **[ツールと機能を取得]** の順に選択します。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発**ワークロードを選択し、 **[変更]** を選択します。
 
@@ -65,11 +65,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、Visual Basic 用の **[Windows フォーム アプリケーション (.NET Framework)]** テンプレートを選択します。
+1. **[新しいプロジェクトの作成]** ウィンドウで、C# 用の **[Windows フォーム アプリケーション (.NET Framework)]** テンプレートを選択します。
 
-   (必要に応じて、検索を絞り込んで目的のテンプレートにすばやくアクセスすることができます。 たとえば、検索ボックスに「*Windows フォーム アプリ*」と入力します。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。)  
+   (必要に応じて、検索を絞り込んで目的のテンプレートにすばやくアクセスすることができます。 たとえば、検索ボックスに「*Windows フォーム アプリ*」と入力します。 次に、言語の一覧から **[C#]** を選択し、プラットフォームの一覧から **[Windows]** を選択します。)  
 
-   ![Windows フォーム アプリ (.NET Framework) 用の Visual Basic テンプレートを選択する](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows フォーム アプリ (.NET Framework) 用の C# テンプレートを選択する](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
 
    > [!NOTE]
    > **[Windows フォーム アプリ (.NET Framework)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
@@ -84,7 +84,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
 
-   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/csharp/media/vs-2019/csharp-name-your-winform-project-helloworld.png)
 
    Visual Studio によってその新しいプロジェクトが開かれます。
 
@@ -92,29 +92,29 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="create-the-application"></a>アプリケーションを作成する
 
-Visual Basic プロジェクト テンプレートを選択し、ファイルに名前を付けると、Visual Studio によって目的のフォームが開かれます。 フォームは、Windows ユーザー インターフェイスです。 このフォームにコントロールを追加して "Hello World" アプリケーションを作成し、このアプリを実行します。
+C# プロジェクト テンプレートを選択し、ファイルに名前を付けると、Visual Studio によってフォームが自動的に開かれます。 フォームは、Windows ユーザー インターフェイスです。 このフォームにコントロールを追加して "Hello World" アプリケーションを作成し、このアプリを実行します。
 
 ### <a name="add-a-button-to-the-form"></a>フォームにボタンを追加する
 
-1. **[ツールボックス]** をクリックして、ツールボックスのスライド アウト ウィンドウを開きます
+1. **[ツールボックス]** を選択して、ツールボックスのスライド アウト ウィンドウを開きます。
 
-     ![[ツールボックス] をクリックして [ツールボックス] ウィンドウを開く](../ide/media/vb-toolbox-toolwindow.png)
+     ![[ツールボックス] を選択して [ツールボックス] ウィンドウを開く](../ide/media/csharp-toolbox-toolwindow.png)
 
      (**ツールボックス**のスライド アウト オプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[表示]**  >  **[ツールボックス]** を選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
 
-1. **[ピン設定]** アイコンをクリックして、 **[ツールボックス]** ウィンドウをドッキングします。
+1. **[ピン]** アイコンを選択して、 **[ツールボックス]** ウィンドウをドッキングします。
 
-     ![[ツールボックス] ウィンドウを IDE にピン留めする [ピン設定] アイコンをクリックします。](../ide/media/vb-pin-the-toolbox-window.png)
+     ![[ピン] アイコンを選択して [ツールボックス] ウィンドウを IDE にピン留めする](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. **[ボタン]** コントロールをクリックし、フォームまでドラッグします。
+1. **[ボタン]** コントロールを選択し、フォームまでドラッグします。
 
-     ![フォームにボタンを追加する](../ide/media/vb-add-a-button-to-form1.png)
+     ![フォームにボタンを追加する](../ide/media/csharp-add-button-form1.png)
 
-1. **[プロパティ]** ウィンドウの **[外観]** セクション (または **[フォント]** セクション) で、`Click this` と入力し、**Enter** キーを押します。
+1. **[プロパティ]** ウィンドウで **Text** を見つけ、名前を **Button1** から `Click this` に変更し、**Enter** キーを押します。
 
      ![フォーム上のボタンにテキストを追加する](../ide/media/vb-button-control-text.png)
 
-     ( **[プロパティ]** ウィンドウが表示されない場合は、メニュー バーから開くことができます。 そのためには、 **[表示]**  >  **[プロパティ ウィンドウ]** をクリックします。 または **F4** キーを押します)。
+     ( **[プロパティ]** ウィンドウが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[表示]**  >  **[プロパティ ウィンドウ]** を選択します。 または **F4** キーを押します)。
 
 1. **[プロパティ]** ウィンドウの **[デザイン]** セクションで、名前を **Button1** から `btnClickThis` に変更し、**Enter** キーを押します。
 
@@ -133,23 +133,23 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
 ### <a name="add-code-to-the-form"></a>フォームにコードを追加する
 
-1. **[Form1.vb [Design]]** ウィンドウで、 **[Click this]** ボタンをダブルクリックして、 **[Form1.vb]** ウィンドウを開きます
+1. **[Form1.cs &#91;デザイン&#93;]** ウィンドウで **[Click this]** ボタンをダブルクリックして **[Form1.cs]** ウィンドウを開きます。
 
-      (あるいは、 **[ソリューション エクスプローラー]** で **[Form1.vb]** を展開し、 **[Form1]** をクリックします)。
+      (または、**ソリューション エクスプローラー**で **Form1.cs** を展開し、 **[Form1]** を選択します。)
 
-1. 次のスクリーンショットに示すように、**Form1.vb** ウィンドウで、**Private Sub** 行と **End Sub** 行の間に `lblHelloWorld.Text = "Hello World!"` と入力します。
+1. **[Form1.cs]** ウィンドウの **private void** 行の後に、次のスクリーンショットに示すように `lblHelloWorld.Text = "Hello World!";` と入力します。
 
-     ![フォームにコードを追加する](../ide/media/vb-add-code-to-the-form.png)
+     ![フォームにコードを追加する](../get-started/csharp/media/csharp-winforms-add-code.png)
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-1. **[開始]** ボタンをクリックしてアプリケーションを実行します。
+1. **[開始]** ボタンを選択してアプリケーションを実行します。
 
-     ![[開始] をクリックして、アプリをデバッグして実行する](../ide/media/vb-click-start-hello-world.png)
+     ![[開始] をクリックしてアプリをデバッグして実行する](../ide/media/vb-click-start-hello-world.png)
 
    いくつかの処理が行われます。 Visual Studio IDE 内では、 **[診断ツール]** ウィンドウが開き、 **[出力]** ウィンドウも開きます。 ただし、IDE の外部では、 **[Form1]** ダイアログ ボックスが表示されます。 このダイアログ ボックスには、 **[Click this]** ボタンと **Label1** というテキストが表示されます。
 
-1. **[Form1]** ダイアログ ボックスの **[Click this]** ボタンをクリックします。 テキスト **Label1** が **Hello World!** に変更されることがわかります。
+1. **[Form1]** ダイアログ ボックスの **[Click this]** ボタンを選択します。 テキスト **Label1** が **Hello World!** に変更されることがわかります。
 
     ![テキスト Label1 を含む [Form1] ダイアログ ボックス ](../ide/media/vb-form1-dialog-hello-world.png)
 
@@ -164,6 +164,6 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
 ## <a name="see-also"></a>関連項目
 
-* [その他の Visual Basic のチュートリアル](/visualstudio/get-started/visual-basic/)
-* [C# のチュートリアル](/visualstudio/get-started/csharp/)
+* [その他の C# のチュートリアル](/visualstudio/get-started/csharp/)
+* [Visual Basic のチュートリアル](/visualstudio/get-started/visual-basic/)
 * [C++ のチュートリアル](/cpp/get-started/tutorial-console-cpp)

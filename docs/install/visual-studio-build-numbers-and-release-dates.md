@@ -5,19 +5,19 @@ description: Visual Studio の現在までのリリース済みバージョン�
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/25/2019
+ms.date: 10/01/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 584243fa3bfc8d4c0400c0613351508b5ec4e809
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.openlocfilehash: 43984192051fbef5648c021e2a05b4ac82d18a09
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301677"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720536"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -29,6 +29,7 @@ ms.locfileid: "71301677"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.2 | 解放 | 2019 年 10 月 1 日 | 16.3.29326.143 |
 | 16.3.1 | 解放 | 2019 年 9 月 25 日 | 16.3.29324.140 |
 | 16.4.0 | Preview 1 | 2019 年 9 月 23 日 | 16.4.29319.158 |
 | 16.3.0 | 解放 | 2019 年 9 月 23 日 | 16.3.29318.209 |

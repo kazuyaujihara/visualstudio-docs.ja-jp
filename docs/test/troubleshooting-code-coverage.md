@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079579"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342478"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
 Visual Studio のコード カバレッジ分析ツールは、ネイティブ アセンブリとマネージド アセンブリのデータを収集します ( *.dll* または *.exe* ファイル)。 しかし、 **[コード カバレッジの結果]** ウィンドウに "空の結果が生成されました: ...." のようなエラーが表示される場合があります。結果が空になる理由はいくつかあります。 この記事はそれらの問題解決に役立ちます。
 
-## <a name="what-you-should-see"></a>表示される内容
+## <a name="what-you-should-see"></a>表示内容
 
 **[テスト]** メニューの **[コード カバレッジの分析]** コマンドを選択し、ビルドとテストが正常に実行された場合、 **[コード カバレッジ]** ウィンドウに結果の一覧が表示されます。 詳細を表示するために、項目を展開する必要がある場合があります。
 
@@ -29,6 +29,7 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>結果が表示されなかったり古い結果が表示されたりすることの考えられる原因
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>適切なエディションの Visual Studio を使用していますか?
+
 Visual Studio Enterprise が必要です。
 
 ### <a name="no-tests-were-executed"></a>テストが実行されなかった
@@ -43,7 +44,7 @@ Visual Studio Enterprise が必要です。
 
 テストを変更し、再実行したときに、まだ前のコード カバレッジの結果が表示され、コードの色分けも前の実行のものである場合があります。
 
-1. コード カバレッジの分析を実行します。
+1. **[コード カバレッジの分析]** を実行します。
 
 2. **[コード カバレッジの結果]** ウィンドウで、最新の結果セットが選択されていることを確認します。
 

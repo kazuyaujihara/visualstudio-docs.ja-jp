@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 178bd693c514e42fb77c0addce3fa6c00d1bef4f
+ms.sourcegitcommit: a2f1f27aa33d807b39292d65a49d8db4653491ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180297"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71709068"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -43,8 +43,9 @@ ms.locfileid: "70180297"
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
 
-その他にサポートされているブートストラップとして、[vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)、[vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)、[vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe) が含まれます。
+その他にサポートされているブートストラップとして、[vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)、[vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe) があります。
 
 ::: moniker-end
 
@@ -54,14 +55,15 @@ ms.locfileid: "70180297"
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-他にサポートされているブートストラップには、[vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe) があります。
+その他にサポートされているブートストラップして、[vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe) があります。
 
 ::: moniker-end
 
 ## <a name="create-an-offline-installation-folder"></a>オフライン インストール フォルダーを作成する
 
-このステップを実行するにはインターネット接続が必要です。 すべての言語およびすべての機能を持つオフライン インストールを作成するには、次の例のいずれかのコマンドを使用します。
+このステップを実行するにはインターネット接続が必要です。 すべての言語およびすべての機能を使用してオフライン インストールを作成するには、次のいずれかの例のようなコマンドを使用します。
 
    > [!IMPORTANT]
    > Visual Studio の完全なレイアウトには、少なくとも 35 GB のディスク領域が必要で、ある程度ダウンロードに時間がかかります。 インストールするコンポーネントのみでレイアウトを作成する方法の詳細については、「[ネットワーク レイアウトをカスタマイズする](#customize-the-network-layout)」セクションをご覧ください。
@@ -71,11 +73,11 @@ ms.locfileid: "70180297"
 
 - Visual Studio Enterprise の場合、以下を実行します。
 
-  ```vs_enterprise.exe --layout c:\vsoffline```
+  ```vs_enterprise.exe --layout c:\VSLayout```
 
 - Visual Studio Professional の場合、以下を実行します。
 
-  ```vs_professional.exe --layout c:\vsoffline```
+  ```vs_professional.exe --layout c:\VSLayout```
 
 ## <a name="modify-the-responsejson-file"></a>response.json file を変更する
 
@@ -93,7 +95,7 @@ response.json を変更し、セットアップの実行時に使用される既
 例:
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2017
+xcopy /e c:\VSLayout \\server\products\VS2017
 ```
 
 ::: moniker-end
@@ -101,7 +103,7 @@ xcopy /e c:\vsoffline \\server\products\VS2017
 ::: moniker range="vs-2019"
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2019
+xcopy /e c:\VSLayout \\server\products\VS2019
 ```
 
 ::: moniker-end
@@ -123,37 +125,37 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 * 1 つの言語に対して、すべてのワークロードとコンポーネントをダウンロードするには、以下を実行します。
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US
     ```
 
 * 複数の言語に対して、すべてのワークロードとコンポーネントをダウンロードするには、以下を実行します。
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US de-DE ja-JP
     ```
 
 * すべての言語に対して、1 つのワークロードをダウンロードするには、以下を実行します。
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * 3 つの言語に対して、2 つのワークロードと 1 つのオプション コンポーネントをダウンロードするには、以下を実行します。
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * 2 つのワークロードとその推奨コンポーネントのすべてをダウンロードするには:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * 2 つのワークロードとそのすべての推奨コンポーネントと任意コンポーネントをダウンロードするには、次を実行します。
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -205,7 +207,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 * 管理者は次のコマンドを実行することで、無人モードでインストールできます。
 
     ```cmd
-    \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
+    \\server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
 > [!IMPORTANT]

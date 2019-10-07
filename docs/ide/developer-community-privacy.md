@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864689"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273405"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -70,10 +70,6 @@ ms.locfileid: "70864689"
 
 - Windows フォーム ログ (存在する場合)
 
-> [!NOTE]
-> ログ ファイルが含まれる問題レポートを送信することによって権限を付与した場合にのみ、ログ ファイルは Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。  
-  > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
-
 - スクリーン ショット (含めることを選択した場合)
   
 - 記録データ (以下を含む記録を含めるように選択した場合)
@@ -84,8 +80,10 @@ ms.locfileid: "70864689"
 
   - ダンプ ファイル
 
-  > [!NOTE]
-  > レポートを送信する前に、送信したくないすべての記録データを削除することができます。
+> [!NOTE]
+> ログ ファイル、スクリーンショット、および記録データは、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログとファイルは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。  
+  > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>関連項目
 
