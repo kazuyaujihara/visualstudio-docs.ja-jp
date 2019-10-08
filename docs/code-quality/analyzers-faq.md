@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062162"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999978"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -41,7 +41,7 @@ ms.locfileid: "71062162"
 
 **Q**:.NET Compiler Platform ベースのコード分析は、継続的インテグレーション (CI) ビルドで動作しますか。
 
-**A**:はい。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、[規則セット](analyzer-rule-sets.md)と[editorconfig ファイル](configure-fxcop-analyzers.md)の両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
+**A**:可能。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、[規則セット](analyzer-rule-sets.md)と[editorconfig ファイル](configure-fxcop-analyzers.md)の両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE アナライザーと StyleCop
 
@@ -55,7 +55,32 @@ ms.locfileid: "71062162"
 
 **Q**:従来の分析と .NET Compiler Platform ベースのコード分析の違いは何ですか。
 
-**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis)」と「従来の分析と[FxCop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
+**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)」と「従来の分析と[FxCop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
+
+## <a name="treat-warnings-as-errors"></a>警告をエラーとして扱う
+
+**Q**:プロジェクトでは、[ビルド] オプションを使用して警告をエラーとして扱います。 レガシ分析からソースコード分析に移行した後、すべてのコード分析警告がエラーとして表示されるようになりました。 これを回避するにはどうすればよいですか。
+
+**A**:コード分析の警告がエラーとして扱われないようにするには、次の手順を実行します。
+
+  1. 次の内容を含む props ファイルを作成します。
+
+     ```xml
+     <Project>
+        <PropertyGroup>
+           <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        </PropertyGroup>
+     </Project>
+     ```
+
+  2. .Csproj または .vbproj プロジェクトファイルに行を追加して、前の手順で作成した props ファイルをインポートします。 この行は、FxCop アナライザーの props ファイルをインポートする行の前に配置する必要があります。 たとえば、props ファイルの名前が codeanalysis. props:
+
+     ```xml
+     ...
+     <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     ...
+     ```
 
 ## <a name="see-also"></a>関連項目
 
