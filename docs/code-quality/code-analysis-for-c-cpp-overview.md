@@ -21,12 +21,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018490"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163063"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 
@@ -46,7 +46,7 @@ C/C++コード分析ツールは、c/C++ソースコードで発生する可能�
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 バージョン15.7 以降**CMake を含む任意のビルドシステムを使用して、コマンドラインからツールを実行できます。
+**Visual Studio 2017 バージョン 15.7 以降:** CMake を含む任意のビルドシステムを使用して、コマンドラインからツールを実行できます。
 
 ## <a name="pragma-support"></a>#pragma サポート
 
