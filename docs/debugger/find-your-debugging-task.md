@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817510"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018778"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio でのデバッグタスクの検索
 
@@ -34,7 +34,10 @@ ms.locfileid: "71817510"
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>特定のオブジェクトのプロパティまたは値が変更される場合にのみコードを一時停止する
 
-C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)を設定します。 .NET Core 3 を使用するアプリでは、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)を設定することもできます。
+C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)を設定します。 
+::: moniker range=">= vs-2019"
+.NET Core 3 を使用するアプリでは、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)を設定することもできます。
+::: moniker-end
 
 それ以外のC#場合F# 、とだけでは、[条件付きブレークポイントを使用してオブジェクト ID を追跡](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f)できます。
 

@@ -1,6 +1,6 @@
 ---
-title: FxCop アナライザーのルールセット
-ms.date: 09/23/2019
+title: FxCop アナライザーの規則セットと editorconfig ファイル
+ms.date: 10/08/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,41 +10,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974703"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172778"
 ---
-# <a name="rule-sets-for-analyzer-packages"></a>アナライザー パッケージの規則セット
+# <a name="enable-a-category-of-rules"></a>ルールのカテゴリを有効にする
 
-定義済みの規則セットは、一部の NuGet アナライザーパッケージに含まれています。 たとえば、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージに含まれている規則セット (バージョン2.6.2 以降) は、セキュリティ、名前付け、パフォーマンスなど、カテゴリに基づいて規則を有効または無効にします。 規則セットを使用すると、特定のカテゴリの規則に関連する規則違反だけを簡単に確認できます。
+Analyzer パッケージには、定義済みの[Editorconfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)ファイルと[ルールセット](using-rule-sets-to-group-code-analysis-rules.md)ファイルが含まれている場合があります。このファイルを使用すると、セキュリティや設計ルールなどのルールのカテゴリをすばやく簡単に有効にすることができます。 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージには、(バージョン2.6.2 以降で始まる) 規則セットと editorconfig ファイル (バージョン2.9.5 以降) の両方が含まれています。 特定のカテゴリのルールを有効にすることで、対象となる問題と特定の条件を特定できます。
 
-ルールセットは、対象となる問題と特定の条件を識別するコード分析ルールをグループ化したものです。 ルールセットを使用すると、ルールを有効または無効にしたり、個々のルール違反の重大度を設定したりできます。 FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義済みの規則セットが含まれています。
+> [!NOTE]
+> アナライザーの規則を有効にし、EditorConfig ファイルを使用して重要度を設定することは、Visual Studio 2019 バージョン16.3 以降でサポートされています。
 
-- デザイン
+FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義済みの規則セットと EditorConfig ファイルが含まれています。
+
+- すべてのルール
+- データフロー
+- 設計
 - ドキュメント
-- 保守性
+- グローバリゼーション
+- 相互運用性
+- やすさ
 - 名前付け
 - パフォーマンス
+- FxCop からの移植
 - 信頼性
 - セキュリティ
-- 使い方
+- 使用方法
 
-レガシの "FxCop" 分析から .NET Compiler Platform ベースのコード分析に移行している場合、これらの規則セットを使用すると、[以前に使用したもの](rule-set-reference.md)と同様の規則の構成を引き続き使用できます。
+これらの規則の各カテゴリには、次のように EditorConfig ファイルまたは規則セットファイルがあります。
 
-## <a name="use-analyzer-package-rule-sets"></a>アナライザーパッケージの規則セットを使用する
+- カテゴリ内のすべてのルールを有効にします (他のすべてのルールを無効にします)。
+- 各ルールの既定の重要度と有効化の設定を使用します (他のすべてのルールを無効にします)。
 
-[NuGet analyzer パッケージをインストール](install-roslyn-analyzers.md)したら、*そのルールセットディレクトリで*定義済みのルールセットを見つけます。 たとえば、`Microsoft.CodeAnalysis.FxCopAnalyzers` アナライザーパッケージを参照した場合は、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t @ no__t-6\rulesets*に、その*ルールセット*ディレクトリが見つかります。 そこから、1つまたは複数のルールセットをコピーし、Visual Studio プロジェクトが格納されているディレクトリまたは**ソリューションエクスプローラー**に直接貼り付けます。
+> [!TIP]
+> [すべてのルール] カテゴリには、すべてのルールを無効にするための追加の EditorConfig ファイルまたはルールセットファイルがあります。 このファイルを使用すると、プロジェクト内のアナライザーの警告またはエラーがすぐに除去されます。
+
+> [!TIP]
+> 従来の "FxCop" 分析から .NET Compiler Platform ベースのコード分析に移行している場合は、EditorConfig ファイルとルールセットファイルを使用して、[以前に使用したもの](rule-set-reference.md)と同様の規則の構成を引き続き使用することができます。
+
+## <a name="predefined-editorconfig-files"></a>定義済みの EditorConfig ファイル
+
+FxCopAnalyzers analyzer パッケージの定義済みの EditorConfig ファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig にあります。* ディレクトリ。 たとえば、すべてのセキュリティ規則を有効にする EditorConfig ファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ にあります。t-5. editorconfig*。
+
+選択した editorconfig ファイルをプロジェクトのルートディレクトリにコピーします。
+
+## <a name="predefined-rule-sets"></a>定義済みの規則セット
+
+FxCopAnalyzers analyzer パッケージの定義済みの規則セットファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t の @ no__t-4\rulesets にあります。* 名簿. たとえば、すべてのセキュリティ規則を有効にする規則セットファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.ruleset*にあります。
+
+1つ以上の規則セットをコピーし、Visual Studio プロジェクトが格納されているディレクトリまたは**ソリューションエクスプローラー**に直接貼り付けます。
 
 また、[定義済みの規則セット](how-to-create-a-custom-rule-set.md)を自分の好みに合わせてカスタマイズすることもできます。 たとえば、1つまたは複数のルールの重要度を変更して、**エラー一覧**に違反がエラーまたは警告として表示されるようにすることができます。
 
-## <a name="set-the-active-rule-set"></a>アクティブな規則セットを設定する
+### <a name="set-the-active-rule-set"></a>アクティブな規則セットを設定する
 
 アクティブな規則セットを設定するプロセスは、.NET Core/.NET Standard プロジェクトと .NET Framework プロジェクトのどちらを使用しているかによって若干異なります。
 
-### <a name="net-core"></a>.NET Core
+#### <a name="net-core"></a>.NET Core
 
 .NET Core または .NET Standard プロジェクトで、分析用のアクティブな規則セットを規則に設定するには、 **CodeAnalysisRuleSet**プロパティをプロジェクトファイルに手動で追加します。 たとえば、次のコードスニペットは、アクティブなルールセットとして `HelloWorld.ruleset` を設定します。
 
@@ -55,7 +80,7 @@ ms.locfileid: "71974703"
 </PropertyGroup>
 ```
 
-### <a name="net-framework"></a>.NET Framework
+#### <a name="net-framework"></a>.NET Framework
 
 .NET Framework プロジェクトで分析のためのアクティブな規則セットを規則に設定するには、次のようにします。
 
@@ -76,27 +101,6 @@ ms.locfileid: "71974703"
 ::: moniker-end
 
    これで、選択した規則セットで有効になっている規則に対する規則違反のみが表示されるようになりました。
-
-## <a name="available-rule-sets"></a>使用可能な規則セット
-
-定義済みアナライザーの規則セットには、パッケージ内のすべての規則に影響を与える3つのルールセットが含まれています。これは、すべてのルールを無効にするものと、各ルールの既定の重大度および有効化設定を許可するルールを no__t します。
-
-- All規則が有効になりました。ルールセット
-- All規則が無効になりました。ルールセット
-- Allルールの既定値。ルールセット
-
-また、パフォーマンスやセキュリティなど、パッケージ内のルールのカテゴリごとに2つのルールセットがあります。 1つの規則セットによってカテゴリのすべての規則が有効になり、1つの規則セットによって、カテゴリ内の各規則の既定の重大度および有効化の設定が優先されます。
-
-[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージには、次のカテゴリのルールセットが含まれています。
-
-- デザイン
-- ドキュメント
-- 保守性
-- 名前付け
-- パフォーマンス
-- 信頼性
-- セキュリティ
-- 使い方
 
 ## <a name="see-also"></a>関連項目
 

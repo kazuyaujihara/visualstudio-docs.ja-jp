@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234267"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252572"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別子はアンダースコアを含むことはできません
 
@@ -32,11 +32,11 @@ ms.locfileid: "71234267"
 
 ## <a name="cause"></a>原因
 
-識別子の名前にアンダースコア (\_) 文字が含まれています。
+識別子の名前にアンダースコア (@no__t 0) 文字が含まれています。
 
 ## <a name="rule-description"></a>規則の説明
 
-規則により、識別子名にはアンダースコア (\_) 文字は含まれません。 このルールは、名前空間、型、メンバー、およびパラメーターを確認します。
+規則により、識別子名にはアンダースコア (@no__t 0) 文字は含まれません。 このルールは、名前空間、型、メンバー、およびパラメーターを確認します。
 
 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
 
@@ -46,9 +46,9 @@ ms.locfileid: "71234267"
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。
+実稼働コードの警告を抑制しないでください。 ただし、テストコードではこの警告を抑制するのが安全です。 [重要度](use-roslyn-analyzers.md#rule-severity)を **[なし**] に設定することにより、このルールの警告を抑制できます。 
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1709識別子は正しく使用する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708識別子の大文字と小文字の区別が異なる場合](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709:識別子は、大文字と小文字を正しく指定する必要があります @ no__t-0
+- [CA1708:識別子の大文字と小文字の区別が異なる @ no__t-0
