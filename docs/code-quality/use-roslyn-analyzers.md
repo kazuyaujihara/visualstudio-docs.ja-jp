@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50eadf9c26eaca4c5495dfbc55a1b266aecdb90
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999999"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172803"
 ---
 # <a name="use-code-analyzers"></a>コードアナライザーを使用する
 
@@ -138,7 +138,7 @@ Visual Studio には、[クイックアクション](../ide/quick-actions.md)の
 
 ![ソリューションエクスプローラーの規則セットファイル](media/ruleset-in-solution-explorer.png)
 
-1. **ソリューションエクスプローラー**でアクティブな[ルールセット](analyzer-rule-sets.md)ファイルをダブルクリックして開き、 **[参照]**  > **アナライザー**ノードの右クリックメニューで **[アクティブなルールセットを開く]** を選択するか、または **[開く]** を選択します **。プロジェクトのコード分析**のプロパティページ。
+1. **ソリューションエクスプローラー**でアクティブなルールセットファイルをダブルクリックして開き、 **[参照]**  > **アナライザー**ノードの右クリックメニューで **[アクティブなルールセットを開く]** を選択するか、コードの **[開く]** を選択します。プロジェクトの分析プロパティページ。
 
    規則セットを初めて編集する場合は、Visual Studio によって既定の規則セットファイルのコピーが作成され、 *\< projectname >* という名前が付いてプロジェクトに追加されます。 このカスタム規則セットは、プロジェクトのアクティブな規則セットにもなります。
 

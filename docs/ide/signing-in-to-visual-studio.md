@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a949c8b8e5956f9a606195671c0453bbb3689701
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960788"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018870"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio にサインイン
 
@@ -46,21 +46,21 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 
 Visual Studio を初めて開くと、サインインして基本登録情報を入力するように求められます。 Microsoft アカウント、またはユーザーを最も的確に表す職場や学校のアカウントを選択してください。 これらのアカウントがない場合は、Microsoft アカウントを無料で作成できます。 「 [Microsoft アカウントへのサインアップ方法](http://windows.microsoft.com/windows-live/sign-up-create-account-how)」をご覧ください。
 
-次に、Visual Studio で使用する UI 設定や配色テーマを選択します。 これらの設定は Visual Studio に保存され、サインインしたすべての Visual Studio 環境間で同期されます。 同期される設定の一覧については、「[Visual Studio での同期された設定](../ide/synchronized-settings-in-visual-studio.md)」を参照してください。 Visual Studio の **[ツール]**、**[オプション]** メニューを開けば、これらの設定は後で変更できます。
+次に、Visual Studio で使用する UI 設定や配色テーマを選択します。 これらの設定は Visual Studio に保存され、サインインしたすべての Visual Studio 環境間で同期されます。 同期される設定の一覧については、「[Visual Studio での同期された設定](../ide/synchronized-settings-in-visual-studio.md)」を参照してください。 Visual Studio の **[ツール]** 、 **[オプション]** メニューを開けば、これらの設定は後で変更できます。
 
 設定が終わったら、Visual Studio が起動し、サインインして、作業を開始できるようになります。 ログインしているかどうかを確認するには、Visual Studio 環境の右上隅に表示されているプロファイル名を探します。
 
 ![VS2017 に現在ログインしているユーザー](../ide/media/vs2017_username.png)
 
-サインアウトしない限り、Visual Studio を起動すると自動的にサインインすることになり、同期された設定への変更が自動的に適用されます。 サインアウトするには、Visual Studio 環境の右上隅にある自分のプロファイル名の横の下矢印を選択し、**[アカウント設定]** コマンドを選択してから **[サインアウト]** リンクを選択します。 再度サインインするには、Visual Studio 環境の右上隅の **[サインイン]** をクリックします。
+サインアウトしない限り、Visual Studio を起動すると自動的にサインインすることになり、同期された設定への変更が自動的に適用されます。 サインアウトするには、Visual Studio 環境の右上隅にある自分のプロファイル名の横の下矢印を選択し、 **[アカウント設定]** コマンドを選択してから **[サインアウト]** リンクを選択します。 再度サインインするには、Visual Studio 環境の右上隅の **[サインイン]** をクリックします。
 
 ## <a name="to-change-your-profile-information"></a>ユーザーのプロファイル情報を変更するには
 
-1. **[ファイル]**、**[アカウント設定]** の順に進み、**[Visual Studio プロファイルの管理]** リンクを選択します。
+1. **[ファイル]** 、 **[アカウント設定]** の順に進み、 **[Visual Studio プロファイルの管理]** リンクを選択します。
 
-1. ブラウザー ウィンドウで、**[プロファイルの編集]** を選択し、必要な設定を変更します。
+1. ブラウザー ウィンドウで、 **[プロファイルの編集]** を選択し、必要な設定を変更します。
 
-1. 完了したら、**[変更の保存]** を選択します。
+1. 完了したら、 **[変更の保存]** を選択します。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1d3a86d9ef5823b5935ad99facd6a82bf3af9789
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461214"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018926"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>方法: IntelliTest で単体テストを生成する
 
@@ -48,7 +48,7 @@ IntelliTest を実行すると、どのテストが失敗しているかを簡�
 
    ![[精査結果] ウィンドウでのテスト表示](../test/media/pexexplorationresults.png)
 
-クラス内のすべてのパブリック メソッドに対して単体テストを生成するには、特定のメソッドではなく、クラスで右クリックし、**[IntelliTest の実行]** を選択します。 **[探索の結果]** ウィンドウにあるドロップダウン リストを使用して、クラス内の各メソッドの単体テストと入力データを表示します。
+クラス内のすべてのパブリック メソッドに対して単体テストを生成するには、特定のメソッドではなく、クラスで右クリックし、 **[IntelliTest の実行]** を選択します。 **[探索の結果]** ウィンドウにあるドロップダウン リストを使用して、クラス内の各メソッドの単体テストと入力データを表示します。
 
 ![表示するテスト結果をリストから選択](../test/media/selectpextest.png)
 
@@ -142,10 +142,7 @@ IntelliTest を実行すると、どのテストが失敗しているかを簡�
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q:IntelliTest で他の単体テスト フレームワークを使用することはできますか。
 
 **A:** はい。以下の手順に従って、[他のフレームワークを検索してインストール](../test/install-third-party-unit-test-frameworks.md)してください。
-テスト フレームワークの拡張機能は Visual Studio Marketplace でも手に入ります。
-
-* [テスト ジェネレーター用 NUnit 拡張機能](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
-* [テスト ジェネレーター用 xUnit.net 拡張機能](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+テスト フレームワークの拡張機能は Visual Studio Marketplace でも入手できます (たとえば、[NUnit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371))。
 
 その後、Visual Studio を再起動し、ソリューションを再度開いてクラスまたはメソッドを右クリックし、 **[IntelliTest の作成]** を選択します。 インストールしたフレームワークを選択します。
 

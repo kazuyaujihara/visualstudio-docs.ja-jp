@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
@@ -22,12 +22,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4526a329b4e047a449995b7b5ef66362aff1cc8f
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818948"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950584"
 ---
 # <a name="general-project-properties-android-c"></a>一般的なプロジェクト プロパティ (Android C++)
 
@@ -40,7 +40,7 @@ ms.locfileid: "62818948"
 消去時に削除する拡張子 | クリーンまたはリビルドの実行時に中間ディレクトリから削除するファイルをセミコロンで区切って指定します。ワイルドカードを指定できます。
 ビルド ログ ファイル | ビルドのログが有効になっている場合、書き込むビルド ログ ファイルを指定します。
 プラットフォームのツールセット | 現在の構成の作成に使用するツールセットを指定します。設定しない場合は、既定のツールセットが使用されます。
-構成の種類 | この構成が生成する出力の種類を指定します。 | **ダイナミック ライブラリ (.so)** - ダイナミック ライブラリ (*.so*)<br>**スタティック ライブラリ (.a)** - スタティック ライブラリ (*.a*)<br>**ユーティリティ** - ユーティリティ<br>**メイクファイル** - メイクファイル<br>
+構成の種類 | この構成が生成する出力の種類を指定します。 | **ダイナミック ライブラリ (.so)** - ダイナミック ライブラリ ( *.so*)<br>**スタティック ライブラリ (.a)** - スタティック ライブラリ ( *.a*)<br>**ユーティリティ** - ユーティリティ<br>**メイクファイル** - メイクファイル<br>
 ターゲット API レベル | この構成が対象としている Android NDK API レベルです。
 STL の使用 | この構成で使用する C++ 標準ライブラリを指定します。 | **最小 C++ ランタイム ライブラリ (system)**<br>**C++ ランタイム スタティック ライブラリ (gabi++_static)**<br>**C++ ランタイム共有ライブラリ (gabi++_shared)**<br>**STLport ランタイム スタティック ライブラリ (stlport_static)**<br>**STLport ランタイム共有ライブラリ (stlport_shared)**<br>**GNU STL スタティック ライブラリ (gnustl_static)**<br>**GNU STL 共有ライブラリ (gnustl_shared)**<br>**LLVM libc++ スタティック ライブラリ (c++_static)**<br>**LLVM libc++ 共有ライブラリ (c++_shared)**<br>
 Thumb モード | Thumb マイクロアーキテクチャを実行するコードを生成します。 これは、arm アーキテクチャにのみ適用されます。 | **Thumb**<br>**Arm**<br>**無効**<br>

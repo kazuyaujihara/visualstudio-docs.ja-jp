@@ -2,7 +2,7 @@
 title: Visual Studio のインストール
 titleSuffix: ''
 description: Visual Studio をインストールする方法について、ステップ バイ ステップで説明します。
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095363"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018854"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 
@@ -82,7 +82,7 @@ Visual Studio のインストールを開始する前に
 
 1. 再起動します。 この再起動により、Visual Studio のインストールの際に妨げとなる、保留中のインストールや更新プログラムがないようにします。
 
-1. 記憶域を解放します。 ディスク クリーンアップ アプリを実行するなどして、%SystemDrive% から不要なファイルとアプリケーションを削除します。 
+1. 記憶域を解放します。 ディスク クリーンアップ アプリを実行するなどして、%SystemDrive% から不要なファイルとアプリケーションを削除します。
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 ## <a name="step-2---download-visual-studio"></a>手順 2 - Visual Studio をダウンロードする
 
-次に、Visual Studio ブートストラップ ファイルをダウンロードします。 これを行うには、以下のボタンを選択し、必要な Visual Studio のエディションを選択して、 **[保存]** 、 **[フォルダーを開く]** の順に選択します。
+次に、Visual Studio ブートストラップ ファイルをダウンロードします。
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Visual Studio 2017 のブートストラップを取得するには、その方法の詳細について、[以前のバージョンの Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) のダウンロード ページを参照してください。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+これを行うには、以下のボタンを選択し、必要な Visual Studio のエディションを選択して、 **[保存]** 、 **[フォルダーを開く]** の順に選択します。
 
  > [!div class="button"]
  > [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 1. 検索ボックスに作成するアプリの種類を入力し、使用可能なテンプレートの一覧を表示します。 テンプレートの一覧は、インストール時に選択したワークロードに依存します。 別のテンプレートを表示するには、異なるワークロードを選択します。
 
-   **[言語]** ドロップダウン リストを使用して、特定のプログラミング言語に検索をフィルター処理することもできます。 **[プラットフォーム]** の一覧や **[プロジェクトの種類]** の一覧を使用して、フィルター処理することもできます。 
+   **[言語]** ドロップダウン リストを使用して、特定のプログラミング言語に検索をフィルター処理することもできます。 **[プラットフォーム]** の一覧や **[プロジェクトの種類]** の一覧を使用して、フィルター処理することもできます。
 
 1. Visual Studio で新しいプロジェクトが開き、コーディングできる状態になります。
 

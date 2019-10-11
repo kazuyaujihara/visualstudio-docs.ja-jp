@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585197"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018383"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>マネージド コードの "セキュリティ規則" 規則セット
 
 レガシコード分析用の Microsoft セキュリティ規則セットを使用して、報告される潜在的なセキュリティ問題の数を最大化します。
 
-|ルール|説明|
+|Rule|説明|
 |----------|-----------------|
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|SQL クエリのセキュリティ脆弱性を確認|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|汎用ハンドラーの CLSCompliant でない例外をキャッチします|
@@ -64,25 +64,25 @@ ms.locfileid: "69585197"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|アセンブリには有効な厳密な名前が必要です|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|安全ではないデシリアライザー BinaryFormatter を使用しないでください|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|安全ではないデシリアライザー LosFormatter を使用しないでください|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|安全ではないデシリアライザー NetDataContractSerializer を使用しないでください|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|NetDataContractSerializer.Binder を設定してから逆シリアル化してください|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|安全ではないデシリアライザー ObjectStateFormatter を使用しないでください|
+|[CA2300](ca2300.md)|安全ではないデシリアライザー BinaryFormatter を使用しないでください|
+|[CA2301](ca2301.md)|最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください|
+|[CA2302](ca2302.md)|BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します|
+|[CA2305](ca2305.md)|安全ではないデシリアライザー LosFormatter を使用しないでください|
+|[CA2310](ca2310.md)|安全ではないデシリアライザー NetDataContractSerializer を使用しないでください|
+|[CA2311](ca2311.md)|最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください|
+|[CA2312](ca2312.md)|NetDataContractSerializer.Binder を設定してから逆シリアル化してください|
+|[CA2315](ca2315.md)|安全ではないデシリアライザー ObjectStateFormatter を使用しないでください|
 |[CA2321](ca2321.md)|SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください|
 |[CA2322](ca2322.md)|逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL インジェクションの脆弱性のコード レビュー|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS の脆弱性のコード レビュー|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|ファイル パス インジェクションの脆弱性のコード レビュー|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|情報漏えいの脆弱性のコード レビュー|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|LDAP インジェクションの脆弱性のコード レビュー|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|プロセス コマンド インジェクションの脆弱性のコード レビュー|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|オープン リダイレクトの脆弱性のコード レビュー|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|XPath インジェクションの脆弱性のコード レビュー|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|XML インジェクションの脆弱性のコード レビュー|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|XAML インジェクションの脆弱性のコード レビュー|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|DLL インジェクションの脆弱性のコード レビュー|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|RegEx インジェクションの脆弱性のコード レビュー|
+|[CA3001](../code-quality/ca3001.md)|SQL インジェクションの脆弱性のコード レビュー|
+|[CA3002](../code-quality/ca3002.md)|XSS の脆弱性のコード レビュー|
+|[CA3003](../code-quality/ca3003.md)|ファイル パス インジェクションの脆弱性のコード レビュー|
+|[CA3004](../code-quality/ca3004.md)|情報漏えいの脆弱性のコード レビュー|
+|[CA3005](../code-quality/ca3005.md)|LDAP インジェクションの脆弱性のコード レビュー|
+|[CA3006](../code-quality/ca3006.md)|プロセス コマンド インジェクションの脆弱性のコード レビュー|
+|[CA3007](../code-quality/ca3007.md)|オープン リダイレクトの脆弱性のコード レビュー|
+|[CA3008](../code-quality/ca3008.md)|XPath インジェクションの脆弱性のコード レビュー|
+|[CA3009](../code-quality/ca3009.md)|XML インジェクションの脆弱性のコード レビュー|
+|[CA3010](../code-quality/ca3010.md)|XAML インジェクションの脆弱性のコード レビュー|
+|[CA3011](../code-quality/ca3011.md)|DLL インジェクションの脆弱性のコード レビュー|
+|[CA3012](../code-quality/ca3012.md)|RegEx インジェクションの脆弱性のコード レビュー|

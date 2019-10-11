@@ -21,45 +21,45 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493636"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015968"
 ---
 # <a name="annotating-structs-and-classes"></a>構造体とクラスに注釈を付ける
 
-インバリアントのように動作する注釈を使用して構造体とクラスのメンバーに注釈を付けることができます: これらは true に、関数呼び出し、または関数の開始/終了パラメーターまたは結果の値として外側の構造体を含むと見なされます。
+インバリアントとして機能する注釈を使用して、構造体とクラスのメンバーに注釈を付けることができます。これらは、外側の構造体をパラメーターまたは結果値として含む関数の呼び出しまたは関数の開始/終了時に true と見なされます。
 
 ## <a name="struct-and-class-annotations"></a>構造体とクラスの注釈
 
 - `_Field_range_(low, high)`
 
-     フィールドがから (包括) の範囲である`low`に`high`します。  等価`_Satisfies_(_Curr_ >= low && _Curr_ <= high)`適切なプリトリガーまたは条件を使用して、注釈付きのオブジェクトに適用します。
+     フィールドは、`low` から `high` までの範囲内にあります。  適切な事前条件または事後条件を使用して、注釈付きオブジェクトに適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` と同じです。
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     要素 (またはバイト数) とで指定された書き込み可能なサイズのフィールド`size`します。
+     @No__t-0 によって指定された、要素 (またはバイト) の書き込み可能サイズを持つフィールド。
 
 - `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     要素 (またはバイト数) とで指定された書き込み可能なサイズのフィールド`size`、および`count`は読み取り可能なそれらの要素 (バイト単位)。
+     @No__t-0 によって指定された要素 (またはバイト) 内の書き込み可能サイズを持つフィールド、および読み取り可能な要素の `count` (バイト)。
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     読み取りと書き込みの両方のサイズの要素 (またはバイト数) とで指定されたフィールド`size`します。
+     @No__t-0 によって指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド。
 
 - `_Field_z_`
 
-     Null で終わる文字列フィールドです。
+     Null で終わる文字列を含むフィールド。
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラスの宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例:
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、宣言された型よりも大きくなる可能性があることを示します。 `size` で指定されるバイト数です。  以下に例を示します。
 
     ```cpp
 
@@ -71,7 +71,7 @@ ms.locfileid: "67493636"
 
     ```
 
-     パラメーターのバイト単位のバッファー サイズ`pM`型の`MyStruct *`が表示されます。
+     パラメーターのバッファーサイズ (バイト単位) は、型 `MyStruct *` の `pM` になり、次のようになります。
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,11 +104,11 @@ struct MyBuffer
 };
 ```
 
-この例のノート:
+この例のメモ:
 
-- `_Field_z_` は `_Null_terminated_` と同じです。  `_Field_z_` 名前フィールドでは、[名前] フィールドが null で終わる文字列を指定します。
-- `_Field_range_` `bufferSize`ことを指定の値`bufferSize`1 内にする必要がありますと`MaxBufferSize`(両端の値)。
-- 最終結果、`_Struct_size_bytes_`と`_Field_size_`注釈は同等です。 構造体またはクラスを持つ同様のレイアウトの`_Field_size_`は、以下の参照と相当するものよりも計算があるため、読みやすさと保守、`_Struct_size_bytes_`注釈。 `_Field_size_` サイズのバイトへの変換は必要ありません。 場合、バイト サイズは、唯一のオプションでは、たとえば、void ポインター フィールドの`_Field_size_bytes_`ことができます。 両方`_Struct_size_bytes_`と`_Field_size_`存在は、両方のツールを使用できます。 ツール、2 つの注釈に一致しない場合の対処方法。
+- `_Field_z_` は `_Null_terminated_` と同じです。  [名前] フィールドの `_Field_z_` は、名前フィールドが null で終わる文字列であることを指定します。
+- `_Field_range_` `bufferSize` の場合、`bufferSize` の値は1から `MaxBufferSize` (両方を含む) であることを指定します。
+- @No__t-0 および `_Field_size_` の注釈の最終的な結果は同等です。 同様のレイアウトを持つ構造体またはクラスの場合、`_Field_size_` は、同等の `_Struct_size_bytes_` の注釈よりも参照と計算が少なくなるため、読み取りと保守が簡単になります。 `_Field_size_` では、バイトサイズへの変換は必要ありません。 たとえば、void ポインターフィールドの場合など、バイトサイズが唯一のオプションである場合は、`_Field_size_bytes_` を使用できます。 @No__t-0 と `_Field_size_` の両方が存在する場合は、ツールで両方を使用できます。 2つの注釈が一致しない場合の対処方法は、ツールによって異なります。
 
 ## <a name="see-also"></a>関連項目
 

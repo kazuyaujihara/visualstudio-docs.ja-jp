@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062411"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018423"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -27,7 +27,7 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 
 このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md)に移植された fxcop 規則の一覧には次のものが含まれます。
 
-ルール ID | Title
+ルール ID | [タイトル]
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | ジェネリック型の静的メンバーを宣言しません
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
@@ -67,10 +67,10 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable を正しく実装する
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外は public として設定する必要があります
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 予期しない場所に例外を発生させません
-CA1066 | 型{0}は Equals を\<オーバーライドするため、IEquatable T > を実装する必要があります
-CA1067 | IEquatable\<T > を実装するときに、object.equals (object) をオーバーライドします
+CA1066 | Type {0} は Equals をオーバーライドするため、IEquatable @ no__t-1T > を実装する必要があります
+CA1067 | IEquatable @ no__t-0T を実装する場合は、Object.equals (object) をオーバーライドしてください >
 [CA1068](ca1068.md) | CancellationToken パラメーターは最後に指定する必要があります
-CA1200 | プレフィックスで cref タグを使用しない
+CA1200 | プレフィックスで cref タグを使用しません
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | ローカライズされるパラメーターとしてリテラルを渡さない
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo を指定します
 [CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider を指定します
@@ -149,28 +149,28 @@ CA2010 | PreserveSigAttribute でマークされたメソッドによって返�
 [CA2242](ca2242-test-for-nan-correctly.md) | NaN に対して正しくテストします
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | 属性文字列リテラルは、正しく解析する必要があります
 CA2244 | インデックス付き要素の初期化を複製しない
-[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | 安全ではないデシリアライザー BinaryFormatter を使用しないでください
-[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | 最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください
-[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します
-[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md) | 安全ではないデシリアライザー LosFormatter を使用しないでください
-[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md) | 安全ではないデシリアライザー NetDataContractSerializer を使用しないでください
-[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) | 最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください
-[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md) | NetDataContractSerializer.Binder を設定してから逆シリアル化してください
-[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md) | 安全ではないデシリアライザー ObjectStateFormatter を使用しないでください
+[CA2300](ca2300.md) | 安全ではないデシリアライザー BinaryFormatter を使用しないでください
+[CA2301](ca2301.md) | 最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください
+[CA2302](ca2302.md) | BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します
+[CA2305](ca2305.md) | 安全ではないデシリアライザー LosFormatter を使用しないでください
+[CA2310](ca2310.md) | 安全ではないデシリアライザー NetDataContractSerializer を使用しないでください
+[CA2311](ca2311.md) | 最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください
+[CA2312](ca2312.md) | NetDataContractSerializer.Binder を設定してから逆シリアル化してください
+[CA2315](ca2315.md) | 安全ではないデシリアライザー ObjectStateFormatter を使用しないでください
 [CA2321](ca2321.md) | SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください
 [CA2322](ca2322.md) | 逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください
-[CA3001](ca3001-review-code-for-sql-injection-vulnerabilities.md) | SQL インジェクションの脆弱性のコード レビュー
-[CA3002](ca3002-review-code-for-xss-vulnerabilities.md) | XSS の脆弱性のコード レビュー
-[CA3003](ca3003-review-code-for-file-path-injection-vulnerabilities.md) | ファイル パス インジェクションの脆弱性のコード レビュー
-[CA3004](ca3004-review-code-for-information-disclosure-vulnerabilities.md) | 情報漏えいの脆弱性のコード レビュー
-[CA3005](ca3005-review-code-for-ldap-injection-vulnerabilities.md) | LDAP インジェクションの脆弱性のコード レビュー
-[CA3006](ca3006-review-code-for-process-command-injection-vulnerabilities.md) | プロセス コマンド インジェクションの脆弱性のコード レビュー
-[CA3007](ca3007-review-code-for-open-redirect-vulnerabilities.md) | オープン リダイレクトの脆弱性のコード レビュー
-[CA3008](ca3008-review-code-for-xpath-injection-vulnerabilities.md) | XPath インジェクションの脆弱性のコード レビュー
-[CA3009](ca3009-review-code-for-xml-injection-vulnerabilities.md) | XML インジェクションの脆弱性のコード レビュー
-[CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | XAML インジェクションの脆弱性のコード レビュー
-[CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | DLL インジェクションの脆弱性のコード レビュー
-[CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | RegEx インジェクションの脆弱性のコード レビュー
+[CA3001](ca3001.md) | SQL インジェクションの脆弱性のコード レビュー
+[CA3002](ca3002.md) | XSS の脆弱性のコード レビュー
+[CA3003](ca3003.md) | ファイル パス インジェクションの脆弱性のコード レビュー
+[CA3004](ca3004.md) | 情報漏えいの脆弱性のコード レビュー
+[CA3005](ca3005.md) | LDAP インジェクションの脆弱性のコード レビュー
+[CA3006](ca3006.md) | プロセス コマンド インジェクションの脆弱性のコード レビュー
+[CA3007](ca3007.md) | オープン リダイレクトの脆弱性のコード レビュー
+[CA3008](ca3008.md) | XPath インジェクションの脆弱性のコード レビュー
+[CA3009](ca3009.md) | XML インジェクションの脆弱性のコード レビュー
+[CA3010](ca3010.md) | XAML インジェクションの脆弱性のコード レビュー
+[CA3011](ca3011.md) | DLL インジェクションの脆弱性のコード レビュー
+[CA3012](ca3012.md) | RegEx インジェクションの脆弱性のコード レビュー
 CA3061 | URL でスキーマを追加しない
 [CA3075](ca3075-insecure-dtd-processing.md) | XML での DTD 処理が安全ではありません
 [CA3076](ca3076-insecure-xslt-script-execution.md) | 安全ではない XSLT スクリプトの処理。
@@ -337,7 +337,7 @@ CA9999 | アナライザーのバージョンが一致しません
 - [CA2210](ca2210-assemblies-should-have-valid-strong-names.md)
 - [CA2220](ca2220-finalizers-should-call-base-class-finalizer.md)
 - [CA2221](ca2221-finalizers-should-be-protected.md)
-- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md)([理由](https://github.com/dotnet/roslyn-analyzers/issues/1378))
+- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md) ([ジャスティフィケーション](https://github.com/dotnet/roslyn-analyzers/issues/1378))
 - [CA2223](ca2223-members-should-differ-by-more-than-return-type.md)
 - [CA2228: 未公開](ca2228-do-not-ship-unreleased-resource-formats.md)
 - [CA2230](ca2230-use-params-for-variable-arguments.md)

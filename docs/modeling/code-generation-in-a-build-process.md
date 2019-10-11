@@ -13,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d61a5bcd530afb951f98f84f1f4e38e36f96d6
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533300"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163117"
 ---
-# <a name="code-generation-in-a-build-process"></a>ビルドプロセスでのコード生成
+# <a name="invoke-text-transformation-in-the-build-process"></a>ビルド処理でのテキスト変換の呼び出し
 
 [テキスト変換](../modeling/code-generation-and-t4-text-templates.md)は、Visual Studio ソリューションの[ビルド プロセス](/azure/devops/pipelines/index)の一部として呼び出すことができます。 テキスト変換に特化したビルド タスクがあります。 T4 ビルド タスクはデザイン時テキスト テンプレートを実行し、また、実行時 (前処理済み) テキスト テンプレートをコンパイルします。
 
@@ -32,30 +32,26 @@ ms.locfileid: "68533300"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[ビルド サーバー](/azure/devops/pipelines/agents/agents)を Visual Studio がインストールされていないコンピューター上で、実行している場合、開発用コンピューターからビルド コンピューターに次のファイルをコピーします。 '*' を、最新のバージョン番号に置き換えてください。
+Visual Studio がインストールされていないコンピューターで[ビルドサーバー](/azure/devops/pipelines/agents/agents)を実行する場合は、開発用コンピューターからビルドコンピューターに次のファイルをコピーします。
 
-- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
-
+  - VisualStudio. 15.0. .dll....
   - Microsoft.TextTemplating.Build.Tasks.dll
-
   - Microsoft.TextTemplating.targets
 
-- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - VisualStudio. 15.0 (.dll)
+  - VisualStudio. 15.0. .dll...
+  - VisualStudio. Vshost.exe. 15.0.
 
-  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (複数のファイル)
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
-
-- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
-
-  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - VisualStudio. 15.0... テンプレート.
   
 > [!TIP]
-> ビルドサーバーで textcodebuild ターゲットを実行しているときに、Microsoft codeanalysis メソッドのを`MissingMethodException`取得した場合は、roslyn アセンブリが、ビルド実行可能ファイルと同じディレクトリにある*roslyn*という名前のディレクトリにあることを確認してください (たとえば、*msbuild.exe*)。
+> ビルドサーバーで TextTemplating ビルドターゲットを実行するときに、Microsoft CodeAnalysis メソッドの @no__t 0 を取得した場合、Roslyn アセンブリが、ビルド実行可能ファイルと同じディレクトリにある*roslyn*という名前のディレクトリにあることを確認してください (例 *:msbuild.exe*)。
 
 ## <a name="edit-the-project-file"></a>プロジェクト ファイルを編集する
 
@@ -75,18 +71,21 @@ ms.locfileid: "68533300"
 
 この行の後に、テキスト テンプレートのインポートを挿入します。
 
-```xml
-<!-- Optionally make the import portable across VS versions -->
-  <PropertyGroup>
-    <!-- Get the Visual Studio version: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
-    <!-- Keep the next element all on one line: -->
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
+::: moniker range=">=vs-2019"
 
-<!-- This is the important line: -->
-  <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
+```
+
+::: moniker-end
 
 ## <a name="transform-templates-in-a-build"></a>ビルド内のテンプレートの変換
 
@@ -165,7 +164,7 @@ TransformFile ではワイルドカードを使用できます。
 
 `AfterTransform` では、ファイルのリストを参照できます。
 
-- GeneratedFiles: 処理中に出力されたファイルのリスト。 既存の読み取り専用ファイルを上書きしたファイルの`%(GeneratedFiles.ReadOnlyFileOverwritten)`場合、は true になります。 これらのファイルは、ソース管理からチェックアウトできます。
+- GeneratedFiles: 処理中に出力されたファイルのリスト。 既存の読み取り専用ファイルを上書きしたファイルについては、`%(GeneratedFiles.ReadOnlyFileOverwritten)` が true になります。 これらのファイルは、ソース管理からチェックアウトできます。
 
 - NonGeneratedFiles: 上書きされなかった読み取り専用ファイルのリスト。
 
@@ -185,7 +184,7 @@ TransformFile ではワイルドカードを使用できます。
 </ItemGroup>
 ```
 
-リダイレクト先として便利な`$(IntermediateOutputPath)`フォルダーはです。
+リダイレクト先として便利なフォルダーは `$(IntermediateOutputPath)` です。
 
 出力ファイル名を指定した場合は、テンプレートの output ディレクティブで指定されている拡張子よりも優先されます。
 
@@ -255,11 +254,11 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` は、MSBuild を使用する場合に限り、`T4ParameterValues` からデータを取得します。 Visual Studio を使用してテンプレートを変換すると、パラメーターには既定値が設定されます。
 
-## <a name="msbuild"></a> assembly および include ディレクティブで、プロジェクトのプロパティを使用する
+## <a name="msbuild"></a>アセンブリおよびインクルードディレクティブでのプロジェクトプロパティの使用
 
-Visual Studio のマクロ **$ (solutiondir)** などは、MSBuild では動作しません。 その代わりに、プロジェクト プロパティを使用できます。
+**$ (Solutiondir)** などの Visual Studio マクロは、MSBuild では動作しません。 その代わりに、プロジェクト プロパティを使用できます。
 
-*.csproj*または *.vbproj* ファイルを編集して、プロジェクト プロパティを定義します。 次の例は、**myLibFolder**という名前のプロパティを定義します。
+*.Csproj*ファイルまたは *.vbproj*ファイルを編集して、プロジェクトのプロパティを定義します。 この例では、 **Mylibfolder**という名前のプロパティを定義します。
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -286,11 +285,11 @@ Visual Studio のマクロ **$ (solutiondir)** などは、MSBuild では動作�
 
 ## <a name="q--a"></a>Q & A
 
-**ビルドサーバーでテンプレートを変換する理由コードをチェックインする前に、Visual Studio で既にテンプレートを変換しました。**
+@no__t、ビルドサーバーでテンプレートを変換する理由を教えてください。コードをチェックインする前に Visual Studio でテンプレートを変換しました。 **
 
 インクルードファイルまたはテンプレートによって読み取られた別のファイルを更新すると、Visual Studio はファイルを自動的に変換しません。 ビルドの一部としてテンプレートを変換するなら、すべてが最新の状態です。
 
-**テキスト テンプレート変換には、その他のオプションがありますか。**
+**テキストテンプレートを変換するためのオプションは他にありますか。**
 
 - [Texttransform ユーティリティ](../modeling/generating-files-with-the-texttransform-utility.md)は、コマンドスクリプトで使用できます。 ほとんどの場合、MSBuild を使用する方が簡単です。
 
@@ -298,19 +297,19 @@ Visual Studio のマクロ **$ (solutiondir)** などは、MSBuild では動作�
 
 - [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)は、Visual Studio によって変換されます。
 
-- [実行時テキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)は、アプリケーションでの実行時に変換されます。
+- [実行時のテキストテンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)は、実行時にアプリケーションで変換されます。
 
 ## <a name="see-also"></a>関連項目
 
 ::: moniker range="vs-2017"
 
-- *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*の T4 MSbuild テンプレートには、適切なガイダンスがあります。
+- @No__t での T4 MSbuild テンプレートには、適切なガイダンスがあります。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*の T4 MSbuild テンプレートには、適切なガイダンスがあります。
+- @No__t での T4 MSbuild テンプレートには、適切なガイダンスがあります。
 
 ::: moniker-end
 

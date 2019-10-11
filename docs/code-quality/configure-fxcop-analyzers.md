@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186396"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172792"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
 [Fxcop アナライザーパッケージ](install-fxcop-analyzers.md)は、.NET Compiler Platform ベースのコードアナライザーに変換されたレガシ分析から最も重要な "fxcop" 規則で構成されています。 特定の FxCop 規則については、[構成可能なオプション](fxcop-analyzer-options.md)を使用して、コードベースのどの部分を適用するかを調整できます。 各オプションは、キーと値のペアを[Editorconfig](https://editorconfig.org)ファイルに追加することによって指定します。 構成ファイルは、[プロジェクトに固有](#per-project-configuration)のものもあれば、2つ以上のプロジェクト間で[共有](#shared-configuration)することもできます。
 
 > [!TIP]
-> Editorconfig ファイルをプロジェクトに追加するには、**ソリューションエクスプローラー**でプロジェクトを右クリックし、[**新しい項目**の**追加** > ] を選択します。 **[新しい項目の追加]** ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 **[Editorconfig ファイル (既定)]** テンプレートを選択し、 **[追加]** を選択します。
+> **ソリューションエクスプローラー**でプロジェクトを右クリックし、@no__t の **[追加]** **[新しい項目]** の順に選択して、プロジェクトに editorconfig ファイルを追加します。 **[新しい項目の追加]** ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 **[Editorconfig ファイル (既定)]** テンプレートを選択し、 **[追加]** を選択します。
 >
 > ![Visual Studio で editorconfig ファイルをプロジェクトに追加する](media/add-editorconfig-file.png)
 
 ::: moniker range=">=vs-2019"
 
-規則の重要度の構成 (エラーや警告など) については、「 [EditorConfig ファイルで規則の重要度を設定](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)する」を参照してください。 または、組み込みの[規則セット](analyzer-rule-sets.md)のいずれかを選択して、規則のカテゴリをすばやく有効または無効にすることができます。
+規則の重要度の構成 (エラーや警告など) については、「 [EditorConfig ファイルで規則の重要度を設定](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)する」を参照してください。 または、組み込みの[Editorconfig ファイルまたはルールセット](analyzer-rule-sets.md)の1つを選択して、ルールのカテゴリをすばやく有効または無効にすることができます。
 
 ::: moniker-end
 

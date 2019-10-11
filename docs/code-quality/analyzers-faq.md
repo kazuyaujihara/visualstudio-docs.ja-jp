@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 12e6681490c6c933369d3fef064ec88f240e3a99
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999978"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172772"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -24,24 +24,30 @@ ms.locfileid: "71999978"
 
 **Q**:コードのスタイルを確認するためにコード分析または EditorConfig を使用する必要がありますか。
 
-**A**:コード分析と EditorConfig ファイルは手動で機能します。 [EditorConfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用して、 [FxCop](configure-fxcop-analyzers.md)アナライザーなどの一部の NuGet アナライザーパッケージを構成することもできます。
+**A**:コード分析と EditorConfig ファイルは手動で機能します。 [EditorConfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用すると、アナライザーの規則を有効または無効にすることができます。また、 [FxCop](configure-fxcop-analyzers.md)アナライザーなどの一部の NuGet アナライザーパッケージを構成することもできます。
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig とルールセット
 
 **Q**:規則セットまたは EditorConfig ファイルを使用してアナライザーを構成する必要がありますか。
 
-**A**:規則セットと EditorConfig ファイルは共存させることができ、どちらもアナライザーの構成に使用できます。 規則[セット](analyzer-rule-sets.md)を使用すると、規則を有効または無効にし、その重要度を設定できます。 EditorConfig ファイルには、ルールを構成するための他の方法が用意されています。 FxCop アナライザーでは、EditorConfig ファイルを使用して、[分析するコードの種類を定義](fxcop-analyzer-options.md)できます。 Visual Studio に組み込まれているコードスタイルアナライザーの場合、EditorConfig ファイルを使用すると、コードベースに[適したコードスタイルを定義](../ide/editorconfig-code-style-settings-reference.md)できます。
+**A**:規則セットと EditorConfig ファイルは共存させることができ、どちらもアナライザーの構成に使用できます。 EditorConfig ファイルとルールセットの両方を使用して、ルールを有効または無効にしたり、その重要度を設定したりできます。
+
+ただし、EditorConfig ファイルでは、ルールを構成するための追加の方法が提供されるようになります。
+
+- FxCop アナライザーでは、EditorConfig ファイルを使用して、[分析するコードの種類を定義](fxcop-analyzer-options.md)できます。
+- Visual Studio に組み込まれているコードスタイルアナライザーの場合、EditorConfig ファイルを使用すると、コードベースに[適したコードスタイルを定義](../ide/editorconfig-code-style-settings-reference.md)できます。
 
 規則セットと EditorConfig ファイルに加えて、一部のアナライザーは、 C#および VB コンパイラの[追加ファイル](../ide/build-actions.md#build-action-values)としてマークされたテキストファイルを使用して構成されます。
 
 > [!NOTE]
-> EditorConfig ファイルを使用してレガシ分析を構成することはできませんが、ルールセットはできます。
+> - EditorConfig ファイルは、Visual Studio 2019 バージョン16.3 以降でルールを有効にし、重要度を設定するためにのみ使用できます。
+> - EditorConfig ファイルを使用してレガシ分析を構成することはできませんが、ルールセットはできます。
 
 ## <a name="code-analysis-in-ci-builds"></a>CI ビルドでのコード分析
 
 **Q**:.NET Compiler Platform ベースのコード分析は、継続的インテグレーション (CI) ビルドで動作しますか。
 
-**A**:可能。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、[規則セット](analyzer-rule-sets.md)と[editorconfig ファイル](configure-fxcop-analyzers.md)の両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
+**A**:可能。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、規則セットと EditorConfig ファイルの両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE アナライザーと StyleCop
 

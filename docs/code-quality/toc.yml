@@ -33,7 +33,7 @@
                   href: configure-fxcop-analyzers.md
                 - name: スコープ オプション
                   href: fxcop-analyzer-options.md
-                - name: 定義済みの規則セット
+                - name: ルールのカテゴリを有効にする
                   href: analyzer-rule-sets.md
             - name: よくあるご質問
               href: fxcop-analyzers-faq.md
@@ -157,7 +157,7 @@
           href: how-to-generate-code-metrics-data.md
         - name: コード メトリックス データの操作
           href: working-with-code-metrics-data.md
-    - name: 関連項目
+    - name: 参照
       items:
         - name: 規則セット
           items:
@@ -532,30 +532,30 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900:値型フィールドはポータブルでなければなりません'
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: 'CA1903:対象のフレームワークから API のみを使用します'
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: 信頼性に関する警告
               items:
                 - name: 概要
                   displayName: reliability warnings
                   href: reliability-warnings.md
                 - name: 'CA2000:スコープを失う前にオブジェクトを破棄'
-                  href: ca2000-dispose-objects-before-losing-scope.md
+                  href: ca2000.md
                 - name: 'CA2001:問題が発生する可能性のあるメソッドは呼び出しません'
-                  href: ca2001-avoid-calling-problematic-methods.md
+                  href: ca2001.md
                 - name: 'CA2002:弱い ID を伴うオブジェクト上でロックしません'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                  href: ca2002.md
                 - name: 'CA2003:ファイバーをスレッドとして扱いません'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
+                  href: ca2003.md
                 - name: 'CA2004:GC.KeepAlive への呼び出しを削除します'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
+                  href: ca2004.md
                 - name: 'CA2006:SafeHandle を使用して、ネイティブ リソースを要約します'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                  href: ca2006.md
                 - name: 'CA2007:タスクを直接待機しないでください'
-                  href: ca2007-do-not-directly-await-task.md
+                  href: ca2007.md
             - name: セキュリティの警告
               items:
                 - name: 概要
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: C/C++ コード分析による障害の検出
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: デモのサンプル
+    - name: サンプル プロジェクト
       href: demo-sample.md
     - name: C++ Core ガイドライン チェッカーの使用
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: C++ コードの規則セット
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Clang-Tidy を使用する
+      href: clang-tidy.md
     - name: SAL 注釈を使用してコード障害を減らす
       items:
         - name: 概要
