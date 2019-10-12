@@ -562,95 +562,95 @@
                   displayName: security warnings
                   href: security-warnings.md
                 - name: 'CA2100:SQL クエリのセキュリティ脆弱性を確認'
-                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                  href: ca2100.md
                 - name: 'CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします'
-                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                  href: ca2102.md
                 - name: 'CA2103:命令型のセキュリティを確認します'
-                  href: ca2103-review-imperative-security.md
+                  href: ca2103.md
                 - name: 'CA2104:読み取り専用の変更可能な参照型を宣言しません'
-                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                  href: ca2104.md
                 - name: 'CA2105:配列フィールドを読み取り専用にすることはできません'
-                  href: ca2105-array-fields-should-not-be-read-only.md
+                  href: ca2105.md
                 - name: 'CA2106:アサートをセキュリティで保護します'
-                  href: ca2106-secure-asserts.md
+                  href: ca2106.md
                 - name: 'CA2107:拒否および許可のみの使用を確認します'
-                  href: ca2107-review-deny-and-permit-only-usage.md
+                  href: ca2107.md
                 - name: 'CA2108:値型での宣言セキュリティを確認します'
-                  href: ca2108-review-declarative-security-on-value-types.md
+                  href: ca2108.md
                 - name: 'CA2109:表示するイベント ハンドラーを確認します'
-                  href: ca2109-review-visible-event-handlers.md
+                  href: ca2109.md
                 - name: 'CA2111:ポインターは参照可能にすることはできません'
-                  href: ca2111-pointers-should-not-be-visible.md
+                  href: ca2111.md
                 - name: 'CA2112:セキュリティで保護された型はフィールドを公開してはなりません'
-                  href: ca2112-secured-types-should-not-expose-fields.md
+                  href: ca2112.md
                 - name: 'CA2114:メソッド セキュリティは型のスーパーセットでなければなりません'
-                  href: ca2114-method-security-should-be-a-superset-of-type.md
+                  href: ca2114.md
                 - name: 'CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します'
-                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                  href: ca2115.md
                 - name: 'CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます'
-                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                  href: ca2116.md
                 - name: 'CA2117:APTCA 型は APTCA 基本型のみを拡張することができます'
-                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                  href: ca2117.md
                 - name: 'CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください'
-                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                  href: ca2118.md
                 - name: 'CA2119:プライベート インターフェイスを満たすメソッドをシールします'
-                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                  href: ca2119.md
                 - name: 'CA2120:シリアル化コンストラクターをセキュリティで保護します'
-                  href: ca2120-secure-serialization-constructors.md
+                  href: ca2120.md
                 - name: 'CA2121:静的コンストラクターはプライベートでなければなりません'
-                  href: ca2121-static-constructors-should-be-private.md
+                  href: ca2121.md
                 - name: 'CA2122:リンク要求を含むメソッドを間接的に公開しません'
-                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                  href: ca2122.md
                 - name: 'CA2123:オーバーライドのリンク要求はベースと同一でなければなりません'
-                  href: ca2123-override-link-demands-should-be-identical-to-base.md
+                  href: ca2123.md
                 - name: 'CA2124:脆弱性のある finally 句を外側の try でラップします'
-                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                  href: ca2124.md
                 - name: 'CA2126:型のリンク要求には継承要求が必要です'
-                  href: ca2126-type-link-demands-require-inheritance-demands.md
+                  href: ca2126.md
                 - name: 'CA2130:セキュリティ上重要な定数は透過的である必要がある'
-                  href: ca2130-security-critical-constants-should-be-transparent.md
+                  href: ca2130.md
                 - name: 'CA2131:セキュリティ上重要な型は型等価性に参加してはならない'
-                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                  href: ca2131.md
                 - name: 'CA2132:既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要'
-                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                  href: ca2132.md
                 - name: 'CA2133:デリゲートは透過性の整合がとれたメソッドにバインドする必要がある'
-                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                  href: ca2133.md
                 - name: 'CA2134:メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある'
-                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                  href: ca2134.md
                 - name: 'CA2135:レベル 2 のアセンブリは LinkDemand を含んではならない'
-                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                  href: ca2135.md
                 - name: 'CA2136:メンバーには、透過性注釈の競合があってはならない'
-                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                  href: ca2136.md
                 - name: 'CA2137:透過的メソッドは、検証可能な IL のみを含まなければならない'
-                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                  href: ca2137.md
                 - name: 'CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない'
-                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                  href: ca2138.md
                 - name: 'CA2139:透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない'
-                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                  href: ca2139.md
                 - name: 'CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない'
-                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                  href: ca2140.md
                 - name: 'CA2141: 透過的メソッドは、LinkDemand を満たしてはならない'
-                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                  href: ca2141.md
                 - name: 'CA2142:透過的コードは、LinkDemand を使用して保護されてはならない'
-                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                  href: ca2142.md
                 - name: 'CA2143:透過的メソッドは、セキュリティ確認要求を使用してはならない'
-                  href: ca2143-transparent-methods-should-not-use-security-demands.md
+                  href: ca2143.md
                 - name: 'CA2144:透過的コードは、バイト配列からアセンブリを読み込んではならない'
-                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                  href: ca2144.md
                 - name: 'CA2145:透過的メソッドを SuppressUnmanagedCodeSecurityAttribute で修飾してはならない'
-                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                  href: ca2145.md
                 - name: 'CA2146:型は、基本型およびインターフェイスと同程度以上、重要でなければならない'
-                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                  href: ca2146.md
                 - name: 'CA2147:透過コードは、セキュリティ アサートを使用してはならない'
-                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                  href: ca2147.md
                 - name: 'CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない'
-                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                  href: ca2149.md
                 - name: 'CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります'
-                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                  href: ca2151.md
                 - name: CA5122 P/Invoke 宣言をセーフ クリティカルにしないでください
-                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                  href: ca5122.md
                 - name: 'CA2153:破損状態例外の処理を回避する'
-                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                  href: ca2153.md
                 - name: 'CA2300:安全ではないデシリアライザー BinaryFormatter を使用しないでください'
                   href: ca2300.md
                 - name: 'CA2301:最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください'
@@ -708,13 +708,13 @@
                 - name: 'CA3061:URL でスキーマを追加しません'
                   href: ca3061.md
                 - name: 'CA3075:安全ではない DTD の処理'
-                  href: ca3075-insecure-dtd-processing.md
+                  href: ca3075.md
                 - name: 'CA3076:安全ではない XSLT スクリプトの実行'
-                  href: ca3076-insecure-xslt-script-execution.md
+                  href: ca3076.md
                 - name: 'CA3077:API のデザイン、XML ドキュメント、および XML テキスト リーダーでの安全ではない処理'
-                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                  href: ca3077.md
                 - name: 'CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします'
-                  href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                  href: ca3147.md
                 - name: 'CA5361: 強力な暗号の SChannel の使用を無効にしません'
                   href: ca5361.md
                 - name: 'CA5363:要求の検証を無効にしません'
