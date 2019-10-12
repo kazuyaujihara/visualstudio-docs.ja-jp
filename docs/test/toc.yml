@@ -120,13 +120,13 @@
     - name: はじめに
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Live Unit Testing の新機能
+    - name: 新機能
       href: live-unit-testing-whats-new.md
-    - name: Live Unit Testing の概要
+    - name: 作業開始
       href: live-unit-testing-start.md
-    - name: Enterprise エディションで Live Unit Testing を使用する
+    - name: 構成と使用
       href: live-unit-testing.md
-    - name: Live Unit Testing に関する FAQ
+    - name: よくあるご質問
       href: live-unit-testing-faq.md
 - name: Web パフォーマンスおよびロード テスト
   items:
