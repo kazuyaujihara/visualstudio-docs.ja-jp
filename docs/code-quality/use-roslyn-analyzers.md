@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172803"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305673"
 ---
 # <a name="use-code-analyzers"></a>コードアナライザーを使用する
 
@@ -93,7 +93,7 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 
 1. プロジェクトの EditorConfig ファイルがまだない場合は、プロジェクトを[追加](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)します。
 
-2. 対応するファイル拡張子の下で、構成する各ルールのエントリを追加します。 たとえば、 [CA1822](ca1822-mark-members-as-static.md)の重大度をファイルのC# `error` に設定すると、エントリは次のようになります。
+2. 対応するファイル拡張子の下で、構成する各ルールのエントリを追加します。 たとえば、 [CA1822](ca1822.md)の重大度をファイルのC# `error` に設定すると、エントリは次のようになります。
 
    ```ini
    [*.cs]
@@ -229,7 +229,7 @@ Msbuild を使用してプロジェクトをビルドするときに、コマン
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-次の図は、アナライザーの規則違反を含むプロジェクトをビルドしたときのコマンドラインビルド出力を示しています。
+次のイメージは、アナライザー ルール違反を含むプロジェクトのビルドからのコマンドライン ビルド出力を示しています。
 
 ![ルール違反を示す MSBuild 出力](media/command-line-build-analyzers.png)
 

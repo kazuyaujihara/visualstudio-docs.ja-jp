@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 2602ad4c8f6ea3b5ca8d2b6f57c4148964b17a6c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585319"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305597"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>"混合推奨規則" 規則セット
 
@@ -20,7 +20,7 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 
 共通言語ランタイムをサポートするC++プロジェクト用に作成したカスタム規則セットに、この規則セットを含めます。
 
-|ルール|説明|
+|Rule|説明|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|初期化されていないメモリの使用|
 |[C6011](../code-quality/c6011.md)|Null ポインターの逆参照|
@@ -151,7 +151,7 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[C28020](../code-quality/c28020.md)|この呼び出しでは式が true ではありません|
 |[C28021](../code-quality/c28021.md)|注釈が付けられているパラメーターはポインターである必要があります|
 |[C28022](../code-quality/c28022.md)|この関数の関数クラスは、定義に使用された typedef の関数クラスと一致しません。|
-|[C28023](../code-quality/c28023.md)|割り当てられる、または渡される関数\_に\_は、少なくとも1つのクラスの関数クラス\_の注釈が必要です。|
+|[C28023](../code-quality/c28023.md)|割り当てられている、または渡される関数には、少なくとも1つのクラスに対して、@no__t 0Function @ no__t-1class @ no__t 注釈が必要です。|
 |[C28024](../code-quality/c28024.md)|割り当てられている関数ポインターには、function クラスで注釈が付けられています。関数クラスは、関数クラスのリストに含まれていません。|
 |[C28039](../code-quality/c28039.md)|実際のパラメーターの型は、型と完全に一致している必要があります|
 |[C28112](../code-quality/c28112.md)|インタロック関数を介してアクセスされる変数には、常にインタロックされた関数を介してアクセスする必要があります。|
@@ -169,14 +169,14 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[C28196](../code-quality/c28196.md)|要件が満たされていません。 (式は true に評価されません)|
 |[C28202](../code-quality/c28202.md)|静的でないメンバーへの参照が正しくありません|
 |[C28203](../code-quality/c28203.md)|クラス メンバーへのあいまいな参照です。|
-|[C28205](../code-quality/c28205.md)|\_無効\_な\_コンテキストで\_の成功または失敗時の\_使用|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 または \_On @ no__t-3failure @ no__t-4 無効なコンテキストで使用されています|
 |[C28206](../code-quality/c28206.md)|左側のオペランドは構造体をポイントするため、'-> ' を使用します|
 |[C28207](../code-quality/c28207.md)|左側のオペランドは構造体であるため、'.' を使用します|
 |[C28209](../code-quality/c28209.md)|シンボルの宣言に競合する宣言があります。|
 |[C28210](../code-quality/c28210.md)|__on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません|
 |[C28211](../code-quality/c28211.md)|SAL_context には静的コンテキスト名が必要です|
 |[C28212](../code-quality/c28212.md)|注釈にはポインター式が必要です|
-|[C28213](../code-quality/c28213.md)|以前\_の宣言\_を\_変更せずに参照するには、宣言注釈を使用\_する注釈を使用する必要があります。|
+|[C28213](../code-quality/c28213.md)|前の宣言を変更せずに参照するには、@no__t 0Use @ no__t-1/3 注釈 @ no__t を使用する必要があります。|
 |[C28214](../code-quality/c28214.md)|属性パラメーター名は、p1...p9 である必要があります|
 |[C28215](../code-quality/c28215.md)|typefix は、既に typefix のあるパラメーターには適用できません|
 |[C28216](../code-quality/c28216.md)|checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。|
@@ -219,7 +219,7 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[C28267](../code-quality/c28267.md)|注釈での構文エラーが、関数の注釈で見つかりました。|
 |[C28272](../code-quality/c28272.md)|検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません|
 |[C28273](../code-quality/c28273.md)|関数について、手がかりには関数宣言との一貫性がありません。|
-|[C28275](../code-quality/c28275.md)|マクロ\_\_値へのパラメーターがnullです\_|
+|[C28275](../code-quality/c28275.md)|パラメーター \_Macro @ no__t-1value @ no__t は null です。|
 |[C28279](../code-quality/c28279.md)|シンボルについて、'begin' はありましたが、対応する 'end' がありません|
 |[C28280](../code-quality/c28280.md)|シンボルについて、'end' はありましたが、対応する 'begin' がありません|
 |[C28282](../code-quality/c28282.md)|書式指定文字列は、前提条件の中に存在する必要があります|
@@ -257,7 +257,7 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 参照可能な型の基本型は COM 参照可能でなければなりません|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 登録メソッドは一致しなければなりません|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke を正しく宣言します|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|空のファイナライザーを削除します|
+|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|値型フィールドはポータブルでなければなりません|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣言はポータブルでなければなりません|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|弱い ID を伴うオブジェクト上でロックしません|

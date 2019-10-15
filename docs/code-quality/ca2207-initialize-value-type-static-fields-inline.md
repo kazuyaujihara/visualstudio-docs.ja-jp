@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f579b6776ffab6d0ed3b2e216e29d36d2065ee
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 695f15c73120f766157fabb09193d32115dda588
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231700"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305932"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207:値型のスタティック フィールドのインラインを初期化します
 
@@ -34,9 +34,9 @@ ms.locfileid: "71231700"
 値型は、明示的な静的コンストラクターを宣言します。
 
 ## <a name="rule-description"></a>規則の説明
-値型が宣言されている場合、すべての値型フィールドがゼロに設定され、すべての参照型フィールドが ( `null` `Nothing` Visual Basic) に設定されている既定の初期化が行われます。 明示的な静的コンストラクターは、その型のインスタンスコンストラクターまたは静的メンバーが呼び出される前にのみ実行されることが保証されます。 したがって、インスタンスコンストラクターを呼び出さずに型が作成された場合、静的コンストラクターの実行は保証されません。
+値型が宣言されている場合、すべての値型フィールドがゼロに設定され、すべての参照型フィールドが `null` (Visual Basic の `Nothing`) に設定されている場合、既定の初期化が行われます。 明示的な静的コンストラクターは、その型のインスタンスコンストラクターまたは静的メンバーが呼び出される前にのみ実行されることが保証されます。 したがって、インスタンスコンストラクターを呼び出さずに型が作成された場合、静的コンストラクターの実行は保証されません。
 
-すべての静的データがインラインで初期化され、明示的な静的コンストラクター C#が宣言されて`beforefieldinit`いない場合、および Visual Basic コンパイラは、このフラグを MSIL クラス定義に追加します。 コンパイラは、静的初期化コードを含むプライベートな静的コンストラクターも追加します。 このプライベート静的コンストラクターは、型の静的フィールドにアクセスする前に実行することが保証されています。
+すべての静的データがインラインで初期化され、明示的な静的コンストラクター C#が宣言されていない場合、および Visual Basic コンパイラは、MSIL クラス定義に `beforefieldinit` フラグを追加します。 コンパイラは、静的初期化コードを含むプライベートな静的コンストラクターも追加します。 このプライベート静的コンストラクターは、型の静的フィールドにアクセスする前に実行することが保証されています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 この規則違反を修正するには、宣言時にすべての静的データを初期化し、静的コンストラクターを削除します。
@@ -45,4 +45,4 @@ ms.locfileid: "71231700"
 この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連するルール
-[CA1810参照型の静的フィールドをインラインで初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+[CA1810:参照型の静的フィールドを初期化します。インライン @ no__t-0

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585011"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305461"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "基本正確性規則" 規則セット
 
@@ -21,7 +21,7 @@ ms.locfileid: "69585011"
 
 次の表では、Microsoft の基本的な正確性規則の規則セットに含まれるすべての規則について説明します。
 
-|ルール|説明|
+|Rule|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|
@@ -40,7 +40,7 @@ ms.locfileid: "69585011"
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 参照可能な型の基本型は COM 参照可能でなければなりません|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 登録メソッドは一致しなければなりません|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke を正しく宣言します|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|空のファイナライザーを削除します|
+|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|値型フィールドはポータブルでなければなりません|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣言はポータブルでなければなりません|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|弱い ID を伴うオブジェクト上でロックしません|
@@ -89,10 +89,10 @@ ms.locfileid: "69585011"
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|オーバーロードする加算および減算で、演算子 equals をオーバーロードします|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|ローカライズされるパラメーターとしてリテラルを渡さない|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|文字列を大文字に標準化します|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|メソッドの結果を無視しない|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC.SuppressFinalize を正しく呼び出します|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|プロパティは、配列を返すことはできません|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|文字列の長さを使用して空の文字列をテストします|
+|[CA1806](../code-quality/ca1806.md)|メソッドの結果を無視しない|
+|[CA1816](../code-quality/ca1816.md)|GC.SuppressFinalize を正しく呼び出します|
+|[CA1819](../code-quality/ca1819.md)|プロパティは、配列を返すことはできません|
+|[CA1820](../code-quality/ca1820.md)|文字列の長さを使用して空の文字列をテストします|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|対象のフレームワークから API のみを使用します|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|GC.KeepAlive への呼び出しを削除します|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|SafeHandle を使用して、ネイティブ リソースを要約します|

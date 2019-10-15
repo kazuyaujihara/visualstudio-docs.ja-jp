@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 3ad443a149b1c3a49c4bbbc260a4121d0a721aed
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585071"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305828"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
 
@@ -23,7 +23,7 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 
 次の表では、"Microsoft 拡張デザインガイドライン規則" 規則セット内のすべての規則について説明します。
 
-|ルール|説明|
+|Rule|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|
@@ -42,7 +42,7 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 参照可能な型の基本型は COM 参照可能でなければなりません|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 登録メソッドは一致しなければなりません|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke を正しく宣言します|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|空のファイナライザーを削除します|
+|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|値型フィールドはポータブルでなければなりません|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣言はポータブルでなければなりません|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|弱い ID を伴うオブジェクト上でロックしません|
@@ -138,19 +138,19 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|メソッドの実装を複雑にしすぎないでください|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|識別子は、大文字と小文字の区別以外にも相違していなければなりません|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|識別子はキーワードと同一にすることはできません|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|使用されていないパラメーターの確認|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|使用されていないローカルを削除します|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|ローカルを使用しすぎないでください|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|参照型の静的フィールドをインラインで初期化します|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|呼び出されていないプライベート コードを使用しません|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|インスタンス化されていない内部クラスを使用しません|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|アンシールド属性を使用しません|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|複数次元の配列ではなくジャグ配列を使用します|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|equals および operator equals を値型でオーバーライドします|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|プロパティは、配列を返すことはできません|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|文字列の長さを使用して空の文字列をテストします|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|メンバーを static に設定します|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|使用されていないプライベート フィールドを使用しません|
+|[CA1801](../code-quality/ca1801.md)|使用されていないパラメーターの確認|
+|[CA1804](../code-quality/ca1804.md)|使用されていないローカルを削除します|
+|[CA1809](../code-quality/ca1809.md)|ローカルを使用しすぎないでください|
+|[CA1810](../code-quality/ca1810.md)|参照型の静的フィールドをインラインで初期化します|
+|[CA1811](../code-quality/ca1811.md)|呼び出されていないプライベート コードを使用しません|
+|[CA1812](../code-quality/ca1812.md)|インスタンス化されていない内部クラスを使用しません|
+|[CA1813](../code-quality/ca1813.md)|アンシールド属性を使用しません|
+|[CA1814](../code-quality/ca1814.md)|複数次元の配列ではなくジャグ配列を使用します|
+|[CA1815](../code-quality/ca1815.md)|equals および operator equals を値型でオーバーライドします|
+|[CA1819](../code-quality/ca1819.md)|プロパティは、配列を返すことはできません|
+|[CA1820](../code-quality/ca1820.md)|文字列の長さを使用して空の文字列をテストします|
+|[CA1822](../code-quality/ca1822.md)|メンバーを static に設定します|
+|[CA1823](../code-quality/ca1823.md)|使用されていないプライベート フィールドを使用しません|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|予約された例外の種類を発生させません|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Win32 API に相当するマネージド API を使用します|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|引数の例外を正しくインスタンス化します|

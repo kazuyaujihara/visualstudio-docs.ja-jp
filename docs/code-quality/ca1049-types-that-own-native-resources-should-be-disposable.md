@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef7b72eade7ea8e4486d5c317c06026bb4d0b95f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235740"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306120"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません
 
@@ -35,32 +35,32 @@ ms.locfileid: "71235740"
 
 ## <a name="cause"></a>原因
 
-型が<xref:System.IntPtr?displayProperty=fullName>フィールド<xref:System.UIntPtr?displayProperty=fullName> 、フィールド、または<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>フィールドを参照していますが、 <xref:System.IDisposable?displayProperty=fullName>を実装していません。
+型は @no__t 0 フィールド、@no__t 1 フィールド、または <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> フィールドを参照しますが、<xref:System.IDisposable?displayProperty=fullName> を実装していません。
 
 ## <a name="rule-description"></a>規則の説明
 
-この規則は、 <xref:System.IntPtr>、 <xref:System.UIntPtr>、 <xref:System.Runtime.InteropServices.HandleRef>の各フィールドがアンマネージリソースへのポインターを格納していることを前提としています。 アンマネージリソースを割り当てる型は<xref:System.IDisposable> 、を実装して、呼び出し元が必要に応じてリソースを解放し、リソースを保持するオブジェクトの有効期間を短縮できるようにする必要があります。
+このルールでは、<xref:System.IntPtr>、<xref:System.UIntPtr>、および <xref:System.Runtime.InteropServices.HandleRef> の各フィールドにアンマネージリソースへのポインターが格納されていることを前提としています。 アンマネージリソースを割り当てる型は @no__t 0 を実装して、呼び出し元が必要に応じてリソースを解放し、リソースを保持するオブジェクトの有効期間を短縮できるようにする必要があります。
 
-アンマネージリソースをクリーンアップするために推奨される設計パターンは、 <xref:System.Object.Finalize%2A?displayProperty=fullName>メソッド<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>とメソッドを使用して、これらのリソースを解放するための暗黙的な方法と明示的な手段の両方を提供することです。 ガベージコレクターは、オブジェクト<xref:System.Object.Finalize%2A>が到達できなくなったと判断した後、一定の時間内にオブジェクトのメソッドを呼び出します。 が<xref:System.Object.Finalize%2A>呼び出された後、オブジェクトを解放するには、追加のガベージコレクションが必要です。 <xref:System.IDisposable.Dispose%2A>メソッドを使用すると、呼び出し元は、リソースがガベージコレクターに残されている場合に解放されるより前に、リソースを明示的に解放することができます。 アンマネージリソースをクリーンアップした後<xref:System.IDisposable.Dispose%2A> 、は<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>メソッドを呼び出して、呼び出しが不要に<xref:System.Object.Finalize%2A>なったことをガベージコレクターに知らせる必要があります。これにより、追加のガベージコレクションが不要になり、オブジェクトの有効期間。
+アンマネージリソースをクリーンアップするために推奨される設計パターンは、<xref:System.Object.Finalize%2A?displayProperty=fullName> メソッドと <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> メソッドをそれぞれ使用して、これらのリソースを解放するための暗黙的な方法と明示的な手段の両方を提供することです。 ガベージコレクターは、オブジェクトが到達できなくなったと判断した後で、オブジェクトの <xref:System.Object.Finalize%2A> メソッドを呼び出します。 @No__t-0 が呼び出されると、オブジェクトを解放するために追加のガベージコレクションが必要になります。 @No__t-0 メソッドを使用すると、リソースがガベージコレクターに残されている場合は解放される前に、呼び出し元はリソースを明示的に解放できます。 アンマネージリソースをクリーンアップした後、<xref:System.IDisposable.Dispose%2A> は <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> メソッドを呼び出す必要があります。これにより、@no__t 2 が呼び出されなくなることをガベージコレクターに知らせることができます。これにより、追加のガベージコレクションが不要になり、オブジェクトの有効期間が短縮されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
-この規則違反を修正するには、 <xref:System.IDisposable>を実装します。
+この規則違反を修正するには、<xref:System.IDisposable> を実装します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
-型がアンマネージリソースを参照していない場合は、この規則からの警告を抑制することが安全です。 それ以外の場合は、実装<xref:System.IDisposable>に失敗すると、アンマネージリソースが使用できなくなったり、使用できなくなったりする可能性があるため、この規則による警告は抑制しないでください。
+型がアンマネージリソースを参照していない場合は、この規則からの警告を抑制することが安全です。 それ以外の場合は、<xref:System.IDisposable> の実装に失敗すると、アンマネージリソースが使用できなくなったり、使用されなくなったりする可能性があるため、この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
-次の例は、アンマネージリソース<xref:System.IDisposable>をクリーンアップするためにを実装する型を示しています。
+次の例は、アンマネージリソースをクリーンアップするために <xref:System.IDisposable> を実装する型を示しています。
 
 [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
-[CA2115GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115:GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive @ no__t
 
-[CA1816GC を呼び出します。Gc.suppressfinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816:GC を呼び出します。Gc.suppressfinalize @ no__t-0
 
-[CA2216破棄可能な型はファイナライザーを宣言しなければなりません](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216:破棄可能な型はファイナライザー @ no__t を宣言しなければなりません
 
 [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

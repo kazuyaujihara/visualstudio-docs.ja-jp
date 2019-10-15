@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a83a9619084feb3346f5fe421530227a2cca7f9
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585296"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305544"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 
@@ -21,7 +21,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 
 共通言語ランタイムをサポートするC++プロジェクト用に作成したカスタム規則セットに、この規則セットを含めます。
 
-|ルール|説明|
+|Rule|説明|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|初期化されていないメモリの使用|
 |[C6011](../code-quality/c6011.md)|Null ポインターの逆参照|
@@ -86,13 +86,13 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28182](../code-quality/c28182.md)|Null ポインターの逆参照 このポインターは、もう 1 つのポインターと同じ Null 値を持ちます。|
 |[C28202](../code-quality/c28202.md)|静的でないメンバーへの参照が正しくありません|
 |[C28203](../code-quality/c28203.md)|クラス メンバーへのあいまいな参照です。|
-|[C28205](../code-quality/c28205.md)|\_無効\_な\_コンテキストで\_の成功または失敗時の\_使用|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 または \_On @ no__t-3failure @ no__t-4 無効なコンテキストで使用されています|
 |[C28206](../code-quality/c28206.md)|左側のオペランドは構造体をポイントするため、'-> ' を使用します|
 |[C28207](../code-quality/c28207.md)|左側のオペランドは構造体であるため、'.' を使用します|
 |[C28210](../code-quality/c28210.md)|__on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません|
 |[C28211](../code-quality/c28211.md)|SAL_context には静的コンテキスト名が必要です|
 |[C28212](../code-quality/c28212.md)|注釈にはポインター式が必要です|
-|[C28213](../code-quality/c28213.md)|以前\_の宣言\_を\_変更せずに参照するには、宣言注釈を使用\_する注釈を使用する必要があります。|
+|[C28213](../code-quality/c28213.md)|前の宣言を変更せずに参照するには、@no__t 0Use @ no__t-1/3 注釈 @ no__t を使用する必要があります。|
 |[C28214](../code-quality/c28214.md)|属性パラメーター名は、p1...p9 である必要があります|
 |[C28215](../code-quality/c28215.md)|typefix は、既に typefix のあるパラメーターには適用できません|
 |[C28216](../code-quality/c28216.md)|checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。|
@@ -134,7 +134,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28267](../code-quality/c28267.md)|注釈での構文エラーが、関数の注釈で見つかりました。|
 |[C28272](../code-quality/c28272.md)|検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません|
 |[C28273](../code-quality/c28273.md)|関数について、手がかりには関数宣言との一貫性がありません。|
-|[C28275](../code-quality/c28275.md)|マクロ\_\_値へのパラメーターがnullです\_|
+|[C28275](../code-quality/c28275.md)|パラメーター \_Macro @ no__t-1value @ no__t は null です。|
 |[C28279](../code-quality/c28279.md)|シンボルについて、'begin' はありましたが、対応する 'end' がありません|
 |[C28280](../code-quality/c28280.md)|シンボルについて、'end' はありましたが、対応する 'begin' がありません|
 |[C28282](../code-quality/c28282.md)|書式指定文字列は、前提条件の中に存在する必要があります|
@@ -154,6 +154,6 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28350](../code-quality/c28350.md)|注釈には、条件付きで適用できない状況の説明が表示されます。|
 |[C28351](../code-quality/c28351.md)|注釈には、動的な値 (変数) が使用できない条件が記述されています。|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|空のファイナライザーを削除します|
+|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|破棄可能なフィールドは破棄されなければなりません|
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|

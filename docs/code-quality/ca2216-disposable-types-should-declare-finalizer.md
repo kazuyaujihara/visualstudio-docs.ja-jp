@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231251"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305917"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:破棄可能な型はファイナライザーを宣言しなければなりません
 
@@ -32,7 +32,7 @@ ms.locfileid: "71231251"
 
 ## <a name="cause"></a>原因
 
-を実装<xref:System.IDisposable?displayProperty=fullName>し、アンマネージリソースの使用を提案するフィールドを持つ型は、「」で<xref:System.Object.Finalize%2A?displayProperty=fullName>説明されているように、ファイナライザーを実装しません。
+@No__t 0 を実装し、アンマネージリソースの使用を提案するフィールドを持つ型は、<xref:System.Object.Finalize%2A?displayProperty=fullName> で説明されているように、ファイナライザーを実装しません。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -46,11 +46,11 @@ ms.locfileid: "71231251"
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、 <xref:System.IDisposable.Dispose%2A>メソッドを呼び出すファイナライザーを実装します。
+この規則違反を修正するには、@no__t 0 のメソッドを呼び出すファイナライザーを実装します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-アンマネージリソースを解放するために型がを実装<xref:System.IDisposable>していない場合は、この規則による警告を抑制することが安全です。
+アンマネージリソースを解放するために型が <xref:System.IDisposable> を実装していない場合は、この規則による警告を抑制するのが安全です。
 
 ## <a name="example"></a>例
 
@@ -60,11 +60,11 @@ ms.locfileid: "71231251"
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA2115GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115:GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive @ no__t
 
-[CA1816GC を呼び出します。Gc.suppressfinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816:GC を呼び出します。Gc.suppressfinalize @ no__t-0
 
-[CA1049ネイティブリソースを所有する型は、破棄可能である必要があります](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049:ネイティブリソースを所有する型は、破棄可能な @ no__t-0 である必要があります
 
 ## <a name="see-also"></a>関連項目
 

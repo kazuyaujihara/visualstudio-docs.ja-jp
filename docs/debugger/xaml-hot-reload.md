@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5e49049d05a285889c54906534200acadaf2397e
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186571"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306208"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>XAML を使用した実行中の XAML コードの作成とデバッグ Visual Studio でのホットリロード
 
@@ -49,11 +49,12 @@ XAML ホットリロードの既知の制限事項を次に示します。 に�
 
 |制限|WPF|UWP|メモ|
 |-|-|-|-|
-|アプリの実行中にイベントをコントロールに接続する|サポート非対象|サポートなし|エラーを参照:*イベントが失敗したことを確認*します。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
-|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポート状況|例: を`StaticResource`と`SolidColorBrush`して使用するために、をリソースディクショナリに追加します。</br>メモ:静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリ`Source`のプロパティを変更しています。|
+|アプリの実行中にイベントをコントロールに接続する|サポート非対象|サポートされていません|エラーを参照:*イベントが失敗したことを確認*します。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
+|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|Supported|例: `StaticResource` として使用するために @no__t 0 をリソースディクショナリに追加する。</br>メモ:静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリ `Source` プロパティを変更しています。|
 |アプリの実行中に新しいコントロール、クラス、ウィンドウ、またはその他のファイルをプロジェクトに追加する|サポート非対象|サポート非対象|なし|
 |NuGet パッケージの管理 (パッケージの追加/削除/更新)|サポート非対象|サポート非対象|なし|
-|{X:Bind} markup extension を使用するデータバインディングの変更|N/A|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
+|{X:Bind} markup extension を使用するデータバインディングの変更|なし|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
+|X:Uid ディレクティブの変更はサポートされていません|なし|サポート非対象|なし|
 
 ## <a name="error-messages"></a>エラー メッセージ
 

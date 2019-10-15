@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018423"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305792"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -98,21 +98,21 @@ CA1509 | コードメトリックスルール指定ファイルのエントリ�
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | プロパティ名は get メソッドと同一にすることはできません
 [CA1724](ca1724-type-names-should-not-match-namespaces.md) | 型名を名前空間と一致させることはできません
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | パラメーター名は基本宣言と同一でなければなりません
-[CA1801](ca1801-review-unused-parameters.md) | 使用されていないパラメーターの確認
-[CA1802](ca1802-use-literals-where-appropriate.md) | 適切な場所にリテラルを使用する
-[CA1806](ca1806-do-not-ignore-method-results.md) | メソッドの結果を無視しない
-[CA1810](ca1810-initialize-reference-type-static-fields-inline.md) | 参照型の静的フィールドをインラインで初期化します
-[CA1812](ca1812-avoid-uninstantiated-internal-classes.md) | インスタンス化されていない内部クラスを使用しません
-[CA1813](ca1813-avoid-unsealed-attributes.md) | アンシールド属性を使用しません
-[CA1814](ca1814-prefer-jagged-arrays-over-multidimensional.md) | 複数次元の配列ではなくジャグ配列を使用します
-[CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md) | equals および operator equals を値型でオーバーライドします
-[CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Dispose メソッドは Gc.suppressfinalize を呼び出す必要があります
-[CA1819](ca1819-properties-should-not-return-arrays.md) | プロパティは、配列を返すことはできません
-[CA1820](ca1820-test-for-empty-strings-using-string-length.md) | 文字列の長さを使用して空の文字列をテストします
-[CA1821](ca1821-remove-empty-finalizers.md) | 空のファイナライザーの削除
-[CA1822](ca1822-mark-members-as-static.md) | メンバーを static に設定します
-[CA1823](ca1823-avoid-unused-private-fields.md) | 使用されていないプライベート フィールドを使用しません
-[CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | アセンブリを NeutralResourcesLanguageAttribute に設定します
+[CA1801](ca1801.md) | 使用されていないパラメーターの確認
+[CA1802](ca1802.md) | 適切な場所にリテラルを使用する
+[CA1806](ca1806.md) | メソッドの結果を無視しない
+[CA1810](ca1810.md) | 参照型の静的フィールドをインラインで初期化します
+[CA1812](ca1812.md) | インスタンス化されていない内部クラスを使用しません
+[CA1813](ca1813.md) | アンシールド属性を使用しません
+[CA1814](ca1814.md) | 複数次元の配列ではなくジャグ配列を使用します
+[CA1815](ca1815.md) | equals および operator equals を値型でオーバーライドします
+[CA1816](ca1816.md) | Dispose メソッドは Gc.suppressfinalize を呼び出す必要があります
+[CA1819](ca1819.md) | プロパティは、配列を返すことはできません
+[CA1820](ca1820.md) | 文字列の長さを使用して空の文字列をテストします
+[CA1821](ca1821.md) | 空のファイナライザーの削除
+[CA1822](ca1822.md) | メンバーを static に設定します
+[CA1823](ca1823.md) | 使用されていないプライベート フィールドを使用しません
+[CA1824](ca1824.md) | アセンブリを NeutralResourcesLanguageAttribute に設定します
 CA1825 | 長さ0の配列を割り当てないようにします。
 CA1826 | インデックス可能なコレクションでは、列挙可能なメソッドを使用しないでください。 代わりに、コレクションを直接使用します。
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | スコープを失う前にオブジェクトを破棄
@@ -252,8 +252,8 @@ CA9999 | アナライザーのバージョンが一致しません
 [CA1719](ca1719-parameter-names-should-not-match-member-names.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
 [CA1722](ca1722-identifiers-should-not-have-incorrect-prefix.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
 [CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
-[CA1804](ca1804-remove-unused-locals.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
-[CA1811](ca1811-avoid-uncalled-private-code.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
+[CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
+[CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
 [CA1900](ca1900-value-type-fields-should-be-portable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
 [CA2001](ca2001-avoid-calling-problematic-methods.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
 [CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
@@ -288,8 +288,8 @@ CA9999 | アナライザーのバージョンが一致しません
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
 - [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1800](ca1800-do-not-cast-unnecessarily.md)
-- [CA1809](ca1809-avoid-excessive-locals.md)
+- [CA1800](ca1800.md)
+- [CA1809](ca1809.md)
 - [CA1901](ca1901-p-invoke-declarations-should-be-portable.md)
 - [CA1903](ca1903-use-only-api-from-targeted-framework.md)
 - [CA2003](ca2003-do-not-treat-fibers-as-threads.md)
