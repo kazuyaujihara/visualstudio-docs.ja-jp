@@ -1,5 +1,5 @@
 ---
-title: CA1717:FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません
+title: 'CA1717: FlagsAttribute 列挙のみが複数形の名前を含んでいなければなりません'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 113df599f793e92c41b7aa6b8a8f52a4c188982a
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234059"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348913"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: FlagsAttribute 列挙のみが複数形の名前を含んでいなければなりません
 
 |||
 |-|-|
@@ -32,21 +32,21 @@ ms.locfileid: "71234059"
 
 ## <a name="cause"></a>原因
 
-列挙体の名前は複数形で終了し、列挙は<xref:System.FlagsAttribute?displayProperty=fullName>属性でマークされていません。
+列挙体の名前が複数形で終了し、列挙体が <xref:System.FlagsAttribute?displayProperty=fullName> 属性でマークされていません。
 
 既定では、この規則は外部から参照できる列挙のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-名前付け規則は、列挙体の複数形の名前が同時に指定できることを示します。 は<xref:System.FlagsAttribute> 、列挙体に対してビットごとの演算を実行できるビットフィールドとして処理する必要があることをコンパイラに指示します。
+名前付け規則は、列挙体の複数形の名前が同時に指定できることを示します。 @No__t-0 は、列挙体のビットごとの演算を可能にするビットフィールドとして列挙を処理する必要があることをコンパイラに指示します。
 
-列挙体の1つの値だけを一度に指定できる場合、列挙体の名前は単数形の単語である必要があります。 たとえば、曜日を定義する列挙体は、複数の日を指定できるアプリケーションで使用することが想定されています。 この列挙体には<xref:System.FlagsAttribute>が含まれている必要があり、' Days ' という名前を付けることができます。 1つの日だけを指定できるようにする同様の列挙には、属性は含まれず、"Day" と呼ばれることもあります。
+列挙体の1つの値だけを一度に指定できる場合、列挙体の名前は単数形の単語である必要があります。 たとえば、曜日を定義する列挙体は、複数の日を指定できるアプリケーションで使用することが想定されています。 この列挙体には @no__t 0 を指定する必要があり、"Days" という名前を付けることができます。 1つの日だけを指定できるようにする同様の列挙には、属性は含まれず、"Day" と呼ばれることもあります。
 
 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェアライブラリを学習するために必要な時間が短縮され、マネージコードの開発に関する専門知識を持つユーザーによってライブラリが開発されたという自信が高まります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-列挙型の名前を単数形の単語にするか<xref:System.FlagsAttribute>、を追加します。
+列挙型の名前を単数形の単語にするか、<xref:System.FlagsAttribute> を追加します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
@@ -64,9 +64,9 @@ dotnet_code_quality.ca1717.api_surface = private, internal
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1714列挙型のフラグには複数形の名前が必要です](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
-- [CA1027FlagsAttribute で列挙をマークする](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1714: フラグ列挙は、複数形の名前を含んでいなければなりません](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+- [CA1027: FlagsAttribute で列挙値をマークします](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: enums を FlagsAttribute に設定しません](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>関連項目
 

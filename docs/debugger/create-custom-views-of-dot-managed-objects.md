@@ -1,5 +1,5 @@
 ---
-title: オブジェクトのカスタムビューを作成する |Microsoft Docs
+title: 管理オブジェクトのカスタムビューを作成する |Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 4649ac11daa062089d2916a5d5d0a331e4d74272
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814299"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349453"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>オブジェクトのカスタムビューの作成C#(、Visual Basic F#、 C++、/cli)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>管理オブジェクト (C#、Visual Basic、 F# C++/cli) のカスタムビューを作成する
 Visual Studio でデバッガーの変数ウィンドウにデータ型を表示する方法をカスタマイズできます。
 
 ## <a name="attributes"></a>属性
@@ -41,12 +41,12 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
 
 ## <a name="visualizers"></a>ビジュアライザー
 
-マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法 :ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
+マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法: ビジュアライザーを記述](/visualstudio/debugger/create-custom-visualizers-of-data)する」を参照してください。
 
 > [!NOTE]
 > コードC++の場合、「[デバッガーでのオブジェクトのカスタムビューの作成C++ ](/visualstudio/debugger/create-custom-views-of-native-objects)」で説明されているように、Natvis フレームワークを使用してカスタムデータ型の展開を追加できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [デバッガ Display 属性を使用して、表示する内容をデバッガーに通知します](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Debugger Typeproxy 属性を使用して表示する型をデバッガーに通知する](../debugger/using-debuggertypeproxy-attribute.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ad443a149b1c3a49c4bbbc260a4121d0a721aed
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 24e5f0ef0c78c99ae04214739cce1af567358032
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305828"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349618"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
 
@@ -23,7 +23,7 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 
 次の表では、"Microsoft 拡張デザインガイドライン規則" 規則セット内のすべての規則について説明します。
 
-|Rule|説明|
+|規則|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|
@@ -69,24 +69,24 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|型は、基本型およびインターフェイスと同程度以上、重要でなければならない|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|スタック詳細を保持するために再度スローします|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|オブジェクトを複数回破棄しない|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|値型のスタティック フィールドのインラインを初期化します|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|サービス コンポーネントを WebMethod に設定しません|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|コンストラクターのオーバーライド可能なメソッドを呼び出しません|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|破棄可能な型はファイナライザーを宣言しなければなりません|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|シリアル化コンストラクターを実装します|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Windows フォームのエントリ ポイントを STAThread に設定します|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|すべてのシリアル化不可能なフィールドを設定します|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|ISerializable 型で基底クラス メソッドを呼び出します|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable 型を SerializableAttribute に設定します|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|シリアル化メソッドを正しく実装します|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|ISerializable を正しく実装します|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|書式設定メソッドに正しい引数を提供|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|NaN に対して正しくテストします|
+|[CA2200](../code-quality/ca2200.md)|スタック詳細を保持するために再度スローします|
+|[CA2202](../code-quality/ca2202.md)|オブジェクトを複数回破棄しない|
+|[CA2207](../code-quality/ca2207.md)|値型のスタティック フィールドのインラインを初期化します|
+|[CA2212](../code-quality/ca2212.md)|サービス コンポーネントを WebMethod に設定しません|
+|[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
+|[CA2214](../code-quality/ca2214.md)|コンストラクターのオーバーライド可能なメソッドを呼び出しません|
+|[CA2216](../code-quality/ca2216.md)|破棄可能な型はファイナライザーを宣言しなければなりません|
+|[CA2220](../code-quality/ca2220.md)|ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません|
+|[CA2229](../code-quality/ca2229.md)|シリアル化コンストラクターを実装します|
+|[CA2231](../code-quality/ca2231.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
+|[CA2232](../code-quality/ca2232.md)|Windows フォームのエントリ ポイントを STAThread に設定します|
+|[CA2235](../code-quality/ca2235.md)|すべてのシリアル化不可能なフィールドを設定します|
+|[CA2236](../code-quality/ca2236.md)|ISerializable 型で基底クラス メソッドを呼び出します|
+|[CA2237](../code-quality/ca2237.md)|ISerializable 型を SerializableAttribute に設定します|
+|[CA2238](../code-quality/ca2238.md)|シリアル化メソッドを正しく実装します|
+|[CA2240](../code-quality/ca2240.md)|ISerializable を正しく実装します|
+|[CA2241](../code-quality/ca2241.md)|書式設定メソッドに正しい引数を提供|
+|[CA2242](../code-quality/ca2242.md)|NaN に対して正しくテストします|
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|ジェネリック型の静的メンバーを宣言しません|
 |[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|ジェネリック リストを公開しません|
 |[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|汎用イベント ハンドラーのインスタンスを使用します|
@@ -151,22 +151,22 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 |[CA1820](../code-quality/ca1820.md)|文字列の長さを使用して空の文字列をテストします|
 |[CA1822](../code-quality/ca1822.md)|メンバーを static に設定します|
 |[CA1823](../code-quality/ca1823.md)|使用されていないプライベート フィールドを使用しません|
-|[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|予約された例外の種類を発生させません|
-|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Win32 API に相当するマネージド API を使用します|
-|[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|引数の例外を正しくインスタンス化します|
-|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非定数フィールドは表示されません|
-|[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|列挙型を FlagsAttribute に設定しません|
-|[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|exception 句に例外を発生させないでください|
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|ファイナライザーは保護されなければなりません|
-|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|継承されたメンバーの参照範囲を縮小しません|
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|メンバーは、戻り値の型以外にも異なる点がなければなりません|
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|オーバーロードする演算子 equals で Equals をオーバーライドします|
-|[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|演算子オーバーロードには名前付けされた代替が存在します|
-|[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|演算子は対称型オーバーロードを含まなければなりません|
-|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Collection プロパティは読み取り専用でなければなりません|
-|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|可変引数に対して param を使用します|
-|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|文字列の代わりに System.Uri オブジェクトを渡します|
-|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|省略可能なフィールドに、逆シリアル化メソッドを指定します|
+|[CA2201](../code-quality/ca2201.md)|予約された例外の種類を発生させません|
+|[CA2205](../code-quality/ca2205.md)|Win32 API に相当するマネージド API を使用します|
+|[CA2208](../code-quality/ca2208.md)|引数の例外を正しくインスタンス化します|
+|[CA2211](../code-quality/ca2211.md)|非定数フィールドは表示されません|
+|[CA2217](../code-quality/ca2217.md)|列挙型を FlagsAttribute に設定しません|
+|[CA2219](../code-quality/ca2219.md)|exception 句に例外を発生させないでください|
+|[CA2221](../code-quality/ca2221.md)|ファイナライザーは保護されなければなりません|
+|[CA2222](../code-quality/ca2222.md)|継承されたメンバーの参照範囲を縮小しません|
+|[CA2223](../code-quality/ca2223.md)|メンバーは、戻り値の型以外にも異なる点がなければなりません|
+|[CA2224](../code-quality/ca2224.md)|オーバーロードする演算子 equals で Equals をオーバーライドします|
+|[CA2225](../code-quality/ca2225.md)|演算子オーバーロードには名前付けされた代替が存在します|
+|[CA2226](../code-quality/ca2226.md)|演算子は対称型オーバーロードを含まなければなりません|
+|[CA2227](../code-quality/ca2227.md)|Collection プロパティは読み取り専用でなければなりません|
+|[CA2230](../code-quality/ca2230.md)|可変引数に対して param を使用します|
+|[CA2234](../code-quality/ca2234.md)|文字列の代わりに System.Uri オブジェクトを渡します|
+|[CA2239](../code-quality/ca2239.md)|省略可能なフィールドに、逆シリアル化メソッドを指定します|
 |[CA1020](../code-quality/ca1020-avoid-namespaces-with-few-types.md)|型をほとんど含まない名前空間を使用しません|
 |[CA1021](../code-quality/ca1021-avoid-out-parameters.md)|out パラメーターを使用しません|
 |[CA1040](../code-quality/ca1040-avoid-empty-interfaces.md)|空のインターフェイスは使用しません|
@@ -197,4 +197,4 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 |[CA1724](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|型名は名前空間と同一にすることはできません|
 |[CA1725](../code-quality/ca1725-parameter-names-should-match-base-declaration.md)|パラメーター名は基本宣言と同一でなければなりません|
 |[CA1726](../code-quality/ca1726-use-preferred-terms.md)|適切な用語を使用します|
-|[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|リテラルに正しいスペルを要求|
+|[CA2204](../code-quality/ca2204.md)|リテラルに正しいスペルを要求|

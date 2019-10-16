@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 898a11be40d29c2e6181886c2c90af9315af6e3e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305544"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349566"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 
@@ -21,7 +21,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 
 共通言語ランタイムをサポートするC++プロジェクト用に作成したカスタム規則セットに、この規則セットを含めます。
 
-|Rule|説明|
+|規則|説明|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|初期化されていないメモリの使用|
 |[C6011](../code-quality/c6011.md)|Null ポインターの逆参照|
@@ -71,7 +71,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C6518](../code-quality/c6518.md)|書き込み可能でないバッファーでの書き込み可能サイズ|
 |[C6522](../code-quality/c6522.md)|無効なサイズの文字列型|
 |[C6525](../code-quality/c6525.md)|無効なサイズの到達不能な場所の文字列|
-|[C6527](../code-quality/c6527.md)|無効な注釈:' 必要な Srelease ' プロパティは、void 型の値では使用できません|
+|[C6527](../code-quality/c6527.md)|無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません|
 |[C6530](../code-quality/c6530.md)|認識されない書式指定文字列スタイル|
 |[C6540](../code-quality/c6540.md)|この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります|
 |[C6551](../code-quality/c6551.md)|無効なサイズ指定です: 式が解析可能ではありません|
@@ -142,7 +142,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28286](../code-quality/c28286.md)|関数について、構文エラーが最後の近くにあります|
 |[C28287](../code-quality/c28287.md)|関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります|
 |[C28288](../code-quality/c28288.md)|関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります|
-|[C28289](../code-quality/c28289.md)|関数の場合:ReadableTo または WritableTo に、パラメーターとして制限仕様がありませんでした|
+|[C28289](../code-quality/c28289.md)|関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした|
 |[C28290](../code-quality/c28290.md)|関数の注釈は、実際のパラメーターの数より多い外部参照を含みます|
 |[C28291](../code-quality/c28291.md)|deref レベル 0 での post null/notnull は、関数に対して意味がありません。|
 |[C28300](../code-quality/c28300.md)|演算子に対する互換性のない型の、式のオペランドです|
@@ -155,5 +155,5 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28351](../code-quality/c28351.md)|注釈には、動的な値 (変数) が使用できない条件が記述されています。|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
+|[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
+|[CA2231](../code-quality/ca2231.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|

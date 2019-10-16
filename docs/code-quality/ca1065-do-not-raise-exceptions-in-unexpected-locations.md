@@ -1,5 +1,5 @@
 ---
-title: CA1065:予期しない場所に例外を発生させません
+title: 'CA1065: 予期しない場所に例外を発生させません'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235243"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349026"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:予期しない場所に例外を発生させません
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 予期しない場所に例外を発生させません
 
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -66,13 +66,13 @@ ms.locfileid: "71235243"
 
 プロパティの get メソッドからは、次の例外がスローされる可能性があります。
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>およびすべての派生 ( <xref:System.ObjectDisposedException?displayProperty=fullName>を含む)
+- <xref:System.InvalidOperationException?displayProperty=fullName> およびすべての派生 (<xref:System.ObjectDisposedException?displayProperty=fullName> を含む)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>およびすべての派生物
+- <xref:System.NotSupportedException?displayProperty=fullName> およびすべての派生
 
-- <xref:System.ArgumentException?displayProperty=fullName>(インデックス付きの get からのみ)
+- <xref:System.ArgumentException?displayProperty=fullName> (インデックス付きの get のみ)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(インデックス付きの get からのみ)
+- <xref:System.Collections.Generic.KeyNotFoundException> (インデックス付きの get のみ)
 
 ### <a name="event-accessor-methods"></a>イベントのアクセサー メソッド
 
@@ -80,11 +80,11 @@ ms.locfileid: "71235243"
 
 イベントアクセサーからは、次の例外がスローされる可能性があります。
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>およびすべての派生 ( <xref:System.ObjectDisposedException?displayProperty=fullName>を含む)
+- <xref:System.InvalidOperationException?displayProperty=fullName> およびすべての派生 (<xref:System.ObjectDisposedException?displayProperty=fullName> を含む)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>およびすべての派生物
+- <xref:System.NotSupportedException?displayProperty=fullName> およびすべての派生
 
-- <xref:System.ArgumentException>および導関数
+- <xref:System.ArgumentException> および導関数
 
 ### <a name="equals-methods"></a>Equals メソッド
 
@@ -94,7 +94,7 @@ ms.locfileid: "71235243"
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-**Equals**メソッドは、例外`true`をスローする代わりに、または`false`を返す必要があります。 たとえば、Equals に2つの一致`false` <xref:System.ArgumentException>しない型が渡された場合、をスローする代わりにを返すだけです。
+**Equals**メソッドは、例外をスローするのではなく、`true` または `false` を返す必要があります。 たとえば、Equals に2つの一致しない型が渡された場合、<xref:System.ArgumentException> をスローするのではなく、`false` を返す必要があります。
 
 ### <a name="gethashcode-methods"></a>GetHashCode メソッド
 
@@ -106,11 +106,11 @@ ms.locfileid: "71235243"
 
 **GetHashCode**は常に値を返す必要があります。 それ以外の場合、ハッシュテーブル内の項目が失われる可能性があります。
 
-引数を受け取る**GetHashCode**のバージョンは、をスローする<xref:System.ArgumentException>場合があります。 ただし、**オブジェクト GetHashCode**は例外をスローすることはできません。
+引数を受け取る**GetHashCode**のバージョンは、<xref:System.ArgumentException> をスローすることがあります。 ただし、**オブジェクト GetHashCode**は例外をスローすることはできません。
 
 ### <a name="tostring-methods"></a>ToString メソッド
 
-デバッガーはを<xref:System.Object.ToString%2A?displayProperty=fullName>使用して、オブジェクトに関する情報を文字列形式で表示します。 したがって、 **ToString**はオブジェクトの状態を変更しないでください。例外をスローすることはできません。
+デバッガーは @no__t 0 を使用して、オブジェクトに関する情報を文字列形式で表示します。 したがって、 **ToString**はオブジェクトの状態を変更しないでください。例外をスローすることはできません。
 
 ### <a name="static-constructors"></a>静的コンストラクター
 
@@ -122,13 +122,13 @@ ms.locfileid: "71235243"
 
 ### <a name="dispose-methods"></a>Dispose メソッド
 
-メソッド<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>は例外をスローしません。 Dispose は、多くの場合、 `finally`句でクリーンアップロジックの一部として呼び出されます。 したがって、Dispose から明示的に例外をスローすると、ユーザーは`finally`句内に例外処理を追加するように強制されます。
+@No__t 0 のメソッドは例外をスローしません。 Dispose は、`finally` 句でクリーンアップロジックの一部として呼び出されることがよくあります。 したがって、Dispose から明示的に例外をスローすると、ユーザーは `finally` 句内に例外処理を追加するように強制されます。
 
 Dispose **(false)** コードパスは、ほとんどの場合、dispose はファイナライザーから呼び出されるため、例外をスローしません。
 
 ### <a name="equality-operators--"></a>等値演算子 (= =、! =)
 
-Equals メソッドと同様に、等値演算子`true`は`false`またはのいずれかを返す必要があり、例外をスローしません。
+Equals メソッドと同様に、等値演算子は `true` または `false` のいずれかを返す必要があり、例外をスローしないようにする必要があります。
 
 ### <a name="implicit-cast-operators"></a>暗黙的なキャスト演算子
 
@@ -146,7 +146,7 @@ Equals メソッドと同様に、等値演算子`true`は`false`またはのい
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2219例外句で例外を発生させない](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: exception 句に例外を発生させないでください](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>関連項目
 

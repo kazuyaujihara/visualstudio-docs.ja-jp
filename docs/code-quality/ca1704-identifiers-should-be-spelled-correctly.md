@@ -1,5 +1,5 @@
 ---
-title: CA1704:識別子は正しく入力されなければなりません
+title: 'CA1704: 識別子は正しく入力されなければなりません'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f2e42e68f008c625c8d6b5150d0348d14e29d3dc
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234290"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348943"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別子は正しく入力されなければなりません
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: 識別子は正しく入力されなければなりません
 
 |||
 |-|-|
@@ -52,7 +52,7 @@ ms.locfileid: "71234290"
 
 スペルチェックでは、現在、英語ベースのカルチャディクショナリのみがチェックされます。 プロジェクトファイル内のプロジェクトのカルチャを変更するには、 **CodeAnalysisCulture**要素を追加します。
 
-次に例を示します。
+(例:
 
 ```xml
 <Project ...>
@@ -69,13 +69,13 @@ ms.locfileid: "71234290"
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>カスタム辞書に単語を追加するには
 
-カスタム辞書 XML ファイルに「 *Customdictionary*.xml」という名前を指定します。 ツールのインストールディレクトリ、プロジェクトディレクトリ、またはユーザーのプロファイルにあるツールに関連付けられているディレクトリ ( *%USERPROFILE%\Application Data\\...* ) に辞書を配置します。Visual Studio でカスタム辞書をプロジェクトに追加する方法については、 [「」を参照してください。コード分析辞書](../code-quality/how-to-customize-the-code-analysis-dictionary.md)をカスタマイズします。
+カスタム辞書 XML ファイルに「 *Customdictionary*.xml」という名前を指定します。 ツールのインストールディレクトリ、プロジェクトディレクトリ、またはユーザーのプロファイルにあるツールに関連付けられているディレクトリ ( *%USERPROFILE%\Application Data @ no__t...* ) に辞書を配置します。Visual Studio でカスタム辞書をプロジェクトに追加する方法については、「[方法: コード分析辞書をカスタマイズ](../code-quality/how-to-customize-the-code-analysis-dictionary.md)する」を参照してください。
 
 - 辞書/単語/認識されたパスで違反が発生しないようにする単語を追加します。
 
 - 辞書/単語/認識されないパスで違反を引き起こす可能性のある単語を追加します。
 
-- [辞書/単語/非推奨のパス] の下で、不使用としてフラグが設定されている単語を追加します。 関連するルールのトピック[CA1726 を参照してください。詳細につい](../code-quality/ca1726-use-preferred-terms.md)ては、適切な用語を使用してください。
+- [辞書/単語/非推奨のパス] の下で、不使用としてフラグが設定されている単語を追加します。 詳細については、関連ルールのトピック「 [CA1726: Use terms](../code-quality/ca1726-use-preferred-terms.md) 」を参照してください。
 
 - 略語の大文字と小文字の規則に、辞書/頭字語/CasingExceptions パスに例外を追加します。
 
@@ -110,13 +110,13 @@ ms.locfileid: "71234290"
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2204リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709識別子は正しく使用する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708識別子の大文字と小文字の区別が異なる場合](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707識別子にアンダースコアを含めることはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726優先する用語を使用する](../code-quality/ca1726-use-preferred-terms.md)
+- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: 識別子はアンダースコアを含むことはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)」を参照してください
+- [方法 : コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

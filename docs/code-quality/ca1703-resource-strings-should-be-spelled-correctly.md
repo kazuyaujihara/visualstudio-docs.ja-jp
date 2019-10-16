@@ -1,5 +1,5 @@
 ---
-title: CA1703:リソース文字列は正しく入力されなければなりません
+title: 'CA1703: リソース文字列は正しく入力されなければなりません'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c37e07d6259c4229999ff7d4068400c788369e86
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234322"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348965"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703:リソース文字列は正しく入力されなければなりません
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: リソース文字列は正しく入力されなければなりません
 
 |||
 |-|-|
@@ -36,18 +36,18 @@ ms.locfileid: "71234322"
 
 ## <a name="rule-description"></a>規則の説明
 
-この規則では、リソース文字列を単語 (トークン化複合単語) に解析し、各単語/トークンのスペルをチェックします。 解析アルゴリズムの詳細については[、CA1704 を参照してください。識別子は正しく](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)入力されている必要があります。
+この規則では、リソース文字列を単語 (トークン化複合単語) に解析し、各単語/トークンのスペルをチェックします。 解析アルゴリズムの詳細については、「 [CA1704: 識別子は正しく入力されている必要があり](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、正しくスペルが正しい単語を入力するか、カスタム辞書に単語を追加します。 カスタム辞書の使用方法の詳細について[は、「CA1704:識別子は正しく](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)入力されている必要があります。
+この規則違反を修正するには、正しくスペルが正しい単語を入力するか、カスタム辞書に単語を追加します。 カスタム辞書の使用方法の詳細については、「 [CA1704: identifier のスペルを正しく](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)する」を参照してください。
 
 ## <a name="change-the-dictionary-language"></a>辞書の言語を変更する
 
 既定では、スペルチェックの英語 (en) バージョンが使用されます。 スペルチェックの言語を変更するには、 *AssemblyInfo.cs*ファイルまたは*AssemblyInfo*ファイルに次の属性のいずれかを追加します。
 
-- リソース<xref:System.Reflection.AssemblyCultureAttribute>がサテライトアセンブリにある場合は、を使用してカルチャを指定します。
-- リソース<xref:System.Resources.NeutralResourcesLanguageAttribute>がコードと同じアセンブリ内にある場合は、を使用して、アセンブリの*ニュートラルカルチャ*を指定します。
+- リソースがサテライトアセンブリにある場合は、<xref:System.Reflection.AssemblyCultureAttribute> を使用してカルチャを指定します。
+- リソースがコードと同じアセンブリ内にある場合は、<xref:System.Resources.NeutralResourcesLanguageAttribute> を使用して、アセンブリの*ニュートラルカルチャ*を指定します。
 
 > [!IMPORTANT]
 > カルチャを英語ベースのカルチャ以外に設定した場合、このコード分析規則は警告なしで無効になります。
@@ -58,6 +58,6 @@ ms.locfileid: "71234322"
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1701リソース文字列の複合語は、大文字と小文字が正しく区別されます。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204.md)

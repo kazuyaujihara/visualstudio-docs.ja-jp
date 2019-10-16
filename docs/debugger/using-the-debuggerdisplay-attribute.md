@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887753"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349623"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>デバッガ display 属性 (C#、Visual Basic、 F# C++/cli) を使用して、表示する内容をデバッガーに通知します
+
 <xref:System.Diagnostics.DebuggerDisplayAttribute> は、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。 この属性は、型、デリゲート、プロパティ、フィールド、アセンブリに適用できます。 基本型に適用された場合、属性はサブクラスにも適用されます。
 
 `DebuggerDisplay` 属性の引数は 1 つです。それは、型のインスタンスの値列に表示する文字列です。 この文字列には、中かっこ (`{` と `}`) を含めることができます。 かっこ内のテキストは、フィールド、プロパティ、メソッドとして評価されます。
 
-クラスにオーバーライドされた `ToString()` メソッドがある場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用します。 したがって、`ToString()` メソッドをオーバーライドした場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用し、`DebuggerDisplay` を使用する必要はありません。 両方を使用した場合、`DebuggerDisplay` 属性は、オーバーライドされた `ToString()` メソッドよりも優先されます。 また`DebuggerDisplay` 、属性は、サブクラスの`ToString()`オーバーライドされたメソッドよりも優先されます。
+クラスにオーバーライドされた `ToString()` メソッドがある場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用します。 したがって、`ToString()` メソッドをオーバーライドした場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用し、`DebuggerDisplay` を使用する必要はありません。 両方を使用した場合、`DebuggerDisplay` 属性は、オーバーライドされた `ToString()` メソッドよりも優先されます。 @No__t-0 属性も、サブクラスのオーバーライドされた `ToString()` メソッドよりも優先されます。
 
 この暗黙的な `ToString()` 呼び出しがデバッガーで評価されるかどうかは、 **[ツール] / [オプション] / [デバッグ]** ダイアログ ボックスのユーザー設定によって異なります。 Visual Basic は、この暗黙的な `ToString()` 評価を実装しません。
 
@@ -45,8 +46,8 @@ ms.locfileid: "70887753"
 
 |パラメーター|目的|
 |----------------|-------------|
-|`Name`, `Type`|このパラメーターは、変数ウィンドウの **[名前]** 列と **[型]** 列に影響があります (コンストラクターと同じ構文で、文字列に設定できます)。このパラメーターを乱用したり、不適切に使用したりすると、出力を混乱させる可能性があります。|
-|`Target`, `TargetTypeName`|属性がアセンブリ レベルで使用される場合に、対象の型を指定します。|
+|`Name`、 `Type`|このパラメーターは、変数ウィンドウの **[名前]** 列と **[型]** 列に影響があります (コンストラクターと同じ構文で、文字列に設定できます)。このパラメーターを乱用したり、不適切に使用したりすると、出力を混乱させる可能性があります。|
+|`Target`、 `TargetTypeName`|属性がアセンブリ レベルで使用される場合に、対象の型を指定します。|
 
 autoexp.cs ファイルは、DebuggerDisplay 属性をアセンブリ レベルで使用します。 autoexp.cs ファイルは、Visual Studio が .NET オブジェクトに対して使用する既定の展開を指定します。 DebuggerDisplay 属性の使用方法について autoexp.cs ファイルで確認したり、autoexp.cs ファイルを変更してコンパイルすることで既定の展開を変更したりできます。 変更する場合は、その前に autoexp.cs ファイルのバックアップを作成してください。
 
@@ -62,7 +63,7 @@ autoexp.dll への変更は、次のデバッグ セッションで取得され�
 ## <a name="using-expressions-in-debuggerdisplay"></a>DebuggerDisplay での式の使用
 DebuggerDisplay 属性では、中かっこ内で一般的な式を使用できますが、この方法はお勧めしません。
 
-DebuggerDisplay で使用される一般的な式は、対象となる型の現在のインスタンスのみの `this` ポインターに暗黙的にアクセスします。 この式には、エイリアス、ローカル、またはポインターに対するアクセスはありません。 式からプロパティを参照しても、そのプロパティに関する属性は処理されません。 たとえば、C# コード `[DebuggerDisplay("Object {count - 2}")]` では、フィールド `count` が 8 の場合は、`Object 6` と表示されます。
+DebuggerDisplay で使用される一般的な式は、対象となる型の現在のインスタンスのみの `this` ポインターに暗黙的にアクセスします。 この式には、エイリアス、ローカル、またはポインターに対するアクセスはありません。 式からプロパティを参照しても、そのプロパティに関する属性は処理されません。 たとえば、C# コード `[DebuggerDisplay("Object {count - 2}")]` では、フィールド `Object 6` が 8 の場合に `count` を表示します。
 
 DebuggerDisplay で式を使用すると、次のような問題が発生する可能性があります。
 
@@ -98,7 +99,7 @@ public sealed class MyClass
 |**Name**|**[値]**|**Type**|
 |--------------|---------------|--------------|
 |キー|"three"|object {string}|
-|値|3|object {int}|
+|[値]|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -178,7 +179,7 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)
 - [.managed オブジェクトのカスタム ビューの作成](../debugger/create-custom-views-of-dot-managed-objects.md)

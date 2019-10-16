@@ -1,5 +1,5 @@
 ---
-title: CA1712:列挙型値を型名のプレフィックスにしません
+title: 'CA1712: enum 値を型名のプレフィックスにしません'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f151296fce00ca92209c588c4be0361f9adfc7fd
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234119"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348936"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712:列挙型値を型名のプレフィックスにしません
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: enum 値を型名のプレフィックスにしません
 
 |||
 |-|-|
@@ -56,11 +56,11 @@ ms.locfileid: "71234119"
 [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
-[CA1711識別子のサフィックスを正しく指定することはできません](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: 識別子は、不適切なサフィックスを含むことはできません](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-[CA1027FlagsAttribute で列挙をマークする](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: FlagsAttribute で列挙値をマークします](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-[CA2217FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: enums を FlagsAttribute に設定しません](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>関連項目
 

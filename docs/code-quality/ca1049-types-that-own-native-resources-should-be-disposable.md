@@ -1,5 +1,5 @@
 ---
-title: CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません
+title: 'CA1049: ネイティブ リソースを所有する型は、破棄可能でなければなりません'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306120"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349099"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: ネイティブ リソースを所有する型は、破棄可能でなければなりません
 
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
@@ -56,11 +56,11 @@ ms.locfileid: "72306120"
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
-[CA2115:GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive @ no__t
+[CA2115: ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816:GC を呼び出します。Gc.suppressfinalize @ no__t-0
+[CA1816: GC.SuppressFinalize を正しく呼び出します](../code-quality/ca1816.md)
 
-[CA2216:破棄可能な型はファイナライザー @ no__t を宣言しなければなりません
+[CA2216: 破棄できる型ではファイナライザーを宣言します](../code-quality/ca2216.md)
 
 [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

@@ -1,5 +1,5 @@
 ---
-title: CA1700:列挙値&#39;に予約済みの名前を指定しない&#39;
+title: 'CA1700: 予約値&#39;として予約されている名前を指定しないでください&#39;'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5171123827481c99bbc35c10b04aaf942a15fabb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f0097725b8f84a641df9061d693f1f5c4bdf1851
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234389"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348973"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700:列挙値&#39;に予約済みの名前を指定しない&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 予約値&#39;として予約されている名前を指定しないでください&#39;
 
 |||
 |-|-|
@@ -40,11 +40,11 @@ ms.locfileid: "71234389"
 
 予約されたメンバーを使用する代わりに、将来のバージョンで列挙に新しいメンバーを追加します。 ほとんどの場合、新しいメンバーを追加しても、元のメンバーの値が変更されない限り、互換性に影響する変更はありません。
 
-一部のケースでは、元のメンバーが元の値を保持している場合でも、メンバーの追加は互換性に影響する変更になります。 主に、メンバーリスト全体を含み、例外をスローする戻り値に対して`switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ステートメントを使用する呼び出し元を中断することなく、既存のコードパスから新しいメンバーを返すことはできません。既定のケース。 2つ目の問題は、クライアントコードがなど<xref:System.Enum.IsDefined%2A?displayProperty=fullName>のリフレクションメソッドからの動作の変更を処理しない可能性があることです。 したがって、新しいメンバーが既存のメソッドから返される必要がある場合、またはリフレクションの使用率が低いために互換性のない既知のアプリケーションが発生した場合、唯一の解決策は次のようになります。
+一部のケースでは、元のメンバーが元の値を保持している場合でも、メンバーの追加は互換性に影響する変更になります。 主に、メンバーリスト全体を含み、既定のケースで例外をスローする戻り値に対して、`switch` @no__t ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ステートメントを使用する呼び出し元を中断することなく、既存のコードパスから新しいメンバーを返すことはできません。 2つ目の問題は、クライアントコードが <xref:System.Enum.IsDefined%2A?displayProperty=fullName> などのリフレクションメソッドからの動作の変更を処理しない可能性があることです。 したがって、新しいメンバーが既存のメソッドから返される必要がある場合、またはリフレクションの使用率が低いために互換性のない既知のアプリケーションが発生した場合、唯一の解決策は次のようになります。
 
 1. 元のメンバーと新しいメンバーを含む新しい列挙を追加します。
 
-2. <xref:System.ObsoleteAttribute?displayProperty=fullName>属性を使用して、元の列挙体をマークします。
+2. 元の列挙を <xref:System.ObsoleteAttribute?displayProperty=fullName> 属性でマークします。
 
    元の列挙体を公開する外部から参照できる型またはメンバーについても、同じ手順を実行します。
 
@@ -58,12 +58,12 @@ ms.locfileid: "71234389"
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA2217FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: enums を FlagsAttribute に設定しません](../code-quality/ca2217.md)
 
-[CA1712列挙値の型名をプレフィックスとして使用しない](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712: enum 値を型名のプレフィックスにしません](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028列挙ストレージは Int32 でなければなりません](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028: 列挙ストレージは Int32 でなければなりません](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008列挙型の値は0である必要があります](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008: Enums は 0 値を含んでいなければなりません](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027FlagsAttribute で列挙をマークする](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: FlagsAttribute で列挙値をマークします](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

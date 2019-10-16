@@ -1,5 +1,5 @@
 ---
-title: CA1032:標準例外コンストラクターを実装します
+title: 'CA1032: 標準例外コンストラクターを実装します'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c39ca1d1a1edd9ac2182a3d6d55896c41c189030
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236045"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349110"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:標準例外コンストラクターを実装します
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: 標準例外コンストラクターを実装します
 
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-型はを<xref:System.Exception?displayProperty=fullName>拡張しますが、すべての必要なコンストラクターを宣言するわけではありません。
+型は <xref:System.Exception?displayProperty=fullName> を拡張しますが、必要なすべてのコンストラクターを宣言しません。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -48,9 +48,9 @@ ms.locfileid: "71236045"
 
 - protected または private NewException (SerializationInfo、StreamingContext)
 
-コンストラクターを完全に宣言していないと、例外を正しく処理するのが困難になります。 たとえば、シグネチャ`NewException(string, Exception)`を持つコンストラクターは、他の例外によって発生する例外を作成するために使用されます。 このコンストラクターがないと、内部 (入れ子になった) 例外を含むカスタム例外のインスタンスを作成してスローすることはできません。このような状況では、マネージコードで実行する必要があります。
+コンストラクターを完全に宣言していないと、例外を正しく処理するのが困難になります。 たとえば、`NewException(string, Exception)` というシグネチャを持つコンストラクターは、他の例外によって発生する例外を作成するために使用されます。 このコンストラクターがないと、内部 (入れ子になった) 例外を含むカスタム例外のインスタンスを作成してスローすることはできません。このような状況では、マネージコードで実行する必要があります。
 
-最初の3つの例外コンストラクターは規約によって公開されています。 4番目のコンストラクターは、封印されていないクラスで保護され、シールクラスでプライベートになります。 詳細については[、「CA2229:シリアル化コンストラクター](../code-quality/ca2229-implement-serialization-constructors.md)を実装します。
+最初の3つの例外コンストラクターは規約によって公開されています。 4番目のコンストラクターは、封印されていないクラスで保護され、シールクラスでプライベートになります。 詳細については、「 [CA2229: 実装シリアル化コンストラクター](../code-quality/ca2229.md)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -58,7 +58,7 @@ ms.locfileid: "71236045"
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-パブリックコンストラクターに別のアクセスレベルを使用することによって違反が発生した場合に、この規則からの警告を抑制するのは安全です。 また、ポータブルクラスライブラリ (PCL) を構築し`NewException(SerializationInfo, StreamingContext)`ている場合は、コンストラクターの警告を抑制することもできます。
+パブリックコンストラクターに別のアクセスレベルを使用することによって違反が発生した場合に、この規則からの警告を抑制するのは安全です。 また、ポータブルクラスライブラリ (PCL) を構築している場合は、@no__t 0 コンストラクターの警告を抑制することもできます。
 
 ## <a name="example"></a>例
 
@@ -68,4 +68,4 @@ ms.locfileid: "71236045"
 
 ## <a name="see-also"></a>関連項目
 
-[CA2229: シリアル化コンストラクターを実装します](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: シリアル化コンストラクターを実装します](../code-quality/ca2229.md)

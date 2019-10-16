@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018778"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349704"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio でのデバッグタスクの検索
 
@@ -65,6 +65,12 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 これを行うには[、[逆アセンブリ] ウィンドウでブレークポイントを設定](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows)します。
 
+## <a name="execute-code"></a>コードの実行
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>デバッグ中にコードをステップ実行するコマンドについて説明します。
+
+詳細については、「[デバッガーでのコード間の移動](navigating-through-code-with-the-debugger.md)」を参照してください。
+
 ## <a name="inspect-data"></a>データの検査
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>アプリの実行中に変数の値を確認する
@@ -79,19 +85,7 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 デバッグ中に組み込み[文字列ビジュアライザー](view-strings-visualizer.md)を開きます。
 
-## <a name="additional-tasks"></a>その他のタスク
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>デバッグ中にコードをステップ実行するコマンドについて説明します。
-
-詳細については、「[デバッガーでのコード間の移動](navigating-through-code-with-the-debugger.md)」を参照してください。
-
-### <a name="edit-code-during-a-debugging-session"></a>デバッグセッション中のコードの編集
-
-[エディットコンティニュ](edit-and-continue.md)を使用します。 XAML の場合は、 [Xaml ホットリロード](xaml-hot-reload.md)を使用します。
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>コードを変更せずに出力ウィンドウにメッセージを送信する
-
-トレースポイントを設定します。 詳細については、「[トレースポイントの使用](using-tracepoints.md)」を参照してください。
+## <a name="configure-debugging"></a>デバッグを構成する
 
 ### <a name="customize-information-shown-in-the-debugger"></a>デバッガーに表示される情報をカスタマイズする
 
@@ -102,6 +96,16 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 ### <a name="configure-debugger-settings"></a>デバッガー設定の構成
 
 デバッガーのオプションとデバッガーのプロジェクト設定を構成するには、「[デバッガーの設定と準備](debugger-settings-and-preparation.md)」を参照してください。
+
+## <a name="additional-tasks"></a>その他のタスク
+
+### <a name="edit-code-during-a-debugging-session"></a>デバッグセッション中のコードの編集
+
+[エディットコンティニュ](edit-and-continue.md)を使用します。 XAML の場合は、 [Xaml ホットリロード](xaml-hot-reload.md)を使用します。
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>コードを変更せずに出力ウィンドウにメッセージを送信する
+
+トレースポイントを設定します。 詳細については、「[トレースポイントの使用](using-tracepoints.md)」を参照してください。
 
 ### <a name="debug-on-remote-machines"></a>リモートコンピューターでのデバッグ
 

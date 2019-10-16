@@ -10,14 +10,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74a772bbe915227bca001f9370980cbc7d3212a5
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974889"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349475"
 ---
-# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>チュートリアル: 静的コード分析を使用してコード障害を検出する
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>チュートリアル: 静的コード分析を使用したコード障害の検出
 
 このチュートリアルでは、従来のコード分析を使用して、マネージプロジェクトのコード障害を分析します。
 
@@ -93,27 +93,27 @@ ms.locfileid: "71974889"
 
 1. 警告を修正するには、次のヒントを使用します。
 
-   [CA1014:CLSCompliantAttribute @ no__t にアセンブリをマークします。AssemblyInfo.cs ファイルの末尾に `[assembly: CLSCompliant(true)]` というコードを追加します。
+   [CA1014: CLSCompliantAttribute を使用したアセンブリ](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)の設定: AssemblyInfo.cs ファイルの最後にコード `[assembly: CLSCompliant(true)]` を追加します。
 
-   [CA1032:標準例外コンストラクター @ no__t を実装します。コンストラクター `public demo (String s) : base(s) { }` をクラス `demo` に追加します。
+   [CA1032: 標準の例外コンストラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md)します。コンストラクター `public demo (String s) : base(s) { }` をクラス `demo` に追加します。
 
-   [CA1032:標準例外コンストラクター @ no__t を実装します。コンストラクター `public demo (String s, Exception e) : base(s, e) { }` をクラス `demo` に追加します。
+   [CA1032: 標準の例外コンストラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md)します。コンストラクター `public demo (String s, Exception e) : base(s, e) { }` をクラス `demo` に追加します。
 
-   [CA1032:標準例外コンストラクター @ no__t を実装します。クラスのデモにコンストラクター `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` を追加します。 また、<xref:System.Runtime.Serialization?displayProperty=fullName> の `using` ステートメントも追加する必要があります。
+   [CA1032: 標準の例外コンストラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md)します。クラスのデモにコンストラクター `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` を追加します。 また、<xref:System.Runtime.Serialization?displayProperty=fullName> の `using` ステートメントも追加する必要があります。
 
-   [CA1032:標準例外コンストラクター @ no__t を実装します。コンストラクター `public demo () : base() { }` をクラス `demo` に追加します。
+   [CA1032: 標準の例外コンストラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md)します。コンストラクター `public demo () : base() { }` をクラス `demo` に追加します。
 
-   [CA1709:識別子は、@ no__t-0 のように大文字にする必要があります。名前空間の大文字と小文字の区別を `testCode` から `TestCode` に変更します。
+   [CA1709: 識別子は大文字にする必要があり](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)ます。名前空間の大文字と小文字の区別を変更するには、-1 `testCode` を @no__t に変更します。
 
-   [CA1709:識別子は、@ no__t-0 のように大文字にする必要があります。メンバーの名前を `Demo` に変更します。
+   CA1709: 識別子の大文字と小文字を[正しく指定する必要があり](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)ます。メンバーの名前を `Demo` に変更してください。
 
-   [CA1709:識別子は、@ no__t-0 のように大文字にする必要があります。メンバーの名前を `Item` に変更します。
+   CA1709: 識別子の大文字と小文字を[正しく指定する必要があり](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)ます。メンバーの名前を `Item` に変更してください。
 
-   [CA1710:識別子には、正しいサフィックス @ no__t: 0 が必要です。クラスの名前とそのコンストラクターを `DemoException` に変更します。
+   [CA1710: 識別子には正しいサフィックスが](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)必要です: クラスの名前とそのコンストラクターを `DemoException` に変更してください。
 
-   [CA2237:ISerializable 型を SerializableAttribute @ no__t にマークします。@No__t-0 属性をクラス `demo` に追加します。
+   [CA2237: SerializableAttribute を使用して ISerializable 型をマーク](../code-quality/ca2237.md)します。 @no__t クラスに `[Serializable ()]` 属性を追加します。
 
-   [CA2210:アセンブリには、有効な厳密な名前 @ no__t-0 が必要です。厳密な名前のキーを使用して ' CodeAnalysisManagedDemo ' に署名します:
+   [CA2210: アセンブリには有効な厳密な名前が必要](../code-quality/ca2210.md)です。厳密な名前のキーを持つ ' CodeAnalysisManagedDemo ' に署名してください。
 
    1. **[プロジェクト]** メニューの **[CodeAnalysisManagedDemo のプロパティ]** をクリックします。
 

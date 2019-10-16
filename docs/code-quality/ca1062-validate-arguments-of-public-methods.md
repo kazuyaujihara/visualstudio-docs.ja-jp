@@ -1,5 +1,5 @@
 ---
-title: CA1062:パブリック メソッドの引数の検証
+title: 'CA1062: パブリック メソッドの引数の検証'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 43aa94f67e17a3de51635840419e36ef38db41df
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235335"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381011"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:パブリック メソッドの引数の検証
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: パブリック メソッドの引数の検証
 
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-外部から参照できるメソッドは、その引数が`null` (`Nothing` Visual Basic) であるかどうかを確認せずに、参照引数の1つを逆参照します。
+外部から参照可能なメソッドは、その引数が `null` (Visual Basic の `Nothing`) かどうかを検証せずに、参照引数の1つを逆参照します。
 
 ## <a name="rule-description"></a>規則の説明
 
-外部から参照できるメソッドに渡されるすべての参照引数を照合`null`する必要があります。 必要に応じて、 <xref:System.ArgumentNullException>引数が`null`の場合にをスローします。
+外部から参照できるメソッドに渡されるすべての参照引数は、@no__t 0 に対してチェックする必要があります。 必要に応じて、引数が-1 @no__t の場合に @no__t 0 をスローします。
 
-パブリックまたは protected として宣言されているために不明なアセンブリからメソッドを呼び出すことができる場合は、メソッドのすべてのパラメーターを検証する必要があります。 メソッドが既知のアセンブリによってのみ呼び出されるように設計されている場合は、メソッド<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>を内部にし、メソッドを含むアセンブリに属性を適用する必要があります。
+パブリックまたは protected として宣言されているために不明なアセンブリからメソッドを呼び出すことができる場合は、メソッドのすべてのパラメーターを検証する必要があります。 メソッドが既知のアセンブリによってのみ呼び出されるように設計されている場合は、メソッドを内部にし、メソッドを含むアセンブリに <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性を適用する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、各参照引数を`null`に対して検証します。
+この規則違反を修正するには、各参照引数を `null` に対して検証します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
@@ -76,7 +76,7 @@ namespace DesignLibrary
         {
             if (input == null)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
             if (input.Length != 0)
             {
@@ -107,7 +107,7 @@ Namespace DesignLibrary
         Sub Validate(ByVal input As String)
 
             If input Is Nothing Then
-                Throw New ArgumentNullException("input")
+                Throw New ArgumentNullException(NameOf(input))
             End If
 
             If input.Length <> 0 Then
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>例
 
-フィールドまたは参照オブジェクトであるプロパティを設定するコピーコンストラクターも、CA1062 の規則に違反する可能性があります。 コピーコンストラクターに渡されるコピーさ`null`れたオブジェクトが (`Nothing` Visual Basic) である可能性があるため、違反が発生します。 違反を解決するには、静的 (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
+フィールドまたは参照オブジェクトであるプロパティを設定するコピーコンストラクターも、CA1062 の規則に違反する可能性があります。 コピーコンストラクターに渡されるコピーされたオブジェクトは @no__t 0 (Visual Basic では `Nothing`) である可能性があるため、違反が発生します。 違反を解決するには、静的 (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
 
-次`Person`のクラスの例`other`では、 `Person`コピーコンストラクターに渡されるオブジェクトがで`null`ある可能性があります。
+次の `Person` クラスの例では、`Person` コピーコンストラクターに渡される `other` オブジェクトは `null` である可能性があります。
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>例
 
-次`Person`の例では`other` 、コピーコンストラクターに渡されたオブジェクトが、最初に`PassThroughNonNull`メソッドで null であるかどうかがチェックされます。
+次の変更後の `Person` の例では、コピーコンストラクターに渡された `other` オブジェクトが、最初に `PassThroughNonNull` メソッドで null であるかどうかがチェックされます。
 
 ```csharp
 public class Person
@@ -175,7 +175,7 @@ public class Person
     private static Person PassThroughNonNull(Person person)
     {
         if (person == null)
-            throw new ArgumentNullException("person");
+            throw new ArgumentNullException(nameof(person));
         return person;
     }
 }
