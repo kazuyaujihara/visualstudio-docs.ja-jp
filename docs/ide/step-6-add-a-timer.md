@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118985"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289640"
 ---
 # <a name="step-6-add-a-timer"></a>手順 6: タイマーの追加
 次に、絵合わせゲームに <xref:System.Windows.Forms.Timer> コントロールを追加します。 タイマーは、指定されたミリ秒間待機してから、*ティック*と呼ばれるイベントを発生させます。 タイマーは、アクションを開始したり定期的に繰り返したりする場合に便利です。 ここではタイマーの使用例として、プレーヤーが 2 つのアイコンを選択し、アイコンが一致しない場合は、短時間の経過後にその 2 つのアイコンが再び非表示になるようにします。
@@ -27,7 +27,7 @@ ms.locfileid: "71118985"
 
 1. **Windows フォーム デザイナー**のツール ボックスから、( **[コンポーネント]** カテゴリ内の) **[タイマー]** を選択して **Enter** キーを押すか、タイマーをダブルクリックして、タイマー コントロールをフォームに追加します。 次の図に示しているように、タイマーのアイコンが **[Timer1]** という名前で、フォームの下の領域に表示されます。
 
-     ![タイマー](../ide/media/express_timer.png)
+     ![タイマー](../ide/media/express_timer.png)<br/>
 **タイマー**
 
     > [!NOTE]
@@ -39,6 +39,9 @@ ms.locfileid: "71118985"
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+
+      > [!IMPORTANT]
+      > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
 
      Tick イベント ハンドラーは、3 つのことを実行します。まず、<xref:System.Windows.Forms.Timer.Stop> メソッドを呼び出してタイマーを停止します。 次に、2 つの参照変数 `firstClicked` および `secondClicked` を使用して、プレーヤーがクリックした 2 つのラベルを再び非表示にします。 最後に、`firstClicked` 参照変数と `secondClicked` 参照変数を `null` (Visual C# の場合) または `Nothing` (Visual Basic の場合) にリセットします。 この手順は、プログラム自体がリセットされるしくみであるため重要です。 この時点では、<xref:System.Windows.Forms.Label> コントロールが追跡されておらず、プレーヤーはラベルを再びクリックできる状態になっています。
 
