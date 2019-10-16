@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 参照
+        - name: 関連項目
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -170,8 +170,8 @@
   items:
     - name: 開発
       items:
-        - name: 'インデックス: IDE を使用してコードを記述する'
-          href: ide/index-writing-code.md
+        - name: 作業開始
+          href: ide/index-writing-code.yml
         - name: IDE 内で移動する
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: ソリューションとプロジェクト
@@ -742,7 +742,7 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: マイクロソフトのアクセシビリティ製品とサービス
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 参照
+- name: 関連項目
   items:
     - name: キーボード ショートカット
       items:
@@ -1079,7 +1079,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: ツールボックス
           items:
-            - name: 関連項目
+            - name: 参照
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'ツールボックス、[コンポーネント] タブ'
