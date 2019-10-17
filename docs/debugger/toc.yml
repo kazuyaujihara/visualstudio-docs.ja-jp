@@ -44,8 +44,6 @@
       items:
         - name: ブレークポイントの使用
           href: using-breakpoints.md
-        - name: トレースポイントの使用
-          href: using-tracepoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
     - name: データ検査
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'F# ではエディット コンティニュはサポートされません。'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: 出力ウィンドウにログを記録する
+      href: using-tracepoints.md
     - name: デバッガー データの表示
       items:
         - name: モジュール
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: カスタム ビュー (マネージド)
               items:
-                - name: オブジェクトのカスタム ビューを作成する
+                - name: .managed オブジェクトのカスタム ビューの作成
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 表示するものをデバッガーに通知する
                   href: using-the-debuggerdisplay-attribute.md
