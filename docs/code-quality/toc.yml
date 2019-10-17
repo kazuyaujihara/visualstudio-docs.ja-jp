@@ -1,5 +1,5 @@
 - name: コード分析のドキュメント
-  href: index.md
+  href: index.yml
 - name: マネージド コードの分析
   items:
     - name: 概要
@@ -203,9 +203,9 @@
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: 'CA5350:脆弱な暗号アルゴリズムを使用しないでください'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                  href: ca5350.md
                 - name: CA5351 破られた暗号アルゴリズムを使用しないでください
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                  href: ca5351.md
             - name: デザインの警告
               items:
                 - name: 概要
@@ -370,7 +370,7 @@
                 - name: 'CA1309:順序を示す StringComparison を使用します'
                   href: ca1309-use-ordinal-stringcomparison.md
                 - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
-                  href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
+                  href: ca2101.md
             - name: 相互運用性に関する警告
               items:
                 - name: 概要
