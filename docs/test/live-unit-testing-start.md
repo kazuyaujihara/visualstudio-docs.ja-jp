@@ -3,48 +3,40 @@ title: ライブ単体テストを使用してコードをテストする方法
 ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb254dc2d70992c798a95e5e12efcbb72b2a2336
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787582"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262344"
 ---
-# <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 2017 で Live Unit Testing の使用を開始する
+# <a name="get-started-with-live-unit-testing"></a>Live Unit Testing の概要
 
-Visual Studio ソリューションで Live Unit Testing を有効にすると、テスト カバレッジとテストの状態が視覚的に示されます。 また、コードが変更されるたびにテストが動的に実行され、変更が原因でテストが失敗した場合にはただちに通知されます。
+Visual Studio ソリューションで Live Unit Testing を有効にすると、テスト カバレッジとテストの状態が視覚的に示されます。 また、Live Unit Testing では、コードが変更されるたびにテストが動的に実行され、変更が原因でテストが不合格になった場合にはただちに通知されます。
 
-Live Unit Testing を使用すると、.NET Framework または .NET Core のいずれかを対象とするソリューションをテストすることができます。 このチュートリアルでは、Live Unit Testing の使用方法を学習するために .NET Standard を対象とする単純なクラス ライブラリを作成します。さらに、それをテストするために、.NET Core を対象とする MSTest プロジェクトを作成します。
-
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+Live Unit Testing を使用すると、.NET Framework または .NET Core のいずれかを対象とするソリューションをテストすることができます。 このチュートリアルでは、.NET Standard を対象とする簡単なクラス ライブラリを作成することによって Live Unit Testing の使用方法を学習し、それをテストするために .NET Core を対象とする MSTest プロジェクトを作成します。
 
 完全な C# ソリューションは、GitHub 上の [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) リポジトリからダウンロードできます。
 
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-完全な Visual Basic ソリューションは、GitHub 上の [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) リポジトリからダウンロードできます。
-
----
-
 ## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルでは、.NET Core 2.0 ワークロードを使用する Visual Studio Enterprise エディションがインストールされている必要があります。
+このチュートリアルでは、Visual Studio Enterprise エディションと **.NET Core クロスプラットフォームの開発**ワークロードがインストールされている必要があります。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>ソリューションとクラス ライブラリ プロジェクトを作成する
 
-単一の .NET Standard クラス ライブラリ プロジェクト `StringLibrary` から成る `UtilityLibraries` という名前の Visual Studio ソリューションを作成することから始めます。 `StringLibrary` は、C# または Visual Basic のどちらでも記述することができます。
+最初に、単一の .NET Standard クラス ライブラリ プロジェクト StringLibrary で構成される UtilityLibraries という名前の Visual Studio ソリューションを作成します。
 
 このソリューションは、1 つまたは複数のプロジェクト用のコンテナーにすぎません。 空のソリューションを作成するには、Visual Studio を開き、次の手順を行います。
 
-1. Visual Studio の最上位のメニューから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. Visual Studio の最上位のメニューから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
 
-1. テンプレートの検索ボックスに「**ソリューション**」と入力して、**[空のソリューション]** テンプレートを選択します。
+1. テンプレートの検索ボックスに「**ソリューション**」と入力して、 **[空のソリューション]** テンプレートを選択します。
 
    ::: moniker range="vs-2017"
 
@@ -54,20 +46,18 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 1. ソリューションの作成を終了します。
 
-ソリューションが作成されたので、次に、文字列を操作するための拡張メソッドを複数格納する `StringLibrary` という名前のクラス ライブラリを作成します。
+ソリューションを作成したので、次に、文字列を操作するための複数の拡張メソッドが含まれる StringLibrary という名前のクラス ライブラリを作成します。
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
-1. **ソリューション エクスプローラー**で、`UtilityLibraries` ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**で、UtilityLibraries ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
 ::: moniker range="vs-2017"
 
-2. **[新しいプロジェクトの追加]** ダイアログで、C# ノードを選択し、**[.NET Standard]** を選択します。
+2. **[新しいプロジェクトの追加]** ダイアログで、C# ノードを選択し、 **[.NET Standard]** を選択します。
 
    > [!NOTE]
-   > 使用するライブラリは特定の .NET 実装ではなく .NET Standard を対象としているので、.NET Standard の所定のバージョンをサポートする任意の .NET 実装から呼び出すことができます。 詳細については、「[.NET Standard](/dotnet/standard/net-standard)」をご覧ください。
+   > 使用するライブラリは特定の .NET 実装ではなく .NET Standard を対象としているので、そのバージョンの .NET Standard をサポートする任意の .NET 実装から呼び出すことができます。 詳細については、「[.NET Standard](/dotnet/standard/net-standard)」をご覧ください。
 
-3. 次の図に示すように、右側のウィンドウで **[クラス ライブラリ (.NET Standard)]** テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibrary`」と入力します。
+3. 次の図に示すように、右側のウィンドウで **[クラス ライブラリ (.NET Standard)]** テンプレートを選択し、 **[名前]** テキスト ボックスに「**StringLibrary**」と入力します。
 
    ![[新しいプロジェクトの追加] ダイアログ](./media/lut-start/add-project-cs.png)
 
@@ -77,12 +67,12 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 ::: moniker range=">=vs-2019"
 
-2. テンプレートの検索ボックスに「**クラス ライブラリ**」と入力して、**[クラス ライブラリ (.NET Standard)]** テンプレートを選択します。 **[次へ]** をクリックします。
+2. テンプレートの検索ボックスに「**クラス ライブラリ**」と入力して、 **[クラス ライブラリ (.NET Standard)]** テンプレートを選択します。 **[次へ]** をクリックします。
 
    > [!NOTE]
-   > 使用するライブラリは特定の .NET 実装ではなく .NET Standard を対象としているので、.NET Standard の所定のバージョンをサポートする任意の .NET 実装から呼び出すことができます。 詳細については、「[.NET Standard](/dotnet/standard/net-standard)」をご覧ください。
+   > 使用するライブラリは特定の .NET 実装ではなく .NET Standard を対象としているので、そのバージョンの .NET Standard をサポートする任意の .NET 実装から呼び出すことができます。 詳細については、「[.NET Standard](/dotnet/standard/net-standard)」をご覧ください。
 
-3. プロジェクトに `StringLibrary` という名前を付けます。
+3. プロジェクトに **StringLibrary** という名前を付けます。
 
 4. **[作成]** をクリックして、プロジェクトを作成します。
 
@@ -92,7 +82,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
-   `StringLibrary` には 3 つの静的メソッドが格納されています。
+   StringLibrary には 3 つの静的メソッドがあります。
 
    - `StartsWithUpper` は、文字列が大文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
 
@@ -100,67 +90,13 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
    - `HasEmbeddedSpaces` は、埋め込み空白文字が文字列に含まれている場合は `true` を返し、それ以外の場合には `false` を返します。
 
-6. Visual Studio の最上位メニューから、**[ビルド]** > **[ソリューションのビルド]** の順に選択します。 Visual Studio によって目的のライブラリが正常にビルドされるはずです。
-
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-1. **ソリューション エクスプローラー**で、`UtilityLibraries` ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。
-
-::: moniker range="vs-2017"
-
-2. **[新しいプロジェクトの追加]** ダイアログで、Visual Basic ノードを選択し、次に **[.NET Standard]** を選択します。
-
-   > [!NOTE]
-   > 使用するライブラリは特定の .NET 実装ではなく .NET Standard を対象としているので、.NET Standard の所定のバージョンをサポートする任意の .NET 実装から呼び出すことができます。 詳細については、「[.NET Standard](/dotnet/standard/net-standard)」をご覧ください。
-
-3. 次の図に示すように、右側のウィンドウで **[クラス ライブラリ (.NET Standard)]** テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibrary`」と入力します。
-
-   ![[新しいプロジェクトの追加] ダイアログ](./media/lut-start/add-project-vb.png)
-
-4. **[OK]** をクリックして、プロジェクトを作成します。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-2. テンプレートの検索ボックスに「**クラス ライブラリ**」と入力して、**[クラス ライブラリ (.NET Standard)]** テンプレートを選択します。 **[次へ]** をクリックします。
-
-   > [!NOTE]
-   > 使用するライブラリは特定の .NET 実装ではなく .NET Standard を対象としているので、.NET Standard の所定のバージョンをサポートする任意の .NET 実装から呼び出すことができます。 詳細については、「[.NET Standard](/dotnet/standard/net-standard)」をご覧ください。
-
-3. プロジェクトに `StringLibrary` という名前を付けます。
-
-4. **[作成]** をクリックして、プロジェクトを作成します。
-
-::: moniker-end
-
-5. コード ウィンドウ内の既存のコードをすべて、次のコードに置き換えます。
-
-   [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
-
-   `StringLibrary` には 3 つの静的メソッドが格納されています。
-
-   - `StartsWithUpper` は、文字列が大文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
-
-   - `StartsWithLower` は、文字列が小文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
-
-   - `HasEmbeddedSpaces` は、埋め込み空白文字が文字列に含まれている場合は `true` を返し、それ以外の場合には `false` を返します。
-
-6. **ソリューション エクスプローラー**で、StringLibrary プロジェクトを右クリックし、**[プロパティ]** を選択します。 次の図に示すように、**[アプリケーション]** タブで、**[ルート名前空間]** テキスト ボックス内のテキストを削除します。 ルート名前空間は、ソース コード内の [Namespace ステートメント](/dotnet/visual-basic/language-reference/statements/namespace-statement)によって定義されます。
-
-   ![Visual Basic プロジェクトの [プロジェクト プロパティ] ダイアログ](./media/lut-start/vb-properties.png)
-
-7. Visual Studio の最上位メニューから、**[ビルド]** > **[ソリューションのビルド]** の順に選択します。 Visual Studio によって目的のライブラリが正常にビルドされるはずです。
-
----
+6. Visual Studio の最上位メニューから、 **[ビルド]**  >  **[ソリューションのビルド]** の順に選択します。 ビルドは成功するはずです。
 
 ## <a name="create-the-test-project"></a>テスト プロジェクトの作成
 
-次のステップとして、`StringLibrary` ライブラリをテストする単体テスト プロジェクトを作成します。 次の手順を実行して、単体テストを作成します。
+次のステップとして、StringLibrary ライブラリをテストする単体テスト プロジェクトを作成します。 次の手順を実行して、単体テストを作成します。
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
-1. **ソリューション エクスプローラー**で、`UtilityLibraries` ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**で、UtilityLibraries ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
 ::: moniker range="vs-2017"
 
@@ -169,7 +105,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
    > [!NOTE]
    > 単体テストを記述する言語は、クラス ライブラリと同じ言語でなくてもかまいません。
 
-3. 次の図に示すように、右側のウィンドウで **[単体テスト プロジェクト (.NET Core)]** テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibraryTests`」と入力します。
+3. 次の図に示すように、右側のウィンドウで **[単体テスト プロジェクト (.NET Core)]** テンプレートを選択し、 **[名前]** テキスト ボックスに「**StringLibraryTests**」と入力します。
 
    ![単体テスト プロジェクトの場合の [新しいプロジェクトの追加] ダイアログ](./media/lut-start/add-unit-test-cs.png)
 
@@ -179,9 +115,9 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 ::: moniker range=">=vs-2019"
 
-2. テンプレートの検索ボックスに「**単体テスト**」と入力して、**[単体テスト プロジェクト (.NET Core)]** テンプレートを選択します。 **[次へ]** をクリックします。
+2. テンプレートの検索ボックスに「**単体テスト**」と入力して、 **[単体テスト プロジェクト (.NET Core)]** テンプレートを選択します。 **[次へ]** をクリックします。
 
-3. プロジェクトに `StringLibraryTests` という名前を付けます。
+3. プロジェクトに **StringLibraryTests** という名前を付けます。
 
 4. **[作成]** をクリックして、プロジェクトを作成します。
 
@@ -190,7 +126,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
    > [!NOTE]
    > このはじめに (チュートリアル) では、Live Unit Testing を MSTest テスト フレームワークと一緒に使用します。 また、xUnit および NUnit のテスト フレームワークを使用することもできます。
 
-5. 単体テスト プロジェクトは、テスト対象のクラス ライブラリに自動的にアクセスすることはできません。 テスト ライブラリへのアクセス権を付与するには、クラス ライブラリ プロジェクトへの参照を追加します。 これを行うには、`StringLibraryTests` プロジェクトを右クリックし、**[追加]** > **[参照]** の順にクリックします。 次の図に示すように、**[参照マネージャー]** ダイアログで、**[ソリューション]** タブが選択されていることを確認し、`StringLibrary` プロジェクトを選択します。
+5. 単体テスト プロジェクトは、テスト対象のクラス ライブラリに自動的にアクセスすることはできません。 テスト ライブラリへのアクセス権を付与するには、クラス ライブラリ プロジェクトへの参照を追加します。 これを行うには、`StringLibraryTests` プロジェクトを右クリックし、 **[追加]**  >  **[参照]** の順にクリックします。 次の図に示すように、 **[参照マネージャー]** ダイアログで、 **[ソリューション]** タブが選択されていることを確認し、StringLibrary プロジェクトを選択します。
 
    ![[参照マネージャー] ダイアログ](./media/lut-start/add-reference.png)
 
@@ -204,113 +140,37 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
    ![ファイルのエンコードを選択](media/lut-start/ascii-encoding.png)
 
-9. 次の図に示すように、**[保存オプションの詳細設定]** ダイアログの **[エンコード]** ドロップダウン リストから **[Unicode (UTF-8 シグネチャ付き) - コードページ 65001]** を選択します。
+9. 次の図に示すように、 **[保存オプションの詳細設定]** ダイアログの **[エンコード]** ドロップダウン リストから **[Unicode (UTF-8 シグネチャ付き) - コードページ 65001]** を選択します。
 
    ![UTF-8 エンコードを選択](media/lut-start/utf8-encoding.png)
 
-10. Visual Studio の最上位メニューから、**[ビルド]** > **[ソリューションのリビルド]** の順に選択して、単体テスト プロジェクトをコンパイルします。
-
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-1. **ソリューション エクスプローラー**で、`UtilityLibraries` ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。
-
-::: moniker range="vs-2017"
-
-2. **[新しいプロジェクトの追加]** ダイアログで、Visual Basic ノードを選択し、**[.NET Core]** を選択します。
-
-   > [!NOTE]
-   > 単体テストを記述する言語は、クラス ライブラリと同じ言語でなくてもかまいません。
-
-3. 次の図に示すように、右側のウィンドウで **[単体テスト プロジェクト (.NET Core)]** テンプレートを選択し、**[名前]** テキスト ボックスに「`StringLibraryTests`」と入力します。
-
-   ![単体テストの場合の [新しいプロジェクトの追加] ダイアログ](./media/lut-start/add-unit-test-vb.png)
-
-4. **[OK]** をクリックして、プロジェクトを作成します。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-2. テンプレートの検索ボックスに「**単体テスト**」と入力して、**[単体テスト プロジェクト (.NET Core)]** テンプレートを選択します。 **[次へ]** をクリックします。
-
-3. プロジェクトに `StringLibraryTests` という名前を付けます。
-
-4. **[作成]** をクリックして、プロジェクトを作成します。
-
-::: moniker-end
-
-   > [!NOTE]
-   > このはじめに (チュートリアル) では、Live Unit Testing を MSTest テスト フレームワークと一緒に使用します。 また、xUnit および NUnit のテスト フレームワークを使用することもできます。
-
-5. 単体テスト プロジェクトは、テスト対象のクラス ライブラリに自動的にアクセスすることはできません。 テスト ライブラリへのアクセス権を付与するには、クラス ライブラリ プロジェクトへの参照を追加します。 これを行うには、`StringLibraryTests` プロジェクトを右クリックし、**[追加]** > **[参照]** の順にクリックします。 次の図に示すように、**[参照マネージャー]** ダイアログで、**[ソリューション]** タブが選択されていることを確認し、`StringLibrary` プロジェクトを選択します。
-
-   ![[参照マネージャー] ダイアログ](./media/lut-start/add-reference.png)
-
-6. テンプレートで入力されている定型的な単体テスト コードを次のコードに置き換えます。
-
-   [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
-
-7. ツール バーの **[保存]** アイコンを選択してプロジェクトを保存します。
-
-8. 単体テスト コードには ASCII 以外の文字がいくつか含まれているため、既定の ASCII 形式でファイルを保存すると失われる文字が存在することを警告する次のようなダイアログが表示されます。 **[その他のエンコードで保存]** ボタンを選択します。
-
-   ![ファイルのエンコードを選択](media/lut-start/ascii-encoding.png)
-
-9. 次の図に示すように、**[保存オプションの詳細設定]** ダイアログの **[エンコード]** ドロップダウン リストから **[Unicode (UTF-8 シグネチャ付き) - コードページ 65001]** を選択します。
-
-   ![UTF-8 エンコードを選択](media/lut-start/utf8-encoding.png)
-
-10. Visual Studio の最上位メニューから、**[ビルド]** > **[ソリューションのリビルド]** の順に選択して、単体テスト プロジェクトをコンパイルします。
-
----
+10. Visual Studio の最上位メニューから、 **[ビルド]**  >  **[ソリューションのリビルド]** の順に選択して、単体テスト プロジェクトをコンパイルします。
 
 クラス ライブラリと、これに対する複数の単体テストが作成されました。 これで、Live Unit Testing を使用するために必要な準備作業が完了しました。
 
 ## <a name="enable-live-unit-testing"></a>Live Unit Testing の有効化
 
-`StringLibrary` クラス ライブラリ用のテストを作成しましたが、まだこのテストを実行していません。 Live Unit Testing を有効にすると、テストが自動的に実行されます。 Live Unit Testing を有効にするには、次の手順を実行します。
+StringLibrary クラス ライブラリ用のテストを作成しましたが、まだ実行していません。 Live Unit Testing を有効にすると、テストが自動的に実行されます。 Live Unit Testing を有効にするには、次の手順を実行します。
 
-1. 必要に応じて、`StringLibrary` のコードが含まれているコード ウィンドウを選択します。 C# プロジェクトの *Class1.cs* か、Visual Basic プロジェクトの *Class1.vb* のどちらかです。 (このステップでは、Live Unit Testing を有効にした後で、テストの結果とコード カバレッジの範囲を視覚的に検査します)。
+1. 必要に応じて、StringLibrary のコードが含まれているコード ウィンドウを選択します。 C# プロジェクトの *Class1.cs* か、Visual Basic プロジェクトの *Class1.vb* のどちらかです。 (このステップでは、Live Unit Testing を有効にした後で、テストの結果とコード カバレッジの範囲を視覚的に検査します。)
 
-1. Visual Studio の最上位メニューから **[テスト]** > **[Live Unit Testing]** > **[開始]** の順に選びます。
+1. Visual Studio の最上位メニューから **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選びます。
 
 1. Visual Studio が Live Unit Test を開始します。これによりすべてのテストが自動的に実行されます。
 
-テストの実行が終了すると、**テスト エクスプローラー**に全体の結果と個々のテストの結果とが両方とも表示されます。 さらに、コード ウィンドウには、テスト コードのカバレッジとテストの結果とが両方ともグラフィカルに表示されます。 次の図に示すように、3 つのテストはいずれも正常に実行されています。 また、テストは `StartsWithUpper` メソッド内のすべてのコード パスをカバーしており、それらのテストはすべて正常に実行されていることがわかります (緑色のチェック マーク "✓" によって示されている)。 最後に、`StringLibrary` 内の他のメソッドにはコード カバレッジが設定されていないことがわかります (青い線 "➖" によって示されている)。
-
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+テストの実行が終了すると、**テスト エクスプローラー**に全体の結果と個々のテストの結果とが両方とも表示されます。 さらに、コード ウィンドウには、テスト コードのカバレッジとテストの結果とが両方ともグラフィカルに表示されます。 次の図に示すように、3 つのテストはいずれも正常に実行されています。 また、テストは `StartsWithUpper` メソッド内のすべてのコード パスをカバーしており、それらのテストはすべて正常に実行されていることがわかります (緑色のチェック マーク "✓" によって示されている)。 最後に、StringLibrary 内の他のメソッドにはコード カバレッジが設定されていないことがわかります (青い線 "➖" によって示されている)。
 
 ![Live Unit Testing の開始後のテスト エクスプローラーとコード ウィンドウ](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-![Live Unit Testing の開始後のテスト エクスプローラーとコード ウィンドウ](media/lut-start/lut-results-vb.png)
-
----
-
 また、コード ウィンドウ内の特定のコード カバレッジ アイコンを選択することにより、テスト カバレッジとテスト結果に関する詳細情報を取得することもできます。 この詳細を調べるには、次の手順を実行します。
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
-1. `StartsWithUpper` メソッド内の `if (String.IsNullOrWhiteSpace(s))` という行に表示された緑のチェック マークをクリックします。 次の図に示すように、Live Unit Testing は、そのコード行が 3 つのテストでカバーされており、いずれのテストも正常に実行されていることを示します。
+1. `StartsWithUpper` メソッド内の `if (String.IsNullOrWhiteSpace(s))` という行に表示された緑のチェック マークをクリックします。 次の図に示すように、Live Unit Testing では、そのコード行が 3 つのテストでカバーされており、いずれのテストも正常に実行されたことが示されています。
 
    !["If" 条件付きステートメントのコード カバレッジ](media/lut-start/code-coverage-cs1.png)
 
-1. `StartsWithUpper` メソッド内の `return Char.IsUpper(s[0])` という行に表示された緑のチェック マークをクリックします。 次の図に示すように、Live Unit Testing は、そのコード行が 2 つのテストのみでカバーされており、いずれのテストも正常に実行されていることを示します。
+1. `StartsWithUpper` メソッド内の `return Char.IsUpper(s[0])` という行に表示された緑のチェック マークをクリックします。 次の図に示すように、Live Unit Testing では、そのコード行が 2 つだけのテストでカバーされており、いずれのテストも正常に実行されたことが示されています。
 
    ![Return ステートメントのコード カバレッジ](media/lut-start/code-coverage-cs2.png)
-
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-1. `StartsWithUpper` メソッド内の `If (String.IsNullOrWhiteSpace(s)) Then` という行に表示された緑のチェック マークをクリックします。 次の図に示すように、Live Unit Testing は、そのコード行が 3 つのテストでカバーされており、いずれのテストも正常に実行されていることを示します。
-
-   !["If" 条件付きステートメントのコード カバレッジ](media/lut-start/code-coverage-vb1.png)
-
-1. `StartsWithUpper` メソッド内の `Return Char.IsUpper(s(0))` という行に表示された緑のチェック マークをクリックします。 次の図に示すように、Live Unit Testing は、そのコード行が 2 つのテストのみでカバーされており、いずれのテストも正常に実行されていることを示します。
-
-   ![Return ステートメントのコード カバレッジ](media/lut-start/code-coverage-vb2.png)
-
----
 
 Live Unit Testing は、重大な問題として不完全なコード カバレッジを明らかにしています。 この問題は、次のセクションで取り上げます。
 
@@ -319,8 +179,6 @@ Live Unit Testing は、重大な問題として不完全なコード カバレ�
 このセクションでは、単体テストを `StartsWithLower` メソッドに展開します。 展開を行っている間も、Live Unit Testing によって引き続きコードのテストが実行されます。
 
 コード カバレッジを `StartsWithLower` メソッドに展開するには、次の手順を実行します。
-
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
 
 1. 次の `TestStartsWithLower` メソッドと `TestDoesNotStartWithLower` メソッドをプロジェクトのテスト ソース コード ファイルに追加します。
 
@@ -334,29 +192,9 @@ Live Unit Testing は、重大な問題として不完全なコード カバレ�
 
    ![テスト カバレッジを展開した後のテスト エクスプローラー](media/lut-start/test-dynamic.png)
 
-1. `StringLibrary` クラスのソース コードを含むウィンドウに切り替えます。 Live Unit Testing は、コード カバレッジが `StartsWithLower` メソッドに展開されていることを示します。
+1. StringLibrary クラスのソース コードが含まれるウィンドウに切り替えます。 Live Unit Testing は、コード カバレッジが `StartsWithLower` メソッドに展開されていることを示します。
 
     ![StartsWithLower メソッドのコード カバレッジ](media/lut-start/lut-extended-cs.png)
-
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-1. 次の `TestStartsWithLower` メソッドと `TestDoesNotStartWithLower` メソッドをプロジェクトのテスト ソース コード ファイルに追加します。
-
-    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
-
-1. [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) メソッドへの呼び出しのすぐ後に、次のコードを追加して、`DirectCallWithNullOrEmpty` メソッドを変更します。
-
-    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
-
-1. ソース コードを変更すると、Live Unit Testing によって新しいテストと変更したテストが自動的に実行されます。 次の図に示すように、**テスト エクスプローラー**に、追加した 2 つのテストと変更した 1 つのテストを含むすべてのテストが成功したことが表示されます。
-
-   ![テスト カバレッジを展開した後のテスト エクスプローラー](media/lut-start/test-dynamic.png)
-
-1. `StringLibrary` クラスのソース コードを含むウィンドウに切り替えます。 Live Unit Testing は、コード カバレッジが `StartsWithLower` メソッドに展開されていることを示します。
-
-    ![StartsWithLower のコード カバレッジ](media/lut-start/lut-extended-vb.png)
-
----
 
 場合によっては、成功したテストが**テスト エクスプローラー**で、灰色表示されることがあります。これは、テストが現在実行中であることを示すか、または最後に実行されてから、テストに影響する変更がコードに加えられていないために、テストが再度実行されなかったことを示します。
 
@@ -366,19 +204,17 @@ Live Unit Testing は、重大な問題として不完全なコード カバレ�
 
 このセクションでは、Live Unit Testing を使用してテスト エラーを識別し、トラブルシューティングを行い、対処する方法を説明します。 そのために、テスト カバレッジを `HasEmbeddedSpaces` メソッドに展開します。
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
 1. テスト ファイルに次のメソッドを追加します。
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. 次の図に示すように、テストが実行されると、Live Unit Testing は `TestHasEmbeddedSpaces` メソッドが失敗したことを示します。
+1. 次の図に示すように、テストが実行されると、Live Unit Testing では `TestHasEmbeddedSpaces` メソッドが失敗したことが示されます。
 
    ![失敗したテストを示すテスト エクスプローラー](media/lut-start/test-failure.png)
 
-1. ライブラリ コードが表示されたウィンドウを選択します。 Live Unit Testing によって `HasEmbeddedSpaces` メソッドにコード カバレッジが展開されていることに注目してください。 また、Live Unit Testing は、失敗したテストでカバーされている行に赤い "🞩" を追加することで、テスト エラーを報告しています。
+1. ライブラリ コードが表示されたウィンドウを選択します。 Live Unit Testing によって `HasEmbeddedSpaces` メソッドまでコード カバレッジが広げられています。 また、Live Unit Testing は、失敗したテストでカバーされている行に赤い "🞩" を追加することで、テスト エラーを報告しています。
 
-1. `HasEmbeddedSpaces`メソッド シグネチャが含まれている行にマウス ポインターを合わせます。 次の図に示すように、Live Unit Testing は、メソッドが 1 つのテストでカバーされていることを知らせるツールヒントを表示します。
+1. `HasEmbeddedSpaces`メソッド シグネチャが含まれている行にマウス ポインターを合わせます。 次の図に示すように、Live Unit Testing では、メソッドが 1 つのテストでカバーされていることを知らせるヒントが表示されます。
 
    ![失敗したテストに関する Live Unit Testing の情報](media/lut-start/test-failure-info-cs.png)
 
@@ -388,7 +224,9 @@ Live Unit Testing は、重大な問題として不完全なコード カバレ�
 
 1. **[選択されたテストのデバッグ]** を選択して、失敗したテストをデバッグします。
 
-1. Visual Studio はデバッグ モードでテストを実行します。 テストでは、配列内の各文字列が `phrase` という名前の変数に割り当てられ、その変数が `HasEmbeddedSpaces` メソッドに渡されます。 アサーション式が初めて `false` になると、プログラムの実行は一時停止し、デバッガーが呼び出されます。 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) メソッドの呼び出しに予期しない値が含まれていると、以下の図に示すような例外ダイアログが表示されます。
+1. Visual Studio はデバッグ モードでテストを実行します。
+
+   テストでは、配列内の各文字列が `phrase` という名前の変数に割り当てられ、その変数が `HasEmbeddedSpaces` メソッドに渡されます。 アサーション式が初めて `false` になると、プログラムの実行は一時停止し、デバッガーが呼び出されます。 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) メソッドの呼び出しに予期しない値が含まれていると、以下の図に示すような例外ダイアログが表示されます。
 
    ![Live Unit Testing の例外ダイアログ](media/lut-start/exception-dialog-cs.png)
 
@@ -398,71 +236,18 @@ Live Unit Testing は、重大な問題として不完全なコード カバレ�
 
    **[自動変数]** ウィンドウで、`phrase` 変数の値が "Name\tDescription" (配列の 2 番目の要素) になっていることに注目してください。 テスト メソッドは、この文字列が `HasEmbeddedSpaces` に渡された場合に `true` が返されるのを期待していますが、実際に返されるのは `false` です。 タブ文字である "\t" が埋め込みスペースとして認識されていないのは明らかです。
 
-1. テスト プログラムの実行を続行するには、**[デバッグ]** > **[続行]** の順に選択するか、**F5** キーを押すか、あるいはツールバーの **[続行]** ボタンをクリックします。 ハンドルされない例外が発生したため、テストは終了します。
+1. テスト プログラムの実行を続行するには、 **[デバッグ]**  >  **[続行]** の順に選択するか、**F5** キーを押すか、あるいはツールバーの **[続行]** ボタンをクリックします。 ハンドルされない例外が発生したため、テストは終了します。
+これは、バグの予備調査を行う上で十分な情報です。 `TestHasEmbeddedSpaces` (テスト ルーチン) で不適切な想定が行われたか、または `HasEmbeddedSpaces` がすべての埋め込みスペースを正しく認識していません。
 
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-1. テスト ファイルに次のメソッドを追加します。
-
-    [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
-
-1. 次の図に示すように、テストが実行されると、Live Unit Testing は `TestHasEmbeddedSpaces` メソッドが失敗したことを示します。
-
-   ![失敗したテストを示すテスト エクスプローラー](media/lut-start/test-failure.png)
-
-1. ライブラリ コードが表示されたウィンドウを選択します。 Live Unit Testing によって `HasEmbeddedSpaces` メソッドにコード カバレッジが展開されていることに注目してください。 また、Live Unit Testing は、失敗したテストでカバーされている行に赤い "🞩" を追加することで、テスト エラーを報告しています。
-
-1. `HasEmbeddedSpaces`メソッド シグネチャが含まれている行にマウス ポインターを合わせます。 次の図に示すように、Live Unit Testing は、メソッドが 1 つのテストでカバーされていることを知らせるツールヒントを表示します。
-
-   ![失敗したテストに関する Live Unit Testing の情報](media/lut-start/test-failure-info-vb.png)
-
-1. 失敗した **TestHasEmbeddedSpaces** テストを選択します。 次の図に示すように、すべてのテストの実行、選択したテストの実行、すべてのテストのデバッグ、選択したテストのデバッグなど、Live Unit Testing には多くのオプションが用意されています。
-
-   ![テストが失敗した場合のための Live Unit Testing のオプション](media/lut-start/test-failure-options.png)
-
-1. **[選択されたテストのデバッグ]** を選択して、失敗したテストをデバッグします。
-
-1. Visual Studio はデバッグ モードでテストを実行します。 テストでは、配列内の各文字列が `phrase` という名前の変数に割り当てられ、その変数が `HasEmbeddedSpaces` メソッドに渡されます。 アサーション式が初めて `false` になると、プログラムの実行は一時停止し、デバッガーが呼び出されます。 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) メソッドの呼び出しに予期しない値が含まれていると、以下の図に示すような例外ダイアログが表示されます。
-
-   ![Live Unit Testing の例外ダイアログ](media/lut-start/exception-dialog-vb.png)
-
-   さらに、次の図に示すように、Visual Studio で用意されているすべてのデバッグ ツールを使用することで、失敗したテストのトラブルシューティングを効果的に行うことができます。
-
-   ![Visual Studio のデバッグ ツール](media/lut-start/debugging-tools-vb.png)
-
-   **[自動変数]** ウィンドウで、`phrase` 変数の値が "Name" + vbTab + "Description" (配列の 2 番目の要素) になっていることに注目してください。 テスト メソッドは、この文字列が `HasEmbeddedSpaces` に渡された場合に `true` が返されるのを期待していますが、実際に返されるのは `false` です。 タブ文字が埋め込みスペースとして認識されていないのは明らかです。
-
-1. テスト プログラムの実行を続行するには、**[デバッグ]** > **[続行]** の順に選択するか、**F5** キーを押すか、あるいはツールバーの **[続行]** ボタンをクリックします。 ハンドルされない例外が発生したため、テストは終了します。
-
----
-
-これは、バグの予備調査を行う上で十分な情報です。 `TestHasEmbeddedSpaces` (テスト ルーチン) で不適切な想定が行われたか、または `HasEmbeddedSpaces` がすべての埋め込みスペースを正しく認識していません。 問題を診断し解決するには、`StringLibrary.HasEmbeddedSpaces` メソッドから始めます。
-
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
-1. `HasEmbeddedSpaces` メソッドでの比較を確認します。 このメソッドでは、埋め込みスペースを U+0020 と見なしています。 ただし、Unicode Standard には、その他にも多くの空白文字が含まれています。 このことは、空白文字かどうかのテストが、ライブラリ コードで正しく行われていないことを示しています。
+1. 問題を診断し解決するには、`StringLibrary.HasEmbeddedSpaces` メソッドから始めます。 `HasEmbeddedSpaces` メソッドでの比較を確認します。 このメソッドでは、埋め込みスペースを U+0020 と見なしています。 ただし、Unicode Standard には、その他にも多くの空白文字が含まれています。 このことは、空白文字かどうかのテストが、ライブラリ コードで正しく行われていないことを示しています。
 
 1. 等価比較を、<xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> メソッドへの呼び出しに置き換えます。
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/program2.cs#1)]
 
-1. 次の図に示すように、Live Unit Testing は、失敗したテスト メソッドを再実行し、コード ウィンドウ内の結果と**テスト エクスプローラー**内の結果を更新する処理を自動的に行います。
+1. 次の図に示すように、Live Unit Testing では自動的に、失敗したテスト メソッドが再実行され、コード ウィンドウと**テスト エクスプローラー**の結果が更新されます。
 
     ![成功した HasEmbeddedSpaces テスト](media/lut-start/test-success-cs.png)
-
-# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
-
-1. `HasEmbeddedSpaces` メソッドでの比較を確認します。 このメソッドでは、埋め込みスペースを U+0020 と見なしています。 ただし、Unicode Standard には、その他にも多くの空白文字が含まれています。 このことは、空白文字かどうかのテストが、ライブラリ コードで正しく行われていないことを示しています。
-
-1. 等価比較を、<xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> メソッドへの呼び出しに置き換えます。
-
-    [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/class2.vb#1)]
-
-1. 次の図に示すように、Live Unit Testing は、失敗したテスト メソッドを再実行し、コード ウィンドウ内の結果と**テスト エクスプローラー**内の結果を更新する処理を自動的に行います。
-
-    ![成功した HasEmbeddedSpaces テスト](media/lut-start/test-success-vb.png)
-
----
 
 ## <a name="see-also"></a>関連項目
 

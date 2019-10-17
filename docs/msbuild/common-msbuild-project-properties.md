@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745886"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381361"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
@@ -67,7 +67,7 @@ ms.locfileid: "66745886"
 | ExcludeDeploymentUrl | プロジェクト ファイルに次の要素が含まれている場合は、[GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)によって、deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注:** ExcludeDeploymentUrl は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE では公開されていないため、プロジェクト ファイルを手動で編集する方法でのみ設定できます。 このプロパティを設定しても、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内での発行には影響はありません。つまり、PublishUrl で指定された URL に deploymentProvider タグが追加されます。 |
 | FileAlignment | 出力ファイルでセクションをアラインするサイズをバイト単位で指定します。 有効値は 512、1024、2048、4096、および 8192 です。 このプロパティは、`/filealignment` コンパイラ スイッチに相当します。 |
 | FrameworkPathOverride | *mscorlib.dll* および *microsoft.visualbasic.dll* の位置を指定します。 このパラメーターは、*vbc.exe* コンパイラの `/sdkpath` スイッチに相当します。 |
-| GenerateDocumentation | (Visual Basic のみ) ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に *.xml* ファイルに格納されます。 |
+| GenerateDocumentation | (C#、Visual Basic) ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に *.xml* ファイルに格納されます。 |
 | GenerateSerializationAssemblies | XML シリアル化アセンブリを *SGen.exe* で生成するかどうかを示します。これはオン、自動、オフに設定できます。 このプロパティは、.NET Framework のみを対象とするアセンブリに使用されます。 .NET Standard アセンブリまたは .NET Core アセンブリに XML シリアル化アセンブリを生成するには、*Microsoft.XmlSerializer.Generator* パッケージを参照します。 |
 | IntermediateOutputPath | 中間出力ファイルの完全パスであり、パスが指定されていない場合に `BaseIntermediateOutputPath` を基に生成されます。 たとえば、 *\obj\debug\\* のようなパスが生成されます。 |
 | KeyContainerName | 厳密名キーのコンテナー名です。 |

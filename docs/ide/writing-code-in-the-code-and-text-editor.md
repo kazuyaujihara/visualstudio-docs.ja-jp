@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7dbb14a7ea6b3271c7608f3bbb49dd30aa605b66
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095283"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380973"
 ---
 # <a name="features-of-the-code-editor"></a>コード エディターの機能
 
-Visual Studio エディターには、コードとテキストの記述と管理を容易にする多数の機能が用意されています。 アウトラインを使用すると、個々のコード ブロックを展開したり折りたたんだりできます。 コードの詳細は、IntelliSense、**オブジェクト ブラウザー**、および呼び出し階層を使用して調べることができます。 コードを探すには、 **[移動]** 、 **[定義へ移動]** 、 **[すべての参照の検索]** などの機能を使用します。 コード スニペットを使用してコード ブロックを挿入し、 **[使用法から生成]** などの機能を使用してコードを生成することもできます。 初めて Visual Studio エディターを使用する場合は、簡単な概要について「[コードを編集する](https://visualstudio.microsoft.com/vs/features/ide/)」をご覧ください。
+Visual Studio エディターには、コードとテキストの記述と管理を容易にする多数の機能が用意されています。 アウトラインを使用すると、個々のコード ブロックを展開したり折りたたんだりできます。 コードの詳細は、IntelliSense、**オブジェクト ブラウザー**、および呼び出し階層を使用して調べることができます。 コードを探すには、 **[移動]** 、 **[定義へ移動]** 、 **[すべての参照の検索]** などの機能を使用します。 コード スニペットを使用してコード ブロックを挿入し、 **[使用法から生成]** などの機能を使用してコードを生成することもできます。 初めて Visual Studio エディターを使用する場合は、「[コード エディターを使用方法について学習する](../get-started/tutorial-editor.md)」をご覧ください。
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[ソース エディター (Visual Studio for Mac)](/visualstudio/mac/source-editor)」を参照してください。

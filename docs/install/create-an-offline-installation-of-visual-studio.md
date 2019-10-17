@@ -1,7 +1,7 @@
 ---
 title: オフライン インストールを作成する
 description: インターネット接続の信頼性が低い場合や帯域幅が低い場合にオフラインで Visual Studio をインストールする方法について説明します。
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018837"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381094"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 
@@ -79,7 +79,7 @@ Web インストーラーをダウンロードした後、Visual Studio イン�
 
 Visual Studio 2017 のブートストラップを取得するには、その方法の詳細について、[以前のバージョンの Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) のダウンロード ページを参照してください。
 
-セットアップ実行可能ファイル&mdash;具体的にはブートストラップ ファイル&mdash;は、次のいずれかになります。
+セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものでなければなりません。
 
 | エディション | ファイル名 |
 |-------------|-----------------------|
@@ -102,6 +102,9 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 | Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」ページを参照してください。
 
 ### <a name="step-2---create-a-local-install-cache"></a>ステップ 2 - ローカル インストール キャッシュを作成する
 
@@ -159,6 +162,12 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 > [!TIP]
 > ローカル インストール キャッシュから実行するとき、セットアップは各ファイルのローカル バージョンを使います。 ただし、インストール中にキャッシュにないコンポーネントを選択すると、セットアップ中にインターネットからのダウンロードが試みられます。
+
+::: moniker range="vs-2019"
+
+> 16.1 以降のインストールおよび更新において、オフライン システムで "次のパラメーターと一致する製品が見つかりません" というエラーが発生する場合は、バージョン 16.3.5 以降で --noweb スイッチを使用してください。
+
+::: moniker-end
 
 以前にダウンロードしたファイルのみがインストールされるように、レイアウト キャッシュの作成に利用したものと同じコマンド ライン オプションを使用します。 たとえば、次のコマンドでレイアウト キャッシュを作成した場合、
 

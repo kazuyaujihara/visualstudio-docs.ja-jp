@@ -2,7 +2,7 @@
 title: コマンド ライン パラメーターを使用して Visual Studio をインストールする
 titleSuffix: ''
 description: コマンド ライン パラメーターを使用して、Visual Studio のインストールを制御またはカスタマイズする方法を説明します。
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 0b1388aa7ac993ba4b98837ec8ac46d516b567da
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018806"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381021"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>コマンド ライン パラメーターを使用して Visual Studio をインストールする
 
@@ -56,6 +56,9 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 * vs_enterprise.exe
 * vs_professional.exe
 * vs_community.exe
+
+>[!TIP]
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」ページを参照してください。
 
 ## <a name="command-line-parameters"></a>コマンド ライン パラメーター
 
@@ -128,7 +131,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 | `--cache` | **15.2 の新機能、省略可能**:指定した場合、インストールされた後、その後の修復用にパッケージが保持されます。 このオプションでは、その後のインストール、修復、または修正に使用されるグローバル ポリシー設定がオーバーライドされます。 既定のポリシーでは、パッケージをキャッシュします。 アンインストール コマンドでは、これは無視されます。 詳細については、「[disable or move the package cache](disable-or-move-the-package-cache.md)」 (パッケージ キャッシュの無効化または移動) を参照してください。 |
 | `--nocache` | **15.2 の新機能、省略可能**:指定した場合、パッケージはインストールまたは修復された後、削除されます。 必要な場合にのみ、もう一度ダウンロードされ、使用後はもう一度削除されます。 このオプションでは、その後のインストール、修復、または修正に使用されるグローバル ポリシー設定がオーバーライドされます。 既定のポリシーでは、パッケージをキャッシュします。 アンインストール コマンドでは、これは無視されます。 詳細については、「[disable or move the package cache](disable-or-move-the-package-cache.md)」 (パッケージ キャッシュの無効化または移動) を参照してください。 |
 | `--noUpdateInstaller` | **15.2 の新機能、省略可能**:指定した場合、quiet が指定されていると、インストーラーはインストーラー自体を更新しません。 インストーラーの更新が必要な場合に、noUpdateInstaller と quiet の両方が指定されていると、インストーラーはコマンドを失敗させて、0 以外の終了コードを返します。 |
-| `--noWeb` | **15.3 の新機能、省略可能**:Visual Studio のセットアップでは、(存在する場合) レイアウト ディレクトリにあるファイルを使って Visual Studio がインストールされます。 ユーザーがレイアウトに含まれないコンポーネントをインストールしようとした場合、セットアップは失敗します。  詳細については、「[ネットワーク インストールから展開する](create-a-network-installation-of-visual-studio.md)」をご覧ください。 <br/><br/> **重要**: この切り替えによって、Visual Studio のセットアップで更新プログラムのチェックが行われなくなることはありません。 詳細については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。|
+| `--noWeb` | **15.3 の新機能、省略可能**:Visual Studio のセットアップでは、(存在する場合) レイアウト ディレクトリにあるファイルを使って Visual Studio がインストールされます。 ユーザーがレイアウトに含まれないコンポーネントをインストールしようとした場合、セットアップは失敗します。  詳細については、「[ネットワーク インストールから展開する](create-a-network-installation-of-visual-studio.md)」をご覧ください。 <br/><br/> **重要**: この切り替えによって、Visual Studio のセットアップで更新プログラムのチェックが行われなくなることはありません。 詳細については、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」をご覧ください。 **16.3.5 の新機能**: このスイッチにより、エラーが発生しなくなり、オフライン インストールや更新のパフォーマンスが向上します。|
 | `--path <name>=<path>` | **15.7 の新機能、省略可能**:インストール用のカスタム インストール パスを指定するために使用します。 サポートされているパス名は、shared、cache、および install です。 |
 | `--path cache=<path>` | **15.7 の新機能、省略可能**:指定した場所を使用してインストール ファイルをダウンロードします。 この場所は、Visual Studio を初めてインストールするときにのみ設定することができます。 例 : `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **15.7 の新機能、省略可能**:Visual Studio のサイド バイ サイド インストール用の共有ファイルが含まれています。 ツールおよび SDK については、このドライブ上の場所にインストールされるものもあれば、この設定をオーバーライドして、別のドライブにインストールされるものもあります。 例 : `--path shared="C:\VS\shared"` <br><br>重要 : これは Visual Studio を初めてインストールするときに 1 回のみ設定できます。 |

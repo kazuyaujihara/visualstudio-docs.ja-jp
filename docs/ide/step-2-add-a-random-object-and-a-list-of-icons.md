@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9d335ba9f85688264882a0cb5fd59946c8c2df7b
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118946"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289697"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>手順 2: Random オブジェクトおよびアイコンのリストの追加
 このステップでは、絵合わせゲームに使用する一連のアイコンを作成します。 各アイコンは、フォーム上の TableLayoutPanel 内の 2 つのランダムなセルに追加されます。 そのために、2 つの `new` ステートメントを使用して 2 つのオブジェクトを作成します。 1 つ目は、計算クイズ ゲームで使用したオブジェクトに似た <xref:System.Random> オブジェクトです。 このコードでは、TableLayoutPanel 内のセルをランダムに選択するために使用します。 2 つ目は、初めての使用になるかもしれませんが、<xref:System.Collections.Generic.List%601> オブジェクトです。ランダムに選択されたアイコンを格納するために使用します。
@@ -34,7 +34,10 @@ ms.locfileid: "71118946"
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
-     Visual C# を使用している場合は、必ずクラス宣言 (`public partial class Form1 : Form`) のすぐ後の、始め中かっこの後にコードを配置してください。 Visual Basic を記述している場合は、クラス宣言 (`Public Class Form1`) のすぐ後にコードを配置します。
+      > [!IMPORTANT]
+      > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
+
+      C# を使用している場合は、必ず開始中かっこの後の、クラス宣言 (`public partial class Form1 : Form`) のすぐ後に、コードを配置してください。 Visual Basic を記述している場合は、クラス宣言 (`Public Class Form1`) のすぐ後にコードを配置します。
 
 3. List オブジェクトを追加するときに、表示される **IntelliSense** ウィンドウに注目します。 次に示しているのは Visual C# の例ですが、Visual Basic でリストを追加するときも同様のテキストが表示されます。
 

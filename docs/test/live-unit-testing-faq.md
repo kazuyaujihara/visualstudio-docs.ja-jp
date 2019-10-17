@@ -3,28 +3,21 @@ title: Live Unit Testing に関する FAQ
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing FAQ
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662022"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262294"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
-## <a name="latest-features"></a>最新の機能
-
-**Live Unit Testing は、定期的に改善と機能強化が行われています。最新の機能と機能強化に関する情報を確認するにはどうすればよいですか?**
-
-Live Unit Testing に対して加えられた新機能と機能強化を確認するには、「[Live Unit Testing の新機能](live-unit-testing-whats-new.md)」を参照してください。
-
-## <a name="supported-frameworks-and-versions"></a>サポートされるフレームワークとバージョン
+## <a name="supported-frameworks"></a>サポートされるフレームワーク
 
 **Live Unit Testing でサポートされているテスト フレームワークは何ですか? また、サポートされている最小バージョンはいくつですか?**
 
@@ -36,21 +29,21 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 |NUnit |NUnit3TestAdapter バージョン 3.7.0 |NUnit バージョン 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-`Microsoft.VisualStudio.QualityTools.UnitTestFramework` を参照する以前の MSTest に基づくテスト プロジェクトを使用しており、新しい MSTest NuGet パッケージへの移行を希望されない場合は、Visual Studio 2017 バージョン 15.4 以降にアップグレードしてください。
+古い MSTest に基づくテスト プロジェクトで `Microsoft.VisualStudio.QualityTools.UnitTestFramework` が参照されていて、新しい MSTest NuGet パッケージに移行したくない場合は、Visual Studio 2019 または Visual Studio 2017 にアップグレードしてください。
 
-場合によっては、Live Unit Testing を動作させるため、ソリューションのプロジェクトによって参照されている NuGet パッケージの明示的な復元が必要になります。 Live Unit Testing を有効にする前に、ソリューションの明示的なビルドを行うか (Visual Studio の最上位メニューから **[ビルド]** の **[ソリューションのリビルド]** を選択します)、ソリューションを右クリックして **[NuGet パッケージの復元]** を選択することでパッケージを復元できます。
+場合によっては、Live Unit Testing を動作させるため、ソリューションのプロジェクトによって参照されている NuGet パッケージの明示的な復元が必要になります。 Live Unit Testing を有効にする前に、ソリューションの明示的なビルドを行うか (Visual Studio の最上位メニューから **[ビルド]**  >  **[ソリューションのリビルド]** を選択)、ソリューションを右クリックして **[NuGet パッケージの復元]** を選択することで、パッケージを復元できます。
 
 ## <a name="net-core-support"></a>.NET Core サポート
 
 **Live Unit Testing は .NET Core で動作しますか?**
 
-はい。 Live Unit Testing は、.NET Core と .NET Framework で動作します。 .NET Core のサポートは、Visual Studio 2017 バージョン 15.3 で追加されました。 .NET Core に Live Unit Testing サポートが必要であれば、このバージョン以降の Visual Studio にアップグレードします。
+はい。 Live Unit Testing は、.NET Core と .NET Framework で動作します。
 
 ## <a name="configuration"></a>構成
 
 **Live Unit Testing を有効にしても動作しないのはなぜですか?**
 
-**[出力ウィンドウ]** に (Live Unit Testing ドロップダウンを選んだとき)、Live Unit Testing が動作しない理由が表示されているはずです。 Live Unit Testing は、次のいずれかの理由で動作しない可能性があります。
+[出力ウィンドウ] に (Live Unit Testing ドロップダウンを選んだとき)、Live Unit Testing が動作しない理由が表示されているはずです。 Live Unit Testing は、次のいずれかの理由で動作しない可能性があります。
 
 - ソリューションのプロジェクトによって参照されている NuGet パッケージが復元されていない、Live Unit Testing は動作しません。 Live Unit Testing を有効にする前に、ソリューションの明示的なビルドを行うか、ソリューションで NuGet パッケージを復元することにより、この問題は解決するはずです。
 
@@ -92,7 +85,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 </Target>
 ```
 
-## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>&lt;OutputPath&gt; または &lt;OutDir&gt; に関するエラー メッセージ
+## <a name="error-messages-with-outputpath-or-outdir"></a>\<OutputPath> または \<OutDir> に関するエラー メッセージ
 
 **Live Unit Testing がソリューションのビルドを試みると、次のようなエラー メッセージが表示されるのはなぜですか? "...appears to unconditionally set `<OutputPath>` or `<OutDir>`.Live Unit Testing will not execute tests from the output assembly" (... が <OutputPath> または <OutDir> を無条件に設定したようです。Live Unit Testing は出力アセンブリからテストを実行しません)**
 
@@ -123,13 +116,13 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 ビルド プロセスで `<OutDir>` を直接オーバーライドしないでください。ビルド成果物を特定の場所に格納するには、代わりに `<OutputPath>` をオーバーライドします。
 
-## <a name="set-the-location-of-build-artifacts"></a>ビルド成果物の場所の設定
+## <a name="build-artifact-location"></a>ビルド成果物の場所
 
 **Live Unit Testing のビルド成果物を、 *.vs* フォルダーの下の既定の場所ではない特定の場所に格納する必要があります。どうすれば変更できますか?**
 
 `LiveUnitTesting_BuildRoot` ユーザー レベル環境変数を、Live Unit Testing のビルド成果物を格納するパスに設定します。 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>テスト エクスプローラーとLive Unit Testing のテストの実行
+## <a name="test-explorer-versus-live-unit-testing"></a>テスト エクスプローラーと Live Unit Testing
 
 **[テスト エクスプローラー] ウィンドウと Live Unit Testing では、テストの実行方法はどのように違いますか?**
 
@@ -139,11 +132,11 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 - Live Unit Testing ではテストを実行するための新しいアプリケーション ドメインは作成されませんが、 **[テスト エクスプローラー]** ウィンドウから実行されたテストでは新しいアプリケーション ドメインが作成されます。
 
-- Live Unit Testing では各テスト アセンブリが順番に実行されます。 **[テスト エクスプローラー]** ウィンドウで、複数のテストを並列に実行するように選択できます。
+- Live Unit Testing では、各テスト アセンブリで順番にテストが実行されます。 **テスト エクスプローラー**で、複数のテストの並列実行を選択できます。
 
 - Live Unit Testing でのテストの探索と実行にはバージョン 2 の `TestPlatform` が使われますが、 **[テスト エクスプローラー]** ウィンドウではバージョン 1 が使われます。 ただし、ほとんどの場合違いはわかりません。
 
-- 現在、**テスト エクスプローラー**は既定ではシングルスレッド アパートメント (STA) でテストを実行するのに対し、Live Unit Testing はマルチスレッド アパートメント (MTA) でテストを実行します。 Live Unit Testing において MSTest テストを STA で実行するには、テスト メソッドまたはそれを含むクラスを、`MSTest.STAExtensions 1.0.3-beta` NuGet パッケージに含まれる `<STATestMethod>` または `<STATestClass>` 属性で修飾します。 NUnit の場合はテスト メソッドを `<RequiresThread(ApartmentState.STA)>` 属性で修飾し、xUnit の場合は `<STAFact>` 属性で修飾します。
+- 既定では、**テスト エクスプローラー**によるテストはシングルスレッド アパートメント (STA) で実行されるのに対し、Live Unit Testing によるテストはマルチスレッド アパートメント (MTA) で実行されます。 Live Unit Testing において MSTest テストを STA で実行するには、テスト メソッドまたはそれを含むクラスを、`MSTest.STAExtensions 1.0.3-beta` NuGet パッケージに含まれる `<STATestMethod>` または `<STATestClass>` 属性で修飾します。 NUnit の場合はテスト メソッドを `<RequiresThread(ApartmentState.STA)>` 属性で修飾し、xUnit の場合は `<STAFact>` 属性で修飾します。
 
 ## <a name="exclude-tests"></a>テストの除外
 
@@ -174,6 +167,8 @@ public class Class1
 }
 ```
 
+::: moniker range="vs-2017"
+
 ## <a name="win32-pe-headers"></a>Win32 PE ヘッダー
 
 **Live Unit Testing によってビルドされたインストルメント化されたアセンブリでは Win32 PE ヘッダーが異なるのはなぜですか?**
@@ -190,27 +185,15 @@ public class Class1
 
 これらの値に依存するテストは、Live Unit Testing で実行すると失敗する場合があります。
 
+::: moniker-end
+
 ## <a name="continuous-builds"></a>連続的なビルド
 
 **編集を行わなかった場合でも Live Unit Testing で常にソリューションがビルドされるのはなぜですか?**
 
-編集を行っていなくても、ソリューションのビルド プロセスによってソリューション自体の一部であるソース コードが生成され、ビルド ターゲット ファイルにおいて適切な入力と出力が指定されていない場合は、ソリューションがビルドされる場合があります。 MSBuild が適切な最新状態チェックを実行し、新しいビルドが必要かどうかを判断できるように、ターゲットに入力と出力のリストを提供する必要があります。
+編集を行っていなくても、ビルド プロセスによってソリューション自体の一部であるソース コードが生成され、ビルド ターゲット ファイルにおいて適切な入力と出力が指定されていない場合は、ソリューションがビルドされる場合があります。 MSBuild が適切な最新状態チェックを実行し、新しいビルドが必要かどうかを判断できるように、ターゲットに入力と出力のリストを提供する必要があります。
 
-Live Unit Testing は、ソース ファイルが変更されたことを検出すると常に、ビルドを開始します。 ソリューションのビルドでソース ファイルが生成されるので、Live Unit Testing は無限ビルド ループになります。 ただし、Live Unit Testing が (前のビルドで新しく生成されたソース ファイルを検出した後) 2 回目のビルドを開始するときに、ターゲットの入力と出力を調べる場合は、入力と出力のチェックですべてが最新であることが示されるため、ビルド ループから抜け出します。  
-
-## <a name="new-process-coverage"></a>新しいプロセスのカバレッジ
-
-**Live Unit Testing がテストによって作成された新しいプロセスからカバレッジをキャプチャしないのはなぜですか?**
-
-これは既知の問題であり、今後のリリースで修正されるはずです。
-
-## <a name="including-or-excluding-tests-doesnt-work"></a>テストの追加または除外が機能しない
-
-**Live Test セットにテストを含めたり、セットからテストを除外した後、何も行われないのはなぜですか?**
-
-この問題は解消されており、Visual Studio 2017 バージョン 15.3 以降では発生しません。
-
-この問題は、以前のバージョンの Visual Studio 2017 で確認されています。 この問題を回避するには、テストを含めたり除外したりした後、任意のファイルを編集する必要があります。
+Live Unit Testing は、ソース ファイルが変更されたことを検出すると常に、ビルドを開始します。 ソリューションのビルドでソース ファイルが生成されるので、Live Unit Testing は無限ビルド ループになります。 ただし、Live Unit Testing で (前のビルドで新しく生成されたソース ファイルを検出した後) 2 回目のビルドが開始されるときに、ターゲットの入力と出力が調べられる場合は、入力と出力のチェックですべてが最新であることが示されるため、ビルド ループから抜け出します。
 
 ## <a name="editor-icons"></a>エディターのアイコン
 

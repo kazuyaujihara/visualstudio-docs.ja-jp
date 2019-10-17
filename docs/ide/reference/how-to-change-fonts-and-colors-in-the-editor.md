@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ee1fced0b04ae058f05dc46e4414b76b0f506213
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605404"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380998"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>方法: Visual Studio でエディターのフォントと色を変更する
 
@@ -33,9 +33,7 @@ ms.locfileid: "68605404"
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>既定のフォント フェイス、サイズ、色を変更する
 
-1. **[ツール]** メニューの **[オプション]** を選び、 **[環境]** フォルダーで **[フォントおよび色]** を選びます。
-
-     [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) が開きます。
+1. **[ツール]** メニューの **[オプション]** を選択します。 **[環境]** で、[[フォントおよび色]](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) を選択します。
 
 2. **[設定の表示]** の **[テキスト エディター]** を選びます。
 

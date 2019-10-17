@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018880"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381073"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "72018880"
 
 Visual Studio 2017 のブートストラップを取得するには、その方法の詳細について、[以前のバージョンの Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) のダウンロード ページを参照してください。
 
-セットアップ実行可能ファイル&mdash;具体的にはブートストラップ ファイル&mdash;は、次のいずれかになります。
+セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものでなければなりません。
 
 | エディション | ファイル名 |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 ::: moniker range="vs-2019"
 
-セットアップ実行可能ファイル&mdash;具体的にはブートストラップ ファイル&mdash;は、次のいずれかになります。
+セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものでなければなりません。
 
 |エディション | ダウンロード|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 その他にサポートされているブートストラップして、[vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe) があります。
 
 ::: moniker-end
+
+>[!TIP]
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」ページを参照してください。
 
 ## <a name="create-an-offline-installation-folder"></a>オフライン インストール フォルダーを作成する
 
@@ -223,6 +226,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > これは、企業の管理者が完了したインストールに追加のアクション (たとえば、[成功したインストールにプロダクト キーを適用する](automatically-apply-product-keys-when-deploying-visual-studio.md)など) を実行したい場合に便利ですが、そのインストールからのリターン コードを処理するにはインストールが終了するまで待つ必要があります。
 >
 > `--wait` を使用しない場合、インストールが完了する前に `vs_enterprise.exe` プロセスが終了し、インストール操作の状態を表していない不正確な終了コードが返されます。
+>
+
+::: moniker range="vs-2019"
+
+> オフライン インストールで、"A project matching the following parameters cannot be found" (次のパラメーターに一致するプロジェクトが見つかりません) というエラー メッセージが表示される場合は、バージョン 16.3.5 以降で --noweb スイッチを使用していることを確認してください。
+
+::: moniker-end
 
 レイアウトからインストールする場合、インストールされる内容はレイアウトから取得されます。 ただし、レイアウトに含まれないコンポーネントを選択した場合は、インターネットから取得されます。  Visual Studio のセットアップでレイアウトにない内容がダウンロードされないようにするには、`--noWeb` オプションを使用します。 `--noWeb` が使用されていて、インストール対象として選択されている内容がレイアウトにない場合、セットアップは失敗します。
 

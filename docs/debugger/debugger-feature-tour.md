@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987789"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349754"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>最初に Visual Studio デバッガーを見る
 
@@ -201,6 +201,14 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 > [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 以降、例外アシスタントは例外ヘルパーに置き換わりました。
 
 **[例外設定]** ノードを展開すると、この種類の例外を処理する方法がいくつか表示されますが、今回のツアーでは何も変える必要はありません。
+
+## <a name="configure-debugging"></a>デバッグを構成する
+
+プロジェクトを[デバッグ構成またはリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)としてビルドしたり、デバッグ用にプロジェクトのプロパティを構成したり、デバッグ用に[一般的な設定](../debugger/how-to-specify-debugger-settings.md)を構成したりすることができます。 さらに、[DebuggerDisplay](using-the-debuggerdisplay-attribute.md) 属性や、C/C++ の [NatVis フレームワーク](create-custom-views-of-native-objects.md)のような機能を使用してカスタム情報を表示するように、デバッガーを構成することもできます。
+
+デバッグのプロパティは、プロジェクトの種類ごとに固有です。 たとえば、開始するときにアプリケーションに渡す引数を指定できます。 ソリューション エクスプローラーでプロジェクトを右クリックし、 **[プロパティ]** を選択することで、プロジェクト固有のプロパティにアクセスできます。 デバッグのプロパティは、通常、特定のプロジェクトの種類に応じて、 **[ビルド]** タブまたは **[デバッグ]** タブに表示されます。
+
+![プロジェクトのプロパティ](../debugger/media/dbg-tour-project-properties.png "プロジェクトのプロパティ")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Azure App Service でライブ ASP.NET アプリをデバッグする
 
