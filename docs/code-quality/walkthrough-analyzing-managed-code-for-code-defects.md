@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 79855f6915bbb0ed15bfd09f99fab0403290f09e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349475"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448724"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>チュートリアル: 静的コード分析を使用したコード障害の検出
 
@@ -93,7 +93,7 @@ ms.locfileid: "72349475"
 
 1. 警告を修正するには、次のヒントを使用します。
 
-   [CA1014: CLSCompliantAttribute を使用したアセンブリ](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)の設定: AssemblyInfo.cs ファイルの最後にコード `[assembly: CLSCompliant(true)]` を追加します。
+   [CA1014: CLSCompliantAttribute にアセンブリをマーク](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)する: AssemblyInfo.cs ファイルの末尾にコード `[assembly: CLSCompliant(true)]` を追加します。
 
    [CA1032: 標準の例外コンストラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md)します。コンストラクター `public demo (String s) : base(s) { }` をクラス `demo` に追加します。
 
@@ -111,7 +111,7 @@ ms.locfileid: "72349475"
 
    [CA1710: 識別子には正しいサフィックスが](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)必要です: クラスの名前とそのコンストラクターを `DemoException` に変更してください。
 
-   [CA2237: SerializableAttribute を使用して ISerializable 型をマーク](../code-quality/ca2237.md)します。 @no__t クラスに `[Serializable ()]` 属性を追加します。
+   [CA2237: SerializableAttribute を使用して ISerializable 型をマーク](../code-quality/ca2237.md)します。クラス `demo` に `[Serializable ()]` 属性を追加します。
 
    [CA2210: アセンブリには有効な厳密な名前が必要](../code-quality/ca2210.md)です。厳密な名前のキーを持つ ' CodeAnalysisManagedDemo ' に署名してください。
 

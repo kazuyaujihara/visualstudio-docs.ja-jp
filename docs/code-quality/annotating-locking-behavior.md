@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 976a66901ae60bd6edc053d5acbb516aa87c1a7c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015994"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446316"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 マルチスレッドプログラムの同時実行のバグを回避するには、常に適切なロックの規範に従い、SAL 注釈を使用します。
@@ -64,31 +64,31 @@ SAL は、重要なセクション、ミューテックス、スピンロック�
 ## <a name="locking-annotations"></a>ロックの注釈
 次の表に、ロックの注釈の一覧を示します。
 
-|Annotation|説明|
+|注釈|説明|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr` によって指定されたロックオブジェクトの排他ロックカウントによって関数がインクリメントされることを示します。|
 |`_Acquires_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr` によって指定されたロックオブジェクトのロックカウントによって関数がインクリメントされることを示します。|
-|`_Acquires_nonreentrant_lock_(expr)`|@No__t-0 によって名前が付けられたロックが取得されます。  ロックが既に保持されている場合は、エラーが報告されます。|
+|`_Acquires_nonreentrant_lock_(expr)`|@No__t_0 によって指定されたロックが取得されます。  ロックが既に保持されている場合は、エラーが報告されます。|
 |`_Acquires_shared_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr` によって指定されたロックオブジェクトの共有ロックカウントによって関数がインクリメントされることを示します。|
-|`_Create_lock_level_(name)`|記号を宣言するステートメント `name` をロックレベルにして、注釈 `_Has_Lock_level_` と `_Lock_level_order_` に使用できるようにします。|
+|`_Create_lock_level_(name)`|シンボルを宣言するステートメントがロックレベルであり、注釈 `_Has_Lock_level_` と `_Lock_level_order_` に使用できるように `name` ます。|
 |`_Has_lock_kind_(kind)`|リソースオブジェクトの型情報を絞り込むために、任意のオブジェクトに注釈を加えます。 場合によっては、さまざまな種類のリソースに共通の型が使用され、オーバーロードされた型は、さまざまなリソース間でセマンティック要件を区別するのに十分ではありません。 定義済みの `kind` パラメーターの一覧を次に示します。<br /><br /> `_Lock_kind_mutex_`<br /> Mutex のロックの種類 ID。<br /><br /> `_Lock_kind_event_`<br /> イベントのロックの種類 ID。<br /><br /> `_Lock_kind_semaphore_`<br /> セマフォのロックの種類 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> スピンロックのロックの種類の ID。<br /><br /> `_Lock_kind_critical_section_`<br /> クリティカルセクションのロックの種類 ID。|
 |`_Has_lock_level_(name)`|ロックオブジェクトに注釈を付け、`name` のロックレベルを与えます。|
-|`_Lock_level_order_(name1, name2)`|@No__t-0 と `name2` の間のロックの順序を与えるステートメント。|
-|`_Post_same_lock_(expr1, expr2)`|関数に注釈を付け、post 状態で、2つのロック (@no__t 0 と `expr2`) が同じロックオブジェクトであるかのように処理されることを示します。|
+|`_Lock_level_order_(name1, name2)`|@No__t_0 と `name2` 間のロックの順序を与えるステートメント。|
+|`_Post_same_lock_(expr1, expr2)`|関数に注釈を付け、post 状態で、2つのロック (`expr1` と `expr2`) が同じロックオブジェクトであるかのように処理されることを示します。|
 |`_Releases_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr` によって指定されたロックオブジェクトの排他ロックカウントによって関数がデクリメントされることを示します。|
-|`_Releases_lock_(expr)`|関数に注釈を付け、post 状態では `expr` によって指定されたロックオブジェクトのロックカウントによって関数がデクリメントされることを示します。|
-|`_Releases_nonreentrant_lock_(expr)`|@No__t-0 によって指定されたロックが解放されます。 ロックが現在保持されていない場合は、エラーが報告されます。|
+|`_Releases_lock_(expr)`|関数に注釈を付け、post 状態では、`expr` によって指定されたロックオブジェクトのロックカウントによって関数がデクリメントされることを示します。|
+|`_Releases_nonreentrant_lock_(expr)`|@No__t_0 によって指定されたロックが解放されます。 ロックが現在保持されていない場合は、エラーが報告されます。|
 |`_Releases_shared_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr` によって指定されたロックオブジェクトの共有ロックカウントによって関数がデクリメントされることを示します。|
-|`_Requires_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` が指定したオブジェクトのロックカウントが少なくとも1つであることを示します。|
-|`_Requires_lock_not_held_(expr)`|関数に注釈を付け、`expr` によって名前が付けられたオブジェクトのロック数が0であることを示します。|
+|`_Requires_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって指定されたオブジェクトのロックカウントが少なくとも1つであることを示します。|
+|`_Requires_lock_not_held_(expr)`|関数に注釈を付け、pre 状態では `expr` によって指定されたオブジェクトのロックカウントが0であることを示します。|
 |`_Requires_no_locks_held_`|関数に注釈を指定し、チェッカーが認識しているすべてのロックのロック数が0であることを示します。|
-|`_Requires_shared_lock_held_(expr)`|関数に注釈を付け、前の状態で、`expr` によって名前が付けられたオブジェクトの共有ロックカウントが少なくとも1つであることを示します。|
-|`_Requires_exclusive_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって名前が付けられたオブジェクトの排他ロックカウントが少なくとも1つであることを示します。|
+|`_Requires_shared_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって指定されたオブジェクトの共有ロックカウントが少なくとも1つであることを示します。|
+|`_Requires_exclusive_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって指定されたオブジェクトの排他ロックカウントが少なくとも1つであることを示します。|
 
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>非公開のロック オブジェクトに対する SAL の組み込み
 特定のロックオブジェクトは、関連付けられているロック関数の実装によって公開されません。  次の表に、これらの非公開のロックオブジェクトを操作する関数に対する注釈を有効にする SAL 組み込み変数を示します。
 
-|Annotation|説明|
+|注釈|説明|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|キャンセルスピンロックについて説明します。|
 |`_Global_critical_region_`|クリティカル領域について説明します。|
@@ -98,26 +98,26 @@ SAL は、重要なセクション、ミューテックス、スピンロック�
 ## <a name="shared-data-access-annotations"></a>共有データ アクセスの注釈
 次の表は、共有データアクセスの注釈を示しています。
 
-|Annotation|説明|
+|注釈|説明|
 |----------------|-----------------|
-|`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1であることを示します。|
-|`_Interlocked_`|変数に注釈を `_Guarded_by_(_Global_interlock_)` と等価です。|
+|`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|
+|`_Interlocked_`|変数に注釈をし、`_Guarded_by_(_Global_interlock_)` に相当します。|
 |`_Interlocked_operand_`|注釈付き関数のパラメーターは、さまざまなインタロックされた関数のいずれかのターゲットオペランドです。  これらのオペランドには、特定の追加プロパティが必要です。|
-|`_Write_guarded_by_(expr)`|変数に注釈を付け、変数が変更されるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1であることを示します。|
+|`_Write_guarded_by_(expr)`|変数に注釈を付け、変数が変更されるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|
 
 ## <a name="smart-lock-and-raii-annotations"></a>注釈の Smart Lock と RAII
-通常、スマートロックはネイティブロックをラップし、その有効期間を管理します。 次の表に、@no__t 0 のセマンティクスをサポートするスマートロックと RAII コーディングパターンで使用できる注釈を示します。
+通常、スマートロックはネイティブロックをラップし、その有効期間を管理します。 次の表に、`move` セマンティクスをサポートするスマートロックと RAII コーディングパターンで使用できる注釈を示します。
 
-|Annotation|説明|
+|注釈|説明|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|スマートロックが取得されたことを想定するようにアナライザーに指示します。 この注釈では、パラメーターとして参照ロックの種類が想定されています。|
 |`_Analysis_assume_smart_lock_released_`|スマートロックが解放されたことを想定するようにアナライザーに指示します。 この注釈では、パラメーターとして参照ロックの種類が想定されています。|
-|`_Moves_lock_(target, source)`|@No__t-1 オブジェクトから `target` にロック状態を転送する `move constructor` 操作について説明します。 @No__t-0 は新しく構築されたオブジェクトと見なされるので、以前に存在していた状態はすべて失われ、`source` の状態に置き換えられます。 @No__t-0 も、ロック数または別名ターゲットを使用せずにクリーン状態にリセットされますが、それを指すエイリアスは変更されません。|
-|`_Replaces_lock_(target, source)`|ソースから状態を転送する前にターゲットロックが解放される `move assignment operator` セマンティクスについて説明します。 これは、前に `_Releases_lock_(target)` を付けた @no__t 0 の組み合わせと見なすことができます。|
-|`_Swaps_locks_(left, right)`|オブジェクト `left` および `right` が状態を交換することを前提としている、標準 `swap` の動作について説明します。 交換される状態には、ロック数とエイリアスターゲット (存在する場合) が含まれます。 @No__t-0 および `right` のオブジェクトを指すエイリアスは、変更されずに残ります。|
-|`_Detaches_lock_(detached, lock)`|ロックラッパーの種類で、含まれているリソースと関連付け解除を許可するシナリオについて説明します。 これは、`std::unique_ptr` が内部ポインターで動作する方法と似ています。プログラマはポインターを抽出し、スマートポインターコンテナーをクリーンな状態にしておくことができます。 同様のロジックは `std::unique_lock` によってサポートされ、カスタムロックラッパーで実装できます。 デタッチされたロックは、その状態 (ロックカウントとエイリアスターゲットが存在する場合) を保持しますが、ラッパーは、独自のエイリアスを保持しながら、ゼロロックカウントとエイリアスターゲットを含まないようにリセットされます。 ロック数に対する操作 (解放および取得) はありません。 この注釈は `_Moves_lock_` とまったく同じように動作します。ただし、デタッチされた引数は `this` ではなく `return` である必要があります。|
+|`_Moves_lock_(target, source)`|@No__t_1 オブジェクトから `target` にロック状態を転送する `move constructor` 操作について説明します。 @No__t_0 は新しく構築されたオブジェクトと見なされるため、以前の状態が失われ、`source` の状態に置き換えられます。 @No__t_0 も、ロック数またはエイリアシングターゲットを使用せずにクリーン状態にリセットされますが、それを指すエイリアスは変更されません。|
+|`_Replaces_lock_(target, source)`|ソースから状態を転送する前に、ターゲットロックが解放される `move assignment operator` セマンティクスについて説明します。 これは、前に `_Releases_lock_(target)` を `_Moves_lock_(target, source)` の組み合わせと見なすことができます。|
+|`_Swaps_locks_(left, right)`|オブジェクト `left` と `right` の状態を交換することを前提としている標準の `swap` 動作について説明します。 交換される状態には、ロック数とエイリアスターゲット (存在する場合) が含まれます。 @No__t_0 オブジェクトと `right` オブジェクトを指すエイリアスは変更されません。|
+|`_Detaches_lock_(detached, lock)`|ロックラッパーの種類で、含まれているリソースと関連付け解除を許可するシナリオについて説明します。 これは、`std::unique_ptr` が内部ポインターで動作する方法と似ています。プログラマはポインターを抽出し、スマートポインターコンテナーをクリーンな状態にしておくことができます。 同様のロジックは `std::unique_lock` でサポートされており、カスタムロックラッパーに実装できます。 デタッチされたロックは、その状態 (ロックカウントとエイリアスターゲットが存在する場合) を保持しますが、ラッパーは、独自のエイリアスを保持しながら、ゼロロックカウントとエイリアスターゲットを含まないようにリセットされます。 ロック数に対する操作 (解放および取得) はありません。 この注釈は `_Moves_lock_` とまったく同じように動作しますが、デタッチされた引数は `this` ではなく `return` である必要があります。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL について](../code-quality/understanding-sal.md)

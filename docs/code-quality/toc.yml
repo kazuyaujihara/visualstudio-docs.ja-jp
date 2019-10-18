@@ -212,127 +212,127 @@
                   displayName: design warnings
                   href: design-warnings.md
                 - name: 'CA1000:ジェネリック型の静的メンバーを宣言しません'
-                  href: ca1000-do-not-declare-static-members-on-generic-types.md
+                  href: ca1000.md
                 - name: 'CA1001:破棄可能なフィールドを所有する型は、破棄可能でなければなりません'
-                  href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
+                  href: ca1001.md
                 - name: 'CA1002:ジェネリック リストを公開しません'
-                  href: ca1002-do-not-expose-generic-lists.md
+                  href: ca1002.md
                 - name: 'CA1003:汎用イベント ハンドラーのインスタンスを使用します'
-                  href: ca1003-use-generic-event-handler-instances.md
+                  href: ca1003.md
                 - name: 'CA1004:ジェネリック メソッドは型パラメーターを指定しなければなりません'
-                  href: ca1004-generic-methods-should-provide-type-parameter.md
+                  href: ca1004.md
                 - name: 'CA1005:ジェネリック型でパラメーターを使用しすぎないでください'
-                  href: ca1005-avoid-excessive-parameters-on-generic-types.md
+                  href: ca1005.md
                 - name: 'CA1006:ジェネリック型をメンバー シグネチャ内で入れ子にしません'
-                  href: ca1006-do-not-nest-generic-types-in-member-signatures.md
+                  href: ca1006.md
                 - name: 'CA1007:適切な場所にジェネリックを使用します'
-                  href: ca1007-use-generics-where-appropriate.md
+                  href: ca1007.md
                 - name: 'CA1008:Enums は 0 値を含んでいなければなりません'
-                  href: ca1008-enums-should-have-zero-value.md
+                  href: ca1008.md
                 - name: 'CA1009:イベント ハンドラーを正しく宣言します'
-                  href: ca1009-declare-event-handlers-correctly.md
+                  href: ca1009.md
                 - name: 'CA1010:コレクションは、ジェネリック インターフェイスを実装しなければなりません'
-                  href: ca1010-collections-should-implement-generic-interface.md
+                  href: ca1010.md
                 - name: 'CA1011:基本型をパラメーターとして渡すことを考慮します'
-                  href: ca1011-consider-passing-base-types-as-parameters.md
+                  href: ca1011.md
                 - name: 'CA1012:抽象型にはコンストラクターを含めません'
-                  href: ca1012-abstract-types-should-not-have-constructors.md
+                  href: ca1012.md
                 - name: 'CA1013:オーバーロードする加算および減算で、演算子 equals をオーバーロードします'
-                  href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
+                  href: ca1013.md
                 - name: 'CA1014:アセンブリに CLSCompliantAttribute を設定します'
-                  href: ca1014-mark-assemblies-with-clscompliantattribute.md
+                  href: ca1014.md
                 - name: 'CA1016:アセンブリに AssemblyVersionAttribute を設定します'
-                  href: ca1016-mark-assemblies-with-assemblyversionattribute.md
+                  href: ca1016.md
                 - name: 'CA1017:アセンブリに ComVisibleAttribute を設定します'
-                  href: ca1017-mark-assemblies-with-comvisibleattribute.md
+                  href: ca1017.md
                 - name: 'CA1018:属性を AttributeUsageAttribute に設定します'
-                  href: ca1018-mark-attributes-with-attributeusageattribute.md
+                  href: ca1018.md
                 - name: 'CA1019:属性引数にアクセサーを定義します'
-                  href: ca1019-define-accessors-for-attribute-arguments.md
+                  href: ca1019.md
                 - name: 'CA1020:型をほとんど含まない名前空間を使用しません'
-                  href: ca1020-avoid-namespaces-with-few-types.md
+                  href: ca1020.md
                 - name: 'CA1021:out パラメーターを使用しません'
-                  href: ca1021-avoid-out-parameters.md
+                  href: ca1021.md
                 - name: 'CA1023:インデクサーを多次元にすることはできません'
-                  href: ca1023-indexers-should-not-be-multidimensional.md
+                  href: ca1023.md
                 - name: 'CA1024:適切な場所にプロパティを使用します'
-                  href: ca1024-use-properties-where-appropriate.md
+                  href: ca1024.md
                 - name: 'CA1025:反復する引数を params 配列で置き換えます'
-                  href: ca1025-replace-repetitive-arguments-with-params-array.md
+                  href: ca1025.md
                 - name: 'CA1026:既定パラメーターを使用することはできません'
-                  href: ca1026-default-parameters-should-not-be-used.md
+                  href: ca1026.md
                 - name: 'CA1027:列挙型を FlagsAttribute に設定します'
-                  href: ca1027-mark-enums-with-flagsattribute.md
+                  href: ca1027.md
                 - name: 'CA1028:列挙ストレージは Int32 でなければなりません'
-                  href: ca1028-enum-storage-should-be-int32.md
+                  href: ca1028.md
                 - name: 'CA1030:適切な場所にイベントを使用します'
-                  href: ca1030-use-events-where-appropriate.md
+                  href: ca1030.md
                 - name: 'CA1031:一般的な例外の種類はキャッチしません'
-                  href: ca1031-do-not-catch-general-exception-types.md
+                  href: ca1031.md
                 - name: 'CA1032:標準例外コンストラクターを実装します'
-                  href: ca1032-implement-standard-exception-constructors.md
+                  href: ca1032.md
                 - name: 'CA1033:インターフェイス メソッドは、子型によって呼び出し可能でなければなりません'
-                  href: ca1033-interface-methods-should-be-callable-by-child-types.md
+                  href: ca1033.md
                 - name: 'CA1034:入れ子にされた型を参照可能にすることはできません'
-                  href: ca1034-nested-types-should-not-be-visible.md
+                  href: ca1034.md
                 - name: 'CA1035:ICollection の実装は、厳密に型指定されたメンバーを含んでいます'
-                  href: ca1035-icollection-implementations-have-strongly-typed-members.md
+                  href: ca1035.md
                 - name: 'CA1036:比較可能な型でメソッドをオーバーライドします'
-                  href: ca1036-override-methods-on-comparable-types.md
+                  href: ca1036.md
                 - name: 'CA1038:列挙子は厳密に型指定されていなければなりません'
-                  href: ca1038-enumerators-should-be-strongly-typed.md
+                  href: ca1038.md
                 - name: 'CA1039:リストは厳密に型指定されています'
-                  href: ca1039-lists-are-strongly-typed.md
+                  href: ca1039.md
                 - name: 'CA1040:空のインターフェイスは使用しません'
-                  href: ca1040-avoid-empty-interfaces.md
+                  href: ca1040.md
                 - name: 'CA1041:ObsoleteAttribute メッセージを指定します'
-                  href: ca1041-provide-obsoleteattribute-message.md
+                  href: ca1041.md
                 - name: 'CA1043:インデクサーには整数または文字列引数を使用します'
-                  href: ca1043-use-integral-or-string-argument-for-indexers.md
+                  href: ca1043.md
                 - name: 'CA1044:プロパティを書き込み専用にすることはできません'
-                  href: ca1044-properties-should-not-be-write-only.md
+                  href: ca1044.md
                 - name: 'CA1045:型を参照によって渡しません'
-                  href: ca1045-do-not-pass-types-by-reference.md
+                  href: ca1045.md
                 - name: 'CA1046:参照型で、演算子 equals をオーバーロードしないでください'
-                  href: ca1046-do-not-overload-operator-equals-on-reference-types.md
+                  href: ca1046.md
                 - name: 'CA1047:シールド型の保護されたメンバーを宣言しません'
-                  href: ca1047-do-not-declare-protected-members-in-sealed-types.md
+                  href: ca1047.md
                 - name: 'CA1048:シールド型の仮想メンバーを宣言しません'
-                  href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
+                  href: ca1048.md
                 - name: 'CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません'
-                  href: ca1049-types-that-own-native-resources-should-be-disposable.md
+                  href: ca1049.md
                 - name: 'CA1050:名前空間で型を宣言します'
-                  href: ca1050-declare-types-in-namespaces.md
+                  href: ca1050.md
                 - name: 'CA1051:参照可能なインスタンス フィールドを宣言しません'
-                  href: ca1051-do-not-declare-visible-instance-fields.md
+                  href: ca1051.md
                 - name: 'CA1052:スタティック ホルダー型はシールドされていなければなりません'
-                  href: ca1052-static-holder-types-should-be-sealed.md
+                  href: ca1052.md
                 - name: 'CA1053:スタティック ホルダー型はコンストラクターを含むことはできません'
-                  href: ca1053-static-holder-types-should-not-have-constructors.md
+                  href: ca1053.md
                 - name: 'CA1054:URI パラメーターを文字列にすることはできません'
-                  href: ca1054-uri-parameters-should-not-be-strings.md
+                  href: ca1054.md
                 - name: 'CA1055:URI 戻り値を文字列にすることはできません'
-                  href: ca1055-uri-return-values-should-not-be-strings.md
+                  href: ca1055.md
                 - name: 'CA1056:URI プロパティを文字列にすることはできません'
-                  href: ca1056-uri-properties-should-not-be-strings.md
+                  href: ca1056.md
                 - name: 'CA1057:文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します'
-                  href: ca1057-string-uri-overloads-call-system-uri-overloads.md
+                  href: ca1057.md
                 - name: 'CA1058:型は、一定の基本型を拡張することはできません'
-                  href: ca1058-types-should-not-extend-certain-base-types.md
+                  href: ca1058.md
                 - name: 'CA1059:メンバーは特定の具象型を公開できません'
-                  href: ca1059-members-should-not-expose-certain-concrete-types.md
+                  href: ca1059.md
                 - name: 'CA1060:P/Invoke を NativeMethods クラスに移動します'
-                  href: ca1060-move-p-invokes-to-nativemethods-class.md
+                  href: ca1060.md
                 - name: 'CA1061:基底クラス メソッドを非表示にしません'
-                  href: ca1061-do-not-hide-base-class-methods.md
+                  href: ca1061.md
                 - name: 'CA1062:パブリック メソッドの引数の検証'
-                  href: ca1062-validate-arguments-of-public-methods.md
+                  href: ca1062.md
                 - name: 'CA1063:IDisposable を正しく実装します'
-                  href: ca1063-implement-idisposable-correctly.md
+                  href: ca1063.md
                 - name: 'CA1064:例外は public として設定する必要があります'
-                  href: ca1064-exceptions-should-be-public.md
+                  href: ca1064.md
                 - name: 'CA1065:予期しない場所に例外を発生させません'
-                  href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                  href: ca1065.md
                 - name: 'CA1068:CancellationToken パラメーターは最後に指定する必要があります'
                   href: ca1068.md
                 - name: 'CA2210:アセンブリには有効な厳密な名前が必要です'
@@ -350,25 +350,25 @@
                   displayName: globalization warnings
                   href: globalization-warnings.md
                 - name: 'CA1300:MessageBoxOption を指定します'
-                  href: ca1300-specify-messageboxoptions.md
+                  href: ca1300.md
                 - name: 'CA1301:重複するアクセラレータを使用しません'
-                  href: ca1301-avoid-duplicate-accelerators.md
+                  href: ca1301.md
                 - name: 'CA1302:ロケール特有の文字列をハードコードしません'
-                  href: ca1302-do-not-hardcode-locale-specific-strings.md
+                  href: ca1302.md
                 - name: 'CA1303:ローカライズされるパラメーターとしてリテラルを渡さない'
-                  href: ca1303-do-not-pass-literals-as-localized-parameters.md
+                  href: ca1303.md
                 - name: 'CA1304:CultureInfo を指定します'
-                  href: ca1304-specify-cultureinfo.md
+                  href: ca1304.md
                 - name: 'CA1305:IFormatProvider を指定します'
-                  href: ca1305-specify-iformatprovider.md
+                  href: ca1305.md
                 - name: 'CA1306:データ型のロケールを設定します'
-                  href: ca1306-set-locale-for-data-types.md
+                  href: ca1306.md
                 - name: 'CA1307:StringComparison の指定'
-                  href: ca1307-specify-stringcomparison.md
+                  href: ca1307.md
                 - name: 'CA1308:文字列を大文字に標準化します'
-                  href: ca1308-normalize-strings-to-uppercase.md
+                  href: ca1308.md
                 - name: 'CA1309:順序を示す StringComparison を使用します'
-                  href: ca1309-use-ordinal-stringcomparison.md
+                  href: ca1309.md
                 - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
                   href: ca2101.md
             - name: 相互運用性に関する警告
@@ -377,54 +377,54 @@
                   displayName: interoperability warnings
                   href: interoperability-warnings.md
                 - name: 'CA1400:P/Invoke エントリ ポイントは存在しなければなりません'
-                  href: ca1400-p-invoke-entry-points-should-exist.md
+                  href: ca1400.md
                 - name: 'CA1401:P/Invoke は参照可能になりません'
-                  href: ca1401-p-invokes-should-not-be-visible.md
+                  href: ca1401.md
                 - name: 'CA1402:COM 参照可能インターフェイスでのオーバーロードを避けてください'
-                  href: ca1402-avoid-overloads-in-com-visible-interfaces.md
+                  href: ca1402.md
                 - name: 'CA1403:Auto 配置の型を COM 参照可能にすることはできません'
-                  href: ca1403-auto-layout-types-should-not-be-com-visible.md
+                  href: ca1403.md
                 - name: 'CA1404:P/Invoke の直後に GetLastError を呼び出します'
-                  href: ca1404-call-getlasterror-immediately-after-p-invoke.md
+                  href: ca1404.md
                 - name: 'CA1405:COM 参照可能な型の基本型は COM 参照可能でなければなりません'
-                  href: ca1405-com-visible-type-base-types-should-be-com-visible.md
+                  href: ca1405.md
                 - name: 'CA1406:Visual Basic 6 クライアントに対しては Int64 引数を使用しません'
-                  href: ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md
+                  href: ca1406.md
                 - name: 'CA1407:Com 参照可能な型で静的メンバーを使用しません'
-                  href: ca1407-avoid-static-members-in-com-visible-types.md
+                  href: ca1407.md
                 - name: 'CA1408:AutoDual ClassInterfaceType を使用しないでください'
-                  href: ca1408-do-not-use-autodual-classinterfacetype.md
+                  href: ca1408.md
                 - name: 'CA1409:COM 参照可能な型は作成可能でなければなりません'
-                  href: ca1409-com-visible-types-should-be-creatable.md
+                  href: ca1409.md
                 - name: 'CA1410:COM 登録メソッドは一致しなければなりません'
-                  href: ca1410-com-registration-methods-should-be-matched.md
+                  href: ca1410.md
                 - name: 'CA1411:COM 登録メソッドは参照可能であることはできません'
-                  href: ca1411-com-registration-methods-should-not-be-visible.md
+                  href: ca1411.md
                 - name: 'CA1412:ComSource インターフェイスを IDispatch として設定します'
-                  href: ca1412-mark-comsource-interfaces-as-idispatch.md
+                  href: ca1412.md
                 - name: 'CA1413:Com 参照可能な値型ではパブリックでないフィールドを使用しません'
-                  href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
+                  href: ca1413.md
                 - name: 'CA1414:ブール型の P/Invoke 引数を MarshalAs に設定します'
-                  href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
+                  href: ca1414.md
                 - name: 'CA1415:P/Invoke を正しく宣言します'
-                  href: ca1415-declare-p-invokes-correctly.md
+                  href: ca1415.md
             - name: 保守性に関する警告
               items:
                 - name: 概要
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
                 - name: 'CA1500:変数名はフィールド名と同一にすることはできません'
-                  href: ca1500-variable-names-should-not-match-field-names.md
+                  href: ca1500.md
                 - name: 'CA1501:継承を使用しすぎないでください'
-                  href: ca1501-avoid-excessive-inheritance.md
+                  href: ca1501.md
                 - name: 'CA1502:メソッドの実装を複雑にしすぎないでください'
-                  href: ca1502-avoid-excessive-complexity.md
+                  href: ca1502.md
                 - name: 'CA1504:紛らわしいフィールド名を確認します'
-                  href: ca1504-review-misleading-field-names.md
+                  href: ca1504.md
                 - name: 'CA1505:メンテナンスできないコードを使用しないでください'
-                  href: ca1505-avoid-unmaintainable-code.md
+                  href: ca1505.md
                 - name: 'CA1506:クラス結合度を大きくしすぎないでください'
-                  href: ca1506-avoid-excessive-class-coupling.md
+                  href: ca1506.md
                 - name: 'CA1507:文字列の代わりに nameof を使用します'
                   href: ca1507.md
             - name: モビリティに関する警告
@@ -433,60 +433,60 @@
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600:アイドル状態のプロセス優先度を使用しません'
-                  href: ca1600-do-not-use-idle-process-priority.md
+                  href: ca1600.md
                 - name: 'CA1601:電源の状態の変更を妨げるタイマーを使用しません'
-                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
+                  href: ca1601.md
             - name: 名前付けに関する警告
               items:
                 - name: 概要
                   displayName: naming warnings
                   href: naming-warnings.md
                 - name: 'CA1700:列挙型値に ''Reserved'' という名前を指定しません'
-                  href: ca1700-do-not-name-enum-values-reserved.md
+                  href: ca1700.md
                 - name: 'CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません'
-                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                  href: ca1701.md
                 - name: 'CA1702:複合語では、大文字と小文字が正しく区別されなければなりません'
-                  href: ca1702-compound-words-should-be-cased-correctly.md
+                  href: ca1702.md
                 - name: 'CA1703:リソース文字列は正しく入力されなければなりません'
-                  href: ca1703-resource-strings-should-be-spelled-correctly.md
+                  href: ca1703.md
                 - name: 'CA1704:識別子は正しく入力されなければなりません'
-                  href: ca1704-identifiers-should-be-spelled-correctly.md
+                  href: ca1704.md
                 - name: 'CA1707:識別子はアンダースコアを含むことはできません'
-                  href: ca1707-identifiers-should-not-contain-underscores.md
+                  href: ca1707.md
                 - name: 'CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません'
-                  href: ca1708-identifiers-should-differ-by-more-than-case.md
+                  href: ca1708.md
                 - name: 'CA1709:識別子では、大文字と小文字が正しく区別されなければなりません'
-                  href: ca1709-identifiers-should-be-cased-correctly.md
+                  href: ca1709.md
                 - name: 'CA1710:識別子は、正しいサフィックスを含んでいなければなりません'
-                  href: ca1710-identifiers-should-have-correct-suffix.md
+                  href: ca1710.md
                 - name: 'CA1711:識別子は、不適切なサフィックスを含むことはできません'
-                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                  href: ca1711.md
                 - name: 'CA1712:列挙型値を型名のプレフィックスにしません'
-                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                  href: ca1712.md
                 - name: 'CA1713:イベントは、before または after プレフィックスを含むことはできません'
-                  href: ca1713-events-should-not-have-before-or-after-prefix.md
+                  href: ca1713.md
                 - name: 'CA1714:フラグ列挙型は、複数形の名前を含んでいなければなりません'
-                  href: ca1714-flags-enums-should-have-plural-names.md
+                  href: ca1714.md
                 - name: 'CA1715:識別子は正しいプレフィックスを含んでいなければなりません'
-                  href: ca1715-identifiers-should-have-correct-prefix.md
+                  href: ca1715.md
                 - name: 'CA1716:識別子はキーワードと同一にすることはできません'
-                  href: ca1716-identifiers-should-not-match-keywords.md
+                  href: ca1716.md
                 - name: 'CA1717:FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません'
-                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                  href: ca1717.md
                 - name: 'CA1719:パラメーター名はメンバー名と同一にすることはできません'
-                  href: ca1719-parameter-names-should-not-match-member-names.md
+                  href: ca1719.md
                 - name: 'CA1720:識別子には型名を含めないでください'
-                  href: ca1720-identifiers-should-not-contain-type-names.md
+                  href: ca1720.md
                 - name: 'CA1721:プロパティ名は get メソッドと同一にすることはできません'
-                  href: ca1721-property-names-should-not-match-get-methods.md
+                  href: ca1721.md
                 - name: 'CA1722:識別子は不適切なプレフィックスを含むことはできません'
-                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                  href: ca1722.md
                 - name: 'CA1725:パラメーター名は基本宣言と同一でなければなりません'
-                  href: ca1725-parameter-names-should-match-base-declaration.md
+                  href: ca1725.md
                 - name: 'CA1724:型名は名前空間と同一にすることはできません'
-                  href: ca1724-type-names-should-not-match-namespaces.md
+                  href: ca1724.md
                 - name: 'CA1726:適切な用語を使用します'
-                  href: ca1726-use-preferred-terms.md
+                  href: ca1726.md
             - name: パフォーマンスに関する警告
               items:
                 - name: 概要

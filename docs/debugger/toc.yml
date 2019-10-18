@@ -239,7 +239,7 @@
             - name: カスタム ビュー (マネージド)
               items:
                 - name: .managed オブジェクトのカスタム ビューの作成
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: 表示するものをデバッガーに通知する
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 表示する種類をデバッガーに通知する

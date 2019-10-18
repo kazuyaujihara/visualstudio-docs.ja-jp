@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee4e3df94e46b4d3cc996a23fc1e40401195e21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 54b33eb92cec82a5a0327bac92f2a8909519784d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551137"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448899"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>方法: 生成されたコードに対するコード分析の警告を表示しない
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>方法: 生成されたコードのコード分析の警告を非表示にする
 
 生成されたコードには、マネージコードコンパイラまたはサードパーティ製のツールによってプロジェクトに追加されたコードが含まれます。 生成されたコードでコード分析によって検出された規則違反を確認することができます。 ただし、違反が含まれているコードを表示および管理することはできないため、表示されない場合があります。
 

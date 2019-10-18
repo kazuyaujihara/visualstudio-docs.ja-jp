@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d9ca8c8bd46b4f8455c7aa750170d38f03321f6
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349677"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449067"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop アナライザーの規則のスコープオプション
 
@@ -21,9 +21,9 @@ ms.locfileid: "72349677"
 これらの構成オプションは、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージのバージョン2.6.3 以降で使用できます。
 
 > [!TIP]
-> FxCopAnalyzers パッケージの特定のバージョンで使用できるすべてのオプションの一覧を表示するには、パッケージの*documentation*フォルダーにある*Analyzer Configuration.md*ファイルを参照してください。 ファイルは *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.md*にあります。 この構成ドキュメントファイルは、バージョン2.6.5 以降では、パッケージの各バージョンに含まれています。 次に、 *Analyzer Configuration.md*ファイルでオプションを記述する方法の例を示します。
+> FxCopAnalyzers パッケージの特定のバージョンで使用できるすべてのオプションの一覧を表示するには、パッケージの*documentation*フォルダーにある*Analyzer Configuration.md*ファイルを参照してください。 ファイルは *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> Configuration.md*にあります。 この構成ドキュメントファイルは、バージョン2.6.5 以降では、パッケージの各バージョンに含まれています。 次に、 *Analyzer Configuration.md*ファイルでオプションを記述する方法の例を示します。
 >
-> オプション名: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t
+> オプション名: `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > オプション値: 整数値 \
 > 既定値: 構成可能な各規則に固有 (ほとんどの規則に対して既定では ' 10万 ') \
 > 例 : `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
@@ -41,7 +41,7 @@ ms.locfileid: "72349677"
 | 値を返さない非同期メソッドを無視するかどうか | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は-0 @no__t でした。
+> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `skip_async_void_methods` でした。
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
@@ -50,7 +50,7 @@ ms.locfileid: "72349677"
 | 1文字の[型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)をルールから除外するかどうかを指定します。たとえば、`Collection<S>` の `S` です。 | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は-0 @no__t でした。
+> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `allow_single_letter_type_parameters` でした。
 
 ## <a name="output_kind"></a>output_kind
 

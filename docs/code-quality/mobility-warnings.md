@@ -14,19 +14,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 170caf52999fb687c040c2e9212d1a1ed2e154a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 5bf1d9402294980a2202bbd3ab99c03b5e438eaa
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820675"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448860"
 ---
 # <a name="mobility-warnings"></a>モビリティに関する警告
-モビリティに関する警告は、効率的な電源の使用をサポートします。
+モビリティの警告は、効率的な電力使用をサポートします。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-|ルール|説明|
+|規則|説明|
 |----------|-----------------|
-|[CA 1600:アイドル状態のプロセスの優先順位を使用しないでください。](../code-quality/ca1600-do-not-use-idle-process-priority.md)|プロセス優先順位に Idle を設定しないでください。 System.Diagnostics.ProcessPriorityClass.Idle を設定したプロセスは、CPU を占有するか、そうでない場合はアイドル状態になるため、スタンバイ状態がブロックされます。|
-|[CA 1601:電源状態の変更を妨げるタイマーを使用しないでください。](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|定期的な動作の頻度が高くなると、CPU のビジー状態が続き、ディスプレイとハード ディスクをオフにする省電力アイドル タイマーに影響を与えます。|
+|[CA1600: アイドル状態のプロセス優先度を使用しません](../code-quality/ca1600-do-not-use-idle-process-priority.md)|プロセス優先順位に Idle を設定しないでください。 System.Diagnostics.ProcessPriorityClass.Idle を設定したプロセスは、CPU を占有するか、そうでない場合はアイドル状態になるため、スタンバイ状態がブロックされます。|
+|[CA1601: 電源の状態の変更を妨げるタイマーを使用しません](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|定期的な動作の頻度が高くなると、CPU のビジー状態が続き、ディスプレイとハード ディスクをオフにする省電力アイドル タイマーに影響を与えます。|

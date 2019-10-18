@@ -1,5 +1,5 @@
 ---
-title: MFC のデバッグ手法 |Microsoft Docs
+title: MFC のデバッグ技術 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693033"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435644"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC のデバッグ技術
 MFC プログラムをデバッグする場合は、次のデバッグ技術が役立ちます。
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-TRACE マクロは、両方の char を適切に処理\*と wchar_t\*パラメーター。 TRACE マクロと異なる型の文字列パラメーターを組み合わせて使用する例を次に示します。
+TRACE マクロは、char \* と wchar_t \* の両方のパラメーターを適切に処理します。 TRACE マクロと異なる型の文字列パラメーターを組み合わせて使用する例を次に示します。
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -140,7 +140,7 @@ MFC フレームワークのデバッグ バージョンでは自動的に `DEBU
 
 - メモリ診断機能をより細かく制御するには、MFC のグローバル変数 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)に値を設定することにより、個々のメモリ診断機能を個別にオン、オフします。 この変数には、 **afxMemDF**列挙型で指定される次の値を設定できます。
 
-  |値|説明|
+  |[値]|説明|
   |-----------|-----------------|
   |**allocMemDF**|診断メモリ アロケーターをオンにします (既定)。|
   |**delayFreeMemDF**|`delete` や `free` が呼び出された場合に、プログラムが終了するまでメモリの解放を遅らせます。 これにより、プログラムで必要とする最大量のメモリが割り当てられます。|
@@ -185,7 +185,7 @@ MFC フレームワークのデバッグ バージョンでは自動的に `DEBU
     #endif
     ```
 
-    メモリ チェック用のステートメントがかっこで囲まれた通知 **#ifdef _DEBUG と #endif**ブロックは、プログラムのデバッグ バージョンでのみコンパイルします。
+    メモリチェックステートメントは、プログラムのデバッグバージョンでのみコンパイルされるように **#ifdef _debug/#endif**ブロックで囲まれていることに注意してください。
 
     メモリ リークが発生していることを確認できたので、別のメンバー関数 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) を使用してメモリ リークの位置を特定できます。
 
@@ -227,7 +227,7 @@ Non-Object Blocks には、 `new`によって割り当てられた配列と構�
 [このトピックの内容](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Taking_object_dumps"></a> オブジェクト ダンプの取得
-MFC プログラムで使用できます[cmemorystate::dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)解放されていないヒープ上のすべてのオブジェクトの説明をダンプします。 `DumpAllObjectsSince` は、前回の [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)を呼び出します。 `Checkpoint` が一度も呼び出されていない場合、 `DumpAllObjectsSince` はメモリ上に存在するオブジェクトと非オブジェクトをすべてダンプします。
+MFC プログラムでは、 [CMemoryState::D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)を使用して、割り当てが解除されていないヒープ上のすべてのオブジェクトの説明をダンプできます。 `DumpAllObjectsSince` は、前回の [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)を呼び出します。 `Checkpoint` が一度も呼び出されていない場合、 `DumpAllObjectsSince` はメモリ上に存在するオブジェクトと非オブジェクトをすべてダンプします。
 
 > [!NOTE]
 > MFC のオブジェクト ダンプ機能を使用する場合は、あらかじめ [診断トレースを有効にしておく](#BKMK_Enabling_memory_diagnostics)必要があります。
@@ -413,16 +413,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC デバッグ ビルドのサイズの縮小
 大型の MFC アプリケーションでは、デバッグ情報でかなりのディスク容量が占有される場合があります。 次のいずれかの手順を使用して、サイズを縮小できます。
 
-1. 使用して MFC ライブラリを再構築、 [/Z7、/Zi、/ZI (デバッグ情報の形式)](/cpp/build/reference/z7-zi-zi-debug-information-format)オプションの代わりに **/Z7**します。 これらのオプションを指定すると、ライブラリ全体のデバッグ情報を格納する単一のプログラム データベース (PDB) ファイルがビルドされます。これによって、無駄をなくしてディスク容量を節約できます。
+1. **/Z7**ではなく、 [/Z7、/zi、/Zi (デバッグ情報の形式)](/cpp/build/reference/z7-zi-zi-debug-information-format)オプションを使用して、MFC ライブラリをリビルドします。 これらのオプションを指定すると、ライブラリ全体のデバッグ情報を格納する単一のプログラム データベース (PDB) ファイルがビルドされます。これによって、無駄をなくしてディスク容量を節約できます。
 
-2. デバッグ情報なしの MFC ライブラリをリビルド (ありません[/Z7、/Zi、/ZI (デバッグ情報の形式)](/cpp/build/reference/z7-zi-zi-debug-information-format)オプション)。 この場合、デバッグ情報がないため、MFC ライブラリのコード内で大半のデバッガー機能を使用できなくなります。しかし、MFC ライブラリは完全にデバッグ済みであるため、このことは問題にはなりません。
+2. デバッグ情報を使用せずに MFC ライブラリをリビルドします ([ [/Z7、/zi、/zi (デバッグ情報の形式)](/cpp/build/reference/z7-zi-zi-debug-information-format) ] オプション)。 この場合、デバッグ情報がないため、MFC ライブラリのコード内で大半のデバッガー機能を使用できなくなります。しかし、MFC ライブラリは完全にデバッグ済みであるため、このことは問題にはなりません。
 
 3. 次に示すように、選択したモジュールのデバッグ情報だけを追加してアプリケーションをビルドする。
 
     [このトピックの内容](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 選択したモジュールのデバッグ情報を持つ MFC アプリケーションのビルド
-選択したモジュールを MFC デバッグ ライブラリと一緒にビルドすると、これらのモジュール内で、ステップ実行やその他のデバッグ機能を使用できます。 この手順では Visual C++ メイクファイルのデバッグ モードとリリース モードの両方を使用するため、以下の手順に示した変更が必要になります。また、完全なリリース ビルドが必要な場合は、"すべてをリビルドする" 必要もあります。
+選択したモジュールを MFC デバッグ ライブラリと一緒にビルドすると、これらのモジュール内で、ステップ実行やその他のデバッグ機能を使用できます。 この手順では、プロジェクトのデバッグ構成とリリース構成の両方を使用するため、次の手順で説明する変更が必要になります (また、完全なリリースビルドが必要な場合は、"すべてリビルド" を行う必要があります)。
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。
 
@@ -438,7 +438,7 @@ pMyPerson->Dump( afxDump );
 
    4. **[設定のコピー元]** ボックスの **[Release]** をクリックします。
 
-   5. をクリックして**OK**を閉じる、**新しいプロジェクト構成** ダイアログ ボックス。
+   5. [ **OK]** をクリックして、 **[新しいプロジェクト構成]** ダイアログボックスを閉じます。
 
    6. **[構成マネージャー]** ダイアログ ボックスを閉じます。
 
@@ -480,5 +480,5 @@ pMyPerson->Dump( afxDump );
 
    [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>関連項目
-[Visual C++ のデバッグ](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>参照
+[ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual C/C++カスタム ビジュアライザーの互換性
+title: Visual C/C++カスタムビジュアライザーの互換性
 ms.date: 01/28/2019
 ms.prod: visual-studio-dev16
 ms.topic: reference
@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 32e38dd3bba8a1127d8756972b73e8b47a514f1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fdd44be89fde2fbc26038c8b88fff405876264f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901167"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430619"
 ---
-# <a name="visual-cc-custom-visualizer-compatibility"></a>Visual C/C++カスタム ビジュアライザーの互換性
+# <a name="visual-cc-custom-visualizer-compatibility"></a>Visual C/C++カスタムビジュアライザーの互換性
 
-Visual Studio 2019、ビジュアルで起動C++そのメモリを消費するコンポーネントをホストするための外部の 64 ビット プロセスを使用する、強化されたデバッガーが含まれています。 この更新では、Visual C に特定の拡張機能の一部として/C++式エバリュエーターを更新して、新しいデバッガーに対応できるようにする必要があります。
+Visual Studio 2019 以降、にC++は、メモリを集中的に使用するコンポーネントをホストするための外部64ビットプロセスを使用する、強化されたデバッガーが含まれています。 この更新プログラムの一部として、新しいデバッガーとC++互換性を持たせるために、C/式エバリュエーターの特定の拡張機能を更新する必要があります。
 
-従来の C を使用して現在場合/C++ EE アドインまたは C/C++カスタム ビジュアライザーは、オフにできますこの外部プロセスの使用量に移動して**ツール** > **オプション** > **デバッグ**にしてからオフ**ロード デバッグ記号は、外部プロセス (ネイティブのみ) で**します。 このオプションを選択解除した場合は、IDE (devenv.exe) プロセス内でのメモリ使用量が大幅に増加が発生します。 そのため、大規模なプロジェクトをデバッグする場合は、このデバッグ オプションの互換性を確保する、拡張機能の所有者を使用することをお勧めします。
+現在、従来のC++ c/EE アドインまたは c/C++カスタムビジュアライザーを使用している場合は、 **[ツール]**  >  [**オプション]**  >  **[デバッグ]** の順に移動し、[**読み込みデバッグ] の選択を解除して、この外部プロセスの使用をオフにすることができます。外部プロセスのシンボル (ネイティブのみ)** 。 このオプションの選択を解除すると、IDE (devenv.exe) プロセス内のメモリ使用量が大幅に増加します。 そのため、大規模なプロジェクトをデバッグする場合は、拡張機能の所有者と協力して、このデバッグオプションとの互換性を確保することをお勧めします。
 
-従来の C の所有者/C++ EE アドインまたは C/C++カスタム ビジュアライザーは、上のワーカー プロセスの拡張機能の読み込みを選択の詳細についてを見つけることができます、 [Concord 機能拡張サンプル wiki](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Worker-Process-Remoting)します。 検索することも、 [C/C++カスタム ビジュアライザー サンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/tree/master/CppCustomVisualizer)します。
+レガシ C/C++ EE アドインまたは c/C++カスタムビジュアライザーの所有者は、concord 拡張機能の[サンプル wiki](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Worker-Process-Remoting)で、ワーカープロセスに拡張機能を読み込む方法についての詳細を参照できます。 [C/C++カスタムビジュアライザーのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/tree/master/CppCustomVisualizer)も参照できます。

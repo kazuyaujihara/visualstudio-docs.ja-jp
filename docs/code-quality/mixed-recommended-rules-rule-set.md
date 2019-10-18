@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 994f8151b209d58617a23edbb4bba38836570710
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 2ce642ee57112561ba687b7ebe962150ce4e268e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349535"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446537"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>"混合推奨規則" 規則セット
 
@@ -151,7 +151,7 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[C28020](../code-quality/c28020.md)|この呼び出しでは式が true ではありません|
 |[C28021](../code-quality/c28021.md)|注釈が付けられているパラメーターはポインターである必要があります|
 |[C28022](../code-quality/c28022.md)|この関数の関数クラスは、定義に使用された typedef の関数クラスと一致しません。|
-|[C28023](../code-quality/c28023.md)|割り当てられている、または渡される関数には、少なくとも1つのクラスに対して、@no__t 0Function @ no__t-1class @ no__t 注釈が必要です。|
+|[C28023](../code-quality/c28023.md)|割り当てられる、または渡される関数には、少なくとも1つのクラスの注釈 \_ \_class \_Function が含まれている必要があります|
 |[C28024](../code-quality/c28024.md)|割り当てられている関数ポインターには、function クラスで注釈が付けられています。関数クラスは、関数クラスのリストに含まれていません。|
 |[C28039](../code-quality/c28039.md)|実際のパラメーターの型は、型と完全に一致している必要があります|
 |[C28112](../code-quality/c28112.md)|インタロック関数を介してアクセスされる変数には、常にインタロックされた関数を介してアクセスする必要があります。|
@@ -169,14 +169,14 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[C28196](../code-quality/c28196.md)|要件が満たされていません。 (式は true に評価されません)|
 |[C28202](../code-quality/c28202.md)|静的でないメンバーへの参照が正しくありません|
 |[C28203](../code-quality/c28203.md)|クラス メンバーへのあいまいな参照です。|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 または \_On @ no__t-3failure @ no__t-4 無効なコンテキストで使用されています|
+|[C28205](../code-quality/c28205.md)|無効なコンテキストで使用されている \_ \_failure の \_Success \_ または \_On|
 |[C28206](../code-quality/c28206.md)|左側のオペランドは構造体をポイントするため、'-> ' を使用します|
 |[C28207](../code-quality/c28207.md)|左側のオペランドは構造体であるため、'.' を使用します|
 |[C28209](../code-quality/c28209.md)|シンボルの宣言に競合する宣言があります。|
 |[C28210](../code-quality/c28210.md)|__on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません|
 |[C28211](../code-quality/c28211.md)|SAL_context には静的コンテキスト名が必要です|
 |[C28212](../code-quality/c28212.md)|注釈にはポインター式が必要です|
-|[C28213](../code-quality/c28213.md)|前の宣言を変更せずに参照するには、@no__t 0Use @ no__t-1/3 注釈 @ no__t を使用する必要があります。|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釈は、前の宣言を変更せずに参照するために使用する必要があります。|
 |[C28214](../code-quality/c28214.md)|属性パラメーター名は、p1...p9 である必要があります|
 |[C28215](../code-quality/c28215.md)|typefix は、既に typefix のあるパラメーターには適用できません|
 |[C28216](../code-quality/c28216.md)|checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。|
@@ -219,7 +219,7 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[C28267](../code-quality/c28267.md)|注釈での構文エラーが、関数の注釈で見つかりました。|
 |[C28272](../code-quality/c28272.md)|検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません|
 |[C28273](../code-quality/c28273.md)|関数について、手がかりには関数宣言との一貫性がありません。|
-|[C28275](../code-quality/c28275.md)|パラメーター \_Macro @ no__t-1value @ no__t は null です。|
+|[C28275](../code-quality/c28275.md)|@No__t_2 \_value \_Macro するパラメーターが null です|
 |[C28279](../code-quality/c28279.md)|シンボルについて、'begin' はありましたが、対応する 'end' がありません|
 |[C28280](../code-quality/c28280.md)|シンボルについて、'end' はありましたが、対応する 'begin' がありません|
 |[C28282](../code-quality/c28282.md)|書式指定文字列は、前提条件の中に存在する必要があります|
@@ -258,32 +258,32 @@ Microsoft の混合推奨規則は、潜在的なセキュリティホール、�
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 登録メソッドは一致しなければなりません|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke を正しく宣言します|
 |[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|値型フィールドはポータブルでなければなりません|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣言はポータブルでなければなりません|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|弱い ID を伴うオブジェクト上でロックしません|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|SQL クエリのセキュリティ脆弱性を確認|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|P/Invoke 文字列引数に対してマーシャリングを指定します|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|値型での宣言セキュリティを確認します|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|ポインターは参照可能にすることはできません|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|セキュリティで保護された型はフィールドを公開してはなりません|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|メソッド セキュリティは型のスーパーセットでなければなりません|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA メソッドは APTCA メソッドのみを呼び出すことができます|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA 型は APTCA 基本型のみを拡張することができます|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|リンク要求を含むメソッドを間接的に公開しません|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|オーバーライドのリンク要求はベースと同一でなければなりません|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|脆弱性のある finally 句を外側の try でラップします|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|型のリンク要求には継承要求が必要です|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|セキュリティ上重要な型は型等価性に参加してはならない|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|デリゲートは透過性の整合がとれたメソッドにバインドする必要がある|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透過的メソッドは、検証可能な IL のみを含まなければならない|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透過的コードは、セキュリティ上重要な項目を参照してはならない|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透過的メソッドは Linkdemand を満たしてはならない|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|型は、基本型およびインターフェイスと同程度以上、重要でなければならない|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透過コードは、セキュリティ アサートを使用してはならない|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
+|[CA1900](../code-quality/ca1900.md)|値型フィールドはポータブルでなければなりません|
+|[CA1901](../code-quality/ca1901.md)|P/Invoke 宣言はポータブルでなければなりません|
+|[CA2002](../code-quality/ca2002.md)|弱い ID を伴うオブジェクト上でロックしません|
+|[CA2100](../code-quality/ca2100.md)|SQL クエリのセキュリティ脆弱性を確認|
+|[CA2101](../code-quality/ca2101.md)|P/Invoke 文字列引数に対してマーシャリングを指定します|
+|[CA2108](../code-quality/ca2108.md)|値型での宣言セキュリティを確認します|
+|[CA2111](../code-quality/ca2111.md)|ポインターは参照可能にすることはできません|
+|[CA2112](../code-quality/ca2112.md)|セキュリティで保護された型はフィールドを公開してはなりません|
+|[CA2114](../code-quality/ca2114.md)|メソッド セキュリティは型のスーパーセットでなければなりません|
+|[CA2116](../code-quality/ca2116.md)|APTCA メソッドは APTCA メソッドのみを呼び出すことができます|
+|[CA2117](../code-quality/ca2117.md)|APTCA 型は APTCA 基本型のみを拡張することができます|
+|[CA2122](../code-quality/ca2122.md)|リンク要求を含むメソッドを間接的に公開しません|
+|[CA2123](../code-quality/ca2123.md)|オーバーライドのリンク要求はベースと同一でなければなりません|
+|[CA2124](../code-quality/ca2124.md)|脆弱性のある finally 句を外側の try でラップします|
+|[CA2126](../code-quality/ca2126.md)|型のリンク要求には継承要求が必要です|
+|[CA2131](../code-quality/ca2131.md)|セキュリティ上重要な型は型等価性に参加してはならない|
+|[CA2132](../code-quality/ca2132.md)|既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要|
+|[CA2133](../code-quality/ca2133.md)|デリゲートは透過性の整合がとれたメソッドにバインドする必要がある|
+|[CA2134](../code-quality/ca2134.md)|メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある|
+|[CA2137](../code-quality/ca2137.md)|透過的メソッドは、検証可能な IL のみを含まなければならない|
+|[CA2138](../code-quality/ca2138.md)|透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない|
+|[CA2140](../code-quality/ca2140.md)|透過的コードは、セキュリティ上重要な項目を参照してはならない|
+|[CA2141](../code-quality/ca2141.md)|透過的メソッドは Linkdemand を満たしてはならない|
+|[CA2146](../code-quality/ca2146.md)|型は、基本型およびインターフェイスと同程度以上、重要でなければならない|
+|[CA2147](../code-quality/ca2147.md)|透過コードは、セキュリティ アサートを使用してはならない|
+|[CA2149](../code-quality/ca2149.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
 |[CA2200](../code-quality/ca2200.md)|スタック詳細を保持するために再度スローします|
 |[CA2202](../code-quality/ca2202.md)|オブジェクトを複数回破棄しない|
 |[CA2207](../code-quality/ca2207.md)|値型のスタティック フィールドのインラインを初期化します|

@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 656b36e6d0a90bb44eaa5745312f1a57e1ea3474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975070"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448935"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>方法: マネージコードのバイナリコード分析を有効または無効にする
 
@@ -21,15 +21,15 @@ ms.locfileid: "71975070"
 
 レガシコード分析を有効または無効にするには:
 
-1. **ソリューション エクスプ ローラー** で、プロジェクトを右クリックし、**プロパティ**を選択します。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** をクリックします。
 
 2. プロジェクトの プロパティ ダイアログボックスで、**コード分析** タブを選択します。
 
-3. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
+3. **[構成]** でビルドの種類を指定し、 **[プラットフォーム]** でターゲットプラットフォームを指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
 
 ::: moniker range="vs-2017"
 
-4. 自動コード分析を有効または無効にするには、**ビルドに対するコード分析を有効にする**のチェック ボックスをオンまたはオフします。
+4. 自動コード分析を有効または無効にするには、[**ビルド時にコード分析を有効に**する] チェックボックスをオンまたはオフにします。
 
 ::: moniker-end
 

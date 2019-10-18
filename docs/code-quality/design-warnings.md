@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b4440a922c1971f02937f6da007da6aa96864
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 5229084f34a8c2a674d327ad86f7f3d2bbb1aae5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349652"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449185"
 ---
 # <a name="design-warnings"></a>デザインの警告
 
@@ -84,7 +84,7 @@ ms.locfileid: "72349652"
 | [CA1057: 文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | 文字列パラメーターが System.Uri パラメーターに置き換えられている点だけが異なるメソッド オーバーロードが型で宣言されています。 文字列パラメーターを使用するオーバーロードは、URI パラメーターを使用するオーバーロードを呼び出しません。 |
 | [CA1058: 型は、一定の基本型を拡張することはできません](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | 外部から参照可能な型では、特定の基本型が拡張されます。 別の型を使用してください。 |
 | [CA1059: メンバーは特定の具象型を公開できません](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | 具象型は、完全な実装を含む型であるため、インスタンス化できます。 このメンバーを広範囲に使用するには、具象型を推奨インターフェイスによって置き換えます。 |
-| [CA1060: P/Invoke を NativeMethods クラスに移動します](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | @No__t-0 または [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] の Declare キーワードを使用して定義されたメソッドなどのプラットフォーム呼び出しメソッドは、アンマネージコードにアクセスします。 これらのメソッドは、NativeMethods、SafeNativeMethods、UnsafeNativeMethods の各クラスのいずれかに含まれる必要があります。 |
+| [CA1060: P/Invoke を NativeMethods クラスに移動します](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | @No__t_1 で Declare キーワードを使用して定義されている <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> またはメソッドでマークされたプラットフォーム呼び出しメソッドは、アンマネージコードにアクセスします。 これらのメソッドは、NativeMethods、SafeNativeMethods、UnsafeNativeMethods の各クラスのいずれかに含まれる必要があります。 |
 | [CA1061: 基本クラス メソッドを非表示にしません](../code-quality/ca1061-do-not-hide-base-class-methods.md) | 派生メソッドのパラメーター シグネチャ内のある型が、基本メソッドのパラメーター シグネチャ内のそれに対応する型より弱く型指定されていることが、両者の唯一の相違点である場合、基本型内のメソッドが派生型内の同じ名前のメソッドによって隠ぺいされます。 |
 | [CA1062: パブリック メソッドの引数の検証](../code-quality/ca1062-validate-arguments-of-public-methods.md) | 外部から参照可能なメソッドに渡されるすべての参照引数について、null かどうかをチェックする必要があります。 |
 | [CA1063: IDisposable を正しく実装します](../code-quality/ca1063-implement-idisposable-correctly.md) | すべての IDisposable 型は、Dispose パターンを適切に実装する必要があります。 |

@@ -21,27 +21,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563908"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435916"
 ---
 # <a name="com-and-activex-debugging"></a>COM および ActiveX のデバッグ
 ここでは、COM アプリケーションと ActiveX コントロールのデバッグに関するヒントを紹介します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [COM サーバーおよびコンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)COM アプリケーションをデバッグするときに、特別な考慮事項を紹介します。 同じソリューション内の 2 つのプロジェクトを使った COM サーバーおよびコンテナーのデバッグ、プロセス間をまたぐ呼び出しのトレース、コールバック関数でのブレークポイントの設定、コンテナーとサーバー間のステップ実行などの問題を扱います。
+ [COM サーバーとコンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)COM アプリケーションのデバッグ時の特別な考慮事項について紹介します。 同じソリューション内の 2 つのプロジェクトを使った COM サーバーおよびコンテナーのデバッグ、プロセス間をまたぐ呼び出しのトレース、コールバック関数でのブレークポイントの設定、コンテナーとサーバー間のステップ実行などの問題を扱います。
 
- [方法: ActiveX コントロールをデバッグ](../debugger/how-to-debug-an-activex-control.md)ActiveX コントロールのデバッグに関する情報が含まれています。 デバッグ セッションでコンテナーを指定して ActiveX コントロール内のコードの実行状況を見る方法、データ連結 ActiveX コントロールのデバッグ、特定のコンテナーのシミュレート、コンテナーのコードのステップ実行などを扱います。
+ [方法: ActiveX コントロールをデバッグ](../debugger/how-to-debug-an-activex-control.md)するActiveX コントロールのデバッグについて説明します。 デバッグ セッションでコンテナーを指定して ActiveX コントロール内のコードの実行状況を見る方法、データ連結 ActiveX コントロールのデバッグ、特定のコンテナーのシミュレート、コンテナーのコードのステップ実行などを扱います。
 
- [COM 用のデバッグ ツール](../debugger/com-debugging-tools.md)ビューアーおよびサンプル アプリケーションの COM アプリケーションのデバッグに役立つ可能性のあるを一覧表示されます。
+ [COM デバッグツール](../debugger/com-debugging-tools.md)COM アプリケーションのデバッグに役立つビューアーとサンプルアプリケーションの一覧を示します。
 
 ## <a name="related-sections"></a>関連項目
- [デバッガーでのはじめ](../debugger/debugger-feature-tour.md)デバッグ ドキュメントの大きなセクションへのリンクを提供します。 デバッガーの新機能、設定と準備、ブレークポイント、例外の処理、エディット コンティニュ、マネージド コードのデバッグ、Visual C++ プロジェクトのデバッグ、COM および ActiveX のデバッグ、DLL のデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報へのリンクを提供します。
+ [最初にデバッガーを確認する](../debugger/debugger-feature-tour.md)デバッグドキュメントのより大きなセクションへのリンクを示します。 情報には、デバッガーの新機能、設定と準備、ブレークポイント、例外処理、エディットコンティニュ、マネージコードのデバッグ、 C++プロジェクトのデバッグ、COM と ActiveX のデバッグ、dll のデバッグ、SQL のデバッグ、およびユーザーが含まれます。インターフェイス参照。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [COM の概要](/cpp/atl/introduction-to-com)

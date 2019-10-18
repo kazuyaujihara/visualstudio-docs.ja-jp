@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585243"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448836"
 ---
 # <a name="code-analysis-rule-set-reference"></a>コード分析規則セットの参照
 
@@ -23,9 +23,9 @@ Visual Studio でマネージコードプロジェクトのレガシ分析を構
 > [!NOTE]
 > このセクションのルールセットは、従来の分析に関連しています。 コードアナライザーパッケージで使用できる規則セットの詳細については、「[コードアナライザーでの規則セットの使用](analyzer-rule-sets.md)」を参照してください。
 
-これらの組み込みの規則セットのいずれかを使用することができますか、またはを実行できます[規則セットをカスタマイズ](../code-quality/how-to-create-a-custom-rule-set.md)プロジェクトの要件に合わせています。 カスタム規則セットに同じ規則を含む複数の規則セットを含めると、その規則はカスタム規則セットに1回だけ表示されます。
+これらの組み込みの規則セットのいずれかを使用することも、プロジェクトの要件に合わせて[規則セットをカスタマイズ](../code-quality/how-to-create-a-custom-rule-set.md)することもできます。 カスタム規則セットに同じ規則を含む複数の規則セットを含めると、その規則はカスタム規則セットに1回だけ表示されます。
 
-このセクションのトピックが組み込みの規則セットとルール (または警告) 含まれています。
+このセクションのトピックでは、組み込みの規則セットとそれらに含まれる規則 (または警告) について説明します。
 
 | 規則セット | 含まれる規則 |
 | - | - |

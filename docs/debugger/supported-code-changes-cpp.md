@@ -1,5 +1,5 @@
 ---
-title: サポートされるコードの変更 (C++) |Microsoft Docs
+title: サポートされてC++いるコード変更 () |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901962"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430573"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C++)
-Visual C++ のエディット コンティニュは、大半の種類のコード変更に対応します。 ただし、一部の変更はプログラムの実行中に適用できません。 これらの変更を適用するには、プログラムの実行を中断し、新しいバージョンのコードをビルドする必要があります。
+プロジェクトのC++エディットコンティニュは、ほとんどの種類のコード変更を処理します。 ただし、一部の変更はプログラムの実行中に適用できません。 これらの変更を適用するには、プログラムの実行を中断し、新しいバージョンのコードをビルドする必要があります。
 
- Visual Studio での C++ のエディット コンティニュを使用する作業の情報については、「 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 」を参照してください。
+ Visual Studio でのC++エディットコンティニュの操作の詳細については、「エディットコンティニュ」 [(C++)](../debugger/edit-and-continue-visual-cpp.md)を参照してください。
 
 ## <a name="BKMK_Unsupported_changes"></a> サポートされていない変更
  デバッグ セッション中に適用できない C/C++ の変更は、次のとおりです。
@@ -66,7 +66,7 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
 
 - [(強化に最適化されたデータのデバッグ)/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)でコンパイルしたネイティブ アプリのデバッグ
 
-- UWP アプリまたはコンポーネントのデバッグ Visual Studio 2015 Update 1 より前の Visual Studio のバージョン。 Visual Studio 2015 Update 1 以降、使えるエディット コンティニュ UWP C++ アプリと DirectX アプリで現在サポートされているため、`/ZI`コンパイラ スイッチと、`/bigobj`スイッチします。 `/FASTLINK` スイッチがサポートされているので、エディット コンティニュを使用できます。
+- Visual Studio 2015 Update 1 より前の Visual Studio のバージョンでは、UWP アプリまたはコンポーネントをデバッグしています。 Visual Studio 2015 Update 1 以降では、UWP C++アプリと DirectX アプリでエディットコンティニュを使用できるようになりました。これは、`/bigobj` スイッチで `/ZI` コンパイラスイッチがサポートされるようになったためです。 `/FASTLINK` スイッチがサポートされているので、エディット コンティニュを使用できます。
 
 - Windows 98 でのデバッグ
 
@@ -136,5 +136,5 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 属性に関する制限事項
  エディット コンティニュでは、インターフェイス定義 (IDL) ファイルは再生成されません。 このため、デバッグ時に IDL 属性への変更は反映されません。 IDL 属性の変更結果を表示するには、デバッグを停止し、アプリをリビルドする必要があります。 エディット コンティニュでは、IDL 属性が変更されているとエラーや警告は生成されません。 詳細については、「 [IDL 属性](/cpp/windows/idl-attributes)」を参照してください。
 
-## <a name="see-also"></a>関連項目
-- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+## <a name="see-also"></a>参照
+- [エディットコンティニュ (C++)](../debugger/edit-and-continue-visual-cpp.md)

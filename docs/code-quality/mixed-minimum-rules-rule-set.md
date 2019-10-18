@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898a11be40d29c2e6181886c2c90af9315af6e3e
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349566"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445660"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 
@@ -86,13 +86,13 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28182](../code-quality/c28182.md)|Null ポインターの逆参照 このポインターは、もう 1 つのポインターと同じ Null 値を持ちます。|
 |[C28202](../code-quality/c28202.md)|静的でないメンバーへの参照が正しくありません|
 |[C28203](../code-quality/c28203.md)|クラス メンバーへのあいまいな参照です。|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 または \_On @ no__t-3failure @ no__t-4 無効なコンテキストで使用されています|
+|[C28205](../code-quality/c28205.md)|無効なコンテキストで使用されている \_ \_failure の \_Success \_ または \_On|
 |[C28206](../code-quality/c28206.md)|左側のオペランドは構造体をポイントするため、'-> ' を使用します|
 |[C28207](../code-quality/c28207.md)|左側のオペランドは構造体であるため、'.' を使用します|
 |[C28210](../code-quality/c28210.md)|__on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません|
 |[C28211](../code-quality/c28211.md)|SAL_context には静的コンテキスト名が必要です|
 |[C28212](../code-quality/c28212.md)|注釈にはポインター式が必要です|
-|[C28213](../code-quality/c28213.md)|前の宣言を変更せずに参照するには、@no__t 0Use @ no__t-1/3 注釈 @ no__t を使用する必要があります。|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釈は、前の宣言を変更せずに参照するために使用する必要があります。|
 |[C28214](../code-quality/c28214.md)|属性パラメーター名は、p1...p9 である必要があります|
 |[C28215](../code-quality/c28215.md)|typefix は、既に typefix のあるパラメーターには適用できません|
 |[C28216](../code-quality/c28216.md)|checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。|
@@ -134,7 +134,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28267](../code-quality/c28267.md)|注釈での構文エラーが、関数の注釈で見つかりました。|
 |[C28272](../code-quality/c28272.md)|検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません|
 |[C28273](../code-quality/c28273.md)|関数について、手がかりには関数宣言との一貫性がありません。|
-|[C28275](../code-quality/c28275.md)|パラメーター \_Macro @ no__t-1value @ no__t は null です。|
+|[C28275](../code-quality/c28275.md)|@No__t_2 \_value \_Macro するパラメーターが null です|
 |[C28279](../code-quality/c28279.md)|シンボルについて、'begin' はありましたが、対応する 'end' がありません|
 |[C28280](../code-quality/c28280.md)|シンボルについて、'end' はありましたが、対応する 'begin' がありません|
 |[C28282](../code-quality/c28282.md)|書式指定文字列は、前提条件の中に存在する必要があります|

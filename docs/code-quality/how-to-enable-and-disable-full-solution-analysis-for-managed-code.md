@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b192b29190d530d22943e8ba2a396ae1fe9ad87
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 26cd267f80f8c7c220771a5c2220d22b66929051
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975125"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448927"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: マネージコードの完全なソリューション分析を有効または無効にする
 
@@ -32,9 +32,9 @@ ms.locfileid: "71975125"
 
 ## <a name="toggle-full-solution-analysis"></a>完全なソリューション分析の切り替え
 
-1. **[オプション]** ダイアログボックスを開くには、Visual Studio のメニューバーで [**ツール** > **オプション**] を選択します。
+1. **[オプション]** ダイアログボックスを開くには、Visual Studio のメニューバーで **[ツール]** [ > **オプション**] の順に選択します。
 
-1. **[オプション]** ダイアログボックスで、 **[テキストエディター]** @no__t**C#** -2 または [**基本** > **詳細**] を選択します。
+1. **[オプション]** ダイアログボックスで、 **[テキストエディター** **C#**  > ] または [**基本** > **詳細設定**] を選択します。
 
 1. 完全なソリューション分析を有効にする場合は [**完全なソリューション分析を有効**にする] チェックボックスをオンにし、無効にする場合はオフにします。 完了したら、 **[OK]** を選択します。
 
@@ -44,4 +44,4 @@ ms.locfileid: "71975125"
 
 Visual Studio で 200 MB 以下のシステムメモリが使用可能であることが検出されると、完全なソリューション分析 (およびその他の機能) が有効になっている場合は自動的に無効になります。 これが発生すると、Visual Studio が一部の機能を無効にしたことを通知するアラートが表示されます。 ボタンを使用すると、必要に応じて完全なソリューション分析を再び有効にすることができます。
 
-![完全ソリューション解析を中断する警告テキスト](../code-quality/media/fsa_alert.png)
+![アラートテキストの完全なソリューション分析の中断](../code-quality/media/fsa_alert.png)

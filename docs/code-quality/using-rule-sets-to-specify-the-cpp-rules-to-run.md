@@ -9,18 +9,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163102"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445613"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>規則セットを使用してC++実行する規則を指定する
 
 Visual Studio では、コード分析に関連する特定のプロジェクトのニーズに合わせてカスタム*規則セット*を作成および変更できます。 既定の規則セットは `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` に格納されます。
 
-**Visual Studio 2017 バージョン 15.7 以降:** 任意のテキストエディターを使用してカスタム規則セットを作成し、使用しているビルドシステムに関係なく、コマンドラインビルドで適用できます。 詳細については、「 [/analyze: ルールセット](/cpp/build/reference/analyze-code-analysis)」を参照してください。
+**Visual Studio 2017 バージョン15.7 以降:** 任意のテキストエディターを使用してカスタム規則セットを作成し、使用しているビルドシステムに関係なく、コマンドラインビルドで適用できます。 詳細については、「 [/analyze: ルールセット](/cpp/build/reference/analyze-code-analysis)」を参照してください。
 
 Visual Studio でカスタムC++規則セットを作成するには、VISUALC++ studio IDE で C/プロジェクトを開く必要があります。 次に、規則セットエディターで標準規則セットを開き、特定の規則を追加または削除し、必要に応じて、コード分析によって規則に違反したと判断されたときに発生するアクションを変更します。
 
@@ -36,9 +36,9 @@ Visual Studio でカスタムC++規則セットを作成するには、VISUALC++
 
    - カスタマイズする規則セットを選択します。
 
-     \- または -
+     \- または
 
-   - **@No__t-1 を参照してください...** 一覧に含まれていない既存の規則セットを指定する場合は > します。
+   - @No__t_1Browse の選択.. **.** 一覧に含まれていない既存の規則セットを指定する場合は > します。
 
 4. **[開く]** を選択すると、ルールセットエディターにルールが表示されます。
 
@@ -66,7 +66,7 @@ Visual Studio でカスタムC++規則セットを作成するには、VISUALC++
 
 - すべてのグループのルールを折りたたむには、 **[すべて折りたたみ]** を選択します。
 
-- ルールがグループ化されているフィールドを変更するには、 **[グループ化]** ボックスの一覧からフィールドを選択します。 グループ化されていない規則を表示するには **\<none >** を選択します。
+- ルールがグループ化されているフィールドを変更するには、 **[グループ化]** ボックスの一覧からフィールドを選択します。 グループ化されていない規則を表示するには、[ **\<None >** ] を選択します。
 
 - ルール列のフィールドを追加または削除するには、 **[列のオプション]** を選択します。
 
@@ -82,7 +82,7 @@ Visual Studio でカスタムC++規則セットを作成するには、VISUALC++
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>テキストエディターでルールセットを作成するには
 
-カスタム規則セットは、テキストエディターで作成し、@no__t 0 の拡張子を持つ任意の場所に格納し、 [/analyze: ルールセット](/cpp/build/reference/analyze-code-analysis)コンパイラオプションを使用してで適用できます。
+カスタム規則セットは、テキストエディターで作成し、`.ruleset` 拡張機能を持つ任意の場所に格納し、 [/analyze: ルールセット](/cpp/build/reference/analyze-code-analysis)コンパイラオプションを使用してで適用できます。
 
 次の例は、開始点として使用できる基本的な規則セットファイルを示しています。
 
