@@ -1,90 +1,58 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Visual Studio | JavaScript と TypeScript
+### YamlMime:Landing
+title: Visual Studio チュートリアル | JavaScript と TypeScript
+summary: Visual Studio を使用して JavaScript アプリと TypeScript アプリを作成する
 metadata:
-  title: Visual Studio での JavaScript と TypeScript の開発 | Microsoft Docs
-  meta.description: Tutorials and conceptual articles about developing JavaScript and TypeScript apps with Visual Studio.
-  author: mikejo5000
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-javascript
+  title: Visual Studio の JavaScript および TypeScript
+  description: Visual Studio を使用して JavaScript アプリと TypeScript アプリを作成する方法について説明します。
   ms.topic: landing-page
-  ms.date: 01/15/2019
+  author: mikejo5000
   ms.author: mikejo
-  dev_langs:
-    - JavaScript
-    - TypeScript
-sections:
-  - title: Visual Studio 入門
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Visual Studio のインストール
-          - href: ../javascript/quickstart-ide-orientation-js.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Visual Studio IDE をツアーする
-  - title: チュートリアル
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-nodejs.md
-            html: <p>Node.js と Express で Web アプリを作成する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
-          - href: tutorial-nodejs-with-react-and-jsx.md
-            html: <p>Node.js と React で Web アプリを作成する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
-          - href: quickstart-vuejs-with-nodejs.md
-            html: <p>Node.js と Vue.js で Web アプリを作成する</p>
-            image:
-              src: ../javascript/media/logo-vuejs.png
-          - href: publish-nodejs-app-azure.md
-            html: <p>Node.js アプリを Linux App Service に発行する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
-  - title: アプリケーションを開発する
-    items:
-      - type: paragraph
-        text: 開発タスクに Visual Studio を使用する方法を学びます。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: write-and-edit-code.md
-            html: <p>コードを作成して編集する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: nodejs-interactive-repl.md
-            html: <p>Node.js の対話型 REPL を使用する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-          - href: npm-package-management.md
-            html: <p>npm パッケージを管理する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
-          - href: debug-nodejs.md
-            html: <p>コードをデバッグする</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-          - href: develop-javascript-code-without-solutions-projects.md
-            html: <p>プロジェクトまたはソリューションを使用せずにコードを開発する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: unit-testing-javascript-with-visual-studio.md
-            html: <p>単体テストを作成して実行する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'
+  manager: jillfra
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72517119"
+landingContent:
+- title: 作業開始
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio の JavaScript および TypeScript
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Visual Studio のインストール
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: ガイド ツアーを開始する
+      url: quickstart-ide-orientation-js.md
+- title: JavaScript アプリと TypeScript アプリを作成する
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Node.js と Express で Web アプリを作成する
+      url: tutorial-nodejs.md
+    - text: Node.js と React で Web アプリを作成する
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Node.js と Vue.js で Web アプリを作成する
+      url: quickstart-vuejs-with-nodejs.md
+- title: Visual Studio を学ぶ
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: コードを作成して編集する
+      url: write-and-edit-code.md
+    - text: npm パッケージを管理する
+      url: npm-package-management.md
+    - text: Node.js の対話型 REPL を使用する
+      url: nodejs-interactive-repl.md
+    - text: コードをデバッグする
+      url: debug-nodejs.md
+    - text: プロジェクトまたはソリューションを使用せずにコードを開発する
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: 単体テストを作成して実行する
+      url: unit-testing-javascript-with-visual-studio.md

@@ -1,0 +1,114 @@
+- name: Visual Studio での XAML ツール
+  href: index.yml
+- name: XAML 概要
+  href: xaml-overview.md
+- name: XAML デザイナー
+  items:
+    - name: Visual Studio と Blend で XAML をデザインする
+      href: designing-xaml-in-visual-studio.md
+    - name: XAML デザイナーの概要
+      href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+    - name: 要素を使用する
+      href: working-with-elements-in-xaml-designer.md
+    - name: オブジェクトのレイアウト コンテナーへの編成
+      href: organize-objects-into-layout-containers-in-xaml-designer.md
+    - name: リソースを作成して適用する
+      href: how-to-create-and-apply-a-resource.md
+    - name: 'チュートリアル: データへのバインド'
+      href: walkthrough-binding-to-data-in-xaml-designer.md
+    - name: プロジェクト コードのデバッグまたは無効化
+      href: debugging-or-disabling-project-code-in-xaml-designer.md
+    - name: Blend for Visual Studio
+      items:
+        - name: 概要
+          href: creating-a-ui-by-using-blend-for-visual-studio.md
+        - name: 図形とパスの描画
+          href: draw-shapes-and-paths.md
+        - name: オブジェクト スタイルを変更する
+          href: modify-the-style-of-objects-in-blend.md
+        - name: オブジェクトのアニメーション化
+          href: animate-objects-in-xaml-designer.md
+        - name: データの表示
+          href: display-data-in-blend.md
+    - name: 関連項目
+      items:
+        - name: XAML のエラーと警告
+          href: xaml-errors-warnings.md
+        - name: XAML デザイナーのキーボード ショートカット
+          href: keyboard-shortcuts-for-xaml-designer.md
+        - name: Blend のキーボード ショートカット
+          href: keyboard-shortcuts-in-blend.md
+        - name: アートボードの修飾キー (Blend)
+          href: artboard-modifier-keys-in-blend.md
+        - name: ペン ツールの修飾キー (Blend)
+          href: pen-tool-modifier-keys-in-blend.md
+        - name: 個別選択ツールの修飾キー (Blend)
+          href: direct-selection-tool-modifier-keys-in-blend.md
+- name: XAML のデバッグ
+  items:
+    - name: デバッグ中に XAML のプロパティを調べます。
+      href: inspect-xaml-properties-while-debugging.md
+    - name: XAML ホット リロード
+      items:
+        - name: 実行中の XAML コードを記述およびデバッグする
+          href: xaml-hot-reload.md
+        - name: トラブルシューティング
+          href: xaml-hot-reload-troubleshooting.md
+    - name: Blend での XAML のデバッグ
+      href: debug-xaml-in-blend.md
+    - name: UWP アプリのデバッグ >>
+      href: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- name: Windows Presentation Foundation (WPF)
+  items:
+    - name: 作業開始
+      displayName: Windows Presentation Foundation (WPF)
+      href: ../designers/getting-started-with-wpf.md
+    - name: WPF の概要
+      href: ../designers/introduction-to-wpf.md
+    - name: データ バインディング
+      items:
+        - name: LINQ to XML による WPF のデータ バインディング
+          href: ../designers/wpf-data-binding-with-linq-to-xml-overview.md
+        - name: LINQ to XML の動的プロパティ
+          items:
+            - name: 概要
+              displayName: LINQ to XML dynamic properties
+              href: ../designers/linq-to-xml-dynamic-properties.md
+            - name: XAttribute クラスの動的プロパティ
+              items:
+                - name: Value (XAttribute 動的プロパティ)
+                  href: ../designers/value-xattribute-dynamic-property.md
+            - name: XElement クラスの動的プロパティ
+              items:
+                - name: Attribute (XElement 動的プロパティ)
+                  href: ../designers/attribute-xelement-dynamic-property.md
+                - name: Element (XElement 動的プロパティ)
+                  href: ../designers/element-xelement-dynamic-property.md
+                - name: Elements (XElement 動的プロパティ)
+                  href: ../designers/elements-xelement-dynamic-property.md
+                - name: Descendants (XElement 動的プロパティ)
+                  href: ../designers/descendants-xelement-dynamic-property.md
+                - name: Value (XElement 動的プロパティ)
+                  href: ../designers/value-xelement-dynamic-property.md
+                - name: Xml (XElement 動的プロパティ)
+                  href: ../designers/xml-xelement-dynamic-property.md
+            - name: 使用例
+              items:
+                - name: LINQ to XML を使用した WPF のデータ バインディング
+                  href: ../designers/wpf-data-binding-using-linq-to-xml-example.md
+                - name: LinqToXmlDataBinding という例をビルドして実行する
+                  href: ../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                - name: 'チュートリアル: LINQ to XML データ バインディング'
+                  href: ../designers/walkthrough-linqtoxmldatabinding-example.md
+                - name: L2DBForm.xaml ソース コード
+                  href: ../designers/l2dbform-xaml-source-code.md
+                - name: L2DBForm.xaml.cs sauce コード
+                  href: ../designers/l2dbform-xaml-cs-source-code.md
+    - name: WPF アプリのデバッグ
+      items:
+        - name: WPF のデバッグ
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+        - name: WPF ツリー ビジュアライザーを使用する
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+        - name: WPF トレース情報を表示する
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
