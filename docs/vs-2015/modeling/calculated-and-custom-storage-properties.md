@@ -1,5 +1,5 @@
 ---
-title: 計算およびカスタム格納プロパティ |Microsoft Docs
+title: 計算およびカスタムストレージのプロパティ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,110 +8,108 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 ms.assetid: 42b785f9-2b0f-4f13-a6b4-246e5e0d477a
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372159a7405eb7a350aa55c55cf0c7e582dc98e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433444"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668356"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算プロパティおよびカスタム格納プロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ドメイン固有言語 (DSL) 内のすべてのドメイン プロパティは、図では、言語エクスプ ローラーで、ユーザーに表示されることができ、プログラム コードからアクセスできます。 ただし、プロパティは、その値が格納される方法では異なります。  
-  
-## <a name="kinds-of-domain-properties"></a>ドメインのプロパティの種類  
- DSL 定義で設定することができます、**種類**の次の表に記載されているドメインのプロパティ。  
-  
-|ドメイン プロパティの種類|説明|  
-|--------------------------|-----------------|  
-|**標準**(既定)|ドメイン プロパティに保存されている、*格納*ファイルにシリアル化されたとします。|  
-|**計算**|読み取り専用ドメイン プロパティは、ストアに保存されませんが、その他の値から計算です。<br /><br /> たとえば、`Person.Age`から計算でした`Person.BirthDate`します。<br /><br /> 計算を実行するコードを指定する必要があります。 通常、他のドメイン プロパティから値を計算します。 ただし、外部リソースを使用することもできます。|  
-|**カスタム ストレージ**|ドメイン プロパティは、ストアに直接保存されませんが、get と set の両方にすることができますです。<br /><br /> 取得し、値を設定する方法を指定する必要があります。<br /><br /> たとえば、`Person.FullAddress`に格納される`Person.StreetAddress`、 `Person.City`、および`Person.PostalCode`します。<br /><br /> 取得し、データベースから値を設定する例については、外部のリソースにアクセスすることもできます。<br /><br /> コードでは、ストアに値を設定しないでくださいと`Store.InUndoRedoOrRollback`は true。 参照してください[トランザクションとカスタム セッター](#setters)します。|  
-  
-## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>計算された、またはカスタムのストレージ プロパティのコードを提供します。  
- 計算またはカスタム ストレージ ドメイン プロパティの種類を設定する場合は、アクセス方法を指定する必要です。 ソリューションをビルドすると、エラー レポートは通知して何が必要です。  
-  
-#### <a name="to-define-a-calculated-or-custom-storage-property"></a>計算またはカスタム ストレージ プロパティを定義するには  
-  
-1. DslDefinition.dsl、ダイアグラムで、またはでは、ドメイン プロパティを選択します。 **DSL エクスプ ローラー**します。  
-  
-2. **プロパティ**ウィンドウで、設定、**種類**フィールドを**Calculated**または**カスタム ストレージ**します。  
-  
-     設定されていることを確認、**型**の対象となります。  
-  
-3. クリックして**すべてのテンプレートの変換**のツールバーで**ソリューション エクスプ ローラー**します。  
-  
-4. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
-  
-     次のエラー メッセージが表示されます。"*YourClass* Get の定義が含まれていない*YourProperty*"。  
-  
-5. エラー メッセージをダブルクリックします。  
-  
-     Dsl\GeneratedCode\DomainClasses.cs または DomainRelationships.cs が開きます。 強調表示されているメソッドの呼び出しを上記コメント Get の実装を指定するように求め*YourProperty*()。  
-  
+ドメイン固有言語 (DSL) 内のすべてのドメインプロパティは、図および言語エクスプローラーでユーザーに表示できます。また、プログラムコードからアクセスすることもできます。 ただし、プロパティの値が格納される方法は異なります。
+
+## <a name="kinds-of-domain-properties"></a>ドメインプロパティの種類
+ DSL 定義では、次の表に示すように、ドメインプロパティの**種類**を設定できます。
+
+|ドメインプロパティの種類|説明|
+|--------------------------|-----------------|
+|**Standard** (既定値)|*ストア*に保存され、ファイルにシリアル化されるドメインプロパティ。|
+|**計算**|ストアに保存されていないが、他の値から計算される読み取り専用のドメインプロパティ。<br /><br /> たとえば、`Person.Age` は `Person.BirthDate` から計算できます。<br /><br /> 計算を実行するコードを指定する必要があります。 通常は、他のドメインプロパティから値を計算します。 ただし、外部リソースを使用することもできます。|
+|**カスタムストレージ**|ストアに直接保存されるのではなく、get と set の両方が可能なドメインプロパティ。<br /><br /> 値を取得および設定するメソッドを指定する必要があります。<br /><br /> たとえば、`Person.FullAddress` は `Person.StreetAddress`、`Person.City`、および `Person.PostalCode` に格納できます。<br /><br /> 外部リソースにアクセスすることもできます。たとえば、データベースから値を取得して設定することができます。<br /><br /> @No__t_0 が true の場合、コードでストアに値を設定することはできません。 「[トランザクションとカスタム setter」を](#setters)参照してください。|
+
+## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>計算またはカスタムストレージプロパティのコードを提供する
+ ドメインプロパティの種類を [計算済み] または [カスタムストレージ] に設定する場合は、アクセス方法を指定する必要があります。 ソリューションをビルドすると、必要なものがエラーレポートに表示されます。
+
+#### <a name="to-define-a-calculated-or-custom-storage-property"></a>計算またはカスタムのストレージプロパティを定義するには
+
+1. [DslDefinition. dsl] で、図または**Dsl エクスプローラー**でドメインプロパティを選択します。
+
+2. **[プロパティ]** ウィンドウで、 **[種類]** フィールドを **[計算]** 済み または **[カスタムストレージ]** に設定します。
+
+     また、その**型**が必要なものにも設定されていることを確認します。
+
+3. **ソリューションエクスプローラー**のツールバーで **[すべてのテンプレートの変換]** をクリックします。
+
+4. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+
+     次のエラーメッセージが表示されます。 "*クラス*に Get*プロパティ*の定義が含まれていません。"
+
+5. エラーメッセージをダブルクリックします。
+
+     DomainRelationships.cs またはが表示されます。 強調表示されたメソッド呼び出しの上に、*プロパティ*を取得するための実装を提供するようにというコメントが表示されます ()。
+
     > [!NOTE]
-    > このファイルは、DslDefinition.dsl から生成されます。 このファイルを編集する場合、変更は失われます をクリックした次回**すべてのテンプレートの変換**します。 代わりに、別のファイルに必要なメソッドを追加します。  
-  
-6. 作成またはクラス ファイルを別のフォルダー、たとえば CustomCode に\\*YourDomainClass*。 cs します。  
-  
-     名前空間が、生成されたコードのように同じであることを確認します。  
-  
-7. クラス ファイルでは、ドメイン クラスの実装の一部を記述します。 クラスで、不足しているの定義を記述`Get`次の例のようなメソッド。  
-  
-    ```  
-    namespace Company.FamilyTree  
-    {  public partial class Person  
-       {  int GetAgeValue()  
-          { return System.DateTime.Today.Year - this.BirthYear; }  
-    }  }  
-    ```  
-  
-8. 設定した場合**種類**に**カスタム ストレージ**、提供する必要がありますも、`Set`メソッド。 例:  
-  
-    ```  
-    void SetAgeValue(int value)  
-    { if (!Store.InUndoRedoOrRollback)  
-        this.BirthYear =   
-            System.DateTime.Today.Year - value; }  
-    ```  
-  
-     コードでは、ストアに値を設定しないでくださいと`Store.InUndoRedoOrRollback`は true。 参照してください[トランザクションとカスタム セッター](#setters)します。  
-  
-9. ソリューションをビルドして実行します。  
-  
-10. プロパティをテストします。 試してみることを確認**を元に戻す**と**やり直し**します。  
-  
-## <a name="setters"></a> トランザクションとカスタムの set アクセス操作子  
- カスタム ストレージ プロパティのセット メソッドで必要はありません、トランザクションを開始するメソッドは通常、アクティブなトランザクション内で呼び出されるためです。  
-  
- ただし、Set メソッドは、Undo または Redo では、ユーザーが呼び出される場合、またはトランザクションがロールバックされている場合にも呼び出す可能性があります。 ときに<xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A>が true の場合、Set メソッドに次のように動作する必要があります。  
-  
-- その他のドメイン プロパティに値を割り当てるなど、ストアで変更されることにする必要があります。 元に戻すマネージャーはその値を設定します。  
-  
-- ただし、データベースまたはファイルの内容、または、ストア外のオブジェクトなど、任意の外部リソースを更新にする必要があります。 これにより、ストア内の値を持つ synchronism で維持されることを確認します。  
-  
-  例:  
-  
-```  
-void SetAgeValue(int value)  
-{   
-  // If we are in Undo, no changes to Store objects:  
-  if (!this.Store.InUndoRedoOrRollback)  
-  {   
-    this.BirthYear = System.DateTime.Today.Year - value;   
-  }  
-  // But always update external objects:  
-  System.IO.File.WriteAllText(AgeFile, value);  
-}  
-```  
-  
- トランザクションの詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
-  
-## <a name="see-also"></a>関連項目  
- [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [ドメインのプロパティのプロパティ](../modeling/properties-of-domain-properties.md)   
- [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
+    > このファイルは、DslDefinition. dsl から生成されます。 このファイルを編集すると、次回 **[すべてのテンプレートの変換]** をクリックしたときに変更内容が失われます。 代わりに、必要なメソッドを別のファイルに追加します。
+
+6. クラスファイルを作成するか、別のフォルダーに開きます。たとえば、CustomCode \\*domainclass*.cs にします。
+
+     名前空間が生成されたコードと同じであることを確認します。
+
+7. クラスファイルで、ドメインクラスの部分実装を記述します。 クラスで、次の例のように、missing `Get` メソッドの定義を記述します。
+
+    ```
+    namespace Company.FamilyTree
+    {  public partial class Person
+       {  int GetAgeValue()
+          { return System.DateTime.Today.Year - this.BirthYear; }
+    }  }
+    ```
+
+8. **[種類]** を **[カスタムストレージ]** に設定した場合は、`Set` メソッドも指定する必要があります。 (例:
+
+    ```
+    void SetAgeValue(int value)
+    { if (!Store.InUndoRedoOrRollback)
+        this.BirthYear =
+            System.DateTime.Today.Year - value; }
+    ```
+
+     @No__t_0 が true の場合、コードでストアに値を設定することはできません。 「[トランザクションとカスタム setter」を](#setters)参照してください。
+
+9. ソリューションをビルドして実行します。
+
+10. プロパティをテストします。 **元に戻す**と**やり直し**を実行していることを確認してください。
+
+## <a name="setters"></a>トランザクションとカスタム Setter
+ メソッドは通常、アクティブなトランザクションの内部で呼び出されるので、[カスタムストレージの設定方法] プロパティでは、トランザクションを開く必要はありません。
+
+ ただし、ユーザーが Undo または Redo を呼び出した場合、またはトランザクションがロールバックされている場合にも、Set メソッドを呼び出すことができます。 @No__t_0 が true の場合、Set メソッドは次のように動作します。
+
+- 他のドメインプロパティに値を割り当てるなど、ストアに変更を加えることはできません。 これらの値は、元に戻すマネージャーによって設定されます。
+
+- ただし、データベースやファイルの内容などの外部リソースや、ストアの外部にあるオブジェクトを更新する必要があります。 これにより、ストア内の値と共に synchronism に保持されます。
+
+  (例:
+
+```
+void SetAgeValue(int value)
+{
+  // If we are in Undo, no changes to Store objects:
+  if (!this.Store.InUndoRedoOrRollback)
+  {
+    this.BirthYear = System.DateTime.Today.Year - value;
+  }
+  // But always update external objects:
+  System.IO.File.WriteAllText(AgeFile, value);
+}
+```
+
+ トランザクションの詳細については、「[プログラムコードでのモデルの移動と更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
+
+## <a name="see-also"></a>参照
+ [プログラム内のモデルの移動と更新](../modeling/navigating-and-updating-a-model-in-program-code.md)[ドメインプロパティのプロパティ](../modeling/properties-of-domain-properties.md)ドメイン[固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)

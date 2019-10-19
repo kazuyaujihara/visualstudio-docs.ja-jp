@@ -1,5 +1,5 @@
 ---
-title: CA1801:未使用のパラメーターの確認 |Microsoft Docs
+title: 'CA1801: 使用されていないパラメーターを確認します。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,62 +13,62 @@ helpviewer_keywords:
 - ReviewUnusedParameters
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143139"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671526"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
+# <a name="ca1801-review-unused-parameters"></a>CA1801: 使用されていないパラメーターを再確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1801。未使用のパラメーターをレビュー](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)します。  
-  
-|||  
-|-|-|  
-|TypeName|ReviewUnusedParameters|  
-|CheckId|CA1801|  
-|カテゴリ|Microsoft.Usage|  
-|互換性に影響する変更点|非的なメンバーが、アセンブリの外部に表示されない場合、変更に関係なくすること。<br /><br /> 改行しない - の本体にあるパラメーターを使用するメンバーを変更する場合。<br /><br /> あり - パラメーターを削除して、アセンブリの外側に表示される場合。|  
-  
-## <a name="cause"></a>原因  
- メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 このルールは、次の方法を確認できません。  
-  
-- デリゲートによって参照されるメソッド。  
-  
-- イベント ハンドラーとして使用されるメソッド。  
-  
-- 宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。  
-  
-- 宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。  
-  
-- 宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。  
-  
-- 宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。  
-  
-## <a name="rule-description"></a>規則の説明  
- それらにアクセスする障害が回避の正確性が存在しないかどうかを確認するメソッドの本体で使用されていない非仮想メソッドのパラメーターを確認します。 使用されていないパラメーターには、メンテナンスとパフォーマンスのコストが発生します。  
-  
- この規則違反は、メソッドの実装に関するバグをポイントできます。 たとえば、パラメーターがメソッドの本体で使用されているがする必要があります。 パラメーターに旧バージョンと互換性のために存在する場合は、この規則の警告を抑制します。  
-  
-## <a name="how-to-fix-violations"></a>違反の修正方法  
- このルールの違反を修正するには、未使用のパラメーター (重大な変更) を削除またはメソッドの本体 (互換性に影響しない変更) で、パラメーターを使用します。  
-  
-## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
- 以前にリリース済みのコード修正が重大な変更をすると、この規則からの警告を抑制しても安全です。  
-  
-## <a name="example"></a>例  
- 次の例では、2 つの方法を示します。 1 つのメソッドには、ルールに違反しているし、他のメソッドは、ルールを満たします。  
-  
- [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
-  
-## <a name="related-rules"></a>関連規則  
- [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)  
-  
- [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
- [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
+Visual Studio の最新のドキュメントについては、「 [CA1801: 使用](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)されていないパラメーターの確認」を参照してください。
+
+|||
+|-|-|
+|TypeName|ReviewUnusedParameters|
+|CheckId|CA1801|
+|カテゴリ|Microsoft. 使用方法|
+|互換性に影響する変更点|非重大-変更に関係なく、メンバーがアセンブリの外部で参照できない場合。<br /><br /> 非ブレーク-本文内でパラメーターを使用するようにメンバーを変更した場合。<br /><br /> 中断-パラメーターを削除すると、アセンブリの外部から参照できるようになります。|
+
+## <a name="cause"></a>原因
+ メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 この規則では、次の方法は検証されません。
+
+- デリゲートによって参照されるメソッド。
+
+- イベントハンドラーとして使用されるメソッド。
+
+- @No__t_0 `MustOverride` (Visual Basic) 修飾子で宣言されたメソッド。
+
+- @No__t_0 `Overridable` (Visual Basic) 修飾子で宣言されたメソッド。
+
+- @No__t_0 `Overrides` (Visual Basic) 修飾子で宣言されたメソッド。
+
+- @No__t_0 (`Declare` ステートメント Visual Basic) 修飾子で宣言されたメソッド。
+
+## <a name="rule-description"></a>規則の説明
+ メソッド本体で使用されていない非仮想メソッドのパラメーターを確認して、アクセスできなかった部分に対して正しくないことを確認します。 未使用のパラメーターを使用すると、メンテナンスとパフォーマンスのコストが発生します。
+
+ この規則に違反すると、メソッドの実装のバグを指す場合があります。 たとえば、パラメーターは、メソッドの本体で使用されている必要があります。 旧バージョンとの互換性のためにパラメーターが存在する必要がある場合は、この規則の警告を非表示にします。
+
+## <a name="how-to-fix-violations"></a>違反の修正方法
+ この規則違反を修正するには、使用されていないパラメーター (重大な変更) を削除するか、メソッド本体でパラメーターを使用します (非互換性の変更)。
+
+## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
+ 以前に出荷されたコードについては、この修正プログラムが互換性に影響する変更になるという警告を抑制するのは安全です。
+
+## <a name="example"></a>例
+ 次の例は、2つのメソッドを示しています。 1つのメソッドが規則に違反し、もう一方のメソッドが規則を満たしています。
+
+ [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]
+
+## <a name="related-rules"></a>関連規則
+ [CA1811: 呼び出されていないプライベート コードを使用しません](../code-quality/ca1811-avoid-uncalled-private-code.md)
+
+ [CA1812: インスタンス化されていない内部クラスを使用しないでください](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
+ [CA1804: 使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)

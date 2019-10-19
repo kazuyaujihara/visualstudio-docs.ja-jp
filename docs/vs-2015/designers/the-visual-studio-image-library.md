@@ -1,5 +1,5 @@
 ---
-title: イメージ ライブラリ |Microsoft Docs
+title: イメージライブラリ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - bitmaps [Visual Studio], Image Library
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 915d5a2784ed6135d4083f0ad44c7a86b8969e55
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c86506395ee388c7481fa8a5e9ee32320a63c030
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680942"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664090"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Image Library
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio Image Library には、Microsoft Visual Studio、Microsoft Windows
 
  [Visual Studio Image Library をダウンロードする](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
- イメージ ライブラリは、共通の要素、アクション、注釈、アイコン、オブジェクトという 5 つのカテゴリに分割されています。 共通の要素およびアイコンについては、PDF 形式のリリース ノート ファイルが含まれています。 リリース ノート ファイルには、アプリケーションでこれらのイメージを適切に使用する方法に関する情報が含まれています。
+ Image Library は、共通の要素、アクション、注釈、アイコン、およびオブジェクトの 5 つのカテゴリに分かれています。 共通の要素およびアイコンについては、PDF 形式のリリース ノート ファイルが含まれています。 リリース ノート ファイルには、アプリケーションでこれらのイメージを適切に使用する方法に関する情報が含まれています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [イメージ、ビットマップ、メタファイル](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

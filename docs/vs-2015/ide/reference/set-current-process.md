@@ -9,41 +9,38 @@ helpviewer_keywords:
 - Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed19c5b95351f8e9c34255a915fc6a446800f761
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163340"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665464"
 ---
 # <a name="set-current-process"></a>SetCurrentProcess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定されたプロセスをデバッガーでアクティブなプロセスとして設定します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-Debug.SetCurrentProcess index  
-```  
-  
-## <a name="arguments"></a>引数  
- `index`  
- 必須です。 プロセスのインデックスです。  
-  
-## <a name="remarks"></a>解説  
- デバッグ中には複数のプロセスにアタッチできますが、デバッガーでアクティブになっているプロセスは常に 1 つだけです。 `SetCurrentProcess` コマンドを使用すると、アクティブなプロセスを設定できます。  
-  
-## <a name="example"></a>例  
-  
-```  
->Debug.SetCurrentProcess 1  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
- [コマンド ウィンドウ](../../ide/reference/command-window.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+指定されたプロセスをデバッガーでアクティブなプロセスとして設定します。
+
+## <a name="syntax"></a>構文
+
+```
+Debug.SetCurrentProcess index
+```
+
+## <a name="arguments"></a>引数
+ `index` 必須。 プロセスのインデックスです。
+
+## <a name="remarks"></a>解説
+ デバッグ中には複数のプロセスにアタッチできますが、デバッガーでアクティブになっているプロセスは常に 1 つだけです。 `SetCurrentProcess` コマンドを使用すると、アクティブなプロセスを設定できます。
+
+## <a name="example"></a>例
+
+```
+>Debug.SetCurrentProcess 1
+```
+
+## <a name="see-also"></a>関連項目
+ [Visual studio](../../ide/reference/visual-studio-commands.md)コマンドの[コマンドウィンドウ](../../ide/reference/command-window.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

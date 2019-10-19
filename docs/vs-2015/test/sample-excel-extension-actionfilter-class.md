@@ -1,24 +1,24 @@
 ---
-title: Excel 拡張機能のサンプル:ActionFilter クラス |Microsoft Docs
+title: 'Excel 拡張子のサンプル: ActionFilter クラス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
 caps.latest.revision: 13
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26eb001de3a8fed7c6bb1d9d1a547aa618e745e8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4c286f25159f3ee1934a27d2242e97482f7ec424
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871601"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672183"
 ---
-# <a name="sample-excel-extension-actionfilter-class"></a>Excel 拡張機能のサンプル:ActionFilter クラス
+# <a name="sample-excel-extension-actionfilter-class"></a>Excel 拡張子のサンプル: ActionFilter クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この内部クラスは、 [uitestactionfilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))クラスを拡張し、 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]要素に対するテストアクションのフィルターを表します。
+この内部クラスは、 [Uitestactionfilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))クラスを拡張し、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 要素に対するテストアクションのフィルターを表します。
 
 ## <a name="simple-properties"></a>単純なプロパティ
  開発者は、これらの読み取り専用プロパティを使用して、コード化された UI テスト フレームワークでこのテスト アクション フィルターをどのように実行するかを指定できます。 たとえば、`UITestActionFilter.Name` プロパティには、アクション フィルター名が設定されています。 他のプロパティには、アクション フィルターの `UITestActionFilter.Category`、`UITestActionFilter.FilterType`、このテスト アクション フィルターでフィルター処理されるテスト アクションの `UITestActionFilter.Group` の名前が設定されています。 また、`UITestActionFilter.ApplyTimeout` を適用するかどうか、テスト アクションが `UITestActionFilter.Enabled` かどうかを示すプロパティもあります。
@@ -31,4 +31,4 @@ ms.locfileid: "68871601"
 
 ## <a name="see-also"></a>関連項目
 
-- [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+- [コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

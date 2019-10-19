@@ -1,114 +1,111 @@
 ---
-title: アイコンまたはデコレーターの可視性の制御 |Microsoft Docs
+title: アイコンまたはデコレータの可視性の制御 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667830"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性の制御
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の図形に表示されるテキストの行。 デコレーターの表示を作成でき、モデル内のプロパティの状態によって非表示になります。 など、人を表す図形、個人の性別、子供の数に応じて表示されると、さまざまなアイコンがある可能性があります。  
-  
-## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性を制御します。  
- 次の手順では、既に定義した図形、およびそのマッピングをドメイン クラスを前提としています。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。  
-  
-#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>アイコンやテキスト デコレーターの可視性を制御するには  
-  
-1. DSL 定義図では、アイコンまたは表示するテキスト デコレータ シェイプ クラスを追加します。  
-  
-   1. シェイプ クラスを右クリックし、**追加**デコレーターの必要な型を順にクリックします。  
-  
-   2. 設定のデコレーターの**位置**プロパティ。 1 つ以上のデコレーターは、同じ位置を持つことができます。 たとえば、male と female の同じ位置の共有のアイコンがある可能性があります。  
-  
-   3. 設定、**アイコンの既定の**アイコンのデコレーターのプロパティ。  
-  
-2. 灰色の線は DSL 定義図で図形クラスと、ドメインである図要素マップを選択します。  
-  
-3. DSL の詳細 ウィンドウで、**デコレーター マップ**タブで、デコレーターを選択します。 たとえば、MaleDecorator です。  
-  
-4. チェック、**可視性フィルター**ボックス。  
-  
-5. ドメイン プロパティの可視性を制御する必要がありますが、即時のドメイン クラスにある場合、以下のままにして**フィルター プロパティへのパス**空白。  
-  
-    それ以外の場合、ドロップ ダウン メニューをクリックし、リレーションシップ、クラス、プロパティがある場所に移動します。  
-  
-   - エラー報告を回避する必要がありますいない内を移動するリレーションシップでマークされた"*"で、ナビゲーション ツール。  
-  
-6. 設定、**フィルター プロパティ**ドメイン プロパティにします。 たとえば、性別です。  
-  
-7. **可視性エントリ**一覧で、対象のデコレータを表示するか、このドメイン プロパティの値を追加します。 たとえば、男性です。  
-  
-8. 各アイコンに対して、手順を繰り返します。  
-  
-9. **すべてのテンプレートの変換**、ビルドし実行、およびテストのダイアグラムを開きます。  
-  
-10. 制御するプロパティの値を変更すると、デコレーターが表示され、表示されなくなります。  
-  
-    多くの場合、単純な一連の値よりもさらに複雑な式によって制御されるを表示します。 たとえば、アイコンが、特定の型のリンクの数に依存しているかどうかに依存させるまたは数値が特定の範囲内が。 その場合は、次の手順を使用します。  
-  
-#### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>式に基づくデコレーターの可視性を制御するには  
-  
-1. ドメイン クラスには、計算ドメイン プロパティを追加します。 **プロパティ**ウィンドウで、次の値を設定します。  
-  
-     **IsBrowsable =** `False` **-非表示に、ユーザーからのプロパティ**  
-  
-     **種類 =** `Calculated` **-つまり、その値を計算するコードを指定します。**  
-  
-     **名前**たとえば**DecoratorControl**  
-  
-     **型** = `Boolean`  
-  
-     詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。  
-  
-2. デコレーターの可視性を制御する新しいプロパティを作成します。  
-  
-    1. ドメイン クラスから図形に灰色の線である図要素マップを選択します。 **DSL の詳細**ウィンドウを開いて、 **DecoratorMap**タブ。  
-  
-    2. チェック、**可視性フィルター**ボックス。  
-  
-    3. **フィルター プロパティ**、コントロールのプロパティを選択します。 **DecoratorControl**します。  
-  
-    4. **可視性エントリ**、入力`True`します。  
-  
-3. クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。  
-  
-4. クリックして**ソリューションのビルド**上、**ビルド**メニュー。  
-  
-5. エラー レポートが表示されていたをダブルクリックします。"*YourClass*は定義を含んでいない GetDecoratorControlValue の..."です。  
-  
-     テキスト エディターは、Dsl\GeneratedCode\DomainClasses.cs でが開きます。 上記の強調表示されたエラーは、メソッドを追加することを要求するコメントです。  
-  
-6. 不足している名前空間、クラスおよびメソッドに注意してください。  たとえば、Company.FamilyTree.Person.GetDecoratorControlValue() です。  
-  
-7. 別個のコード ファイルでは、存在しないメソッドを含む部分クラス定義を作成します。 例えば:  
-  
-    ```  
-    namespace Company.FamilyTree  
-    { partial class Person  
-      { bool GetDecoratorControlValue()  
-        {  
-          return this.Children.Count > 0;  
-    } } }  
-    ```  
-  
-     プログラム コードでモデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
-  
-8. 再構築し、ソリューションを実行します。  
-  
-## <a name="see-also"></a>関連項目  
- [シェイプとコネクタの定義](../modeling/defining-shapes-and-connectors.md)   
- [図の背景イメージの設定](../modeling/setting-a-background-image-on-a-diagram.md)   
- [移動して、プログラム コードでモデルを更新しています](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+*デコレータ*は、ドメイン固有言語 (DSL) の図形に表示されるアイコンまたはテキストの行です。 モデルのプロパティの状態に応じて、デコレータを表示したり、非表示にしたりすることができます。 たとえば、人物を表す図形では、ユーザーの性別、子の数などに応じて異なるアイコンが表示される場合があります。
+
+## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレータの可視性の制御
+ 次の手順では、ドメインクラスへの図形とそのマッピングが既に定義されていることを前提としています。 詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
+
+#### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>アイコンまたはテキストデコレータの表示を制御するには
+
+1. DSL 定義図で、表示するアイコンまたはテキストデコレーターを図形クラスに追加します。
+
+   1. Shape クラスを右クリックし、 **[追加]** をポイントして、必要なデコレータの種類をクリックします。
+
+   2. デコレータの**Position**プロパティを設定します。 複数のデコレータが同じ位置を持つことができます。 たとえば、男性と女性のアイコンを同じ位置に共有することができます。
+
+   3. アイコンデコレータの**既定のアイコン**プロパティを設定します。
+
+2. 図の要素マップを選択します。これは、DSL 定義図の図形クラスとドメインクラスの間の灰色の線です。
+
+3. DSL の詳細ウィンドウの **[デコレータマップ]** タブで、デコレータを選択します。 たとえば、MaleDecorator のようになります。
+
+4. **[表示フィルター]** ボックスをオンにします。
+
+5. 可視性を制御する必要があるドメインプロパティがイミディエイトドメインクラスにある場合は、[ **Path To Filter] プロパティを**空白のままにします。
+
+    それ以外の場合は、ドロップダウンメニューをクリックし、プロパティが配置されているリレーションシップまたはクラスに移動します。
+
+   - エラーレポートが表示されないようにするには、ナビゲーションツールで "*" とマークされているリレーションシップを移動しないでください。
+
+6. **フィルタープロパティ**をドメインプロパティに設定します。 たとえば、性別です。
+
+7. **[可視性エントリ]** の一覧で、デコレータが表示されるこのドメインプロパティの値を追加します。 たとえば、「男性」とします。
+
+8. 各アイコンに対して手順を繰り返します。
+
+9. **すべてのテンプレートを変換**し、ビルドして実行し、テスト図を開きます。
+
+10. 制御プロパティの値を変更すると、デコレーターが表示され、非表示になります。
+
+    多くの場合、単純な値のセットよりも複雑な数式によって、表示を制御する必要があります。 たとえば、特定の種類のリンクの数に応じてアイコンを使用する場合や、数値が特定の範囲内にあるかどうかに依存させる場合などです。 その場合は、次の手順を使用します。
+
+#### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>数式に基づいてデコレータの表示を制御するには
+
+1. ドメインクラスに計算されたドメインプロパティを追加します。 **[プロパティ]** ウィンドウで、次の値を設定します。
+
+     **Isbrowsable 可能 =** `False` **-これにより、ユーザーのプロパティが非表示**になります。
+
+     **Kind =** `Calculated` **-これは、値を計算するコードを提供することを意味します**。
+
+     **DecoratorControl**などの**名前**
+
+     **型** =  `Boolean`
+
+     詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
+
+2. 新しいプロパティがデコレータの可視性を制御するようにします。
+
+    1. [ダイアグラム要素マップ] を選択します。これは、ドメインクラスから図形までの灰色の線です。 DSL の**詳細**ウィンドウで、 **[ある decoratormap]** タブを開きます。
+
+    2. **[表示フィルター]** ボックスをオンにします。
+
+    3. [**フィルター] プロパティ**で、コントロールプロパティ**DecoratorControl**を選択します。
+
+    4. **[可視性エントリ]** に「`True`」と入力します。
+
+3. ソリューションエクスプローラーツールバーの **[すべてのテンプレートの変換]** をクリックします。
+
+4. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+
+5. 表示されたエラーレポートをダブルクリックします。 "*クラス*には GetDecoratorControlValue の定義が含まれていません"。
+
+     [テキストエディター] が表示され、[] が表示されます。 強調表示されたエラーは、メソッドの追加を要求するコメントです。
+
+6. 名前空間、クラス、およびメソッドが見つからないことに注意してください。  たとえば、FamilyTree GetDecoratorControlValue () のようになります。
+
+7. 別のコードファイルで、不足しているメソッドを含む部分クラス定義を記述します。 (例:
+
+    ```
+    namespace Company.FamilyTree
+    { partial class Person
+      { bool GetDecoratorControlValue()
+        {
+          return this.Children.Count > 0;
+    } } }
+    ```
+
+     プログラムコードを使用したモデルのカスタマイズの詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
+
+8. ソリューションをリビルドして実行します。
+
+## <a name="see-also"></a>参照
+ [図形とコネクタの定義](../modeling/defining-shapes-and-connectors.md)[図の背景画像の設定](../modeling/setting-a-background-image-on-a-diagram.md)[プログラムコードでのモデルの移動および更新コードの](../modeling/navigating-and-updating-a-model-in-program-code.md)[記述ドメイン固有言語のカスタマイズ](../modeling/writing-code-to-customise-a-domain-specific-language.md)

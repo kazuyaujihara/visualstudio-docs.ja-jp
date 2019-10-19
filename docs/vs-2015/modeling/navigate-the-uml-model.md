@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871776"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668545"
 ---
 # <a name="navigate-the-uml-model"></a>UML モデル内を移動する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "68871776"
 ## <a name="the-model-elements-model-and-model-store"></a>モデル要素、モデル、およびモデル ストア
  **VisualStudio**アセンブリで定義されている型は、 [uml 仕様のバージョン 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/)に定義されている型に対応しています。
 
- UML 仕様の型は、Visual Studio においてインターフェイスとして実現されます。 それぞれの型の前には、"I" という文字が付加されています。 例えば:[Ielement](/previous-versions/dd516035(v=vs.140))、 [IClass](/previous-versions/dd523539%28v%3dvs.140%29)、 [ielement](/previous-versions/dd481186(v=vs.140))。
+ UML 仕様の型は、Visual Studio においてインターフェイスとして実現されます。 それぞれの型の前には、"I" という文字が付加されています。 例: [Ielement](/previous-versions/dd516035(v=vs.140))、 [IClass](/previous-versions/dd523539%28v%3dvs.140%29)、 [ielement](/previous-versions/dd481186(v=vs.140))。
 
  IElement 以外のすべての型は、1 つ以上のスーパータイプのプロパティを継承します。
 
@@ -45,20 +45,20 @@ ms.locfileid: "68871776"
 
  モデルの要素を削除すると、その要素が参加する関係が自動的に削除され、もう一方の端のプロパティが更新されます。
 
- UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 最大値が1を超える多重度は、.NET プロパティの型がであることを示します。`IEnumerable<` *「* `>`」と入力します。
+ UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 最大値が1を超える多重度は、.NET プロパティの型が `IEnumerable<`*型*`>` であることを示します。
 
  リレーションシップの走査の詳細については、「 [UML API を使用したリレーションシップのナビゲート](../modeling/navigate-relationships-with-the-uml-api.md)」を参照してください。
 
 ### <a name="the-ownership-tree"></a>所有権ツリー
  モデルには、 [Ielement](/previous-versions/dd516035(v=vs.140))オブジェクトのツリーが含まれています。 どの要素にもプロパティ `OwnedElements` および `Owner` があります。
 
- ほとんどの場合、`Owner` プロパティおよび `OwnedElements` プロパティの対象は、より具体的な名前を持つ他のプロパティでも参照されます。 たとえば、UML 操作は、いずれも UML クラスによって所有されます。 したがって、[ioperation](/previous-versions/dd481186(v=vs.140)) には、[IOperation.Class](/previous-versions/dd473473%28v%3dvs.140%29) という名前のプロパティと、すべての[ioperation](/previous-versions/dd481186(v=vs.140)) オブジェクトのが含まれます、`Class == Owner`。
+ ほとんどの場合、`Owner` プロパティおよび `OwnedElements` プロパティの対象は、より具体的な名前を持つ他のプロパティでも参照されます。 たとえば、UML 操作は、いずれも UML クラスによって所有されます。 したがっ[て](/previous-versions/dd481186(v=vs.140))、ioperation には[Ioperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)という名前のプロパティがあり、すべての[ioperation](/previous-versions/dd481186(v=vs.140))オブジェクトには `Class == Owner` ます。
 
- ツリーの最上位要素には所有者がいませんが`AuxiliaryConstructs.IModel`、です。 Imodel は、 `IModelStore` [imodelstore. Root](/previous-versions/ee789368(v=vs.140))という内に含まれています。
+ ツリーの最上位要素には所有者がいませんが、`AuxiliaryConstructs.IModel` です。 IModel は、 [Imodelstore. Root](/previous-versions/ee789368(v=vs.140))という `IModelStore` 内に含まれています。
 
  すべてのモデル要素には、作成時に Owner を指定します。 詳細については、「 [UML モデルでの要素とリレーションシップの作成](../modeling/create-elements-and-relationships-in-uml-models.md)」を参照してください。
 
- ![クラス ダイアグラム:Model、ダイアグラム、Shape、および Element](../modeling/media/uml-mm1.png)
+ ![クラス ダイアグラム: モデル、ダイアグラム、図形、および要素](../modeling/media/uml-mm1.png)
 
 ## <a name="shapes-and-diagrams"></a>図形と図
  UML モデル内の要素を図で表示することができます。 IElement のサブタイプをそれぞれ異なる種類の図に表示できます。
@@ -72,7 +72,7 @@ ms.locfileid: "68871776"
 ## <a name="access-to-the-model-in-extensions"></a>拡張機能でのモデルへのアクセス
  MEF コンポーネントとして定義される [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能では、拡張機能が実行されるコンテキストから情報をインポートするプロパティを宣言できます。
 
-|属性の型|アクセスを提供する対象|詳細情報|
+|属性の型|アクセスを提供する対象|説明|
 |--------------------|----------------------------------|----------------------|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll 内)|現在のフォーカス図。|[モデリング図にメニュー コマンドを定義する](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (Microsoft.VisualStudio.Modeling.Sdk.[バージョン].dll 内)|一連の変更をトランザクションにグループ化できます。|[トランザクションを使用して UML モデルの更新をリンクする](../modeling/link-uml-model-updates-by-using-transactions.md)|

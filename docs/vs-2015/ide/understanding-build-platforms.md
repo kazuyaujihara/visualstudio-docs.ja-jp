@@ -14,29 +14,25 @@ helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f39bc76329ec891a6e239f7cd2ad816eea1979e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 191db7fa1079ef971e6e00a5f2618a6720b93e23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193361"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672687"
 ---
 # <a name="understanding-build-platforms"></a>ビルド プラットフォームについて
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-異なる対象プラットフォームに適用される、さまざまなバージョンのソリューションやプロジェクトのプロパティを保存することができます。 たとえば、x86 プラットフォームを対象とするデバッグ構成や x64 プラットフォームを対象とするデバッグ構成を作成することができます。 複数の構成を簡単にビルドできるように、アクティブなプラットフォームをすぐに変更できます。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)  
- プロジェクトを構成して特定の対象プラットフォームを設定する方法について説明します。  
-  
- [方法: プロジェクトを構成して複数の対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
- プロジェクトを構成して複数の対象プラットフォームを設定する方法について説明します。  
-  
-## <a name="see-also"></a>関連項目  
- [チュートリアル: アプリケーションをビルドします。](../ide/walkthrough-building-an-application.md)   
- [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
+異なる対象プラットフォームに適用される、さまざまなバージョンのソリューションやプロジェクトのプロパティを保存することができます。 たとえば、x86 プラットフォームを対象とするデバッグ構成や x64 プラットフォームを対象とするデバッグ構成を作成することができます。 複数の構成を簡単にビルドできるように、アクティブなプラットフォームをすぐに変更できます。
+
+## <a name="in-this-section"></a>このセクションの内容
+ [方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md) プロジェクトを構成して特定の対象プラットフォームを設定する方法について説明します。
+
+ [方法: プロジェクトを構成して複数の対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-multiple-platforms.md) プロジェクトを構成して複数の対象プラットフォームを設定する方法について説明します。
+
+## <a name="see-also"></a>参照
+ [チュートリアル: アプリケーションのビルド](../ide/walkthrough-building-an-application.md) [Visual Studio でのプロジェクトとソリューションのビルドとクリーンの](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)[コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
