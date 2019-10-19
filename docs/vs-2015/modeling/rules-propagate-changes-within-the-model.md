@@ -1,5 +1,5 @@
 ---
-title: ルールには、モデル内の変更が反映されるまで |Microsoft Docs
+title: ルールによってモデル内の変更が反映される |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,210 +9,209 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 901d809b5f194bb4e66990b0a0e946be2521bbb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671301"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-1 つの要素から Visualization and Modeling SDK (VMSDK) の間の変更を伝達するストア ルールを作成することができます。 ストア内の任意の要素を変更する場合は、ルールは、通常、最も外側のトランザクションがコミットされたときに実行される予定です。 要素の追加や削除などのイベントのさまざまな種類のルールの種類があります。 ルールは、特定の種類の要素、図形、またはダイアグラムをアタッチできます。 多くの組み込み機能がルールによって定義されます。 など、規則では、モデルが変更されたときに、ダイアグラムが更新されることを確認します。 独自のルールを追加することで、ドメイン固有言語をカスタマイズできます。  
+ストアルールを作成して、視覚化およびモデリング SDK (VMSDK) で、ある要素から別の要素に変更を反映させることができます。 ストア内のいずれかの要素に変更が加えられると、通常、最も外側のトランザクションがコミットされるときに、規則が実行されるようにスケジュールされます。 要素の追加や削除など、さまざまな種類のイベントに対して異なる種類のルールがあります。 ルールは、特定の種類の要素、図形、または図に適用できます。 多くの組み込み機能がルールによって定義されています。たとえば、ルールによって、モデルが変更されたときにダイアグラムが更新されます。 独自の規則を追加することで、ドメイン固有言語をカスタマイズできます。
 
- ストアの規則は、プロパティをモデル要素、リレーションシップ、図形またはコネクタ、およびそのドメインに変更は、– ストア内の変更の反映に特に便利です。 ルールは、ユーザーが元に戻す/やり直しコマンドを呼び出したときに実行されません。 代わりに、トランザクション マネージャーにより、ストアの内容が正しい状態に復元されることを確認します。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を使用します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+ ストアルールは、ストア内の変更 (モデル要素、リレーションシップ、図形、コネクタ、およびそれらのドメインプロパティの変更) を反映する場合に特に便利です。 ユーザーが [元に戻す] または [やり直し] コマンドを呼び出しても、規則は実行されません。 代わりに、トランザクションマネージャーによって、ストアの内容が正しい状態に復元されます。 ストアの外部のリソースに変更を反映する場合は、ストアイベントを使用します。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
- たとえば、ユーザー (またはコード) は、型 ExampleDomainClass の新しい要素を作成するたびに、モデルの別の部分に、別の型の別の要素が作成されるかを指定するとします。 AddRule を記述して ExampleDomainClass に関連付けます。 その他の要素を作成するルールでコードを記述します。  
+ たとえば、ユーザー (またはコード) が型の型の新しい要素を作成するたびに、別の型の他の要素がモデルの別の部分に作成されるように指定するとします。 AddRule を記述して、それを例の Domainclass に関連付けることができます。 ルールにコードを記述して、追加の要素を作成します。
 
-```csharp  
-using System;  
-using System.Collections.Generic;  
-using System.Linq;  
-using Microsoft.VisualStudio.Modeling;  
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.VisualStudio.Modeling;
 
-namespace ExampleNamespace  
-{  
- // Attribute associates the rule with a domain class:  
- [RuleOn(typeof(ExampleDomainClass), FireTime=TimeToFire.TopLevelCommit)]  
- // The rule is a class derived from one of the abstract rules:  
- class MyAddRule : AddRule  
- {  
-  // Override the abstract method:  
-  public override void ElementAdded(ElementAddedEventArgs e)  
-  {  
-    base.ElementAdded(e);  
-    ExampleDomainClass element = e.ModelElement;  
-    Store store = element.Store;  
-    // Ignore this call if we're currently loading a model:  
-    if (store.TransactionManager.CurrentTransaction.IsSerializing)   
-       return;  
+namespace ExampleNamespace
+{
+ // Attribute associates the rule with a domain class:
+ [RuleOn(typeof(ExampleDomainClass), FireTime=TimeToFire.TopLevelCommit)]
+ // The rule is a class derived from one of the abstract rules:
+ class MyAddRule : AddRule
+ {
+  // Override the abstract method:
+  public override void ElementAdded(ElementAddedEventArgs e)
+  {
+    base.ElementAdded(e);
+    ExampleDomainClass element = e.ModelElement;
+    Store store = element.Store;
+    // Ignore this call if we're currently loading a model:
+    if (store.TransactionManager.CurrentTransaction.IsSerializing)
+       return;
 
-    // Code here propagates change as required – for example:  
-      AnotherDomainClass echo = new AnotherDomainClass(element.Partition);  
-      echo.Name = element.Name;  
-      echo.Parent = element.Parent;    
-    }  
-  }  
- // The rule must be registered:  
- public partial class ExampleDomainModel  
- {  
-   protected override Type[] GetCustomDomainModelTypes()  
-   {  
-     List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());  
-     types.Add(typeof(MyAddRule));  
-     // If you add more rules, list them here.   
-     return types.ToArray();  
-   }  
- }  
-}  
+    // Code here propagates change as required – for example:
+      AnotherDomainClass echo = new AnotherDomainClass(element.Partition);
+      echo.Name = element.Name;
+      echo.Parent = element.Parent;
+    }
+  }
+ // The rule must be registered:
+ public partial class ExampleDomainModel
+ {
+   protected override Type[] GetCustomDomainModelTypes()
+   {
+     List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());
+     types.Add(typeof(MyAddRule));
+     // If you add more rules, list them here.
+     return types.ToArray();
+   }
+ }
+}
 
-```  
+```
 
 > [!NOTE]
-> ルールのコードは、ストア内の要素のみの状態を変更する必要があります。つまり、ルールでは、モデル要素、リレーションシップ、図形、コネクタ、図、またはそれらのプロパティのみを変更する必要があります。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を定義します。 詳細については、次を参照してください[イベント ハンドラー反映されるまで変更 Outside the モデル。](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> ルールのコードは、ストア内の要素の状態のみを変更する必要があります。つまり、ルールは、モデル要素、リレーションシップ、図形、コネクタ、図、またはそれらのプロパティのみを変更する必要があります。 ストアの外部のリソースに変更を反映する場合は、ストアイベントを定義します。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
-### <a name="to-define-a-rule"></a>規則を定義するには  
+### <a name="to-define-a-rule"></a>ルールを定義するには
 
-1. クラスが接頭辞としてルールを定義、`RuleOn`属性。 属性は、ドメイン クラス、リレーションシップ、または図の要素のいずれかのルールを関連付けます。 ルールは、このクラスは、抽象にすることがありますの各インスタンスに適用されます。  
+1. ルールを `RuleOn` 属性で始まるクラスとして定義します。 属性は、ルールをドメインクラス、リレーションシップ、または図要素の1つに関連付けます。 規則は、このクラスのすべてのインスタンスに適用されます。抽象型である場合もあります。
 
-2. によって返されるセットに追加して、ルールを登録`GetCustomDomainModelTypes()`ドメイン モデル クラス。  
+2. ドメインモデルクラスの `GetCustomDomainModelTypes()` によって返されるセットに規則を追加して、規則を登録します。
 
-3. ルールの抽象クラスのいずれかのルール クラスを派生し、実行メソッドのコードを記述します。  
+3. いずれかの抽象規則クラスから規則クラスを派生させ、実行メソッドのコードを記述します。
 
-   次のセクションでは、これらの手順の詳細について説明します。  
+   以下のセクションでは、これらの手順について詳しく説明します。
 
-### <a name="to-define-a-rule-on-a-domain-class"></a>ドメイン クラスの規則を定義するには  
+### <a name="to-define-a-rule-on-a-domain-class"></a>ドメインクラスで規則を定義するには
 
-- カスタム コード ファイルでクラスを定義し、プレフィックス、<xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute>属性。  
+- カスタムコードファイルで、クラスを定義し、<xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> 属性でプレフィックスを付けます。
 
-    ```  
-    [RuleOn(typeof(ExampleElement),   
-         // Usual value – but required, because it is not the default:  
-         FireTime = TimeToFire.TopLevelCommit)]   
-    class MyRule ...  
+    ```
+    [RuleOn(typeof(ExampleElement),
+         // Usual value – but required, because it is not the default:
+         FireTime = TimeToFire.TopLevelCommit)]
+    class MyRule ...
 
-    ```  
+    ```
 
-- 最初のパラメーターでサブジェクトの種類のドメイン クラス、ドメイン リレーションシップ、図形、コネクタ、またはダイアグラムを使用できます。 通常、ドメイン クラスとリレーションシップにルールを適用します。  
+- 最初のパラメーターのサブジェクトの種類には、ドメインクラス、ドメインリレーションシップ、図形、コネクタ、または図を使用できます。 通常は、ドメインクラスとリレーションシップに規則を適用します。
 
-     `FireTime`通常`TopLevelCommit`します。 これにより、トランザクションのすべての主な変更が行われた後にのみ、ルールが実行されます。 選択肢は次のインラインで、変更後すぐにルールを実行します。LocalCommit で、(これは、最も外側できない可能性があります)、現在のトランザクションの最後にルールを実行します。 そのキューで順序付けに影響するルールの優先順位を設定することもできますが、これは必要とする結果を実現するための信頼性の低いメソッド。  
+     通常、`FireTime` は `TopLevelCommit` です。 これにより、トランザクションのすべての主要な変更が行われた後にのみ、ルールが実行されるようになります。 代替手段はインラインであり、変更後すぐにルールが実行されます。および LocalCommit は、現在のトランザクションの最後 (最も外側ではない可能性があります) でルールを実行します。 ルールの優先度を設定して、キュー内での順序に影響を与えることもできますが、これは必要な結果を実現する信頼性の低い方法です。
 
-- 抽象クラスは、サブジェクトの種類として指定できます。  
+- サブジェクトの種類として抽象クラスを指定できます。
 
-- ルールは、サブジェクト クラスのすべてのインスタンスに適用されます。  
+- このルールは、subject クラスのすべてのインスタンスに適用されます。
 
-- 既定値`FireTime`TimeToFire.TopLevelCommit です。 これにより、最も外側のトランザクションがコミットされた場合に実行されるルールです。 別の方法では、TimeToFire.Inline です。 これにより、トリガー起動イベント後すぐに実行されるルールです。  
+- @No__t_0 の既定値は TimeToFire TopLevelCommit です。 これにより、最も外側のトランザクションがコミットされるときにルールが実行されます。 別の方法として、TimeToFire があります。 これにより、トリガーイベントの直後にルールが実行されます。
 
-### <a name="to-register-the-rule"></a>ルールを登録するには  
+### <a name="to-register-the-rule"></a>ルールを登録するには
 
-- によって返される型の一覧に、ルール クラスを追加`GetCustomDomainModelTypes`ドメイン モデルで。  
+- ドメインモデル内の `GetCustomDomainModelTypes` によって返される型の一覧に規則クラスを追加します。
 
-    ```  
-    public partial class ExampleDomainModel  
-     {  
-       protected override Type[] GetCustomDomainModelTypes()  
-       {  
-         List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());  
-         types.Add(typeof(MyAddRule));  
-         // If you add more rules, list them here.   
-         return types.ToArray();  
-       }  
-     }  
+    ```
+    public partial class ExampleDomainModel
+     {
+       protected override Type[] GetCustomDomainModelTypes()
+       {
+         List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());
+         types.Add(typeof(MyAddRule));
+         // If you add more rules, list them here.
+         return types.ToArray();
+       }
+     }
 
-    ```  
+    ```
 
-- ドメイン モデル クラスの名前の確信できない場合は、ファイルを調べる**Dsl\GeneratedCode\DomainModel.cs**  
+- ドメインモデルクラスの名前がわからない場合は、ファイルを検索してください。 (& **c** )。
 
-- このコードを DSL プロジェクト内のカスタム コード ファイルに記述します。  
+- DSL プロジェクトのカスタムコードファイルにこのコードを記述します。
 
-### <a name="to-write-the-code-of-the-rule"></a>ルールのコードを記述するには  
+### <a name="to-write-the-code-of-the-rule"></a>ルールのコードを記述するには
 
-- ルール クラスを次の基本クラスのいずれかから派生します。  
+- 次のいずれかの基底クラスから rule クラスを派生させます。
 
   |                             基底クラス                              |                                                                                                                                                                                                                                                                                                                                                                              トリガー                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        要素、リンク、または図形が追加されます。<br /><br /> これを使用して、新しい要素だけでなく、新しいリレーションシップを検出します。                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | ドメイン プロパティの値を変更します。 このメソッドの引数は、新旧の値を提供します。<br /><br /> 図形は、このルールがトリガーされたときに、組み込み`AbsoluteBounds`プロパティの変更、図形が移動された場合。<br /><br /> 多くの場合、オーバーライドする方が便利です`OnValueChanged`または`OnValueChanging`プロパティ ハンドラーでします。 変更の前後にすぐに、これらのメソッドは呼び出されます。 これに対し、ルールは、トランザクションの最後に通常実行されます。 詳細については、次を参照してください。[ドメイン プロパティ値変更ハンドラー](../modeling/domain-property-value-change-handlers.md)します。 **注:** このルールは、リンクを作成または削除されたときに発生しません。 代わりに、書き込み、`AddRule`と`DeleteRule`ドメイン リレーションシップ。 |
-  |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             要素またはリンクが削除しようとトリガーされます。 ModelElement.IsDeleting プロパティは、トランザクションが終了するまでは。                                                                                                                                                                                                                                                                                                              |
-  |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       要素またはリンクが削除されたときに実行されます。 その他のすべてのルールが実行されたら、DeletingRules を含むルールが実行されます。 ModelElement.IsDeleting が false になり、ModelElement.IsDeleted は true。 後続の元に戻すには、要素は、実際に削除されませんをメモリからが Store.ElementDirectory から削除されます。                                                                                                                                                                                                       |
-  |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           要素は、別に 1 つのストアのパーティションから移動されます。<br /><br /> (図形の位置をグラフィカルにこの関係はしないことに注意してください)。                                                                                                                                                                                                                                                                                                            |
-  |     <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>     |                                                                                                                                                                                                                                                                                                                 このルールは、ドメイン リレーションシップにのみ適用されます。 リンクの両端をモデル要素を明示的に割り当てた場合、その関数がトリガーされます。                                                                                                                                                                                                                                                                                                                 |
-  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> |                                                                                                                                                                                                                                                                                                                   要素またはリンクの順序が変更のリンク、MoveBefore または MoveToIndex メソッドを使用するときにトリガーされます。                                                                                                                                                                                                                                                                                                                    |
-  |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              トランザクションの作成時に実行します。                                                                                                                                                                                                                                                                                                                                                              |
-  |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      トランザクションがコミットされるときに実行します。                                                                                                                                                                                                                                                                                                                                                      |
-  |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     トランザクションがロールバックするときに実行されます。                                                                                                                                                                                                                                                                                                                                                     |
+  |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        要素、リンク、または図形が追加されます。<br /><br /> 新しい要素に加えて新しいリレーションシップを検出する場合に使用します。                                                                                                                                                                                                                                                                                                                        |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | ドメインプロパティの値が変更されます。 メソッドの引数は、古い値と新しい値を提供します。<br /><br /> 図形の場合、このルールは、図形が移動された場合に、組み込みの `AbsoluteBounds` プロパティが変更されたときにトリガーされます。<br /><br /> 多くの場合、プロパティハンドラーで `OnValueChanged` または `OnValueChanging` をオーバーライドする方が便利です。 これらのメソッドは、変更の直前と直後に呼び出されます。 これに対し、ルールは通常、トランザクションの最後に実行されます。 詳細については、「[ドメインプロパティ値の変更ハンドラー](../modeling/domain-property-value-change-handlers.md)」を参照してください。 **注:** このルールは、リンクが作成または削除されたときにはトリガーされません。 代わりに、ドメインリレーションシップの `AddRule` と `DeleteRule` を記述します。 |
+  |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             要素またはリンクが削除されようとしているときにトリガーされます。 ModelElement プロパティは、トランザクションが終了するまで true になります。                                                                                                                                                                                                                                                                                                              |
+  |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       要素またはリンクが削除されたときに実行されます。 このルールは、他のすべてのルールが実行された後 (Dele/Grを含む) に実行されます。 ModelElement が false で、ModelElement が true になっています。 後続の元に戻す操作を可能にするために、要素は実際にはメモリから削除されませんが、格納されている ElementDirectory からは削除されます。                                                                                                                                                                                                       |
+  |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           あるストアパーティションから別のストアパーティションに要素が移動されます。<br /><br /> (これは、図形のグラフィカルな位置には関係していないことに注意してください)。                                                                                                                                                                                                                                                                                                            |
+  |     <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>     |                                                                                                                                                                                                                                                                                                                 この規則はドメインリレーションシップにのみ適用されます。 モデル要素をリンクの末尾に明示的に割り当てると、トリガーされます。                                                                                                                                                                                                                                                                                                                 |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> |                                                                                                                                                                                                                                                                                                                   リンクの MoveBefore または MoveToIndex メソッドを使用して、要素との間のリンクの順序が変更されたときにトリガーされます。                                                                                                                                                                                                                                                                                                                    |
+  |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              トランザクションが作成されるときに実行されます。                                                                                                                                                                                                                                                                                                                                                              |
+  |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      トランザクションがコミットされようとしているときに実行されます。                                                                                                                                                                                                                                                                                                                                                      |
+  |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     トランザクションがロールバックされようとしているときに実行されます。                                                                                                                                                                                                                                                                                                                                                     |
 
-- 各クラスには、オーバーライドするメソッドがあります。 型`override`で検出するクラス。 このメソッドのパラメーターは、変更する要素を識別します。  
+- 各クラスには、オーバーライドするメソッドがあります。 クラスに `override` を入力して検出します。 このメソッドのパラメーターは、変更されている要素を識別します。
 
-  ルールについては、次の点に注意してください。  
+  ルールに関する次の点に注意してください。
 
-1. トランザクションで変更のセットには、多くのルールをトリガー可能性があります。 通常、ルールは、最も外側のトランザクションがコミットされたときに実行されます。 不特定の順序で実行されます。  
+1. トランザクション内の一連の変更によって、多くのルールがトリガーされることがあります。 通常、ルールは、最も外側のトランザクションがコミットされるときに実行されます。 これらは、指定されていない順序で実行されます。
 
-2. ルールは、トランザクション内で常に実行されます。 そのため、変更を加えるには新しいトランザクションを作成することはありません。  
+2. ルールは、常にトランザクション内で実行されます。 したがって、変更を行うために新しいトランザクションを作成する必要はありません。
 
-3. トランザクションがロールバックされるとき、または元に戻す/やり直し操作を実行すると、ルールは実行されません。 これらの操作は、以前の状態のストアのすべての内容をリセットします。 そのため、ルールには、ストアの外部の状態が変更された場合、可能性があります保持されません synchronism をストアとのコンテンツ。 を、ストア外の状態を更新するには、イベントを使用することをお勧めします。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
+3. ルールは、トランザクションがロールバックされるとき、または元に戻す操作またはやり直し操作が実行されるときには実行されません。 これらの操作では、ストアのすべてのコンテンツが以前の状態にリセットされます。 そのため、ルールによってストアの外部にあるすべての状態が変更された場合、ストアのコンテンツと共に synchronism に保持されない可能性があります。 ストアの外部で状態を更新するには、イベントを使用することをお勧めします。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
-4. モデルがファイルから読み込まれるときに、いくつかのルールが実行されます。 読み込みまたは保存が進行中かどうかを調べるには`store.TransactionManager.CurrentTransaction.IsSerializing`します。  
+4. 一部のルールは、モデルがファイルから読み込まれたときに実行されます。 読み込みまたは保存が進行中かどうかを判断するには、`store.TransactionManager.CurrentTransaction.IsSerializing` を使用します。
 
-5. ルールのコードでは、複数のルールのトリガーを作成する場合、起動リストの末尾に追加され、トランザクションが完了する前に実行されます。 DeletedRules は、その他のすべてのルールの後に実行されます。 1 つのルールは、変更ごとに 1 回のトランザクションで何度もを実行できます。  
+5. ルールのコードによってさらに多くのルールトリガーが作成された場合は、トリガーが起動リストの末尾に追加され、トランザクションが完了する前に実行されます。 DeletedRules は、他のすべてのルールの後に実行されます。 1つのルールを1回のトランザクションで何度も実行できます。
 
-6. 内の情報を格納する、規則との情報を渡すため、`TransactionContext`します。 これは、トランザクション中に保持されている辞書だけです。 トランザクションが終了すると、破棄されます。 各ルールのイベント引数は、それへのアクセスを提供します。 ルールが予測可能な順序でない実行されることに注意してください。  
+6. ルールとの間で情報をやり取りするには、`TransactionContext` に情報を格納します。 これは、トランザクション中に保持されるディクショナリにすぎません。 トランザクションの終了時に破棄されます。 各ルールのイベント引数を使用して、その引数にアクセスできます。 ルールは、予測可能な順序で実行されないことに注意してください。
 
-7. その他の代替手段を検討した後の規則を使用します。 たとえば、値が変更されたときにプロパティを更新する場合は、計算されるプロパティを使用して検討してください。 サイズまたは図形の場所を制限する場合は、使用、`BoundsRule`します。 プロパティ値の変更に応答する場合は、追加、`OnValueChanged`プロパティ ハンドラー。 詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。  
+7. 他の代替手段を検討した後、ルールを使用します。 たとえば、値が変更されたときにプロパティを更新する場合は、計算されたプロパティの使用を検討してください。 図形のサイズまたは位置を制限する場合は、`BoundsRule` を使用します。 プロパティ値の変更に応答する場合は、プロパティに `OnValueChanged` ハンドラーを追加します。 詳細については、「[変更に対する応答と反映](../modeling/responding-to-and-propagating-changes.md)」を参照してください。
 
-## <a name="example"></a>例  
- 次の例は、2 つの要素をリンクするドメイン リレーションシップがインスタンス化されるときに、プロパティを更新します。 このルールがだけでなくユーザーを作成とリンクを図もプログラム コードのリンクを作成する場合にトリガーされます。  
+## <a name="example"></a>例
+ 次の例では、2つの要素をリンクするためにドメインリレーションシップがインスタンス化されるときに、プロパティを更新します。 このルールは、ユーザーが図にリンクを作成したときだけでなく、プログラムコードがリンクを作成した場合にもトリガーされます。
 
- この例をテストするには、Task Flow ソリューション テンプレートを使用して DSL を作成し、Dsl プロジェクト内のファイルに次のコードを挿入します。 ビルド、ソリューションを実行し、デバッグ プロジェクトでサンプル ファイルを開きます。 コメントのシェイプとフロー要素間には、コメントのリンクを描画します。 コメント内のテキストは、レポートに接続している最も新しい要素を変更します。  
+ この例をテストするには、タスクフローソリューションテンプレートを使用して DSL を作成し、Dsl プロジェクト内のファイルに次のコードを挿入します。 ソリューションをビルドして実行し、デバッグプロジェクトでサンプルファイルを開きます。 コメント図形とフロー要素の間にコメントリンクを描画します。 コメント内のテキストは、最後に接続した要素に関するレポートに変更されます。
 
- 実際には、すべて AddRule 用、DeleteRule に記述した通常します。  
+ 実際には、各 AddRule の DeleteRule を作成します。
 
-```  
-using System;  
-using System.Collections.Generic;  
-using System.Linq;  
-using System.Text;  
-using Microsoft.VisualStudio.Modeling;  
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.VisualStudio.Modeling;
 
-namespace Company.TaskRuleExample  
-{  
+namespace Company.TaskRuleExample
+{
 
-  [RuleOn(typeof(CommentReferencesSubjects))]  
-  public class RoleRule : AddRule  
-  {  
+  [RuleOn(typeof(CommentReferencesSubjects))]
+  public class RoleRule : AddRule
+  {
 
-    public override void ElementAdded(ElementAddedEventArgs e)  
-    {  
-      base.ElementAdded(e);  
-      CommentReferencesSubjects link = e.ModelElement as CommentReferencesSubjects;  
-      Comment comment = link.Comment;  
-      FlowElement subject = link.Subject;  
-      Transaction current = link.Store.TransactionManager.CurrentTransaction;  
-      // Don't want to run when we're just loading from file:  
-      if (current.IsSerializing) return;  
-      comment.Text = "Flow has " + subject.FlowTo.Count + " outgoing connections";  
-    }  
+    public override void ElementAdded(ElementAddedEventArgs e)
+    {
+      base.ElementAdded(e);
+      CommentReferencesSubjects link = e.ModelElement as CommentReferencesSubjects;
+      Comment comment = link.Comment;
+      FlowElement subject = link.Subject;
+      Transaction current = link.Store.TransactionManager.CurrentTransaction;
+      // Don't want to run when we're just loading from file:
+      if (current.IsSerializing) return;
+      comment.Text = "Flow has " + subject.FlowTo.Count + " outgoing connections";
+    }
 
-  }  
+  }
 
-  public partial class TaskRuleExampleDomainModel  
-  {  
-    protected override Type[] GetCustomDomainModelTypes()  
-    {  
-      List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());  
-      types.Add(typeof(RoleRule));  
-      return types.ToArray();  
-    }  
-  }  
+  public partial class TaskRuleExampleDomainModel
+  {
+    protected override Type[] GetCustomDomainModelTypes()
+    {
+      List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());
+      types.Add(typeof(RoleRule));
+      return types.ToArray();
+    }
+  }
 
-}  
+}
 
-```  
+```
 
-## <a name="see-also"></a>関連項目  
- [イベント ハンドラーには、モデルの外部で変更が反映されるまでください。](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
- [BoundsRules によってシェイプの位置とサイズが制限される](../modeling/boundsrules-constrain-shape-location-and-size.md)
+## <a name="see-also"></a>参照
+ [イベントハンドラーは、モデルの](../modeling/event-handlers-propagate-changes-outside-the-model.md) [BoundsRules 制約図形の位置とサイズ](../modeling/boundsrules-constrain-shape-location-and-size.md)の範囲外に変更を反映します

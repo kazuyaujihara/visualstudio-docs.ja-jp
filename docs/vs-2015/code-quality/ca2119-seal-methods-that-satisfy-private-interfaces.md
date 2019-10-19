@@ -1,5 +1,5 @@
 ---
-title: CA2119:プライベート インターフェイスを満たすメソッドをシールします |Microsoft Docs
+title: 'CA2119: プライベートインターフェイスを満たすメソッドをシールします。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56b08d1b842e65e1c1c29a7409813c314cbf014d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: af41fc5576cbcd56589680d99c0cd5c0dfd6e6f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687276"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664768"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:プライベート インターフェイスを満たすメソッドをシールします
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: プライベート インターフェイスを満たすメソッドをシールします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,40 +33,40 @@ ms.locfileid: "65687276"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 継承可能なパブリック型のオーバーライド可能なメソッド実装を提供する、 `internal` (`Friend` Visual Basic で) インターフェイス。
+ 継承可能なパブリック型は、`internal` (Visual Basic の `Friend`) インターフェイスのオーバーライド可能なメソッドの実装を提供します。
 
 ## <a name="rule-description"></a>規則の説明
- インターフェイス メソッドがあるパブリック アクセシビリティは、実装する型を変更できません。 内部のインターフェイスは、インターフェイスを定義するアセンブリの外側に実装されるものではありませんが、コントラクトを作成します。 使用して、内部のインターフェイスのメソッドを実装するパブリック型、 `virtual` (`Overridable` Visual basic) 修飾子は、アセンブリ外にある派生型でオーバーライドされるメソッドを使用します。 2 番目の型定義のアセンブリでは、メソッドを呼び出し、内部専用の契約が必要ですが場合、代わりに、外部のアセンブリでオーバーライドされたメソッドが実行されるときに、動作が漏えいする可能性があります。 これには、セキュリティの脆弱性が作成されます。
+ インターフェイスメソッドはパブリックアクセシビリティを持っていますが、これは実装する型では変更できません。 内部インターフェイスは、インターフェイスを定義するアセンブリの外部で実装するためのものではないコントラクトを作成します。 @No__t_0 (Visual Basic の `Overridable`) 修飾子を使用して内部インターフェイスのメソッドを実装するパブリック型では、アセンブリの外部にある派生型によってメソッドをオーバーライドできます。 定義アセンブリの2番目の型がメソッドを呼び出し、内部専用のコントラクトを要求した場合、外部アセンブリのオーバーライドされたメソッドが実行されると、動作が損なわれる可能性があります。 これにより、セキュリティの脆弱性が生じます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正するには、メソッドが、次のいずれかを使用して、アセンブリの外部にオーバーライドされないように。
+ この規則違反を修正するには、次のいずれかを使用して、メソッドがアセンブリの外部でオーバーライドされないようにします。
 
-- 宣言する型`sealed`(`NotInheritable` Visual Basic で)。
+- 宣言する型を `sealed` (`NotInheritable` Visual Basic) にします。
 
-- 宣言する型のアクセシビリティを変更する`internal`(`Friend` Visual Basic で)。
+- 宣言する型のアクセシビリティを `internal` (`Friend` Visual Basic) に変更します。
 
-- すべてのパブリック コンス トラクターを宣言する型から削除します。
+- 宣言する型からすべてのパブリックコンストラクターを削除します。
 
-- メソッドの実装を使用せず、`virtual`修飾子。
+- @No__t_0 修飾子を使用せずにメソッドを実装します。
 
 - メソッドを明示的に実装します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この警告を抑制するには、安全ではルールの場合、セキュリティの問題が存在しないことを注意深くレビューは、アセンブリの外部メソッドがオーバーライドされた場合に悪用可能な場合があります。
+ 慎重に確認した後に、メソッドがアセンブリの外部でオーバーライドされた場合に悪用される可能性があるセキュリティ上の問題が存在しない場合は、この規則による警告を抑制することが安全です。
 
 ## <a name="example"></a>例
- 次の例は、型`BaseImplementation`、この規則に違反します。
+ 次の例は、この規則に違反する型 `BaseImplementation` を示しています。
 
  [!code-cpp[FxCop.Security.SealMethods1#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cpp/FxCop.Security.SealMethods1.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cs/FxCop.Security.SealMethods1.cs#1)]
  [!code-vb[FxCop.Security.SealMethods1#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/vb/FxCop.Security.SealMethods1.vb#1)]
 
 ## <a name="example"></a>例
- 次の例では、前の例の仮想メソッドの実装を悪用します。
+ 次の例では、前の例の仮想メソッドの実装を悪用しています。
 
  [!code-cpp[FxCop.Security.SealMethods2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/cpp/FxCop.Security.SealMethods2.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/cs/FxCop.Security.SealMethods2.cs#1)]
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [インターフェイス](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)[インターフェイス](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

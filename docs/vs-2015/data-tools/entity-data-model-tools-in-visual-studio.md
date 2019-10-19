@@ -11,52 +11,52 @@ dev_langs:
 - aspx
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d663b86603145f8a665f189e5abfbfa2b0b360ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672391"
 ---
-# <a name="entity-data-model-tools-in-visual-studio"></a>Visual Studio での entity Data Model ツール
+# <a name="entity-data-model-tools-in-visual-studio"></a>Visual Studio の Entity Data Model ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Entity Framework とは、.NET 開発者は、ドメイン固有オブジェクトを使用してリレーショナル データを操作できるオブジェクト リレーショナル マッピング テクノロジです。 開発者が通常記述しなければならないデータアクセス コードの多くが不要になります。 Entity Framework は、.NET アプリケーションの新しいテクノロジをモデリング推奨オブジェクト リレーショナル マッピング (ORM です)。
+Entity Framework は、.NET 開発者がドメイン固有のオブジェクトを使用してリレーショナルデータを操作できるようにするオブジェクトリレーショナルマッピングテクノロジです。 開発者が通常記述しなければならないデータアクセス コードの多くが不要になります。 Entity Framework は、新しい .NET アプリケーションに推奨されるオブジェクトリレーショナルマッピング (ORM) モデリングテクノロジです。
 
- 最新のリリース バージョンは、2016 年 3 月の時点で[Entity Framework 6](https://msdn.microsoft.com/data/ef)します。 [Entity Framework 7](https://docs.efproject.net/en/latest/)プレリリース版では、します。
+ 2016年3月の時点で、最新のリリースバージョンは[Entity Framework 6](https://msdn.microsoft.com/data/ef)です。 [Entity Framework 7](https://docs.efproject.net/en/latest/)はプレリリース版です。
 
- [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] ツールが構築するために設計された[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]アプリケーション。 詳細なドキュメント[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールがここには。[Entity Framework](https://msdn.microsoft.com/data/jj590134)します。
+ [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] ツールは、[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] アプリケーションの構築を支援するように設計されています。 @No__t_0 ツールの完全なドキュメントについては、 [Entity Framework](https://msdn.microsoft.com/data/jj590134)を参照してください。
 
- [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールを作成できます、*概念モデル*既存のデータベースのグラフィカルに視覚化し、概念モデルを編集します。 また、グラフィカルな概念モデルを作成し、そのモデルをサポートするデータベースを生成することもできます。 いずれの場合も、基になるデータベースの変更時には、モデルを自動的に更新できるだけではなく、アプリケーションのオブジェクトレイヤー コードも自動生成できます。 データベースの生成とオブジェクトレイヤー コードの生成はカスタマイズ可能です。
+ @No__t_0 ツールを使用すると、既存のデータベースから*概念モデル*を作成し、その概念モデルをグラフィカルに視覚化して編集できます。 また、グラフィカルな概念モデルを作成し、そのモデルをサポートするデータベースを生成することもできます。 いずれの場合も、基になるデータベースの変更時には、モデルを自動的に更新できるだけではなく、アプリケーションのオブジェクトレイヤー コードも自動生成できます。 データベースの生成とオブジェクトレイヤー コードの生成はカスタマイズ可能です。
 
- Visual Studio 2015 での Entity Data Model ツールを構成する特定のツールを次に示します。
+ これらは、Visual Studio 2015 の Entity Data Model ツールを構成する特定のツールです。
 
-- 使用することができます、 [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]デザイナー** (**エンティティ デザイナー**) を視覚的に作成し、エンティティ、アソシエーション、マッピング、および継承関係を変更します。 **エンティティ デザイナー**も生成[!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)]または[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]オブジェクト レイヤー コード。
+- @No__t_0 **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] デザイナー** (**Entity Designer**) を使用して、エンティティ、アソシエーション、マッピング、および継承関係を視覚的に作成および変更できます。 また、 **Entity Designer**は、オブジェクトレイヤーコード [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] または [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 生成します。
 
-- 使用することができます、  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ウィザード**を既存のデータベースから概念モデルを生成し、データベース接続情報をアプリケーションに追加します。
+- **@No__t_1 ウィザード**を使用して、既存のデータベースから概念モデルを生成し、データベース接続情報をアプリケーションに追加できます。
 
-- 使用することができます、**データベース生成ウィザード**最初に概念モデルを作成し、モデルをサポートするデータベースを作成します。
+- **データベースの作成ウィザード**を使用すると、最初に概念モデルを作成し、そのモデルをサポートするデータベースを作成できます。
 
-- 使用することができます、**モデルの更新ウィザード**を基になるデータベースの変更を行ったときに、概念モデル、ストレージ モデル、およびマッピングを更新します。
+- 基になるデータベースに変更が加えられた場合は、**モデルの更新ウィザード**を使用して、概念モデル、ストレージモデル、およびマッピングを更新できます。
 
   > [!NOTE]
-  > Visual Studio 2010 以降で[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールがサポートされていない[!INCLUDE[ss2k](../includes/ss2k-md.md)]します。
+  > Visual Studio 2010 以降では、[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] ツールは [!INCLUDE[ss2k](../includes/ss2k-md.md)] をサポートしていません。
 
-  ツールでは、生成または .edmx ファイルを変更します。 このファイルには、概念モデル、ストレージ モデル、およびそれらの間のマッピングについて説明する情報が含まれています。 詳細については、次を参照してください。 [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)します。
+  これらのツールは .edmx ファイルを生成または変更します。 このファイルには、概念モデル、ストレージモデル、およびそれらの間のマッピングについて説明する情報が含まれています。 詳細については、「 [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)」を参照してください。
 
-  Entity Framework Power Tools では、エンティティ データ モデルを使用するアプリケーションを構築するのに役立ちます。 ツールは、概念モデルを生成、既存のモデルの検証、概念モデルに基づくオブジェクト クラスが含まれているソース コード ファイルの生成、およびモデルを生成するビューを含むソース コード ファイルを生成することができます。 詳細については、次を参照してください。 [Pre-Generated マッピング ビュー](https://msdn.microsoft.com/data/dn469601.aspx)します。
+  Entity Framework パワーツールは、Entity Data Model を使用するアプリケーションを構築するのに役立ちます。 ツールでは、概念モデルの生成、既存のモデルの検証、概念モデルに基づくオブジェクトクラスを含むソースコードファイルの生成、およびモデルによって生成されるビューを含むソースコードファイルの生成を行うことができます。 詳細については、「[事前に生成されたマッピングビュー](https://msdn.microsoft.com/data/dn469601.aspx)」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|使用する方法について説明します[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールが[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]アプリケーションを作成します。|
-|[Entity Data Model](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|上に構築されたアプリケーションによって使用されるデータを操作するための情報とリンクを示します[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]します。|
-|[(コンソール、WinForms、WPF など) の完全な .NET の概要](/ef/ef6/get-started)|Entity Framework 7 を使用する .NET デスクトップ アプリケーションを作成する方法のチュートリアルを提供します。|
-|[ASP.NET 5 アプリケーションを新しいデータベース](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Entity Framework 7 を使用して新しい ASP.NET 5 アプリケーションを作成する方法について説明します。|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|アプリケーションを作成するために [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] 提供する [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] ツールを使用する方法について説明します。|
+|[Entity Data Model](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|@No__t_0 上に構築されたアプリケーションで使用されるデータを操作するためのリンクと情報を提供します。|
+|[完全な .NET (コンソール、WinForms、WPF など) でのはじめに](/ef/ef6/get-started)|Entity Framework 7 を使用する .NET デスクトップアプリケーションを作成する方法についてのチュートリアルを提供します。|
+|[ASP.NET 5 アプリケーションを新しいデータベースに](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Entity Framework 7 を使用して新しい ASP.NET 5 アプリケーションを作成する方法について説明します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

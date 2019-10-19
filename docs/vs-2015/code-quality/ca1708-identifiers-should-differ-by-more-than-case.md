@@ -1,5 +1,5 @@
 ---
-title: CA1708:識別子は、ケース以外で相違させる必要があります |Microsoft Docs
+title: 'CA1708: 識別子は大文字と小文字を区別しないと異なる必要があります |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - IdentifiersShouldDifferByMoreThanCase
 ms.assetid: dac0f01d-dd21-484d-add1-c8cd2bf6969f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a58e40ff973467e9a24a923410ff2f73981ecaab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f611cb899a2386c47e1370214a74c2a5da52584f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189195"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669201"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 2 つの型、メンバー、パラメーター、または完全修飾名前空間の名前は、小文字に変換されるときと同じです。
+ 2つの型、メンバー、パラメーター、または完全修飾名前空間の名前は、小文字に変換されるときは同じです。
 
 ## <a name="rule-description"></a>規則の説明
- 名前空間、型、メンバー、およびパラメーターの各識別子は、大文字/小文字以外のみでは区別できません。共通言語ランタイムを対象とする言語は、大文字と小文字を区別する必要はないためです。 たとえば、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]は広く使用されている大文字言語です。
+ 名前空間、型、メンバー、およびパラメーターの各識別子は、大文字/小文字以外のみでは区別できません。共通言語ランタイムを対象とする言語は、大文字と小文字を区別する必要はないためです。 たとえば、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] は大文字と小文字を区別しない言語です。
 
- この規則は、公開されているメンバーのみに適用されます。
+ この規則は、パブリックに表示できるメンバーにのみ適用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 大文字と小文字の他の識別子を比較した場合に一意の名前を選択します。
+ 大文字と小文字を区別せずに他の識別子と比較する場合は、一意の名前を選択します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この規則による警告は抑制しないでください。 ライブラリで使用可能なすべての言語で使用できない可能性があります、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。
+ この規則による警告は抑制しないでください。 このライブラリは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] で使用可能なすべての言語で使用できない可能性があります。
 
 ## <a name="example-of-a-violation"></a>違反の例
- 次の例では、この規則違反を示します。
+ 次の例は、このルールの違反を示しています。
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldDifferByMoreThanCase/cs/FxCop.Naming.IdentifiersShouldDifferByMoreThanCase.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

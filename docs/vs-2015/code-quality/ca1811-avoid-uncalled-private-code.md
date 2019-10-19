@@ -1,5 +1,5 @@
 ---
-title: CA1811:呼び出されていないプライベート コードの回避 |Microsoft Docs
+title: 'CA1811: 呼び出されるプライベートコードを回避する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,51 +12,51 @@ helpviewer_keywords:
 - AvoidUncalledPrivateCode
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157977"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668458"
 ---
-# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:呼び出されていないプライベート コードを使用しません
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: 呼び出されていないプライベート コードを使用しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|カテゴリ|Microsoft.Performance|
+|カテゴリ|Microsoft. パフォーマンス|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- プライベートまたは内部 (アセンブリ レベル) メンバーは、アセンブリが呼び出し元がありません。 は、共通言語ランタイムによって呼び出されません、およびによってデリゲートは呼び出されません。 このルールでは、次のメンバーはチェックされません。
+ プライベートまたは内部 (アセンブリレベル) のメンバーは、アセンブリ内の呼び出し元を持っていません。共通言語ランタイムによって呼び出されず、デリゲートによって呼び出されません。 次のメンバーは、この規則によってチェックされません。
 
-- 明示的なインターフェイスのメンバー。
+- 明示的なインターフェイスメンバー。
 
-- 静的コンス トラクター。
+- 静的コンストラクター。
 
-- シリアル化コンス トラクター。
+- シリアル化コンストラクター。
 
-- マークされたメソッド<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>または<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>します。
+- @No__t_0 または <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> でマークされたメソッド。
 
-- オーバーライドするメンバー。
+- オーバーライドされるメンバー。
 
 ## <a name="rule-description"></a>規則の説明
- このルールは、偽陽性のエントリ ポイントが発生した場合は現在、規則のロジックを識別しないレポートできます。 また、コンパイラは、アセンブリに noncallable コードを生成する可能性があります。
+ このルールは、ルールロジックで現在識別されていないエントリポイントが発生した場合に、偽陽性を報告できます。 また、コンパイラが呼び出し不可能なコードをアセンブリに出力する場合もあります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、noncallable コードを削除するか、それを呼び出すコードを追加します。
+ この規則違反を修正するには、呼び出し不可能なコードを削除するか、それを呼び出すコードを追加します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- このルールから警告を抑制しても安全です。
+ このルールからの警告を抑制するのは安全です。
 
 ## <a name="related-rules"></a>関連規則
- [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: インスタンス化されていない内部クラスを使用しないでください](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA 1801:未使用のパラメーターをレビューします](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: 使用されていないパラメーターをレビューします](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: 使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)

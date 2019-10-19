@@ -14,26 +14,26 @@ helpviewer_keywords:
 - Visual Studio Start page
 ms.assetid: 925d42eb-ec34-426e-ad81-19db8630e536
 caps.latest.revision: 48
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266082af039ee7f0ba2bd60e0c9a67145aaed1d3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701138"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665851"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio のスタート ページのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio のスタート ページは、既定のさまざまな方法でカスタマイズできます。**[プロジェクトを開く]** ダイアログ ボックスを表示することも、最後に読み込まれたソリューションを開くこともできます。 また、カスタム スタート ページを表示することもできます。これは、ツール ウィンドウで実行される Windows Presentation Foundation (WPF) の XAML ページで、Visual Studio 内のコマンドを実行できます。
+Visual Studio のスタート ページは、既定のさまざまな方法でカスタマイズできます。 **[プロジェクトを開く]** ダイアログ ボックスを表示することも、最後に読み込まれたソリューションを開くこともできます。 また、カスタム スタート ページを表示することもできます。これは、ツール ウィンドウで実行される Windows Presentation Foundation (WPF) の XAML ページで、Visual Studio 内のコマンドを実行できます。
 
 ## <a name="customizing-the-default-start-page"></a>既定のスタート ページのカスタマイズ
 
-1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。
+1. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
 
-2. **[環境]** を展開し、**[スタートアップ]** を選びます。
+2. **[環境]** を展開し、 **[スタートアップ]** を選びます。
 
 3. **[スタートアップ時]** の一覧で、カスタマイズ対象の項目を選びます。
 
@@ -52,9 +52,9 @@ Visual Studio のスタート ページは、既定のさまざまな方法で�
 
          「[Creating Your Own Start Page (独自のスタート ページの作成)](../misc/creating-your-own-start-page.md)」をご覧ください。
 
-2. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。
+2. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
 
-3. **[環境]** を展開し、**[スタートアップ]** を選びます。
+3. **[環境]** を展開し、 **[スタートアップ]** を選びます。
 
 4. **[スタート ページのカスタマイズ]** の一覧で、使用するページを選択します。
 

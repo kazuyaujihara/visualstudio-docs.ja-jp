@@ -1,5 +1,5 @@
 ---
-title: CA1711:識別子は不適切なサフィックスをな |Microsoft Docs
+title: 'CA1711: 識別子は正しくないサフィックス | を含むことはできませんMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,24 +12,24 @@ helpviewer_keywords:
 - IdentifiersShouldNotHaveIncorrectSuffix
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0ed08a50ce7e4c665839f6dccb4913e13d0d774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669181"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別子は、不適切なサフィックスを含むことはできません
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: 識別子は、不適切なサフィックスを含むことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
@@ -53,9 +53,9 @@ ms.locfileid: "65676473"
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
 |ストリーム|<xref:System.IO.Stream?displayProperty=fullName>|
 
- さらに、次のサフィックスが必要があります**いない**使用します。
+ また、次のサフィックスは使用**しない**でください。
 
-- Delegate
+- delegate
 
 - Enum
 
@@ -72,7 +72,7 @@ ms.locfileid: "65676473"
  アプリケーション ドメインでサフィックスに明確な意味がある場合を除き、この規則による警告を抑制しないでください。
 
 ## <a name="related-rules"></a>関連規則
- [CA1710:識別子は、正しいサフィックスをいなければなりません](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+ [CA1710: 識別子は、正しいサフィックスを含んでいなければなりません](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>関連項目
- [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB:イベントとデリゲート](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+## <a name="see-also"></a>参照
+ [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: イベントとデリゲート](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -3,37 +3,37 @@ title: DTE を使って Visual Studio を起動する
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747013"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647959"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE を使って Visual Studio を起動する
 
-Visual Studio 2017 以降では、DTE を使用して Visual Studio を起動するためのメカニズムは、以前のバージョンの Visual Studio を起動するのには異なります。 この変更は、主要なリリースの Visual Studio 2017 と以降のサポートをサイド バイ サイド インストールのために必要な (たとえば、したプレビューとリリース バージョンのサイドでインストール)。
+Visual Studio 2017 以降では、DTE を使用して Visual Studio を起動するメカニズムは、以前のバージョンの Visual Studio を起動することとは異なります。 この変更が必要になるのは、Visual Studio 2017 以降ではメジャーリリースのサイドバイサイドインストールがサポートされるためです (たとえば、プレビューとリリースバージョンをサイドバイサイドでインストールできます)。
 
-この記事の残りの部分では、Visual Studio 2019 が DTE を使用してを起動に使用できるコードを示します。
+この記事の残りの部分では、DTE を使用して Visual Studio 2019 を起動するために使用できるコードを示します。
 
-## <a name="set-up-the-project"></a>プロジェクトを設定します。
+## <a name="set-up-the-project"></a>プロジェクトを設定する
 
-アクションの起動コードを表示するには、次の手順に従って、プロジェクトを作成します。
+動作中のコードを確認するには、次の手順に従ってプロジェクトを作成します。
 
-1. 新規作成**コンソール アプリ**.NET Framework 用のプロジェクト。
+1. .NET Framework 用の新しい**コンソールアプリ**プロジェクトを作成します。
 
-2. インストール、 [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet パッケージ化し、アセンブリへの参照を追加します。
+2. [VisualStudio](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet パッケージをインストールし、アセンブリへの参照を追加します。
 
 3. EnvDTE への参照を追加します。
 
-4. 貼り付け、[のコード例](#example-code)に続く、 *Program.cs*ファイル。
+4. 次の[コード例](#example-code)を*Program.cs*ファイルに貼り付けます。
 
-5. キーを押して**F5**プログラムを実行します。 Visual Studio 2019 が、プログラムが終了する前に開くことがわかります。
+5. **F5**キーを押してプログラムを実行します。 プログラムが終了する前に Visual Studio 2019 が開いていることを確認してください。
 
 ## <a name="example-code"></a>コード例
 
@@ -187,5 +187,5 @@ namespace ConsoleLauncherApp
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio を検索します。](locating-visual-studio.md)
-- [チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスします。](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [Visual Studio の検索](locating-visual-studio.md)
+- [チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

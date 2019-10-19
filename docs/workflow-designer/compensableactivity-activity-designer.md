@@ -1,45 +1,45 @@
 ---
-title: ワークフロー デザイナー - CompensableActivity アクティビティ デザイナー
+title: ワークフローデザイナー CompensableActivity アクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe5a207136b44e61beff77bec8c8c7b869568b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f498c6d025e7527b9767284a77c953e538cef377
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949899"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650663"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity アクティビティ デザイナー
 
-**CompensableActivity**作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.CompensableActivity>アクティビティ。
+**CompensableActivity**アクティビティデザイナーは、<xref:System.Activities.Statements.CompensableActivity> アクティビティを作成および構成するために使用されます。
 
 ## <a name="the-compensableactivity-activity"></a>CompensableActivity アクティビティ
  <xref:System.Activities.Statements.CompensableActivity> で、正常に完了した後に確認または補正できる作業単位を定義します。
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>CompensableActivity アクティビティ デザイナーの使用
- **CompensableActivity**アクティビティ デザイナーが記載されて、**トランザクション**のカテゴリ**ツールボックス**します。 開くには**ツールボックス**を選択、**ツールボックス**ワークフロー デザイナーの左側にあるタブ。 または、選択**ツールボックス**から、**ビュー**メニューのまたはキーを押して**Ctrl**+**Alt** + **X**します。
+ **CompensableActivity**アクティビティデザイナーは、 **[ツールボックス]** の **[トランザクション]** カテゴリにあります。 **ツールボックス**を開くには、ワークフローデザイナーの左側にある **[ツールボックス]** タブを選択します。 または、 **[表示]** メニューの **[ツールボックス]** を選択するか、 **ctrl** +**Alt** +**X**キーを押します。
 
- **CompensableActivity**からアクティビティ デザイナーをドラッグできる**ツールボックス**し、ワークフロー デザイナー画面にドロップします。 内のアクティビティ デザイナーをドロップすることが、<xref:System.Activities.Statements.Sequence>します。 アクティビティ デザイナーをドロップを作成、 <xref:System.Activities.Statements.CompensableActivity> 、既定値は、アクティビティ<xref:System.Activities.Activity.DisplayName%2A>CompensableActivity の。 編集、<xref:System.Activities.Activity.DisplayName%2A>のヘッダー値、 **CompensableActivity**アクティビティ デザイナー。 も編集できます、 **DisplayName**プロパティ グリッドのボックスです。
+ **CompensableActivity**アクティビティデザイナーは、 **[ツールボックス]** からドラッグしてワークフローデザイナー画面にドロップできます。 アクティビティデザイナーは <xref:System.Activities.Statements.Sequence> 内にドロップできます。 アクティビティデザイナーを削除すると、既定の <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity の <xref:System.Activities.Statements.CompensableActivity> アクティビティが作成されます。 **CompensableActivity**アクティビティデザイナーのヘッダーで <xref:System.Activities.Activity.DisplayName%2A> 値を編集します。 また、プロパティグリッドの **[DisplayName]** ボックスで編集することもできます。
 
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity のプロパティ
- 次の表に、<xref:System.Activities.Statements.CompensableActivity> のプロパティと、デザイナーでのその使用方法を示します。 <xref:System.Activities.Activity.DisplayName%2A>と<xref:System.Activities.Activity%601.Result%2A>プロパティ グリッドでプロパティを編集できますが、その他のプロパティは、ワークフロー デザイナー画面で編集する必要があります。
+ 次の表に、<xref:System.Activities.Statements.CompensableActivity> のプロパティと、デザイナーでのその使用方法を示します。 @No__t_0 および <xref:System.Activities.Activity%601.Result%2A> プロパティはプロパティグリッドで編集できますが、他のプロパティはワークフローデザイナーサーフェイスで編集する必要があります。
 
-|プロパティ名|必須|使用方法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> アクティビティの省略可能な表示名。 既定値は CompensableActivity です。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|<xref:System.Activities.Statements.CompensableActivity> の戻り値を指定します。 このプロパティは、プロパティ グリッドで編集する必要があります。|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|補正、取り消し、および確認の各ロジックの提供対象のアクティビティを指定します。 追加する、<xref:System.Activities.Statements.CompensableActivity.Body%2A>アクティビティからアクティビティのドロップ**ツールボックス**に、**本文**ボックスに、 **CompensableActivity**アクティビティ デザイナー。 「アクティビティをドロップここで」ヒント テキストを追加します。|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|取り消しがあるときに実行されるアクティビティを指定します。 アクティビティを追加するからデザイナーをドロップ**ツールボックス**に、 **CancellationHandler**ボックスに、 **CompensableActivity**アクティビティ デザイナー。 「削除アクティビティここ」ヒント テキストを追加します。|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> アクティビティの補正を行うときに実行されるアクティビティを指定します。 このハンドラーは、<xref:System.Activities.Statements.Compensate> アクティビティを使用して明示的に呼び出すことができます。<br /><br /> アクティビティを追加するからアクティビティ デザイナーをドロップ**ツールボックス**に、 **CompensationHandler**ボックスに、 **CompensableActivity**アクティビティ デザイナー。 「削除アクティビティここ」ヒント テキストを追加します。|
-|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> アクティビティを確認するときに実行されるアクティビティを指定します。 このハンドラーは、<xref:System.Activities.Statements.Confirm> アクティビティを使用して明示的に呼び出すことができます。<br /><br /> アクティビティを追加するからアクティビティ デザイナーをドロップ**ツールボックス**に、 **ConfirmationHandler**ボックスに、 **CompensableActivity**アクティビティ デザイナー。 「削除アクティビティここ」ヒント テキストを追加します。|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|補正、取り消し、および確認の各ロジックの提供対象のアクティビティを指定します。 @No__t_0 アクティビティを追加するには、 **CompensableActivity**アクティビティデザイナーの **[Body]** ボックスに、 **[ツールボックス]** からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|取り消しが発生したときに実行されるアクティビティを指定します。 アクティビティを追加するには、**ツールボックス**から**CompensableActivity**アクティビティデザイナーの **[CancellationHandler]** ボックスにデザイナーをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> アクティビティの補正を行うときに実行されるアクティビティを指定します。 このハンドラーは、<xref:System.Activities.Statements.Compensate> アクティビティを使用して明示的に呼び出すことができます。<br /><br /> アクティビティを追加するには、アクティビティデザイナーを **[ツールボックス]** から**CompensableActivity**アクティビティデザイナーの **[CompensationHandler]** ボックスにドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
+|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> アクティビティを確認するときに実行されるアクティビティを指定します。 このハンドラーは、<xref:System.Activities.Statements.Confirm> アクティビティを使用して明示的に呼び出すことができます。<br /><br /> アクティビティを追加するには、アクティビティデザイナーを **ツールボックス** から**CompensableActivity**アクティビティデザイナーの  **confirmationhandler**  ボックスにドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
 
 ## <a name="see-also"></a>関連項目
 
