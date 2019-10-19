@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818164"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648833"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>データベースの画像にコントロールをバインドする
 
@@ -39,15 +39,15 @@ ms.locfileid: "62818164"
 2. **[データ ソース]** ウィンドウで、目的のテーブルまたはオブジェクトを展開して、その列またはプロパティを表示します。
 
    > [!TIP]
-   > 場合、**データソース**を選択して開くウィンドウが開いていないことが**ビュー** > **その他の Windows** > **データソース**.
+   > **[データソース]** ウィンドウが開いていない場合は、[**他の Windows**  > **データソース**を**表示** > ] を選択して開きます。
 
 3. イメージ データを含む列またはプロパティを選択し、ドロップダウン コントロール リストから次のいずれかのコントロールを選択します。
 
-    - WPF デザイナーが開いている場合は、**[Image]** を選択します。
+    - WPF デザイナーが開いている場合は、 **[Image]** を選択します。
 
-    - Windows フォーム デザイナーが開いている場合は、**[PictureBox]** を選択します。
+    - Windows フォーム デザイナーが開いている場合は、 **[PictureBox]** を選択します。
 
-    - または、データ バインディングをサポートし、かつイメージを表示できる、別のコントロールを選択することもできます。 使用するコントロールが利用できるコントロールのリストに含まれていない場合は、そのコントロールをリストに追加してから選択できます。 詳細については、次を参照してください。[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。
+    - または、データ バインディングをサポートし、かつイメージを表示できる、別のコントロールを選択することもできます。 使用するコントロールが利用できるコントロールのリストに含まれていない場合は、そのコントロールをリストに追加してから選択できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

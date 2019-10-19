@@ -1,5 +1,5 @@
 ---
-title: CA2124:ラップの脆弱性のある finally 句の外側を try |Microsoft Docs
+title: 'CA2124: 脆弱性のある finally 句を外側の try | でラップします。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660245"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:脆弱性のある finally 句を外側の try でラップします
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: 脆弱性のある finally 句の外側を try ブロックでラップします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
-|Category|Microsoft.Security|
+|カテゴリ|Microsoft.Security|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- バージョン 1.0 および 1.1 では、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、public または protected のメソッドが含まれています、 `try` / `catch` / `finally`ブロックします。 `finally`ブロックをセキュリティの状態をリセットしてで囲まれていない、`finally`ブロックします。
+ @No__t_0 のバージョン1.0 および1.1 では、パブリックメソッドまたはプロテクトメソッドに `try` / `catch` / `finally` ブロックが含まれています。 @No__t_0 ブロックがセキュリティ状態をリセットしているため、`finally` ブロックで囲まれていません。
 
 ## <a name="rule-description"></a>規則の説明
- このルールでは検索`try` / `finally`バージョン 1.0 および 1.1 を対象とするコードのブロック、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]呼び出し履歴に存在する悪意のある例外フィルターを受ける可能性があります。 偽装などの機密情報の操作が、try ブロックで発生して、例外がスローされた、フィルターが実行する前に、`finally`ブロックします。 権限借用の使用例、フィルターが権限を借用したユーザーとして実行されていることを意味します。 フィルターは、現在、Visual Basic でのみ実装できます。
+ このルールは、コールスタックに存在する悪意のある例外フィルターに対して脆弱である可能性がある [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョン1.0 および1.1 を対象とするコード内の / `finally` ブロック `try` を検索します。 偽装などの機密性の高い操作が try ブロックで発生し、例外がスローされた場合、フィルターは `finally` ブロックの前に実行できます。 偽装の例では、これは、フィルターが権限を借用したユーザーとして実行されることを意味します。 現在、フィルターは Visual Basic のみで実装できます。
 
 > [!WARNING]
-> 2\.0 以降のバージョンでは、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ランタイムが自動的に保護を`try` / `catch` /  `finally`メソッド内で直接、リセットが発生した場合、悪意のある例外フィルターを禁止します。例外ブロックが含まれています。
+> @No__t_0 のバージョン2.0 以降では、例外ブロックを含むメソッド内でリセットが直接行われた場合、ランタイムは、悪意のある例外フィルターから `catch` /  `finally` ブロックの `try` / を自動的に保護します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 配置、ラップされていない`try` / `finally` try ブロックの外側でします。 次の 2 つ目の例を参照してください。 これにより、`finally`フィルター コードの前に実行します。
+ ラップされていない `try` / `finally` を外側の try ブロックに配置します。 次の2番目の例を参照してください。 これにより、フィルターコードの前に `finally` が強制的に実行されます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
@@ -67,7 +67,7 @@ finally {
 ```
 
 ## <a name="example"></a>例
- 次の擬似コードでは、コードを保護して、このルールを満たすために使用できるパターンを示します。
+ 次の擬似コードは、コードを保護し、この規則を満たすために使用できるパターンを示しています。
 
 ```
 try {

@@ -1,5 +1,5 @@
 ---
-title: CA1303:リテラルにローカライズされたパラメーターが渡されない |Microsoft Docs
+title: 'CA1303: ローカライズされたパラメーターとしてリテラルを渡さないでください |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,54 +13,54 @@ helpviewer_keywords:
 - CA1303
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fafcf113f5f40da3bcc4666778330865dcdfb84c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ce85a3a933d9453c63ef118d5dfd9e0b17cbf130
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686808"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661457"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303:ローカライズされるパラメーターとしてリテラルを渡さない
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: ローカライズされたパラメーターとしてリテラルを渡さないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
-|カテゴリ|Microsoft.Globalization|
+|カテゴリ|Microsoft のグローバリゼーション|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- メソッドを文字列リテラルをパラメーターとして渡しコンス トラクターまたはメソッドに、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]クラス ライブラリおよびローカライズ可能な文字列である必要があります。
+ メソッドは、パラメーターとして文字列リテラルを [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] クラスライブラリ内のコンストラクターまたはメソッドに渡します。この文字列はローカライズ可能である必要があります。
 
- パラメーターまたはプロパティにリテラル文字列が値として渡され、1 つ以上の次の場合は true、この警告が発生します。
+ この警告は、リテラル文字列が値としてパラメーターまたはプロパティに渡され、次の1つ以上のケースが true の場合に発生します。
 
-- <xref:System.ComponentModel.LocalizableAttribute>パラメーターまたはプロパティの属性が設定を true にします。
+- パラメーターまたはプロパティの <xref:System.ComponentModel.LocalizableAttribute> 属性が true に設定されています。
 
-- パラメーターまたはプロパティ名には、"Text"、"Message"または「キャプション」が含まれています。
+- パラメーターまたはプロパティ名には、"Text"、"Message"、または "Caption" が含まれています。
 
-- Console.Write"または"Console.WriteLine メソッドに渡される文字列パラメーターの名前は、"value"または「形式」のいずれかです。
+- Console に渡される文字列パラメーターの名前です。 Write または Console. WriteLine メソッドは、"value" または "format" のいずれかです。
 
 ## <a name="rule-description"></a>規則の説明
- ソース コードに埋め込まれている文字列リテラルは、ローカライズが困難です。
+ ソースコードに埋め込まれている文字列リテラルをローカライズするのは困難です。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正するには、インスタンスを通じて取得された文字列を文字列リテラルを置き換える、<xref:System.Resources.ResourceManager>クラス。
+ この規則違反を修正するには、文字列リテラルを <xref:System.Resources.ResourceManager> クラスのインスタンスを通じて取得される文字列に置き換えます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- コード ライブラリをローカライズしない場合、または文字列が、エンドユーザーまたはコード ライブラリを使用して開発者に公開されない場合は、この規則による警告を抑制しても安全になります。
+ コードライブラリがローカライズされていない場合、またはコードライブラリを使用して、エンドユーザーまたは開発者に対して文字列が公開されていない場合は、この規則による警告を抑制することが安全です。
 
- ユーザーは、渡す必要がないあるローカライズされた文字列パラメーターまたはという名前のプロパティを名前変更して、またはこれらのアイテムを条件付きとしてマークすることによってメソッドに対してノイズを回避できます。
+ ユーザーは、という名前のパラメーターまたはプロパティの名前を変更するか、これらの項目を条件付きとしてマークすることによって、ローカライズされた文字列を渡さないメソッドに対するノイズを排除できます。
 
 ## <a name="example"></a>例
- 次の例では、範囲外の 2 つの引数のいずれかのときに例外をスローするメソッドを示します。 最初の引数の例外のコンス トラクターに、この規則に違反するリテラル文字列が渡されます。 2 番目の引数のコンス トラクターが正しく渡されますを介して取得された文字列を<xref:System.Resources.ResourceManager>します。
+ 次の例は、2つの引数のいずれかが範囲外にある場合に例外をスローするメソッドを示しています。 最初の引数では、この規則に違反するリテラル文字列が例外コンストラクターに渡されます。 2番目の引数については、<xref:System.Resources.ResourceManager> によって取得された文字列がコンストラクターに正しく渡されます。
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cpp/FxCop.Globalization.DoNotPassLiterals.cpp#1)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [デスクトップ アプリケーションのリソース](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

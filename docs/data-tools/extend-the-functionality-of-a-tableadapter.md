@@ -10,41 +10,41 @@ helpviewer_keywords:
 - data [Visual Studio], extending TableAdapters
 - TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e92b820b04913733095645d21ad682bff40acd84
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567433"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648493"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>TableAdapter の機能を拡張する
 
-TableAdapter の機能を拡張するには、TableAdapter の部分クラス ファイルにコードを追加します。
+Tableadapter の部分クラスファイルにコードを追加することにより、TableAdapter の機能を拡張できます。
 
-TableAdapter に変更されたときに TableAdapter を定義するコードが再生成、**データセット デザイナー**、またはウィザードが、TableAdapter の構成を変更します。 コードが、TableAdapter の再生成中に削除されないようにするには、TableAdapter の部分クラス ファイルにコードを追加します。
+TableAdapter を定義するコードは、**データセットデザイナー**内の tableadapter に変更が加えられた場合、またはウィザードによって tableadapter の構成が変更された場合に再生成されます。 TableAdapter の再生成時にコードが削除されないようにするには、TableAdapter の部分クラスファイルにコードを追加します。
 
-部分クラスは、特定のクラスを複数の物理ファイルに分割するためのコードを使用します。 詳細については、次を参照してください。[部分](/dotnet/visual-basic/language-reference/modifiers/partial)または[partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)します。
+部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](/dotnet/visual-basic/language-reference/modifiers/partial)または[partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)」を参照してください。
 
-## <a name="locate-tableadapters-in-code"></a>コード内で Tableadapter を検索します。
+## <a name="locate-tableadapters-in-code"></a>コードでの Tableadapter の検索
 
-Tableadapter は設計されています中に、**データセット デザイナー**、生成された TableAdapter クラスの入れ子になったクラスでない<xref:System.Data.DataSet>します。 Tableadapter は、TableAdapter の関連付けられているデータセットの名前に基づいて、名前空間に配置されます。 たとえば、アプリケーションには、という名前のデータセットが含まれている場合`HRDataSet`、Tableadapter に配置されます、`HRDataSetTableAdapters`名前空間。 (名前付け規則がこのパターンに従います。*DatasetName* + `TableAdapters`)。
+Tableadapter は**データセットデザイナー**で設計されていますが、生成される tableadapter クラスは <xref:System.Data.DataSet> の入れ子になったクラスではありません。 Tableadapter は、TableAdapter に関連付けられたデータセットの名前に基づいて名前空間に配置されます。 たとえば、アプリケーションに `HRDataSet` という名前のデータセットが含まれている場合、Tableadapter は `HRDataSetTableAdapters` 名前空間に配置されます。 (名前付け規則がこのパターンに従います: *DatasetName* + `TableAdapters`)。
 
-次の例では、という名前の TableAdapter`CustomersTableAdapter`のプロジェクトでは、`NorthwindDataSet`します。
+次の例では、`NorthwindDataSet` を持つプロジェクトで `CustomersTableAdapter`is という名前の TableAdapter が想定されています。
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>TableAdapter の部分クラスを作成するには
 
-1. 移動して、プロジェクトに新しいクラスを追加、**プロジェクト**メニュー**クラスの追加**します。
+1. **[プロジェクト]** メニューの **[クラスの追加]** をクリックして、新しいクラスをプロジェクトに追加します。
 
 2. クラスに `CustomersTableAdapterExtended` という名前を付けます。
 
 3. **[追加]** を選びます。
 
-4. 正しい名前空間と、プロジェクトの名前を部分クラスとしては、次のようにコードを置き換えます。
+4. 次のように、プロジェクトの正しい名前空間と部分クラス名でコードを置き換えます。
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

@@ -15,26 +15,26 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9aca29de7e9c5a01e0c2caad2c42015cd31b3f75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8ab7bb827c478360a64d65f44af6770c77ebf77
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565187"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648135"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>データセットの読み込み中に制約をオフにする
 
-データセットに制約 (外部キー制約) などが含まれている場合、データセットに対して実行される操作の順序に関連するエラーを発行できます。 親レコードの制約に違反してエラーが発生することができますが、関連読み込み前に子レコードの読み込み。 子レコードを読み込んだ直後に、関連する親があるかどうかが制約でチェックされ、エラーが生成されます。
+データセットに制約 (外部キー制約など) が含まれている場合は、データセットに対して実行される操作の順序に関連するエラーが発生することがあります。 たとえば、関連する親レコードを読み込む前に子レコードを読み込むと、制約に違反してエラーが発生する可能性があります。 子レコードを読み込んだ直後に、関連する親があるかどうかが制約でチェックされ、エラーが生成されます。
 
 一時的に制約を中断する機構がない場合は、レコードを子テーブルに読み込もうとするたびにエラーが生成されます。 データセットのすべての制約を中断する別の方法として、<xref:System.Data.DataRow.BeginEdit%2A> プロパティおよび <xref:System.Data.DataRow.EndEdit%2A> プロパティを使用できます。
 
 > [!NOTE]
-> 検証イベント (たとえば、<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>) 制約がになっているときに発生しません。
+> 検証イベント (たとえば、<xref:System.Data.DataTable.ColumnChanging> や <xref:System.Data.DataTable.RowChanging>) は、制約がオフになっている場合には発生しません。
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>更新制約をプログラムによって中断するには
 
@@ -45,7 +45,7 @@ ms.locfileid: "62565187"
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>データセット デザイナーを使って更新制約を中断するには
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. **[プロパティ]** ウィンドウで、 <xref:System.Data.DataSet.EnforceConstraints%2A> プロパティを `false`に設定します。
 

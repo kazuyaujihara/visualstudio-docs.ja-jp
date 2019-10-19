@@ -1,5 +1,5 @@
 ---
-title: CA1053:スタティック ホルダー型には、コンス トラクターはありません |Microsoft Docs
+title: 'CA1053: スタティックホルダー型はコンストラクターを含むことはできません |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83000143674e7cc3bc412c0ca8a579660160514c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444552"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653824"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:スタティック ホルダー型はコンストラクターを含むことはできません
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: スタティック ホルダー型にはコンストラクターを含めません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
  パブリック型または入れ子になったパブリック型で、静的なメンバーのみが宣言されています。また、パブリックまたはプロテクトの既定のコンストラクターが含まれます。
 
 ## <a name="rule-description"></a>規則の説明
- 静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 また、型が非静的メンバーを持たないためインスタンスを作成するアクセスことはできません型のメンバーのいずれかに。
+ 静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 また、型には非静的メンバーがないため、インスタンスを作成しても、型のメンバーへのアクセスは提供されません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、既定のコンス トラクターを削除するか、プライベートになります。
+ この規則違反を修正するには、既定のコンストラクターを削除するか、またはプライベートにします。
 
 > [!NOTE]
-> 型はコンス トラクターを定義していない場合、一部のコンパイラは自動的に既定のパブリック コンス トラクターを作成します。 型の場合は場合、違反を防ぐために既定のプライベート コンス トラクターを追加します。
+> コンパイラによっては、型でコンストラクターが定義されていない場合に、パブリックな既定のコンストラクターが自動的に作成されます。 これが型の場合は、プライベートな既定のコンストラクターを追加して違反を排除します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この規則による警告は抑制しないでください。 コンス トラクターのプレゼンスは、型が静的な型ではないことを提案します。
+ この規則による警告は抑制しないでください。 コンストラクターが存在する場合は、型が静的な型ではないことを示します。
 
 ## <a name="example"></a>例
- 次の例では、この規則に違反する型を示します。 ソース コードで既定のコンス トラクターがないことに注意してください。 このコードがアセンブリにコンパイルされると、c# コンパイラは既定コンス トラクターは、このルールに違反するを挿入します。 これを修正するには、プライベート コンス トラクターを宣言します。
+ 次の例は、この規則に違反する型を示しています。 ソースコードに既定のコンストラクターがないことに注意してください。 このコードがアセンブリにコンパイルされると、 C#コンパイラによって既定のコンストラクターが挿入され、この規則に違反することになります。 これを修正するには、プライベートコンストラクターを宣言します。
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

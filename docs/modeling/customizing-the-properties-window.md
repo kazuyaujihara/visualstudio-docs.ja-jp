@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c11c9da607e983dcde0b84ac236943751bca71c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251855"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653958"
 ---
 # <a name="customize-the-properties-window"></a>プロパティウィンドウをカスタマイズする
 
@@ -24,9 +24,9 @@ Visual Studio のドメイン固有言語 (DSL) で、[プロパティ] ウィ�
 
 **名前と表示名**。 ドメインプロパティの定義では、プロパティの表示名は、実行時に [プロパティ] ウィンドウに表示される名前です。 これに対し、この名前は、プロパティを更新するプログラムコードを記述するときに使用されます。 名前は正しい CLR 英数字名にする必要がありますが、表示名にスペースを含めることができます。
 
-DSL 定義でプロパティの名前を設定すると、その表示名が自動的に名前のコピーに設定されます。 "Futex Elゲージ" などの Pascal 形式の名前を記述した場合、表示名には自動的にスペースが含まれます。"燃料ゲージ"。 ただし、表示名を明示的に別の値に設定することもできます。
+DSL 定義でプロパティの名前を設定すると、その表示名が自動的に名前のコピーに設定されます。 "Futex" のような Pascal 形式の名前を記述した場合、表示名には自動的にスペース "燃料ゲージ" が含まれます。 ただし、表示名を明示的に別の値に設定することもできます。
 
-**説明**です。 ドメインプロパティの説明は、次の2つの場所に表示されます。
+**説明**。 ドメインプロパティの説明は、次の2つの場所に表示されます。
 
 - ユーザーがプロパティを選択したときに、[プロパティ] ウィンドウの下部に表示されます。 これを使用すると、プロパティが表す内容をユーザーに説明することができます。
 
@@ -40,9 +40,9 @@ DSL 定義でプロパティの名前を設定すると、その表示名が自�
 
 DSL 定義でシェイプクラスを右クリックし、 **[公開の追加]** をポイントして、機能を選択します。
 
-図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および**FillGradientMode**の各プロパティを公開できます。 コネクタで**は、** `,`**textcolor**、**ダッシュスタイル**、および**太さ**の各プロパティを公開できます。 ダイアグラムでは、 **FillColor**プロパティと**textcolor**プロパティを公開できます。
+図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および**FillGradientMode**の各プロパティを公開できます。 コネクタでは、**Textcolor**、**ダッシュスタイル**、および**太さ**の各プロパティ `,`**色**を公開できます。 ダイアグラムでは、 **FillColor**プロパティと**textcolor**プロパティを公開できます。
 
-## <a name="forwarding-display-properties-of-related-elements"></a>ルーティング関連要素のプロパティを表示する
+## <a name="forwarding-display-properties-of-related-elements"></a>転送: 関連する要素のプロパティを表示します。
 
 DSL のユーザーがモデル内の要素を選択すると、その要素のプロパティが [プロパティ] ウィンドウに表示されます。 ただし、指定された関連要素のプロパティを表示することもできます。 これは、連携して動作する要素のグループを定義している場合に便利です。 たとえば、main 要素とオプションのプラグイン要素を定義することができます。 メイン要素が図形にマップされていて、もう一方が図形でない場合は、すべてのプロパティを1つの要素上にあるかのように表示すると便利です。
 
@@ -52,7 +52,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 ユーザーが図形またはコネクタ、またはエクスプローラーで要素を選択すると、次のプロパティがプロパティウィンドウに表示されます。
 
-- モデル要素のドメインクラスで定義されているドメインプロパティ。基本クラスで定義されているものも含まれます。 例外とは、 `False`**の設定を参照できるドメイン**プロパティのことです。
+- モデル要素のドメインクラスで定義されているドメインプロパティ。基本クラスで定義されているものも含まれます。 例外として、`False` に**参照できるように設定し**たドメインプロパティがあります。
 
 - 多重度が 0 ..1 のリレーションシップによってリンクされる要素の名前。 これにより、リレーションシップのコネクタマッピングが定義されていない場合でも、必要に応じてリンクされた要素を表示するための便利な方法が提供されます。
 
@@ -71,7 +71,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 #### <a name="forward-a-property-from-another-element"></a>別の要素からプロパティを転送する
 
-1. 少なくと[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]も2つのクラスを含むソリューションを作成します。この例では、 **Book**と**Author**と呼ばれています。 **本**と**著者**の間には、どちらの種類のリレーションシップもあります。
+1. 少なくとも2つのクラスを含む [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ソリューションを作成します。この例では、 **Book**と**Author**と呼ばれています。 **本**と**著者**の間には、どちらの種類のリレーションシップもあります。
 
     各**ブック**に1つの**作成者**が含まれるように、ソースロール (**書籍**側のロール) の多重度は 0 ..1 または 1 ..1 にする必要があります。
 
@@ -132,7 +132,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
     プロパティウィンドウの **[種類]** フィールドで、ドロップダウンリストから外部の種類を選択します。
 
-   この段階では、ユーザーはプロパティの値を表示できますが、編集することはできません。 表示される値は、 `ToString()`関数から取得されます。 コマンドやルールなどのプロパティの値を設定するプログラムコードを記述することもできます。
+   この段階では、ユーザーはプロパティの値を表示できますが、編集することはできません。 表示される値は `ToString()` 関数から取得されます。 コマンドやルールなどのプロパティの値を設定するプログラムコードを記述することもできます。
 
 ### <a name="set-a-property-editor"></a>プロパティエディターの設定
 
@@ -146,9 +146,9 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 プロパティの属性を設定するには、プロパティウィンドウの**カスタム属性**エントリを使用します。
 
-の`AnEditor`型は、2番目のパラメーターで指定された型から派生する必要があります。 2番目のパラメーターは<xref:System.Drawing.Design.UITypeEditor> 、 <xref:System.ComponentModel.ComponentEditor>またはのいずれかである必要があります。 詳細については、「 <xref:System.ComponentModel.EditorAttribute> 」を参照してください。
+@No__t_0 の型は、2番目のパラメーターで指定した型から派生している必要があります。 2番目のパラメーターは <xref:System.Drawing.Design.UITypeEditor> または <xref:System.ComponentModel.ComponentEditor> のいずれかである必要があります。 詳細については、「<xref:System.ComponentModel.EditorAttribute>」を参照してください。
 
-独自のエディターまた<xref:System.Windows.Forms.Design.FileNameEditor>は .net エディター (や<xref:System.Drawing.Design.ImageEditor>など) を指定できます。 たとえば、次の手順を使用して、ユーザーがファイル名を入力できるプロパティを設定します。
+独自のエディターまたは .NET エディター (<xref:System.Windows.Forms.Design.FileNameEditor> や <xref:System.Drawing.Design.ImageEditor> など) を指定できます。 たとえば、次の手順を使用して、ユーザーがファイル名を入力できるプロパティを設定します。
 
 #### <a name="define-a-file-name-domain-property"></a>ファイル名ドメインプロパティの定義
 
@@ -169,7 +169,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
     1. CTRL キーを押しながら F5 キーを押すか、F5 キーを押します。 デバッグソリューションで、テストファイルを開きます。 ドメインクラスの要素を作成し、それを選択します。
 
-    2. プロパティウィンドウで、ドメイン プロパティを選択します。 [値] フィールドは、省略記号を示しています **[...]** 。
+    2. プロパティウィンドウで、ドメイン プロパティを選択します。 [値] フィールドには、省略記号 **[...]** が表示されます。
 
     3. 省略記号をクリックします。 ファイルのダイアログボックスが表示されます。 ファイルを選択して、ダイアログボックスを閉じます。 これで、ファイルパスがドメインプロパティの値になりました。
 
@@ -177,18 +177,18 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 独自のエディターを定義できます。 これは、ユーザーが定義した型を編集できるようにするか、標準型を特別な方法で編集するために行います。 たとえば、式を表す文字列をユーザーが入力できるようにすることができます。
 
-エディターを定義するには、から<xref:System.Drawing.Design.UITypeEditor>派生したクラスを記述します。 クラスは次をオーバーライドする必要があります。
+@No__t_0 から派生したクラスを記述することによって、エディターを定義します。 クラスは次をオーバーライドする必要があります。
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>。ユーザーと対話し、プロパティ値を更新します。
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>、ユーザーと対話し、プロパティ値を更新します。
 
-- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>エディターでダイアログボックスを開くか、ドロップダウンメニューを表示するかを指定します。
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>、エディターでダイアログを開くか、ドロップダウンメニューを提供するかを指定します。
 
-プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには`GetPaintValueSupported`、、 `PaintValue`、およびをオーバーライドします。  詳細については、「 <xref:System.Drawing.Design.UITypeEditor> 」を参照してください。
+プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには、`GetPaintValueSupported` をオーバーライドし、`PaintValue` します。  詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
 
 > [!NOTE]
 > **Dsl**プロジェクト内の別のコードファイルにコードを追加します。
 
-次に例を示します。
+(例:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -210,7 +210,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-詳細については、「 <xref:System.Drawing.Design.UITypeEditor> 」を参照してください。
+詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
 
 ## <a name="provide-a-drop-down-list-of-values"></a>値のドロップダウンリストを指定する
 
@@ -226,7 +226,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-<xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl**プロジェクトの別のファイルにコードを追加します。 次に例を示します。
+<xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl**プロジェクトの別のファイルにコードを追加します。 (例:
 
 ```csharp
 /// <summary>

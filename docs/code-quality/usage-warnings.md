@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58701cbebb4b738b635fac0c2805f07b4a5266f
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649069"
 ---
 # <a name="usage-warnings"></a>使用法に関する警告
 
@@ -59,7 +59,7 @@ ms.locfileid: "72349554"
 |[CA2228: 未公開のリソース形式を出荷しません](../code-quality/ca2228.md)|プレリリース版の .NET を使用してビルドされたリソースファイルは、サポートされているバージョンの .NET では使用できない可能性があります。|
 |[CA2229: シリアル化コンストラクターを実装します](../code-quality/ca2229.md)|この規則違反を修正するには、シリアル化コンストラクターを実装します。 シールされたクラスの場合、コンストラクターをプライベートにするか、プロテクトにします。|
 |[CA2230: 可変引数に対して param を使用します](../code-quality/ca2230.md)|パブリック型またはプロテクト型に、params キーワードではなく VarArgs 呼び出し規則を使用するパブリック メソッドまたはプロテクト メソッドが含まれています。|
-|[CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231.md)|値型は @no__t 0 よりも優先されますが、等値演算子は実装されません。|
+|[CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231.md)|値型は `Object.Equals` をオーバーライドしますが、等値演算子は実装しません。|
 |[CA2232: Windows フォームのエントリ ポイントを STAThread に設定します](../code-quality/ca2232.md)|STAThreadAttribute は、アプリケーションの COM スレッド処理モデルがシングルスレッド アパートメントであることを示します。 この属性は、Windows フォームを使用するすべてのアプリケーションのエントリ ポイントに指定する必要があります。省略すると、Windows コンポーネントが正常に機能しないことがあります。|
 |[CA2233: 操作はオーバーフローできません](../code-quality/ca2233.md)|最初にオペランドを検証せずに算術演算を実行しないでください。演算の結果が、関連するデータ型の有効な値の範囲を超えていないことを確認してください。|
 |[CA2234: 文字列の代わりに System.Uri オブジェクトを渡します](../code-quality/ca2234.md)|"uri"、"URI"、"urn"、"URN"、"url"、または "URL" という名前を持つ文字列パラメーターが指定されているメソッドに対して、呼び出しが行われました。  そのメソッドの型宣言に対応するメソッドのオーバーロードが存在し、それに対して System.Uri パラメーターが指定されています。|

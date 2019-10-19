@@ -1,56 +1,56 @@
 ---
-title: '方法: ドメイン固有言語の名前空間を変更します。'
+title: '方法: ドメイン固有言語の名前空間を変更する'
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653768"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>方法: ドメイン固有言語の名前空間を変更します。
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>方法: ドメイン固有言語の名前空間を変更する
 
-ドメイン固有言語の名前空間を変更することができます。 変更を行う、 **DSL エクスプ ローラー**、Dsl パッケージ プロジェクトのプロパティおよびアセンブリ情報です。
+ドメイン固有言語の名前空間を変更できます。 Dsl**エクスプローラー**、dsl パッケージプロジェクトのプロパティ、およびアセンブリ情報に変更を加えます。
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>ドメイン固有言語の名前空間を変更するには
 
-1. **DSL エクスプ ローラー**を選択、 **Dsl**ノード。
+1. **Dsl エクスプローラー**で**dsl**ノードを選択します。
 
-2. **プロパティ**ウィンドウで、変更、 **Namespace**プロパティ。
+2. **[プロパティ]** ウィンドウで、"**名前空間**" プロパティを変更します。
 
 3. ソリューションを保存し、テンプレートを変換します。
 
-4. **プロジェクト**] メニューの [選択**Dsl プロパティ**します。
+4. **[プロジェクト]** メニューの **[Dsl プロパティ]** を選択します。
 
    プロジェクトのプロパティが表示されます。
 
-5. 選択、**アプリケーション**タブ。
+5. **[アプリケーション]** タブを選択します。
 
-6. 変更、**既定の名前空間**プロパティを新しい名前空間の名前。
+6. "**既定の名前空間**" プロパティを新しい名前空間の名前に変更します。
 
-7. アセンブリの名前を変更する場合は、変更、 **Assembly name プロパティです。**
+7. アセンブリの名前も変更する場合は、[**アセンブリ名] プロパティ**を変更します。
 
-8. アセンブリ名を変更した場合は、DslPackage\Package.tt を開き、この行を更新します。
+8. アセンブリ名を変更した場合は、この行を開き、次の行を更新します。
 
    `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
-9. カスタム コードを記述した場合は、コード ファイルの名前空間とクラス参照を変更することを確認してください。
+9. カスタムコードを記述した場合は、コードファイル内の名前空間とクラス参照を必ず変更してください。
 
-10. Visual Studio 実験用インスタンスをリセットします。
+10. Visual Studio の実験的なインスタンスをリセットします。
 
-    1. 削除 **\Users\\** _{名}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp** します。
+    1. **\ Users \\** _{your name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**を削除します。
 
-    2. Windows で**開始**] メニューの [選択**すべてのプログラム** > **Microsoft Visual Studio 2010 SDK** > **ツール**  > **実験用インスタンスをリセット**します。
+    2. Windows の **スタート** メニューで、**すべてのプログラム**  > **Microsoft Visual Studio 2010 SDK**  > **ツール** の順に選択し、**実験的なインスタンスをリセット** >  ます。
 
-11. **ビルド**] メニューの [選択**ソリューションのリビルド**します。
+11. **[ビルド]** メニューの **[ソリューションのリビルド]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

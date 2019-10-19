@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649578"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -67,8 +67,8 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable を正しく実装する
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外は public として設定する必要があります
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 予期しない場所に例外を発生させません
-CA1066 | Type {0} は Equals をオーバーライドするため、IEquatable @ no__t-1T > を実装する必要があります
-CA1067 | IEquatable @ no__t-0T を実装する場合は、Object.equals (object) をオーバーライドしてください >
+CA1066 | 型 {0} は Equals をオーバーライドするため、IEquatable \<T > を実装する必要があります
+CA1067 | IEquatable \<T > を実装する場合は、Object.equals (object) をオーバーライドしてください
 [CA1068](ca1068.md) | CancellationToken パラメーターは最後に指定する必要があります
 CA1200 | プレフィックスで cref タグを使用しません
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | ローカライズされるパラメーターとしてリテラルを渡さない

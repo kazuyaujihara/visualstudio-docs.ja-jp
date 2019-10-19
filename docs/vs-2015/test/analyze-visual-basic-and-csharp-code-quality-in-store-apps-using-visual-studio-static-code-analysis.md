@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416645"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660737"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの Visual Basic および C# のコード品質の分析
 
@@ -55,14 +55,14 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
    ソリューションがコンパイルされ、コード分析が実行されます。 結果は、[コード分析] ウィンドウに表示されます。
 
-   ![[コード分析] ウィンドウ](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![コード分析ウィンドウ](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
  特定の警告を分析するには、[コード分析] ウィンドウで警告のタイトルをクリックします。 警告が展開され、問題に関する詳細情報が表示されます。
 
  ![展開されたコード分析の警告](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- 警告を展開すると、警告の原因となったコード行が Visual Studio コード エディターで強調表示されます。
+ 警告を展開すると、警告の原因となったコード行が Visual Studio Code エディターで強調表示されます。
 
  ![コード分析テキストの強調表示](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 

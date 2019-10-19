@@ -1,5 +1,5 @@
 ---
-title: 複雑さとマネージ コードの保守性を測定する |Microsoft Docs
+title: マネージコードの複雑さと保守性の測定 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,38 +16,37 @@ helpviewer_keywords:
 - complexity managed code
 ms.assetid: 952b6f2e-584f-4c97-a5ba-42d7bd47a576
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697452"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658073"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>マネージド コードの複雑さと保守性の測定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-最新のソフトウェア アプリケーションの複雑さが増すには、信頼性が高く、保守しやすいコードを行う苦労も増加します。 近年、多くのソフトウェアのメジャー、コード メトリックスと呼ばれる開発され開発者の作業のやり直しや増加テスト、コードが必要なを理解することができます。  
-  
- 開発者が使用できる[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]複雑さと、マネージ コードの保守容易性を測定するコード メトリックス データを生成します。 ソリューション全体または 1 つのプロジェクトのコード メトリックス データを生成できます。  
-  
- このセクションは、生成し、コードのメトリックを使用する方法を説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [コード メトリックス値](../code-quality/code-metrics-values.md)  
-  
- [方法: コード メトリックス データを生成します。](../code-quality/how-to-generate-code-metrics-data.md)  
-  
- [コード メトリックス データの操作](../code-quality/working-with-code-metrics-data.md)  
-  
- [方法: コード メトリックスの結果をクリップボードにコピーします。](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
-  
- [方法: コード メトリックの結果を Excel にエクスポートします。](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
-  
- [方法: 結果に基づく作業項目を作成します。](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
-  
-## <a name="see-also"></a>関連項目  
- [コード メトリックに関する問題のトラブルシューティング](../code-quality/troubleshooting-code-metrics-issues.md)   
- [一般的な開発タスクを実行します。](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+また、最新のソフトウェアアプリケーションが複雑になるほど、コードの信頼性と保守性が向上します。 最近では、コードメトリックスと呼ばれる多くのソフトウェア測定が開発されており、開発者がコードを再作成したりテストを増やしたりする場所を理解するのに役立ちます。
+
+ 開発者は、[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] を使用して、マネージコードの複雑さと保守性を測定するコードメトリックスデータを生成できます。 コードメトリックスデータは、ソリューション全体または単一のプロジェクトに対して生成できます。
+
+ このセクションでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でコードメトリックスを生成して使用する方法について説明します。
+
+## <a name="in-this-section"></a>このセクションの内容
+ [コード メトリックス値](../code-quality/code-metrics-values.md)
+
+ [方法 : コード メトリックス データを生成する](../code-quality/how-to-generate-code-metrics-data.md)
+
+ [コード メトリックス データの操作](../code-quality/working-with-code-metrics-data.md)
+
+ [方法: コードメトリックスの結果をクリップボードにコピーする](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)
+
+ [方法: コードメトリックスの結果を Excel にエクスポートする](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)
+
+ [方法: 結果に基づいて作業項目を作成する](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)
+
+## <a name="see-also"></a>参照
+ [一般的な開発タスクの実行](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)に[関するコードメトリックスに関する問題のトラブルシューティング](../code-quality/troubleshooting-code-metrics-issues.md)

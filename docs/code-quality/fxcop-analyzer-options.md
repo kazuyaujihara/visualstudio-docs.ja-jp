@@ -2,17 +2,17 @@
 title: FxCop analyzer の構成オプション
 ms.date: 09/23/2019
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449067"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649594"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop アナライザーの規則のスコープオプション
 
@@ -56,4 +56,4 @@ ms.locfileid: "72449067"
 
 | 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| この型のアセンブリを生成するプロジェクト内のコードを分析する必要があることを指定します。 | @No__t-0 列挙型の1つ以上のフィールド<br/><br/>複数の値はコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| この型のアセンブリを生成するプロジェクト内のコードを分析する必要があることを指定します。 | @No__t_0 列挙型の1つまたは複数のフィールド<br/><br/>複数の値はコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007-do-not-directly-await-task.md) |
