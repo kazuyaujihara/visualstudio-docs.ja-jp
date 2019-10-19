@@ -12,55 +12,50 @@ helpviewer_keywords:
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 65d78387c6d60d0b432db9aab175fbfe8dc2869b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203559"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662152"
 ---
 # <a name="print-command"></a>Print コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-式を評価するか、指定したテキストを表示します。  
-  
-## <a name="syntax"></a>構文  
-  
-```  
-Debug.Print text  
-```  
-  
-## <a name="arguments"></a>引数  
- `text`  
- 必須です。 評価対象の式または表示対象のテキストです。  
-  
-## <a name="remarks"></a>解説  
- このコマンドのエイリアスとして疑問符 (?) を使用できます。 したがって、たとえば次のコマンド  
-  
-```  
->Debug.Print expA  
-```  
-  
- は、次のように記述することもできます。  
-  
-```  
->? expA  
-```  
-  
- どちらのコマンドでも、式 `expA` の現在の値が返されます。  
-  
-## <a name="example"></a>例  
-  
-```  
->Debug.Print varA  
-```  
-  
-## <a name="see-also"></a>関連項目  
- [Evaluate Statement コマンド](../../ide/reference/evaluate-statement-command.md)   
- [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
- [コマンド ウィンドウ](../../ide/reference/command-window.md)   
- [[検索/コマンド] ボックス](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+式を評価するか、指定したテキストを表示します。
+
+## <a name="syntax"></a>構文
+
+```
+Debug.Print text
+```
+
+## <a name="arguments"></a>引数
+ `text` 必須。 評価対象の式または表示対象のテキストです。
+
+## <a name="remarks"></a>解説
+ このコマンドのエイリアスとして疑問符 (?) を使用できます。 したがって、たとえば次のコマンド
+
+```
+>Debug.Print expA
+```
+
+ は、次のように記述することもできます。
+
+```
+>? expA
+```
+
+ どちらのコマンドでも、式 `expA` の現在の値が返されます。
+
+## <a name="example"></a>例
+
+```
+>Debug.Print varA
+```
+
+## <a name="see-also"></a>関連項目
+ [Evaluate Statement コマンド](../../ide/reference/evaluate-statement-command.md) [visual Studio](../../ide/reference/visual-studio-commands.md)のコマンド[ウィンドウ](../../ide/reference/command-window.md)の[[検索]/[コマンド] ボックス](../../ide/find-command-box.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

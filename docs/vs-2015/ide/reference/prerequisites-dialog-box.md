@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869864"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662183"
 ---
 # <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "68869864"
 |**Windows インストーラー 4.5**|Microsoft Windows インストーラー再頒布パッケージ Version 4.5 をインストールし、Windows インストーラー セットアップ プロジェクトをインストールできるようにします。|
 
 ## <a name="see-also"></a>関連項目
- [[発行] ページ (プロジェクトデザイナー)](../../ide/reference/publish-page-project-designer.md)[アプリケーションの展開の前提条件](../../deployment/application-deployment-prerequisites.md)[.NET Framework の再配布](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)[64 ビットアプリケーションの展開の前提条件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)[Visual Studio のマルチターゲットの概要](../../ide/visual-studio-multi-targeting-overview.md)
+ [[発行] ページ (プロジェクトデザイナー](../../ide/reference/publish-page-project-designer.md) [アプリケーションの配置の前提条件](../../deployment/application-deployment-prerequisites.md)) .NET Framework を再[配布する](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [64 ビットアプリケーションの必須コンポーネントの配置](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio のマルチターゲットの概要](../../ide/visual-studio-multi-targeting-overview.md)

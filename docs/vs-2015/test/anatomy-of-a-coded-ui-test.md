@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871712"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660695"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>コード化された UI テストの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> 名前空間は、Windows ユーザー インターフェイス (UI) 用に含まれています。 Web ページ UI 用の名前空間は <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>、Windows Presentation Foundation UI 用の名前空間は <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls> です。
 
 #### <a name="UIMapClass"></a>UIMap クラス
- ファイルの次のセクションは、 [Uimap](/previous-versions/dd580454(v=vs.140))クラスです。
+ ファイルの次のセクションは、[UIMap](/previous-versions/dd580454(v=vs.140)) クラスです。
 
 ```
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- [Uimap](/previous-versions/dd580454(v=vs.140))クラスのこの部分には、メソッドに必要な各プロパティに対して生成されたコードも含まれています。
+ [UIMap](/previous-versions/dd580454(v=vs.140)) クラスのこの部分には、メソッドに必要な各プロパティに対して生成されたコードも含まれています。
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -190,9 +190,9 @@ public class AddItemsParams
  既定では、このファイルにはメソッドやプロパティを持たない `UIMap` 部分クラスが含まれています。
 
 #### <a name="uimap-class"></a>UIMap クラス
- ここで、カスタムコードを作成して、 [Uimap](/previous-versions/dd580454(v=vs.140))クラスの機能を拡張することができます。 このファイルで作成するコードは、テストが変更されるたびに **[コード化された UI テスト ビルダー]** によって再生成されることはありません。
+ ここでは、[UIMap](/previous-versions/dd580454(v=vs.140)) クラスの機能を拡張するためのカスタム コードを作成できます。 このファイルで作成するコードは、テストが変更されるたびに **[コード化された UI テスト ビルダー]** によって再生成されることはありません。
 
- [Uimap](/previous-versions/dd580454(v=vs.140))のすべての部分は、 [uimap](/previous-versions/dd580454(v=vs.140))クラスの他の部分のメソッドとプロパティを使用できます。
+ [UIMap](/previous-versions/dd580454(v=vs.140)) クラスのすべての部分から、[UIMap](/previous-versions/dd580454(v=vs.140)) の他のすべての部分のメソッドやプロパティを使用できます。
 
 ### <a name="CodedUITestCS"></a>CodedUITest1.cs
  このファイルは **[コード化された UI テスト ビルダー]** によって生成されますが、テストが変更されるたびに再作成されることはありません。したがって、このファイルではコードを変更できます。 ファイルの名前は、テストに対して作成時に指定した名前から生成されます。
@@ -205,7 +205,7 @@ public class AddItemsParams
 public class CodedUITest1
 ```
 
- [Codeduitestattribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120))はクラスに自動的に適用されます。これにより、テストフレームワークはそれをテスト拡張として認識できます。 また、このクラスが部分クラスではないという点にも注意してください。 すべてのクラス コードがこのファイルに含まれています。
+ [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) が自動的にクラスに適用され、テスト フレームワークがこれをテストの拡張機能として認識できるようになります。 また、このクラスが部分クラスではないという点にも注意してください。 すべてのクラス コードがこのファイルに含まれています。
 
 ##### <a name="CodedUITestProperties"></a>CodedUITest1 プロパティ
  このクラスには、ファイルの末尾にある 2 つの既定のプロパティが含まれています。 これらのプロパティは変更できません。
