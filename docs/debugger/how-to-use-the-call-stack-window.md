@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814327"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535978"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>呼び出し履歴を表示し、デバッガーで [呼び出し履歴] ウィンドウを使用する
 
@@ -54,7 +54,7 @@ ms.locfileid: "71814327"
 
 - デバッグ中に、 **[デバッグ]** メニューの **[Windows > の呼び出し履歴]** をクリックします。
 
-  ![呼び出し履歴ウィンドウ](../debugger/media/dbg_basics_callstack_window.png "callstackwindow")
+  ![呼び出し履歴ウィンドウ](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 黄色の矢印は、現在、実行ポインターが存在するスタック フレームを示します。 既定では、このスタックフレームの情報は、ソース、**ローカル**、**自動変数**、**ウォッチ**、および **逆アセンブリ** ウィンドウに表示されます。 デバッガーコンテキストをスタック上の別のフレームに変更するには、[別のスタックフレームに切り替え](#bkmk_switch)ます。
 
@@ -96,11 +96,11 @@ ms.locfileid: "71814327"
 
 Visual Studio Enterprise (のみ) では、デバッグ中に呼び出し履歴のコードマップを表示できます。
 
-- **[呼び出し履歴]** ウィンドウでショートカット メニューを開きます。 **[コードマップで呼び出し履歴を表示]** をクリックします (**Ctrl** + **Shift** +  **`** )。
+- **[呼び出し履歴]** ウィンドウでショートカット メニューを開きます。 **[コードマップの呼び出し履歴を表示]** をクリックします (**Ctrl**  + **Shift**  +  **`** )。
 
     詳細については、「[デバッグ中の呼び出し履歴のメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)」を参照してください。
 
-![コードマップに呼び出し履歴を表示する](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "showcallstackoncodemap")
+![コードマップに呼び出し履歴を表示する](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>呼び出し履歴上の関数の逆アセンブリコードを表示するC#( C++、、Visual Basic F#、)
 
@@ -108,11 +108,11 @@ Visual Studio Enterprise (のみ) では、デバッグ中に呼び出し履歴�
 
 ## <a name="change-the-optional-information-displayed"></a>表示されるオプションの情報を変更する
 
-- **[呼び出し履歴]** ウィンドウを右クリックし、[**表示 @no__t]** をオンまたはオフにして _、必要な情報_を **>** に設定またはクリアします。
+- **[呼び出し履歴]** ウィンドウを右クリックし、 **[表示]** を設定またはオフにして、 **>** _する情報_を \< します。
 
 ## <a name="bkmk_symbols"></a>モジュール (C#、 C++、Visual Basic、 F#) のシンボルを読み込みます
 
-**[呼び出し履歴]** ウィンドウで、シンボルがまだ読み込まれていないコードに対してデバッグ シンボルを読み込むことができます。 これらのシンボルには、Microsoft のパブリック シンボル サーバーからダウンロードされる .NET Framework シンボルやシステム シンボル、または、デバッグしているコンピューター上のシンボル パス内のシンボルを指定できます。
+**[呼び出し履歴]** ウィンドウで、シンボルがまだ読み込まれていないコードに対してデバッグ シンボルを読み込むことができます。 これらのシンボルには、Microsoft パブリックシンボルサーバーからダウンロードされた .NET またはシステムシンボル、またはデバッグしているコンピューター上のシンボルパスのシンボルを使用できます。
 
 [シンボル (.pdb) ファイルとソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事をご覧ください。
 

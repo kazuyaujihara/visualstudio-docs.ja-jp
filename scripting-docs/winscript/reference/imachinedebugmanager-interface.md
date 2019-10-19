@@ -13,25 +13,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d491b03ba04d346e3a14a08d5e2b6b9d34c7d97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977644"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573929"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager インターフェイス
-マシン デバッグ マネージャーの主インターフェイスです。 このインターフェイスと似ています、`IMachineDebugManagerCookie`インターフェイス。  
+マシンデバッグマネージャーへのプライマリインターフェイス。 このインターフェイスは `IMachineDebugManagerCookie` インターフェイスに似ています。  
   
- 継承されたメソッドだけでなく`IUnknown`、`IMachineDebugManager`インターフェイスは、次のメソッドを公開します。  
+ @No__t_1 インターフェイスは、`IUnknown` から継承されたメソッドに加えて、次のメソッドを公開します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|実行中にアプリケーションを追加します。 アプリケーションの一覧。|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|実行中のアプリケーションを削除します。 アプリケーションの一覧。|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|現在の実行中のアプリケーション一覧の列挙子を返します。|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|実行中のアプリケーションの一覧にアプリケーションを追加します。|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|実行中のアプリケーションの一覧からアプリケーションを削除します。|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|実行中のアプリケーションの現在の一覧の列挙子を返します。|  
   
 ## <a name="see-also"></a>関連項目  
  [IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)

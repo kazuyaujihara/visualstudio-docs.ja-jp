@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDescriptionString |Microsoft Docs
+title: 'IDebugStackFrame:: GetDescriptionString |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f870c6dbc654f8465d201c53443228153ce4a68b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb29574d240a02073721046cec65bdf483b3eb0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934609"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576746"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-スタック フレームの短い、または時間の長いテキストの説明を返します。  
+スタックフレームの短いテキストまたは長い説明を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>パラメーター  
  `fLong`  
- [in]フラグは、場所`TRUE`長い説明を返しますと`FALSE`短い説明を返します。  
+ からフラグ。 `TRUE` は長い説明を返し、`FALSE` は簡単な説明を返します。  
   
  `pbstrDescription`  
- [out]スタック フレームの説明です。  
+ 入出力スタックフレームの説明。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 通常場合、`fLong`は`FALSE`、このメソッドは、スタック フレームに関連付けられている関数の名前のみを提供します。 ときに`fLong`は`TRUE`、このメソッドは可能性があります、関数パラメーターおよび他の関連情報も提供します。  
+ 通常、`fLong` が `FALSE` 場合、このメソッドはスタックフレームに関連付けられている関数の名前のみを提供します。 @No__t_0 が `TRUE` 場合、このメソッドは、関数のパラメーターやその他の関連情報を提供することもあります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugStackFrame インターフェイス](../../winscript/reference/idebugstackframe-interface.md)

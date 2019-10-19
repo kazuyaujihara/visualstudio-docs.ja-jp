@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::ParseLanguageText |Microsoft Docs
+title: IDebugExpressionContext::P arseLanguageText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50f9f398b9193c776f8e2a823b78ce7b8da438b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0493adde76e029088b637be3c6aaf02c55caaace
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946278"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573152"
 ---
 # <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
-指定したテキストのデバッグの式を作成します。  
+指定したテキストのデバッグ式を作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,28 +41,28 @@ HRESULT ParseLanguageText(
   
 #### <a name="parameters"></a>パラメーター  
  `pstrCode`  
- [in]式またはステートメントのテキストを提供します。  
+ から式またはステートメントのテキストを提供します。  
   
  `nRadix`  
  [入力] 使用する基数。  
   
  `pstrDelimiter`  
- [in]最後のスクリプト ブロックの区切り記号。 ときに`pstrCode`解析は、テキストのストリームからホスト通常などの使用、区切り記号、2 つの単一引用符 (")、スクリプト ブロックの終わりを検出します。 このパラメーターには、ホストが使用する区切り文字を指定します。それにより、スクリプト エンジンで何らかの条件付きのプリミティブな前処理が可能になります (単一引用符 (') を区切り文字として使用するために 2 つの単一引用符に置き換えるなど)。 正確に把握 (および場合は) この情報は、スクリプト エンジンによって異なります、スクリプト エンジンが使用されます。 このパラメーターに設定`NULL`ホストは、スクリプト ブロックの終わりをマークする、区切り記号を使用しなかった場合。  
+ からスクリプトの末尾の区切り記号。 テキストのストリームから `pstrCode` を解析する場合、ホストは通常、2つの単一引用符 (' ') などの区切り記号を使用して、スクリプトブロックの終了を検出します。 このパラメーターには、ホストが使用する区切り文字を指定します。それにより、スクリプト エンジンで何らかの条件付きのプリミティブな前処理が可能になります (単一引用符 (') を区切り文字として使用するために 2 つの単一引用符に置き換えるなど)。 スクリプトエンジンがこの情報を使用する方法 (および if) は、スクリプトエンジンによって異なります。 ホストがスクリプトブロックの末尾を示すために区切り記号を使用しなかった場合は、このパラメーターを `NULL` に設定します。  
   
  `dwFlags`  
- [in]次のデバッグ テキスト フラグの組み合わせ。  
+ から次のデバッグテキストフラグの組み合わせ。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
 |DEBUG_TEXT_ISEXPRESSION|0x00000001|テキストがステートメントではなく式であることを示します。 このフラグは、一部の言語によるテキストの解析方法に影響する場合があります。|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|戻り値が使用できる場合、その値は呼び出し元によって使用されます。|  
-|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|副作用は許可されません。 このフラグが設定されている場合は、ランタイム状態が式の評価によって変更されることはありません。|  
-|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|テキスト評価中にブレークポイントを使用できます。 このフラグが設定されていない場合、ブレークポイントは、テキストの評価時に無視されます。|  
-|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|テキスト評価中にエラー レポートを使用します。 このフラグが設定されていない場合、エラーは報告されませんホストを評価中にします。|  
-|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|式自体を実行しているのではなく、コードのコンテキストに評価される式を示します|  
+|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|副作用を許可しません。 このフラグが設定されている場合は、ランタイム状態が式の評価によって変更されることはありません。|  
+|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|テキストの評価中にブレークポイントを許可します。 このフラグが設定されていない場合、テキストの評価中にブレークポイントは無視されます。|  
+|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|テキストの評価中にエラーレポートを使用できるようにします。 このフラグが設定されていない場合、評価中にエラーはホストに報告されません。|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|式自体を実行するのではなく、式がコードコンテキストに評価されることを示します。|  
   
  `ppe`  
- [out]指定したテキストをデバッグの式を返します。  
+ 入出力指定されたテキストのデバッグ式を返します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -72,7 +72,7 @@ HRESULT ParseLanguageText(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定したテキストのデバッグの式を作成します。  
+ このメソッドは、指定されたテキストに対してデバッグ式を作成します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugExpressionContext インターフェイス](../../winscript/reference/idebugexpressioncontext-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:StartDebugSession |Microsoft Docs
+title: 'IDebugSessionProviderEx: StartDebugSession |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb120a9acca91014d7b8213a3ed0bd1ab575e118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfe26265d56b2179feeac2a9802940258074b1c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934687"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574306"
 ---
 # <a name="idebugsessionproviderexstartdebugsession"></a>IDebugSessionProviderEx:StartDebugSession
-指定したアプリケーションのデバッグ セッションを開始します。  
+指定されたアプリケーションとのデバッグセッションを開始します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,10 +36,10 @@ HRESULT StartDebugSession(
   
 #### <a name="parameters"></a>パラメーター  
  `pda`  
- [in]デバッグを指定します。  
+ からデバッグアプリケーションを指定します。  
   
  `fQuery`  
- [in]True は、クエリを示します。  
+ からTrue は、クエリを示します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -49,7 +49,7 @@ HRESULT StartDebugSession(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドで指定したアプリケーションのデバッグ セッションを開始します。 デバッガーを呼び出す必要があります`IRemoteDebugApplication::ConnectDebugger`この呼び出しから戻る前にします。  
+ このメソッドは、指定されたアプリケーションとのデバッグセッションを開始します。 デバッガーは、この呼び出しから戻る前に `IRemoteDebugApplication::ConnectDebugger` を呼び出す必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugSessionProviderEx インターフェイス](../../winscript/reference/idebugsessionproviderex-interface.md)   

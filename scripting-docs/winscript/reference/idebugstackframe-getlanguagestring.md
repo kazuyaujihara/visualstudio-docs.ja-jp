@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString |Microsoft Docs
+title: 'IDebugStackFrame:: Get言語 String |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934662"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576754"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-言語の短い、または時間の長いテキストの説明を返します。  
+言語の短いテキストまたは長い説明を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>パラメーター  
  `fLong`  
- [in]フラグは、場所`TRUE`長い説明を返しますと`FALSE`短い説明を返します。  
+ からフラグ。 `TRUE` は長い説明を返し、`FALSE` は簡単な説明を返します。  
   
  `pbstrLanguage`  
- [out]言語の説明です。  
+ 入出力言語の説明。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT GetLanguageString(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 通常場合、`fLong`は`FALSE`、このメソッドは、スタック フレームに関連付けられている言語の名前のみを提供します。 ときに`fLong`は`TRUE`、このメソッドは、完全な製品の説明を提供可能性があります。  
+ 通常、`fLong` が `FALSE` 場合、このメソッドは、スタックフレームに関連付けられている言語の名前のみを提供します。 @No__t_0 が `TRUE` 場合、このメソッドは完全な製品の説明を提供することがあります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugStackFrame インターフェイス](../../winscript/reference/idebugstackframe-interface.md)

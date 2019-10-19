@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfLine |Microsoft Docs
+title: 'IDebugDocumentText:: GetPositionOfLine |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cfcfc771c49abbf837f4db898936e478cda2194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adf4add99ac41440e6f4daa491b72166e97b5ba5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970849"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572103"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
 行の最初の文字に対応する文字位置を返します。  
@@ -38,10 +38,10 @@ HRESULT GetPositionOfLine(
   
 #### <a name="parameters"></a>パラメーター  
  `cLineNumber`  
- [in]行番号。  
+ から行番号。  
   
  `pcCharacterPosition`  
- [out]ドキュメント内の行の先頭の文字位置`cLineNumber`します。  
+ 入出力@No__t_0 行の先頭にあるドキュメント内の文字位置。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  

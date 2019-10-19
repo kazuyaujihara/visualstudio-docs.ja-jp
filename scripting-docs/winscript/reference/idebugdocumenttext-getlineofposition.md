@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition |Microsoft Docs
+title: 'IDebugDocumentText:: GetLineOfPosition |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970875"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572119"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-指定した文字位置に行番号と、必要に応じて、対応する行内の文字オフセットを返します。  
+指定された文字位置に対応する行の中で、行番号と、必要に応じて文字オフセットを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>パラメーター  
  `cCharacterPosition`  
- [in]開始文字位置の範囲の位置。  
+ から文字位置の範囲の開始位置。  
   
  `pcLineNumber`  
- [out]範囲の行番号。  
+ 入出力範囲の行番号。  
   
  `pcCharacterOffsetInLine`  
- [入力、出力]行範囲の文字オフセット`pcLineNumber`します。 このパラメーターが場合`NULL`メソッドが値を返しません。  
+ [入力、出力]行 `pcLineNumber` 内の範囲の文字オフセット。 このパラメーターが `NULL` 場合、メソッドは値を返しません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT GetLineOfPosition(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定した文字位置に行番号と、必要に応じて、対応する行内の文字オフセットを返します。  
+ このメソッドは、指定された文字位置に対応する行の中で、行番号と、必要に応じて文字オフセットを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentText インターフェイス](../../winscript/reference/idebugdocumenttext-interface.md)

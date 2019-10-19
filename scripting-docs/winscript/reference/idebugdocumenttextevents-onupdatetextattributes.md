@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes |Microsoft Docs
+title: 'IDebugDocumentTextEvents:: onUpdateTextAttributes |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 044eec93516bc4e16044c4bf982b48d91269ebaa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989797"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575996"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-基になる文字位置の範囲に関連付けられているテキストの属性が変更されたことを示します。  
+基になる文字位置の範囲に関連付けられているテキスト属性が変更されたことを示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>パラメーター  
  `cCharacterPosition`  
- [in]属性が変更された最初の文字の文字位置。  
+ から属性が変更された最初の文字の文字位置。  
   
  `cNumToUpdate`  
- [in]範囲の文字の数。  
+ から範囲内の文字数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT onUpdateTextAttributes(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、基になる文字位置の範囲に関連付けられているテキストの属性が変更されたことを示します。  
+ このメソッドは、基になる文字位置の範囲に関連付けられているテキスト属性が変更されたことを示します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentTextEvents インターフェイス](../../winscript/reference/idebugdocumenttextevents-interface.md)

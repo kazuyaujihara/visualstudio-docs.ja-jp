@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition |Microsoft Docs
+title: 'IActiveScriptDebug:: EnumCodeContextsOfPosition |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c364d00941a65272b4d22cc7674a0f0e6178f099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aedfe5d40d8f4086e30f3a62c070b8ccd5ef2388
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009743"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572786"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-委任にスマート ホストによって使用される、`IDebugDocumentContext::EnumCodeContexts`メソッド。  
+@No__t_0 メソッドを委任するためにスマートホストによって使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,16 +40,16 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>パラメーター  
  `dwSourceContext`  
- [in]元のコンテキストに提供する`IActiveScriptParse::ParseScriptText`または`IActiveScriptParse::AddScriptlet`します。  
+ から@No__t_0 または `IActiveScriptParse::AddScriptlet` に提供されるソースコンテキスト。  
   
  `uCharacterOffset`  
- [in]スクリプトのテキストの先頭を基準としたオフセットの文字。  
+ からスクリプトテキストの先頭を基準とした文字オフセット。  
   
  `uNumChars`  
- [in]このコンテキスト内の文字の数。  
+ からこのコンテキストの文字数。  
   
  `ppescc`  
- [out]指定した範囲内のコードのコンテキストの列挙子。  
+ 入出力指定された範囲のコードコンテキストの列挙子。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -59,7 +59,7 @@ HRESULT EnumCodeContextsOfPosition(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- スマート ホストでは、このメソッドを使用して、デリゲート、`IDebugDocumentContext::EnumCodeContexts`メソッド。  
+ スマートホストは、このメソッドを使用して `IDebugDocumentContext::EnumCodeContexts` メソッドを委任します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptDebug インターフェイス](../../winscript/reference/iactivescriptdebug-interface.md)   

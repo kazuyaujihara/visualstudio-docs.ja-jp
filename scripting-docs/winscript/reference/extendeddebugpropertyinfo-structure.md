@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09f3c5a219fca9ec9b881e2ae8363aae4d48e03f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955187"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575836"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo 構造体
-拡張、`DebugPropertyInfo`を特徴付ける拡張プロパティの追加メンバーを含む構造体。  
+拡張プロパティを特徴付けるように、追加のメンバーで `DebugPropertyInfo` 構造体を拡張します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,25 +48,25 @@ typedef struct ExtendedDebugPropertyInfo{
   
 ## <a name="members"></a>メンバー  
  `dwValidFields`  
- 列挙データ型フィールドが初期化されるかを指定するために使用します。  
+ 初期化されるフィールドを指定するために使用される列挙データ型。  
   
  `bstrName`  
- コンテキスト内でプロパティ名。  
+ コンテキスト内のプロパティ名。  
   
  `bstrType`  
- プロパティは、書式設定された文字列として入力します。  
+ 書式設定された文字列としてのプロパティの型。  
   
  `bstrValue`  
- 書式設定された文字列としてプロパティ値です。  
+ 書式設定された文字列としてのプロパティ値。  
   
  `bstrFullName`  
  プロパティの完全名。  
   
  `dwAttrib`  
- デバッグ プロパティの属性のフラグを指定する列挙です。  
+ デバッグプロパティの属性のフラグを指定する列挙体。  
   
  `pDebugProp`  
- `IDebugProperty` これに対応するオブジェクト`ExtendedDebugPropertyInfo`します。  
+ この `ExtendedDebugPropertyInfo` に対応する `IDebugProperty` オブジェクト。  
   
  `nDISPID`  
  ディスパッチ id。  
@@ -75,17 +75,17 @@ typedef struct ExtendedDebugPropertyInfo{
  拡張プロパティの型。  
   
  `varValue`  
- バリアントに収めることができる場合は、拡張プロパティ値。  
+ 拡張プロパティ値がバリアントに適合する場合は、その値。  
   
  `plbValue`  
- プロパティ値の実際のデータのバイト数。  
+ プロパティ値の実際のデータバイト。  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty` これに対応するオブジェクト`ExtendedDebugPropertyInfo`します。  
+ この `ExtendedDebugPropertyInfo` に対応する `IDebugExtendedProperty` オブジェクト。  
   
 ## <a name="see-also"></a>関連項目  
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
  [IDebugExtendedProperty インターフェイス](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

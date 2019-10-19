@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget インターフェイス |Microsoft Docs
+title: IJsDebugDataTarget Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cbb4b0b54fb9a3821d3033ef0e65fd0bafbc246
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85c77209230abfe261c9ec0b884ad0a677cfbf07
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582499"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572453"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget インターフェイス
 デバッガーによって実装されており、対象のデバッガー プロセスの状態にアクセスして変更する機能を提供します。  
@@ -31,7 +31,7 @@ IJsDebugDataTarget : public IUnknown;
   
 ### <a name="public-methods"></a>パブリック メソッド  
   
-|名前|説明|  
+|名|説明|  
 |----------|-----------------|  
 |[IJsDebugDataTarget::AllocateVirtualMemory メソッド](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|ターゲット プロセスの仮想アドレス空間内のメモリ領域を予約/コミットします。|  
 |[IJsDebugDataTarget::CreateStackFrameEnumerator メソッド](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|スタック フレームの列挙子を作成します。|  
@@ -43,8 +43,8 @@ IJsDebugDataTarget : public IUnknown;
 |[IJsDebugDataTarget::ReadNullTerminatedString メソッド](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|指定した数の文字をターゲットから読み取ります。|  
 |[IJsDebugDataTarget::WriteMemory メソッド](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|ターゲット プロセスのメモリを読み取ります。|  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイスのリファレンス](../../winscript/reference/windows-script-interfaces-reference.md)

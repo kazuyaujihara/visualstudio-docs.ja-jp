@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnConnectDebugger |Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnConnectDebugger |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d720df480133e10b1556939531d5d9a8427d23f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f36199ec50e39daea6e3ec1dcc4f126e1416073b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575621"
 ---
 # <a name="iremotedebugapplicationeventsonconnectdebugger"></a>IRemoteDebugApplicationEvents::OnConnectDebugger
-デバッガーがハンドルは、イベントを接続します。  
+デバッガー接続イベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT OnConnectDebugger(
   
 #### <a name="parameters"></a>パラメーター  
  `pad`  
- [in]新しく接続したデバッガーです。  
+ から新しく接続されたデバッガー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT OnConnectDebugger(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、デバッガーを処理するイベントを接続します。  
+ このメソッドは、デバッガー接続イベントを処理します。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplicationEvents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)

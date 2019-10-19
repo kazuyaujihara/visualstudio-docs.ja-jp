@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID |Microsoft Docs
+title: 'IActiveScript:: GetScriptThreadID |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d329e08e6a17d9edcdf26e14b468c3c56f036c00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a0fb1eebfcb6ed100056289fab6bce662f86a7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935693"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575705"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-特定の Win32 スレッドに関連付けられているスレッドのスクリプト エンジン定義の識別子を取得します。  
+指定した Win32 スレッドに関連付けられているスレッドのスクリプトエンジン定義の識別子を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetScriptThreadID(
   
 #### <a name="parameters"></a>パラメーター  
  `dwWin32ThreadID` ,  
- [in]現在のプロセスで実行中の Win32 スレッドのスレッドの識別子。 使用して、 [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)現在実行中のスレッドのスレッド識別子を取得します。  
+ から現在のプロセスで実行されている Win32 スレッドのスレッド識別子。 現在実行中のスレッドのスレッド識別子を取得するには、 [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)関数を使用します。  
   
  `pstidThread` ,  
- [out]特定の Win32 スレッドに関連付けられているスクリプトのスレッド識別子を受け取る変数のアドレス。 この識別子の解釈は、スクリプト エンジンへのままですが、Windows スレッド id のコピーだけができます。 Win32 スレッドが終了した場合はこの識別子が割り当てられていないを後で別のスレッドに割り当てることができますに注意してください。  
+ 入出力指定した Win32 スレッドに関連付けられているスクリプトスレッド識別子を受け取る変数のアドレス。 この識別子の解釈は、スクリプトエンジンに残されていますが、Windows スレッド識別子のコピーである場合もあります。 Win32 スレッドが終了した場合、この識別子は割り当てが解除され、その後別のスレッドに割り当てられる可能性があることに注意してください。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -50,12 +50,12 @@ HRESULT GetScriptThreadID(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンがされていないされて読み込まれるまたは初期化) し、そのために失敗しました。|  
+|`E_UNEXPECTED`|呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか初期化されていないため)。そのため失敗しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 取得した識別子をなどのスクリプト スレッド実行の制御メソッドを後続の呼び出しで使用できます、 [iactivescript::interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)メソッド。  
+ 取得した識別子は、後続の呼び出しで[IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)メソッドなどのスレッド実行制御メソッドをスクリプト化するために使用できます。  
   
- このメソッドは、ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことができます、 [iactivescript::interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)インターフェイス。  
+ このメソッドは非ベースのスレッドから呼び出すことができます。その結果、非ベースのコールアウトがオブジェクトをホストするか、 [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)インターフェイスになりません。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

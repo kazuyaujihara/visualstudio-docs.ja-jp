@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetIndexInParent |Microsoft Docs
+title: 'IScriptNode:: GetIndexInParent |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92f5ae074d65d2360bcfb3dda03903aa3c59209e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9251f65414a5ebd48ce56dae6a7dbfeec4e514e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786977"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575041"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-親の子の一覧で、オブジェクトのインデックスを返します。  
+親の子リスト内のオブジェクトのインデックスを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,9 +37,9 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>パラメーター  
  `pisn`  
- [out]親の子の一覧で、オブジェクトのインデックスを返します。  
+ 入出力親の子リスト内のオブジェクトのインデックスを返します。  
   
- このメソッドが呼び出された場合、`IScriptNode`オブジェクトを Web ページを表す、このパラメーターは 0 を返します。  
+ このメソッドが Web ページを表す `IScriptNode` オブジェクトによって呼び出された場合、このパラメーターは0を返します。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

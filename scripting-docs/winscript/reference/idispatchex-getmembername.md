@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName |Microsoft Docs
+title: 'IDispatchEx:: GetMemberName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 155c8db6e772460ae8ad4e8b5a70ae5e67b49ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000877"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574105"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 メンバーの名前を取得します。  
@@ -38,10 +38,10 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバーを識別します。 使用して`GetDispID`または`GetNextDispID`ディスパッチ識別子を取得します。  
+ メンバーを識別します。 @No__t_0 または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
   
  `pbstrName`  
- アドレスを`BSTR`メンバーの名前を受け取る。 呼び出し元のアプリケーションは、この値を解放します。  
+ メンバーの名前を受け取る `BSTR` のアドレス。 この値は、呼び出し元のアプリケーションによって解放されます。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -76,5 +76,5 @@ HRESULT hr;
   
 ## <a name="see-also"></a>関連項目  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -1,5 +1,5 @@
 ---
-title: ブール値が必要です |Microsoft Docs
+title: ブール値が必要です。Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91ff0ec8cbd6e5cedb5ec02a8c574ff137b1c6ad
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817901"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576059"
 ---
 # <a name="boolean-expected"></a>ブール値が必要です。
-呼び出そうとしたか、 **Boolean.prototype.toString**または**Boolean.prototype.valueOf**メソッド以外の型のオブジェクトを`Boolean`します。 呼び出し元のオブジェクト型でなければなりません`Boolean`します。 例えば:
+@No__t_2 以外の型のオブジェクトに対して、**ブール値のプロトタイプ**または**ブール値**を呼び出そうとしました。 この種類の呼び出しのオブジェクトは `Boolean` 型である必要があります。 (例:
 
 ```JavaScript
 var o = new Object;
@@ -32,7 +32,7 @@ o.f();
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- のみを呼び出す、 **Boolean.prototype.toString**または**Boolean.prototype.valueOf**型のオブジェクトに対するメソッド**ブール値。**
+- **ブール型の**オブジェクトに対してのみ、ブール型の**プロトタイプ**または**ブール**型の値のメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 

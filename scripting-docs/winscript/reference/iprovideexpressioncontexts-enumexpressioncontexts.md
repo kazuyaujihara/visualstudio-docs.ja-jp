@@ -1,5 +1,5 @@
 ---
-title: IProvideExpressionContexts::EnumExpressionContexts |Microsoft Docs
+title: 'Iの式のコンテキスト:: Enum式のコンテキスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f161c1591267af1398d5c04d00623381cfae2ad4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410146"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572390"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-このコンポーネントによって認識されている式コンテキストの列挙子を返します。  
+このコンポーネントによって認識される式コンテキストの列挙子を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>パラメーター  
  `ppedec`  
- [out]このコンポーネントによって認識されている式コンテキストの列挙子。  
+ 入出力このコンポーネントによって認識される式コンテキストの列挙子。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,10 +47,10 @@ HRESULT EnumExpressionContexts(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- プロセス デバッグ マネージャーでは、このメソッドを使用して、特定のスレッドに関連付けられているすべてのグローバル式のコンテキストを検索します。  
+ プロセスデバッグマネージャーは、このメソッドを使用して、特定のスレッドに関連付けられているすべてのグローバル式コンテキストを検索します。  
   
 > [!NOTE]
-> このメソッドは、関心のあるスレッド内からを呼び出されます。 現在のスレッドを識別して適切な列挙子を返すために、実装者の責任です。  
+> このメソッドは、対象のスレッド内から呼び出されます。 現在のスレッドを識別し、適切な列挙子を返すのは、実装者の作業です。  
   
 ## <a name="see-also"></a>関連項目  
  [IProvideExpressionContexts インターフェイス](../../winscript/reference/iprovideexpressioncontexts-interface.md)

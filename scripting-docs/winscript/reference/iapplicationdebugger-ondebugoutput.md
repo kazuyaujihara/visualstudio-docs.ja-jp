@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput |Microsoft Docs
+title: 'IApplicationDebugger:: onDebugOutput |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbb7fb9f69af2f0977434a29015d79e8cf9178
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991078"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577846"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
-デバッグ出力のイベントを処理します。  
+デバッグ出力イベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>パラメーター  
  `pstr`  
- [in]デバッガーで表示する文字列。  
+ からデバッガーに表示する文字列。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,10 +47,10 @@ HRESULT onDebugOutput(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- デバッガーが通常表示`pstr`出力ウィンドウにします。  
+ デバッガーでは通常、`pstr` が出力ウィンドウに表示されます。  
   
- このメソッドが呼び出されます`IDebugApplication::DebugOutput`が呼び出されます。  
+ このメソッドは `IDebugApplication::DebugOutput` が呼び出されたときに呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
- [IApplicationDebugger インターフェイス](../../winscript/reference/iapplicationdebugger-interface.md)   
+ [Iapplicationdebugger インターフェイス](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

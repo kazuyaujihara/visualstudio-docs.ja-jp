@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless |Microsoft Docs
+title: 'IActiveScriptSiteWindow:: EnableModeless |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f15135273b98a65903a5d03de87c541fc032cce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 756bda6209b6209ff14f6d67fef18faaed0b5618
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992927"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574137"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-有効または無効のメイン ウィンドウと同様、モードレス ダイアログ ボックスにホストをによりします。  
+ホストがメインウィンドウとモードレスダイアログボックスを有効または無効にします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,15 +37,15 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>パラメーター  
  `fEnable`  
- [in]場合は、フラグ`TRUE`、メイン ウィンドウとモードレスのダイアログを有効または、`FALSE`は無効になります。  
+ から@No__t_0 の場合、メインウィンドウとモードレスダイアログを有効にするか、`FALSE` すると無効にするかを示すフラグ。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または`E_FAIL`場合は、エラーが発生しました。  
+ 成功した場合は `S_OK` を返し、エラーが発生した場合は `E_FAIL` します。  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、`IOleInPlaceFrame::EnableModeless`メソッド。  
+ このメソッドは、`IOleInPlaceFrame::EnableModeless` メソッドと同じです。  
   
- このメソッドの呼び出しを入れ子にすることができます。  
+ このメソッドの呼び出しは入れ子にすることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Attach |Microsoft Docs
+title: 'IDebugDocumentHelper:: Attach |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f4fbd1686d27e594b748ca97c82c645de1b93de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3400a5bf6cd3e4a9726fdf4b2f20bbf43b9fc989
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783136"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577031"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-ドキュメント ツリーには、このドキュメントを追加します。  
+このドキュメントをドキュメントツリーに追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>パラメーター  
  `pddhParent`  
- [in]ドキュメント ツリーは、このドキュメントが追加されます。 NULL にすることがあります。  
+ からこのドキュメントが追加されるドキュメントツリー。 NULL を指定できます。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、このドキュメントをドキュメントに追加を使用して、ツリー`pddhParent`親として。 場合、`pddhParent`は`NULL`、このドキュメントは最上位のドキュメントになります。  
+ このメソッドは、`pddhParent` を親として使用して、ドキュメントツリーにこのドキュメントを追加します。 @No__t_0 が `NULL` 場合、このドキュメントは最上位のドキュメントになります。  
   
 ## <a name="see-also"></a>関連項目  
- [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
+ [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SynchronousCallInDebuggerThread |Microsoft Docs
+title: 'IDebugApplication:: SynchronousCallInDebuggerThread |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5460efaa3448c7812707e0baa7b2f5afe1d27a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 134717b6ce30c87ccfb4bbb50ffe958717ae757f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990557"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574581"
 ---
 # <a name="idebugapplicationsynchronouscallindebuggerthread"></a>IDebugApplication::SynchronousCallInDebuggerThread
-呼び出し元が、デバッガー スレッドでコードを実行するためのメカニズムを提供します。  
+デバッガースレッドでコードを実行するための機構を呼び出し元に提供します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,16 +40,16 @@ HRESULT SynchronousCallInDebuggerThread(
   
 #### <a name="parameters"></a>パラメーター  
  `pptc`  
- [in]呼び出すオブジェクト。  
+ から呼び出すオブジェクト。  
   
  `dwParam1`  
- [in]最初のパラメーターに渡す、`IDebugThreadCall::ThreadCallHandler`メソッド。  
+ から@No__t_0 メソッドに渡す最初のパラメーター。  
   
  `dwParam2`  
- [in]2 番目のパラメーターに渡す、`IDebugThreadCall::ThreadCallHandler`メソッド。  
+ から@No__t_0 メソッドに渡す2番目のパラメーター。  
   
  `dwParam3`  
- [in]3 番目のパラメーターに渡す、`IDebugThreadCall::ThreadCallHandler`メソッド。  
+ から@No__t_0 メソッドに渡す3番目のパラメーター。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -59,7 +59,7 @@ HRESULT SynchronousCallInDebuggerThread(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 言語エンジンとホストは通常、1 つのスレッドの実装の上に、フリー スレッド オブジェクトを実装するためにこのメソッドを使用します。  
+ 言語エンジンとホストは、通常、このメソッドを使用して、シングルスレッド実装の上にフリースレッドオブジェクトを実装します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

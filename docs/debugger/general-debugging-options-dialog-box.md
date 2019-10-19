@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435709"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569069"
 ---
 # <a name="general-debugging-options"></a>一般的なデバッグオプション
 
@@ -95,11 +95,11 @@ Visual Studio デバッガーのオプションを設定するには、 **[ツ�
 
 **[すべての出力ウィンドウテキストをイミディエイトウィンドウにリダイレクトする**]:**出力**ウィンドウに通常表示されるすべてのデバッガーメッセージを代わりに **[イミディエイト]** ウィンドウに送信します。
 
-**[オブジェクトの生の構造体を変数ウィンドウに表示する]** : すべてのオブジェクト構造ビューのカスタマイズをオフにします。 表示のカスタマイズの詳細については、「[管理オブジェクトのカスタムビューの作成](../debugger/create-custom-views-of-dot-managed-objects.md)」を参照してください。
+**[オブジェクトの生の構造体を変数ウィンドウに表示する]** : すべてのオブジェクト構造ビューのカスタマイズをオフにします。 表示のカスタマイズの詳細については、「[管理オブジェクトのカスタムビューを作成する](../debugger/create-custom-views-of-managed-objects.md)」を参照してください。
 
 **[モジュールの読み込み時に jit 最適化を抑制する (マネージのみ)** ]: デバッガーがアタッチされているときに、モジュールが読み込まれ、jit がコンパイルされるときに、マネージコードの jit 最適化を無効にします。 最適化を無効にした場合、一部の問題のデバッグは簡単になりますが、パフォーマンスは低下します。 [マイ コードのみ] を使用しているときに JIT 最適化を抑制すると、非ユーザー コードがユーザー コード ("マイ コード") として表示される可能性があります。 詳細については、「 [JIT の最適化とデバッグ](../debugger/jit-optimization-and-debugging.md)」を参照してください。
 
-**ASP.NET の JavaScript デバッグを有効にする (Chrome、Edge、および IE)** : ASP.NET アプリのスクリプトデバッガーを有効にします。 Chrome で初めて使用する場合は、ブラウザーにサインインして、インストールした Chrome 拡張機能を有効にすることが必要になる場合があります。 レガシ動作に戻すには、このオプションを無効にします。
+**ASP.NET の JavaScript デバッグを有効にします (Chrome、Microsoft Edge、および IE)** : ASP.NET アプリのスクリプトデバッガーを有効にします。 Chrome で初めて使用する場合は、ブラウザーにサインインして、インストールした Chrome 拡張機能を有効にすることが必要になる場合があります。 レガシ動作に戻すには、このオプションを無効にします。
 
 **Uwp Javascript アプリのエッジ開発者ツールを有効にする (試験段階)** : Microsoft EDGE で uwp javascript アプリの開発者ツールを使用できるようにします。
 
@@ -117,7 +117,7 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 
 **マネージ互換モードを使用**する: 既定のデバッグエンジンをレガシバージョンに置き換えて、次のシナリオを有効にします。
 
-- 、Visual Basic、またはC# F#独自の式エバリュエーター (これには/cli を含むC++) 以外の .NET Framework 言語を使用しています。
+- 、Visual Basic、またはC# F#独自の式エバリュエーター (これには/cli を含むC++) 以外の .net 言語を使用しています。
 
 - 混合モードのデバッグ中にプロジェクトのC++エディットコンティニュを有効にします。
 

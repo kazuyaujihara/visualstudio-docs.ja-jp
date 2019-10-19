@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs
+title: 'IActiveScriptSiteInterruptPoll:: QueryContinue |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ce45c0973d65d240136d7b42aef0c078b00c9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ce2ad61b54dce510035dd8e97d0dfb2accbf7a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992294"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572238"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-により、ホストは、スクリプトが終了することを指定します。  
+スクリプトを終了する必要があることをホストが指定できるようにします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,20 +34,20 @@ HRESULT QueryContinue();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
 |[値]|説明|  
 |-----------|-----------------|  
-|`S_OK`|呼び出しが成功したし、ホストが継続して実行するスクリプトを許可します。|  
-|`S_FALSE`|成功した呼び出しと、スクリプトを終了するホストの要求。|  
+|`S_OK`|呼び出しは成功し、ホストはスクリプトの実行を続行できるようにします。|  
+|`S_FALSE`|呼び出しは成功し、ホストはスクリプトを終了するように要求します。|  
   
 ## <a name="remarks"></a>Remarks  
- しない限り、ホストされているスクリプトを終了する必要がありますの戻り値、`QueryContinue`メソッドは`S_OK`します。 戻り値`S_FALSE`ホスト明示的に要求していること、スクリプトが終了することを示します。  
+ @No__t_0 メソッドの戻り値が `S_OK` でない限り、ホストされているスクリプトは終了します。 @No__t_0 の戻り値は、ホストがスクリプトを終了するように明示的に要求することを示します。  
   
- マルチ スレッドのホストを使用して、可能性があります、`IActiveScript::InterruptScriptThread`スクリプトを終了するメソッド。  
+ マルチスレッドホストでは、`IActiveScript::InterruptScriptThread` メソッドを使用してスクリプトを終了できます。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSiteInterruptPoll インターフェイス](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   

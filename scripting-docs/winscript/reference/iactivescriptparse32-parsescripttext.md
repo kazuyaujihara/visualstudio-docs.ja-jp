@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::ParseScriptText |Microsoft Docs
+title: IActiveScriptParse32::P arseScriptText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,14 +10,14 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 782c1d7bd2dd4c0708418ffd3e69c339dd993fde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec4e9539900ee39e99927bb9055a8c107f864653
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954857"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574899"
 ---
-# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
+# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::P arseScriptText
 指定したコード スクリプトレットを解析することで、宣言を名前空間に追加し、必要に応じてコードを評価します。  
   
 ## <a name="syntax"></a>構文  
@@ -75,11 +75,11 @@ HRESULT ParseScriptText(
 ## <a name="remarks"></a>Remarks  
  スクリプト エンジンが初期化状態である場合、コードは実際にはこの呼び出し中に評価されません。コードはキューに入れられ、スクリプト エンジンが起動状態に移行 (を経過) すると実行されます。 コードの実行が初期化状態では許可されないため、初期化状態のときに SCRIPTTEXT_ISEXPRESSION フラグを設定してこのメソッドを呼び出すと、エラーになります。  
   
- スクリプトレットは、スクリプト言語で許可されている限り、式でもステートメントの列挙でも、その他のものでもかまいません。 HTML の評価でこのメソッドを使用するなど、\<スクリプト > タグが実行されるだけにスクリプトの状態へのコンパイルではなく、HTML ページが構築されるようにステートメントを許可します。  
+ スクリプトレットは、スクリプト言語で許可されている限り、式でもステートメントの列挙でも、その他のものでもかまいません。 たとえば、このメソッドは HTML \<SCRIPT > タグの評価で使用されます。これにより、スクリプトの状態にコンパイルするだけではなく、HTML ページの構築時にステートメントを実行できます。  
   
  このメソッドに渡されるコードは、コードとして有効であり完結している必要があります。 たとえば VBScript では、このメソッドを Sub Function(x) で 1 回呼び出し、`End Sub` でもう 1 回呼び出すことは無効です。 パーサーは、このメソッドの 2 回目の呼び出しがあるため、サブルーチンの完了を待たずに、解析エラーを生成します。サブルーチンの宣言が開始したが完了しなかったためです。  
   
- スクリプトの状態の詳細については、のスクリプト エンジンの状態を参照してください[Windows スクリプト エンジン](../../winscript/windows-script-engines.md)します。  
+ スクリプトの状態の詳細については、「 [Windows スクリプトエンジン](../../winscript/windows-script-engines.md)」の「スクリプトエンジンの状態」セクションを参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

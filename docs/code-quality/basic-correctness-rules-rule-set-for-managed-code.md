@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf26a04f5db5ed3e3f2710a5421dece6cf6cc0c7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: 8f48b2d60feb9743529de8ed80b80365ffb815d1
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450349"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72534602"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "基本正確性規則" 規則セット
 
@@ -23,23 +23,23 @@ ms.locfileid: "72450349"
 
 |規則|説明|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|アセンブリに AssemblyVersionAttribute を設定します|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|インターフェイス メソッドは、子型によって呼び出し可能でなければなりません|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|ネイティブ リソースを所有する型は、破棄可能でなければなりません|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|P/Invoke を NativeMethods クラスに移動します|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|基底クラス メソッドを非表示にしません|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|IDisposable を正しく実装します|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|予期しない場所に例外を発生させません|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|重複するアクセラレータを使用しません|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke エントリ ポイントは存在しなければなりません|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invoke は参照可能であることはできません|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Auto 配置の型を COM 参照可能にすることはできません|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|P/Invoke の直後に GetLastError を呼び出します|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 参照可能な型の基本型は COM 参照可能でなければなりません|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 登録メソッドは一致しなければなりません|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke を正しく宣言します|
+|[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
+|[CA1009](../code-quality/ca1009.md)|イベント ハンドラーを正しく宣言します|
+|[CA1016](../code-quality/ca1016.md)|アセンブリに AssemblyVersionAttribute を設定します|
+|[CA1033](../code-quality/ca1033.md)|インターフェイス メソッドは、子型によって呼び出し可能でなければなりません|
+|[CA1049](../code-quality/ca1049.md)|ネイティブ リソースを所有する型は、破棄可能でなければなりません|
+|[CA1060](../code-quality/ca1060.md)|P/Invoke を NativeMethods クラスに移動します|
+|[CA1061](../code-quality/ca1061.md)|基底クラス メソッドを非表示にしません|
+|[CA1063](../code-quality/ca1063.md)|IDisposable を正しく実装します|
+|[CA1065](../code-quality/ca1065.md)|予期しない場所に例外を発生させません|
+|[CA1301](../code-quality/ca1301.md)|重複するアクセラレータを使用しません|
+|[CA1400](../code-quality/ca1400.md)|P/Invoke エントリ ポイントは存在しなければなりません|
+|[CA1401](../code-quality/ca1401.md)|P/Invoke は参照可能であることはできません|
+|[CA1403](../code-quality/ca1403.md)|Auto 配置の型を COM 参照可能にすることはできません|
+|[CA1404](../code-quality/ca1404.md)|P/Invoke の直後に GetLastError を呼び出します|
+|[CA1405](../code-quality/ca1405.md)|COM 参照可能な型の基本型は COM 参照可能でなければなりません|
+|[CA1410](../code-quality/ca1410.md)|COM 登録メソッドは一致しなければなりません|
+|[CA1415](../code-quality/ca1415.md)|P/Invoke を正しく宣言します|
 |[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA1900](../code-quality/ca1900.md)|値型フィールドはポータブルでなければなりません|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 宣言はポータブルでなければなりません|
@@ -85,10 +85,10 @@ ms.locfileid: "72450349"
 |[CA2240](../code-quality/ca2240.md)|ISerializable を正しく実装します|
 |[CA2241](../code-quality/ca2241.md)|書式設定メソッドに正しい引数を提供|
 |[CA2242](../code-quality/ca2242.md)|NaN に対して正しくテストします|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Enums は 0 値を含んでいなければなりません|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|オーバーロードする加算および減算で、演算子 equals をオーバーロードします|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|ローカライズされるパラメーターとしてリテラルを渡さない|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|文字列を大文字に標準化します|
+|[CA1008](../code-quality/ca1008.md)|Enums は 0 値を含んでいなければなりません|
+|[CA1013](../code-quality/ca1013.md)|オーバーロードする加算および減算で、演算子 equals をオーバーロードします|
+|[CA1303](../code-quality/ca1303.md)|ローカライズされるパラメーターとしてリテラルを渡さない|
+|[CA1308](../code-quality/ca1308.md)|文字列を大文字に標準化します|
 |[CA1806](../code-quality/ca1806.md)|メソッドの結果を無視しない|
 |[CA1816](../code-quality/ca1816.md)|GC.SuppressFinalize を正しく呼び出します|
 |[CA1819](../code-quality/ca1819.md)|プロパティは、配列を返すことはできません|

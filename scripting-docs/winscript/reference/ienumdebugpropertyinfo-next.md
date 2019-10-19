@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Next |Microsoft Docs
+title: 'IEnumDebugPropertyInfo:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1568d2387422bebc86ce2b035ba997610833e85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99631c217ca56dce91512403dfb6623cd1e7641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963417"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574198"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
-指定した数を取得`DebugPropertyInfo`列挙体シーケンス内の構造体。  
+列挙シーケンス内の指定された数の `DebugPropertyInfo` 構造体を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,16 +39,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]数`DebugPropertyInfo`構造体を取得します。  
+ から取得する `DebugPropertyInfo`structures の数。  
   
  `rgelt`  
- [out]配列の`DebugPropertyInfo`構造体を取得します。  
+ 入出力取得した `DebugPropertyInfo` 構造体の配列。  
   
  `pceltFetched`  
- [out]数を返します`DebugPropertyInfo`構造が実際に取得します。  
+ 入出力実際に取得された `DebugPropertyInfo` 構造体の数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumDebugPropertyInfo インターフェイス](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   

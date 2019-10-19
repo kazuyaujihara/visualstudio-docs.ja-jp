@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser |Microsoft Docs
+title: 'IDebugHelper:: CreatePropertyBrowser |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99aa03470b49d02ee9f0ac1548bd1f8e27d0ab34
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979254"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562500"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-バリアント型をラップするプロパティ ブラウザーを返します。  
+バリアントをラップするプロパティブラウザーを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,16 +40,16 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>パラメーター  
  `pvar`  
- [in]参照するルートのバリアント。  
+ から参照するルートバリアント。  
   
  `bstrName`  
- [in]ルートに付ける名前。  
+ からルートに付ける名前。  
   
  `pdat`  
- [in]プロパティを要求するスレッドします。 このパラメーターが NULL の場合は、マーシャ リングは実行されません。  
+ からプロパティを要求するスレッド。 このパラメーターが NULL の場合、マーシャリングは実行されません。  
   
  `ppdob`  
- [out]プロパティ ブラウザー。  
+ 入出力プロパティブラウザー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -59,9 +59,9 @@ HRESULT CreatePropertyBrowser(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、バリアント型をラップするプロパティ ブラウザーを返します。  
+ このメソッドは、バリアントをラップするプロパティブラウザーを返します。  
   
 ## <a name="see-also"></a>関連項目  
- [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
+ [IDebugHelper:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
  [IDebugHelper インターフェイス](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)

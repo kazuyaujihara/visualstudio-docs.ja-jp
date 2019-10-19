@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp |Microsoft Docs
+title: 'IActiveScriptStringCompare:: StrComp |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991431"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577939"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-スクリプト エンジンに対する文字列比較メソッドを定義します。  
+スクリプトエンジンの文字列比較メソッドを定義します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,7 +48,7 @@ HRESULT StrComp(
  第 2 文字列。  
   
  `iRet`  
- 比較の結果。 場合は 0`bszStr1`と`bszStr2`が同じ場合は-1。 `bszStr1`  <  `bszStr2`; 場合は、1 `bszStr1`  > `bszStr2`します。  
+ 比較の結果。 `bszStr1` と `bszStr2`are 同じ場合は0。`bszStr1`  <  `bszStr2`; の場合は-1。`bszStr1`  >  `bszStr2` の場合は1。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -57,13 +57,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引数が有効ではありません。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンがされていないされて読み込まれるまたは初期化) します。|  
+|`E_UNEXPECTED`|この呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか、初期化されていません)。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドには、文字列比較を実行するたびには呼び出されます。  
+ このメソッドは、文字列比較が実行されるたびに呼び出されます。  
   
 ## <a name="example"></a>例  
- 次の例では、文字列の比較関数をオーバー ロードする方法を示します。 使用する場合は、オーバー ロードが許可[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) SCRIPTPROP_STRINGCOMPAREINSTANCE を設定します。  
+ 次の例は、文字列比較関数をオーバーロードする方法を示しています。 [IActiveScriptProperty:: SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)を使用して SCRIPTPROP_STRINGCOMPAREINSTANCE を設定する場合は、オーバーロードを使用できます。  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

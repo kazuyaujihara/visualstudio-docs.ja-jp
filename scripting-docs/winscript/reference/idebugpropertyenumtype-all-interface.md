@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyEnumType_All インターフェイス |Microsoft Docs
+title: IDebugPropertyEnumType_All Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979111"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574313"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All インターフェイス
-`IDebugPropertyEnumType`インターフェイスが定義され、フィルターとして渡すことができます、Iid の各`IDebugProperty::EnumMembers`適切な列挙子の要求中にします。  
+# <a name="idebugpropertyenumtype_all-interface"></a>IDebugPropertyEnumType_All インターフェイス
+@No__t_0 インターフェイスは、適切な列挙子を要求しているときに、各 Iid がを `IDebugProperty::EnumMembers` にフィルターとして渡すことができるように定義されています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,9 +37,9 @@ IDebugPropertyEnumType_All : IUnknown
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|名前を表すテキスト文字列を返します|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|名前を説明するテキスト文字列を返します。|  
   
- 次のインターフェイスを継承`IDebugPropertyEnumType_All`、追加のメソッドはありません。  
+ 次のインターフェイスは `IDebugPropertyEnumType_All` から継承し、追加のメソッドはありません。  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   

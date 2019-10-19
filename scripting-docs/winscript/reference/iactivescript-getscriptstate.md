@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState |Microsoft Docs
+title: 'IActiveScript:: GetScriptState |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f9f3bedee9af9ae3cb145108d801f252267d5d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d266e713879aafe1c5ca271d46b3030f3275460f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935749"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575734"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-スクリプト エンジンの現在の状態を取得します。 このメソッドは、ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことができます、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイス。  
+スクリプトエンジンの現在の状態を取得します。 このメソッドは非ベースのスレッドから呼び出すことができます。この場合、非ベースのコールアウトによってオブジェクトをホストするか、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイスを使用することはできません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,10 +37,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>パラメーター  
  `pss`  
- [out]定義されている値を受け取る変数のアドレス、 [SCRIPTSTATE 列挙型](../../winscript/reference/scriptstate-enumeration.md)列挙体。 値は、呼び出し元のスレッドに関連付けられているスクリプト エンジンの現在の状態を示します。  
+ 入出力[Scriptstate 列挙](../../winscript/reference/scriptstate-enumeration.md)型で定義されている値を受け取る変数のアドレス。 値は、呼び出し元のスレッドに関連付けられているスクリプトエンジンの現在の状態を示します。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または`E_POINTER`場合は、無効なポインターが指定されました。  
+ 成功した場合は `S_OK` を返します。無効なポインターが指定された場合は `E_POINTER` を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

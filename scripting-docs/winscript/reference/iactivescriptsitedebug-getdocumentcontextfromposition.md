@@ -1,5 +1,5 @@
 ---
-title: :Getdocumentcontextfromposition |Microsoft Docs
+title: 'IActiveScriptSiteDebug:: GetDocumentContextFromPosition |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df6c59fea5cfd60b6ae9a1b34e7000bd38dd9920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61bc36b98fee31ced1f3e8e00d084b5dabcd2124
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992554"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570161"
 ---
 # <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
-委任に、言語エンジンによって使用される`IDebugCodeContext::GetSourceContext`します。  
+@No__t_0 を委任するために言語エンジンによって使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,16 +40,16 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>パラメーター  
  `dwSourceContext`  
- [in]ソース コンテンツに提供する`ParseScriptText`または`AddScriptlet`します。  
+ から@No__t_0 または `AddScriptlet` に提供されるソースコンテンツ。  
   
  `uCharacterOffset`  
- [in]文字に対してスクリプト ブロックまたはスクリプトレットの開始オフセットします。  
+ からスクリプトブロックまたはスクリプトレットの開始位置を基準とした文字オフセット。  
   
  `uNumChars`  
- [in]このコンテキスト内の文字の数。  
+ からこのコンテキストの文字数。  
   
  `ppsc`  
- [out]この文字位置の範囲に対応するドキュメントのコンテキスト。  
+ 入出力この文字位置の範囲に対応するドキュメントコンテキスト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -59,7 +59,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 言語エンジンでは、このメソッドを使用して、委任`IDebugCodeContext::GetSourceContext`します。  
+ 言語エンジンは、このメソッドを使用して `IDebugCodeContext::GetSourceContext` を委任します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSiteDebug インターフェイス](../../winscript/reference/iactivescriptsitedebug-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionCallBack::onComplete |Microsoft Docs
+title: 'IDebugExpressionCallBack:: onComplete |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bcadc8c9d4fe8c1991db19483673a36bf5c0b90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fd142cc7ecbcd984be1943da05fa782260b10f8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946304"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576420"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
 式の評価が完了したことを示します。  
@@ -34,7 +34,7 @@ HRESULT onComplete();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,7 +44,7 @@ HRESULT onComplete();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 式の評価が完了すると、このメソッドが呼び出されます。 `IDebugExpression::GetResultAsString`メソッドは、このイベント ハンドラー内から呼び出すことができます。  
+ このメソッドは、式の評価が完了したときに呼び出されます。 @No__t_0 メソッドは、このイベントハンドラー内から呼び出すことができます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugExpressionCallBack インターフェイス](../../winscript/reference/idebugexpressioncallback-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Next |Microsoft Docs
+title: 'IEnumDebugExpressionContexts:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5128ba9ac90fc99cfec81b2c81711547947bfa49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95314c7497a9b11be51d1e64df0310323300d281
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807352"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577148"
 ---
 # <a name="ienumdebugexpressioncontextsnext"></a>IEnumDebugExpressionContexts::Next
-指定した列挙体シーケンス内のセグメント数を取得します。  
+列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]取得するセグメントの数。  
+ から取得するセグメントの数。  
   
  `ppdec`  
- [out]配列を返します`IDebugExpressionContext`を取得するセグメントを表すインターフェイス。  
+ 入出力取得するセグメントを表す `IDebugExpressionContext` インターフェイスの配列を返します。  
   
  `pceltFetched`  
- [out]列挙子によってフェッチされるセグメントの実際の数。  
+ 入出力列挙子によってフェッチされたセグメントの実際の数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定した列挙体シーケンス内のセグメント数を取得します。  
+ このメソッドは、列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumDebugExpressionContexts インターフェイス](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)

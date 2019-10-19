@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType |Microsoft Docs
+title: 'IVariantChangeType:: ChangeType |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81ed0a8502e9b0cfc53725621d477d34ee5010ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406d5d8486b3016f0105b7bd8bf231db0e1e9613
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945635"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571784"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-バリアント型の値を受け取り、指定の型を持つ新しいバリアントを作成します。  
+バリアント値を受け取り、指定された型を使用して新しいバリアントを作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,16 +40,16 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>パラメーター  
  `pvarDst`  
- [入力、出力]によって表される値を格納するバリアント`pvarSrc`がで指定された型、`vtNew`します。  
+ [入力、出力]@No__t_1 によって指定された型を使用して、`pvarSrc` によって表される値を格納するバリアント。  
   
  `pvarSrc`  
- [in]新しい種類を変更するのにはバリアント型の値。  
+ から新しい型に変更するバリアント値。  
   
  `lcid`  
- [in]文字列と引数の変換時に使用するロケール コンテキスト。  
+ から引数を文字列との間で変換するときに使用するロケールコンテキスト。  
   
  `vtNew`  
- [in]型を指定します`pvarDst`になります。  
+ から@No__t_0 の種類を指定します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -59,7 +59,7 @@ HRESULT ChangeType(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- `pvarDst`と`pvarSrc`引数がありますと等しい場合は、この場合、元の値が上書きされます。 このメソッドは成功`pvarDst`を`VariantClear`関数の場合、その対策として`pvarDst`有効な値に初期化する必要があります。  
+ @No__t_0 引数と `pvarSrc` 引数が等しい場合は、元の値が上書きされます。 このメソッドは `pvarDst` を `VariantClear` 関数に渡し、その結果 `pvarDst` を有効な値に初期化する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IVariantChangeType インターフェイス](../../winscript/reference/ivariantchangetype-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler |Microsoft Docs
+title: 'IActiveScriptAuthor:: GetEventHandler |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c69b32f0040ea6d52e0712b8e1813cc5a0b40c58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935634"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576230"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
 指定された属性を持つスクリプトレットを返します。  
@@ -41,19 +41,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>パラメーター  
  `pdisp`  
- [in]`IDispatch`に対応するオブジェクト、`NamedItem`スクリプトレットがアタッチされます。  
+ からスクリプトレットがアタッチされる `NamedItem` に対応する `IDispatch` オブジェクト。  
   
  `pszItem`  
- [in]ホストでスクリプトレットの完全修飾の名前の最上位レベルの識別子のバッファーのアドレス。  
+ からホストの完全修飾スクリプトレット名の最上位レベル識別子のバッファーアドレス。  
   
  `pszSubItem`  
- [in]ホストでスクリプトレットの完全修飾の名前の 2 番目のレベルの識別子のバッファーのアドレス。 名前に 1 つだけのレベルがある場合は NULL に設定します。  
+ からホストの完全修飾スクリプトレット名の第2レベル識別子のバッファーアドレス。 名前にレベルが1つしかない場合は NULL に設定します。  
   
  `pszEvent`  
- [in]イベントの名前を格納するバッファーのアドレス。 スクリプトレットは、このイベントのイベント ハンドラーです。  
+ からイベント名を格納しているバッファーのアドレス。 スクリプトレットは、このイベントのイベントハンドラーです。  
   
  `ppse`  
- [out]ポインターを受け取る変数のアドレス、`IScriptEntry`を指定された属性を持つスクリプトレットのインターフェイス。  
+ 入出力指定された属性を持つスクリプトレットの `IScriptEntry` インターフェイスへのポインターを受け取る変数のアドレス。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

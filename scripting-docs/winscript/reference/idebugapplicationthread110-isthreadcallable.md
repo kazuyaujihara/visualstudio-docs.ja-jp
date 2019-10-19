@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsThreadCallable |Microsoft Docs
+title: 'IDebugApplicationThread110:: IsThreadCallable 可能 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90f0010a513adef67af1285ac15bc35d4573df57
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ff81190247454a4471a4150843d3fb0aaed5999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440517"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574468"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-このスレッドが SynchronousCallInThread などのメカニズムを切り替え、PDM のスレッドを使用して行われた呼び出しを処理する状態であるかどうかを判断します。  
+このスレッドが、SynchronousCallInThread など、PDM のスレッド切り替え機構を使用して行われた呼び出しを処理する状態であるかどうかを判断します。  
   
 > [!IMPORTANT]
-> [IDebugApplicationThread110 インターフェイス](../../winscript/reference/idebugapplicationthread110-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
+> [IDebugApplicationThread110 インターフェイス](../../winscript/reference/idebugapplicationthread110-interface.md)は、PDM version 11.0 以降で実装されています。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>パラメーター  
  `pfIsCallable`  
- [out]`true`スレッドがそれ以外の場合、呼び出し可能な場合`false`します。  
+ [out] スレッドが呼び出し可能な場合は `true`。それ以外の場合は `false`。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplicationThread110 インターフェイス](../../winscript/reference/idebugapplicationthread110-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles |Microsoft Docs
+title: 'IDebugApplication110:: CallableWaitForHandles |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446393"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575085"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-シグナル状態になる一方で、指定したハンドルのいずれかの間、待機スレッド間の呼び出しをこのスレッドに投稿します。 このメソッドは、デバッガー スレッドから呼び出す必要があります。  
+指定されたハンドルのいずれかがシグナル状態になるまで待機し、スレッド間の呼び出しをこのスレッドにポストすることを許可します。 このメソッドは、デバッガースレッドから呼び出す必要があります。  
   
 > [!IMPORTANT]
-> [IDebugApplication110 インターフェイス](../../winscript/reference/idebugapplication110-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
+> [IDebugApplication110 インターフェイス](../../winscript/reference/idebugapplication110-interface.md)は、PDM version 11.0 以降で実装されています。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,13 +34,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>パラメーター  
  `handleCount`  
- 待機ハンドルの数。  
+ 待機するハンドルの数。  
   
  `pHandles`  
- 待機ハンドルのセット。  
+ 待機するハンドルのセット。  
   
  `pIndex`  
- HRESULT 値が S_OK をインデックスに`pHandles`ハンドルにシグナル状態にします。  
+ HRESULT 値が S_OK の場合、シグナル状態になったハンドルの `pHandles` のインデックス。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication110 インターフェイス](../../winscript/reference/idebugapplication110-interface.md)

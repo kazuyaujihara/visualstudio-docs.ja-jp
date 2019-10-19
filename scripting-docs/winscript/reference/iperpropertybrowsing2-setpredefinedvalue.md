@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::SetPredefinedValue |Microsoft Docs
+title: 'IPerPropertyBrowsing2:: Setpre Value |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d35e087cc057608666e104681d65fa8009f8167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a823a04082b7e19b2c1bc475c1070cc501789e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944818"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576241"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
-指定されたプロパティの値を設定`dispID`します。 定義済みの値は、トークンで識別されます。 `dwCookie.`  
+@No__t_0 によって指定されたプロパティの値を設定します。 定義済みの値は、トークンによって識別され `dwCookie.`  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,13 +38,13 @@ HRESULT SetPredefinedValue(
   
 #### <a name="parameters"></a>パラメーター  
  `dispid`  
- [in]定義済みの値の設定対象のプロパティのディスパッチ識別子。  
+ から定義済みの値が設定されているプロパティのディスパッチ識別子。  
   
  `dwCookie`  
- [in]設定する値を識別するトークンです。  
+ から設定する値を識別するトークン。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IPerPropertyBrowsing2 インターフェイス 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

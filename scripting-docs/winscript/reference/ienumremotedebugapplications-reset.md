@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Reset |Microsoft Docs
+title: 'IEnumRemoteDebugApplications:: Reset |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cf00fa40f00e511f56763e6a497ea477bf686d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 664bac2b89c9d22b2c5a2d60e50e033746ec1f4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962276"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575180"
 ---
 # <a name="ienumremotedebugapplicationsreset"></a>IEnumRemoteDebugApplications::Reset
-先頭に、列挙体シーケンスをリセットします。  
+列挙シーケンスを先頭にリセットします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT Reset();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,7 +44,7 @@ HRESULT Reset();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、先頭に、列挙体シーケンスをリセットします。  
+ このメソッドは、列挙体のシーケンスを先頭にリセットします。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumRemoteDebugApplications インターフェイス](../../winscript/reference/ienumremotedebugapplications-interface.md)

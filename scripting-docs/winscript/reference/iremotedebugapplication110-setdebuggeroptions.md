@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::SetDebuggerOptions |Microsoft Docs
+title: 'IRemoteDebugApplication110:: Setデバッガオプション |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a61eabb307bda39fd871e8f5f4f7198256f0929e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7168a4ef8ec70368c0ff691ba1f721275f9d65d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383355"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577419"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-デバッガーのオプションを更新するには、呼び出されます。 このメソッドは、後に呼び出す必要があります[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)します。 [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)メソッドは、既定のオプションを自動的にリセットします。 0 (SDO_NONE) に既定のオプション。  
+デバッガーオプションを更新するために呼び出されます。 このメソッドは、 [Iremotedebugapplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)の後に呼び出す必要があります。 [Iremotedebugapplication::D isconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)メソッドは、自動的に既定のオプションにリセットされます。 既定値は 0 (SDO_NONE) です。  
   
 > [!IMPORTANT]
-> [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
+> [Iremotedebugapplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)は、PDM version 11.0 以上で実装されています。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,11 +34,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>パラメーター  
  `mask`  
- [SCRIPT_DEBUGGER_OPTIONS 列挙型](../../winscript/reference/script-debugger-options-enumeration.md)マスク。  
+ [SCRIPT_DEBUGGER_OPTIONS 列挙](../../winscript/reference/script-debugger-options-enumeration.md)マスク。  
   
  `value`  
- [SCRIPT_DEBUGGER_OPTIONS 列挙型](../../winscript/reference/script-debugger-options-enumeration.md)値。  
+ [SCRIPT_DEBUGGER_OPTIONS 列挙](../../winscript/reference/script-debugger-options-enumeration.md)値。  
   
 ## <a name="see-also"></a>関連項目  
- [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [Iremotedebugapplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 インターフェイス](../../winscript/reference/iremotedebugapplication110-interface.md)

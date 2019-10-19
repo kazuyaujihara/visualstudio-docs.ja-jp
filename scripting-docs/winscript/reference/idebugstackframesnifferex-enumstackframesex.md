@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx |Microsoft Docs
+title: 'IDebugStackFrameSnifferEx:: Enumstackフレーム Sex |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8969c279e4eb2c2966e297317a25a60f12be68a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a4062e7c0a9b3a82578daffa2ab7ef7e9ba614d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005720"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576705"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-現在のスレッドのスタック フレームの列挙子を返します。  
+現在のスレッドのスタックフレームの列挙子を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>パラメーター  
  `dwSpMin`  
- [in]スタック フレームを列挙するための下限のアドレス値。  
+ からスタックフレームを列挙するための下限アドレス。  
   
  `ppedsf`  
- [out]現在のスレッドのスタック フレームの列挙子。  
+ 入出力現在のスレッドのスタックフレームの列挙子。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT EnumStackFramesEx(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- スタック フレームの列挙子は、最後にプッシュされたフレームを使用して、スタックの上部で開始フレームを返します。 列挙子にはより大きいまたは等しいアドレスを持つスタック フレームのみが含まれています`dwSpMin`します。  
+ スタックフレーム列挙子は、最後にプッシュされたフレームを使用して、スタックの一番上から始まるフレームを返します。 列挙子には、`dwSpMin` 以上のアドレスを持つスタックフレームだけが含まれます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugStackFrameSnifferEx インターフェイス](../../winscript/reference/idebugstackframesnifferex-interface.md)

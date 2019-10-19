@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnLeaveScript |Microsoft Docs
+title: 'IActiveScriptSite:: OnLeaveScript |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da39058a8f069c4799835108372d11849d86444e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9d872948fea14998f9c6f8140467d6e4c83d056
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992676"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570318"
 ---
 # <a name="iactivescriptsiteonleavescript"></a>IActiveScriptSite::OnLeaveScript
-スクリプト コードを実行してから、スクリプト エンジンが返されることをホストに通知します。  
+スクリプトエンジンがスクリプトコードの実行から返されたことをホストに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT OnLeaveScript(void);
  正常に終了した場合は `S_OK` を返します。  
   
 ## <a name="remarks"></a>Remarks  
- スクリプト エンジンでは、スクリプト エンジンが入力された呼び出し元アプリケーションに制御を戻す前に、このメソッドを呼び出す必要があります。 たとえば、スクリプト オブジェクトを呼び出し、スクリプト エンジンによって処理されるイベントを発生させる場合は、スクリプト エンジン呼び出す必要があります、 [IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)メソッド、イベントを実行する前にを呼び出す必要がありますと`IActiveScriptSite::OnLeaveScript`後イベントのイベントを発生させたオブジェクトを返す前に実行します。 このメソッドの呼び出しを入れ子にすることができます。 すべての呼び出しに`IActiveScriptSite::OnEnterScript`このメソッドに対応する呼び出しが必要です。  
+ スクリプトエンジンは、スクリプトエンジンに入った呼び出し元アプリケーションに制御を返す前に、このメソッドを呼び出す必要があります。 たとえば、スクリプトエンジンによって処理されるイベントを発生させるオブジェクトをスクリプトが呼び出す場合、スクリプトエンジンは、イベントを実行する前に[IActiveScriptSite:: OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)メソッドを呼び出す必要があります。また、イベントの実行後に `IActiveScriptSite::OnLeaveScript` を呼び出す必要があります。イベントを発生させたオブジェクトに戻る前。 このメソッドの呼び出しは入れ子にすることができます。 @No__t_0 を呼び出すたびに、このメソッドへの対応する呼び出しが必要になります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

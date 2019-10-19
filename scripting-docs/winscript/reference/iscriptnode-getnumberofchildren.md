@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetNumberOfChildren | Microsoft Docs
+title: 'IScriptNode:: GetNumberOfChildren |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf35c82193ce3d9beb3c6d55e5ba850a0417874
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67912194b051574d4b4a37e897ec7cac14b02ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786913"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577528"
 ---
 # <a name="iscriptnodegetnumberofchildren"></a>IScriptNode::GetNumberOfChildren
-子ノードの数を返します、`IScriptNode`オブジェクト。  
+@No__t_0 オブジェクトの子ノードの数を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetNumberOfChildren(
   
 #### <a name="parameters"></a>パラメーター  
  `pcsn`  
- [out]子ノードの数を`IScriptNode`オブジェクトします。  
+ 入出力@No__t_0 オブジェクトが持つ子ノードの数。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

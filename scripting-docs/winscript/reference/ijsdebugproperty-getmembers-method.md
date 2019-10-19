@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugproperty::getmembers メソッド |Microsoft Docs
+title: 'IJsDebugProperty:: GetMembers メソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be31a0f02869ea740809fb68dbddf48843b2f3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e700e51dea6723238437bf1fed741698097ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793670"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574059"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>IJsDebugProperty::GetMembers メソッド
 このオブジェクトのメンバーを取得します。  
@@ -43,8 +43,8 @@ HRESULT GetMembers(
   
 ## <a name="return-value"></a>戻り値  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [IJsDebugProperty インターフェイス](../../winscript/reference/ijsdebugproperty-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames |Microsoft Docs
+title: 'IDebugStackFrameSniffer:: EnumStackFrames |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0d6d46a3bbc508308c689b4e10bea15501fad3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a2eab1698cd98130b496e58a74cdfdd091efd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005733"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576718"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-現在のスレッドのスタック フレームの列挙子を返します。  
+現在のスレッドのスタックフレームの列挙子を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>パラメーター  
  `ppedsf`  
- [out]現在のスレッドのスタック フレームの列挙子。  
+ 入出力現在のスレッドのスタックフレームの列挙子。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- スタック フレームの列挙子は、以降、最後にプッシュされたフレームでは、スタックの上部で開始フレームを返します。  
+ スタックフレーム列挙子は、最後にプッシュされたフレームを起点として、スタックの一番上から始まるフレームを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugStackFrameSniffer インターフェイス](../../winscript/reference/idebugstackframesniffer-interface.md)

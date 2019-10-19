@@ -1,5 +1,5 @@
 ---
-title: :Adddeferredtext |Microsoft Docs
+title: 'IDebugDocumentHelper:: AddDeferredText |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aae73e44059b1f07fa4cb54f40cdcd12e564a8f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433942"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577048"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
-指定されたテキストは、使用可能な文字は提供されませんが、ヘルパーに通知します。  
+指定されたテキストが使用可能であることをヘルパーに通知しますが、文字は提供しません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT AddDeferredText(
   
 #### <a name="parameters"></a>パラメーター  
  `cChars`  
- [in]追加する (Unicode) 文字の数。  
+ から追加する (Unicode) 文字の数。  
   
  `dwTextStartCookie`  
- [in]テキストの開始位置を表すホスト定義のクッキー。  
+ からテキストの開始位置を表すホスト定義のクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -52,15 +52,15 @@ HRESULT AddDeferredText(
 |`E_FAIL`|メソッドが失敗しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、正確な通知およびサイズの情報を生成するヘルパーを許可するときに必要になるまでを追加する文字を提供することを遅延するホストを使用します。 `dwTextStartCookie`パラメーターは、cookie、テキストの開始位置を表すホストで定義されています。 後続の呼び出し`IDebugDocumentText::GetText`この cookie を提供する必要があります。 たとえば、DBCS でテキストを表すホストで cookie 可能性がありますのバイト オフセット。  
+ このメソッドを使用すると、ホストは、必要になるまで追加する文字の指定を遅らせることができ、ヘルパーは正確な通知とサイズ情報を生成できます。 @No__t_0 パラメーターは、ホストによって定義された、テキストの開始位置を表すクッキーです。 後続の `IDebugDocumentText::GetText` への呼び出しでは、この cookie を提供する必要があります。 たとえば、DBCS のテキストを表すホストでは、cookie にバイトオフセットを指定できます。  
   
- 前提とする単一の呼び出し`IDebugDocumentText::GetText`複数の呼び出しから文字を取得できます`AddDeferredText`。 遅延の文字の同じ範囲にはヘルパー クラスは複数回要求可能性があります。  
+ @No__t_0 の1回の呼び出しで、`AddDeferredText` の複数の呼び出しから文字を取得できると想定されています。 ヘルパークラスでは、同じ範囲の遅延文字を複数回要求することもできます。  
   
 > [!NOTE]
-> 呼び出す`AddDeferredText`への呼び出しを混在させないでください`AddUnicodeText`または`AddDBCSText`します。 この場合、`E_FAIL`が返されます。  
+> @No__t_0 の呼び出しは、`AddUnicodeText` または `AddDBCSText` の呼び出しと混在させることはできません。 このエラーが発生すると、`E_FAIL` が返されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [Idebugdocumenthelper::adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

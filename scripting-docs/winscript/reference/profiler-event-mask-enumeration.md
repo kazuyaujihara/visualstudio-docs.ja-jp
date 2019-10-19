@@ -15,14 +15,14 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7230e65e5559d53e56cf6424a34dd44aa4edda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1e1e7f3b604832014cb23245b105756d1126c5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831643"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572284"
 ---
-# <a name="profilereventmask-enumeration"></a>PROFILER_EVENT_MASK 列挙型
+# <a name="profiler_event_mask-enumeration"></a>PROFILER_EVENT_MASK 列挙型
 プロファイルが必要なイベントの種類を示します。  
   
 ## <a name="syntax"></a>構文  
@@ -44,13 +44,13 @@ typedef enum {
   
 |メンバー|説明|  
 |------------|-----------------|  
-|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|ユーザーが記述したスクリプトと動的なコードで定義されている関数をプロファイルします。|  
-|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|スクリプト エンジンによって定義されているネイティブ関数をプロファイルします。|  
-|PROFILER_EVENT_MASK_TRACE_ALL|ドキュメント オブジェクト モデル (DOM) に呼び出しを除く、すべてのユーザー定義とスクリプト エンジン関数をプロファイルします。|  
-|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|DOM への呼び出しのプロファイル関数|  
-|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|DOM への呼び出しを含む、すべての関数をプロファイルします。|  
+|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|ユーザーが記述したスクリプトおよび動的コードで定義されている関数をプロファイルします。|  
+|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|スクリプトエンジンによって定義されるネイティブ関数をプロファイルします。|  
+|PROFILER_EVENT_MASK_TRACE_ALL|ドキュメントオブジェクトモデル (DOM) への呼び出しを除く、すべてのユーザー定義およびスクリプトエンジン関数をプロファイルします。|  
+|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|DOM を呼び出すプロファイル関数。|  
+|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|DOM への呼び出しを含むすべての関数をプロファイリングします。|  
   
 ## <a name="see-also"></a>関連項目  
- [アクティブ スクリプト Profiler の定数、列挙型および構造体](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
+ [アクティブスクリプトプロファイラーの定数、列挙型、および構造体](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

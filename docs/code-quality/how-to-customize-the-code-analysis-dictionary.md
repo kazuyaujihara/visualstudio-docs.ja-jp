@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4a6c94f5784d57a90dd31f21f8829b3141140d0
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 5ec2afbdad9e68de38fcee8e4477a73851718e9d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349590"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535838"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>方法 : コード分析辞書をカスタマイズする
 
@@ -68,7 +68,7 @@ ms.locfileid: "72349590"
 
 - [辞書/単語/非推奨/期間 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [辞書/語句/複合/語句 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [辞書/単語/複合/語句 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
 - [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
@@ -95,17 +95,17 @@ ms.locfileid: "72349590"
 
 ディクショナリ/単語/認識されたノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
-- [CA1726: 適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726.md)
 
 - [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204.md)
 
@@ -130,17 +130,17 @@ ms.locfileid: "72349590"
 
 辞書/単語/認識されていないノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
-- [CA1726: 適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726.md)
 
 - [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204.md)
 
@@ -171,17 +171,17 @@ ms.locfileid: "72349590"
 
 [辞書/単語/非推奨] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-- [CA1726: 適切な用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>辞書/語句/複合/語句 [@CompoundAlternate]
+### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>辞書/単語/複合/語句 [@CompoundAlternate]
 
 組み込みの辞書は、複合語句ではなく、単一の個別の用語として用語を識別します。 コード分析で特定の単語として識別される用語の一覧に用語を含めるには、用語を辞書/単語/複合/用語要素の内部テキストとして追加します。 Term 要素の CompoundAlternate 属性で、個別の単語の最初の文字を大文字にして (Pascal 形式)、複合語句を構成する個々の単語を指定します。 内部テキストで指定された用語は、辞書/単語/DiscreteExceptions リストに自動的に追加されることに注意してください。
 
@@ -206,13 +206,13 @@ ms.locfileid: "72349590"
 
 [ディクショナリ/単語/複合] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
 ### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
 
@@ -235,9 +235,9 @@ ms.locfileid: "72349590"
 
 [ディクショナリ/単語/DiscreteExceptions] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/頭字語/CasingExceptions/頭字語
 
@@ -260,7 +260,7 @@ ms.locfileid: "72349590"
 
 [辞書/頭字語/CasingExceptions] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
 ## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>プロジェクトにカスタム辞書を適用するには
 

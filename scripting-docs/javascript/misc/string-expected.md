@@ -1,5 +1,5 @@
 ---
-title: 文字列が必要です |Microsoft Docs
+title: String が必要です |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,19 +14,19 @@ ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06f00cd523d2f42a8602347a77935705bbc25932
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006458"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573683"
 ---
 # <a name="string-expected"></a>文字列が必要です。
-呼び出そうとしたか、 **String.prototype.toString**または**String.prototype.valueOf**メソッド以外の型のオブジェクトを`String`します。 呼び出し元のオブジェクト型でなければなりません`String`します。  
+@No__t_2 以外の型のオブジェクトで、**文字列**を呼び出そうとして、または**文字列**を呼び出そうとしました。 この種類の呼び出しのオブジェクトは `String` 型である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- のみを呼び出す、 **String.prototype.toString**または**String.prototype.valueOf**型のオブジェクトに対するメソッド`String`します。  
+- @No__t_2 型のオブジェクトに対してのみ、**文字列のプロトタイプ**または**文字列**を呼び出します。  
   
 ## <a name="see-also"></a>関連項目  
  [文字列オブジェクト](../../javascript/reference/string-object-javascript.md)   

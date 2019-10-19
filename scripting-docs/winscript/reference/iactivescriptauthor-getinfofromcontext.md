@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetInfoFromContext |Microsoft Docs
+title: 'IActiveScriptAuthor:: GetInfoFromContext |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935387"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576214"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-返しますでは、コードのブロックの情報と、指定された文字のアンカー位置を入力します。 これにより、IntelliSense、グローバル リスト、およびパラメーターのヒント、メンバーの情報を提供します。  
+コードブロック内の指定された文字の型情報とアンカー位置を返します。 これにより、メンバーの IntelliSense、グローバルリスト、およびパラメーターのヒントに関する情報が提供されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,52 +46,52 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>パラメーター  
  `pszCode`  
- [in]情報の結果の生成に使用されるコード ブロックの文字列のアドレス。  
+ から情報の結果を生成するために使用されるコードブロック文字列のアドレス。  
   
  `cchCode`  
- [in]コード ブロックの長さ。  
+ からコードブロックの長さ。  
   
  `ichCurrentPosition`  
- [in]文字は、ブロックの先頭からの相対の位置します。  
+ からブロックの先頭を基準とした文字の位置。  
   
  `dwListTypesRequested`  
- [in]要求されたリストの型。 次の値の組み合わせになります。  
+ から要求されたリストの型。 は、次の値の組み合わせにすることができます。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_NOLIST|0x0000|一覧がありません。|  
-|SCRIPT_CMPL_MEMBERLIST|0x0001|メンバーの一覧。|  
-|SCRIPT_CMPL_ENUMLIST|0x0002|Enum の一覧。|  
-|SCRIPT_CMPL_PARAMLIST|0x0004|パラメーター リストのメソッドを呼び出します。|  
-|SCRIPT_CMPL_GLOBALLIST|0x0008|グローバル リスト。|  
+|SCRIPT_CMPL_NOLIST|0x0000|リストがありません。|  
+|SCRIPT_CMPL_MEMBERLIST|0x0001|メンバーリスト。|  
+|SCRIPT_CMPL_ENUMLIST|0x0002|列挙型リスト。|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|メソッドのパラメーターリストを呼び出します。|  
+|SCRIPT_CMPL_GLOBALLIST|0x0008|グローバルリスト。|  
   
- SCRIPT_CMPL_GLOBALLIST 型は、組み合わせることができるその他の入力候補の項目を OR 演算子を使用して既定の入力候補アイテムとして扱われます。 エンジンをまず作成スクリプトは、その他のコンプリート リスト項目の種類の情報を入力しようとします。 失敗した場合は、エンジンが SCRIPT_CMPL_GLOBALLIST 設定されます。  
+ SCRIPT_CMPL_GLOBALLIST 型は既定の完了項目として扱われ、または演算子を使用して他の完了項目と組み合わせることができます。 スクリプト作成エンジンは、まず、他の入力候補リスト項目の型情報を設定しようとします。 失敗した場合、エンジンは SCRIPT_CMPL_GLOBALLIST を設定します。  
   
  `pdwListTypesProvided`  
- [out]表示された一覧の型。  
+ 入出力指定されたリストの種類。  
   
  `pichListAnchorPosition`  
- [out]現在の位置を格納しているコンテキストの開始インデックス。 開始インデックスは、ブロックの先頭からの相対です。  
+ 入出力現在の位置を格納しているコンテキストの開始インデックス。 開始インデックスは、ブロックの開始位置を基準としています。  
   
- これは設定される場合にのみ`dwListTypesRequested`SCRIPT_CMPL_MEMBERLIST、SCRIPT_CMPL_ENUMLIST、または SCRIPT_CMPL_GLOBALLIST が含まれています。 その他の要求されたリストの場合、結果は定義されません。  
+ この値は、`dwListTypesRequested` に SCRIPT_CMPL_MEMBERLIST、SCRIPT_CMPL_ENUMLIST、または SCRIPT_CMPL_GLOBALLIST が含まれている場合にのみ設定されます。 要求された他のリスト型の場合、結果は未定義になります。  
   
  `pichFuncAnchorPosition`  
- [out]現在の位置を含む関数呼び出しの開始インデックス。 開始インデックスは、ブロックの先頭からの相対です。  
+ 入出力現在の位置を含む関数呼び出しの開始インデックス。 開始インデックスは、ブロックの開始位置を基準としています。  
   
- 現在の位置を格納しているコンテキストが、関数呼び出しである場合にのみ、これは設定されます`dwListTypesRequested`SCRIPT_CMPL_PARAMLIST が含まれています。 それ以外の場合、結果は定義されません。  
+ この値は、現在の位置を含むコンテキストが関数呼び出しであり、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。 それ以外の場合、結果は未定義になります。  
   
  `pmemid`  
- [out]内の型で定義されている関数の MEMBERID、 `IProvideMultipleClassInfo``ppunk` out パラメーター。  
+ 入出力@No__t_0 out パラメーターの型によって定義される関数の MEMBERID。  
   
- これは設定される場合にのみ`dwListTypesRequested`SCRIPT_CMPL_PARAMLIST が含まれています。  
+ この値は、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。  
   
  `piCurrentParameter`  
- [out]現在の位置を含むパラメーターのインデックス。 関数名が現在の位置にある場合は、-1 が返されます。  
+ 入出力現在の位置を格納しているパラメーターのインデックス。 現在の位置が関数名にある場合は、-1 が返されます。  
   
- `piCurrentParameter`値が設定される場合にのみ`dwListTypesRequested`SCRIPT_CMPL_PARAMLIST が含まれています。  
+ @No__t_0 値は、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。  
   
  `ppunk`  
- 形式で提供される型情報、`IProvideMultipleClassInfo`オブジェクト。  
+ 型情報。 `IProvideMultipleClassInfo` オブジェクトの形式で提供されます。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

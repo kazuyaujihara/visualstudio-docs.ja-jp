@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext |Microsoft Docs
+title: 'IDebugStackFrame:: GetCodeContext |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadb440017969f3ea4c824c681c726645a5757b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b640238b9c1212f477c6a26a9cc251678758f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934713"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574288"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-スタック フレームに関連付けられている現在のコード コンテキストを返します。  
+スタックフレームに関連付けられている現在のコードコンテキストを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>パラメーター  
  `ppcc`  
- [out]スタック フレームに関連付けられているコード コンテキスト。  
+ 入出力スタックフレームに関連付けられているコードコンテキスト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetCodeContext(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、スタック フレームに関連付けられている現在のコード コンテキストを返します。  
+ このメソッドは、スタックフレームに関連付けられている現在のコードコンテキストを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugStackFrame インターフェイス](../../winscript/reference/idebugstackframe-interface.md)

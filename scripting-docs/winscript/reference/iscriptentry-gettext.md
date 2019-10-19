@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetText |Microsoft Docs
+title: 'IScriptEntry:: GetText |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24b314443644558b9900fc7d702dcd1b96a7cea4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b25c1667f1df7e0394dd2ebfb0fea452da1b47d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787712"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575404"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
-対応するテキストを返します、`IScriptEntry`スクリプト ブロック、またはソース コードに含まれている、`IScriptScriptlet`イベント ハンドラー。  
+@No__t_0 スクリプトブロックに対応するテキスト、または `IScriptScriptlet` イベントハンドラーに含まれているソースコードを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstr`  
- [out]内のテキスト、`IScriptEntry`スクリプト ブロック、またはソース コードに含まれている、`IScriptScriptlet`イベント ハンドラー。  
+ 入出力@No__t_0 スクリプトブロック内のテキスト、または `IScriptScriptlet` イベントハンドラーに含まれているソースコード。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

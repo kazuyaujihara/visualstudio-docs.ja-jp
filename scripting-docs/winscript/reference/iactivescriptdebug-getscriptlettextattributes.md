@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptletTextAttributes |Microsoft Docs
+title: 'IActiveScriptDebug:: Getscript・ Textattributes |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 781282b5c825954ada4fbb35daa2a97b379c3f13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a5dd9e219e51b001659225636396fe45ac815b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955043"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572801"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
-任意のスクリプトレット テキスト属性を返します。  
+任意のスクリプトレットのテキスト属性を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,25 +41,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>パラメーター  
  `pstrCode`  
- [in]スクリプトレット テキスト。 この文字列は、いない null 終端である必要があります。  
+ からスクリプトレットのテキスト。 この文字列を null で終了することはできません。  
   
  `uNumCodeChars`  
- [in]スクリプトレット テキストの文字の数。  
+ からスクリプトレットテキストの文字数。  
   
  `pstrDelimiter`  
- [入力] スクリプトレット末尾の区切り記号のアドレス。 `pstrCode` がテキストのストリームから解析されるとき、ホストは通常、2 つの単一引用符 ('') などの区切り文字を使用してスクリプトレットの末尾を検出します。 このパラメーターには、ホストが使用する区切り文字を指定します。それにより、スクリプト エンジンで何らかの条件付きのプリミティブな前処理が可能になります (単一引用符 (') を区切り文字として使用するために 2 つの単一引用符に置き換えるなど)。 正確に把握 (および場合は) この情報は、スクリプト エンジンによって異なります、スクリプト エンジンが使用されます。 ホストがスクリプトレットの末尾をマークする、区切り記号を使用しなかった場合は、このパラメーターを NULL に設定します。  
+ [入力] スクリプトレット末尾の区切り記号のアドレス。 `pstrCode` がテキストのストリームから解析されるとき、ホストは通常、2 つの単一引用符 ('') などの区切り文字を使用してスクリプトレットの末尾を検出します。 このパラメーターには、ホストが使用する区切り文字を指定します。それにより、スクリプト エンジンで何らかの条件付きのプリミティブな前処理が可能になります (単一引用符 (') を区切り文字として使用するために 2 つの単一引用符に置き換えるなど)。 スクリプトエンジンがこの情報を使用する方法 (および if) は、スクリプトエンジンによって異なります。 ホストがスクリプトレットの末尾を示すために区切り記号を使用しなかった場合は、このパラメーターを NULL に設定します。  
   
  `dwFlags`  
  [入力] スクリプトレットに関連付けられるフラグ。 次の値の組み合わせが可能です。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|ある識別子およびドット演算子での識別 SOURCETEXT_ATTR_IDENTIFIER と SOURCETEXT_ATTR_MEMBERLOOKUP フラグでは、それぞれを示します。|  
-|GETATTRFLAG_THIS|0x0100|現在のオブジェクトの識別子が SOURCETEXT_ATTR_THIS フラグで識別されることを示します。|  
-|GETATTRFLAG_HUMANTEXT|0x8000|文字列のコンテンツおよびコメントのテキストが SOURCETEXT_ATTR_HUMANTEXT フラグで識別されることを示します。|  
+|GETATTRTYPE_DEPSCAN|0x0001|識別子とドット演算子をそれぞれ SOURCETEXT_ATTR_IDENTIFIER フラグと SOURCETEXT_ATTR_MEMBERLOOKUP フラグで識別する必要があることを示します。|  
+|GETATTRFLAG_THIS|0x0100|現在のオブジェクトの識別子を SOURCETEXT_ATTR_THIS フラグで識別する必要があることを示します。|  
+|GETATTRFLAG_HUMANTEXT|0x8000|文字列の内容とコメントのテキストを SOURCETEXT_ATTR_HUMANTEXT フラグで識別する必要があることを示します。|  
   
  `pattr`  
- [入力、出力]返される属性を格納するバッファー。  
+ [入力、出力]返された属性を格納するバッファー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -69,13 +69,13 @@ HRESULT GetScriptletTextAttributes(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 実装するスマート ホスト`IDebugDocumentText`インターフェイスはこのメソッドを使用して、デリゲートの呼び出しを`IDebugDocumentText::GetText`メソッド。  
+ @No__t_0 インターフェイスを実装するスマートホストは、このメソッドを使用して、`IDebugDocumentText::GetText` メソッドへの呼び出しを委任できます。  
   
- スクリプトレットは、式を指定する傾向があり、スクリプト ブロックとは異なる構文がありますので、この呼び出しが提供されます。 このメソッドの実装の実装と同じになるのと同じ構文がある場合、`GetScriptTextAttributes`メソッド。  
+ この呼び出しは、スクリプトレットが式であり、スクリプトブロックとは構文が異なる場合があるために提供されます。 同じ構文の場合、このメソッドの実装は `GetScriptTextAttributes` メソッドの実装と同じになります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptDebug インターフェイス](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
+ [IActiveScriptDebug:: GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)    
  [IDebugDocumentText インターフェイス](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
+ [IDebugDocumentText:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

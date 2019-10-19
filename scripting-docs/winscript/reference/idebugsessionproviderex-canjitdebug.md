@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:CanJITDebug |Microsoft Docs
+title: 'IDebugSessionProviderEx: CanJITDebug |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 295be698e02264c81522b70d0377c2030da6190e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ad9192d8faac9931cd3d14e688ee2f54e46687
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979010"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574921"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
-指定されたプロセスをジャスト イン タイムのデバッグがデバッグ対象にできるかどうかを判断します。  
+指定されたプロセスを Just-in-time デバッグでデバッグできるかどうかを決定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,7 +35,7 @@ HRESULT CanJITDebug(
   
 #### <a name="parameters"></a>パラメーター  
  `pid`  
- [in]デバッグするプロセスのプロセス識別子。  
+ からデバッグするプロセスのプロセス識別子。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  

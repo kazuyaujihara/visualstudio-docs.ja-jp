@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006367"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573733"
 ---
 # <a name="object-expected"></a>オブジェクトが必要です。
 `Object` 以外の型のメソッドまたはプロパティを呼び出そうとしたか、または `Object` が必要なときに `Object` 以外の型の引数を渡しました。  
@@ -47,5 +47,5 @@ ms.locfileid: "63006367"
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [Object オブジェクト](../../javascript/reference/object-object-javascript.md)   
+ [オブジェクトオブジェクト](../../javascript/reference/object-object-javascript.md)の    
  [オブジェクトと配列](../../javascript/objects-and-arrays-javascript.md)

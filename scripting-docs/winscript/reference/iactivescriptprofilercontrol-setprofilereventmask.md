@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask |Microsoft Docs
+title: 'IActiveScriptProfilerControl:: SetProfilerEventMask |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01e55d793d174f550e33e18558eccc19d417c80b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4162cf2e5325bfb41bce9c3a47a52b1b36d74f2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993091"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571579"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-スクリプト エンジンが発生するイベントの種類を指定する 4 バイトのビットを設定します。  
+スクリプトエンジンが発生させるイベントの種類を指定する4バイトのビットマスクを設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT SetProfilerEventMask(
   
 #### <a name="parameters"></a>パラメーター  
  `dwEventMask`  
- [in]イベントの種類を指定する 4 バイトのビットマスク。 ビットが定義されている[PROFILER_EVENT_MASK 列挙型](../../winscript/reference/profiler-event-mask-enumeration.md)します。  
+ からイベントの種類を指定する4バイトビットマスク。 ビットは[PROFILER_EVENT_MASK 列挙型](../../winscript/reference/profiler-event-mask-enumeration.md)で定義されます。  
   
 ## <a name="return-value"></a>戻り値  
  HRESULT を返します。 次の値を指定できます。  

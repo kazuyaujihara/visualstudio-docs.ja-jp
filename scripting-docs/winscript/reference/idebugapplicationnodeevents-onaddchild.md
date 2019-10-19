@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAddChild |Microsoft Docs
+title: 'IDebugApplicationNodeEvents:: onAddChild |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a9721479d630b30e14a8bb356fe07f3656aef1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 052fe47f1ddf2d20e7486a95a9dd79bc388f7ebc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822263"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574705"
 ---
 # <a name="idebugapplicationnodeeventsonaddchild"></a>IDebugApplicationNodeEvents::onAddChild
-デバッグのアプリケーション ノード オブジェクトに子ノードが追加されたときにイベントを処理します。  
+子ノードがデバッグアプリケーションのノードオブジェクトに追加されると、イベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT onAddChild(
   
 #### <a name="parameters"></a>パラメーター  
  `prddpChild`  
- [in]追加された子デバッグ アプリケーション ノード。  
+ から追加された子デバッグアプリケーションノード。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,11 +47,11 @@ HRESULT onAddChild(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、デバッグ アプリケーション ノード オブジェクトに子ノードが追加されたときにイベントを処理します。  
+ このメソッドは、子ノードがデバッグアプリケーションのノードオブジェクトに追加されると、イベントを処理します。  
   
- 実装、`IDebugApplicationNode`インターフェイスは、このイベントを発生させる  
+ @No__t_0 インターフェイスの実装者は、このイベントを発生させます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplicationNodeEvents インターフェイス](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)   
+ [IDebugApplicationNodeEvents:: onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)    
  [IDebugApplicationNode インターフェイス](../../winscript/reference/idebugapplicationnode-interface.md)

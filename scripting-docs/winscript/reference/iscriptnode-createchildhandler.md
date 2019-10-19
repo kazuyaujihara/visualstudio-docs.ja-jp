@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler |Microsoft Docs
+title: 'IScriptNode:: CreateChildHandler |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bca8b30021d39638f3755bace2625bb38a44242d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e024bb7d6a81b35994edddfe9e71666b0ee8df0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787145"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573595"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-子インスタンスとしてスクリプトレットを追加、`IScriptNode`します。  
+@No__t_0 の子インスタンスとしてスクリプトレットを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,38 +46,38 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>パラメーター  
  `pszDefaultName`  
- [in]スクリプトレットに関連付ける既定の名前のアドレス。  
+ からスクリプトレットに関連付ける既定の名前のアドレス。  
   
  `prgpszNames`  
- [size_is で (`cpszNames`)]、ホスト上の完全修飾名から識別子の一覧。  
+ [in、size_is (`cpszNames`)]ホスト上の完全修飾名からの識別子の一覧。  
   
  `cpszNames`  
- [in]識別子の数、`prgpszNames`パラメーター。  
+ から@No__t_0 パラメーターの識別子の数。  
   
  `pszEvent`  
- [in]スクリプトレットに関連付けられているイベントの名前を識別するバッファーのアドレス。  
+ からスクリプトレットに関連付けられたイベント名を識別するバッファーアドレス。  
   
  `pszDelimiter`  
- [in]最後のスクリプト ブロックの区切り記号のアドレス。 解析、ホストは通常、スクリプト ブロックの終了を検出する (2 つ単一引用符) などの区切り記号を使用します。  
+ からスクリプトの終了ブロックの区切り記号のアドレス。 解析の場合、ホストは通常、スクリプトブロックの終了を検出するために区切り記号 (2 つの単一引用符など) を使用します。  
   
- 区切り記号は、スクリプト エンジンを作成して前処理を使用できます。 など、エンジンは、区切り記号として使用するための 2 つの単一引用符で単一引用符を置き換えることが。 エンジンは、区切り記号を使用する方法を決定します。  
+ 区切り記号によって、スクリプト作成エンジンによる前処理が有効になります。 たとえば、区切り記号として使用する単一引用符を2つの単一引用符で置き換えることができます。 エンジンは、区切り記号の使用方法を決定します。  
   
- スクリプト ブロックの末尾を識別する区切り記号を使用しない場合は NULL に設定します。  
+ スクリプトブロックの末尾を識別するために区切り記号を使用しない場合は、NULL に設定します。  
   
  `ptiSignature`  
- [in]関数オブジェクトの型情報。  
+ から関数オブジェクトの型情報。  
   
  `iMethodSignature`  
- [in]内の関数のインデックス、`ITypeInfo``ptiSignature`パラメーター。  
+ から@No__t_0 パラメーター内の関数のインデックス。  
   
  `isn`  
- [in]親の子のインデックス。  
+ から親の子のインデックス。  
   
  `dwCookie`  
- [in]エントリをそのホスト オブジェクトに関連付けるために使用するアプリケーション定義の値。  
+ からエントリをホストオブジェクトに関連付けるために使用されるアプリケーション定義の値。  
   
  `ppse`  
- [out]ポインターを受け取る変数のアドレス、`IScriptEntry`子インスタンスのインターフェイス。  
+ 入出力子インスタンスの `IScriptEntry` インターフェイスへのポインターを受け取る変数のアドレス。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -87,8 +87,8 @@ HRESULT CreateChildHandler(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- スクリプトレットは、イベント ハンドラーを指定します。 呼び出された場合、このメソッドがスクリプトレットを作成、 `IScriptNode` Web ページを表すオブジェクト。 このメソッドは、他のインターフェイスによって呼び出された場合に成功しません。  
+ スクリプトレットは、イベントハンドラーを指定します。 このメソッドは、Web ページを表す `IScriptNode` オブジェクトによって呼び出された場合に、スクリプトレットを作成します。 このメソッドは、他のインターフェイスによって呼び出された場合は成功しません。  
   
 ## <a name="see-also"></a>関連項目  
- [IScriptNode インターフェイス](../../winscript/reference/iscriptnode-interface.md)   
+ [Iscriptnode インターフェイス](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)

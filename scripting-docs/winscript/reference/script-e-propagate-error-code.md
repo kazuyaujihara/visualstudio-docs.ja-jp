@@ -1,5 +1,5 @@
 ---
-title: SCRIPT_E_PROPAGATE エラー コード |Microsoft Docs
+title: SCRIPT_E_PROPAGATE エラーコード |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc6b30d574d2d3585ec9fa46e8dc63fcbd4572a5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840285"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574444"
 ---
-# <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE エラー コード
-スクリプト エラーは、別のスレッドで可能性のある呼び出し元に反映中です。 ホストは、呼び出し元に、エラー コードを渡す必要があります。  
+# <a name="script_e_propagate-error-code"></a>SCRIPT_E_PROPAGATE エラー コード
+スクリプトエラーが呼び出し元に伝達されています。これは別のスレッドに存在する可能性があります。 ホストは、エラーコードを呼び出し元に渡す必要があります。  
   
 ## <a name="syntax"></a>構文  
   

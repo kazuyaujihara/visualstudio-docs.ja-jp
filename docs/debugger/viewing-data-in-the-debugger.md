@@ -1,5 +1,5 @@
 ---
-title: デバッガーでのデータのカスタム ビューの作成 |Microsoft Docs
+title: デバッガーでデータのカスタムビューを作成する |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,24 +19,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568993"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Visual Studio デバッガーでのデータのカスタム ビューの作成 (C#、Visual Basic、 C++)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Visual Studio デバッガーでのデータのカスタムビューの作成C#(、Visual Basic C++、)
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]デバッガーには、検査およびプログラムの状態を変更するための多くのツールが用意されています。 ほとんどのツールは、中断モードだけで機能します。
+@No__t_0 デバッガーには、プログラムの状態を調べたり変更したりするための多くのツールが用意されています。 ほとんどのツールは、中断モードだけで機能します。
 
-## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>変数ウィンドウとデータヒントでのデータのカスタム ビューを作成します。
+## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>変数ウィンドウとデータヒントにデータのカスタムビューを作成する
 
- 多くは、[デバッガー ウィンドウ](../debugger/debugger-windows.md)など、 **[自動変数]** と**ウォッチ**ウィンドウ、変数を検査することができます。 カスタマイズできる方法C++型、マネージ オブジェクト、および独自の型を表示し、デバッガー変数ウィンドウで、[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)します。 詳細については、次を参照してください。[カスタム ビューの作成C++オブジェクト](../debugger/create-custom-views-of-native-objects.md)と[オブジェクトのカスタム ビューを作成する](../debugger/create-custom-views-of-dot-managed-objects.md)します。
+ 多くの[デバッガーウィンドウ](../debugger/debugger-windows.md)( **[自動]** 変数 ウィンドウや **[ウォッチ]** ウィンドウなど) を使用すると、変数を調べることができます。 デバッガー変数ウィンドウとC++ [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)で、型、マネージオブジェクト、および独自の型をどのように表示するかをカスタマイズできます。 詳細については、「[オブジェクトのC++カスタムビューを作成する](../debugger/create-custom-views-of-native-objects.md)」および「[管理オブジェクトのカスタムビューを作成](../debugger/create-custom-views-of-managed-objects.md)する」を参照してください。
 
 ## <a name="create-custom-visualizers"></a>カスタム ビジュアライザーを作成する
 
- ビジュアライザーを使用すると、わかりやすい方法でオブジェクトや変数の内容を表示できます。 Visual Studio デバッガー ビジュアライザーは虫眼鏡を使用して開くことができる別の windows を指します![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザー アイコン")アイコン。 たとえば、HTML ビジュアライザーは、HTML 文字列は解釈され、ブラウザーで表示する方法を示します。 データヒントからビジュアライザーにアクセスできる、**ウォッチ**ウィンドウで、 **[自動変数]** ウィンドウで、および**ローカル**ウィンドウ。 **クイック ウォッチ**  ダイアログ ボックスには、ビジュアライザーも用意されています。 詳細については、「[Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md)」 (カスタム ビジュアライザーを作成する) を参照してください。
+ ビジュアライザーを使用すると、オブジェクトまたは変数の内容を意味のある方法で表示できます。 Visual Studio デバッガーでは、ビジュアライザーは![、虫眼鏡アイコンアイコンを](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザーアイコン")使用して開くことができるさまざまなウィンドウを参照します。 たとえば、html ビジュアライザーは、HTML 文字列がブラウザーでどのように解釈および表示されるかを示しています。 ビジュアライザーには、DataTips、 **[ウォッチ]** ウィンドウ、 **[自動変数]** ウィンドウ、および **[ローカル]** ウィンドウからアクセスできます。 **[クイックウォッチ]** ダイアログボックスには、ビジュアライザーも用意されています。 詳細については、「[Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md)」 (カスタム ビジュアライザーを作成する) を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

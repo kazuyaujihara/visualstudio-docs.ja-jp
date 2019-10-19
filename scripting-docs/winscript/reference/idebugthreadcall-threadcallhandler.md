@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall::ThreadCallHandler |Microsoft Docs
+title: 'IDebugThreadCall:: ThreadCallHandler |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1802cdcdabe2ae462960378d0e869838cdaa6e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58e7d3facbd5a59bf7b81e3257c6daea7874141a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000912"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576654"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
-別のスレッドでコードを実行する呼び出しを処理します。  
+別のスレッドでコードを実行するための呼び出しを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT ThreadCallHandler(
   
 #### <a name="parameters"></a>パラメーター  
  `dwParam1`  
- [in]最初のパラメーター。  
+ から最初のパラメーター。  
   
  `dwParam2`  
- [in]2 番目のパラメーター。  
+ から2番目のパラメーター。  
   
  `dwParam3`  
- [in]3 番目のパラメーター。  
+ から3番目のパラメーター。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,9 +55,9 @@ HRESULT ThreadCallHandler(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、デバッガー スレッドでコードを実行する呼び出しを処理します。  
+ このメソッドは、デバッガースレッドでコードを実行するための呼び出しを処理します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugThreadCall インターフェイス](../../winscript/reference/idebugthreadcall-interface.md)   
- [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
+ [IDebugApplication:: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

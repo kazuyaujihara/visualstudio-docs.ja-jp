@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent |Microsoft Docs
+title: 'IScriptNode:: GetParent |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c990b5ba5c3d03d319e0eeced282c92cfbb5281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58ef5f88f4404d57a7edad3590fba1d2614faec6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786857"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572554"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-返します、`IScriptNode`オブジェクトの親であるオブジェクト。  
+オブジェクトの親である `IScriptNode` オブジェクトを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,11 +37,11 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>パラメーター  
  `ppsnParent`  
- [out]ポインターを受け取る変数のアドレス、`IScriptNode`親インスタンスのインターフェイス。  
+ 入出力親インスタンスの `IScriptNode` インターフェイスへのポインターを受け取る変数のアドレス。  
   
- クラスが実装されている場合`IScriptEntry`または`IScriptScriptlet`、`IScriptNode`オブジェクトが返されます。  
+ クラスが `IScriptEntry` または `IScriptScriptlet` を実装している場合は、`IScriptNode` オブジェクトが返されます。  
   
- クラスが実装されている場合`IScriptNode`(Web ページを表す)、NULL が返されます。  
+ クラスが (Web ページを表す) `IScriptNode` を実装している場合は、NULL が返されます。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

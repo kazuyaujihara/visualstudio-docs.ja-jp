@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Start |Microsoft Docs
+title: 'IDebugExpression:: Start |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e80f3fb8087d39c76f59cf5c6bc8719c1cbaf5e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8c3666adfc83f3ad60b942cd3f7fe9eedfccba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978524"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576437"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
 式の評価を開始します。  
@@ -37,7 +37,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>パラメーター  
  `pdecb`  
- [in]式の評価が完了したことを示すためのコールバック。 このパラメーターが場合`NULL`イベントが発生しないと、クライアントを使用して式の状態をポーリングする必要があります、`QueryIsComplete`します。  
+ から式の評価が完了したことを示すコールバック。 このパラメーターが `NULL` 場合、イベントは発生せず、クライアントは `QueryIsComplete` を使用して式の状態をポーリングする必要があります。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -50,5 +50,5 @@ HRESULT Start(
  このメソッドは、式の評価を開始します。  
   
 ## <a name="see-also"></a>関連項目  
- [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
+ [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)    
  [IDebugExpression インターフェイス](../../winscript/reference/idebugexpression-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication |Microsoft Docs
+title: 'IMachineDebugManagerEvents:: onAddApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f063e36296d6a5a77208bac2fe533274a6f9c07f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe710ce9a126e344fc88024b7bf5fd2b993e31b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965793"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576102"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-アプリケーションが、実行中に追加されたときにイベントを処理するアプリケーションの一覧。  
+実行中のアプリケーションの一覧にアプリケーションが追加されたときに、イベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `pda`  
- [in]アプリケーションの実行に追加されたアプリケーションの一覧。  
+ から実行中のアプリケーションの一覧に追加されたアプリケーション。  
   
  `dwAppCookie`  
- [in]アプリケーションは、アプリケーションの一覧に追加されたときに提供されるクッキー。  
+ からアプリケーションがアプリケーションの一覧に追加されたときに指定されたクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,8 +51,8 @@ HRESULT onAddApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、アプリケーションが実行中に追加されたことを示すアプリケーションの一覧。  
+ このメソッドは、アプリケーションが実行中のアプリケーションの一覧に追加されたことを示します。  
   
 ## <a name="see-also"></a>関連項目  
- [IMachineDebugManagerEvents インターフェイス](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
+ [Imachinedebugmanagerevents インターフェイス](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

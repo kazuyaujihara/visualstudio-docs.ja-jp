@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptletTextAttributes |Microsoft Docs
+title: 'IActiveScriptAuthor:: Getscript・ Textattributes |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb8f1b5aac6df8d8659fa323f3f1efcb7721d97f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4cd0090b9ade47ad37acf6d285ec7f072f1ea5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955060"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576170"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
 スクリプトレットのテキスト属性を返します。  
@@ -41,25 +41,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>パラメーター  
  `pszCode`  
- [size_is で (`cch`)] スクリプトレット テキスト。 この文字列は null 終端ではありません。  
+ [in、size_is (`cch`)]スクリプトレットのテキスト。 この文字列は null で終了する必要はありません。  
   
  `cch`  
- [in]使用する、サイズ、`pszCode`と`pattr`パラメーター。  
+ から@No__t_0 パラメーターと `pattr` パラメーターに使用されるサイズ。  
   
  `pszDelimiter`  
- [in]スクリプトレットの末尾の区切り記号のアドレス。 ときに`pszCode`解析は、テキストのストリームからホスト通常 (など、2 つ単一引用符)、区切り記号を使用してスクリプトレットの末尾を検出します。 スクリプトレットの末尾を識別するために区切り記号を使用しない場合は、このパラメーターを NULL に設定します。  
+ からスクリプトレットの末尾の区切り記号のアドレス。 テキストのストリームから `pszCode` を解析する場合、ホストは通常、スクリプトレットの末尾を検出するために区切り記号 (2 つの単一引用符など) を使用します。 スクリプトレットの末尾を識別するために区切り記号を使用しない場合は、このパラメーターを NULL に設定します。  
   
  `dwFlags`  
- [in]スクリプトレットのテキストの属性に関連付けられているフラグです。 次の値の組み合わせを指定できます。  
+ からスクリプトレットのテキスト属性に関連付けられているフラグ。 には、次の値の組み合わせを指定できます。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|SOURCETEXT_ATTR_IDENTIFIER 属性の識別子を特定し、SOURCETEXT_ATTR_MEMBERLOOKUP 属性を持つドット演算子を識別します。|  
+|GETATTRTYPE_DEPSCAN|0x0001|SOURCETEXT_ATTR_IDENTIFIER 属性を持つ識別子を識別し、SOURCETEXT_ATTR_MEMBERLOOKUP 属性を持つドット演算子を識別します。|  
 |GETATTRFLAG_THIS|0x0100|SOURCETEXT_ATTR_THIS 属性を持つ現在のオブジェクトを識別します。|  
-|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT 属性が文字列のコンテンツおよびコメントのテキストを特定します。|  
+|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT 属性を持つ文字列の内容とコメントテキストを識別します。|  
   
  `pattr`  
- [in, out size_is (`cch`)] スクリプトレット コードの色の情報。  
+ [in、out、size_is (`cch`)]スクリプトレットコードの色情報。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -72,5 +72,5 @@ HRESULT GetScriptletTextAttributes(
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
+ [IActiveScriptAuthor:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty::SetProperty |Microsoft Docs
+title: 'IActiveScriptProperty:: SetProperty |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0f8307a82f181be20205c7bfcc47e881b0fa1e90
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385969"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571309"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
-パラメーターで指定されているプロパティを設定します。  
+パラメーターによって指定されたプロパティを設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -50,14 +50,14 @@ HRESULT SetProperty(
  `pvarValue`  
  プロパティの値。  
   
- 値が許可されている`dwProperty`は次の表で説明します。  
+ @No__t_0 に使用できる値を次の表に示します。  
   
 |定数|[値]|説明|  
 |--------------|-----------|-------------|  
-|SCRIPTPROP_INTEGERMODE|0x00003000|浮動小数点のポイント モードではなく整数モードで分割するスクリプト エンジンを強制します。 既定値は `False` です。|  
-|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|置き換えられるスクリプト エンジンの文字列比較関数を使用します。|  
-|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|グローバル オブジェクトに貢献するその他のスクリプト エンジンが存在するスクリプト エンジンに通知します。|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|力、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンをサポートする言語機能のセットを選択します。 既定でサポートされる言語機能のセット、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンがバージョン 5.7 のされていた言語機能セットと同じですが、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンです。|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|スクリプトエンジンを強制的に浮動小数点モードではなく整数モードで除算します。 既定値は `False`です。|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|スクリプトエンジンの文字列比較関数を置き換えることができるようにします。|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|他のスクリプトエンジンがグローバルオブジェクトに関与していないことをスクリプトエンジンに通知します。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|@No__t_0 スクリプトエンジンに対して、サポートされる言語機能のセットを強制的に選択させます。 @No__t_0 スクリプトエンジンでサポートされている言語機能の既定のセットは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 にある言語機能セットと同じです。|  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -66,20 +66,20 @@ HRESULT SetProperty(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引数が有効ではありません。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンがされていないされて読み込まれるまたは初期化) します。|  
+|`E_UNEXPECTED`|この呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか、初期化されていません)。|  
   
 ## <a name="remarks"></a>Remarks  
- を有効にまたは整数の除算を無効にするには呼び出す`SetProperty`し、変換、`Boolean`を、`Object`します。 プロパティの値は、既定では、`False`します。 設定した場合`True`、除算演算で整数のみが返されます。  
+ 整数除算を有効または無効にするには、`SetProperty` を呼び出し、`Boolean` を `Object` に変換します。 既定では、プロパティの値は `False` です。 @No__t_0 に設定した場合、除算演算では整数のみが返されます。  
   
- を有効にまたはカスタムの文字列比較を無効にするには呼び出す`SetProperty`で渡すと、`Object`値。 渡すオブジェクトは、インターフェイスを実装する必要があります[IActiveScriptStringCompare インターフェイス](../../winscript/reference/iactivescriptstringcompare-interface.md)します。 [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)のメソッド、 [IActiveScriptStringCompare インターフェイス](../../winscript/reference/iactivescriptstringcompare-interface.md)インターフェイスには、文字列比較関数が実行されるたびに、呼ばれます。  
+ カスタム文字列比較を有効または無効にするには、`SetProperty` を呼び出し、`Object` の値を渡します。 渡すオブジェクトは、インターフェイス[IActiveScriptStringCompare インターフェイス](../../winscript/reference/iactivescriptstringcompare-interface.md)を実装する必要があります。 [IActiveScriptStringCompare インターフェイス](../../winscript/reference/iactivescriptstringcompare-interface.md)インターフェイスの[StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)メソッドは、文字列比較関数が実行されるたびに呼び出されます。  
   
- ときにサポートされる言語機能のセットを選択して、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンが初期化されて、呼び出し`SetProperty`SCRIPTPROP_INVOKEVERSIONING に対して有効にする設定を言語の機能に対応する値を渡すとします。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、利用可能な言語機能は、のバージョン 5.7 に表示されていたものと同じ、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、バージョン 5.7 バージョン 5.8 で追加された新機能だけでなくで登場するものは、利用可能な言語機能。 既定でこのプロパティは、ホストが別の既定の動作をサポートしていない限りバージョン 5.7 に含まれる言語機能セットと同じです (SCRIPTLANGUAGEVERSION_DEFAULT) を 0 に設定されます。 Internet Explorer 8 に opts など、 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 5.8 バージョンでサポートされている言語機能[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]既定で Internet Explorer 8 の既定のドキュメント モードは、「Internet Explorer 8 標準」モードとスクリプト エンジンです。 リセットする Internet Explorer 7 標準、Internet Explorer 8 ドキュメント モード、Quirks モードの切り替え、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]バージョン 5.7 で存在していた言語機能セットのみをサポートするためにスクリプト エンジン[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンです。  
+ @No__t_0 スクリプトエンジンが初期化されるときにサポートされる言語機能のセットを選択するには、`SetProperty` を呼び出し、SCRIPTPROP_INVOKEVERSIONING に対して有効にする言語機能セットに対応する値を渡します。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、使用可能な言語機能は [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンのバージョン5.7 で表示されていた機能と同じです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、使用可能な言語機能はバージョン5.8 で追加された新機能に加えて、バージョン5.7 で表示されていた機能です。 既定では、このプロパティは 0 (SCRIPTLANGUAGEVERSION_DEFAULT) に設定されています。これは、ホストが異なる既定の動作をサポートしている場合を除き、バージョン5.7 で表示された言語機能セットに相当します。 たとえば、internet explorer 8 の既定のドキュメントモードが "Internet Explorer 8 標準" モードの場合、既定では、バージョン 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンでサポートされている [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 言語機能を使用できます。 Internet Explorer 8 ドキュメントモードを Internet Explorer 7 標準モードまたは互換モードに切り替えると、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンがリセットされ、バージョン 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンに存在していた言語機能セットのみがサポートされます。  
   
 > [!NOTE]
-> 場合にのみ SCRIPTPROP_INVOKEVERSIONING を設定する必要があります、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンが初期化されます。  
+> SCRIPTPROP_INVOKEVERSIONING は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] スクリプトエンジンが初期化されている場合にのみ設定する必要があります。  
   
 ## <a name="example"></a>例  
- 次の例では、整数の除算を使用するスクリプト エンジンを強制する方法との比較関数のオーバー ロードを許可する方法を示します。  
+ 次の例では、スクリプトエンジンで整数除算を使用するように強制する方法と、compare 関数のオーバーロードを許可する方法を示します。  
   
 ```c#  
 BMLScriptEngine bmlScriptEngine = new BMLScriptEngine();  
@@ -101,6 +101,6 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [ドキュメントの互換性の定義](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
+ [ドキュメント互換性](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))  の定義  
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
  [バージョン情報](../../javascript/reference/javascript-version-information.md)
