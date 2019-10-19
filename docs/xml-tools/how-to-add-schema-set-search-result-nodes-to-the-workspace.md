@@ -3,19 +3,19 @@ title: XML スキーマセットの検索結果ノードをワークスペース
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2718c08b36ff9ef3ca8ae06f7d511cacb8fa73c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: be024ac139d2b420f56b14158afd33ae5b7e917d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923654"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646024"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>方法: スキーマ セットの検索結果のノードをワークスペースに追加する
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>方法: ワークスペースにスキーマセットの検索結果ノードを追加する
 
 このトピックでは、 **XML スキーマエクスプローラー**で強調表示されているノードを、ワークスペースでのキーワード検索の結果として追加する方法について説明します。
 
@@ -26,7 +26,7 @@ ms.locfileid: "68923654"
 
 ## <a name="to-add-schema-set-result-nodes"></a>スキーマ セットの検索結果のノードを追加するには
 
-1. [「方法:XSD スキーマファイル](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)を作成および編集します。
+1. [「方法: XSD スキーマファイルを作成および編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)」の手順に従います。
 
 2. [XML エクスプローラー](../xml-tools/xml-schema-explorer.md)のツールバーの [検索] テキストボックスに「purchaseOrder」と入力し、[検索] ボタンをクリックします。
 
@@ -38,4 +38,4 @@ ms.locfileid: "68923654"
 
      ![XML スキーマ エクスプローラー検索結果](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     ノードとノードは、[グラフビュー](../xml-tools/graph-view.md)のデザイン画面で相互に表示されます。 `PurchaseOrderType` `purchaseOrder` 2 つのノードは関連があるため (`purchaseOrder` 要素は `PurchaseOrderType` 型)、これらの間に矢印が引かれます。
+     [@No__t_0] ノードと [`PurchaseOrderType`] ノードは、[グラフビュー](../xml-tools/graph-view.md)のデザイン画面に表示されます。 2 つのノードは関連があるため (`purchaseOrder` 要素は `PurchaseOrderType` 型)、これらの間に矢印が引かれます。

@@ -1,36 +1,36 @@
 ---
-title: マネージ コードの"グローバリゼーション規則"規則の設定 |Microsoft Docs
+title: マネージコードの "グローバリゼーション規則" 規則セット |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d4e196ce3a6168db3ed74e667b5f4f48177859f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1630769b5150d9cef7b00e575ac9c555f5bc5be1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667606"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>マネージド コードの "グローバリゼーション規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft グローバリゼーション規則ルールを異なる言語、ロケール、およびカルチャに正しく表示されないアプリケーションでのデータを妨げる可能性のある問題に集中するセットを使用できます。 この規則セットの場合は、アプリケーションをローカライズすると、グローバル化された、またはその両方を含める必要があります。  
-  
-|ルール|説明|  
-|----------|-----------------|  
-|[CA 1300](../code-quality/ca1300-specify-messageboxoptions.md)|MessageBoxOption を指定します|  
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|重複するアクセラレータを使用しません|  
-|[CA 1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|ロケール特有の文字列をハードコードしません|  
-|[CA 1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|ローカライズされるパラメーターとしてリテラルを渡さない|  
-|[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|CultureInfo を指定します|  
-|[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|IFormatProvider を指定します|  
-|[CA 1306](../code-quality/ca1306-set-locale-for-data-types.md)|データ型のロケールを設定します|  
-|[CA 1307](../code-quality/ca1307-specify-stringcomparison.md)|StringComparison の指定|  
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|文字列を大文字に標準化します|  
-|[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|順序を示す StringComparison を使用します|  
+Microsoft グローバリゼーションルールのルールセットを使用して、アプリケーションのデータが異なる言語、ロケール、およびカルチャで正しく表示されない可能性がある問題に焦点を当てることができます。 アプリケーションがローカライズ、グローバル化、またはその両方である場合は、この規則セットを含める必要があります。
+
+|規則|説明|
+|----------|-----------------|
+|[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|MessageBoxOption を指定します|
+|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|重複するアクセラレータを使用しません|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|ロケール特有の文字列をハードコードしません|
+|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|ローカライズされるパラメーターとしてリテラルを渡さない|
+|[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|CultureInfo を指定します|
+|[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|IFormatProvider を指定します|
+|[CA1306](../code-quality/ca1306-set-locale-for-data-types.md)|データ型のロケールを設定します|
+|[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|StringComparison の指定|
+|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|文字列を大文字に標準化します|
+|[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|順序を示す StringComparison を使用します|
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|P/Invoke 文字列引数に対してマーシャリングを指定します|

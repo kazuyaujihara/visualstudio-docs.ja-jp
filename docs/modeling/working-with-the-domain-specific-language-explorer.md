@@ -4,43 +4,43 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 744407f129c85f4e083007186dd167e39401d850
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 352315b518102c5b9576c19611522e87d0e67ffe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666900"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>ドメイン固有言語エクスプローラーの使用
-**DSL エクスプ ローラー**ツリー ビューで複数種類の情報を表示します。 詳細については、DSL エクスプ ローラーで項目のほとんどは、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
+**DSL エクスプローラー**では、ツリービューに複数の種類の情報が表示されます。 DSL エクスプローラーのほとんどの項目の詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
 
  以下のようなノードがあります。
 
-- **接続ビルダー**します。 モデル内の接続ビルダーの一覧。
+- **接続ビルダー**。 モデル内の接続ビルダーの一覧。
 
-- **コネクタ**します。 モデル内のコネクタ図要素の一覧。
+- **コネクタ**。 モデル内のコネクタ図要素の一覧。
 
-- **図**します。 図を定義するプロパティとコネクタ マップおよび図形マップの一覧のセット。
+- **ダイアグラム**。 図を定義するプロパティとコネクタ マップおよび図形マップの一覧のセット。
 
-- **ドメイン クラス**します。 モデル内のドメイン クラスの一覧。
+- **ドメインクラス**。 モデル内のドメイン クラスの一覧。
 
-- **ドメイン リレーションシップ**します。 モデル内のドメイン関係の一覧。
+- **ドメインリレーションシップ**。 モデル内のドメイン関係の一覧。
 
-- **ドメイン型**します。 モデル内で使用される組み込み型および外部型の一覧。
+- **ドメインの種類**。 モデル内で使用される組み込み型および外部型の一覧。
 
-- **エディター**します。 一連の**ツールボックス**タブと、項目が含まれていると、モデルの検証の設定。 検証の詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。
+- **エディター**。 **ツールボックス**のタブとそれに含まれる項目、およびモデルの検証設定の一覧。 検証の詳細については、「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 
-- **エクスプ ローラーの動作**します。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプ ローラーをカスタマイズする方法の詳細については、次を参照してください。[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)します。
+- **エクスプローラーの動作**。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプローラーをカスタマイズする方法の詳細については、「[モデルエクスプローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)」を参照してください。
 
-- **図形**します。 モデル内の図形図要素の一覧。
+- **図形**。 モデル内の図形図要素の一覧。
 
-- **Xml シリアル化動作**します。 モデルのシリアル化設定。 シリアル化の詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。
+- **Xml シリアル化の動作**。 モデルのシリアル化設定。 シリアル化の詳細については、「 [File Storage および XML シリアル化のカスタマイズ](../modeling/customizing-file-storage-and-xml-serialization.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

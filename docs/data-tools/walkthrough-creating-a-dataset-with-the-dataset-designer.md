@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: データセット デザイナーでデータセットを作成します。'
+title: 'チュートリアル : データセット デザイナーでのデータセットの作成'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,79 +8,79 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f91c24885cc6817889671dd7a1a6e7e1686ce93f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565001"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639443"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>チュートリアル: データセット デザイナーでデータセットを作成します。
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>チュートリアル: データセットデザイナーを使用したデータセットの作成
 
-使用してデータセットを作成するこのチュートリアルでは、**データセット デザイナー**します。 記事では、新しいプロジェクトを作成し、新しい追加のプロセス**データセット**項目にします。 ウィザードを使用せず、データベース内のテーブルに基づいて、テーブルを作成する方法について説明します。
+このチュートリアルでは、**データセットデザイナー**を使用してデータセットを作成します。 この記事では、新しいプロジェクトを作成し、そのプロジェクトに新しい**データセット**アイテムを追加するプロセスについて説明します。 ウィザードを使用せずに、データベース内のテーブルに基づいてテーブルを作成する方法について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
-このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
+このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 一部として Visual Studio インストーラーでは、SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 Visual Studio インストーラーでは、SQL Server Express LocalDB は、**データストレージと処理**ワークロードの一部として、または個々のコンポーネントとしてインストールできます。
 
-2. 次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**Visual Studio インストーラーにワークロード)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
+    1. Visual Studio で、 **[SQL Server オブジェクトエクスプローラー]** ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの**データストレージと処理**ワークロードの一部としてインストールされます)。 **[SQL Server]** ノードを展開します。 LocalDB インスタンスを右クリックし、 **[新しいクエリ]** をクリックします。
 
-       クエリ エディター ウィンドウが開きます。
+       クエリエディターウィンドウが開きます。
 
-    2. コピー、 [Northwind Transact SQL スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにします。 この T-SQL スクリプトでは、最初から、Northwind データベースを作成し、データを設定します。
+    2. [Northwind transact-sql スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにコピーします。 この T-sql スクリプトでは、Northwind データベースを最初から作成し、データを設定します。
 
-    3. T-SQL スクリプトをクエリ エディターに貼り付けて選択し、 **Execute**ボタンをクリックします。
+    3. T-sql スクリプトをクエリエディターに貼り付け、 **[実行]** ボタンをクリックします。
 
-       しばらくすると、クエリの実行が終了し、Northwind データベースを作成します。
+       しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
 ## <a name="create-a-new-windows-forms-application-project"></a>新しい Windows フォーム アプリケーション プロジェクトを作成します。
 
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
+1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
 
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
-3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
+3. 中央のウィンドウで、 **[Windows フォーム App]** プロジェクトの種類を選択します。
 
-4. プロジェクトに名前を**DatasetDesignerWalkthrough**を選び、 **OK**。
+4. プロジェクトに**Datasetデザイナチュートリアル**という名前を指定し、[ **OK]** をクリックします。
 
-     Visual Studio にプロジェクトが追加**ソリューション エクスプ ローラー**し、デザイナーで新しいフォームを表示します。
+     Visual Studio によってプロジェクトが**ソリューションエクスプローラー**に追加され、デザイナーに新しいフォームが表示されます。
 
-## <a name="add-a-new-dataset-to-the-application"></a>アプリケーションに新しいデータセットを追加します。
+## <a name="add-a-new-dataset-to-the-application"></a>アプリケーションに新しいデータセットを追加する
 
 1. **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
-2. 左側のウィンドウで次のように選択します。**データ**を選択し、**データセット**中央のペインでします。
+2. 左側のウィンドウで、 **[データ]** を選択し、中央のペインで データ **[セット]** を選択します。
 
-3. データセットの名前を付けます**NorthwindDataset**を選び、**追加**します。
+3. データセットに**NorthwindDataset**という名前を指定し、 **[追加]** を選択します。
 
-     Visual Studio がという名前のファイルを追加します**NorthwindDataset.xsd**プロジェクトで開くと、**データセット デザイナー**。
+     Visual Studio によって、 **NorthwindDataset**という名前のファイルがプロジェクトに追加され、**データセットデザイナー**で開かれます。
 
-## <a name="create-a-data-connection-in-server-explorer"></a>サーバー エクスプ ローラーでのデータ接続を作成します。
+## <a name="create-a-data-connection-in-server-explorer"></a>サーバーエクスプローラーでのデータ接続の作成
 
 1. **[表示]** メニューの **[サーバー エクスプローラー]** をクリックします。
 
-2. **サーバー エクスプローラー**で、**[データベースへの接続]** をクリックします。
+2. **サーバー エクスプローラー**で、 **[データベースへの接続]** をクリックします。
 
 3. Northwind サンプル データベースへの接続を作成します。
 
-## <a name="create-the-tables-in-the-dataset"></a>データセットにテーブルを作成します。
+## <a name="create-the-tables-in-the-dataset"></a>データセットにテーブルを作成する
 
 このセクションでは、データセットにテーブルを追加する方法について説明します。
 
 ### <a name="to-create-the-customers-table"></a>Customers テーブルを作成するには
 
-1. **サーバー エクスプローラー**で作成したデータ接続を展開し、**[テーブル]** ノードを展開します。
+1. **サーバー エクスプローラー**で作成したデータ接続を展開し、 **[テーブル]** ノードを展開します。
 
 2. **サーバー エクスプローラー**から**データセット デザイナー**に **Customers** テーブルをドラッグします。
 
@@ -96,21 +96,21 @@ ms.locfileid: "62565001"
 
 - **サーバー エクスプローラー**から**データセット デザイナー**に **Order Details** テーブルをドラッグします。
 
-     **Order Details**データ テーブル、 **OrderDetailsTableAdapter**との間のリレーションシップ、**注文**と**OrderDetails**テーブルデータセットに追加されます。
+     **Order Details** data Table、 **OrderDetailsTableAdapter**、および**Orders**テーブルと**OrderDetails**テーブル間のデータリレーションシップがデータセットに追加されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - データセットを保存します。
 
-- **[データ ソース]** ウィンドウの項目を選択し、フォームにドラッグします。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)します。
+- **[データ ソース]** ウィンドウの項目を選択し、フォームにドラッグします。 詳細については、「 [Visual Studio でのデータへの Windows フォームコントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)」を参照してください。
 
 - TableAdapter に他のクエリを追加します。
 
-- データセット内のデータ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントまたは <xref:System.Data.DataTable.RowChanging> イベントに検証ロジックを追加します。 詳細については、次を参照してください。[検証データセットのデータの](../data-tools/validate-data-in-datasets.md)します。
+- データセット内のデータ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントまたは <xref:System.Data.DataTable.RowChanging> イベントに検証ロジックを追加します。 詳細については、「[データセット内のデータの検証](../data-tools/validate-data-in-datasets.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でデータセットを作成および構成する](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [データを検証します。](../data-tools/validate-data-in-datasets.md)
+- [データの検証](../data-tools/validate-data-in-datasets.md)

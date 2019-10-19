@@ -1,5 +1,5 @@
 ---
-title: Visualization and Modeling SDK for Visual Studio のエディションがサポートされている |Microsoft Docs
+title: 視覚化およびモデリング SDK のサポートされている Visual Studio のエディション |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 ms.assetid: 7c313ba0-031d-45b8-8220-eead61754747
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696864"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672378"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>視覚化のサポートされている Visual Studio エディション&amp;Modeling SDK
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>視覚化 &amp; モデリング SDK のサポートされている Visual Studio のエディション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-サポートされている Visual Studio のエディションの一覧を以下に[!INCLUDE[dsl](../includes/dsl-md.md)]オーサリングとデプロイ環境にします。 これらのエディションの詳細については、Microsoft を参照してください。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=75628)します。
+次に示すのは、作成環境と配置環境の [!INCLUDE[dsl](../includes/dsl-md.md)] でサポートされている Visual Studio のエディションの一覧です。 これらのエディションの詳細については、Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)][デベロッパーセンター](http://go.microsoft.com/fwlink/?LinkId=75628)を参照してください。
 
 ## <a name="authoring-edition"></a>作成エディション
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
@@ -44,7 +44,7 @@ ms.locfileid: "65696864"
 - Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
-> DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
+> DSL をシェル製品で実行できるようにするには、拡張機能マニフェストで **[サポートされている VS Edition]** フィールドを設定する必要があります。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

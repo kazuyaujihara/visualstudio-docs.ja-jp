@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975056"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649381"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトのチェックインポリシーを使用したコードプロジェクト規則セットの同期
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトのチェックインポリシーを使用してコードプロジェクト規則セットを同期する
 
 コードプロジェクトのコード分析設定を Azure DevOps プロジェクトのチェックインポリシーと同期するには、少なくともチェックインポリシーの規則セットで指定されている規則を含む規則セットを指定します。 開発者は、チェックインポリシーのルールセットの名前と場所を知らせることができます。 次のいずれかのオプションを使用して、プロジェクトのコード分析で正しい規則セットが使用されるようにすることができます。
 
@@ -31,7 +31,7 @@ ms.locfileid: "71975056"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Microsoft 標準規則セットを指定するには
 
-1. **ソリューション エクスプ ローラー**コード プロジェクトを右クリックし、クリックして**プロパティ**します。
+1. **ソリューションエクスプローラー**で、コードプロジェクトを右クリックし、 **[プロパティ]** をクリックします。
 
 2. **[コード分析]** をクリックします。
 
@@ -51,19 +51,19 @@ ms.locfileid: "71975056"
 
 1. 必要に応じて、チェックインポリシーを指定するルールセットファイルに対して get 操作を実行します。
 
-2. **ソリューション エクスプ ローラー**コード プロジェクトを右クリックし、クリックして**プロパティ**します。
+2. **ソリューションエクスプローラー**で、コードプロジェクトを右クリックし、 **[プロパティ]** をクリックします。
 
 3. **[コード分析]** をクリックします。
 
 ::: moniker range="vs-2017"
 
-4. [**この規則セットを実行**します] の一覧で、 **\<Browse を参照**します。
+4. **この規則セットを実行** の一覧で、 **\<Browse >** をクリックします。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **アクティブな規則** の一覧で、 **\<Browse を参照**します。
+4. **[アクティブな規則]** の一覧で、[ **\<Browse >** ] をクリックします。
 
 ::: moniker-end
 

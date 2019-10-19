@@ -1,32 +1,32 @@
 ---
-title: ワークフロー デザイナー:ワークフロー プロジェクトに新しい項目を追加します。
+title: 'ワークフローデザイナー: ワークフロープロジェクトに新しい項目を追加する'
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29e4c03eef2a276995890bbd6b723fa457aefde2
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: a87efc24ef148600c31dbb07d7517f9235306102
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432038"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650414"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>方法: ワークフロー プロジェクトへ新しい項目を追加します。
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>方法: ワークフロープロジェクトに新しい項目を追加する
 
-ワークフロー プロジェクトを作成したら、ワークフロー アクティビティ、デザイナー、およびその他の一般的な Visual Studio 項目をプロジェクトに追加できます。
+ワークフロープロジェクトを作成したら、ワークフローアクティビティ、デザイナー、およびその他の使い慣れた Visual Studio 項目をプロジェクトに追加できます。
 
-次の表では、ワークフロー プロジェクトに追加できる Windows Workflow Foundation (WF) の項目を示します。
+次の表は、ワークフロープロジェクトに追加できる Windows Workflow Foundation (WF) 項目を示しています。
 
-| 名前 | 説明 |
+| 名 | 説明 |
 |-| - |
-| アクティビティ | 他のアクティビティで構成されるアクティビティ。 この項目を選択を選択するときに取得される、プロジェクトに同じ XAML ファイルを追加、**アクティビティ ライブラリ**新しいプロジェクトのテンプレート。 この手順の詳細については、次を参照してください。[ワークフロー プロジェクトを作成する](creating-a-workflow-project.md)します。 |
-| アクティビティ デザイナー | アクティビティのデザイン時の操作をカスタマイズするデザイナー。 この項目を選択を選択するときに取得される、プロジェクトに同じファイルを追加、**アクティビティ デザイナー ライブラリ**新しいプロジェクトのテンプレート。 |
+| アクティビティ | 他のアクティビティで構成されるアクティビティ。 この項目を選択すると、新しいプロジェクトの **[アクティビティライブラリ]** テンプレートを選択したときに取得したものと同じ XAML ファイルがプロジェクトに追加されます。 この手順の詳細については、「[ワークフロープロジェクトの作成](creating-a-workflow-project.md)」を参照してください。 |
+| アクティビティ デザイナー | アクティビティのデザイン時の操作をカスタマイズするデザイナー。 この項目を選択すると、新しいプロジェクトに対して **[アクティビティデザイナーライブラリ]** テンプレートを選択したときに取得したものと同じファイルがプロジェクトに追加されます。 |
 | Code アクティビティ | コードに記述される実行ロジックを含むアクティビティ。 <xref:System.Activities.CodeActivity.Execute%2A> メソッドのオーバーライドを含むソース コード ファイルは既に自動的に生成されています。 |
-| WCF ワークフロー サービス | ワークフロー アクティビティを使用して作成された [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] サービス。 この項目を選択を選択するときに取得される、プロジェクトに同じファイルを追加、 **WCF ワークフロー サービス アプリケーション**新しいプロジェクトのテンプレート。 この手順の詳細については、次を参照してください。[方法。WCF ワークフロー サービス アプリケーションの作成](/visualstudio/workflow-designer/creating-a-workflow-project)です。 |
+| WCF ワークフロー サービス | ワークフロー アクティビティを使用して作成された [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] サービス。 この項目を選択すると、新しいプロジェクトの**WCF ワークフローサービスアプリケーション**テンプレートを選択したときに取得したものと同じファイルがプロジェクトに追加されます。 この手順の詳細については、「[方法: WCF ワークフローサービスアプリケーションを作成](/visualstudio/workflow-designer/creating-a-workflow-project)する」を参照してください。 |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>ワークフロー プロジェクトに新しい項目を追加するには
 
@@ -34,15 +34,15 @@ ms.locfileid: "66432038"
 
    **[新しい項目の追加]** ダイアログ ボックスが開きます。
 
-1. 左側のウィンドウで、選択、**ワークフロー**カテゴリ、およびワークフローの項目テンプレートを選択します。
+1. 左側のウィンドウで、 **[ワークフロー]** カテゴリを選択し、ワークフロー項目テンプレートを選択します。
 
    > [!NOTE]
-   > 表示されない場合、**ワークフロー**カテゴリで、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
+   > **ワークフロー**カテゴリが表示されない場合は、まず Visual Studio の**Windows Workflow Foundation**コンポーネントをインストールします。 詳細については、「 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)」を参照してください。
 
-1. 内の項目の名前を入力、**名前** ダイアログ ボックスの下部にあるボックス。
+1. ダイアログボックスの下部にある **[名前]** ボックスに、項目の名前を入力します。
 
-1. 選択**追加**をプロジェクトに項目を追加します。
+1. **[追加]** を選択して、プロジェクトに項目を追加します。
 
 ## <a name="see-also"></a>関連項目
 
-- [ワークフロー プロジェクトを作成します。](../workflow-designer/creating-a-workflow-project.md)
+- [ワークフロープロジェクトの作成](../workflow-designer/creating-a-workflow-project.md)
