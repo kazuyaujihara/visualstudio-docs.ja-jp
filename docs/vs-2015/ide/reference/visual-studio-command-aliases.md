@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160892"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657852"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "68160892"
 |[Start コマンド](../../ide/reference/start-command.md)|G|Debug.Start|
 |[Go To コマンド](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |[かっこに移動]|GotoBrace|Edit.GotoBrace|
-|F1 ヘルプ|Help|Help.F1Help|
+|F1 ヘルプ|[Help]|Help.F1Help|
 |[イミディエイト モード]|immed|Tools.ImmediateMode|
 |[テキストとしてファイルを挿入]|InsertFile|Edit.InsertFileAsText|
 |[ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -80,7 +80,7 @@ ms.locfileid: "68160892"
 |[行の削除]|LineDel|Edit.LineDelete|
 |リスト メンバー|ListMembers|Edit.ListMembers|
 |[ローカル] ウィンドウ|Locals|Debug.Locals|
-|[LogCommandWindowOutput コマンド](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
+|[LogCommandWindowOutput コマンド](../../ide/reference/log-command-window-output-command.md)|ログ|Tools.LogCommandWindowOutput|
 |[コマンド ウィンドウ マーク モード]|mark|Tools.CommandWindowMarkMode|
 |[メモリ 1] ウィンドウ|Memory Memory1|Debug.Memory1|
 |[メモリ 2] ウィンドウ|Memory2|Debug.Memory2|
@@ -99,7 +99,7 @@ ms.locfileid: "68160892"
 |[ステップ アウト]|pr|Debug.StepOut|
 |[前のブックマーク]|PrevBook|Edit.PreviousBookmark|
 |[印刷]|print|File.Print|
-|プロパティ ウィンドウ|props|View.PropertiesWindow|
+|[プロパティ] ウィンドウ|props|View.PropertiesWindow|
 |停止|q|Debug.StopDebugging|
 |やり直し|redo|Edit.Redo|
 |[レジスタ] ウィンドウ|registers|Debug.Registers|
@@ -127,5 +127,5 @@ ms.locfileid: "68160892"
 |[プロセスの一覧]|&#124;|Debug.ListProcesses|
 |[ListThreads コマンド](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)[コマンド ウィンドウ](../../ide/reference/command-window.md)[検索/コマンドボックス](../../ide/find-command-box.md)

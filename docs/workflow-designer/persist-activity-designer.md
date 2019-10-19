@@ -5,37 +5,37 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 882a68e006ac139d717320b0b8b7ce4d75aceb38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254847"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650118"
 ---
 # <a name="persist-activity-designer"></a>Persist アクティビティ デザイナー
 
-**Persist**アクティビティデザイナーは、アクティビティを<xref:System.Activities.Statements.Persist>作成および構成するために使用されます。
+**Persist**アクティビティデザイナーは、<xref:System.Activities.Statements.Persist> アクティビティを作成および構成するために使用されます。
 
 ## <a name="the-persist-activity"></a>Persist アクティビティ
 
-<xref:System.Activities.Statements.Persist> アクティビティで、ワークフローをディスクに保存します (可能な場合)。 <xref:System.Activities.Statements.Persist> アクティビティは、<xref:System.Activities.Statements.TransactionScope> アクティビティ内などの非永続化ゾーンでは実行できません。 非永続化スコープで<xref:System.Activities.Statements.Persist>アクティビティを使用すると、実行時に例外がスローされます。
+<xref:System.Activities.Statements.Persist> アクティビティで、ワークフローをディスクに保存します (可能な場合)。 <xref:System.Activities.Statements.Persist> アクティビティは、<xref:System.Activities.Statements.TransactionScope> アクティビティ内などの非永続化ゾーンでは実行できません。 非永続化スコープで <xref:System.Activities.Statements.Persist> アクティビティを使用すると、実行時に例外がスローされます。
 
 ### <a name="using-the-persist-activity-designer"></a>Persist アクティビティ デザイナーの使用
 
 **Persist**アクティビティデザイナーは、 **[ツールボックス**] の **[ランタイム]** カテゴリにあります。このカテゴリにアクセスするには、 **[ツール]** ボックス タブをクリックします (または、 **[表示]** メニューの **[ツールボックス]** を選択するか、CTRL + ALT + X キーを押します)。
 
-**Persist**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意<xref:System.Activities.Statements.Sequence>の場所 (内など) にワークフローデザイナー画面にドロップできます。 これにより<xref:System.Activities.Statements.Persist> 、Persist という既定の**DisplayName**を持つアクティビティが作成されます。 は<xref:System.Activities.Activity.DisplayName%2A> 、 **Persist**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
+**Persist**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意の場所 (<xref:System.Activities.Statements.Sequence> 内など) にドロップしてワークフローデザイナー画面にドロップできます。 これにより、Persist という既定の**DisplayName**を持つ <xref:System.Activities.Statements.Persist> アクティビティが作成されます。 @No__t_0 は、 **Persist**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
 
 ### <a name="the-persist-properties"></a>Persist のプロパティ
 
 次の表に、<xref:System.Activities.Statements.Persist> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティグリッドで編集することができ、一部のプロパティはワークフローデザイナー画面で編集できます。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Persist> アクティビティの表示名。 既定値は Persist です。 表示名は必須ではありませんが、使用することをお勧めします。|
 

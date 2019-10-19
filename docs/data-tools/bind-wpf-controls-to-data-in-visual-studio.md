@@ -1,5 +1,5 @@
 ---
-title: 第 1 部のデータに WPF コントロールをバインドします。
+title: データへの WPF コントロールのバインド-パート1
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,29 +11,29 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0d1769440ea72ff477ac78230f2c7c1bb71b5ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816281"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648766"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 
-データを [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] コントロールにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータ バインド コントロールを作成するから項目をドラッグすることができます、**データソース**ウィンドウ、 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] Visual Studio でします。 このトピックでは、データ バインド [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
+データを [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] コントロールにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータバインドコントロールを作成するには、 **[データソース]** ウィンドウから Visual Studio の [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグします。 このトピックでは、データ バインド [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
 
-Visual Studio でのデータ バインド コントロールを作成する方法については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] データ バインディングの詳細については、「[データ バインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)」を参照してください。
+Visual Studio でデータバインドコントロールを作成する方法に関する一般的な情報については、「 [Visual studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] データ バインディングの詳細については、「[データ バインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)」を参照してください。
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>データへの WPF コントロールのバインドに関連するタスク
 
-次の表に、**[データ ソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグすることで実行できるタスクを示します。
+次の表に、 **[データ ソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグすることで実行できるタスクを示します。
 
-|タスク|詳細情報|
+|タスク|説明|
 |----------| - |
 |データ バインド コントロールを作成する。<br /><br /> 既存のコントロールをデータにバインドする。|[データセットへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |親子のリレーションシップを持つ関連データを表示するコントロールを作成する。あるコントロールの親データ レコードを選択すると、その選択レコードに関連する子データが別のコントロールに表示されるようにします。|[WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -46,65 +46,65 @@ Visual Studio でのデータ バインド コントロールを作成する方�
 
 ## <a name="generated-xaml-and-code"></a>生成される XAML およびコード
 
-項目をドラッグすると、**データソース**ウィンドウ、 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]、Visual Studio によって生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]を新しいデータ バインド コントロールを定義します (または既存のコントロールをデータ ソースにバインドします)。 一部のデータ ソースの Visual Studio もデータをデータ ソースに設定する分離コード ファイルでコードを生成します。
+**[データソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグすると、Visual Studio によって、新しいデータバインドコントロールを定義する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] (または、既存のコントロールをデータソースにバインドする) が生成されます。 一部のデータソースでは、Visual Studio によって、データソースにデータが格納されるコードビハインドファイル内のコードも生成されます。
 
-次の表、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]と各種のデータ ソースの Visual Studio によって生成されるコード、**データソース**ウィンドウ。
+次の表に、 **[データソース]** ウィンドウで、Visual Studio がデータソースの種類ごとに生成する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] とコードを示します。
 
 | データ ソース | コントロールをデータ ソースにバインドする XAML の生成 | データ ソースにデータを読み込むコードの生成 |
 | - | - | - |
-| データセット | はい | はい |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | はい | はい |
-| サービス | はい | いいえ |
-| Object | はい | いいえ |
+| データセット | [はい] | [はい] |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [はい] | [はい] |
+| [サービス] | [はい] | Ｘ |
+| Object | [はい] | Ｘ |
 
 ### <a name="datasets"></a>データセット
 
-テーブルまたは列をドラッグすると、**データ ソース**デザイナー、Visual Studio ウィンドウの生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]は次を実行します。
+**[データソース]** ウィンドウからデザイナーにテーブルまたは列をドラッグすると、Visual Studio によって、次の操作を実行する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] が生成されます。
 
 - 項目をドラッグした先のコンテナーのリソースに、データセットと新しい <xref:System.Windows.Data.CollectionViewSource> を追加する。 <xref:System.Windows.Data.CollectionViewSource> は、データセットのデータの移動と表示に使用できるオブジェクトです。
 
-- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、XAML により、その項目にコントロールがバインドされます。 コンテナーに項目をドラッグする場合は、XAML がドラッグした項目に対して選択されたコントロールを作成し、項目にバインドするコントロール。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
+- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、XAML により、その項目にコントロールがバインドされます。 項目をコンテナーにドラッグすると、XAML はドラッグした項目に対して選択されたコントロールを作成し、コントロールを項目にバインドします。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
 
 Visual Studio は、分離コード ファイルに次の変更も加えます。
 
-- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベント ハンドラーは、テーブルにデータを読み込み、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得して、最初のデータ項目を現在の項目にします。 場合、<xref:System.Windows.FrameworkElement.Loaded>イベント ハンドラーが既に存在する、Visual Studio は、既存のイベント ハンドラーに次のコードを追加します。
+- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベント ハンドラーは、テーブルにデータを読み込み、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得して、最初のデータ項目を現在の項目にします。 @No__t_0 イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
 
 ### <a name="entity-data-models"></a>エンティティ データ モデル
 
-エンティティまたはエンティティ プロパティからドラッグすると、**データ ソース**デザイナー、Visual Studio ウィンドウの生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]は次を実行します。
+**[データソース]** ウィンドウからデザイナーにエンティティまたはエンティティプロパティをドラッグすると、Visual Studio によって、次の操作を実行する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] が生成されます。
 
 - 項目をドラッグした先のコンテナーのリソースに、新しい <xref:System.Windows.Data.CollectionViewSource> を追加する。 <xref:System.Windows.Data.CollectionViewSource> は、エンティティのデータの移動と表示に使用できるオブジェクトです。
 
-- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] により、その項目にコントロールがバインドされます。 コンテナーに項目をドラッグする場合、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]コントロールを作成します。 ドラッグした項目の選択されていたとコントロールの項目にバインドします。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
+- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] により、その項目にコントロールがバインドされます。 項目をコンテナーにドラッグすると、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] によって、ドラッグした項目用に選択されたコントロールが作成され、そのコントロールが項目にバインドされます。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
 
 Visual Studio は、分離コード ファイルに次の変更も加えます。
 
-- デザイナーにドラッグされたエンティティ (または、デザイナーにドラッグされたプロパティを含むエンティティ) のクエリを返す新しいメソッドを追加する。 新しいメソッドの名前は`Get<EntityName>Query`ここで、`\<EntityName>`エンティティの名前を指定します。
+- デザイナーにドラッグされたエンティティ (または、デザイナーにドラッグされたプロパティを含むエンティティ) のクエリを返す新しいメソッドを追加する。 新しいメソッドには `Get<EntityName>Query` という名前が付いています。 `\<EntityName>` はエンティティの名前です。
 
-- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベント ハンドラーの呼び出し、`Get<EntityName>Query`エンティティをデータを格納するメソッドを取得、<xref:System.Windows.Data.CollectionViewSource>からコンテナーのリソース、し、最初のデータ項目の現在の項目。 場合、<xref:System.Windows.FrameworkElement.Loaded>イベント ハンドラーが既に存在する、Visual Studio は、既存のイベント ハンドラーに次のコードを追加します。
+- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベントハンドラーは `Get<EntityName>Query` メソッドを呼び出して、エンティティにデータを格納し、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得してから、最初のデータ項目を現在の項目にします。 @No__t_0 イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
 
 ### <a name="services"></a>Services
 
-サービス オブジェクトまたはプロパティからドラッグすると、**データソース**デザイナー、Visual Studio ウィンドウの生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、Visual Studio では、データをプロキシ サービス オブジェクトに設定するコードは生成しません。 このコードは、ユーザーが手動で記述する必要があります。 これを行う方法については、例では、次を参照してください。 [WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)します。
+**[データソース]** ウィンドウからデザイナーにサービスオブジェクトまたはプロパティをドラッグすると、Visual Studio によって、データバインドコントロールを作成する (または、既存のコントロールをオブジェクトまたはプロパティにバインドする) [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] が生成されます。 ただし、Visual Studio では、プロキシサービスオブジェクトにデータを格納するコードは生成されません。 このコードは、ユーザーが手動で記述する必要があります。 これを行う方法を示す例については、「 [WCF データサービスへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」を参照してください。
 
 Visual Studio は、次の処理を行う XAML を生成します。
 
 - 項目をドラッグした先のコンテナーのリソースに、新しい <xref:System.Windows.Data.CollectionViewSource> を追加する。 <xref:System.Windows.Data.CollectionViewSource> は、サービスから返されるオブジェクトのデータの移動と表示に使用できるオブジェクトです。
 
-- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] により、その項目にコントロールがバインドされます。 コンテナーに項目をドラッグする場合、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]コントロールを作成します。 ドラッグした項目の選択されていたとコントロールの項目にバインドします。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
+- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] により、その項目にコントロールがバインドされます。 項目をコンテナーにドラッグすると、[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] によって、ドラッグした項目用に選択されたコントロールが作成され、そのコントロールが項目にバインドされます。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
 
 ### <a name="objects"></a>オブジェクト
 
-オブジェクトまたはからプロパティをドラッグすると、**データソース**デザイナー、Visual Studio のウィンドウが生成されます[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、Visual Studio では、オブジェクトのデータに設定するコードを生成しません。 このコードは、ユーザーが手動で記述する必要があります。
+**[データソース]** ウィンドウからデザイナーにオブジェクトまたはプロパティをドラッグすると、Visual Studio によって、データバインドコントロールを作成する (または、既存のコントロールをオブジェクトまたはプロパティにバインドする) [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] が生成されます。 ただし、Visual Studio では、オブジェクトにデータを格納するコードは生成されません。 このコードは、ユーザーが手動で記述する必要があります。
 
 > [!NOTE]
-> カスタム クラス パブリックであり、既定では、パラメーターなしのコンス トラクターを持ちます。 入れ子になったクラスをそれぞれの構文で「ドット」を持つことができません。 詳細については、次を参照してください。 [XAML とカスタム クラスの WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)します。
+> カスタムクラスはパブリックである必要があり、既定ではパラメーターのないコンストラクターがあります。 構文に "ドット" を含む入れ子になったクラスにすることはできません。 詳細については、「 [WPF の XAML およびカスタムクラス](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)」を参照してください。
 
-Visual Studio によって生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]は次を実行します。
+Visual Studio によって、次のことを実行する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] が生成されます。
 
 - 項目をドラッグした先のコンテナーのリソースに、新しい <xref:System.Windows.Data.CollectionViewSource> を追加する。 <xref:System.Windows.Data.CollectionViewSource> は、オブジェクトのデータの移動と表示に使用できるオブジェクトです。
 
-- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、XAML により、その項目にコントロールがバインドされます。 コンテナーに項目をドラッグする場合は、XAML がドラッグした項目に対して選択されたコントロールを作成し、項目にバインドするコントロール。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
+- コントロールのデータ バインディングを作成する。 デザイナーの既存のコントロールに項目をドラッグすると、XAML により、その項目にコントロールがバインドされます。 項目をコンテナーにドラッグすると、XAML はドラッグした項目に対して選択されたコントロールを作成し、コントロールを項目にバインドします。 コントロールは、新しい <xref:System.Windows.Controls.Grid> 内に作成されます。
 
 ## <a name="see-also"></a>関連項目
 

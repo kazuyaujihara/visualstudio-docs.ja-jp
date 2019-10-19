@@ -28,23 +28,23 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696008"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662218"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>[オプション]、[テキスト エディター]、[XAML]、[書式設定]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**[書式設定]** プロパティ ページを使用して、XAML ドキュメントで要素と属性をどのように書式設定するかを指定します。 **[オプション]** ダイアログ ボックスを開くには、**[ツール]** メニューをクリックし、**[オプション]** をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、**[テキスト エディター]**、**[XAML]**、**[書式設定]** ノードを展開します。
+**[書式設定]** プロパティ ページを使用して、XAML ドキュメントで要素と属性をどのように書式設定するかを指定します。 **[オプション]** ダイアログ ボックスを開くには、 **[ツール]** メニューをクリックし、 **[オプション]** をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、 **[テキスト エディター]** 、 **[XAML]** 、 **[書式設定]** ノードを展開します。
 
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="auto-formatting-events"></a>オートフォーマット イベント
 次のイベントのいずれかが検出されると、自動フォーマットが発生する場合があります。
@@ -117,16 +117,16 @@ XAML ドキュメント内で要素を配置する方法を制御するには、
 
 |||
 |-|-|
-|**常に完全な XAML ビューでドキュメントを開く**|XAML ドキュメントがデザイン ビュー使用せず、XAML ビューでのみ表示されるかどうかを指定します。 サイズの大きいドキュメントを読み込むために便利です。|
+|**常に完全な XAML ビューでドキュメントを開く**|Xaml ドキュメントを XAML ビューだけにデザインビューせずに表示するかどうかを指定します。 大きなドキュメントを読み込む場合に便利です。|
 
 ## <a name="toolbox"></a>ツールボックス
-この設定を使用すると、ユーザー コントロールとカスタム コントロールがツールボックスに表示されるかどうかを指定できます。
+この設定を使用して、ユーザーコントロールとカスタムコントロールをツールボックスに表示するかどうかを指定します。
 
 |||
 |-|-|
 |**ツールボックスの項目を自動取得する**|現在のソリューションのユーザー コントロールとカスタム コントロールが、ツールボックスに自動的に表示されるかどうかを指定します。|
 
-## <a name="see-also"></a>関連項目
-[WPF の XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[方法: XAML ビュー設定の変更](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[XAML とコードのチュートリアル](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>参照
+[WPF の xaml](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[方法: Xaml ビューの設定を変更する](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)[Xaml とコード](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+ のチュートリアル

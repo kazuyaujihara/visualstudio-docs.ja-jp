@@ -1,88 +1,88 @@
 ---
-title: ワークフロー デザイナー:定義およびアクティビティ デリゲートの使用
+title: 'ワークフローデザイナー: アクティビティデリゲートを定義および使用する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+author: jillre
+ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431791"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650339"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>方法: ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する方法
 
-.NET framework 4.5 には用の既製のデザイナーが含まれています、<xref:System.Activities.Statements.InvokeDelegate>アクティビティ。 このデザイナーを使用すると、<xref:System.Activities.ActivityDelegate> や <xref:System.Activities.ActivityAction> など、<xref:System.Activities.ActivityFunc%601> から派生するアクティビティにデリゲートを割り当てることができます。
+.NET Framework 4.5 には、<xref:System.Activities.Statements.InvokeDelegate> アクティビティ用の既定のデザイナーが含まれています。 このデザイナーを使用すると、<xref:System.Activities.ActivityDelegate> や <xref:System.Activities.ActivityAction> など、<xref:System.Activities.ActivityFunc%601> から派生するアクティビティにデリゲートを割り当てることができます。
 
 ## <a name="define-an-activity-delegate"></a>アクティビティ デリゲートの定義
 
-1. 新規作成**ワークフロー コンソール アプリケーション**プロジェクト。
+1. 新しい**ワークフローコンソールアプリケーション**プロジェクトを作成します。
 
    > [!NOTE]
-   > 表示されない場合、**ワークフロー**プロジェクト テンプレートは、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
+   > **ワークフロー**プロジェクトテンプレートが表示されない場合は、まず Visual Studio の**Windows Workflow Foundation**コンポーネントをインストールします。 詳細については、「 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)」を参照してください。
 
-3. プロジェクトを右クリックして**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 選択、**ワークフロー**カテゴリ、および選択し、**アクティビティ**項目テンプレート。 新しいアクティビティの名前**MyForEach.xaml**選び**OK**します。
+3. **ソリューションエクスプローラー**でプロジェクトを右クリックし、[ > **新しい項目**の**追加**] を選択します。 **[ワークフロー]** カテゴリを選択し、 **[アクティビティ]** 項目 テンプレートを選択します。 新しいアクティビティに「 **Myforeach** 」という名前を指定し、[ **OK]** を選択します。
 
-   アクティビティがワークフロー デザイナーで開きます。
+   アクティビティがワークフローデザイナーで開きます。
 
-4. ワークフロー デザイナーで、クリックして、**引数**タブ。
+4. ワークフローデザイナーで、 **[引数]** タブをクリックします。
 
-5. クリックして**引数の作成**です。 新しい引数を名前**項目**します。
+5. **[引数の作成]** をクリックします。 新しい引数の**項目**に名前を指定します。
 
-6. **引数の型**列で、 **[T] の配列**します。
+6. **[引数の型]** 列で、 **[[T] の配列**] を選択します。
 
-7. 型ブラウザーで次のように選択します。**オブジェクト**選び**OK**。
+7. 型ブラウザーで **[オブジェクト]** を選択し、[ **OK]** を選択します。
 
-8. クリックして**引数の作成**もう一度です。 新しい引数を名前**本文**します。 **方向**選択、新しい引数は列**プロパティ**します。
+8. **[引数の作成]** をもう一度クリックします。 新しい引数の**本体**に名前を指定します。 新しい引数の **[方向]** 列で、 **[プロパティ]** を選択します。
 
-9. 引数の型の列で、選択**型の参照**
+9. 引数の型 列で、**型の参照** を選択します。
 
-10. 型ブラウザーで、入力**ActivityAction**で、**型名**フィールド。 選択**ActivityAction\<T >** ツリー ビュー。 選択**オブジェクト**タイプを割り当てるために表示されるドロップダウン リストで**ActivityAction\<オブジェクト >** 引数にします。
+10. 型ブラウザーで、 **[型名]** フィールドに「 **activityaction** 」と入力します。 ツリービューで [ **Activityaction \<T >** ] を選択します。 表示されるドロップダウンリストで **[オブジェクト]** を選択して、引数に **\<Object > 型 activityaction**を割り当てます。
 
-11. ドラッグ、<xref:System.Activities.Statements.While>からのアクティビティ、**制御フロー**デザイナー画面に、ツールボックスのセクション。
+11. ツールボックスの **[制御フロー]** セクションから <xref:System.Activities.Statements.While> アクティビティをデザイナー画面にドラッグします。
 
-12. 選択、<xref:System.Activities.Statements.While>アクティビティ、および選択、**変数**タブ。
+12. @No__t_0 アクティビティを選択し、 **[変数]** タブを選択します。
 
-13. 選択**変数作成**です。 新しい変数の名前**インデックス**します。
+13. **[変数の作成]** を選択します。 新しい変数の**インデックス**に名前を付けます。
 
-14. **変数の型**列で、 **Int32**します。 ままに、**スコープ**として**中**、および**既定**列は空白です。
+14. **[変数の型]** 列で **[Int32]** を選択します。 [**スコープ** **] はそのままにし**、**既定**の列は空白のままにします。
 
-15. 設定、**条件**のプロパティ、<xref:System.Activities.Statements.While>アクティビティを**インデックス < Items.Length;** します。
+15. @No__t_1 アクティビティの**Condition**プロパティを**index < Items. Length;** に設定します。
 
-16. ドラッグ、<xref:System.Activities.Statements.InvokeDelegate>からのアクティビティ、**プリミティブ**、ツールボックスのセクション、**本文**の<xref:System.Activities.Statements.While>アクティビティ。
+16. ツールボックスの **[プリミティブ]** セクションから <xref:System.Activities.Statements.While> アクティビティの**本文**に <xref:System.Activities.Statements.InvokeDelegate> アクティビティをドラッグします。
 
-17. 選択**本文**デリゲートのドロップダウンから。
+17. デリゲート ドロップダウンで **本文** を選択します。
 
-18. **プロパティ**のグリッド、<xref:System.Activities.Statements.InvokeDelegate>アクティビティ、クリックして、 **.** ボタン、**デリゲート引数**プロパティ。
+18. @No__t_1 アクティビティの**プロパティ**グリッドで、 **Delegate 引数**プロパティの [.. **.** ] ボタンをクリックします。
 
-19. **値**という名前の引数の列**引数**、入力**Items [Index]** します。 クリックして**Ok**を閉じる、 **DelegateArguments**ダイアログ。
+19. Argument という名前の引数の**値**列に「 **Items [Index]** **」と入力**します。 **[Ok]** をクリックして、 **[DelegateArguments]** ダイアログボックスを閉じます。
 
-20. <xref:System.Activities.Statements.Assign> アクティビティを <xref:System.Activities.Statements.InvokeDelegate> アクティビティの下の水平線にドラッグします。 <xref:System.Activities.Statements.Assign>アクティビティを作成すると、および<xref:System.Activities.Statements.Sequence>で 2 つのアクティビティを格納するアクティビティが自動的に作成、**本文**のセクション、 **MyForEach**アクティビティ。 以降、シーケンスが必要な**本文**セクションがのみ 1 つのアクティビティを含めることができます。 自動的に新しいを作成する<xref:System.Activities.Statements.Sequence>アクティビティは、.NET Framework 4.5 の新機能です。
+20. <xref:System.Activities.Statements.Assign> アクティビティを <xref:System.Activities.Statements.InvokeDelegate> アクティビティの下の水平線にドラッグします。 @No__t_0 アクティビティが作成され、<xref:System.Activities.Statements.Sequence> アクティビティが自動的に作成され、 **Myforeach**アクティビティの**Body**セクションに2つのアクティビティが含まれます。 **Body**セクションには1つのアクティビティのみを含めることができるため、シーケンスが必要です。 新しい <xref:System.Activities.Statements.Sequence> アクティビティの自動作成は、.NET Framework 4.5 の新機能です。
 
-21. 設定、**に**のプロパティ、<xref:System.Activities.Statements.Assign>アクティビティを**インデックス**します。 設定、**値**のプロパティ、**割り当てる**アクティビティを**インデックス + 1**します。
+21. @No__t_1 アクティビティの**To**プロパティを**index**に設定します。 **Assign**アクティビティの**Value**プロパティを**index + 1**に設定します。
 
-    カスタム**MyForEach**アクティビティは、任意のアクティビティから渡される各値に対して 1 回を呼び出し、**項目**アクティビティの入力として、コレクション内の値のコレクション。
+    カスタム**Myforeach**アクティビティは、 **Items**コレクションを通じて渡された値ごとに任意のアクティビティを呼び出し、コレクション内の値をアクティビティの入力として使用します。
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>ワーク フローでのカスタム アクティビティの使用
 
-1. キーを押してプロジェクトをビルド**Ctrl**+**Shift**+**B**します。
+1. **Ctrl** +**Shift** +**B**キーを押してプロジェクトをビルドします。
 
-2. **ソリューション エクスプ ローラー**オープン**Workflow1.xaml**デザイナー。
+2. **ソリューションエクスプローラー**で、デザイナーで**workflow1.xaml**を開きます。
 
-3. ドラッグ、 **MyForEach**アクティビティをツールボックスからデザイナー画面にします。 このアクティビティは、プロジェクトと同じ名前で、ツールボックスのセクションでは。
+3. ツールボックス から  **Myforeach** アクティビティをデザイナー画面にドラッグします。 アクティビティは、プロジェクトと同じ名前のツールボックスのセクションにあります。
 
-4. 設定、**項目**のプロパティ、 **MyForEach**アクティビティを**new object[] {1,"abc"}** します。
+4. **Myforeach**アクティビティの**Items**プロパティを**新しいオブジェクト [] {1, "abc"}** に設定します。
 
-5. ドラッグ、<xref:System.Activities.Statements.WriteLine>からのアクティビティ、**プリミティブ**、ツールボックスのセクション、 **Delegate:body**のセクション、 **MyForEach**アクティビティ。
+5. ツールボックス の **プリミティブ** セクションから、 **myforeach**アクティビティの **Delegate: Body** セクションに <xref:System.Activities.Statements.WriteLine> アクティビティをドラッグします。
 
-6. 設定、**テキスト**のプロパティ、<xref:System.Activities.Statements.WriteLine>アクティビティを**Argument.ToString()** します。
+6. @No__t_1 アクティビティの**Text**プロパティを**Argument. ToString ()** に設定します。
 
-ワークフローを実行すると、次の出力がコンソールに表示されます。
+ワークフローを実行すると、コンソールに次の出力が表示されます。
 
-**1**
+**1** 
 **abc**

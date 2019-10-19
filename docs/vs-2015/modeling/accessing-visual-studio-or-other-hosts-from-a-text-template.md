@@ -7,26 +7,26 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 053e8b09fd2b52683238f1ffe008e5e7d38b3962
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 0e8cedc66d6b52f80239364a3e51b73e93a69aa4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872006"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655332"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>テキスト テンプレートから Visual Studio またはその他のホストへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキストテンプレートでは、など、テンプレート[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を実行するホストによって公開されているメソッドとプロパティを使用できます。
+テキストテンプレートでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] など、テンプレートを実行するホストによって公開されているメソッドとプロパティを使用できます。
 
  これは、プリプロセスされたテキストテンプレートではなく、通常のテキストテンプレートに適用されます。
 
 ## <a name="obtaining-access-to-the-host"></a>ホストへのアクセスを取得しています
 
-ディレクティブでを設定`hostspecific="true"`します。 `template` これにより、 `this.Host` [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型のを使用できます。 この型には、ファイル名を解決したりエラーをログに記録したりするために使用できるメンバーが含まれています。
+@No__t_1 ディレクティブで `hostspecific="true"` を設定します。 これにより、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型の `this.Host` を使用できます。 この型には、ファイル名を解決したりエラーをログに記録したりするために使用できるメンバーが含まれています。
 
 ### <a name="resolving-file-names"></a>ファイル名の解決
  テキストテンプレートを基準としたファイルの完全なパスを検索するには、これを使用します。ホストの ResolvePath ()。
@@ -45,7 +45,7 @@ Content of myFile is:
 ```
 
 ### <a name="displaying-error-messages"></a>エラーメッセージの表示
- この例は、テンプレートを変換するときのメッセージを記録します。 ホストが[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の場合は、エラーウィンドウに追加されます。
+ この例では、テンプレートを変換するときにメッセージをログに記録します。 ホストが [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 場合は、エラーウィンドウに追加されます。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -63,11 +63,11 @@ Content of myFile is:
 ```
 
 ## <a name="using-the-visual-studio-api"></a>Visual Studio API の使用
- で[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキストテンプレートを実行している場合は、を`this.Host`使用して、に[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]よって提供されるサービスと読み込まれたパッケージまたは拡張機能にアクセスできます。
+ @No__t_0 でテキストテンプレートを実行している場合は、`this.Host` を使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって提供されるサービスと読み込まれたパッケージまたは拡張機能にアクセスできます。
 
- `hostspecific ="true"` を設定し、`this.Host` を <xref:System.IServiceProvider> にキャストします。
+ Hostspecific = "true" に設定し、`this.Host` を <xref:System.IServiceProvider> にキャストします。
 
- この例では[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、API <xref:EnvDTE.DTE>をサービスとして取得します。
+ この例では、サービスとして [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API、<xref:EnvDTE.DTE> を取得します。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -83,4 +83,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
 ## <a name="using-hostspecific-with-template-inheritance"></a>テンプレート継承での hostSpecific の使用
- `inherits`属性を使用し、`hostspecific="true"` を指定したテンプレートから継承する場合は、`hostspecific="trueFromBase"` を指定します。 これにより、プロパティ`Host`が2回宣言されているという結果に対するコンパイラ警告が回避されます。
+ @No__t_1 属性も使用する場合、および `hostspecific="true"` を指定するテンプレートを継承する場合は、`hostspecific="trueFromBase"` を指定します。 これにより、プロパティ `Host` が2回宣言されているという結果に対するコンパイラ警告が回避されます。

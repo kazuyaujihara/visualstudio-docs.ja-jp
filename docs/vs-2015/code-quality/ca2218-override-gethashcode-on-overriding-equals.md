@@ -1,5 +1,5 @@
 ---
-title: CA2218:Equals をオーバーライドの GetHashCode をオーバーライド |Microsoft Docs
+title: 'CA2218: オーバーライドする Equals | で GetHashCode をオーバーライドします。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1019ef8aceecdbc8cabab6a745d9853dc2d60304
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 06d961fee28fa67f1e4f712564f6b3d5ff4073ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685232"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651629"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:オーバーライドする Equals で GetHashCode をオーバーライドします
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: オーバーライドする Equals で GetHashCode をオーバーライドします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|カテゴリ|Microsoft.Usage|
+|カテゴリ|Microsoft. 使用方法|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- パブリック型のオーバーライド<xref:System.Object.Equals%2A?displayProperty=fullName>がオーバーライドしません<xref:System.Object.GetHashCode%2A?displayProperty=fullName>します。
+ パブリック型は <xref:System.Object.Equals%2A?displayProperty=fullName> をオーバーライドしますが、<xref:System.Object.GetHashCode%2A?displayProperty=fullName> はオーバーライドしません。
 
 ## <a name="rule-description"></a>規則の説明
- <xref:System.Object.GetHashCode%2A> ハッシュ アルゴリズムやハッシュ テーブルなどのデータ構造に適していますが、現在のインスタンスに基づいて、値を返します。 同じ種類し、が等しい 2 つのオブジェクトには、次の型のインスタンスが正しく動作する同じハッシュ コードを返す必要があります。
+ <xref:System.Object.GetHashCode%2A> は、現在のインスタンスに基づいて値を返します。これは、ハッシュアルゴリズムや、ハッシュテーブルなどのデータ構造に適しています。 2つのオブジェクトが同じ型で等しい場合は、次の型のインスタンスが正しく動作することを確認するために、同じハッシュコードを返す必要があります。
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,10 +54,10 @@ ms.locfileid: "65685232"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- 実装する型 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- を実装する型 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、実装を提供<xref:System.Object.GetHashCode%2A>します。 同じ型のオブジェクトのペアの場合、実装が同じ値を返すことを確認する必要がありますの実装<xref:System.Object.Equals%2A>返します`true`ペアを指定します。
+ この規則違反を修正するには、<xref:System.Object.GetHashCode%2A> の実装を提供します。 同じ型のオブジェクトのペアについては、<xref:System.Object.Equals%2A> の実装がペアの `true` を返す場合は、実装が同じ値を返すようにする必要があります。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
@@ -65,39 +65,39 @@ ms.locfileid: "65685232"
 ## <a name="class-example"></a>クラスの例
 
 ### <a name="description"></a>説明
- 次の例では、この規則に違反するためのクラス (参照型) を示します。
+ 次の例は、この規則に違反するクラス (参照型) を示しています。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
 
 ### <a name="comments"></a>コメント
- 次の例では、オーバーライドすることで、違反を修正する<xref:System.Object.GetHashCode>します。
+ 次の例では、<xref:System.Object.GetHashCode> をオーバーライドすることによって違反を修正します。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedClass/cs/FxCop.Usage.GetHashCodeFixedClass.cs#1)]
 
-## <a name="structure-example"></a>構造の例
+## <a name="structure-example"></a>構造体の例
 
 ### <a name="description"></a>説明
- 次の例では、この規則に違反する構造体 (値型) を示します。
+ 次の例は、この規則に違反する構造体 (値型) を示しています。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]
 
 ### <a name="comments"></a>コメント
- 次の例では、オーバーライドすることで、違反を修正する<xref:System.Object.GetHashCode>します。
+ 次の例では、<xref:System.Object.GetHashCode> をオーバーライドすることによって違反を修正します。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedStruct/cs/FxCop.Usage.GetHashCodeFixedStruct.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1046:参照型で、演算子 equals をオーバー ロードしません。](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: 参照型で、演算子 equals をオーバーロードしないでください](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225:演算子のオーバー ロード名前付けされた代替](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: 演算子オーバーロードには名前付けされた代替が存在します](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226:演算子は対称型オーバー ロードである必要があります。](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: 演算子は対称型オーバーロードを含まなければなりません](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224:オーバー ロードする演算子 equals で equals をオーバーライド](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: オーバーロードする演算子 equals で Equals をオーバーライドします](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 

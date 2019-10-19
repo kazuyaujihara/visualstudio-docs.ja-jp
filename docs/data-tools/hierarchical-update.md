@@ -16,74 +16,74 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 33ca9f91c9b1105af43af21a91f25be13e153aa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648443"
 ---
 # <a name="hierarchical-update"></a>階層更新
 
-*階層更新*参照整合性を維持しながら、データベースに (2 つ以上の関連テーブルを含むデータセット) から更新されたデータの保存の処理を指します。 *参照整合性*の挿入、更新、および関連レコードを削除する動作を制御するデータベース内の制約によって定義される一貫性規則を参照します。 たとえば、その顧客の注文を作成するを許可する前に、顧客レコードの作成を強制する参照の整合性を勧めします。  データセットのリレーションシップの詳細については、次を参照してください。[データセットのリレーションシップ](../data-tools/relationships-in-datasets.md)します。
+*階層更新*とは、参照整合性ルールを維持したまま、更新されたデータ (2 つ以上の関連テーブルを含むデータセットから) をデータベースに保存するプロセスのことです。 *参照整合性*とは、関連レコードの挿入、更新、および削除の動作を制御する、データベース内の制約によって提供される整合性規則を指します。 たとえば、顧客レコードの作成を強制してから、その顧客の注文を作成できるようにする参照整合性です。  データセット内のリレーションシップの詳細については、「[データセット内のリレーションシップ](../data-tools/relationships-in-datasets.md)」を参照してください。
 
-階層更新機能を使用して、`TableAdapterManager`を管理する、`TableAdapter`型指定された dataset の s。 `TableAdapterManager`コンポーネントは、.NET 型ではなく、Visual Studio によって生成されたクラスです。 テーブルをドラッグすると、**データソース**Windows フォームまたは WPF ページで、Visual Studio のウィンドウがフォームまたはページで、TableAdapterManager の型の変数を追加し、コンポーネント トレイにデザイナーで参照してください。 詳細については、`TableAdapterManager`クラスの TableAdapterManager リファレンスのセクションを参照してください[Tableadapter](../data-tools/create-and-configure-tableadapters.md)します。
+階層更新機能では、`TableAdapterManager` を使用して、型指定されたデータセット内の `TableAdapter`s を管理します。 @No__t_0 コンポーネントは、.NET 型ではなく、Visual Studio で生成されたクラスです。 **[データソース]** ウィンドウから Windows フォームまたは WPF ページにテーブルをドラッグすると、Visual Studio によって TableAdapterManager 型の変数がフォームまたはページに追加され、コンポーネントトレイのデザイナーに表示されます。 @No__t_0 クラスの詳細については、「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」の「TableAdapterManager Reference」セクションを参照してください。
 
-既定では、データセットは、外部キー制約を適用しないことを意味する「リレーションのみ、」として関連テーブルを処理します。 使用して、デザイン時にその設定を変更することができます、**データセット デザイナー**します。 2 つのテーブル間の関係の行を選択、**関係** ダイアログ ボックス。 ここで加えた変更が決定される方法、`TableAdapterManager`動作するときに元のデータベースに関連するテーブルに、変更も送信します。
+既定では、データセットは関連テーブルを "リレーションのみ" として扱います。これは、外部キー制約が適用されないことを意味します。 この設定は、デザイン時に**データセットデザイナー**を使用して変更できます。 2つのテーブル間のリレーション線を選択して、 **[リレーションシップ]** ダイアログボックスを表示します。 ここで行った変更によって、関連テーブルの変更をデータベースに送信するときの `TableAdapterManager` の動作が決まります。
 
-## <a name="enable-hierarchical-update-in-a-dataset"></a>データセット内の階層の更新を有効にします。
+## <a name="enable-hierarchical-update-in-a-dataset"></a>データセットの階層更新を有効にする
 
-プロジェクトで追加または作成されたすべての新しいデータセットでは、階層更新が既定で有効になっています。 設定して、階層更新をオンまたはオフに、**階層更新**にデータセット内の型指定されたデータセットのプロパティ**True**または**False**:
+プロジェクトで追加または作成されたすべての新しいデータセットでは、階層更新が既定で有効になっています。 データセット内の型指定されたデータセットの "**階層更新**" プロパティを**True**または**False**に設定して、階層更新をオンまたはオフにします。
 
 ![階層更新の設定](../data-tools/media/hierarchical-update-setting.png)
 
-## <a name="create-a-new-relation-between-tables"></a>テーブル間に新しいリレーションシップを作成します。
+## <a name="create-a-new-relation-between-tables"></a>テーブル間に新しいリレーションシップを作成する
 
-2 つのテーブル間に新しいリレーションシップを作成する、データセット デザイナーで、各テーブルのタイトル バーを選択します。 右クリックし選択**リレーションを追加**します。
+2つのテーブル間の新しいリレーションシップを作成するには、データセットデザイナーで各テーブルのタイトルバーを選択し、右クリックして **[リレーションシップの追加]** を選択します。
 
-![階層更新 メニューの関係を追加します。](../data-tools/media/hierarchical-update-add-relation-menu.png)
+![階層更新の [リレーションシップの追加] メニュー](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
-## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Foreign key 制約、カスケード更新プログラム、および削除を理解します。
+## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>外部キー制約、連鎖更新、および削除について
 
 生成されたデータセット コードで、データベースでの外部キー制約と連鎖動作がどのように作成されるかを理解することは重要です。
 
-既定では、データセットのデータ テーブルは、データベースでのリレーションシップと一致するリレーションシップ (<xref:System.Data.DataRelation>) が設定された状態で生成されます。 ただし、データセットでのリレーションシップは、外部キー制約としては生成されません。 <xref:System.Data.DataRelation>として構成されている**リレーションシップのみ**せず<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A>または<xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>有効にします。
+既定では、データセットのデータ テーブルは、データベースでのリレーションシップと一致するリレーションシップ (<xref:System.Data.DataRelation>) が設定された状態で生成されます。 ただし、データセットでのリレーションシップは、外部キー制約としては生成されません。 @No__t_0 は、<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> または <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> が有効になっていない場合に**のみ、リレーション**として構成されます。
 
-連鎖更新と連鎖削除は、データベースのリレーションシップで連鎖更新や連鎖削除が有効になっている場合でも、既定で無効になっています。 たとえば、新しい顧客と新しい注文を作成し、データを保存しようは、データベースで定義されている外部キー制約を持つの競合を発生することが。 詳細については、次を参照してください。[データセットの読み込み中に制約を無効に](turn-off-constraints-while-filling-a-dataset.md)します。
+連鎖更新と連鎖削除は、データベースのリレーションシップで連鎖更新や連鎖削除が有効になっている場合でも、既定で無効になっています。 たとえば、新しい顧客と新しい注文を作成し、データを保存しようとすると、データベースで定義されている外部キー制約との競合が発生する可能性があります。 詳細については、「[データセットの読み込み中に制約をオフにする](turn-off-constraints-while-filling-a-dataset.md)」を参照してください。
 
-## <a name="set-the-order-to-perform-updates"></a>更新プログラムを実行する順序を設定します。
+## <a name="set-the-order-to-perform-updates"></a>更新を実行する順序を設定する
 
-更新プログラムを実行する順序を設定するデータセットのすべてのテーブルで変更されたすべてのデータを保存する個々 の注文を挿入、更新、および削除したセットが必要です。 階層更新が有効な場合、まず挿入が実行され、次に更新、削除の順で実行されます。 `TableAdapterManager` には、更新、挿入、削除の順に実行できる `UpdateOrder` プロパティも用意されています。
-
-> [!NOTE]
-> 更新順序は、すべてが含まれているかを理解しておく必要があります。 つまり、更新プログラムが実行されると、挿入および削除の後は、データセット内のすべてのテーブルに対して実行されます。
-
-設定する、`UpdateOrder`から項目をドラッグした後、プロパティ、[データ ソース ウィンドウ](add-new-data-sources.md#data-sources-window)、フォームに次のように選択します、`TableAdapterManager`コンポーネント トレイ、および設定して、`UpdateOrder`プロパティ、 **プロパティ。** ウィンドウ。
-
-## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>階層更新を実行する前に、データセットのバックアップ コピーを作成します。
-
-データを保存すると (`TableAdapterManager.UpdateAll()` メソッドを呼び出すことにより)、`TableAdapterManager` は単一のトランザクションで各テーブルのデータの更新を試みます。 任意のテーブルの更新時に、なんらかが失敗した場合、トランザクション全体がロールバックされます。 ほとんどの場合は、ロールバックは、アプリケーションを元の状態を返します。
-
-ただし、バックアップ コピーからデータセットを復元することもできます。 この 1 つの例には、自動インクリメント値を使用している場合があります。 たとえば、保存操作が成功しなかった、自動インクリメント値は、データセットではリセットされませんおよび自動インクリメント値を作成するデータセットが続行されます。 これには、アプリケーションで許容されることができない可能性がある番号付けギャップが残されます。 これが問題となる状況では、`TableAdapterManager` に備わっている `BackupDataSetBeforeUpdate` プロパティを使用して、トランザクションが失敗した場合に既存のデータセットをバックアップ コピーと置き換えることができます。
+更新を実行する順序を設定すると、データセットのすべてのテーブルのすべての変更されたデータを保存するために必要な個々の挿入、更新、および削除の順序が設定されます。 階層更新が有効な場合、まず挿入が実行され、次に更新、削除の順で実行されます。 `TableAdapterManager` には、更新、挿入、削除の順に実行できる `UpdateOrder` プロパティも用意されています。
 
 > [!NOTE]
-> バックアップ コピーは、中にメモリ内にのみ、`TableAdapterManager.UpdateAll`メソッドが実行されています。 そのためはこのバックアップ データセットにプログラムでアクセス元のデータセットを置き換えるかスコープから外れるのですぐ、`TableAdapterManager.UpdateAll`メソッドの実行が完了します。
+> 更新順序がすべて含まれていることを理解しておくことが重要です。 つまり、更新を実行すると、データセット内のすべてのテーブルに対して、挿入と削除が実行されます。
 
-## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>階層更新を実行するコードを保存、生成された変更します。
+@No__t_0 プロパティを設定するには、[[データソース] ウィンドウ](add-new-data-sources.md#data-sources-window)からフォームに項目をドラッグした後、コンポーネントトレイで `TableAdapterManager` を選択し、 **[プロパティ]** ウィンドウで [`UpdateOrder`] プロパティを設定します。
+
+## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>階層更新を実行する前にデータセットのバックアップコピーを作成する
+
+データを保存すると (`TableAdapterManager.UpdateAll()` メソッドを呼び出すことにより)、`TableAdapterManager` は単一のトランザクションで各テーブルのデータの更新を試みます。 任意のテーブルの更新時に、なんらかが失敗した場合、トランザクション全体がロールバックされます。 ほとんどの場合、ロールバックによってアプリケーションが元の状態に戻ります。
+
+ただし、バックアップ コピーからデータセットを復元することもできます。 この例の1つは、自動インクリメント値を使用している場合に発生する可能性があります。 たとえば、保存操作が失敗した場合、データセットの自動インクリメント値はリセットされず、データセットは自動インクリメント値を引き続き作成します。 これにより、アプリケーションで受け入れられない可能性のある、番号付けのギャップが残ります。 これが問題となる状況では、`TableAdapterManager` に備わっている `BackupDataSetBeforeUpdate` プロパティを使用して、トランザクションが失敗した場合に既存のデータセットをバックアップ コピーと置き換えることができます。
+
+> [!NOTE]
+> バックアップコピーは、`TableAdapterManager.UpdateAll` メソッドの実行中にメモリ内にのみ存在します。 このため、このバックアップデータセットにプログラムでアクセスすることはできません。これは、`TableAdapterManager.UpdateAll` メソッドの実行が完了するとすぐに元のデータセットを置き換えるか、スコープ外に出るためです。
+
+## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>階層更新を実行するために生成された保存コードを変更する
 
 データセットでの関連データ テーブルへの変更をデータベースに保存するには、`TableAdapterManager.UpdateAll` メソッドを呼び出し、関連テーブルが含まれるデータセットの名前を渡します。 たとえば、NorthwindDataset 内のすべてのテーブルの更新をバックエンドのデータベースに送信するには、`TableAdapterManager.UpdateAll(NorthwindDataset)` メソッドを実行します。
 
 **[データ ソース]** ウィンドウから項目をドロップすると、各テーブルにデータを読み込むコード (`TableAdapter.Fill` メソッド) が `Form_Load` イベントに自動的に追加されます。 <xref:System.Windows.Forms.BindingNavigator> の **[保存]** ボタン クリック イベントにも、データセットのデータをデータベースに保存するコード (`TableAdapterManager.UpdateAll` メソッド) が追加されます。
 
-生成された保存コードには、`CustomersBindingSource.EndEdit` メソッドを呼び出すコード行も含まれています。 具体的には、呼び出し、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>最初のメソッド<xref:System.Windows.Forms.BindingSource>フォームに追加されています。 つまり、このコードはからドラッグされる最初のテーブルの生成のみ、**データソース**ウィンドウから、フォームにします。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは、現在編集中のデータ バインド コントロールで実行されている変更をコミットします。 したがって、あるデータ バインド コントロールにフォーカスがある状態で **[保存]** ボタンをクリックすると、実際の保存 (`TableAdapterManager.UpdateAll` メソッド) が実行される前に、そのコントロール内のすべての保留中の編集がコミットされます。
+生成された保存コードには、`CustomersBindingSource.EndEdit` メソッドを呼び出すコード行も含まれています。 具体的には、フォームに追加された最初の <xref:System.Windows.Forms.BindingSource>that の <xref:System.Windows.Forms.BindingSource.EndEdit%2A> メソッドを呼び出します。 言い換えると、このコードは **[データソース]** ウィンドウからフォームにドラッグされた最初のテーブルに対してのみ生成されます。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは、現在編集中のデータ バインド コントロールで実行されている変更をコミットします。 したがって、あるデータ バインド コントロールにフォーカスがある状態で **[保存]** ボタンをクリックすると、実際の保存 (`TableAdapterManager.UpdateAll` メソッド) が実行される前に、そのコントロール内のすべての保留中の編集がコミットされます。
 
 > [!NOTE]
-> **データセット デザイナー**のみを追加、`BindingSource.EndEdit`がフォームにドロップされる最初のテーブルのコード。 したがって、フォーム上の各関連テーブルに対して、`BindingSource.EndEdit` メソッドを呼び出すコード行を手動で追加する必要があります。 つまり、このチュートリアルでも、`OrdersBindingSource.EndEdit` メソッドの呼び出しを追加する必要があります。
+> **データセットデザイナー**は、フォームにドロップされた最初のテーブルの `BindingSource.EndEdit` コードだけを追加します。 したがって、フォーム上の各関連テーブルに対して、`BindingSource.EndEdit` メソッドを呼び出すコード行を手動で追加する必要があります。 つまり、このチュートリアルでも、`OrdersBindingSource.EndEdit` メソッドの呼び出しを追加する必要があります。
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>保存前に、関連テーブルへの変更をコミットするコードを更新するには
 
@@ -94,36 +94,36 @@ ms.locfileid: "66745458"
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
 
-データベースにデータを保存する前に関連子テーブルに対する変更をコミットするだけでなく、新しい子レコードをデータセットに追加する前に、新しく作成された親レコードをコミットすることが必要な場合もあります。 つまり、新しい親レコードを追加する必要があります (`Customer`) に外部キー制約には、新しい子レコードが有効にする前に、データセット (`Orders`) データセットに追加します。 この操作を行うには、子 `BindingSource.AddingNew` イベントを使用します。
+データベースにデータを保存する前に関連子テーブルに対する変更をコミットするだけでなく、新しい子レコードをデータセットに追加する前に、新しく作成された親レコードをコミットすることが必要な場合もあります。 つまり、外部キー制約によって新しい子レコード (`Orders`) をデータセットに追加できるようにするには、新しい親レコード (`Customer`) をデータセットに追加する必要があります。 この操作を行うには、子 `BindingSource.AddingNew` イベントを使用します。
 
 > [!NOTE]
-> 新しい親レコードをコミットする必要があるかどうかは、データ ソースにバインドするために使用されるコントロールの種類によって異なります。 このチュートリアルでは、親テーブルにバインドする個々 のコントロールを使用します。 これには、新しい親レコードをコミットするコードを追加が必要です。 親レコードは、複雑なバインド コントロールに代わりに表示されていた場合と同様、<xref:System.Windows.Forms.DataGridView>この追加<xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼び出しの親レコードは必要ありません。 これは、コントロールの基になるデータ バインディング機能によって、新しいレコードのコミットが行われるためです。
+> 新しい親レコードをコミットする必要があるかどうかは、データソースへのバインドに使用されるコントロールの種類によって異なります。 このチュートリアルでは、個々のコントロールを使用して親テーブルにバインドします。 これには、新しい親レコードをコミットするための追加コードが必要です。 親レコードが <xref:System.Windows.Forms.DataGridView> のような複雑なバインドコントロールに表示された場合は、親レコードに対するこの追加の <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは必要ありません。 これは、コントロールの基になるデータバインド機能によって、新しいレコードのコミットが行われるためです。
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>データセットで新しい子レコードを追加する前に親レコードをコミットするコードを追加するには
 
 1. `OrdersBindingSource.AddingNew` イベントのイベント ハンドラーを作成します。
 
-    - 開いている**Form1**デザイン ビューで、次のように選択します**OrdersBindingSource** 、コンポーネント トレイに次のように選択します。**イベント**で、**プロパティ**ウィンドウ、および。ダブルクリックし、 **AddingNew**イベント。
+    - デザインビューで**Form1**を開き、コンポーネントトレイで **[OrdersBindingSource]** を選択します。次に、 **[プロパティ]** ウィンドウで **[イベント]** を選択し、 **[追加]** イベントをダブルクリックします。
 
-2. 呼び出すイベント ハンドラーにコードの行を追加、`CustomersBindingSource.EndEdit`メソッド。 `OrdersBindingSource_AddingNew` イベント ハンドラー内のコードは、次のようになります。
+2. @No__t_0 メソッドを呼び出すイベントハンドラーにコード行を追加します。 `OrdersBindingSource_AddingNew` イベント ハンドラー内のコードは、次のようになります。
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
 
-## <a name="tableadaptermanager-reference"></a>TableAdapterManager の参照
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager リファレンス
 
-既定で、`TableAdapterManager`関連テーブルを含むデータセットを作成するときにクラスが生成されます。 値を変更するクラスが生成されていることを防ぐために、`Hierarchical Update`を false に、データセットのプロパティ。 Windows フォームまたは WPF ページのデザイン サーフェイスに関係のあるテーブルをドラッグすると、Visual Studio は、クラスのメンバー変数を宣言します。 データ バインドを使用しない場合は、手動で変数を宣言する必要があります。
+既定では、関連テーブルを含むデータセットを作成すると、`TableAdapterManager` クラスが生成されます。 クラスが生成されないようにするには、データセットの `Hierarchical Update` プロパティの値を false に変更します。 Windows フォームまたは WPF ページのデザインサーフェイスにリレーションシップを持つテーブルをドラッグすると、Visual Studio はクラスのメンバー変数を宣言します。 データバインドを使用しない場合は、手動で変数を宣言する必要があります。
 
-`TableAdapterManager`クラスは、.NET 型ではありません。 そのため、ドキュメントを検索することはできません。 デザイン時にデータセットの作成プロセスの一環として作成されます。
+@No__t_0 クラスは .NET 型ではありません。 このため、ドキュメントでは確認できません。 これは、デザイン時にデータセット作成プロセスの一部として作成されます。
 
-よく使用されるメソッドとプロパティの次のとおり、`TableAdapterManager`クラス。
+@No__t_0 クラスの頻繁に使用されるメソッドとプロパティを次に示します。
 
 |メンバー|説明|
 |------------|-----------------|
-|`UpdateAll` メソッド|すべてのデータ テーブルからすべてのデータを保存します。|
-|`BackUpDataSetBeforeUpdate` プロパティ|実行する前に、データセットのバックアップ コピーを作成するかどうか、`TableAdapterManager.UpdateAll`メソッド。ブール値。|
-|*tableName* `TableAdapter`プロパティ|表す、`TableAdapter`します。 生成された`TableAdapterManager`の各プロパティを含む`TableAdapter`を管理します。 たとえば、Customers と Orders テーブルを含むデータセットが生成されます、`TableAdapterManager`を格納している`CustomersTableAdapter`と`OrdersTableAdapter`プロパティ。|
-|`UpdateOrder` プロパティ|個々 の insert、update、および delete コマンドの順序を制御します。 この設定の値の 1 つに、`TableAdapterManager.UpdateOrderOption`列挙体。<br /><br /> 既定で、`UpdateOrder`に設定されている**InsertUpdateDelete**します。 つまり、挿入、し、更新、および削除は、データセット内のすべてのテーブルに対して実行されます。|
+|`UpdateAll` メソッド|すべてのデータテーブルのすべてのデータを保存します。|
+|`BackUpDataSetBeforeUpdate` プロパティ|@No__t_0 メソッドを実行する前に、データセットのバックアップコピーを作成するかどうかを決定します。演算.|
+|*tableName* `TableAdapter` プロパティ|@No__t_0 を表します。 生成される `TableAdapterManager` には、it が管理する各 `TableAdapter` のプロパティが含まれています。 たとえば、Customers テーブルと Orders テーブルを含むデータセットが生成され、`CustomersTableAdapter` と `OrdersTableAdapter` プロパティを含む `TableAdapterManager` が生成されます。|
+|`UpdateOrder` プロパティ|個々の insert、update、および delete コマンドの順序を制御します。 @No__t_0 列挙体のいずれかの値に設定します。<br /><br /> 既定では、`UpdateOrder` は**Insertupdatedelete**に設定されています。 これは、データセット内のすべてのテーブルに対して、挿入、更新、および削除が実行されることを意味します。|
 
 ## <a name="see-also"></a>関連項目
 

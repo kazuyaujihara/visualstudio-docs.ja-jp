@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172792"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649697"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
 [Fxcop アナライザーパッケージ](install-fxcop-analyzers.md)は、.NET Compiler Platform ベースのコードアナライザーに変換されたレガシ分析から最も重要な "fxcop" 規則で構成されています。 特定の FxCop 規則については、[構成可能なオプション](fxcop-analyzer-options.md)を使用して、コードベースのどの部分を適用するかを調整できます。 各オプションは、キーと値のペアを[Editorconfig](https://editorconfig.org)ファイルに追加することによって指定します。 構成ファイルは、[プロジェクトに固有](#per-project-configuration)のものもあれば、2つ以上のプロジェクト間で[共有](#shared-configuration)することもできます。
 
 > [!TIP]
-> **ソリューションエクスプローラー**でプロジェクトを右クリックし、@no__t の **[追加]** **[新しい項目]** の順に選択して、プロジェクトに editorconfig ファイルを追加します。 **[新しい項目の追加]** ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 **[Editorconfig ファイル (既定)]** テンプレートを選択し、 **[追加]** を選択します。
+> **ソリューションエクスプローラー**でプロジェクトを右クリックし、[ > **新しい項目**の**追加**] を選択して、プロジェクトに editorconfig ファイルを追加します。 **[新しい項目の追加]** ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 **[Editorconfig ファイル (既定)]** テンプレートを選択し、 **[追加]** を選択します。
 >
 > ![Visual Studio で editorconfig ファイルをプロジェクトに追加する](media/add-editorconfig-file.png)
 

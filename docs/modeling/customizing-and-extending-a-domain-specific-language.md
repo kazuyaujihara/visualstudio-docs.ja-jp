@@ -4,69 +4,69 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476577"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654035"
 ---
-# <a name="customize-and-extend-a-domain-specific-language"></a>カスタマイズおよびドメイン固有言語を拡張します。
+# <a name="customize-and-extend-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズと拡張
 
-Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、いくつかのレベルをモデリング ツールを定義することができますを提供します。
+Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリングツールを定義できるいくつかのレベルが用意されています。
 
-1. DSL 定義図を使用して、ドメイン固有言語 (DSL) を定義します。 図の表記法、読み取り可能な XML 形式では、コードとその他の成果物を生成するために必要な基本的なツールと DSL をすばやく作成できます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
+1. DSL 定義図を使用して、ドメイン固有言語 (DSL) を定義します。 図式記法、読み取り可能な XML フォーム、およびコードやその他の成果物を生成するために必要な基本ツールを使用して、DSL をすばやく作成できます。 詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
 
-2. DSL 定義のより高度な機能を使用して DSL を細かく調整します。 たとえば、ユーザーが要素を作成するときに表示されるその他のリンクを行うことができます。 これらの手法は、DSL 定義で実現されるほとんどの場合と、数行プログラム コードの一部が必要です。
+2. DSL 定義のより高度な機能を使用して DSL を微調整します。 たとえば、ユーザーが要素を作成するときに、追加のリンクを表示できます。 これらの手法は DSL 定義でほとんど実現されていますが、いくつかのプログラムコードが必要です。
 
-3. プログラム コードを使用して、モデリング ツールを拡張します。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。 詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。
+3. プログラムコードを使用してモデリングツールを拡張します。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。 詳細については、「[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)」を参照してください。
 
 > [!NOTE]
-> DSL 定義ファイルを更新したら、をクリックすることを忘れないでください**すべてのテンプレートの変換**のツールバーで**ソリューション エクスプ ローラー**ソリューションの再構築する前にします。
+> DSL 定義ファイルを更新したら、ソリューションを再構築する前に、**ソリューションエクスプローラー**のツールバーにある **[すべてのテンプレートの変換]** を必ずクリックしてください。
 
-## <a name="article-reference"></a>参照資料
+## <a name="article-reference"></a>記事リファレンス
 
-|この効果を実現するには|このトピックを参照してください。|
+|この効果を実現するには|このトピックを参照してください|
 |-|-|
-|図形の色とスタイルのプロパティを設定するユーザーを許可します。|シェイプまたはコネクタ クラスを右クリックし、**公開追加**項目をクリックします。|
-|モデル要素の種類のクラス ダイアグラムで、初期の高さと幅、色、ツールヒントなどのプロパティを共有するようになります。|図形またはコネクタ クラス間の継承を使用します。 派生図形と派生ドメイン クラス間のマッピングは、親のマッピングの詳細を継承します。<br /><br /> または、同じ図形クラスに別のドメイン クラスをマップします。|
-|モデル要素のクラスは、さまざまな図形のコンテキストで表示されます。|同じドメイン クラスには、複数の図形クラスをマップします。 ソリューションをビルドするときに次のエラー レポートと使用するには、どのような形状を決定する、要求されたコードを指定します。|
-|図形の色やフォントなどの他の機能は、現在の状態を示します。|参照してください[モデルへの反映には、図形とコネクタの更新](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)します。<br /><br /> 公開されているプロパティを更新するルールを作成します。 参照してください[ルールには、モデル内の変更が反映されるまで](../modeling/rules-propagate-changes-within-the-model.md)します。<br /><br /> または、OnAssociatedPropertyChanged() を使用して、リンクの矢印やフォントなどに公開されている機能を更新します。|
-|図形の変更状態を示すためのアイコン。|[DSL 詳細] ウィンドウでマッピング デコレーターの可視性を設定します。 同じ位置にいくつかのイメージ デコレーターを見つけます。 参照してください[モデルへの反映には、図形とコネクタの更新](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)します。<br /><br /> または、オーバーライド`ImageField.GetDisplayImage()`します。 例を参照してください。<xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>します。|
-|任意の図形の背景イメージを設定します。|固定の ImageField を追加する InitializeInstanceResources() をオーバーライドします。|
-|任意の深さに入れ子になったシェイプ|再帰的なツリーの埋め込みを設定します。 図形を含む BoundsRules を定義します。|
-|要素の境界に固定のポイントにコネクタをアタッチします。|図上の小さなポートによって表される、埋め込みターミナル要素を定義します。 BoundsRules を使用して、場所に、ポートを修正します。 回路図のサンプルを参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)します。|
-|テキスト フィールドには、その他の値から派生した値が表示されます。|テキスト デコレータを計算またはカスタム ストレージ ドメイン プロパティにマップします。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。|
-|モデル要素間、または図形間の変更を反映します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。|
-|ストアの外部の他の Visual Studio 拡張機能などのリソースに変更を反映します。|参照してください[イベント ハンドラーには、モデルの外部で変更が反映されるまで](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。|
-|[プロパティ] ウィンドウには、関連する要素のプロパティが表示されます。|プロパティの転送を設定します。 参照してください[プロパティ ウィンドウのカスタマイズ](../modeling/customizing-the-properties-window.md)します。|
-|プロパティのカテゴリ|[プロパティ] ウィンドウは、カテゴリと呼ばれるセクションに分かれています。 設定、**カテゴリ**のドメインのプロパティ。 同じカテゴリの名前を持つプロパティは、同じセクションに表示されます。 設定することも、**カテゴリ**のリレーションシップのロール。|
-|ドメインのプロパティへのユーザー アクセスの制御|設定**参照可能**ドメイン プロパティが実行時に、[プロパティ] ウィンドウに表示されていることを防止する場合は false。 テキスト デコレータにもマップできます。<br /><br /> **Is UI Read Only**ドメイン プロパティを変更できないようにします。<br /><br /> ドメイン プロパティにプログラムのアクセスは影響はありません。|
-|名前、アイコン、および DSL のモデル エクスプ ローラー内のノードの可視性を変更します。|参照してください[モデル エクスプ ローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)します。|
-|コピー、切り取りと貼り付けを有効にします。|設定、**コピー貼り付けを有効にする**のプロパティ、**エディター** DSL エクスプ ローラーでノード。|
-|要素がコピーされるたびに、参照のリンクとそのターゲットをコピーします。 たとえば、項目に添付されたコメントをコピーします。|設定、**コピーの伝達**(DSL 定義図で、ドメイン リレーションシップの一方の側にある行で表されます)、ソース ロールのプロパティ。<br /><br /> 複雑な効果を実現する ProcessOnCopy をオーバーライドするコードを記述します。<br /><br /> 参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|
-|削除、親の変更、または要素が削除されたときに、関連する要素を再リンクします。|設定、**削除の伝達**リレーションシップ ロールの値。 複雑な効果は、オーバーライド`ShouldVisitRelationship`と`ShouldVisitRolePlayer`メソッド、`MyDslDeleteClosure`で定義されたクラス**DomainModel.cs**します。|
-|図形のレイアウトと外観をコピーし、ドラッグ アンド ドロップが保持されます。|シェイプとコネクタを追加、コピーする`ElementGroupPrototype`します。 オーバーライドする最も便利なメソッドは `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|
-|現在のカーソル位置など、選択した場所に図形を貼り付けます。|オーバーライド`ClipboardCommandSet.ProcessOnCopy()`の場所に固有のバージョンを使用する`ElementOperations.Merge().`を参照してください[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。|
-|貼り付け時にその他のリンクを作成します。|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|ドラッグを有効にして、この図は、その他の Dsl と Windows から要素を削除します。|「[方法:ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)|
-|親をドラッグした場合とは、図形やポートなどの子の図形にドラッグしたりするためのツールを許可します。|ターゲット オブジェクト クラスの親にドロップされたオブジェクトを転送するには、要素マージ ディレクティブを定義します。 参照してください[要素の作成と移動をカスタマイズする](../modeling/customizing-element-creation-and-movement.md)します。|
-|図形またはその他のリンクを図形にドラッグするツールを許可するか、作成されたオブジェクト。 たとえば、リンクすることが項目上にドロップされるコメントを許可するには、です。|ターゲット ドメイン クラスに要素マージ ディレクティブを定義し、生成するリンクを定義します。 複雑な場合は、カスタム コードを追加することができます。 参照してください[要素の作成と移動をカスタマイズする](../modeling/customizing-element-creation-and-movement.md)します。|
-|1 つのツールを使用して要素のグループを作成します。 たとえば、固定ポートのセットを持つコンポーネント。|ToolboxHelper.cs 内のツールボックスの初期化メソッドをオーバーライドします。 要素グループ プロトタイプ (EGP) が、要素とそのリレーションシップ リンクを含むを作成します。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。<br /><br /> EGP にプリンシパルとポート図形を含めるか、EGP がインスタンス化されるときに、ポート シェイプを配置する BoundsRules を定義します。|
-|1 つの接続ツールを使用して、複数の種類のリレーションシップのインスタンスを作成します。|リンク接続ディレクティブ (LCD) をツールによって呼び出される接続ビルダーに追加します。 Lcd では、2 つの要素の型からリレーションシップの種類を決定します。 この要素の状態に依存性を高めるには、カスタム コードを追加することができます。 参照してください[ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)します。|
-|固定ツール - ユーザーは、連続して多くの図形またはコネクタを作成する任意のツールをダブルクリックすることができます。|DSL エクスプ ローラーで選択、`Editor`ノード。 [プロパティ] ウィンドウで次のように設定します。**ツールボックス アイテムの固定を使用して**します。|
-|メニュー コマンドを定義します。|「[方法:標準のメニュー コマンドを修正する](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
-|検証規則を使って、モデルを制限します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)|
+|図形の色とスタイルのプロパティをユーザーが設定できるようにします。|図形またはコネクタクラスを右クリックし、 **[公開の追加]** をポイントして、項目をクリックします。|
+|モデル要素のさまざまなクラスは、図に似ています。初期の高さ、幅、色、ツールヒントなどのプロパティを共有します。|図形またはコネクタクラス間の継承を使用します。 派生図形と派生ドメインクラス間のマッピングは、親のマッピングの詳細を継承します。<br /><br /> または、異なるドメインクラスを同じ shape クラスにマップします。|
+|モデル要素のクラスは、さまざまな図形コンテキストによって表示されます。|複数のシェイプクラスを同じドメインクラスにマップします。 ソリューションをビルドするときに、エラー報告に従って、使用する図形を決定するために要求されたコードを指定します。|
+|図形の色またはフォントなどのその他の機能は、現在の状態を示します。|「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> 公開されたプロパティを更新するルールを作成します。 「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。<br /><br /> または、OnAssociatedPropertyChanged () を使用して、リンク矢印やフォントなどの公開されていない機能を更新します。|
+|状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()` をオーバーライドします。 @No__t_0 の例を参照してください。|
+|任意の図形に背景画像を設定する|InitializeInstanceResources () をオーバーライドして、固定された ImageField を追加します。|
+|図形を任意の深さに入れ子にする|再帰的な埋め込みツリーを設定します。 図形を含めるように BoundsRules を定義します。|
+|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128)」を参照してください。|
+|テキストフィールド他の値から派生した値が表示されます。|テキストデコレータを計算済みまたはカスタムのストレージドメインプロパティにマップします。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。|
+|モデル要素間または図形間での変更の反映|「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。|
+|ストアの外部にある他の Visual Studio 拡張機能などのリソースに変更を反映します。|「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。|
+|プロパティウィンドウ関連要素のプロパティが表示されます。|プロパティ転送を設定します。 「[プロパティウィンドウのカスタマイズ」を](../modeling/customizing-the-properties-window.md)参照してください。|
+|プロパティのカテゴリ|[プロパティ] ウィンドウは、カテゴリと呼ばれるセクションに分かれています。 ドメインのプロパティの**カテゴリ**を設定します。 同じカテゴリ名を持つプロパティは同じセクションに表示されます。 また、リレーションシップロールの**カテゴリ**を設定することもできます。|
+|ドメインプロパティへのユーザーアクセスを制御する|Set は、ドメインプロパティが実行時にプロパティウィンドウに表示されないようにするために、ブラウズが false に設定**されてい**ます。 テキストデコレーターにマップすることもできます。<br /><br /> **UI 読み取り専用である**ため、ユーザーはドメインプロパティを変更できません。<br /><br /> ドメインプロパティへのプログラムアクセスは影響を受けません。|
+|DSL のモデルエクスプローラーで、ノードの名前、アイコン、可視性を変更します。|「[モデルエクスプローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)」を参照してください。|
+|コピー、切り取り、および貼り付けを有効にする|DSL エクスプローラーで、 **[エディター]** ノードの **[コピー貼り付けを有効にする]** プロパティを設定します。|
+|要素がコピーされるたびに参照リンクとそのターゲットをコピーします。 たとえば、項目に添付されたコメントをコピーします。|ソースロールの **[コピーの伝達]** プロパティを設定します (DSL 定義図では、ドメインリレーションシップの片側の行で表されます)。<br /><br /> より複雑な効果を実現するために、ProcessOnCopy をオーバーライドするコードを記述します。<br /><br /> 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
+|要素が削除されたときに関連要素を削除、再親、または再リンクします。|リレーションシップロールの **削除の反映**値を設定する。 より複雑な効果を実現するには、 **DomainModel.cs**で定義されている `MyDslDeleteClosure` クラスのメソッドをオーバーライド `ShouldVisitRelationship` および `ShouldVisitRolePlayer` します。|
+|コピーとドラッグアンドドロップで図形のレイアウトと外観を保持します。|コピーした `ElementGroupPrototype` に図形とコネクタを追加します。 オーバーライドする最も便利な方法は `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
+|現在のカーソル位置など、選択した場所に図形を貼り付けます。|場所固有のバージョンを使用するように `ClipboardCommandSet.ProcessOnCopy()` をオーバーライド `ElementOperations.Merge().` 「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。|
+|貼り付け時に追加のリンクを作成する|ProcessOnPasteCommand () をオーバーライドします。|
+|このダイアグラム、他の Dsl および Windows 要素からのドラッグアンドドロップを有効にする|「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。|
+|図形またはツールを、親にドラッグした場合と同様に、ポートなどの子図形にドラッグできるようにします。|削除されたオブジェクトを親に転送するために、ターゲットオブジェクトクラスに要素マージディレクティブを定義します。 「[要素の作成と移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。|
+|図形またはツールを図形上にドラッグし、追加のリンクまたはオブジェクトを作成できるようにします。 たとえば、リンク先のアイテムにコメントをドロップできるようにします。|ターゲットドメインクラスに要素マージディレクティブを定義し、生成するリンクを定義します。 複雑な場合は、カスタムコードを追加できます。 「[要素の作成と移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。|
+|1つのツールで要素のグループを作成します。 たとえば、固定されたポートセットを持つコンポーネントなどです。|ToolboxHelper.cs でツールボックスの初期化メソッドをオーバーライドします。 要素とそれらの関係リンクを含む要素グループプロトタイプ (EGP) を作成します。 「[ツールとツールボックスのカスタマイズ」を](../modeling/customizing-tools-and-the-toolbox.md)参照してください。<br /><br /> EGP にプリンシパル図形とポート図形を含めるか、EGP がインスタンス化されるときにポート図形を配置する BoundsRules を定義します。|
+|1つの接続ツールを使用して、複数の種類のリレーションシップをインスタンス化します。|ツールによって呼び出された接続ビルダーにリンク接続ディレクティブ (LCD) を追加します。 Lcd は、2つの要素の型からリレーションシップの種類を決定します。 これを要素の状態に依存させるには、カスタムコードを追加します。 「[ツールとツールボックスのカスタマイズ」を](../modeling/customizing-tools-and-the-toolbox.md)参照してください。|
+|固定ツール-ユーザーは任意のツールをダブルクリックして、多数の図形やコネクタを連続して作成できます。|DSL エクスプローラーで、[`Editor`] ノードを選択します。 プロパティウィンドウでは、[**固定ツールボックスアイテムを使用**する] を設定します。|
+|メニューコマンドの定義|「[方法: 標準メニューコマンドを変更](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)する」を参照してください。|
+|検証ルールを使用してモデルを制限する|「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。|
 |DSL からコード、構成ファイル、またはドキュメントを生成します。|[ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)|
-|モデルを保存する方法をカスタマイズするファイル。|参照してください[ファイル格納処理および XML シリアル化をカスタマイズします。](../modeling/customizing-file-storage-and-xml-serialization.md)|
-|モデルをデータベースまたはその他のメディアに保存します。|オーバーライド*YourLanguage*DocData<br /><br /> 参照してください[ファイル格納処理および XML シリアル化をカスタマイズします。](../modeling/customizing-file-storage-and-xml-serialization.md)|
-|1 つのアプリケーションの一部として動作するために、いくつかの Dsl を統合します。|参照してください[Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。|
-|サード パーティが拡張する DSL を許可して、拡張機能を制御します。|[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [DSL ライブラリによる DSL 間でのクラスの共有](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [ロック ポリシーの定義と読み取り専用セグメントの作成](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
+|モデルをファイルに保存する方法をカスタマイズします。|「 [File Storage および XML シリアル化のカスタマイズ」を](../modeling/customizing-file-storage-and-xml-serialization.md)参照してください。|
+|データベースまたはその他のメディアにモデルを保存します。|*言語*docdata をオーバーライドする<br /><br /> 「 [File Storage および XML シリアル化のカスタマイズ」を](../modeling/customizing-file-storage-and-xml-serialization.md)参照してください。|
+|複数の Dsl を統合して、1つのアプリケーションの一部として動作させることができます。|「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。|
+|DSL がサードパーティによって拡張されることを許可し、拡張機能を制御します。|[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [DSL ライブラリによる DSL 間でのクラスの共有](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [ロック ポリシーの定義と読み取り専用セグメントの作成](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 
 ## <a name="see-also"></a>関連項目
 

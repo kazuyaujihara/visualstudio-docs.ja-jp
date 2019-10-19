@@ -1,75 +1,75 @@
 ---
-title: '方法: XML リテラルと XML スキーマ デザイナーを使用して |Microsoft Docs'
+title: '方法: xml リテラルを使用して XML スキーマデザイナーを使用する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68190324"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656290"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>方法: XML リテラルに XML スキーマ デザイナーを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックでは、Visual Basic プロジェクトの XML リテラルに関連付けられたスキーマを表示する方法について説明します。  
-  
-### <a name="to-create-a-new-visual-basic-console-application-project"></a>新しい Visual Basic コンソール アプリケーションのプロジェクトを作成するには  
-  
-1. Visual Studio 2010 を起動します。  
-  
-2. **ファイル**メニューの **新規**、し、**プロジェクト**します。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **プロジェクトの種類**を選択します**他の言語、** 選び**Visual Basic**します。 **テンプレート**、コンソール アプリケーションを選択します。 入力`XMLLiterals`で、**名前**フィールドとプロジェクトの場所、**場所**フィールド。 **[OK]** をクリックします。  
-  
-     新しいプロジェクトが作成されます。 XMLLiterals プロジェクトには、Module1.vb という 1 つの Visual Basic ソース ファイルが含まれています。  
-  
-### <a name="to-add-an-existing-xsd-file-to-the-project"></a>既存の XSD ファイルをプロジェクトに追加するには  
-  
-1. 開いている新しいテキスト ファイルを Notepad.Copy から XML スキーマのサンプル コード[購買発注書スキーマ](../xml-tools/sample-xsd-file-simple-schema.md)ファイルに貼り付けます。  
-  
-2. PurchaseOrderSchema.xsd という名前でファイルをどこかに保存します。  
-  
-3. ソリューション エクスプ ローラーでプロジェクトの名前を右クリックして**追加**、し、**既存の項目**. **既存項目の追加** ダイアログ ボックスが表示されます。 PurchaseOrderSchema.xsd ファイルを参照し、選択しをクリックして**追加**します。  
-  
-     XMLLiterals プロジェクトには、2 つのファイルが含まれています。Module1.vb および PurchaseOrderSchema.xsd します。  
-  
-### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>プロジェクトに含まれる XSD ファイルに基づいて XML リテラルの Visual Basic コードを追加するには  
-  
-1. Module1.vb ファイルのコードを次のコードに置き換えます。  
-  
-    ```  
-    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">  
-  
-    Module Module1  
-        Sub Main()  
-  
-            Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">  
-                                 <ns:ShipTo country="US">  
-                                     <ns:name>name1</ns:name>  
-                                     <ns:street>street1</ns:street>  
-                                     <ns:city>city1</ns:city>  
-                                     <ns:state>state1</ns:state>  
-                                     <ns:zip>1</ns:zip>  
-                                 </ns:ShipTo>  
-                                 <ns:BillTo country="US">  
-                                     <ns:name>name1</ns:name>  
-                                     <ns:street>street1</ns:street>  
-                                     <ns:city>city1</ns:city>  
-                                     <ns:state>state1</ns:state>  
-                                     <ns:zip>1</ns:zip>  
-                                 </ns:BillTo>  
-                             </ns:PurchaseOrder>  
-  
-        End Sub  
-    End Module  
-    ```  
-  
-2. XML リテラルまたは XML 名前空間インポートでの任意の XML ノードを右クリックして**スキーマ エクスプ ローラーで表示する**します。  
-  
+このトピックでは、Visual Basic プロジェクトの XML リテラルに関連付けられたスキーマを表示する方法について説明します。
+
+### <a name="to-create-a-new-visual-basic-console-application-project"></a>新しい Visual Basic コンソール アプリケーションのプロジェクトを作成するには
+
+1. Visual Studio 2010 を起動します。
+
+2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** を選択します。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[プロジェクトの種類]** で **[その他の言語]** を選択し、 **[Visual Basic]** を選択します。 **テンプレート**については、[コンソールアプリケーション] を選択します。 次に、 **[名前]** フィールドに「`XMLLiterals`」と入力し、 **[場所]** フィールドにプロジェクトの場所を入力します。 **[OK]** をクリックします。
+
+     新しいプロジェクトが作成されます。 XMLLiterals プロジェクトには、Module1.vb という 1 つの Visual Basic ソース ファイルが含まれています。
+
+### <a name="to-add-an-existing-xsd-file-to-the-project"></a>既存の XSD ファイルをプロジェクトに追加するには
+
+1. 新しいテキストファイルをメモ帳で開きます。[注文書スキーマ](../xml-tools/sample-xsd-file-simple-schema.md)から XML スキーマのサンプルコードをコピーし、ファイルに貼り付けます。
+
+2. PurchaseOrderSchema.xsd という名前でファイルをどこかに保存します。
+
+3. ソリューションエクスプローラーで、プロジェクトの名前を右クリックし、 **[追加]** 、既存の **[項目]** の順に選択します。 **[追加 Item]** ダイアログボックスが表示されます。 PurchaseOrderSchema ファイルを参照して選択し、 **[追加]** をクリックします。
+
+     XMLLiterals プロジェクトに、Module1.vb および PurchaseOrderSchema.xsd という 2 つのファイルが含まれるようになります。
+
+### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>プロジェクトに含まれる XSD ファイルに基づいて XML リテラルの Visual Basic コードを追加するには
+
+1. Module1.vb ファイルのコードを次のコードに置き換えます。
+
+    ```
+    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
+
+    Module Module1
+        Sub Main()
+
+            Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
+                                 <ns:ShipTo country="US">
+                                     <ns:name>name1</ns:name>
+                                     <ns:street>street1</ns:street>
+                                     <ns:city>city1</ns:city>
+                                     <ns:state>state1</ns:state>
+                                     <ns:zip>1</ns:zip>
+                                 </ns:ShipTo>
+                                 <ns:BillTo country="US">
+                                     <ns:name>name1</ns:name>
+                                     <ns:street>street1</ns:street>
+                                     <ns:city>city1</ns:city>
+                                     <ns:state>state1</ns:state>
+                                     <ns:zip>1</ns:zip>
+                                 </ns:BillTo>
+                             </ns:PurchaseOrder>
+
+        End Sub
+    End Module
+    ```
+
+2. Xml リテラルまたは XML 名前空間インポートで任意の XML ノードを右クリックし、 **[スキーマエクスプローラーで表示]** を選択します。
+
      XML スキーマ エクスプローラーが、XML スキーマ セットに関連付けられた XML リテラルを持つ Visual Basic ファイルと並んで表示されます。

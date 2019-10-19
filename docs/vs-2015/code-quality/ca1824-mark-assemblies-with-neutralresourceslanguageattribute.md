@@ -1,5 +1,5 @@
 ---
-title: CA1824:アセンブリを NeutralResourcesLanguageAttribute にマーク |Microsoft Docs
+title: 'CA1824: NeutralResourcesLanguageAttribute | を使用してアセンブリをマークします。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - CA1824
 ms.assetid: 10e97f8a-aa6e-47aa-b253-1e5d3a295d82
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203088"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661118"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: アセンブリを NeutralResourcesLanguageAttribute に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
-|Category|Microsoft.Performance|
+|カテゴリ|Microsoft. パフォーマンス|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- アセンブリに含まれる、 **ResX**-ベースのリソースがありません、<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>を適用します。
+ アセンブリには、 **ResX**ベースのリソースが含まれていますが、<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> が適用されていません。
 
 ## <a name="rule-description"></a>規則の説明
- **NeutralResourcesLanguage**属性の通知、 **ResourceManager**のアセンブリのニュートラル カルチャのリソースを表示するために使用された言語です。 ニュートラル リソース言語と同じカルチャのリソースを探すとき、 **ResourceManager**メイン アセンブリに配置されているリソースを自動的に使用されます。 これを現在のスレッドの現在のユーザー インターフェイス カルチャを持つサテライト アセンブリを検索する代わりにします。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。
+ **NeutralResourcesLanguage**属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語を**ResourceManager**に通知します。 ニュートラルリソース言語と同じカルチャのリソースを検索する場合、 **ResourceManager**はメインアセンブリにあるリソースを自動的に使用します。 これは、現在のスレッドの現在のユーザーインターフェイスカルチャを持つサテライトアセンブリを検索する代わりに、これを行います。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。
 
 ## <a name="fixing-violations"></a>違反の修正
- この規則違反を修正するには、アセンブリに属性を追加し、ニュートラル カルチャのリソースの言語を指定します。
+ この規則違反を修正するには、属性をアセンブリに追加し、ニュートラルカルチャのリソースの言語を指定します。
 
-## <a name="specifying-the-language"></a>言語を指定します。
+## <a name="specifying-the-language"></a>言語の指定
 
-#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>ニュートラル カルチャのリソースの言語を指定するには
+#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>ニュートラルカルチャのリソースの言語を指定するには
 
-1. **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、クリックして**プロパティ**します。
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** をクリックします。
 
-2. 左側のナビゲーション バーから選択**アプリケーション**、 をクリックし、**アセンブリ情報**します。
+2. 左側のナビゲーションバーから **[アプリケーション]** を選択し、 **[アセンブリ情報]** をクリックします。
 
-3. **アセンブリ情報** ダイアログ ボックスから言語を選択、**ニュートラル言語**ドロップダウン リスト。
+3. **[アセンブリ情報]** ダイアログボックスで、 **[ニュートラル言語]** ボックスの一覧から言語を選択します。
 
 4. **[OK]** をクリックします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この規則による警告を抑制することはできます。 ただし、起動時のパフォーマンスが低下する可能性があります。
+ このルールからの警告を抑制することができます。 ただし、起動のパフォーマンスが低下する可能性があります。

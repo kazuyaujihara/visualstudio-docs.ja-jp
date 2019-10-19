@@ -1,32 +1,32 @@
 ---
-title: '方法: 有効にして、マネージ コードの自動コード分析を無効にする |Microsoft Docs'
+title: '方法: マネージコードの自動コード分析を有効または無効にする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 7c22d194-5fea-4f23-b02d-19344fa64a64
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d87cc57b31e63ae7aafa53c335df2b56f86a0409
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658096"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの自動コード分析を無効にします。
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: マネージド コードの自動コード分析を有効/無効にする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-マネージ コード プロジェクトの各ビルドの前に実行するコード分析を構成することができます。 さまざまなコード分析プロパティを設定するには各[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]構成します。  
-  
-### <a name="to-enable-or-disable-automatic-code-analysis"></a>自動コード分析を有効または無効にするには  
-  
-1. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、クリックして**プロパティ**します。  
-  
-2. プロジェクトのプロパティ ダイアログ ボックスで、次のようにクリックします。**コード分析**します。  
-  
-3. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。  
-  
-4. 有効または自動コード分析を無効にするには、オンまたはオフ、**を有効にするビルドに対するコード分析 (CODE_ANALYSIS 定数を定義します)** チェック ボックスをオンします。
+コード分析は、マネージコードプロジェクトの各ビルドの前に実行するように構成できます。 @No__t_0 構成ごとに異なるコード分析プロパティを設定できます。
+
+### <a name="to-enable-or-disable-automatic-code-analysis"></a>自動コード分析を有効または無効にするには
+
+1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** をクリックします。
+
+2. プロジェクトの プロパティ ダイアログボックスで、**コード分析** をクリックします。
+
+3. **[構成]** でビルドの種類を指定し、 **[プラットフォーム]** でターゲットプラットフォームを指定します。
+
+4. 自動コード分析を有効または無効にするには、 **[ビルド時にコード分析を有効にする (CODE_ANALYSIS 定数を定義する)]** チェックボックスをオンまたはオフにします。

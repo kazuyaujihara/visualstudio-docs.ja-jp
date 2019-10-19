@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, disable
 - disable code analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77c189e4a15f2ae4049c45d2c8463079895f5be2
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: cb1a41642e405046459f6196a98cd6290a217223
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649660"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>マネージコードのソースコード分析を無効にする方法
 
@@ -27,11 +27,11 @@ ms.locfileid: "71975146"
 
 - NuGet アナライザーパッケージと VSIX または組み込みアナライザー
 
-  現時点では、組み込みアナライザーのライブコード分析 (ルール ID IDE0067 など) を無効にすることはできません。 同様に、Visual Studio 拡張機能 (VSIX) の一部としてインストールされたアナライザーのライブコード分析を無効にすることはできません。 組み込みおよび VSIX ベースのアナライザーからのエラーおよび警告を非表示にするには、メニューバーの [@no__t の**分析**] を選択し、**アクティブな問題**を非表示にします。 NuGet パッケージの一部としてインストールされているアナライザーのライブおよびビルド時の分析を無効にする*ことができ*ます。
+  現時点では、組み込みアナライザーのライブコード分析 (ルール ID IDE0067 など) を無効にすることはできません。 同様に、Visual Studio 拡張機能 (VSIX) の一部としてインストールされたアナライザーのライブコード分析を無効にすることはできません。 組み込みおよび VSIX ベースのアナライザーからのエラーおよび警告を非表示にするには、メニューバーの [ >  を**分析**し**てビルドし、アクティブな問題を非**表示にする] を選択します。 NuGet パッケージの一部としてインストールされているアナライザーのライブおよびビルド時の分析を無効にする*ことができ*ます。
 
 - ソース分析と従来の分析
 
-  このトピックは、レガシ (バイナリ) 分析ではなく、ソースコード分析に適用されます。 レガシ分析を無効にする方法の詳細については、@no__t を参照してください。レガシコード分析 @ no__t を有効または無効にします。
+  このトピックは、レガシ (バイナリ) 分析ではなく、ソースコード分析に適用されます。 レガシ分析を無効にする方法の詳細については、「[方法: レガシコード分析を有効または無効](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)にする」を参照してください。
 
 ## <a name="net-core-and-net-standard-projects"></a>.NET Core と .NET Standard のプロジェクト
 
@@ -45,7 +45,7 @@ Visual Studio 2019 バージョン16.3 以降では、[コード分析] プロ�
 - ライブソース分析を無効にするには、 **[ライブ分析で実行**する] オプションをオフにします。
 
 > [!NOTE]
-> **[ライブ分析で実行]** がオフになっている場合でも、組み込みのアナライザーと VSIX ベースのアナライザーによってコードのライブ分析が継続されます。 これらのアナライザーからのエラーおよび警告を非表示にするには、メニューバーの [@no__t の**分析**] を選択し、**アクティブな問題**を非表示にします。
+> **[ライブ分析で実行]** がオフになっている場合でも、組み込みのアナライザーと VSIX ベースのアナライザーによってコードのライブ分析が継続されます。 これらのアナライザーからのエラーおよび警告を非表示にする場合は、**分析** を選択し、メニューバーの **アクティブな問題を  >  ビルドして非**表示にします。
 
 ## <a name="net-framework-projects"></a>.NET Framework プロジェクト
 
@@ -57,7 +57,7 @@ NuGet パッケージの一部としてインストールされているアナ�
 | `RunAnalyzersDuringLiveAnalysis` | デザイン時に NuGet ベースのアナライザーがコードをライブで分析するかどうかを制御します。 | `true` |
 | `RunAnalyzers` | ビルド時とデザイン時の両方で NuGet ベースのアナライザーを無効にします。 このプロパティは `RunAnalyzersDuringBuild` と `RunAnalyzersDuringLiveAnalysis` よりも優先されます。 | `true` |
 
-例 :
+次に例を示します。
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -71,17 +71,17 @@ NuGet パッケージの一部としてインストールされているアナ�
 
 ## <a name="source-analysis"></a>ソース解析
 
-Visual Studio 2017 では、[ソース分析](roslyn-analyzers-overview.md)を無効にすることはできません。 エラー一覧からアナライザーのエラーをクリアする場合は、[@no__t**分析**] を選択して現在のすべての違反を抑制するか、メニューバーで [**コード分析を実行し、アクティブな問題を非**表示にする] を選択します。 詳細については、「[違反の抑制](use-roslyn-analyzers.md#suppress-violations)」を参照してください。
+Visual Studio 2017 では、[ソース分析](roslyn-analyzers-overview.md)を無効にすることはできません。 エラー一覧からアナライザーのエラーをクリアする場合は、[ > **分析**] を選択し、メニューバーの [**コード分析を実行し、アクティブな問題を抑制**する] を選択して、現在のすべての違反を抑制できます。 詳細については、「[違反の抑制](use-roslyn-analyzers.md#suppress-violations)」を参照してください。
 
 Visual Studio 2019 バージョン16.3 以降では、NuGet ベースのソースコード分析を無効にすることができます。 Visual Studio 2019 へのアップグレードを検討してください。
 
 ## <a name="legacy-analysis"></a>レガシ分析
 
-[**コード分析**のプロパティ] ページで、レガシのビルド時分析を無効にすることができます。 詳細については、「[方法 :レガシコード分析 @ no__t を有効または無効にします。
+[**コード分析**のプロパティ] ページで、レガシのビルド時分析を無効にすることができます。 詳細については、「[方法: レガシコード分析を有効または無効](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)にする」を参照してください。
 
 ::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 
 - [違反を抑制する](use-roslyn-analyzers.md#suppress-violations)
-- [2 つのオブジェクトが等しいかどうかをテストする方法レガシコード分析を有効または無効にする @ no__t-0
+- [方法: レガシコード分析を有効または無効にする](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
