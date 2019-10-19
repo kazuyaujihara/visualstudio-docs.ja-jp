@@ -1,21 +1,21 @@
 ---
-title: CA3075:安全ではない DTD の処理 |Microsoft Docs
+title: 'CA3075: 安全ではない DTD の処理 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661621"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075:安全ではない DTD の処理
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: 安全ではない DTD の処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -35,31 +35,31 @@ ms.locfileid: "65693410"
 
 - XML で <xref:System.Xml.XmlNode.InnerXml%2A> プロパティが設定されている。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> プロパティは、Parse に設定されます。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> プロパティが Parse に設定されています。
 
 - 信頼されていない入力は、 <xref:System.Xml.XmlResolver> の代わりに <xref:System.Xml.XmlSecureResolver> を使用して処理される。
 
-- XmlReader。<xref:System.Xml.XmlReader.Create%2A> メソッドが呼び出される、安全でないと<xref:System.Xml.XmlReaderSettings>インスタンスまたはすべてのインスタンスがありません。
+- XmlReader。<xref:System.Xml.XmlReader.Create%2A> セキュリティで保護されていない <xref:System.Xml.XmlReaderSettings> インスタンスを使用して、またはインスタンスがまったくない状態でメソッドが呼び出されました。
 
-- <xref:System.Xml.XmlReader> 安全でない既定の設定または値で作成されます。
+- <xref:System.Xml.XmlReader> は、安全でない既定の設定または値を使用して作成されます。
 
   これらはどのケースでも、結果は同じになります。XML を処理するマシンが共有するファイル システム、またはネットワークからのコンテンツが攻撃者にさらされ、DoS の媒介として使用される可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- キャッチし、パス情報の漏えいを回避するために適切にすべての XmlTextReader 例外を処理します。
+- パス情報の漏えいを防ぐために、すべての XmlTextReader 例外をキャッチして処理します。
 
-- 使用して、 <xref:System.Xml.XmlSecureResolver> XmlTextReader がアクセスできるリソースを制限します。
+- @No__t_0 を使用して、XmlTextReader がアクセスできるリソースを制限します。
 
-- 許可しない、 <xref:System.Xml.XmlReader>を設定して、外部リソースを開く、<xref:System.Xml.XmlResolver>プロパティを **null**します。
+- @No__t_1 プロパティを **null**に設定して、 <xref:System.Xml.XmlReader> が外部リソースを開けないようにします。
 
 - <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> の <xref:System.Data.DataViewManager> プロパティが信頼できるソースから割り当てられていることを確認します。
 
   .NET 3.5 以前
 
-- 設定によって信頼されていないソースを扱う場合は、DTD 処理を無効にする、 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>プロパティを **true**します。
+- @No__t_0 プロパティを **true**に設定して、信頼されていないソースを扱う場合は、DTD 処理を無効にします。
 
-- XmlTextReader クラスには、完全信頼の継承確認要求があります。 参照してください [継承確認要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)詳細についてはします。
+- XmlTextReader クラスには、完全信頼の継承確認要求があります。 詳細については、「 [継承の要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)」を参照してください。
 
   .NET 4 以降
 
@@ -96,7 +96,7 @@ class TestClass
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.IO;
@@ -137,7 +137,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.Xml;
@@ -193,7 +193,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.Xml;
@@ -227,7 +227,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.IO;
@@ -266,7 +266,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.Xml;
@@ -299,7 +299,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.Xml;
@@ -365,7 +365,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System.Xml;

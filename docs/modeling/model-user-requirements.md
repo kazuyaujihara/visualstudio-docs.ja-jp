@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814572"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658409"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 
-Visual Studio を使用すると、ユーザーの目標達成を支援する際に、彼らのアクティビティやシステムが果たしている役割に関する図を描画することで、ユーザー ニーズを理解し、検討し、やり取りすることができます。 要求モデルとはこのような一連の図のことで、それぞれの図では、ユーザー ニーズの異なる側面に注目しています。 ビデオ デモについては、次を参照してください。[ビジネス ドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)します。
+Visual Studio を使用すると、ユーザーの目標達成を支援する際に、彼らのアクティビティやシステムが果たしている役割に関する図を描画することで、ユーザー ニーズを理解し、検討し、やり取りすることができます。 要求モデルとはこのような一連の図のことで、それぞれの図では、ユーザー ニーズの異なる側面に注目しています。 ビデオ デモについては、「 [ビジネス ドメインのモデリング](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)」を参照してください。
 
 どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -39,7 +39,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
 - システム テストのベースとしてモデルを使用して、テストと要求間の関係を明確にします。 要求が変更された場合、この関係により、テストを正しく更新できます。 これにより、システムが新しい要求を満たしていることを確認します。
 
-要求モデルは、ユーザーまたはユーザーの代表者との話し合いに集中する場合や、各反復処理の開始時に再検討する場合に使用すると、最大のメリットが得られます。 コードを作成する前に、要求モデルを細部まで完成させる必要はありません。 通常、非常に簡略化された状態で部分的にしか動作していないアプリケーションでも、ユーザーと要求について検討する場合に、非常に効果の上がるベースとなります。 このモデルは、これらの話し合いの結果を要約する効果的な方法です。 詳細については、次を参照してください。[モデルを使用して、開発プロセスで](../modeling/use-models-in-your-development-process.md)します。
+要求モデルは、ユーザーまたはユーザーの代表者との話し合いに集中する場合や、各反復処理の開始時に再検討する場合に使用すると、最大のメリットが得られます。 コードを作成する前に、要求モデルを細部まで完成させる必要はありません。 通常、非常に簡略化された状態で部分的にしか動作していないアプリケーションでも、ユーザーと要求について検討する場合に、非常に効果の上がるベースとなります。 このモデルは、これらの話し合いの結果を要約する効果的な方法です。 詳細については、「[開発プロセスでのモデルの使用](../modeling/use-models-in-your-development-process.md)」を参照してください。
 
 > [!NOTE]
 > これらのトピックでは、"システム" という用語は、開発中のシステムまたはアプリケーションを意味します。 システムは、数多くのソフトウェアおよびハードウェア コンポーネントが大規模に収集されたものを指す場合があります。また、1 つのアプリケーションの場合もあれば、大規模なシステム内の 1 つのソフトウェア コンポーネントを指すこともあります。 いずれの場合でも、要求モデルは、ユーザー インターフェイスを使用するか、API を使用するかにかかわらず、システムの外側から確認できる動作を記述します。
@@ -54,13 +54,13 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 |追加のドキュメントまたは作業項目|パフォーマンス、セキュリティ、使いやすさ、および信頼性の条件。|[サービス品質要求の記述](#QoSRequirements)|
 |追加のドキュメントまたは作業項目|特定のユース ケースに固有でない制約とルール|[ビジネス ルールの表示](#BusinessRules)|
 
-ほとんどの種類の図が、他の目的に使用できることに注意してください。 図の種類の概要については、次を参照してください。[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)します。
+ほとんどの種類の図が、他の目的に使用できることに注意してください。 図の種類の概要については、「[アプリのモデルを作成](../modeling/create-models-for-your-app.md)する」を参照してください。
 
 ## <a name="BusinessRules"></a> Showing Business Rules
 
 ビジネス ルールとは、特定のユース ケースに関連付けられておらず、システム全体で認められる要求です。
 
-多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらを書き込める*静的なビジネス ルール*概念クラス図の関連するクラスに関連付けられたコメントとして。 例:
+多くのビジネス ルールは、概念クラス間の関係に関する制約です。 これらの*静的ビジネスルール*は、概念クラス図の関連クラスに関連付けられたコメントとして記述できます。 (例:
 
 ![Order クラスにアタッチされたコメント内のルール](../modeling/media/uml_reqmcd2.png)
 
@@ -94,7 +94,7 @@ Visual Studio を使用すると、ユーザーの目標達成を支援する際
 
 Customer が Meal を Ordering 中に、Restaurant が Menu Item を削除すると、その Menu Item を参照する Order Item が赤色で表示されます。
 
-参照してください[、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)にサービス品質要求に準拠したコードを開発する方法について説明します。
+サービス品質要求に準拠するコードを開発する方法については[、「アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)化」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
