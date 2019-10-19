@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c1727c8d1526199d179fe137c9bf899959bc2ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 481e015ec84d833f52220276bffa4ce0163f98ff
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422215"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572649"
 ---
-# <a name="applicationnodeeventfilter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER 列挙型
-コードのドキュメントをフィルター処理するときに除外するノードの種類を指定します。 使用される[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)と[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+# <a name="application_node_event_filter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER 列挙型
+コードドキュメントをフィルター処理するときに除外するノードの種類を指定します。 [IDebugApplicationNode100:: GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)と[IDebugApplicationNode100:: SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)で使用されます。  
   
 > [!IMPORTANT]
-> これらの定数は、PDM v10.0 によって以降に実装されます。 activdbg100.h にあります。  
+> これらの定数は、PDM v1.1 以上で実装されています。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,8 +37,8 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
 |メンバー|[値]|説明|  
 |------------|-----------|-----------------|  
 |FILTER_EXCLUDE_NOTHING|0x00000000|すべてのイベントを送信します。|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|匿名のコードのノードを除外します。 これらのノードがの JScript ランタイムによって使用される`new Function([args,] <code>)'`します。|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Eval コード ノードを除外します。 これらのノードは、eval サポートの JScript ランタイムによって使用されます。|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|匿名コードノードを除外します。 これらのノードは、JScript ランタイムによって `new Function([args,] <code>)'` に使用されます。|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Eval コードノードを除外します。 これらのノードは、JScript ランタイムで eval サポートに使用されます。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

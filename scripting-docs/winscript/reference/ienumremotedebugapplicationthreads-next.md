@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Next |Microsoft Docs
+title: 'IEnumRemoteDebugApplicationThreads:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bde09e2c8372e0bb7e73fabfbd1ad4d9aa6467e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36d24ffaca05b64c05815124358024d3b88b0d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807200"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575171"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
-`Next`メソッドは、指定した列挙体シーケンス内のセグメント数を取得します。  
+@No__t_0 メソッドは、列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]取得するセグメントの数。  
+ から取得するセグメントの数。  
   
  `pprdat`  
- [out]配列を返します`IRemoteDebugApplicationThread`を取得するセグメントを表すインターフェイス。  
+ 入出力取得するセグメントを表す `IRemoteDebugApplicationThread` インターフェイスの配列を返します。  
   
  `pceltFetched`  
- [out]列挙子によってフェッチされるセグメントの実際の数。  
+ 入出力列挙子によってフェッチされたセグメントの実際の数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定した列挙体シーケンス内のセグメント数を取得します。  
+ このメソッドは、列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumRemoteDebugApplicationThreads インターフェイス](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

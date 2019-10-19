@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next |Microsoft Docs
+title: 'IEnumDebugApplicationNodes:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f826ce91ba99c5bb697a346b40a6b7f97b6f5914
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4ad47c0119eb46c05368fa40ba3a5965fecce0b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951620"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573058"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
-指定した列挙体シーケンス内のセグメント数を取得します。  
+列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]取得するセグメントの数。  
+ から取得するセグメントの数。  
   
  `pprddp`  
- [out]配列を返します`IDebugApplicationNode`を取得するセグメントを表すインターフェイス。  
+ 入出力取得するセグメントを表す `IDebugApplicationNode` インターフェイスの配列を返します。  
   
  `pceltFetched`  
- [out]列挙子によってフェッチされるセグメントの実際の数。  
+ 入出力列挙子によってフェッチされたセグメントの実際の数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定した列挙体シーケンス内のセグメント数を取得します。  
+ このメソッドは、列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumDebugApplicationNodes インターフェイス](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

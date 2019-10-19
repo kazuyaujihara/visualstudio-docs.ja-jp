@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close |Microsoft Docs
+title: 'IDebugApplication:: Close |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d93262e5875d5b51f7cf306409609671e8157cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0445e9aed990da684efac6675e05183fd939973f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991036"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575574"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-によりこのアプリケーションはすべての参照を解放し、非アクティブな状態を入力します。  
+このアプリケーションによってすべての参照が解放され、非アクティブ状態になります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT Close();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -46,7 +46,7 @@ HRESULT Close();
 ## <a name="remarks"></a>Remarks  
  通常、アプリケーションの所有者は、アプリケーションの終了時にこのメソッドを呼び出します。  
   
- このメソッドにより`IApplicationDebugger::onClose`呼び出されます。  
+ このメソッドによって `IApplicationDebugger::onClose` が呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

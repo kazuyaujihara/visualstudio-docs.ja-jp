@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
+title: 'IDebugDocumentText:: GetPositionOfContext |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6058502c076dd4f75dbbb44fdb161b889a965fec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da759eb98a6cdd28066ddaa8aafe785ede337a6e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008660"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572134"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
-ドキュメントのコンテキストに対応する文字位置の範囲を返します。  
+ドキュメントコンテキストに対応する文字位置の範囲を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT GetPositionOfContext(
   
 #### <a name="parameters"></a>パラメーター  
  `psc`  
- [in]ドキュメント コンテキスト オブジェクト。  
+ からドキュメントコンテキストオブジェクト。  
   
  `pcCharacterPosition`  
- [out]開始文字位置の範囲の位置。  
+ 入出力文字位置の範囲の開始位置。  
   
  `cNumChars`  
- [out]範囲の文字の数。  
+ 入出力範囲内の文字数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT GetPositionOfContext(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドに渡されたドキュメントのコンテキストは、このドキュメントに関連付けである必要があります。  
+ このメソッドに指定されたドキュメントコンテキストは、このドキュメントに関連付けられている必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentText インターフェイス](../../winscript/reference/idebugdocumenttext-interface.md)

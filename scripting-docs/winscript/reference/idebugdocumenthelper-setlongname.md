@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetLongName |Microsoft Docs
+title: 'IDebugDocumentHelper:: SetLongName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10542b5e792f01c50d57bc3a7481d6b8c01090d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 312e60b7024cc2b93e0087c86fe78738c74df8c1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949007"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570040"
 ---
 # <a name="idebugdocumenthelpersetlongname"></a>IDebugDocumentHelper::SetLongName
 ドキュメントの長い名前を設定します。  
@@ -37,7 +37,7 @@ HRESULT SetLongName(
   
 #### <a name="parameters"></a>パラメーター  
  `pszLongName`  
- [in]ドキュメントの長い名前を含む null で終わる文字列。  
+ からドキュメントの長い名前を格納している null で終わる文字列。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT SetLongName(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ドキュメントの場合は、新しい長い名前を設定します。  
+ このメソッドは、ドキュメントの新しい長い名前を設定します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)

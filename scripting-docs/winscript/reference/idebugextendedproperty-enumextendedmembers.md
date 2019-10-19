@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers |Microsoft Docs
+title: 'IDebugExtendedProperty:: EnumExtendedMembers |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e14d1bc8937221960d938f1bbfae8e307830f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6fd225be9504254965eab77b912f50fb5c777e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946146"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576391"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
 拡張プロパティのメンバーを列挙します。  
@@ -39,18 +39,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>パラメーター  
  `dwFieldSpec`  
- [in]情報を格納する、列挙内のフィールドの拡張プロパティの構造体のデバッグを決定する EX_DBGPROP_INFO_FLAGS 定数を指定します。  
+ から入力する、列挙された拡張デバッグプロパティ構造内のフィールドを決定する EX_DBGPROP_INFO_FLAGS 定数を指定します。  
   
  `nRadix`  
- [in]任意の数値情報を解釈するときに使用する基数。  
+ から数値情報の解釈に使用される基数。  
   
  `ppeepi`  
- [out]返します、`IEnumDebugExtendedPropertyInfo`インターフェイス メンバーのプロパティを列挙します。  
+ 入出力メンバープロパティを列挙する `IEnumDebugExtendedPropertyInfo` インターフェイスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugExtendedProperty インターフェイス](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo 構造体](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

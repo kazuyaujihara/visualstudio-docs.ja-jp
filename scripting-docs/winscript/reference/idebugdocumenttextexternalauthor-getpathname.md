@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName |Microsoft Docs
+title: 'IDebugDocumentTextExternalAuthor:: GetPathName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5739e7cb0cb12661ee5683051fb7b687e62dfde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e876b41ce1bde4defffd11267c6665f9d57da077
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978755"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575963"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
 ドキュメントの完全なパスとファイル名を返します。  
@@ -38,10 +38,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstrLongName`  
- [out]完全なパスとファイル名を含む文字列します。  
+ 入出力完全なパスとファイル名を含む文字列。  
   
  `pfIsOriginalFile`  
- [out]パスとファイル名が参照するかどうかを示すブール値、元のドキュメントにします。  
+ 入出力パスとファイル名が元のドキュメントを参照しているかどうかを示すブール値。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -49,12 +49,12 @@ HRESULT GetPathName(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_FAIL`|ソース ファイルを作成または決定できません。|  
+|`E_FAIL`|ソースファイルを作成または特定できません。|  
   
 ## <a name="remarks"></a>Remarks  
  このメソッドは、ドキュメントの完全なパスとファイル名を返します。  
   
- 場合`pfIsOriginalFile`FALSE、パスとファイル名は、`pbstrLongName`新しく作成された一時ファイルを参照してください。  
+ @No__t_0 が FALSE の場合、`pbstrLongName` 内のパスとファイル名は、新しく作成された一時ファイルを参照します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentTextExternalAuthor インターフェイス](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

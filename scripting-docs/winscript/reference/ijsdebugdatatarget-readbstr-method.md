@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::readbstr メソッド |Microsoft Docs
+title: 'IJsDebugDataTarget:: ReadBSTR メソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e821893318cfe1d8f0b4239a077fc91c26be47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b125f58b4be279eac167b803ed6a683c1fb04ddf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582343"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572442"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR メソッド
 デバッグ対象から BSTR を読み取ります。  
@@ -46,8 +46,8 @@ HRESULT ReadBSTR(
 ## <a name="remarks"></a>Remarks  
  アドレスが有効でない場合は E_JsDEBUG_INVALID_MEMORY_ADDRESS を返します。  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [IJsDebugDataTarget インターフェイス](../../winscript/reference/ijsdebugdatatarget-interface.md)

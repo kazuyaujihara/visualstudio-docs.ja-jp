@@ -1,5 +1,5 @@
 ---
-title: 例外がスローされキャッチされない |Microsoft Docs
+title: 例外がスローされ、キャッチされない |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,25 +14,25 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a9e4f51d5daf7a9e1b1153acbbe8b76b539b72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946330"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572858"
 ---
 # <a name="exception-thrown-and-not-caught"></a>例外がスローされ、キャッチされませんでした。
-含まれていること、`throw`内では、コード内のステートメントが囲まれていない、**try** ブロック、または関連付けられていませんが**catch** エラーをトラップするブロック。 内から例外がスローされた、**try** ブロックを使用して、**throw** ステートメントでは、外キャッチし、**try**でブロック、**catch** ステートメント。  
+コードに `throw` ステートメントを含めましたが、 **try**ブロック内で囲まれていないか、エラーをトラップする関連する**catch**ブロックがありませんでした。 例外は、 **throw**ステートメントを使用して**try**ブロック内からスローされ、 **catch**ステートメントを使用し**て try**ブロックの外側でキャッチされます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 例外をスローするコードを囲む、**try**がありますが、対応することを確認して、ブロック**catch** ブロックします。  
+- **Try**ブロックで例外をスローできるコードを囲み、対応する**catch**ブロックがあることを確認します。  
   
-- Catch ステートメントを例外の正しい形式の想定を確認します。  
+- Catch ステートメントで正しい形式の例外が想定されていることを確認してください。  
   
-- 場合は、例外を再スローすると、別の対応する catch ステートメントがあることを確認します。  
+- 例外が再スローされた場合は、対応する別の catch ステートメントがあることを確認します。  
   
 ## <a name="see-also"></a>関連項目  
- [Error オブジェクト](../../javascript/reference/error-object-javascript.md)   
+ [エラーオブジェクト](../../javascript/reference/error-object-javascript.md)   
  [Throw ステートメント](../../javascript/reference/throw-statement-javascript.md)   
  [try… catch… finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

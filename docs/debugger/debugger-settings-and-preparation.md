@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8794fd94a50f51b7293fee025f2eb1abdf6db5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349734"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536068"
 ---
 # <a name="debugger-settings-and-preparation"></a>デバッガーの設定と準備
 ここでは、デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備について説明します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクト テンプレートを使ってプログラムを作成する場合、これらの設定はデバッグ構成で正しく設定されます。
@@ -44,7 +44,7 @@ ms.locfileid: "72349734"
 
  [64 ビットアプリケーションのデバッグ](../debugger/debug-64-bit-applications.md)64ビットアプリケーションをデバッグする方法について説明します。
 
- [方法: デバッグ用に .NET Framework バージョンを指定](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)するレジストリキーを設定して、使用するバージョンをデバッガーに示す方法について説明します。
+ [方法: デバッグ用に古い .NET Framework バージョンを指定](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)するレジストリキーを設定して、使用するバージョンをデバッガーに示す方法について説明します。
 
 ## <a name="see-also"></a>参照
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

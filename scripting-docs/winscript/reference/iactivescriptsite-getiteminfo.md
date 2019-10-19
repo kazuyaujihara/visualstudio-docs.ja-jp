@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptsite::getiteminfo |Microsoft Docs
+title: 'IActiveScriptSite:: GetItemInfo |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0458f42466a264c30a440b1b14a028a2457f12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992731"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570917"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-により、スクリプト エンジンを使用して追加の項目に関する情報を取得する、 [iactivescript::addnameditem](../../winscript/reference/iactivescript-addnameditem.md)メソッド。  
+[IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)メソッドを使用して追加された項目に関する情報をスクリプトエンジンが取得できるようにします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,21 +40,21 @@ HRESULT GetItemInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `pstrName`  
- [in]指定されている、項目に関連付けられた名前、 [iactivescript::addnameditem](../../winscript/reference/iactivescript-addnameditem.md)メソッド。  
+ から[IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)メソッドで指定された、項目に関連付けられている名前。  
   
  `dwReturnMask`  
- [in]項目に関する情報を返す必要がありますを指定するビット マスクです。 スクリプト エンジンは最小限の情報を要求する必要があります、戻り値パラメーターの一部 (たとえば、 `ITypeInfo`) の読み込みまたは生成に時間がかかることができます。 次の値の組み合わせになります。  
+ から項目に関する情報を返すビットマスク。 いくつかの戻り値のパラメーター (`ITypeInfo` など) の読み込みまたは生成にかなりの時間がかかるため、スクリプトエンジンはできるだけ最小限の情報を要求する必要があります。 は、次の値の組み合わせにすることができます。  
   
 |[値]|説明|  
 |-----------|-------------|  
-|SCRIPTINFO_IUNKNOWN|返します、`IUnknown`この項目のインターフェイス。|  
-|SCRIPTINFO_ITYPEINFO|返します、`ITypeInfo`この項目のインターフェイス。|  
+|SCRIPTINFO_IUNKNOWN|この項目の `IUnknown` インターフェイスを返します。|  
+|SCRIPTINFO_ITYPEINFO|この項目の `ITypeInfo` インターフェイスを返します。|  
   
  `ppunkItem`  
- [out]ポインターを受け取る変数のアドレス、`IUnknown`特定の項目に関連付けられているインターフェイス。 スクリプト エンジンを使用できる、`IUnknown::QueryInterface`メソッドを取得する、`IDispatch`の項目のインターフェイス。 場合、このパラメーターは NULL を受け取ります`dwReturnMask`される SCRIPTINFO_IUNKNOWN 値は含まれません。 NULL を受信、項目の名前に関連付けられているオブジェクトが存在しない場合も、このメカニズムは SCRIPTITEM_CODEONLY フラグ設定で名前付きの項目が追加されたときに、単純なクラスを作成するために使用、 [iactivescript::addnameditem](../../winscript/reference/iactivescript-addnameditem.md)メソッド。  
+ 入出力指定した項目に関連付けられている `IUnknown` インターフェイスへのポインターを受け取る変数のアドレス。 スクリプトエンジンは、`IUnknown::QueryInterface` メソッドを使用して、項目の `IDispatch` インターフェイスを取得できます。 @No__t_0 に SCRIPTINFO_IUNKNOWN 値が含まれていない場合、このパラメーターは NULL を受け取ります。 また、項目名に関連付けられたオブジェクトがない場合は NULL を受け取ります。このメカニズムは、 [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)メソッドで設定された SCRIPTITEM_CODEONLY フラグを使用して名前付き項目を追加した場合に、単純なクラスを作成するために使用されます。  
   
  `ppTypeInfo`  
- [out]ポインターを受け取る変数のアドレス、`ITypeInfo`アイテムに関連付けられているインターフェイス。 場合、このパラメーターは NULL を受け取ります`dwReturnMask`SCRIPTINFO_ITYPEINFO の値を含まない型情報がこの項目を使用できない場合またはします。 型情報が利用できない場合は、オブジェクトは、イベント ソースことはできません名のバインドを実現する必要があります、`IDispatch::GetIDsOfNames`メソッド。 なお、`ITypeInfo`オブジェクトは、複数のインターフェイスとイベント インターフェイスをサポート可能性がありますので、インターフェイスの取得は、項目のコクラス (TKIND_COCLASS) について説明します。 項目がサポートしている場合、`IProvideMultipleTypeInfo`インターフェイス、`ITypeInfo`取得インターフェイスは、インデックス 0 の場合と同じ`ITypeInfo`を使用して取得すると、`IProvideMultipleTypeInfo::GetInfoOfIndex`メソッド。  
+ 入出力項目に関連付けられている `ITypeInfo` インターフェイスへのポインターを受け取る変数のアドレス。 @No__t_0 に SCRIPTINFO_ITYPEINFO 値が含まれていない場合、またはこの項目に対して型情報を使用できない場合、このパラメーターは NULL を受け取ります。 型情報を使用できない場合、オブジェクトはイベントをソースにすることができず、`IDispatch::GetIDsOfNames` メソッドを使用して名前のバインドを実現する必要があります。 オブジェクトが複数のインターフェイスとイベントインターフェイスをサポートする可能性があるため、取得される `ITypeInfo` インターフェイスは、項目のコクラス (TKIND_COCLASS) について説明します。 項目が `IProvideMultipleTypeInfo` インターフェイスをサポートしている場合、取得される `ITypeInfo` インターフェイスは、`IProvideMultipleTypeInfo::GetInfoOfIndex` メソッドを使用して取得されるインデックスゼロ `ITypeInfo` と同じになります。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -64,10 +64,10 @@ HRESULT GetItemInfo(
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引数が無効です。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`TYPE_E_ELEMENTNOTFOUND`|指定した名前の項目は見つかりませんでした。|  
+|`TYPE_E_ELEMENTNOTFOUND`|指定された名前の項目が見つかりませんでした。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドによって示される情報のみを取得、`dwReturnMask`パラメーターの場合パフォーマンスが向上します。 たとえば場合、`ITypeInfo`インターフェイス項目は必要ありません、単に指定されていないで`dwReturnMask`します。  
+ このメソッドは、`dwReturnMask` パラメーターによって示される情報のみを取得します。これにより、パフォーマンスが向上します。 たとえば、項目に対して `ITypeInfo` インターフェイスが不要な場合、`dwReturnMask` では指定されていません。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

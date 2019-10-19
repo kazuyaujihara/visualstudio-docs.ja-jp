@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId |Microsoft Docs
+title: 'IDebugDocumentInfo:: GetDocumentClassId |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e86c42954fafd4135956845f9465629cde9990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996e6d751807bba1e1a74cbb7e579db25193c32b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569087"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-返します、`CLSID`ドキュメントの種類を識別します。  
+ドキュメントの種類を識別する `CLSID` を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>パラメーター  
  `pclsidDocument`  
- [out]A`CLSID`ドキュメントの種類を識別します。  
+ 入出力ドキュメントの種類を識別する `CLSID`。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,9 +47,9 @@ HRESULT GetDocumentClassId(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、このドキュメントのホストのカスタム ビューアーには、デバッガー IDE を使用します。  
+ このメソッドは、デバッガー IDE がこのドキュメントのカスタムビューアーをホストできるようにします。  
   
- ドキュメントが表示可能なデータの戻り値を持たない場合`pclsidDocument`は`CLSID_NULL`します。  
+ ドキュメントに表示可能なデータがない場合、`pclsidDocument` の戻り値は `CLSID_NULL` になります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentInfo インターフェイス](../../winscript/reference/idebugdocumentinfo-interface.md)

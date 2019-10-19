@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1648f2aac0a0ace7f42ef923a0b26f6041204b27
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 10758bbabeb21f00ea10dd779bc6a44acdcc6bba
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349573"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535793"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>マネージド コードの "マネージ最小規則" 規則セット
 
@@ -21,7 +21,7 @@ ms.locfileid: "72349573"
 
 |規則|説明|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
+|[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2231](../code-quality/ca2231.md)|@No__t のオーバーライド時に演算子 equals をオーバーロードします-0|
+|[CA2231](../code-quality/ca2231.md)|オーバーライド `ValueType.Equals` で、演算子 equals をオーバーロードします|

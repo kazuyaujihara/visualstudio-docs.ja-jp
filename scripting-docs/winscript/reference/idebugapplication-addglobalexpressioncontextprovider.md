@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddGlobalExpressionContextProvider |Microsoft Docs
+title: 'IDebugApplication:: Addglobal式 Contextprovider |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 278811ae7c7f853396efb5f41a92a5350176943a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 429e87def1e17a6abac92ce2d3538960659cfaeb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991107"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573473"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
-このアプリケーションには、グローバルな式のコンテキスト プロバイダーを追加します。  
+グローバル式コンテキストプロバイダーをこのアプリケーションに追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT AddGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>パラメーター  
  `pdsfs`  
- [in]このアプリケーションに追加するグローバル コンテキスト プロバイダー。  
+ からこのアプリケーションに追加するグローバルコンテキストプロバイダー。  
   
  `pdwCookie`  
- [out]アプリケーションからこのグローバルな式のコンテキスト プロバイダーを削除するために使用されるクッキー。  
+ 入出力アプリケーションからこのグローバル式コンテキストプロバイダーを削除するために使用されるクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT AddGlobalExpressionContextProvider(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、グローバルな式のコンテキスト プロバイダーをこのアプリケーションに追加します。  
+ このメソッドは、グローバル式コンテキストプロバイダーをこのアプリケーションに追加します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise |Microsoft Docs
+title: 'ISimpleConnectionPoint:: Advise |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98db9c92f682808ce8ecc9f6aa382a2eb2bd8495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7d08d4774dffbfd840c674b15abe82bedb37e5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786263"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571827"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
-単純な接続ポイント オブジェクトとクライアントのシンクの間の接続を確立します。  
+単純な接続ポイントオブジェクトとクライアントのシンクとの間の接続を確立します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>パラメーター  
  `pdisp`  
- [in]ポインター、`IDispatch`クライアント上のインターフェイスのシンクをお勧めします。 クライアントのシンクは、単純な接続ポイントからの発信呼び出しを受信します。  
+ からクライアントのアドバイズシンクの `IDispatch` インターフェイスへのポインター。 クライアントのシンクは、単純な接続ポイントからの発信呼び出しを受信します。  
   
  `pdwCookie`  
- [out]この接続を一意に識別する返されたトークンへのポインター。 呼び出し元このトークンを使用して後でに渡すことによって、接続の削除、`ISimpleConnectionPoint::Unadvise`メソッド。 接続が正常に確立されませんが、この値は 0 です。  
+ 入出力この接続を一意に識別する、返されたトークンへのポインター。 呼び出し元は、後でこのトークンを使用して、`ISimpleConnectionPoint::Unadvise` メソッドに渡すことによって接続を削除します。 接続が正常に確立されなかった場合、この値は0になります。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT Advise(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、単純な接続ポイント オブジェクトとクライアントのシンクの間の接続を確立します。  
+ このメソッドは、単純な接続ポイントオブジェクトとクライアントのシンクとの間の接続を確立します。  
   
 ## <a name="see-also"></a>関連項目  
  [ISimpleConnectionPoint インターフェイス](../../winscript/reference/isimpleconnectionpoint-interface.md)   

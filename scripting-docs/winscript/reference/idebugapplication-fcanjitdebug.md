@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug |Microsoft Docs
+title: 'IDebugApplication:: FCanJitDebug |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d5dc03d7d2511f5b50969c062104759e78fcf03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d68240ffd86935e9936642c09d5131f70b46e9ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990923"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576877"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-ジャストイン タイム (JIT) デバッガーが登録されているかどうかを決定します。  
+Just-in-time (JIT) デバッガーが登録されているかどうかを判断します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,10 +34,10 @@ BOOL FCanJitDebug();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
- メソッドが返すかどうかは、メソッドが成功し、JIT デバッガーが登録されて、`TRUE`します。 それ以外の場合は、 `FALSE`を返します。  
+ メソッドが成功し、JIT デバッガーが登録されると、メソッドは `TRUE` を返します。 それ以外の場合は、 `FALSE`を返します。  
   
 ## <a name="remarks"></a>Remarks  
  このメソッドは、JIT デバッガーが登録されているかどうかを判断します。  

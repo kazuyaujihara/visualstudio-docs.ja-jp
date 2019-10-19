@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b9b6b17ac0e0aeeeeae99c39954bfd6b283fe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007436"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573797"
 ---
 # <a name="javascript-object-expected"></a>JavaScript オブジェクトが必要です。
-渡す以外に行った[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]オブジェクトが必要とする組み込み関数を[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]オブジェクト。 さまざまな組み込み関数で定義されたオブジェクトを必要と[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)](ホスト、またはコントロールのような外部コンポーネントによって定義されているオブジェクト) ではなく。  
+@No__t_1 オブジェクトを予期している組み込み関数に、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 以外のオブジェクトを渡そうとしました。 さまざまな組み込み関数では、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] で定義されたオブジェクト (ホストで定義されたオブジェクト、またはコントロールのような外部コンポーネント) が必要です。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- オブジェクトのように、パラメーターが正しい型を渡していることを確認します。  
+- パラメーターとして渡すオブジェクトが正しい型であることを確認します。  
   
 ## <a name="see-also"></a>関連項目  
  [オブジェクトと配列](../../javascript/objects-and-arrays-javascript.md)   

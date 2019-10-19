@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 94fca3befc13e32e6e2859c7b1ef6330af7b812f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415993"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568946"
 ---
 # <a name="windows-script-engines"></a>Windows スクリプト エンジン
 Microsoft Windows スクリプト エンジンを実装するには、次のインターフェイスをサポートする OLE COM オブジェクトを作成します。  
@@ -68,7 +68,7 @@ Microsoft Windows スクリプト エンジンを実装するには、次のイ�
 ## <a name="scripting-engine-threading"></a>スクリプト エンジンのスレッド  
  Windows スクリプト エンジンは多くの環境で使用できるため、その実行モデルを可能な限り柔軟な状態に保つことが重要です。 たとえば、サーバー ベースのホストは、効率的な方法で Windows スクリプトを使用しているときにマルチスレッド デザインを保持する必要がある場合があります。 同時に、一般的なアプリケーションなど、スレッドを使用しないホストにスレッド管理の負荷を与えないようにする必要があります。 Windows スクリプトは、フリー スレッド スクリプト エンジンがホストにコールバックし、この負荷からホストを解放できる方法を制限することで、このバランスを保ちます。  
   
- サーバーで使用されるスクリプト エンジンは、通常、フリー スレッド COM オブジェクトとして実装されます。 これは、[IActiveScript](../winscript/reference/iactivescript.md) インターフェイスとその関連するインターフェイスに対するメソッドを、マーシャリングなしで、プロセスのスレッドから呼び出せることを意味します  (残念ながら、OLE では現在、フリー スレッド オブジェクトのプロセス間マーシャリングがサポートされていないため、これはスクリプト エンジンをインプロセス サーバーとして実装する必要があることも意味します)。同期はスクリプト エンジンで行う必要があります。 内部的に再入不可能なスクリプト エンジンの場合や、マルチスレッド化されていない言語モデルの場合、ミューテックスを使用する同期で、スクリプト エンジンへのアクセスを可能な限り簡単にシリアル化できます。 もちろん、[IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) メソッドなどの特定のメソッドはこの方法でシリアル化しないため、スタック スクリプトを別のスレッドから終了することができます。  
+ サーバーで使用されるスクリプト エンジンは、通常、フリー スレッド COM オブジェクトとして実装されます。 これは、[IActiveScript](../winscript/reference/iactivescript.md) インターフェイスとその関連するインターフェイスに対するメソッドを、マーシャリングなしで、プロセスのスレッドから呼び出せることを意味します (残念ながら、これは、スクリプトエンジンをインプロセスサーバーとして実装する必要があることも意味します。これは、現在 OLE ではフリースレッドオブジェクトのプロセス間マーシャリングがサポートされていないためです)。同期は、スクリプトエンジンの役割です。 内部的に再入不可能なスクリプト エンジンの場合や、マルチスレッド化されていない言語モデルの場合、ミューテックスを使用する同期で、スクリプト エンジンへのアクセスを可能な限り簡単にシリアル化できます。 もちろん、[IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) メソッドなどの特定のメソッドはこの方法でシリアル化しないため、スタック スクリプトを別のスレッドから終了することができます。  
   
  [IActiveScript](../winscript/reference/iactivescript.md) が通常、フリー スレッドであるということは、一般に [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) インターフェイスとホストのオブジェクト モデルもフリー スレッドである必要があることを意味します。 これにより、ホストの実装が非常に難しくなります。特に、ホストがそのオブジェクト モデルにシンブル スレッドまたはアパートメント モデルの ActiveX コントロールを持つシングル スレッドの Windows ベース アプリケーションである一般的なケースで難しくなります。 そのため、スクリプト エンジンでの [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) の使用には次の制約があります。  
   

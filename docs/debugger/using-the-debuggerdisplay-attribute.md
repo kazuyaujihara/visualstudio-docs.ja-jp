@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349623"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568925"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>デバッガ display 属性 (C#、Visual Basic、 F# C++/cli) を使用して、表示する内容をデバッガーに通知します
 
@@ -25,7 +25,7 @@ ms.locfileid: "72349623"
 
 `DebuggerDisplay` 属性の引数は 1 つです。それは、型のインスタンスの値列に表示する文字列です。 この文字列には、中かっこ (`{` と `}`) を含めることができます。 かっこ内のテキストは、フィールド、プロパティ、メソッドとして評価されます。
 
-クラスにオーバーライドされた `ToString()` メソッドがある場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用します。 したがって、`ToString()` メソッドをオーバーライドした場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用し、`DebuggerDisplay` を使用する必要はありません。 両方を使用した場合、`DebuggerDisplay` 属性は、オーバーライドされた `ToString()` メソッドよりも優先されます。 @No__t-0 属性も、サブクラスのオーバーライドされた `ToString()` メソッドよりも優先されます。
+クラスにオーバーライドされた `ToString()` メソッドがある場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用します。 したがって、`ToString()` メソッドをオーバーライドした場合、デバッガーは、既定の `{<typeName>}` の代わりに、オーバーライドされたメソッドを使用し、`DebuggerDisplay` を使用する必要はありません。 両方を使用した場合、`DebuggerDisplay` 属性は、オーバーライドされた `ToString()` メソッドよりも優先されます。 また、`DebuggerDisplay` 属性は、サブクラスのオーバーライドされた `ToString()` メソッドよりも優先されます。
 
 この暗黙的な `ToString()` 呼び出しがデバッガーで評価されるかどうかは、 **[ツール] / [オプション] / [デバッグ]** ダイアログ ボックスのユーザー設定によって異なります。 Visual Basic は、この暗黙的な `ToString()` 評価を実装しません。
 
@@ -182,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>参照
 
 - [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)
-- [.managed オブジェクトのカスタム ビューの作成](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [.managed オブジェクトのカスタム ビューの作成](../debugger/create-custom-views-of-managed-objects.md)
 - [C# の書式指定子](../debugger/format-specifiers-in-csharp.md)
 - [デバッガー表示属性によるデバッグ機能の拡張](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

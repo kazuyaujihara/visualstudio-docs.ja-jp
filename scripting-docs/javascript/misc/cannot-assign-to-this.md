@@ -1,5 +1,5 @@
 ---
-title: "'This' に割り当てることはできません |Microsoft Docs"
+title: "' This ' | に割り当てることはできません。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,30 +14,30 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a4ba5d852a7d131a88930dd66931c026074549b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73baa77cc63e3a43ac30e70f66081bbc7ade3020
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946590"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572352"
 ---
 # <a name="cannot-assign-to-this"></a>'this' に割り当てることはできません。
-**this** に値を割り当てようとしました。 **this**は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]キーワードのいずれかを参照します。
+**この**に値を割り当てようとしました。 **これ**は、次のいずれかを参照する [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] キーワードです。
 
-- 現在、メソッドを実行するオブジェクト
+- メソッドを現在実行しているオブジェクト。
 
-- 現在のメソッドはありません (または、メソッドが、他のオブジェクトに属していない) 場合は、グローバル オブジェクトです。
+- 現在のメソッドが存在しない場合 (またはメソッドが他のオブジェクトに属していない場合) は、グローバルオブジェクト。
 
-メソッドは、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]オブジェクトを介して呼び出される関数。 メソッド内で、**this**キーワードによって、メソッドが呼び出されたオブジェクトへの参照は、(クラスのコンス トラクターを呼び出すことによって作成されたオブジェクトである、**new**演算子)。
+メソッドは、オブジェクトを介して呼び出される [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 関数です。 メソッドの内部では、**この**キーワードは、メソッドが呼び出されたオブジェクトへの参照です (**新しい**演算子でクラスコンストラクターを呼び出すことによって作成されたオブジェクトになります)。
 
-メソッド内では、**this** を使用して現在のオブジェクトを参照できますが、**this** に新しい値を割り当てることはできません。
+メソッド内では、**これ**を使用して現在のオブジェクトを参照できますが、**この**に新しい値を割り当てることはできません。
 
 ## <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- **this**に割り当てないでください。 プロパティまたはオブジェクトのインスタンスのメソッドにアクセスするには、ドット演算子(例: **circle.radius**)を使用してます 。
+- **この**への割り当てを試行しないでください。 インスタンス化されたオブジェクトのプロパティまたはメソッドにアクセスするには、ドット演算子 (例: **circle. radius**) を使用します。
 
   > [!NOTE]
-  > ユーザーが作成した変数には**this**を指定することはできません。this; は、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]予約語。
+  > ユーザーが作成した変数に名前を指定する**ことはでき**ません。[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] の予約語です。
 
 ## <a name="see-also"></a>関連項目
 

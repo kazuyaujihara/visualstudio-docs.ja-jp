@@ -1,5 +1,5 @@
 ---
-title: デバッグで .NET Framework のバージョンの指定 |Microsoft Docs
+title: デバッグ用の .NET Framework バージョンを指定する |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747472"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535976"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>方法: デバッグで .NET Framework のバージョンを指定 (C#、Visual Basic、 F#)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>デバッグ用に古い .NET Framework バージョンを指定C#する (、 F#Visual Basic、)
 
-Visual Studio デバッガーでは、Microsoft .NET Framework の旧バージョンと現在のバージョンのデバッグをサポートします。 Visual Studio からアプリケーションを起動する場合、デバッガーはデバッグ中のアプリケーションの .NET Framework の正しいバージョンを常に特定できます。 ただし場合は、アプリケーションは既に実行してデバッグを開始を使用して**にアタッチ**デバッガーは常にできないことがあります、.NET Framework の以前のバージョンを識別します。 この場合、次のようなエラー メッセージが出力されます。
+Visual Studio デバッガーでは、Microsoft .NET Framework の古いバージョンと現在のバージョンのデバッグがサポートされています。 Visual Studio からアプリケーションを起動する場合、デバッガーは、デバッグしているアプリケーションの正しいバージョンの .NET Framework を常に識別できます。 ただし、アプリケーションが既に実行されていて、 **[アタッチ先]** を使用してデバッグを開始した場合、デバッガーは常に古いバージョンの .NET Framework を識別できない可能性があります。 この場合、次のようなエラー メッセージが出力されます。
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
-このエラーが表示される場所のまれなケースで、デバッガーに使用するバージョンを示すためにレジストリ キーを設定できます。
+このエラーが発生するまれなケースとして、レジストリキーを設定して、使用するバージョンをデバッガーに示すことができます。
 
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>デバッグで .NET Framework のバージョンを指定するには
 
@@ -46,17 +46,17 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
 3. **レジストリ エディター**で、[HKEY_LOCAL_MACHINE] フォルダーを開きます。
 
-4. 次に移動します。HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B} に移動します。
 
-    このキーが存在しない場合、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine を右クリックし、 **[新しいキー]** をクリックします。 新しいキーの名前`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`します。
+    このキーが存在しない場合、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine を右クリックし、 **[新しいキー]** をクリックします。 新しいキーに `{449EC4CC-30D2-4032-9256-EE18EB41B62B}` 名前を指定します。
 
 5. {449EC4CC-30D2-4032-9256-EE18EB41B62B} に移動し、 **[名前]** 列を確認して、CLRVersionForDebugging キーを探します。
 
-   1. このキーが存在しない場合、{449EC4CC-30D2-4032-9256-EE18EB41B62B} を右クリックし、 **[新規] - [文字列値]** をクリックします。 新しい文字列値を右クリックし、をクリックして**の名前を変更**、および種類`CLRVersionForDebugging`します。
+   1. このキーが存在しない場合、{449EC4CC-30D2-4032-9256-EE18EB41B62B} を右クリックし、 **[新規] - [文字列値]** をクリックします。 次に、新しい文字列値を右クリックし、 **[名前の変更]** をクリックして、「`CLRVersionForDebugging`」と入力します。
 
 6. **[CLRVersionForDebugging]** をダブルクリックします。
 
-7. **[文字列の編集]** ボックスの **[値]** ボックスに、.NET Framework のバージョン番号を入力します。 例:V1.1.4322
+7. **[文字列の編集]** ボックスの **[値]** ボックスに、.NET Framework のバージョン番号を入力します。 たとえば、「V1.1.4322」などです。
 
 8. **[OK]** をクリックします。
 
@@ -64,5 +64,5 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
      それでもデバッグの開始時にエラー メッセージが表示される場合は、レジストリに正しいバージョン番号が入力されていることを確認します。 また、Visual Studio でサポートされている .NET Framework のバージョンを使用していることを確認します。 デバッガーは、現在のバージョンおよび以前のバージョンの .NET Framework と互換性がありますが、将来のバージョンとの上位互換性はない可能性があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)

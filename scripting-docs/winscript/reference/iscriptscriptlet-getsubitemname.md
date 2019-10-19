@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName |Microsoft Docs
+title: 'IScriptScriptlet レット:: GetSubItemName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c48517b7f9f5fab3250b8cff68ad288525145b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b36f6dd98534b8122a6814f1fd154eca7882251a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786798"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571921"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-スクリプトレットのオブジェクトのホストの完全修飾名では、最後の識別子を返します。  
+スクリプトレットのオブジェクトホストの完全修飾名の最後の識別子を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,9 +37,9 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstr`  
- [out]スクリプトレットの名前が 1 つ以上のレベルを持つ場合は、ホストの完全修飾`pbstr`2 番目のレベルで識別子のバッファーのアドレスを返します。  
+ 入出力ホストの完全修飾されたスクリプトレット名に複数のレベルがある場合、`pbstr` は2番目のレベルで識別子のバッファーアドレスを返します。  
   
- スクリプトレットの名前が 1 つのレベルを持つ場合は、ホストの完全修飾`pbstr`最初のレベルで識別子のバッファーのアドレスを返します。  
+ ホストの完全修飾されたスクリプトレット名に1つのレベルがある場合、`pbstr` は、最初のレベルで識別子のバッファーアドレスを返します。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

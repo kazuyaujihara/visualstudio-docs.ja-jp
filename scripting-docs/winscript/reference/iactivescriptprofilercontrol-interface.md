@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl インターフェイス |Microsoft Docs
+title: IActiveScriptProfilerControl Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,23 +11,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86f4fb8dea97930f717800a14a27740b76eb6c2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef127e3a4463d112b9ea424702fb2650c80cce7d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993060"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571600"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl インターフェイス
-プロファイリングをサポートするスクリプト エンジンによって実装されます。 通常、実装するオブジェクト、`IActiveScriptProfilerControl`実装も、 [IActiveScript](../../winscript/reference/iactivescript.md)インターフェイス。 この場合を識別するハンドルを取得できます、`IActiveScriptProfilerControl`インターフェイスを呼び出すことによって、`IUnknown::QueryInterface`オブジェクトのメソッド。 インターフェイスは、停止とスクリプト エンジンのプロファイリングを開始するために必要なメソッドを提供します。  
+プロファイリングをサポートするスクリプトエンジンによって実装されます。 通常、`IActiveScriptProfilerControl` を実装するオブジェクトは、 [IActiveScript](../../winscript/reference/iactivescript.md)インターフェイスも実装します。 この場合は、オブジェクトの `IUnknown::QueryInterface` メソッドを呼び出すことによって、`IActiveScriptProfilerControl` インターフェイスへのハンドルを取得できます。 インターフェイスには、スクリプトエンジンでプロファイリングを停止および開始するために必要なメソッドが用意されています。  
   
 ## <a name="methods"></a>メソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|スクリプト エンジンのプロファイリングを開始します。|  
-|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|スクリプト エンジンで、profiler イベント マスクを設定します。|  
-|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|スクリプト エンジンのプロファイリングを停止します。|  
+|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|スクリプトエンジンでのプロファイリングを開始します。|  
+|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|スクリプトエンジンでプロファイラーのイベントマスクを設定します。|  
+|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|スクリプトエンジンでのプロファイリングを停止します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト プロファイラーのインターフェイス](../../winscript/reference/active-script-profiler-interfaces.md)

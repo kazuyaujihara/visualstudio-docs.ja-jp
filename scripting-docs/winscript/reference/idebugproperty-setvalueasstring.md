@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::SetValueAsString |Microsoft Docs
+title: 'IDebugProperty:: SetValueAsString |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75761c77281583336efd1f9b6466f7f2fd0cc291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67e12652056442d9ac162be7af3a0d9e2b61b82c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979085"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574934"
 ---
 # <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
-指定した文字列からプロパティの値を設定します。  
+指定された文字列からプロパティの値を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,13 +38,13 @@ HRESULT SetValueAsString (
   
 #### <a name="parameters"></a>パラメーター  
  `pszValue`  
- [in]設定する値。  
+ から設定する値。  
   
  `nRadix`  
- [in]任意の数値情報を解釈するときに使用する基数。  
+ から数値情報の解釈に使用される基数。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)
