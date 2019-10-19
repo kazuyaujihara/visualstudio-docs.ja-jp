@@ -6,25 +6,25 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe82fc213937b7e494afd27bfd964347c17e2b8
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179986"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649410"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>方法: コード メトリックス データの生成
+# <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
 コードメトリックスデータは、次の3つの方法で生成できます。
 
 - [FxCop アナライザー](#fxcop-analyzers-code-metrics-rules)をインストールし、それに含まれる4つのコードメトリックス (保守性) ルールを有効にします。
 
-- Visual Studio 内の [ [ > **コードメトリックスの計算**](#calculate-code-metrics-menu-command) ] メニューコマンドを選択します。
+- Visual Studio 内で [ [ **Analyze**  > **Calculate Code Metrics** ](#calculate-code-metrics-menu-command) ] メニューコマンドを選択します。
 
 - および Visual Basic プロジェクトの場合C#は、[コマンドライン](#command-line-code-metrics)から実行します。
 
@@ -62,7 +62,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
    この例では、ルール[CA1502](ca1502-avoid-excessive-complexity.md)は、メソッドのサイクロマティック複雑度が10を超える場合に起動するように構成されています。
 
-3. Visual Studio の **[プロパティ]** ウィンドウまたはプロジェクトファイルで、構成ファイルのビルドアクションを[**additionalfiles**](../ide/build-actions.md#build-action-values)としてマークします。 例えば:
+3. Visual Studio の **[プロパティ]** ウィンドウまたはプロジェクトファイルで、構成ファイルのビルドアクションを[**additionalfiles**](../ide/build-actions.md#build-action-values)としてマークします。 (例:
 
    ```xml
    <ItemGroup>
@@ -72,13 +72,13 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
 ## <a name="calculate-code-metrics-menu-command"></a>[コードメトリックスの計算] メニューコマンド
 
-**[コードメトリックスの計算]** メニューを使用 > して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
+[ **Analyze**  > **Calculate code metrics** ] メニューを使用して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコードメトリックスの結果を生成する
 
 ソリューション全体に対するコードメトリックスの結果は、次のいずれかの方法で生成できます。
 
-- メニューバーで、[**ソリューションの** **コードメトリックス** > の**分析** > ] を選択します。
+- メニューバーで、 **[分析]** を選択し、**ソリューションの** **コードメトリックス** >  を計算  >  ます。
 
 - **ソリューションエクスプローラー**で、ソリューションを右クリックし、 **[コードメトリックスの計算]** をクリックします。
 
@@ -90,7 +90,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
 1. **ソリューションエクスプローラー**で、1つ以上のプロジェクトを選択します。
 
-1. メニューバーで、[**選択したプロジェクトの** **コードメトリックス** > を**分析** > する] を選択します。
+1. メニューバーから **[分析]** を選択し、**選択したプロジェクトの** **コードメトリックス** >  を計算  >  ます。
 
 結果が生成され、 **[コードメトリックスの結果]** ウィンドウが表示されます。 結果の詳細を表示するには、**階層**内のツリーを展開します。
 
@@ -111,7 +111,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft CodeAnalysis. メトリック NuGet パッケージ
 
-コマンドラインからコードメトリックスデータを生成する最も簡単な方法は、 [Microsoft CodeAnalysis. metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet パッケージをインストールすることです。 パッケージをインストールしたら、プロジェクトファイル`msbuild /t:Metrics`が格納されているディレクトリからを実行します。 例:
+コマンドラインからコードメトリックスデータを生成する最も簡単な方法は、 [Microsoft CodeAnalysis. metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet パッケージをインストールすることです。 パッケージをインストールしたら、プロジェクトファイルが格納されているディレクトリから `msbuild /t:Metrics` を実行します。 (例:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-出力ファイル名をオーバーライドするには、 `/p:MetricsOutputFile=<filename>`を指定します。 を指定`/p:LEGACY_CODE_METRICS_MODE=true`して、[レガシスタイルの](#previous-versions)コードメトリックスデータを取得することもできます。 例:
+出力ファイル名をオーバーライドするには、`/p:MetricsOutputFile=<filename>` を指定します。 @No__t_1 を指定して、[レガシスタイルの](#previous-versions)コードメトリックスデータを取得することもできます。 (例:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -219,7 +219,7 @@ NuGet パッケージをインストールしない場合は、 *Metrics*実行�
 
 1. [Dotnet](https://github.com/dotnet/roslyn-analyzers)リポジトリを複製します。
 2. 管理者として Visual Studio の開発者コマンドプロンプトを開きます。
-3. **Roslyn-アナライザー**リポジトリのルートから、次のコマンドを実行します。`Restore.cmd`
+3. **Roslyn-アナライザー**リポジトリのルートから、次のコマンドを実行します。 `Restore.cmd`
 4. ディレクトリを*Src\ Tools*に変更します。
 5. 次のコマンドを実行して、**メトリック .csproj**プロジェクトをビルドします。
 
@@ -231,7 +231,7 @@ NuGet パッケージをインストールしない場合は、 *Metrics*実行�
 
 #### <a name="metricsexe-usage"></a>Metrics の使用状況
 
-*Metrics*を実行するには、プロジェクトまたはソリューションと出力 XML ファイルを引数として指定します。 例:
+*Metrics*を実行するには、プロジェクトまたはソリューションと出力 XML ファイルを引数として指定します。 (例:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -243,7 +243,7 @@ Completed Successfully.
 
 #### <a name="legacy-mode"></a>レガシモード
 
-*レガシモード*では、 *Metrics*をビルドするように選択できます。 レガシモードバージョンのツールでは、[生成された以前のバージョンのツール](#previous-versions)に近いメトリック値が生成されます。 また、レガシモードでは 、以前のバージョンのツールで生成されたコードメトリックスと同じメソッド型のコードメトリックスが生成されます。 たとえば、フィールドおよびプロパティ初期化子のコードメトリックスデータは生成されません。 レガシモードは、旧バージョンとの互換性を維持したり、コードメトリックスの数値に基づいてコードをチェックインしたりする場合に便利です。 レガシモードで*Metrics*をビルドするコマンドは次のとおりです。
+*レガシモード*では、 *Metrics*をビルドするように選択できます。 レガシモードバージョンのツールでは、[生成された以前のバージョンのツール](#previous-versions)に近いメトリック値が生成されます。 また、レガシモードでは、以前のバージョンのツールで生成されたコードメトリックスと同じメソッド型のコードメトリックス*が生成されます。* たとえば、フィールドおよびプロパティ初期化子のコードメトリックスデータは生成されません。 レガシモードは、旧バージョンとの互換性を維持したり、コードメトリックスの数値に基づいてコードをチェックインしたりする場合に便利です。 レガシモードで*Metrics*をビルドするコマンドは次のとおりです。
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
@@ -259,11 +259,11 @@ Visual Studio 2015 には、 *metrics .exe*とも呼ばれるコマンドライ�
 
 #### <a name="metric-value-differences"></a>メトリック値の違い
 
-新しい`LinesOfCode`コマンドラインコードメトリックスツールでは、メトリックの精度と信頼性が向上しています。 Codegen の違いに依存せず、ツールセットやランタイムが変更されても変更されません。 新しいツールでは、空白行やコメントなど、実際のコード行がカウントされます。
+新しいコマンドラインコードメトリックスツールでは、`LinesOfCode` メトリックの精度と信頼性が向上しています。 Codegen の違いに依存せず、ツールセットやランタイムが変更されても変更されません。 新しいツールでは、空白行やコメントなど、実際のコード行がカウントされます。
 
-や`CyclomaticComplexity` など`MaintainabilityIndex`の他のメトリックでは、以前のバージョンの*metrics*と同じ数式を使用しますが、新しいツール`IOperations`は中間言語 (IL) 命令ではなく (論理ソース命令) の数をカウントします。 これらの数値は、Visual Studio IDE と以前のバージョンの*Metrics*によって生成された数値と若干異なります。
+@No__t_0 や `MaintainabilityIndex` などの他のメトリックでは、以前のバージョンの*metrics*と同じ数式が使用されますが、新しいツールでは中間言語 (IL) 命令ではなく `IOperations` (論理ソースの命令) の数がカウントされます。 これらの数値は、Visual Studio IDE と以前のバージョンの*Metrics*によって生成された数値と若干異なります。
 
 ## <a name="see-also"></a>関連項目
 
-- [コード メトリックスの結果 ウィンドウを使用します。](../code-quality/working-with-code-metrics-data.md)
+- [[コードメトリックスの結果] ウィンドウを使用する](../code-quality/working-with-code-metrics-data.md)
 - [コードメトリックスの値](../code-quality/code-metrics-values.md)

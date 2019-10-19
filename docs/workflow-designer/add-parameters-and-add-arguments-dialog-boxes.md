@@ -1,37 +1,37 @@
 ---
-title: ワークフロー デザイナー:パラメーターと引数の追加 ダイアログ ボックスを追加します。
+title: 'ワークフローデザイナー: [引数の追加] ダイアログボックス & パラメーターを追加する'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+author: jillre
+ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177735"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650762"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス
 
-次の表に、ユーザー インターフェイス (UI) 要素の**パラメーターを追加して**で使用されるダイアログ ボックス、<xref:System.Activities.Statements.InvokeMethod>デザイナー。
+次の表では、<xref:System.Activities.Statements.InvokeMethod> デザイナーによって使用される **[パラメーターの追加]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |||
 |-|-|
-|**[方向]**|パラメーターがメソッドに入っていくデータ フロー、メソッドから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
+|**横書き**|パラメーターがメソッドに入っていくデータ フロー、メソッドから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
 |**Type**|新しいパラメーターの型名。|
-|**[値]**|新しいパラメーターに既定値を代入するために使用する Visual Basic の式|
+|**[値]**|新しいパラメーターに既定値を割り当てるために使用される Visual Basic 式|
 
-次の表に、ユーザー インターフェイス (UI) 要素の**追加引数**で使用されるダイアログ ボックス、<xref:System.Activities.Statements.InvokeDelegate>デザイナー。
+次の表では、<xref:System.Activities.Statements.InvokeDelegate> デザイナーによって使用される **[引数の追加]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |||
 |-|-|
 |**Name**|引数の名前。|
-|**[方向]**|引数がデリゲートに入っていくデータ フロー、デリゲートから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
+|**横書き**|引数がデリゲートに入っていくデータ フロー、デリゲートから出てくるデータ フロー、またはその両方のいずれを表すのかを指定します。|
 |**Type**|新しい引数の型名。|
 |**[値]**|デリゲート引数のこのインスタンスに使用する値。|

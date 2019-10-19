@@ -1,21 +1,21 @@
 ---
-title: ワークフロー デザイナー - PickBranch アクティビティ デザイナー
+title: ワークフローデザイナーの分岐アクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c452cb4fd5b8a343473204c2b2bee614383ebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a43fa99c9f5fe4fbb3cfe336efb983fced655f2a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003635"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650070"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch アクティビティ デザイナー
 
@@ -23,38 +23,38 @@ ms.locfileid: "63003635"
 
 ## <a name="pickbranch"></a>PickBranch
 
-<xref:System.Activities.Statements.PickBranch> オブジェクトは、<xref:System.Activities.Statements.Pick.Branches%2A> アクティビティの <xref:System.Activities.Statements.Pick> コレクションに格納されます。 各 <xref:System.Activities.Statements.PickBranch> は <xref:System.Activities.Statements.Pick> アクティビティの分岐に格納され、トリガーの役割を果たす受信イベントに応答して実行できます。 この方法では、ワークフロー デザイナーは、イベント ベースの制御フロー モデリングを提供します。 各 <xref:System.Activities.Statements.PickBranch> には、<xref:System.Activities.Statements.PickBranch.Trigger%2A> および <xref:System.Activities.Statements.PickBranch.Action%2A> が含まれます。
+<xref:System.Activities.Statements.PickBranch> オブジェクトは、<xref:System.Activities.Statements.Pick.Branches%2A> アクティビティの <xref:System.Activities.Statements.Pick> コレクションに格納されます。 各 <xref:System.Activities.Statements.PickBranch> は <xref:System.Activities.Statements.Pick> アクティビティの分岐に格納され、トリガーの役割を果たす受信イベントに応答して実行できます。 この方法では、ワークフローデザイナーによってイベントベースの制御フローモデリングが提供されます。 各 <xref:System.Activities.Statements.PickBranch> には、<xref:System.Activities.Statements.PickBranch.Trigger%2A> および <xref:System.Activities.Statements.PickBranch.Action%2A> が含まれます。
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Pick アクティビティ デザイナーの使用方法
 
-アクセス、 **PickBranch**でデザイナー、**制御フロー**のカテゴリ、**ツールボックス**します。
+**[ツールボックス]** の **[制御フロー]** カテゴリで、候補 **[分岐]** デザイナー にアクセスします。
 
-2 つの空<xref:System.Activities.Statements.PickBranch>を持つオブジェクトの名前を表示する**Branch1**と**Branch2**の要素として、既定で作成された、<xref:System.Activities.Statements.Pick>アクティビティと、**選択**アクティビティ デザイナーはワークフロー デザイナーに最初に削除されます。 これらそれぞれ<xref:System.Activities.Statements.PickBranch.DisplayName%2A>でプロパティ値を編集できる、 **PickBranch**デザイナーのヘッダー内、または、**プロパティ**各分岐はウィンドウ。
+**Branch1**と**Branch2**の表示名を持つ2つの空の <xref:System.Activities.Statements.PickBranch> オブジェクトは、 **Pick**アクティビティデザイナーが最初にワークフローデザイナーにドロップされたときに、既定で <xref:System.Activities.Statements.Pick> アクティビティの要素として作成されます。 これらの各 <xref:System.Activities.Statements.PickBranch.DisplayName%2A> プロパティ値は、候補 **[分岐]** デザイナー ヘッダーまたは各分岐の **[プロパティ]** ウィンドウ内で編集できます。
 
-追加する 2 つの方法はあります<xref:System.Activities.Statements.PickBranch>オブジェクトのコレクションを<xref:System.Activities.Statements.Pick>オブジェクト: ドラッグ アンド ドロップ、 **PickBranch**からデザイナー、**ツールボックス**を右クリック メニューを使用して、または内で、**選択**デザイン画面。
+@No__t_1 オブジェクトのコレクションに <xref:System.Activities.Statements.PickBranch> オブジェクトを追加するには、 **[ツールボックス]** から Pick **[branch]** デザイナーをドラッグアンドドロップする方法と、 **Pick**デザイン画面内から右クリックメニューを使用する方法の2つがあります。
 
-- **PickBranch**デザイナーを作成、<xref:System.Activities.Statements.PickBranch>からドラッグされるときに、**ツールボックス**の分岐の 1 つにドロップして、**選択**上のアクティビティ デザイナー、ワークフロー デザイナー画面。 新しい <xref:System.Activities.Statements.PickBranch> オブジェクトは、<xref:System.Activities.Statements.Pick> デザイナー内で、コレクションに含まれている既存の <xref:System.Activities.Statements.PickBranch> 要素の左側または右側に配置できます。 ドラッグしたときに、 **PickBranch**デザイナー上に、**選択**マウス、デザイナー、**選択**デザイナーでは、青灰色の縦の帯を使用して、場所を示します、 <xref:System.Activities.Statements.PickBranch>位置に追加されます。
+- Pick**分岐**デザイナーは、 **[ツールボックス]** からドラッグし、ワークフローデザイナーサーフェイス上の**Pick**アクティビティデザイナーの分岐のいずれかにドロップすると、<xref:System.Activities.Statements.PickBranch> を作成します。 新しい <xref:System.Activities.Statements.PickBranch> オブジェクトは、<xref:System.Activities.Statements.Pick> デザイナー内で、コレクションに含まれている既存の <xref:System.Activities.Statements.PickBranch> 要素の左側または右側に配置できます。 マウスを使用して Pick**分岐**デザイナーを**選択**デザイナーにドラッグすると、選択したマウスの位置に対して <xref:System.Activities.Statements.PickBranch> がどの位置に追加されるかを選択するために、**選択**した青い灰色のバンドが使用されます。
 
-- 右クリックして**選択**アクティビティ デザイナー (内部ではない**PickBranch**デザイナー) を選択し、コンテキスト メニューを**分岐の作成**新しいを追加する<xref:System.Activities.Statements.PickBranch>します。 注意して、新しい<xref:System.Activities.Statements.PickBranch>が既存の右側に追加<xref:System.Activities.Statements.PickBranch>内のオブジェクト、**選択**デザイナー。
+- コンテキストメニューを取得して **[分岐の作成]** を選択し、新しい <xref:System.Activities.Statements.PickBranch> を追加するには、[ **Pick** **アクティビティデザイナー]** を右クリックします。 新しい <xref:System.Activities.Statements.PickBranch> が、**選択**デザイナーの既存の <xref:System.Activities.Statements.PickBranch> オブジェクトの右側に追加されていることに注意してください。
 
-**PickBranch**デザイナーを展開すると、**トリガー**と**アクション**ボックスまたはクリックすると、ヘッダーの右側にある二重のキャレットで折りたたまれています。 編集、<xref:System.Activities.Statements.PickBranch.Trigger%2A>と<xref:System.Activities.Statements.PickBranch.Action%2A>それぞれの<xref:System.Activities.Statements.PickBranch>にアクティビティをドロップすることによって、**トリガー**と**アクション**そのデザイナーのボックスです。
+候補 **[分岐]** デザイナー を展開して、 **[トリガー]** ボックスと **[アクション]** ボックスを表示するか、ヘッダーの右側にある二重キャレットをクリックして表示を折りたたむことができます。 デザイナーの **[トリガー]** ボックスと **[アクション]** ボックスにアクティビティをドロップして、各 <xref:System.Activities.Statements.PickBranch> の <xref:System.Activities.Statements.PickBranch.Trigger%2A> と <xref:System.Activities.Statements.PickBranch.Action%2A> を編集します。
 
-<xref:System.Activities.Statements.PickBranch>内のオブジェクト、<xref:System.Activities.Statements.Pick.Branches%2A>のコレクションを<xref:System.Activities.Statements.Pick>オブジェクトをドラッグ アンド ドロップし、内の新しい場所にして並べ替えることができる、**選択**デザイナー。 **選択**デザイナーは青灰色の縦の帯で示されます使用して、<xref:System.Activities.Statements.PickBranch>位置が追加されます。
+@No__t_2 オブジェクトの <xref:System.Activities.Statements.Pick.Branches%2A> コレクション内の <xref:System.Activities.Statements.PickBranch> オブジェクトは、**選択**デザイナー内の新しい位置にドラッグアンドドロップすることで並べ替えることができます。 **選択**デザイナーは、垂直の青い灰色のバンドを使用して、特定のマウスの位置に <xref:System.Activities.Statements.PickBranch> が追加される場所を示します。
 
 <xref:System.Activities.Statements.PickBranch> は 2 とおりの方法で削除できます。
 
-- 選択、 **PickBranch**デザイナーして削除します。
-- 選択、 **PickBranch**デザイナー、右クリックして選択し、コンテキスト メニューを**削除**します。
+- **[分岐]** デザイナーを選択し、削除します。
+- **ピック分岐**デザイナーを選択し、右クリックしてコンテキストメニューを取得し、 **[削除]** を選択します。
 
-オンにしてください、 **PickBranch**デザイナー内のアクティビティのいずれかを選択すると、その**トリガー**または**アクション**ボックスが、誤ってこれらの活動の 1 つを削除および not<xref:System.Activities.Statements.PickBranch>オブジェクト。
+[**分岐**の選択] デザイナーは必ず選択してください。**トリガー**または**アクション**ボックス内のアクティビティの1つを選択すると、誤ってそれらのアクティビティのいずれかが削除され、<xref:System.Activities.Statements.PickBranch> オブジェクトは削除されます。
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの PickBranch のプロパティ
 
-次の表は、最も役に立つ<xref:System.Activities.Statements.PickBranch>プロパティと、ワークフロー デザイナーで使用する方法について説明します。
+次の表は、最も役に立つ <xref:System.Activities.Statements.PickBranch> プロパティと、それらのプロパティをワークフローデザイナーで使用する方法を示しています。
 
-|プロパティ名|必須|使用方法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|ヘッダーに表示されるフレンドリ名、 **PickBranch**デザイナー。 既定値は Branch です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|**ピック分岐**デザイナーのヘッダーに表示されるフレンドリ名。 既定値は Branch です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|各 <xref:System.Activities.Statements.PickBranch> には、<xref:System.Activities.Statements.PickBranch.Trigger%2A> を呼び出すことのできる <xref:System.Activities.Statements.PickBranch.Action%2A> アクションが含まれます。|
 |<xref:System.Activities.Statements.PickBranch.Action%2A>|False|各 <xref:System.Activities.Statements.PickBranch> には、トリガーされたときに実行される <xref:System.Activities.Statements.PickBranch.Action%2A> が含まれます。|
 

@@ -1,5 +1,5 @@
 ---
-title: DataRelation を使用して、データセット間のリレーションシップを作成するには
+title: DataRelation を使用してデータセット間のリレーションシップを作成する
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,99 +10,99 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 653a9b589e68c326fc40a94ed0fa3ab7e49acb8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567651"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648253"
 ---
 # <a name="create-relationships-between-datasets"></a>データセット間にリレーションシップを作成する
-関連データを含むデータセット テーブルを使用して<xref:System.Data.DataRelation>を 1 つ別の関連レコードを返すと、テーブル間の親/子リレーションシップを表すオブジェクト。 使用してデータセットの関連テーブルの追加、**データ ソース構成ウィザード**、または**データセット デザイナー**を作成し、構成、<xref:System.Data.DataRelation>オブジェクト。
+関連するデータテーブルを含むデータセットは、<xref:System.Data.DataRelation> オブジェクトを使用して、テーブル間の親子関係を表し、相互に関連するレコードを返します。 **データソース構成ウィザード**または**データセットデザイナー**を使用して、関連テーブルをデータセットに追加すると、<xref:System.Data.DataRelation> オブジェクトが作成および構成されます。
 
-<xref:System.Data.DataRelation>オブジェクトが 2 つの関数を実行します。
+@No__t_0 オブジェクトは、次の2つの関数を実行します。
 
-- 利用できるように使用しているレコードに関連するレコード。 親レコードの場合は、子レコードを提供します (<xref:System.Data.DataRow.GetChildRows%2A>) と子レコードを使用している場合は、親レコード (<xref:System.Data.DataRow.GetParentRow%2A>)。
+- これにより、使用しているレコードに関連するレコードを利用できるようになります。 子レコード (<xref:System.Data.DataRow.GetParentRow%2A>) を使用している場合は、親レコード (<xref:System.Data.DataRow.GetChildRows%2A>) および親レコードで子レコードを提供します。
 
-- 親レコードを削除すると、関連する子レコードの削除などの参照整合性制約を適用します。
+- 親レコードを削除するときに関連する子レコードを削除するなど、参照整合性の制約を適用できます。
 
-True の結合との関数の違いを理解することが重要な<xref:System.Data.DataRelation>オブジェクト。 真の結合レコードが親と子テーブルから取得され、フラットで 1 つのレコード セットに配置。 使用すると、<xref:System.Data.DataRelation>オブジェクトの新しいレコード セットは作成されません。 代わりに、datarelation を使用では、テーブル間の関係を追跡し、親と子レコードの同期を保ちます。
+True 結合と <xref:System.Data.DataRelation> オブジェクトの関数の違いを理解しておくことが重要です。 実際の結合では、レコードは親テーブルと子テーブルから取得され、1つのフラットレコードセットに格納されます。 @No__t_0 オブジェクトを使用する場合、新しいレコードセットは作成されません。 代わりに、DataRelation はテーブル間のリレーションシップを追跡し、親レコードと子レコードの同期を維持します。
 
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation オブジェクトと制約
-A<xref:System.Data.DataRelation>オブジェクトは作成して、次の制約の適用にも使用されます。
+@No__t_0 オブジェクトは、次の制約を作成して適用するためにも使用されます。
 
-- Unique 制約をテーブルの列に重複が含まれないことが保証されます。
+- Unique 制約。テーブル内の列に重複が含まれていないことを保証します。
 
-- データセット内の親と子テーブル間に参照整合性を維持するために使用できる foreign key 制約。
+- 外部キー制約。データセット内の親テーブルと子テーブルの間の参照整合性を維持するために使用できます。
 
-指定した制約を<xref:System.Data.DataRelation>オブジェクトが自動的に適切なオブジェクトを作成するか、プロパティを設定して実装されます。 使用して foreign key 制約を作成するかどうか、<xref:System.Data.DataRelation>オブジェクト、インスタンスの<xref:System.Data.ForeignKeyConstraint>クラスに追加されて、<xref:System.Data.DataRelation>オブジェクトの<xref:System.Data.DataRelation.ChildKeyConstraint%2A>プロパティ。
+@No__t_0 オブジェクトで指定する制約は、適切なオブジェクトを自動的に作成するか、プロパティを設定することによって実装されます。 @No__t_0 オブジェクトを使用して外部キー制約を作成すると、<xref:System.Data.ForeignKeyConstraint> クラスのインスタンスが <xref:System.Data.DataRelation> オブジェクトの <xref:System.Data.DataRelation.ChildKeyConstraint%2A> プロパティに追加されます。
 
-Unique 制約が実装されているいずれかを設定するだけで、<xref:System.Data.DataColumn.Unique%2A>するデータ列のプロパティ`true`またはのインスタンスを追加することで、<xref:System.Data.UniqueConstraint>クラスを<xref:System.Data.DataRelation>オブジェクトの<xref:System.Data.DataRelation.ParentKeyConstraint%2A>プロパティ。 データセット内の制約を中断する方法の詳細については、次を参照してください。[データセットの読み込み中に制約を無効に](../data-tools/turn-off-constraints-while-filling-a-dataset.md)します。
+Unique 制約は、単にデータ列の <xref:System.Data.DataColumn.Unique%2A> プロパティを `true` に設定するか、<xref:System.Data.DataRelation> オブジェクトの <xref:System.Data.DataRelation.ParentKeyConstraint%2A> プロパティに <xref:System.Data.UniqueConstraint> クラスのインスタンスを追加することによって実装されます。 データセットの制約を中断する方法の詳細については、「[データセットの読み込み中に制約をオフにする](../data-tools/turn-off-constraints-while-filling-a-dataset.md)」を参照してください。
 
-### <a name="referential-integrity-rules"></a>参照整合性の規則
-Foreign key 制約の一部として、次の 3 つの時点で適用される参照整合性規則を指定できます。
+### <a name="referential-integrity-rules"></a>参照整合性規則
+外部キー制約の一部として、次の3つの点で適用される参照整合性規則を指定できます。
 
 - 親レコードが更新されたとき
 
 - 親レコードが削除されたとき
 
-- 変更が受け入れられるか拒否されます。
+- 変更が受け入れられるか拒否されたとき
 
-行うことができる規則が指定されて、<xref:System.Data.Rule>列挙およびは次の表に記載します。
+作成できる規則は <xref:System.Data.Rule> 列挙体で指定され、次の表に示します。
 
-|外部キー制約の規則|アクション|
+|外部キー制約規則|操作|
 | - |------------|
-|<xref:System.Data.Rule.Cascade>|親レコードに加えられた変更 (更新または削除) は、子テーブル内の関連レコードでも作成します。|
-|<xref:System.Data.Rule.SetNull>|子レコードは削除されませんが、子レコードの外部キーに設定されて<xref:System.DBNull>します。 この設定では、子レコードを「孤立」のまま残してかまいません: 親レコードとの関係あるありませんは、します。 **注:** このルールを使用すると、子テーブル内の無効なデータがあります。|
-|<xref:System.Data.Rule.SetDefault>|関連する子レコードの外部キーが既定値に設定 (列のによって確立されると、<xref:System.Data.DataColumn.DefaultValue%2A>プロパティ)。|
-|<xref:System.Data.Rule.None>|関連する子レコードは変更されません。 この設定では、子レコードが無効な親レコードへの参照を含めることができます。|
+|<xref:System.Data.Rule.Cascade>|親レコードに対して行われた変更 (update または delete) は、子テーブルの関連レコードでも行われます。|
+|<xref:System.Data.Rule.SetNull>|子レコードは削除されませんが、子レコードの外部キーは <xref:System.DBNull> に設定されます。 この設定では、子レコードを "孤立" として残すことができます。つまり、親レコードとの関係はありません。 **注:** このルールを使用すると、子テーブルに無効なデータが生成される可能性があります。|
+|<xref:System.Data.Rule.SetDefault>|関連する子レコードの外部キーは、(列の <xref:System.Data.DataColumn.DefaultValue%2A> プロパティによって確立される) 既定値に設定されます。|
+|<xref:System.Data.Rule.None>|関連する子レコードに変更は加えられません。 この設定では、子レコードに無効な親レコードへの参照を含めることができます。|
 
-データセットのテーブルで更新プログラムの詳細については、次を参照してください。[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)します。
+データセットテーブルの更新の詳細については、「[データベースにデータを保存する](../data-tools/save-data-back-to-the-database.md)」を参照してください。
 
-### <a name="constraint-only-relations"></a>制約だけのリレーションシップ
-作成するときに、<xref:System.Data.DataRelation>オブジェクトの制約を適用するだけの関係を使用するように指定するオプションがあります: つまり、これはも使用されません関連レコードにアクセスします。 このオプションを使用すると、若干効率的ですが、関連レコードの機能よりも少ないメソッドを含むデータセットを生成します。 ただし、関連するレコードにアクセスすることはできません。 たとえば、制約のみのリレーションシップと子レコードを保持している親レコードを削除するできなくなり、親を子レコードにアクセスすることはできません。
+### <a name="constraint-only-relations"></a>制約のみのリレーション
+@No__t_0 オブジェクトを作成するときに、リレーションシップを適用するためにのみ使用することを指定するオプションがあります。これは、関連するレコードへのアクセスにも使用されません。 このオプションを使用すると、より効率的で、関連レコード機能を持つ1つよりも少数のメソッドを含むデータセットを生成できます。 ただし、関連するレコードにアクセスすることはできません。 たとえば、制約のみのリレーションシップでは、子レコードが残っている親レコードを削除することはできません。また、親を介して子レコードにアクセスすることもできません。
 
-## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>データセット デザイナーで、データのリレーションシップを手動で作成します。
-Visual Studio で、データ デザイン ツールを使用して、データ テーブルを作成するときにリレーションシップが自動的に作成、データのソースから情報を収集できます。 データ テーブルを手動で追加する場合、**データセット**のタブ、**ツールボックス**リレーションシップを手動で作成する必要があります。 詳細については<xref:System.Data.DataRelation>オブジェクトはプログラムを参照してください[Datarelation の追加](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)します。
+## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>データセットデザイナーでのデータリレーションシップの手動作成
+Visual Studio のデータデザインツールを使用してデータテーブルを作成する場合、データのソースから情報を収集できる場合、リレーションシップは自動的に作成されます。 **ツールボックス**の [データ**セット**] タブから手動でデータテーブルを追加した場合は、リレーションシップを手動で作成することが必要になる場合があります。 プログラムによって <xref:System.Data.DataRelation> オブジェクトを作成する方法については、「 [datarelation の追加](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)」を参照してください。
 
-内の行として表示されるデータ テーブル間のリレーションシップ、**データセット デザイナー**リレーションシップの一対多の縦横比を表すキーと無限のグリフ。 既定では、リレーションシップの名前は、デザイン サーフェイスは表示されません。
+データテーブル間のリレーションシップは、リレーションシップの一対多の側面を表すキーと無限大のグリフを使用して、**データセットデザイナー**内の行として表示されます。 既定では、リレーションシップの名前はデザインサーフェイスに表示されません。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-a-relationship-between-two-data-tables"></a>2 つのデータ テーブル間のリレーションシップを作成するには
+#### <a name="to-create-a-relationship-between-two-data-tables"></a>2つのデータテーブル間のリレーションシップを作成するには
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
-2. ドラッグ、**関係**オブジェクトから、**データセット**ツールボックス リレーションシップの子のデータ テーブル。
+2. **リレーションシップオブジェクトを** **データセット**ツールボックスからリレーションシップの子データテーブルにドラッグします。
 
-     **関係** ダイアログ ボックスが開き、設定、**子テーブル**ボックスにドラッグしたテーブル、**関係**オブジェクトします。
+     **[リレーションシップ]** ダイアログボックスが開き、 **[子テーブル]** ボックスに、**リレーションシップ**オブジェクトをドラッグしたテーブルが挿入されます。
 
-3. 親テーブルから選択、**親テーブル**ボックス。 親テーブルには、一対多リレーションシップの「一」側にあるレコードが含まれています。
+3. **[親テーブル]** ボックスから親テーブルを選択します。 親テーブルには、一対多リレーションシップの "一" 側のレコードが含まれています。
 
-4. 適切な子テーブルが表示されていることを確認、**子テーブル**ボックス。 子テーブルには、一対多リレーションシップの「多」側にあるレコードが含まれています。
+4. **[子テーブル]** ボックスに正しい子テーブルが表示されていることを確認します。 子テーブルには、一対多リレーションシップの "多" 側のレコードが含まれます。
 
-5. リレーションシップの名前を入力、**名前**ボックス、または、選択したテーブルに基づく既定の名前のままにします。 これは、実際の名前<xref:System.Data.DataRelation>コード内のオブジェクト。
+5. **[名前]** ボックスにリレーションシップの名前を入力するか、選択したテーブルに基づいて既定の名前をそのまま使用します。 これは、コード内の実際の <xref:System.Data.DataRelation> オブジェクトの名前です。
 
-6. 内のテーブルを結合する列を選択して、**キー列**と**外部キー列を**を一覧表示します。
+6. **[キー列]** ボックスと **[外部キー列]** ボックスの一覧で、テーブルを結合する列を選択します。
 
 7. リレーションシップ、制約、またはその両方を作成するかどうかを選択します。
 
-8. オンまたはオフ、**入れ子になったリレーションシップ**ボックス。 このオプションの設定を選択すると、<xref:System.Data.DataRelation.Nested%2A>プロパティを`true`と、行が親列内で入れ子になったこれらの行の XML データとして書き込まれるまたはとの同期とのリレーションシップの子をその<xref:System.Xml.XmlDataDocument>します。 詳細については、次を参照してください。 [Datarelation の入れ子](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)します。
+8. **[入れ子になったリレーション]** ボックスをオンまたはオフにします。 このオプションを選択すると、[<xref:System.Data.DataRelation.Nested%2A>] プロパティが [`true`] に設定され、これらの行が XML データとして書き込まれるか <xref:System.Xml.XmlDataDocument> と同期されるときに、リレーションシップの子行が親列内に入れ子になります。 詳細については、「 [datarelation の入れ子](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)」を参照してください。
 
-9. これらのテーブル内のレコードに変更を加えていない場合に適用する規則を設定します。 詳細については、「 <xref:System.Data.Rule> 」を参照してください。
+9. これらのテーブルのレコードに変更を加えるときに適用されるルールを設定します。 詳細については、「<xref:System.Data.Rule>」を参照してください。
 
-10. クリックして**OK**リレーションシップを作成します。 リレーションシップの線は、2 つのテーブル デザイナーに表示されます。
+10. **[OK]** をクリックしてリレーションシップを作成します。 2つのテーブル間の関係線がデザイナーに表示されます。
 
-#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセット デザイナーでリレーションシップ名を表示するには
+#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセットデザイナーに関係名を表示するには
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル:データセット デザイナーでデータセットを作成する](walkthrough-creating-a-dataset-with-the-dataset-designer.md)します。
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
-2. **データ**メニューの 、**リレーションシップ ラベルを表示する**リレーションシップ名を表示するコマンド。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
+2. **[データ]** メニューの **[リレーションシップラベルの表示]** をクリックして、リレーションシップ名を表示します。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
 
 ## <a name="see-also"></a>関連項目
 

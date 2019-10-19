@@ -6,39 +6,39 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744525"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645712"
 ---
 # <a name="export-diagrams-as-images"></a>イメージとしてダイアグラムをエクスポートする
 
-Visual Studio で、利害関係者、ユーザー、または同じバージョンの Visual Studio を使用しないプロジェクトのチーム メンバーと共有することができるようにのモデリング図を読み取り専用の形式で保存できます。
+Visual Studio では、モデリング図を読み取り専用形式で保存できるため、同じバージョンの Visual Studio を使用していない利害関係者、ユーザー、またはプロジェクトチームメンバーと共有できます。
 
-Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
+この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>図または図の一部を別のアプリケーションにコピーします。
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>ダイアグラムまたはダイアグラムの一部を別のアプリケーションにコピーする
 
 1. 図で、一部またはすべての図形を選択します。
 
-2. 選択内容を右クリックし、をクリックし、**コピー**します。
+2. 選択した内容を右クリックし、 **[コピー]** をクリックします。
 
 3. 必要なアプリケーションに選択内容を貼り付けます。
 
-## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>モデリング図を XML Paper Specification (.xps) ファイルとして保存します。
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>モデリング図を XML Paper Specification (.xps) ファイルとして保存する
 
-1. **ファイル** メニューのをクリックして**印刷**を開く、**印刷** ダイアログ ボックス。
+1. **[ファイル]** メニューの **[印刷]** をクリックして、 **[印刷]** ダイアログボックスを開きます。
 
-2. **名前**一覧で、 **Microsoft XPS Document Writer**、順にクリックします**OK**します。
+2. **[名前]** ボックスの一覧で **[Microsoft XPS ドキュメントライター]** を選択し、 **[OK]** をクリックします。
 
-3. **ファイルに保存します**ファイルとして保存 ダイアログ ボックス、 **XPS ドキュメント (\*.xps)** ファイル。
+3. [名前を付け**てファイルを保存**] ダイアログボックスで、ファイルを**xps ドキュメント (\* .xps)** ファイルとして保存します。
 
 ## <a name="see-also"></a>関連項目
 

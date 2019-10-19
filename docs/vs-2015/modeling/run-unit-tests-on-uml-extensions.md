@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871724"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671227"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>単体テストを UML 拡張機能で実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-変更が続いてもコードを安定した状態に保つため、単体テストを記述し、定期的なビルド処理の一部として実行することをお勧めします。 詳しくは、「[コードの単体テストUnit Test Your Code](../test/unit-test-your-code.md)」をご覧ください。 Visual Studio のモデル拡張でテストを設定するには、いくつかの重要な情報が必要です。 概要:
+変更が続いてもコードを安定した状態に保つため、単体テストを記述し、定期的なビルド処理の一部として実行することをお勧めします。 詳細については、「 [Unit Test Your Code](../test/unit-test-your-code.md)」を参照してください。 Visual Studio のモデル拡張でテストを設定するには、いくつかの重要な情報が必要です。 概要:
 
 - [VSIX 拡張機能の単体テストの設定](#Host)
 
@@ -45,10 +45,10 @@ ms.locfileid: "68871724"
 
   単体テストが設定された UML 拡張機能のサンプルは、コード サンプル ギャラリー「 [UML – テキストを使った迅速な入力](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)」で参照できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
  「 [要件](../modeling/extend-uml-models-and-diagrams.md#Requirements)」を参照してください。
 
- この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+ この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 ## <a name="Host"></a>VSIX 拡張機能の単体テストの設定
  モデリング拡張機能のメソッドは通常、既に開いている図で行います。 メソッドでは、 **IDiagramContext** や **ILinkedUndoContext**などの MEF インポートを使います。 テストを実行する前にテスト環境でこのコンテキストを設定する必要があります。
@@ -59,7 +59,7 @@ ms.locfileid: "68871724"
 
     1. **UML 拡張プロジェクト。** 通常、これはコマンド、ジェスチャ、または検証プロジェクト テンプレートを使って作成します。 例については、「[モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する」を参照してください。
 
-    2. **単体テストプロジェクト。** 詳しくは、「[コードの単体テストUnit Test Your Code](../test/unit-test-your-code.md)」をご覧ください。
+    2. **単体テストプロジェクト。** 詳細については、「 [Unit Test Your Code](../test/unit-test-your-code.md)」を参照してください。
 
 2. UML モデリング プロジェクトを含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。 このソリューションは、テストの初期段階として使用します。 Visual Studio ソリューションは、UML 拡張機能とその単体テストを記述するソリューションとは別にする必要があります。 詳細については、「 [UML モデリングプロジェクトおよびダイアグラムを作成する](../modeling/create-uml-modeling-projects-and-diagrams.md)」を参照してください。
 
@@ -88,7 +88,7 @@ ms.locfileid: "68871724"
 
     - **VisualStudio. ComponentModelHost .dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **VisualStudio. 設定... .dll**
 
     - **VisualStudio のようになります。**
 
@@ -99,7 +99,7 @@ ms.locfileid: "68871724"
      これにより、テストが Visual Studio の実験的なインスタンスで実行されることが保証されます。
 
 ## <a name="DTE"></a>DTE および ModelStore へのアクセス
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でモデリング プロジェクトを開くメソッドを記述します。 通常は、各テストの実行で 1 度だけソリューションを開きます。 メソッドを 1 度だけ実行するには、メソッドに `[AssemblyInitialize]` 属性をプレフィックスとして付けます。 また、各テスト メソッドで [HostType("VS IDE")] 属性も必要です。  例えば:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でモデリング プロジェクトを開くメソッドを記述します。 通常は、各テストの実行で 1 度だけソリューションを開きます。 メソッドを 1 度だけ実行するには、メソッドに `[AssemblyInitialize]` 属性をプレフィックスとして付けます。 また、各テスト メソッドで [HostType("VS IDE")] 属性も必要です。  (例:
 
 ```csharp
 using EnvDTE;
@@ -164,7 +164,7 @@ namespace UnitTests
 
 ```
 
- のインスタンスがモデリング<xref:EnvDTE.Project?displayProperty=fullName>プロジェクトを表す場合は、それを[imodeのプロジェクト](/previous-versions/ee789474(v=vs.140))との間でキャストできます。
+ @No__t_0 のインスタンスがモデリングプロジェクトを表す場合は、それを[Imodeのプロジェクト](/previous-versions/ee789474(v=vs.140))との間でキャストできます。
 
 ## <a name="Opening"></a>モデル図を開く
  各テストまたはテストのクラスでは、開いている図で作業することがよくあります。 次の例では、このテスト クラスの他のメソッドよりも先にこのメソッドを実行する `[ClassInitialize]` 属性を使用します。 ここでも、各テスト メソッドには属性 [HostType("VS IDE")] も必要です。
@@ -287,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}
 ```
 
- インポートされたプロパティをパラメーターとするメソッドをテストする場合、テスト クラスにプロパティをインポートして、テスト インスタンスに `SatisfyImportsOnce` を適用できます。 次に例を示します。
+ インポートされたプロパティをパラメーターとするメソッドをテストする場合、テスト クラスにプロパティをインポートして、テスト インスタンスに `SatisfyImportsOnce` を適用できます。 (例:
 
 ```
 
@@ -338,7 +338,7 @@ using System.ComponentModel.Composition;
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- テストインターフェイスを定義して、テスト対象のクラスのパブリックメンバーと、テストで使用できるプライベートメンバーの追加のプロパティおよびメソッドの両方を含むインターフェイスを定義します。 テスト対象のプロジェクトにこのインターフェイスを追加します。 次に例を示します。
+ テストインターフェイスを定義して、テスト対象のクラスのパブリックメンバーと、テストで使用できるプライベートメンバーの追加のプロパティおよびメソッドの両方を含むインターフェイスを定義します。 テスト対象のプロジェクトにこのインターフェイスを追加します。 (例:
 
 ```csharp
 internal interface MyClassTestInterface {
@@ -349,7 +349,7 @@ internal interface MyClassTestInterface {
  }
 ```
 
- テスト対象のクラスにメソッドを追加して、アクセサー メソッドを明示的に実装します。 これらの追加のメソッドは、個別のファイルの部分クラス定義に記述して、メイン クラスとは切り離しておきます。 次に例を示します。
+ テスト対象のクラスにメソッドを追加して、アクセサー メソッドを明示的に実装します。 これらの追加のメソッドは、個別のファイルの部分クラス定義に記述して、メイン クラスとは切り離しておきます。 (例:
 
 ```csharp
 partial public class MyClass
@@ -368,7 +368,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- 単体テスト メソッドで、テスト インターフェイスを使います。 例えば:
+ 単体テスト メソッドで、テスト インターフェイスを使います。 (例:
 
 ```csharp
 MyClassTestInterface testInstance = new MyClass();
@@ -378,5 +378,5 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 
  リフレクションを使用してアクセサーを定義します。これは、最も推奨される方法です。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の古いバージョンでは、それぞれのプライベート メソッドにアクセサー メソッドを自動的に作成するユーティリティが用意されていました。 これは便利ですが、経験上、テストするアプリケーションの内部構造に非常に強く結びついた単体テストになる傾向があります。 結果として、要件やアーキテクチャに変更があると、その実装に応じてテストも変更する必要があるため、余分の作業が生じます。 また、実装の設計に関する間違った前提もテストに組み込まれているため、テストではエラーを発見できません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [単体テストの構造](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)[モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する[UML –テキストを使用](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)した迅速な入力

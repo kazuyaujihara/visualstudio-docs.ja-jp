@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 139833cc427349cb0fd820877c8cad101a647c81
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925611"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648410"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
 エンティティ クラスの "*検証*" とは、データ オブジェクトに入力された値が、アプリケーションに対して設定された規則に従っていること、およびオブジェクトのスキーマ内の制約に従っていることを確認するプロセスです。 基になるデータベースに更新を送信する前にデータを検証すると、エラーを減らすことができます。 アプリケーションとデータベースの間で生じる可能性のあるラウンド トリップの回数も減ります。
@@ -106,7 +106,7 @@ ms.locfileid: "68925611"
 
     C# プロジェクトの場合は、次の操作を行います。
 
-    プロジェクトC#では自動的にイベントハンドラーが生成されないため、IntelliSense を使用`UpdateCLASSNAME`して部分メソッドを作成できます。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードは、 `UpdateCLASSNAME`部分メソッドを選択したときに生成されるコードに似ています。
+    プロジェクトC#では自動的にイベントハンドラーが生成されないため、IntelliSense を使用して部分的な `UpdateCLASSNAME` メソッドを作成できます。 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの update メソッドをクリックします。 次のコードは、`UpdateCLASSNAME` 部分メソッドを選択したときに生成されるコードに似ています。
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

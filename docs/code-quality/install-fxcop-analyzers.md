@@ -4,37 +4,58 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fec188ba61a7e4d3f27caad03f0a5d32b6758a32
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974965"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649338"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio で FxCop アナライザーをインストールする
 
 Microsoft は、従来の分析から最も重要な "FxCop" ルールを含む、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)という名前のアナライザーのセットを作成しました。 これらのアナライザーは、セキュリティ、パフォーマンス、および設計上の問題についてコードをチェックします。
 
-これらの FxCop アナライザーは、NuGet パッケージとして、または Visual Studio の VSIX 拡張機能としてインストールできます。 それぞれの長所と短所については、「[NuGet package」と「」を参照してください。VSIX 拡張機能 @ no__t-0。
+これらの FxCop アナライザーは、NuGet パッケージとして、または Visual Studio の VSIX 拡張機能としてインストールできます。 それぞれの長所と短所については、 [NuGet パッケージと VSIX 拡張機能](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)に関するページを参照してください。
 
 ## <a name="nuget-package"></a>NuGet パッケージ
 
-[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージは、プロジェクトの [コード分析のプロパティ] ページから直接インストールできます。
+::: moniker range=">=vs-2019"
+
+Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コード分析のプロパティ] ページから直接[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージをインストールできます。
 
 1. **ソリューションエクスプローラー**でプロジェクトノードを右クリックし、 **[プロパティ]** をクリックして、 **[コード分析]** タブを選択します。
 
    ![Visual Studio の [プロパティ] ページから FxCop アナライザーパッケージをインストールする](media/install-fxcop-properties-page.png)
 
-2. **[インストール]** を選択します。
+2. [インストール] を選択します。
 
-   Visual Studio によって、FxCopAnalyzers パッケージの最新バージョンがインストールされます。 アセンブリは、 **[参照]**  > **アナライザー**の下の**ソリューションエクスプローラー**に表示されます。
+   Visual Studio によって、FxCopAnalyzers パッケージの最新バージョンがインストールされます。 アセンブリは、[**参照** > **アナライザー**] の下の**ソリューションエクスプローラー**に表示されます。
 
    ![ソリューションエクスプローラーのアナライザーノード](media/solution-explorer-analyzers-node.png)
+
+以前のバージョンの Visual Studio 2019 を使用している場合は、パッケージ[マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)のいずれかを使用してパッケージをインストールします。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. 使用している Visual Studio のバージョンに基づいて、インストールする[アナライザーパッケージのバージョンを決定](#fxcopanalyzers-package-versions)します。
+
+2. パッケージ[マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)を使用して、Visual Studio にパッケージをインストールします。
+
+   > [!NOTE]
+   > 各アナライザーパッケージの [nuget.org] ページには、**パッケージマネージャーコンソール**に貼り付けるコマンドが表示されます。 クリップボードにテキストをコピーするための便利なボタンもあります。
+   >
+   > ![パッケージマネージャーコンソールコマンドを示す NuGet.org ページ](media/nuget-package-manager-command.png)
+
+   Analyzer アセンブリがインストールされ、**参照**>**アナライザー** の **ソリューションエクスプローラー**に表示されます。
+
+::: moniker-end
 
 ### <a name="custom-installation"></a>カスタムインストール
 
@@ -65,7 +86,7 @@ Microsoft は、従来の分析から最も重要な "FxCop" ルールを含む�
 
 Visual Studio 2017 バージョン15.5 以降では、マネージプロジェクトのすべての FxCop アナライザーを含む[Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)拡張機能をインストールできます。
 
-1. Visual Studio で、[**ツール**> の**拡張機能と更新プログラム**] を選択します。
+1. Visual Studio で、 **[ツール]** [> の**拡張機能と更新プログラム**] を選択します。
 
    **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
@@ -84,7 +105,7 @@ Visual Studio 2017 バージョン15.5 以降では、マネージプロジェ�
 
 [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)拡張機能には、マネージプロジェクトのすべての FxCop アナライザーが含まれています。 この拡張機能をインストールするには:
 
-1. Visual Studio で、 **[拡張機能]** @no__t を選択し、 **[拡張機能の管理]** をクリックします。
+1. Visual Studio で、**拡張**機能 を選択して **拡張機能 > 管理**します。
 
    **[拡張機能の管理]** ダイアログボックスが表示されます。
 
@@ -121,13 +142,13 @@ Visual Studio 2017 バージョン15.5 以降では、マネージプロジェ�
 
 ::: moniker range="vs-2017"
 
-拡張機能がインストールされているかどうかを確認する場合は、[**ツール** > **拡張機能と更新プログラム**] を選択します。 **[拡張機能と更新プログラム]** ダイアログボックスで、左側の **[インストール済み]** カテゴリを選択し、名前を指定して拡張機能を検索します。
+拡張機能がインストールされているかどうかを確認する場合は、 **[ツール]** [ >  の**拡張機能と更新プログラム**] を選択します。 **[拡張機能と更新プログラム]** ダイアログボックスで、左側の **[インストール済み]** カテゴリを選択し、名前を指定して拡張機能を検索します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-拡張機能がインストールされているかどうかを確認する場合は、**拡張**機能  >  **拡張機能の管理** を選択します。 **[拡張機能の管理]** ダイアログボックスで、左側の **[インストール済み]** カテゴリを選択し、名前を指定して拡張機能を検索します。
+拡張機能がインストールされているかどうかを確認する場合は、[拡張機能]  >  [拡張**機能の管理**] を**選択します**。 **[拡張機能の管理]** ダイアログボックスで、左側の **[インストール済み]** カテゴリを選択し、名前を指定して拡張機能を検索します。
 
 ::: moniker-end
 

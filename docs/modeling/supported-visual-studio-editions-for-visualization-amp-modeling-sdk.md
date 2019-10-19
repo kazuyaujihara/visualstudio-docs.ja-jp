@@ -1,25 +1,25 @@
 ---
-title: Visualization and Modeling SDK for Visual Studio のエディションがサポートされています
+title: 視覚化およびモデリング SDK でサポートされている Visual Studio のエディション
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fdfe698096da53abf28aa583c816d9238810333
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003420"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609344"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Visualization and Modeling SDK に対してサポートされている Visual Studio のエディション
 
-サポートされている Visual Studio のエディションの一覧を以下に[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]オーサリングとデプロイ環境にします。 これらのエディションの詳細については、Microsoft Visual Studio を参照してください。[デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=75628)します。
+次に示すのは、作成環境と配置環境の [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] でサポートされている Visual Studio のエディションの一覧です。 これらのエディションの詳細については、Microsoft Visual Studio[デベロッパーセンター](http://go.microsoft.com/fwlink/?LinkId=75628)を参照してください。
 
 ## <a name="authoring-edition"></a>作成エディション
 
@@ -46,7 +46,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 - Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
-> DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)を参照してください。
+> DSL をシェル製品で実行できるようにするには、拡張機能マニフェストで **[サポートされている VS Edition]** フィールドを設定する必要があります。 詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

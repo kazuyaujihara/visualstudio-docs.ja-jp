@@ -12,77 +12,77 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64fc4735fd95c611dd1c2d905be6fa5b45c84664
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715021"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648315"
 ---
 # <a name="insert-new-records-into-a-database"></a>データベースに新しいレコードを挿入する
 
-使用することができますをデータベースに新しいレコードを挿入するのには、`TableAdapter.Update`メソッド、または TableAdapter の DBDirect メソッドのいずれか (具体的には、`TableAdapter.Insert`メソッド)。 詳細については、次を参照してください。 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)します。
+新しいレコードをデータベースに挿入するには、`TableAdapter.Update` メソッド、または TableAdapter の DBDirect メソッド (具体的には `TableAdapter.Insert` メソッド) のいずれかを使用できます。 詳細については、「 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
-アプリケーションでは、Tableadapter を使用しない場合は、コマンド オブジェクトを使用することができます (たとえば、 <xref:System.Data.SqlClient.SqlCommand>)、データベースに新しいレコードを挿入します。
+アプリケーションで Tableadapter を使用しない場合は、コマンドオブジェクト (<xref:System.Data.SqlClient.SqlCommand> など) を使用してデータベースに新しいレコードを挿入できます。
 
-アプリケーションでは、データを格納するデータセットを使用する場合は、使用、`TableAdapter.Update`メソッド。 `Update`メソッドは、データベースにすべての変更 (更新、挿入、および削除) を送信します。
+アプリケーションでデータセットを使用してデータを格納する場合は、`TableAdapter.Update` メソッドを使用します。 @No__t_0 メソッドは、すべての変更 (更新、挿入、および削除) をデータベースに送信します。
 
-アプリケーションがデータを格納または使用して、データベースに新しいレコードの作成をより細かく制御する場合にオブジェクトを使用するかどうか、`TableAdapter.Insert`メソッド。
+アプリケーションでオブジェクトを使用してデータを格納する場合、またはデータベースで新しいレコードの作成をより細かく制御する必要がある場合は、`TableAdapter.Insert` メソッドを使用します。
 
-TableAdapter を持っていない場合、`Insert`メソッド、TableAdapter のいずれかがストアド プロシージャを使用して構成されていることを意味またはその`GenerateDBDirectMethods`プロパティに設定されて`false`します。 TableAdapter を設定してみてください`GenerateDBDirectMethods`プロパティを`true`内から、**データセット デザイナー**、データセットを保存します。 これには、TableAdapter が再生成します。 TableAdapter がまだない場合、`Insert`メソッド、表に、おそらくは示しません個々 の行を区別するための十分なスキーマ情報 (たとえば、ある可能性がありますいないテーブルに主キーのセット)。
+TableAdapter に `Insert` メソッドがない場合は、TableAdapter がストアドプロシージャを使用するように構成されているか、その `GenerateDBDirectMethods` プロパティが `false` に設定されていることを意味します。 **データセットデザイナー**内から TableAdapter の `GenerateDBDirectMethods` プロパティを `true` に設定し、データセットを保存します。 これにより、TableAdapter が再生成されます。 TableAdapter に `Insert` メソッドがまだない場合、テーブルには、個々の行を区別するための十分なスキーマ情報がない可能性があります (たとえば、テーブルに主キーが設定されていない可能性があります)。
 
-## <a name="insert-new-records-by-using-tableadapters"></a>Tableadapter を使用して新しいレコードを挿入します。
+## <a name="insert-new-records-by-using-tableadapters"></a>Tableadapter を使用して新しいレコードを挿入する
 
-Tableadapter では、アプリケーションの要件に応じて、データベースに新しいレコードを挿入するさまざまな方法を提供します。
+Tableadapter には、アプリケーションの要件に応じて、データベースに新しいレコードを挿入するためのさまざまな方法が用意されています。
 
-必要な新しいレコードを追加するアプリケーションでは、データを格納するデータセットを使用する場合だけできます<xref:System.Data.DataTable>データセット、および次の呼び出しで、`TableAdapter.Update`メソッド。 `TableAdapter.Update`ですべての変更を送信するメソッド、 <xref:System.Data.DataTable> (変更および削除されたレコードを含む)、データベースにします。
+アプリケーションでデータセットを使用してデータを格納する場合は、単にデータセット内の目的の <xref:System.Data.DataTable> に新しいレコードを追加し、`TableAdapter.Update` メソッドを呼び出すことができます。 @No__t_0 メソッドは、<xref:System.Data.DataTable> 内のすべての変更をデータベースに送信します (変更されたレコードと削除されたレコードを含む)。
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>TableAdapter.Update メソッドを使用して、データベースに新しいレコードを挿入するには
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>TableAdapter. Update メソッドを使用して新しいレコードをデータベースに挿入するには
 
-1. 新しいレコードの追加に必要な<xref:System.Data.DataTable>新しい<xref:System.Data.DataRow>に追加することと、<xref:System.Data.DataTable.Rows%2A>コレクション。
+1. 新しい <xref:System.Data.DataRow> を作成して <xref:System.Data.DataTable.Rows%2A> コレクションに追加することで、目的の <xref:System.Data.DataTable> に新しいレコードを追加します。
 
-2. 新しい行を追加した後、<xref:System.Data.DataTable>を呼び出し、`TableAdapter.Update`メソッド。 全体のいずれかで渡すことで更新するデータの量を制御できます<xref:System.Data.DataSet>、 <xref:System.Data.DataTable>、配列の<xref:System.Data.DataRow>、または 1 つ<xref:System.Data.DataRow>します。
+2. 新しい行が <xref:System.Data.DataTable> に追加されたら、`TableAdapter.Update` メソッドを呼び出します。 更新するデータの量を制御するには、<xref:System.Data.DataSet> 全体、<xref:System.Data.DataTable>、<xref:System.Data.DataRow>s の配列、または1つの <xref:System.Data.DataRow> を渡します。
 
-   次のコードは新しいレコードを追加する方法、<xref:System.Data.DataTable>を呼び出して、`TableAdapter.Update`を新しい行をデータベースに保存するメソッド。 (この例では、 `Region` Northwind データベースのテーブルです)。
+   次のコードは、<xref:System.Data.DataTable> に新しいレコードを追加し、`TableAdapter.Update` メソッドを呼び出して、新しい行をデータベースに保存する方法を示しています。 (この例では、Northwind データベースの `Region` テーブルを使用しています)。
 
    [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
    [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>TableAdapter.Insert メソッドを使用して、データベースに新しいレコードを挿入するには
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>TableAdapter. Insert メソッドを使用して新しいレコードをデータベースに挿入するには
 
-アプリケーションでは、データを格納するオブジェクトを使用する場合は使用できます、`TableAdapter.Insert`メソッドを直接データベースに新しい行を作成します。 `Insert`メソッドはパラメーターとして各列の値を受け取ります。 メソッドを呼び出すことで渡されたパラメーター値をデータベースに新しいレコードを挿入します。
+アプリケーションでオブジェクトを使用してデータを格納している場合は、`TableAdapter.Insert` メソッドを使用して、データベースに直接新しい行を作成できます。 @No__t_0 メソッドは、各列の個別の値をパラメーターとして受け取ります。 メソッドを呼び出すと、渡されたパラメーター値を使用して新しいレコードがデータベースに挿入されます。
 
-- 呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。
+- TableAdapter の `Insert` メソッドを呼び出し、各列の値をパラメーターとして渡します。
 
-次の手順では、使用方法を示します、`TableAdapter.Insert`行を挿入するメソッド。 この例にデータを挿入、 `Region` Northwind データベースのテーブル。
+次の手順では、`TableAdapter.Insert` メソッドを使用して行を挿入する方法を示します。 この例では、Northwind データベースの `Region` テーブルにデータを挿入します。
 
 > [!NOTE]
-> 使用可能なインスタンスがいない場合に使用する TableAdapter をインスタンス化します。
+> 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
 
 [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
 [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
 
-## <a name="insert-new-records-by-using-command-objects"></a>コマンド オブジェクトを使用して新しいレコードを挿入します。
+## <a name="insert-new-records-by-using-command-objects"></a>コマンドオブジェクトを使用して新しいレコードを挿入する
 
-コマンド オブジェクトを使用してデータベースに直接新しいレコードを挿入することができます。
+コマンドオブジェクトを使用して、新しいレコードをデータベースに直接挿入できます。
 
-### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>コマンド オブジェクトを使用して、データベースに新しいレコードを挿入するには
+### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>コマンドオブジェクトを使用して新しいレコードをデータベースに挿入するには
 
-- 新しいコマンド オブジェクトを作成し、設定、 `Connection`、 `CommandType`、および`CommandText`プロパティ。
+- 新しい command オブジェクトを作成し、その `Connection`、`CommandType`、および `CommandText` の各プロパティを設定します。
 
-次の例では、コマンド オブジェクトを使用してデータベースにレコードを挿入することを示します。 データを挿入、 `Region` Northwind データベースのテーブル。
+次の例では、command オブジェクトを使用してデータベースにレコードを挿入する方法を示します。 Northwind データベースの `Region` テーブルにデータを挿入します。
 
 [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
 [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
-## <a name="net-security"></a>.NET のセキュリティ
+## <a name="net-security"></a>.NET セキュリティ
 
-データベースに接続しようとするいると、目的のテーブルに挿入を実行するアクセス許可へのアクセスが必要です。
+接続しようとしているデータベースへのアクセス権と、目的のテーブルに挿入を実行する権限が必要です。
 
 ## <a name="see-also"></a>関連項目
 
