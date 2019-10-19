@@ -1,5 +1,5 @@
 ---
-title: CA1058:種類は一定の基本型を拡張する必要がありません |Microsoft Docs
+title: 'CA1058: 型は、特定の基本型を拡張することはできません |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200451"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603068"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:型は、一定の基本型を拡張することはできません
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: 型は、一定の基本型を拡張することはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Category|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 外部から参照可能な型では、特定の基本型が拡張されます。 現在、このルールは、次の種類から派生した型を報告します。
+ 外部から参照可能な型では、特定の基本型が拡張されます。 現在、このルールは、次の型から派生した型を報告します。
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 
@@ -52,14 +52,14 @@ ms.locfileid: "68200451"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 1 のバージョンから新しい例外を派生させるが推奨されました<xref:System.ApplicationException>します。 推奨設定が変更され、新しい例外の派生元<xref:System.Exception?displayProperty=fullName>またはそのサブクラス内の 1 つ、<xref:System>名前空間。
+ @No__t_0 バージョン1では、<xref:System.ApplicationException> から新しい例外を派生させることをお勧めします。 推奨事項が変更され、新しい例外は <xref:System.Exception?displayProperty=fullName> または <xref:System> 名前空間のサブクラスの1つから派生する必要があります。
 
- サブクラスを作成しない<xref:System.Xml.XmlDocument>かどうかは、基になるオブジェクト モデルまたはデータ ソースの XML ビューを作成します。
+ 基になるオブジェクトモデルまたはデータソースの XML ビューを作成する場合は、<xref:System.Xml.XmlDocument> のサブクラスを作成しないでください。
 
-### <a name="non-generic-collections"></a>非ジェネリック コレクション
- 使用して、または可能であれば、ジェネリック コレクションを拡張します。 以前に発送した場合を除き、コードで、非ジェネリック コレクションは拡張されません。
+### <a name="non-generic-collections"></a>非ジェネリックコレクション
+ 可能な限り、ジェネリックコレクションを使用するか、拡張します。 以前に配布していない限り、コード内の非ジェネリックコレクションは拡張しないでください。
 
- **不適切な使用方法の例**
+ **不適切な使用例**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -71,7 +71,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **正しい使用法の例**
+ **正しい使用例**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -84,7 +84,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するのには、別の基本型またはジェネリック コレクションから型を派生します。
+ この規則違反を修正するには、別の基本データ型またはジェネリックコレクションから型を派生させます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 詳細についてはこの規則違反の警告を抑制しないでください<xref:System.ApplicationException>します。 この規則違反の警告を抑制するには、安全では<xref:System.Xml.XmlDocument>します。 コードが以前にリリースされた場合は、非ジェネリック コレクションについて警告を抑制しても安全です。
+ @No__t_0 に関する違反については、このルールからの警告を抑制しないでください。 @No__t_0 に関する違反については、このルールからの警告を抑制しても安全です。 以前にコードがリリースされた場合、非ジェネリックコレクションに関する警告を抑制するのは安全です。

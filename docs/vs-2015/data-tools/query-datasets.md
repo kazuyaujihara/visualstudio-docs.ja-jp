@@ -1,95 +1,95 @@
 ---
-title: データセットのクエリ |Microsoft Docs
+title: クエリデータセット |Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ccd5deffb0127769e2cd9dff3bf2accf75617eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692577"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607449"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-データセット内の特定のレコードを検索するに、DataTable の FindBy メソッドを使用して、テーブルの行のコレクションに対する独自の foreach ループを記述または使用[LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)します。 LINQ to DataSet。  
-  
-## <a name="dataset-case-sensitivity"></a>データセットの大文字と小文字の区別  
- データセット内にテーブルと列の名前は既定では大文字、つまり、"Customers"という名前のデータセット内のテーブルも参照できます"顧客"として。 SQL サーバーの SQL Server を含む、多数のデータベース内の名前付け規則と一致するこの、既定の動作は、大文字と小文字のデータ要素の名前を区別することはできません。  
-  
+データセット内の特定のレコードを検索するには、DataTable の FindBy メソッドを使用するか、テーブルの rows コレクションに独自の foreach ループを記述するか、または[LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)を使用します。 LINQ to DataSet。
+
+## <a name="dataset-case-sensitivity"></a>データセットの大文字と小文字の区別
+ データセット内では、テーブル名と列名は既定で大文字と小文字が区別されません。つまり、"Customers" というデータセット内のテーブルは "customers" と呼ばれることもあります。 これは、SQL Server.In SQL Server を含む多くのデータベースの名前付け規則と一致します。既定の動作では、データ要素の名前を大文字小文字のみで区別することはできません。
+
 > [!NOTE]
-> データセットとは異なりスキーマで定義されたデータ要素の名前は大文字小文字を区別するための XML ドキュメントが大文字小文字が区別されます。 たとえば、スキーマのプロトコルは"Customers"、"customers。"と呼ばれる別のテーブルと呼ばれるテーブルを定義するスキーマを使用できます。 これは、結果、大文字と小文字が異なるだけの要素を含むスキーマを使用して、dataset クラスを生成すると、名前が競合。  
-  
- 大文字小文字の区別、ただし、データセット内のデータを解釈する方法の要因ができます。 たとえば、データセット テーブル内のデータをフィルター処理する検索条件は、比較では大文字小文字を区別するかどうかによって異なる結果を返す可能性があります。 フィルター処理、検索、およびデータセットの並べ替えの大文字小文字の区別を制御する<xref:System.Data.DataSet.CaseSensitive%2A>プロパティ。 データセット内のすべてのテーブルは、既定では、このプロパティの値を継承します。 (個別のテーブルに対してこのプロパティをオーバーライドするには、テーブルの設定によって<xref:System.Data.DataTable.CaseSensitive%2A>プロパティです)。  
-  
-## <a name="locate-a-specific-row-in-a-data-table"></a>データ テーブル内で特定の行を検索します。  
-  
-#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>主キー値で指定されたデータセットの行を検索するには  
-  
-- 1 行を検索するには、厳密に型指定された呼び出し`FindBy`テーブルの主キーを使用するメソッド。  
-  
-     次の例では、`CustomerID`列が主キーの`Customers`テーブル。 これにより、生成された`FindBy`メソッドは`FindByCustomerID`します。 例では、特定の割り当て方法を示しています<xref:System.Data.DataRow>、生成されたを使用して変数に`FindBy`メソッド。  
-  
+> データセットとは異なり、XML ドキュメントでは大文字と小文字が区別されるため、スキーマで定義されているデータ要素の名前では大文字と小文字が区別されます。 たとえば、スキーマプロトコルでは、"Customers" という名前のテーブルと "customers" という別のテーブルを定義できます。 これにより、大文字と小文字のみが異なる要素を含むスキーマが dataset クラスの生成に使用されるときに、名前の競合が発生する可能性があります。
+
+ ただし、大文字と小文字の区別は、データセット内でのデータの解釈方法によって決まります。 たとえば、データセットテーブルのデータをフィルター処理する場合、比較で大文字と小文字が区別されるかどうかによって、検索条件によって異なる結果が返されることがあります。 データセットの <xref:System.Data.DataSet.CaseSensitive%2A> プロパティを設定することによって、フィルター処理、検索、および並べ替えの大文字と小文字の区別を制御できます。 データセット内のすべてのテーブルは、既定でこのプロパティの値を継承します。 (テーブルの <xref:System.Data.DataTable.CaseSensitive%2A> プロパティを設定して、個々のテーブルに対してこのプロパティをオーバーライドできます)。
+
+## <a name="locate-a-specific-row-in-a-data-table"></a>データテーブル内の特定の行の検索
+
+#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>主キーの値を使用して型指定されたデータセット内の行を検索するには
+
+- 行を検索するには、テーブルの主キーを使用する、厳密に型指定された `FindBy` メソッドを呼び出します。
+
+     次の例では、`CustomerID` 列が `Customers` テーブルの主キーです。 これは、生成された `FindBy` メソッドが `FindByCustomerID` であることを意味します。 この例では、生成された `FindBy` メソッドを使用して、特定の <xref:System.Data.DataRow> を変数に割り当てる方法を示します。
+
      [!code-csharp[VbRaddataEditing#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#18)]
-     [!code-vb[VbRaddataEditing#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#18)]  
-  
-#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>主キー値で、型指定されていないデータセットの行を検索するには  
-  
-- 呼び出す、<xref:System.Data.DataRowCollection.Find%2A>のメソッド、<xref:System.Data.DataRowCollection>コレクション、主キーのパラメーターとして渡します。  
-  
-     次の例と呼ばれる新しい行を宣言する方法を示しています。`foundRow`の戻り値を割り当てると、<xref:System.Data.DataRowCollection.Find%2A>メソッド。 主キーが見つかった場合は、メッセージ ボックスに列のインデックス 1 の内容が表示されます。  
-  
+     [!code-vb[VbRaddataEditing#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#18)]
+
+#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>主キーの値を持つ型指定されていないデータセット内の行を検索するには
+
+- @No__t_1 コレクションの <xref:System.Data.DataRowCollection.Find%2A> メソッドを呼び出して、プライマリキーをパラメーターとして渡します。
+
+     次の例は、`foundRow` という名前の新しい行を宣言し、<xref:System.Data.DataRowCollection.Find%2A> メソッドの戻り値を割り当てる方法を示しています。 主キーが見つかった場合は、列インデックス1の内容がメッセージボックスに表示されます。
+
      [!code-csharp[VbRaddataEditing#19](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#19)]
-     [!code-vb[VbRaddataEditing#19](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#19)]  
-  
-## <a name="findrows-by-column-values"></a>列の値で Findrows  
-  
-#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>任意の列の値に基づいて行を検索するには  
-  
-- データ テーブルを作成、<xref:System.Data.DataTable.Select%2A>の配列を返すメソッド<xref:System.Data.DataRow>に渡された式に基づく s、<xref:System.Data.DataTable.Select%2A>メソッド。 有効な式を作成する方法の詳細については、ページの「式の構文」セクションを参照してください。、<xref:System.Data.DataColumn.Expression%2A>プロパティ。  
-  
-     次の例は、使用する方法を示します、<xref:System.Data.DataTable.Select%2A>のメソッド、<xref:System.Data.DataTable>特定の行を検索します。  
-  
+     [!code-vb[VbRaddataEditing#19](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#19)]
+
+## <a name="findrows-by-column-values"></a>列の値で Findrows
+
+#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>任意の列の値に基づいて行を検索するには
+
+- データテーブルは <xref:System.Data.DataTable.Select%2A> メソッドを使用して作成されます。このメソッドは、<xref:System.Data.DataTable.Select%2A> メソッドに渡される式に基づいて <xref:System.Data.DataRow>s の配列を返します。 有効な式の作成の詳細については、<xref:System.Data.DataColumn.Expression%2A> プロパティに関するページの「式の構文」セクションを参照してください。
+
+     次の例は、<xref:System.Data.DataTable> の <xref:System.Data.DataTable.Select%2A> メソッドを使用して特定の行を検索する方法を示しています。
+
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
-     [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
-  
-## <a name="access-related-records"></a>関連するレコードのアクセス  
- データセット内のテーブルが関係するときに、<xref:System.Data.DataRelation>オブジェクトは、関連するレコードで使用できるように別のテーブル。 など、データセットを含む`Customers`と`Orders`テーブルを利用します。  
-  
- 使用することができます、<xref:System.Data.DataRelation>呼び出すことによって、関連レコードを検索するオブジェクト、<xref:System.Data.DataRow.GetChildRows%2A>のメソッド、<xref:System.Data.DataRow>親テーブルでします。このメソッドは、関連する子レコードの配列を返します。 呼び出すか、または、<xref:System.Data.DataRow.GetParentRow%2A>のメソッド、<xref:System.Data.DataRow>子テーブルにします。このメソッドは、1 つを返します<xref:System.Data.DataRow>親テーブルから。  
-  
- このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、次を参照してください。 [Datarelation の移動](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)します。  
-  
+     [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]
+
+## <a name="access-related-records"></a>関連レコードへのアクセス
+ データセット内のテーブルが関連付けられている場合、<xref:System.Data.DataRelation> オブジェクトは、関連するレコードを別のテーブルで使用できるようにすることができます。 たとえば、`Customers` テーブルと `Orders` テーブルを含むデータセットを使用できるようにすることができます。
+
+ 親テーブルの <xref:System.Data.DataRow> の <xref:System.Data.DataRow.GetChildRows%2A> メソッドを呼び出すことによって、<xref:System.Data.DataRelation> オブジェクトを使用して関連レコードを検索できます。このメソッドは、関連する子レコードの配列を返します。 または、子テーブルの <xref:System.Data.DataRow> の <xref:System.Data.DataRow.GetParentRow%2A> メソッドを呼び出すこともできます。このメソッドは、親テーブルから単一の <xref:System.Data.DataRow> を返します。
+
+ このページでは、型指定されたデータセットを使用する例を示します。 型指定されていないデータセット内のリレーションシップのナビゲートの詳細については、「 [datarelation のナビゲート](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)
+
 > [!NOTE]
-> Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  
-  
- 次のコード例では、型指定されたデータセットのリレーションシップを上下に移動する方法を示します。 型指定されたコードの例として使用<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) され、生成された`FindBy` *PrimaryKey* (`FindByCustomerID`) を目的の行を見つけて、関連レコードを返すメソッド。 例では、正しくコンパイルして実行した場合にのみ。  
-  
-- という名前のデータセットのインスタンス`NorthwindDataSet`で、`Customers`テーブル。  
-  
-- `Orders`テーブル。  
-  
-- という名前のリレーションシップ`FK_Orders_Customers`使用可能な 2 つのテーブルに関連する、コードのスコープ  
-  
-さらに、両方のテーブルは、返されるレコードにデータを格納する必要があります。  
-  
-#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>選択した親レコードのレコードの子を取得するには  
-  
-- 呼び出す、<xref:System.Data.DataRow.GetChildRows%2A>メソッドは、特定の`Customers`データ行し、からの行の配列を返す、`Orders`テーブル。  
-  
+> Windows フォームアプリケーションで作業していて、データバインディング機能を使用してデータを表示している場合は、デザイナーで生成されたフォームによってアプリケーションに十分な機能が提供されることがあります。 詳細については、「 [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。
+
+ 次のコード例は、型指定されたデータセット内の上下関係を移動する方法を示しています。 このコード例では、型指定された <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) および生成された `FindBy`*PrimaryKey* (`FindByCustomerID`) メソッドを使用して目的の行を検索し、関連レコードを返します。 これらの例は、次のものがある場合にのみ、正しくコンパイルされて実行されます。
+
+- @No__t_1 テーブルを持つ `NorthwindDataSet` という名前のデータセットのインスタンス。
+
+- @No__t_0 テーブルです。
+
+- コードのスコープで使用できる2つのテーブル `FK_Orders_Customers`relating という名前のリレーションシップ
+
+また、返されるレコードのデータを両方のテーブルに格納する必要があります。
+
+#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>選択した親レコードの子レコードを取得するには
+
+- 特定の `Customers` データ行の <xref:System.Data.DataRow.GetChildRows%2A> メソッドを呼び出し、`Orders` テーブルから行の配列を返します。
+
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
-     [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
-  
-#### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>選択されている子レコードの親レコードを取得するには  
-  
-- 呼び出す、<xref:System.Data.DataRow.GetParentRow%2A>メソッドは、特定の`Orders`データ行、および戻り値の 1 つの行、`Customers`テーブル。  
-  
+     [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]
+
+#### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>選択した子レコードの親レコードを取得するには
+
+- 特定の `Orders` データ行の <xref:System.Data.DataRow.GetParentRow%2A> メソッドを呼び出し、`Customers` テーブルから1つの行を返します。
+
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172778"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606544"
 ---
 # <a name="enable-a-category-of-rules"></a>ルールのカテゴリを有効にする
 
@@ -28,7 +28,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 
 - すべてのルール
 - データフロー
-- 設計
+- デザイン
 - ドキュメント
 - グローバリゼーション
 - 相互運用性
@@ -53,13 +53,13 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 
 ## <a name="predefined-editorconfig-files"></a>定義済みの EditorConfig ファイル
 
-FxCopAnalyzers analyzer パッケージの定義済みの EditorConfig ファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig にあります。* ディレクトリ。 たとえば、すべてのセキュリティ規則を有効にする EditorConfig ファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ にあります。t-5. editorconfig*。
+FxCopAnalyzers analyzer パッケージの定義済み EditorConfig ファイルは、 *% USERPROFILE% \\ nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \>/editorconfig にあります。* ディレクトリ。 たとえば、すべてのセキュリティ規則を有効にする EditorConfig ファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \ Editorconfig\ securityrules enabled \\ にあります。editorconfig*。
 
 選択した editorconfig ファイルをプロジェクトのルートディレクトリにコピーします。
 
 ## <a name="predefined-rule-sets"></a>定義済みの規則セット
 
-FxCopAnalyzers analyzer パッケージの定義済みの規則セットファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t の @ no__t-4\rulesets にあります。* 名簿. たとえば、すべてのセキュリティ規則を有効にする規則セットファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.ruleset*にあります。
+FxCopAnalyzers analyzer パッケージの定義済みの規則セットファイルは、 *% USERPROFILE% \\ nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \ ルール*セットにあります。名簿. たとえば、すべてのセキュリティ規則を有効にする規則セットファイルは、 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \ Ruleset\ securityrules enabledに*あります。
 
 1つ以上の規則セットをコピーし、Visual Studio プロジェクトが格納されているディレクトリまたは**ソリューションエクスプローラー**に直接貼り付けます。
 
@@ -71,7 +71,7 @@ FxCopAnalyzers analyzer パッケージの定義済みの規則セットファ�
 
 #### <a name="net-core"></a>.NET Core
 
-.NET Core または .NET Standard プロジェクトで、分析用のアクティブな規則セットを規則に設定するには、 **CodeAnalysisRuleSet**プロパティをプロジェクトファイルに手動で追加します。 たとえば、次のコードスニペットは、アクティブなルールセットとして `HelloWorld.ruleset` を設定します。
+.NET Core または .NET Standard プロジェクトで、分析用のアクティブな規則セットを規則に設定するには、 **CodeAnalysisRuleSet**プロパティをプロジェクトファイルに手動で追加します。 たとえば、次のコードスニペットは、`HelloWorld.ruleset` をアクティブな規則セットとして設定します。
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

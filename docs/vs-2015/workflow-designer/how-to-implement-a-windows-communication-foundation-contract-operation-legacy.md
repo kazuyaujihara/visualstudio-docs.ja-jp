@@ -1,55 +1,53 @@
 ---
-title: '方法: Windows Communication Foundation コントラクト操作 (レガシ) の実装 |Microsoft Docs'
+title: '方法: Windows Communication Foundation コントラクト操作を実装する (レガシ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931176"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603863"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>方法: Windows Communication Foundation コントラクト操作を実装する (レガシ)
-このトピックでは、[!INCLUDE[indigo1](../includes/indigo1-md.md)] または [!INCLUDE[wfd1](../includes/wfd1-md.md)] を対象とする従来の [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]を使用して [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] コントラクト操作を実装する方法について説明します。  
-  
- ドラッグした後、 **ReceiveActivity**ワークフロー デザイン サーフェイスにアクティビティをツールボックスから、作成するか、新しい[!INCLUDE[indigo2](../includes/indigo2-md.md)]コントラクトまたは既存のコントラクトをインポートして、操作を実装します。 選択または作成のコントラクトとその操作を通じて、[選択操作 ダイアログ ボックス (レガシ)](../workflow-designer/choose-operation-dialog-box-legacy.md)します。  
-  
-### <a name="to-implement-a-wcf-contract-operation"></a>WCF コントラクト操作を実装するには  
-  
-1. ダブルクリック、 **ReceiveActivity**アクティビティ デザイナーの横にある省略記号をクリックしてまたは、 **ServiceOperationInfo**プロパティ、**プロパティ**ウィンドウ。  
-  
-2. 次のいずれかの操作を行います。  
-  
-   - クリックして**契約の追加** ダイアログ ボックスの右上隅にします。 新しい [!INCLUDE[indigo2](../includes/indigo2-md.md)] コントラクトおよび操作が作成されます。  
-  
-      - または -  
-  
-   - クリックして**インポート** ダイアログ ボックスの右上隅にします。 [参照し、.NET の種類 ダイアログ ボックス (レガシ) を選択](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)が開きます。 必要なコントラクトを含んでいるアセンブリまたはプロジェクトを検索します。 コントラクトを選択し、をクリックして**OK**します。  
-  
-     コントラクトを作成またはインポートしたら、そのコントラクトに新しい操作を追加できます。 新しい操作を追加する契約を選択し をクリックして**追加操作** ダイアログ ボックスの右上隅にします。 操作の追加が終了したら、手順 3. に進みます。  
-  
-3. 関連付ける操作を選択、 **ReceiveActivity**アクティビティ。 操作の定義は、操作の名前、パラメータ、プロパティ、アクセス許可の設定を変更することにより、操作できます。  
-  
-    名前を変更するには、新しい名前を入力、**操作名**テキスト ボックス。  
-  
-    をクリックして、**パラメーター**操作のパラメーターにアクセスするには、タブ。 パラメータの名前、型、方向の変更のほか、操作のパラメータの追加または削除を行うことができます。  
-  
-    をクリックして、**プロパティ**操作の操作の保護レベルでサポートされているメッセージの exchange 機能にアクセスするには、タブ。  
-  
-    をクリックして、**権限**タブは、操作を実装するために許可するグループを指定します。  
-  
-4. をクリックして**OK**と**ReceiveActivity**アクティビティ実装しています。 操作の操作名が表示されます。  
-  
-5. 配置内でその操作の実装で使用するワークフロー アクティビティ、 **ReceiveActivity**アクティビティ。  
-  
-## <a name="see-also"></a>関連項目  
- [選択操作 ダイアログ ボックス (レガシ)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [方法: WCF コントラクト操作 (レガシ) を呼び出す](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [従来のワークフロー アクティビティ](../workflow-designer/legacy-workflow-activities.md)
+このトピックでは、[!INCLUDE[indigo1](../includes/indigo1-md.md)] または [!INCLUDE[wfd1](../includes/wfd1-md.md)] を対象とする従来の [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]を使用して [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] コントラクト操作を実装する方法について説明します。
+
+ **ReceiveActivity**アクティビティをツールボックスからワークフローデザインサーフェイスにドラッグした後、新しい [!INCLUDE[indigo2](../includes/indigo2-md.md)] コントラクトを作成するか、既存のコントラクトをインポートして操作を実装します。 コントラクトとその操作を選択または作成するには、[[操作の選択] ダイアログボックス (レガシ)](../workflow-designer/choose-operation-dialog-box-legacy.md)を使用します。
+
+### <a name="to-implement-a-wcf-contract-operation"></a>WCF コントラクト操作を実装するには
+
+1. デザイナーで**ReceiveActivity**アクティビティをダブルクリックするか、 **[プロパティ]** ペインの**serviceoperationinfo**プロパティの横にある省略記号をクリックします。
+
+2. 次のいずれかの操作を行います。
+
+   - ダイアログボックスの右上隅にある **[コントラクトの追加]** をクリックします。 新しい [!INCLUDE[indigo2](../includes/indigo2-md.md)] コントラクトおよび操作が作成されます。
+
+      -または-
+
+   - ダイアログボックスの右上隅にある **[インポート]** をクリックします。 [ [.Net 型の参照と選択] ダイアログボックス (レガシ)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)が開きます。 必要なコントラクトを含んでいるアセンブリまたはプロジェクトを検索します。 コントラクトを選択し、[ **OK]** をクリックします。
+
+     コントラクトを作成またはインポートしたら、そのコントラクトに新しい操作を追加できます。 新しい操作を追加するには、コントラクトを選択し、ダイアログボックスの右上隅にある **[操作の追加]** をクリックします。 操作の追加が終了したら、手順 3. に進みます。
+
+3. **ReceiveActivity**アクティビティに関連付ける操作を選択します。 操作の定義は、操作の名前、パラメータ、プロパティ、アクセス許可の設定を変更することにより、操作できます。
+
+    名前を変更するには、 **[操作名]** テキストボックスに新しい名前を入力します。
+
+    操作のパラメーターにアクセスするには、 **[パラメーター]** タブをクリックします。 パラメータの名前、型、方向の変更のほか、操作のパラメータの追加または削除を行うことができます。
+
+    操作の保護レベルとサポートされているメッセージ交換機能にアクセスするには、 **[プロパティ]** タブをクリックします。
+
+    操作を実装できるグループを指定するには、 **[アクセス許可]** タブをクリックします。
+
+4. [ **OK]** をクリックすると、 **ReceiveActivity**アクティビティに実装している操作の操作名が表示されます。
+
+5. **ReceiveActivity**アクティビティ内のその操作の実装に使用するワークフローアクティビティを配置します。
+
+## <a name="see-also"></a>参照
+ [[操作の選択] ダイアログボックス (レガシ)](../workflow-designer/choose-operation-dialog-box-legacy.md) [方法: WCF コントラクト操作を呼び出す (レガシ)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [レガシワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md)

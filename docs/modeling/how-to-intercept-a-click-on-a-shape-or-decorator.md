@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3295476b9a9d35768963baa05829a560fc9291
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381490"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605288"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 次の手順では、図形またはアイコンデコレータのクリックをインターセプトする方法を示します。 クリック、ダブルクリック、ドラッグなどのジェスチャをインターセプトし、要素を応答させることができます。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>図形のクリックをインターセプトするには
- Dsl プロジェクトで、生成されたコードファイルとは別のコードファイルで、shape クラスの部分クラス定義を記述します。 @No__t-0 または `On...` で始まる名前を持つ他のメソッドのいずれかをオーバーライドします。 (例:
+ Dsl プロジェクトで、生成されたコードファイルとは別のコードファイルで、shape クラスの部分クラス定義を記述します。 @No__t_0、または `On...` で始まる名前を持つ他のメソッドの1つをオーバーライドします。 (例:
 
 ```csharp
 public partial class MyShape // change
@@ -47,7 +47,7 @@ public partial class MyShape // change
 
 2. アイコンデコレータを持つ図形を選択または作成し、それをドメインクラスにマップします。
 
-3. @No__t-0 フォルダー内のファイルとは別のコードファイルで、ImageField の新しいサブクラスを作成します。
+3. @No__t_0 フォルダー内のファイルとは別のコードファイルで、ImageField の新しいサブクラスを作成します。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -133,7 +133,7 @@ public partial class MyShape // change
 
 - 一連のマウスイベントハンドラーは、作成時に各コンパートメントインスタンスにアタッチされます。
 
-- @No__t-0 イベントには、現在のアイテムが格納されます。
+- @No__t_0 イベントには、現在のアイテムが格納されます。
 
 - マウスを現在の項目の外に移動すると、MouseAction のインスタンスが作成されます。これにより、カーソルが設定され、マウスが解放されるまでキャプチャされます。
 

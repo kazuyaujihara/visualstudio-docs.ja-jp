@@ -2,29 +2,29 @@
 title: T4 出力ディレクティブ
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856245"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606224"
 ---
 # <a name="t4-output-directive"></a>T4 出力ディレクティブ
 
-Visual Studio のテキスト テンプレートで、`output`ディレクティブを使用して、ファイル名拡張子と変換後のファイルのエンコードを定義します。
+Visual Studio テキストテンプレートでは、`output` ディレクティブを使用して、変換されたファイルのファイル名拡張子とエンコーディングを定義します。
 
- たとえば、Visual Studio プロジェクトに **MyTemplate.tt** という名前のテンプレート ファイルが含まれていて、次のディレクティブが含まれているとします。
+ たとえば、Visual Studio プロジェクトに、次のディレクティブを含む**MyTemplate.tt**という名前のテンプレートファイルが含まれているとします。
 
  `<#@output extension=".cs"#>`
 
- Visual Studio は **MyTemplate.cs** という名前のファイルを生成します。
+ 次に、Visual Studio によって**MyTemplate.cs**という名前のファイルが生成されます。
 
- `output` ディレクティブは、ランタイム (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ `output` ディレクティブは、実行時 (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 ## <a name="using-the-output-directive"></a>出力ディレクティブの使用
 
@@ -34,10 +34,10 @@ Visual Studio のテキスト テンプレートで、`output`ディレクティ
 
  各テキスト テンプレートには複数の `output` ディレクティブを含めてはいけません。
 
-## <a name="extension-attribute"></a>extension 属性
+## <a name="extension-attribute"></a>拡張属性
  生成されたテキスト出力ファイルのファイル名の拡張子を指定します。
 
- 既定値は **.cs** です。
+ 既定値は **.cs です。**
 
  例: `<#@ output extension=".txt" #>`
 
@@ -47,16 +47,16 @@ Visual Studio のテキスト テンプレートで、`output`ディレクティ
 
  `<#@ output extension=".vb" #>`
 
- 許容される値:任意の有効なファイル名の拡張子。
+ 使用できる値: 任意の有効なファイル名拡張子。
 
-## <a name="encoding-attribute"></a>エンコーディング属性
- 出力ファイルが生成されるときに使用するエンコードを指定します。 次に例を示します。
+## <a name="encoding-attribute"></a>encoding 属性
+ 出力ファイルが生成されるときに使用するエンコードを指定します。 (例:
 
  `<#@ output encoding="utf-8"#>`
 
  既定値は、テキスト テンプレート ファイルが使用するエンコードです。
 
- 許容される値: `us-ascii`
+ 使用可能な値: `us-ascii`
 
  `utf-16BE`
 
