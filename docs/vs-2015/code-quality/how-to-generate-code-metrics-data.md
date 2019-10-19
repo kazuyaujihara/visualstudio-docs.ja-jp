@@ -1,5 +1,5 @@
 ---
-title: '方法: コード メトリックス データの生成 |Microsoft Docs'
+title: '方法: コードメトリックスデータを生成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,54 +10,54 @@ helpviewer_keywords:
 - generate code metrics results
 ms.assetid: 7bd2c906-ee9c-484a-9550-4cddecc8f042
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201322"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661287"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>方法: コード メトリックス データの生成
+# <a name="how-to-generate-code-metrics-data"></a>方法 : コード メトリックス データを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ソリューション全体または選択したプロジェクトのいずれかのコード メトリックスの結果を生成することができます。  
-  
- **必要条件**  
-  
- Visual Studio Enterprise  
-  
-### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコード メトリックスの結果を生成するには  
-  
-- をクリックして**分析 メニュー**、順にクリックします**ソリューションの CalculateCode メトリックス**します。  
-  
-     \- または -  
-  
-- **ソリューション エクスプ ローラー**ソリューションを右クリックし、クリックして**CalculateCode メトリック**します。  
-  
-     \- または -  
-  
-- **コード メトリックスの結果**ウィンドウで、をクリックして、 **CalculateCode メトリックは、ソリューションを**ボタンをクリックします。  
-  
-     結果を生成し、**コード メトリックスの結果**ウィンドウが表示されます。  
-  
-### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>選択したプロジェクトを 1 つまたは複数のコード メトリックスの結果を生成するには  
-  
-1. **ソリューション エクスプ ローラー**、1 つまたは複数のプロジェクトを選択します。  
-  
-2. をクリックして**分析**、 をクリックし、 **(s) 選択されたプロジェクトのコード メトリックス**します。  
-  
-    \- または -  
-  
-    選択内容を右クリックし、をクリックし、 **CalculateCode メトリック**します。  
-  
-   結果を生成し、**コード メトリックスの結果**ウィンドウが表示されます。  
-  
-### <a name="to-view-the-results-details"></a>結果の詳細を表示するには  
-  
-- ツリーを展開、**階層**列。  
-  
-## <a name="see-also"></a>関連項目  
+ソリューション全体または選択したプロジェクトに対して、コードメトリックスの結果を生成することを決定できます。
+
+ **Requirements**
+
+ Visual Studio Enterprise
+
+### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコードメトリックスの結果を生成するには
+
+- [**分析] メニュー**をクリックし、[**ソリューションの**計算] をクリックします。
+
+     \- または
+
+- **ソリューションエクスプローラー**で、ソリューションを右クリックし、[計算] をクリック**します。**
+
+     \- または
+
+- **[コードメトリックスの結果]** ウィンドウで、 **[ソリューションの]** 計算 ボタンをクリックします。
+
+     結果が生成され、 **[コードメトリックスの結果]** ウィンドウが表示されます。
+
+### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>1つ以上の選択したプロジェクトのコードメトリックスの結果を生成するには
+
+1. **ソリューションエクスプローラー**で、1つ以上のプロジェクトを選択します。
+
+2. **[分析]** をクリックし、 **[選択したプロジェクトのコードメトリックスを生成]** します をクリックします。
+
+    \- または
+
+    選択した項目を右クリックし、[計算] をクリック**します。**
+
+   結果が生成され、 **[コードメトリックスの結果]** ウィンドウが表示されます。
+
+### <a name="to-view-the-results-details"></a>結果の詳細を表示するには
+
+- **[階層]** 列のツリーを展開します。
+
+## <a name="see-also"></a>参照
  [マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

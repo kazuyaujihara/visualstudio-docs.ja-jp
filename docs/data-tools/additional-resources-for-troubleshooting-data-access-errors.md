@@ -1,5 +1,5 @@
 ---
-title: データ アクセス フォーラム
+title: データアクセスフォーラム
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -219,25 +219,25 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818079"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648865"
 ---
-# <a name="troubleshoot-data-access-errors-on-the-forums"></a>フォーラムでのデータ アクセス エラーをトラブルシューティングします。
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>フォーラムでのデータアクセスエラーのトラブルシューティング
 
-MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 ここではいくつかのデータに関連するフォーラム msdn です。
+MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 MSDN で利用できるデータ関連のフォーラムを次に示します。
 
 - [Windows フォームのデータ コントロールとデータバインド](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
-- [ADO.NET データセット フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
+- [ADO.NET データセットフォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET Entity Framework と LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
@@ -247,9 +247,9 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
 
 - [LINQ to SQL フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
-- [ADO.NET データ プロバイダーのフォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
+- [ADO.NET データプロバイダーフォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-SQL Server への接続のトラブルシューティングを行う方法については、次を参照してください。 [SQL Server データベース エンジンへの接続トラブルシューティング](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)します。
+SQL Server への接続のトラブルシューティング方法の詳細については、「 [SQL Server データベースエンジンへの接続に関するトラブルシューティング](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
