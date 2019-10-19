@@ -3,21 +3,21 @@ title: XML スキーマ エクスプローラー
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926776"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608091"
 ---
 # <a name="xml-schema-explorer"></a>XML スキーマ エクスプローラー
 
-Xml**スキーマエクスプローラー**は、xml スキーマ定義言語 (XSD) スキーマを操作できるように、MICROSOFT VISUAL STUDIO および xml エディターと統合されています。 XML スキーマファイルを開くと、 **Xml スキーマエクスプローラー**に **[スキーマセット]** ノードが表示されます。 ターゲットファイルに対してインクルード、インポート、または再定義されたすべてのスキーマと、 `include`または`import`ステートメントを通じて参照されるすべてのファイルは、 **XML スキーマエクスプローラー**にも表示されます。
+Xml**スキーマエクスプローラー**は、xml スキーマ定義言語 (XSD) スキーマを操作できるように、MICROSOFT VISUAL STUDIO および xml エディターと統合されています。 XML スキーマファイルを開くと、 **Xml スキーマエクスプローラー**に **[スキーマセット]** ノードが表示されます。 ターゲットファイルに対してインクルード、インポート、または再定義されたすべてのスキーマと、`include` または `import` ステートメントを通じて参照されるすべてのファイルが、 **XML スキーマエクスプローラー**にも表示されます。
 
 **XML スキーマエクスプローラー**を使用すると、次の操作を実行できます。
 
@@ -63,7 +63,7 @@ Xml**スキーマエクスプローラー**は、xml スキーマ定義言語 (X
 ## <a name="selection-and-activation"></a>選択とアクティブ化
 ノードを強調表示して選択するには、スキーマ エクスプローラーでそのノードをクリックします。
 
-ノードをアクティブ化するには、ノードをダブルクリックするか、ノードを選択したときに enter キーを押します。
+ノードをアクティブ化するには、ノードをダブルクリックするか、ノードを選択したとき**に enter キーを押します**。
 
 - ノードをアクティブ化すると、このノードが定義されているファイルが開き (ファイルが既に開かれていない場合)、ファイル内でノードが選択されます。
 

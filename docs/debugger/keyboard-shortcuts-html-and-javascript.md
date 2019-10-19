@@ -1,39 +1,34 @@
 ---
-title: キーボード ショートカット (HTML および JavaScript) |Microsoft Docs
-ms.date: 03/28/2019
+title: キーボードショートカット (HTML および JavaScript) |Microsoft Docs
+ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7f800a74fb1cb9d0909bd1f95571eb7a3c27b06
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905592"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588968"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>ショートカット キー (HTML および JavaScript)
 
-::: moniker range=">=vs-2019"
- Visual Studio での Node.js アプリをデバッグするためのキーボード ショートカットを Visual Studio で、 **Node.js 開発**ワークロードをインストールします。
-::: moniker-end
-::: moniker range="vs-2017"
- HTML と JavaScript を使用して UWP アプリのデバッグを Visual Studio のキーボード ショートカット。
-::: moniker-end
+HTML および JavaScript を使用して UWP アプリをデバッグするための Visual Studio のキーボードショートカット。
 
 ## <a name="general-shortcuts"></a>一般ショートカット
 
- これらのショートカットは、HTML および JavaScript を使用して UWP アプリのすべてのツールで使用できます。
+ これらのショートカットは、HTML および JavaScript を使用する UWP アプリのすべてのツールで使用できます。
 
-|アクション|ショートカット|
+|操作|ショートカット|
 |------------|--------------|
 |Windows アプリのリフレッシュ|Ctrl + Shift + R|
 |Windows アプリの再起動|Ctrl + Shift + F5|
@@ -44,9 +39,9 @@ ms.locfileid: "62905592"
 
  JavaScript コンソール ウィンドウでこれらのショートカットを使用します。
 
-|アクション|ショートカット|
+|操作|ショートカット|
 |------------|--------------|
-|コンソール コマンドの実行|Enter|
+|コンソール コマンドの実行|Enter キー|
 |コンソールのクリア|Esc|
 |シングル ライン モードおよびマルチ ライン モードの切り替え|Ctrl+Alt+M|
 
@@ -54,7 +49,7 @@ ms.locfileid: "62905592"
 
  これらのショートカットは DOM Explorer で使用します。
 
-|アクション|ショートカット|
+|操作|ショートカット|
 |------------|--------------|
 |要素の選択|Ctrl + B|
 |**[要素の選択]** の使用時に Web ページのハイライト ボックスの表示と非表示を切り替える|Ctrl + Shift + I|
@@ -63,7 +58,7 @@ ms.locfileid: "62905592"
 |選択した CSS 値を 1 つ増やす|↑ キー|
 |選択した CSS 値を 1 つ減らす|↓ キー|
 
-## <a name="see-also"></a>関連項目
-- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md)
-- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+## <a name="see-also"></a>参照
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
