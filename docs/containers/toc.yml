@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: コンテナー内の React.js シングル ページ アプリ
           href: container-tools-react.md
+        - name: Azure Dev Spaces を使用した Kubernetes 開発 >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: チュートリアル
       expanded: true
       items:
@@ -38,7 +40,7 @@
           href: container-build.md
     - name: トラブルシューティング
       href: troubleshooting-docker-errors.md
-    - name: 参照
+    - name: 関連項目
       items:
         - name: コンテナーのプロジェクトの MSBuild プロパティ
           href: container-msbuild-properties.md
