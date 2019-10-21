@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696290"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670314"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "65696290"
 
      図 1: エラーのスマート タグ
 
-     ![エラー スマート タグの例](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![エラー スマート タグの候補](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      赤いボックスでは、コードをリファクターするための推奨方法が表示されます。
 
      図 2: リファクタリングのスマート タグ
 
-     ![リファクター スマート タグの例](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
+     ![スマート タグのリファクタリングの候補](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **コード要素の定義を表示および編集する**。 メンバー、変数、ローカルなどのコード要素が定義されているモジュールをすばやく表示および編集できます。
 
@@ -117,7 +117,7 @@ ms.locfileid: "65696290"
 
      図 3: `new project`に対するクイック起動の結果一覧
 
-     !["新しいプロジェクト" のクイック起動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     !['新しいプロジェクト' のクイック起動結果](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      **クイック起動**には、**[新しいプロジェクト]** ダイアログ ボックス、**[新しい項目の追加]** ダイアログ ボックス、**[オプション]** ダイアログ ボックスの [プロジェクトおよびソリューション] ページなどへのリンクが表示されます。 また、クイック起動の結果には、プロジェクト ファイルおよびツール ウィンドウも含まれます。
 
@@ -126,7 +126,7 @@ ms.locfileid: "65696290"
 
 - **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、**[ブラウザーの選択]** ダイアログ ボックスを開かなくても、[Page Inspector (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209) など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
 
-     ![Web ブラウザーのデバッグ オプションの選択](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Web ブラウザーのデバッグ オプションの選択](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **一時的なブレークポイントを設定する**。 現在のコード行に一時的なブレークポイントを作成し、同時にデバッガーを起動できます。 そのコード行に到達すると、デバッガーは中断モードになります。 詳細については、「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」を参照してください。
 
