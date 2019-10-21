@@ -1,5 +1,5 @@
 ---
-title: プロパティ ウィンドウのカスタマイズ |Microsoft Docs
+title: '[プロパティ] ウィンドウのカスタマイズ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,315 +8,315 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f628cdecbebbb10b7bb2709a2022297e1171a427
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654945"
 ---
 # <a name="customizing-the-properties-window"></a>プロパティ ウィンドウのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-カスタマイズできますプロパティ ウィンドウの動作と外観をドメイン固有言語 (DSL) で[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 DSL 定義では、各ドメイン クラスのドメインのプロパティを定義します。 既定では、図またはモデル エクスプ ローラーで、クラスのインスタンスを選択するとすべてのドメイン プロパティが [プロパティ] ウィンドウに表示されます。 これにより、ドメイン プロパティの値を編集するダイアグラムで図形のフィールドにマップするがいない場合でもできます。  
-  
-## <a name="names-descriptions-and-categories"></a>名前、説明、およびカテゴリ  
- **名前と表示名**します。 ドメイン プロパティの定義では、プロパティの表示名は、[プロパティ] ウィンドウで実行時に表示される名前です。 これに対し、名前は、プロパティを更新するプログラム コードを記述するときに使用されます。 名前は、適切な CLR の英数字名をする必要がありますが、表示名にスペースを含めることができます。  
-  
- DSL 定義で、プロパティの名前を設定するとその表示名は自動的に名前のコピーに設定します。 "FuelGauge"など、pascal 形式の大文字と小文字名を記述する場合、表示名は自動的にスペースを含めます。「燃料計」。 ただし、別の値を表示名を明示的に設定できます。  
-  
- **説明**です。 ドメイン プロパティの説明は、2 つの場所が表示されます。  
-  
-- ユーザーのプロパティを選択するときに、[プロパティ] ウィンドウの下部にあります。 プロパティの意味をユーザーに説明を使用できます。  
-  
-- 生成するプログラム コード。 API のドキュメントを抽出するドキュメントの機能を使用する場合は、API では、このプロパティの説明として表示されます。  
-  
-  **カテゴリ**。 カテゴリは、[プロパティ] ウィンドウの見出しです。  
-  
-## <a name="exposing-style-features"></a>スタイルの機能を公開します。  
- 表現できるいくつかのグラフィカル要素の動的機能または*公開*ドメインのプロパティとして。 ユーザーがこの方法で公開されている機能を更新してより簡単に更新できるプログラム コード。  
-  
- DSL 定義内の図形クラスを右クリックし、**公開追加**機能を選択します。  
-  
- 図形に公開することができます、 **FillColor**、 **OutlineColor**、 **TextColor**、 **OutlineDashStyle**、 **OutlineThickness**と**FillGradientMode**プロパティ。 コネクタで公開することができます、**色**`,`**TextColor**、 **DashStyle**、および**太さ**プロパティ。 ダイアグラムで公開することができます、 **FillColor**と**TextColor**プロパティ。  
-  
-## <a name="forwarding-displaying-properties-of-related-elements"></a>転送するには。関連する要素のプロパティを表示します。  
- DSL のユーザーは、モデル内の要素を選択するときに、[プロパティ] ウィンドウでその要素のプロパティが表示されます。 ただし、指定された関連する要素のプロパティを表示することもできます。 これは、連携する要素のグループを定義している場合に便利です。 たとえば、主な要素と省略可能なプラグインの要素を定義する可能性があります。 主な要素を図形にマップされますがない場合は、すべてのプロパティを参照してくださいか 1 つの要素上にいるかのように便利です。  
-  
- この効果の名前は*プロパティ転送*、いくつかのケースでは自動的に実行するとします。 それ以外の場合は、プロパティのドメイン型記述子を定義することで転送を実現できます。  
-  
-### <a name="default-property-forwarding-cases"></a>プロパティの既定の転送ケース  
- ユーザーは、エクスプ ローラーで、図形またはコネクタ、または要素を選択するときに、[プロパティ] ウィンドウで、次のプロパティが表示されます。  
-  
-- 基底クラスで定義されているものも含め、モデル要素のドメイン クラスで定義されているドメインのプロパティ。 例外は、ドメインのプロパティを設定する**参照可能**に`False`します。  
-  
-- 0..1 の多重度を持つリレーションシップをリンクされている要素の名前。 これにより、必要に応じて表示の便利なメソッドには、要素がリンクされている場合でも、リレーションシップのコネクタのマッピングが定義されていません。  
-  
-- 要素を対象とする埋め込みリレーションシップのドメインのプロパティ。 通常、埋め込みリレーションシップが明示的に表示されないため、これにより、ユーザーがそのプロパティを参照してくださいです。  
-  
-- 選択した図形またはコネクタで定義されているドメインのプロパティ。  
-  
-### <a name="adding-property-forwarding"></a>プロパティの転送を追加します。  
- プロパティを転送するには、ドメインの型記述子を定義します。 2 つのドメイン クラス間のドメイン リレーションシップがある場合は、2 つ目のドメイン クラス内のドメイン プロパティの値に最初のクラスにドメイン プロパティを設定するドメイン型記述子を使用できます。 間のリレーションシップがある場合など、**帳**ドメイン クラスと**作成者**ドメイン クラスにするドメイン型記述子を使用することができます、**名前**のプロパティをこの本の**作成者**ユーザーが本を選択すると、[プロパティ] ウィンドウに表示されます。  
-  
+@No__t_0 のドメイン固有言語 (DSL) で、[プロパティ] ウィンドウの外観と動作をカスタマイズできます。 DSL 定義では、各ドメインクラスのドメインプロパティを定義します。 既定では、図またはモデルエクスプローラーでクラスのインスタンスを選択すると、すべてのドメインプロパティが [プロパティ] ウィンドウに一覧表示されます。 これにより、ダイアグラムの図形フィールドにマップしていない場合でも、ドメインプロパティの値を表示および編集できます。
+
+## <a name="names-descriptions-and-categories"></a>名前、説明、およびカテゴリ
+ **名前と表示名**。 ドメインプロパティの定義では、プロパティの表示名は、実行時に [プロパティ] ウィンドウに表示される名前です。 これに対し、この名前は、プロパティを更新するプログラムコードを記述するときに使用されます。 名前は正しい CLR 英数字名にする必要がありますが、表示名にスペースを含めることができます。
+
+ DSL 定義でプロパティの名前を設定すると、その表示名が自動的に名前のコピーに設定されます。 "Futex" のような Pascal 形式の名前を記述した場合、表示名には自動的にスペース "燃料ゲージ" が含まれます。 ただし、表示名を明示的に別の値に設定することもできます。
+
+ **説明**。 ドメインプロパティの説明は、次の2つの場所に表示されます。
+
+- ユーザーがプロパティを選択したときに、[プロパティ] ウィンドウの下部に表示されます。 これを使用すると、プロパティが表す内容をユーザーに説明することができます。
+
+- 生成されたプログラムコード内。 ドキュメント機能を使用して API ドキュメントを抽出すると、api のこのプロパティの説明として表示されます。
+
+  **カテゴリ**。 カテゴリは、プロパティウィンドウの見出しです。
+
+## <a name="exposing-style-features"></a>公開 (スタイル機能を)
+ グラフィカル要素の動的機能の一部は、ドメインプロパティとして表現したり*公開*したりすることができます。 このように公開されている機能は、ユーザーが更新することができ、プログラムコードによってより簡単に更新できます。
+
+ DSL 定義でシェイプクラスを右クリックし、 **[公開の追加]** をポイントして、機能を選択します。
+
+ 図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および**FillGradientMode**の各プロパティを公開できます。 コネクタでは、**Textcolor**、**ダッシュスタイル**、および**太さ**の各プロパティ `,`**色**を公開できます。 ダイアグラムでは、 **FillColor**プロパティと**textcolor**プロパティを公開できます。
+
+## <a name="forwarding-displaying-properties-of-related-elements"></a>転送: 関連要素のプロパティの表示
+ DSL のユーザーがモデル内の要素を選択すると、その要素のプロパティが [プロパティ] ウィンドウに表示されます。 ただし、指定された関連要素のプロパティを表示することもできます。 これは、連携して動作する要素のグループを定義している場合に便利です。 たとえば、main 要素とオプションのプラグイン要素を定義することができます。 メイン要素が図形にマップされていて、もう一方が図形でない場合は、すべてのプロパティを1つの要素上にあるかのように表示すると便利です。
+
+ この効果は*プロパティ転送*と呼ばれ、いくつかのケースで自動的に発生します。 それ以外の場合は、ドメイン型記述子を定義することで、プロパティの転送を実現できます。
+
+### <a name="default-property-forwarding-cases"></a>既定のプロパティ転送ケース
+ ユーザーが図形またはコネクタ、またはエクスプローラーで要素を選択すると、次のプロパティがプロパティウィンドウに表示されます。
+
+- モデル要素のドメインクラスで定義されているドメインプロパティ。基本クラスで定義されているものも含まれます。 例外として、`False` に**参照できるように設定し**たドメインプロパティがあります。
+
+- 多重度が 0 ..1 のリレーションシップによってリンクされる要素の名前。 これにより、リレーションシップのコネクタマッピングが定義されていない場合でも、必要に応じてリンクされた要素を表示するための便利な方法が提供されます。
+
+- 要素をターゲットとする埋め込みリレーションシップのドメインプロパティ。 埋め込みリレーションシップは通常、明示的に表示されないため、ユーザーはプロパティを表示できます。
+
+- 選択された図形またはコネクタで定義されているドメインプロパティ。
+
+### <a name="adding-property-forwarding"></a>プロパティ転送の追加
+ プロパティを転送するには、ドメイン型記述子を定義します。 2つのドメインクラス間にドメインリレーションシップがある場合は、ドメイン型記述子を使用して、最初のクラスのドメインプロパティを2番目のドメインクラスのドメインプロパティの値に設定できます。 たとえば、**書籍**ドメインクラスと**作成者**ドメインクラスとの間にリレーションシップがある場合は、ドメイン型記述子を使用して、ユーザーが次のように、書籍の**作成者**の**Name**プロパティをプロパティウィンドウに表示させることができます。ブックを選択します。
+
 > [!NOTE]
-> プロパティの転送は、ユーザーがモデルを編集するときに、プロパティ ウィンドウのみに影響します。 ドメイン プロパティは、受信側のクラスでは定義しません。 DSL 定義の他の部分で、またはプログラム コードでは、転送されたドメイン プロパティにアクセスする場合は、転送の要素にアクセスする必要があります。  
-  
- 次の手順では、DSL を作成することを前提としています。 最初のほとんどの手順では、前提条件を示しません。  
-  
-##### <a name="to-forward-a-property-from-another-element"></a>別の要素からプロパティを転送するには  
-  
-1. 作成、[!INCLUDE[dsl](../includes/dsl-md.md)]この例でと呼ばれるには少なくとも 2 つのクラスを含むソリューションを**帳**と**作成者**します。 いずれかの種類の間の関係が存在する必要があります**帳**と**作成者**します。  
-  
-     ソース ロールの多重度 (のロール、**書籍**側) 0..1 または 1..1、する必要がありますのでそれぞれ**帳**に 1 つ**作成者**します。  
-  
-2. **DSL エクスプ ローラー**を右クリックし、**帳**ドメイン クラス、およびクリック**新しい {0} の domaintypedescriptor での追加**します。  
-  
-     という名前のノード**カスタム プロパティ記述子のパス**下に表示されます、**カスタム型記述子**ノード。  
-  
-3. 右クリックし、**カスタム型記述子**ノードをクリック**追加新しい PropertyPath**します。  
-  
-     下に新しいプロパティのパスが表示されます、**カスタム プロパティ記述子のパス**ノード。  
-  
-4. 新しいプロパティのパスを選択し、**プロパティ**ウィンドウで、設定**プロパティへのパス**適切なモデル要素のパスにします。  
-  
-     ツリー ビュー内のパスを編集するには、このプロパティの右側の下矢印をクリックします。 ドメイン パスの詳細については、次を参照してください。[ドメイン パス構文](../modeling/domain-path-syntax.md)します。 編集したときに、パスのようになります**BookReferencesAuthor.Author/!作成者**します。  
-  
-5. 設定**プロパティ**を**名前**のドメイン プロパティ**作成者**します。  
-  
-6. 設定**表示名**に**作成者名**します。  
-  
-7. すべてのテンプレートの変換、ビルドおよび DSL を実行します。  
-  
-8. モデルの図では、書籍、作成者を作成し、参照リレーションシップを使用してそれらをリンクします。 Book 要素を選択し、[プロパティ] ウィンドウでは、ブックのプロパティだけでなく作成者の名前を表示する必要があります。 リンクの作成者の名前を変更または ブックにリンクする別の著者をブックの作成者の名前が変更を確認します。  
-  
-## <a name="custom-property-editors"></a>カスタム プロパティ エディター  
- [プロパティ] ウィンドウでは、各ドメイン プロパティの型のエクスペリエンスを編集する適切な既定を提供します。 たとえば、列挙型では、ユーザーには、ボックスの一覧が表示されます。 し数値プロパティの場合、ユーザーが桁の数字を入力できます。 組み込み型の場合のみです。 外部の型を指定する場合、ユーザーは同じにして、プロパティの値も編集できないことができます。  
-  
- ただし、次のエディターと型を指定できます。  
-  
-1. 標準の型で使用される別のエディター。 たとえば、文字列プロパティのファイル パス エディターを指定できます。  
-  
-2. ドメイン プロパティとそのエディターの外部の型。  
-  
-3. または、ファイル パスのエディターなどの .NET エディターは、独自のカスタム プロパティ エディターを作成できます。  
-  
-    外部型と文字列が既定のエディターなど、型の間の変換。  
-  
-   DSL で、*外部型*は単純型 (Boolean、Int32 など) または文字列のいずれかではない任意の型。  
-  
-#### <a name="to-define-a-domain-property-that-has-an-external-type"></a>外部の型を持つドメイン プロパティを定義するには  
-  
-1. **ソリューション エクスプ ローラー**での外部の型を含むアセンブリ (DLL) への参照を追加、 **Dsl**プロジェクト。  
-  
-    アセンブリには、.NET アセンブリ、または自分で指定されたアセンブリを指定できます。  
-  
-2. 型を追加、**ドメイン型**既に同意している場合を除き、一覧表示します。  
-  
-   1. DslDefinition.dsl を開き、 **DSL エクスプ ローラー**ルート ノードを右クリックし、クリックして**外部型の新しい追加**します。  
-  
-        下に新しいエントリが表示されます、**ドメイン型**ノード。  
-  
+> プロパティ転送は、ユーザーがモデルを編集している場合にのみプロパティウィンドウに影響します。 受信側クラスのドメインプロパティは定義されません。 DSL 定義またはプログラムコードの他の部分で転送されたドメインプロパティにアクセスするには、転送する要素にアクセスする必要があります。
+
+ 次の手順では、DSL を作成済みであることを前提としています。 最初のいくつかの手順では、前提条件の概要を説明します。
+
+##### <a name="to-forward-a-property-from-another-element"></a>別の要素からプロパティを転送するには
+
+1. 少なくとも2つのクラスを含む [!INCLUDE[dsl](../includes/dsl-md.md)] ソリューションを作成します。この例では、 **Book**と**Author**と呼ばれています。 **本**と**著者**の間には、どちらの種類のリレーションシップもあります。
+
+     各**ブック**に1つの**作成者**が含まれるように、ソースロール (**書籍**側のロール) の多重度は 0 ..1 または 1 ..1 にする必要があります。
+
+2. **DSL エクスプローラー**で、 **[Book]** domain クラスを右クリックし、 **[Add New domaintypedescriptor]** をクリックします。
+
+     カスタム**プロパティ記述子のパス**という名前のノードが、**カスタム型記述子**ノードの下に表示されます。
+
+3. **[カスタム型記述子]** ノードを右クリックし、 **[Add New PropertyPath]** をクリックします。
+
+     新しいプロパティパスは、 **[カスタムプロパティ記述子のパス]** ノードの下に表示されます。
+
+4. 新しいプロパティパスを選択し、 **[プロパティ]** ウィンドウで、 **[path to property]** を適切なモデル要素のパスに設定します。
+
+     このプロパティの右側にある下矢印をクリックすると、ツリービューでパスを編集できます。 ドメインパスの詳細については、「[ドメインパス構文](../modeling/domain-path-syntax.md)」を参照してください。 編集が完了したら、パスは "ブック名の**作成者/!" に似ています。作成者**。
+
+5. **プロパティ**を**作成者**の**名前**ドメインプロパティに設定します。
+
+6. **表示名**を "**作成者名**" に設定します。
+
+7. すべてのテンプレートを変換し、DSL を構築して実行します。
+
+8. モデル図では、作成者というブックを作成し、参照関係を使用してリンクします。 Book 要素を選択すると、プロパティウィンドウブックのプロパティに加えて作成者名が表示されます。 リンクされた作成者の名前を変更するか、別の作成者にブックをリンクして、ブックの作成者名が変更されていることを確認します。
+
+## <a name="custom-property-editors"></a>カスタムプロパティエディター
+ [プロパティ] ウィンドウには、各ドメインプロパティの型に対する適切な既定の編集エクスペリエンスが用意されています。 たとえば、列挙型の場合、ユーザーにはドロップダウンリストが表示され、数値プロパティの場合、ユーザーは数字を入力できます。 これは、組み込み型の場合にのみ当てはまります。 外部型を指定した場合、ユーザーはプロパティの値を表示できますが、編集することはできません。
+
+ ただし、次のエディターと種類を指定できます。
+
+1. 標準型で使用される別のエディター。 たとえば、文字列プロパティのファイルパスエディターを指定できます。
+
+2. ドメインプロパティの外部型と、その型のエディター。
+
+3. ファイルパスエディターなどの .NET エディター、または独自のカスタムプロパティエディターを作成することができます。
+
+    既定のエディターを持つ、外部型と型の間の変換 (文字列など)。
+
+   DSL では、*外部型*は、単純型 (ブール値や Int32 型など) または文字列ではない任意の型です。
+
+#### <a name="to-define-a-domain-property-that-has-an-external-type"></a>外部型を持つドメインプロパティを定義するには
+
+1. **ソリューションエクスプローラー**で、 **Dsl**プロジェクトの外部型を含むアセンブリ (DLL) への参照を追加します。
+
+    アセンブリには、.NET アセンブリまたはユーザーが指定したアセンブリを使用できます。
+
+2. **[ドメインの種類]** ボックスの一覧に型を追加します (まだ作成していない場合)。
+
+   1. DslDefinition を開きます。 **Dsl エクスプローラー**で、ルートノードを右クリックし、 **[新しい外部型の追加]** をクリックします。
+
+        **[ドメインの種類]** ノードの下に新しいエントリが表示されます。
+
        > [!WARNING]
-       > メニュー項目がない、DSL のルート ノードで、**ドメイン型**ノード。  
-  
-   2. [プロパティ] ウィンドウで、名前と、新しい種類の名前空間を設定します。  
-  
-3. 通常の方法で、ドメイン クラスにドメイン プロパティを追加します。  
-  
-    [プロパティ] ウィンドウで、ドロップダウン リストから外部の種類を選択します。、**型**フィールド。  
-  
-   この段階では、ユーザーは、プロパティの値を表示できますが、編集はできません。 表示されている値がから取得した、`ToString()`関数。 コマンドまたはルールで、たとえば、プロパティの値を設定するプログラム コードを記述できます。  
-  
-### <a name="setting-a-property-editor"></a>プロパティ エディターの設定  
- 次の形式でドメイン プロパティの CLR 属性を追加します。  
-  
-```  
-[System.ComponentModel.Editor (  
-   typeof(AnEditor),  
-   typeof(System.Drawing.Design.UITypeEditor))]  
-  
-```  
-  
- 使用してプロパティに属性を設定することができます、**カスタム属性**プロパティ ウィンドウ内のエントリ。  
-  
- 型`AnEditor`2 番目のパラメーターで指定された型から派生する必要があります。 2 番目のパラメーターはいずれかになります<xref:System.Drawing.Design.UITypeEditor>または<xref:System.ComponentModel.ComponentEditor>します。 詳細については、「 <xref:System.ComponentModel.EditorAttribute> 」を参照してください。  
-  
- 独自のエディターまたはで指定されたエディターのいずれかを指定することができます、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]など<xref:System.Windows.Forms.Design.FileNameEditor>または<xref:System.Drawing.Design.ImageEditor>します。 たとえば、ユーザーがファイル名を入力できるプロパティを持つ、次の手順を使用します。  
-  
-##### <a name="to-define-a-file-name-domain-property"></a>ファイル名のドメイン プロパティを定義するには  
-  
-1. ドメイン プロパティを DSL 定義内のドメイン クラスに追加します。  
-  
-2. 新しいプロパティを選択します。 **カスタム属性**プロパティ ウィンドウでフィールドに、次の属性を入力します。 この属性を入力する、省略記号ボタンをクリックします **[...]。** し、属性名とパラメーターを個別に入力します。  
-  
-    ```  
-    [System.ComponentModel.Editor (  
-       typeof(System.Windows.Forms.Design.FileNameEditor)  
-       , typeof(System.Drawing.Design.UITypeEditor))]  
-  
-    ```  
-  
-3. ドメイン プロパティの型の既定の設定のままにして**文字列**します。  
-  
-4. エディターをテストするには、ユーザーが、ドメイン プロパティを編集するファイル名のエディターを開くことを確認します。  
-  
-    1. Ctrl キーを押しながら f5 キーまたは f5 キーを押します。 デバッグのソリューションでは、テスト ファイルを開きます。 ドメイン クラスの要素を作成し、それを選択します。  
-  
-    2. [プロパティ] ウィンドウでは、ドメイン プロパティを選択します。 [値] フィールドは、省略記号を示しています **[...]**。  
-  
-    3. 省略記号をクリックします。 ファイル ダイアログ ボックスが表示されます。 ファイルを選択し、ダイアログ ボックスを閉じます。 ファイル パスは、ドメイン プロパティの値ではようになりました。  
-  
-### <a name="defining-your-own-property-editor"></a>独自のプロパティ エディターを定義します。  
- 独自のエディターを定義することができます。 いずれかを定義する型を編集したり、特別な方法で標準の型を編集するユーザーを許可するように行います。 たとえば、数式を表す文字列を入力するユーザーを許可する可能性があります。  
-  
- 派生したクラスを記述することで、エディターを定義する<xref:System.Drawing.Design.UITypeEditor>します。 クラスをオーバーライドする必要があります。  
-  
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>、ユーザーと対話し、プロパティの値を更新します。  
-  
-- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>、、エディターはダイアログを開くか、ドロップダウン メニューを提供するかどうかを指定します。  
-  
-  プロパティ グリッドで表示されるプロパティの値をグラフィカルに表したを指定することもできます。 これを行うには、オーバーライド`GetPaintValueSupported`、および`PaintValue`します。  詳細については、「 <xref:System.Drawing.Design.UITypeEditor> 」を参照してください。  
-  
+       > メニュー項目は、 **[ドメインの種類]** ノードではなく、DSL のルートノードにあります。
+
+   2. プロパティウィンドウで、新しい型の名前と名前空間を設定します。
+
+3. 通常の方法でドメインクラスにドメインプロパティを追加します。
+
+    プロパティウィンドウの **[種類]** フィールドで、ドロップダウンリストから外部の種類を選択します。
+
+   この段階では、ユーザーはプロパティの値を表示できますが、編集することはできません。 表示される値は `ToString()` 関数から取得されます。 コマンドやルールなどのプロパティの値を設定するプログラムコードを記述することもできます。
+
+### <a name="setting-a-property-editor"></a>プロパティエディターの設定
+ 次の形式で、CLR 属性をドメインプロパティに追加します。
+
+```
+[System.ComponentModel.Editor (
+   typeof(AnEditor),
+   typeof(System.Drawing.Design.UITypeEditor))]
+
+```
+
+ プロパティの属性を設定するには、プロパティウィンドウの**カスタム属性**エントリを使用します。
+
+ @No__t_0 の型は、2番目のパラメーターで指定した型から派生している必要があります。 2番目のパラメーターは <xref:System.Drawing.Design.UITypeEditor> または <xref:System.ComponentModel.ComponentEditor> のいずれかである必要があります。 詳細については、「<xref:System.ComponentModel.EditorAttribute>」を参照してください。
+
+ 独自のエディター、または [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] に用意されているエディター (<xref:System.Windows.Forms.Design.FileNameEditor> や <xref:System.Drawing.Design.ImageEditor> など) を指定できます。 たとえば、次の手順を使用して、ユーザーがファイル名を入力できるプロパティを設定します。
+
+##### <a name="to-define-a-file-name-domain-property"></a>ファイル名のドメインプロパティを定義するには
+
+1. DSL 定義のドメインクラスにドメインプロパティを追加します。
+
+2. 新しいプロパティを選択します。 プロパティウィンドウの **[カスタム属性]** フィールドに、次の属性を入力します。 この属性を入力するには、省略記号 **[...]** をクリックし、属性名とパラメーターを個別に入力します。
+
+    ```
+    [System.ComponentModel.Editor (
+       typeof(System.Windows.Forms.Design.FileNameEditor)
+       , typeof(System.Drawing.Design.UITypeEditor))]
+
+    ```
+
+3. ドメインプロパティの型は、既定の**文字列**の設定でそのままにします。
+
+4. エディターをテストするには、ユーザーがファイル名エディターを開いてドメインのプロパティを編集できることを確認します。
+
+    1. CTRL キーを押しながら F5 キーを押すか、F5 キーを押します。 デバッグソリューションで、テストファイルを開きます。 ドメインクラスの要素を作成し、それを選択します。
+
+    2. プロパティウィンドウで、ドメイン プロパティを選択します。 [値] フィールドには、省略記号 **[...]** が表示されます。
+
+    3. 省略記号をクリックします。 ファイルのダイアログボックスが表示されます。 ファイルを選択して、ダイアログボックスを閉じます。 これで、ファイルパスがドメインプロパティの値になりました。
+
+### <a name="defining-your-own-property-editor"></a>独自のプロパティエディターの定義
+ 独自のエディターを定義できます。 これは、ユーザーが定義した型を編集できるようにするか、標準型を特別な方法で編集するために行います。 たとえば、式を表す文字列をユーザーが入力できるようにすることができます。
+
+ @No__t_0 から派生したクラスを記述することによって、エディターを定義します。 クラスは次をオーバーライドする必要があります。
+
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>、ユーザーと対話し、プロパティ値を更新します。
+
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>、エディターでダイアログを開くか、ドロップダウンメニューを提供するかを指定します。
+
+  プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには、`GetPaintValueSupported` をオーバーライドし、`PaintValue` します。  詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
+
 > [!NOTE]
-> 内の別のコード ファイルにコードを追加、 **Dsl**プロジェクト。  
-  
- 例:  
-  
-```  
-internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
-{  
-  protected override void InitializeDialog(System.Windows.Forms.OpenFileDialog openFileDialog)  
-  {  
-    base.InitializeDialog(openFileDialog);  
-    openFileDialog.Filter = "Text files(*.txt)|*.txt|All files (*.*)|*.*";  
-    openFileDialog.Title = "Select a text file";  
-  }  
-}  
-  
-```  
-  
- このエディターを使用する設定、**カスタム属性**のドメインのプロパティ。  
-  
-```  
-[System.ComponentModel.Editor (  
-   typeof(MyNamespace.TextFileNameEditor)  
-   , typeof(System.Drawing.Design.UITypeEditor))]  
-  
-```  
-  
- 詳細については、「 <xref:System.Drawing.Design.UITypeEditor> 」を参照してください。  
-  
-## <a name="providing-a-drop-down-list-of-values"></a>値のドロップダウン リストを指定します。  
- 選択するユーザーの値の一覧を指定することができます。  
-  
+> **Dsl**プロジェクト内の別のコードファイルにコードを追加します。
+
+ (例:
+
+```
+internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
+{
+  protected override void InitializeDialog(System.Windows.Forms.OpenFileDialog openFileDialog)
+  {
+    base.InitializeDialog(openFileDialog);
+    openFileDialog.Filter = "Text files(*.txt)|*.txt|All files (*.*)|*.*";
+    openFileDialog.Title = "Select a text file";
+  }
+}
+
+```
+
+ このエディターを使用するには、ドメインプロパティの**カスタム属性**を次のように設定します。
+
+```
+[System.ComponentModel.Editor (
+   typeof(MyNamespace.TextFileNameEditor)
+   , typeof(System.Drawing.Design.UITypeEditor))]
+
+```
+
+ 詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
+
+## <a name="providing-a-drop-down-list-of-values"></a>値のドロップダウンリストの指定
+ ユーザーが選択できる値の一覧を指定できます。
+
 > [!NOTE]
-> この手法では、実行時に変更できる値の一覧を示します。 変更しないリストを指定する場合は、代わりに検討してください、ドメイン プロパティの型と列挙型を使用します。  
-  
- 標準値のリストを定義するには、属性を追加する、ドメイン プロパティに CLR を持つ、次の形式。  
-  
-```  
-[System.ComponentModel.TypeConverter   
-(typeof(MyTypeConverter))]  
-  
-```  
-  
- <xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 別のファイルにコードを追加、 **Dsl**プロジェクト。 例:  
-  
-```csharp  
-/// <summary>  
-/// Type converter that provides a list of values   
-/// to be displayed in the property grid.  
-/// </summary>  
-/// <remarks>This type converter returns a list   
-/// of the names of all "ExampleElements" in the   
-/// current store.</remarks>  
-public class MyTypeConverter : System.ComponentModel.TypeConverter  
-{  
-  /// <summary>  
-  /// Return true to indicate that we return a list of values to choose from  
-  /// </summary>  
-  /// <param name="context"></param>  
-  public override bool GetStandardValuesSupported  
-    (System.ComponentModel.ITypeDescriptorContext context)  
-  {  
-    return true;  
-  }  
-  
-  /// <summary>  
-  /// Returns true to indicate that the user has   
-  /// to select a value from the list  
-  /// </summary>  
-  /// <param name="context"></param>  
-  /// <returns>If we returned false, the user would   
-  /// be able to either select a value from   
-  /// the list or type in a value that is not in the list.</returns>  
-  public override bool GetStandardValuesExclusive  
-      (System.ComponentModel.ITypeDescriptorContext context)  
-  {  
-    return true;  
-  }  
-  
-  /// <summary>  
-  /// Return a list of the values to display in the grid  
-  /// </summary>  
-  /// <param name="context"></param>  
-  /// <returns>A list of values the user can choose from</returns>  
-  public override StandardValuesCollection GetStandardValues  
-      (System.ComponentModel.ITypeDescriptorContext context)  
-  {  
-    // Try to get a store from the current context  
-    // "context.Instance"  returns the element(s) that   
-    // are currently selected i.e. whose values are being  
-    // shown in the property grid.   
-    // Note that the user could have selected multiple objects,   
-    // in which case context.Instance will be an array.  
-    Store store = GetStore(context.Instance);  
-  
-    List<string> values = new List<string>();  
-  
-    if (store != null)  
-    {  
-      values.AddRange(store.ElementDirectory  
-        .FindElements<ExampleElement>()  
-        .Select<ExampleElement, string>(e =>   
-      {  
-        return e.Name;  
-      }));  
-    }  
-    return new StandardValuesCollection(values);  
-  }  
-  
-  /// <summary>  
-  /// Attempts to get to a store from the currently selected object(s)  
-  /// in the property grid.  
-  /// </summary>  
-  private Store GetStore(object gridSelection)  
-  {  
-    // We assume that "instance" will either be a single model element, or   
-    // an array of model elements (if multiple items are selected).  
-  
-    ModelElement currentElement = null;  
-  
-    object[] objects = gridSelection as object[];  
-    if (objects != null && objects.Length > 0)  
-    {  
-      currentElement = objects[0] as ModelElement;  
-    }  
-    else  
-    {  
-        currentElement = gridSelection as ModelElement;  
-    }  
-  
-    return (currentElement == null) ? null : currentElement.Store;  
-  }  
-  
-}  
-  
-```  
-  
-## <a name="see-also"></a>関連項目  
+> この手法は、実行時に変更される可能性がある値の一覧を提供します。 変更されないリストを提供する場合は、代わりに、ドメインプロパティの型として列挙型を使用することを検討してください。
+
+ 標準値のリストを定義するには、次の形式の CLR 属性をドメインプロパティに追加します。
+
+```
+[System.ComponentModel.TypeConverter
+(typeof(MyTypeConverter))]
+
+```
+
+ <xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl**プロジェクトの別のファイルにコードを追加します。 (例:
+
+```csharp
+/// <summary>
+/// Type converter that provides a list of values
+/// to be displayed in the property grid.
+/// </summary>
+/// <remarks>This type converter returns a list
+/// of the names of all "ExampleElements" in the
+/// current store.</remarks>
+public class MyTypeConverter : System.ComponentModel.TypeConverter
+{
+  /// <summary>
+  /// Return true to indicate that we return a list of values to choose from
+  /// </summary>
+  /// <param name="context"></param>
+  public override bool GetStandardValuesSupported
+    (System.ComponentModel.ITypeDescriptorContext context)
+  {
+    return true;
+  }
+
+  /// <summary>
+  /// Returns true to indicate that the user has
+  /// to select a value from the list
+  /// </summary>
+  /// <param name="context"></param>
+  /// <returns>If we returned false, the user would
+  /// be able to either select a value from
+  /// the list or type in a value that is not in the list.</returns>
+  public override bool GetStandardValuesExclusive
+      (System.ComponentModel.ITypeDescriptorContext context)
+  {
+    return true;
+  }
+
+  /// <summary>
+  /// Return a list of the values to display in the grid
+  /// </summary>
+  /// <param name="context"></param>
+  /// <returns>A list of values the user can choose from</returns>
+  public override StandardValuesCollection GetStandardValues
+      (System.ComponentModel.ITypeDescriptorContext context)
+  {
+    // Try to get a store from the current context
+    // "context.Instance"  returns the element(s) that
+    // are currently selected i.e. whose values are being
+    // shown in the property grid.
+    // Note that the user could have selected multiple objects,
+    // in which case context.Instance will be an array.
+    Store store = GetStore(context.Instance);
+
+    List<string> values = new List<string>();
+
+    if (store != null)
+    {
+      values.AddRange(store.ElementDirectory
+        .FindElements<ExampleElement>()
+        .Select<ExampleElement, string>(e =>
+      {
+        return e.Name;
+      }));
+    }
+    return new StandardValuesCollection(values);
+  }
+
+  /// <summary>
+  /// Attempts to get to a store from the currently selected object(s)
+  /// in the property grid.
+  /// </summary>
+  private Store GetStore(object gridSelection)
+  {
+    // We assume that "instance" will either be a single model element, or
+    // an array of model elements (if multiple items are selected).
+
+    ModelElement currentElement = null;
+
+    object[] objects = gridSelection as object[];
+    if (objects != null && objects.Length > 0)
+    {
+      currentElement = objects[0] as ModelElement;
+    }
+    else
+    {
+        currentElement = gridSelection as ModelElement;
+    }
+
+    return (currentElement == null) ? null : currentElement.Store;
+  }
+
+}
+
+```
+
+## <a name="see-also"></a>参照
  [プログラム コードにおけるモデル内の移動およびモデルの更新](../modeling/navigating-and-updating-a-model-in-program-code.md)
