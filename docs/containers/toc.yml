@@ -24,11 +24,11 @@
           href: edit-and-refresh.md
         - name: コンテナー レジストリに配置する
           href: hosting-web-apps-in-docker.md
-        - name: Azure App Service にデプロイする
+        - name: Azure App Service に配置する
           href: deploy-app-service.md
         - name: Docker Hub に配置する
           href: deploy-docker-hub.md
-        - name: コンテナーを表示および診断する
+        - name: コンテナーとイメージの表示と診断
           href: view-and-diagnose-containers.md
         - name: コンテナー ツールを構成する
           href: container-tools-configure.md
@@ -38,7 +38,7 @@
           href: container-build.md
     - name: トラブルシューティング
       href: troubleshooting-docker-errors.md
-    - name: 関連項目
+    - name: 参照
       items:
         - name: コンテナーのプロジェクトの MSBuild プロパティ
           href: container-msbuild-properties.md
