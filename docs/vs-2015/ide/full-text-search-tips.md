@@ -61,4 +61,4 @@ ms.locfileid: "72645649"
  よく使われる言葉や数字 (ストップ ワードと呼ばれることもあります) は、フルテキスト検索で自動的に無視されます。 たとえば、"pass through" という句を検索すると、"pass" という単語を含むトピックが表示され、"through" は無視されます。
 
 ## <a name="see-also"></a>関連項目
- [](../ide/locate-information.md) [検索式での情報の論理演算子の](../ide/logical-operators-in-search-expressions.md)検索
+ [検索式で Logical 演算子](../ide/logical-operators-in-search-expressions.md) [情報を検索する](../ide/locate-information.md)

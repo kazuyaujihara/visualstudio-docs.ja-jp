@@ -105,6 +105,10 @@
 ### [キーボード ナビゲーションの使用](accessibility-keyboard.md)
 ### [VoiceOver の使用](accessibility-voiceover.md)
 
+# ビデオ チュートリアル
+## [Visual Studio for Mac での ASP.NET Core の概要](tutorial-aspnet-core-vsmac-getting-started.md)
+## [既存の ASP.NET Core Web アプリケーションの強化](tutorial-aspnet-core-vsmac-extending.md)
+
 # [Windows ユーザー向けの Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # トラブルシューティング
