@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811832"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666290"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 
-**[詳細]** オプションを使って、C# のエディターの書式設定、コードのリファクタリング、および XML ドキュメントのコメントの設定を変更します。 このオプション ページにアクセスするには、**[ツール]** > **[オプション]** を選び、さらに **[テキスト エディター]** > **[C#]** > **[詳細]** の順に選びます。
+**[詳細]** オプションを使って、C# のエディターの書式設定、コードのリファクタリング、および XML ドキュメントのコメントの設定を変更します。 このオプション ページにアクセスするには、 **[ツール]**  >  **[オプション]** を選び、さらに **[テキスト エディター]**  >  **[C#]**  >  **[詳細]** の順に選びます。
 
 > [!NOTE]
 > ここには、すべてのオプションが一覧されていない可能性があります。
@@ -118,7 +118,7 @@ ms.locfileid: "62811832"
 
 ## <a name="block-structure-guides"></a>ブロック構造のガイド
 
-コードの中かっこ (**{}**) の間に垂直の点線を表示するには、このチェック ボックスをオンにします。 これで、宣言レベルとコード レベルのコンストラクト用のコード ブロックを簡単に確認できます。
+コードの中かっこ ( **{}** ) の間に垂直の点線を表示するには、このチェック ボックスをオンにします。 これで、宣言レベルとコード レベルのコンストラクト用のコード ブロックを簡単に確認できます。
 
 ## <a name="editor-help"></a>エディターのヘルプ
 

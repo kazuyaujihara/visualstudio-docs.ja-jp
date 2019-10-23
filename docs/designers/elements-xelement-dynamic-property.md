@@ -6,17 +6,17 @@ apiname:
 - XElement.Elements
 apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d92e9ebd1e5be9f3535dcac136bb46ba33975f0c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845562"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637317"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動的プロパティ)
 
@@ -42,6 +42,6 @@ elem.Elements[{namespaceName}localName]
 
 ## <a name="see-also"></a>関連項目
 
-- [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)
+- [XElement クラスの動的プロパティ](../designers/attribute-xelement-dynamic-property.md)
 - [要素](../designers/element-xelement-dynamic-property.md)
 - [子孫](../designers/descendants-xelement-dynamic-property.md)

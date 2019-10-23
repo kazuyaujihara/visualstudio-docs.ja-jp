@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823927"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655853"
 ---
 # <a name="how-to-create-item-templates"></a>方法:項目テンプレートを作成する
 
@@ -24,27 +24,27 @@ ms.locfileid: "62823927"
 
 1. 項目をプロジェクトに追加し、必要に応じて変更します。
 
-1. コード ファイルを変更して、パラメーター置換を行う場所を示します。 詳細については、「[方法 :テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
+1. コード ファイルを変更して、パラメーター置換を行う場所を示します。 詳細については、[テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
 
 1. **[プロジェクト]** メニューの **[テンプレートのエクスポート]** を選択します。
 
-1. **[テンプレートの種類の選択]** ページで、**[項目テンプレート]** を選び、項目を含むプロジェクトを選択して、**[次へ]** を選択します。
+1. **[テンプレートの種類の選択]** ページで、 **[項目テンプレート]** を選び、項目を含むプロジェクトを選択して、 **[次へ]** を選択します。
 
-1. **[エクスポートする項目の選択]** ページで、テンプレートを作成する項目を選択し、**[次へ]** を選択します。
+1. **[エクスポートする項目の選択]** ページで、テンプレートを作成する項目を選択し、 **[次へ]** を選択します。
 
-1. **[項目参照の選択]** ページで、テンプレートに含めるアセンブリ参照を選択し、**[次へ]** を選択します。
+1. **[項目参照の選択]** ページで、テンプレートに含めるアセンブリ参照を選択し、 **[次へ]** を選択します。
 
-1. **[テンプレート オプションの選択]** ページで、テンプレートの名前および省略可能な説明、アイコン画像、プレビュー画像を入力して、**[完了]** を選択します。
+1. **[テンプレート オプションの選択]** ページで、テンプレートの名前および省略可能な説明、アイコン画像、プレビュー画像を入力して、 **[完了]** を選択します。
 
-    テンプレートのファイルが *.zip* ファイルに追加されて、ウィザードで指定したディレクトリにコピーされます。 既定の場所は、*%USERPROFILE%\Documents\Visual Studio \<バージョン\>\My Exported Templates* です。
+    テンプレートのファイルが *.zip* ファイルに追加されて、ウィザードで指定したディレクトリにコピーされます。 既定の場所は、 *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\My Exported Templates* です。
 
-1. **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合は、エクスポートされたテンプレートを見つけます。 次に、それをユーザー項目テンプレートのディレクトリにコピーします。 既定の場所は、*%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates* です。
+1. **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合は、エクスポートされたテンプレートを見つけます。 次に、それをユーザー項目テンプレートのディレクトリにコピーします。 既定の場所は、 *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates* です。
 
 1. Visual Studio をいったん閉じて開きなおします。
 
-1. 新しいプロジェクトを作成するか、既存のプロジェクトを開き、**[プロジェクト]** > **[新しい項目の追加]** の順に選ぶか、**Ctrl**+**Shift**+**A** キーを押します。
+1. 新しいプロジェクトを作成するか、既存のプロジェクトを開き、 **[プロジェクト]**  >  **[新しい項目の追加]** の順に選ぶか、**Ctrl**+**Shift**+**A** キーを押します。
 
-   項目テンプレートが、**[新しい項目の追加]** ダイアログ ボックスに表示されます。 **テンプレートのエクスポート ウィザード**で説明を追加した場合、ダイアログ ボックスの右側に説明が表示されます。
+   項目テンプレートが、 **[新しい項目の追加]** ダイアログ ボックスに表示されます。 **テンプレートのエクスポート ウィザード**で説明を追加した場合、ダイアログ ボックスの右側に説明が表示されます。
 
 ## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>ユニバーサル Windows アプリ プロジェクトで項目テンプレートを有効にする
 
@@ -60,13 +60,13 @@ ms.locfileid: "62823927"
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
 
-1. Visual Studio で、*.vstemplate* ファイルを保存して閉じます。
+1. Visual Studio で、 *.vstemplate* ファイルを保存して閉じます。
 
-1. *.vstemplate* ファイルをコピーして、*.zip* ファイルに戻します。
+1. *.vstemplate* ファイルをコピーして、 *.zip* ファイルに戻します。
 
-     **[ファイルのコピー]** ダイアログ ボックスが表示されたら、**[コピーして置き換える]** をクリックします。
+     **[ファイルのコピー]** ダイアログ ボックスが表示されたら、 **[コピーして置き換える]** をクリックします。
 
-これで、**[新しい項目の追加]** ダイアログ ボックスから、このテンプレートに基づく項目をユニバーサル Windows プロジェクトに追加できます。
+これで、 **[新しい項目の追加]** ダイアログ ボックスから、このテンプレートに基づく項目をユニバーサル Windows プロジェクトに追加できます。
 
 ## <a name="enable-templates-for-specific-project-subtypes"></a>特定のプロジェクト サブタイプのテンプレートを有効にする
 
@@ -113,23 +113,23 @@ Windows、Office、Database、Web など、特定のプロジェクト サブタ
 
 3. 必要に応じて、コード ファイルを変更し、パラメーター置換を行う場所を示します。 パラメーター置換の詳細については、「[方法:テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
 
-4. XML ファイルを作成し、*.vstemplate* ファイル拡張子を使って、プロジェクトの項目ファイルと同じディレクトリに保存します。
+4. XML ファイルを作成し、 *.vstemplate* ファイル拡張子を使って、プロジェクトの項目ファイルと同じディレクトリに保存します。
 
 5. 項目テンプレート メタデータを提供するための *.vstemplate* XML ファイルを編集します。 詳細については、「[Visual Studio テンプレート スキーマ参照 (機能拡張)](../extensibility/visual-studio-template-schema-reference.md)」と、前のセクションの例を参照してください。
 
 6. *.vstemplate* ファイルを保存して閉じます。
 
-7. **Windows エクスプローラー**で、テンプレートに含めるファイルを選択します。 選択したファイルを右クリックし、**[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選びます。 選択したファイルは *.zip* ファイルに圧縮されます。
+7. **Windows エクスプローラー**で、テンプレートに含めるファイルを選択します。 選択したファイルを右クリックし、 **[送る]**  >  **[圧縮 (zip 形式) フォルダー]** の順に選びます。 選択したファイルは *.zip* ファイルに圧縮されます。
 
 ::: moniker range="vs-2017"
 
-8. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 既定のディレクトリは、*%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates* です。 詳細については、「[方法 :プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+8. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 既定のディレクトリは、 *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates* です。 詳細については、[プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 既定のディレクトリは、*%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates* です。 詳細については、「[方法 :プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+8. *.zip* ファイルをコピーして、ユーザーの項目テンプレートの場所に貼り付けます。 既定のディレクトリは、 *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates* です。 詳細については、[プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ::: moniker-end
 

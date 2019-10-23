@@ -198,7 +198,7 @@ ms.locfileid: "72661614"
 
  詳細については、「[HtmlImage Server Control Declarative Syntax (HtmlImage サーバー コントロール宣言構文)](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6)」、「[Image Web Server Control Overview (Image Web サーバー コントロールの概要)](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9)」、<xref:System.Web.UI.HtmlControls.HtmlImage>、<xref:System.Web.UI.HtmlControls.HtmlInputImage>、および <xref:System.Web.UI.WebControls.Image> をご覧ください。
 
- **** ![HTML ページツールボックスのドロップダウン](../../ide/reference/media/vxdropdown.gif "|::ref14::|")の選択
+ ![HTML ページツールボックスのドロップダウン](../../ide/reference/media/vxdropdown.gif "|::ref14::|")の**選択**
 
  `select` 要素のドロップダウン リスト (`size` 属性なし) を挿入します。 既定では、`id="select1"` は最初のリスト ボックスに挿入され、`id="select2"` は 2 番目のリスト ボックスという具合に挿入されます。
 

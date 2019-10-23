@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461489"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653170"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest の概要
 
@@ -46,7 +46,7 @@ IntelliTest は早い段階でバグを発見することができ、テスト�
 
 ## <a name="the-hello-world-of-intellitest"></a>IntelliTest の Hello World
 
-IntelliTest はテスト済みのプログラムに関連する入力を検索します。つまり、これを使用して有名な **Hello World!**  文字列を生成できます。 これは、C# MSTest ベースのテスト プロジェクトを作成し、**Microsoft.Pex.Framework** への参照を追加していることを前提としています。 別のテスト フレームワークを使用している場合は、C# クラス ライブラリを作成し、プロジェクトの設定方法に関するテスト フレームワークのドキュメントを参照してください。
+IntelliTest はテスト済みのプログラムに関連する入力を検索します。つまり、これを使用して有名な **Hello World!** 文字列を生成できます。 これは、C# MSTest ベースのテスト プロジェクトを作成し、**Microsoft.Pex.Framework** への参照を追加していることを前提としています。 別のテスト フレームワークを使用している場合は、C# クラス ライブラリを作成し、プロジェクトの設定方法に関するテスト フレームワークのドキュメントを参照してください。
 
 次の例は、**value** という名前のパラメーターで 2 つの制約を作成して、IntelliTest が必要な文字列を生成できるようにします。
 

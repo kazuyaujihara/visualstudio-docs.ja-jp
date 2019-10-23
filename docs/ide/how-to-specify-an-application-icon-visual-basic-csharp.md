@@ -6,21 +6,21 @@ helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547781"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656597"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>方法: アプリケーション アイコンを指定する (Visual Basic、C#)
 
-プロジェクトの `Icon` プロパティでは、**ファイル エクスプローラー**と Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル (*.ico*) を指定します。
+プロジェクトの `Icon` プロパティでは、**ファイル エクスプローラー**と Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル ( *.ico*) を指定します。
 
 `Icon` プロパティには、**プロジェクト デザイナー**の **[アプリケーション]** ウィンドウからアクセスできます。このプロパティには、リソースまたはコンテンツ ファイルとしてプロジェクトに追加されているアイコンの一覧が含まれています。
 
@@ -29,15 +29,15 @@ ms.locfileid: "62547781"
 
 ## <a name="to-specify-an-application-icon"></a>アプリケーション アイコンを指定するには
 
-1. **ソリューション エクスプローラー**で、**[ソリューション]** ノードではなくプロジェクト ノードを選びます。
+1. **ソリューション エクスプローラー**で、 **[ソリューション]** ノードではなくプロジェクト ノードを選びます。
 
-1. メニュー バーで、**[プロジェクト]**  >  **[プロパティ]** を選択します。
+1. メニュー バーで、 **[プロジェクト]**  >  **[プロパティ]** を選択します。
 
-1. **プロジェクト デザイナー**が表示されたら、**[アプリケーション]** タブを選びます。
+1. **プロジェクト デザイナー**が表示されたら、 **[アプリケーション]** タブを選びます。
 
-1. **(Visual Basic)**&mdash; **[アイコン]** 一覧で、アイコン (*.ico*) ファイルを選びます。
+1. **(Visual Basic)** &mdash; **[アイコン]** 一覧で、アイコン ( *.ico*) ファイルを選びます。
 
-    **(C#)**&mdash; **[アイコン]** 一覧の近くにある **\<参照>** ボタンを選び、目的のアイコン ファイルの場所を参照します。
+    **(C#)** &mdash; **[アイコン]** 一覧の近くにある **\<参照>** ボタンを選び、目的のアイコン ファイルの場所を参照します。
 
 ## <a name="see-also"></a>関連項目
 

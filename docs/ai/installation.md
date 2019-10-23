@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918041"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777467"
 ---
 # <a name="installation"></a>インストール
 
@@ -44,7 +44,7 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU ドライバー
 
-ディープ ラーニング フレームワークは、NVIDIA GPU を利用して、真の人工知能に向けたマシンによる高速、正確、大規模な学習を可能にします。 コンピューターに NVIDIA GPU のカードがある場合は、「[NVIDIA ドライバーのダウンロード](http://www.nvidia.com/Download/index.aspx)」を参照するか、またはオペレーティング システムの更新を試して最新のドライバーをインストールします。
+ディープ ラーニング フレームワークは、NVIDIA GPU を利用して、真の人工知能に向けたマシンによる高速、正確、大規模な学習を可能にします。 コンピューターに NVIDIA GPU のカードがある場合は、「[NVIDIA ドライバーのダウンロード](https://www.nvidia.com/Download/index.aspx)」を参照するか、またはオペレーティング システムの更新を試して最新のドライバーをインストールします。
 
 ### <a name="cuda"></a>CUDA
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-[PyTorch](http://pytorch.org/) は、2 つの高度な機能を提供する Python パッケージです。
+[PyTorch](https://pytorch.org/) は、2 つの高度な機能を提供する Python パッケージです。
 
 - 強力な GPU の高速化を利用したテンソル計算 (NumPy と同様)
 - テープ ベースの autograd (自動微分) システムを基に構築されたディープ ニューラル ネットワーク

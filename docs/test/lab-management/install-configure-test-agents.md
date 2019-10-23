@@ -4,17 +4,17 @@ ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edb10246437bff9bef0a6f76ffde95bc12855944
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965416"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653078"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>テスト エージェントとテスト コントローラーのインストール
 
@@ -26,7 +26,7 @@ Visual Studio と Azure Test Plans または Team Foundation Server (TFS) を使
 
 次の表では、Visual Studio のテスト エージェントまたはテスト コントローラーをインストールするためのシステム要件を示します。
 
-| アイテム | 要件 |
+| アイテム | 必要条件 |
 | ---- | ------------ |
 | **エージェント** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016: Standard および Datacenter<br />Windows Server 2012 R2 |
 | **コントローラー** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016: Standard および Datacenter<br />Windows Server 2012 R2 |
@@ -34,7 +34,7 @@ Visual Studio と Azure Test Plans または Team Foundation Server (TFS) を使
 
 ## <a name="install-the-test-controller-and-test-agents"></a>テスト コントローラーとテスト エージェントのインストール
 
-Agents for Visual Studio は [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) からダウンロードできます。 *Agents for Visual Studio 2019* を探し、*[エージェント]* または *[コントローラー]* を選択して、*[ダウンロード]* を選択します。 ダウンロードした実行可能ファイルを実行し、テスト エージェントまたはテスト コントローラーをインストールします。
+Agents for Visual Studio は [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) からダウンロードできます。 *Agents for Visual Studio 2019* を探し、 *[エージェント]* または *[コントローラー]* を選択して、 *[ダウンロード]* を選択します。 ダウンロードした実行可能ファイルを実行し、テスト エージェントまたはテスト コントローラーをインストールします。
 
 Visual Studio 2017、Visual Studio 2015、および Visual Studio 2013 用のエージェントは、[以前のバージョンのダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/) ページからダウンロードできます。
 

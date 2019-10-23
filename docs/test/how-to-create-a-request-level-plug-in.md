@@ -6,15 +6,15 @@ helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950177"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653625"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>方法: 要求レベルのプラグインを作成する
 
@@ -30,15 +30,15 @@ ms.locfileid: "62950177"
 
 ## <a name="to-create-a-request-level-plug-in"></a>要求レベルのプラグインを作成するには
 
-1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]**、**[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
 
 2. 新しい**クラス ライブラリ** プロジェクトを作成します。
 
-3. **ソリューション エクスプローラー**で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
+3. **ソリューション エクスプローラー**で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-4. **[.NET]** タブをクリックします。スクロール ダウンし、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、**[OK]** をクリックします。
+4. **[.NET]** タブをクリックします。スクロール ダウンし、 **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、 **[OK]** をクリックします。
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** への参照が**ソリューション エクスプローラー**内の **[参照設定]** フォルダーに追加されます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "62950177"
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-6. **[プロジェクト]** タブ、**[クラス ライブラリ プロジェクト]**、**[OK]** の順に選択します。
+6. **[プロジェクト]** タブ、 **[クラス ライブラリ プロジェクト]** 、 **[OK]** の順に選択します。
 
 7. **コード エディター**で、プラグインのコードを記述します。 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> クラスから派生する新しいパブリック クラスを作成します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "62950177"
 
 10. 要求プラグインを追加する Web パフォーマンス テストを開きます。
 
-11. 要求プラグインを追加する要求を右クリックし、**[要求プラグインの追加]** をクリックします。
+11. 要求プラグインを追加する要求を右クリックし、 **[要求プラグインの追加]** をクリックします。
 
      **[Web テスト要求プラグインの追加]** ダイアログ ボックスが表示されます。
 

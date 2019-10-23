@@ -2,17 +2,17 @@
 title: .runsettings ファイルを使用して単体テストを構成する
 ms.date: 06/14/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 4194a392eee1d5c9beaa0640f4006d1f01ebbace
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+author: jillre
+ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262317"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665140"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -149,7 +149,7 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-            
+
           </CodeCoverage>
         </Configuration>
       </DataCollector>

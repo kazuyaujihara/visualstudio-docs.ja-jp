@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962461"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652505"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する
 
@@ -28,9 +28,9 @@ Visual Studio でコード ファイルを開いた後、**ソリューション
 
 次のいずれかの方法で、Visual Studio にコードを開くことができます。
 
-- Visual Studio メニュー バーで、**[ファイル]** > **[開く]** > **[フォルダー]** を選択して、コードの場所を参照します。
+- Visual Studio メニュー バーで、 **[ファイル]**  >  **[開く]**  >  **[フォルダー]** を選択して、コードの場所を参照します。
 
-- コードを含むフォルダーのコンテキスト (右クリック) メニューで、**[Visual Studio で開く]** コマンドを選択します。
+- コードを含むフォルダーのコンテキスト (右クリック) メニューで、 **[Visual Studio で開く]** コマンドを選択します。
 
 ::: moniker range="vs-2017"
 - Visual Studio **スタート ページ**で **[フォルダーを開く]** を選択します。
@@ -54,7 +54,7 @@ Visual Studio でコード ファイルを開いた後、**ソリューション
 
    ![GitHub の複製ボタン](./media/VSIDE_Code_Clone.png)
 
-1. Visual Studio で、**[チーム エクスプローラー]** タブを選択し、**チーム エクスプローラー**を開きます。 タブが表示されない場合は、**[ビュー]** > **[チーム エクスプローラー]** からタブを開きます。
+1. Visual Studio で、 **[チーム エクスプローラー]** タブを選択し、**チーム エクスプローラー**を開きます。 タブが表示されない場合は、 **[ビュー]**  >  **[チーム エクスプローラー]** からタブを開きます。
 
 1. チーム エクスプローラーの **[ローカル Git リポジトリ]** セクションで **[複製]** コマンドを選択し、GitHub ページの URL をテキスト ボックスに貼り付けます。
 
@@ -80,24 +80,24 @@ Visual Studio で実行するコードの構成は、そのコードの種類や
 
 ### <a name="codebases-that-use-msbuild"></a>MSBuild を使用するコードベース
 
-MSBuild ベース コードベースでは、**[開始]** ボタンのドロップダウン リストに表示される複数のビルド構成を保持できます。 スタートップ アイテムとして使用したいファイルを選び、**[開始]** ボタンを選択してデバッグを開始します。
+MSBuild ベース コードベースでは、 **[開始]** ボタンのドロップダウン リストに表示される複数のビルド構成を保持できます。 スタートップ アイテムとして使用したいファイルを選び、 **[開始]** ボタンを選択してデバッグを開始します。
 
 > [!NOTE]
-> C# および Visual Basic コードベースの場合、**.NET デスクトップ開発**のワークロードがインストールされている必要があります。 C++ コードベースの場合、**C++ によるデスクトップ開発**のワークロードがインストールされている必要があります。
+> C# および Visual Basic コードベースの場合、 **.NET デスクトップ開発**のワークロードがインストールされている必要があります。 C++ コードベースの場合、**C++ によるデスクトップ開発**のワークロードがインストールされている必要があります。
 
 ### <a name="codebases-that-use-custom-build-tools"></a>カスタム ビルド ツールを使用するコードベース
 
-お使いのコードベースでカスタム ビルド ツールを使用している場合、*.json* ファイルに定義されている*ビルド タスク*を使用したコードの作成方法を Visual Studio に指示する必要があります。 詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)に関するページをご覧ください。
+お使いのコードベースでカスタム ビルド ツールを使用している場合、 *.json* ファイルに定義されている*ビルド タスク*を使用したコードの作成方法を Visual Studio に指示する必要があります。 詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)に関するページをご覧ください。
 
 ### <a name="codebases-that-contain-python-or-javascript-code"></a>Python または JavaScript コードを含むコードベース
 
-コードベースに Python または JavaScript コードが含まれている場合、*.json* ファイルを構成する必要はありませんが、対応するワークロードをインストールする必要が生じます。 また、次のようにスタートアップ スクリプトを構成する必要があります。
+コードベースに Python または JavaScript コードが含まれている場合、 *.json* ファイルを構成する必要はありませんが、対応するワークロードをインストールする必要が生じます。 また、次のようにスタートアップ スクリプトを構成する必要があります。
 
-1. **[ツール]** > **[ツールと機能を取得]** を選択するか、または Visual Studio を複製して Visual Studio インストーラーを実行して、[Node.js 開発](https://visualstudio.microsoft.com/vs/node-js/)または [Python 開発](https://visualstudio.microsoft.com/vs/python/)のワークロードをインストールします。
+1. **[ツール]**  >  **[ツールと機能を取得]** を選択するか、または Visual Studio を複製して Visual Studio インストーラーを実行して、[Node.js 開発](https://visualstudio.microsoft.com/vs/node-js/)または [Python 開発](https://visualstudio.microsoft.com/vs/python/)のワークロードをインストールします。
 
    ![Node.js および Python 開発のワークロード](media/python_nodejs_workloads.png)
 
-1. **ソリューション エクスプローラー**で、JavaScript または Python ファイルを右クリックしたコンテキスト メニューで、**[スタートアップ アイテムとして設定]** コマンドを選択します。
+1. **ソリューション エクスプローラー**で、JavaScript または Python ファイルを右クリックしたコンテキスト メニューで、 **[スタートアップ アイテムとして設定]** コマンドを選択します。
 
 1. **[開始]** ボタンを選択して、デバッグを開始します。
 
@@ -111,7 +111,7 @@ Visual Studio のソリューションやプロジェクトを使用せずに C+
 
 ![スタートアップ アイテムとしてプロジェクトを設定する](media/customize-set-project-as-startup-item.png)
 
-プロジェクトがスターアップ アイテムであることを反映して、**[開始]** ボタンのテキストが変更されます。
+プロジェクトがスターアップ アイテムであることを反映して、 **[開始]** ボタンのテキストが変更されます。
 
 ![[開始] ボタンにあるプロジェクト](media/customize-start-button-project.png)
 

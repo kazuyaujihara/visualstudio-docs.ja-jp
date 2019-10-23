@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821092"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653349"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>方法: ステップ ロード パターンのステップごとの傾斜増加時間プロパティを指定する
 
@@ -64,9 +64,9 @@ ms.locfileid: "62821092"
 
      **[プロパティ]** ウィンドウに、シナリオのカテゴリおよびプロパティが表示されます。
 
-5. **[ステップ ユーザー カウント]** プロパティで指定したユーザーを段階的に追加するステップ間の秒数を入力し、**[ステップごとの傾斜増加時間]** プロパティの値を設定します。
+5. **[ステップ ユーザー カウント]** プロパティで指定したユーザーを段階的に追加するステップ間の秒数を入力し、 **[ステップごとの傾斜増加時間]** プロパティの値を設定します。
 
-6. プロパティの変更が終了したら、**[ファイル]** メニューの **[保存]** を選択します。 その後、新しい **[ステップごとの傾斜増加時間]** の値を使用して、ロード テストを実行できます。
+6. プロパティの変更が終了したら、 **[ファイル]** メニューの **[保存]** を選択します。 その後、新しい **[ステップごとの傾斜増加時間]** の値を使用して、ロード テストを実行できます。
 
 ## <a name="see-also"></a>関連項目
 

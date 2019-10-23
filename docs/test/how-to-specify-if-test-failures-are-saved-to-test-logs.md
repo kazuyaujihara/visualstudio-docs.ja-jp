@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdae6abf3af71967357319addd755a31721053ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786105"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653418"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>方法:ロード テスト エディターを使用してテスト ログにテストの失敗を記録するかどうかを指定する
 
@@ -37,9 +37,9 @@ ms.locfileid: "62786105"
 
      **[プロパティ]** ウィンドウに、実行設定のカテゴリおよびプロパティが表示されます。
 
-4. **[テストの失敗時にログを保存]** プロパティで、**[True]** または **[False]** を選択して、シナリオでテストが失敗した場合にテスト ログを保存するかどうかを指定します。
+4. **[テストの失敗時にログを保存]** プロパティで、 **[True]** または **[False]** を選択して、シナリオでテストが失敗した場合にテスト ログを保存するかどうかを指定します。
 
-     プロパティを変更したら、**[ファイル]** メニューの **[保存]** を選択します。
+     プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。
 
      ロード テスト アナライザーのテーブル ビューを使用すると、ログに保存したデータを表示できます。 詳細については、[テーブル ビューでのロード テスト結果とエラーの分析](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)に関するページを参照してください。
 

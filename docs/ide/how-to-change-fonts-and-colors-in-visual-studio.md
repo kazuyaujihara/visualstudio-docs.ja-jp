@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f06007294f0743ebdbbcc0c750ffd09307e17ad1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c4527592b5638b171aa39f88e254bd8adf5c73b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655069"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>方法: Visual Studio で使用するフォントと色を変更する
 
@@ -29,9 +29,9 @@ Visual Studio の中にある IDE のフレームおよびツール ウィンド
 
 1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
-1. オプションの一覧で、**[環境]** > **[全般]** の順に選びます。
+1. オプションの一覧で、 **[環境]**  >  **[全般]** の順に選びます。
 
-1. **[配色テーマ]** 一覧で、既定値の **[青]** テーマ、**[濃色]**、または **[淡色]** のいずれかを選びます。
+1. **[配色テーマ]** 一覧で、既定値の **[青]** テーマ、 **[濃色]** 、または **[淡色]** のいずれかを選びます。
 
 > [!NOTE]
 > テーマの色を変更すると、IDE のテキストは既定値または前にカスタマイズしたフォントとサイズに戻ります。
@@ -54,16 +54,16 @@ IDE 内にあるすべてのウィンドウとダイアログ ボックスに関
 
 1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
-1. オプションの一覧で、**[環境]** > **[フォントおよび色]** の順に選びます。
+1. オプションの一覧で、 **[環境]**  >  **[フォントおよび色]** の順に選びます。
 
-1. **[設定の表示]** の一覧で、**[環境フォント]** を選びます。
+1. **[設定の表示]** の一覧で、 **[環境フォント]** を選びます。
 
     > [!TIP]
-    > ツール ウィンドウのみのフォントを変更する場合は、**[設定の表示]** の一覧で、**[すべてのテキスト ツール ウィンドウ]** を選びます。
+    > ツール ウィンドウのみのフォントを変更する場合は、 **[設定の表示]** の一覧で、 **[すべてのテキスト ツール ウィンドウ]** を選びます。
 
 1. **[フォント]** の一覧でいずれかのフォントを選びます。
 
-1. **[サイズ]** の一覧でテキスト サイズを選び、**[OK]** を選びます。
+1. **[サイズ]** の一覧でテキスト サイズを選び、 **[OK]** を選びます。
 
 ## <a name="see-also"></a>関連項目
 

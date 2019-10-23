@@ -8,21 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Indentation
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c402033efe31b4cbbddbe02b73aec7be08914fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1e57470c1afa0fad97265bdcebff4fd9a2a0a43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778366"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666665"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>[オプション]、[テキスト エディター]、[U-SQL]、[書式設定]
 
-**[書式設定]** オプション ページを使って、コード エディターでのコード書式設定オプションを設定します。 このオプション ページにアクセスするには、**[ツール]** > **[オプション]** の順に選択します。 **[オプション]** ダイアログ ボックスで、**[テキスト エディター]** > **[U-SQL]** > **[書式設定]** の順に選択します。
+**[書式設定]** オプション ページを使って、コード エディターでのコード書式設定オプションを設定します。 このオプション ページにアクセスするには、 **[ツール]**  >  **[オプション]** の順に選択します。 **[オプション]** ダイアログ ボックスで、 **[テキスト エディター]**  >  **[U-SQL]**  >  **[書式設定]** の順に選択します。
 
 ## <a name="general-page"></a>[全般] ページ
 
@@ -40,7 +40,7 @@ ms.locfileid: "62778366"
 
 ## <a name="preview-windows"></a>プレビュー ウィンドウ
 
-**[インデント]**、**[改行]**、および **[行間]** の各サブページには、下部にプレビュー ウィンドウが表示されます。 プレビュー ウィンドウでは、オプション適用時の状態が表示されます。 プレビュー ウィンドウを使用するには、書式オプションを選択します。 プレビュー ウィンドウに、選択したオプションを適用した例が表示されます。 チェック ボックスを選んで設定を変更すると、プレビュー ウィンドウが更新され、新しい設定が反映されます。
+**[インデント]** 、 **[改行]** 、および **[行間]** の各サブページには、下部にプレビュー ウィンドウが表示されます。 プレビュー ウィンドウでは、オプション適用時の状態が表示されます。 プレビュー ウィンドウを使用するには、書式オプションを選択します。 プレビュー ウィンドウに、選択したオプションを適用した例が表示されます。 チェック ボックスを選んで設定を変更すると、プレビュー ウィンドウが更新され、新しい設定が反映されます。
 
 ### <a name="indentation-remarks"></a>インデントに関するコメント
 

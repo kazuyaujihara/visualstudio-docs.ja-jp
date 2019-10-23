@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 386b62e278b1fbe8230af16b54f8b7bb95857c48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975165"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631530"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>方法: クラス デザイナーで既存の型を表示する
 
@@ -50,7 +50,7 @@ ms.locfileid: "62975165"
 > [!TIP]
 > **クラスビュー**が開いていない場合は、**ビュー**メニューから**クラスビュー**を開きます。
 
-ダイアグラムの既定の場所で型を表示するには、**クラス ビュー**で 1 つ以上の型を選択し、選択した型を右クリックし、**[クラス ダイアグラムで表示]** を選択します。
+ダイアグラムの既定の場所で型を表示するには、**クラス ビュー**で 1 つ以上の型を選択し、選択した型を右クリックし、 **[クラス ダイアグラムで表示]** を選択します。
 
 > [!NOTE]
 > 型を含む閉じられたクラス ダイアグラムが既にプロジェクトに存在する場合は、クラス ダイアグラムが開いて型シェイプが表示されます。 ただし、型を含むクラス ダイアグラムがプロジェクトに存在しない場合は、**クラス デザイナー**によって新しいクラス ダイアグラムがプロジェクトに作成されて開かれ、型が表示されます。
@@ -59,7 +59,7 @@ ms.locfileid: "62975165"
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>クラス ダイアグラムで、プロジェクトの内容を表示するには
 
-**ソリューション エクスプローラー**または**クラス ビュー**で、プロジェクトを右クリックし、**[表示]** を選択してから **[クラス ダイアグラムの表示]** を選択します。 自動設定されたクラス ダイアグラムが作成されます。
+**ソリューション エクスプローラー**または**クラス ビュー**で、プロジェクトを右クリックし、 **[表示]** を選択してから **[クラス ダイアグラムの表示]** を選択します。 自動設定されたクラス ダイアグラムが作成されます。
 
 ## <a name="see-also"></a>関連項目
 

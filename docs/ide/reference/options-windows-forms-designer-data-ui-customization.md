@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Data UI customization options
 - Options dialog box, Windows Forms Designer, Data UI Customization
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ca68a944002d743c6f3d2f89b309b8b77c5dfdb3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 9c4eab249b9d847b4004c02f11e3e58cbcead6ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981688"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655827"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>[オプション] ダイアログ ボックス:[Windows フォーム デザイナー] > [データ UI カスタマイズ]
 
@@ -23,7 +23,7 @@ ms.locfileid: "68981688"
 
 Windows フォーム アプリのフォームにドラッグする前に、[データ ソース] ウィンドウの項目からコントロールを選択することができます。 使用できるコントロールは、項目のデータ型によって決まります。 各データ型には、このダイアログ ボックスで定義されている、既定のコントロールを含む有効なコントロールの一覧が、関連付けられています。 コントロールを選択せずに [データ ソース] ウィンドウからフォームに項目をドラッグすると、選択した項目のデータ型に対する既定のコントロールがフォームに追加されます。
 
-関連付けられているコントロールの一覧をカスタマイズするには、各データ型で使用可能なコントロールのチェック ボックスをオンまたはオフにします。 一覧にコントロールを追加するには、<xref:System.ComponentModel.DefaultBindingPropertyAttribute> または <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> データ バインディング属性が実装されているコントロールを、ツールボックスに追加します。 その後、コントロールはデータ型に対するコントロールの一覧に表示されます。 詳細については、「[方法 :[データ ソース] ウィンドウにカスタム コントロールを追加する](../..//data-tools/add-custom-controls-to-the-data-sources-window.md)」をご覧ください。
+関連付けられているコントロールの一覧をカスタマイズするには、各データ型で使用可能なコントロールのチェック ボックスをオンまたはオフにします。 一覧にコントロールを追加するには、<xref:System.ComponentModel.DefaultBindingPropertyAttribute> または <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> データ バインディング属性が実装されているコントロールを、ツールボックスに追加します。 その後、コントロールはデータ型に対するコントロールの一覧に表示されます。 詳細については、[[データ ソース] ウィンドウにカスタム コントロールを追加する](../..//data-tools/add-custom-controls-to-the-data-sources-window.md)」をご覧ください。
 
 ## <a name="data-type"></a>データの種類
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746762"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659598"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 
@@ -46,11 +46,11 @@ ms.locfileid: "66746762"
 
 1. テスト プロジェクトに既に *app.config* ファイルが存在する場合は、「[カスタム構成セクションを定義する](#define-a-custom-configuration-section)」に進みます。
 
-2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックし、**[追加]** > **[新しい項目]** の順に選択します。
+2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックし、 **[追加]**  >  **[新しい項目]** の順に選択します。
 
      **[新しい項目の追加]** ウィンドウが開きます。
 
-3. **[アプリケーション構成ファイル]** テンプレートを選択し、**[追加]** をクリックします。
+3. **[アプリケーション構成ファイル]** テンプレートを選択し、 **[追加]** をクリックします。
 
 ## <a name="define-a-custom-configuration-section"></a>カスタム構成セクションを定義する
 

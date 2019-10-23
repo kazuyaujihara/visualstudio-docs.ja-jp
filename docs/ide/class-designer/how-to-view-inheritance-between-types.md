@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fd6d2ce365399550b5455ff8bf909e9cc56187b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975100"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647687"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の継承を表示する
 
@@ -29,21 +29,21 @@ ms.locfileid: "62975100"
 
 1. クラス ダイアグラムで、基底クラスまたは基本インターフェイスを表示する型をクリックします。
 
-2. **[クラス ダイアグラム]** メニューで、**[基底クラスの表示]** または **[基底インターフェイスの表示]** を選択します。
+2. **[クラス ダイアグラム]** メニューで、 **[基底クラスの表示]** または **[基底インターフェイスの表示]** を選択します。
 
      該当する型の基底クラスまたは基本インターフェイスがダイアグラムに表示され、選択されます。 2 つの図形間に非表示の継承線がある場合、それも表示されます。
 
-また、基本型を表示する型を右クリックして、**[基底クラスの表示]** または **[基底インターフェイスの表示]** を選択することもできます。
+また、基本型を表示する型を右クリックして、 **[基底クラスの表示]** または **[基底インターフェイスの表示]** を選択することもできます。
 
 ## <a name="to-find-the-derived-types"></a>派生型を特定するには
 
 1. クラス ダイアグラムで、派生クラスまたは派生インターフェイスを表示する型をクリックします。
 
-2. **[クラス ダイアグラム]** メニューで、**[派生クラスの表示]** または **[派生インターフェイスの表示]** を選択します。
+2. **[クラス ダイアグラム]** メニューで、 **[派生クラスの表示]** または **[派生インターフェイスの表示]** を選択します。
 
      該当する型の派生クラスまたは派生インターフェイスがダイアグラムに表示されます。 図形間に非表示の継承線がある場合、それも表示されます。
 
-また、派生型を表示する型を右クリックして、**[派生クラスの表示]** または **[派生インターフェイスの表示]** を選択することもできます。
+また、派生型を表示する型を右クリックして、 **[派生クラスの表示]** または **[派生インターフェイスの表示]** を選択することもできます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -2,17 +2,17 @@
 title: サードパーティ製の単体テスト フレームワークをインストールする
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978670"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653245"
 ---
 # <a name="install-unit-test-frameworks"></a>単体テスト フレームワークのインストール
 
@@ -26,9 +26,9 @@ Visual Studio ソリューションには異なるフレームワークを使用
 
 サード パーティ製の単体テスト フレームワークをインストールするには、**NuGet パッケージ マネージャー**を使用します。
 
-1. テスト コードが含まれているプロジェクトを右クリックして、**[NuGet パッケージの管理]** を選択します。
+1. テスト コードが含まれているプロジェクトを右クリックして、 **[NuGet パッケージの管理]** を選択します。
 
-2. **NuGet パッケージ マネージャー**で、インストールするテスト フレームワークを検索して、**[インストール]** をクリックします。
+2. **NuGet パッケージ マネージャー**で、インストールするテスト フレームワークを検索して、 **[インストール]** をクリックします。
 
    ![Visual Studio の NuGet パッケージ マネージャー](media/vs-2019/nuget-package-manager.png)
 
@@ -38,7 +38,7 @@ Visual Studio ソリューションには異なるフレームワークを使用
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>最新の安定したテスト アダプター バージョンに更新するには
 
-1. **[ツール]** > **[NuGet Package Manager]** > **[Manage NuGet Packages for Solution...]** を選択して、ソリューション用の Nuget Package Manager を開きます。
+1. **[ツール]**  >  **[NuGet Package Manager]**  >  **[Manage NuGet Packages for Solution...]** を選択して、ソリューション用の Nuget Package Manager を開きます。
 
 2. **[更新]** タブをクリックし、インストールされている MSTest、NUnit または xUnit テスト アダプターを検索します。
 

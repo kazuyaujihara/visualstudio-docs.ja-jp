@@ -3,17 +3,17 @@ title: L2DBForm.xaml.cs Source Code
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd8c4dfc19a1c5b1c4956ca24698d82d7c2f6e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893139"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635299"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs sauce コード
 
@@ -37,7 +37,7 @@ ms.locfileid: "62893139"
 
 - 最初の条件ステートメントでは、入力が検証されます。
 
-- 2 番目のステートメントでは、**[Add New Book]\(新しい書籍の追加\)** ユーザー インターフェイス (UI) セクションでユーザーが入力した文字列値から新しい <xref:System.Xml.Linq.XElement> が作成されます。
+- 2 番目のステートメントでは、 **[Add New Book]\(新しい書籍の追加\)** ユーザー インターフェイス (UI) セクションでユーザーが入力した文字列値から新しい <xref:System.Xml.Linq.XElement> が作成されます。
 
 - 最後のステートメントでは、この新しい書籍要素が、*L2DBForm.xaml* のデータ プロバイダーに追加されます。 その結果、動的なデータ バインドによって UI がこの新しい項目で自動的に更新されます。ユーザーがコードを追加する必要はありません。
 

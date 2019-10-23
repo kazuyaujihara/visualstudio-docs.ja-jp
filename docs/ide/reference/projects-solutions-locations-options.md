@@ -4,17 +4,17 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e375c558500c4daeefe3f5d24d46a17139252f
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68610630"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655703"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>[オプション] ダイアログ ボックス:[プロジェクトおよびソリューション] \> [場所]
 
@@ -28,11 +28,11 @@ Visual Studio が新しいプロジェクトとソリューション フォル�
 
 ## <a name="user-project-templates-location"></a>ユーザー プロジェクト テンプレートの場所
 
-ユーザー作成のプロジェクト テンプレートの検索に使用される既定の場所を指定します。 詳細については、「[方法 :テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+ユーザー作成のプロジェクト テンプレートの検索に使用される既定の場所を指定します。 詳細については、[テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ## <a name="user-item-templates-location"></a>ユーザー項目テンプレートの場所
 
-ユーザー作成の項目テンプレートの検索に使用される既定の場所を指定します。 詳細については、「[方法 :テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+ユーザー作成の項目テンプレートの検索に使用される既定の場所を指定します。 詳細については、[テンプレートを配置して整理する](../../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

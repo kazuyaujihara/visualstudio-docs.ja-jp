@@ -2,7 +2,7 @@
 title: C# に ASP.NET Core Web アプリを作成する
 description: Visual Studio で C# および ASP.NET Core を使用して Hello World の Web アプリを作成する方法について、段階的に説明します。
 ms.custom: mvc,seodec18
-ms.date: 06/06/2019
+ms.date: 10/15/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 28994e7f3a4f31a9e3ee8c292a08df1132cf20df
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180388"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516894"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する
 
@@ -110,9 +110,9 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 2.1** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
+1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 3.0** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
 
-   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Visual Studio によってその新しいプロジェクトが開かれます。
 

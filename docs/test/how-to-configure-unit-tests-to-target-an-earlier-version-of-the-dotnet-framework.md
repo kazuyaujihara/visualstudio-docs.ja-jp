@@ -2,17 +2,17 @@
 title: .NET Framework の旧バージョンを対象とした単体テスト
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-author: gewarren
-ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 32f34eb9af74f8db06cfc6910db83806383ae3be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979379"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643615"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>方法:.NET Framework の旧バージョンを対象とした単体テストを構成する
 
@@ -54,11 +54,11 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
      Visual Basic テスト プロジェクトのプロパティが表示されます。
 
-3. 次の図に示すように、**[コンパイル]** タブで **[詳細コンパイル オプション]** を選択します。
+3. 次の図に示すように、 **[コンパイル]** タブで **[詳細コンパイル オプション]** を選択します。
 
      ![詳細コンパイル オプション](../test/media/howtoconfigureunittest35frameworka.png)
 
-4. 次の図の吹き出し B に示すように、**[ターゲット フレームワーク (すべての構成)]** ドロップダウン リストを使用して、ターゲット フレームワークを **.NET Framework 3.5** 以降のバージョンに変更します。 クライアント バージョンは指定しません。
+4. 次の図の吹き出し B に示すように、 **[ターゲット フレームワーク (すべての構成)]** ドロップダウン リストを使用して、ターゲット フレームワークを **.NET Framework 3.5** 以降のバージョンに変更します。 クライアント バージョンは指定しません。
 
      ![[ターゲット フレームワーク] ドロップダウン リスト](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
@@ -83,7 +83,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 2. **ソリューション エクスプローラー**で、新しい C++ テスト プロジェクトから **[プロジェクトのアンロード]** を選択します。
 
-3. **ソリューション エクスプローラー**で、アンロードされた C++ テスト プロジェクトを選択して、**[\<プロジェクト名>.vcxproj の編集]** を選択します。
+3. **ソリューション エクスプローラー**で、アンロードされた C++ テスト プロジェクトを選択して、 **[\<プロジェクト名>.vcxproj の編集]** を選択します。
 
    エディターで *.vcxproj* ファイルが開きます。
 

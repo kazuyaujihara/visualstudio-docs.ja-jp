@@ -10,15 +10,15 @@ ms.assetid: 6bcc5712-6cc6-4f59-8933-6e8078318c45
 dev_langs:
 - CSharp
 - VB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9aeb80d348e31de0934d515754c59346fac3c2ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665258"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Web パフォーマンス テストのカスタム抽出規則のコーディング
 
@@ -48,9 +48,9 @@ ms.locfileid: "62822938"
 
 7. テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
 
-8. カスタム抽出規則を追加するには、Web パフォーマンス テスト要求を右クリックし、**[抽出規則の追加]** をクリックします。
+8. カスタム抽出規則を追加するには、Web パフォーマンス テスト要求を右クリックし、 **[抽出規則の追加]** をクリックします。
 
-     **[抽出規則の追加]** ダイアログ ボックスが表示されます。 定義済みの検証規則と共に、カスタム検証規則が **[規則の選択]** ボックスに表示されます。 カスタム抽出規則を選択し、**[OK]** をクリックします。
+     **[抽出規則の追加]** ダイアログ ボックスが表示されます。 定義済みの検証規則と共に、カスタム検証規則が **[規則の選択]** ボックスに表示されます。 カスタム抽出規則を選択し、 **[OK]** をクリックします。
 
 9. Web パフォーマンス テストを実行します。
 

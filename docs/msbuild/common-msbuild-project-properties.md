@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381361"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747366"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
@@ -89,7 +89,7 @@ ms.locfileid: "72381361"
 | PathMap | コンパイラによるソース パス名出力への物理パスのマップ方法を指定します。 このプロパティは、*csc.exe* コンパイラの `/pathmap` スイッチに相当します。 |
 | PdbFile | 出力する *.pdb* ファイルの名前です。 このプロパティは、*csc.exe* コンパイラの `/pdb` スイッチに相当します。 |
 | プラットフォーム | ビルドの対象とするオペレーティング システムです。 有効な値は "Any CPU"、"x86"、および "x64" です。 |
-| ProduceReferenceAssembly | `true` に設定すると、現在のアセンブリに対して[参照アセンブリ](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)の生成が可能になるブール値。 この機能の利用時、`Deterministic` を `true` にする必要があります。 このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refout` スイッチに対応します。 |
+| ProduceReferenceAssembly | `true` に設定すると、現在のアセンブリに対して[参照アセンブリ](/dotnet/standard/assembly/reference-assemblies)の生成が可能になるブール値。 この機能の利用時、`Deterministic` を `true` にする必要があります。 このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refout` スイッチに対応します。 |
 | ProduceOnlyReferenceAssembly | コンパイル済みコードではなく参照アセンブリのみを発行するようにコンパイラに指示するブール値。 `ProduceReferenceAssembly` と同時に使用することはできません。  このプロパティは、*vbc.exe* コンパイラと *csc.exe* コンパイラの `/refonly` スイッチに対応します。 |
 | RemoveIntegerChecks | 整数オーバーフロー エラー チェックを無効にするかどうかを示すブール値です。 既定値は `false` です。 このプロパティは、*vbc.exe* コンパイラの `/removeintchecks` スイッチに相当します。 |
 | SGenUseProxyTypes | *SGen.exe* によってプロキシ型を生成するかどうかを示すブール値です。 これは、*GenerateSerializationAssemblies* がオンに設定されているときにのみに適用されます。また、.NET Framework 専用です。<br /><br /> SGen ターゲットは、このプロパティを使用して UseProxyTypes フラグを設定します。 このプロパティの既定値は true で、これを変更するための UI はありません。 webservice 以外の型のシリアル化アセンブリを生成するには、*Microsoft.Common.Targets* または *C#/VB.targets* をインポートする前に、このプロパティをプロジェクト ファイルに追加し、その値を false に設定します。 |

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979316"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664822"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>方法: 困難な問題をデバッグするのに役立つ IntelliTrace データを収集する
 
@@ -73,7 +73,7 @@ IntelliTrace ファイルに収集されたデータによって、コードの�
 
 5. **[全般]** タブを選択します。重要な診断イベントを記録する場合に **[IntelliTrace イベントのみ]** を選択すると、テスト時のパフォーマンスへの影響を最小限に抑えられます。
 
-     - または -
+     または
 
      診断イベントと、呼び出し情報を示すメソッド レベルのトレースを記録する場合は、 **[IntelliTrace イベントと呼び出し情報]** を選択します。 このレベルのトレースは、テストの実行時のパフォーマンスに影響を与えます。
 
@@ -81,7 +81,7 @@ IntelliTrace ファイルに収集されたデータによって、コードの�
 
 7. **[モジュール]** タブを選択します。 **[次を除くすべてのモジュールからデータを収集]** を選択し、 **[追加]** をクリックしてモジュールのリストに追加するか、 **[削除]** をクリックしてモジュールを削除します。 このオプションを選択すると、指定したモジュールを除く、システムで実行されているすべてのモジュールがデータ収集の対象となります。
 
-     - または -
+     または
 
      **[次のモジュールからのみデータを収集]** を選択し、 **[追加]** をクリックしてモジュールのリストに追加するか、 **[削除]** をクリックしてモジュールを削除します。 このオプションを選択すると、必要なモジュールを正確に指定できます。
 
@@ -90,7 +90,7 @@ IntelliTrace ファイルに収集されたデータによって、コードの�
 
 8. **[プロセス]** タブを選択します。 **[次を除くすべてのプロセスからデータを収集]** を選択し、 **[追加]** をクリックしてプロセスのリストに追加するか、 **[削除]** をクリックしてプロセスを削除します。 このオプションを選択すると、指定したプロセスを除く、システムで実行されているすべてのプロセスがデータ収集の対象となります。
 
-     - または -
+     または
 
      **[指定されたプロセスからのみデータを収集]** を選択し、 **[追加]** をクリックしてプロセスのリストに追加するか、 **[削除]** をクリックしてプロセスを削除します。 このオプションを選択すると、必要なプロセスを正確に指定できます。
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805326"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647795"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターの他の言語のサポートの追加
 
@@ -76,11 +76,11 @@ Visual Studio では、[TextMate 文法](https://manual.macromates.com/en/langua
 
 |フォルダー名|説明|
 |-----------------|-----------------|
-|\\*\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、*\Matlab* などに置き換えます。|
+|\\ *\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、 *\Matlab* などに置き換えます。|
 |*\Syntaxes*|文法のフォルダーです。 *Matlab.json* などの、言語に対応する文法の *.json* ファイルが含まれています。|
 |*\Snippets*|スニペットのフォルダーです。 言語のスニペットが含まれています。|
 
-Windows では、*%userprofile%* はパス (*c:\Users\\\<ユーザー名>*) に解決されます。 システム上に *Extensions* フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
+Windows では、 *%userprofile%* はパス (*c:\Users\\\<ユーザー名>* ) に解決されます。 システム上に *Extensions* フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
 > [!TIP]
 > エディターでファイルを開いている場合、TextMate 文法を追加した後に構文の強調表示を参照するには、ファイルをいったん閉じてから、再び開く必要があります。

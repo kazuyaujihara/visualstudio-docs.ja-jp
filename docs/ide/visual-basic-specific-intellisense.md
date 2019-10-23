@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0897f3b2964996b18a40cc8dda16068ff772f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa21939375956024a0ca16cadd99160d142a1d5d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582512"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647271"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic コード ファイルの IntelliSense
 
@@ -37,7 +37,7 @@ Visual Basic ソース コード エディターでは、次の IntelliSense 機
 
     ステートメントが列挙型のメンバーを参照する場合、IntelliSense では `Enum` のメンバーのリストが表示されます。 ステートメントが `Boolean` を参照する場合、IntelliSense では true-false ドロップダウン メニューが表示されます。
 
-既定で補完機能を無効にするには、**[Visual Basic]** フォルダーの **[全般]** プロパティ ページで、**[自動メンバー表示]** の選択を解除します。
+既定で補完機能を無効にするには、 **[Visual Basic]** フォルダーの **[全般]** プロパティ ページで、 **[自動メンバー表示]** の選択を解除します。
 
 [メンバーの一覧] または [入力候補] を呼び出すか、**Alt**+**→**キーを押して、補完機能を手動で起動することができます。 詳細については、[IntelliSense の使用](../ide/using-intellisense.md)に関するページを参照してください。
 
@@ -53,7 +53,7 @@ Visual Basic ソース コード エディターでは、次の IntelliSense 機
 
 ## <a name="filtered-completion-lists"></a>フィルター処理されたコンプリート リスト
 
-Visual Basic の IntelliSense コンプリート リストには、リストの下部近くに 2 つのタブ コントロールがあります。 既定で選択されている **[よく使われる候補]** タブには、作成しているステートメントを完成するために最もよく使われる項目が表示されます。 **[すべて]** タブには、**[よく使われる候補]** タブに表示されている項目も含めて、オート コンプリートで使用可能なすべての項目が表示されます。
+Visual Basic の IntelliSense コンプリート リストには、リストの下部近くに 2 つのタブ コントロールがあります。 既定で選択されている **[よく使われる候補]** タブには、作成しているステートメントを完成するために最もよく使われる項目が表示されます。 **[すべて]** タブには、 **[よく使われる候補]** タブに表示されている項目も含めて、オート コンプリートで使用可能なすべての項目が表示されます。
 
 ## <a name="see-also"></a>関連項目
 

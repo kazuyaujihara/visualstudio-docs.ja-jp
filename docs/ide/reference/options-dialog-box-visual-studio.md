@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box, development environment
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecbd3582257d4c141c82be95c0e7ea06504ffcf
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4bf14fc4fec2d10f4bf7f9b8b26814680a9f42ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839605"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666388"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[オプション] ダイアログ ボックス (Visual Studio)
 
@@ -41,7 +41,7 @@ IDE 機能のオプションは、この機能がメモリに読み込まれる�
 
 ### <a name="show-all-settings"></a>すべての設定を表示
 
-**[すべての設定を表示]** のオンまたはオフの操作は、**[OK]** をクリックしていなくても、**[オプション]** ダイアログ ボックスで行ったすべての変更に適用されます。
+**[すべての設定を表示]** のオンまたはオフの操作は、 **[OK]** をクリックしていなくても、 **[オプション]** ダイアログ ボックスで行ったすべての変更に適用されます。
 
 ## <a name="see-also"></a>関連項目
 

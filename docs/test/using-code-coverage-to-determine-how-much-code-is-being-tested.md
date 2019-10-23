@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342422"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659802"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるコード割合の確認
 
@@ -124,7 +124,7 @@ ms.locfileid: "71342422"
 > [!TIP]
 > クラスを除外しても、派生クラスは除外されません。
 
-例:
+次に例を示します。
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -292,7 +292,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    ::: moniker-end
 
-2. コマンド プロンプトで、次のコマンドを実行します。
+2. コマンド プロンプトで次のコマンドを実行します。
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage

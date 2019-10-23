@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990550"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659924"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>ロード テストにおけるテスト コントローラーとテスト エージェントのトラブルシューティングの方法
 
@@ -97,11 +97,11 @@ ms.locfileid: "62990550"
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>ネットワーク アダプターの IP アドレスを取得するには
 
-1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
+1. **[スタート]** を選択し、 **[ファイル名を指定して実行]** を選択します。
 
      **[実行]** ダイアログ ボックスが表示されます。
 
-2. 「`cmd`」と入力し、**[OK]** をクリックします。
+2. 「`cmd`」と入力し、 **[OK]** をクリックします。
 
      コマンド プロンプトが開きます。
 
@@ -113,7 +113,7 @@ ms.locfileid: "62990550"
 
 1. テスト コントローラー サービスを停止します。 コマンド プロンプトで、「`net stop vsttcontroller`」と入力します。
 
-2. *QTController.exe.config* というファイルを開きます。ファイルは、*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* にあります。
+2. *QTController.exe.config* というファイルを開きます。ファイルは、 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* にあります。
 
 3. `BindTo` プロパティのエントリをアプリケーション設定に追加します。 コントローラーにバインドするネットワーク アダプターの IP アドレスを指定します。 コードは次のようになります。
 

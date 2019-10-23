@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656067"
 ---
 # <a name="how-to-distribute-code-snippets"></a>方法: コード スニペットを配布する
 
@@ -67,7 +67,7 @@ ms.locfileid: "62429554"
 
 2. *.snippet* ファイルを *HelloWorldVB* フォルダーに移動します。
 
-3. **ソリューション エクスプローラー**で *.snippet* ファイルを選び、**[プロパティ]** ウィンドウで **[ビルド アクション]** を **[コンテンツ]** に、**[出力ディレクトリにコピー]** を **[常にコピーする]** に、**[VSIX に含める]** を **[true]** に、それぞれ設定します。
+3. **ソリューション エクスプローラー**で *.snippet* ファイルを選び、 **[プロパティ]** ウィンドウで **[ビルド アクション]** を **[コンテンツ]** に、 **[出力ディレクトリにコピー]** を **[常にコピーする]** に、 **[VSIX に含める]** を **[true]** に、それぞれ設定します。
 
 ### <a name="add-the-pkgdef-file"></a>.pkgdef ファイルを追加する
 
@@ -93,15 +93,15 @@ ms.locfileid: "62429554"
 
     このキーを調べると、さまざまな言語を指定する方法が分かります。
 
-3. **ソリューション エクスプローラー**で *.pkgdef* ファイルを選択し、**[プロパティ]** ウィンドウで次のように設定します。
+3. **ソリューション エクスプローラー**で *.pkgdef* ファイルを選択し、 **[プロパティ]** ウィンドウで次のように設定します。
 
    - **[ビルド アクション]** を **[コンテンツ]** に設定する
    - **[出力ディレクトリにコピー]** を **[常にコピーする]** に設定する
    - **[VSIX に含める]** を **true** に設定する
 
-4. VSIX マニフェストに *.pkgdef* ファイルを資産として追加します。 **source.extension.vsixmanifest** ファイルで、*[資産]* タブに移動し、**[新規]** をクリックします。
+4. VSIX マニフェストに *.pkgdef* ファイルを資産として追加します。 **source.extension.vsixmanifest** ファイルで、 *[資産]* タブに移動し、 **[新規]** をクリックします。
 
-5. **[新しい資産の追加]** ダイアログ ボックスで、**[型]** を **Microsoft.VisualStudio.VsPackage** に、**[ソース]** を **[ファイル システム上のファイル]** に、**[パス]** を **[HelloWorldVB.pkgdef]** (ドロップダウン リストに表示される) に、それぞれ設定します。
+5. **[新しい資産の追加]** ダイアログ ボックスで、 **[型]** を **Microsoft.VisualStudio.VsPackage** に、 **[ソース]** を **[ファイル システム上のファイル]** に、 **[パス]** を **[HelloWorldVB.pkgdef]** (ドロップダウン リストに表示される) に、それぞれ設定します。
 
 ### <a name="test-the-snippet"></a>スニペットをテストする
 
@@ -111,7 +111,7 @@ ms.locfileid: "62429554"
 
    Visual Studio の 2 番目のインスタンスが表示されます。
 
-3. 実験用インスタンスで、**[ツール]** > **[コード スニペット マネージャー]** の順に移動し、**[言語]** を **[基本]** に設定します。 フォルダーの 1 つとして *HelloWorldVB* が表示されるはずです。そのフォルダーを展開すると *HelloWorldVB* スニペットを表示できます。
+3. 実験用インスタンスで、 **[ツール]**  >  **[コード スニペット マネージャー]** の順に移動し、 **[言語]** を **[基本]** に設定します。 フォルダーの 1 つとして *HelloWorldVB* が表示されるはずです。そのフォルダーを展開すると *HelloWorldVB* スニペットを表示できます。
 
 4. スニペットをテストします。 実験用インスタンスで、Visual Basic プロジェクトを開き、コード ファイルのいずれかを開きます。 コードの任意の場所にカーソルを置いて右クリックし、コンテキスト メニューで **[スニペットの挿入]** を選びます。
 

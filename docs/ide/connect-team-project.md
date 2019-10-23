@@ -2,15 +2,15 @@
 title: チーム エクスプローラーのプロジェクトに接続する
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3e4b2b5df96f397104afb3ab6268e1fa294116e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976680"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652632"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>チーム エクスプローラーのプロジェクトに接続する
 
@@ -19,7 +19,7 @@ ms.locfileid: "62976680"
 ![チーム エクスプローラー[ホーム] ページ (Visual Studio)](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Visual Studio を開いても**チーム エクスプローラー**が表示されない場合、メニュー バーで **[表示]**、**[チーム エクスプローラー]** の順に選択して開いてください。
+> Visual Studio を開いても**チーム エクスプローラー**が表示されない場合、メニュー バーで **[表示]** 、 **[チーム エクスプローラー]** の順に選択して開いてください。
 
 ## <a name="connect-to-a-project-or-repository"></a>プロジェクトまたはリポジトリに接続する
 
@@ -29,11 +29,11 @@ ms.locfileid: "62976680"
 
 プロジェクトに接続するには:
 
-1. **[接続の管理]** アイコンを選択し、**[接続]** ページを開きます。
+1. **[接続の管理]** アイコンを選択し、 **[接続]** ページを開きます。
 
    ![チーム エクスプローラーの [接続の管理] ボタン](media/team-explorer/manage-connections.png)
 
-1. **[接続]** ページで、**[接続の管理]**、**[プロジェクトに接続]** の順に選択します。
+1. **[接続]** ページで、 **[接続の管理]** 、 **[プロジェクトに接続]** の順に選択します。
 
    ![チーム エクスプローラーのプロジェクトに接続する](media/team-explorer/connect-project.png)
 

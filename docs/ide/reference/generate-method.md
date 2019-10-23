@@ -2,17 +2,17 @@
 title: メソッドを生成する
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d815b638033e16796c90a362207b820bfe7cc57d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794853"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668342"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio でメソッドを生成する
 
@@ -32,18 +32,18 @@ ms.locfileid: "62794853"
 
 1. 赤い波線が表示されている行にカーソルを置きます。 赤い波線は、まだ存在していないメソッドを示します。
 
-   - C#: 
+   - C#:
 
        ![強調表示された C# のコード](media/method-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示された VB のコード](media/method-highlight-vb.png)
 
 2. 次に、以下のいずれかを実行します。
 
    - **キーボード**
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
@@ -58,11 +58,11 @@ ms.locfileid: "62794853"
 
    メソッドと、その使用法から推論されるすべてのパラメーターが作成されます。
 
-   - C#: 
+   - C#:
 
        ![C# のメソッド生成結果](media/method-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![VB のメソッド生成結果](media/method-result-vb.png)
 

@@ -3,17 +3,17 @@ title: L2DBForm.xaml ソース コード
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41796664d5456876edff81662cbab44edf7a82f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844256"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635282"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml ソース コード
 
@@ -33,7 +33,7 @@ WPF プロジェクトで一般に見られるように、このファイルに�
 
 11 ～ 25 行目にわたる `<ObjectDataProvider>` タグでは、 <xref:System.Windows.Data.ObjectDataProvider>をソースとして使用する `LoadedBooks`という名前の <xref:System.Xml.Linq.XElement> が宣言されています。 <xref:System.Xml.Linq.XElement> は、組み込み XML ドキュメント (`CDATA` 要素) を解析することで初期化されます。 組み込み XML ドキュメントの宣言時および解析時に、空白が保持されることに注意してください。 空白が保持されるのは、生の XML の表示に使用されている <xref:System.Windows.Controls.TextBlock> コントロールに、特別な XML 書式設定機能がないためです。
 
-最後に、28 ～ 34 行目で <xref:System.Windows.DataTemplate> という名前の `BookTemplate` が定義されています。 このテンプレートは、**[Book List]** UI セクションにエントリを表示するために使用されます。 ここでは、データ バインドおよび LINQ to XML の動的プロパティを使用し、次の代入を通じて書籍の ID と名前を取得します。
+最後に、28 ～ 34 行目で <xref:System.Windows.DataTemplate> という名前の `BookTemplate` が定義されています。 このテンプレートは、 **[Book List]** UI セクションにエントリを表示するために使用されます。 ここでは、データ バインドおよび LINQ to XML の動的プロパティを使用し、次の代入を通じて書籍の ID と名前を取得します。
 
 ```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"

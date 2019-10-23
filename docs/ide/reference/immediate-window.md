@@ -11,23 +11,23 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995260"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662530"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 
 **[イミディエイト]** ウィンドウは、式のデバッグと評価、ステートメントの実行、変数値の出力のために使用します。 **[イミディエイト]** ウィンドウでは、現在選択されているプロジェクトをビルドして使用することで式を評価します。
 
-**[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、**[デバッグ]** > **[ウィンドウ]** > **[イミディエイト]** の順に選択するか、**Ctrl**+**Alt**+**I** キーを押します。 また、**[コマンド]** ウィンドウに「**Debug.Immediate**」と入力することもできます。
+**[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[イミディエイト]** の順に選択するか、**Ctrl**+**Alt**+**I** キーを押します。 また、 **[コマンド]** ウィンドウに「**Debug.Immediate**」と入力することもできます。
 
 **[イミディエイト]** ウィンドウは、IntelliSense をサポートしています。
 
@@ -72,7 +72,7 @@ ms.locfileid: "62995260"
    End Module
    ```
 
-2. **[デバッグ]** メニューの **[ウィンドウ]** > **[イミディエイト]** の順に選択します。
+2. **[デバッグ]** メニューの **[ウィンドウ]**  >  **[イミディエイト]** の順に選択します。
 
 3. **[イミディエイト]** ウィンドウに「`?MyFunction(2)`」と入力し、**Enter** キーを押します。
 
@@ -121,13 +121,13 @@ Expression has been evaluated and has no value
 
 ## <a name="first-chance-exception-notifications"></a>初回例外通知
 
-設定の構成によっては、**[イミディエイト]** ウィンドウに初回例外通知が表示されることがあります。
+設定の構成によっては、 **[イミディエイト]** ウィンドウに初回例外通知が表示されることがあります。
 
 ### <a name="toggle-first-chance-exception-notifications-in-the-immediate-window"></a>[イミディエイト] ウィンドウで初回例外通知を切り替える
 
-1. **[表示]** メニューの **[その他のウィンドウ]** をポイントし、**[出力]** をクリックします。
+1. **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[出力]** をクリックします。
 
-2. **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。
+2. **[出力]** ウィンドウのテキスト領域で右クリックし、 **[例外メッセージ]** をクリックして選択または選択解除します。
 
 ## <a name="see-also"></a>関連項目
 

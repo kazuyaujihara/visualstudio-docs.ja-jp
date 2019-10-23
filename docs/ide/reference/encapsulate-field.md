@@ -2,8 +2,8 @@
 title: フィールドをプロパティにリファクタリングする
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9030fd2ae85d12760d6f6a12be54492f3c14e12b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e47a62fcea8306c22564e50adde436b4f35e549
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654476"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>フィールドのカプセル化リファクタリング
 
@@ -37,11 +37,11 @@ ms.locfileid: "62791319"
 
 1. カプセル化するフィールドの名前を強調表示するか、名前の内側にテキスト カーソルを置きます。
 
-   - C#: 
+   - C#:
 
        ![強調表示されたコード - C#](media/encapsulate-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示されたコード - Visual Basic](media/encapsulate-highlight-vb.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "62791319"
 
    - **キーボード**
       - **Ctrl + R** キーを押し、次に **Ctrl + E** キーを押します。  選ばれているプロファイルによってキーボード ショートカットが異なる場合があることに注意してください。
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップからどちらかの **[フィールドのカプセル化]** エントリを選択します。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップからどちらかの **[フィールドのカプセル化]** エントリを選択します。
    - **マウス**
       - **[編集] > [リファクター] > [フィールドのカプセル化]** の順に選択します。
       - コードを右クリックして **[クイック アクションとリファクタリング]** メニューを選択し、[プレビュー] ウィンドウ ポップアップからどちらかの **[フィールドのカプセル化]** エントリを選択します。
@@ -64,11 +64,11 @@ ms.locfileid: "62791319"
    > [!TIP]
    > ポップアップ ウィンドウの **[変更のプレビュー]** リンクを使って、コミットする前に[結果を確認する](../../ide/preview-changes.md)ことができます。
 
-   - C#: 
+   - C#:
 
       ![プロパティのカプセル化の結果 - C#](media/encapsulate-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![プロパティのカプセル化の結果 - Visual Basic](media/encapsulate-result-vb.png)
 

@@ -33,4 +33,4 @@ ms.locfileid: "72672904"
  通常、組織の署名のグループまたは外部の署名機関には、秘密キーを使って署名させる必要があります。 これは、秘密キーの機密性によるもので、多くの場合、アクセスは数人のユーザーに制限されます。 開発時には遅延署名を使用することができます。 詳細については、「[アセンブリへの遅延署名](https://msdn.microsoft.com/library/9d300e17-5bf1-4360-97da-2aa55efd9070)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [アセンブリのセキュリティに関する考慮事項](https://msdn.microsoft.com/library/1b5439c1-f3d5-4529-bd69-01814703d067)[主要なセキュリティの概念](https://msdn.microsoft.com/library/3cfced4f-ea02-4e66-ae98-d69286363e98)アプリケーション[をローカライズする .NET Framework に基づく国際対応](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) [](../ide/localizing-applications.md)アプリケーションの概要アプリケーションの[グローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)
+ [アセンブリのセキュリティに関する考慮事項 ](https://msdn.microsoft.com/library/1b5439c1-f3d5-4529-bd69-01814703d067) [Key セキュリティの概念を ](https://msdn.microsoft.com/library/3cfced4f-ea02-4e66-ae98-d69286363e98) [.NET Framework ](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) アプリケーション [Localizing ](../ide/localizing-applications.md) とローカライズに基づいて国際対応アプリケーションに [Introduction するプログラム](../ide/globalizing-and-localizing-applications.md)

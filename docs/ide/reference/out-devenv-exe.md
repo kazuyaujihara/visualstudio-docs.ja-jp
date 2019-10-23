@@ -13,17 +13,17 @@ helpviewer_keywords:
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a073b4815a01696c546dc2a9dd1132e3605281e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655781"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -45,7 +45,7 @@ devenv /Out FileName
 
 指定したファイル名が存在しない場合は、ファイルが自動的に作成されます。 ファイルが既に存在する場合、結果はファイルの既存の内容に追加されます。
 
-コマンドラインのビルド エラーは、**[コマンド]** ウィンドウと **[出力]** ウィンドウの [ソリューション ビルダー] ビューに表示されます。 このスイッチは、自動ビルドの結果を表示する場合に便利です。
+コマンドラインのビルド エラーは、 **[コマンド]** ウィンドウと **[出力]** ウィンドウの [ソリューション ビルダー] ビューに表示されます。 このスイッチは、自動ビルドの結果を表示する場合に便利です。
 
 ## <a name="example"></a>例
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5459f1b82dd83905f2672d198f503a741778287b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926532"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665053"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>ロード パターンを編集して仮想ユーザー アクティビティをモデル化する
 
@@ -65,7 +65,7 @@ ms.locfileid: "68926532"
 
 - **ステップごとのユーザー カウント**:100
 
-  これらの設定では、100 人、200 人、300 人をはじめ、2,000 人までのユーザー ロードで、30 分 (1,800 秒) のロード テストを実行します。 これらのプロパティの中で **[ステップごとの傾斜増加時間]** プロパティは、**新しいロード テスト ウィザード**で選択できない唯一のプロパティです。 "ステップごとの傾斜増加時間" プロパティでは、1 つのステップから次の手順 (100 人から 200 人への増加など) へ突然増加するのではなく、徐々に増加することができます。 例では、ユーザー ロードは、20 秒で 100 人から 200 人のユーザーに増加します (毎秒 5 人の増加)。 詳細については、「[方法 :ステップ ロード パターンのステップごとの傾斜増加時間プロパティを指定する](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)」を参照してください。
+  これらの設定では、100 人、200 人、300 人をはじめ、2,000 人までのユーザー ロードで、30 分 (1,800 秒) のロード テストを実行します。 これらのプロパティの中で **[ステップごとの傾斜増加時間]** プロパティは、**新しいロード テスト ウィザード**で選択できない唯一のプロパティです。 "ステップごとの傾斜増加時間" プロパティでは、1 つのステップから次の手順 (100 人から 200 人への増加など) へ突然増加するのではなく、徐々に増加することができます。 例では、ユーザー ロードは、20 秒で 100 人から 200 人のユーザーに増加します (毎秒 5 人の増加)。 詳細については、[ステップ ロード パターンのステップごとの傾斜増加時間プロパティを指定する](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)」を参照してください。
 
 ### <a name="goal-based"></a>ゴール志向
 
@@ -124,7 +124,7 @@ ms.locfileid: "68926532"
 ロード パターンは、ロード テスト中にアクティブである仮想ユーザーの数、および新しいユーザーが追加される割合を指定します。 ステップ パターン、持続、およびゴール志向という使用可能な 3 つのパターンから選択できます。 詳細については、「[ロード テスト シナリオでロード パターンを使用して仮想ユーザーの数を指定する](../test/edit-load-patterns-to-model-virtual-user-activities.md)」を参照してください。
 
 > [!NOTE]
-> また、ロード テスト プラグインを使用すると、ロード プロパティをプログラムによって変更できます。 詳細については、「[方法 :ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)」を参照してください。
+> また、ロード テスト プラグインを使用すると、ロード プロパティをプログラムによって変更できます。 詳細については、[ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)」を参照してください。
 
 ### <a name="to-change-the-load-pattern"></a>ロード パターンを変更するには
 
