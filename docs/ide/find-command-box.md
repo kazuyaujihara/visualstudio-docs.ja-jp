@@ -6,23 +6,23 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 221c5fbbd3f0f82ac97d0c2a0fcc82657e0296c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653727"
 ---
 # <a name="findcommand-box"></a>[検索/コマンド] ボックス
 
-**[検索]** ボックスでは、テキストを検索し、Visual Studio コマンドを検索できます。 **[検索]** ボックスは、ツール バー コントロールとして使用できますが、既定では表示されません。 **[標準]** ツール バーの **[ボタンの追加または削除]** を選択し、**[検索]** を選択すると、**[検索]** ボックスを表示できます。
+**[検索]** ボックスでは、テキストを検索し、Visual Studio コマンドを検索できます。 **[検索]** ボックスは、ツール バー コントロールとして使用できますが、既定では表示されません。 **[標準]** ツール バーの **[ボタンの追加または削除]** を選択し、 **[検索]** を選択すると、 **[検索]** ボックスを表示できます。
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] コマンドを実行するには、コマンドの先頭に不等号 (**>**) を付けます。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] コマンドを実行するには、コマンドの先頭に不等号 ( **>** ) を付けます。
 
 **[検索]** ボックスでは、最近入力した 20 個のアイテムが記憶され、ドロップダウン リストに表示されます。 **方向キー**を選択すると、一覧を参照できます。
 
@@ -30,11 +30,11 @@ ms.locfileid: "62977782"
 
 ## <a name="searching-for-text"></a>テキストの検索
 
-既定では、**[検索]** ボックスにテキストを指定して **Enter** キーを押すと、Visual Studio によって、**[フォルダーを指定して検索]** ダイアログ ボックスで指定したオプションが使用され、現在のドキュメント ウィンドウまたはツール ウィンドウで検索されます。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」を参照してください。
+既定では、 **[検索]** ボックスにテキストを指定して **Enter** キーを押すと、Visual Studio によって、 **[フォルダーを指定して検索]** ダイアログ ボックスで指定したオプションが使用され、現在のドキュメント ウィンドウまたはツール ウィンドウで検索されます。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」を参照してください。
 
 ## <a name="entering-commands"></a>コマンドの入力
 
-**[検索]** ボックスを使用して、文字列の検索ではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の単一のコマンドまたはエイリアスを実行するには、コマンドの先頭に不等号 (**>**) を付けます。 次に例を示します。
+**[検索]** ボックスを使用して、文字列の検索ではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の単一のコマンドまたはエイリアスを実行するには、コマンドの先頭に不等号 ( **>** ) を付けます。 次に例を示します。
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ ms.locfileid: "62977782"
 
 ## <a name="escape-characters"></a>エスケープ文字
 
-コマンドにカレット (**^**) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (**"**)、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 次に例を示します。
+コマンドにカレット ( **^** ) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 ( **"** )、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 次に例を示します。
 
 ```
 >Edit.Find ^^t /regex

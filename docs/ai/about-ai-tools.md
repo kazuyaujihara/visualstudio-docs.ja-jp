@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430446"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777462"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
 Visual Studio Tools for AI は、ディープ ラーニング/AI ソリューションをビルド、テスト、展開するための拡張機能です。 堅牢な実験機能 (たとえば、データ準備およびモデル トレーニング ジョブの別の計算ターゲットへの透過的な送信など) のために、Azure Machine Learning とシームレスに統合します。 さらに、カスタム メトリックと実行履歴追跡のサポートを提供し、データ サイエンスの再現性と監査を可能にします。 エンタープライズ対応のコラボレーションにより、複数のユーザーがプロジェクトで安全に共同作業できます。
 
-[Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit)、[Google TensorFlow](https://www.tensorflow.org)、または他のディープ ラーニング フレームワークを使って、すぐにディープ ラーニングを始めてください。
+[Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/)、[Google TensorFlow](https://www.tensorflow.org)、または他のディープ ラーニング フレームワークを使って、すぐにディープ ラーニングを始めてください。
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>ディープ ラーニング モデルと AI ソリューションを開発、デバッグ、展開する
 Visual Studio の生産性機能を使って今日の AI 革新を高速化します。 組み込みコード エディターの構文強調表示、IntelliSense、テキスト自動書式設定などの機能を使用します。 ローカル変数とモデルに対してステップ実行デバッグを使い、ローカル環境でディープ ラーニング アプリケーションを対話的にテストできます。
@@ -46,4 +46,4 @@ Visual Studio Tools for AI は Azure Machine Learning と統合されており�
 現在、この拡張機能は Windows の 64 ビット オペレーティング システムをサポートしています。
 
 ## <a name="support"></a>サポート
-この拡張機能のサポートは、[GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) で提供されています。 バグ レポートや機能の提案を送信したり、ディスカッションに参加したりできます。
+この拡張機能のサポートは、[GitHub Issue Tracker](https://github.com/Microsoft/vs-tools-for-ai/issues) で提供されています。 バグ レポートや機能の提案を送信したり、ディスカッションに参加したりできます。

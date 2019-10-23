@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979454"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664858"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>方法: ロード テストの実行設定にコンテキスト パラメーターを追加する
 
@@ -56,17 +56,17 @@ Webserver1 コンテキスト パラメーターの値を `http://CorporateStagi
 
 2. ロード テスト エディターで、ロード テスト ツリーの **[実行設定]** フォルダーを展開します。
 
-3. コンテキスト パラメーターを追加する特定の実行設定を右クリックし、**[コンテキスト パラメーターの追加]** を選択します。
+3. コンテキスト パラメーターを追加する特定の実行設定を右クリックし、 **[コンテキスト パラメーターの追加]** を選択します。
 
      新しいコンテキスト パラメーターが、ロード テスト ツリーの **[実行設定]** フォルダーの **[コンテキスト パラメーター]** フォルダーに追加されます。
 
-     - または -
+     または
 
      実行設定に **[コンテキスト パラメーター]** フォルダーが既に含まれている場合は、それを右クリックして **[コンテキスト パラメーターの追加]** を選択します。
 
-4. **[プロパティ]** ウィンドウで、必要に応じて、**[名前]** の値を変更 (WebServer1 など) します。 **[プロパティ]** ウィンドウの **[値]** を、使用するパラメーター (`http://CorporateStagingWebServer` など) に変更します。
+4. **[プロパティ]** ウィンドウで、必要に応じて、 **[名前]** の値を変更 (WebServer1 など) します。 **[プロパティ]** ウィンドウの **[値]** を、使用するパラメーター (`http://CorporateStagingWebServer` など) に変更します。
 
-5. (省略可能) 手順 3. から 5. を繰り返し、**[値]** に別の文字列 (`http://CorporateProductionWebServer` など) を使用します。
+5. (省略可能) 手順 3. から 5. を繰り返し、 **[値]** に別の文字列 (`http://CorporateProductionWebServer` など) を使用します。
 
 6. どの実行設定をアクティブにするかを選択します。 実行設定のショートカット メニューを開いて **[アクティブとして設定]** を選択します。
 

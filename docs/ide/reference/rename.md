@@ -2,8 +2,8 @@
 title: 名前の変更のリファクタリング
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186577"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655618"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>コード シンボルの名前の変更のリファクタリング
 
@@ -73,7 +73,7 @@ ms.locfileid: "71186577"
 - Visual Studio 2019 バージョン 16.3 以降では、ある型の名前がそれが含まれているファイルの名前に一致するとき、その型の名前を変更すると、ファイルの名前も同時に変更できるチェックボックスが表示されます。 クラス、インターフェイス、または列挙型の名前を変更するとき、このオプションが表示されます。 このオプションは、複数の定義を持つ部分型ではサポートされていません。
 
    ![ファイルを含むアニメーションの名前を変更する - C#](media/rename-with-file-animated-cs.gif)
-   
+
 - 競合が発生する可能性がある既存の名前を使うと、 **[名前の変更]** ボックスに警告が表示されます。
 
    ![名前変更の競合](media/rename-conflict-cs.png)

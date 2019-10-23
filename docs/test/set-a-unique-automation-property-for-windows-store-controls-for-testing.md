@@ -2,17 +2,17 @@
 title: テスト用に UWP コントロールの一意のオートメーション プロパティを設定する
 ms.date: 05/31/2018
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: fd939162ff4063a66ac0afe1e6830a0d3b32bab2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 845ed1502f86f9b0de678182bd0dc77b9b7617c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429398"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660012"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>テスト用に UWP コントロールの一意のオートメーション プロパティを設定する
 
@@ -56,11 +56,11 @@ XAML ファイルに定義されているコントロールに一意のオート
 
 Blend for Visual Studio では、ボタン、リスト ボックス、コンボ ボックス、テキスト ボックスなど、対話型要素に一意の名前を割り当てるオプションを選択することができます。これにより、コントロールの **AutomationProperties.Name** に一意の値が割り当てられます。
 
-既存のコントロールに一意の名前を割り当てるには、**[ツール]** > **[対話型要素に名前を付ける]** の順に選択します。
+既存のコントロールに一意の名前を割り当てるには、 **[ツール]**  >  **[対話型要素に名前を付ける]** の順に選択します。
 
 ![Blend for Visual Studio で対話型要素に名前を付ける](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-追加する新しいコントロールに一意の名前を自動的に付けるには、**[ツール]** > **[オプション]** の順に選択して、**[オプション]** ダイアログ ボックスを開きます。 **[XAML デザイナー]** を選択し、次に **[対話要素の作成時に自動的に名前を付ける]** を選択します。 **[OK]** を選択してダイアログ ボックスを閉じます。
+追加する新しいコントロールに一意の名前を自動的に付けるには、 **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 **[XAML デザイナー]** を選択し、次に **[対話要素の作成時に自動的に名前を付ける]** を選択します。 **[OK]** を選択してダイアログ ボックスを閉じます。
 
 ## <a name="use-a-data-template"></a>データ テンプレートを使用する
 

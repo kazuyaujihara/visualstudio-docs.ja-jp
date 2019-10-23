@@ -2,8 +2,8 @@
 title: クラスまたは型の生成
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795024"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660073"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio でクラスまたは型を生成する
 
@@ -37,18 +37,18 @@ ms.locfileid: "62795024"
 
 1. 赤い波線が表示されている行にカーソルを置きます。 赤い波線は、まだ存在していないクラスを示します。
 
-   - C#: 
+   - C#:
 
        ![強調表示された C# のコード](media/class-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示された VB のコード](media/class-highlight-vb.png)
 
 2. 次に、以下のいずれかを実行します。
 
    - **キーボード**
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
@@ -66,13 +66,13 @@ ms.locfileid: "62795024"
    > [!TIP]
    > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる[すべての変更を確認する](../../ide/preview-changes.md)ことができます。
 
-4. **[新しい型の生成]** 項目を選択した場合、**[型の生成]** ダイアログ ボックスが開きます。 新しい型のアクセシビリティ、種類、および場所を構成します。
+4. **[新しい型の生成]** 項目を選択した場合、 **[型の生成]** ダイアログ ボックスが開きます。 新しい型のアクセシビリティ、種類、および場所を構成します。
 
    ![型の生成](media/class-newtype-cs.png)
 
    選択ツール | 説明
    --- | ---
-   Access | 型に *[既定]*、*[内部]*、または *[パブリック]* アクセスを設定します。
+   Access | 型に *[既定]* 、 *[内部]* 、または *[パブリック]* アクセスを設定します。
    種類 | *[クラス]* または *[構造体]* として設定できます。
    name | 変更できません。入力済みの名前になります。
    Project | ソリューションに複数のプロジェクトがある場合、クラス/構造体を置くプロジェクトを選択できます。

@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428210"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656509"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>方法: surround-with コード スニペットを使用する
 
-ここでは、surround-with コード スニペットを使用する方法について説明します。 surround-with コード スニペットは 3 つの方法 (キーボード ショートカット、**[編集]** メニュー、右クリック (コンテキスト) メニュー) で使うことができます。
+ここでは、surround-with コード スニペットを使用する方法について説明します。 surround-with コード スニペットは 3 つの方法 (キーボード ショートカット、 **[編集]** メニュー、右クリック (コンテキスト) メニュー) で使うことができます。
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>キーボード ショートカットを用いて surround-with コード スニペットを使用するには
 
@@ -37,7 +37,7 @@ ms.locfileid: "62428210"
 
 1. **コード エディター**で、囲むテキストを選択します。
 
-1. **[編集]** メニューの **[IntelliSense]** を選択し、**[ブロックの挿入]** コマンドを選択します。
+1. **[編集]** メニューの **[IntelliSense]** を選択し、 **[ブロックの挿入]** コマンドを選択します。
 
 1. コード スニペット挿入でコード スニペットを選択し、**Tab** キーまたは **Enter** キーを押します。
 

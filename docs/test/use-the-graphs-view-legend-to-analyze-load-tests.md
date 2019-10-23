@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Analyzer, graphs view legend
 - load tests, graphs view legend
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c29620cad3333144d65386e509339e2f5eccddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f91ba90a6a9de1c4084d4186adae6ab8388f23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562677"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659829"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>グラフ ビューの凡例を使用したロード テストの分析
 
@@ -42,7 +42,7 @@ ms.locfileid: "62562677"
     > [!NOTE]
     > [最終] 列は、ロード テストの実行中にのみロード テスト アナライザーの凡例に表示されます。
 
-     詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
+     詳細については、[グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 
 凡例の項目を選択して、以下の操作を実行できます。
 

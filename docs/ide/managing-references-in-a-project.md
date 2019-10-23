@@ -16,23 +16,23 @@ helpviewer_keywords:
 - namespaces [Visual Studio], referencing
 - COM components, referencing
 - objects [Visual Studio], referencing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 06235439fdff952225fe3aafea9f5354a27cb0a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787633"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658419"
 ---
 # <a name="manage-references-in-a-project"></a>プロジェクト内の参照の管理
 
 外部コンポーネントまたは接続しているサービスを使用するためにコードを記述する前に、あらかじめプロジェクトにそのコンポーネントへの参照を追加しておく必要があります。 参照は、本質的には、Visual Studio がコンポーネントまたはサービスを検索するために必要な情報を含むプロジェクト ファイル内のエントリです。
 
-**参照**または**依存関係**を追加するには、**ソリューション エクスプローラー**で参照ノードを右クリックして **[参照の追加]** を選択します。 あるいは、プロジェクト ノードを右クリックし、 **[追加]**  >  **[参照]** の順に選択します。 詳細については、「[方法 :参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)」を参照してください。
+**参照**または**依存関係**を追加するには、**ソリューション エクスプローラー**で参照ノードを右クリックして **[参照の追加]** を選択します。 あるいは、プロジェクト ノードを右クリックし、 **[追加]**  >  **[参照]** の順に選択します。 詳細については、[参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)」を参照してください。
 
 ![Visual C++ での参照の追加](../ide/media/vs2015_cpp_add_reference.png)
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273405"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652481"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -71,7 +71,7 @@ ms.locfileid: "71273405"
 - Windows フォーム ログ (存在する場合)
 
 - スクリーン ショット (含めることを選択した場合)
-  
+
 - 記録データ (以下を含む記録を含めるように選択した場合)
 
   - 問題を再現する手順
@@ -81,9 +81,9 @@ ms.locfileid: "71273405"
   - ダンプ ファイル
 
 > [!NOTE]
-> ログ ファイル、スクリーンショット、および記録データは、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログとファイルは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。  
+> ログ ファイル、スクリーンショット、および記録データは、それらが含まれている問題レポートを送信してアクセス許可を付与した場合にのみ、Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログとファイルは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。
   > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
- 
+
 
 ## <a name="see-also"></a>関連項目
 

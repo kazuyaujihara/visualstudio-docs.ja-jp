@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461381"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659858"
 ---
 # <a name="unit-test-your-code"></a>コードの単体テスト
 
@@ -40,7 +40,7 @@ ms.locfileid: "65461381"
 
 単体テストを理解および作成するには、次の記事を参照してください。
 
-|[タスク]|関連するトピック|
+|タスク|関連するトピック|
 |-|-----------------------|
 |**クイック スタートおよびチュートリアル:** Visual Studio での単体テストについてコード例から学習します。|- [チュートリアル: マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [方法: C++ アプリに単体テストを追加する](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**テスト エクスプローラーによる単体テスト:** テスト エクスプローラーによって、さらに生産性が高く効率的な単体テストを作成できることを学習します。|- [単体テストの基本](../test/unit-test-basics.md)<br />- [単体テスト プロジェクトを作成する](../test/create-a-unit-test-project.md)<br />- [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)<br />- [サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)|
