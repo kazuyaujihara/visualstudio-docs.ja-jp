@@ -6,61 +6,61 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 6dac48b6-db68-4bcd-8aa2-422c2ad5d28b
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 72457070c63cdf6c76207bd92521ab7944d4318a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199857"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655022"
 ---
 # <a name="customizing-element-tools"></a>要素ツールのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-いくつかの DSL 定義では、要素のグループとして 1 つの概念を表します。 たとえば、コンポーネントが固定ポートのセットを含むでモデルを作成する場合常にする、親コンポーネントと同時に作成するポート。 そのため、1 つだけではなく要素のグループを作成する、要素の作成ツールをカスタマイズする必要があります。 これを実現するには、要素の作成ツールを初期化する方法をカスタマイズできます。  
-  
- ツールが、図または要素の上にドラッグされるときの動作をオーバーライドすることもできます。  
-  
-## <a name="customizing-the-content-of-an-element-tool"></a>要素ツールのコンテンツのカスタマイズ  
- 各要素ツールのインスタンスを格納する、 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) を含むモデル要素およびリンクの 1 つまたは複数のシリアル化されたバージョン。 既定では、要素ツールの EGP には、ツールの指定したクラスの 1 つのインスタンスが含まれています。 これを変更するにはオーバーライドすることで*YourLanguage*`ToolboxHelper.CreateElementToolPrototype`します。 DSL パッケージが読み込まれるときに、このメソッドが呼び出されます。  
-  
- メソッドのパラメーターは、DSL 定義で指定したクラスの ID です。 クラスに興味のあるメソッドが呼び出されると、EGP に余分な要素を追加できます。  
-  
- EGP では、1 つの主要な要素からサブ要素へのリンクの埋め込みを含める必要があります。 参照リンクを含めることもできます。  
-  
- 次の例では、主な要素と埋め込みの 2 つの要素を作成します。 メイン クラスは、抵抗と呼ばれ、ターミナルをという名前の要素を 2 つの埋め込みリレーションシップがあります。 埋め込みのロールのプロパティの名前は Terminal1 と Terminal2、あり両方 1..1 の多重度。  
-  
-```  
-using Microsoft.VisualStudio.Modeling; ...    
-public partial class CircuitDiagramToolboxHelper  
-{  
-  protected override ElementGroupPrototype    CreateElementToolPrototype(Store store, Guid domainClassId)  
-  {  
-    // A case for each tool to customize:    
-    if (domainClassId == Resistor.DomainClassId)  
-    {  
-      // Set up the prototype elements and links:  
-      Resistor resistor = new Resistor(store);  
-      resistor.Terminal1 = new Terminal(store);   
-      resistor.Terminal2 = new Terminal(store);  
-      resistor.Terminal1.Name = "T1"; // embedding  
-      resistor.Terminal2.Name = "T2"; // embedding  
-      // We could also set up reference links.  
-  
-      // Create an element group prototype for the toolbox:  
-      ElementGroup egp = new ElementGroup(store.DefaultPartition);  
-      egp.AddGraph(resistor, true);  
-      // We do not have to explicitly include embedded children.  
-      return egp.CreatePrototype();  
-    }  
-    // Element tools for other classes:  
-    else  
-      return base.CreateElementToolPrototype(store, domainClassId);  
-  }  
-}  
-```  
-  
-## <a name="see-also"></a>関連項目  
+DSL 定義によっては、単一の概念を要素のグループとして表すことができます。 たとえば、コンポーネントに固定のポートセットがあるモデルを作成する場合は、その親コンポーネントと同時にポートを作成することをお勧めします。 したがって、要素作成ツールをカスタマイズして、要素のグループを1つだけではなく作成するようにする必要があります。 これを実現するには、要素作成ツールの初期化方法をカスタマイズします。
+
+ また、ツールを図または要素にドラッグしたときの動作をオーバーライドすることもできます。
+
+## <a name="customizing-the-content-of-an-element-tool"></a>要素ツールのコンテンツのカスタマイズ
+ 各要素ツールは、1つまたは複数のモデル要素とリンクのシリアル化されたバージョンを含む <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) のインスタンスを格納します。 既定では、要素ツールの EGP には、ツールに指定したクラスのインスタンスが1つ含まれています。 これは、*言語*`ToolboxHelper.CreateElementToolPrototype` をオーバーライドすることによって変更できます。 このメソッドは、DSL パッケージが読み込まれるときに呼び出されます。
+
+ メソッドのパラメーターは、DSL 定義で指定したクラスの ID です。 目的のクラスを使用してメソッドを呼び出すと、EGP に追加の要素を追加できます。
+
+ EGP には、1つのメイン要素から子会社の要素へのリンクを埋め込む必要があります。 参照リンクを含めることもできます。
+
+ 次の例では、main 要素と2つの埋め込み要素を作成します。 Main クラスは、"抵抗" と呼ばれ、ターミナルという名前の要素に対する2つの埋め込みリレーションシップを持ちます。 埋め込みロールプロパティの名前は Terminal1 と Terminal2 であり、どちらも 1 ..1 の多重度を持ちます。
+
+```
+using Microsoft.VisualStudio.Modeling; ...
+public partial class CircuitDiagramToolboxHelper
+{
+  protected override ElementGroupPrototype    CreateElementToolPrototype(Store store, Guid domainClassId)
+  {
+    // A case for each tool to customize:
+    if (domainClassId == Resistor.DomainClassId)
+    {
+      // Set up the prototype elements and links:
+      Resistor resistor = new Resistor(store);
+      resistor.Terminal1 = new Terminal(store);
+      resistor.Terminal2 = new Terminal(store);
+      resistor.Terminal1.Name = "T1"; // embedding
+      resistor.Terminal2.Name = "T2"; // embedding
+      // We could also set up reference links.
+
+      // Create an element group prototype for the toolbox:
+      ElementGroup egp = new ElementGroup(store.DefaultPartition);
+      egp.AddGraph(resistor, true);
+      // We do not have to explicitly include embedded children.
+      return egp.CreatePrototype();
+    }
+    // Element tools for other classes:
+    else
+      return base.CreateElementToolPrototype(store, domainClassId);
+  }
+}
+```
+
+## <a name="see-also"></a>参照
  [要素作成処理および要素移動処理のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)

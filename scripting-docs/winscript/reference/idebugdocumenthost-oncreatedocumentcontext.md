@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenthost::oncreatedocumentcontext |Microsoft Docs
+title: 'IDebugDocumentHost:: OnCreateDocumentContext |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdfa64f66288cba47dec7c498db15238e55f954
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971096"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569112"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-新しいドキュメント コンテキストを作成中で、ホストで必要に応じて、新しいコンテキストの不明な制御を返すことをホストに通知します。  
+新しいドキュメントコンテキストが作成されていることをホストに通知します。また、ホストは、新しいコンテキストに対して、必要に応じて不明な制御を返すことができます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>パラメーター  
  `ppunkOuter`  
- [out]新しいコンテキストを制御するオブジェクト。  
+ 入出力新しいコンテキストを制御するオブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -45,10 +45,10 @@ HRESULT OnCreateDocumentContext(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_NOTIMPL`|ホストでは、コントロール オブジェクトは提供されません。|  
+|`E_NOTIMPL`|ホストが制御オブジェクトを提供していません。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、新しい機能をヘルパーで提供されるドキュメントのコンテキストに追加するホストを使用します。 このメソッドが返す可能性があります**E_NOTIMPL**または null 外部オブジェクトを呼び出し元の場合は、コンテキストを作成する責任を負います。  
+ このメソッドを使用すると、ホストはヘルパーによって提供されるドキュメントコンテキストに新しい機能を追加できます。 このメソッドは、 **E_NOTIMPL**または null 外部オブジェクトを返す場合があります。この場合、呼び出し元はコンテキストの作成を担当します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHost インターフェイス](../../winscript/reference/idebugdocumenthost-interface.md)

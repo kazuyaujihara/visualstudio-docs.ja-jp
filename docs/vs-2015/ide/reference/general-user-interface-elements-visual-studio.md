@@ -1,74 +1,74 @@
 ---
-title: 一般的なユーザー インターフェイス要素 |Microsoft Docs
+title: 一般的なユーザーインターフェイス要素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ff25c7b03f9287afe9b8070a656643d34d5ec478
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690971"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661243"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般的なユーザー インターフェイス要素 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 このセクションでは、統合開発環境 (IDE: Integrated Development Environment) のいくつかのユーザー インターフェイス要素について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [呼び出し階層](../../ide/reference/call-hierarchy.md)コードで呼び出し元/呼び出し先のリレーションシップのセットを表します。
+ [呼び出し階層](../../ide/reference/call-hierarchy.md)コード内の呼び出し元/呼び出し先の関係のセットを表します。
 
- [コード スニペット ピッカー](../../ide/reference/code-snippet-picker.md)言語のスニペットのセットからスニペットを選択することができます。
+ [コードスニペットピッカー](../../ide/reference/code-snippet-picker.md)言語のスニペットのセットからスニペットを選択できます。
 
- [エラー一覧 ウィンドウ](../../ide/reference/error-list-window.md)コンパイル エラーと警告を表示します。
+ [エラー一覧ウィンドウ](../../ide/reference/error-list-window.md)コンパイルエラーと警告を表示します。
 
- [行へ移動](../../ide/reference/go-to-line.md)ファイル内の特定の行に移動することができます。
+ [行にジャンプ](../../ide/reference/go-to-line.md)ファイル内の特定の行に移動できます。
 
- [[オプション] ダイアログ ボックス-](../../ide/reference/options-dialog-box-visual-studio.md)オプションを指定することができます。
+ [[オプション] ダイアログボックス](../../ide/reference/options-dialog-box-visual-studio.md)オプションを指定できます。
 
  [オプション、テキスト エディター、[全般]](../../ide/reference/options-text-editor-general.md)エディター、テキストの [全般] オプションを指定することができます。
 
- [[オプション]、[テキスト エディター]、ファイルの拡張子](../../ide/reference/options-text-editor-file-extension.md)エディターのファイル拡張子を指定することができます。
+ [[オプション]、[テキストエディター]、[ファイル拡張子](../../ide/reference/options-text-editor-file-extension.md)]エディターのファイル拡張子を指定できます。
 
- [すべての言語のオプション、テキスト エディター、](../../ide/reference/options-text-editor-all-languages.md)すべてのプログラミング言語に共通するオプションを指定することができます。
+ [[オプション]、[テキストエディター]、[すべての言語](../../ide/reference/options-text-editor-all-languages.md)]すべてのプログラミング言語に共通のオプションを指定できます。
 
- [タブのオプション、テキスト エディターでは、すべての言語、](../../ide/reference/options-text-editor-all-languages-tabs.md)すべてのプログラミング言語に共通するタブのオプションを指定することができます。
+ [[オプション]、[テキストエディター]、[すべての言語]、[タブ]](../../ide/reference/options-text-editor-all-languages-tabs.md)すべてのプログラミング言語に共通のタブオプションを指定できます。
 
- [[オプション]、[テキスト エディター]、基本 (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Visual Basic ファイルのオプションを指定することができます。
+ [[オプション]、[テキストエディター]、[基本] (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)Visual Basic ファイルのオプションを指定できます。
 
- [[オプション]-[テキスト エディター]、C/C++、書式設定](../../ide/reference/options-text-editor-c-cpp-formatting.md)C または C++ ファイルの書式設定オプションを指定することができます。
+ [[オプション]、[テキストエディターC++]、[c/]、[書式設定](../../ide/reference/options-text-editor-c-cpp-formatting.md)] C++では、c またはファイルの書式設定オプションを指定できます。
 
- [[オプション]-[テキスト エディター]、C/C++ の高度な](../../ide/reference/options-text-editor-c-cpp-advanced.md)C または C++ ファイルの高度なオプションを指定することができます。
+ [[オプション]、[テキストエディターC++]、[c/]、[詳細設定](../../ide/reference/options-text-editor-c-cpp-advanced.md)] C++では、c またはファイルの詳細オプションを指定できます。
 
- [オプション、テキスト エディターでは、c#、書式設定](../../ide/reference/options-text-editor-csharp-formatting.md)c# ファイルの書式設定オプションを指定することができます。
+ [[オプション]、[ C#テキストエディター]、[書式設定](../../ide/reference/options-text-editor-csharp-formatting.md)] をC#使用すると、ファイルの書式設定オプションを指定できます。
 
- [詳細オプション、テキスト エディターでは、C#](../../ide/reference/options-text-editor-csharp-advanced.md) c# ファイルの高度なオプションを指定することができます。
+ [[オプション]、[ C#テキストエディター]、[詳細設定](../../ide/reference/options-text-editor-csharp-advanced.md)] でC#は、ファイルの詳細オプションを指定できます。
 
- [[オプション]-[テキスト エディター]、c#、IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) c# ファイルの IntelliSense オプションを指定することができます。
+ [[オプション]、[ C#テキストエディター]、[intellisense](../../ide/reference/options-text-editor-csharp-intellisense.md) ] を使用C#すると、ファイルの intellisense オプションを指定できます。
 
- [として、オプション、テキスト エディター、XAML、書式設定](../../ide/reference/options-text-editor-xaml-formatting.md)XAML ファイルの書式設定オプションを指定することができます。
+ [[オプション]、[テキストエディター]、[XAML]、[書式設定](../../ide/reference/options-text-editor-xaml-formatting.md)]XAML ファイルの書式設定オプションを指定できます。
 
- [プロジェクト プロパティのリファレンス](../../ide/reference/project-properties-reference.md)プロジェクトのプロパティを指定することができます。
+ [プロジェクトプロパティのリファレンス](../../ide/reference/project-properties-reference.md)プロジェクトのプロパティを指定できます。
 
- [[プロジェクトおよびソリューション オプション] ダイアログ ボックス](../../ide/reference/projects-and-solutions-options-dialog-box.md)プロジェクトとソリューションのオプションを指定することができます。
+ [[プロジェクトおよびソリューション] ([オプション] ダイアログボックス)](../../ide/reference/projects-and-solutions-options-dialog-box.md)プロジェクトおよびソリューションのオプションを指定できます。
 
- [[プロパティ] ウィンドウ](../../ide/reference/properties-window.md)IDE ウィンドウおよびデザイナーのプロジェクト、ファイル、コントロール、およびフィールドのプロパティを表示します。
+ [プロパティウィンドウ](../../ide/reference/properties-window.md)IDE ウィンドウおよびデザイナーのプロジェクト、ファイル、コントロール、およびフィールドのプロパティを表示します。
 
- [クイック起動、環境オプション ダイアログ ボックス](../../ide/reference/quick-launch-environment-options-dialog-box.md)Visual Studio ウィンドウ、コマンド、オプション、およびメニューを検索するための簡単な方法を提供します。
+ [[クイック起動] ([オプション] ダイアログボックス](../../ide/reference/quick-launch-environment-options-dialog-box.md)-[環境])Visual Studio のウィンドウ、コマンド、オプション、およびメニューをすばやく見つける方法を提供します。
 
- [ツールボックス](../../ide/reference/toolbox.md)デザイン サーフェイスにコントロールを追加することができます。
+ [ツールボックス](../../ide/reference/toolbox.md)デザインサーフェイスにコントロールを追加できます。
 
- [ツールボックス、[コンポーネント] タブ](../../ide/reference/toolbox-components-tab.md)コンポーネントをデザイン画面に追加することができます。
+ [ツールボックス、[コンポーネント] タブ](../../ide/reference/toolbox-components-tab.md)デザインサーフェイスにコンポーネントを追加できます。
 
- [ツールボックス、[データ] タブ](../../ide/reference/toolbox-data-tab.md)データ コントロールをデザイン画面に追加することができます。
+ [ツールボックス、[データ] タブ](../../ide/reference/toolbox-data-tab.md)デザインサーフェイスにデータコントロールを追加できます。
 
- [ツールボックス、[HTML] タブ](../../ide/reference/toolbox-html-tab.md)デザイン サーフェイスに html タグを追加することができます。
+ [ツールボックス、[HTML] タブ](../../ide/reference/toolbox-html-tab.md)デザインサーフェイスに html タグを追加できます。
 
- [一般に、CSS、テキスト エディターのオプション ダイアログ ボックス](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c)CSS ファイルのオプションを指定することができます。
+ [[全般] ([オプション] ダイアログボックス-[テキストエディター](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) ]-[CSS])CSS ファイルのオプションを指定できます。
 
- [検証オプション ダイアログ ボックスの HTML をテキスト エディター、](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) HTML ページのオプションを指定することができます。
+ [検証] ([[オプション] ダイアログボックス-[テキストエディター](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) ]-[HTML])HTML ページのオプションを指定できます。

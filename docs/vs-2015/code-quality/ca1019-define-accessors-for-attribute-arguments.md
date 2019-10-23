@@ -1,5 +1,5 @@
 ---
-title: CA1019:属性引数にアクセサーを定義します |Microsoft Docs
+title: 'CA1019: 属性引数にアクセサーを定義します。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - DefineAccessorsForAttributeArguments
 ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 01d4b421f196eec7401f12ca8eeb7a52b2396065
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4e77f3a4eec7495e6b4abe13bec93d341f961463
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704199"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662009"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:属性引数にアクセサーを定義します
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: 属性引数にアクセサーを定義します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- そのコンス トラクターでは、属性は、対応するプロパティがない引数を定義します。
+ コンストラクターでは、属性は対応するプロパティを持たない引数を定義します。
 
 ## <a name="rule-description"></a>規則の説明
- 属性では、対象に適用するときに必ず指定する必須の引数を定義できます。 この引数は、コンストラクターに位置指定パラメーターで属性を指定できるようになるため、位置指定引数とも呼ばれます。 必須のすべての引数について、対応する読み取り専用のプロパティも属性で規定する必要があります。これは、引数値を実行時に取得できるようにするためです。 このルールは、各コンス トラクターのパラメーターの対応するプロパティを定義したかを確認します。
+ 属性では、対象に適用するときに必ず指定する必須の引数を定義できます。 この引数は、コンストラクターに位置指定パラメーターで属性を指定できるようになるため、位置指定引数とも呼ばれます。 必須のすべての引数について、対応する読み取り専用のプロパティも属性で規定する必要があります。これは、引数値を実行時に取得できるようにするためです。 このルールでは、各コンストラクターパラメーターに対応するプロパティが定義されていることを確認します。
 
  また、属性ではオプションの引数も定義できます。これは名前付き引数とも呼ばれます。 この引数は、名前でコンストラクターに属性を指定するときに使用されます。また、対応する読み取り/書き込みプロパティが必要です。
 
- 必須およびオプションの引数では、対応するプロパティとコンス トラクターのパラメーターを使用する必要があります、同じ名前が異なる大文字小文字の区別を付けます。 プロパティは pascal 形式を使用する大文字と小文字、およびパラメーター使用して camel 規約に従った大文字小文字の区別します。
+ 必須および省略可能な引数については、対応するプロパティとコンストラクターパラメーターで同じ名前を使用する必要がありますが、大文字と小文字は区別されません。 プロパティは Pascal 形式の大文字と小文字を使用し、パラメーターは camel 形式を使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、コンス トラクターのパラメーターがない 1 つの読み取り専用プロパティを追加します。
+ この規則違反を修正するには、1つも含まれていない各コンストラクターパラメーターに読み取り専用プロパティを追加します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 取得できる必須の引数の値したくない場合は、この規則による警告を抑制します。
+ 必須の引数の値を取得可能にしない場合は、この規則からの警告を非表示にします。
 
 ## <a name="custom-attributes-example"></a>カスタム属性の例
 
 ### <a name="description"></a>説明
- 次の例では、必須 (位置) パラメーターを定義する 2 つの属性を示します。 属性の最初の実装が正しく定義されていません。 2 番目の実装が正しいです。
+ 次の例は、必須 (位置指定) パラメーターを定義する2つの属性を示しています。 属性の最初の実装が正しく定義されていません。 2番目の実装は正しい方法です。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Design.AttributeAccessors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessors/cs/FxCop.Design.AttributeAccessors.cs#1)]
@@ -60,21 +60,21 @@ ms.locfileid: "65704199"
 ## <a name="positional-and-named-arguments"></a>位置指定引数と名前付き引数
 
 ### <a name="description"></a>説明
- 位置指定引数と名前付き引数は、どの引数には、属性の必須とする引数は省略可能なライブラリのコンシューマーをクリアすること。
+ 位置指定引数と名前付き引数を使用すると、ライブラリのコンシューマーに対して、属性に必須の引数と省略可能な引数を明確にすることができます。
 
- 次の例では、位置指定引数と名前付きの両方の引数を持つ属性の実装を示します。
+ 次の例は、位置指定引数と名前付き引数の両方を持つ属性の実装を示しています。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamed/cs/FxCop.Design.AttributeAccessorsNamed.cs#1)]
 
 ### <a name="comments"></a>コメント
- 次の例では、2 つのプロパティにカスタム属性を適用する方法を示します。
+ 次の例は、カスタム属性を2つのプロパティに適用する方法を示しています。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1813:シールされていない属性します。](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813: シールされていない属性を使用しません](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

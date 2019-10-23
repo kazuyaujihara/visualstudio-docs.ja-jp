@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Clone |Microsoft Docs
+title: 'IEnumRemoteDebugApplications:: Clone |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06b2eac008b0bccc3d0671e15658b5a189b5dcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e8007505c6e7c4bc4c881b07c5247f0647824bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963274"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572011"
 ---
 # <a name="ienumremotedebugapplicationsclone"></a>IEnumRemoteDebugApplications::Clone
-現在の列挙子と同じ状態を格納する列挙子を作成します。  
+現在の列挙子と同じ状態を含む列挙子を作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>パラメーター  
  `ppessd`  
- [out]列挙子の複製。  
+ 入出力列挙子の複製です。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT Clone(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、現在の列挙子と同じ状態を格納する列挙子を作成します。  
+ このメソッドは、現在の列挙子と同じ状態を含む列挙子を作成します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumRemoteDebugApplications インターフェイス](../../winscript/reference/ienumremotedebugapplications-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetNext |Microsoft Docs
+title: 'IDispError:: GetNext |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81186e6eba7983a1210e5de5bca5d83dd77089da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437276"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573103"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
-次の取得`IDispError`オブジェクト。  
+次の `IDispError` オブジェクトを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>パラメーター  
  `ppde`  
- [out]次を指定します`IDispError`オブジェクト。  
+ 入出力次の `IDispError` オブジェクトを指定します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetNext(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、次を取得します。`IDispError`オブジェクト。 これは、最後の場合`IDispError`オブジェクト、このメソッドは NULL を返します。  
+ このメソッドは、次の `IDispError` オブジェクトを取得します。 これが最後の `IDispError` オブジェクトの場合、このメソッドは NULL を返します。  
   
 > [!NOTE]
 > このメソッドは実装されていません。  

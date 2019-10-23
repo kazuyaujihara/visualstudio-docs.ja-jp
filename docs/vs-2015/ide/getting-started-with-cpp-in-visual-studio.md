@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 001b394d86e56b172bb1a50c335bd8ba5bcacb15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704445"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645631"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 内の C++ の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,32 +38,32 @@ ms.locfileid: "65704445"
 
  図 1: Visual Studio IDE
 
- ![Visual C++ 設定が適用された IDE](../ide/media/c-ide-defaultenvironmentlayout.png "C++IDE_DefaultEnvironmentLayout")
+ ![Visual C&#43;&#43; 設定が適用された IDE](../ide/media/c-ide-defaultenvironmentlayout.png "|::ref1::|")
 
- Visual Studio を開くと、IDE の 3 つの基本的なパーツを確認できます。ツール ウィンドウ、メニューとツール バー、およびメイン ウィンドウ領域です。 ツール ウィンドウは、アプリ ウィンドウの左側および右側にドッキングされており、上部には **[クイック起動]**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **[スタート ページ]** が表示されます。 ソリューションまたはプロジェクトを開くと、この領域にはエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
+ Visual Studio を開くと、IDE の 3 つの基本的なパーツを確認できます。ツール ウィンドウ、メニューとツール バー、およびメイン ウィンドウ領域です。 ツール ウィンドウは、アプリ ウィンドウの左側および右側にドッキングされており、上部には **[クイック起動]** 、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **[スタート ページ]** が表示されます。 ソリューションまたはプロジェクトを開くと、この領域にはエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 
 ## <a name="BKMK_CreateApp"></a> 簡単なアプリケーションの作成
  Visual Studio でアプリを作成するには、最初にプロジェクトおよびソリューションを作成します。 この例では、Windows コンソール アプリケーションを作成します。
 
 #### <a name="to-create-a-console-app"></a>コンソール アプリを作成するには
 
-1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。
+1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。
 
-    ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択します。](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+    ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../ide/media/exploreide-filenewproject.png "|::ref2::|")
 
-2. **[Visual C++]** カテゴリで、**[Win32 コンソール アプリケーション]** テンプレートを選択し、プロジェクトに `GreetingsConsoleApp` という名前を付けます。
+2. **[Visual C++]** カテゴリで、 **[Win32 コンソール アプリケーション]** テンプレートを選択し、プロジェクトに `GreetingsConsoleApp` という名前を付けます。
 
-    ![Win32 コンソール アプリケーション テンプレート](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")
+    ![Win32 コンソール アプリケーション テンプレート](../ide/media/c-ide-newprojectdlg.png "|::ref3::|")
 
 3. Win32 アプリケーション ウィザードが表示されたら、 **[完了]** を選択します。
 
-    ![Win32 コンソール アプリケーション ウィザード](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")
+    ![Win32 コンソール アプリケーション ウィザード](../ide/media/c-ide-win32consoleappwizard.png "|::ref4::|")
 
    Win32 コンソール アプリの基本的なファイルを含む GreetingsConsoleApp プロジェクトとソリューションが作成され、 **ソリューション エクスプローラー**に自動的に読み込まれます。 GreetingsConsoleApp.cpp ファイルがコード エディターで開きます。 次の項目が **ソリューション エクスプローラー**に表示されます。
 
    図 4: プロジェクト項目
 
-   ![ソリューション エクスプローラーでのソリューションのファイル](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
+   ![ソリューション エクスプローラーでのソリューションのファイル](../ide/media/c-ide-solutioncontents.png "|::ref5::|")
 
 ## <a name="BKMK_AddCode"></a> アプリケーションへのコードの追加
  次に、コンソール ウィンドウに "Hello" と表示するコードを追加します。
@@ -78,9 +78,9 @@ ms.locfileid: "65704445"
 
      `cout`の下に赤い波線が表示されます。 その波線をポイントすると、エラー メッセージが表示されます。
 
-     ![cout のエラー テキスト](../ide/media/c-ide-couterror.png "C++IDE_CoutError")
+     ![cout のエラー テキスト](../ide/media/c-ide-couterror.png "|::ref6::|")
 
-     エラー メッセージは、 **[エラー一覧]** ウィンドウにも表示されます。 そのウィンドウを表示するには、メニュー バーで **[表示]**、 **[エラー一覧]** の順に選択します。
+     エラー メッセージは、 **[エラー一覧]** ウィンドウにも表示されます。 そのウィンドウを表示するには、メニュー バーで **[表示]** 、 **[エラー一覧]** の順に選択します。
 
      [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) は \<iostream\> ヘッダー ファイルに含まれます。
 
@@ -97,7 +97,7 @@ ms.locfileid: "65704445"
 
 3. 変更内容をファイルに保存します。
 
-     ![cout のエラーを修復するコード](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
+     ![cout のエラーを修復するコード](../ide/media/c-ide-coutfix.png "|::ref7::|")
 
 ## <a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト
  GreetingsConsoleApp をデバッグして、コンソール ウィンドウに "Hello" という語が表示されるかどうかを確認できます。
@@ -106,7 +106,7 @@ ms.locfileid: "65704445"
 
 - デバッガーを起動します。
 
-     ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
+     ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "|::ref8::|")
 
      デバッガーが起動し、コードが実行されます。 コンソール ウィンドウ (コマンド プロンプトのように見える別のウィンドウ) が数秒間表示されますが、デバッガーが実行を停止するとすぐに閉じます。 テキストを表示するには、ブレークポイントを設定してプログラムの実行を停止する必要があります。
 
@@ -114,7 +114,7 @@ ms.locfileid: "65704445"
 
 1. メニュー バーからブレークポイントを `return 0;`の行に追加します。 左側の余白内でクリックするだけでも、ブレークポイントを設定できます。
 
-    ![[デバッグ] メニューの [ブレークポイントの設定/解除] コマンド](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")
+    ![[デバッグ] メニューの [ブレークポイントの設定/解除] コマンド](../ide/media/exploreide-togglebreakpoint.png "|::ref9::|")
 
     コード行の横の、エディター ウィンドウの左端の余白部分に、赤い円が表示されます。
 
@@ -122,7 +122,7 @@ ms.locfileid: "65704445"
 
     デバッガーが起動し、コンソール ウィンドウが表示されて **Hello**という語が示されます。
 
-    ![Windows のコマンド プロンプト ウィンドウに表示された文字列 "Hello"](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")
+    ![Windows のコマンド プロンプト ウィンドウに表示された文字列 "Hello"](../ide/media/c-ide-hellocommandwindow.png "|::ref10::|")
 
 3. SHIFT + F5 キーを押してデバッグを停止します。
 
@@ -135,15 +135,15 @@ ms.locfileid: "65704445"
 
 1. メニュー バーで、前のビルドで作成された中間ファイルと出力ファイルを削除します。
 
-    ![[ビルド] メニューの [ソリューションのクリーン] コマンド](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
+    ![[ビルド] メニューの [ソリューションのクリーン] コマンド](../ide/media/exploreide-cleansolution.png "|::ref11::|")
 
 2. GreetingsConsoleApp のビルド構成を **[デバッグ]** から **[リリース]** に変更します。
 
-    ![アプリケーションのリリース バージョンのビルド](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")
+    ![アプリケーションのリリース バージョンのビルド](../ide/media/c-ide-changingbuildtorelease.png "|::ref12::|")
 
 3. ソリューションをビルドします。
 
-    ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "|::ref13::|")
 
    このチュートリアルは完了しました。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。
 

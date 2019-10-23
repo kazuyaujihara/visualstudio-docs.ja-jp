@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d393e5ab056f16e54382b2295a667f079ede95
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211157"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018790"
 ---
 # <a name="debugging-applications"></a>アプリケーションのデバッグ
 次のセクションでは、特定の種類のアプリケーションのデバッグを処理します。 さまざまなアプリケーションの種類とさまざまな言語には、異なる設定と手法が必要であり、デバッグする必要がある問題もさまざまに発生します。
@@ -34,6 +34,6 @@ ms.locfileid: "71211157"
 |[グラフィックス診断 (DirectX グラフィックスのデバッグ)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|DirectX のグラフィックスをデバッグする方法について説明します。|
 |[ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|ASP.NET アプリケーションをデバッグする方法について説明します。|
 |[Python コードのデバッグ](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Python コードをデバッグする方法について説明します。|
-|[JavaScript および TypeScript アプリケーションのデバッグ](/javascript/debug-nodejs.md)|JavaScript、TypeScript、および node.js アプリケーションをデバッグする方法について説明します。|
+|[JavaScript および TypeScript アプリケーションのデバッグ](../javascript/debug-nodejs.md)|JavaScript、TypeScript、および node.js アプリケーションをデバッグする方法について説明します。|
 |[Web アプリケーションをデバッグする](../debugger/debugging-web-applications.md)|Web アプリケーションとスクリプトをデバッグする方法について説明します。|
 |[WCF サービスをデバッグする](../debugger/debugging-wcf-services.md)|Windows Communication Foundation サービスのデバッグ方法について説明します。|

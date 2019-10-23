@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
+title: IDispatchEx::D eleteMemberByDispID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36eeeb4c28286bb5712be3908b47a5145e460597
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000941"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576637"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
-メンバーの DISPID を削除します。  
+メンバーを DISPID で削除します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバーの識別子です。 使用して`GetDispID`または`GetNextDispID`ディスパッチ識別子を取得します。  
+ メンバー識別子。 @No__t_0 または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -45,12 +45,12 @@ HRESULT DeleteMemberByDispID(
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|`S_FALSE`|メンバーが存在しますが、削除できません。|  
+|`S_FALSE`|メンバーは存在しますが、削除できません。|  
   
 ## <a name="remarks"></a>Remarks  
- DISPID が有効でする必要がある場合は、メンバーを削除すると、`GetNextDispID`します。  
+ メンバーが削除された場合、DISPID は `GetNextDispID` に対して有効なままである必要があります。  
   
- 指定された名前を持つメンバーが削除され、後で同じ名前のメンバーが再作成された場合、DISPID は同じである必要があります。 (大文字と小文字が異なるだけのメンバー名が「同一」かどうかはオブジェクトに依存) です。  
+ 指定された名前のメンバーが削除され、後で同じ名前のメンバーが再作成される場合、DISPID は同じである必要があります。 (大文字と小文字のみが異なるメンバー名が "同じ" であるかどうかは、オブジェクトに依存します)。  
   
 ## <a name="example"></a>例  
   
@@ -66,5 +66,5 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
   
 ## <a name="see-also"></a>関連項目  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

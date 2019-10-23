@@ -1,5 +1,5 @@
 ---
-title: IJsEnumDebugProperty インターフェイス |Microsoft Docs
+title: IJsEnumDebugProperty Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec7bb508101f6de20bf979653a01b735b3cbf61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1cb284b9fb1519b53efb7585559ec10f2f8b9e8e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977579"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573980"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>IJsEnumDebugProperty インターフェイス
 プロパティの参照操作を指定します。  
@@ -31,13 +31,13 @@ IJsEnumDebugProperty : public IUnknown;
   
 ### <a name="public-methods"></a>パブリック メソッド  
   
-|名前|説明|  
+|名|説明|  
 |----------|-----------------|  
 |[IJsEnumDebugProperty::GetCount メソッド](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|オブジェクトのプロパティの数を取得します。|  
 |[IJsEnumDebugProperty::Next メソッド](../../winscript/reference/ijsenumdebugproperty-next-method.md)|このオブジェクトのプロパティを読み取ります。|  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイスのリファレンス](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291036"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342401"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -256,6 +256,9 @@ bin:
    ![カスタマイズされた [開始] ボタン](media/customize-start-button.png)
 
    **F5** キーを押すとデバッガーが起動し、ブレークポイントが既に設定されている場合は、そこで停止します。 使い慣れたデバッガー ウィンドウのすべての機能を利用できます。
+
+   > [!IMPORTANT]
+   > C++ の "フォルダーを開く" プロジェクトのカスタム ビルドおよびデバッグ タスクの詳細については、「[Visual Studio での C++ ビルド システムの [フォルダーを開く] のサポート](/cpp/build/open-folder-projects-cpp)」を参照してください。
 
 ### <a name="specify-arguments-for-debugging"></a>デバッグの引数を指定する
 

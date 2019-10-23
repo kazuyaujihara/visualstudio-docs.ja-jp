@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::ScriptCompiled |Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: ScriptCompiled 済み |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a198667e7dc30969c32b556620b139d52f833543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7252134fc86bfd63b74a181b18327212a1b2dc1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993236"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571665"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-スクリプトのコンパイル、スクリプト エンジン オブジェクトをプロファイラーに通知します。 このメソッドは、コンパイルされたすべてのスクリプトに呼び出されます。  
+スクリプトエンジンによってスクリプトがコンパイルされたことをプロファイラーオブジェクトに通知します。 このメソッドは、コンパイルされるすべてのスクリプトに対して呼び出されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,19 +36,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>パラメーター  
  `scriptId`  
- [in]コンパイルされたスクリプトの一意の ID。 この ID は、スクリプト エンジンによって割り当てられます。  
+ からコンパイルされたスクリプトの一意の ID。 この ID は、スクリプトエンジンによって割り当てられます。  
   
  `type`  
- [in]コンパイルされたスクリプトの種類。 値が定義されている[PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)します。  
+ からコンパイルされたスクリプトの種類。 値は[PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)で定義されます。  
   
  `pIDebugDocumentContext`  
- [in]使用可能な場合へのポインター、`IUnknown`プロファイラーは次のクエリを実行する必要がありますインターフェイス、 [IDebugDocumentContext インターフェイス](../../winscript/reference/idebugdocumentcontext-interface.md)ポインター。 それ以外の場合、これは null になります。  
+ から使用可能な場合は、プロファイラーが[IDebugDocumentContext インターフェイス](../../winscript/reference/idebugdocumentcontext-interface.md)ポインターを照会する必要がある `IUnknown` インターフェイスへのポインター。 それ以外の場合、null になります。  
   
 ## <a name="return-value"></a>戻り値  
- このメソッドの戻り値は、スクリプト エンジンによって無視されます。  
+ このメソッドの戻り値は、スクリプトエンジンによって無視されます。  
   
 ## <a name="remarks"></a>Remarks  
- これは、ホストでサポートされている場合にのみ、スクリプト エンジンは、ドキュメントのコンテキストを提供できます。  
+ スクリプトエンジンは、このがホストでサポートされている場合にのみドキュメントコンテキストを提供できます。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptProfilerCallback インターフェイス](../../winscript/reference/iactivescriptprofilercallback-interface.md)

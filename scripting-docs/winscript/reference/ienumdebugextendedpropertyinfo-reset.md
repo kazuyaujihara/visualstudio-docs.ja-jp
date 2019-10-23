@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Reset |Microsoft Docs
+title: 'IEnumDebugExtendedPropertyInfo:: Reset |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3560c63d20d8761ef8114e59d35c6d1ab4185455
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a944a9ba7689908eff5ed4db8e2a44cd9a214d55
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963486"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574250"
 ---
 # <a name="ienumdebugextendedpropertyinforeset"></a>IEnumDebugExtendedPropertyInfo::Reset
-先頭に、列挙体シーケンスをリセットします。  
+列挙シーケンスを先頭にリセットします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,7 +36,7 @@ void
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumDebugExtendedPropertyInfo インターフェイス](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)

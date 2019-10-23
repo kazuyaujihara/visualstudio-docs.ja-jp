@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925633"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648423"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>方法: WCF データ サービス参照を追加、更新、または削除する
-*サービス参照*を使用すると、プロジェクトは1つ[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]以上のにアクセスできます。 **[サービス参照の追加]** ダイアログボックスを使用する[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]と、現在のソリューション内、ローカルエリアネットワーク上、またはインターネット上で検索できます。
+*サービス参照*を使用すると、プロジェクトは1つ以上の [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] にアクセスできます。 **[サービス参照の追加]** ダイアログボックスを使用すると、現在のソリューション内の [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、ローカルエリアネットワーク上、またはインターネット上で検索できます。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "68925633"
 
      **[サービス参照の追加]** ダイアログボックスが表示されます。
 
-2. **アドレス** ボックスにサービスの URL を入力し、検索をクリックしてサービスを検索します。 サービスがユーザー名とパスワードのセキュリティを実装している場合は、ユーザー名とパスワードの入力を求められることがあります。
+2. **アドレス** ボックスにサービスの URL を入力し、検索**をクリックし**てサービスを検索します。 サービスがユーザー名とパスワードのセキュリティを実装している場合は、ユーザー名とパスワードの入力を求められることがあります。
 
     > [!NOTE]
     > 信頼できるソースのサービスのみを参照してください。 信頼できないソースの参照を追加すると、セキュリティが損なわれる可能性があります。
@@ -59,7 +59,7 @@ ms.locfileid: "68925633"
 
 2. **[検出]** をクリックします。
 
-    現在のソリューションの[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]すべてのサービス (と WCF サービスの両方) が**サービス**の一覧に追加されます。
+    現在のソリューションのすべてのサービス ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] と WCF サービスの両方) が**サービス**の一覧に追加されます。
 
 3. **サービス**の一覧で、使用するサービスのノードを展開し、エンティティセットを選択します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "68925633"
     サービスクライアント (プロキシ) によってが生成され、サービスを記述するメタデータが*app.config*ファイルに追加されます。
 
 ## <a name="update-a-service-reference"></a>サービス参照の更新
-Entity Data Model が変更さ[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]れる場合があります。 この場合は、サービス参照を更新する必要があります。
+@No__t_0 の Entity Data Model が変更されることがあります。 この場合は、サービス参照を更新する必要があります。
 
 ### <a name="to-update-a-service-reference"></a>サービス参照を更新するには
 

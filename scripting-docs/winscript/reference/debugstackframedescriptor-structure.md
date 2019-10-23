@@ -1,5 +1,5 @@
 ---
-title: DebugStackFrameDescriptor 構造体 |Microsoft Docs
+title: Debugstackフレーム記述子の構造体 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fddae48178ec6c56ce647f5c4f3a1bff3d81a980
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 910e08ec6d9982354eb71b50d5e916917808f140
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955195"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576553"
 ---
 # <a name="debugstackframedescriptor-structure"></a>DebugStackFrameDescriptor 構造体
 スタック フレームを列挙し、同じスレッドの複数の列挙型からの出力をマージします。  
@@ -41,22 +41,22 @@ typedef struct tagDebugStackFrameDescriptor {
   
 ## <a name="members"></a>メンバー  
  `pdsf`  
- スタック フレーム オブジェクト。  
+ スタックフレームオブジェクト。  
   
  `dwMin`  
- このスタック フレームに関連付けられている物理アドレスの範囲のマシンに依存する表現。  
+ このスタックフレームに関連付けられている物理アドレスの範囲の下限を示す、コンピューターに依存する表現。  
   
  `dwLim`  
- このスタック フレームに関連付けられている物理アドレスの上限までのマシンに依存する表現。  
+ このスタックフレームに関連付けられている物理アドレスの範囲の上限を示す、コンピューターに依存する表現。  
   
  `fFinal`  
  フレームが処理されていることを示すフラグ。  
   
  `punkFinal`  
- このパラメーターがない場合`NULL`、マージ、現在の列挙子を停止して、新しいスレッドを開始する必要があります。 オブジェクトでは、新しい列挙を開始する方法を示します。  
+ このパラメーターが `NULL` されていない場合は、現在の列挙子のマージを停止し、新しい列挙子を開始する必要があります。 オブジェクトは、新しい列挙を開始する方法を示します。  
   
 ## <a name="remarks"></a>Remarks  
- プロセス デバッグ マネージャーでは、この構造体を使用して複数のスクリプト エンジンからのスタック フレームを並べ替えます。 慣例により、ダウン スタックが増加します。 その結果、スタックが成長アーキテクチャでは、アドレスは、ある必要があります組を補完します。  
+ プロセスデバッグマネージャーは、この構造体を使用して、複数のスクリプトエンジンからスタックフレームを並べ替えます。 慣例により、スタックはダウンします。 その結果、スタックが大きくなるアーキテクチャでは、アドレスを二重に補完する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

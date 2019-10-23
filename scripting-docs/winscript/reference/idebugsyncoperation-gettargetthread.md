@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::GetTargetThread |Microsoft Docs
+title: 'IDebugSyncOperation:: GetTargetThread |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e270757ba26d61288a897bee4128317e6f4499cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6675356439d60e5c204760e69640a0f50bf40fc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004903"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576684"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
-この同期操作を行う対象のアプリケーションのスレッドを返します。  
+この同期操作の対象アプリケーションスレッドを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetTargetThread(
   
 #### <a name="parameters"></a>パラメーター  
  `ppatTarget`  
- [out]この同期操作を行う対象のアプリケーション スレッドです。  
+ 入出力この同期操作の対象アプリケーションスレッド。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetTargetThread(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、この同期操作を行う対象のアプリケーションのスレッドを返します。  
+ このメソッドは、この同期操作の対象アプリケーションスレッドを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugSyncOperation インターフェイス](../../winscript/reference/idebugsyncoperation-interface.md)

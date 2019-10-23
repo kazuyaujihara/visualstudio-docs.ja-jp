@@ -1,5 +1,5 @@
 ---
-title: Modeling SDK - ドメイン固有言語 |Microsoft Docs
+title: SDK のモデリング-ドメイン固有言語 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159029"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668637"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - ドメイン固有言語
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Modeling SDK for を使用して[!INCLUDE[vsprvs](../includes/vsprvs-md.md)](MSDK) に統合できる強力なモデル ベースの開発ツールを作成する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 たとえば、UML ツールは MSDK を使用して作成されます。 同様に、1 つ以上のモデル定義を作成して、一連のツールと統合できます。
+モデリング SDK for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK) を使用すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に統合できる強力なモデルベースの開発ツールを作成できます。 たとえば、UML ツールは MSDK を使用して作成されます。 同様に、1 つ以上のモデル定義を作成して、一連のツールと統合できます。
 
  MSDK の中核は、業務分野の概念を表すために作成するモデルの定義です。 図式ビュー、コードおよびその他の成果物の生成機能、モデルを変換するためのコマンド、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のコードやその他のオブジェクトとの対話機能などのさまざまなツールでモデルを囲むことができます。 モデルを開発するとき、他のモデルやツールと組み合わせて、開発の中央に配置される強力なツール セットを形成することができます。
 
@@ -41,11 +41,11 @@ Modeling SDK for を使用して[!INCLUDE[vsprvs](../includes/vsprvs-md.md)](MSD
   これらのすべての機能をカスタマイズおよび拡張できます。 拡張した機能は、統合後も DSL 定義を更新でき、拡張した機能を失うことなく機能を再生成できるように統合されています。
 
 ## <a name="samples-and-the-latest-information"></a>サンプルおよび最新情報
- [モデリング SDK for Visual Studio 2015 をダウンロードします。](http://www.microsoft.com/download/details.aspx?id=48148)
+ [モデリング SDK for Visual Studio 2015 のダウンロード](http://www.microsoft.com/download/details.aspx?id=48148)
 
- [サンプル](http://go.microsoft.com/fwlink/?LinkId=186128)SDK for Visual Studio のモデリング。
+ モデリング SDK for Visual Studio の[サンプル](http://go.microsoft.com/fwlink/?LinkId=186128)です。
 
- 高度な技法とトラブルシューティングに関するガイダンスについては、[Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)を参照してください。
+ 高度な手法とトラブルシューティングのガイダンスについては、「 [Visual STUDIO DSL & モデリングツールの機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)

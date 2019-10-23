@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType |Microsoft Docs
+title: 'IDebugFormatter:: GetStringForVarType |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9b498f5b37a9fc34b0926d9c0a5601d89dde7c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979215"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576356"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-指定した VARTYPE 値を表す文字列を返します。  
+指定された VARTYPE 値を表す文字列を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>パラメーター  
  `vt`  
- [in]文字列として表す VARTYPE します。  
+ から文字列として表現する VARTYPE。  
   
  `ptdescArrayType`  
- [in]型を記述する構造体の配列。  
+ から型を記述する構造体の配列。  
   
  `pbstr`  
- [out]文字列を表す`vt`します。  
+ 入出力@No__t_0 を表す文字列。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT GetStringForVarType(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- メソッドは、指定した VARTYPE 値を表す文字列を返します。  
+ メソッドは、指定された VARTYPE 値を表す文字列を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugFormatter インターフェイス](../../winscript/reference/idebugformatter-interface.md)

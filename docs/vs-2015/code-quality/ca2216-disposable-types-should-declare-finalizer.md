@@ -1,5 +1,5 @@
 ---
-title: CA2216:破棄可能な型はファイナライザーを宣言する必要があります |Microsoft Docs
+title: 'CA2216: 破棄可能な型はファイナライザー | を宣言しなければなりません。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - DisposableTypesShouldDeclareFinalizer
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8a033dbb152542e528b32e26f35a7d63dba30891
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 082afacba1ccf4c982e5ddceec37d2a1567efd7a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681164"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651645"
 ---
-# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:破棄可能な型はファイナライザーを宣言しなければなりません
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: 破棄できる型ではファイナライザーを宣言します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
-|カテゴリ|Microsoft.Usage|
+|カテゴリ|Microsoft. 使用方法|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- 実装する型<xref:System.IDisposable?displayProperty=fullName>、およびアンマネージ リソースの使用を提案するフィールドを持つ、による記述では、ファイナライザーを実装しません<xref:System.Object.Finalize%2A?displayProperty=fullName>します。
+ @No__t_0 を実装し、アンマネージリソースの使用を提案するフィールドを持つ型は、<xref:System.Object.Finalize%2A?displayProperty=fullName> で説明されているように、ファイナライザーを実装しません。
 
 ## <a name="rule-description"></a>規則の説明
- 破棄可能な型には、次の種類のフィールドが含まれている場合は、この規則違反が報告されます。
+ このルールの違反は、破棄可能な型に次の型のフィールドが含まれている場合に報告されます。
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -45,24 +45,24 @@ ms.locfileid: "65681164"
 - <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、実装を呼び出すファイナライザー、<xref:System.IDisposable.Dispose%2A>メソッド。
+ この規則違反を修正するには、<xref:System.IDisposable.Dispose%2A> メソッドを呼び出すファイナライザーを実装します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 型が実装していない場合、この規則による警告を抑制するのには安全では<xref:System.IDisposable>アンマネージ リソースを解放するためにします。
+ アンマネージリソースを解放するために型が <xref:System.IDisposable> を実装していない場合は、この規則による警告を抑制するのが安全です。
 
 ## <a name="example"></a>例
- 次の例では、この規則に違反する型を示します。
+ 次の例は、この規則に違反する型を示しています。
 
  [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DisposeNoFinalize/cs/FxCop.Usage.DisposeNoFinalize.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA 2115:GC を呼び出します。KeepAlive ネイティブ リソースを使用する場合](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA 1816:GC を呼び出します。SuppressFinalize 正しく](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: GC.SuppressFinalize を正しく呼び出します](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA 1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+ [CA1049: ネイティブ リソースを所有する型は、破棄可能でなければなりません](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.IDisposable?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>

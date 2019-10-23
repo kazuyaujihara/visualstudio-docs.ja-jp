@@ -1,5 +1,5 @@
 ---
-title: UWP アプリのデプロイ |Microsoft Docs
+title: UWP アプリをデプロイする |Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851700"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430765"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio から UWP アプリを展開する
 
-Visual Studio の配置機能は、ビルドし、ターゲット デバイスに Visual Studio で作成された UWP アプリを登録します。 アプリの厳密な登録方法は、ターゲット デバイスがローカルかリモートかによって違います。
+Visual Studio の配置機能では、Visual Studio で作成された UWP アプリをターゲットデバイスにビルドして登録します。 アプリの厳密な登録方法は、ターゲット デバイスがローカルかリモートかによって違います。
 
 - ターゲットがローカルの Visual Studio コンピューターの場合、Visual Studio はアプリをビルド フォルダーから登録します。
 
 - ターゲットがリモート デバイスの場合、Visual Studio は必要なファイルをリモート コンピューターにコピーしてから、そのデバイス上でアプリを登録します。
 
-使用して Visual Studio からアプリをデバッグするときに、展開は自動、**デバッグの開始**オプション (キーボード。F5 キーを押して)、または**デバッグなしで開始**オプション (キーボード。CTRL キーを押しながら F5 キー)。 アプリを手動で配置することも可能です。 次のシナリオでは、手動の配置は有効です。
+**[デバッグの開始]** オプション (キーボード: F5) または **[デバッグなしで開始]** オプション (キーボード: CTRL + F5) を使用して Visual Studio からアプリをデバッグする場合、展開は自動的に行われます。 アプリを手動で配置することも可能です。 次のシナリオでは、手動の配置は有効です。
 
 - ローカル コンピューターまたはリモート コンピューターで行う臨時のテスト。
 
@@ -36,14 +36,14 @@ Visual Studio の配置機能は、ビルドし、ターゲット デバイス�
 
 - 別のアプリまたはメソッドによって起動される、デバッグ対象のアプリを配置します。
 
-## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> UWP アプリをデプロイする方法
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>UWP アプリをデプロイする方法
  アプリを手動で配置する手順はシンプルです。
 
 1. リモート デバイスへ配置する場合は、アプリのスタートアップ プロジェクトのプロパティ プロジェクト ページに、デバイスの名前または IP アドレスを指定します。 (指定するステップはこのトピック内で後述)。
 
 2. デバッガーの Visual Studio ツールバーで、 **[デバッグの開始]** ボタンの横のドロップダウン リストから配置ターゲットを選択します。
 
-     ![ローカル コンピューターで実行](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
+     ![ローカルコンピューターで実行する](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
 3. **[ビルド]** メニューで **[配置]** を選択
 
@@ -54,7 +54,7 @@ Visual Studio の配置機能は、ビルドし、ターゲット デバイス�
 Windows 10 のリモート デバイスで有効にする必要があります[開発者モード](/windows/uwp/get-started/enable-your-device-for-development)します。 Creator の更新プログラムを実行する Windows 10 デバイスで以降、リモート ツールが自動的にインストールされているアプリを展開するときにします。 詳細については、次を参照してください。 [インストールされているアプリ パッケージをデバッグ](../debugger/debug-installed-app-package.md)します。
 
 > [!NOTE]
-> Windows 10 の以前の作成者の更新プログラムのバージョンでは、Remote Tools for Visual Studio は、リモート デバイスにインストールする必要があり、リモート デバッガーを実行する必要があります。
+> Windows 10 の作成前の更新プログラムのバージョンでは、リモートデバイスに Remote Tools for Visual Studio がインストールされており、リモートデバッガーが実行されている必要があります。
 
 配置では、リモート デバッガーのネットワーク チャネルを使用して、アプリのファイルをリモート デバイスに送信します。
 
@@ -66,19 +66,19 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
 3. 次に、プロパティ ページ ウィンドウで **[デバッグ]** ノードを選択します。
 
-4. **ターゲット デバイス**、**リモート マシン**します。
+4. **[ターゲットデバイス]** で、 **[リモートコンピューター]** を選択します。
 
-5. [**リモート マシン**、] をクリックして**検索**します。
+5. **[リモートコンピューター]** の **[検索]** をクリックします。
 
-6. 名前またはリモート デバイスの IP アドレスを入力するか、デバイスを選択することができます、**リモート接続** ダイアログ ボックス。
+6. リモートデバイスの名前または IP アドレスを入力するか、 **[リモート接続]** ダイアログボックスからデバイスを選択することができます。
 
-    ![リモート デバッガー接続 ダイアログ ボックスをオン](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
+    ![[リモートデバッガー接続の選択] ダイアログボックス](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
-    **リモート接続** ダイアログ ボックスでは、ローカル ネットワークのサブネットとイーサネット ケーブルによって Visual Studio コンピューターに直接接続されている任意のデバイスで、デバイスが表示されます。
+    **[リモート接続]** ダイアログボックスには、ローカルネットワークサブネット上のデバイス、およびイーサネットケーブルによって Visual Studio コンピューターに直接接続されているデバイスが表示されます。
 
-   **ビジュアル内にあるリモート デバイスを指定C++プロジェクト ページ**
+   **C++プロジェクトページでのリモートデバイスの指定**
 
-   ![C&#43; &#43;リモート デバッグのプロパティをプロジェクト](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+   ![リモート&#43; &#43;デバッグのための C プロジェクトプロパティ](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
 7. **[起動するデバッガー]** ボックスの一覧の **[リモート デバッガー]** をクリックします。
 
@@ -86,7 +86,7 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
    **Visual C# および Visual Basic のプロジェクト ページにあるリモート デバイスを指定**
 
-   ![リモート デバッグ用のプロジェクトのプロパティを管理](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
+   ![リモートデバッグのマネージプロジェクトのプロパティ](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
 
 9. **[ターゲット デバイス]** ボックスの一覧の **[リモート コンピューター]** をクリックします。
 
@@ -98,23 +98,23 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
 **ネットワーク ループバックの許可**
 
-セキュリティ上の理由から、UWP、または[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]にインストールされたデバイスへのネットワーク呼び出しを実行する標準的な方法でインストールされているアプリが許可されていません。 既定では、Visual Studio による配置では、配置されたアプリに対するこの規則の適用は免除されます。 この免除によって、1 台のコンピューター上で通信プロシージャをテストできます。 アプリを [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]に送信する前に、アプリを適用除外せずにテストする必要があります。
+セキュリティ上の理由から、標準の方法でインストールされた UWP アプリまたは [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] アプリは、インストール先のデバイスに対してネットワーク呼び出しを行うことはできません。 既定では、Visual Studio による配置では、配置されたアプリに対するこの規則の適用は免除されます。 この免除によって、1 台のコンピューター上で通信プロシージャをテストできます。 アプリを [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]に送信する前に、アプリを適用除外せずにテストする必要があります。
 
 アプリからネットワーク ループバックの適用除外を削除するには
 
-- C#と Visual Basic のデバッグ プロパティ ページで、クリア、**を許可するネットワーク Loopback**チェック ボックスをオンします。
+- C#および Visual Basic デバッグ プロパティページで、**ネットワークループバックを許可する** チェックボックスをオフにします。
 
-- C++デバッグ プロパティ ページ、設定、**を許可するネットワーク Loopback**値を**いいえ**します。
+- C++デバッグ] プロパティページで、[ **[ネットワークループバックの許可]** の値を **[いいえ]** に設定します。
 
-**起動しないが、開始時に、コードをデバッグ (C#および Visual Basic)/アプリケーションの起動 (C++)**
+**起動しないが、開始時にコードC#をデバッグする (および Visual Basic)/アプリケーションをC++起動する ()**
 
 アプリが起動した場合はデバッグ セッションを自動駅に開始するように、配置を構成するには
 
-- C#と Visual Basic のデバッグ プロパティ ページで確認してください、**起動しないが、開始時に、コードをデバッグ**チェック ボックスをオンします。
+- C#および Visual Basic デバッグ] プロパティページで、[ **[起動しないが、開始時にコードをデバッグする]** チェックボックスをオンにします。
 
-- C++デバッグ プロパティ ページ、設定、**アプリケーションの起動**値を**はい**します。
+- C++デバッグ] プロパティページで、[ **[アプリケーションの起動]** の値を **[はい]** に設定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [高度なリモート配置オプション](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [インストールされているアプリケーション パッケージをデバッグする](../debugger/debug-installed-app-package.md)

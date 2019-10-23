@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: エディター拡張機能でショートカット キーの使用 |Microsoft Docs'
+title: 'チュートリアル: エディター拡張機能でのショートカットキーの使用 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,42 +10,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d95d41024bd839c8c556ac94501b20d1a81b7a97
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318511"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647895"
 ---
-# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でショートカット キーを使用します。
-エディター拡張機能で、ショートカット キーに応答することができます。 次のチュートリアルでは、テキスト ビューにショートカット キーを使用してビューの表示要素を追加する方法を示します。 このチュートリアルは、ビューポート adornment エディター テンプレートに基づいており、使用して、表示要素を追加することができます、+ 文字。
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でのショートカットキーの使用
+エディター拡張機能のショートカットキーに応答できます。 次のチュートリアルでは、ショートカットキーを使用して、ビューの表示要素をテキストビューに追加する方法について説明します。 このチュートリアルは、ビューポートの表示要素エディターテンプレートに基づいており、+ 文字を使用して表示要素を追加できます。
 
-## <a name="prerequisites"></a>必須コンポーネント
- Visual Studio 2015 以降で、ダウンロード センターから、Visual Studio SDK をインストールしないでください。 Visual Studio のセットアップのオプション機能として含まれています。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
+## <a name="prerequisites"></a>必要条件
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトを作成します。
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `KeyBindingTest`の名前を指定します。
+1. VSIX プロジェクトC#を作成します。 ( **[新しいプロジェクト]** ダイアログで、 **[ C#ビジュアル/機能拡張**]、 **[VSIX プロジェクト]** の順に選択します)。ソリューションに `KeyBindingTest` という名前を指定します。
 
-2. エディターのテキストの表示要素の項目テンプレートをプロジェクトに追加し、名前`KeyBindingTest`します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
+2. エディターのテキスト表示項目テンプレートをプロジェクトに追加し、`KeyBindingTest` という名前を指定します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
-3. 次の参照を追加し、設定**CopyLocal**に`false`:
+3. 次の参照を追加し、 **CopyLocal**を `false` に設定します。
 
-    Microsoft.VisualStudio.Editor
+    VisualStudio
 
     Microsoft.VisualStudio.OLE.Interop
 
-    Microsoft.VisualStudio.Shell.14.0
+    VisualStudio. 14.0
 
-    Microsoft.VisualStudio.TextManager.Interop
+    VisualStudio。相互運用
 
-   KeyBindingTest クラス ファイルでは、PurpleCornerBox にクラス名を変更します。 左余白に表示される電球を使用して、他の適切な変更を行います。 コンス トラクター内から装飾層の名前を変更する**KeyBindingTest**に**PurpleCornerBox**:
+   KeyBindingTest クラスファイルで、クラス名を PurpleCornerBox に変更します。 左余白に表示される電球を使用して、その他の適切な変更を行います。 コンストラクター内で、装飾層の名前を**Keybindingtest**から**PurpleCornerBox**に変更します。
 
 ```csharp
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-KeyBindingTestTextViewCreationListener.cs クラス ファイルでから AdornmentLayer の名前を変更する**KeyBindingTest**に**PurpleCornerBox**:
+KeyBindingTestTextViewCreationListener.cs クラスファイルで、AdornmentLayer の名前を**Keybindingtest**から**PurpleCornerBox**に変更します。
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -54,16 +54,16 @@ KeyBindingTestTextViewCreationListener.cs クラス ファイルでから Adornm
 public AdornmentLayerDefinition editorAdornmentLayer;
 ```
 
-## <a name="handle-typechar-command"></a>TYPECHAR コマンドを処理します。
-Visual Studio 2017 バージョン 15.6 のエディターの拡張機能でのコマンドを処理する唯一の方法を実装する前に、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>ベースのコマンドのフィルター。 Visual Studio 2017 バージョン 15.6 では、エディター コマンド ハンドラーに基づいた最新の簡略化されたアプローチが導入されました。 次の 2 つのセクションでは、旧バージョンと最新のアプローチの両方を使用してコマンドを処理する方法を示します。
+## <a name="handle-typechar-command"></a>TYPECHAR コマンドの処理
+Visual Studio 2017 バージョン15.6 より前では、エディター拡張機能のコマンドを処理する唯一の方法は、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ベースのコマンドフィルターを実装することでした。 Visual Studio 2017 バージョン15.6 では、エディターのコマンドハンドラーに基づく、最新の簡略化された方法が導入されました。 次の2つのセクションでは、従来の方法と最新の方法の両方を使用してコマンドを処理する方法を示します。
 
-## <a name="define-the-command-filter-prior-to-visual-studio-2017-version-156"></a>(Visual Studio 2017 バージョン 15.6) より前のコマンドのフィルターを定義します。
+## <a name="define-the-command-filter-prior-to-visual-studio-2017-version-156"></a>コマンドフィルターを定義します (Visual Studio 2017 バージョン15.6 より前)
 
- コマンドのフィルターの実装は、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>、表示要素をインスタンス化して、コマンドを処理します。
+ コマンドフィルターは <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> の実装であり、装飾をインスタンス化することによってコマンドを処理します。
 
 1. クラス ファイルを追加し、その名前を `KeyBindingCommandFilter`にします。
 
-2. 次の using ステートメントを追加します。
+2. 次の using ディレクティブを追加します。
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
 
     ```
 
-3. KeyBindingCommandFilter という名前のクラスを継承する必要があります<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。
+3. KeyBindingCommandFilter という名前のクラスは、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> から継承する必要があります。
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4. コマンドのチェーン、およびコマンド フィルターが既に追加されているかどうかを表すフラグで、テキスト ビューのプライベート フィールドを次のコマンドを追加します。
+4. テキストビューのプライベートフィールド、コマンドチェーンの次のコマンド、およびコマンドフィルターが既に追加されているかどうかを示すフラグを追加します。
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
     internal bool m_adorned;
     ```
 
-5. テキスト ビューを設定するコンス トラクターを追加します。
+5. テキストビューを設定するコンストラクターを追加します。
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
     }
     ```
 
-6. 実装、`QueryStatus()`メソッドとして、次のとおりです。
+6. 次のように `QueryStatus()` メソッドを実装します。
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
     }
     ```
 
-7. 実装、`Exec()`ためプラス記号の場合、ビューに追加します紫色のボックスをその it メソッド ( **+** ) 文字を入力します。
+7. @No__t_0 メソッドを実装して、プラス記号 ( **+** ) 文字が入力された場合に紫色のボックスをビューに追加します。
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -132,10 +132,10 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
 
     ```
 
-## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>(Visual Studio 2017 バージョン 15.6) より前のコマンドのフィルターを追加します。
- Adornment プロバイダーは、テキスト ビューにコマンド フィルターを追加する必要があります。 この例で、プロバイダーを実装して<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>テキスト ビューの作成イベントをリッスンするようにします。 この表示要素のプロバイダーには、表示要素の Z オーダーを定義する装飾層もエクスポートされます。
+## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>コマンドフィルターを追加します (Visual Studio 2017 バージョン15.6 より前)
+ 表示要素プロバイダーは、コマンドフィルターをテキストビューに追加する必要があります。 この例では、プロバイダーが <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> を実装して、テキストビュー作成イベントをリッスンします。 この装飾プロバイダーは、装飾の Z オーダーを定義する、装飾層もエクスポートします。
 
-1. 次の追加、KeyBindingTestTextViewCreationListener ファイルでステートメントを使用します。
+1. Keybindingtesttextviewのファイルに、次の using ディレクティブを追加します。
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
 
     ```
 
-2. テキスト ビュー アダプターを取得するには、インポートする必要があります、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>します。
+2. テキストビューアダプターを取得するには、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> をインポートする必要があります。
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
 
     ```
 
-3. 変更、<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>メソッドを追加するため、`KeyBindingCommandFilter`します。
+3. @No__t_1 を追加するように <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> メソッドを変更します。
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
     }
     ```
 
-4. `AddCommandFilter`ハンドラーがテキスト ビュー アダプターを取得し、コマンドのフィルターを追加します。
+4. @No__t_0 ハンドラーは、テキストビューアダプターを取得し、コマンドフィルターを追加します。
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -191,19 +191,19 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
     }
     ```
 
-## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>(Visual Studio 2017 バージョン 15.6 以降) のコマンド ハンドラーを実装します。
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>コマンドハンドラーを実装します (Visual Studio 2017 バージョン15.6 以降)
 
-最初、最新のエディターの API を参照するプロジェクトの Nuget 参照を更新します。
+最初に、最新のエディター API を参照するようにプロジェクトの Nuget 参照を更新します。
 
-1. クリックし、プロジェクトを右クリックして**Nuget パッケージの管理**します。
+1. プロジェクトを右クリックし、 **[Nuget パッケージの管理]** を選択します。
 
-2. **Nuget パッケージ マネージャー**を選択します、**更新** タブで、、**すべてのパッケージを選択します**チェック ボックスをオンし、**更新**します。
+2. **Nuget パッケージマネージャー**で、 **[更新プログラム]** タブを選択し、 **[すべてのパッケージを選択]** チェックボックスをオンにして、 **[更新]** を選択します。
 
-コマンド ハンドラーの実装は、 <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>、表示要素をインスタンス化して、コマンドを処理します。
+コマンドハンドラーは <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> の実装であり、装飾をインスタンス化することによってコマンドを処理します。
 
 1. クラス ファイルを追加し、その名前を `KeyBindingCommandHandler`にします。
 
-2. 次の using ステートメントを追加します。
+2. 次の using ディレクティブを追加します。
 
    ```csharp
    using Microsoft.VisualStudio.Commanding;
@@ -213,7 +213,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
    using System.ComponentModel.Composition;
    ```
 
-3. KeyBindingCommandHandler という名前のクラスを継承する必要があります`ICommandHandler<TypeCharCommandArgs>`、としてエクスポート<xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. KeyBindingCommandHandler という名前のクラスは `ICommandHandler<TypeCharCommandArgs>` から継承し、<xref:Microsoft.VisualStudio.Commanding.ICommandHandler> としてエクスポートする必要があります。
 
    ```csharp
    [Export(typeof(ICommandHandler))]
@@ -222,13 +222,13 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>
    ```
 
-4. コマンド ハンドラーの表示名を追加します。
+4. コマンドハンドラーの表示名を追加します。
 
    ```csharp
    public string DisplayName => "KeyBindingTest";
    ```
 
-5. 実装、`GetCommandState()`メソッドとして、次のとおりです。 このコマンド ハンドラーは、コア エディター TYPECHAR コマンドを処理するため、コア エディターにコマンドを有効にするを委任することができます。
+5. 次のように `GetCommandState()` メソッドを実装します。 このコマンドハンドラーはコアエディターの TYPECHAR コマンドを処理するため、コアエディターに対してコマンドの有効化を委任できます。
 
    ```csharp
    public CommandState GetCommandState(TypeCharCommandArgs args)
@@ -237,7 +237,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
    }
    ```
 
-6. 実装、`ExecuteCommand()`ためプラス記号の場合、ビューに追加します紫色のボックスをその it メソッド ( **+** ) 文字を入力します。
+6. @No__t_0 メソッドを実装して、プラス記号 ( **+** ) 文字が入力された場合に紫色のボックスをビューに追加します。
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
@@ -257,7 +257,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
    }
    ```
 
-   7. 装飾層の定義をコピー *KeyBindingTestTextViewCreationListener.cs*ファイルを*KeyBindingCommandHandler.cs*し削除*KeyBindingTestTextViewCreationListener.cs*ファイル。
+   7. *KeyBindingTestTextViewCreationListener.cs*ファイルから*KeyBindingCommandHandler.cs*レイヤーの定義をコピーし、 *KeyBindingTestTextViewCreationListener.cs*ファイルを削除します。
 
    ```csharp
    /// <summary>
@@ -270,11 +270,11 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
    private AdornmentLayerDefinition editorAdornmentLayer;
    ```
 
-## <a name="make-the-adornment-appear-on-every-line"></a>すべての行に表示される表示要素を作成します。
+## <a name="make-the-adornment-appear-on-every-line"></a>すべての行に表示されるようにします。
 
-すべての文字で表示されていた元の表示要素の ' a' のテキスト ファイル。 応答の表示要素を追加するコードを変更しましたところ、 **+** 文字、行にのみ表示要素を追加します場所、 **+** 文字を入力します。 1 回以上表示要素が表示されるように、表示要素のコードを変更できますすべて 'a'。
+元の表示要素は、テキストファイル内のすべての文字 "a" に表示されます。 これで、 **+** 文字に応答して装飾を追加するようにコードを変更したので、 **+** 文字が入力された行にのみ装飾を追加します。 表示要素のコードを変更して、すべての "a" に表示されるようになります。
 
-*KeyBindingTest.cs*ファイルで、変更、 `CreateVisuals()` 'a' 文字の装飾にビュー内のすべての行を反復処理するメソッド。
+*KeyBindingTest.cs*ファイルで、`CreateVisuals()` メソッドを変更して、' a ' 文字を修飾するビュー内のすべての行を反復処理するようにします。
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)
@@ -318,10 +318,10 @@ private void CreateVisuals(ITextViewLine line)
 }
 ```
 
-## <a name="build-and-test-the-code"></a>ビルドし、コードのテスト
+## <a name="build-and-test-the-code"></a>コードをビルドしてテストする
 
 1. KeyBindingTest ソリューションをビルドし、実験用インスタンスで実行します。
 
-2. 作成するか、テキスト ファイルを開きます。 入力文字を含む一部の単語 'a' と入力し、 **+** テキスト ビューで任意の場所。
+2. テキストファイルを作成するか、開きます。 文字 "a" を含む単語を入力し、テキストビューの任意の場所に「 **+** 」と入力します。
 
-     紫色の四角形は、ファイル内のすべての 'a' 文字に表示する必要があります。
+     紫色の四角形は、ファイル内のすべての ' a ' 文字に表示されます。

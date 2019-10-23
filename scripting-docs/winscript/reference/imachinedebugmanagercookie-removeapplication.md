@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::RemoveApplication |Microsoft Docs
+title: 'IMachineDebugManagerCookie:: RemoveApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d920bcc348266d4aa9f0c4a4e297506f008e859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d829262245c8c14b83ce4016f103ecae68895bd9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977759"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576790"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
-実行中のアプリケーションを削除します。 アプリケーションの一覧。  
+実行中のアプリケーションの一覧からアプリケーションを削除します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `dwDebugAppCookie`  
- [in]デバッグ アプリケーションを識別するクッキー。  
+ からデバッグアプリケーションを識別するクッキー。  
   
  `dwAppCookie`  
- [in]アプリケーションは、アプリケーションの一覧に追加されたときに提供されるクッキー。  
+ からアプリケーションがアプリケーションの一覧に追加されたときに指定されたクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,9 +51,9 @@ HRESULT RemoveApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、プロセス デバッグ マネージャーたびに`IProcessDebugManager::RemoveApplication`が呼び出されます。  
+ このメソッドは、`IProcessDebugManager::RemoveApplication` が呼び出されるたびにプロセスデバッグマネージャーによって呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
- [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
- [IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+ [Imachinedebugmanagercookie:: AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)    
+ [Imachinedebugmanagercookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

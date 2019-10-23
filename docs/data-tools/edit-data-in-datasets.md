@@ -9,74 +9,74 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402858"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648496"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
-任意のデータベースのテーブルにデータを編集するのと同様に、データ テーブル内のデータを編集します。 プロセスには、挿入、更新、およびテーブル内のレコードの削除を含めることができます。 データ バインド フォームでは、どのフィールドがユーザーが編集可能なを指定できます。 その場合は、データ バインド インフラストラクチャは、すべての変更の追跡、変更を後で元のデータベースに送信できるようにを処理します。 データにプログラムで編集を行ってそれらの変更をデータベースに送信する場合は、オブジェクトや変更の追跡を行うメソッドを使用する必要があります。
+データテーブル内のデータは、任意のデータベースのテーブルのデータを編集するのと同様に編集できます。 このプロセスには、テーブル内のレコードの挿入、更新、および削除を含めることができます。 データバインドフォームでは、ユーザーが編集できるフィールドを指定できます。 このような場合、データバインディングインフラストラクチャは、変更を後でデータベースに送り返すことができるように、すべての変更の追跡を処理します。 プログラムを使用してデータを編集し、それらの変更をデータベースに返信する場合は、変更の追跡を行うオブジェクトとメソッドを使用する必要があります。
 
-だけでなく、実際のデータを変更するには、照会することも、<xref:System.Data.DataTable>を特定のデータ行を返します。 たとえば、個々 の行や行 (元および提案された) の特定のバージョン、変更された行のエラーが発生した行のクエリを可能性があります。
+実際のデータを変更するだけでなく、<xref:System.Data.DataTable> に対してクエリを実行して、特定のデータ行を返すこともできます。 たとえば、個々の行、特定のバージョンの行 (元の列と提案された行)、変更された行、またはエラーが発生した行に対してクエリを実行できます。
 
 ## <a name="to-edit-rows-in-a-dataset"></a>データセット内の行を編集するには
-既存の行を編集する、 <xref:System.Data.DataTable>、検索する必要がある、<xref:System.Data.DataRow>編集、および目的の列に更新された値を割り当てるしたいです。
+@No__t_0 内の既存の行を編集するには、編集する <xref:System.Data.DataRow> を見つけて、更新された値を目的の列に割り当てます。
 
-編集を使用する行のインデックスがわからない場合、`FindBy`主キーで検索するメソッド。
+編集する行のインデックスがわからない場合は、`FindBy` メソッドを使用して、主キーで検索します。
 
 [!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
 [!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
 
-行のインデックスがわかっている場合にアクセスできるし、次のように行を編集します。
+行インデックスがわかっている場合は、次のように行にアクセスして編集できます。
 
 [!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
 [!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>データセットに新しい行を挿入するには
-通常、データ バインド コントロールを使用するアプリケーションが使用して新しいレコードを追加、**新規追加**のボタンでは、 [BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)します。
+データバインドコントロールを使用するアプリケーションは、通常、 [BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)の **[新規追加]** ボタンを使用して新しいレコードを追加します。
 
-データセットに新しいレコードを手動で追加するには、データ テーブルに、メソッドを呼び出すことによって、新しいデータ行を作成します。 次に、行を追加、<xref:System.Data.DataRow>コレクション (<xref:System.Data.DataTable.Rows%2A>) の<xref:System.Data.DataTable>:
+新しいレコードをデータセットに手動で追加するには、DataTable に対してメソッドを呼び出して、新しいデータ行を作成します。 次に、<xref:System.Data.DataTable> の <xref:System.Data.DataRow> コレクション (<xref:System.Data.DataTable.Rows%2A>) に行を追加します。
 
 [!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
 [!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
 
-データセットがデータ ソースに更新を送信する必要がある情報を保持するために使用して、<xref:System.Data.DataRow.Delete%2A>データ テーブルの行を削除するメソッド。 たとえば、アプリケーションは、TableAdapter を使用する場合 (または<xref:System.Data.Common.DataAdapter>)、TableAdapter の`Update`メソッドを持つ、データベース内の行を削除します、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState.Deleted>します。
+データセットがデータソースに更新を送信するために必要な情報を保持するには、<xref:System.Data.DataRow.Delete%2A> メソッドを使用して、データテーブル内の行を削除します。 たとえば、アプリケーションで TableAdapter (または <xref:System.Data.Common.DataAdapter>) を使用している場合は、TableAdapter の `Update` メソッドによって、<xref:System.Data.DataRowState.Deleted> の <xref:System.Data.DataRow.RowState%2A> を持つデータベース内の行が削除されます。
 
-データ行のコレクションを直接アクセスすることでレコードを削除することは、アプリケーションがデータ ソースに更新を送信する必要がない場合 (<xref:System.Data.DataRowCollection.Remove%2A>)。
+アプリケーションでデータソースに更新を送信する必要がない場合は、データ行コレクション (<xref:System.Data.DataRowCollection.Remove%2A>) に直接アクセスすることでレコードを削除することができます。
 
-#### <a name="to-delete-records-from-a-data-table"></a>データ テーブルからレコードを削除するには
+#### <a name="to-delete-records-from-a-data-table"></a>データテーブルからレコードを削除するには
 
-- 呼び出す、<xref:System.Data.DataRow.Delete%2A>のメソッド、<xref:System.Data.DataRow>します。
+- @No__t_1 の <xref:System.Data.DataRow.Delete%2A> メソッドを呼び出します。
 
-     このメソッドは、レコードを物理的に削除されません。 代わりに、削除のレコードをマークします。
+     この方法では、レコードが物理的に削除されることはありません。 代わりに、レコードを削除対象としてマークします。
 
     > [!NOTE]
-    > Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState.Deleted>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。
+    > @No__t_0 の count プロパティを取得した場合、結果の数には、削除対象としてマークされているレコードが含まれます。 削除対象としてマークされていないレコードの正確な数を取得するには、各レコードの <xref:System.Data.DataRow.RowState%2A> プロパティを見て、コレクションをループ処理します。 (削除用にマークされたレコードには、<xref:System.Data.DataRowState.Deleted> の <xref:System.Data.DataRow.RowState%2A> があります)。または、行の状態に基づいてフィルター処理するデータセットのデータビューを作成し、そこから count プロパティを取得することもできます。
 
-次の例を呼び出す方法を示しています、<xref:System.Data.DataRow.Delete%2A>の最初の行をマークするメソッド、`Customers`テーブルの削除済みとして。
+次の例は、<xref:System.Data.DataRow.Delete%2A> メソッドを呼び出して、`Customers` テーブルの最初の行を削除済みとしてマークする方法を示しています。
 
 [!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
 [!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
 
-## <a name="determine-if-there-are-changed-rows"></a>変更された行があるかを確認します。
-データセット内のレコードを変更すると、その変更をコミットするまで変更情報が保持されます。 呼び出すと、変更のコミット、`AcceptChanges`メソッドを呼び出すときまたはデータセットまたはデータ テーブルの`Update`TableAdapter またはデータ アダプターのメソッド。
+## <a name="determine-if-there-are-changed-rows"></a>変更された行があるかどうかを判断する
+データセット内のレコードを変更すると、その変更をコミットするまで変更情報が保持されます。 変更をコミットするには、データセットまたはデータテーブルの `AcceptChanges` メソッドを呼び出すか、TableAdapter またはデータアダプターの `Update` メソッドを呼び出す必要があります。
 
-変更は、各データ行に 2 つの方法を追跡します。
+変更は、各データ行の2つの方法で追跡されます。
 
-- 各データ行には、関連する情報が含まれています。 その<xref:System.Data.DataRow.RowState%2A>(たとえば、 <xref:System.Data.DataRowState.Added>、 <xref:System.Data.DataRowState.Modified>、 <xref:System.Data.DataRowState.Deleted>、または<xref:System.Data.DataRowState.Unchanged>)。
+- 各データ行には、<xref:System.Data.DataRow.RowState%2A> (<xref:System.Data.DataRowState.Added>、<xref:System.Data.DataRowState.Modified>、<xref:System.Data.DataRowState.Deleted>、<xref:System.Data.DataRowState.Unchanged> など) に関連する情報が含まれています。
 
-- 変更されたデータの各行には、その行の複数のバージョンが含まれています (<xref:System.Data.DataRowVersion>)、元のバージョン (変更前) に、と現在のバージョン (変更後)。 変更が保留中の期間中に (に応答するときに、<xref:System.Data.DataTable.RowChanging>イベント)、3 つ目のバージョン: 提案されたバージョン: も利用できます。
+- 変更された各データ行には、その行の複数のバージョン (<xref:System.Data.DataRowVersion>)、元のバージョン (変更前)、および現在のバージョン (変更後) が含まれています。 変更が保留されている期間 (<xref:System.Data.DataTable.RowChanging> イベントに応答できる時間) には、3つ目のバージョン (提案されたバージョン) も使用できます。
 
 データセットが変更された場合、データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドでは、`true` が返されます。 変更された行が存在することを確認した後は、`GetChanges` または <xref:System.Data.DataSet> の <xref:System.Data.DataTable> メソッドを呼び出して、変更された一連の行を取得できます。
 
-#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>行に変更が加えられましたかどうかを判断するには
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>行に変更が加えられたかどうかを確認するには
 
 - データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドを呼び出し、変更された行があるかどうかをチェックします。
 
@@ -85,24 +85,24 @@ ms.locfileid: "63402858"
 [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
 [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
 
-## <a name="determine-the-type-of-changes"></a>変更の種類を決定します。
-変更の種類を表示するによって行われたデータセット内の値を渡すことを確認することも、<xref:System.Data.DataRowState>列挙体を<xref:System.Data.DataSet.HasChanges%2A>メソッド。
+## <a name="determine-the-type-of-changes"></a>変更の種類を決定する
+また、<xref:System.Data.DataRowState> 列挙型から <xref:System.Data.DataSet.HasChanges%2A> メソッドに値を渡すことによって、データセットに加えられた変更の種類を確認することもできます。
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>行への変更の種類を確認するには
 
 - <xref:System.Data.DataRowState> 値を <xref:System.Data.DataSet.HasChanges%2A> メソッドに渡します。
 
-次の例は、という名前のデータセットを確認する方法を示しています。`NorthwindDataset1`をそれには、新しい行が追加された場合を判断します。
+次の例では、`NorthwindDataset1` という名前のデータセットをチェックし、新しい行が追加されているかどうかを確認する方法を示します。
 
 [!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
-## <a name="to-locate-rows-that-have-errors"></a>エラーが発生した行を探す
-個々 の列と行のデータを使用する場合は、エラーが発生する可能性があります。 チェックすることができます、`HasErrors`プロパティでエラーが存在するかどうかは確認を<xref:System.Data.DataSet>、 <xref:System.Data.DataTable>、または<xref:System.Data.DataRow>します。
+## <a name="to-locate-rows-that-have-errors"></a>エラーのある行を検索するには
+個々の列とデータ行を操作する場合、エラーが発生することがあります。 @No__t_1、<xref:System.Data.DataTable>、または <xref:System.Data.DataRow> にエラーが存在するかどうかを確認するには、`HasErrors` プロパティを確認します。
 
-1. チェック、`HasErrors`プロパティをデータセットのすべてのエラーがないかを参照してください。
+1. @No__t_0 プロパティを調べて、データセットにエラーがないかどうかを確認します。
 
-2. 場合、`HasErrors`プロパティは`true`テーブルのコレクションを反復処理し、エラー行を検索する、行を介してします。
+2. @No__t_0 プロパティが `true` の場合は、テーブルのコレクションを反復処理してから行を通じて、エラーのある行を検索します。
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

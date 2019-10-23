@@ -1,46 +1,46 @@
 ---
-title: ワークフロー デザイナー - ExistsInCollection&lt;T&gt;アクティビティ デザイナー
+title: ワークフローデザイナー-存在 &lt;T &gt; アクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9dc1f6a3694b6164fe4f2187fa4c6e2b42751e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949722"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650486"
 ---
-# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > アクティビティ デザイナー
+# <a name="existsincollectiont-activity-designer"></a>> アクティビティデザイナー \<T 存在するコレクション
 
-**ExistsInCollection\<T >** 作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.ExistsInCollection%601>アクティビティ。
+@No__t_2 アクティビティを作成および構成するには、 **\<T >** アクティビティデザイナーを使用します。
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > アクティビティ
+## <a name="the-existsincollectiont-activity"></a>> アクティビティ \<T 存在するコレクション
 
 <xref:System.Activities.Statements.ExistsInCollection%601> アクティビティでは、指定した項目が特定のコレクションに存在するかどうかを確認します。
 
-### <a name="using-the-existsincollectiont-activity-designer"></a>ExistsInCollection を使用して\<T > アクティビティ デザイナー
+### <a name="using-the-existsincollectiont-activity-designer"></a>> アクティビティデザイナー \<T の存在を持つコレクションの使用
 
-**ExistsInCollection\<T >** アクティビティ デザイナーが記載されて、**コレクション**のカテゴリ、**ツールボックス**をクリックしてアクセスします。**ツールボックス**ワークフロー デザイナーのタブ。 または、選択**ツールボックス**から、**ビュー**メニューのまたはキーを押して**Ctrl**+**Alt** + **X**します。
+ワークフローデザイナーの **[ツールボックス]** タブをクリックするとアクセスされる **[ツールボックス]** の **[コレクション]** カテゴリには、 **\<T >** アクティビティデザイナーがあります。 または、 **[表示]** メニューの **[ツールボックス]** を選択するか、 **ctrl** +**Alt** +**X**キーを押します。
 
-**ExistsInCollection\<T >** からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**どこにも、アクティビティを通常配置など内に、ワークフロー デザイナー画面にドロップし、<xref:System.Activities.Statements.Sequence>します。 これを作成します、 <xref:System.Activities.Statements.ExistsInCollection%601> 、既定値は、アクティビティ<xref:System.Activities.Activity.DisplayName%2A>の ExistsInCollection < Int32\>。 (既定で、 *TypeArgument*は**Int32**します。 プロパティ グリッドで変更できます)。<xref:System.Activities.Activity.DisplayName%2A>のヘッダーに値を編集できる、 **ExistsInCollection < T\>** アクティビティ デザイナーまたは、 **DisplayName**プロパティ グリッドのボックスです。 他のプロパティは、プロパティ グリッドで編集する必要があります。
+> アクティビティデザイナー **\<T**の存在を、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意の場所 (<xref:System.Activities.Statements.Sequence> 内など) ワークフローデザイナーにドロップできます。 これにより、<xref:System.Activities.Statements.ExistsInCollection%601> アクティビティが作成されます。このアクティビティは、既定の <xref:System.Activities.Activity.DisplayName%2A> 存在する場合は < Int32 \> になります。 (既定では、 *Typeargument*は**Int32**です。 プロパティグリッドで変更できます)。 @No__t_0 値は、\> アクティビティデザイナーの **<** のヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。 他のプロパティは、プロパティ グリッドで編集する必要があります。
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > のプロパティ
+### <a name="the-existsincollectiont-properties"></a>> プロパティ \<T 存在するコレクション
 
-次の表は、<xref:System.Activities.Statements.ExistsInCollection%601>プロパティと、デザイナーでの使用方法について説明します。
+次の表は、<xref:System.Activities.Statements.ExistsInCollection%601> のプロパティと、デザイナーでのそれらの使用方法を示しています。
 
-|プロパティ名|必須|使用方法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> アクティビティの表示名。 既定値は、ExistsInCollection < Int32\>します。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|コレクション内で検索する項目\<T >。 この項目の種類は*T*、型の*TypeArgument*します。 項目を指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|項目の存在をチェックするためのコレクション。 このコレクションは、型の**ICollection < TypeArgument\>します。** コレクションを指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
-|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型。 既定では、この*TypeArgument*に設定されている型**Int32**します。 型を変更するには、値を変更、 *TypeArgument*プロパティ グリッドでコンボ ボックス。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> アクティビティの表示名。 既定値は、< Int32 \> です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|コレクション内で検索する項目 \<T >。 この項目の型は*T*で、 *typeargument*型です。 項目を指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|項目が存在するかどうかを確認するコレクション。 このコレクションの型は**ICollection < TypeArgument \> です。** コレクションを指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
+|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型。 既定では、この*Typeargument*型は**Int32**に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの*Typeargument*の値を変更します。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|指定した項目がコレクション内に存在するかどうかを示す値。 結果にバインドする変数を指定するには、プロパティ グリッドで Visual Basic 変数を入力します。|
 
 ## <a name="see-also"></a>関連項目

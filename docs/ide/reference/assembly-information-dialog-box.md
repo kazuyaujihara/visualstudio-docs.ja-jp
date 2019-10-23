@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870758"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681625"
 ---
 # <a name="assembly-information-dialog-box"></a>[アセンブリ情報] ダイアログ ボックス
 
@@ -61,6 +61,9 @@ Win32 ファイル バージョン リソースの特定のバージョン番号
 
 **アセンブリを COM 参照可能にする**\
 アセンブリの型を COM に使用できるようにするかどうかを指定します。 <xref:System.Runtime.InteropServices.ComVisibleAttribute> に相当します。
+
+> [!NOTE]
+> .NET Framework クラス ライブラリで NuGet パッケージを生成するときにこれらのプロパティを設定する方法の詳細については、「[パッケージのプロジェクト プロパティを構成する](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

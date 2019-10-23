@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents |Microsoft Docs
+title: ISimpleConnectionPoint::D escribeEvents |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b5824f945ad25f177fc169b58157377bf53bcce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5000689d588fe3f63ec5408893187bba8d13d63
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786420"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571819"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-イベントの指定した範囲内で、DISPID と各イベントの名前を返します。  
+指定されたイベントの範囲内の各イベントの DISPID と名前を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,19 +41,19 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>パラメーター  
  `iEvent`  
- [in]取得する最初のイベントのインデックス。  
+ から取得する最初のイベントのインデックス。  
   
  `cEvents`  
- [in]取得するイベントの数。  
+ から取得するイベントの数。  
   
  `prgid`  
- [out]イベントの DISPID 値の配列。  
+ 入出力イベントの DISPID 値の配列。  
   
  `prgbstr`  
- [out]イベント名の配列。  
+ 入出力イベント名の配列。  
   
  `pcEventsFetched`  
- [out]実際にフェッチされるイベントの数。  
+ 入出力フェッチされたイベントの実際の数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -61,11 +61,11 @@ HRESULT DescribeEvents(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`S_FALSE`|使用可能なより多くのイベントは要求されました。 使用できないイベントは、DISPID_NULL と null BSTR で表されます。|  
-|`E_INVALIDARG`|要素はフェッチされませんでした。|  
+|`S_FALSE`|使用可能な数よりも多くのイベントが要求されました。 使用できないイベントは、DISPID_NULL と NULL BSTR で表されます。|  
+|`E_INVALIDARG`|要素をフェッチできませんでした。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、イベントの指定した範囲内で、DISPID と各イベントの名前を返します。  
+ このメソッドは、指定されたイベントの範囲内の各イベントの DISPID と名前を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [ISimpleConnectionPoint インターフェイス](../../winscript/reference/isimpleconnectionpoint-interface.md)

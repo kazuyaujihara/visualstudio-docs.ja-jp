@@ -1,5 +1,5 @@
 ---
-title: CA1404:P/invoke の直後に GetLastError を呼び出して |Microsoft Docs
+title: 'CA1404: P-Invoke | の直後に GetLastError を呼び出します。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1404
 ms.assetid: 52ae9eff-50f9-4b2f-8039-ca7e49fba88e
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2664837c17894f7ca336d650a7e08e21c45d955f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661321"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404:P/Invoke の直後に GetLastError を呼び出します
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: P/Invoke の直後に GetLastError を呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|
 |CheckId|CA1404|
-|Category|Microsoft.Interoperability|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- 呼び出し、<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName>メソッドまたは同等の Win32`GetLastError`関数、およびは直前の呼び出しでないプラットフォームにメソッドを呼び出します。
+ @No__t_0 メソッドまたは同等の Win32 `GetLastError` 関数に対して呼び出しが行われ、その直前にある呼び出しはプラットフォーム呼び出しメソッドになりません。
 
 ## <a name="rule-description"></a>規則の説明
- プラットフォームがメソッドへのアクセスのアンマネージ コードを呼び出すし、によって定義されている、`Declare`キーワード[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]または<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>属性。 一般に、障害時に、アンマネージ関数呼び出し、Win32`SetLastError`エラーに関連付けられているエラー コードを設定します。 失敗した関数の呼び出し元の呼び出し、Win32`GetLastError`エラー コードを取得し、エラーの原因を特定する関数。 エラー コードはスレッドごと上で管理され、次回の呼び出しによって上書きされます`SetLastError`します。 マネージ コードが呼び出すことで、エラー コードを取得後、失敗したプラットフォームへの呼び出しでは、メソッドを呼び出し、<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>メソッド。 エラー コードは、その他のマネージ クラス ライブラリのメソッドから内部の呼び出しによって上書きできるので、`GetLastError`または<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>プラットフォーム呼び出しメソッドの呼び出し後にすぐに、メソッドを呼び出す必要があります。
+ プラットフォーム呼び出しメソッドは、アンマネージコードにアクセスし、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 属性で `Declare` キーワードを使用して定義されます。 一般に、エラーが発生した場合、アンマネージ関数は Win32 `SetLastError` 関数を呼び出して、エラーに関連付けられているエラーコードを設定します。 失敗した関数の呼び出し元は、Win32 `GetLastError` 関数を呼び出してエラーコードを取得し、エラーの原因を特定します。 エラーコードはスレッド単位で管理され、次に `SetLastError` を呼び出したときに上書きされます。 失敗したプラットフォーム呼び出しメソッドを呼び出した後、マネージコードは <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> メソッドを呼び出すことによってエラーコードを取得できます。 エラーコードは、他のマネージクラスライブラリメソッドからの内部呼び出しによって上書きされる可能性があるため、`GetLastError` または <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> メソッドは、プラットフォーム呼び出しメソッドの呼び出しの直後に呼び出す必要があります。
 
- 規則は、次の呼び出し、プラットフォームへの呼び出しの間で発生したときに管理対象のメンバーを呼び出すメソッドを呼び出す<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>します。 これらのメンバーでは、エラーは変更しないで呼び出しメソッドの呼び出しのコードとはいくつかのプラットフォームの成功を判断するのに役立ちます。
+ この規則は、プラットフォーム呼び出しメソッドの呼び出しと <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> の呼び出しの間で、次のマネージメンバーが発生した場合に、その呼び出しを無視します。 これらのメンバーは、エラーコードを変更せず、一部のプラットフォーム呼び出しメソッドの呼び出しが成功したかどうかを判断するのに役立ちます。
 
 - <xref:System.IntPtr.Zero?displayProperty=fullName>
 
@@ -49,24 +49,24 @@ ms.locfileid: "68200315"
 - <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するへの呼び出しを移動<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>メソッドの呼び出しに、プラットフォームへの呼び出し直後に続くようにします。
+ この規則違反を修正するには、プラットフォーム呼び出しメソッドの呼び出しの直後になるように、<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> への呼び出しを移動します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- プラットフォーム間でコードがメソッドの呼び出しを呼び出す場合は、この規則による警告を抑制するのには安全では、<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>メソッドの呼び出しできません明示的または暗黙的に発生するエラー コードを変更します。
+ プラットフォーム呼び出しメソッド呼び出しと <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> メソッド呼び出しの間のコードが明示的にまたは暗黙的にエラーコードを変更することができない場合は、この規則からの警告を抑制することが安全です。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反するメソッドと、規則に適合するメソッドを示します。
+ 次の例は、規則に違反するメソッドと、規則を満たすメソッドを示しています。
 
  [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LastErrorPInvoke/cs/FxCop.Interoperability.LastErrorPInvoke.cs#1)]
  [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LastErrorPInvoke/vb/FxCop.Interoperability.LastErrorPInvoke.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1060:P/invoke を NativeMethods クラスに移動します。](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: P/Invoke を NativeMethods クラスに移動します](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400:P/invoke エントリ ポイントが存在する必要があります。](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: P/Invoke エントリ ポイントは存在しなければなりません](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401:P/invoke を表示することはできません。](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke は参照可能になりません](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA 2101:P/invoke 文字列引数に対してマーシャ リングを指定します。](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: P/Invoke 文字列引数に対してマーシャリングを指定します](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205:Win32 API に相当するマネージドの使用します。](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+ [CA2205: Win32 API に相当するマネージド API を使用します](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

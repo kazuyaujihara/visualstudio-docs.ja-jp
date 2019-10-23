@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState |Microsoft Docs
+title: 'IActiveScript:: GetScriptThreadState |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f6ef4b0acdf6e3b746316bef8abe9a3f0f8225
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935610"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72578004"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-スクリプトのスレッドの現在の状態を取得します。  
+スクリプトスレッドの現在の状態を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,15 +38,15 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>パラメーター  
  `stidThread`  
- [in]対象の状態が必要に応じて、スレッドの識別子、または次の特殊なスレッド識別子のいずれか:  
+ から状態が必要なスレッドの識別子、または次の特殊なスレッド識別子のいずれか。  
   
 |[値]|説明|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|基本スレッドです。つまり、これで、スクリプト エンジンのスレッドがインスタンス化されました。|  
+|SCRIPTTHREADID_BASE|基本スレッド。つまり、スクリプトエンジンがインスタンス化されたスレッド。|  
 |SCRIPTTHREADID_CURRENT|現在実行中のスレッド。|  
   
  `pstsState`  
- [out]指定されたスレッドの状態を受け取る変数のアドレス。 によって定義された名前付き定数の値のいずれかによって状態が示される、 [SCRIPTTHREADSTATE 列挙型](../../winscript/reference/scriptthreadstate-enumeration.md)列挙体。 このパラメーターが、現在のスレッドを特定できない場合は、状態がいつでもでも変更可能性があります。  
+ 入出力指定されたスレッドの状態を受け取る変数のアドレス。 状態は、 [SCRIPTTHREADSTATE 列挙](../../winscript/reference/scriptthreadstate-enumeration.md)列挙によって定義された名前付き定数値のいずれかによって示されます。 このパラメーターで現在のスレッドが識別されない場合、状態はいつでも変更される可能性があります。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -55,10 +55,10 @@ HRESULT GetScriptThreadState(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンがされていないされて読み込まれるまたは初期化) します。|  
+|`E_UNEXPECTED`|この呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか、初期化されていません)。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことができます、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイス。  
+ このメソッドは非ベースのスレッドから呼び出すことができます。この場合、非ベースのコールアウトによってオブジェクトをホストするか、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイスを使用することはできません。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

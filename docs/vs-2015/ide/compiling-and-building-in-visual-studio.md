@@ -9,22 +9,22 @@ helpviewer_keywords:
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b534e46f4cdef87641207ec13419d4c59d04ed3f
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 71bddf0f833bbaf717f7a2dbdf4a734efa295afb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740073"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72619440"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Visual Studio でのコンパイルとビルド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 開発サイクル中、何度も Visual Studio を使用して、アプリケーションをビルドし、アセンブリや実行可能プログラムを作成できます。 コードを何度もビルドすることによって、無効な構文、キーワードのスペルミス、型の不一致などのコンパイル時エラーを早い段階で特定できます。 また、コードのデバッグ バージョンを何度もビルドして実行することにより、ロジック エラーやセマンティック エラーなどの実行時エラーを検出して修正できます。
 
- プロジェクトまたはソリューションの開発を完了し、十分にデバッグしたら、そのプロジェクトまたはソリューションのコンポーネントをリリース ビルドでコンパイルできます。 既定では、リリース ビルドはデバッグ バージョンよりサイズが小さく実行が高速になるように設計および最適化されます。 詳細については、「[チュートリアル:アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)」を参照してください。
+ プロジェクトまたはソリューションの開発を完了し、十分にデバッグしたら、そのプロジェクトまたはソリューションのコンポーネントをリリース ビルドでコンパイルできます。 既定では、リリース ビルドはデバッグ バージョンよりサイズが小さく実行が高速になるように設計および最適化されます。 詳細については、「[チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)」を参照してください。
 
 ## <a name="choosing-a-build-method"></a>ビルド方法の選択
  アプリケーションは、IDE の既定のビルド オプション、コマンド プロンプト、または Team Foundation ビルドを使用してビルドできます。 これらの各オプションでは基になるテクノロジとして MSBuild が使用されており、それぞれの方法には次の表に示すような利点があります。
@@ -36,7 +36,7 @@ ms.locfileid: "68740073"
 |Team Foundation ビルドの使用|-   ビルド プロセスを自動化できます。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。 また、開発用コンピューターではなく、共有ビルド サーバーでプロジェクトをビルドできます。<br />-   ビルドするコード、実行するテスト、およびその他のオプションを簡単に指定できます。<br />-   ビルド ワークフローを変更し、必要に応じてビルド アクティビティを作成することで、大幅にカスタマイズされたタスクを実行できます。|[アプリケーションのビルド](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>IDE でのビルド
- プロジェクトを作成すると、既定のビルド構成が定義され、ビルドのコンテキストを用意するために、既定のソリューション ビルド構成が割り当てられます。 ソリューション構成によって、ソリューション内のプロジェクトをビルドおよび配置する方法が定義されます。 プロジェクト構成とは、プラットフォームおよびビルドの種類 (リリース Win32 など) に固有の一連のプロジェクト プロパティです。 これらの既定の構成を編集して、独自の構成を作成することもできます。 詳細については、「[プロジェクトデザイナーの概要](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)」および[「NIB 方法:プロジェクトのプロパティと構成設定](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)を変更します。
+ プロジェクトを作成すると、既定のビルド構成が定義され、ビルドのコンテキストを用意するために、既定のソリューション ビルド構成が割り当てられます。 ソリューション構成によって、ソリューション内のプロジェクトをビルドおよび配置する方法が定義されます。 プロジェクト構成とは、プラットフォームおよびビルドの種類 (リリース Win32 など) に固有の一連のプロジェクト プロパティです。 これらの既定の構成を編集して、独自の構成を作成することもできます。 詳細については、「[プロジェクト デザイナーの概要](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)」および「[NIB 方法: プロジェクト プロパティと構成設定を変更する](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)」を参照してください。
 
  IDE 内で、次の追加タスクを実行することもできます。
 
@@ -52,5 +52,5 @@ ms.locfileid: "68740073"
 
 - 並行ビルドを使用してビルド パフォーマンスを改善する。 詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」またはブログ投稿「[Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)」 (C++ での並列ビルドの調整) を参照してください。
 
-## <a name="see-also"></a>関連項目
- [チュートリアル: アプリケーション](../ide/walkthrough-building-an-application.md)の構築[ビルド構成](../ide/understanding-build-configurations.md)についてビルド[プラットフォームの概要](../ide/understanding-build-platforms.md) [Web サイトプロジェクト](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [のビルド (コンパイル) 方法:プロジェクトの依存関係を作成および削除する](../ide/how-to-create-and-remove-project-dependencies.md)
+## <a name="see-also"></a>参照
+ [チュートリアル: アプリケーションの構築](../ide/walkthrough-building-an-application.md)[ビルド構成について](../ide/understanding-build-configurations.md)[ビルド プラットフォームについて](../ide/understanding-build-platforms.md) [(コンパイル)のWebサイトプロジェクトのビルド](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[方法: を作成し、プロジェクトの依存関係の削除](../ide/how-to-create-and-remove-project-dependencies.md)

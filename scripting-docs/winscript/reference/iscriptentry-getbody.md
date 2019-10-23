@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetBody |Microsoft Docs
+title: 'IScriptEntry:: GetBody |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aba6019f4729f1b4a31933a4ca93c0eddf6159a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787880"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575481"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-本文に対応するテキストを返します、`IScriptEntry`スクリプト ブロック、関数のブロックまたはスクリプトレットします。  
+@No__t_0 スクリプトブロック、関数ブロック、またはスクリプトレットの本体に対応するテキストを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,13 +37,13 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstr`  
- [out]このテキストは、次のいずれかの本文には:  
+ 入出力次のいずれかの本文に含まれるテキスト。  
   
-- `IScriptEntry`スクリプト ブロック  
+- @No__t_0 スクリプトブロック  
   
-- `IScriptEntry`関数ブロック内の関数  
+- 関数ブロック内の `IScriptEntry` 関数  
   
-- `IScriptEntry`スクリプトレットのイベント ハンドラー  
+- @No__t_0 スクリプトレットのイベントハンドラー  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

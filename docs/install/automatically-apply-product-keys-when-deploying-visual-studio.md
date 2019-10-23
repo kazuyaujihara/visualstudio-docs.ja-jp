@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253837"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831842"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio の展開時にプロダクト キーを自動的に適用する
 
@@ -100,7 +100,7 @@ Visual Studio の配置を自動化するために使用されるスクリプト
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Visual Studio の仮想インスタンスを実行する場合は、ローカル AppData フォルダーとレジストリも仮想化してください。 仮想インスタンスをトラブルシューティングするには、*C:\Program Files (x86)\Microsoft Visual Studio\ <バージョン\> \Common7\IDE\DDConfigCA.exe* を実行します。  
+> Visual Studio の仮想インスタンスを実行する場合は、ローカル AppData フォルダーとレジストリも仮想化してください。 仮想インスタンスのトラブルシューティングを行うには、`C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe` を実行します。  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

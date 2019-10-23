@@ -1,5 +1,5 @@
 ---
-title: CA2221:ファイナライザーは保護する必要があります |Microsoft Docs
+title: 'CA2221: ファイナライザーを protected にする必要があります |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685129"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651957"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221:ファイナライザーは保護されなければなりません
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: ファイナライザーは保護されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|カテゴリ|Microsoft.Usage|
+|カテゴリ|Microsoft. 使用方法|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- パブリック型では、ファミリ (保護された) アクセスを指定していないファイナライザーを実装します。
+ パブリック型は、ファミリ (保護された) アクセスを指定しないファイナライザーを実装します。
 
 ## <a name="rule-description"></a>規則の説明
- ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 このルールは、c#、Visual Basic、および Visual C コンパイラによって強制されます。
+ ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 この規則は、 C#、Visual Basic、および Visual C++コンパイラによって適用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するには、ファミリ アクセスできるように、ファイナライザーを変更します。
+ この規則違反を修正するには、ファイナライザーをファミリアクセス可能に変更します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 高レベルの .NET 言語でこのルールに違反することはできません。Microsoft Intermediate Language を作成している場合は、違反することができます。
+ この規則には、上位レベルの .NET 言語では違反できません。Microsoft 中間言語を記述している場合は、違反する可能性があります。
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,5 +80,5 @@ ms.locfileid: "65685129"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

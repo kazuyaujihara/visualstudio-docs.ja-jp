@@ -11,15 +11,15 @@ helpviewer_keywords:
 - what's new [Visual Studio]
 ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 469405515b7cc0ebe615dc821ebfa5ddb7258468
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691107"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672093"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,21 +28,21 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
 このページでは、Visual Studio 2013 RTM 以降新しくなったいくつかの重要な機能に焦点を当てています。これには Visual Studio 2013 更新プログラムのいずれかで最初に導入された機能が含まれます。 Visual Studio 2015 の新機能の完全な一覧については、 [リリース ノート](https://www.visualstudio.com/news/vs2015-vs)を参照してください。
 
-多くの改良と Visual Studio ALM の新機能に関する詳細については、次を参照してください。 [TFS 2015 の新](/tfs/server/whats-new?view=vsts#tfs-2015-rtm)します。
+Visual Studio ALM の多くの機能強化と新機能の詳細については、「 [TFS 2015 の新](/tfs/server/whats-new?view=vsts#tfs-2015-rtm)機能」を参照してください。
 
 ## <a name="a-new-setup-experience"></a>新しいセットアップ エクスペリエンス
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
 
- Visual Studio 2015 のセットアップ エクスペリエンスはコンポーネント化されており、必要な部分のみをインストールするだけで済みます。 これにより、.NET または Web の開発に関連する多くの一般的なシナリオをより短い時間でインストールできます。 クロス プラットフォーム モバイル開発などの他の種類の開発を行う場合、または C++ や F# で作業する場合は、**[カスタム]** インストールを選択した後、必要なコンポーネントとオプションのサードパーティ製 SDK を選択してください。 カスタム コンポーネントはいずれも、後でインストールすることもできます。 たとえば、基本インストールを選択した後、新しい C++ プロジェクトを作成しようとすると、C++ 開発ツールをダウンロードするように求められます。
+ Visual Studio 2015 のセットアップ エクスペリエンスはコンポーネント化されており、必要な部分のみをインストールするだけで済みます。 これにより、.NET または Web の開発に関連する多くの一般的なシナリオをより短い時間でインストールできます。 クロス プラットフォーム モバイル開発などの他の種類の開発を行う場合、または C++ や F# で作業する場合は、 **[カスタム]** インストールを選択した後、必要なコンポーネントとオプションのサードパーティ製 SDK を選択してください。 カスタム コンポーネントはいずれも、後でインストールすることもできます。 たとえば、基本インストールを選択した後、新しい C++ プロジェクトを作成しようとすると、C++ 開発ツールをダウンロードするように求められます。
 
- ![Visual Studio 2015 のセットアップ ダイアログ](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Visual Studio 2015 セットアップダイアログ](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>複数のアカウント間のサインイン
  Visual Studio 2015 では、サインインの仕組みがすっきりとしたものに更新されており、Visual Studio のアカウントが複数ある場合でもオンライン リソースへのアクセスが大幅に簡素化されるように設計されています。 Visual Studio にサインインすると、Visual Studio 2015 およびコンピューター上の Blend のすべてのインスタンスに自動的にサインインします。 サインインすると、自動的に設定のローミングが開始されます。 Visual Studio 2015 では、複数の機能で 1 つのアカウントを共通に使うことができるため、トークンが良好なものである限り、 **チーム エクスプローラー**から Visual Studio Team Services のアカウントにアクセスしたり、サーバー エクスプローラー内の自分の Microsoft Azure サブスクリプションからさまざまなリソースや Web サイトにアクセスしたりすることが可能です。 また、Application Insights のプロジェクトの [新しいプロジェクト] ダイアログに自分の Azure リソースが表示されます。さらに、新しい [[接続済みサービスの追加]](https://msdn.microsoft.com/office/aa905340.aspx) ダイアログには、Azure Mobile、Azure Storage、 [Microsoft Office 365](https://developer.salesforce.com/) 、および **Saleforce.com developer** のアカウントが表示されます。
 
  新しいアカウント マネージャーを実行する際に複数のユーザー アカウントを追加することによって、Visual Studio でそれらのユーザー アカウントの作業を実行できます。 そのようにすることによって、さまざまなサービスに接続したりオンライン リソースにアクセスしたりする際に、それら複数のアカウントを自在に切り替えることができます。 Visual Studio では追加されたアカウントが記憶されるため、Visual Studio または Blend のすべてのインスタンスからそれらを使用できます。 Visual Studio は、パーソナル化アカウントを使ってアカウントのリストもローミングし (重要な資格情報はローミングしません)、それらのアカウントの 1 つを使って別のデバイスですばやく操作できるようにします。 もちろん、[アカウント設定] ダイアログ ボックスでいつでもアカウントを削除できます。 開始するには、「 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)」を参照してください。
 
- ![アカウント マネージャー](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
+ ![アカウントマネージャー](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
 
 ## <a name="choose-your-target-platforms"></a>ターゲット プラットフォームの選択
  Visual Studio 2015 は、クロス プラットフォームのモバイル デバイス開発をサポートします。 iOS、Android、および Windows を対象とするアプリやゲームを作成し、共通コード ベースを (すべて Visual Studio IDE 内から) 共有できます。 [ファイル] の [新しいプロジェクト] ダイアログ ボックスにさまざまな種類の新しいプロジェクトが表示されます。
@@ -50,10 +50,10 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
  また当然のことながら、言語、ライブラリ、およびツールに多くの改善が加えられたため、クラシック デスクトップ アプリケーションのサポートは、以前より優れています。
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Xamarin for Visual Studio を使った C# のクロス プラットフォームのモバイル アプリ
- Xamarin は、iOS および Android API にネイティブでバインドされるコードを C# で記述するためのモバイル フレームワークです。 Microsoft は、Xamarin for Visual Studio のリリースに伴い Xamarin と密接に働いてきました。Xamarin for Visual Studio は、単一のソリューションで共有コードを使用して Android、iOS、および Windows Phone 用に開発するための拡張機能です。 Xamarin では、プラットフォーム間の差分が最小限である 1 つの言語と 1 つのコード ベースを使用します。  Xamarin for Visual Studio は Visual Studio 2010 以降でサポートされています。 Xamarin のスタート エディションは、Visual Studio 2015 に含まれます。 最初に、次を参照してください。 [Visual Studio で Xamarin を使用してネイティブ UI とアプリを構築](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)します。
+ Xamarin は、iOS および Android API にネイティブでバインドされるコードを C# で記述するためのモバイル フレームワークです。 Microsoft は、Xamarin for Visual Studio のリリースに伴い Xamarin と密接に働いてきました。Xamarin for Visual Studio は、単一のソリューションで共有コードを使用して Android、iOS、および Windows Phone 用に開発するための拡張機能です。 Xamarin では、プラットフォーム間の差分が最小限である 1 つの言語と 1 つのコード ベースを使用します。  Xamarin for Visual Studio は Visual Studio 2010 以降でサポートされています。 Xamarin のスタート エディションは、Visual Studio 2015 に含まれます。 開始するには、「 [Visual Studio で Xamarin を使用してネイティブ UI でアプリを構築](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)する」を参照してください。
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova を使った HTML/JavaScript のクロス プラットフォームのモバイル アプリ
- Visual Studio Tools for Apache Cordova は、Microsoft とオープン ソース Apache Cordova コミュニティとの密接な共同作業の成果物です。 これらのツールは、HTML、CSS、および JavaScript (または Typescript) を使用したクロス プラットフォームのモバイル開発を可能にします。 1 つのコード ベースを使用して Android、iOS、および Windows を対象とし、Visual Studio IDE に含まれる JavaScript IntelliSense、DOM Explorer、JavaScript コンソール、ブレークポイント、ウォッチ、ローカル、Just My Code などの豊富な機能を利用できます。  Visual Studio Tools for Apache Cordova では、一般的な JavaScript API を提供するプラグインによってすべてのプラットフォーム上のネイティブ デバイス機能にアプリがアクセスできるようになります。 最初に、次を参照してください。 [Visual Studio Tools for Apache Cordova の概要](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)します。
+ Visual Studio Tools for Apache Cordova は、Microsoft とオープン ソース Apache Cordova コミュニティとの密接な共同作業の成果物です。 これらのツールは、HTML、CSS、および JavaScript (または Typescript) を使用したクロス プラットフォームのモバイル開発を可能にします。 1 つのコード ベースを使用して Android、iOS、および Windows を対象とし、Visual Studio IDE に含まれる JavaScript IntelliSense、DOM Explorer、JavaScript コンソール、ブレークポイント、ウォッチ、ローカル、Just My Code などの豊富な機能を利用できます。  Visual Studio Tools for Apache Cordova では、一般的な JavaScript API を提供するプラグインによってすべてのプラットフォーム上のネイティブ デバイス機能にアプリがアクセスできるようになります。 開始するには、「 [Apache Cordova の Visual Studio Tools の概要](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)」を参照してください。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity を使った C# のクロス プラットフォームのモバイル ゲーム
  Unity は、マルチプラットフォームの 2D および 3D ゲーム開発用に広く使用されているプラットフォームです。 ゲームを C# で作成し、Android、iOS、Windows Phone、その他の多くのプラットフォームでネイティブに実行できます。 Visual Studio Tools for Unity は、Unity と Visual Studio IDE を統合させる拡張機能です。 この拡張機能により、Unity 開発者用に設計された生産性機能に加えて、Visual Studio IDE のすべての機能とデバッガーが使用できるようになります。 Visual Studio Tools for Unity 2.0 Preview 2 には Visual Studio 2015 のためのサポートが追加されており、さらに [ローカル] ウィンドウや [ウォッチ] ウィンドウでのオブジェクト表示方法の改善など、数々の機能が新たに追加されています。 Microsoft は最近、Visual Studio Tools for Unity の作成元の SyntaxTree を買収しました。 Visual Studio Tools for Unity 2.0 Preview 2 のダウンロードおよび Visual Studio Tools for Unity の詳細については、「 [Visual Studio による Unity ゲームのビルド](https://aka.ms/vstu)」を参照してください。
@@ -61,7 +61,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>ネイティブ C++ 用のクロス プラットフォーム アプリおよびライブラリ
  C++ は、ほとんどのモバイル デバイスでネイティブに使用可能な言語です。 C++ を使用すると、複数のモバイル プラットフォーム ターゲット用にビルドできるクロス プラットフォームの共有コード ライブラリを作成できます。 モバイル アプリ全体を C++ で作成することもできます。 Visual C++ には、クロス プラットフォームのコードを編集、ビルド、配置、およびデバッグするためのツールが用意されています。 Windows アプリ用のテンプレートだけでなく、Android Native Activity アプリ用のプロジェクト、iOS アプリ用のプロジェクト、または Xamarin ハイブリッド アプリを含む複数のプラットフォーム用の共有コード ライブラリ オブジェクトも、テンプレートから作成できます。 プラットフォーム固有の IntelliSense を使用すると、API を調べて、Android ターゲット、iOS ターゲット、または Windows ターゲット用の正しいコードを生成することができます。 x86 または ARM ネイティブ プラットフォーム用のビルドを構成し、iOS シミュレーターやネットワークに接続された Mac 上の iOS デバイスにコードを配置したり、直接接続された Android デバイスにコードを配置したり、パフォーマンスの優れた Microsoft Visual Studio Emulator for Android をテストに使用したりできます。 Visual Studio デバッガーでは、ブレークポイントやウォッチ変数の設定、スタックの表示、C++ コードのステップスルー実行が可能です。 最も固有性の高いプラットフォームのコード以外のすべてのコードを複数のアプリ プラットフォームで共有し、Visual Studio の 1 つのソリューションでそれらをすべてビルドすることができます。
 
- クロス プラットフォームの C++ で最初に、次を参照してください[Visual c クロス プラットフォーム モバイル アプリの構築。](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ クロスプラットフォームC++の使用を開始するには、「[ビジュアルC++を使用したクロスプラットフォームモバイルアプリのビルド](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)」を参照してください。
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>任意の Windows 10 デバイス用のユニバーサル Windows アプリ
  ユニバーサル Windows プラットフォームと 1 つの Windows コアを使用することで、電話やデスクトップなどの Windows 10 デバイスで同じアプリを実行できます。 これらのユニバーサル Windows アプリは、Visual Studio 2015 とユニバーサル Windows アプリ開発ツールを使用して作成します。
@@ -87,17 +87,17 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
  C# 言語と Visual Basic 言語には、両方ともコア言語と IDE サポートに多数の小さな改良が見られます。 それらの改良のすべてにより、.NET のコーディング作業がさらに便利かつ直感的になり、生産性が向上します。
 
- 詳細については、次を参照してください。[新](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)と[.NET ブログ](http://blogs.msdn.com/b/dotnet/)します。
+ 詳細については、「[新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)」および「 [.net ブログ](http://blogs.msdn.com/b/dotnet/)」を参照してください。
 
 #### <a name="c"></a>C++
  Visual C++ は、C++11/14 言語への準拠、クロス プラットフォーム モバイル デバイス用開発のサポート、再利用可能関数および await (現在 C++17 での標準化に向けて検討中) のサポート、C ランタイム ライブラリ (CRT) および C++ 標準ライブラリ (STL) の実装における数々の改良とバグ修正、MFC でのサイズ変更可能なダイアログ、コンパイラの新しい最適化機能、ビルド パフォーマンスの改善、新しい診断機能、コード エディターでの新たな生産性向上ツールの点で大きく前進しています。
 
- 詳細については、次を参照してください。 [Visual c の新](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)と[Visual c ブログ](http://blogs.msdn.com/b/vcblog/)します。
+ 詳細については、「 [ C++ visual の新機能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)」および「 [ C++ビジュアルブログ](http://blogs.msdn.com/b/vcblog/)」を参照してください。
 
 ## <a name="device-preview-menu-bar"></a>[デバイスのプレビュー] メニュー バー
  ユニバーサル Windows プラットフォーム プロジェクトでは、[デバイスのプレビュー] メニュー バーを使用して、XAML ベースの UI がさまざまな画面サイズでどのように表示されるかを確認できます。
 
- ![デバイス プレビュー メニュー](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
+ ![[デバイスのプレビュー] メニュー](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
  Visual Studio 2013 では、Visual Studio グラフィックス診断に、フレーム分析、Windows Phone のサポート、シェーダーの編集と適用、コマンド ライン キャプチャ ツールなど、多くの新機能が追加されています。 DirectX12 アプリのデバッグのサポートも追加されています。 詳しくは、「 [Visual Studio グラフィックス診断](./debugger/visual-studio-graphics-diagnostics.md)」をご覧ください。
@@ -115,17 +115,17 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
    新しいサービスは継続的に追加されます。それらのサービスは、ウィザードで [新しいサービス リンクの検索] をクリックして検索できます。
 
-   ![接続済みサービス ダイアログ ボックスを追加](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
+   ![接続済みサービスダイアログの追加](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
 
 ## <a name="design-your-ui"></a>UI の設計
- XAML ユーザー インターフェイスを設計するための Blend の機能が大幅に強化されました。 Blend が完全に再設計されたことにより、より直感的な UI が提供され、IntelliSense などの XAML 編集機能が強化され、Visual Studio との統合性が向上しました。 詳細については、次を参照してください。 [Visual Studio と Blend for Visual Studio での XAML の設計](./designers/designing-xaml-in-visual-studio.md)します。
+ XAML ユーザー インターフェイスを設計するための Blend の機能が大幅に強化されました。 Blend が完全に再設計されたことにより、より直感的な UI が提供され、IntelliSense などの XAML 編集機能が強化され、Visual Studio との統合性が向上しました。 詳細については、[Visual Studio および Blend for Visual Studio での XAML デザインに関する記事](./designers/designing-xaml-in-visual-studio.md)を参照してください。
 
 ## <a name="cross-platform-debugging-support"></a>クロスプラットフォームのデバッグのサポート
  Visual Studio を使用して、Windows、iOS、Android の各デバイスで実行されるネイティブ モバイル アプリを作成、デバッグすることができます。 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)を使用するか、またはデバイスを接続し、Visual Studio で直接コードをデバッグします。
 
 - **JavaScript / Cordova**。 JavaScript で Windows、iOS、Android のネイティブ アプリを作成するには、 [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) を使用します。
 
-     [アプリのデバッグ](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)MSDN ライブラリでは、Visual Studio の Cordova のサポートのデバッグについて詳しく説明します。
+     MSDN ライブラリの「[アプリのデバッグ](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)」では、Cordova の Visual Studio デバッグサポートについて詳しく見ていきます。
 
 - **C# / Xamarin**。 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
 
@@ -135,12 +135,12 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
 ## <a name="debugging-and-diagnostics"></a>デバッグと診断
 
-診断の新機能新機能については、次を参照してください。[プロファイリング ツールの新](./profiling/what-s-new-in-profiling-tools.md)します。
+診断の新機能の詳細については、「[プロファイルツールの新機能](./profiling/what-s-new-in-profiling-tools.md)」を参照してください。
 
 次に示すのは、コードに対して異なる種類の診断および分析を実行する新しいツールまたは機能強化されたツールです。
 
 ### <a name="perftips"></a>パフォーマンスのヒント
- パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 最初に、次を参照してください[PerfTips:。Visual Studio を使用したデバッグ中のパフォーマンス概要の参照](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ パフォーマンスのヒントはデバッグ中のメソッドの実行時間を表示し、プロファイラーを呼び出すことなくボトルネックをすばやく見つけることができるようになります。 開始するには、「 [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)」を参照してください
 
 ### <a name="error-list"></a>エラー一覧
  エラー一覧はあらゆる列のフィルター処理をサポートするようになりました。 また入力時の C# または Visual Basic ソリューション全体におけるエラー、警告、コード分析を、コードの変更によって大量の警告が発生したとしてもライブで表示します。 新しいエラー一覧は既存の使用方法と後方互換性があります。 詳細については、「 [Error List Window](./ide/reference/error-list-window.md)」を参照してください。
@@ -156,7 +156,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ## <a name="enjoy-these-additional-ide-improvements"></a>その他の IDE の強化された機能の活用
 
 ### <a name="synchronized-settings-roaming-settings"></a>同期された設定 (ローミング設定)
- Visual Studio 2013 には、テキスト エディター、ショートカット キー、テーマ & フォント & 色、スタートアップ、および環境エイリアスなどの最も一般的に構成されている設定のいくつかに対して、同期された設定が導入されています。  Visual Studio 2015 では、さらに多くの設定を同期し、Professional、Enterprise、Express SKU、Blend などの Visual Studio ファミリのアプリケーション間で設定を同期するように、この機能が改良されています。 Visual Studio 2013 で使用したアカウントで Visual Studio 2015 に初めてサインインすると、Visual Studio 2013 から適用された同期された設定が表示されます。 設定にアクセスするには、**[クイック起動]** に「sync」と入力するか、**[ツール] > [オプション] > [環境] > [同期された設定]** に移動します。
+ Visual Studio 2013 には、テキスト エディター、ショートカット キー、テーマ & フォント & 色、スタートアップ、および環境エイリアスなどの最も一般的に構成されている設定のいくつかに対して、同期された設定が導入されています。  Visual Studio 2015 では、さらに多くの設定を同期し、Professional、Enterprise、Express SKU、Blend などの Visual Studio ファミリのアプリケーション間で設定を同期するように、この機能が改良されています。 Visual Studio 2013 で使用したアカウントで Visual Studio 2015 に初めてサインインすると、Visual Studio 2013 から適用された同期された設定が表示されます。 設定にアクセスするには、 **[クイック起動]** に「sync」と入力するか、 **[ツール] > [オプション] > [環境] > [同期された設定]** に移動します。
 
 ### <a name="automatic-extension-updates"></a>拡張機能の自動更新
  インストールされている Visual Studio の拡張機能は、Visual Studio ギャラリーで新しいバージョンが使用可能なときに、自動的に更新されるようになりました。 拡張機能の自動更新をカスタマイズする方法の詳細については、「 [Visual Studio の拡張機能を検索および使用する](./ide/finding-and-using-visual-studio-extensions.md) 」を参照してください。
@@ -164,33 +164,33 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ### <a name="title-case-menus"></a>メニューの先頭文字の大文字指定
  お客様の声に基づいて調整されました。 Visual Studio のメニューは再び既定で先頭文字が大文字に指定されます。 ただし、すべて大文字のスタイルを希望する場合は、起動時または **[ツール] > [オプション] > [全般]** プロパティ ページで設定できます。
 
- ![Visual Studio 2015 タイトル ケース メイン メニュー コマンド](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
+ ![Visual Studio 2015 タイトルケースのメインメニューコマンド](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
 ### <a name="high-resolution-images-and-touch-support"></a>高解像度のイメージとタッチ サポート
  Visual Studio IDE では、高密度ディスプレイ (メニュー、コンテキスト メニュー、ツール ウィンドウのコマンド バーなどのエリアやソリューション エクスプローラー内のいくつかのプロジェクト) での高解像度のイメージが実現しました。 また、Visual Studio のコード エディター ウィンドウのタッチ スクリーンでは、タッチしてホールド、ピンチ、タップなどの動作を使って、ズーム、スクロール、テキストの選択、およびコンテキスト メニューの呼び出しができるようになりました。
 
- ![エディターでのタッチ サポート](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
+ ![エディターでのタッチサポート](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
 
 ### <a name="custom-layouts"></a>カスタム レイアウト
  ストアを作成し、カスタム ウィンドウ レイアウトをローミングできます。 たとえば、お気に入りのレイアウトを 1 つデスクトップ コンピューターで使用するために定義し、異なるレイアウトをノート PC や画面の小さいデバイスで使用するために定義できます。 または、UI プロジェクト用にレイアウトを 1 つ選択し、データベース プロジェクト用に別のレイアウトを選択できます。 ショートカット キーを使用してすばやくレイアウトを切り替えられます。 これらのレイアウトは、サインイン中であれば Visual Studio のすべてのインスタンスで使用できます。 詳細については、「 [カスタム ウィンドウ レイアウトを作成する](./misc/create-custom-window-layouts.md)」を参照してください。
 
- ![Visual Studio カスタム レイアウト メニュー項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
+ ![Visual Studio のカスタムレイアウトメニュー項目](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>通知ハブ
- スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳しくは、「[Visual Studio の通知](./ide/visual-studio-notifications.md)」をご覧ください。
+ スキャンを簡単にするために、通知ハブの UI が効率化されています。 パフォーマンスの問題、レンダリングの問題、クラッシュなどの通知の種類が追加され、Visual Studio に通知の表示停止を指示できるようになりました。 詳細については、「 [Visual Studio の通知](./ide/visual-studio-notifications.md)」を参照してください。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens:検索 (Enterprise および Professional エディションのみ)、コードの変更点
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: コードに何が起こったかを検索します (Enterprise Edition と Professional Edition のみ)。
  エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 Visual Studio Team Services (VSTS) または Team Foundation Server (TFS) に格納されているコードについて、作業項目、バグ、コード レビューなどの変更やその他の履歴を確認できます。
 
  Visual Studio Enterprise と Visual Studio Professional で、次の操作を実行できるようになりました。
 
 - Visual Studio エディターでコード ファイル全体の履歴を取得する。
 
-   ![CodeLens:コード ファイルの詳細を取得](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: コードファイルの詳細を取得する](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - コードを変更したユーザーを示すグラフを表示する。 これは、チームでの変更のパターンを見つけて影響を評価するために役立ちます。
 
-   ![CodeLens:グラフとしてコードの変更履歴を参照してください](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: コードの変更履歴をグラフとして表示する](./ide/media/codelens.png "CodeLens")
 
 - コードの最終変更日時を簡単に分かるようにする。
 
@@ -205,7 +205,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
  このリリースでは、コマンドが選択、編集、管理の単位でセクションにグループ化され、グループの内容のレイアウトが変更されて、コード要素のショートカット メニューとリンクがずっと使いやすくなりました。 また、テスト プロジェクトが他のプロジェクトとは異なるスタイルで表示されること、およびマップの要素のアイコンがさらに適切なバージョンに更新されたことにも注意してください。
 
- ![新しいコード マップで選択した項目を表示する](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![新しいコードマップで選択した項目を表示する](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  その他の改良点は次のとおりです。
 
@@ -257,17 +257,17 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ### <a name="send-a-frown"></a>問題点、改善点の報告
  製品のどこをどう改善したらよいかについてご意見をお寄せいただくなら、今後の作業においてお客様が最も気にかけておられる点を優先的に取り上げることができます。 何か気になる点がありましたら、IDE の中から直接に **[問題点、改善点の報告]** 機能を使用してご報告ください。 そのプロセスも極めてシンプルなものにしてあります。
 
- タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳しくは、「[ご意見](./ide/talk-to-us.md)」をご覧ください。
+ タイトル バーにある黄色の笑顔マークをクリックしてから、 **[問題点、改善点の報告]** をクリックします。 気になる点について記入した後、[問題点、改善点の報告] ボタンをクリックしてください。 詳細については、「 [Talk to Us](./ide/talk-to-us.md)」を参照してください。
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>クラッシュ、ハング、パフォーマンスの問題についての報告
  気になる点のちょっとしたメモでは済ませられない問題が発生するかもしれません。 ハング、クラッシュ、あるいはパフォーマンスに関する問題が発生した場合は、問題点、改善点の報告をした後に表示されるダイアログを使用することによって、簡単な操作でその再現手順、クラッシュ ダンプ、トレース ファイルをお送りいただくことが可能です。
 
- まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、次を参照してください。[スマイルの指示を送信する Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)します。
+ まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、「 [Visual Studio の気に入った機能の報告](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
-* [Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
+* [Visual Studio における Xamarin を使用したネイティブ UI を備えたアプリの作成](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Visual C++ を使ったクロスプラットフォーム モバイル アプリをビルドする](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [IntelliTest でのコードの単体テストの生成](./test/generate-unit-tests-for-your-code-with-intellitest.md)
 * [複数のユーザー アカウントを使って作業する](./ide/work-with-multiple-user-accounts.md)

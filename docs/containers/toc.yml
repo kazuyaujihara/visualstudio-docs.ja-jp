@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: コンテナー内の React.js シングル ページ アプリ
           href: container-tools-react.md
+        - name: Azure Dev Spaces を使用した Kubernetes 開発 >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: チュートリアル
       expanded: true
       items:
@@ -24,11 +26,11 @@
           href: edit-and-refresh.md
         - name: コンテナー レジストリに配置する
           href: hosting-web-apps-in-docker.md
-        - name: Azure App Service にデプロイする
+        - name: Azure App Service に配置する
           href: deploy-app-service.md
         - name: Docker Hub に配置する
           href: deploy-docker-hub.md
-        - name: コンテナーを表示および診断する
+        - name: コンテナーとイメージの表示と診断
           href: view-and-diagnose-containers.md
         - name: コンテナー ツールを構成する
           href: container-tools-configure.md

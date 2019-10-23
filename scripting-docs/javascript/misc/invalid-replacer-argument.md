@@ -1,5 +1,5 @@
 ---
-title: 無効な置換関数の引数 |Microsoft Docs
+title: 無効な置換関数 argument |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007315"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573810"
 ---
 # <a name="invalid-replacer-argument"></a>置換関数の引数が無効です。
-呼び出しが試行された`JSON.stringify`引数が無効です。 `replacer`関数または配列を引数として使用することがあります。  
+無効な引数を使用して `JSON.stringify` を呼び出そうとしました。 @No__t_0 引数は、関数または配列である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 変更、`replacer`関数または配列への引数。  
+- @No__t_0 引数を関数または配列に変更します。  
   
 ## <a name="example"></a>例  
- この例では、コードが実行時エラー`memberfilter`関数または配列ではなくオブジェクトです。  
+ この例のコードでは、`memberfilter` が関数または配列ではなくオブジェクトであるため、ランタイムエラーが発生します。  
   
 ```JavaScript  
 var contact = new Object();  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の    
+ [JSON. Parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)

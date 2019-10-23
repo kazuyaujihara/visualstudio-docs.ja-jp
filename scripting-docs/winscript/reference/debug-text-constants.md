@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2342555c4ee92b403aa01cc0ca15bb805f2b002e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: facbdc1258b3fca72a239d9d5cc41772cf577f13
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955251"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577366"
 ---
-# <a name="debugtext-constants"></a>DEBUG_TEXT 定数
-中に使用される[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)します。  
+# <a name="debug_text-constants"></a>DEBUG_TEXT 定数
+IDebugExpressionContext の実行中に使用されます[::P arselanguagetext](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)。  
   
 ## <a name="syntax"></a>構文  
   
@@ -29,7 +29,7 @@ typedef DWORD DEBUG_TEXT;
   
 ## <a name="constants"></a>定数  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
 |DWORD DEBUG_TEXT_ISEXPRESSION|0x00000001|テキストがステートメントではなく式であることを示します。 このフラグは、一部の言語によるテキストの解析方法に影響する場合があります。|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|戻り値が使用できる場合、その値は呼び出し元によって使用されます。|  

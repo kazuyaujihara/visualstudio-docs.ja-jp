@@ -1,69 +1,69 @@
 ---
-title: '方法: XML エディターから XSLT 変換を実行 |Microsoft Docs'
+title: '方法: XML エディターから XSLT 変換を実行する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b305d88779603b374e5f95842d7a5271a657268
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431051"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666532"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>方法: XML エディターから XSLT 変換を実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XML エディターでは、XSLT スタイル シートを XML ドキュメントと関連付けて変換を実行し、結果を表示させることができます。 XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。  
-  
- **出力**プロパティは、出力ファイル名を指定します。 場合、**出力**プロパティが空白の一時ディレクトリにファイル名が生成されます場合、。 ファイル拡張子はスタイル シート内の `xsl:output` 要素に基づき、.xml、.txt、または .htm のいずれかが付けられます。  
-  
- 場合、**出力**プロパティが .htm ファイルとファイル名を指定または .html の拡張機能、XSLT 出力がプレビューを使用して[!INCLUDE[msCoName](../includes/msconame-md.md)]Internet Explorer。 他のファイル拡張子はすべて、[!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio によって選択されている既定のエディターを使用して開かれます。 たとえば、ファイル拡張子が .xml の場合、Visual Studio では XML エディターが使用されます。  
-  
-### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>XML ドキュメントから XSLT 変換を実行するには  
-  
-1. XML エディターで XML ドキュメントを開きます。  
-  
-2. XSLT スタイル シートを XML ドキュメントと関連付けます。  
-  
-    - XML ドキュメントに `xml-stylesheet` 処理命令を追加します。 たとえば、ドキュメントのプロローグに `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` という行を追加します。  
-  
-         - または -  
-  
-    - XSLT スタイル シートを使用して、追加、**プロパティ**ウィンドウ。 文書の**プロパティ ウィンドウ**、 をクリックして、**参照**ボタン、**スタイル シート**フィールドで、XSLT スタイル シートを選択し、をクリックして**を開く**.  
-  
-3. をクリックして、 **ShowXSL 出力**のボタンでは、 **XML エディター**ツールバー。  
-  
+XML エディターでは、XSLT スタイル シートを XML ドキュメントと関連付けて変換を実行し、結果を表示させることができます。 XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。
+
+ Output**プロパティは**、出力のファイル名を指定します。 **出力**プロパティが空白の場合は、一時ディレクトリにファイル名が生成されます。 ファイル拡張子はスタイル シート内の `xsl:output` 要素に基づき、.xml、.txt、または .htm のいずれかが付けられます。
+
+ **出力**プロパティで .htm または .html 拡張子の付いたファイル名を指定した場合、[!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer を使用して XSLT 出力がプレビューされます。 他のファイル拡張子はすべて、[!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio によって選択されている既定のエディターを使用して開かれます。 たとえば、ファイル拡張子が .xml の場合、Visual Studio では XML エディターが使用されます。
+
+### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>XML ドキュメントから XSLT 変換を実行するには
+
+1. XML エディターで XML ドキュメントを開きます。
+
+2. XSLT スタイル シートを XML ドキュメントと関連付けます。
+
+    - XML ドキュメントに `xml-stylesheet` 処理命令を追加します。 たとえば、ドキュメントのプロローグに `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` という行を追加します。
+
+         -または-
+
+    - **[プロパティ]** ウィンドウを使用して XSLT スタイルシートを追加します。 ドキュメントの**プロパティウィンドウ**で、 **[スタイルシート]** フィールドの**参照**ボタンをクリックし、XSLT スタイルシートを選択して、 **[開く]** をクリックします。
+
+3. **XML エディター**のツールバーの **[show xsl Output]** ボタンをクリックします。
+
     > [!NOTE]
-    > XML ドキュメントに関連付けられているスタイル シートがない場合は、使用するスタイル シートの指定を求めるダイアログ ボックスが表示されます。  
-    >   
-    >  XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。  
-  
-### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>XSLT スタイル シートから XSLT 変換を実行するには  
-  
-1. XML エディターで XSLT スタイル シートを開きます。  
-  
-2. 内の XML ドキュメントの指定、**入力**ドキュメントのフィールド**プロパティ**ウィンドウ。  
-  
+    > XML ドキュメントに関連付けられているスタイル シートがない場合は、使用するスタイル シートの指定を求めるダイアログ ボックスが表示されます。
+    >
+    >  XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。
+
+### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>XSLT スタイル シートから XSLT 変換を実行するには
+
+1. XML エディターで XSLT スタイル シートを開きます。
+
+2. ドキュメントの **[プロパティ]** ウィンドウの **[入力]** フィールドで、XML ドキュメントを指定します。
+
     > [!NOTE]
-    > この XML ドキュメントは、変換に使用する入力ドキュメントです。 XSLT 変換が開始されると、ドキュメントが指定されていない場合、**ファイルを開く** ダイアログ ボックスが表示されたら、およびその時点でドキュメントを指定することができます。  
-  
-3. をクリックして、 **ShowXSLT 出力**のボタンでは、 **XML エディター**ツールバー。  
-  
-     XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。  
-  
-### <a name="to-provide-a-different-output-file-name"></a>異なる出力ファイル名を指定するには  
-  
-1. ファイル名を指定、**出力**ドキュメントのフィールド**プロパティ**ウィンドウ。  
-  
-2. をクリックして、 **ShowXSLT 出力**のボタンでは、 **XML エディター**ツールバー。  
-  
-     XSLT 変換からの出力結果が新しいドキュメント ウィンドウに表示され、出力ウィンドウで使用されるエディターは、ファイルの拡張子によって異なります、**出力**ドキュメントのプロパティ。  
-  
-## <a name="see-also"></a>関連項目  
+    > この XML ドキュメントは、変換に使用する入力ドキュメントです。 XSLT 変換の開始時にドキュメントが指定されていない場合、 **[ファイルを開く]** ダイアログボックスが表示され、その時点でドキュメントを指定できます。
+
+3. **XML エディター**のツールバーの **[showxslt 出力]** ボタンをクリックします。
+
+     XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。
+
+### <a name="to-provide-a-different-output-file-name"></a>異なる出力ファイル名を指定するには
+
+1. ドキュメントの **[プロパティ]** ウィンドウの **[出力]** フィールドで、ファイル名を指定します。
+
+2. **XML エディター**のツールバーの **[showxslt 出力]** ボタンをクリックします。
+
+     XSLT 変換からの結果の出力は、新しいドキュメントウィンドウに表示されます。出力ウィンドウで使用されるエディターは、**出力**ドキュメントプロパティのファイル拡張子によって異なります。
+
+## <a name="see-also"></a>参照
  [XML エディター](../xml-tools/xml-editor.md)

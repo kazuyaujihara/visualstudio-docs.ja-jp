@@ -3,23 +3,23 @@ title: この関連メソッドは、次の既定の挿入、更新、または�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11c5c7d3c8078aa420074e9e32bb132489b169c8
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8a7a422cff33fd361b784fd9cae6d5053fbe84fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252942"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639663"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>この関連メソッドは、次の既定の挿入、更新、または削除メソッドのバッキング メソッドです
 
-この関連メソッドは、 `Insert` `Update`次の既定のメソッド、メソッド、また`Delete`はメソッドのバッキングメソッドです。 削除されると、これらのメソッドも削除されます。 続行しますか?
+この関連メソッドは、次の既定の `Insert`、`Update`、または `Delete` メソッドのバッキングメソッドです。 削除されると、これらのメソッドも削除されます。 続行しますか?
 
-選択さ`DataContext`れたメソッドは`Insert`、現在、 **O/R デザイナー**のいずれかのエンティティクラスに対して、 `Update` `Delete` 、、のいずれかのメソッドとして使用されています。 選択したメソッドを削除すると、このメソッドを使用していたエンティティクラスは、更新時に挿入、更新、または削除を実行する既定の実行時の動作に戻ります。
+選択された `DataContext` メソッドは、現在、 **O/R デザイナー**のいずれかのエンティティクラスの `Insert`、`Update`、または `Delete` メソッドの1つとして使用されています。 選択したメソッドを削除すると、このメソッドを使用していたエンティティクラスは、更新時に挿入、更新、または削除を実行する既定の実行時の動作に戻ります。
 
 ## <a name="selected-method-options"></a>選択されたメソッドのオプション
 

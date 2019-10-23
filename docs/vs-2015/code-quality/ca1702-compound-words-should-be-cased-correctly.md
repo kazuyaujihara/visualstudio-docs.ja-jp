@@ -1,5 +1,5 @@
 ---
-title: CA1702:複合語では、大文字と小文字が正しく区別する必要があります |Microsoft Docs
+title: 'CA1702: 複合語は大文字にする必要があります。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,49 +12,48 @@ helpviewer_keywords:
 - CompoundWordsShouldBeCasedCorrectly
 ms.assetid: 05481245-7ad8-48c3-a456-3aa44b6160a6
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 91a3945c6ef212ba664119a822123f326cdefc5c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669250"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合語では、大文字と小文字が正しく区別されなければなりません
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください[CA1702:。複合語では、大文字と小文字が正しく区別する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)します。  
-  
-|||  
-|-|-|  
-|TypeName|CompoundWordsShouldBeCasedCorrectly|  
-|CheckId|CA1702|  
-|カテゴリ|Microsoft.Naming|  
-|互換性に影響する変更点|互換性に影響する場合に、アセンブリに発生します。<br /><br /> 改行の型パラメーターで発生した場合。|  
-  
-## <a name="cause"></a>原因  
- 複数の単語を含む識別子の名前と少なくとも 1 つの単語を正しく大文字と小文字されませんの複合語が表示されます。  
-  
-## <a name="rule-description"></a>規則の説明  
- 識別子の名前は大文字小文字の区別に基づく単語に分割されます。 Microsoft のスペル チェック ライブラリでは、隣接する 2 つの単語の組み合わせがチェックされます。 認識されると、識別子は、規則違反を生成します。 違反を引き起こす複合語の例は、"CheckSum"、「マルチパート」は、"Checksum"、「マルチパート」としてそれぞれ小文字する必要があります。 ルールに組み込まれているいくつかの例外により、以前の一般的な使用方法と、1 つの単語がいくつかのフラグが設定されますが、「ツールバー」、"Filename"など (ここで、「ツールバー」および"FileName") の 2 つの個別の単語として小文字する必要があります。  
-  
- 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。  
-  
-## <a name="how-to-fix-violations"></a>違反の修正方法  
- 名前を変更するは、大文字と小文字を正しく区別できるようにします。  
-  
-## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
- 複合語の両方の部分は、スペル チェック辞書によって認識され、目的は、2 つの単語を使用する場合は、この規則による警告を抑制するのには安全です。  
-  
-## <a name="related-rules"></a>関連規則  
- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
-  
- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
- [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
-  
-## <a name="see-also"></a>関連項目  
- [名前付けのガイドライン](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
- [大文字の使用規則](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
+Visual Studio の最新のドキュメントについては、「 [CA1702: 複合単語の大文字と小文字](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)の区別」を参照してください。
+
+|||
+|-|-|
+|TypeName|CompoundWordsShouldBeCasedCorrectly|
+|CheckId|CA1702|
+|カテゴリ|Microsoft.Naming|
+|互換性に影響する変更点|中断-アセンブリで発生した場合。<br /><br /> 中断なし-型パラメーターで発生した場合。|
+
+## <a name="cause"></a>原因
+ 識別子の名前に複数の単語が含まれており、少なくとも1つの単語が大文字と小文字が正しくない複合語であることが示されています。
+
+## <a name="rule-description"></a>規則の説明
+ 識別子の名前は、大文字小文字に基づく単語に分割されます。 それぞれの連続する2単語の組み合わせは、Microsoft スペルチェックライブラリによってチェックされます。 認識されている場合は、識別子によってルールの違反が生成されます。 違反の原因となる複合語の例としては、"CheckSum" と "マルチパート" があります。これは、それぞれ "Checksum" と "マルチパート" として使用する必要があります。 これまでの一般的な使用により、いくつかの例外がルールに組み込まれています。また、"Toolbar" や "Filename" など、複数の単語にフラグが設定されている場合は、2つの単語 (この場合は "ToolBar" と "FileName") として大文字と小文字が区別されます。
+
+ 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
+
+## <a name="how-to-fix-violations"></a>違反の修正方法
+ 大文字と小文字が正しくなるように名前を変更します。
+
+## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
+ 複合語の両方の部分がスペル辞書によって認識され、目的が2つの単語を使用する場合は、この規則による警告を抑制しても安全です。
+
+## <a name="related-rules"></a>関連規則
+ [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+
+ [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
+ [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
+## <a name="see-also"></a>参照
+ [名前付けガイドライン](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)の[大文字小文字の表記規則](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

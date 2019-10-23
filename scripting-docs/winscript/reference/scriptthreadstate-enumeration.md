@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc4ef840310c27ccbadce2ed4f632514b555ef98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840188"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575657"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE 列挙型
-スクリプト エンジンでは、スレッドの状態を指定します。 この列挙体を使って、 [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)メソッド。  
+スクリプトエンジンのスレッドの状態を指定します。 この列挙体は、 [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)メソッドによって使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,8 +40,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|指定されたスレッドはされていない処理がすぐに実行されるスクリプトのテキストをスクリプト化されたイベントを処理または、スクリプト マクロを実行します。|  
-|SCRIPTTHREADSTATE_RUNNING|指定されたスレッドはアクティブに処理がすぐに実行されるスクリプトのテキストをスクリプト化されたイベントを処理か、スクリプトのマクロを実行します。|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|指定されたスレッドは、現在スクリプト化されたイベントを処理していないか、直ちに実行されたスクリプトテキストを処理しています。|  
+|SCRIPTTHREADSTATE_RUNNING|指定されたスレッドは、スクリプト化されたイベントのアクティブな処理、すぐに実行されたスクリプトテキストの処理、またはスクリプトマクロの実行を行います。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプトの定数、列挙型、およびエラー コード](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

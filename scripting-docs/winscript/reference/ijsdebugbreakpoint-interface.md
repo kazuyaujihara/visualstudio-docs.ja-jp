@@ -1,5 +1,5 @@
 ---
-title: IJsDebugBreakPoint インターフェイス |Microsoft Docs
+title: IJsDebugBreakPoint Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14823baeb999ad24aabef9b2b55b59a7b5d08c71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6bb4e12f0e08baf1842d251347f35265425b999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583107"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577678"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint インターフェイス
 ブレークポイントを表します。  
@@ -31,7 +31,7 @@ IJsDebugBreakPoint : public IUnknown;
   
 ### <a name="public-methods"></a>パブリック メソッド  
   
-|名前|説明|  
+|名|説明|  
 |----------|-----------------|  
 |[IJsDebugBreakPoint::Delete メソッド](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|ブレークポイントを削除します。|  
 |[IJsDebugBreakPoint::Disable メソッド](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|ブレークポイントを無効にします。|  
@@ -39,8 +39,8 @@ IJsDebugBreakPoint : public IUnknown;
 |[IJsDebugBreakPoint::GetDocumentPosition メソッド](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|ブレークポイントが関連付けられたステートメントの位置を返します。|  
 |[IJsDebugBreakPoint::IsEnabled メソッド](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|ブレークポイントが有効かどうかを指定します。|  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイスのリファレンス](../../winscript/reference/windows-script-interfaces-reference.md)

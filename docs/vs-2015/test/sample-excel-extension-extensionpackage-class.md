@@ -1,43 +1,42 @@
 ---
-title: Excel 拡張子のサンプル:ExtensionPackage クラス |Microsoft Docs
+title: 'Excel 拡張子のサンプル: ExtensionPackage クラス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 6e45410a-1819-4d54-ac21-7280152f7e3a
 caps.latest.revision: 11
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 668913d231115e955cc50df10de045eab3d4ac92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1c1f4c746fa505b50bab9caa7a516a2abc77f69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189467"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672211"
 ---
-# <a name="sample-excel-extension-extensionpackage-class"></a>Excel 拡張子のサンプル:ExtensionPackage クラス
+# <a name="sample-excel-extension-extensionpackage-class"></a>Excel 拡張子のサンプル: ExtensionPackage クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このクラスは <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> クラスを拡張し、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] ワークシートをテストするコード化された UI テストのエントリ ポイントになります。  
-  
-## <a name="assembly-attribute"></a>アセンブリ属性  
- ファイルは、アセンブリを UI テスト拡張として識別するアセンブリ属性で始まります。  
-  
-```  
-[assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(  
-    "ExcelExtensionPackage",  
-    typeof(  
-     Microsoft.VisualStudio.Test.Sample.UI.ExtensionPackage))]  
-```  
-  
- この属性は、基本クラス名、パッケージ クラスの名前、およびカスタム拡張パッケージ クラスの完全修飾クラス名を宣言します。  
-  
-## <a name="simple-properties"></a>単純なプロパティ  
- このクラスには、コード化された UI テスト フレームワークが拡張とアセンブリを識別および説明するために使用する値を提供するプロパティがあります。 詳細については、コードのコメントをご覧ください。  
-  
-## <a name="getservice-method"></a>GetService メソッド  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> メソッドは、各オブジェクトの基底クラスによって識別され、コード化された UI テスト フレームワークがテクノロジ マネージャー、プロパティ プロバイダー、およびアクション フィルターにアクセスするために使用する単一エントリ ポイントです。  
-  
-## <a name="see-also"></a>関連項目  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+このクラスは <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> クラスを拡張し、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] ワークシートをテストするコード化された UI テストのエントリ ポイントになります。
+
+## <a name="assembly-attribute"></a>アセンブリ属性
+ ファイルは、アセンブリを UI テスト拡張として識別するアセンブリ属性で始まります。
+
+```
+[assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(
+    "ExcelExtensionPackage",
+    typeof(
+     Microsoft.VisualStudio.Test.Sample.UI.ExtensionPackage))]
+```
+
+ この属性は、基本クラス名、パッケージ クラスの名前、およびカスタム拡張パッケージ クラスの完全修飾クラス名を宣言します。
+
+## <a name="simple-properties"></a>単純なプロパティ
+ このクラスには、コード化された UI テスト フレームワークが拡張とアセンブリを識別および説明するために使用する値を提供するプロパティがあります。 詳細については、コードのコメントをご覧ください。
+
+## <a name="getservice-method"></a>GetService メソッド
+ <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> メソッドは、各オブジェクトの基底クラスによって識別され、コード化された UI テスト フレームワークがテクノロジ マネージャー、プロパティ プロバイダー、およびアクション フィルターにアクセスするために使用する単一エントリ ポイントです。
+
+## <a name="see-also"></a>参照
+ コード化された[UI テストと操作の記録を拡張して Microsoft Excel をサポートする <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> には](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

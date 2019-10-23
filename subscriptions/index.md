@@ -7,12 +7,12 @@ layout: LandingPage
 ms.date: 06/25/2018
 ms.topic: landing-page
 description: Visual Studio サブスクリプションへようこそ
-ms.openlocfilehash: 9c2981ddf109a253f55e4c72dd4e88ceb2c820ff
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.openlocfilehash: 5848ccca0468b6293f7e31785944f5cb8b14a17c
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383700"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516851"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio サブスクリプション
 
@@ -194,7 +194,6 @@ Visual Studio サブスクリプションは、Windows、iOS、Android、Linux �
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (クラウド、デザイン、モバイル、およびデータ)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">データ キャンプ</a> (データ サイエンスおよび AI)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft の専門家によるテクニカル サポート インシデント</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Azure コミュニティ</a></li>
                         </ul>
                     </div>

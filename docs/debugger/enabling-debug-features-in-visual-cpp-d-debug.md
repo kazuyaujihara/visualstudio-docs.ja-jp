@@ -1,5 +1,5 @@
 ---
-title: ビジュアルでのデバッグ機能C++(-/d_debug) |Microsoft Docs
+title: プロジェクトのデバッグ機能C++を有効にする (-D_DEBUG) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295bdc7b220f8977c85dd1b359f99af2f8d5d72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f772b74a42b9704f1fd77c731022ddb44774c68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850960"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430680"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Visual C++ でのデバッグ機能の使用 (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>プロジェクトでのデバッグC++機能の有効化 (/D_DEBUG)
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] では、シンボル **_DEBUG** を定義してプログラムをコンパイルすると、アサーションなどのデバッグ機能が有効になります。 **_DEBUG** は、次のいずれかの方法で定義できます。
 
 - ソース コードで **#define _DEBUG** を指定します。または
@@ -40,8 +40,8 @@ ms.locfileid: "62850960"
 
   **_DEBUG** を定義すると、コンパイラでは **#ifdef _DEBUG** と `#endif` で囲まれたコードのセクションがコンパイルされます。
 
-  MFC プログラムのデバッグ構成は、MFC ライブラリのデバッグ バージョンとリンクする必要があります。 MFC ヘッダー ファイルによって、**_DEBUG** や **_UNICODE** など、定義済みのシンボルに基づいて、リンクする MFC ライブラリの適正なバージョンが決定されます。 詳細については、「[MFC ライブラリのバージョン](/cpp/mfc/mfc-library-versions)」を参照してください。
+  MFC プログラムのデバッグ構成は、MFC ライブラリのデバッグ バージョンとリンクする必要があります。 MFC ヘッダー ファイルによって、 **_DEBUG** や **_UNICODE** など、定義済みのシンボルに基づいて、リンクする MFC ライブラリの適正なバージョンが決定されます。 詳細については、「[MFC ライブラリのバージョン](/cpp/mfc/mfc-library-versions)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

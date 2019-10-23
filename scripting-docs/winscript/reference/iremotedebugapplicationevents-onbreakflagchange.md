@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnBreakFlagChange |Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnBreakFlagChange |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb19b6cfc423a1305276441305ef854c70f2d896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e9a29b6dcc5cd6864ce4edffe9e5f96b64ba9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943789"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561709"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
-Break フラグを変更したときにイベントを処理します。  
+ブレークフラグが変更されたときにイベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>パラメーター  
  `abf`  
- [in]アプリケーションの現在の区切りフラグ。  
+ からアプリケーションの現在のブレークフラグ。  
   
  `prdatSteppingThread`  
- [in]現在実行中のスレッド。  
+ から現在実行中のスレッド。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,8 +51,8 @@ HRESULT OnBreakFlagChange(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、break フラグを変更する場合は、イベントを処理します。  
+ このメソッドは、ブレークフラグが変更されたときにイベントを処理します。  
   
 ## <a name="see-also"></a>関連項目  
- [IRemoteDebugApplicationEvents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
+ [Iremotedebugapplicationevents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
  [APPBREAKFLAGS 列挙型](../../winscript/reference/appbreakflags-enumeration.md)

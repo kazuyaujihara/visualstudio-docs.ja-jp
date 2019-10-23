@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871910"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669937"
 ---
 # <a name="define-a-work-item-link-handler"></a>作業項目リンク ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "68871910"
 ## <a name="defining-the-work-item-link-handler"></a>作業項目リンク ハンドラーの定義
  次に挙げるタスクはすべてクラス ライブラリ プロジェクトで行います。
 
-### <a name="project-references"></a>プロジェクトの参照
+### <a name="project-references"></a>プロジェクト参照
  次の [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] アセンブリをプロジェクト参照に追加します。
 
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`
@@ -84,10 +84,10 @@ ms.locfileid: "68871910"
 
  `System.Drawing`-サンプルコードによって使用されます。
 
- **[参照の追加]** ダイアログの **[.net]** タブでこれらの参照のいずれかが見つからない場合は、[参照] タブを使用して、"\\\Common7\IDE\PrivateAssemblies" という形式で検索します。
+ **[参照の追加]** ダイアログボックスの **[.net]** タブでこれらの参照のいずれかが見つからない場合は、[参照] タブを使用して、[Visual Studio のバージョン] \Common7\IDE\PrivateAssemblies \\ の [参照] タブを探します。
 
 ### <a name="import-the-work-item-namespace"></a>作業項目の名前空間をインポートする
- プロジェクト参照で、次のアセンブリへの参照を追加します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+ @No__t_0 プロジェクト**参照**で、次のアセンブリへの参照を追加します。
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開始します。
 
-     **トラブルシューティング**:新しい[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が開始されない場合は、VSIX プロジェクトがソリューションのスタートアッププロジェクトとして設定されていることを確認します。
+     **トラブルシューティング**: 新しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が開始されない場合は、VSIX プロジェクトがソリューションのスタートアッププロジェクトとして設定されていることを確認します。
 
 2. 実験用の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で、モデリング プロジェクトを開くか、または生成し、モデリング図を開くか、または生成します。
 
@@ -180,7 +180,7 @@ namespace WorkItems
 
 7. 作業項目の色が赤になっていることを確認します。 これで、サンプル コードの `OnWorkItemLinked()` が動作したことを確認できます。
 
-     **トラブルシューティング**:ハンドラーメソッドが実行されていない場合は、次のことを確認します。
+     **トラブルシューティング**: ハンドラーメソッドが実行されていない場合は、次のことを確認します。
 
     - クラスライブラリプロジェクトは、VSIX プロジェクトの**ソース. extensions. マニフェスト**の**コンテンツ**リストに MEF コンポーネントとして表示されます。
 
@@ -262,7 +262,7 @@ public void OnWorkItemLinked
 } 
 ```
 
-## <a name="accessing-the-work-item-reference-links"></a>参照項目参照のリンクへのアクセス
+## <a name="accessing-the-work-item-reference-links"></a>作業項目参照のリンクへのアクセス
  リンクには次のようにアクセスできます。
 
 ```
@@ -277,7 +277,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
  `string.Format(@"%{0}\{1}#{1}${2}", tfServer, projectCollection, RepositoryGuid, workItem.Id);`
 
- それぞれの文字について以下に説明します。
+ ここで、
 
 - サーバーの URI は次のとおりです。
 

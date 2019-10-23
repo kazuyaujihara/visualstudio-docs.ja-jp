@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0216d778278f02f7fc63630f4ff6ce90c755e3c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 025e388185651e6b2effb0f53345f2e145e101b3
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118650"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289600"
 ---
 # <a name="step-7-keep-pairs-visible"></a>手順 7: ペアの表示の維持
 プレーヤーが一致しないアイコンのペアをクリックしている限り、ゲームは正常に動作します。 しかし、プレーヤーが一致するペアをクリックしたらどうなるでしょうか。 (<xref:System.Windows.Forms.Timer.Start> メソッドを使用して) タイマーを有効にしてアイコンを非表示にする代わりに、ゲームでは、それ自体をリセットすることで、クリックされた 2 つのラベルの色はリセットせずに、`firstClicked` 参照変数および `secondClicked` 参照変数を使用してラベルを追跡しないようにする必要があります。
@@ -29,6 +29,9 @@ ms.locfileid: "71118650"
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
+
+       > [!IMPORTANT]
+       > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      追加した `if` ステートメントの 1 行目は、プレーヤーがクリックした 1 つ目のラベルのアイコンが 2 つ目のラベルのアイコンと同じかどうかをチェックします。 アイコンが同じである場合、プログラムは、中かっこ内 (Visual C# の場合) または `if` ステートメント内 (Visual Basic の場合) の 3 つのステートメントを実行します。 最初の 2 つのステートメントは、`firstClicked` 参照変数および `secondClicked` 参照変数をリセットし、これらがラベルを追跡しないようにします (これら 2 つのステートメントが、タイマーの <xref:System.Windows.Forms.Timer.Tick> イベント ハンドラーからのものであることを認識できます)。3 つ目のステートメントは `return` ステートメントであり、メソッドの残りのステートメントを実行せずにスキップするようプログラムに指示します。
 
@@ -58,8 +61,8 @@ ms.locfileid: "71118650"
 
 2. プログラムを保存したら実行し、フォームでアイコンのクリックを開始します。 一致しないペアをクリックした場合、タイマーの Tick イベントがトリガーされ、両方のアイコンが非表示になります。 一致するペアをクリックした場合、新しい `if` ステートメントが実行され、return ステートメントにより、メソッドでタイマーを開始するコードがスキップされるため、次の図に示すように、アイコンが表示されたままになります。
 
-     ![このチュートリアルで作成するゲーム](../ide/media/express_finishedgame.png)
-アイコンのペアが表示された **[マッチング ゲーム]**
+     ![このチュートリアルで作成するゲーム](../ide/media/express_finishedgame.png)<br/>
+アイコンのペアが表示された**絵合わせゲーム**
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

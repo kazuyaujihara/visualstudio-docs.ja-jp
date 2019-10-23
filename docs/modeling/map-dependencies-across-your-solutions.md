@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecc8ae714dfb35281029a9d6e240a148e7c9511
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 45fb9b1a08dc54257f24f469d3a717b82faccf45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913341"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661538"
 ---
 # <a name="map-dependencies-with-code-maps"></a>依存関係をコードマップとマップする
 
@@ -38,7 +38,7 @@ ms.locfileid: "70913341"
 
 - ソリューションC#またはアセンブリ内のビジュアルまたは Visual Basic ( *.dll*または *.exe*)
 
-- Visual C++プロジェクト、ヘッダーファイルC++ ( *.h*また`#include`は)、またはバイナリのネイティブまたはマネージ C またはコード
+- Visual C++プロジェクト、ヘッダーファイルC++ ( *.h*または `#include`)、またはバイナリのネイティブまたはマネージ C またはコード
 
 - Microsoft Dynamics AX の .NET モジュールから作られた X++ プロジェクトおよびアセンブリ
 
@@ -49,7 +49,7 @@ ms.locfileid: "70913341"
 
 Visual Studio でコードマップを作成するには、最初に**コードマップ**と**ライブ依存関係検証**コンポーネントをインストールします。
 
-1. **Visual Studio インストーラー**を開きます。 Windows の [スタート] メニューから開くことも、Visual Studio 内で [**ツール** > ] **[ツールと機能の取得]** を選択して開くこともできます。
+1. **Visual Studio インストーラー**を開きます。 Windows の スタート メニューから開くことができます。または、Visual Studio 内で**ツール を選択し**て **ツールと機能  >  取得**することもできます。
 
 1. **[個々のコンポーネント]** タブを選択します。
 
@@ -78,13 +78,13 @@ Visual Studio でコードマップを作成するには、最初に**コード�
 
    ソリューションの **[ソリューション項目]** フォルダーに空のマップが表示されます。
 
-同様に、[**アーキテクチャ** > ] **[新しいコードマップ]** または [**ファイル** > ] [**新しい** > **ファイル**] の順に選択すると、ソリューションに追加せずに新しいコードマップファイルを作成できます。
+同様に、新しいコードマップファイルをソリューションに追加せずに作成することもできます。そのためには、 >  **[新しいコードマップ]** また**は [** **ファイル** > **新しい** > **ファイル**] を選択します。
 
 ## <a name="generate-a-code-map-for-your-solution"></a>ソリューションのコードマップを生成する
 
 ソリューション内のすべての依存関係を表示するには、次のようにします。
 
-1. メニューバーで、[**アーキテクチャ** > ] **[ソリューションのコードマップの生成]** の順に選択します。 最後にビルドしてからコードが変更されていない場合は、[**アーキテクチャ** > ] [**ソリューションのコードマップを生成**する] を選択します。
+1. メニューバーで **アーキテクチャ** を選択し、**ソリューションのコードマップを生成** >  ます。 前回のビルド以降にコードが変更されていない場合は、 **[アーキテクチャ]** を選択して、代わりに**ビルドせずにソリューションのコードマップを生成** >  ことができます。
 
    ![コード マップ生成コマンド](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -149,7 +149,7 @@ Visual Studio でコードマップを作成するには、最初に**コード�
 関連項目:
 
 - [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)
-- [DGML ファイルを編集してコード マップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - [アナライザーを実行](../modeling/find-potential-problems-using-code-map-analyzers.md)して、コード内の潜在的な問題を見つける
 
 ## <a name="view-specific-dependencies-in-a-code-map"></a>コードマップ内の特定の依存関係の表示
@@ -162,7 +162,7 @@ Visual Studio でコードマップを作成するには、最初に**コード�
 
    ![マップする項目を選択する](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. **ソリューション エクスプ ローラー**ツールバーで、選択**コード マップに表示**![グラフから選択したノード](../modeling/media/createnewgraphfromselectedbutton.gif)です。 または、1つまたは複数の項目グループのショートカットメニューを開き、 **[コードマップに表示]** をクリックします。
+1. **[ソリューションエクスプローラー]** ツールバーで、[選択したノードの新しいグラフ ![Create ](../modeling/media/createnewgraphfromselectedbutton.gif)] をクリックして、 **[コードマップに表示]** を選択します。 または、1つまたは複数の項目グループのショートカットメニューを開き、 **[コードマップに表示]** をクリックします。
 
    **ソリューションエクスプローラー**、**クラスビュー**、または**オブジェクトブラウザー**から、[新規](#add-a-code-map)または既存のコードマップに項目をドラッグすることもできます。 項目の親階層を含めるには、 **ctrl**キーを押したまま項目をドラッグします。または、コードマップツールバーの **[親を含める]** ボタンを使用して、既定のアクションを指定します。 また、 **Windows エクスプローラー**などの Visual Studio の外部からアセンブリファイルをドラッグすることもできます。
 
@@ -177,15 +177,15 @@ Visual Studio でコードマップを作成するには、最初に**コード�
 
    ![コードマップ内のノードを展開する](../modeling/media/dependencygraph_containment.png)
 
-   すべての項目を展開するには、 **Ctrl**+**A**を使用して項目を選択し、マップのショートカットメニューを開き、[**グループ** > の**展開**] を選択します。 ただし、すべてのグループを展開すると使用に適さないマップになったりメモリの問題が発生したりする場合、このオプションは使用できません。
+   すべての項目を展開するには、 **Ctrl** +**A**を使用して選択し、マップのショートカットメニューを開き、[**グループ** > **展開**] を選択します。 ただし、すべてのグループを展開すると使用に適さないマップになったりメモリの問題が発生したりする場合、このオプションは使用できません。
 
 5. 必要に応じて、目的の項目をクラスおよびメンバーレベルまで展開します。
 
    ![クラスとメンバーのレベルにグループを展開する](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   コードに含まれるがマップに表示されないメンバーを表示するには、グループの![左上隅に](../modeling/media/dependencygraph_deletednodesicon.png)ある**再フェッチ children**アイコン再フェッチ children アイコンをクリックします。
+   コードに含まれているがマップに表示されていないメンバーを表示するには、グループの左上隅にある [子の**再フェッチ**] アイコンをクリックし ](../modeling/media/dependencygraph_deletednodesicon.png) ![Refetch ます。
 
-6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 または、1つまたは複数の項目を選択してショートカットメニューを開き、マップに追加する関連項目の種類の **[表示]** オプションを選択します。 例えば:
+6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 または、1つまたは複数の項目を選択してショートカットメニューを開き、マップに追加する関連項目の種類の **[表示]** オプションを選択します。 (例:
 
     **アセンブリ**の場合、次のように選択します。
 
@@ -228,7 +228,7 @@ Visual Studio でコードマップを作成するには、最初に**コード�
 
     ![このメンバーによって呼び出されるメソッドを表示する](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. マップには、リレーションシップが表示されます。 この例では、マップには、 `Find`メソッドによって呼び出されるメソッドと、ソリューション内または外部のメソッドが表示されます。
+7. マップには、リレーションシップが表示されます。 この例では、マップには、`Find` メソッドによって呼び出されるメソッドと、ソリューション内または外部のメソッドが表示されます。
 
    ![特定の依存関係をコード マップに表示する](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -238,9 +238,9 @@ Visual Studio でコードマップを作成するには、最初に**コード�
 
 ## <a name="see-also"></a>関連項目
 
-- [ビデオ:Visual Studio 2015 コードマップを使用したコードからのデザインについて](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [ビデオ: Visual Studio 2015 コードマップでコードのデザインを理解する](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)
 - [デバッグ中の、呼び出し履歴に関するメソッドのマッピング](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)
-- [DGML ファイルを編集してコード マップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

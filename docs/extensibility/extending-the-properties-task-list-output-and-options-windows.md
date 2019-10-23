@@ -1,5 +1,5 @@
 ---
-title: プロパティ、タスク一覧、出力、オプションの windows の拡張します。
+title: '[プロパティ]、[タスク一覧]、[出力]、[オプション] ウィンドウを拡張します。'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,41 +15,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eba2e7cbe6957ea786693f86a728ffa6b4aa2cb7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337111"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633212"
 ---
-# <a name="extend-the-properties-task-list-output-and-options-windows"></a>プロパティ、タスク一覧、出力、およびオプションの windows を拡張します。
-Visual Studio のいずれかのツール ウィンドウにアクセスできます。 このチュートリアルは、新しいツール ウィンドウに関する情報を統合する方法を示す**オプション**ページと、新しい設定で、**プロパティ** ページで、またに書き込む方法、**タスク一覧**と**出力**windows。
+# <a name="extend-the-properties-task-list-output-and-options-windows"></a>[プロパティ]、[タスク一覧]、[出力]、[オプション] の各ウィンドウを拡張する
+Visual Studio では、任意のツールウィンドウにアクセスできます。 このチュートリアルでは、ツールウィンドウに関する情報を新しいオプションページに統合する方法と、 **[プロパティ]** ページに新しい設定を統合する方法について説明します。また、[**タスク一覧**と**出力** **]** ウィンドウに書き込む方法についても説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
+## <a name="prerequisites"></a>必要条件
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-## <a name="create-an-extension-with-a-tool-window"></a>ツール ウィンドウでの拡張機能を作成します。
+## <a name="create-an-extension-with-a-tool-window"></a>ツールウィンドウで拡張機能を作成する
 
-1. という名前のプロジェクトを作成する**TodoList** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**TodoWindow**します。
-
-    > [!NOTE]
-    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
-
-## <a name="set-up-the-tool-window"></a>ツール ウィンドウを設定します。
- 新しい ToDo 項目をリストに新しい項目を追加するためのボタンと、リストに項目を表示するリスト ボックスに入力するためのテキスト ボックスを追加します。
-
-1. *TodoWindow.xaml*、ユーザー コントロールからボタン、テキスト ボックスに、StackPanel コントロールを削除します。
+1. VSIX テンプレートを使用して**TodoList**という名前のプロジェクトを作成し、 **TodoWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
 
     > [!NOTE]
-    > これは削除されません、 **button1_Click**イベント ハンドラーは、後の手順で再利用します。
+    > ツールウィンドウを使用した拡張機能の作成の詳細については、「[ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
-2. **すべての WPF コントロール**のセクション、**ツールボックス**、ドラッグ、**キャンバス**グリッド コントロール。
+## <a name="set-up-the-tool-window"></a>ツールウィンドウを設定する
+ 新しい ToDo 項目を入力するためのテキストボックス、リストに新しい項目を追加するボタン、およびリストの項目を表示するリストボックスを追加します。
 
-3. ドラッグ、 **TextBox**、**ボタン**と**ListBox**をキャンバスにします。 ように、テキスト ボックスとボタンが、同じレベルにして、リスト ボックスには、次の図のように、その下のウィンドウの残りの要素を配置します。
+1. *TodoWindow*で、UserControl から Button、TextBox、および StackPanel コントロールを削除します。
 
-     ![ツール ウィンドウを終了](../extensibility/media/t5-toolwindow.png "T5 ToolWindow")
+    > [!NOTE]
+    > この場合、 **button1_Click**イベントハンドラーは削除されません。これは、後の手順で再利用します。
 
-4. XAML ウィンドウで、ボタンし、そのコンテンツのプロパティを設定**追加**します。 ボタン コントロールにボタンのイベント ハンドラーを追加することで再接続を`Click="button1_Click"`属性。 このようキャンバス ブロックになります。
+2. **ツールボックス**の **[すべての WPF コントロール]** セクションで、**キャンバス**コントロールをグリッドにドラッグします。
+
+3. **テキストボックス**、**ボタン**、および**リストボックス**をキャンバスにドラッグします。 次の図のように、テキストボックスとボタンが同じレベルになるように要素を配置します。リストボックスは、ウィンドウの残りの部分を次のように入力します。
+
+     ![完成したツールウィンドウ](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
+
+4. XAML ペインで、ボタンを見つけ、そのコンテンツプロパティを **[追加]** に設定します。 @No__t_0 属性を追加して、ボタンのイベントハンドラーをボタンコントロールに再接続します。 Canvas ブロックは次のようになります。
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -59,15 +59,15 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     </Canvas>
     ```
 
-### <a name="customize-the-constructor"></a>コンス トラクターをカスタマイズします。
+### <a name="customize-the-constructor"></a>コンストラクターをカスタマイズする
 
-1. *TodoWindowControl.xaml.cs*ファイルに追加し、次のステートメントを使用します。
+1. *TodoWindowControl.xaml.cs*ファイルで、次の using ディレクティブを追加します。
 
     ```csharp
     using System;
     ```
 
-2. TodoWindow パラメーターを受け取る TodoWindowControl コンス トラクターと、TodoWindow にパブリックの参照を追加します。 コードは、次のようになります。
+2. TodoWindow へのパブリック参照を追加し、TodoWindowControl コンストラクターが TodoWindow パラメーターを受け取るようにします。 コードは、次のようになります。
 
     ```csharp
     public TodoWindow parent;
@@ -79,7 +79,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-3. *TodoWindow.cs*、TodoWindow パラメーターを含める TodoWindowControl コンス トラクターを変更します。 コードは、次のようになります。
+3. *TodoWindow.cs*で、TodoWindowControl コンストラクターを変更して TodoWindow パラメーターを含めます。 コードは、次のようになります。
 
     ```csharp
     public TodoWindow() : base(null)
@@ -92,10 +92,10 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-## <a name="create-an-options-page"></a>オプション ページを作成します。
- 内のページを行うことができます、**オプション** ダイアログ ボックスのユーザーがツール ウィンドウの設定を変更できるようにします。 オプションと内のエントリを記述する、クラスにもオプション ページを作成する必要があります、 *TodoListPackage.cs*または*TodoListPackage.vb*ファイル。
+## <a name="create-an-options-page"></a>オプションページを作成する
+ **[オプション]** ダイアログボックスのページを使用して、ユーザーがツールウィンドウの設定を変更できるようにすることができます。 オプションページを作成するには、オプションを記述するクラスと*TodoListPackage.cs*ファイルまたは*TodoListPackage*ファイル内のエントリの両方が必要です。
 
-1. という名前のクラスを追加`ToolsOptions.cs`します。 ように、`ToolsOptions`クラスから継承する<xref:Microsoft.VisualStudio.Shell.DialogPage>します。
+1. @No__t_0 という名前のクラスを追加します。 @No__t_0 クラスが <xref:Microsoft.VisualStudio.Shell.DialogPage> から継承されるようにします。
 
    ```csharp
    class ToolsOptions : DialogPage
@@ -103,13 +103,13 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
    }
    ```
 
-2. 次の追加ステートメントを使用します。
+2. 次の using ディレクティブを追加します。
 
    ```csharp
    using Microsoft.VisualStudio.Shell;
    ```
 
-3. このチュートリアルでは、[オプション] ページでは、DaysAhead という名前の 1 つだけのオプションを提供します。 というプライベート フィールドを追加**daysAhead**という名前のプロパティと**DaysAhead**を`ToolsOptions`クラス。
+3. このチュートリアルの [オプション] ページには、DaysAhead という名前のオプションが1つだけ用意されています。 **Daysahead**という名前のプライベートフィールドと、 **daysahead**という名前のプロパティを `ToolsOptions` クラスに追加します。
 
    ```csharp
    private double daysAhead;
@@ -121,36 +121,36 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
    }
    ```
 
-   これで、プロジェクトをこのオプション ページの対応する必要があります。
+   ここで、このオプションページをプロジェクトに認識させる必要があります。
 
-### <a name="make-the-options-page-available-to-users"></a>[オプション] ページをユーザーが利用できるように
+### <a name="make-the-options-page-available-to-users"></a>[オプション] ページをユーザーが使用できるようにする
 
-1. *TodoWindowPackage.cs*、追加、<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>を`TodoWindowPackage`クラス。
+1. *TodoWindowPackage.cs*で、`TodoWindowPackage` クラスに <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> を追加します。
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
     ```
 
-2. ProvideOptionPage コンス トラクターの最初のパラメーターは、クラスの型`ToolsOptions`、先ほど作成しました。 2 番目のパラメーターでは、"ToDo"はカテゴリの名前、**オプション** ダイアログ ボックス。 3 番目のパラメーターのサブカテゴリの名前を"General"には、**オプション** ダイアログ ボックスの オプション ページが提供されます。 次の 2 つのパラメーターは文字列以外のリソース Id です。1 つは、カテゴリの名前と、2 つ目は、サブカテゴリの名前です。 最後のパラメーターは、オートメーションを使用してこのページにアクセスできるかどうかを判断します。
+2. 指定したクラスコンストラクターの最初のパラメーターは、前に作成した `ToolsOptions` クラスの型です。 2番目のパラメーター "ToDo" は、 **[オプション]** ダイアログボックスのカテゴリの名前です。 3番目のパラメーター "General" は、オプションページを使用できるようにする **[オプション]** ダイアログボックスのサブカテゴリの名前です。 次の2つのパラメーターは、文字列のリソース Id です。1つ目はカテゴリの名前で、2つ目はサブカテゴリの名前です。 最後のパラメーターは、オートメーションを使用してこのページにアクセスできるかどうかを決定します。
 
-     ユーザーは、[オプション] ページが開いたら、次の図のようになります。
+     ユーザーが [オプション] ページを開くと、次の図のようになります。
 
-     ![オプション ページ](../extensibility/media/t5optionspage.gif "T5OptionsPage")
+     ![[オプション] ページ](../extensibility/media/t5optionspage.gif "T5OptionsPage")
 
-     カテゴリ**ToDo**とサブカテゴリ**全般**します。
+     Category **ToDo**およびサブカテゴリ**全般**に注意してください。
 
-## <a name="make-data-available-to-the-properties-window"></a>データ プロパティ ウィンドウに使用できるように
- という名前のクラスを作成してで ToDo リストの情報を利用できる`TodoItem`ToDo リストの個々 の項目に関する情報を格納します。
+## <a name="make-data-available-to-the-properties-window"></a>プロパティウィンドウでデータを使用できるようにする
+ Todo リストの各項目に関する情報を格納する `TodoItem` という名前のクラスを作成することにより、ToDo リスト情報を使用できるようになります。
 
-1. という名前のクラスを追加`TodoItem.cs`します。
+1. @No__t_0 という名前のクラスを追加します。
 
-     ツール ウィンドウがユーザーに利用できる場合、リスト ボックス内の項目は TodoItems によって表されます。 ユーザーがリスト ボックスに、これらの項目のいずれかを選択すると、**プロパティ**項目に関する情報がウィンドウに表示されます。
+     ユーザーがツールウィンドウを使用できる場合、リストボックス内の項目は TodoItems によって表されます。 ユーザーがリストボックスでこれらの項目のいずれかを選択すると、 **[プロパティ]** ウィンドウに項目に関する情報が表示されます。
 
-     データで使用できるように、**プロパティ**ウィンドウを 2 つの特殊な属性を持つパブリック プロパティにデータを有効にする`Description`と`Category`します。 `Description` 下部に表示されるテキスト、**プロパティ**ウィンドウ。 `Category` ときに、プロパティが表示される場所を決定する、**プロパティ**でウィンドウが表示されます、 **Categorized**ビュー。 次の図に、**プロパティ**ウィンドウが**項目別**ビュー、**名前**プロパティ、 **ToDo フィールド**カテゴリは、選択するの説明と、**名前**プロパティは、ウィンドウの下部に表示されます。
+     **[プロパティ]** ウィンドウでデータを使用できるようにするには、`Description` と `Category` の2つの特殊な属性を持つパブリックプロパティにデータを変換します。 `Description` は、 **[プロパティ]** ウィンドウの下部に表示されるテキストです。 `Category` によって、 **[プロパティ]** ウィンドウが**分類**されたビューに表示されるときのプロパティの表示場所が決まります。 次の図では、 **[プロパティ]** ウィンドウがカテゴリ**別**ビューにあり、 **[ToDo フィールド]** カテゴリの **[名前]** プロパティが選択されており、 **[名前]** プロパティの説明がウィンドウの下部に表示されています。
 
      ![[プロパティ] ウィンドウ](../extensibility/media/t5properties.png "T5Properties")
 
-2. 次の追加のステートメントを使用して、 *TodoItem.cs*ファイル。
+2. *TodoItem.cs*ファイルに次の using ディレクティブを追加します。
 
     ```csharp
     using System.ComponentModel;
@@ -158,7 +158,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3. 追加、`public`クラス宣言にアクセス修飾子。
+3. @No__t_0 アクセス修飾子をクラス宣言に追加します。
 
     ```csharp
     public class TodoItem
@@ -166,7 +166,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-     2 つのプロパティを追加`Name`と`DueDate`します。 `UpdateList()`と`CheckForErrors()`以降。
+     @No__t_0 と `DueDate` の2つのプロパティを追加します。 @No__t_0 し、後で `CheckForErrors()` します。
 
     ```csharp
     public class TodoItem
@@ -201,7 +201,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-4. ユーザー コントロールへの参照をプライベートを追加します。 ユーザー コントロールと ToDo 項目の名前を取得するコンス トラクターを追加します。 値を検索する`daysAhead`、オプション ページのプロパティを取得します。
+4. ユーザーコントロールにプライベート参照を追加します。 ユーザーコントロールとこの ToDo 項目の名前を受け取るコンストラクターを追加します。 @No__t_0 の値を確認するには、[オプション] ページのプロパティを取得します。
 
     ```csharp
     private TodoWindowControl parent;
@@ -230,7 +230,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-5. のインスタンス、`TodoItem`クラスは、リスト ボックスに格納され、ListBox が呼び出されます、`ToString`オーバー ロードする必要があります、関数、`ToString`関数。 次のコードを追加*TodoItem.cs*、コンス トラクターの後およびクラスの終了前にします。
+5. @No__t_0 クラスのインスタンスはリストボックスに格納され、ListBox は `ToString` 関数を呼び出すため、`ToString` 関数をオーバーロードする必要があります。 コンストラクターの後、クラスの末尾の前に、 *TodoItem.cs*に次のコードを追加します。
 
     ```csharp
     public override string ToString()
@@ -239,7 +239,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-6. *TodoWindowControl.xaml.cs*、スタブ メソッドを追加、`TodoWindowControl`クラス、`CheckForError`と`UpdateList`メソッド。 ProcessDialogChar 後と前のファイルの末尾には、それらを配置します。
+6. *TodoWindowControl.xaml.cs*で、`CheckForError` メソッドと `UpdateList` メソッドの `TodoWindowControl` クラスにスタブメソッドを追加します。 これらの文字列は、Processの文字の後、ファイルの末尾の前に配置します。
 
     ```csharp
     public void CheckForErrors()
@@ -250,14 +250,14 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-     `CheckForError`メソッドは、親オブジェクトで同じ名前を持つメソッドを呼び出すし、そのメソッドには、すべてのエラーが発生し、適切に処理するかどうかがチェックされます。 `UpdateList`メソッドは、親コントロールのリスト ボックスで、更新、ときに、メソッドが呼び出されます。、`Name`と`DueDate`プロパティでこのクラスの変更。 これらは後で実装されます。
+     @No__t_0 メソッドは、親オブジェクトで同じ名前を持つメソッドを呼び出します。このメソッドは、エラーが発生したかどうかを確認し、適切に処理します。 @No__t_0 メソッドは、親コントロールのリストボックスを更新します。メソッドは、このクラスの `Name` プロパティと `DueDate` プロパティが変更されたときに呼び出されます。 これらは後で実装されます。
 
-## <a name="integrate-into-the-properties-window"></a>[プロパティ] ウィンドウに統合します。
- 関連付けられるはリスト ボックスを管理するコードを記述するようになりました、**プロパティ**ウィンドウ。
+## <a name="integrate-into-the-properties-window"></a>プロパティウィンドウに統合する
+ 次に、 **[プロパティ]** ウィンドウに関連付けられる ListBox を管理するコードを記述します。
 
- ボタンを変更する必要があります、テキスト ボックスを読み取り、作成、TodoItem をハンドラーをクリックし、リスト ボックスに追加します。
+ ボタンクリックハンドラーを変更してテキストボックスを読み取り、TodoItem を作成して、リストボックスに追加する必要があります。
 
-1. 既存`button1_Click`関数のコードを新しい TodoItem を作成し、リスト ボックスに追加します。 呼び出す`TrackSelection()`、後で定義されます。
+1. 既存の `button1_Click` 関数を新しい TodoItem を作成するコードに置き換え、それをリストボックスに追加します。 @No__t_0 を呼び出します。これは後で定義します。
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -272,9 +272,9 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-2. デザイン ビューでは、ListBox コントロールを選択します。 **プロパティ**ウィンドウをクリックして、**イベント ハンドラー**ボタンをクリックし、検索、 **SelectionChanged**イベント。 テキスト ボックスで塗りつぶし**listBox_SelectionChanged**します。 これにより、SelectionChanged ハンドラーのスタブを追加し、イベントに割り当てられます。
+2. デザインビュー ListBox コントロールを選択します。 **[プロパティ]** ウィンドウで、 **[イベントハンドラー]** ボタンをクリックし、 **selectionchanged**イベントを見つけます。 テキストボックスに**listBox_SelectionChanged**を入力します。 これにより、SelectionChanged ハンドラーのスタブが追加され、イベントに割り当てられます。
 
-3. `TrackSelection()` メソッドを実装します。 取得する必要がありますので、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 、サービスが行う必要があります、 <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> TodoWindowControl によってアクセスできます。 次のメソッドを追加、`TodoWindow`クラス。
+3. `TrackSelection()` メソッドを実装します。 @No__t_0 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> サービスを取得する必要があるため、TodoWindowControl によって <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> にアクセスできるようにする必要があります。 次のメソッドを `TodoWindow` クラスに追加します。
 
     ```
     internal object GetVsService(Type service)
@@ -283,7 +283,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-4. 以下を追加するステートメントを使用して*TodoWindowControl.xaml.cs*:
+4. 次の using ディレクティブを*TodoWindowControl.xaml.cs*に追加します。
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -292,7 +292,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     using Microsoft.VisualStudio.Shell;
     ```
 
-5. 次のように、SelectionChanged ハンドラーに入力します。
+5. SelectionChanged ハンドラーに次のように入力します。
 
     ```
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -301,7 +301,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-6. ここで、入力との統合を提供する TrackSelection 関数、**プロパティ**ウィンドウ。 この関数は、ユーザーがリスト ボックスに項目を追加またはリスト ボックス内の項目をクリックしたときに呼び出されます。 リスト ボックスの内容を SelectionContainer に追加しを SelectionContainer を渡します、**プロパティ**ウィンドウの<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>イベント ハンドラー。 TrackSelection サービスは、ユーザー インターフェイス (UI) で選択したオブジェクトを追跡し、それらのプロパティを表示します。
+6. 次に、TrackSelection 関数に入力します。これにより、 **[プロパティ]** ウィンドウとの統合が提供されます。 この関数は、ユーザーが項目を ListBox に追加したとき、またはリストボックス内の項目をクリックしたときに呼び出されます。 ListBox の内容を SelectionContainer に追加し、SelectionContainer を **[プロパティ]** ウィンドウの <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> イベントハンドラーに渡します。 TrackSelection サービスは、ユーザーインターフェイス (UI) で選択されたオブジェクトを追跡し、それらのプロパティを表示します。
 
     ```csharp
     private SelectionContainer mySelContainer;
@@ -349,9 +349,9 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-     クラスが用意できたが、**プロパティ**ウィンドウを使用できる、統合することができます、**プロパティ**ツール ウィンドウのウィンドウ。 ユーザーがツール ウィンドウで、リスト ボックス内の項目をクリックすると、**プロパティ**ウィンドウを適宜更新する必要があります。 ユーザーが ToDo 項目に変更されたときに同様に、**プロパティ**ウィンドウで、関連付けられているアイテムを更新する必要があります。
+     これで、 **[プロパティ]** ウィンドウで使用できるクラスが作成されたので、 **[プロパティ]** ウィンドウをツールウィンドウと統合できます。 ユーザーがツールウィンドウのリストボックス内の項目をクリックすると、それに応じて **[プロパティ]** ウィンドウが更新されます。 同様に、ユーザーが **[プロパティ]** ウィンドウで ToDo 項目を変更した場合は、関連付けられている項目を更新する必要があります。
 
-7. UpdateList 関数コードの残りの部分を次に、追加*TodoWindowControl.xaml.cs*します。 削除して、リスト ボックスから変更後の TodoItem を再追加が必要があります。
+7. 次に、 *TodoWindowControl.xaml.cs*で updatelist 関数の残りのコードを追加します。 リストボックスから変更された TodoItem を削除し、再追加する必要があります。
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -365,18 +365,18 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
 
 8. コードをテストします。 プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-9. 開く、**ツール** > **オプション**ページ。 左側のウィンドウで、[ToDo] カテゴリが表示されます。 アルファベット順でカテゴリの一覧、したがって、Ts の下になります。
+9. [**ツール** > **オプション**] ページを開きます。 左側のウィンドウに ToDo カテゴリが表示されます。 カテゴリはアルファベット順に表示されるので、Ts の下を確認してください。
 
-10. **Todo**オプション ページに、表示する必要があります、`DaysAhead`プロパティに設定**0**します。 変更して**2**します。
+10. [ **Todo**オプション] ページで、[`DaysAhead`] プロパティが**0**に設定されていることを確認します。 **2**に変更します。
 
-11. **ビュー/その他の Windows** ] メニューの [open **TodoWindow**します。 型**EndDate**テキスト ボックスをクリックします**追加**します。
+11. [**表示]/[その他のウィンドウ**] メニューで、 **TodoWindow**を開きます。 テキストボックスに「 **EndDate** 」と入力し、 **[追加]** をクリックします。
 
-12. リスト ボックスでは、2 つの日の後に今日より後の日付が表示されます。
+12. リストボックスには、今日より2日後の日付が表示されます。
 
-## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>テキスト出力ウィンドウとタスク リストに項目を追加します。
- **タスク一覧**、タスクの種類の新しいオブジェクトを作成しするには、そのタスク オブジェクトを追加し、**タスク一覧**を呼び出してその`Add`メソッド。 書き込む、**出力**呼び出しのウィンドウで、その`GetPane`ウィンドウのオブジェクトとし、取得するメソッドを呼び出す、`OutputString`ウィンドウ オブジェクトのメソッド。
+## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>[出力] ウィンドウにテキストを追加し、項目をタスク一覧に追加します。
+ **タスク一覧**には、task 型の新しいオブジェクトを作成し、その `Add` メソッドを呼び出して、そのタスクオブジェクトを**タスク一覧**に追加します。 **出力**ウィンドウに書き込むには、`GetPane` メソッドを呼び出して pane オブジェクトを取得し、次に pane オブジェクトの `OutputString` メソッドを呼び出します。
 
-1. *TodoWindowControl.xaml.cs*で、`button1_Click`メソッドを取得するコードを追加、**全般**のウィンドウ、**出力**(つまり、既定値) ウィンドウと書き込みを。 メソッドは、このようになります。
+1. *TodoWindowControl.xaml.cs*の `button1_Click` メソッドで、**出力**ウィンドウの **[全般**] ウィンドウ (既定) を取得するコードを追加し、それに書き込みます。 メソッドは次のようになります。
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -403,7 +403,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-2. タスク一覧に項目を追加するには、TodoWindowControl クラスに入れ子になったクラスを追加します。 入れ子になったクラスから派生する必要がある<xref:Microsoft.VisualStudio.Shell.TaskProvider>します。 末尾に次のコードを追加、`TodoWindowControl`クラス。
+2. タスク一覧に項目を追加するには、TodoWindowControl クラスに入れ子になったクラスを追加するためのが必要です。 入れ子になったクラスは <xref:Microsoft.VisualStudio.Shell.TaskProvider> から派生する必要があります。 @No__t_0 クラスの末尾に次のコードを追加します。
 
     ```csharp
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]
@@ -416,7 +416,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-3. 次にプライベートの参照を追加`TodoTaskProvider`と`CreateProvider()`メソッドを`TodoWindowControl`クラス。 コードは、次のようになります。
+3. 次に、`TodoTaskProvider` へのプライベート参照と、`TodoWindowControl` クラスへの `CreateProvider()` メソッドを追加します。 コードは、次のようになります。
 
     ```csharp
     private TodoWindowTaskProvider taskProvider;
@@ -430,7 +430,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-4. 追加`ClearError()`、タスクの一覧をクリアし、`ReportError()`に、タスク リストにエントリを追加する、`TodoWindowControl`クラス。
+4. @No__t_0 を追加します。これにより、タスク一覧がクリアされ、タスク一覧にエントリを追加する `ReportError()` が `TodoWindowControl` クラスに追加されます。
 
     ```csharp
     private void ClearError()
@@ -462,7 +462,7 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
     }
     ```
 
-5. 今すぐ実装、`CheckForErrors`メソッドは、次のようにします。
+5. ここで、次のように `CheckForErrors` メソッドを実装します。
 
     ```csharp
     public void CheckForErrors()
@@ -482,26 +482,26 @@ Visual Studio のいずれかのツール ウィンドウにアクセスでき�
 
 1. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-2. 開く、 **TodoWindow** (**ビュー** > **他の Windows** > **TodoWindow**)。
+2. **TodoWindow**を開きます (**View**  > **Other Windows**  > **TodoWindow**)。
 
-3. テキスト ボックスに情報を入力し、**追加**します。
+3. テキストボックスに何かを入力し、 **[追加]** をクリックします。
 
-     期日 2 日後、今日は、リスト ボックスに追加されます。 エラーは発生せず、および**タスク一覧**(**ビュー** > **タスク一覧**) のエントリはありません。
+     今日から2日後に期日がリストボックスに追加されます。 エラーは生成されず、**タスク一覧**(**ビュー**  > **タスク一覧**) にはエントリがありません。
 
-4. 設定を今すぐ変更、**ツール** > **オプション** > **ToDo**からページ**2** に**0**します。
+4. 次に、 **[ツール]**  > **オプション** > **ToDo**ページの設定を**2**から**0**に変更します。
 
-5. 内の他の何か入力、 **TodoWindow**し**追加**もう一度です。 これをトリガー内のエントリとエラー、**タスク一覧**します。
+5. **TodoWindow**に他の項目を入力し、もう一度 **[追加]** をクリックします。 これにより、エラーが発生し、**タスク一覧**でもエントリがトリガーされます。
 
-     項目を追加すると、最初の日付は、ここでさらに 2 日間に設定されます。
+     項目を追加すると、最初の日付が [現在] に2日を加えた状態に設定されます。
 
-6. **ビュー**  メニューのをクリックして**出力**を開く、**出力**ウィンドウ。
+6. **[表示]** メニューの **[出力]** をクリックして、 **[出力]** ウィンドウを開きます。
 
-     確認するたびに項目を追加することでメッセージが表示されます、**タスク一覧**ウィンドウ。
+     項目を追加するたびに、 **[タスク一覧]** ウィンドウにメッセージが表示されることに注意してください。
 
-7. リスト ボックス内の項目のいずれかをクリックします。
+7. リストボックス内の項目のいずれかをクリックします。
 
-     **プロパティ**ウィンドウには、2 つの項目のプロパティが表示されます。
+     **[プロパティ]** ウィンドウには、項目の2つのプロパティが表示されます。
 
-8. プロパティのいずれかを変更し、キーを押します**Enter**します。
+8. プロパティのいずれかを変更し、 **enter キー**を押します。
 
-     リスト ボックスで、項目が更新されます。
+     リストボックスの項目が更新されます。

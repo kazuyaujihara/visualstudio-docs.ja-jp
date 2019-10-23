@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::DebugOutput |Microsoft Docs
+title: IDebugApplication::D Eバグ出力 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a67a16e3fd4868726087df6f2596571d14630f80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d52acf0e4b32f0ced63b53a6b37ffe62f1d948e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990964"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575016"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-により、デバッガーの統合開発環境 (IDE) に表示する特定の文字列。  
+指定された文字列がデバッガー統合開発環境 (IDE: integrated development environment) によって表示されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT DebugOutput(
   
 #### <a name="parameters"></a>パラメーター  
  `pstr`  
- [in]デバッガーで表示する文字列。  
+ からデバッガーに表示する文字列。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,9 +47,9 @@ HRESULT DebugOutput(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、言語固有のデバッグ出力のサポートを実装するために言語エンジンを使用します。 通常、文字列は、デバッガーの出力ウィンドウに表示されます。  
+ このメソッドを使用すると、言語エンジンは言語固有のデバッグ出力サポートを実装できます。 この文字列は、通常、デバッガーの出力ウィンドウに表示されます。  
   
- このメソッドにより`IApplicationDebugger::onDebugOutput`呼び出されます。  
+ このメソッドによって `IApplicationDebugger::onDebugOutput` が呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

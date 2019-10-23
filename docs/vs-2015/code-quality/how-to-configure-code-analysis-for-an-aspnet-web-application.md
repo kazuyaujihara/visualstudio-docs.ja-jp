@@ -1,5 +1,5 @@
 ---
-title: '方法: ASP.NET Web アプリケーションのコード分析の構成 |Microsoft Docs'
+title: '方法: ASP.NET Web アプリケーションのコード分析を構成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,41 +8,41 @@ f1_keywords:
 - vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201391"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657462"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>方法: ASP.NET Web アプリケーション用にコード分析を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]と[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]コード分析の一覧から選択できる*ルール セット*に適用する[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web アプリケーション。 既定の規則セットは、Microsoft Mininimum 推奨規則です。 Web サイトに適用する別のルールを選択できます。  
-  
-### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>ASP.NET ページ フレームワーク プロジェクトの規則セットを構成するには  
-  
-1. Web サイトを選択します。**ソリューション エクスプ ローラー**します。  
-  
-2. **分析** メニューのをクリックして**Web サイトのコード分析を構成する**します。  
-  
-3. ソリューションを選択し、ソリューションが 1 つ以上のプロジェクト場合、からビルド構成とターゲットのオペレーティング システムを選択、**構成**と**プラットフォーム**を一覧表示します。  
-  
-4. ソリューション内の各プロジェクトをクリックして、**ルール セットの**列、および実行するルールの名前を設定 をクリックします。  
-  
-5. 既定では、ソリューション内のすべてのプロジェクトでコード分析を実行します。 無効にするか、または特定のプロジェクトのコード分析を有効にして、これらの手順に従います。  
-  
-    1. プロジェクト名を右クリックし、[プロパティ] をクリックします。  
-  
-    2. オンまたはオフ、**コード分析の有効化**チェック ボックスをオンします。 手動では選択してもコード分析を実行することができます**Web サイトでコード分析を実行**から、**分析**メニュー。  
-  
-6. **この規則セットを実行**ドロップダウン リストで、これらの手順に従います。  
-  
-    - 使用する規則セットを選択します。  
-  
-    - 選択 **\<参照 >** を既存のカスタム規則セットを指定されていないリスト。  
-  
-    - カスタム規則セットを定義します。 詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。
+@No__t_0 と [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] では、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションに適用するコード分析*規則セット*の一覧から選択できます。 既定の規則セットは、Microsoft Mininimum 推奨規則です。 Web サイトに適用する別の規則セットを選択できます。
+
+### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>ASP.NET ページ フレームワーク プロジェクトの規則セットを構成するには
+
+1. **ソリューションエクスプローラー**で Web サイトを選択します。
+
+2. **[分析]** メニューの **[Web サイトのコード分析の構成]** をクリックします。
+
+3. ソリューションを選択し、ソリューションに複数のプロジェクトがある場合は、 **[構成]** と **[プラットフォーム]** の一覧から、ビルド構成とターゲットオペレーティングシステムを選択します。
+
+4. ソリューション内の各プロジェクトについて、 **[ルールセット]** 列をクリックし、実行するルールセットの名前をクリックします。
+
+5. 既定では、コード分析はソリューション内のすべてのプロジェクトで実行されます。 特定のプロジェクトのコード分析を無効または有効にするには、次の手順を実行します。
+
+    1. プロジェクト名を右クリックし、[プロパティ] をクリックします。
+
+    2. **[コード分析を有効にする]** チェックボックスをオンまたはオフにします。 **[分析]** メニューから **[Web サイトでコード分析を実行]** を選択して、手動でコード分析を実行することもできます。
+
+6. **[この規則セットを実行]** ドロップダウンリストで、次の手順に従います。
+
+    - 使用する規則セットを選択します。
+
+    - 一覧に含まれていない既存のカスタム規則セットを指定するには、 **\<Browse >** を選択します。
+
+    - カスタム規則セットを定義します。 詳細については、「[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)」を参照してください。

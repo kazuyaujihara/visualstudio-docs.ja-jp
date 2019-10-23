@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a631823ce39e5655bba611f90c2869e8dff1d8f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871670"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660688"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "68871670"
 
 - ユーザー インターフェイス (UI) が変更された場合は、テスト メソッドまたはアサーション メソッドを再記録するか、既存のテスト メソッドの、影響を受けるセクションを再記録します。
 
-- テスト対象のアプリケーションのモジュールごとに個別の[Uimap](/previous-versions/dd580454(v=vs.140))ファイルを作成します。 詳細については、「[複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」をご覧ください。
+- テスト対象のアプリケーションのモジュールごとに、個別の [UIMap](/previous-versions/dd580454(v=vs.140)) ファイルを作成します。 詳細については、「[複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」をご覧ください。
 
 - テスト対象のアプリケーションの UI コントロールを作成するときは、わかりやすい名前を使用します。 これにより、自動生成されたコントロール名に意味が加えられて使いやすくなります。
 
-- API を使用してコーディングすることによってアサーションを作成する場合は、 `UIMap.cs`ファイル内にある[uimap](/previous-versions/dd580454(v=vs.140))クラスの部分でアサーションごとにメソッドを作成します。 このメソッドをテスト メソッドから呼び出してアサーションを実行します。
+- API を使用してコーディングすることによってアサーションを作成する場合は、`UIMap.cs` ファイル内の[Uimap](/previous-versions/dd580454(v=vs.140))クラスの部分にあるアサーションごとにメソッドを作成します。 このメソッドをテスト メソッドから呼び出してアサーションを実行します。
 
 - API を使用してコーディングを直接行う場合は、可能な限り、`UIMap.Designer.cs` ファイルに生成されたクラスのプロパティとメソッドをコードで使用します。 これらのクラスを使用すると、作業が楽になり、信頼性と生産性が高まります。
 

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: カスタムテキストテンプレートホストを作成する |Microsoft Docs'
+title: 'チュートリアル: カスタムテキストテンプレートホストの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b3ce1dcfd91c906ed050eed770dab7a8dc0e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871697"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659283"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-*テキストテンプレート*<em>ホスト</em>は、*テキストテンプレート変換エンジン*を実行できる環境を提供します。 ホストは、エンジンとファイル システムとの対話を管理します。 ファイルまたはアセンブリが必要なエンジンまたは*ディレクティブ プロセッサ*は、ホストからリソースを要求することができます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、[テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)を参照してください。
+*テキストテンプレート*<em>ホスト</em>は、*テキストテンプレート変換エンジン*を実行できる環境を提供します。 ホストは、エンジンとファイル システムとの対話を管理します。 ファイルまたはアセンブリを必要とするエンジンまたは*ディレクティブプロセッサ*は、ホストからリソースを要求できます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、「[テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
 
- 外部[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]から*テキストテンプレート変換*機能を使用する場合、またはその機能をカスタムツールに統合する場合は、カスタムホストを作成できます。 カスタムホストを作成するには、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))から継承するクラスを作成する必要があります。 個々の方法のドキュメントについては、「 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))」を参照してください。
+ 外部 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] から*テキストテンプレート変換*機能を使用する場合や、その機能をカスタムツールに統合する場合は、カスタムホストを作成できます。 カスタムホストを作成するには、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))から継承するクラスを作成する必要があります。 個々の方法のドキュメントについては、「 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))」を参照してください。
 
 > [!WARNING]
-> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能またはパッケージを作成する場合は、独自のホストを作成するのではなく、テキスト テンプレート サービスを使用することを検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能またはパッケージを作成する場合は、独自のホストを作成するのではなく、テキスト テンプレート サービスを使用することを検討してください。 詳細については、「 [VS 拡張機能でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください。
 
  このチュートリアルでは、以下のタスクを行います。
 
@@ -35,7 +35,7 @@ ms.locfileid: "68871697"
 
 - カスタム ホストのテスト。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを完了するには、次の製品が必要です。
 
 - Visual Studio 2010 以降
@@ -51,7 +51,7 @@ ms.locfileid: "68871697"
 
 2. 次のアセンブリへの参照を追加します。
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **VisualStudio。 \* ます。0**
 
     - **VisualStudio とそれ以降のバージョンの場合**
 
@@ -714,7 +714,7 @@ ms.locfileid: "68871697"
     End Namespace
     ```
 
-4. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]のみ、開く、**プロジェクト** メニューをクリック**CustomHost のプロパティ**です。 **スタートアップ オブジェクト**一覧で、 **customhost.program** をクリックします。
+4. @No__t_0 のみの場合は、 **[プロジェクト]** メニューを開き、 **[Customhost のプロパティ]** をクリックします。 **[スタートアップオブジェクト]** ボックスの一覧で、 **[Customhost. プログラム]** をクリックします。
 
 5. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
@@ -725,7 +725,7 @@ ms.locfileid: "68871697"
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>テキスト テンプレートを作成してカスタム ホストをテストするには
 
-1. テキスト ファイルを作成し、名前を `TestTemplate.tt` にします。
+1. テキストファイルを作成し、`TestTemplate.tt` という名前を指定します。
 
      ファイルの作成には、メモ帳など、任意のテキスト エディターを使用できます。
 
@@ -785,7 +785,7 @@ ms.locfileid: "68871697"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル CustomHost.exe を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。
+    > アドレスを入力する代わりに、 **Windows エクスプローラー**で customhost ファイルを参照し、そのファイルをコマンドプロンプトウィンドウにドラッグすることもできます。
 
 3. 空白を入力します。
 
@@ -796,11 +796,11 @@ ms.locfileid: "68871697"
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル TestTemplate.tt を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。
+    > アドレスを入力する代わりに、**エクスプローラー**で TestTemplate.tt ファイルを参照して、コマンドプロンプトウィンドウにファイルをドラッグします。
 
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスが完了します。
 
-5. **Windows エクスプローラー**で、ファイル TestTemplate.tt が含まれているフォルダーを参照します。
+5. **Windows エクスプローラー**で、TestTemplate.tt ファイルが格納されているフォルダーに移動します。
 
      このフォルダーには、TestTemplate1.txt ファイルも含まれています。
 
@@ -816,8 +816,8 @@ ms.locfileid: "68871697"
     This is a test
     ```
 
-## <a name="next-steps"></a>次の手順
- このチュートリアルでは、基本的な変換機能をサポートするテキスト テンプレート変換ホストを作成しました。 ホストの機能を拡張して、カスタム ディレクティブ プロセッサまたは生成されたディレクティブ プロセッサを呼び出すテキスト テンプレートをサポートすることもできます。 詳細については、[チュートリアル: 生成済みディレクティブ プロセッサをホストに接続する](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)を参照してください。
+## <a name="next-steps"></a>次のステップ
+ このチュートリアルでは、基本的な変換機能をサポートするテキスト テンプレート変換ホストを作成しました。 ホストの機能を拡張して、カスタム ディレクティブ プロセッサまたは生成されたディレクティブ プロセッサを呼び出すテキスト テンプレートをサポートすることもできます。 詳細については、「[チュートリアル: 生成されたディレクティブプロセッサへのホストの接続](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

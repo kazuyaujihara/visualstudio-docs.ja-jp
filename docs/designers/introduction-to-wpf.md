@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924457"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962963"
 ---
 # <a name="wpf-overview"></a>WPF の概要
 
@@ -428,7 +428,7 @@ WPF のアニメーション サポートを使用すると、コントロール
 
 ### <a name="triggers"></a>トリガー
 
-XAML マークアップの主な目的はアプリケーションの外観を実装することですが、XAML を使用してアプリケーションの動作の一部の機能を実装することもできます。 その一例として、ユーザーの操作に基づいて、アプリケーションの外観を変更するトリガーの使用があります。 詳しくは、「[スタイルとテンプレート](/dotnet/framework/wpf/controls/styling-and-templating)」をご覧ください。
+XAML マークアップの主な目的はアプリケーションの外観を実装することですが、XAML を使用してアプリケーションの動作の一部の機能を実装することもできます。 その一例として、ユーザーの操作に基づいて、アプリケーションの外観を変更するトリガーの使用があります。 詳細については、[スタイルとテンプレート](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)に関するページをご覧ください。
 
 ### <a name="control-templates"></a>コントロール テンプレート
 
@@ -545,7 +545,7 @@ WPF コントロールの既定のユーザー インターフェイスは、通
 
 ![2 つのオレンジ色のボタン](../designers/media/wpfintrofigure20.png)
 
-詳しくは、「[スタイルとテンプレート](/dotnet/framework/wpf/controls/styling-and-templating)」をご覧ください。
+詳細については、[スタイルとテンプレート](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)に関するページをご覧ください。
 
 ### <a name="resources"></a>リソース
 

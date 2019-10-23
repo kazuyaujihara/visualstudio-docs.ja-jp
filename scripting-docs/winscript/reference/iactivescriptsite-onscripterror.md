@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptError |Microsoft Docs
+title: 'IActiveScriptSite:: OnScriptError |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d76aa46cbbcdab9a3c5c7b561b91ee58cfcac4ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f0078b53515a881d7f2ac1475cf5565fa22a025
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992604"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570272"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-エンジンが、スクリプトの実行中に、実行エラーが発生したことをホストに通知します。  
+エンジンがスクリプトを実行している間に実行エラーが発生したことをホストに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,10 +37,10 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>パラメーター  
  `pase`  
- [in]エラー オブジェクトのアドレス[IActiveScriptError](../../winscript/reference/iactivescripterror.md)インターフェイス。 ホストは、実行エラーに関する情報を取得するのにこのインターフェイスを使用できます。  
+ からエラーオブジェクトの[IActiveScriptError](../../winscript/reference/iactivescripterror.md)インターフェイスのアドレス。 ホストは、このインターフェイスを使用して、実行エラーに関する情報を取得できます。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`エラーが正しく処理された、またはそれ以外の場合、OLE にエラー コードが定義されている場合。  
+ エラーが正しく処理された場合は `S_OK` を返します。それ以外の場合は、OLE 定義エラーコードを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

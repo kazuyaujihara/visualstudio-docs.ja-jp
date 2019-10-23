@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::allocatevirtualmemory メソッド |Microsoft Docs
+title: 'IJsDebugDataTarget:: AllocateVirtualMemory メソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04bf21882ec39054c74f060eaa2c6f65ac0b4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ad8a3eb277823271fbfb4c2e10364b8602775c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583068"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577636"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory メソッド
 ターゲット プロセスの仮想アドレス空間内のメモリ領域を予約/コミットします。  
@@ -45,7 +45,7 @@ HRESULT AllocateVirtualMemory(
  [入力] 割り当てるメモリ領域のサイズ (バイト単位)。 システムによって次のページ境界に自動的に切り上げられます。  
   
  `allocationType`  
- [入力] 実行する割り当ての種類を指定します。 これは、通常は MEM_COMMIT &#124; MEM_RESERVE (0x3000) あり、予約し、1 つの手順で割り当てをコミットします。  
+ [入力] 実行する割り当ての種類を指定します。 これは通常、 &#124; 1 つのステップで割り当てを予約してコミットする MEM_COMMIT MEM_RESERVE (0x3000) です。  
   
  `pageProtection`  
  [入力] 割り当てるページ領域のメモリ保護。 ページをコミットする場合は、メモリ保護定数 (PAGE_READWRITE、PAGE_EXECUTE など) のいずれかを指定できます。  
@@ -58,8 +58,8 @@ HRESULT AllocateVirtualMemory(
 ## <a name="remarks"></a>Remarks  
  この関数は、MEM_RESET が使用されない限り、割り当てるメモリをゼロに初期化します。 詳細については、「VirtualAlloc Win32 API」を参照してください。  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [IJsDebugDataTarget インターフェイス](../../winscript/reference/ijsdebugdatatarget-interface.md)

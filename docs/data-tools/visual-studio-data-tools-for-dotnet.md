@@ -1,46 +1,46 @@
 ---
-title: .NET 用のデータ ツール
+title: .NET 用データツール
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66745300"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648091"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET 用の Visual Studio データ ツール
 
-Visual Studio と .NET は、さら広範な API とツールのデータベースへの接続、メモリ内のデータのモデリング、およびユーザー インターフェイスにデータを表示するためのサポートを提供します。 データ アクセス機能を提供する .NET クラスと呼ばれます[ADO.NET](/dotnet/framework/data/adonet/index)します。 Visual Studio で、ツール、データと共に、ADO.NET は、リレーショナル データベースと XML をサポートするには、主に設計されています。 最近は、多くの NoSQL データベース ベンダー、または、第三者の ADO.NET プロバイダーを提供します。
+Visual Studio と .NET では、データベースへの接続、メモリ内のデータのモデル化、ユーザーインターフェイスでのデータの表示など、さまざまな API とツールがサポートされています。 データアクセス機能を提供する .NET クラスは、 [ADO.NET](/dotnet/framework/data/adonet/index)と呼ばれています。 ADO.NET は、Visual Studio のデータツールと共に、主にリレーショナルデータベースと XML をサポートするように設計されています。 これらの日、多くの NoSQL データベースベンダー、またはサードパーティが ADO.NET プロバイダーを提供しています。
 
-[.NET core](/dotnet/core/)データセットおよびその関連する型を除く、ADO.NET をサポートしています。 使用して、.NET Core を対象としているし、オブジェクト リレーショナル マッピング (ORM) レイヤーを必要とすると場合、 [Entity Framework Core](/ef/core/)します。
+[.Net Core](/dotnet/core/)は、データセットとそれに関連する型を除き、ADO.NET をサポートしています。 .NET Core を対象としていて、オブジェクトリレーショナルマッピング (ORM) レイヤーが必要な場合は、 [Entity Framework Core](/ef/core/)を使用します。
 
-次の図は、基本的なアーキテクチャの概略を示します。
+次の図は、基本的なアーキテクチャの簡略化されたビューを示しています。
 
 ![ADO.NET のアーキテクチャ](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
 ## <a name="typical-workflow"></a>一般的なワークフロー
 
-一般的なワークフローは、
+一般的なワークフローは次のとおりです。
 
-1. 開発またはテスト データベースをローカル コンピューターにインストールします。 参照してください[データベース システム、ツール、およびサンプルをインストールする](../data-tools/installing-database-systems-tools-and-samples.md)します。 Azure データ サービスを使用している場合、この手順は必要ではありません。
+1. 開発データベースまたはテストデータベースをローカルコンピューターにインストールします。 「[データベースシステム、ツール、サンプルのインストール](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。 Azure データサービスを使用している場合、この手順は必要ありません。
 
-2. Visual Studio でのデータベース (またはサービスまたはローカル ファイル) への接続をテストします。 参照してください[新しい接続を追加](../data-tools/add-new-connections.md)します。
+2. Visual Studio でデータベース (またはサービスまたはローカルファイル) への接続をテストします。 「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
-3. (省略可能)生成し、新しいモデルを構成するには、ツールを使用します。 Entity Framework に基づくモデルは、新しいアプリケーションの既定の推奨事項です。 どちらを使用すると、モデルは、アプリケーションと連携するデータ ソースです。 モデルは、データベースまたはサービスとアプリケーションの間に論理的にします。 参照してください[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)します。
+3. Optionalツールを使用して、新しいモデルを生成して構成します。 Entity Framework に基づくモデルは、新しいアプリケーションの既定の推奨事項です。 使用するモデルはいずれも、アプリケーションがやり取りするデータソースです。 モデルは、データベースまたはサービスとアプリケーションの間で論理的に配置されます。 「[新しいデータソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
 
-4. ドラッグ元のデータ ソース、**データ ソース**ウィンドウを指定した方法でユーザーに、データを表示するデータ バインド コードを生成する Windows フォーム、ASP.NET、または Windows Presentation Foundation デザイン サーフェイスにします。 参照してください[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。
+4. データソースを **[データソース]** ウィンドウから Windows フォーム、ASP.NET、または Windows Presentation Foundation デザインサーフェイスにドラッグして、指定した方法でユーザーにデータを表示するデータバインドコードを生成します。 「 [Visual Studio でのデータへのコントロールのバインド」を](../data-tools/bind-controls-to-data-in-visual-studio.md)参照してください。
 
-5. 点など、ビジネス ルール、検索、およびデータの検証、または基になるデータベースを公開するカスタム機能を活用するためのカスタム コードを追加します。
+5. ビジネスルール、検索、データ検証などのカスタムコードを追加したり、基になるデータベースが公開するカスタム機能を利用したりできます。
 
-手順 3. を省略し、モデルを使用するのではなく、データベースに直接コマンドを発行する .NET アプリケーションをプログラミングできます。 この場合は、ここで、関連するドキュメントが表示されます。[ADO.NET](/dotnet/framework/data/adonet/index)します。 使用することもできますが、**データ ソース構成ウィザード**とメモリとし、それらのオブジェクトを UI コントロールをデータ バインドで、独自のオブジェクトの値を設定する際に、データ バインド コードを生成するデザイナー。
+モデルを使用するのではなく、手順3をスキップし、.NET アプリケーションをプログラミングして、コマンドをデータベースに直接発行することができます。 この場合は、ここで、関連するドキュメントが表示されます: [ADO.NET](/dotnet/framework/data/adonet/index)します。 ただし、**データソース構成ウィザード**とデザイナーを使用して、メモリ内に独自のオブジェクトを設定し、それらのオブジェクトに UI コントロールをデータバインドするときに、データバインディングコードを生成することができます。
 
 ## <a name="see-also"></a>関連項目
 

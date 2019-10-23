@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication |Microsoft Docs
+title: 'IRemoteDebugApplication:: CreateInstanceAtApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e17c5abcb21bfaad6de948c3676d29232da66cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 285e5df6960e3188ffe1ce17b1fc4f43626a3d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944309"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572312"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-コードによって、アプリケーション プロセスでオブジェクトの作成を許可されているのプロセス外アプリケーションにします。  
+アプリケーションに対してプロセス外のコードを使用して、アプリケーションプロセス内のオブジェクトを作成できるようにします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,19 +41,19 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `rclsid`  
- [in]クラスを作成するオブジェクトの識別子 (CLSID)。  
+ から作成するオブジェクトのクラス識別子 (CLSID)。  
   
  `pUnkOuter`  
- [in]場合`NULL`集計の一部として、オブジェクトが作成されていません。 それ以外の場合、`pUnkOuter`集計オブジェクトへのポインターは、`IUnknown`インターフェイス (制御`IUnknown`)。  
+ から@No__t_0 した場合、オブジェクトは集計の一部として作成されません。 それ以外の場合、`pUnkOuter` は、集約オブジェクトの `IUnknown` インターフェイス (制御 `IUnknown`) へのポインターです。  
   
  `dwClsContext`  
- [in]実行可能コードを実行するためのコンテキスト。 値が列挙体から取得されます`CLSCTX`します。  
+ から実行可能コードを実行するためのコンテキスト。 値は、列挙 `CLSCTX` から取得されます。  
   
  `riid`  
- [in]オブジェクトと通信するために使用するインターフェイスの識別子です。  
+ からオブジェクトとの通信に使用されるインターフェイス識別子。  
   
  `ppvObject`  
- [out]要求されたインターフェイス ポインターを受け取るポインター変数のアドレス`riid`します。 成功時に、*`ppvObject`要求されたインターフェイス ポインターが含まれています。 障害時に、 \* `ppvObject`が含まれています`NULL`します。  
+ 入出力@No__t_0 に要求されたインターフェイスポインターを受け取るポインター変数のアドレス。 正常に返された場合は、要求されたインターフェイスポインターが * `ppvObject` に含まれます。 エラーが発生すると、\* `ppvObject` に `NULL` が含まれます。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -63,7 +63,7 @@ HRESULT CreateInstanceAtApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドからデリゲートを`CoCreateInstance`します。  
+ このメソッドは、`CoCreateInstance` にデリゲートします。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)

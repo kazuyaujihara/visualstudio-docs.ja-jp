@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2689113da88246470032ed658b2472c3845adcd
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 3d0b2b0c4cee2a372bccb8ad461ed195fc5519d7
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681367"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831851"
 ---
 # <a name="msbuild-task"></a>MSBuild タスク
 
@@ -47,8 +47,6 @@ ms.locfileid: "68681367"
 | `TargetOutputs` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> すべてのプロジェクト ファイルからビルドされたターゲットの出力を返します。 指定したターゲットの出力だけが返されます。それらのターゲットが依存しているターゲットに存在する可能性があるすべての出力が返されるわけではありません。<br /><br /> `TargetOutputs` パラメーターには、次のメタデータも含まれています。<br /><br /> -   `MSBuildSourceProjectFile`:出力を設定するターゲットを含む [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイル。<br />-   `MSBuildSourceTargetName`:出力を設定するターゲット。 **注:** 各プロジェクト ファイルまたはターゲットの出力を個別に識別する場合は、プロジェクト ファイルまたはターゲットごとに `MSBuild` タスクを実行します。 `MSBuild` タスクを 1 回だけ実行してすべてのプロジェクト ファイルをビルドすると、すべてのターゲットの出力が 1 つの配列に収集されます。 |
 | `Targets` | 省略可能な `String` 型のパラメーターです。<br /><br /> プロジェクト ファイルでビルドする 1 つまたは複数のターゲットを指定します。 セミコロンを使用して、ターゲットの名前の一覧を区切ります。 `MSBuild` タスクにターゲットを指定しない場合は、プロジェクト ファイルで指定されている既定のターゲットがビルドされます。 **注:** ターゲットはすべてのプロジェクト ファイルに必要です。 ターゲットが存在しない場合は、ビルド エラーが発生します。 |
 | `ToolsVersion` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクに渡されたプロジェクトのビルド時に使用する `ToolsVersion` を指定します。<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクが、プロジェクトで指定されたものとは別のバージョンの .NET Framework をターゲットとするプロジェクトをビルドできるようにします。 有効な値は `2.0`、`3.0`、`3.5` です。 既定値は `3.5`にする必要があります。 |
-| `UnloadProjectsOnCompletion` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、操作が完了したらプロジェクトはアンロードされます。 |
-| `UseResultsCache` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、キャッシュされた結果が返されます (ある場合)。<br /><br />  MSBuild タスクが実行されると、その結果がスコープ <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> ビルド項目のリストとしてキャッシュされます。 |
 
 ## <a name="remarks"></a>解説
 

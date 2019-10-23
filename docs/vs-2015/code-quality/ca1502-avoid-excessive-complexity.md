@@ -1,5 +1,5 @@
 ---
-title: CA1502:過剰な複雑さを回避 |Microsoft Docs
+title: 'CA1502: 複雑さが過剰にならないようにする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,85 +12,85 @@ helpviewer_keywords:
 - AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e1885a07f4c9edbbdea9be4f0e74aaf8e4d3a6f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607875"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:メソッドの実装を複雑にしすぎないでください
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: メソッドの実装を複雑にしすぎないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Category|Microsoft.Maintainability|
+|カテゴリ|Microsoft の保守容易性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- メソッドは、サイクロマティック複雑です。
+ メソッドには、過剰なサイクロマティック複雑度があります。
 
 ## <a name="rule-description"></a>規則の説明
- *サイクロマティック複雑度*線形独立のメソッド、条件付き分岐の複雑さと数によって決定される経路の数を計測します。 低サイクロマティック複雑度には、理解、テスト、および保守しやすい方法通常を示します。 サイクロマティック複雑度を使用して、メソッドの制御フロー グラフから計算されますが、次のように指定します。
+ *サイクロマティック複雑度*は、メソッドを使用して線形的に独立したパスの数を測定します。これは、条件分岐の数と複雑さによって決まります。 サイクロマティック複雑度が低いのは、一般に、理解、テスト、および保守が容易なメソッドであることを示しています。 サイクロマティック複雑度は、メソッドの制御フローグラフから計算され、次のように指定されます。
 
- サイクロマティック複雑度エッジ - ノード数 + 1 の数を =
+ サイクロマティック複雑度 = エッジの数-ノードの数 + 1
 
- 表すノードを論理的な分岐ポイントとエッジ ノードの間に行を表します。
+ ノードがロジックの分岐点を表し、エッジがノード間の線を表す場合。
 
- ルールは、サイクロマティック複雑度が 25 を超える場合、違反を報告します。
+ このルールは、サイクロマティック複雑度が25を超える場合に違反を報告します。
 
- コード メトリックに関する詳細については、[を測定する複雑さとマネージ コードの保守容易性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)、
+ コードメトリックスの詳細については、「[マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、サイクロマティック複雑度を減らすための方法をリファクタリングします。
+ この規則違反を修正するには、メソッドをリファクタリングして、サイクロマティック複雑度を下げます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この規則による警告を抑制する場合は、複雑さを軽減することはできません簡単にして、メソッドが理解し、テスト、および保守を容易に安全です。 特に、大規模なを含むメソッド`switch`(`Select`で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ステートメントは、候補の除外です。 コード ベースで以前にリリース済みのコードの実行時の動作で予期しない変更を導入したり、開発サイクルの後半は、コードのリファクタリングの保守容易性のメリットを上回る場合がありますが不安定になるリスクです。
+ 複雑さを簡単に軽減できず、メソッドを簡単に理解、テスト、保守できる場合は、この規則による警告を抑制することが安全です。 特に、大規模な `switch` (`Select` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ステートメントを含むメソッドは、除外の候補です。 開発サイクルの後半でコードベースを安定性するリスク、または以前に出荷されたコードの実行時の動作に予期しない変更を導入するリスクは、コードをリファクタリングすることによる保守容易性の利点を上回る可能性があります。
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>サイクロマティック複雑度の計算方法
- サイクロマティック複雑度は、次に 1 を加算して計算されます。
+ サイクロマティック複雑度は、次のように1を追加することによって計算されます。
 
-- 分岐の数 (など`if`、 `while`、および`do`)
+- ブランチの数 (`if`、`while`、`do` など)
 
-- 数`case`内のステートメント、 `switch`
+- @No__t_1 内の `case` ステートメントの数
 
-  次の例では、さまざまなサイクロマティック複雑度のあるメソッドを示します。
+  次の例は、さまざまなサイクロマティック複雑なメソッドを示しています。
 
 ## <a name="example"></a>例
- **1 のサイクロマティック複雑度**
+ **サイクロマティック複雑度1**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#1)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#1)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#1)]
 
 ## <a name="example"></a>例
- **サイクロマティック複雑度 2**
+ **サイクロマティック複雑度2**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#2)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#2)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#2)]
 
 ## <a name="example"></a>例
- **3 のサイクロマティック複雑度**
+ **サイクロマティック複雑度3**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#3)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#3)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#3)]
 
 ## <a name="example"></a>例
- **8 のサイクロマティック複雑度**
+ **サイクロマティック複雑度8**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#4)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#4)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#4)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1501:過剰な継承を回避します。](../code-quality/ca1501-avoid-excessive-inheritance.md)
+ [CA1501: 継承を使用しすぎないでください](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

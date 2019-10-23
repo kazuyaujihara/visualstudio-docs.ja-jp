@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetLCID | Microsoft Docs
+title: 'IActiveScriptSite:: GetLCID |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6ebcfec9764aae98f7d74ac98e0c88ecec7c4da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913ca23ac687fdd080a778afb1dcba2e4dcdd6b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992760"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570741"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-ホストのユーザー インターフェイスに関連付けられているロケール識別子を取得します。 スクリプト エンジンでは、識別子を使用して、エラー文字列と、エンジンによって生成されたその他のユーザー インターフェイス要素が適切な言語で表示されていることを確認します。  
+ホストのユーザーインターフェイスに関連付けられているロケール識別子を取得します。 スクリプトエンジンは識別子を使用して、エンジンによって生成されたエラー文字列およびその他のユーザーインターフェイス要素が適切な言語で表示されるようにします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>パラメーター  
  `plcid`  
- [out]スクリプト エンジンによって表示されるユーザー インターフェイス要素のロケール識別子を受け取る変数のアドレス。  
+ 入出力スクリプトエンジンによって表示されるユーザーインターフェイス要素のロケール識別子を受け取る変数のアドレス。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -49,7 +49,7 @@ HRESULT GetLCID(
 |`E_POINTER`|無効なポインターが指定されました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドが戻る場合`E_NOTIMPL`、システム定義のロケール識別子を使用する必要があります。  
+ このメソッドが `E_NOTIMPL` を返す場合は、システム定義のロケール識別子を使用する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

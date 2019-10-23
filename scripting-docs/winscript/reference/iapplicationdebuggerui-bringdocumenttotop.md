@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop |Microsoft Docs
+title: 'Iapplicationデバッガ Ui:: BringDocumentToTop |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b51e7b588750fc72e61840c4748c006eea732c22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991124"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577793"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-デバッガーで最上位に指定されたデバッグ ドキュメントを含むウィンドウにユーザー インターフェイスを表示します。  
+デバッガーのユーザーインターフェイスで、指定されたデバッグドキュメントを含むウィンドウを一番上に移動します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>パラメーター  
  `pddt`  
- [in]デバッガー ユーザー インターフェイスの先頭に配置するドキュメントをデバッグします。  
+ からデバッガーのユーザーインターフェイスの一番上に表示されるようにデバッグドキュメントを表示します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -48,7 +48,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|ドキュメントが不明です。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ユーザー インターフェイスをデバッガーで最上位に指定されたデバッグ ドキュメントを含むウィンドウに表示します。  
+ このメソッドは、デバッガーのユーザーインターフェイスで、指定されたデバッグドキュメントを含むウィンドウを一番上に移動します。  
   
 ## <a name="see-also"></a>関連項目  
  [IApplicationDebuggerUI インターフェイス](../../winscript/reference/iapplicationdebuggerui-interface.md)

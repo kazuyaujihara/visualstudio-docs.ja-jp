@@ -1,49 +1,47 @@
 ---
-title: 有効にするし、マネージ コードの完全なソリューション分析を無効にします。
+title: マネージコードの完全なソリューション分析を有効 & 無効にする
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a445439014e3b1f68b634865265089eb68e790a6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260883"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649445"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの完全なソリューション分析を無効にします。
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: マネージコードの完全なソリューション分析を有効または無効にする
 
-*完全ソリューション解析*が開いている Visual c# または Visual Basic ファイル、ソリューション内でのみコード分析の問題が発生することができますをもコードでファイルを Visual Studio の機能は閉じられます。 完全ソリューション解析は、既定では、*有効になっている*Visual basic の場合と*無効になっている*Visual c# 用です。
+*完全なソリューション分析*では、コード分析にC#よって、エディターで開いているかどうかに関係なく、ソリューション内のすべてのファイルまたは Visual Basic ファイルが検証されます。 既定では、完全なソリューション分析は Visual Basic に対し*て有効*になり、でC#は*無効*になります。
 
-すべてのファイルですべての問題が発生すると便利であることができますが、注意をそらすこともできます。 長くなる Visual Studio ソリューションが非常に大きいか、含まれるファイルの場合。 示されている問題の数を制限し、Visual Studio のパフォーマンスを向上させる、完全ソリューション解析を無効にすることができます。 必要に応じて簡単に、この機能を再有効化することができます。
+すべてのファイルのすべての問題を確認すると役に立つ場合がありますが、邪魔になることもあります。 ソリューションのサイズが非常に大きい場合や、ファイルが多数ある場合は、Visual Studio の速度が低下します。 表示される問題の数を制限し、Visual Studio のパフォーマンスを向上させるには、完全なソリューション分析を無効にすることができます。 必要に応じて、この機能を簡単に有効にすることができます。
 
-## <a name="to-toggle-full-solution-analysis"></a>完全ソリューション解析を切り替える
+次の図では、完全なソリューション分析が有効になっています。 ソリューション内のすべてのファイルのコンパイラおよびコード分析の問題は、開いていない場合でも表示されます。
 
-1. 開くには、**オプション** ダイアログ ボックスで、Visual Studio でメニュー バーで選択**ツール** > **オプション**します。
+![完全なソリューション分析が有効になりました。](../code-quality/media/fsa_enabled.png)
 
-1. **オプション** ダイアログ ボックスで、選択**テキスト エディター** > **c#** または**基本的な** >  **高度な**します。
+次の図は、完全なソリューション分析を無効にした後の同じソリューションの結果を示しています。 開いているソリューションファイルのコンパイラエラーとコード分析の問題のみがエラー一覧に表示されます。
 
-1. 選択、**完全ソリューション解析を有効にする**チェック ボックスを完全なソリューション分析を有効または無効にするボックスをオフにします。 選択**OK**完了したら。
+![完全なソリューション分析が無効になっています。](../code-quality/media/fsa_disabled.png)
 
-    ![完全なソリューション分析 チェック ボックスを有効にします。](../code-quality/media/options-enable-full-solution-analysis.png)
+## <a name="toggle-full-solution-analysis"></a>完全なソリューション分析の切り替え
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>結果を有効にして、完全ソリューション解析を無効にします。
+1. **[オプション]** ダイアログボックスを開くには、Visual Studio のメニューバーで **[ツール]** [ > **オプション**] の順に選択します。
 
-次のスクリーン ショットでは、完全ソリューション解析を有効にすると、結果を確認できます。 すべてのエラーとコード分析の問題で*すべて*ソリューション内のファイルの表示、かどうか、開いているファイルかどうかに関係なく。
+1. **[オプション]** ダイアログボックスで、 **[テキストエディター** **C#**  > ] または [**基本** > **詳細設定**] を選択します。
 
-![完全ソリューション解析を有効にします。](../code-quality/media/fsa_enabled.png)
+1. 完全なソリューション分析を有効にする場合は [**完全なソリューション分析を有効**にする] チェックボックスをオンにし、無効にする場合はオフにします。 完了したら、 **[OK]** を選択します。
 
-次のスクリーン ショットでは、完全ソリューション解析を無効にした後、同じソリューションから結果を示しています。 エラーと開いているソリューション ファイルでコード分析の問題のみに表示される、**エラー一覧**します。
+   ![[完全なソリューション分析を有効にする] チェックボックスをオンにします。](../code-quality/media/options-enable-full-solution-analysis.png)
 
-![完全ソリューション解析を無効になっています。](../code-quality/media/fsa_disabled.png)
+## <a name="automatically-disable-full-solution-analysis"></a>完全なソリューション分析を自動的に無効にする
 
-## <a name="automatically-disable-full-solution-analysis"></a>完全ソリューション解析を自動的に無効にします。
+Visual Studio で 200 MB 以下のシステムメモリが使用可能であることが検出されると、完全なソリューション分析 (およびその他の機能) が有効になっている場合は自動的に無効になります。 これが発生すると、Visual Studio が一部の機能を無効にしたことを通知するアラートが表示されます。 ボタンを使用すると、必要に応じて完全なソリューション分析を再び有効にすることができます。
 
-Visual Studio を検出する場合は 200 MB またはシステム メモリの利用可能になりますが、自動的に無効になります完全ソリューション解析 (およびその他のいくつかの機能) が有効になっている場合。 このような場合は、Visual Studio が一部の機能を無効になっていることを通知するアラートが表示されます。 ボタンには、する場合は、完全なソリューション分析を再度有効にすることができます。
-
-![完全ソリューション解析を中断する警告テキスト](../code-quality/media/fsa_alert.png)
+![アラートテキストの完全なソリューション分析の中断](../code-quality/media/fsa_alert.png)

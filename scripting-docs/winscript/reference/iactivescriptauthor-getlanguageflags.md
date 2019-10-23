@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags |Microsoft Docs
+title: 'IActiveScriptAuthor:: Get言語 Flags |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68da16513050bd87642be2c96212a330a0916608
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935472"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576196"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 言語情報を返します。  
@@ -37,13 +37,13 @@ HRESULT GetLanguageFlags(
   
 #### <a name="parameters"></a>パラメーター  
  `pgrfasa`  
- [out]このフラグは、言語情報が含まれます。 次の値の組み合わせになります。  
+ 入出力言語情報を含むフラグ。 は、次の値の組み合わせにすることができます。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|言語は、エンジンは、アプリケーションではなくを作成、スクリプトによってスクリプト イベント ハンドラーの作成を優先します。|  
-|fasaSupportInternalHandler|0x0002|言語は、エンジンを作成するスクリプトによって作成されたスクリプトのイベント ハンドラーをサポートしています。|  
-|fasaCaseSensitive|0x0004|スクリプト言語は大文字小文字を区別します。|  
+|fasaPreferInternalHandler|0x0001|この言語では、アプリケーションではなくスクリプト作成エンジンによって、スクリプトイベントハンドラーの作成が優先されます。|  
+|fasaSupportInternalHandler|0x0002|この言語では、スクリプト作成エンジンによって作成されたスクリプトイベントハンドラーがサポートされています。|  
+|fasaCaseSensitive|0x0004|スクリプト言語では大文字と小文字が区別されます。|  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -53,9 +53,9 @@ HRESULT GetLanguageFlags(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- エンジンを作成するスクリプトは、イベント ハンドラーを管理している場合、アプリケーションを呼び出す必要があります`CreateChildHandler`から、`IScriptEntry`オブジェクト。 これを作成、`IScriptScriptlet`イベント ハンドラーに対応するオブジェクト。 エンジンは、スクリプトのエントリにも、イベント ハンドラーを追加します。 イベント ハンドラーは、指定した署名情報を含む空の関数です。  
+ スクリプト作成エンジンがイベントハンドラーを管理する場合、アプリケーションは `IScriptEntry` オブジェクトから `CreateChildHandler` を呼び出す必要があります。 これにより、イベントハンドラーに対応する `IScriptScriptlet` オブジェクトが作成されます。 また、エンジンは、スクリプトエントリにイベントハンドラーを追加します。 イベントハンドラーは、指定されたシグネチャ情報を格納する空の関数です。  
   
- 呼び出す必要がありますが、アプリケーションでは、イベント ハンドラーが管理する場合、`CreateChildHandler`から、`IScriptNode`イベントのハンドラー スクリプトレットを表すオブジェクト。 これを作成、`IScriptScriptlet`イベント ハンドラー スクリプトレットに関連付けられているオブジェクト。 アプリケーションがイベントとして空の関数を追加するハンドラーを新しいまたは既存の`IScriptEntry`オブジェクト。  
+ アプリケーションでイベントハンドラーを管理する場合は、イベントハンドラーのスクリプトレットを表す `IScriptNode` オブジェクトから `CreateChildHandler` を呼び出す必要があります。 これにより、イベントハンドラーのスクリプトレットに関連付けられた `IScriptScriptlet` オブジェクトが作成されます。 また、アプリケーションでは、新規または既存の `IScriptEntry` オブジェクトに、イベントハンドラーとして空の関数を追加する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)

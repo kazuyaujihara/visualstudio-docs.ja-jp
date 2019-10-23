@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute |Microsoft Docs
+title: 'IDebugSyncOperation:: Execute |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2bc204169ff94a240e363eb8caa35ec8c7de9be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25da02e6736cc2f8ac27c82f922bd515e791bef1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004879"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576693"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-同期的に、操作を実行し、返します。  
+同期的に操作を実行し、を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT Execute(
   
 #### <a name="parameters"></a>パラメーター  
  `ppunkResult`  
- [out]操作によって返されるオブジェクトのパラメーターです。  
+ 入出力操作によって返されるオブジェクトパラメーター。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -45,10 +45,10 @@ HRESULT Execute(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_ABORT`|呼び出して、操作が中止されました、`IDebugSyncOperation::InProgressAbort`メソッド。|  
+|`E_ABORT`|@No__t_0 メソッドを呼び出して、操作が中止されました。|  
   
 ## <a name="remarks"></a>Remarks  
- ターゲット スレッドの呼び出しで、プロセス デバッグ マネージャー、`Execute`メソッド同期的にします。  
+ ターゲットスレッドのプロセスデバッグマネージャーは、`Execute` メソッドを同期的に呼び出します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugSyncOperation インターフェイス](../../winscript/reference/idebugsyncoperation-interface.md)

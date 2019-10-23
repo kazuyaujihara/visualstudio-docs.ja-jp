@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 参照
+        - name: 関連項目
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -170,8 +170,8 @@
   items:
     - name: 開発
       items:
-        - name: 'インデックス: IDE を使用してコードを記述する'
-          href: ide/index-writing-code.md
+        - name: 作業開始
+          href: ide/index-writing-code.yml
         - name: IDE 内で移動する
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: ソリューションとプロジェクト
@@ -563,6 +563,97 @@
               href: ide/class-designer/additional-information-about-errors.md
         - name: コードを改良する
           href: ide/find-and-fix-code-errors.md
+        - name: Windows フォームの開発
+          items:
+            - name: Windows フォーム デザイナーの概要
+              href: designers/windows-forms-designer-overview.md
+            - name: Windows フォーム デザイナーを使ってみる
+              href: designers/walkthrough-windows-forms-designer.md
+            - name: コントロールを配置する >>
+              href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
+            - name: データ バインド コントロールを作成する >>
+              href: /dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form
+            - name: カスタム コントロールを作成する >>
+              href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
+            - name: Windows フォーム デザイナーの DPI 認識を無効にする
+              href: designers/disable-dpi-awareness.md
+            - name: 関連項目
+              items:
+                - name: System.Windows.Forms API >>
+                  href: /dotnet/api/system.windows.forms
+            - name: チュートリアル
+              items:
+                - name: 'チュートリアル 1: ピクチャ ビューアーの作成 (C#)'
+                  items:
+                    - name: 概要
+                      displayName: Tutorial 1 Picture viewer
+                      href: ide/tutorial-1-create-a-picture-viewer.md
+                    - name: '手順 1: Windows フォーム アプリ プロジェクトを作成する'
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: '手順 2: アプリの実行'
+                      href: ide/step-2-run-your-program.md
+                    - name: '手順 3: フォームのプロパティの設定'
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: '手順 4: TableLayoutPanel コントロールを使用したフォームのレイアウトの設定'
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: '手順 5: フォームへのコントロールの追加'
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: '手順 6: ボタン コントロールの名前を設定する'
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: '手順 7: フォームへのダイアログ コンポーネントの追加'
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: '手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述'
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: '手順 9: レビュー、コメントの追加、およびコードのテスト'
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: '手順 10: その他のボタンおよびチェック ボックスに対するコードの記述'
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: '手順 11: アプリを実行して他の機能を試す'
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: 'チュートリアル 2: 制限時間ありの計算クイズの作成 (C#)'
+                  items:
+                    - name: 概要
+                      displayName: Tutorial 2 Timed math quiz
+                      href: ide/tutorial-2-create-a-timed-math-quiz.md
+                    - name: '手順 1: プロジェクトの作成とフォームへのラベルの追加'
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: '手順 2: ランダムな加算問題の作成'
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: '手順 3: カウントダウン タイマーを追加する'
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: '手順 4: CheckTheAnswer() メソッドの追加'
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: '手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加'
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: '手順 6: 減算問題を追加する'
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: '手順 7: 乗算問題と除算問題の追加'
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: '手順 8: クイズのカスタマイズ'
+                      href: ide/step-8-customize-the-quiz.md
+                - name: 'チュートリアル 3: 絵合わせゲームの作成 (C#)'
+                  items:
+                    - name: 概要
+                      displayName: Tutorial 3 Matching game
+                      href: ide/tutorial-3-create-a-matching-game.md
+                    - name: '手順 1: プロジェクトの作成とフォームへのテーブルの追加'
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: '手順 2: Random オブジェクトおよびアイコンのリストの追加'
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: '手順 3: 各ラベルへのランダムなアイコンの割り当て'
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: '手順 4: 各ラベルに Click イベント ハンドラーを追加する'
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: '手順 5: ラベルの参照の追加'
+                      href: ide/step-5-add-label-references.md
+                    - name: '手順 6: タイマーの追加'
+                      href: ide/step-6-add-a-timer.md
+                    - name: '手順 7: ペアの表示の維持'
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: '手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加'
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: '手順 9: その他の機能を試す'
+                      href: ide/step-9-try-other-features.md
         - name: クロス プラットフォームのモバイル開発
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
         - name: 'Visual Studio における F#'
@@ -584,12 +675,11 @@
             - name: 国際対応のアプリの設計
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
+    - name: XAML ツールの使用 >>
+      href: xaml-tools/index.yml
     - name: データへのアクセス >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: ユーザー インターフェイスを設計する >>
-      displayName: XAML designer
-      href: designers/designing-user-interfaces.md
     - name: ワークフロー デザイナーでアプリを開発する >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: コンパイルとビルド
@@ -663,7 +753,7 @@
       href: profiling/index.yml
     - name: コード品質の分析 >>
       displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.md
+      href: code-quality/index.yml
     - name: デプロイ >>
       href: deployment/index.yml
     - name: Visual Studio の拡張 >>
@@ -671,6 +761,90 @@
       href: extensibility/visual-studio-sdk.md
     - name: アーキテクチャの分析とモデル化 >>
       href: modeling/analyze-and-model-your-architecture.md
+    - name: 3D アセット
+      items:
+        - name: ゲームとアプリ用の 3D アセットを操作する
+          href: designers/working-with-3-d-assets-for-games-and-apps.md
+        - name: '方法: ゲームまたはアプリで 3D アセットを使用する'
+          href: designers/using-3-d-assets-in-your-game-or-app.md
+        - name: テクスチャとイメージ
+          items:
+            - name: テクスチャおよびイメージを使用する
+              href: designers/working-with-textures-and-images.md
+            - name: イメージ エディター
+              href: designers/image-editor.md
+            - name: イメージ エディターの例
+              items:
+                - name: 基本的なテクスチャを作成する
+                  href: designers/how-to-create-a-basic-texture.md
+                - name: MIP レベルを作成および変更する
+                  href: designers/how-to-create-and-modify-mip-levels.md
+        - name: 3D モデル
+          items:
+            - name: 3D モデルを操作する
+              href: designers/working-with-3-d-models.md
+            - name: モデル エディター
+              href: designers/model-editor.md
+            - name: モデル エディターの例
+              items:
+                - name: 基本 3D モデルを作成する
+                  href: designers/how-to-create-a-basic-3-d-model.md
+                - name: 3D モデルのピボット ポイントを変更する
+                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                - name: 3D 地形のモデル化
+                  href: designers/how-to-model-3-d-terrain.md
+                - name: シェーダーを 3D モデルに適用する
+                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+        - name: シェーダー
+          items:
+            - name: シェーダーを操作する
+              href: designers/working-with-shaders.md
+            - name: シェーダー デザイナー
+              href: designers/shader-designer.md
+            - name: シェーダー デザイナー ノード
+              items:
+                - name: 概要
+                  displayName: Shader designer nodes
+                  href: designers/shader-designer-nodes.md
+                - name: 定数ノード
+                  href: designers/constant-nodes.md
+                - name: パラメーター ノード
+                  href: designers/parameter-nodes.md
+                - name: テクスチャ ノード
+                  href: designers/texture-nodes.md
+                - name: 数値演算ノード
+                  href: designers/math-nodes.md
+                - name: ユーティリティ ノード
+                  href: designers/utility-nodes.md
+                - name: フィルター ノード
+                  href: designers/filter-nodes.md
+            - name: シェーダー デザイナーの例
+              items:
+                - name: 基本カラー シェーダーを作成する
+                  displayName: Shader designer example
+                  href: designers/how-to-create-a-basic-color-shader.md
+                - name: 基本ランバート シェーダーを作成する
+                  href: designers/how-to-create-a-basic-lambert-shader.md
+                - name: 基本フォン シェーダーを作成する
+                  href: designers/how-to-create-a-basic-phong-shader.md
+                - name: 基本的なテクスチャ シェーダーを作成する
+                  href: designers/how-to-create-a-basic-texture-shader.md
+                - name: グレースケール テクスチャ シェーダーを作成する
+                  href: designers/how-to-create-a-grayscale-texture-shader.md
+                - name: ジオメトリベースのグラデーション シェーダーを作成する
+                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                - name: 'チュートリアル: リアルな 3D のビリヤード ボールを作成する'
+                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                - name: シェーダーをエクスポートする
+                  href: designers/how-to-export-a-shader.md
+        - name: テクスチャをエクスポートする
+          items:
+            - name: ミップマップを含むテクスチャをエクスポートする
+              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+            - name: 前乗算されたアルファを持つテクスチャをエクスポートする
+              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+            - name: Direct2D または JavaScript アプリで使用するためのテクスチャをエクスポートする
+              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: ヒントとテクニック
       items:
         - name: 生産性機能
@@ -742,7 +916,7 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: マイクロソフトのアクセシビリティ製品とサービス
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 参照
+- name: 関連項目
   items:
     - name: キーボード ショートカット
       items:
@@ -1008,7 +1182,7 @@
           href: ide/reference/output-window.md
         - name: プロジェクトのプロパティ
           items:
-            - name: 関連項目
+            - name: 参照
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: '[アプリケーション] ページ (プロジェクト デザイナー) (UWP)'
@@ -1173,6 +1347,8 @@
           href: help-viewer/accessibility-features.md
         - name: ショートカット キー
           href: help-viewer/shortcut-keys.md
+    - name: Visual Studio Image Library
+      href: designers/the-visual-studio-image-library.md
     - name: Dotfuscator Community
       items:
         - name: 概要

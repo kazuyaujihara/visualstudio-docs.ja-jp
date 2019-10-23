@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::AddApplication |Microsoft Docs
+title: 'IMachineDebugManager:: AddApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96c1b865c722a3cceab331b81b1204ee682b911f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54ff617ac96c0eb3498b796d4f7fe49f95e1cc96
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977849"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573965"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
-実行中にアプリケーションを追加します。 アプリケーションの一覧。  
+実行中のアプリケーションの一覧にアプリケーションを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `pda`  
- [in]アプリケーションを実行するアプリケーションの一覧。  
+ からアプリケーションを実行中のアプリケーションの一覧に表示します。  
   
  `pdwAppCookie`  
- [out]マシン デバッグ マネージャーから、アプリケーションを削除するために使用されるクッキー。  
+ 入出力コンピューターデバッグマネージャーからアプリケーションを削除するために使用されるクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,9 +51,9 @@ HRESULT AddApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、プロセス デバッグ マネージャーたびに`IProcessDebugManager::AddApplication`が呼び出されます。  
+ このメソッドは、`IProcessDebugManager::AddApplication` が呼び出されるたびにプロセスデバッグマネージャーによって呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
- [IMachineDebugManager インターフェイス](../../winscript/reference/imachinedebugmanager-interface.md)   
- [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
+ [Imachinedebugmanager インターフェイス](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [Imachinedebugmanager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

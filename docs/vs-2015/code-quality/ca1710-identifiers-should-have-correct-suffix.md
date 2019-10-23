@@ -1,5 +1,5 @@
 ---
-title: CA1710:識別子は正しいサフィックスを含むこと |Microsoft Docs
+title: 'CA1710: 識別子は正しいサフィックス | を持つ必要がありますMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,35 +12,35 @@ helpviewer_keywords:
 - CA1710
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 16b4c2fb13a8de1824233b491d752b796aea907d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7dc0ed72ddab39bda5f3de9b978f4d55dc2358ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669169"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別子は、正しいサフィックスを含んでいなければなりません
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: 識別子は、正しいサフィックスを含んでいなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 識別子には、正しいサフィックスはありません。
+ 識別子のサフィックスが正しくありません。
 
 ## <a name="rule-description"></a>規則の説明
- 慣例により、特定の基本型を拡張するか、特定のインターフェイス、またはこれらの型から派生した型を実装する型の名前には、基本データ型またはインターフェイスに関連付けられているサフィックスを持ちます。
+ 慣例として、特定の基本型を拡張する型、特定のインターフェイスを実装する型、またはこれらの型から派生した型の名前には、基本型またはインターフェイスに関連付けられたサフィックスがあります。
 
  名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
 
- 次の表は、基本型とサフィックスが関連付けられているインターフェイスを示します。
+ 次の表に、サフィックスが関連付けられている基本型とインターフェイスの一覧を示します。
 
 |基本型/インターフェイス|サフィックス|
 |--------------------------|------------|
@@ -55,42 +55,42 @@ ms.locfileid: "65676549"
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
-|<xref:System.Data.DataTable?displayProperty=fullName>|コレクションまたは DataTable|
+|<xref:System.Data.DataTable?displayProperty=fullName>|Collection または DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|ストリーム|
 |<xref:System.Security.IPermission?displayProperty=fullName>|アクセス許可|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|条件|
-|イベント ハンドラーのデリゲート。|EventHandler|
+|イベントハンドラーデリゲート。|EventHandler|
 
- 実装する型<xref:System.Collections.ICollection>ディクショナリ、スタック、またはキューが使用できる型の使用目的について意味のある情報を提供する名などがあります、データ構造の一般的な型とします。
+ @No__t_0 を実装する型は、ディクショナリ、スタック、キューなどの一般化された型のデータ構造体であり、その型の使用目的に関する意味のある情報を提供する名前を使用できます。
 
- 実装する型<xref:System.Collections.ICollection>は特定の項目のコレクションが 'Collection' で終わる名前があるとします。 たとえばのコレクション<xref:System.Collections.Queue>オブジェクト名 'QueueCollection' になります。 'Collection' サフィックスを使用して、コレクションのメンバーを列挙できることを示します、 `foreach` (`For Each`で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ステートメント。
+ @No__t_0 を実装する型と、特定の項目のコレクションである型には、"Collection" という語で終わる名前があります。 たとえば、<xref:System.Collections.Queue> オブジェクトのコレクションには、' QueueCollection ' という名前が付いています。 ' Collection ' サフィックスは、`foreach` (`For Each` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ステートメントを使用してコレクションのメンバーを列挙できることを示します。
 
- 実装する型<xref:System.Collections.IDictionary>型も実装している場合でも、「ディクショナリ」で終わる名前を持つ<xref:System.Collections.IEnumerable>または<xref:System.Collections.ICollection>します。 'Collection' および 'ディクショナリ' サフィックス名前付け規則は、次の 2 つの列挙型パターンを区別するユーザーを有効にします。
+ 型が <xref:System.Collections.IEnumerable> または <xref:System.Collections.ICollection> も実装している場合でも、<xref:System.Collections.IDictionary> を実装する型には、"Dictionary" という語で終わる名前があります。 ' Collection ' および ' Dictionary ' サフィックスの名前付け規則を使用すると、ユーザーは次の2つの列挙パターンを区別できます。
 
- 'Collection' サフィックスを持つ型では、この列挙型パターンに従います。
+ ' Collection ' サフィックスを持つ型は、この列挙パターンに従います。
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
- 'ディクショナリ' サフィックスを持つ型では、この列挙型パターンに従います。
+ ' Dictionary ' サフィックスを持つ型は、この列挙パターンに従います。
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
- A<xref:System.Data.DataSet>オブジェクトのコレクションから成る<xref:System.Data.DataTable>、オブジェクトのコレクションで構成される<xref:System.Data.DataColumn?displayProperty=fullName>と<xref:System.Data.DataRow?displayProperty=fullName>他のユーザーの間でのオブジェクト。 これらのコレクションを実装<xref:System.Collections.ICollection>ベースを通じて<xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>クラス。
+ @No__t_0 オブジェクトは、<xref:System.Data.DataTable> オブジェクトのコレクションで構成されます。これらのオブジェクトは、<xref:System.Data.DataColumn?displayProperty=fullName> と <xref:System.Data.DataRow?displayProperty=fullName> オブジェクトのコレクションで構成されます。 これらのコレクションは、基本 <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> クラスを使用して <xref:System.Collections.ICollection> を実装します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 型の名前を変更して、正しい用語が付くようにします。
+ 型の名前を変更して、正しい語句がサフィックスとして付けられるようにします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 型が拡張される可能性がある場合や、さまざまな項目の任意のセットを保持する、汎用的なデータ構造の場合は、'Collection' サフィックスを使用する警告を抑制しても安全です。 ここでは、名前、実装、パフォーマンス、またはデータ構造体の他の特性に関する有益情報を提供する必要があります (たとえば、BinaryTree)。 型が、特定の種類 (たとえば、StringCollection) のコレクションを表す場合、サフィックスを使用して、型を列挙できることを示しているためこの規則による警告を抑制しないで、`foreach`ステートメント。
+ 型が拡張される可能性がある一般化されたデータ構造であるか、または任意の多様な項目のセットを保持する場合は、' Collection ' サフィックスを使用するように警告を抑制するのが安全です。 この場合、データ構造の実装、パフォーマンス、またはその他の特性に関する意味のある情報を提供する名前が意味を持ちます (BinaryTree など)。 型が特定の型 (たとえば、StringCollection) のコレクションを表す場合、この規則からの警告を抑制しないでください。これは、`foreach` ステートメントを使用して型を列挙できることをサフィックスが示すためです。
 
- 他のサフィックスの場合は、この規則による警告を抑制しないでください。 サフィックスは、型名から明らかにする目的の使用を許可します。
+ 他のサフィックスについては、このルールからの警告を抑制しないでください。 サフィックスによって、型名から意図された使用法を明確にすることができます。
 
 ## <a name="related-rules"></a>関連規則
- [CA1711:識別子には、不適切なサフィックスはありません。](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711: 識別子は、不適切なサフィックスを含むことはできません](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-## <a name="see-also"></a>関連項目
- [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB:イベントとデリゲート](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+## <a name="see-also"></a>参照
+ [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: イベントとデリゲート](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

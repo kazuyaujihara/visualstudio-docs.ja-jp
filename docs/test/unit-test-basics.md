@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891343"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342435"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -30,7 +30,7 @@ ms.locfileid: "69891343"
 
 コーディングに直接関係する単体テストの概要については、次のいずれかのトピックを参照してください。
 
-- [チュートリアル: マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [チュートリアル:マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -305,7 +305,7 @@ public void My_Test ()
 
 詳細については、「[テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)」を参照してください。
 
-## <a name="qa"></a>Q&A
+## <a name="qa"></a>Q & A
 
 **Q: 単体テストのデバッグ方法を教えてください。**
 
@@ -331,7 +331,7 @@ public void My_Test ()
 ![[メソッドの生成] のスタブ クイック アクション メニュー](../test/media/vs-2019/basics-generate-method-tdd.png)
 ::: moniker-end
 
-**Q: テストを実行する入力値として複数のデータ セットを取得する単体テストを作成できますか。**
+**Q:テストを実行する入力値として複数のデータ セットを取得する単体テストを作成できますか。**
 
 **A:** はい。 *データ ドリブン テスト メソッド* を使用すると、1 つの単体テスト メソッドである範囲の値をテストすることができます。 テストする変数の値が格納されているデータ ソースとデータ テーブルを指定する、テスト メソッドの `DataSource` 属性を使用します。  メソッドの本体で、 `TestContext.DataRow[`*ColumnName*`]` インデクサーを使用して変数に行の値を割り当てます。
 
@@ -369,7 +369,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。 **[コード カバレッジの結果]** ウィンドウに、行、関数、クラス、名前空間、およびモジュールで実行された製品コードのブロックのパーセンテージが表示されます。
 
-ソリューション内のテスト メソッドのコード カバレッジを実行するには、Visual Studio のメニューで、 **[テスト]** 、 **[コード カバレッジの分析]** の順に選択します。
+ソリューション内のテスト メソッドのコード カバレッジを実行するには、 **[テスト]**  >  **[すべてのテストのコード カバレッジの分析]** を選択します。
 
 カバレッジの結果は、 **[コード カバレッジの結果]** ウィンドウに表示されます。
 

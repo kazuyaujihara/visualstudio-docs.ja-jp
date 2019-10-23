@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName |Microsoft Docs
+title: 'IScriptEntry:: GetItemName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d8abc6d1264ce532adcbc59c262510a39ea7a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcd1b83fa6d22fafc2123645f1f252fa1325f7f1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787857"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575462"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
-識別する項目の名前を返します、`IScriptEntry`オブジェクト。  
+@No__t_0 オブジェクトを識別する項目名を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetItemName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstr`  
- [out]項目の名前を格納するバッファーのアドレス。 項目の名前は、エントリを識別するために、ホストによって使用されます。  
+ 入出力項目名を格納しているバッファーのアドレス。 項目名は、エントリを識別するためにホストによって使用されます。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetItemName(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- `IScriptScriptlet`オブジェクトを使用して、項目の名前を設定する[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)します。 その他のインターフェイスを使用して、項目の名前を設定する[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)します。  
+ @No__t_0 オブジェクトの場合は、 [IActiveScriptAuthor:: AddScriptlet レット](../../winscript/reference/iactivescriptauthor-addscriptlet.md)を使用して項目名を設定します。 他のインターフェイスの場合は、 [Iscriptentry:: SetItemName](../../winscript/reference/iscriptentry-setitemname.md)を使用して項目名を設定します。  
   
 ## <a name="see-also"></a>関連項目  
  [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)

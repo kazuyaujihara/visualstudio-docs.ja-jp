@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication |Microsoft Docs
+title: 'IProcessDebugManager:: GetDefaultApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fec84a60863b426f2f65c26e2375262b109d635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3532177c32e0d7eb0b7a67a445845cee753d316
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953973"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576795"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
-現在のプロセスの既定のアプリケーション オブジェクトを返します。  
+現在のプロセスの既定のアプリケーションオブジェクトを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `ppda`  
- [out]このアプリケーションのデバッグ アプリケーション オブジェクト。  
+ 入出力このアプリケーションのデバッグアプリケーションオブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,9 +47,9 @@ HRESULT GetDefaultApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、新しいデバッグ アプリケーション オブジェクトを作成し、それを実行中に追加、必要に応じて、アプリケーションの一覧。  
+ このメソッドは、新しいデバッグアプリケーションオブジェクトを作成し、必要に応じて、実行中のアプリケーションの一覧に追加します。  
   
- 言語エンジンで指定されたアプリケーションを使用する必要があります、`GetDefaultApplication`メソッドをアプリケーションが用意されていないホストで実行されている場合。  
+ 言語エンジンは、アプリケーションを提供しないホストで実行されている場合は、`GetDefaultApplication` メソッドによって指定されたアプリケーションを使用する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IProcessDebugManager インターフェイス](../../winscript/reference/iprocessdebugmanager-interface.md)

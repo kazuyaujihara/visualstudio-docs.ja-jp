@@ -1,63 +1,63 @@
 ---
-title: XSLT 変換を実行します。
+title: XSLT 変換を実行する
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668806"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>方法: XML エディターから XSLT 変換を実行する
 
-XML エディターでは、XSLT スタイル シートを XML ドキュメントに関連付ける、変換を実行し、出力を表示することができます。 XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。
+XML エディターを使用すると、XSLT スタイルシートを XML ドキュメントに関連付けたり、変換を実行したり、出力を表示したりできます。 XSLT 変換から得られた結果の出力は、新しいドキュメント ウィンドウに表示されます。
 
-**出力**プロパティは、出力ファイル名を指定します。 場合、**出力**プロパティが空白の一時ディレクトリにファイル名が生成されます場合、。 ファイル拡張子がに基づいて、`xsl:output`要素のスタイル シート *。xml*、.*txt*または *。htm*します。
+Output**プロパティは**、出力のファイル名を指定します。 **出力**プロパティが空白の場合は、一時ディレクトリにファイル名が生成されます。 ファイル拡張子は、スタイルシートの `xsl:output` 要素に基づいており、にすることができます。*xml*、。*txt*または。*htm*。
 
-場合、**出力**プロパティを持つファイル名を指定します、 *。htm*または *。html*拡張 XSLT 出力が web ブラウザーを使用してプレビューを表示します。 Visual Studio によって選択された既定のエディターを使用して、その他のすべてのファイル拡張子が開かれます。 たとえば、ファイル拡張子がある場合です。*xml*、Visual Studio は、XML エディターを使用します。
+**出力**プロパティがを使用してファイル名を指定している場合。*htm*または。*html*拡張機能では、web ブラウザーを使用して XSLT 出力がプレビューされます。 他のすべてのファイル拡張子は、Visual Studio によって選択された既定のエディターを使用して開きます。 たとえば、ファイル拡張子がの場合です。*xml*、Visual STUDIO は xml エディターを使用します。
 
-## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>XML ファイルから XSLT 変換を実行します。
+## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>XML ファイルから XSLT 変換を実行する
 
-1. XML エディターで XML ドキュメントを開きます。
+1. Xml エディターで XML ドキュメントを開きます。
 
 2. XSLT スタイル シートを XML ドキュメントと関連付けます。
 
-    - XML ドキュメントに `xml-stylesheet` 処理命令を追加します。 たとえば、ドキュメントのプロローグに次の行を追加します。 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
+    - XML ドキュメントに `xml-stylesheet` 処理命令を追加します。 たとえば、ドキュメントプロローグに次の行を追加します。 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       - または -
+       -または-
 
-    - XSLT スタイル シートを使用して、追加、**プロパティ**ウィンドウ。 XML ファイルをエディターで開いて、エディター内を右クリックし、選択**プロパティ**します。 **プロパティ**ウィンドウでをクリックし、 **Stylesheet**フィールドし、参照ボタン (...) を選択します。XSLT スタイル シートを選択し、**オープン**します。
+    - **[プロパティ]** ウィンドウを使用して XSLT スタイルシートを追加します。 エディターで XML ファイルを開いた状態で、エディター内の任意の場所を右クリックし、 **[プロパティ]** を選択します。 **[プロパティ]** ウィンドウで、 **[スタイルシート]** フィールドをクリックし、参照ボタン (...) を選択します。XSLT スタイルシートを選択し、 **[開く]** を選択します。
 
-3. メニュー バーで、 **XML** > **デバッグせずに XSLT を開始**します。 または、キーを押して**Ctrl**+**Alt**+**f5 キーを押して**します。
+3. メニューバーで、[ **XML**  > **デバッグなしで XSLT を開始**] を選択します。 または、 **Ctrl** +**Alt** +**F5**キーを押します。
 
-   XSLT 変換からの出力は、新しいドキュメント ウィンドウに表示されます。
+   XSLT 変換からの出力が新しいドキュメントウィンドウに表示されます。
 
    > [!NOTE]
    > XML ドキュメントに関連付けられているスタイル シートがない場合は、使用するスタイル シートの指定を求めるダイアログ ボックスが表示されます。
 
-## <a name="execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>XSLT スタイル シートから XSLT 変換を実行します。
+## <a name="execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Xslt スタイルシートから XSLT 変換を実行する
 
-1. XSLT スタイル シートを XML エディターで開きます。
+1. XML エディターで XSLT スタイルシートを開きます。
 
-2. 内の XML ドキュメントの指定、**入力**ドキュメントのフィールド**プロパティ**ウィンドウ。
+2. ドキュメントの **[プロパティ]** ウィンドウの **[入力]** フィールドで、XML ドキュメントを指定します。
 
    > [!NOTE]
-   > この XML ドキュメントは、変換に使用する入力ドキュメントです。 XSLT 変換が開始されると、ドキュメントが指定されていない場合、**ファイルを開く** ダイアログ ボックスが表示され、その時点でドキュメントを指定することができます。
+   > この XML ドキュメントは、変換に使用する入力ドキュメントです。 XSLT 変換の開始時にドキュメントが指定されていない場合、 **[ファイルを開く]** ダイアログボックスが表示され、その時点でドキュメントを指定できます。
 
-3. メニュー バーで、 **XML** > **デバッグせずに XSLT を開始**します。 または、キーを押して**Ctrl**+**Alt**+**f5 キーを押して**します。
+3. メニューバーで、[ **XML**  > **デバッグなしで XSLT を開始**] を選択します。 または、 **Ctrl** +**Alt** +**F5**キーを押します。
 
-   XSLT 変換からの出力は、新しいドキュメント ウィンドウに表示されます。
+   XSLT 変換からの出力が新しいドキュメントウィンドウに表示されます。
 
-## <a name="specify-an-output-file-name"></a>出力ファイル名を指定します。
+## <a name="specify-an-output-file-name"></a>出力ファイル名を指定してください
 
-XML と XSL の両方のファイルの出力ファイル名を指定することができます。 開く、**プロパティ**ウィンドウで、ファイル名を指定し、**出力**フィールド。
+XML ファイルと XSL ファイルの両方に対して出力ファイル名を指定できます。 **[プロパティ]** ウィンドウを開き、 **[出力]** フィールドにファイル名を指定します。
 
 ## <a name="see-also"></a>関連項目
 

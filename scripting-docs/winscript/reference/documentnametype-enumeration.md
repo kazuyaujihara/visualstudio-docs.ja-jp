@@ -1,5 +1,5 @@
 ---
-title: DOCUMENTNAMETYPE 列挙型 |Microsoft Docs
+title: DOCUMENTDOCUMENTENUMERATION |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955216"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575875"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE 列挙型
 ドキュメント用に取得する型を記述します。  
@@ -42,11 +42,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |メンバー|説明|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|アプリケーションのツリーに表示される名前を取得します。|  
-|DOCUMENTNAMETYPE_TITLE|ビューアーのタイトル バーに表示される名前を取得します。|  
-|DOCUMENTNAMETYPE_FILE_TAIL|パスを持たないファイル名を取得します。|  
+|DOCUMENTNAMETYPE_APPNODE|アプリケーションツリーに表示される名前を取得します。|  
+|DOCUMENTNAMETYPE_TITLE|ビューアーのタイトルバーに表示される名前を取得します。|  
+|DOCUMENTNAMETYPE_FILE_TAIL|パスを含まないファイル名を取得します。|  
 |DOCUMENTNAMETYPE_URL|ドキュメントの URL を取得します。|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Id の列挙型が付加されますタイトルを取得します。|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|識別用の列挙を追加したタイトルを取得します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

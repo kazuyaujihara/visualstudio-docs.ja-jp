@@ -2,38 +2,38 @@
 title: DSL 定義への拡張機能の追加
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 767973705d004a46644a51ba20ad9292ab80cb39
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654367"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>DSL 定義に拡張機能を追加する
 
-DSL 定義の拡張機能では、ドメイン固有言語 (DSL) の拡張機能のパッケージを作成できます。 Visual Studio Integration Extension (VSIX) に含まれている、DSL の拡張機能は、DSL と同じ方法でユーザーのコンピューターにインストールできます。 追加の機能を動的に有効になっている、実行時に無効になっています。 Dsl を拡張機能を明示的に設計する必要はありません、拡張機能、後で、またはサード パーティが拡張の DSL を変更することがなく設計します。
+DSL 定義の拡張機能を使用すると、ドメイン固有言語 (DSL) に対する拡張機能のパッケージを作成できます。 DSL 拡張機能は、Visual Studio Integration Extension (VSIX) に含まれており、DSL と同じ方法でユーザーのコンピューターにインストールできます。 その他の機能は、実行時に動的に有効にしたり無効にしたりすることができます。 Dsl は拡張用に明示的に設計する必要はなく、拡張 DSL を変更することなく、後で、またはサードパーティが拡張できます。
 
-DSL の拡張機能は、次の機能を含めることができます。
+DSL 拡張には、次の機能を含めることができます。
 
-- モデルとプレゼンテーション要素のプロパティ
+- モデル要素とプレゼンテーション要素のプロパティ
 
-- シェイプとコネクタのデコレーター
+- 図形とコネクタのデコレーター
 
 - クラス、リレーションシップ、図形、およびコネクタ
 
 - 検証制約
 
-- ツールボックス項目とタブ
+- ツールボックスの項目とタブ
 
-拡張の DSL のユーザーは、作成し、追加の機能のインスタンスを含むモデルを保存します。 適切な拡張機能がインストールされている他のユーザーでは、モデルを読み取ることができます。 拡張機能をインストールしていないユーザーは、追加の機能を使用できませんが、更新、追加の機能を失うことがなく、モデルを保存します。
+拡張 DSL のユーザーは、追加機能のインスタンスを含むモデルを作成して保存できます。 モデルは、適切な拡張機能をインストールした他のユーザーが読み取ることができます。 拡張機能をインストールしていないユーザーは、追加機能を使用できませんが、追加の機能を失うことなく、モデルを更新して保存することができます。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [関連するブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -3,17 +3,17 @@ title: "\"混合最小規則\" 規則セット"
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a83a9619084feb3346f5fe421530227a2cca7f9
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 37c72b9526e667216a6791470353ce78132c2a0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585296"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649232"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 
@@ -21,7 +21,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 
 共通言語ランタイムをサポートするC++プロジェクト用に作成したカスタム規則セットに、この規則セットを含めます。
 
-|ルール|説明|
+|規則|説明|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|初期化されていないメモリの使用|
 |[C6011](../code-quality/c6011.md)|Null ポインターの逆参照|
@@ -71,7 +71,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C6518](../code-quality/c6518.md)|書き込み可能でないバッファーでの書き込み可能サイズ|
 |[C6522](../code-quality/c6522.md)|無効なサイズの文字列型|
 |[C6525](../code-quality/c6525.md)|無効なサイズの到達不能な場所の文字列|
-|[C6527](../code-quality/c6527.md)|無効な注釈:' 必要な Srelease ' プロパティは、void 型の値では使用できません|
+|[C6527](../code-quality/c6527.md)|無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません|
 |[C6530](../code-quality/c6530.md)|認識されない書式指定文字列スタイル|
 |[C6540](../code-quality/c6540.md)|この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります|
 |[C6551](../code-quality/c6551.md)|無効なサイズ指定です: 式が解析可能ではありません|
@@ -86,13 +86,13 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28182](../code-quality/c28182.md)|Null ポインターの逆参照 このポインターは、もう 1 つのポインターと同じ Null 値を持ちます。|
 |[C28202](../code-quality/c28202.md)|静的でないメンバーへの参照が正しくありません|
 |[C28203](../code-quality/c28203.md)|クラス メンバーへのあいまいな参照です。|
-|[C28205](../code-quality/c28205.md)|\_無効\_な\_コンテキストで\_の成功または失敗時の\_使用|
+|[C28205](../code-quality/c28205.md)|無効なコンテキストで使用されている \_ \_failure の \_Success \_ または \_On|
 |[C28206](../code-quality/c28206.md)|左側のオペランドは構造体をポイントするため、'-> ' を使用します|
 |[C28207](../code-quality/c28207.md)|左側のオペランドは構造体であるため、'.' を使用します|
 |[C28210](../code-quality/c28210.md)|__on_failure コンテキストの注釈を明示的なプリ コンテキストに含めることはできません|
 |[C28211](../code-quality/c28211.md)|SAL_context には静的コンテキスト名が必要です|
 |[C28212](../code-quality/c28212.md)|注釈にはポインター式が必要です|
-|[C28213](../code-quality/c28213.md)|以前\_の宣言\_を\_変更せずに参照するには、宣言注釈を使用\_する注釈を使用する必要があります。|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釈は、前の宣言を変更せずに参照するために使用する必要があります。|
 |[C28214](../code-quality/c28214.md)|属性パラメーター名は、p1...p9 である必要があります|
 |[C28215](../code-quality/c28215.md)|typefix は、既に typefix のあるパラメーターには適用できません|
 |[C28216](../code-quality/c28216.md)|checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。|
@@ -134,7 +134,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28267](../code-quality/c28267.md)|注釈での構文エラーが、関数の注釈で見つかりました。|
 |[C28272](../code-quality/c28272.md)|検査中の関数とパラメーターに対する注釈に関数宣言との一貫性がありません|
 |[C28273](../code-quality/c28273.md)|関数について、手がかりには関数宣言との一貫性がありません。|
-|[C28275](../code-quality/c28275.md)|マクロ\_\_値へのパラメーターがnullです\_|
+|[C28275](../code-quality/c28275.md)|@No__t_2 \_value \_Macro するパラメーターが null です|
 |[C28279](../code-quality/c28279.md)|シンボルについて、'begin' はありましたが、対応する 'end' がありません|
 |[C28280](../code-quality/c28280.md)|シンボルについて、'end' はありましたが、対応する 'begin' がありません|
 |[C28282](../code-quality/c28282.md)|書式指定文字列は、前提条件の中に存在する必要があります|
@@ -142,7 +142,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28286](../code-quality/c28286.md)|関数について、構文エラーが最後の近くにあります|
 |[C28287](../code-quality/c28287.md)|関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります|
 |[C28288](../code-quality/c28288.md)|関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります|
-|[C28289](../code-quality/c28289.md)|関数の場合:ReadableTo または WritableTo に、パラメーターとして制限仕様がありませんでした|
+|[C28289](../code-quality/c28289.md)|関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした|
 |[C28290](../code-quality/c28290.md)|関数の注釈は、実際のパラメーターの数より多い外部参照を含みます|
 |[C28291](../code-quality/c28291.md)|deref レベル 0 での post null/notnull は、関数に対して意味がありません。|
 |[C28300](../code-quality/c28300.md)|演算子に対する互換性のない型の、式のオペランドです|
@@ -153,7 +153,7 @@ Microsoft Mixed Minimum ルールは、潜在的なセキュリティホール�
 |[C28305](../code-quality/c28305.md)|トークンの解析中にエラーが発生しました。|
 |[C28350](../code-quality/c28350.md)|注釈には、条件付きで適用できない状況の説明が表示されます。|
 |[C28351](../code-quality/c28351.md)|注釈には、動的な値 (変数) が使用できない条件が記述されています。|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|空のファイナライザーを削除します|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
+|[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
+|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
+|[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
+|[CA2231](../code-quality/ca2231.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|

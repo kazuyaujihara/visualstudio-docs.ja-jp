@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461452"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000210"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
 
@@ -104,17 +104,14 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 エラーとして扱う警告を指定するには、次の設定が使用されます。 ビルドが警告を検出したときに、どのような状況でエラーを返すのかを、次のいずれかのオプションを選択して指定します。 詳しくは、「[/warnaserror (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)」をご覧ください。
 
-**None**
+**[なし]** - 警告をエラーとして扱いません。
 
-警告をエラーとして扱いません。
+**[すべて]** - すべての警告をエラーとして扱います。
 
-**[特定の警告]**
+**[特定の警告]** - 指定した警告をエラーとして扱います。 警告番号が複数ある場合は、コンマまたはセミコロンで区切ります。
 
-指定した警告をエラーとして扱います。 警告番号が複数ある場合は、コンマまたはセミコロンで区切ります。
-
-**All**
-
-すべての警告をエラーとして扱います。
+> [!TIP]
+> コード分析の警告がエラーとして扱われないようにするには、「[Code analysis FAQ](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)」(コード分析の FAQ) を参照してください。
 
 ## <a name="output"></a>Output
 

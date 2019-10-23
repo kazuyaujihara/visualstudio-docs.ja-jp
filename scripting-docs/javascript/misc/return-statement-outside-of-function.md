@@ -1,5 +1,5 @@
 ---
-title: "'return' ステートメントが関数の外側で |Microsoft Docs"
+title: "' return ' ステートメントが関数の外にあります |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,34 +14,34 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a90af6de8e2c238e3660111b19d13c1eaf628c9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006407"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573684"
 ---
 # <a name="return-statement-outside-of-function"></a>'return' ステートメントが関数の外にあります。
-使用した、`return`コードのグローバル スコープ内のステートメント。 `return`ステートメントは、関数の本体でのみ表示する必要があります。  
+コードのグローバルスコープで `return` ステートメントを使用しています。 @No__t_0 ステートメントは、関数の本体内でのみ表示されます。  
   
- 持つ関数を呼び出す、`()`演算子は、式です。 すべての式の値であります。`return`関数によって返される値を指定するステートメントを使用します。 一般的な形式です。  
+ @No__t_0 演算子を使用した関数の呼び出しは、式です。 すべての式には値があります。`return` ステートメントは、関数によって返される値を指定するために使用されます。 一般的な形式は次のとおりです。  
   
 ```js
   
 return [ expression ];  
 ```  
   
- ときに、`return`ステートメントを実行すると、*式*が評価され、関数の値として返されます。 式がない場合**未定義**が返されます。  
+ @No__t_0 ステートメントが実行されると、*式*が評価され、関数の値として返されます。 式が存在しない場合は、 **undefined**が返されます。  
   
- 関数の実行を停止するときに、`return`関数本体に残っている他のステートメントがある場合でも、ステートメントを実行します。 このルールの例外は場合、**返す**ステートメント内で発生、**お試しください**ブロックは、対応する**最後に**ブロック、コード、 **最後に**ブロックは、関数が戻る前に実行されます。  
+ 関数本体に他のステートメントが残っている場合でも、関数の実行は、`return` ステートメントの実行時に停止します。 このルールの例外は、 **return**ステートメントが**try**ブロック内に発生し、対応する**finally**ブロックがある場合に、 **finally**ブロック内のコードが関数が返される前に実行されることです。  
   
- 実行することがなく、関数本体の末尾に達したため、関数が返す場合、`return`ステートメントで返される値が、**未定義**値 (つまり、関数の結果より大きな式の一部として使用できません).  
+ 関数が `return` ステートメントを実行せずに関数本体の末尾に到達したためにが返された場合、返される値は**未定義**の値です (つまり、関数の結果を大きな式の一部として使用することはできません)。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 削除、 `return` (グローバル スコープ)、コードのメイン本体ステートメント。  
+- コードの本体 (グローバルスコープ) から `return` ステートメントを削除します。  
   
 ## <a name="see-also"></a>関連項目  
  [return ステートメント](../../javascript/reference/return-statement-javascript.md)   
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
  [caller プロパティ (Function)](../../javascript/reference/caller-property-function-javascript.md)

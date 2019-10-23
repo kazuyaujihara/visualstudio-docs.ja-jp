@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::QueryIsChildNode |Microsoft Docs
+title: 'IDebugApplicationNode100:: QueryIsChildNode |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 959de620e1e556d92a51dcab0062fa6ff055ec46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 761b2800415adbcf298eb96f2231a74195b2291c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446658"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574743"
 ---
 # <a name="idebugapplicationnode100queryischildnode"></a>IDebugApplicationNode100::QueryIsChildNode
-このノードの子ノードのいずれかに指定されたドキュメントが属しているかどうかを判断します。  
+指定されたドキュメントが、このノードの子ノードのいずれかに属しているかどうかを判断します。  
   
 > [!IMPORTANT]
-> [IDebugApplicationNode100 インターフェイス](../../winscript/reference/idebugapplicationnode100-interface.md)PDM v10.0 によって実装およびそれ以降は、します。 activdbg100.h にあります。  
+> [IDebugApplicationNode100 インターフェイス](../../winscript/reference/idebugapplicationnode100-interface.md)は、PDM version 10.0 以降で実装されています。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   

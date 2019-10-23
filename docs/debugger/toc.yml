@@ -44,8 +44,6 @@
       items:
         - name: ブレークポイントの使用
           href: using-breakpoints.md
-        - name: トレースポイントの使用
-          href: using-tracepoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
     - name: データ検査
@@ -93,7 +91,7 @@
         - name: 変数のメモリを表示
           href: memory-windows.md
         - name: デバッグ中に XAML のプロパティを調べます。
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: '[呼び出し履歴]'
       items:
         - name: 呼び出し履歴の表示
@@ -110,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: コード変更を停止する
           href: how-to-stop-code-changes.md
-        - name: エディット コンティニュ (Visual C++)
+        - name: エディット コンティニュ (C++)
           items:
-            - name: Visual C++ のエディット コンティニュ
+            - name: C++ のエディット コンティニュ
               href: edit-and-continue-visual-cpp.md
             - name: サポートされているコード変更 (C++)
               href: supported-code-changes-cpp.md
@@ -133,11 +131,13 @@
         - name: XAML ホット リロード
           items:
             - name: 実行中の XAML コードを記述およびデバッグする
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: XAML ホット リロードのトラブルシューティング
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'F# ではエディット コンティニュはサポートされません。'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: 出力ウィンドウにログを記録する
+      href: using-tracepoints.md
     - name: デバッガー データの表示
       items:
         - name: モジュール
@@ -202,7 +202,7 @@
                   items:
                     - name: C++ デバッグ構成のプロジェクト設定
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: Visual C++ でのデバッグ機能の使用 (/D_DEBUG)
+                    - name: C++ でのデバッグ機能の使用 (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web プロジェクトのプロパティ ページ設定
                   href: property-pages-settings-for-web-projects.md
@@ -234,12 +234,12 @@
               items:
                 - name: C++ オブジェクトのカスタム ビューを作成する
                   href: create-custom-views-of-native-objects.md
-                - name: Visual C++ カスタム ビジュアライザーの互換性
+                - name: C++ カスタム ビジュアライザーの互換性
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: カスタム ビュー (マネージド)
               items:
-                - name: オブジェクトのカスタム ビューを作成する
-                  href: create-custom-views-of-dot-managed-objects.md
+                - name: .managed オブジェクトのカスタム ビューの作成
+                  href: create-custom-views-of-managed-objects.md
                 - name: 表示するものをデバッガーに通知する
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 表示する種類をデバッガーに通知する
@@ -435,7 +435,7 @@
             - name: インストールされているアプリケーション パッケージをデバッグする
               href: debug-installed-app-package.md
             - name: Blend での XAML のデバッグ
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML と CSS
               items:
                 - name: HTML と CSS をデバッグする
@@ -500,7 +500,7 @@
           items:
             - name: ネイティブ コードをデバッグする
               href: debugging-native-code.md
-            - name: 'デバッグの準備:Visual C++ プロジェクト タイプ'
+            - name: 'デバッグの準備:C++ プロジェクトの種類'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: 最適化されたコードをデバッグする
               href: how-to-debug-optimized-code.md

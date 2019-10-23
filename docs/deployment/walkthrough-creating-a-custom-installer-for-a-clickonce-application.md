@@ -1,5 +1,5 @@
 ---
-title: ClickOnce アプリケーションのカスタム インストーラーを作成します。
+title: ClickOnce アプリケーションのカスタムインストーラーを作成する
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,25 +18,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6969490789b4f5747c28f33e91c7d61e97de52e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: b648134b7ad27a8f622ce270dc0f05e0a7e6516c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263456"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637419"
 ---
-# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションのカスタム インストーラーを作成します。
-ClickOnce アプリケーションがに基づいて、 *.exe*ファイルをサイレント モードでインストールされているし、カスタム インストーラーによって更新します。 カスタム インストーラーは、セキュリティとメンテナンス操作のためのカスタム ダイアログ ボックスを含め、インストール中に、カスタムのユーザー エクスペリエンスを実装できます。 インストール操作を実行するカスタム インストーラーを使用して、<xref:System.Deployment.Application.InPlaceHostingManager>クラス。 このチュートリアルでは、ClickOnce アプリケーションをサイレント インストールするカスタム インストーラーを作成する方法を示します。
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションのカスタムインストーラーを作成する
+*.Exe*ファイルに基づく ClickOnce アプリケーションは、カスタムインストーラーによってサイレントインストールおよび更新できます。 カスタムインストーラーは、インストール時にカスタムのユーザーエクスペリエンスを実装できます。たとえば、セキュリティおよびメンテナンス操作のためのカスタムダイアログボックスがあります。 インストール操作を実行するには、カスタムインストーラーで <xref:System.Deployment.Application.InPlaceHostingManager> クラスを使用します。 このチュートリアルでは、ClickOnce アプリケーションをサイレントインストールするカスタムインストーラーを作成する方法について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
-### <a name="to-create-a-custom-clickonce-application-installer"></a>カスタム ClickOnce アプリケーション インストーラーを作成するには
+### <a name="to-create-a-custom-clickonce-application-installer"></a>カスタム ClickOnce アプリケーションインストーラーを作成するには
 
-1. ClickOnce アプリケーションでは、System.Deployment および System.Windows.Forms への参照を追加します。
+1. ClickOnce アプリケーションで、system.servicemodel および system.string への参照を追加します。
 
 2. アプリケーションに新しいクラスを追加し、任意の名前を指定します。 このチュートリアルでは、名前 `MyInstaller` を使用します。
 
-3. 次の追加`Imports`または`using`ステートメントを新しいクラスの先頭にします。
+3. 新しいクラスの先頭に、次の `Imports` または `using` ディレクティブを追加します。
 
     ```vb
     Imports System.Deployment.Application
@@ -50,15 +50,15 @@ ClickOnce アプリケーションがに基づいて、 *.exe*ファイルをサ
 
 4. 次のメソッドをクラスに追加します。
 
-     これらのメソッドを呼び出す<xref:System.Deployment.Application.InPlaceHostingManager>配置マニフェストをダウンロードする方法はインストール、ダウンロードして、ClickOnce キャッシュにアプリケーションをインストールするアクセス許可をユーザーに確認、適切なアクセス許可をアサートします。 カスタム インストーラーは、ClickOnce アプリケーションが事前に信頼されている、または、信頼の決定を遅らせることができますを指定できます、<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>メソッドの呼び出し。 このコードは、あらかじめアプリケーションを信頼します。
+     これらのメソッドは <xref:System.Deployment.Application.InPlaceHostingManager> メソッドを呼び出して、配置マニフェストをダウンロードし、適切なアクセス許可をアサートして、ユーザーにインストールのアクセス許可を要求してから、アプリケーションを ClickOnce キャッシュにダウンロードしてインストールします。 カスタムインストーラーでは、ClickOnce アプリケーションが事前に信頼されていることを指定できます。また、<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> メソッド呼び出しに対して信頼の決定を延期することもできます。 このコードは、アプリケーションを事前に信頼します。
 
     > [!NOTE]
-    > 事前に信頼する割り当てられたアクセス許可は、カスタム インストーラーのコードのアクセス許可を超えることはできません。
+    > 事前信頼によって割り当てられたアクセス許可は、カスタムインストーラーコードのアクセス許可を超えることはできません。
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5. コードからのインストールには、呼び出し、`InstallApplication`メソッド。 たとえば、クラスの名前を付けた`MyInstaller`、呼び出すことができます`InstallApplication`次のようにします。
+5. コードからインストールを試みるには、`InstallApplication` メソッドを呼び出します。 たとえば、クラス `MyInstaller` という名前を付けた場合は、次のように `InstallApplication` を呼び出すことができます。
 
     ```vb
     Dim installer As New MyInstaller()
@@ -72,9 +72,9 @@ ClickOnce アプリケーションがに基づいて、 *.exe*ファイルをサ
     MessageBox.Show("Installer object created.");
     ```
 
-## <a name="next-steps"></a>次の手順
- ClickOnce アプリケーションでは、更新プロセス中に表示するカスタム ユーザー インターフェイスを含む、カスタムの更新ロジックも追加できます。 詳細については、「 <xref:System.Deployment.Application.UpdateCheckInfo> 」を参照してください。 ClickOnce アプリケーションを非表示することも標準的なスタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを使用して、`<customUX>`要素。 詳細については、次を参照してください。 [ \<entryPoint > 要素](../deployment/entrypoint-element-clickonce-application.md)と<xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>します。
+## <a name="next-steps"></a>次のステップ
+ ClickOnce アプリケーションでは、更新プロセス中に表示するカスタムユーザーインターフェイスを含む、カスタムの更新ロジックを追加することもできます。 詳細については、「<xref:System.Deployment.Application.UpdateCheckInfo>」を参照してください。 ClickOnce アプリケーションでは、`<customUX>` 要素を使用して、[スタート] メニューの標準エントリ、ショートカット、および [プログラムの追加と削除] エントリを抑制することもできます。 詳細については、「 [\<entryPoint > 要素](../deployment/entrypoint-element-clickonce-application.md)」と「<xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
-- [\<entryPoint > 要素](../deployment/entrypoint-element-clickonce-application.md)
+- [> 要素の \<entryPoint](../deployment/entrypoint-element-clickonce-application.md)

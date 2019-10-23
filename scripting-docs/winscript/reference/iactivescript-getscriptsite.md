@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite |Microsoft Docs
+title: 'IActiveScript:: GetScriptSite |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57c4282b7ec77eb4af2ffa983479ae77388e1c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 567c7b5c1ead5388e6ec9c67d6ab6f9f580adf20
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935772"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575743"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-Windows スクリプト エンジンに関連付けられているサイト オブジェクトを取得します。  
+Windows スクリプトエンジンに関連付けられているサイトオブジェクトを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetScriptSite(
   
 #### <a name="parameters"></a>パラメーター  
  `iid`  
- [in]要求されたインターフェイスの識別子。  
+ から要求されたインターフェイスの識別子。  
   
  `ppvSiteObject`  
- [out]ホストのサイト オブジェクトへのインターフェイス ポインターを受け取る場所のアドレス。  
+ 入出力ホストのサイトオブジェクトへのインターフェイスポインターを受け取る場所のアドレス。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -50,9 +50,9 @@ HRESULT GetScriptSite(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引数が無効です。|  
-|`E_NOINTERFACE`|指定したインターフェイスがサポートされていません。|  
+|`E_NOINTERFACE`|指定されたインターフェイスはサポートされていません。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`S_FALSE`|サイトは設定されません。`ppvSiteObject`にパラメーターが設定されている`NULL`します。|  
+|`S_FALSE`|サイトが設定されていません。`ppvSiteObject` パラメーターが `NULL` に設定されています。|  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

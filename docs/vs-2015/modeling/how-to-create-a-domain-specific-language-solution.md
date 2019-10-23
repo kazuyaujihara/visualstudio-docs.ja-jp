@@ -1,5 +1,5 @@
 ---
-title: '方法: ドメイン固有言語ソリューションの作成 |Microsoft Docs'
+title: '方法: ドメイン固有言語ソリューションを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,125 +12,122 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: e585b63b-34d2-405a-8d81-39ea22317975
 caps.latest.revision: 43
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eae08b771f3bd5748485f9029f7f12725df6f28f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698134"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671674"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ドメイン固有言語 (DSL) を使用して作成する特殊な[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ソリューション。  
-  
-## <a name="prerequisites"></a>必須コンポーネント  
- この手順を開始する前に、これらのコンポーネントをまずインストールする必要があります。  
-  
-|||  
-|-|-|  
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
-  
-## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成します。  
-  
-#### <a name="to-create-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成するには  
-  
-1. DSL のウィザードを起動します。  
-  
-   1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
-  
-   2. **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
-  
-   3. **プロジェクトの種類**、展開、**その他のプロジェクトの種類**ノードをクリックします**Extensibility**します。  
-  
-   4. クリックして**ドメイン固有言語デザイナー**します。  
-  
-   5. **名前**ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックします。  
-  
-       **ドメイン固有言語デザイナー ウィザード**が表示されます。  
-  
+ドメイン固有言語 (DSL) は、特殊な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを使用して作成されます。
+
+## <a name="prerequisites"></a>必要条件
+ この手順を開始する前に、次のコンポーネントをインストールする必要があります。
+
+|||
+|-|-|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+
+## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
+
+#### <a name="to-create-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成するには
+
+1. DSL ウィザードを起動します。
+
+   1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+
+   2. **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+
+   3. **[プロジェクトの種類]** の **[その他のプロジェクトの種類]** ノードを展開し、 **[機能拡張]** をクリックします。
+
+   4. **[ドメイン固有言語デザイナー]** をクリックします。
+
+   5. **[名前]** ボックスに、ソリューションの名前を入力します。 **[OK]** をクリックします。
+
+       **ドメイン固有言語デザイナーウィザード**が表示されます。
+
       > [!NOTE]
-      > 可能であれば、コードを生成するために使用可能性がありますので、入力した名は有効な Visual c# の識別子にする必要があります。  
-  
-      ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
-  
-2. DSL テンプレートを選択します。  
-  
-    **ドメイン固有言語のオプションの選択**などソリューション テンプレートのいずれかの選択 ページで、**最小言語**します。 DSL を作成する次のようなテンプレートを選択します。  
-  
-    ソリューション テンプレートの詳細については、次を参照してください。[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)します。  
-  
-3. ファイル名拡張子を入力、**ファイル拡張子**ページ。 自分のコンピューターで一意である必要がありする任意のコンピューターでは、DSL をインストールします。 メッセージが表示する必要があります**アプリケーションまたは Visual Studio エディターにこの拡張機能使用しない**します。  
-  
-   - 完全にインストールされていない以前の実験的な Dsl で、ファイル名拡張子を使用した場合ことができますをオフにすることを使用して、**実験用インスタンスをリセット**では、ツール、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK メニュー。  
-  
-   - もう 1 つ場合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能は完全にコンピューターにインストールされたをアンインストールすることを検討してください。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
-  
-4. 検査、および必要に応じて調整、ウィザードの残りのページのフィールド。 設定に満足したら、クリックして**完了**します。 設定の詳細については、次を参照してください。 [DSL デザイナーのウィザード ページ](#settings)します。  
-  
-    ウィザードの名前は 2 つのプロジェクトを含むソリューションを作成します**Dsl**と**DslPackage**します。  
-  
+      > コードの生成に使用される可能性があるため、 C#入力する名前は有効なビジュアル識別子である必要があります。
+
+      ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+
+2. DSL テンプレートを選択します。
+
+    **[ドメイン固有言語オプションの選択]** ページで、 **[最小言語]** などのソリューションテンプレートの1つを選択します。 作成する DSL に似たテンプレートを選択します。
+
+    ソリューションテンプレートの詳細については、「[ドメイン固有言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
+
+3. **[ファイル拡張子]** ページでファイル名拡張子を入力します。 コンピューターと DSL をインストールするすべてのコンピューターで一意である必要があります。 "**この拡張機能を使用しているアプリケーションまたは Visual Studio エディターはありません**" というメッセージが表示されます。
+
+   - 以前の実験的な Dsl で完全にインストールされていないファイル名拡張子を使用していた場合は、 **[実験用インスタンスのリセット]** ツールを使用してオフにすることができます。これは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK メニューにあります。
+
+   - このファイル拡張子を使用する別の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能がコンピューターに完全にインストールされている場合は、アンインストールすることを検討してください。 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
+
+4. ウィザードの残りのページにあるフィールドを検査し、必要に応じて調整します。 設定に問題がなければ、 **[完了]** をクリックします。 設定の詳細については、「 [DSL デザイナーウィザードのページ](#settings)」を参照してください。
+
+    ウィザードによって、 **Dsl**および**dslpackage**という名前の2つのプロジェクトを持つソリューションが作成されます。
+
    > [!NOTE]
-   > 信頼されていないソースからのテキスト テンプレートを実行するには、をクリックしないを通知するメッセージが表示された場合**OK**します。 このメッセージが再び表示されるように設定できます。  
-  
-## <a name="settings"></a> DSL デザイナーのウィザード ページ  
- 既定値から変更されていないフィールドのいくつかのままにすることができます。 ただし、ファイル拡張子のフィールドを設定することを確認します。  
-  
-### <a name="solution-settings-page"></a>ソリューションの設定 ページ  
- **どのテンプレート、ドメイン固有言語を基になるか?**  
- DSL を作成する次のようなテンプレートを選択します。 別のテンプレートは、便利な開始ポイントを提供します。 ソリューション テンプレートを選択すると、ウィザードには、説明が表示されます。 ソリューション テンプレートの詳細については、次を参照してください。[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)します。  
-  
- **ドメイン固有言語の名前にしますか。**  
- 既定値は、ソリューション名です。 コードは、この値から生成されます。 C# クラス名として有効な場合があります。  
-  
-### <a name="file-extension-page"></a>ファイル拡張子 ページ  
- **どのような拡張機能がモデル ファイルが使用しますか。**  
- 新しいファイル拡張子を入力します。  
-  
- このファイルの拡張機能が既に登録されていないこと、このコンピューターで使用する次のように確認します。  
-  
- 下を見て**他のツールやアプリケーションは、この拡張機能を処理するために登録されている**します。 メッセージが表示された場合**アプリケーションまたは Visual Studio エディターにこの拡張機能使用しない**、このファイルの拡張機能を使用することができます。  
-  
- ツールまたはパッケージの一覧を表示する場合は、次のいずれかを実行する必要があります。  
-  
-- 別のファイル拡張子を入力します。  
-  
-     \- または -  
-  
-- リセット、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]実験用インスタンス。 これは、すべてが以前にビルドされた Dsl の登録解除します。 **開始** メニューのをクリックして**すべてのプログラム**、 **Microsoft Visual Studio 2010 SDK**、**ツール**、し**リセット、Microsoft Visual Studio 2010 実験用インスタンス**します。 もう一度使用するその他の任意の Dsl を再構築することができます。  
-  
-     \- または -  
-  
-- 場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]このファイルの拡張機能を使用する拡張機能がコンピューターに完全にインストールされて、それをアンインストールします。 **ツール** メニューをクリックして **拡張機能マネージャー** をクリックします。  
-  
-### <a name="product-settings-page"></a>製品の設定 ページ  
- **新しいドメイン固有言語が含まれている製品の名前は何ですか。**  
- 既定値は、DSL の名前です。  
-  
- この値は、このファイル拡張子を持つファイルを記述する、Windows エクスプ ローラー (またはファイル エクスプ ローラー) で使用されます。  
-  
- **製品が属している会社の名前は何ですか。**  
- 会社名。  
-  
- この値は DSL パッケージの AssemblyInfo プロパティに組み込まれます。  
-  
- **このソリューションでプロジェクトのルート名前空間とは何ですか。**  
- これは、会社から構成される名前と製品名を既定値です。  
-  
-### <a name="signing-page"></a>[署名] ページ  
- **厳密な名前キー ファイルを作成します。**  
- 既定のオプションは、DSL のアセンブリの署名に新しいキーを作成します。  
-  
- **既存の厳密な名前キーを使用します。**  
- 別のアセンブリと DSL を統合する場合は、このオプションを使用します。  
-  
- 厳密な名前付けの詳細については、次を参照してください。[の作成と using strong-named Assemblies](http://go.microsoft.com/fwlink/?LinkId=186073)します。  
-  
-## <a name="see-also"></a>関連項目  
- [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+   > 信頼されていないソースからテキストテンプレートを実行しないことを通知するメッセージが表示された場合は、[ **OK]** をクリックします。 このメッセージを再度表示しないように設定できます。
+
+## <a name="settings"></a>DSL デザイナーウィザードのページ
+ 一部のフィールドは、既定値のままにしておくことができます。 ただし、必ず [ファイル拡張子] フィールドを設定してください。
+
+### <a name="solution-settings-page"></a>[ソリューションの設定] ページ
+ **ドメイン固有言語の基になるテンプレートを選択してください。**
+作成する DSL に似たテンプレートを選択します。 さまざまなテンプレートは、便利な開始点を提供します。 ソリューションテンプレートを選択すると、ウィザードに説明が表示されます。 ソリューションテンプレートの詳細については、「[ドメイン固有言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
+
+ **ドメイン固有言語に名前を付けるにはどうすればよいですか?**
+既定では、ソリューション名になります。 この値からコードが生成されます。 これは、 C#クラス名として有効である必要があります。
+
+### <a name="file-extension-page"></a>[ファイル拡張子] ページ
+ **モデルファイルで使用する拡張機能**
+新しいファイル拡張子を入力します。
+
+ 次のように、このファイル拡張子がこのコンピューターで使用するように登録されていないことを確認してください。
+
+ **この拡張機能を処理するために登録されている [その他のツールとアプリケーション**] を確認します。 "**アプリケーションまたは Visual Studio エディターがこの拡張機能を使用していません**" というメッセージが表示された場合は、このファイル拡張子を使用できます。
+
+ ツールまたはパッケージの一覧が表示された場合は、次のいずれかの操作を行う必要があります。
+
+- 別のファイル拡張子を入力してください。
+
+     \- または
+
+- @No__t_0 実験用インスタンスをリセットします。 これにより、以前に作成したすべての Dsl が登録解除されます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[2010 SDK]** 、 **[ツール]** の順に Microsoft Visual Studio、 **Microsoft Visual Studio 2010 の実験用インスタンスをリセット**します。 もう一度使用する Dsl を再構築できます。
+
+     \- または
+
+- このファイル拡張子を使用する [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能がコンピューターに完全にインストールされている場合は、アンインストールします。 **[ツール]** メニューの **[拡張機能マネージャー]** をクリックします。
+
+### <a name="product-settings-page"></a>[製品の設定] ページ
+ **新しいドメイン固有言語が属する製品の名前は何ですか?**
+既定値は DSL 名です。
+
+ この値は、Windows エクスプローラー (またはファイルエクスプローラー) で、このファイル拡張子を持つファイルを記述するために使用されます。
+
+ **製品が属している会社の名前は何ですか?**
+会社名。
+
+ この値は、DSL パッケージの AssemblyInfo プロパティに組み込まれています。
+
+ **このソリューションのプロジェクトのルート名前空間は何ですか?**
+既定では、会社名と製品名で構成される名前が使用されます。
+
+### <a name="signing-page"></a>[署名] ページ
+ **厳密な名前のキーファイルを作成する**既定のオプションでは、DSL アセンブリに署名するための新しいキーが作成されます。
+
+ **既存の厳密な名前のキーを使用する**DSL を別のアセンブリと統合する場合は、このオプションを使用します。
+
+ 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](http://go.microsoft.com/fwlink/?LinkId=186073)」を参照してください。
+
+## <a name="see-also"></a>参照
+ [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)[ドメイン固有言語ツール用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

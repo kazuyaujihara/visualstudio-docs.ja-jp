@@ -1,5 +1,5 @@
 ---
-title: CA1062:パブリック メソッドの引数の検証 |Microsoft Docs
+title: 'CA1062: パブリックメソッドの引数を検証する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,58 +13,58 @@ helpviewer_keywords:
 - ValidateArgumentsOfPublicMethods
 ms.assetid: db1f69ca-68f7-477e-94f3-d135cc5dfcbc
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 13ea687ea9ca68693af7e2aa5c22881a36207d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50044b51a3e576ff7d1c11b19b2f498f99b63019
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200445"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663651"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:パブリック メソッドの引数の検証
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: パブリック メソッドの引数の検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- その引数は、かどうかを確認せず、外部から参照できるメソッドを逆参照引数のいずれかの`null`(`Nothing` Visual Basic で)。
+ 外部から参照可能なメソッドは、その引数が `null` (Visual Basic の `Nothing`) かどうかを検証せずに、参照引数の1つを逆参照します。
 
 ## <a name="rule-description"></a>規則の説明
- 外部から参照可能なメソッドに渡されるすべての参照引数を照合する`null`します。 必要に応じて、スロー、<xref:System.ArgumentNullException>ときに、引数が`null`。
+ 外部から参照できるメソッドに渡されるすべての参照引数は、`null` に対してチェックする必要があります。 必要に応じて、引数が `null` 場合に <xref:System.ArgumentNullException> をスローします。
 
- メソッドは、public または protected に宣言されているために、不明なアセンブリから呼び出すことが、メソッドのすべてのパラメーターを検証する必要があります。 内部メソッドを作成および適用する必要がある既知のアセンブリによってのみ呼び出されるメソッドの場合、<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>メソッドを含むアセンブリへの属性します。
+ パブリックまたは protected として宣言されているために不明なアセンブリからメソッドを呼び出すことができる場合は、メソッドのすべてのパラメーターを検証する必要があります。 メソッドが既知のアセンブリによってのみ呼び出されるように設計されている場合は、メソッドを内部にし、メソッドを含むアセンブリに <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性を適用する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、各参照引数を検証`null`です。
+ この規則違反を修正するには、各参照引数を `null` に対して検証します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 関数のもう 1 つのメソッド呼び出しによって逆参照されるパラメーターが検証済みであることを確認する場合は、この規則による警告を抑制できます。
+ 逆参照パラメーターが関数内の別のメソッド呼び出しによって検証されていることが確実である場合は、この規則からの警告を非表示にすることができます。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反するメソッドと、規則に適合するメソッドを示します。
+ 次の例は、規則に違反するメソッドと、規則を満たすメソッドを示しています。
 
  [!code-csharp[FxCop.Design.ValidateArguments#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/fxcop.design.validatearguments.copyctors.cs#1)]
  [!code-csharp[FxCop.Design.ValidateArguments#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/FxCop.Design.ValidateArguments.cs#1)]
  [!code-vb[FxCop.Design.ValidateArguments#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#1)]
 
 ## <a name="example"></a>例
- [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]、このルールでは、パラメーターが検証を行う別のメソッドに渡されることは検出されません。
+ @No__t_0 では、このルールは、検証を行う別のメソッドにパラメーターが渡されていることを検出しません。
 
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/fxcop.design.validatearguments.copyctors.cs#2)]
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/FxCop.Design.ValidateArguments.cs#2)]
  [!code-vb[FxCop.Design.ValidateArguments#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#2)]
 
 ## <a name="example"></a>例
- コピー コンス トラクターがフィールドまたは参照オブジェクトのプロパティを設定するには、ca 1062 ルール違反もことができます。 コピーされたオブジェクトのコピー コンス トラクターに渡される可能性があるために、違反が発生する`null`(`Nothing` Visual Basic で)。 違反を解決するには、static (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
+ フィールドまたは参照オブジェクトであるプロパティを設定するコピーコンストラクターも、CA1062 の規則に違反する可能性があります。 コピーコンストラクターに渡されたコピーされたオブジェクトが `null` (Visual Basic で `Nothing`) である可能性があるため、違反が発生します。 違反を解決するには、静的 (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
 
- 次の`Person`クラスなど、`other`オブジェクトに渡される、`Person`コピー コンス トラクターがあります`null`します。
+ 次の `Person` クラスの例では、`Person` コピーコンストラクターに渡される `other` オブジェクトは `null` である可能性があります。
 
 ```
 
@@ -89,7 +89,7 @@ public class Person
 ```
 
 ## <a name="example"></a>例
- 次のように改訂された`Person`など、`other`コピー コンス トラクターに渡されるオブジェクトが最初にチェックで null を`PassThroughNonNull`メソッド。
+ 次の変更後の `Person` の例では、コピーコンストラクターに渡された `other` オブジェクトが、最初に `PassThroughNonNull` メソッドで null であるかどうかがチェックされます。
 
 ```
 public class Person

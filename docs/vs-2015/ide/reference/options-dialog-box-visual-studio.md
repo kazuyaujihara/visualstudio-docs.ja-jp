@@ -13,15 +13,15 @@ helpviewer_keywords:
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bc659641e64bde9da4f1e05abf285fbdec1877e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed637943d7a849357338593ffc684e4f45c09a30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674840"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662445"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[オプション] ダイアログ ボックス (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "65674840"
  **[オプション]** ダイアログ ボックスで [OK] をクリックすると、すべてのページのすべての設定が保存されます。 任意のページで [キャンセル] をクリックすると、他の **[オプション]** ページで行ったものを含め、すべての変更要求がキャンセルされます。 [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) での変更など、オプション設定に加えた一部の変更は、Visual Studio を閉じて再度開いたときに初めて有効になります。
 
 ### <a name="show-all-settings"></a>すべての設定を表示
- **[すべての設定を表示]** のオンまたはオフの操作は、**[OK]** をクリックしていなくても、**[オプション]** ダイアログ ボックスで行ったすべての変更に適用されます。
+ **[すべての設定を表示]** のオンまたはオフの操作は、 **[OK]** をクリックしていなくても、 **[オプション]** ダイアログ ボックスで行ったすべての変更に適用されます。
 
 ## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)

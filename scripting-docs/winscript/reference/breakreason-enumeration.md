@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955409"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572625"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON 列挙型
 中断の原因を示します。  
@@ -47,13 +47,13 @@ typedef enum tagBREAKREASON {
 |メンバー|説明|  
 |------------|-----------------|  
 |BREAKREASON_STEP|言語エンジンは、ステップ実行モードです。|  
-|BREAKREASON_BREAKPOINT|言語エンジンには、明示的なブレークポイントが発生しました。|  
-|BREAKREASON_DEBUGGER_BLOCK|言語エンジンには、別のスレッドでデバッガーのブロックが発生しました。|  
-|BREAKREASON_HOST_INITIATED|ホストでは、中断を要求しました。|  
-|BREAKREASON_LANGUAGE_INITIATED|言語エンジンでは、中断を要求しました。|  
-|BREAKREASON_DEBUGGER_HALT|デバッガー IDE では、中断を要求しました。|  
-|BREAKREASON_ERROR|実行エラーには、中断が発生します。|  
-|BREAKREASON_JIT|JIT デバッグ スタートアップによって発生します。|  
+|BREAKREASON_BREAKPOINT|言語エンジンで、明示的なブレークポイントが検出されました。|  
+|BREAKREASON_DEBUGGER_BLOCK|言語エンジンで、別のスレッドでデバッガーブロックが検出されました。|  
+|BREAKREASON_HOST_INITIATED|ホストが中断を要求しました。|  
+|BREAKREASON_LANGUAGE_INITIATED|言語エンジンは中断を要求しました。|  
+|BREAKREASON_DEBUGGER_HALT|デバッガー IDE が中断を要求しました。|  
+|BREAKREASON_ERROR|中断の原因となった実行エラーが発生しました。|  
+|BREAKREASON_JIT|JIT デバッグの開始によって発生しました。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

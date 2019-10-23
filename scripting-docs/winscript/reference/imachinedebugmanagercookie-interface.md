@@ -13,30 +13,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b39c286f389c99187b0f3250fc68af92ff5dcc8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977684"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573886"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie インターフェイス
-ような`IMachineDebugManager`、インターフェイス、`IMachineDebugManagerCookie`インターフェイスはデバッグ cookie をサポートしています。  
+@No__t_0 インターフェイスと同様に、`IMachineDebugManagerCookie` インターフェイスはデバッグ cookie をサポートしています。  
   
- このインターフェイス (と共に、`IDebugCookie`インターフェイス)、デバッガーの追跡のスクリプトを必要とせずにスクリプト デバッガー プロセスで実行するスクリプトを許可します。  
+ このインターフェイス (`IDebugCookie` インターフェイス) を使用すると、スクリプトをスクリプトデバッガープロセスで実行できます。デバッガーでそれらのスクリプトを追跡する必要はありません。  
   
- スクリプト デバッガーを呼び出して、`IDebugCookie::SetDebugCookie`メソッド プロセス デバッグ マネージャー (PDM)。 次に、PDM 送信を追加または削除から、マシン デバッグ マネージャー (MDM)、またはスクリプト アプリケーションのすべての要求と共にこの cookie のメソッドを使用して、`IMachineDebugManagerCookie`インターフェイス。 MDM の変更は、そのクッキーのあるものを除くすべてのデバッガーを通知します。  
+ スクリプトデバッガーは、プロセスデバッグマネージャー (PDM) で `IDebugCookie::SetDebugCookie` メソッドを呼び出します。 次に、このクッキーは、`IMachineDebugManagerCookie` インターフェイスのメソッドを使用して、マシンデバッグマネージャー (MDM) との間でスクリプトアプリケーションを追加または削除するための要求と共に、この cookie を送信します。 その後、MDM は、その cookie を持つものを除き、変更のすべてのデバッガーに通知します。  
   
- 継承されたメソッドだけでなく`IUnknown`、`IMachineDebugManagerCookie`インターフェイスは、次のメソッドを公開します。  
+ @No__t_1 インターフェイスは、`IUnknown` から継承されたメソッドに加えて、次のメソッドを公開します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|実行中にアプリケーションを追加します。 アプリケーションの一覧。|  
-|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|現在の実行中のアプリケーション一覧の列挙子を返します。|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|実行中のアプリケーションを削除します。 アプリケーションの一覧。|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|実行中のアプリケーションの一覧にアプリケーションを追加します。|  
+|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|実行中のアプリケーションの現在の一覧の列挙子を返します。|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|実行中のアプリケーションの一覧からアプリケーションを削除します。|  
   
 ## <a name="see-also"></a>関連項目  
- [IMachineDebugManager インターフェイス](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [Imachinedebugmanager インターフェイス](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IDebugCookie インターフェイス](../../winscript/reference/idebugcookie-interface.md)

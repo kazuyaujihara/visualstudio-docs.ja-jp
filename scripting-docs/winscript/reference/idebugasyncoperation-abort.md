@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Abort |Microsoft Docs
+title: 'IDebugAsyncOperation:: Abort |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be696f852f7038316141415494920c43580738c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9ca6c5e1498229c84dc28a13cda2cce77b58a4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822100"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573302"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 操作をキャンセルします。  
@@ -34,7 +34,7 @@ HRESULT Abort();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -42,12 +42,12 @@ HRESULT Abort();
 |[値]|説明|  
 |-----------|-----------------|  
 |S_OK|メソッドが成功しました。|  
-|E_NOTIMPL|操作をキャンセルできません。|  
+|E_NOTIMPL|操作を取り消すことはできません。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは通常、応答していない操作をキャンセルするデバッガー スレッド内から呼び出されます。 このメソッドにより、`InProgressAbort`メソッドを`IDebugSyncOperation`呼び出されるオブジェクト。  
+ このメソッドは、通常、応答しない操作をキャンセルするために、デバッガースレッド内から呼び出されます。 このメソッドにより、`IDebugSyncOperation` オブジェクトの `InProgressAbort` メソッドが呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
+ [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)    
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

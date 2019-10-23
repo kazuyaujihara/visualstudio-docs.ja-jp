@@ -13,32 +13,32 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13bf20f9e1e642b948ddaa72ae9dca7bb457fba2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ab73ddb1bd924035cb6ba61d26e65f16f53eed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786775"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577517"
 ---
 # <a name="iscriptnode-interface"></a>IScriptNode インターフェイス
-実装するオブジェクト、`IScriptNode`インターフェイスが Web ページを表します。  
+@No__t_0 インターフェイスを実装するオブジェクトは、Web ページを表します。  
   
- 継承されたメソッドだけでなく`IUnknown`、`IScriptNode`インターフェイスは、次のメソッドを公開します。  
+ @No__t_1 インターフェイスは、`IUnknown` から継承されたメソッドに加えて、次のメソッドを公開します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|オブジェクトがまだアクティブかどうかを示します。|  
-|[IScriptNode::CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|子インスタンスを追加します。`IScriptEntry`します。|  
-|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|子インスタンスとしてスクリプトレットを追加、`IScriptNode`します。|  
-|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|オブジェクト ツリーを削除します。|  
-|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|ノードで指定したインデックス位置にある子を返します。|  
-|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|スクリプトレットを関連付けるホスト オブジェクトに使用するアプリケーション定義の値を返します。|  
-|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|親の子の一覧で、オブジェクトのインデックスを返します。|  
-|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|スクリプトの現在のノードで使用されるスクリプト言語を返します。|  
-|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|子ノードの数を返します、`IScriptNode`オブジェクト。|  
-|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|返します、`IScriptNode`オブジェクトの親であるオブジェクト。|  
+|[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|オブジェクトがまだアクティブであるかどうかを示します。|  
+|[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|@No__t_0 の子インスタンスを追加します。|  
+|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|@No__t_0 の子インスタンスとしてスクリプトレットを追加します。|  
+|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|オブジェクトツリーを削除します。|  
+|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|ノード内の指定したインデックス位置にある子を返します。|  
+|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|スクリプトレットをホストオブジェクトに関連付けるために使用される、アプリケーション定義の値を返します。|  
+|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|親の子リスト内のオブジェクトのインデックスを返します。|  
+|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|現在のスクリプトノードによって使用されているスクリプト言語を返します。|  
+|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|@No__t_0 オブジェクトの子ノードの数を返します。|  
+|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|オブジェクトの親である `IScriptNode` オブジェクトを返します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト作成インターフェイス](../../winscript/reference/active-script-authoring-interfaces.md)

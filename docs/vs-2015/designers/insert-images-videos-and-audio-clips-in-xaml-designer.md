@@ -6,33 +6,33 @@ ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db6225f8bf8055edb0fb5b6f3cdea98de79b4bcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cceb3d04c2162b690bd423cf10dbd6dfd7f0a9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159403"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664353"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>XAML デザイナーでイメージ、ビデオ、およびオーディオ クリップを挿入する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-イメージ、ビデオ、オーディオ クリップは、アプリに視覚的な効果を加えます。  
-  
- ![フィットするようにサイズを調整されたイメージ](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")  
-  
- イメージ、ビデオ、またはオーディオ クリップを使用するには、それをプロジェクトに追加し、その後 **[アセット]** パネルから **アートボード**にドラッグ アンド ドロップします。  
-  
- 次のビデオは、アプリにイメージ、ビデオ、オーディオ クリップを挿入する際に役立ちます。  
-  
-|タスク|短いビデオを見る|  
-|----------|-------------------------|  
-|Adobe FXG ファイルをインポートする|![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend での FXG インポート プレビュー](http://www.bing.com/videos/search?q=blend%20import%20FXG%20file&qs=n&form=QBVR&pq=blend%20import%20fxg%20file&sc=0-13&sp=-1&sk=#view=detail&mid=3C733B0B50A43166C55C3C733B0B50A43166C55C)|  
-|Adobe Illustrator ファイルのインポート|![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Adobe Illustrator (ai) ファイルを Blend にインポートする](http://www.bing.com/videos/search?q=add%20illustrator%20file%20to%20blend&qs=n&form=QBVR&pq=add%20illustrator%20file%20to%20blend&sc=0-0&sp=-1&sk=#view=detail&mid=FDB1B25D4DEB69D24515FDB1B25D4DEB69D24515)|  
-|Adobe Photoshop ファイルのインポート|![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Photoshop ファイルを Blend にインポートする](https://www.youtube.com/watch?v=ekYyhirFKs0)|  
-|オーディオ クリップを挿入する|![インストールされている機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [オーディオ クリップを追加する](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|  
-  
-## <a name="see-also"></a>関連項目
+イメージ、ビデオ、オーディオ クリップは、アプリに視覚的な効果を加えます。
+
+ ![画像のサイズを調整する](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
+
+ イメージ、ビデオ、またはオーディオ クリップを使用するには、それをプロジェクトに追加し、その後 **[アセット]** パネルから **アートボード**にドラッグ アンド ドロップします。
+
+ 次のビデオは、アプリにイメージ、ビデオ、オーディオ クリップを挿入する際に役立ちます。
+
+|タスク|短いビデオを見る|
+|----------|-------------------------|
+|Adobe FXG ファイルをインポートする|![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend での FXG インポート プレビュー](http://www.bing.com/videos/search?q=blend%20import%20FXG%20file&qs=n&form=QBVR&pq=blend%20import%20fxg%20file&sc=0-13&sp=-1&sk=#view=detail&mid=3C733B0B50A43166C55C3C733B0B50A43166C55C)|
+|Adobe Illustrator ファイルのインポート|![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Adobe Illustrator (ai) ファイルを Blend にインポートする](http://www.bing.com/videos/search?q=add%20illustrator%20file%20to%20blend&qs=n&form=QBVR&pq=add%20illustrator%20file%20to%20blend&sc=0-0&sp=-1&sk=#view=detail&mid=FDB1B25D4DEB69D24515FDB1B25D4DEB69D24515)|
+|Adobe Photoshop ファイルのインポート|![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Photoshop ファイルを Blend にインポートする](https://www.youtube.com/watch?v=ekYyhirFKs0)|
+|オーディオ クリップを挿入する|![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [オーディオ クリップを追加する](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|
+
+## <a name="see-also"></a>参照
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

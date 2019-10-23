@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNameSpaceParent |Microsoft Docs
+title: 'IDispatchEx:: GetNameSpaceParent |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1abe2a880e12d6a4a3c1dfda32d30722525858f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2f47fab9831441e72a4ef3d4332a41c08e6a108
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000822"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574079"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
-名前空間の親オブジェクトのインターフェイスを取得します。  
+オブジェクトの名前空間の親のインターフェイスを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,10 +37,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>パラメーター  
  `ppunk`  
- アドレス、`IUnknown`名前空間の親のインターフェイスを受け取るインターフェイス ポインター。  
+ 名前空間の親のインターフェイスを受け取る `IUnknown` インターフェイスポインターのアドレス。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または OLE 定義のエラー コードを返します。  
+ 成功した場合は `S_OK` を返し、それ以外の場合は OLE 定義エラーコードを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)

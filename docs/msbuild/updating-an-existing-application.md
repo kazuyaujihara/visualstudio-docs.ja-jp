@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263731"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306251"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>既存のアプリケーションを MSBuild 15 用に更新する
 
@@ -65,7 +65,7 @@ NuGet パッケージを使用できない場合は、Visual Studio と共に配
 
 #### <a name="binding-redirects"></a>バインド リダイレクト
 
-Microsoft.Build.Locator パッケージを参照すると、アプリケーションは、MSBuild アセンブリのすべてのバージョンで必要なバージョン `15.1.0.0` へのバインド リダイレクトを自動的に使用するようになります。
+Microsoft.Build.Locator パッケージを参照し、アプリケーションでバージョン 15.1.0.0 への必要なバインド リダイレクトが自動的に使用されるようにします。 このバージョンへのバインド リダイレクトでは、MSBuild 15 と MSBuild 16 の両方がサポートされます。
 
 ### <a name="ensure-output-is-clean"></a>出力をクリーンにする
 

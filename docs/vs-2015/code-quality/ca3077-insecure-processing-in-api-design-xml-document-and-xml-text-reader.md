@@ -1,21 +1,21 @@
 ---
-title: CA3077:API の設計、XML ドキュメントと XML テキスト リーダーで処理する安全でない |Microsoft Docs
+title: 'CA3077: API デザイン、XML ドキュメント、および XML テキストリーダー | で安全ではない処理Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d8f1e04483c486add9940bf3a78ec4c35eb2317d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83132da4b6687db74920015df0ad817eb75673db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693371"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669045"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077:API のデザイン、XML ドキュメント、および XML テキスト リーダーでの安全ではない処理
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API のデザイン、XML ドキュメント、および XML テキスト リーダーでの安全ではない処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -31,15 +31,15 @@ ms.locfileid: "65693371"
 ## <a name="rule-description"></a>規則の説明
  [文書型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) は、  [World Wide Web コンソーシアム (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)で定義されているように、XML パーサーが文書の妥当性を判別する 2 つの方法のうちの 1 つです。 このルールは、信頼されていないデータを受け入れてしまうプロパティとインスタンスを検索し、 [サービス拒否 (DoS)](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 攻撃につながる可能性がある潜在的な [Information Disclosure](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) の脅威について開発者に警告します。 このルールは、次の場合にトリガーされます。
 
-- <xref:System.Xml.XmlDocument> または<xref:System.Xml.XmlTextReader>クラスは、DTD の処理の競合回避モジュールの既定値を使用します。
+- <xref:System.Xml.XmlDocument> または <xref:System.Xml.XmlTextReader> クラスは、DTD 処理に既定の競合回避モジュールの値を使用します。
 
 - XmlDocument または XmlTextReader から派生したクラスにコンストラクターが定義されていない。または <xref:System.Xml.XmlResolver>にセキュリティで保護された値が使用されていない。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- キャッチし、パス情報の漏えいを回避するために適切にすべての XmlTextReader 例外を処理します。
+- パス情報の漏えいを防ぐために、すべての XmlTextReader 例外をキャッチして処理します。
 
-- 使用 <xref:System.Xml.XmlSecureResolver>XmlTextReader がアクセスできるリソースを制限する XmlResolver の代わりにします。
+- XmlResolver の  <xref:System.Xml.XmlSecureResolver>instead を使用して、XmlTextReader がアクセスできるリソースを制限します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  入力が信頼できるソースからのものとわかっているのでない限り、この警告からのルールを抑制しないでください。
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>ソリューション
+### <a name="solution"></a>解決策:
 
 ```csharp
 using System;

@@ -13,20 +13,20 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975781"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572277"
 ---
 # <a name="active-script-debugging-overview"></a>アクティブ スクリプトのデバッグの概要
 アクティブ スクリプト デバッグ インターフェイスを使うと、言語やホストに依存しない (ニュートラルな) デバッグを行うことができ、さまざまな開発環境がサポートされます。  
   
- ![スクリプト ホスト プロセス](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![スクリプトホストプロセス](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 図 1  
   
- 言語に依存しないデバッグ環境は、任意のプログラミング言語またはプログラミング言語の組み合わせをサポートでき、どの言語についても固有の知識を持つ必要はありません。 また、デバッグ環境は異なる言語間のステップ実行およびブレークポイントもサポートします  (この概要では、VBScript や [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] などのスクリプト言語のサポートに主に注目します)。  
+ 言語に依存しないデバッグ環境は、任意のプログラミング言語またはプログラミング言語の組み合わせをサポートでき、どの言語についても固有の知識を持つ必要はありません。 また、デバッグ環境は異なる言語間のステップ実行およびブレークポイントもサポートします (この概要では、VBScript や [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] などのスクリプト言語のサポートに主に注目します)。  
   
  ホストに依存しないデバッガーは、Internet Explorer やカスタム ホストなどの任意のアクティブ スクリプト ホストで自動的に使うことができます。 ホストは、ドキュメント ツリーの構造からデバッグ ドキュメントの内容や構文の色分けまで、ユーザーに対するデバッガーの表示を制御します。 これにより、ホスト ドキュメントのコンテキストでデバッグ対象のソース コードを表示できます。 たとえば、Internet Explorer は HTML ページでスクリプトを表示できます。  
   

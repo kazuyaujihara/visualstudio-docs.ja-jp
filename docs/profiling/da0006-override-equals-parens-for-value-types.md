@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e30894ec98dd1db4de0b724082467a681a0fa696
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970693"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306160"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006:値の型で Equals() をオーバーライドしてください
 
@@ -39,4 +39,4 @@ ms.locfileid: "62970693"
  Equals と等値演算子をオーバーライドする方法については、[Equals および等値演算子 (==) 実装のガイドライン](http://go.microsoft.com/fwlink/?LinkId=177818)を参照してください。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
- Equals と等値演算子の実装例については、コード分析ルールの「[CA1815:equals および operator equals を値型でオーバーライドします](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)」を参照してください。
+ Equals と等値演算子の実装例については、コード分析ルールの「[CA1815:equals および operator equals を値型でオーバーライドします](../code-quality/ca1815.md)」を参照してください。

@@ -1,5 +1,5 @@
 ---
-title: 配列の長さは、有限の正の整数を指定する必要があります |Microsoft Docs
+title: 配列の長さは、有限の正の整数でなければなりません |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,32 +14,32 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69494f1485a97ff4f2c98cf2493e5d0bc5b8aa9f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818125"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576080"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>配列の長さは、有限の正の整数でなければなりません。
-呼び出している、**配列**(0 と正の整数のセットの値は整数で構成されます) の整数でない引数を持つコンス トラクター。  
+整数ではない引数を使用して、**配列**コンストラクターを呼び出しています (0 と正の整数のセットで構成される整数)。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 正の整数を使用して、新しいを作成する場合にのみ`Array`オブジェクト。 整数でない 1 つの要素の配列を作成する場合は、2 段階のプロセスで行うこと。 1 つの要素を持つ配列を作成し、(array[0]) の最初の要素に値を配置します。 このエラーを生成する例を次に示します。  
+- 新しい `Array` オブジェクトを作成する場合にのみ、正の整数を使用します。 整数ではない1つの要素を持つ配列を作成する場合は、2段階のプロセスで実行します。 まず、1つの要素を持つ配列を作成してから、最初の要素 (array [0]) に値を配置します。 このエラーを生成する例を次に示します。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  
     ```  
   
-     次の例では、1 つの数値要素の配列を指定する正しい方法を示します。  
+     次の例は、単一の数値要素を持つ配列を指定する正しい方法を示しています。  
   
     ```JavaScript  
     var piArray = new Array(1);  
     piArray [0] = 3.14159;  
     ```  
   
-     最大の整数値 (約 40億) 以外の値、配列のサイズの上限はありません。  
+     配列のサイズの上限は、最大の整数値 (約 40億) を超えています。  
   
 ## <a name="see-also"></a>関連項目  
  [配列の使用](../../javascript/advanced/using-arrays-javascript.md)

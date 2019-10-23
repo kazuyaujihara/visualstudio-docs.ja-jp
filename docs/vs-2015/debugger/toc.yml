@@ -155,7 +155,7 @@
         - name: マネージド オブジェクトのカスタム ビューを作成する
           items:
             - name: マネージド オブジェクトのカスタム ビューを作成する
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: DebuggerTypeProxy 属性の使用
               href: using-debuggertypeproxy-attribute.md
             - name: DebuggerDisplay 属性を使用します
@@ -628,7 +628,7 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: ARM デバイスでグラフィックス診断を使用する
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: 関連項目
+        - name: 参照
           items:
             - name: 関連項目
               href: reference-programmatic-capture.md
@@ -682,9 +682,9 @@
                       href: how-to-enable-debugging-for-aspnet-applications.md
                     - name: ユーザー アカウントでワーカー プロセスを実行する
                       href: how-to-run-the-worker-process-under-a-user-account.md
-                - name: 'Prerequistes for Remote Debugging Web Applications (方法 : リモート サーバーで Web アプリケーションをデバッグする)'
+                - name: Web アプリケーションをリモート デバッグするための前提条件
                   items:
-                    - name: 'Prerequistes for Remote Debugging Web Applications (方法 : リモート サーバーで Web アプリケーションをデバッグする)'
+                    - name: Web アプリケーションをリモート デバッグするための前提条件
                       href: prerequistes-for-remote-debugging-web-applications.md
                     - name: ASP.NET プロセスの名前を見つける
                       href: how-to-find-the-name-of-the-aspnet-process.md
@@ -730,7 +730,7 @@
               href: error-aspnet-not-installed.md
             - name: Windows 統合認証が無効になっているため、デバッグに失敗しました
               href: error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md
-            - name: ' Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています'
+            - name: Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています
               href: error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md
             - name: Web サービスのデバッグ中にタイムアウトになりました
               href: error-timeout-while-debugging-web-services.md

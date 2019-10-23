@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddNamedItem |Microsoft Docs
+title: 'IActiveScriptAuthor:: AddNamedItem |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f0d2f08a49fdc768e87152bf486ce48687c79e68
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411398"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577254"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
-スクリプト エンジンの名前空間を作成するには、ルート レベルの項目の名前を追加します。 A*ルート レベルの項目*オブジェクト、プロパティとメソッドを含めることができ、イベント ソースを含むことができます。  
+ルートレベルの項目の名前をスクリプト作成エンジンの名前空間に追加します。 *ルートレベルの項目*は、プロパティとメソッドを含むことができ、イベントソースも含むことができるオブジェクトです。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,22 +39,22 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>パラメーター  
  `pszName`  
- [in]スクリプトの表示の項目の名前。 名前は、一意であり、永続化である必要があります。  
+ からスクリプトから表示される項目の名前。 名前は一意であり、持続可能でなければなりません。  
   
  `dwFlags`  
- [in]名前付きの項目に関連付けられているフラグです。 次の値の組み合わせになります。  
+ から名前付き項目に関連付けられているフラグ。 は、次の値の組み合わせにすることができます。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|SCRIPTITEM_ISVISIBLE|0x00000002|項目の名前が、スクリプトの名前空間で使用できることを示します。 これにより、項目のプロパティ、メソッド、およびイベントへのアクセスができます。<br /><br /> 慣例により、項目のプロパティには、項目の子メンバーが含まれます。 そのため、すべての子オブジェクトのプロパティとメソッド (とその子のメンバーを再帰的に) にはアクセスできます。|  
-|SCRIPTITEM_ISSOURCE|0x00000004|スクリプトでスクリプトのイベント ハンドラーを持つことができる項目のソースのイベントを示します。|  
-|SCRIPTITEM_GLOBALMEMBERS|0x00000008|項目がグローバル プロパティと、スクリプトに関連付けられているメソッドのコレクションであることを示します。 そのメンバーは、グローバル変数とメソッドとして作成されます。|  
-|SCRIPTITEM_ISPERSISTENT|0x00000040|エンジンを作成するスクリプトが保存されている場合に、項目が保存されることを示します。|  
-|SCRIPTITEM_CODEONLY|0x00000200|コードのみオブジェクトを表し、名前付きの項目を作成するにはメンバーがないことを示します。|  
-|SCRIPTITEM_NOCODE|0x00000400|名前付きの項目が追加される名前だけが何も作成することを示します。|  
+|SCRIPTITEM_ISVISIBLE|0x00000002|項目の名前がスクリプトの名前空間で使用できることを示します。 これにより、項目のプロパティ、メソッド、およびイベントにアクセスできるようになります。<br /><br /> 規則により、項目のプロパティには項目の子メンバーが含まれます。 そのため、すべての子オブジェクトのプロパティとメソッド (およびその子メンバー) にアクセスできます。|  
+|SCRIPTITEM_ISSOURCE|0x00000004|スクリプトがスクリプトイベントハンドラーを持つことができるアイテムソースのイベントを示します。|  
+|SCRIPTITEM_GLOBALMEMBERS|0x00000008|項目が、スクリプトに関連付けられているグローバルプロパティとメソッドのコレクションであることを示します。 そのメンバーは、グローバル変数およびメソッドとして作成されます。|  
+|SCRIPTITEM_ISPERSISTENT|0x00000040|スクリプト作成エンジンが保存されている場合に、アイテムを保存することを示します。|  
+|SCRIPTITEM_CODEONLY|0x00000200|名前付き項目がコードのみのオブジェクトを表し、作成するメンバーを持たないことを示します。|  
+|SCRIPTITEM_NOCODE|0x00000400|名前付き項目が追加されるのは名前だけであり、作成するものがないことを示します。|  
   
  `pdisp`  
- [in]`IDispatch`の`NamedItem`メソッド、プロパティ、またはイベント ソースを収集するために使用するオブジェクト。  
+ からメソッド、プロパティ、またはイベントソースの収集に使用される `NamedItem` オブジェクトの `IDispatch`。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

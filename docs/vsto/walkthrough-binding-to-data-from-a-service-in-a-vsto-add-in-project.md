@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254053"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381312"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでサービスからのデータにバインドする
   VSTO アドイン プロジェクトでは、データをホスト コントロールにバインドできます。 このチュートリアルでは、実行時に Microsoft Office の Word ドキュメントにコントロールを追加し、それらのコントロールを MSDN コンテンツ サービスから取得されたデータにバインドして、イベントに応答する方法について説明します。
 
- **適用対象:** このトピックの情報は、Word 2010 のアプリケーションレベルのプロジェクトに適用されます。 詳細については、「 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
+ **対象:** このトピックの情報は、Word 2010 のアプリケーション レベルのプロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
  このチュートリアルでは、次の作業について説明します。
 
 - 実行時にドキュメントに <xref:Microsoft.Office.Tools.Word.RichTextContentControl> コントロールを追加する
 
-- <xref:Microsoft.Office.Tools.Word.RichTextContentControl>コントロールを web サービスのデータにバインドする。
+- @No__t 0 コントロールを web サービスのデータにバインドします。
 
 - <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> コントロールの <xref:Microsoft.Office.Tools.Word.RichTextContentControl> イベントに応答する
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "71254053"
 
 1. Visual Basic または C# のいずれかを使用して、「 **MTPS コンテンツ サービス**」という名前の Word VSTO アドイン プロジェクトを作成します。
 
-     詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      `ThisAddIn.vb` または `ThisAddIn.cs` ファイルが Visual Studio で開かれ、プロジェクトが **ソリューション エクスプローラー**に追加されます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "71254053"
 
 3. **[アドレス]** フィールドに、次の URL を入力します。
 
-     **http:\//services.msdn.microsoft.com/ContentServices/ContentService.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. **[検索]** をクリックします。
 

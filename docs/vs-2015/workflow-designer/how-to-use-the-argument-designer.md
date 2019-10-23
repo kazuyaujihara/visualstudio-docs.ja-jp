@@ -1,5 +1,5 @@
 ---
-title: '方法: 引数デザイナーを使用して |Microsoft Docs'
+title: '方法: 引数デザイナーを使用する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,30 +9,29 @@ f1_keywords:
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a244379bfebcf58d76ba726d4f6a84bcdfa7d1df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a436d33bbb7c791f3f192357fded779fa77d148d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696274"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659113"
 ---
-# <a name="how-to-use-the-argument-designer"></a>方法: 引数デザイナーを使用する
-[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の以前のバージョンと比べ、引数デザイナーを使用した場合は、アクティビティとの間のデータの受け渡しを簡単に実行できます。 デザイナーにアクセスする をクリックして、**引数**デザイン キャンバスの左下隅のボタンをクリックします。 デザイナーには、表形式で表示され、以外の各列見出しで並べ替えることができますを引数のリストが含まれています、**既定値**列。 各引数には、名前、方向 (入力、出力、入力/出力、またはプロパティ)、型、および既定の式の値 (存在する場合) が含まれます。 名前および既定の式の値は編集可能なテキスト フィールドで、型および方向はドロップダウンです。 [!INCLUDE[crabout](../includes/crabout-md.md)] 引数を参照してください[変数と引数](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)します。  
-  
-### <a name="to-create-a-new-argument"></a>新しい引数を作成するには  
-  
-1. [!INCLUDE[vs2010](../includes/vs2010-md.md)] でワークフロー ソリューションまたはアクティビティ ソリューションを開きます。  
-  
-2. クリックして、引数デザイナーを開き、**引数**デザイン キャンバスの左下隅のボタンをクリックします。 引数デザイナーが表示されます。  
-  
-3. というラベルの付いた空の行をクリックします。**引数の作成**です。 これは、新しい行が次の既定値を使用して新しい引数を指定して追加されます: の argumentx、**名前**x は一意の引数の名前を作成する自動的にインクリメントされる 1 の初期値を持つ整数**で**の**方向**、および**文字列**の**引数の型**します。 値は追加されません**既定値**します。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。  
-  
+# <a name="how-to-use-the-argument-designer"></a>引数デザイナーを使用する方法
+[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の以前のバージョンと比べ、引数デザイナーを使用した場合は、アクティビティとの間のデータの受け渡しを簡単に実行できます。 デザイナーにアクセスするには、デザインキャンバスの左下隅にある **[引数]** ボタンをクリックします。 デザイナーには、表形式で表示される引数の一覧が含まれており、**既定値**の列を除き、各列ヘッダーで並べ替えることができます。 各引数には、名前、方向 (入力、出力、入力/出力、またはプロパティ)、型、および既定の式の値 (存在する場合) が含まれます。 名前および既定の式の値は編集可能なテキスト フィールドで、型および方向はドロップダウンです。 [!INCLUDE[crabout](../includes/crabout-md.md)] の引数については、「[変数と引数](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)」を参照してください。
+
+### <a name="to-create-a-new-argument"></a>新しい引数を作成するには
+
+1. [!INCLUDE[vs2010](../includes/vs2010-md.md)] でワークフロー ソリューションまたはアクティビティ ソリューションを開きます。
+
+2. デザインキャンバスの左下隅にある **[引数]** ボタンをクリックして、引数デザイナーを開きます。 引数デザイナーが表示されます。
+
+3. **[引数の作成]** というラベルの付いた空の行をクリックします。 これにより、新しい引数を含む新しい行が追加されます。**名前**には argumentx を使用します。ここ**で** **、x**は、一意の引数名を作成するために自動的にインクリメントされる初期値1を持つ整数です。**引数の型**に**文字列**を指定します。 **既定値**の値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
+
     > [!NOTE]
-    > 引数を削除するをクリックして、引数を選択し、キーを押します、**削除**キー。  
-  
-## <a name="see-also"></a>関連項目  
- [ワークフロー デザイナーの使用](../workflow-designer/using-the-workflow-designer.md)   
- [変数と引数](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)
+    > 引数を削除するには、引数をクリックして選択し、 **del**キーを押します。
+
+## <a name="see-also"></a>参照
+ [ワークフローデザイナーの](../workflow-designer/using-the-workflow-designer.md)[変数と引数](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)の使用

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce9f55dd54dbe85f64226c1ca7f0b4f75b1cdfc
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118688"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313978"
 ---
 # <a name="step-6-name-your-button-controls"></a>手順 6: ボタン コントロールの名前を設定する
 
@@ -65,8 +65,7 @@ ms.locfileid: "71118688"
     End Sub
     ```
 
-   > [!IMPORTANT]
-   > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
+   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
    `showButton_Click()` (または、`ShowButton_Click()`) という名前のコードを見ています。 **[showButton]** ボタンのコード ファイルを開いたときに、これがフォームのコードに追加されます。 デザイン時に、フォームでコントロールのコード ファイルを開いて、コードが存在しない場合はコントロール用のコードが生成されます。 アプリを実行して、コントロール (この場合は、 **[Show a picture]** ボタン) を選択すると、"*メソッド*" と呼ばれるこのコードが実行されます。
 

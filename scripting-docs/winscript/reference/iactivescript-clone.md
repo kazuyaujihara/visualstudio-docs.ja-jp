@@ -1,5 +1,5 @@
 ---
-title: Iactivescript::clone |Microsoft Docs
+title: 'IActiveScript:: Clone |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbaad29cb31af26a0f26a1c679a900192fc77041
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935706"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575798"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
-現在のスクリプト エンジン (すべて現在の実行状態)、マイナス記号を現在のスレッドでサイトを持たない読み込まれたスクリプト エンジンを返すことを複製します。 この新しいスクリプト エンジンのプロパティは、元のスクリプト エンジンであるかどうか、初期化済み状態に移行されたプロパティに同じになります。  
+現在のスクリプトエンジン (現在の実行状態を除く) を複製し、現在のスレッドにサイトを持たない読み込み済みのスクリプトエンジンを返します。 この新しいスクリプトエンジンのプロパティは、初期化された状態に遷移した場合、元のスクリプトエンジンが存在するプロパティと同じになります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>パラメーター  
  `ppscript`  
- [out]ポインターを受け取る変数のアドレス、 [IActiveScript](../../winscript/reference/iactivescript.md)複製されたスクリプト エンジンのインターフェイス。 ホストは、サイトと呼び出しを作成する必要があります、 [iactivescript::setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md)初期化済み状態にするには、新しいスクリプト エンジン メソッドと、そのため、使用可能な。  
+ 入出力複製されたスクリプトエンジンの[IActiveScript](../../winscript/reference/iactivescript.md)インターフェイスへのポインターを受け取る変数のアドレス。 ホストはサイトを作成し、新しいスクリプトエンジンで[IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)メソッドを呼び出す必要があります。その後、初期化された状態になり、使用できるようになります。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -47,14 +47,14 @@ HRESULT Clone(
 |`S_OK`|成功。|  
 |`E_NOTIMPL`|このメソッドはサポートされていません。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンがされていないされて読み込まれるまたは初期化) します。|  
+|`E_UNEXPECTED`|この呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか、初期化されていません)。|  
   
 ## <a name="remarks"></a>Remarks  
- `IActiveScript::Clone`メソッドは、最適化された`IPersist*::Save`、 `CoCreateInstance`、および`IPersist*::Load`ので、新しいスクリプト エンジンの状態、元のスクリプト エンジンの状態の保存し、新しいスクリプト エンジンに読み込まれるかに同じにする必要があります。 名前付きの項目は、複製されたスクリプト エンジンで複製されますが、各項目の特定のオブジェクト ポインターが破棄されているとは、 [iactivescriptsite::getiteminfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)メソッド。 これにより、使用するスレッドごとのエントリ ポイント (アパートメント モデル) が同じオブジェクト モデルです。  
+ @No__t_0 メソッドは、`IPersist*::Save`、`CoCreateInstance`、および `IPersist*::Load` の最適化であるため、新しいスクリプトエンジンの状態は、元のスクリプトエンジンの状態が保存され、新しいスクリプトエンジンに読み込まれた場合と同じである必要があります。 複製されたスクリプトエンジンでは名前付きの項目が複製されますが、各項目の特定のオブジェクトポインターは忘れられ、 [IActiveScriptSite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)メソッドを使用して取得されます。 これにより、スレッドごとのエントリポイント (アパートメントモデル) と同一のオブジェクトモデルを使用できます。  
   
- このメソッドは、同じスクリプトの複数のインスタンスを実行できるマルチ スレッド サーバー ホストに使用されます。 スクリプト エンジンが返す可能性があります`E_NOTIMPL`、ホストが永続的な状態を複製して、スクリプト エンジンの新しいインスタンスを作成して同じ結果を得ることができる場合、`IPersist*`インターフェイス。  
+ このメソッドは、同じスクリプトの複数のインスタンスを実行できるマルチスレッドサーバーホストに使用されます。 スクリプトエンジンは `E_NOTIMPL` を返すことがあります。この場合、ホストは、永続的な状態を複製し、`IPersist*` インターフェイスを使用してスクリプトエンジンの新しいインスタンスを作成することで、同じ結果を得ることができます。  
   
- このメソッドは、ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことができます、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイス。  
+ このメソッドは非ベースのスレッドから呼び出すことができます。この場合、非ベースのコールアウトによってオブジェクトをホストするか、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイスを使用することはできません。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

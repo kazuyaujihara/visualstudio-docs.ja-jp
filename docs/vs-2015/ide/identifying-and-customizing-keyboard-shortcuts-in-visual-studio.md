@@ -16,15 +16,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432310"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670491"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio でのキーボード ショートカットの識別とカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 2. **[環境]** を展開し、**[キーボード]** を選択します。
 
-     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "|::ref1::|")
 
 3. **[以下の文字列を含むコマンドを表示]** ボックスに、コマンド名の全体または一部を、空白を含めずに入力し始めます。
 
@@ -70,7 +70,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 5. コマンドにショートカット キーが既に割り当てられている場合は、**[選択したコマンドへのショートカット]** ボックスの一覧に表示されます。
 
-     ![指定されたコマンドのショートカットを表示](../ide/media/viewshortcut.png "ViewShortcut")
+     ![指定されたコマンドのショートカットを表示](../ide/media/viewshortcut.png "|::ref2::|")
 
 ## <a name="bkmk_assign"></a>ショートカット キーのカスタマイズ
 
@@ -78,7 +78,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 2. **[環境]** フォルダーを展開し、**[キーボード]** を選択します。
 
-     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "|::ref3::|")
 
 3. **[以下の文字列を含むコマンドを表示]** ボックスに、コマンド名の全体または一部を、空白を含めずに入力し始めます。
 
@@ -100,7 +100,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
      ショートカット キーが別のコマンドに既に割り当てられている場合は、**[現在使用されているショートカット]** ボックスに表示されます。 その場合は、Backspace キーを押してそのショートカット キーを削除してから、別のショートカット キーを試します。
 
-     ![コマンドに異なるショートカットを指定](../ide/media/reassignshortcut.png "ReassignShortcut")
+     ![コマンドに異なるショートカットを指定](../ide/media/reassignshortcut.png "|::ref4::|")
 
 7. **[割り当て]** ボタンをクリックします。
 
@@ -120,7 +120,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 4. **[キーボード]** チェック ボックスをオンにして、**[次へ]** ボタンをクリックします。
 
-     ![カスタマイズされたショートカット キーのみをエクスポート](../ide/media/exportshortcuts.png "ExportShortcuts")
+     ![カスタマイズされたキーボード ショートカットのみをエクスポート](../ide/media/exportshortcuts.png "|::ref5::|")
 
 5. **[設定ファイルの名前を指定してください]** と **[設定を次のディレクトリに格納する]** ボックスで、既定値のままにするか別の値を指定し、**[完了]** ボタンをクリックします。
 
@@ -142,7 +142,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 7. **[キーボード]** チェック ボックスをオンにして、**[完了]** ボタンをクリックします。
 
-     ![カスタマイズされたショートカット キーのみをインポート](../ide/media/importshortcuts.png "ImportShortcuts")
+     ![カスタマイズされたキーボード ショートカットのみをインポート](../ide/media/importshortcuts.png "|::ref6::|")
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)

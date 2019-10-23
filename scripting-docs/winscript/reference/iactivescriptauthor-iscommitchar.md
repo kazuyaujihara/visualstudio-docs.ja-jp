@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar |Microsoft Docs
+title: 'IActiveScriptAuthor:: IsCommitChar |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a0b630f872e49b7fbbabf4f354755f900fb4b5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f442bdc22f569cac6d706d739b2cfb37e07398b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955070"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576338"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-指定された文字が、アプリケーションによってステートメント入力候補のコミットをトリガーするかどうかを示す値を返します。  
+指定された文字が、アプリケーションによるステートメント入力候補のコミットをトリガーする必要があるかどうかを示す値を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT IsCommitChar(
   
 #### <a name="parameters"></a>パラメーター  
  `ch`  
- [in]テスト対象の文字。  
+ からテストする文字。  
   
  `pfcommit`  
- [out]`True`文字が、コミットの場合。 それ以外`False`します。  
+ [out] 文字がコミット文字である場合は `True`。それ以外の場合は、`False` ます。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918371"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301703"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>ロード テストを実行するためのテスト エージェントおよびテスト コントローラーの概要
 
 Visual Studio では、物理または仮想マシンを使用して、アプリ用にシミュレートされた負荷を生成することができます。 これらのコンピューターは、単一のテスト コントローラーと 1 つ以上のテスト エージェントとしてセットアップする必要があります。 テスト コントローラーとテスト エージェントを使用すると、単一のコンピューターで生成する場合よりも、高い負荷を生成できます。
 
 > [!NOTE]
-> また、クラウド ベースのロード テストを使用すると、多数のユーザーが同時に Web サイトにアクセスした場合と同等の負荷を生成する仮想マシンを用意できます。 クラウド ベースのロード テストの詳細については、[Azure Test Plans を使用したロード テストの実行](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)に関するページを参照してください。
+> また、クラウド ベースのロード テストを使用すると、多数のユーザーが同時に Web サイトにアクセスした場合と同等の負荷を生成する仮想マシンを用意できます。 ただし、クラウドでホストされる仮想マシン上のテスト コントローラーの使用/テスト エージェントの設定はサポートされていません。 クラウド ベースのロード テストの詳細については、[Azure Test Plans を使用したロード テストの実行](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)に関するページを参照してください。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -37,7 +37,7 @@ Visual Studio では、物理または仮想マシンを使用して、アプリ
 
 - 追加テスト エージェントをテスト コントローラーに追加することで、負荷生成の規模を拡大できます。
 
-- クライアント、テスト コントローラー、およびテスト エージェント ソフトウェアを、同じコンピューターにも異なるコンピューターにもインストールできる柔軟性があります。 次に例を示します。
+- クライアント、テスト コントローラー、およびテスト エージェント ソフトウェアを、同じコンピューターにも異なるコンピューターにもインストールできる柔軟性があります。 例:
 
    **ローカル構成:**
 

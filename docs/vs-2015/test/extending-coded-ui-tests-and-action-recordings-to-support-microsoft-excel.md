@@ -6,21 +6,21 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6eb44970cc29198ad9044281e566727a64b893c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871562"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660568"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード化された UI テストおよび操作の記録のテスト フレームワークは、すべてのユーザー インターフェイスでサポートされているとは限りません。 テストする特定の UI がサポートされていない場合があります。 たとえば、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] スプレッドシート向けのコード化された UI テストや操作の記録をすぐに作成することはできません。 ただし、コード化された UI テスト フレームワークの拡張機能を使用すると、特定の UI をサポートするコード化された UI テスト フレームワーク向けの独自の拡張機能を作成できます。 次のトピックでは、コード化された UI テストの作成と [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] の操作の記録をサポートするようフレームワークを拡張する方法の例について説明します。 サポートされているプラットフォームの詳細については、[「コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム」](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) を参照してください。
 
- **必要条件**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -47,15 +47,15 @@ ms.locfileid: "68871562"
 ## <a name="details-about-the-sample"></a>サンプルについての詳細
  次のセクションでは、サンプルとその構造の詳細について説明します。
 
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel アドイン:ExcelCodedUIAddinHelper
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel アドイン: ExcelCodedUIAddinHelper
  このプロジェクトには、Excel プロセスで実行するアドインが含まれています。 アドイン プロジェクトの概要については、[「コード化された UI テスト用の Excel アドインのサンプル」](../test/sample-excel-add-in-for-coded-ui-testing.md) を参照してください。
 
- 詳細については、「[チュートリアル:初めての Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)用 VSTO アドインを作成する。
+ 詳細については、[「チュートリアル : 初めての Excel 用 VSTO アドインの作成」](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) を参照してください。
 
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel UI 通信:ExcelUIcommunicationHelper
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel の UI 通信: ExcelUIcommunicationHelper
  このプロジェクトには、コード化された UI テスト フレームワークと Excel の間でデータを渡すのに使用する `IExcelUICommunication` インターフェイスと情報クラスが含まれています。 詳細については、「[Excel Communicator インターフェイスのサンプル](../test/sample-excel-communicator-interface.md)」を参照してください。
 
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>コード化された UI テストの拡張機能:CodedUIExentsibilitySample
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>コード化された UI テストの拡張機能: CodedUIExentsibilitySample
  このプロジェクトには、Excel ワークシートのテストで使用するカスタム クラスが含まれています。 それぞれのクラスのコードは、自己記述的です。 ただし、各カスタム クラスについて簡単に説明しています。 詳細については、[「Excel 用にコード化された UI テストの拡張子のサンプル」](../test/sample-coded-ui-test-extension-for-excel.md) を参照してください。
 
 ### <a name="deploying-your-add-in-and-extension"></a>アドインと拡張機能の配置
@@ -74,7 +74,7 @@ ms.locfileid: "68871562"
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- [タイムアウト](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)

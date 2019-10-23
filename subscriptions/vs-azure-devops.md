@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: 00a60415af16f31362b359944c8007fb3d21351f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681634"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314158"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -24,15 +24,14 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>、FTE  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Artifacts<sup>2</sup>、Azure Pipelines (セルフホステッド)       |  はい          |
-| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール、                                        | Azure Boards & Repos (Basic)、Azure Artifacts<sup>2</sup>                                                            |  はい          |
+| Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Pipelines (セルフホステッド)       |  はい          |
+| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール、                                        | Azure Boards & Repos (Basic)                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
 ||
 
-<sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark、MCT Software & Services Developer が含まれます。除外:MCT Software & Services、Imagine は含まれません。*
+<sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark、MCT Software & Services Developer、FTE が含まれます。除外:MCT Software & Services、Imagine は含まれません。*
 
-<sup>2</sup>  "*無料で 2 GB 含まれます*"
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

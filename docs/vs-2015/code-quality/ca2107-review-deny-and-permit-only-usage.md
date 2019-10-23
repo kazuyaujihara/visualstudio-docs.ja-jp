@@ -1,5 +1,5 @@
 ---
-title: CA2107:Deny し、permitonly の用法 |Microsoft Docs
+title: 'CA2107: deny をレビューし、使用のみを許可する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2107
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687394"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665961"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:拒否および許可のみの使用を確認します
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Deny と PermitOnly の用法を再確認します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,51 +33,51 @@ ms.locfileid: "65687394"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- メソッドには、PermitOnly または Deny セキュリティ アクションを指定するセキュリティ チェックが含まれています。
+ メソッドには、PermitOnly または Deny セキュリティアクションを指定するセキュリティチェックが含まれています。
 
 ## <a name="rule-description"></a>規則の説明
- [PermitOnly メソッドを使用して](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)と<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>セキュリティ アクションは、高度な知識を持つユーザーだけが使用する必要がありますの[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]セキュリティ。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。
+ [PermitOnly メソッド](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)と <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> セキュリティアクションの使用は、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] セキュリティに関する高度な知識を持つユーザーのみが使用する必要があります。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。
 
- 拒否するセキュリティの要求に対する応答で発生するスタック ウォークの既定の動作を変更します。 コール スタックに呼び出し元の実際のアクセス許可に関係なく、拒否、メソッドの実行中に許可する必要がありますアクセス許可を指定できます。 場合は、スタック ウォークが Deny で保護されているメソッドを検出し、要求されたアクセス許可が拒否されたアクセス許可に含まれる場合、スタック ウォークが失敗します。 PermitOnly には、スタック ウォークの既定の動作も変更します。 これにより、コード、呼び出し元のアクセス許可に関係なく、付与できるアクセス許可のみを指定できます。 場合は、スタック ウォーク PermitOnly で保護されているメソッドを検出して、PermitOnly で指定されているアクセス許可では、要求されたアクセス許可が含まれていない、スタック ウォークが失敗します。
+ 拒否は、セキュリティ要求に応じて発生するスタックウォークの既定の動作を変更します。 これにより、呼び出し履歴内の呼び出し元の実際のアクセス許可に関係なく、拒否するメソッドの期間中に付与されないアクセス許可を指定できます。 スタックウォークが拒否によってセキュリティ保護されたメソッドを検出し、要求されたアクセス許可が拒否されたアクセス許可に含まれている場合、スタックウォークは失敗します。 PermitOnly では、スタックウォークの既定の動作も変更されます。 これにより、呼び出し元のアクセス許可に関係なく、許可できるアクセス許可のみをコードで指定できます。 スタックウォークが PermitOnly によってセキュリティ保護されたメソッドを検出し、要求されたアクセス許可が PermitOnly によって指定されたアクセス許可に含まれていない場合、スタックウォークは失敗します。
 
- これらのアクションに依存するコードは、セキュリティの脆弱性で慎重に、制限付きの有用性と動作が多少により評価する必要があります。 次に例を示します。
+ これらのアクションに依存するコードは、有用性と微妙な動作が制限されているため、セキュリティの脆弱性に対して慎重に評価する必要があります。 次に例を示します。
 
-- [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)Deny または PermitOnly の影響を受けない。
+- [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)は、Deny または PermitOnly の影響を受けません。
 
-- Deny または PermitOnly は、スタック ウォークを実行する要求と同じスタック フレームで発生する場合、セキュリティ アクションがある影響しません。
+- スタックウォークを発生させる要求と同じスタックフレームで Deny または PermitOnly が発生した場合、セキュリティアクションは無効です。
 
-- パス ベースのアクセス許可の作成に使用される値は、複数の方法で、通常は指定できます。 パスの 1 つのフォームへのアクセスを拒否することは、すべてのフォームへのアクセスは拒否されません。 たとえば、ファイル共有\\\Server\Share はネットワーク ドライブ、共有上のファイルへのアクセスを拒否する、x: にマップする必要がありますを拒否する\\\Server\Share\File、X:\File およびファイルにアクセスするその他のすべてのパス。
+- パスベースのアクセス許可を構築するために使用される値は、通常、複数の方法で指定できます。 パスの1つの形式へのアクセスを拒否しても、すべてのフォームへのアクセスが拒否されるわけではありません。 たとえば、\Server\Share\File ファイル \\ 共有がネットワークドライブ X: にマップされている場合、共有上のファイルへのアクセスを拒否するには \\、X:\File、およびファイルにアクセスするその他のすべてのパスを拒否する必要があります。
 
-- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Deny または PermitOnly に達する前に、スタック ウォークを終了できます。
+- @No__t_0 は、Deny または PermitOnly に到達する前にスタックウォークを終了できます。
 
-- 拒否に影響がある場合具体的には、呼び出し元が、拒否によってブロックされているアクセス許可を持つ呼び出し元リソースにアクセスできる保護されたを直接拒否する をバイパスします。 同様に、呼び出し元が拒否されたアクセス許可を持たない場合、拒否せず、スタック ウォークは失敗します。
+- 拒否によって何らかの影響がある場合 (つまり、呼び出し元に拒否によってブロックされるアクセス許可がある場合)、呼び出し元は保護されたリソースに直接アクセスして、拒否を回避することができます。 同様に、呼び出し元に拒否されたアクセス許可がない場合、スタックウォークは拒否されずに失敗します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- これらのセキュリティ アクションの使用はすべて、違反となります。 違反を修正するには、これらのセキュリティ アクションを使用しないでください。
+ これらのセキュリティアクションを使用すると、違反が発生します。 違反を修正するには、これらのセキュリティアクションを使用しないでください。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- セキュリティ レビューの完了後にのみ、この規則による警告を抑制します。
+ セキュリティレビューを完了した後にのみ、この規則からの警告を非表示にします。
 
 ## <a name="example"></a>例
- 次の例では、拒否の制限事項を示します。
+ 次の例は、Deny のいくつかの制限を示しています。
 
- 次のライブラリには、保護するセキュリティ要求以外はまったく同じ 2 つのメソッドを持つクラスが含まれています。
+ 次のライブラリには、それらを保護するセキュリティ要求以外の2つのメソッドを持つクラスが含まれています。
 
  [!code-csharp[FxCop.Security.PermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PermitAndDeny/cs/FxCop.Security.PermitAndDeny.cs#1)]
 
 ## <a name="example"></a>例
- 次のアプリケーションでは、ライブラリからセキュリティで保護されたメソッドに対する拒否の効果を示しています。
+ 次のアプリケーションは、保護されたメソッドでの、ライブラリからの拒否の影響を示しています。
 
  [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestPermitAndDeny/cs/FxCop.Security.TestPermitAndDeny.cs#1)]
 
  この例を実行すると、次の出力が生成されます。
 
- **オンデマンド:呼び出し元の拒否は、アサートされたアクセス許可を要求時に影響を与えません。** 
- **LinkDemand:呼び出し元の拒否は、アサートされたアクセス許可を持つ LinkDemand の影響を与えません。** 
- **LinkDemand:呼び出し元の拒否には、LinkDemand で保護されているコードに影響はありません。** 
- **LinkDemand:この拒否には、LinkDemand で保護されているコードに影響はありません。**
-## <a name="see-also"></a>関連項目
+ **要求: 呼び出し元の拒否は、アサートされたアクセス許可で要求に影響しません。** 
+**linkdemand: 呼び出し元の拒否は、アサートされたアクセス許可を持つ linkdemand には影響しません。** 
+**Linkdemand: 呼び出し元の拒否は、linkdemand で保護されたコードに影響**しません。 
+**linkdemand: この拒否は、による影響はありません。LinkDemand で保護されたコード。**
+## <a name="see-also"></a>参照
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[セキュリティ チェックをオーバーライドする](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [PermitOnly メソッドの使用](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [PermitOnly メソッドを使用し](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)た[セキュリティチェックのオーバーライド](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)

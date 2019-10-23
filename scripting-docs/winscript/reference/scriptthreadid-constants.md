@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf1b23b191bda29b00bf29f482332301897f9f37
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840203"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575663"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID 定数
 スレッドの種類を指定するために使用します。  
@@ -38,14 +38,14 @@ typedef DWORD SCRIPTTHREADID;
 |定数|[値]|説明|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|現在実行中のスレッド。|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|基本スレッドです。つまり、これで、スクリプト エンジンのスレッドがインスタンス化されました。|  
-|SCRIPTTHREADID_ALL|0 xffffffff|すべてのスレッド。|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|基本スレッド。つまり、スクリプトエンジンがインスタンス化されたスレッド。|  
+|SCRIPTTHREADID_ALL|~|すべてのスレッド。|  
   
 ## <a name="remarks"></a>Remarks  
- `SCRIPTTHREADID`型によって使用されます`IActiveScript::GetCurrentScriptThreadID`、 `IActiveScript::GetScriptThreadID`、 `IActiveScript::GetScriptThreadState`、および`IActiveScript::InterruptScriptThread`、定数でのみ使用できますが、`IActiveScript::GetScriptThreadState`と`IActiveScript::InterruptScriptThread`します。  
+ @No__t_0 型は `IActiveScript::GetCurrentScriptThreadID`、`IActiveScript::GetScriptThreadID`、`IActiveScript::GetScriptThreadState`、および `IActiveScript::InterruptScriptThread` によって使用されますが、定数は `IActiveScript::GetScriptThreadState` と `IActiveScript::InterruptScriptThread` でのみ使用できます。  
   
 ## <a name="see-also"></a>関連項目  
- [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
- [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
- [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
+ [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
+ [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
+ [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

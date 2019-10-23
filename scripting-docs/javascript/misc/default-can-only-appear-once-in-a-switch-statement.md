@@ -1,5 +1,5 @@
 ---
-title: "'switch' ステートメントで 'default' は 1 回表示のみ |Microsoft Docs"
+title: "' default ' は、' switch ' ステートメント | で1回のみ使用できますMicrosoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,21 +14,21 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24162efcc720d9c0073f8a5799c6278b8d3c8c62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90652e44a4bd0362f679be71d0d6401165487aec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946356"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572887"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' は 'switch' ステートメントのなかに、一度のみ表示できます。
-使用しようとする、**既定**switch ステートメント内で 2 回以上のステートメント。 既定のケースは、(フォールスルー ケースです)、switch ステートメントの最後の case ステートメントでは常にします。  
+Switch ステートメント内で**default**ステートメントを複数回使用しようとしました。 既定のケースでは、switch ステートメントの最後の case ステートメント (フォールスルーケース) になります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- いずれかを削除する余分な**既定**からステートメントの場合、`switch`ステートメント (スイッチ ステートメントでほとんどの 1 つの既定の case ステートメントで使用します)。  
+- @No__t_1 ステートメントから余分な**既定**の case ステートメントを削除します (switch ステートメントでは、既定の case ステートメントを1つだけ使用します)。  
   
 ## <a name="see-also"></a>関連項目  
- [switch ステートメント](../../javascript/reference/switch-statement-javascript.md)   
- [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)   
+ [Switch ステートメント](../../javascript/reference/switch-statement-javascript.md)の    
+ [プログラムフローの制御](../../javascript/controlling-program-flow-javascript.md)   
  [JavaScript の予約語](../../javascript/reference/javascript-reserved-words.md)

@@ -1,5 +1,5 @@
 ---
-title: CA1901:P/invoke 宣言はポータブルでなければなりません。Microsoft Docs
+title: 'CA1901: P-Invoke 宣言は portable | である必要があります。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203067"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661056"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣言はポータブルでなければなりません
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke 宣言はポータブルでなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Category|Microsoft.Portability|
-|互換性に影響する変更点|– P/invoke は、アセンブリ外部から参照できる場合。 なし - P/invoke が、アセンブリの外部に表示されない場合|
+|カテゴリ|Microsoft. 移植性|
+|互換性に影響する変更点|中断-P/Invoke がアセンブリの外部で参照可能である場合。 非中断-P/Invoke がアセンブリの外部で参照できない場合。|
 
 ## <a name="cause"></a>原因
- このルールは、各パラメーターのサイズと、P/invoke の戻り値が評価され、32 ビットおよび 64 ビット プラットフォームでは、アンマネージ コードにマーシャ リングされる場合、サイズが正しいことを確認します。 このルールの最も一般的な違反では、プラットフォームに依存するポインター-サイズの変数が必要になる固定サイズの整数を渡します。
+ このルールは、P/Invoke の各パラメーターと戻り値のサイズを評価し、32ビットおよび64ビットのプラットフォームでアンマネージコードにマーシャリングされたときのサイズが正しいことを確認します。 この規則の最も一般的な違反は、プラットフォームに依存するポインターサイズの変数が必要な固定サイズの整数を渡すことです。
 
 ## <a name="rule-description"></a>規則の説明
- このルールに違反している、次のシナリオのいずれかに発生します。
+ 次のいずれかのシナリオがこの規則に違反しています。
 
-- 戻り値またはパラメーターとして型指定された固定サイズの整数として型指定しなければならないときに、`IntPtr`します。
+- 戻り値またはパラメーターは、`IntPtr` として型指定する必要がある場合、固定サイズの整数として型指定されます。
 
-- として型指定された戻り値またはパラメーター、`IntPtr`固定サイズの整数としてときに入力する必要があります。
+- 戻り値またはパラメーターは、固定サイズの整数として型指定する必要がある場合に `IntPtr` として型指定されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この違反を修正するを使用して`IntPtr`または`UIntPtr`の代わりにハンドルを表す`Int32`または`UInt32`します。
+ この違反を修正するには、`IntPtr` または `UIntPtr` を使用して `Int32` または `UInt32` ではなくハンドルを表します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この警告を抑制する必要があります。
+ この警告を抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、この規則違反を示します。
+ 次の例は、このルールの違反を示しています。
 
 ```csharp
 internal class NativeMethods
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- この例で、`nIconIndex`として宣言されたパラメーター、 `IntPtr`、32 ビット プラットフォームと 8 バイト、64 ビット プラットフォーム上で 4 バイトであります。 次のアンマネージの宣言でことがわかります`nIconIndex`はすべてのプラットフォームで 4 バイト符号なし整数。
+ この例では、`nIconIndex` パラメーターが `IntPtr` として宣言されています。これは、32ビットプラットフォームでは幅が4バイト、64ビットプラットフォームでは8バイト幅です。 次のアンマネージ宣言では、`nIconIndex` がすべてのプラットフォームで4バイト符号なし整数であることがわかります。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -68,15 +68,15 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>例
- 違反を修正するには、宣言を次のように変更します。
+ 違反を修正するには、次のように宣言を変更します。
 
 ```csharp
 internal class NativeMethods{
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
     internal static extern IntPtr ExtractIcon(IntPtr hInst,
         string lpszExeFileName, uint nIconIndex);
 }
 ```
 
-## <a name="see-also"></a>関連項目
- [Portability Warnings](../code-quality/portability-warnings.md)
+## <a name="see-also"></a>参照
+ [移植性に関する警告](../code-quality/portability-warnings.md)

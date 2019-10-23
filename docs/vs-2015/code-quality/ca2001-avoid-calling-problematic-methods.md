@@ -1,5 +1,5 @@
 ---
-title: CA2001:問題のあるメソッドは呼び出しません |Microsoft Docs
+title: 'CA2001: 問題のあるメソッドを呼び出さないでください。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - AvoidCallingProblematicMethods
 ms.assetid: 19db8edb-31ce-441c-b0de-a0f2746155b7
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 26f50580c8d29e24b25a9dad520a81d22a3dfc0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f3c283f0a837873c5e01716ec2c412b1e67f16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189073"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667742"
 ---
-# <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001:問題が発生する可能性のあるメソッドは呼び出しません
+# <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: 問題が発生する可能性のあるメソッドは呼び出しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
-|Category|Microsoft.Reliability|
+|カテゴリ|Microsoft.Reliability|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
  メンバーが危険性または問題のあるメソッドを呼び出します。
 
 ## <a name="rule-description"></a>規則の説明
- 不要なおよび危険のメソッドの呼び出しを回避します。
+ 不要で危険性のあるメソッド呼び出しを行わないようにします。
 
- この規則違反は、メンバーは、次のメソッドのいずれかを呼び出すときに発生します。
+ この規則違反は、メンバーが次のいずれかのメソッドを呼び出した場合に発生します。
 
 |メソッド|説明|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|GC を呼び出しています。収集は、アプリケーションのパフォーマンスに大きく影響し、必要はほとんどありません。 詳細については、次を参照してください。、 [Rico Mariani のパフォーマンスに関するニュース](http://go.microsoft.com/fwlink/?LinkId=169256)msdn ブログ エントリ。|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend および Thread.Resume が、予期しない動作のために使用されなくなりました。  その他のクラスを使用して、<xref:System.Threading>名前空間など<xref:System.Threading.Monitor>、 <xref:System.Threading.Mutex>、および<xref:System.Threading.Semaphore>スレッドの同期やリソースを保護します。|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|DangerousGetHandle メソッドでは、無効なハンドルを返すことができますので、セキュリティ リスクが生じます。 参照してください、<xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A>と<xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A>DangerousGetHandle メソッドを安全に使用する方法の詳細についてのメソッド。|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|これらのメソッドは、予期しない場所からアセンブリを読み込むことができます。 たとえば、Suzanne Cook の .NET CLR のノートのブログ投稿を参照して[LoadFile vs します。LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450)と[バインド コンテキストを選択する](http://go.microsoft.com/fwlink/?LinkId=164451)アセンブリを読み込む方法については、MSDN Web サイト。|
-|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|ユーザー コードがマネージ プロセスで実行を開始するのには遅すぎます CoSetProxyBlanket を確実に呼び出すです。 共通言語ランタイム (CLR) は、次の位置からユーザーの P/invoke を妨げる可能性のある初期化アクションを実行します。<br /><br /> マネージ アプリケーションの CoSetProxyBlanket を呼び出すを持っている場合は、ネイティブ コード (C++) の実行可能ファイルを使用して、プロセスを開始し、CoSetProxyBlanket を呼び出すネイティブ コードでのプロセスでマネージ コード アプリケーションを起動ことを勧めします。 (するランタイムのバージョン番号を指定してください)。|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|GC を呼び出しています。Collect はアプリケーションのパフォーマンスに大きな影響を与える可能性があり、ほとんど必要ありません。 詳細については、MSDN の[プエルトリコ Mariani の Performance ちょっとの](http://go.microsoft.com/fwlink/?LinkId=169256)ブログエントリを参照してください。|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|予期しない動作が原因で、スレッドの中断と再開が非推奨とされました。  @No__t_1、<xref:System.Threading.Mutex>、<xref:System.Threading.Semaphore> などの <xref:System.Threading> 名前空間の他のクラスを使用して、スレッドを同期したりリソースを保護したりします。|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Safehandle.dangerousgethandle メソッドは、無効なハンドルを返す可能性があるため、セキュリティ上のリスクが生じます。 Safehandle.dangerousgethandle メソッドを安全に使用する方法の詳細については、<xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> と <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> の方法に関する説明を参照してください。|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|これらのメソッドは、予期しない場所からアセンブリを読み込むことができます。 たとえば、アセンブリを読み込むメソッドの詳細については、MSDN Web サイトの「Suzanne クックの .NET CLR Note のブログ投稿[LoadFile](http://go.microsoft.com/fwlink/?LinkId=164450)と[バインドコンテキストの選択](http://go.microsoft.com/fwlink/?LinkId=164451)」を参照してください。|
+|[Cosetproxyblanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|マネージプロセスでユーザーコードの実行が開始されるまでに、CoSetProxyBlanket を確実に呼び出すには遅すぎます。 共通言語ランタイム (CLR) は、ユーザーの P/Invoke の成功を妨げる可能性がある初期化アクションを実行します。<br /><br /> マネージアプリケーションに CoSetProxyBlanket を呼び出す必要がある場合は、ネイティブコード (C++) 実行可能ファイルを使用してプロセスを開始し、ネイティブコードで CoSetProxyBlanket を呼び出して、マネージコードアプリケーションをプロセスで開始することをお勧めします。 (必ずランタイムバージョン番号を指定してください。)|
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、削除するか、危険性または問題のあるメソッドの呼び出しを置き換えます。
+ この規則違反を修正するには、危険なメソッドまたは問題のあるメソッドへの呼び出しを削除するか置き換えます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 問題のある方法の代替手段が使用できない場合にのみ、この規則からのメッセージを抑制する必要があります。
+ この規則のメッセージは、問題のあるメソッドに代わる手段がない場合にのみ、非表示にする必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [信頼性の警告](../code-quality/reliability-warnings.md)

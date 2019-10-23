@@ -1,5 +1,5 @@
 ---
-title: CA1065:予期しない場所で例外を発生させないで |Microsoft Docs
+title: 'CA1065: 予期しない場所で例外を発生させない |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1065
 ms.assetid: 4e1bade4-4ca2-4219-abc3-c7b2d741e157
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200397"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663600"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:予期しない場所に例外を発生させません
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 予期しない場所に例外を発生させません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
  例外をスローしないはずのメソッドが例外をスローします。
 
 ## <a name="rule-description"></a>規則の説明
- 予期しない例外をスローするメソッドは、次のように分類できます。
+ 例外をスローすることが想定されていないメソッドは、次のように分類できます。
 
-- プロパティの Get メソッド
+- Property Get メソッド
 
 - イベントのアクセサー メソッド
 
@@ -58,82 +58,82 @@ ms.locfileid: "68200397"
 
 - 暗黙的なキャスト演算子
 
-  次に、これらのメソッドについてを説明します。
+  以下のセクションでは、これらのメソッドの種類について説明します。
 
-### <a name="property-get-methods"></a>プロパティの Get メソッド
- プロパティは、基本的にスマート フィールドです。 そのため、できるだけ多くのフィールドのように動作する必要があります。 フィールドは例外をスローしないとプロパティをもする必要があります。 例外をスローするプロパティがある場合は、メソッドにすることを検討してください。
+### <a name="property-get-methods"></a>Property Get メソッド
+ プロパティは、基本的にはスマートフィールドです。 そのため、これらはできるだけフィールドのように動作する必要があります。 フィールドは例外をスローせず、どちらのプロパティでもありません。 例外をスローするプロパティがある場合は、それをメソッドにすることを検討してください。
 
- プロパティの get メソッドからスローされることができるは、次の例外。
+ 次の例外は、プロパティの get メソッドからスローすることができます。
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> およびすべての派生 (<xref:System.ObjectDisposedException?displayProperty=fullName> を含む)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
+- <xref:System.NotSupportedException?displayProperty=fullName> およびすべての派生
 
-- <xref:System.ArgumentException?displayProperty=fullName> (インデックスが付けられます) からのみ
+- <xref:System.ArgumentException?displayProperty=fullName> (インデックス付きの get のみ)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (インデックスが付けられます) からのみ
+- <xref:System.Collections.Generic.KeyNotFoundException> (インデックス付きの get のみ)
 
 ### <a name="event-accessor-methods"></a>イベントのアクセサー メソッド
- イベント アクセサーには、単純な操作例外をスローしない必要があります。 イベントは、追加、またはイベント ハンドラーを削除しようとするときに例外をスローしません。
+ イベントアクセサーは、例外をスローしない単純な操作である必要があります。 イベントハンドラーを追加または削除しようとすると、例外をスローしないようにする必要があります。
 
- 次の例外は、イベント アクセサーからスローされる使用できます。
+ イベントには、次の例外がスローされます。
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> およびすべての派生 (<xref:System.ObjectDisposedException?displayProperty=fullName> を含む)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
+- <xref:System.NotSupportedException?displayProperty=fullName> およびすべての派生
 
-- <xref:System.ArgumentException> 派生
+- <xref:System.ArgumentException> および導関数
 
 ### <a name="equals-methods"></a>Equals メソッド
- 次**Equals**メソッドが例外をスローする必要があります。
+ 次の**Equals**メソッドは例外をスローしません。
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
-  **Equals**メソッドが返す`true`または`false`例外をスローする代わりにします。 たとえば、Equals には、2 つの一致しない型が渡された場合に返す必要がありますだけ`false`スローする代わりに、<xref:System.ArgumentException>します。
+  **Equals**メソッドは、例外をスローするのではなく、`true` または `false` を返す必要があります。 たとえば、Equals に2つの一致しない型が渡された場合、<xref:System.ArgumentException> をスローするのではなく、`false` を返す必要があります。
 
 ### <a name="gethashcode-methods"></a>GetHashCode メソッド
- 次**GetHashCode**メソッドは通常は例外をスローしません。
+ 次の**GetHashCode**メソッドは、通常、例外をスローしません。
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
-  **GetHashCode**値を常に返す必要があります。 それ以外の場合、ハッシュ テーブル内の項目が失われることができます。
+  **GetHashCode**は常に値を返す必要があります。 それ以外の場合、ハッシュテーブル内の項目が失われる可能性があります。
 
-  バージョンの**GetHashCode**スローできる引数を受け取る、<xref:System.ArgumentException>します。 ただし、 **Object.GetHashCode**が例外をスローしない必要があります。
+  引数を受け取る**GetHashCode**のバージョンは、<xref:System.ArgumentException> をスローすることがあります。 ただし、**オブジェクト GetHashCode**は例外をスローすることはできません。
 
 ### <a name="tostring-methods"></a>ToString メソッド
- デバッガーを使用して<xref:System.Object.ToString%2A?displayProperty=fullName>オブジェクトに関する情報を文字列の形式で表示できるようにします。 そのため、 **ToString**オブジェクトの状態が変わらないようにして、例外をスローする必要があります。
+ デバッガーでは、オブジェクトに関する情報を文字列形式で表示するために <xref:System.Object.ToString%2A?displayProperty=fullName> を使用します。 したがって、 **ToString**はオブジェクトの状態を変更する必要がなく、例外をスローしないようにする必要があります。
 
 ### <a name="static-constructors"></a>静的コンストラクター
- 現在のアプリケーション ドメインで使用できない型を静的コンス トラクターから例外をスローします。 (セキュリティ上の問題) などの非常に良好な理由は、静的コンス トラクターから例外がスローされるが必要です。
+ 静的コンストラクターから例外をスローすると、現在のアプリケーションドメインでその型を使用できなくなります。 静的コンストラクターから例外をスローするための十分な理由 (セキュリティの問題など) が必要です。
 
 ### <a name="finalizers"></a>ファイナライザー
- プロセスを廃棄する高速で失敗する、CLR は、ファイナライザーから例外をスローします。 そのため、例外のスローをファイナライザーで常に避けてください。
+ ファイナライザーから例外をスローすると、CLR が高速に処理され、プロセスが破棄されます。 したがって、ファイナライザーで例外をスローすることは常に避ける必要があります。
 
 ### <a name="dispose-methods"></a>Dispose メソッド
- A<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>メソッドが例外をスローする必要があります。 Dispose がクリーンアップのロジックの一部として呼び出される多くの場合、`finally`句。 そのため、例外の内部処理を追加するユーザーを強制的に明示的に Dispose から例外がスローされる、`finally`句。
+ @No__t_0 メソッドでは、例外をスローすることはできません。 Dispose は、`finally` 句でクリーンアップロジックの一部として呼び出されることがよくあります。 したがって、Dispose から明示的に例外をスローすると、ユーザーは `finally` 句内に例外処理を追加するように強制されます。
 
- **Dispose (false)** これはほぼ常にファイナライザーから呼び出されるために、コード パスは、例外をスローしない必要があります。
+ **Dispose (false)** コードパスは、ほとんどの場合、ファイナライザーから呼び出されるため、例外をスローすることはできません。
 
 ### <a name="equality-operators--"></a>等値演算子 (= =、! =)
- Equals メソッドと同様に等値演算子が返す`true`または`false`と例外をスローする必要があります。
+ Equals メソッドと同様に、等値演算子は `true` または `false` のいずれかを返す必要があり、例外をスローしません。
 
 ### <a name="implicit-cast-operators"></a>暗黙的なキャスト演算子
- ユーザーは、多くの場合、暗黙的なキャスト演算子が呼び出されたことに注意してください、ため、暗黙的なキャスト演算子によってスローされる例外はまったく予測できません。 そのため、例外はスローされません暗黙的なキャスト演算子。
+ ユーザーは、暗黙的なキャスト演算子が呼び出されたことを認識しないことがよくあるため、暗黙的なキャスト演算子によってスローされる例外は完全に予期しないものになります。 したがって、暗黙的なキャスト演算子からは例外をスローしません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- プロパティの get アクセス操作子のいずれかが不要になった例外をスローするか、メソッド、プロパティに変更するロジックを変更します。
+ プロパティの getter の場合は、例外をスローする必要がなくなったロジックを変更するか、プロパティをメソッドに変更します。
 
- すべての他のメソッドの種類前の表に、変更ロジックが不要になったとして例外をスローする必要がありますようにします。
+ 上記の他のすべてのメソッド型については、例外をスローする必要がなくなったロジックを変更します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- スローされた例外ではなく例外宣言、違反が発生した場合、この規則による警告を抑制する安全です。
+ スローされた例外ではなく例外宣言によって違反が発生した場合は、この規則からの警告を抑制することが安全です。
 
 ## <a name="related-rules"></a>関連規則
- [CA2219:Exception 句に例外を発生させません](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: exception 句に例外を発生させないでください](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [デザインの警告](../code-quality/design-warnings.md)

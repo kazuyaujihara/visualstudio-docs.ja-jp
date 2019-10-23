@@ -3,17 +3,17 @@ title: 'チュートリアル: XSLT IntelliSense の使用'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808011"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604375"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>チュートリアル: XSLT IntelliSense の使用
 
@@ -45,7 +45,7 @@ ms.locfileid: "62808011"
     </xsl:stylesheet>
     ```
 
-2. 後にカーソルを置き`<xsl:template name="msg23" match="msg23">`キーを押します**Enter**します。 その後、次の `xsl:call-template` 要素を入力します。
+2. @No__t_0 の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl:call-template` 要素を入力します。
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "62808011"
 
      入力中、`name=""` 要素の `xsl:call-template` 属性にテンプレート名の一覧が表示されます。
 
-3. 後にカーソルを置き`<xsl:call-template name="localized-message">`キーを押します**Enter**します。 その後、次の `xsl:with-param` 要素を入力します。
+3. @No__t_0 の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl:with-param` 要素を入力します。
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ ms.locfileid: "62808011"
     </xsl:stylesheet>
     ```
 
-2. 後にカーソルを置き`<xsl:apply-templates select="phone" />`キーを押します**Enter**します。 その後、次の `xsl: apply-templates` 要素を入力します。
+2. @No__t_0 の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl: apply-templates` 要素を入力します。
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ ms.locfileid: "62808011"
     </xsl:stylesheet>
     ```
 
-2. 後にカーソルを置き`<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`キーを押します**Enter**します。 その後、次の `xsl:namespace-alias` 要素を入力します。
+2. @No__t_0 の後にカーソルを挿入し **、enter キーを押します。** その後、次の `xsl:namespace-alias` 要素を入力します。
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

@@ -10,7 +10,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - project templates, debugging
-- Visual C++ projects, debugging
+- C++ projects, debugging
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925489"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431412"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>デバッグの準備:Visual C++ プロジェクトの種類
+# <a name="debugging-preparation-c-project-types"></a>デバッグの準備C++ : プロジェクトの種類
 ここでは、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクト テンプレートで作成された基本的なプロジェクトの種類をデバッグする方法について説明します。
 
  Dll を出力として作成するプロジェクトの種類は、共通の機能があるため、[デバッグ Dll プロジェクト](../debugger/debugging-dll-projects.md)にグループ化されていることに注意してください。
@@ -97,7 +97,7 @@ ms.locfileid: "68925489"
    [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows フォーム アプリケーション (.NET)
- **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、「[方法 :Windows アプリケーション プロジェクトを作成する](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))」を参照してください。
+ **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、「 [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))」を参照してください。
 
  この種のアプリケーションを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でデバッグする作業は、マネージド Windows フォーム アプリケーションのデバッグ作業に似ています。
 
@@ -109,7 +109,7 @@ ms.locfileid: "68925489"
 
  [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [実行中のプログラムまたは複数のプログラムへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

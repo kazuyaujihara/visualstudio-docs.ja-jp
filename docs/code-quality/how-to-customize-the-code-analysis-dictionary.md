@@ -1,5 +1,5 @@
 ---
-title: '方法: コード分析辞書のカスタマイズ'
+title: '方法 : コード分析辞書をカスタマイズする'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b43d731634022a2f3fcb9e00b552e75e5322db8c
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715240"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649460"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>方法: コード分析辞書のカスタマイズ
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>方法 : コード分析辞書をカスタマイズする
 
-コード分析では、組み込みの辞書を使用して、スペル、文法の場合も、および .NET デザイン ガイドラインの他の名前付け規則でエラー コード内の識別子を確認します。 追加、削除、または用語、略語、および組み込みの辞書に頭字語を変更するカスタム辞書の Xml ファイルを作成できます。
+コード分析では、組み込みの辞書を使用して、コード内の識別子を確認し、スペル、文法ケース、および .NET デザインガイドラインのその他の名前付け規則を確認します。 カスタム辞書 Xml ファイルを作成して、組み込みの辞書に用語、略語、および頭字語を追加、削除、または変更することができます。
 
-たとえば、コードには、という名前のクラスが含まれている**DoorKnokker**します。 コード分析は 2 つの単語の複合として名前を識別:**ドア**と**knokker**します。 警告が発生している**knokker**スペルが正しくないです。 スペルを認識するコード分析を強制するという用語を追加することができます**knokker**を追加します。
+たとえば、コードに**DoorKnokker**という名前のクラスが含まれているとします。 コード分析では、**ドア**と**knokker**という2つの単語の複合として名前が識別されます。 その後、 **knokker**のスペルが正しくないという警告が生成されます。 コード分析でスペルを認識させるには、カスタム辞書に**knokker**という用語を追加します。
 
 ## <a name="to-create-a-custom-dictionary"></a>カスタム辞書を作成するには
 
-という名前のファイルを作成する**CustomDictionary.xml**します。
+**Customdictionary .xml**という名前のファイルを作成します。
 
-次の XML 構造を使用して、カスタムの言葉を定義します。
+次の XML 構造を使用して、カスタム単語を定義します。
 
 ```xml
 <Dictionary>
@@ -58,25 +58,25 @@ ms.locfileid: "66715240"
    </Dictionary>
 ```
 
-## <a name="custom-dictionary-elements"></a>ユーザー辞書要素
+## <a name="custom-dictionary-elements"></a>カスタム辞書要素
 
-コード分析辞書の動作を変更するには、ユーザー辞書には、次の要素の内部テキ ストとして条件を追加します。
+コード分析ディクショナリの動作を変更するには、カスタム辞書の次の要素の内部テキストとして用語を追加します。
 
-- [ディクショナリ/単語/認識/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [辞書/単語/認識/単語](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
-- [ディクショナリ/単語/認識されていない/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [辞書/単語/認識されない/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [辞書/単語/非推奨/期間 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [辞書、単語、複合/用語 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [辞書/単語/複合/語句 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [辞書、単語、DiscreteExceptions/用語](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [ディクショナリ/頭字語/CasingExceptions/頭字語](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/頭字語/CasingExceptions/頭字語](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a> ディクショナリ/単語/認識/Word
+### <a name="BKMK_DictionaryWordsRecognizedWord"></a>辞書/単語/認識/単語
 
-用語を正しいことと、コード分析を識別する用語の一覧に含めるには、ディクショナリ、単語、認識/Word 要素の内部テキ ストとしてという用語を追加します。 辞書、単語、認識/Word 要素内の用語では区別されません。
+コード分析によって正しくスペルが識別される用語の一覧に用語を含めるには、用語を辞書/単語/認識/単語要素の内部テキストとして追加します。 辞書/単語/認識された要素または Word 要素の用語では、大文字と小文字は区別されません。
 
 **例**
 
@@ -93,25 +93,25 @@ ms.locfileid: "66715240"
 </Dictionary>
 ```
 
-認識単語/辞書/ノード内の用語は、次のコード分析ルールに適用されます。
+ディクショナリ/単語/認識されたノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702:複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA 1704:識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
-- [CA 1726: 適切な。用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726.md)
 
-- [CA2204:リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> ディクショナリ/単語/認識されていない/Word
+### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>辞書/単語/認識されない/Word
 
-コード分析を正しく識別する用語の一覧から用語を除外するには、スペル、ディクショナリ、単語、"認識されません"/Word 要素の内部テキ ストとして除外する条件を追加します。 辞書、単語、"認識されません"/Word 要素内の用語では区別されません。
+コード分析によって正しくスペルが識別される用語の一覧から用語を除外するには、辞書/単語/認識されていない要素の内部テキストとして除外する用語を追加します。 辞書/単語/認識されない/Word 要素の用語では、大文字と小文字は区別されません。
 
 **例**
 
@@ -128,31 +128,31 @@ ms.locfileid: "66715240"
 </Dictionary>
 ```
 
-認識できないワード/辞書/ノード内の用語は、次のコード分析ルールに適用されます。
+辞書/単語/認識されていないノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702:複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA 1704:識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
-- [CA 1726: 適切な。用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726.md)
 
-- [CA2204:リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: リテラルは正しく入力されていなければなりません](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]
+### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>辞書/単語/非推奨/期間 [@PreferredAlternate]
 
-用語を非推奨のコード分析を識別する用語の一覧に含めるには、ディクショナリ、単語、非推奨/用語要素の内部テキ ストとしてという用語を追加します。 非推奨の用語は、単語のスペルが正しいが、使用する必要があります。
+コード分析によって非推奨と識別された用語の一覧に用語を含めるには、用語を辞書/単語/非推奨の要素の内部テキストとして追加します。 非推奨の用語は、スペルが正しく、使用すべきではない単語です。
 
-警告に推奨される代替語句を含めると、用語の要素の PreferredAlternate 属性で、代替を指定します。 おくことができます、属性値空代替を提案したくない場合。
+警告に提案された代替用語を含めるには、Term 要素の PreferredAlternate 属性で代替用語を指定します。 代替を提案しない場合は、属性値を空のままにしておくことができます。
 
-- ディクショナリ/言葉で廃止された用語]、[非推奨と用語の要素は区別されません。
+- Dictionary/Words/Deprecated/Term 要素の非推奨の用語では、大文字と小文字は区別されません。
 
-- PreferredAlternate 属性の値は大文字小文字を区別します。 複合の代替のパスカル ケースを使用します。
+- PreferredAlternate 属性値では大文字と小文字が区別されます。 複合代替の場合は、Pascal 形式を使用します。
 
 **例**
 
@@ -169,25 +169,25 @@ ms.locfileid: "66715240"
 </Dictionary>
 ```
 
-非推奨の単語/辞書/ノード内の用語は、次のコード分析ルールに適用されます。
+[辞書/単語/非推奨] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702:複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA 1704:識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-- [CA 1726: 適切な。用語を使用します](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 適切な用語を使用します](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 辞書、単語、複合/用語 [@CompoundAlternate]
+### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>辞書/単語/複合/語句 [@CompoundAlternate]
 
-組み込みの辞書は、複合語ではなく、1 つの個別の用語としていくつかの用語を識別します。 コード分析は、複合語として識別する用語の一覧に、語句を含めると、用語の正しい大文字小文字の区別を指定するには、ディクショナリ、単語、複合/用語要素の内部テキ ストとしてという用語を追加します。 用語の要素の CompoundAlternate 属性では、個々 の単語 (パスカル ケース) の最初の文字を大文字で複合語を構成する個々 の単語を指定します。 内部テキ ストで指定された期間が自動的に DiscreteExceptions/辞書/単語の一覧に追加することに注意してください。
+組み込みの辞書は、複合語句ではなく、単一の個別の用語として用語を識別します。 コード分析で特定の単語として識別される用語の一覧に用語を含めるには、用語を辞書/単語/複合/用語要素の内部テキストとして追加します。 Term 要素の CompoundAlternate 属性で、個別の単語の最初の文字を大文字にして (Pascal 形式)、複合語句を構成する個々の単語を指定します。 内部テキストで指定された用語は、辞書/単語/DiscreteExceptions リストに自動的に追加されることに注意してください。
 
-- ディクショナリ/言葉で廃止された用語]、[非推奨と用語の要素は区別されません。
+- Dictionary/Words/複合/Term 要素の複合語句では、大文字と小文字は区別されません。
 
-- PreferredAlternate 属性の値は大文字小文字を区別します。 複合の代替のパスカル ケースを使用します。
+- CompoundAlternate 属性値では大文字と小文字が区別されます。 複合代替の場合は、Pascal 形式を使用します。
 
 **例**
 
@@ -204,19 +204,19 @@ ms.locfileid: "66715240"
 </Dictionary>
 ```
 
-複合語/辞書/ノード内の用語は、次のコード分析ルールに適用されます。
+[ディクショナリ/単語/複合] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702:複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-- [CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: リソース文字列は正しく入力されなければなりません](../code-quality/ca1703.md)
 
-- [CA 1704:識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: 識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> 辞書、単語、DiscreteExceptions/用語
+### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
 
-コード分析は、1 つとして識別する用語の一覧の用語を除外するには、という用語は複合語の大文字小文字の規則でオンにすると個別の単語は、ディクショナリ、単語、DiscreteExceptions/用語要素の内部テキ ストとしてという用語を追加します。 要素のディクショナリ、単語、DiscreteExceptions/用語の用語は、小文字は区別されません。
+コード分析で、複合語の大文字と小文字の規則によって語句がチェックされるときに、単語として識別される用語を一覧から除外するには、辞書/単語/DiscreteExceptions/Term 要素の内部テキストとして用語を追加します。 Dictionary/Words/DiscreteExceptions/Term 要素の用語では、大文字と小文字は区別されません。
 
 **例**
 
@@ -233,15 +233,15 @@ ms.locfileid: "66715240"
 </Dictionary>
 ```
 
-DiscreteExceptions 単語/辞書/ノード内の用語は、次のコード分析ルールに適用されます。
+[ディクショナリ/単語/DiscreteExceptions] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません](../code-quality/ca1701.md)
 
-- [CA1702:複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: 複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> ディクショナリ/頭字語/CasingExceptions/頭字語
+### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/頭字語/CasingExceptions/頭字語
 
-スペルの正しいでコード分析を識別する用語の一覧に、頭字語を含めると、複合語の頭字語という用語は、大文字と小文字をオンにした場合のルールを示すには、ディクショナリ/頭字語/CasingExceptions の内部テキ ストとして用語の追加/Acronym 要素。 頭字語辞書、略語、CasingExceptions/Acronym 要素では大文字小文字を区別します。
+コード分析によって識別される用語の一覧に頭字語を含め、複合語の大文字と小文字の規則によって用語をチェックする方法を指定するには、辞書/頭字語/CasingExceptions の内部テキストとして用語を追加します。頭字語要素。 Dictionary/頭字/CasingExceptions/頭字語の頭字語では、大文字と小文字が区別されます。
 
 **例**
 
@@ -258,20 +258,20 @@ DiscreteExceptions 単語/辞書/ノード内の用語は、次のコード分�
 </Dictionary>
 ```
 
-CasingExceptions 頭字語/辞書/ノード内の用語は、次のコード分析ルールに適用されます。
+[辞書/頭字語/CasingExceptions] ノードの用語は、次のコード分析規則に適用されます。
 
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
-## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> ユーザー辞書をプロジェクトに適用するには
+## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>プロジェクトにカスタム辞書を適用するには
 
-1. **ソリューション エクスプ ローラー**、次の手順のいずれかを使用します。
+1. **ソリューションエクスプローラー**で、次のいずれかの手順を実行します。
 
-2. ディクショナリを 1 つのプロジェクトを追加するプロジェクト名を右クリックし、**既存項目の追加**します。 ファイルを指定して、**既存項目の追加** ダイアログ ボックス。
+2. 1つのプロジェクトに辞書を追加するには、プロジェクト名を右クリックし、 **[既存項目の追加]** をクリックします。 **[既存項目の追加]** ダイアログボックスでファイルを指定します。
 
-3. 2 つ以上のプロジェクト間で共有されているディクショナリを追加するには、共有するファイルを探します、**既存項目の追加** ダイアログ ボックスで、下矢印をクリックして、**追加**ボタンをクリックし、をクリックし、**リンクとして追加**.
+3. 複数のプロジェクト間で共有される辞書を追加するには、 **[既存項目の追加]** ダイアログボックスで共有するファイルを探し、 **[追加]** ボタンの下矢印をクリックして、 **[リンクとして追加]** をクリックします。
 
-4. **ソリューション エクスプ ローラー**を右クリックし、 **CustomDictionary.xml**ファイル名とクリック**プロパティ**します。
+4. **ソリューションエクスプローラー**で、 **customdictionary .xml**ファイル名を右クリックし、 **[プロパティ]** をクリックします。
 
-5. **ビルド アクション**一覧で、 **CodeAnalysisDictionary**します。
+5. **[ビルドアクション]** ボックスの一覧で、 **[CodeAnalysisDictionary]** を選択します。
 
-6. **出力ディレクトリにコピー**一覧で、**コピーしない**します。
+6. **[出力ディレクトリにコピー]** ボックスの一覧の **[コピー]** しない を選択します。

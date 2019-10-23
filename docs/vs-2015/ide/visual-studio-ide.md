@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698605"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667140"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 ## <a name="ide-basics"></a>IDE の基本
  次の図は、プロジェクトが開かれている Visual Studio IDE、プロジェクト ファイル内を移動するためのソリューション エクスプローラー ウィンドウ、ソース管理と作業項目トラッキングを移動するためのチーム エクスプローラー ウィンドウを示しています。 示されているタイトル バーの機能については、以下で詳しく説明します。
 
- ![Visual Studio IDE](../ide/media/visualstudioide.png "VisualStudioIDE")
+ ![Visual Studio IDE](../ide/media/visualstudioide.png "|::ref1::|")
 
 ### <a name="signing-in"></a>サインイン
  Visual Studio を初めて起動する際には、まず Microsoft アカウント、仕事用アカウント、または学校用アカウントを使ってサインインできます。 サインインすると、複数のデバイス間でウィンドウのレイアウトなどの設定を最新に保つことができ、必要なサービス (Azure サブスクリプションや Visual Studio Team Services など) に自動的に接続できます。 サブスクリプションに基づくライセンスがある場合は、ライセンスのトークンを最新の状態に保つために、定期的に Visual Studio にサインインする必要があります。 プロダクト キーのライセンスがある場合、サインインする必要はありませんが、サインインすると、Visual Studio Team Services や Azure、Office 365、Salesforce.com のアカウントに接続しやすくなります。 詳しくは、「[Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)」をご覧ください。
@@ -57,7 +57,7 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 ### <a name="finding-things-and-getting-help"></a>検索とヘルプの取得
  キーボード ショートカットやメニューの場所が分からない場合、下の [ [クイック起動](../ide/reference/quick-launch-environment-options-dialog-box.md) ] ウィンドウを使用すると、Visual Studio コマンド、ツール、機能などをすぐに見つけることができます。 探しているものを入力すれば、クイック起動がそのリンクを教えてくれます。
 
- !["新しいプロジェクト" のクイック起動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+ !['新しいプロジェクト' のクイック起動結果](../ide/media/productivity-quicklaunch.png "|::ref2::|")
 
  MSDN は、技術情報に関する Microsoft Web サイトです。今まさに、MSDN でこのページをお読みになっています。 Visual Studio で **F1** キーを押すと、アクティブ ウィンドウに関する MSDN のヘルプ ページに移動できます。 また、コード エディターで **F1** キーを押すと、現行のカーソル位置の API またはキーワードについての MSDN ヘルプ ページに移動できます。 たとえば、C# ファイルで、`System.String` 宣言の途中か末尾にカーソルを置いて **F1** キーを押すと、<xref:System.String> の MSDN ヘルプ ページに移動します。
 
@@ -74,32 +74,32 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 ## <a name="connecting-to-visual-studio-team-services-and-team-foundation-server"></a>Visual Studio Team Services と Team Foundation Server への接続
  Visual Studio Team Services (VSTS) は、ソフトウェア プロジェクトをホストし、チームでのコラボレーションを有効にするためのクラウド ベースのサービスです。 VSTS は、Git ソース管理システムと Team Foundation ソース管理システムの両方をサポートしています。また、Scrum、CMMI、アジャイル開発方法もサポートしています。 Team Foundation バージョン管理 (TFVC) は、単一の集中サーバー リポジトリを使用して、ファイルを追跡してバージョン管理します。 ローカルの変更は常に集中サーバーにチェックインされます。他の開発者はそこで、最新の変更を取得できます。 Team Foundation Server (TFS) 2015 は、Visual Studio のアプリケーション ライフサイクル管理のハブです。 これにより、開発プロセスに関わるすべてのユーザーが 1 つのソリューションを使用して参加できるようになります。 TFS は、異種混合のチームやプロジェクトを管理するのにも役立ちます。
 
- Visual Studio Team Services のアカウントまたは Team Foundation Server がネットワーク上にある場合、[チーム エクスプローラー] ウィンドウから接続することができます。 このウィンドウからソース管理にコードをチェックインしたりソース管理からコードをチェックアウトできます。また、作業項目を管理したり、ビルドを開始したり、チームのルームやワークスペースにアクセスできます。 チーム エクスプローラーは、**[クイック起動]**、**[ビュー] > [チーム エクスプローラー]** のメイン メニュー、または **[チーム] > [接続の管理]** から開くことができます。  Visual Studio Team Services について詳しくは、「 [www.visualstudio.com](https://www.visualstudio.com/)」をご覧ください。 Team Foundation Server について詳しくは、「 [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)」をご覧ください。
+ Visual Studio Team Services のアカウントまたは Team Foundation Server がネットワーク上にある場合、[チーム エクスプローラー] ウィンドウから接続することができます。 このウィンドウからソース管理にコードをチェックインしたりソース管理からコードをチェックアウトできます。また、作業項目を管理したり、ビルドを開始したり、チームのルームやワークスペースにアクセスできます。 チーム エクスプローラーは、 **[クイック起動]** 、 **[ビュー] > [チーム エクスプローラー]** のメイン メニュー、または **[チーム] > [接続の管理]** から開くことができます。  Visual Studio Team Services について詳しくは、「 [www.visualstudio.com](https://www.visualstudio.com/)」をご覧ください。 Team Foundation Server について詳しくは、「 [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)」をご覧ください。
 
  次の図は、VSTS でホストされているソリューションの [チーム エクスプローラー] ウィンドウを示しています。
 
- ![Visual Studio チーム エクスプローラー](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
+ ![Visual Studio チーム エクスプローラー](../ide/media/vs2015-teamexplorer.png "|::ref3::|")
 
 ## <a name="creating-solutions-and-projects"></a>ソリューションとプロジェクトの作成
  Visual Studio を使用して個々のコード ファイルを使用できますが、より一般的なのは、 *プロジェクト*で処理する方法です。 Visual Studio プロジェクトは、ファイルとリソースのを集めたものです。アプリケーションにするために単一のバイナリ実行可能ファイル (.exe、DLL、appx など) にコンパイルされます。 ASP.NET Web サイト以外では、実行可能ファイルは生成されません。プロジェクトには、HTML、JavaScript ファイル、および画像のみが含まれます。 密接に関連した複数のバイナリまたは Web サイトを作成することが必要になる時があります。そのため、Visual Studio にはソリューションという概念があります。ソリューションには、複数のプロジェクトまたは Web サイトを含めることができます。 プロジェクトを作成する際、実際にはソリューションのプロジェクトを作成していることになります。必要に応じて、後からそのソリューションにプロジェクトを追加することができます。 たとえば、DLL プロジェクトがある場合、DLL を読み込んで使用するソリューションに.exe プロジェクトを追加できます。
 
  *プロジェクト テンプレート* は、事前設定済みコード ファイルと構成設定のコレクションです。これにより、特定の種類のアプリケーションの作成作業をすばやくセットアップすることができます。 Visual Studio には多くの選択元となるプロジェクト テンプレートが用意されています。既定のテンプレートの中に適切なものがなければ、独自のテンプレートを作成することができます。 テンプレートを使ってプロジェクトを作成した後、そのプロジェクトでの独自のコードの作成を開始できます。提供されているファイルか、追加する新しいファイルに作成できます。 詳しくは、「[ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)」をご覧ください。 次の図は、ASP.NET アプリケーション用に使用できるプロジェクト テンプレートが入った [新しいプロジェクト] ダイアログを示しています。
 
- ![Visual Studio の [新しいプロジェクト] ダイアログ](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Visual Studio の [新しいプロジェクト] ダイアログ](../ide/media/vs2015-newprojectdialog.png "|::ref4::|")
 
 ## <a name="designing-the-user-interface"></a>ユーザー インターフェイスの定義
  デザイナーは、コードを記述することなくユーザー インターフェイスを作成できる直感的なツールのことです。 リスト ボックス、カレンダー、ボタンなどの UI コントロールを [ [Toolbox](../ide/reference/toolbox.md) ] ウィンドウから、ウィンドウまたはダイアログ ボックスを表すデザイン サーフェイスにドラッグできます。 コードを記述することなく、要素のサイズを変更し、再配置できます。 ユーザー インターフェイスを伴うものであれば、どんな種類のプロジェクトについても、デザイナーが含まれています。
 
  プロジェクトに XAML ベースのユーザー インターフェイスがある場合、既定のデザイナーは、Blend for Visual Studio です。Blend for Visual Studio は、Visual Studio とシームレスに連携する高度なグラフィック ツールです。
 
- ![アートボード](../ide/media/b5-artboard.png "b5_artboard")
+ ![アートボード](../ide/media/b5-artboard.png "|::ref5::|")
 
 |||
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**デザイン ビュー** ドキュメントのビジュアル デザインを表示します。 このビューでは、デザイン サーフェイス上のオブジェクトを描画または変更できます。|
 |![](../designers/media/b1-2.png "B1_2")|**階層リンク** 選択したオブジェクトのテンプレート編集モード、スタイル編集モード、およびオブジェクト編集スコープを簡単に切り替えることができます。|
 |![](../designers/media/b1-3.png "B1_3")|**ズーム** デザイン サーフェイスをズームするとき、またはデザイン サーフェイス上のオブジェクトをズームするときに使用します。|
-|![](../designers/media/b1-4.png "B1_4")|**デザイン サーフェイス コントロール** これらのコントロール (**[スナップ グリッドの表示]**、 **[グリッド線にスナップ]** 、 **[スナップ ガイドラインへのスナップをオン/オフにする]**) は、スナップ オプションを設定するときに使用します。 スナップ機能は、オブジェクトを並べて配置するときや、デザイン サーフェイスに行を等間隔で配置するときに便利です。|
+|![](../designers/media/b1-4.png "B1_4")|**デザイン サーフェイス コントロール** これらのコントロール ( **[スナップ グリッドの表示]** 、 **[グリッド線にスナップ]** 、 **[スナップ ガイドラインへのスナップをオン/オフにする]** ) は、スナップ オプションを設定するときに使用します。 スナップ機能は、オブジェクトを並べて配置するときや、デザイン サーフェイスに行を等間隔で配置するときに便利です。|
 |![](../designers/media/b1-5.png "B1_5")|**コード エディター** コード エディターで XAML、C#、C++ または Visual Basic のコードを手動で編集します。|
 
  詳細については、[Visual Studio および Blend for Visual Studio での XAML デザインに関する記事](../designers/designing-xaml-in-visual-studio.md)を参照してください。
@@ -109,7 +109,7 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 
  テキスト エディターで **[ファイル] > [開く] > [ファイル]** とクリックすると、個別のファイルを編集できます。 とクリックすると、個別のファイルを編集できます。開いているプロジェクト内のファイルを編集するには、ソリューション エクスプ ローラーで対象ファイル名をクリックします。 コードは色分け表示されます。クイック起動で「色」と入力すると、配色をカスタマイズできます。 テキスト エディターのタブ付きウィンドウを、一度に多数開くことができます。 各ウィンドウ個別に分割できます。 テキスト エディターを全画面表示モードで実行することもできます。
 
- ![コード エディターの GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C++IDE_EditorLineNumbersWordWrapOn")
+ ![コード エディターの GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "|::ref11::|")
 
  テキスト エディターには、生産性の向上に役立つ多くの機能との高度な対話性があります (望む場合)。これによって、より質の高いコードをより早く作成できます。 機能は言語によって異なり、機能をオンまたはオフにするためにそれらを使用する必要はありません (クイック起動で「エディター」を入力)。一般的な生産性向上機能として、次のものがあります。
 
@@ -117,11 +117,11 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 
 2. *IntelliSense* 。コードに関する型情報をエディターに直接表示したり、場合によっては、ちょっとしたコードを自動的に作成したりする、よく使われる機能セットの包括的な用語です。 エディター内のインラインに基本ドキュメントがあるようなもので、これによって、別個のヘルプ ウィンドウで型情報を検索する手間が省けます。 IntelliSense 機能は言語によって異なります。 詳しくは、「 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md)」をご覧ください。 次の図は、職場でのいくつかの IntelliSense 機能を示しています。
 
-    ![Visual Studio のメンバー一覧](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio のメンバーの一覧](../ide/media/vs2015-intellisense.png "|::ref12::|")
 
 3. **波線** 。入力と同時にコードのエラーまたは潜在的な問題をアラートします。これにより、コンパイルまたは実行時にエラーが発見されるのを待たずに即時に修正することができます。 破線の上に移動すると、エラーに関する追加情報が表示されます。 電球がエラーの修正方法に関する提案とともに左余白に表示される場合もあります。 詳細については、「 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)」を参照してください。
 
-    ![電球でのマウス ホバー](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![電球のマウス ホバー](../ide/media/vs2015-lightbulb-hover.png "|::ref13::|")
 
 4. [ブックマーク](../ide/setting-bookmarks-in-code.md)。アクティブに作業しているファイルの特定の行にすばやく移動することができます。
 
@@ -135,7 +135,7 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 
 9. [オブジェクト ブラウザー](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) (関連ツール)。システム上の .NET アセンブリまたは Windows ランタイム アセンブリを調べ、アセンブリにどの型が含まれているか、またそれらの型にどのメソッドとプロパティが含まれているかを確認できます。
 
-     ![System.Timer を示すオブジェクト ブラウザー](../ide/media/objectbrowser.png "ObjectBrowser")
+     ![System.Timer を示すオブジェクト ブラウザー](../ide/media/objectbrowser.png "|::ref14::|")
 
    [編集] メニューと [表示] メニュー上の項目のほとんどは、何らかの方法でコード エディターに関連しています。 エディターについて詳しくは、「[コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)」および「[コードの編集](https://www.visualstudio.com/features/ide-vs)」をご覧ください。
 
@@ -148,7 +148,7 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 ## <a name="debugging-your-code"></a>コードのデバッグ
  Visual Studio の最新のデバッガーを使用すると、ローカル プロジェクトで実行されるコード、リモート デバイスで実行されるコード、エミュレーターで実行されるコード (Android や Windows Phone のコードなど) をデバッグできます。 一度に 1 つのステートメントのコードをステップスルーでき、変数を調べることができます。マルチスレッド アプリケーションをステップスルーでき、指定された条件が true の場合のみヒットするブレークポイントを設定できます。 このすべては、コード エディター自体で構成できます。したがって、コードのコンテキストを離れる必要はありません。
 
- ![ブレークポイントの設定の [表示のみ] ウィンドウ](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
+ ![ブレークポイントの設定の [表示のみ] ウィンドウ](../ide/media/dbg-breakpoints-peekwindow.png "|::ref15::|")
 
  デバッガー自体に複数のウィンドウがあり、それらのウィンドウから、ローカル変数、呼び出し履歴、ランタイム環境のその他の側面を表示および操作できます。 これらのウィンドウは **[デバッグ]** メニューにあります。
 
@@ -161,21 +161,21 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 ## <a name="testing-your-code"></a>コードのテスト
  Visual Studio には、マネージド コード (.NET) の単体テスト フレームワークとネイティブ C++ の単体テスト フレームワークが含まれています。 単体テストを作成するには、単にテスト プロジェクトをソリューションに追加し、テストを作成し、そのテストを [テスト エクスプローラー] ウィンドウから実行します。 詳しくは、「[コードの単体テストUnit Test Your Code](../test/unit-test-your-code.md)」をご覧ください。
 
- ![単体テスト エクスプローラー](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![単体テスト エクスプローラー](../ide/media/ute-failedpassednotrunsummary.png "|::ref16::|")
 
 ## <a name="analyzing-code-quality-and-performance"></a>コード品質とパフォーマンスの分析
- Visual Studio には、静的分析とランタイム分析のための強力なツールが含まれています。 静的分析ツールでは、デザイン、グローバリゼーション、相互運用性、パフォーマンス、セキュリティ、その他のカテゴリでの潜在的なエラーを特定することができます。 パフォーマンス テスト (プロファイリング) では、プログラムの実行方法を測定する必要があります。 これらのツールには、**[分析]** メニューからアクセスできます。 詳細については、「 [Visual Studio 診断ツールによる品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)」を参照してください。
+ Visual Studio には、静的分析とランタイム分析のための強力なツールが含まれています。 静的分析ツールでは、デザイン、グローバリゼーション、相互運用性、パフォーマンス、セキュリティ、その他のカテゴリでの潜在的なエラーを特定することができます。 パフォーマンス テスト (プロファイリング) では、プログラムの実行方法を測定する必要があります。 これらのツールには、 **[分析]** メニューからアクセスできます。 詳細については、「 [Visual Studio 診断ツールによる品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)」を参照してください。
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>クラウド サービスとデータベースへの接続
  Visual Studio の [ [サーバー エクスプローラー](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) ] ウィンドウには、個人アカウント (ログインで使用するアカウント) の下で管理されているすべてのアカウントのリソースが表示されます。これには、SQL Server インスタンス、Azure、salesforce.com、Office 365、Websites が含まれます。
 
- ![サーバー エクスプローラー](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![サーバー エクスプローラー](../ide/media/vs2015-serverexplorer3.png "|::ref17::|")
 
  Visual Studio には、 [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT) が含まれています。これを使用して、データベースをビルド、デバッグ、保守、リファクタリングできます。 データベース プロジェクトを操作したり、オンプレミスまたはオフプレミスで接続されたデータベース インスタンスを直接操作したりすることができます。
 
  Visual Studio の SQL Server オブジェクト エクスプローラーでは、SQL Server Management Studio と同様のデータベース オブジェクトのビューを提供します。 SQL Server オブジェクト エクスプローラーを使用すると、軽いデータベース管理と設計作業を実行できます。これには、SQL Server オブジェクト エクスプローラーのコンテキスト メニューの使用によるテーブル データの編集、スキーマの比較、クエリの実行が含まれます。 また、SSDT には、SQL Server 2012 Analysis Services、Reporting Services、Integration Services Business Intelligence (BI) の各ソリューション (以前の Business Intelligence Development Studio) を開発するための特別なプロジェクトの種類とツールも含まれます。
 
- ![SQL Server オブジェクト エクスプローラー](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
+ ![SQL Server オブジェクト エクスプローラー](../ide/media/vs2015-sqlobjectexplorer.png "|::ref18::|")
 
 ## <a name="deploying-your-finished-application"></a>完成したアプリケーションの配置
  アプリケーションをお客様に配置する用意ができたら、Visual Studio の配置するためのツールを使用できます。Windows ストア や Sharepoint サイトへの配置、Installshield または Windows インストーラー テクノロジによる配置、いずれにも対応しています。 これはすべて、IDE を使用してアクセスできます。 詳細については、「 [アプリケーション、サービス、およびコンポーネントの配置](../deployment/deploying-applications-services-and-components.md)」を参照してください。

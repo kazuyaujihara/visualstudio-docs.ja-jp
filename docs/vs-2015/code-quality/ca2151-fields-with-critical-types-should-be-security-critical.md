@@ -1,33 +1,33 @@
 ---
-title: CA2151:重要な型のフィールドはセキュリティ クリティカルなをする必要があります |Microsoft Docs
+title: 'CA2151: クリティカルな型のフィールドはセキュリティクリティカルである必要があります |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6c707efcc4c945e80ea0206cc5f30a647e83d231
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5dee78ef3c487541363e9e290e54a8f3d68cf3b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142586"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667421"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: クリティカル型のフィールドはセキュリティ クリティカルである必要があります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName||
 |CheckId|CA2151|
-|Category|Microsoft.Security|
+|カテゴリ|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 例えば:
+ 透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 (例:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]

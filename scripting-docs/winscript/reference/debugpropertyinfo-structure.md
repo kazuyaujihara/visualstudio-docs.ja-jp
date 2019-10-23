@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955264"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575067"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo 構造体
-オブジェクトの名前、型、および値を持つ階層的な性質について説明します。 ローカル変数、パラメーター、変数のウォッチ式、およびデバッグ プロパティを記述するために使用され、登録されます。  
+名前、型、および値を持つ階層的な性質を持つオブジェクトを記述します。 ローカル変数、パラメーター、ウォッチ変数と式、およびレジスタのデバッグプロパティを記述するために使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,27 +43,27 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>メンバー  
  dwValidFields  
- 列挙データ型フィールドが初期化されるかを指定するために使用します。  
+ 初期化されるフィールドを指定するために使用される列挙データ型。  
   
  bstrName  
- コンテキスト内でプロパティ名。  
+ コンテキスト内のプロパティ名。  
   
  bstrType  
- プロパティの型、書式設定された文字列。  
+ プロパティの型を書式設定された文字列として指定します。  
   
  bstrValue  
- プロパティの値を書式設定された文字列です。  
+ 書式設定された文字列としてのプロパティ値。  
   
  bstrFullName  
  プロパティの完全名。  
   
  dwAttrib  
- デバッグ プロパティの属性のフラグを指定する列挙です。  
+ デバッグプロパティの属性のフラグを指定する列挙体。  
   
  pDebugProp  
- `IDebugProperty`この情報が記載されている`DebugPropertyInfo`構造体。  
+ この `DebugPropertyInfo` 構造体の情報によって記述された `IDebugProperty`。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

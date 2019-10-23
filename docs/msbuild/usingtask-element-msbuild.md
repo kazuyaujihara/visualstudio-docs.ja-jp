@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411004"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962915"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 要素 (MSBuild)
 [Task](../msbuild/task-element-msbuild.md) 要素で参照されているタスクを、タスクの実装が含まれているアセンブリにマップします。
@@ -38,6 +38,9 @@ ms.locfileid: "63411004"
     TaskFactory = "ClassName"
     Condition="'String A'=='String B'" />
 ```
+
+> [!NOTE]
+> プロパティと項目とは異なり、`TaskName` に適用される "*最初*" の `UsingTask` 要素が使用されます。タスクをオーバーライドするには、新しい `UsingTask` を既存のものの "*前*" に定義する必要があります。
 
 ## <a name="attributes-and-elements"></a>属性と要素
  以降のセクションでは、属性、子要素、および親要素について説明します。

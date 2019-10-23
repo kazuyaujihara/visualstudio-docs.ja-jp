@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowserEx |Microsoft Docs
+title: 'IDebugHelper:: CreatePropertyBrowserEx |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01e63d1588fd1e25f3415f22450ed5145752d711
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d64d9dad54e029dc4c76e8b7e6c7a3f0299b0cb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979202"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576500"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-バリアントをラップし、VARIANT 値または VARTYPE 型の文字列にカスタムの変換では、プロパティ ブラウザーを返します。  
+バリアントをラップし、バリアント値または VARTYPE 型から文字列へのカスタム変換を可能にするプロパティブラウザーを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,19 +41,19 @@ HRESULT CreatePropertyBrowserEx(
   
 #### <a name="parameters"></a>パラメーター  
  `pvar`  
- [in]参照するルートのバリアント。  
+ から参照するルートバリアント。  
   
  `bstrName`  
- [in]ルートに付ける名前。  
+ からルートに付ける名前。  
   
  `pdat`  
- [in]プロパティを要求するスレッドします。 このパラメーターが NULL の場合は、マーシャ リングは実行されません。  
+ からプロパティを要求するスレッド。 このパラメーターが NULL の場合、マーシャリングは実行されません。  
   
  `pdf`  
- [in]バリアントのカスタム書式設定を提供するオブジェクト。  
+ からバリアントのカスタム書式設定を提供するオブジェクト。  
   
  `ppdob`  
- [out]プロパティ ブラウザー。  
+ 入出力プロパティブラウザー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -63,9 +63,9 @@ HRESULT CreatePropertyBrowserEx(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、バリアント型をラップし、VARIANT 値または VARTYPE 型の文字列にカスタムの変換では、プロパティ ブラウザーを返します。  
+ このメソッドは、バリアントをラップし、バリアント値または VARTYPE 型から文字列へのカスタム変換を可能にするプロパティブラウザーを返します。  
   
 ## <a name="see-also"></a>関連項目  
- [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+ [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)    
  [IDebugHelper インターフェイス](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)

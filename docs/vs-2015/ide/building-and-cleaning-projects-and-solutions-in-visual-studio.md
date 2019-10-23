@@ -1,5 +1,5 @@
 ---
-title: クリーンなプロジェクトのソリューションを構築します。
+title: クリーンプロジェクトソリューションのビルド
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -20,15 +20,15 @@ helpviewer_keywords:
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685713"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620562"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "65685713"
 このトピックの手順を使用して、ソリューション内のプロジェクトまたはプロジェクト項目のすべてまたは一部をビルド、リビルド、またはクリーンを行うことができます。 ステップ バイ ステップ チュートリアルについては、「[チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)」を参照してください。
 
 > [!NOTE]
-> ご使用の Visual Studio エディションの UI は、アクティブな設定によって、このトピックで説明する内容とは異なる場合があります。 設定を変更するには、 **[ツール]** メニューを開き、 **[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> ご使用の Visual Studio エディションの UI は、アクティブな設定によって、このトピックで説明する内容とは異なる場合があります。 設定を変更するには、 **[ツール]** メニューを開き、 **[設定のインポートとエクスポート]** を選択します。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>ソリューション全体のビルド、リビルド、またはクリーン
 
@@ -75,9 +75,9 @@ ms.locfileid: "65685713"
 
     このチェック ボックスをオンにすると、以下のいずれかの手順を実行したときに、現在のスタートアップ プロジェクトとその依存関係のみがビルドされます。
 
-   - メニュー バーで、**デバッグ** > **デバッグの開始** (F5)。
+   - メニューバーで、 **[デバッグ]** 、 **[デバッグの開始]** の順に選択し、F5 キーを押し  >  ます。
 
-   - メニュー バーで、**ビルド** > **ソリューションのビルド**(CTRL + SHIFT + B)。
+   - メニューバーで、 **[ビルド]** [**ソリューション**のビルド  >  ビルド] の順に選択します (CTRL + SHIFT + B)。
 
      このチェック ボックスをオフにすると、上記のいずれかのコマンドを実行した場合に、すべてのプロジェクト、依存関係、およびソリューション ファイルがビルドされます。 既定では、このチェック ボックスはオフになっています。
 
@@ -85,13 +85,13 @@ ms.locfileid: "65685713"
 
 1. [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトを選択してから、メニュー バーで **[ビルド]** 、 **[プロジェクトのみ]** の順に選択し、以下のコマンドのいずれかを選択します。
 
-   - *プロジェクト名***のみをビルド**
+   - *プロジェクト名* **のみをビルド**
 
-   - *プロジェクト名***のみをリビルド**
+   - *プロジェクト名* **のみをリビルド**
 
-   - *プロジェクト名***のみ消去**
+   - *プロジェクト名* **のみ消去**
 
-   - *プロジェクト名***へのみリンク**
+   - *プロジェクト名* **へのみリンク**
 
      これらのコマンドは、選択されている [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。プロジェクトの依存関係やソリューション ファイルのビルド、リビルド、クリーン、リンクは行われません。 使用している [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョンに応じて、 **[プロジェクトのみ]** のサブメニューに他のコマンドが含まれる場合があります。
 
@@ -110,4 +110,4 @@ ms.locfileid: "65685713"
     - Ctrl + Break キーを選択します。
 
 ## <a name="see-also"></a>関連項目
- [方法: ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)[のコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド構成について](../ide/understanding-build-configurations.md) [デバッグおよびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ビルドのリファレンス](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)[ソリューションとプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
+ [方法: ビルドログファイルを表示、保存、および構成](../ide/how-to-view-save-and-configure-build-log-files.md)するビルド[ログ](../msbuild/obtaining-build-logs-with-msbuild.md)[のコンパイルと](../ide/compiling-and-building-in-visual-studio.md)ビルドビルド[構成につい](../ide/understanding-build-configurations.md)て[プロジェクト構成のデバッグとリリース](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ビルド参照](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv コマンドラインスイッチ](../ide/reference/devenv-command-line-switches.md)[のソリューションとプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)

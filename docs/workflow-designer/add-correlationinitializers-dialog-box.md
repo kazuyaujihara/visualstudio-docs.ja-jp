@@ -1,46 +1,46 @@
 ---
-title: ワークフロー デザイナーの関連付け初期化子のダイアログ ボックスを追加します。
+title: ワークフローデザイナー-[CorrelationInitializers の追加] ダイアログボックス
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c030295d325ea1ee4d546356f8cda5ef6ffd3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d69b53e21d11cba99a9e897871c6f9e0320352f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650770"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックス
 
-**[関連付け初期化子**を構成する] ダイアログ ボックスがワークフロー デザイナーで使用される、 **CorrelationInitializers**のプロパティ、 <xref:System.ServiceModel.Activities.Send>、 <xref:System.ServiceModel.Activities.Receive>、<xref:System.ServiceModel.Activities.SendReply>と<xref:System.ServiceModel.Activities.ReceiveReply>アクティビティ。 このボックスを使用するアクティビティ デザイナーの詳細については、次を参照してください、[送信](../workflow-designer/send-activity-designer.md)、[受信](../workflow-designer/receive-activity-designer.md)、 [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)、および[SendAndReceiveReply。](../workflow-designer/sendandreceivereply-template-designer.md)トピック。
+ワークフローデザイナーでは、 **[関連付け初期化子の追加]** ダイアログボックスを使用して、<xref:System.ServiceModel.Activities.Send>、<xref:System.ServiceModel.Activities.Receive>、<xref:System.ServiceModel.Activities.SendReply>、および <xref:System.ServiceModel.Activities.ReceiveReply> アクティビティの**correlationinitializers**プロパティを構成します。 このボックスを使用するアクティビティデザイナーの詳細については、「 [Send](../workflow-designer/send-activity-designer.md)、 [Receive](../workflow-designer/receive-activity-designer.md)、 [Receiveandsendreply](../workflow-designer/receiveandsendreply-template-designer.md)、および[sendandreceivereply](../workflow-designer/sendandreceivereply-template-designer.md) 」のトピックを参照してください。
 
-このダイアログ ボックスで指定されたコレクションに関連付け初期化子は、メッセージング アクティビティ間の次の相関関係を初期化できます。
+このダイアログボックスで指定したコレクション内の関連付け初期化子は、メッセージングアクティビティ間の次の相関関係を初期化できます。
 
-- クエリ ベース
+- クエリベース
 - コンテキスト
-- コールバック コンテキスト
-- 要求/応答
+- コールバックコンテキスト
+- 要求-応答
 
-次の表に、ユーザー インターフェイス (UI) 要素の **[関連付け初期化子**] ダイアログ ボックス。
+次の表では、 **[関連付け初期化子の追加]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |UI 要素|説明|
 |-|-----------------|
-|**初期化子を追加します。**|をクリックして、**追加初期化**ボックス、コレクションに追加の初期化子を追加します。|
-|**関連付けの種類**|関連付け初期化子の種類を指定します。 次の 4 種類から選択できます。<br /><br /> 1.<xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> を指定するためのコールバック関連付け初期化子。<br />2.<xref:System.ServiceModel.Activities.CorrelationInitializer> を指定するためのコンテキスト関連付け初期化子。<br />3.<xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> を指定するための要求/応答関連付け初期化子。<br />4.<xref:System.ServiceModel.Activities.QueryCorrelationInitializer> を指定するためのクエリ関連付け初期化子。<br /><br /> 編集する、 **CorrelationType**<br /><br /> 1.特定の行にタブ、**初期化子の追加**DataGrid します。<br />2.フォーカスを設定する**CorrelationTypeComboBox**、キーを押して**Ctrl**+**タブ**します。<br />3.ポップアップ表示するには、Alt + Down キーを押して、 **ComboBox**して編集できます。|
+|**初期化子の追加**|**[初期化の追加]** ボックスをクリックして、追加の初期化子をコレクションに追加します。|
+|**関連付けの種類**|関連付け初期化子の種類を指定します。 次の 4 種類から選択できます。<br /><br /> 1. <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> を指定するコールバック関連付け初期化子。<br />2. <xref:System.ServiceModel.Activities.CorrelationInitializer> を指定するコンテキスト関連付け初期化子。<br />3. <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> を指定するための要求と応答の関連付け初期化子。<br />4. <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> を指定するためのクエリ関連付け初期化子。<br /><br /> **Correlationtype**を編集するには<br /><br /> 1. **[初期化子の追加]** DataGrid の特定の行にタブを追加します。<br />2. **Correlationtypecombobox**にフォーカスを設定するには、 **ctrl** +**tab**キーを押します。<br />3. Alt + ↓キーを押して、**コンボボックス**をポップアップ表示して編集します。|
 |**XPath クエリ**|送受信メッセージから相関関係データを抽出するためのクエリを含む、キーと値のペア。 このリストは、<xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 型を使用している場合にのみ有効です。|
 
 ## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックスを開くには
 
- **関連付け初期化子**ダイアログ ボックスを使用して、**送信**、**受信**、 **ReceiveAndSendReply**、および**SendAndReceiveReply**デザイナー。 各ケースとを含むケースと似ていますそれらにアクセスする、**受信**デザイナーは、手順を説明するためにここで使用します。
+ **[関連付け初期化子の追加]** ダイアログボックスは、 **Send**、 **Receive**、 **Receiveandsendreply**、および**sendandreceivereply**の各デザイナーによって使用されます。 これらにアクセスすることは、それぞれのケースで似ています。ここでは、この手順を説明するために、**受信**デザイナーに関係するケースを使用します。
 
- **受信**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**とアクティビティを配置して任意の場所は、ワークフロー デザイナー画面にドロップします。 削除、**受信**アクティビティ デザイナーを作成、 <xref:System.ServiceModel.Activities.Receive> 、既定値は、アクティビティ<xref:System.Activities.Activity.DisplayName%2A>の受信。 選択、**受信**アクティビティ デザイナーおよび (コレクション) のテキストを横にある省略記号のボタンをクリックし、 **CorrelationInitializers**プロパティ グリッドでプロパティ、**追加関連付け初期化子の**ダイアログ ボックスを表示します。
+ **Receive**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティが配置されている任意の場所のワークフローデザイナー画面にドロップできます。 **Receive**アクティビティデザイナーを削除すると、receive の既定の <xref:System.Activities.Activity.DisplayName%2A> を持つ <xref:System.ServiceModel.Activities.Receive> アクティビティが作成されます。 **Receive**アクティビティデザイナーを選択し、 **[関連付け初期化子の追加]** ダイアログボックスのプロパティグリッドで、 **Correlationinitializers**プロパティの (コレクション) テキストの横にある省略記号ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75d3284c4584c67550c7dcee3c8f1737ebed5380
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871917"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655288"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>レイヤー図へのカスタム プロパティの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "68871917"
 レイヤー図の拡張コードを記述する際、レイヤー図の任意の要素と共に値を格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを **[プロパティ]** ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
 
 ## <a name="properties-not-visible-to-the-user"></a>ユーザーに表示されないプロパティ
- レイヤー図の任意の要素に値をアタッチするコードが必要なだけの場合、MEF コンポーネントを定義する必要はありません。 [Ilayerelement](/previous-versions/ff644511(v=vs.140))に`Properties`という名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらの値は、レイヤー図の一部として保存されます。 詳細については、「[プログラムコードでのレイヤーモデルの移動と更新](../modeling/navigate-and-update-layer-models-in-program-code.md)」を参照してください。
+ レイヤー図の任意の要素に値をアタッチするコードが必要なだけの場合、MEF コンポーネントを定義する必要はありません。 [Ilayerelement](/previous-versions/ff644511(v=vs.140))には `Properties` という名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらの値は、レイヤー図の一部として保存されます。 詳細については、「[プログラムコードでのレイヤーモデルの移動と更新](../modeling/navigate-and-update-layer-models-in-program-code.md)」を参照してください。
 
 ## <a name="properties-that-the-user-can-edit"></a>ユーザーが編集できるプロパティ
  **初期準備**
@@ -40,7 +40,7 @@ ms.locfileid: "68871917"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
->  3. Visual Studio アプリケーションの [スタート] メニューの **[Visual Studio Tools]** セクションで、**開発者コマンドプロンプト**を開きます。
+>  3. Visual Studio アプリケーションの スタート メニューの  **Visual Studio Tools** セクションで、**開発者コマンドプロンプト**を開きます。
 >
 >     次のように入力します。
 >
@@ -165,5 +165,5 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [レイヤー図を拡張する](../modeling/extend-layer-diagrams.md)

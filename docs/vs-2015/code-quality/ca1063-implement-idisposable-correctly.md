@@ -1,5 +1,5 @@
 ---
-title: CA1063:IDisposable を正しく実装します |。Microsoft Docs
+title: 'CA1063: IDisposable を正しく実装します |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,76 +12,76 @@ helpviewer_keywords:
 - ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820885"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663632"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable を正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Category|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- `IDisposable` 正しく実装されていません。 この問題のいくつかの理由を以下に示します。
+ `IDisposable` が正しく実装されていません。 この問題の原因をいくつか次に示します。
 
-- IDisposable は、クラスで再実装します。
+- IDisposable はクラスで再実装されます。
 
-- 最終処理が再オーバーライドします。
+- Finalize は再オーバーライドされます。
 
-- Dispose をオーバーライドします。
+- Dispose はオーバーライドされます。
 
-- Dispose() がパブリックではないがシールされているか、Dispose をという名前です。
+- Dispose () は、public、sealed、または named Dispose ではありません。
 
-- Dispose (bool) は、保護された、仮想、または封印されていないではありません。
+- Dispose (bool) は、protected、virtual、または封印されていません。
 
-- 封印されていない種類は、Dispose() が dispose (true) を呼び出す必要があります。
+- シールされていない型では、Dispose () は Dispose (true) を呼び出す必要があります。
 
-- 封印されていない型の場合、Finalize 実装は呼び出しませんいずれかまたは両方の dispose (bool) またはケースのクラスのファイナライザー。
+- シールされていない型の場合、Finalize 実装は Dispose (bool) または case クラスのファイナライザーのいずれかまたは両方を呼び出しません。
 
-  この警告は、これらのパターンのいずれかの違反がトリガーされます。
+  これらのパターンのいずれかに違反すると、この警告がトリガーされます。
 
-  すべて封印されていないルート IDisposable 型は、独自プロテクト仮想 void dispose (bool) メソッドを提供する必要があります。 Dispose() が dispose (true) を呼び出す必要があり、Finalize が dispose (false) を呼び出す必要があります。 封印されていないルートの IDisposable 型を作成する場合は、dispose (bool) の定義し、それを呼び出す必要があります。 詳細については、次を参照してください。[アンマネージ リソースのクリーンアップ](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)で、 [Framework デザイン ガイドライン](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)、.NET Framework のドキュメントのセクション。
+  すべての封印されていないルート IDisposable 型は、独自の protected virtual void Dispose (bool) メソッドを提供する必要があります。 Dispose () は dispose (true) を呼び出し、Finalize は Dispose (false) を呼び出す必要があります。 封印されていないルート IDisposable 型を作成する場合は、Dispose (bool) を定義して呼び出す必要があります。 詳細については、.NET Framework のドキュメントの「[フレームワークのデザインガイドライン](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)」の「[アンマネージリソースのクリーンアップ](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)」を参照してください。
 
 ## <a name="rule-description"></a>規則の説明
  すべての IDisposable 型は、Dispose パターンを適切に実装する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- コードを調べて、この違反を修正する次の解決方法のうちはします。
+ コードを調べて、この違反を修正する次の解決策を特定します。
 
-- によって実装されるインターフェイスのリストから IDisposable を削除{0}を代わりに、基底クラス Dispose の実装をオーバーライドします。
+- @No__t_0 によって実装されたインターフェイスの一覧から IDisposable を削除し、代わりに基底クラスの Dispose の実装をオーバーライドします。
 
-- 型からファイナライザーを削除{0}Dispose (bool disposing) をオーバーライドし、'disposing' が false のコード パスに finalization 論理を配置します。
+- 型 {0} からファイナライザーを削除し、Dispose (bool disposing) をオーバーライドし、' disposing ' が false であるコードパスに終了ロジックを配置します。
 
-- 削除{0}Dispose (bool disposing) をオーバーライドし、'disposing' が true に、コード パスに dispose 論理を入れます。
+- @No__t_0 を削除し、Dispose (bool disposing) をオーバーライドし、' disposing ' が true であるコードパスに dispose ロジックを配置します。
 
-- いることを確認{0}は public として宣言され、シールします。
+- @No__t_0 が public および sealed として宣言されていることを確認します。
 
-- 名前を変更{0}を 'Dispose' public およびシールドとして宣言されているかどうかを確認します。
+- @No__t_0 の名前を ' Dispose ' に変更し、public および sealed として宣言されていることを確認します。
 
-- 必ず{0}が保護されを virtual と宣言し、封印されていません。
+- @No__t_0 が protected、virtual、および未封印として宣言されていることを確認します。
 
-- 変更{0}GC を呼び出して dispose (true) を呼び出すようにします。オブジェクトの現在のインスタンスで SuppressFinalize ('this' または 'Me' で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])、しを返します。
+- Dispose (true) を呼び出すように {0} を変更してから、GC を呼び出します。現在のオブジェクトインスタンス ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 内の ' this ' または ' Me ') で Gc.suppressfinalize を取得し、を返します。
 
-- 変更{0}ように dispose (false) を呼び出すし、返します。
+- Dispose (false) を呼び出してからを返すように {0} を変更します。
 
-- 封印されていないルートの IDisposable クラスを作成する場合は、IDisposable の実装が、このセクションで既に説明したパターンに従うことを確認します。
+- 封印されていないルート IDisposable クラスを作成する場合は、IDisposable の実装が、このセクションで既に説明したパターンに従っていることを確認してください。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
 ## <a name="pseudo-code-example"></a>擬似コードの例
- 次の擬似コードでは、管理を使用するクラスで dispose (bool) を実装する方法と、ネイティブ リソースの一般的な例を示します。
+ 次の擬似コードは、マネージリソースとネイティブリソースを使用するクラスに Dispose (bool) を実装する方法の一般的な例を示しています。
 
 ```
 public class Resource : IDisposable

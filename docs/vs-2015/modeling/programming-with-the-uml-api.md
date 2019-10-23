@@ -9,15 +9,15 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0cd086221b1c0ee6a4e2111cda543a3f8f4ec0e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b264987818e244cf016e9b54794109cafc548439
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652110"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API を使用したプログラミング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio の UML API を使用すると、UML モデルおよび図を作�
 
 |トピック|説明されている型およびメソッドの例|説明されている機能|
 |-----------|-----------------------------------------|------------------------|
-|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫には、次のようなものがあります。IClass、IActivity、IUseCase、IComponent、Iactivity 作用、Iactivity、Iactivity|Visual Studio では、uml モデルは uml 仕様バージョン2.1.2 に準拠しています。これは、 [Uml リソースページ](http://go.microsoft.com/fwlink/?LinkId=160796)で取得できます。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|
+|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫である IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage。|Visual Studio では、uml モデルは uml 仕様バージョン2.1.2 に準拠しています。これは、 [Uml リソースページ](http://go.microsoft.com/fwlink/?LinkId=160796)で取得できます。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|
 |[UML モデル内に要素および関係を生成する](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|それぞれの要素型は、子を生成するためのメソッドを持ちます。|
 |[図に UML モデルを表示する](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|モデルのそれぞれの要素は、図においてシェイプとして表すことができます。 場合によっては、それぞれのオブジェクトに対して新しいシェイプを生成できます。 これらのシェイプについては、移動、サイズ変更、色の設定、および折りたたみ/展開を行うことができます。|
 |[UML モデル内を移動する](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|モデル ストアは、モデルを格納します。<br /><br /> 図コンテキストは、現在の図およびストアへのアクセスを提供します。|
@@ -68,5 +68,5 @@ Visual Studio の UML API を使用すると、UML モデルおよび図を作�
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[MEF コンポーネントのエクスポートとインポート](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[コレクションの簡単な操作 (特にリレーションシップを扱う場合)](../modeling/navigate-relationships-with-the-uml-api.md)。|
 
-## <a name="see-also"></a>関連項目
- [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)[UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>参照
+ Uml[モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md) [Uml モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)

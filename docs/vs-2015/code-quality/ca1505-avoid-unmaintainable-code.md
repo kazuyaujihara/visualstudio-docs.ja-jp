@@ -1,5 +1,5 @@
 ---
-title: CA1505:メンテナンスできないコードの回避 |Microsoft Docs
+title: 'CA1505: メンテナンスできないコードを回避する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1505
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d9d5dc976c27ca2459fa64b95fe0502579a500b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191222"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607588"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:メンテナンスできないコードを使用しないでください
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: メンテナンスできないコードを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|Category|Microsoft.Maintainability|
+|カテゴリ|Microsoft の保守容易性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
  型またはメソッドの保守容易性指数が低い値です。
 
 ## <a name="rule-description"></a>規則の説明
- 保守容易性指数は、次のメトリックを使用して計算されます。 行のコード、プログラムのボリューム、およびサイクロマティック複雑度。 プログラムのボリュームは、型または演算子とオペランドのコードの数に基づいているメソッドの理解の難しさの尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの基準です。 コード メトリックに関する詳細については、[を測定する複雑さとマネージ コードの保守容易性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)します。
+ 保守容易性のインデックスは、コード行、プログラムボリューム、およびサイクロマティック複雑性の各メトリックを使用して計算されます。 プログラムボリュームは、コード内の演算子とオペランドの数に基づいて、型またはメソッドを理解しづらいことを示す尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの尺度です。 コードメトリックスの詳細については[、「マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)」を参照してください。
 
- 保守性が低いインデックスことを示します型またはメソッドを維持するが困難な可能性が再設計に適した候補となります。
+ 保守性の低いインデックスは、型またはメソッドの保守が困難であり、再設計するのが適切であることを示しています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この違反を修正するには、型またはメソッドを再設計し、小さくなりより対象を絞った型またはメソッドに分割することをお試しください。
+ この違反を修正するには、型またはメソッドを再設計し、それをより小さな、フォーカスのある型またはメソッドに分割します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 型またはメソッドと見なされます、大きなサイズに関係なく、または、型またはメソッドを分割することはできません、保守性の高いときに、この警告を除外します。
+ この警告は、型またはメソッドが、大きなサイズの場合や、型またはメソッドを分割できない場合でも保守が容易であると見なされる場合には除外されます。
 
-## <a name="see-also"></a>関連項目
- [保守性に関する警告](../code-quality/maintainability-warnings.md)[複雑さとマネージ コードの保守性を測定します。](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>参照
+ [マネージコードの複雑さと保守性を測定する、](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [保守性](../code-quality/maintainability-warnings.md)に関する警告

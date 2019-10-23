@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490600"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342336"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>ロールをテスト コントローラーとテスト エージェントに割り当てる
 
@@ -97,13 +97,13 @@ ms.locfileid: "69490600"
 
 ::: moniker range="vs-2017"
 
-8. [テスト] メニューの **[テスト設定ファイルの選択]** をクリックし、 *[TestSettingDistributedTestWalkthrough.testsettings]* をクリックします。
+8. **[テスト]** メニューで、 **[テストの設定]** > **[テスト設定ファイルの選択]** を選択し、*TestSettingDistributedTestWalkthrough.testsettings* ファイルを選択します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. **テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 *TestSettingDistributedTestWalkthrough.testsettings* ファイルを参照し、選択します。
+8. **[テスト]** メニューで **[設定ファイルの選択]** を選択します。 *TestSettingDistributedTestWalkthrough.testsettings* ファイルを参照し、選択します。
 
 ::: moniker-end
 

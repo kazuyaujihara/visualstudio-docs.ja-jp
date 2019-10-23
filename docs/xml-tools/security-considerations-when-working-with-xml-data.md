@@ -3,17 +3,17 @@ title: XML データを使用するときのセキュリティに関する考慮
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926768"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604597"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用する場合のセキュリティに関する考慮事項
 
@@ -29,7 +29,7 @@ XML エディターは、Visual Studio のテキストエディターに基づ�
 
 - カタログファイル内の外部の場所を指すスキーマは、XML エディターの初回読み込み時に自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属のカタログファイルには、外部スキーマへのリンクがありません。 ユーザーは、XML エディターがスキーマファイルをダウンロードする前に、外部スキーマへの参照を明示的に追加する必要があります。 HTTP ダウンロードは、XML エディターの **[その他のツールオプション]** ページで無効にすることができます。
 
-- XML エディターは、 <xref:System.Net>クラスを使用してスキーマをダウンロードします。
+- XML エディターは、<xref:System.Net> クラスを使用してスキーマをダウンロードします。
 
 ## <a name="xslt-debugger"></a>XSLT デバッガー
 

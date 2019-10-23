@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete |Microsoft Docs
+title: 'IDebugAsyncOperationCallBack:: onComplete |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15ae57d64d2b1e7be867c20e9683e4aaa415974
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821874"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573229"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-結果は非同期デバッグ操作から使用できることを通知します。  
+非同期デバッグ操作から結果を取得できることを通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT onComplete();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,7 +44,7 @@ HRESULT onComplete();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドはから利用可能な結果を通知する`IDebugAsyncOperation`オブジェクト。 デバッガーのスレッドでイベントが発生します。  
+ このメソッドは、`IDebugAsyncOperation` オブジェクトから結果を取得できることを通知します。 イベントは、デバッガーのスレッドで発生します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugAsyncOperationCallBack インターフェイス](../../winscript/reference/idebugasyncoperationcallback-interface.md)   

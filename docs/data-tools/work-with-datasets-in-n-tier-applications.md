@@ -14,25 +14,25 @@ helpviewer_keywords:
 - typed datasets, n-tier applications
 - multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6da3f51a249aaf52cf3f20b90f3add6ceeb7aa1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b96f2e51048216388eea50935a1ced536d8d230b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564757"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648029"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>n 層アプリケーションでのデータセットの操作
 
-*n 層データ アプリケーション*とは、複数の論理レイヤー (つまり*層*) に分離されるデータ中心のアプリケーションです。 言い換えれば、n 層データ アプリケーションは、複数のプロジェクトに分離されたアプリケーションであり、データ アクセス層、ビジネス ロジック層、およびプレゼンテーション層がそれぞれ独自のプロジェクトに含まれています。 詳細については、次を参照してください。 [N 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)します。
+*n 層データ アプリケーション*とは、複数の論理レイヤー (つまり*層*) に分離されるデータ中心のアプリケーションです。 言い換えれば、n 層データ アプリケーションは、複数のプロジェクトに分離されたアプリケーションであり、データ アクセス層、ビジネス ロジック層、およびプレゼンテーション層がそれぞれ独自のプロジェクトに含まれています。 詳細については、「 [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)」を参照してください。
 
 TableAdapter およびデータセット クラスを別々のプロジェクトに生成できるように、型指定されたデータセットが強化されました。 これにより、アプリケーション層を分離して、n 層データ アプリケーションをすばやく生成できます。
 
-型指定されたデータセットで N 層サポートには、アプリケーションのアーキテクチャを n 層デザインに反復開発ができます。また、手動でコードを 1 つ以上のプロジェクトに分離するための要件も削除されます。 使用して、データ層のデザイン、**データセット デザイナー**します。 アプリケーション アーキテクチャを n 層デザインにする準備ができたら、データセット クラスが別個のプロジェクトに生成されるようにデータセットの **[DataSet プロジェクト]** プロパティを設定します。
+型指定されたデータセットで n 層をサポートすることで、アプリケーションアーキテクチャを n 層設計に反復的に開発できます。また、コードを複数のプロジェクトに手動で分離する必要もなくなります。 **データセットデザイナー**を使用したデータレイヤーのデザインを開始します。 アプリケーション アーキテクチャを n 層デザインにする準備ができたら、データセット クラスが別個のプロジェクトに生成されるようにデータセットの **[DataSet プロジェクト]** プロパティを設定します。
 
 ## <a name="reference"></a>参照
 

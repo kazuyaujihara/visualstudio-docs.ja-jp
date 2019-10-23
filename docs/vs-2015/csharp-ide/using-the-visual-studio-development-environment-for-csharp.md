@@ -1,5 +1,5 @@
 ---
-title: 開発環境の使用C#|Microsoft Docs
+title: '| のC#開発環境を使用するMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,27 +14,27 @@ helpviewer_keywords:
 - Visual C#, development environment
 ms.assetid: e10e2cba-641f-47a3-88a3-6748965254d7
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0cd8d8f2be0a653189130de6b38c8586957948d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688030"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673157"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>C 用 Visual Studio 開発環境の使用\#
+# <a name="using-the-visual-studio-development-environment-for-c"></a>C \# の Visual Studio 開発環境の使用
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 統合開発環境 (IDE) は、共通のユーザー インターフェイスを通じて公開される開発ツールのコレクションです。 ツールの一部は他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 言語と共有されますが、C# コンパイラなど、Visual C# に固有のものもあります。 このトピックでは、最も重要な Visual C# ツールへのリンクを示します。
+Visual Studio 統合開発環境 (IDE) は、共通のユーザーインターフェイスを通じて公開される開発ツールのコレクションです。 ツールの一部は他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 言語と共有されますが、C# コンパイラなど、Visual C# に固有のものもあります。 このトピックでは、最も重要な Visual C# ツールへのリンクを示します。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[チュートリアル: シンプルなアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Visual Studio に含まれているアプリケーション開発の多くの機能およびツールについて紹介します。|
+|[チュートリアル : 簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Visual Studio に含まれているアプリケーション開発の多くの機能およびツールについて紹介します。|
 |[ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)|ソース コード ファイル、アイコンなどのリソース ファイル、外部ファイルへの参照、コンパイラの設定などの構成データをすべて含むプロジェクトの作成方法について説明します。|
 |[プロジェクト デザイナーの概要](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|プロジェクトのプロパティ、設定、およびリソースを管理する中心の場所として機能する、プロジェクト デザイナーの概要について説明します。|
 |[コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)|テキスト、コード、およびマークアップの変更と操作、コントロールなどのオブジェクトや名前空間の挿入と構成、外部コンポーネントおよびリソースへの参照の追加などの作業を支援する Visual Studio のツールについて説明します。|
@@ -49,7 +49,7 @@ Visual Studio 統合開発環境 (IDE) は、共通のユーザー インター�
 |[Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)|Visual Studio デバッガーを実行して、ロジック エラーおよびセマンティック エラーを解決する方法について説明します。|
 |[アプリケーション リソースの管理 (.NET)](../ide/managing-application-resources-dotnet.md)|文字列、イメージ、アイコン、オーディオ、ファイルなど、プロジェクトのリソースを追加または編集する方法を示します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
 - [C# の概要](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)

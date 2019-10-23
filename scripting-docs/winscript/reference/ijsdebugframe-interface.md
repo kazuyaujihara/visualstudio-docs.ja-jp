@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame インターフェイス |Microsoft Docs
+title: IJsDebugFrame Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f5a848967148705a2b8dcd3f6b75dcb3a5db26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91fe8cdf91b0c2121f4a1a7f111794b0fbe36669
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558004"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575104"
 ---
 # <a name="ijsdebugframe-interface"></a>IJsDebugFrame インターフェイス
 スタック フレームを表します。  
@@ -31,7 +31,7 @@ IJsDebugFrame : public IUnknown;
   
 ### <a name="public-methods"></a>パブリック メソッド  
   
-|名前|説明|  
+|名|説明|  
 |----------|-----------------|  
 |[IJsDebugFrame::Evaluate メソッド](../../winscript/reference/ijsdebugframe-evaluate-method.md)|このスタック フレームのコンテキストで式を評価します。|  
 |[IJsDebugFrame::GetDebugProperty メソッド](../../winscript/reference/ijsdebugframe-getdebugproperty-method.md)|このスタック フレームのプロパティ ブラウザーを返します。|  
@@ -41,8 +41,8 @@ IJsDebugFrame : public IUnknown;
 |[IJsDebugFrame::GetReturnAddress メソッド](../../winscript/reference/ijsdebugframe-getreturnaddress-method.md)|フレームの "先頭" (GetStackRange を参照) でプッシュされるリターン アドレスを取得します。|  
 |[IJsDebugFrame::GetStackRange メソッド](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|論理的な JavaScript スタック フレームの絶対アドレス範囲を返します。|  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイスのリファレンス](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787653"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342382"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -46,9 +46,7 @@ ms.locfileid: "68787653"
    > ご利用のアカウントに新しいプランを利用する資格がない場合、アカウントに資格がないため、作成中に問題が発生したことが受信メールで説明されます。  また、アカウントに関する質問に回答できる Pluralsight のサポート チームへの連絡先情報も含まれます。
    
 
-6. アカウントが正常に作成されている場合は、受信メールにユーザー名が含まれ、パスワードを作成するよう求められます。  パスワードを入力し、確認のためもう一度入力して **[Log in to Pluralsight]\(Pluralsight にログイン\)** をクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 特典のウェルカム メール](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. アカウントが正常に作成された後は、受信するメールにユーザー名が含まれ、パスワードを作成するよう求められます。  パスワードを入力し、確認のためもう一度入力して **[Log in to Pluralsight]\(Pluralsight にログイン\)** をクリックします。
 
 7. ウェルカム メールに示されているユーザー名と、作成したパスワードを入力して、 **[サインイン]** をクリックします。
 

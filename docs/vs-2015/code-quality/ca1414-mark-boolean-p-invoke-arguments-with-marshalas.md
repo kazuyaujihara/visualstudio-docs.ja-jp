@@ -1,5 +1,5 @@
 ---
-title: CA1414:ブール型の P/invoke 引数を MarshalAs を |Microsoft Docs
+title: 'CA1414: ブール型の P-Invoke 引数を MarshalAs | でマークします。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,51 +12,51 @@ helpviewer_keywords:
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 588e16a6b21b320ad7012bd20d79a62d027679e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691914"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652693"
 ---
-# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414:ブール型の P/Invoke 引数を MarshalAs に設定します
+# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: ブール型の P/Invoke 引数を MarshalAs に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
-|カテゴリ|Microsoft.Interoperability|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- プラットフォーム呼び出しメソッド宣言に含まれる、<xref:System.Boolean?displayProperty=fullName>パラメーターまたは戻り値が、<xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName>属性は、パラメーターまたは戻り値には適用されません。
+ プラットフォーム呼び出しメソッドの宣言に <xref:System.Boolean?displayProperty=fullName> パラメーターまたは戻り値が含まれていますが、<xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> 属性がパラメーターまたは戻り値に適用されていません。
 
 ## <a name="rule-description"></a>規則の説明
- プラットフォームがメソッドへのアクセスのアンマネージ コードを呼び出すし、によって定義されている、`Declare`キーワード[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]または<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>します。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> マネージ コードとアンマネージ コード間のデータ型の変換に使用されるマーシャ リング動作を指定します。 などの多くの単純なデータ型<xref:System.Byte?displayProperty=fullName>と<xref:System.Int32?displayProperty=fullName>、アンマネージ コードに 1 つの表現がある、マーシャ リング動作の仕様を必要としない、共通言語ランタイムが自動的に正しい動作を提供します。
+ プラットフォーム呼び出しメソッドはアンマネージコードにアクセスし、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> の `Declare` キーワードを使用して定義されます。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> は、マネージコードとアンマネージコードの間でデータ型を変換するために使用されるマーシャリング動作を指定します。 @No__t_0 や <xref:System.Int32?displayProperty=fullName> など、多くの単純なデータ型は、アンマネージコードで1つの表現を持ち、マーシャリング動作の指定は必要ありません。共通言語ランタイムは、自動的に正しい動作を提供します。
 
- <xref:System.Boolean>データ型が、アンマネージ コードの複数の表現。 ときに、<xref:System.Runtime.InteropServices.MarshalAsAttribute>が指定されていない、既定のマーシャ リングの動作、<xref:System.Boolean>データ型は<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>します。 これは、すべての状況では、32 ビットの整数です。 アンマネージ メソッドで必要とされるブール型の表現を特定する必要がありますし、適切な一致<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>します。 UnmanagedType.Bool は、常に 4 バイトある Win32 BOOL 型です。 C++ の UnmanagedType.U1 を使用する必要があります`bool`またはその他の 1 バイトの種類。 詳細については、次を参照してください。[ブール型の既定のマーシャ リング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)します。
+ @No__t_0 データ型には、アンマネージコード内の複数の表現があります。 @No__t_0 が指定されていない場合、<xref:System.Boolean> データ型の既定のマーシャリング動作は <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> ます。 これは32ビットの整数であり、すべての状況に適しているわけではありません。 アンマネージメソッドによって必要とされるブール値は、適切な <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> と一致している必要があります。 Unmanagedtype.bool は、常に4バイトの Win32 BOOL 型です。 @No__t_1 またはその他の 1 C++バイト型には unmanagedtype.bool を使用する必要があります。 詳細については、「[ブール型の既定のマーシャリング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、次のように適用されます。<xref:System.Runtime.InteropServices.MarshalAsAttribute>を、<xref:System.Boolean>パラメーターまたは戻り値。 適切な属性の値を設定<xref:System.Runtime.InteropServices.UnmanagedType>します。
+ この規則違反を修正するには、<xref:System.Boolean> パラメーターまたは戻り値に <xref:System.Runtime.InteropServices.MarshalAsAttribute> を適用します。 属性の値を適切な <xref:System.Runtime.InteropServices.UnmanagedType> に設定します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この規則による警告は抑制しないでください。 既定のマーシャ リング動作が適切な場合でも、コードは、動作が明示的に指定されたときに維持より簡単にします。
+ この規則による警告は抑制しないでください。 既定のマーシャリング動作が適切な場合でも、動作が明示的に指定されていれば、コードをより簡単に管理できます。
 
 ## <a name="example"></a>例
- 次の例は、2 つのプラットフォーム呼び出しメソッドに、適切なでマークされている<xref:System.Runtime.InteropServices.MarshalAsAttribute>属性。
+ 次の例は、適切な <xref:System.Runtime.InteropServices.MarshalAsAttribute> 属性でマークされている2つのプラットフォーム呼び出しメソッドを示しています。
 
  [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/cpp/FxCop.Interoperability.BoolMarshalAs.cpp#1)]
  [!code-csharp[FxCop.Interoperability.BoolMarshalAs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/cs/FxCop.Interoperability.BoolMarshalAs.cs#1)]
  [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/vb/FxCop.Interoperability.BoolMarshalAs.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA1901:P/invoke 宣言はポータブルでなければなりません](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
+ [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
 
- [CA 2101:P/invoke 文字列引数に対してマーシャ リングを指定します。](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: P/Invoke 文字列引数に対してマーシャリングを指定します](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-## <a name="see-also"></a>関連項目
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [既定のブール型のマーシャ リング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[アンマネージ コードと相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+## <a name="see-also"></a>参照
+ [アンマネージコードとの相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)[を行うブール型に対する既定のマーシャリングの](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>

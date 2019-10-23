@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: VBA から VSTO アドイン内のコードを呼び出す'
+title: 'チュートリアル: VSTO アドインのコードを VBA から呼び出す'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc268136e898b7ef348b2910e080323347eb5716
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438636"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650787"
 ---
-# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>チュートリアル: VBA から VSTO アドイン内のコードを呼び出す
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>チュートリアル: VSTO アドインのコードを VBA から呼び出す
   このチュートリアルでは、VSTO アドインのオブジェクトを Visual Basic for Applications (VBA) アドインや COM VSTO アドインなど、他の Microsoft Office ソリューションに公開する方法について説明します。
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
@@ -42,23 +42,23 @@ ms.locfileid: "63438636"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft Excel
 
-## <a name="create-the-vsto-add-in-project"></a>VSTO アドイン プロジェクトを作成します。
+## <a name="create-the-vsto-add-in-project"></a>VSTO アドインプロジェクトを作成する
  まず、Excel 用の VSTO アドイン プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. Excel VSTO アドイン プロジェクト テンプレートを使用して、 **ExcelImportData**という名前の Excel VSTO アドイン プロジェクトを作成します。 詳細については、「[方法 :Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。
+1. Excel VSTO アドイン プロジェクト テンプレートを使用して、 **ExcelImportData**という名前の Excel VSTO アドイン プロジェクトを作成します。 詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 **ThisAddIn.cs** コード ファイルまたは **ThisAddIn.vb** コード ファイルが開かれ、 **ソリューション エクスプローラー** に **ExcelImportData**プロジェクトが追加されます。
 
-## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>他の Office ソリューションに公開できるクラスを定義します。
+## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>他の Office ソリューションに公開できるクラスを定義する
  このチュートリアルの目的は、VSTO アドインの `ImportData` というクラスの `AddInUtilities` メソッドを VBA コードから呼び出すことです。 このメソッドは、アクティブなワークシートのセル A1 に文字列を書き込みます。
 
  `AddInUtilities` クラスを他の Office ソリューションに公開するには、このクラスをパブリックにし、COM から参照できるようにする必要があります。 このクラスの [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) インターフェイスも公開する必要があります。 次の手順で示すコードでは、これらの要件を満たす方法の 1 つを示します。 詳細については、「 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)」を参照してください。
@@ -71,7 +71,7 @@ ms.locfileid: "63438636"
 
      コード エディターで **AddInUtilities.cs** ファイルまたは **AddInUtilities.vb** ファイルが開きます。
 
-3. ファイルの先頭に次のステートメントを追加します。
+3. ファイルの先頭に次のディレクティブを追加します。
 
      [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
      [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]
@@ -83,7 +83,7 @@ ms.locfileid: "63438636"
 
      このコードは、 `AddInUtilities` クラスを COM から参照できるようにし、このクラスに `ImportData` メソッドを追加します。 また、 [クラスは](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) IDispatch `AddInUtilities` インターフェイスを公開するために <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性を持ち、COM から参照できるインターフェイスを実装します。
 
-## <a name="expose-the-class-to-other-office-solutions"></a>クラスの他の Office ソリューションを公開します
+## <a name="expose-the-class-to-other-office-solutions"></a>クラスを他の Office ソリューションに公開する
  `AddInUtilities` クラスを他の Office ソリューションに公開するには、 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> クラスの `ThisAddIn` メソッドをオーバーライドします。 オーバーライドでは、 `AddInUtilities` クラスのインスタンスを返します。
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>他の Office ソリューションに AddInUtilities クラスを公開するには
@@ -101,19 +101,19 @@ ms.locfileid: "63438636"
 
      ソリューションがエラーなしでビルドされることを確認します。
 
-## <a name="test-the-vsto-add-in"></a>VSTO アドインのテストします。
- `AddInUtilities` クラスをさまざまな種類の Office ソリューションから呼び出すことができます。 このチュートリアルでは、Excel ブック内の VBA コードを使用します。 使用することも、Office ソリューションの他の種類の詳細については、次を参照してください。[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)します。
+## <a name="test-the-vsto-add-in"></a>VSTO アドインをテストする
+ `AddInUtilities` クラスをさまざまな種類の Office ソリューションから呼び出すことができます。 このチュートリアルでは、Excel ブック内の VBA コードを使用します。 使用できるその他の種類の Office ソリューションの詳細については、「[他の office ソリューションから VSTO アドインのコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)」を参照してください。
 
 ### <a name="to-test-your-vsto-add-in"></a>VSTO アドインをテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
-2. Excel で、アクティブ ブックを Excel マクロ有効ブック (*.xlsm) として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
+2. Excel で、アクティブ ブックを Excel マクロ有効ブック (*.xlsm) として保存します。 このドキュメントは、デスクトップなどの便利な場所に保存します。
 
 3. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
 4. **[コード]** グループの **[Visual Basic]** をクリックします。
 
@@ -123,7 +123,7 @@ ms.locfileid: "63438636"
 
      `ThisWorkbook` オブジェクトのコード ファイルが開きます。
 
-6. コード ファイルに次の VBA コードを追加します。 このコードは、まずを表す COMAddIn オブジェクトを取得します。、 **ExcelImportData** VSTO アドイン。 次に、コードが COMAddIn オブジェクトのオブジェクトのプロパティを使用して呼び出し、`ImportData`メソッド。
+6. コード ファイルに次の VBA コードを追加します。 このコードは、最初に**ExcelImportData** VSTO アドインを表す comaddin オブジェクトを取得します。 次に、COMAddIn オブジェクトの Object プロパティを使用して、`ImportData` メソッドを呼び出します。
 
     ```vb
     Sub CallVSTOMethod()
@@ -141,19 +141,19 @@ ms.locfileid: "63438636"
 
 9. Excel を終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  VSTO アドインのプログラミングの詳細については、次の各トピックを参照してください。
 
-- `ThisAddIn` クラスを使用して、ホスト アプリケーションを自動化し、VSTO アドイン プロジェクトの他のタスクを実行する。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
+- `ThisAddIn` クラスを使用して、ホスト アプリケーションを自動化し、VSTO アドイン プロジェクトの他のタスクを実行する。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
-- VSTO アドインにカスタム作業ウィンドウを作成する。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)と[方法。カスタム作業ウィンドウをアプリケーションに追加](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)します。
+- VSTO アドインにカスタム作業ウィンドウを作成する。 詳細については、「[カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」および「[方法: カスタム作業ウィンドウをアプリケーションに追加する](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)」を参照してください。
 
-- VSTO アドインでリボンをカスタマイズします。 詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)と[方法。リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。
+- VSTO アドインでリボンをカスタマイズします。 詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」および「[方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)
-- [他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
+- [他の Office ソリューションから VSTO アドインのコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
-- [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
-- [機能拡張インターフェイスによる UI 機能をカスタマイズします。](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
+- [機能拡張インターフェイスを使用した UI 機能のカスタマイズ](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

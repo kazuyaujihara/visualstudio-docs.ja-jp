@@ -2,57 +2,57 @@
 title: 新しい接続を追加する
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0abce148194b2d88a39f6c651e6f32d0ae7b6642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818523"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648904"
 ---
 # <a name="add-new-connections"></a>新しい接続を追加する
 
-データベース、サービスへの接続をテストして使用してデータベースの内容とスキーマを調べる、**サーバー エクスプ ローラー**、 **Cloud Explorer**、または**SQL Server オブジェクト エクスプ ローラー**. これらのウィンドウの機能は、ある程度重複しています。 基本的な違いは次のとおりです。
+データベースまたはサービスへの接続をテストし、**サーバーエクスプローラー**、 **Cloud Explorer**、または**SQL Server オブジェクトエクスプローラー**を使用して、データベースの内容とスキーマを調べることができます。 これらのウィンドウの機能は、いくつかの範囲に重なっています。 基本的な違いは次のとおりです。
 
 - サーバー エクスプローラー
 
-   Visual Studio で既定でインストールします。 接続をテストし、SQL Server データベース、ADO.NET プロバイダーがインストールされている他のデータベースおよび一部の Azure サービスを表示するために使用します。 システム パフォーマンス カウンター、イベント ログ、メッセージ キューなどの低レベルのオブジェクトとも表示されます。 ADO.NET プロバイダー データ ソースがない場合は、ここでは、表示されませんはそのまま使用する Visual Studio からプログラムで接続することで。
+   Visual Studio に既定でインストールされます。 を使用すると、接続をテストし、SQL Server データベース、ADO.NET プロバイダーがインストールされている他のデータベース、および一部の Azure サービスを表示できます。 また、システムパフォーマンスカウンター、イベントログ、メッセージキューなどの下位レベルのオブジェクトも表示されます。 データソースに ADO.NET プロバイダーがない場合は、ここに表示されませんが、プログラムによって接続することで、Visual Studio から使用することができます。
 
 - Cloud Explorer
 
-   Visual Studio 拡張機能として、このウィンドウを手動でインストール[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)します。 探索と Azure サービスに接続するのには、特殊な機能を提供します。
+   このウィンドウは、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)から Visual Studio 拡張機能として手動でインストールします。 Azure サービスを探索して接続するための特別な機能を提供します。
 
 - SQL Server オブジェクト エクスプローラー
 
-   SQL Server Data Tools でインストールされ、下に表示される、**ビュー**メニュー。 場合は、表示がない場合は、**プログラムと機能**コントロール パネルで、Visual Studio を検索し、**変更**を SQL Server Data Tools のチェック ボックスを選択したら、インストーラーを再実行します。 使用**SQL Server オブジェクト エクスプ ローラー** (ADO.NET プロバイダーがある) 場合は SQL データベースをビューに新しいデータベースを作成、スキーマの変更、ストアド プロシージャを作成、接続文字列を取得、データ、および詳細を表示します。 インストールされている ADO.NET プロバイダーがない SQL データベースはここでは、表示されませんが、プログラムでそれらに接続することができますもします。
+   SQL Server Data Tools と共にインストールされ、 **[表示]** メニューに表示されます。 表示されない場合は、コントロールパネルの **プログラムと機能** に移動し、Visual Studio を見つけて、**変更** を選択して、SQL Server Data Tools のチェックボックスをオンにしてインストーラーを再実行します。 **SQL Server オブジェクトエクスプローラー**を使用すると、SQL データベース (ADO.NET プロバイダーがある場合) を表示したり、新しいデータベースを作成したり、スキーマを変更したり、ストアドプロシージャを作成したり、接続文字列を取得したり、データを表示したりすることができます。 ADO.NET プロバイダーがインストールされていない SQL データベースはここに表示されませんが、プログラムによってそれらに接続することはできます。
 
-## <a name="add-a-connection-in-server-explorer"></a>サーバー エクスプ ローラーの接続を追加します。
+## <a name="add-a-connection-in-server-explorer"></a>サーバーエクスプローラーに接続を追加する
 
-データベースへの接続を作成する をクリックして、**接続の追加**アイコン**サーバー エクスプ ローラー**を右クリックしてまたは**サーバー エクスプ ローラー**上、**データ接続**ノード**接続の追加**します。 ここでは、別のサーバー、SharePoint サービス、または Azure サービス上のデータベースにも接続できます。
+データベースへの接続を作成するには、**サーバーエクスプローラー**の **[接続の追加]** アイコンをクリックするか、 **[データ接続]** ノードで**サーバーエクスプローラー**を右クリックして **[接続の追加]** を選択します。 ここでは、別のサーバー、SharePoint サービス、または Azure サービスのデータベースに接続することもできます。
 
-![サーバー エクスプ ローラーの新しい接続 アイコン](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
+![サーバーエクスプローラー新しい接続 アイコン](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
-すると、**接続の追加** ダイアログ ボックス。 ここでは、SQL Server LocalDB インスタンスの名前を入力しています。
+**[接続の追加]** ダイアログボックスが表示されます。 ここでは、SQL Server LocalDB インスタンスの名前を入力しました。
 
 ![新しい接続を追加する](../data-tools/media/raddata-add-new-connection-dialog.png)
 
-## <a name="change-the-provider"></a>プロバイダーを変更します。
+## <a name="change-the-provider"></a>プロバイダーを変更する
 
-データ ソースが必要ない場合は、クリックして、**変更**新しいデータ ソースや新しい ADO.NET データ プロバイダーを選択するボタンをクリックします。 新しいプロバイダーがその構成方法に応じて、資格情報を要求します。
+データソースが不要な場合は、 **[変更]** ボタンをクリックして、新しいデータソースや新しい ADO.NET データプロバイダーを選択します。 新しいプロバイダーは、構成方法に応じて、資格情報を要求する場合があります。
 
-![AD0.NET データ プロバイダーの変更](../data-tools/media/raddata-change-ad0.net-data-provider.png)
+![AD0.NET Data Provider の変更](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>接続をテストする
 
-データ ソースを選択した後にをクリックして**Test-connection**します。 成功しなかった場合はトラブルシューティングが必要なベンダーのドキュメントに基づいて。
+データソースを選択したら、 **[接続テスト]** をクリックします。 成功しない場合は、ベンダーのドキュメントに基づいてトラブルシューティングを行う必要があります。
 
 ![テスト接続](../data-tools/media/raddata-test-connection.png)
 
-作成する準備が完了したら、テストが成功した場合、*データ ソース*、つまり本当に Visual Studio という用語は、*データ モデル*基になるデータベースまたはサービスに基づきます。
+テストが成功すると、*データソース*を作成する準備が整います。これは、基になるデータベースまたはサービスに基づく*データモデル*を意味する Visual Studio の用語です。
 
 ## <a name="see-also"></a>関連項目
 

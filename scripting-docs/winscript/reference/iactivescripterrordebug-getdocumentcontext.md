@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetDocumentContext |Microsoft Docs
+title: 'IActiveScriptErrorDebug:: GetDocumentContext |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 380ee3b993408c21119da1494f4a0e005b994399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e1a6e2502e9329a7a56a7359e11a934f0ae5985
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009717"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576328"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
-このエラーは、ドキュメントのコンテキストを提供します。  
+このエラーのドキュメントコンテキストを提供します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>パラメーター  
  `ppssc`  
- [out]このエラーのドキュメント コンテキスト。  
+ 入出力このエラーのドキュメントコンテキスト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- ドキュメント コンテキストの文字位置の範囲は、エラーに対応するすべての文字を含める必要があります。  
+ ドキュメントコンテキストの文字位置の範囲には、エラーに対応するすべての文字を含める必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptErrorDebug インターフェイス](../../winscript/reference/iactivescripterrordebug-interface.md)

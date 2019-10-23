@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: n 層データ アプリケーションを作成する'
+title: 'チュートリアル : n 層データ アプリケーションの作成'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e58df1624cb115f625e9a1db443b3259b044b11
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925390"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639398"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>チュートリアル: n 層データ アプリケーションを作成する
+# <a name="walkthrough-create-an-n-tier-data-application"></a>チュートリアル: n 層データアプリケーションの作成
 *n 層*データ アプリケーションとは、データにアクセスするアプリケーションの中でも、複数の論理レイヤー、つまり*層*に分離されるアプリケーションです。 アプリケーション コンポーネントをこのように別個の層に分離すると、アプリケーションの保守容易性とスケーラビリティが向上します。 これは、ソリューション全体を再設計しなくても 1 つの層に適用できる、新しい技術を簡単に導入できるようにすることで実現されます。 n 層アーキテクチャには、プレゼンテーション層、中間層、およびデータ層が存在します。 通常、中間層には、データ アクセス層、ビジネス ロジック層、および認証や検証などの共有コンポーネントが含まれます。 データ層には、リレーショナル データベースが含まれます。 通常、n 層アプリケーションでは、機密情報が中間層のデータ アクセス層に格納され、プレゼンテーション層にアクセスするエンド ユーザーから分離されます。 詳細については、「 [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)」を参照してください。
 
 n 層アプリケーションで各層を分離する 1 つの方法は、アプリケーションに組み込む層ごとに別個のプロジェクトを作成することです。 型指定されたデータセットには、生成されたデータセットと `DataSet Project` コードの格納先となるプロジェクトを決定する、`TableAdapter` プロパティが含まれています。
@@ -48,9 +48,9 @@ n 層アプリケーションで各層を分離する 1 つの方法は、アプ
 
 - データ テーブルにデータを読み込むコードを記述する。
 
-![ビデオへ](../data-tools/media/playvideo.gif)のリンクこのトピックのビデオ版について[は、ビデオ「方法:N 層データアプリケーション](http://go.microsoft.com/fwlink/?LinkId=115188)を作成しています。
+![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版について、次を参照してください[ビデオ操作方法: n 層データ アプリケーションの作成](http://go.microsoft.com/fwlink/?LinkId=115188)。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
 1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、SQL Server Express LocalDB を **.net デスクトップ開発**ワークロードの一部として、または個々のコンポーネントとしてインストールできます。
@@ -68,14 +68,14 @@ n 層アプリケーションで各層を分離する 1 つの方法は、アプ
        しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>データセットを保持する n 層ソリューションとクラスライブラリを作成する (DataEntityTier)
-このチュートリアルでは、まず、1 つのソリューションと 2 つのクラス ライブラリ プロジェクトを作成します。 最初のクラスライブラリは、データセット (生成さ`DataSet`れた型指定されたクラスと、アプリケーションのデータを保持する datatable) を保持します。 このプロジェクトは、アプリケーションのデータ エンティティ層として使用され、通常は中間層に配置されます。 データセットは初期データセットを作成し、コードを自動的に2つのクラスライブラリに分割します。
+このチュートリアルでは、まず、1 つのソリューションと 2 つのクラス ライブラリ プロジェクトを作成します。 最初のクラスライブラリは、データセット (生成された型指定された `DataSet` クラスと、アプリケーションのデータを保持する Datatable) を保持します。 このプロジェクトは、アプリケーションのデータ エンティティ層として使用され、通常は中間層に配置されます。 データセットは初期データセットを作成し、コードを自動的に2つのクラスライブラリに分割します。
 
 > [!NOTE]
 > **[OK]** をクリックする前に、必ずプロジェクトとソリューションに適切な名前を付けてください。 これにより、チュートリアルの完了が容易になります。
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>n 層ソリューションと DataEntityTier クラス ライブラリを作成するには
 
-1. Visual Studio で、 **[ファイル]** メニューの [**新しい** > **プロジェクト**] をクリックします。
+1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -96,19 +96,19 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
 2. **[新しいプロジェクト]** ダイアログボックスの中央のペインで、 **[クラスライブラリ]** を選択します。
 
-3. プロジェクトに名前を指定し、 **[OK]** を選択します。
+3. **プロジェクトに名前を指定**し、 **[OK]** を選択します。
 
      DataAccessTier プロジェクトが作成され、NTierWalkthrough ソリューションに追加されます。
 
 ## <a name="create-the-dataset"></a>データセットを作成する
-次に、型指定されたデータセットを作成します。 型指定されたデータセットは、データセット`DataTables`クラス (クラスを`TableAdapter`含む) とクラスの両方を1つのプロジェクトで作成します。 (すべてのクラスが 1 つのファイルに生成されます)。データセットと tableadapter を別々のプロジェクトに分割すると、そのデータセットクラスは他のプロジェクトに移動され、 `TableAdapter`元のプロジェクトのクラスはそのままになります。 そのため、最終的に Tableadapter を含むデータセットをプロジェクトに作成します (Dataているプロジェクト)。 データセットを作成するには、**データソース構成ウィザード**を使用します。
+次に、型指定されたデータセットを作成します。 型指定されたデータセットは、データセットクラス (`DataTables` クラスを含む) と `TableAdapter` クラスの両方で1つのプロジェクトに作成されます。 (すべてのクラスが1つのファイルに生成されます)。データセットと Tableadapter を別々のプロジェクトに分割すると、そのデータセットクラスは他のプロジェクトに移動され、`TableAdapter` クラスは元のプロジェクトに残ります。 そのため、最終的に Tableadapter を含むデータセットをプロジェクトに作成します (Dataているプロジェクト)。 データセットを作成するには、**データソース構成ウィザード**を使用します。
 
 > [!NOTE]
-> 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースのセットアップ方法の詳細については、 [「」を参照してください。サンプルデータベース](../data-tools/installing-database-systems-tools-and-samples.md)をインストールします。
+> 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースを設定する方法については、「[方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
 
 ### <a name="to-create-the-dataset"></a>データセットを作成するには
 
-1. **ソリューションエクスプローラー**で [data] を選択します。
+1. **ソリューションエクスプローラー**で [ **data]** を選択します。
 
 2. **[データ]** メニューの **[データソースの表示]** をクリックします。
 
@@ -122,7 +122,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
      Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-     \- または -
+     -または-
 
      **[新しい接続]** を選択して **[接続の追加]** ダイアログボックスを開きます。
 
@@ -154,7 +154,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
 5. **[ビルド]** メニューの **[ソリューションのビルド]** を選択します。
 
-   データセットと TableAdapter が、2 つのクラス ライブラリ プロジェクトに分離されます。 最初にデータセット全体を含んでい`DataAccessTier`たプロジェクト () には、tableadapter のみが含まれるようになりました。 **Dataset プロジェクト**プロパティ (`DataEntityTier`) に指定されたプロジェクトには、型指定されたデータセットが含まれています。*NorthwindDataSet* (または*NorthwindDataSet.Dataset.Designer.cs*) です。
+   データセットと TableAdapter が、2 つのクラス ライブラリ プロジェクトに分離されます。 データセット全体 (`DataAccessTier`) に最初に含まれていたプロジェクトには、Tableadapter だけが含まれるようになりました。 **Dataset プロジェクト**プロパティ (`DataEntityTier`) に指定されたプロジェクトには、型指定されたデータセット ( *NorthwindDataSet* (または*NorthwindDataSet.Dataset.Designer.cs*)) が含まれています。
 
 > [!NOTE]
 > **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
@@ -173,7 +173,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
      DataService プロジェクトが作成されて NTierWalkthrough ソリューションに追加されます。
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>顧客と注文データを返すためのメソッドをデータアクセス層に作成する
-データサービスは、データアクセス層`GetCustomers`でと`GetOrders`の2つのメソッドを呼び出す必要があります。 これらのメソッドは、 `Customers` Northwind `Orders`とテーブルを返します。 プロジェクトに`DataAccessTier`メソッド`GetOrders`とメソッドを `GetCustomers`作成します。
+データサービスは、`GetCustomers` と `GetOrders` の2つのメソッドをデータアクセス層で呼び出す必要があります。 これらのメソッドは、Northwind `Customers` テーブルと `Orders` テーブルを返します。 @No__t_2 プロジェクトで `GetCustomers` および `GetOrders` メソッドを作成します。
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Customers テーブルを返すメソッドをデータ アクセス層に作成するには
 
@@ -323,7 +323,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 3. **[Service1]** を選択し、[ **OK]** を選択します。
 
     > [!NOTE]
-    > 現在のコンピューターに複数のサービスがある場合は、このチュートリアルで以前に作成したサービス ( `GetCustomers`および`GetOrders`メソッドを含むサービス) を選択します。
+    > 現在のコンピューターに複数のサービスがある場合は、このチュートリアルで以前に作成したサービス (`GetCustomers` および `GetOrders` メソッドを含むサービス) を選択します。
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>データサービスによって返されたデータを表示するには、Datagridview をフォームに追加します。
 データ サービスへのサービス参照を追加すると、サービスによって返されたデータが **[データ ソース]** ウィンドウに自動的に読み込まれます。
@@ -358,7 +358,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>サービスで許容される最大メッセージサイズを増やす
-の`maxReceivedMessageSize`既定値は、テーブル`Customers`および`Orders`テーブルから取得したデータを保持するのに十分な大きさではありません。 次の手順では、値を6553600に増やします。 クライアントの値を変更すると、サービス参照が自動的に更新されます。
+@No__t_0 の既定値は、`Customers` テーブルと `Orders` テーブルから取得したデータを保持するのに十分な大きさではありません。 次の手順では、値を6553600に増やします。 クライアントの値を変更すると、サービス参照が自動的に更新されます。
 
 > [!NOTE]
 > 既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。
@@ -370,9 +370,9 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 2. **maxReceivedMessage** サイズ属性を見つけ、値を「`6553600`」に変更します。
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
-**F5** キーを押してアプリケーションを実行します。 テーブル`Customers` と`Orders`テーブルのデータは、データサービスから取得され、フォームに表示されます。
+**F5** キーを押してアプリケーションを実行します。 @No__t_0 テーブルと `Orders` テーブルのデータがデータサービスから取得され、フォームに表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Windows ベース アプリケーションに関連データを保存した後で、アプリケーションの要件によってはさらに操作を追加する必要があります。 たとえば、このアプリケーションに対して次のような拡張を行うことができます。
 
 - データセットへの検証の追加。

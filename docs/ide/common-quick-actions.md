@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551444"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000149"
 ---
 # <a name="common-quick-actions"></a>共通のクイック アクション
 
@@ -30,7 +30,7 @@ ms.locfileid: "69551444"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>記号やキーワードのスペルミスの修正
 
-Visual Studio で型やキーワードのスペルを誤って入力した場合、このクイック アクションは自動的にそれを修正します。 電球メニューでは **["Change '*misspelled word*' to '*correct word*']** \('スペルが正しくない単語' を 'スペルが正しい単語' に変更\) と表示されます。 次に例を示します。
+Visual Studio で型やキーワードのスペルを誤って入力した場合、このクイック アクションは自動的にそれを修正します。 電球メニューでは **["Change '\<misspelled word>' to '\<correct word>'"]** \('スペルが正しくない単語' を 'スペルが正しい単語' に変更\) と表示されます。 次に例を示します。
 
 ```csharp
 // Before
@@ -58,9 +58,9 @@ Function MyFunction as Integer
 End Function
 ```
 
-| エラー ID | 該当言語 | サポートされているバージョン |
-| ------- | -------------------- | ---------------- |
-| CS0103、BC30002 | C# および Visual Basic | Visual Studio 2015 更新プログラム 2 |
+| エラー ID | 該当言語 |
+| - | - |
+| CS0103、BC30002 | C# および Visual Basic |
 
 ### <a name="resolve-git-merge-conflict"></a>git のマージ競合を解決する
 
@@ -90,7 +90,7 @@ private void MyMethod()
 
 | エラー ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| CS8300、BC37284 | C# および Visual Basic | Visual Studio 2017 バージョン 15.3 |
+| CS8300、BC37284 | C# および Visual Basic | Visual Studio 2017 バージョン 15.3 以降 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>不要なコードを削除するアクション
 
@@ -99,8 +99,8 @@ private void MyMethod()
 **[不要な using の削除]/[不要なインポートの削除]** クイック アクションは、現在のファイルで使われていない `using` および `Import` ステートメントを削除します。 この項目を選ぶと、使われていない名前空間のインポートが削除されます。
 
 | 該当言語 | サポートされているバージョン |
-| -------------------- | ---------------- |
-| C# および Visual Basic | Visual Studio 2015 RTW |
+| - | - |
+| C# および Visual Basic | Visual Studio 2015 以降 |
 
 ### <a name="remove-unnecessary-cast"></a>不要なキャストを削除する
 
@@ -128,7 +128,7 @@ Dim number as Integer = 3
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0004 | C# および Visual Basic | Visual Studio 2015 RTW |
+| IDE0004 | C# および Visual Basic | Visual Studio 2015 以降 |
 
 ### <a name="remove-unused-variables"></a>未使用の変数を削除する
 
@@ -155,7 +155,7 @@ public MyMethod()
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| CS0219、BC42024 | C# および Visual Basic | Visual Studio 2017 バージョン 15.3 |
+| CS0219、BC42024 | C# および Visual Basic | Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="remove-type-from-default-value-expression"></a>既定の値式から型を削除する
 
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 バージョン 15.3 |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 バージョン 15.3 以降 |
 
 ## <a name="actions-that-add-missing-code"></a>不足しているコードを追加するアクション
 
@@ -210,9 +210,9 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-| 診断 ID | 該当言語 | サポートされているバージョン |
-| ------- | -------------------- | ---------------- |
-| CS0103、BC30451 | C# および Visual Basic| Visual Studio 2015 更新プログラム 2 |
+| 診断 ID | 該当言語 |
+| - | - |
+| CS0103、BC30451 | C# および Visual Basic|
 
 ### <a name="add-missing-casesdefault-caseboth"></a>足りないケース、既定のケース、または両方を追加する
 
@@ -281,7 +281,7 @@ End Select
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# および Visual Basic| Visual Studio 2017 バージョン 15.3 |
+| IDE0010 | C# および Visual Basic| Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="add-null-checks-for-parameters"></a>パラメーターの null チェックを追加する
 
@@ -315,7 +315,7 @@ class MyClass
 
 | 該当言語 | サポートされているバージョン |
 | -------------------- | ---------------- |
-| C# および Visual Basic| Visual Studio 2017 バージョン 15.3 |
+| C# および Visual Basic| Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="add-argument-name"></a>引数の名前を追加する
 
@@ -331,7 +331,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | 該当言語 | サポートされているバージョン |
 | -------------------- | ---------------- |
-| C# および Visual Basic| Visual Studio 2017 バージョン 15.3 |
+| C# および Visual Basic| Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="add-braces"></a>中かっこを追加する
 
@@ -353,7 +353,7 @@ if (true)
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | Visual Studio 2017 RTW |
+| IDE0011 | C# | Visual Studio 2017 以降 |
 
 ### <a name="add-and-order-modifiers"></a>修飾子を追加および順序付けする
 
@@ -387,8 +387,8 @@ private static int thisFieldIsPublic;
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0036 | C# および Visual Basic| Visual Studio 2017 バージョン 15.5 |
-| IDE0040 | C# および Visual Basic| Visual Studio 2017 バージョン 15.5 |
+| IDE0036 | C# および Visual Basic| Visual Studio 2017 バージョン 15.5 以降 |
+| IDE0040 | C# および Visual Basic| Visual Studio 2017 バージョン 15.5 以降 |
 
 ## <a name="code-transformations"></a>コード変換
 
@@ -445,7 +445,7 @@ End Select
 
 | 該当言語 | サポートされているバージョン |
 | -------------------- | ---------------- |
-| C# および Visual Basic| Visual Studio 2017 バージョン 15.3 |
+| C# および Visual Basic| Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="convert-to-interpolated-string"></a>挿入文字列に変換する
 
@@ -477,7 +477,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 | 該当言語 | サポートされているバージョン |
 | -------------------- | ---------------- |
-| C# 6.0+ および Visual Basic 14+ | Visual Studio 2017 RTW |
+| C# 6.0+ および Visual Basic 14+ | Visual Studio 2017 以降 |
 
 ### <a name="use-object-initializers"></a>オブジェクト初期化子を使用する
 
@@ -507,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0017 | C# および Visual Basic | Visual Studio 2017 RTW |
+| IDE0017 | C# および Visual Basic | Visual Studio 2017 以降 |
 
 ### <a name="use-collection-initializers"></a>コレクション初期化子を使用する
 
@@ -541,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0028 | C# および Visual Basic | Visual Studio 2017 RTW |
+| IDE0028 | C# および Visual Basic | Visual Studio 2017 以降 |
 
 ### <a name="convert-auto-property-to-full-property"></a>自動プロパティを完全なプロパティに変換する
 
@@ -582,7 +582,7 @@ End Property
 
 | 該当言語 | サポートされているバージョン |
 | -------------------- | ---------------- |
-| C# および Visual Basic | Visual Studio 2017 バージョン 15.5 |
+| C# および Visual Basic | Visual Studio 2017 バージョン 15.5 以降 |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>ブロック本体を式のようなメンバーに変換する
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 以降 |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>匿名関数をローカル関数に変換する
 
@@ -662,7 +662,7 @@ int fibonacci(int n)
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0041 | C# 7.0+ | Visual Studio 2017 バージョン 15.5 |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 バージョン 15.5 以降 |
 
 このクイック アクションでは、可能な限り、```ReferenceEquals``` コーディング パターンではなく、[パターン マッチング](/dotnet/csharp/pattern-matching)の使用を提案します。
 
@@ -686,7 +686,7 @@ if (value is null)
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | Visual Studio 2017 バージョン 15.5 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 バージョン 15 以降 |
 
 ### <a name="introduce-pattern-matching"></a>パターン マッチングを導入する
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 以降 |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 以降 |
 
 ### <a name="change-base-for-numeric-literals"></a>数値リテラルの基本を変更する
 
@@ -757,7 +757,7 @@ Dim countdown As Integer = &H200000
 
 | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ および Visual Basic 14+ | Visual Studio 2017 バージョン 15.3 |
+| C# 7.0+ および Visual Basic 14+ | Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="insert-digit-separators-into-literals"></a>リテラルに桁区切り記号を挿入する
 
@@ -785,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 
 | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ および Visual Basic 14+ | Visual Studio 2017 バージョン 15.3 |
+| C# 7.0+ および Visual Basic 14+ | Visual Studio 2017 バージョン 15.3 以降 |
 
 ### <a name="use-explicit-tuple-names"></a>明示的なタプル名を使用する
 
@@ -817,7 +817,7 @@ Dim name = customer.name
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0033 | C# 7.0+ および Visual Basic 15+ | Visual Studio 2017 RTW |
+| IDE0033 | C# 7.0+ および Visual Basic 15+ | Visual Studio 2017 以降 |
 
 ### <a name="use-inferred-names"></a>推論による名前を使用する
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# | Visual Studio 2017 バージョン 15.5 以降 |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 バージョン 15.5 以降 |
 
 ### <a name="deconstruct-tuple-declaration"></a>タプル宣言を分解する
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | 診断 ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 バージョン 15.5 以降 |
 
 ### <a name="make-method-synchronous"></a>メソッドを同期させる
 
@@ -908,9 +908,9 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-| エラー ID | 該当言語 | サポートされているバージョン |
-| ------- | -------------------- | ---------------- |
-| CS1998、BC42356 | C# および Visual Basic | Visual Studio 2015 更新プログラム 2 |
+| エラー ID | 該当言語 |
+| ------- | -------------------- |
+| CS1998、BC42356 | C# および Visual Basic |
 
 ### <a name="make-method-asynchronous"></a>メソッドを非同期にする
 
@@ -948,7 +948,7 @@ End Function
 
 | エラー ID | 該当言語 | サポートされているバージョン |
 | ------- | -------------------- | ---------------- |
-| CS4032、BC37057 | C# および Visual Basic | Visual Studio 2017 |
+| CS4032、BC37057 | C# および Visual Basic | Visual Studio 2017 以降 |
 
 ## <a name="see-also"></a>関連項目
 

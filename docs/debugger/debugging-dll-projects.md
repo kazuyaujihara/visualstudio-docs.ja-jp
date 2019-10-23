@@ -18,129 +18,129 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714942"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450415"
 ---
-# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio で Dll をデバッグ (C#、 C++、Visual Basic、 F#)
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio でのデバッグ dllC#( C++、、Visual Basic F#、)
 
-DLL (ダイナミック リンク ライブラリ) は、コードとは、複数のアプリで使用できるデータを含むライブラリです。 作成、ビルド、構成するには、Visual Studio を使用して、Dll をデバッグできます。
+DLL (ダイナミックリンクライブラリ) は、複数のアプリで使用できるコードとデータが含まれているライブラリです。 Visual Studio を使用して、Dll の作成、ビルド、構成、デバッグを行うことができます。
 
-## <a name="create-a-dll"></a>DLL を作成します。
+## <a name="create-a-dll"></a>DLL を作成する
 
-次の Visual Studio プロジェクト テンプレートには、Dll を作成できます。
+次の Visual Studio プロジェクトテンプレートでは、Dll を作成できます。
 
-- C#、Visual Basic、またはF#クラス ライブラリ
-- C#または、Visual Basic Windows フォーム コントロール (WCF) ライブラリ
-- C++ のダイナミック リンク ライブラリ (DLL)
+- C#、Visual Basic、またF#はクラスライブラリ
+- C#または Visual Basic Windows フォーム Control (WCF) ライブラリ
+- C++ダイナミックリンクライブラリ (DLL)
 
 詳細については、「[MFC のデバッグ技術](../debugger/mfc-debugging-techniques.md)」を参照してください。
 
-WCF ライブラリのデバッグは、クラス ライブラリのデバッグと似ています。 詳細については、次を参照してください。 [Windows フォーム コントロール](/dotnet/framework/winforms/controls/index)します。
+WCF ライブラリのデバッグは、クラスライブラリのデバッグに似ています。 詳細については、「 [Windows フォームコントロール](/dotnet/framework/winforms/controls/index)」を参照してください。
 
-通常、別のプロジェクトから DLL を呼び出します。 DLL の構成に応じて、呼び出し元のプロジェクトをデバッグするときにステップ インし、DLL コードをデバッグできます。
+通常は、別のプロジェクトから DLL を呼び出します。 呼び出し元のプロジェクトをデバッグするときに、DLL の構成によっては、DLL コードにステップインしてデバッグすることができます。
 
-## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> DLL のデバッグ構成
+## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>DLL デバッグ構成
 
-Visual Studio プロジェクト テンプレートを使用して、アプリを作成する[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]デバッグとリリース ビルド構成の必要な設定を自動的に作成されます。 必要に応じて、これらの設定を変更できます。 詳細については、次の記事を参照してください。
+Visual Studio プロジェクトテンプレートを使用してアプリを作成すると、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、デバッグビルド構成およびリリースビルド構成に必要な設定が自動的に作成されます。 必要に応じて、これらの設定を変更できます。 詳細については、次の記事を参照してください。
 
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)
 
-### <a name="set-c-debuggableattribute"></a>C++ DebuggableAttribute を設定します。
+### <a name="set-c-debuggableattribute"></a>DebuggableAttribute C++の設定
 
-C++ の DLL にアタッチするデバッガー、C++ コードを生成する必要があります`DebuggableAttribute`します。
+デバッガーがC++ DLL にアタッチされるようにするC++には、コードで `DebuggableAttribute` を生成する必要があります。
 
-**設定する`DebuggableAttribute`:**
+**@No__t_1 を設定するには:**
 
-1. C++ DLL プロジェクトを選択**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、またはプロジェクトを右クリックし、選択**プロパティ**します。
+1. ソリューションエクスプローラーでC++ DLL プロジェクトを選択し、 **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
 
-1. **プロパティ** ウィンドウで、**リンカー** > **デバッグ**を選択します**はい (/ASSEMBLYDEBUG)** の**デバッグできるアセンブリ**します。
+1. **[プロパティ]** ペインの [**リンカー**  > **デバッグ**] で、デバッグ可能な **[アセンブリ]** に [**はい] (/assemblydebug)** を選択します。
 
-詳細については、次を参照してください。 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)します。
+詳細については、「 [/assemblydebug](/cpp/build/reference/assemblydebug-add-debuggableattribute)」を参照してください。
 
-### <a name="vxtskdebuggingdllprojectsexternal"></a> C/C++ DLL ファイルの場所を設定します。
+### <a name="vxtskdebuggingdllprojectsexternal"></a>C/C++ DLL ファイルの場所を設定する
 
-外部の DLL をデバッグするには、呼び出し元のプロジェクトで、DLL を検索できる必要があります、 [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)、およびその他のファイル、DLL が必要です。 これらのファイルのコピー先のカスタム ビルド タスクを作成することができます、 *\<プロジェクト フォルダー > \Debug*出力フォルダー、またはファイルが手動でコピーできます。
+外部 DLL をデバッグするには、呼び出し元のプロジェクトが DLL、 [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)、および dll に必要なその他のファイルを検索できる必要があります。 カスタムビルドタスクを作成して、これらのファイルを *\<project フォルダー > \Debug*出力フォルダーにコピーしたり、ファイルを手動でコピーしたりすることができます。
 
-C と C++ プロジェクトでは、それらを出力フォルダーにコピーする代わりに、プロジェクトのプロパティ ページで、ヘッダーおよび LIB ファイルの場所を設定できます。
+C/C++プロジェクトの場合は、出力フォルダーにコピーするのではなく、プロジェクトのプロパティページでヘッダーと LIB のファイルの場所を設定できます。
 
-**C と C++ を設定するには、ヘッダーおよび LIB ファイルの場所。**
+**C/C++ヘッダーおよび LIB ファイルの場所を設定するには:**
 
-1. C/C++ DLL プロジェクトを選択**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、またはプロジェクトを右クリックし、選択**プロパティ**します。
+1. ソリューションエクスプローラーで C/C++ DLL プロジェクトを選択し、 **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
 
-1. 上部にある、**プロパティ** ウィンドウで、**構成**を選択します**すべての構成**します。
+1. **プロパティ**ペインの上部にある **[構成]** で、 **[すべての構成]** を選択します。
 
-1. **C/C++**  > **全般** > **追加のインクルード ディレクトリ**、ヘッダー ファイルが含まれているフォルダーを指定します。
+1. [ **C/C++**   > **全般** > **追加のインクルードディレクトリ**] の下で、ヘッダーファイルを含むフォルダーを指定します。
 
-1. **リンカー** > **全般** > **追加のライブラリ ディレクトリ**、LIB ファイルが含まれているフォルダーを指定します。
+1. **リンカー**  >  **全般** > **追加ライブラリディレクトリ** の下で、LIB ファイルがあるフォルダーを指定します。
 
-1. **リンカー** > **入力** > **追加の依存関係**、LIB ファイルのファイル名と完全なパスを指定します。
+1. **リンカー**  >  追加の**依存関係**を**入力** >  には、LIB ファイルの完全なパスとファイル名を指定します。
 
 1. **[OK]** を選択します。
 
-C++ プロジェクトの設定の詳細については、次を参照してください。[プロパティ ページ (Visual c)](/cpp/build/reference/property-pages-visual-cpp)します。
+C++プロジェクト設定の詳細については、「 [Windows C++プロパティページリファレンス](/cpp/build/reference/property-pages-visual-cpp)」を参照してください。
 
-## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> デバッグ バージョンをビルドします。
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a>デバッグバージョンのビルド
 
-デバッグを開始する前に、DLL のデバッグ バージョンをビルドしてください。 DLL をデバッグするには、呼び出し元のアプリで検索できる必要があります、 [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)とその他のすべてのファイル、DLL が必要です。
+デバッグを開始する前に、必ず DLL のデバッグバージョンをビルドしてください。 DLL をデバッグするには、呼び出し元のアプリがその[.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)と dll に必要なその他のファイルを見つけることができる必要があります。
 
-DLL ファイルのコピー先のカスタム ビルド タスクを作成することができます、 *\<プロジェクト フォルダーを呼び出す > \Debug*出力フォルダー、またはファイルが手動でコピーできます。
+カスタムビルドタスクを作成して、DLL ファイルを *\<calling プロジェクトフォルダー > \Debug*出力フォルダーにコピーしたり、ファイルを手動でコピーしたりすることができます。
 
-必ず、正しい位置に、DLL を呼び出します。 当然のことがありますが、デバッガーが設定したブレークポイントをヒットしない場合、呼び出し元のアプリを検索して、別の DLL のコピーを読み込みます。
+必ず正しい場所に DLL を呼び出してください。 これは明らかに見えるかもしれませんが、呼び出し元のアプリが DLL の別のコピーを検出して読み込む場合、設定したブレークポイントにデバッガーがヒットすることはありません。
 
-## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> DLL をデバッグします。
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a>DLL のデバッグ
 
-DLL を直接実行することはできません。 呼び出す必要があります、アプリによっては、通常、 *.exe*ファイル。 詳細については、次を参照してください。[作成し、Visual c プロジェクトを管理](/cpp/ide/creating-and-managing-visual-cpp-projects)します。
+DLL を直接実行することはできません。 これは、アプリ (通常は *.exe*ファイル) から呼び出す必要があります。 詳細については、「 [Visual Studio C++プロジェクト- ](/cpp/ide/creating-and-managing-visual-cpp-projects)」を参照してください。
 
-DLL をデバッグするには[呼び出し元のアプリからデバッグを開始](#vxtskdebuggingdllprojectsthecallingapplication)、または[DLL プロジェクトからデバッグ](how-to-debug-from-a-dll-project.md)その呼び出し元のアプリを指定することで。 デバッガーを使用することもできます。[イミディ エイト ウィンドウ](#vxtskdebuggingdllprojectstheimmediatewindow)DLL 関数またはメソッドを呼び出し元のアプリを使用せず、デザイン時に評価します。
+DLL をデバッグするには、[呼び出し元のアプリからデバッグを開始](#vxtskdebuggingdllprojectsthecallingapplication)するか、呼び出し元のアプリを指定して[dll プロジェクトからデバッグ](how-to-debug-from-a-dll-project.md)することができます。 デバッガーの [[イミディエイト] ウィンドウ](#vxtskdebuggingdllprojectstheimmediatewindow)を使用して、呼び出し元のアプリを使用せずに、デザイン時に DLL の関数やメソッドを評価することもできます。
 
-詳細については、次を参照してください。[デバッガーでのはじめ](../debugger/debugger-feature-tour.md)します。
+詳細については、「[デバッガーの最初の確認](../debugger/debugger-feature-tour.md)」を参照してください。
 
-### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 呼び出し元のアプリからデバッグを開始します。
+### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a>呼び出し元アプリからデバッグを開始する
 
-DLL を呼び出すアプリを指定できます。
+DLL を呼び出すアプリは次のようになります。
 
-- アプリから、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]同じまたは別のソリューション、dll のプロジェクト。
-- 既にデプロイされている既存のアプリとテストまたは実稼働コンピューターで実行されています。
+- DLL と同じまたは別のソリューション内の [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロジェクトのアプリ。
+- テストコンピューターまたは実稼働コンピューターで既に配置され、実行されている既存のアプリ。
 - Web に配置され、URL からアクセスするアプリケーション。
-- DLL を埋め込む web ページで web アプリです。
+- DLL を埋め込む web ページを含む web アプリ。
 
-呼び出し元のアプリから DLL をデバッグするには、次のことができます。
+呼び出し元アプリから DLL をデバッグするには、次のようにします。
 
-- 呼び出し元のアプリのプロジェクトを開き、選択してデバッグを開始**デバッグ** > **デバッグの開始**キーを押して**F5**します。
+- 呼び出し元のアプリのプロジェクトを開き、[デバッグ  >  デバッグの**開始**] を選択するか、 **F5**キーを押し**てデバッグを**開始します。
 
-  または
+  、または
 
-- 既に展開済みで、テストまたは実稼働コンピューター上で実行されているアプリにアタッチします。 Web サイトまたは web apps では、Dll のこのメソッドを使用します。 詳細については、「[方法 :実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- テストコンピューターまたは実稼働コンピューターで既に展開され、実行されているアプリにアタッチします。 このメソッドは、web サイトまたは web アプリの Dll に対して使用します。 詳細については、「[方法: 実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。
 
-呼び出し元のアプリのデバッグを開始する前に、DLL で、ブレークポイントを設定します。 参照してください[ブレークポイントを使用して](../debugger/using-breakpoints.md)します。 DLL のブレークポイントにヒットしたときにすることができますコードをステップ実行、1 行ずつアクションを確認します。 詳細については、次を参照してください。[デバッガーでコード内を移動](../debugger/navigating-through-code-with-the-debugger.md)します。
+呼び出し元のアプリのデバッグを開始する前に、DLL にブレークポイントを設定します。 「[ブレークポイントの使用」を](../debugger/using-breakpoints.md)参照してください。 DLL のブレークポイントにヒットしたら、コードをステップ実行して、各行でアクションを観察できます。 詳細については、「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」を参照してください。
 
-デバッグ中に、使用することができます、**モジュール**Dll を確認するウィンドウおよび *.exe*ファイルをアプリの読み込み。 開くには、**モジュール**ウィンドウで、デバッグ中に、**デバッグ** > **Windows** > **モジュール**します。 詳細については、「[方法 :[モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)」を参照してください。
+デバッグ中に、 **[モジュール]** ウィンドウを使用して、アプリが読み込む dll ファイルと *.exe*ファイルを確認できます。 **[モジュール]** ウィンドウを開くには、デバッグ中に [**デバッグ** > **Windows**  > **モジュール**] を選択します。 詳細については、「[方法: [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)」を参照してください。
 
-### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> イミディ エイト ウィンドウを使用します。
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a>[イミディエイト] ウィンドウを使用する
 
-使用することができます、**イミディ エイト**デザイン時に DLL の関数またはメソッドを評価するウィンドウ。 **イミディ エイト**ウィンドウは、呼び出し元のアプリの役割を果たします。
+**イミディエイト**ウィンドウを使用すると、デザイン時に DLL の関数やメソッドを評価できます。 **[イミディエイト]** ウィンドウは、呼び出し元のアプリの役割を果たします。
 
 >[!NOTE]
->使用することができます、**イミディ エイト**ほとんどの種類のプロジェクトでは、デザイン時のウィンドウ。 SQL、web プロジェクト、またはスクリプトはサポートされません。
+>ほとんどのプロジェクトの種類では、デザイン時に **[イミディエイト]** ウィンドウを使用できます。 SQL、web プロジェクト、またはスクリプトではサポートされていません。
 
-たとえば、名前付きメソッドをテストする`Test`クラスで`Class1`:
+たとえば、クラス `Class1` で `Test` という名前のメソッドをテストするには、次のようにします。
 
-1. DLL プロジェクトを開きを開き、**イミディ エイト**ウィンドウを選択して**デバッグ** > **Windows** > **イミディ エイト**キーを押して**Ctrl**+**Alt**+**は**します。
+1. DLL プロジェクトを開いた状態で、[**デバッグ** > **Windows**  > **イミディエイト**] を選択するか **、Ctrl** +**Alt** +**I**キーを押して、**イミディエイト**ウィンドウを開きます。
 
-1. 型のオブジェクトをインスタンス化`Class1`次を入力してC#でコードを**イミディ エイト**ウィンドウとキーを押して**Enter**します。 このマネージ コードが適してC#および Visual Basic で、適切な構文の変更と。
+1. [ C# **イミディエイト**] ウィンドウに次のコードを入力し、 **enter**キーを押して `Class1` 型のオブジェクトをインスタンス化します。 このマネージコードは、 C#との Visual Basic に対して機能し、適切な構文を変更します。
 
    ```csharp
    Class1 obj = new Class1();
    ```
 
-   C# では、すべての名前を完全修飾する必要があります。 任意のメソッドや変数は、言語サービスが、式を評価しようとしています。 現在のスコープとコンテキストでなければなりません。
+   C# では、すべての名前を完全修飾する必要があります。 言語サービスが式を評価しようとするときは、すべてのメソッドまたは変数が現在のスコープとコンテキストに含まれている必要があります。
 
 1. `Test` が 1 つの `int` パラメーターを受け取るものと想定し、 `Test` [イミディエイト] **ウィンドウを使用して** を評価します。
 
@@ -148,21 +148,21 @@ DLL を呼び出すアプリを指定できます。
    ?obj.Test(10);
    ```
 
-   結果の出力で、**イミディ エイト**ウィンドウ。
+   結果は **[イミディエイト]** ウィンドウに出力されます。
 
 1. `Test` の中にブレークポイントを配置し、関数を再び評価してデバッグを継続できます。
 
-   ブレークポイントにヒットして、ステップ`Test`します。 `Test` の実行が終了すると、デバッガーはデザイン モードに戻ります。
+   ブレークポイントにヒットし、`Test` をステップ実行できます。 `Test` の実行が終了すると、デバッガーはデザイン モードに戻ります。
 
 ## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 混合モードのデバッグ
 
-呼び出し元のアプリは、マネージまたはネイティブ コード内の DLL を記述できます。 マネージ DLL を呼び出すネイティブ アプリ、両方をデバッグする場合は、プロジェクトのプロパティで、マネージ コードとネイティブ デバッガーの両方を有効にすることができます。 実際のプロセスは、DLL プロジェクトまたは呼び出し元のアプリ プロジェクトからデバッグを開始するかどうかによって異なります。 詳細については、「[方法 :混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)
+DLL の呼び出し元アプリをマネージコードまたはネイティブコードで記述できます。 ネイティブアプリがマネージ DLL を呼び出し、両方をデバッグする場合は、プロジェクトのプロパティでマネージデバッガーとネイティブデバッガーの両方を有効にすることができます。 正確なプロセスは、DLL プロジェクトからデバッグを開始するか、呼び出し元のアプリプロジェクトからデバッグを開始するかによって異なります。 詳細については、「[方法: 混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)」を参照してください。
 
-マネージ呼び出し元プロジェクトからネイティブ DLL をデバッグすることもできます。 詳細については、次を参照してください。[マネージ コードとネイティブ コードをデバッグする方法について](how-to-debug-managed-and-native-code.md)します。
+マネージ呼び出しプロジェクトからネイティブ DLL をデバッグすることもできます。 詳細については、「[マネージコードとネイティブコードをデバッグする方法](how-to-debug-managed-and-native-code.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
-- [Visual C++ プロジェクト タイプ](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [プロジェクトのデバッグC++の準備](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#、F#、Visual Basic プロジェクト タイプ](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)

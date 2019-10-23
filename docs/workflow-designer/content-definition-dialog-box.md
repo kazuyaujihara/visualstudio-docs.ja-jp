@@ -1,38 +1,38 @@
 ---
-title: ワークフロー デザイナーの [コンテンツ定義] ダイアログ ボックス
+title: '[ワークフローデザイナー-コンテンツ定義] ダイアログボックス'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - MessageContent.UI
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b30409bcc82d540a17917f3a8b55084a205613b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 307540325ac2f6bd35d33cb540fa93aa1a41254a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949887"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650627"
 ---
 # <a name="content-definition-dialog-box"></a>[コンテンツ定義] ダイアログ ボックス
 
-**コンテンツ定義**を構成する ダイアログ ボックスがワークフロー デザイナーで使用される、**コンテンツ**のプロパティ、 <xref:System.ServiceModel.Activities.Send>、 <xref:System.ServiceModel.Activities.Receive>、 <xref:System.ServiceModel.Activities.SendReply>、および<xref:System.ServiceModel.Activities.ReceiveReply>アクティビティ。 このボックスを使用するアクティビティ デザイナーの詳細については、次を参照してください、[送信](../workflow-designer/send-activity-designer.md)、[受信](../workflow-designer/receive-activity-designer.md)、 [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)、および[SendAndReceiveReply。](../workflow-designer/sendandreceivereply-template-designer.md)トピック。
+**[コンテンツ定義]** ダイアログボックスは、<xref:System.ServiceModel.Activities.Send>、<xref:System.ServiceModel.Activities.Receive>、<xref:System.ServiceModel.Activities.SendReply>、および <xref:System.ServiceModel.Activities.ReceiveReply> の各アクティビティの**コンテンツ**プロパティを構成するためにワークフローデザイナーで使用されます。 このボックスを使用するアクティビティデザイナーの詳細については、「 [Send](../workflow-designer/send-activity-designer.md)、 [Receive](../workflow-designer/receive-activity-designer.md)、 [Receiveandsendreply](../workflow-designer/receiveandsendreply-template-designer.md)、および[sendandreceivereply](../workflow-designer/sendandreceivereply-template-designer.md) 」のトピックを参照してください。
 
-次の表に、ユーザー インターフェイス (UI) 要素の**関連付けの初期化** ダイアログ ボックス。
+次の表では、 **[関連付けの初期化]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |UI 要素|説明|
 |-|-----------------|
-|**メッセージ**|メッセージの内容を指定します、**メッセージ データ**式テキスト ボックスと、型を使用して、**メッセージの種類**ドロップダウン リスト ボックス。 既定では、**コンテンツ定義**を使用して、 <xref:System.ServiceModel.Activities.ReceiveMessageContent>、要求、<xref:System.ServiceModel.Channels.Message>またはメッセージ コントラクト、ワークフロー サービス定義内の型。|
-|**パラメーター**|をクリックして、**パラメーター**ラジオ ボタンを使用する<xref:System.ServiceModel.Activities.ReceiveParametersContent>、データ コントラクトを受け取る。 <xref:System.Activities.OutArgument> キーおよび値のペアのジェネリック コレクションを設定するには、データ グリッドを使用します。これらの値は、現在のワークフローの変数パラメーターに割り当てられます。|
+|**[メッセージ]**|メッセージの **[データ]** 式 テキストボックスと、 **[メッセージの種類]** ドロップダウンリストボックスを使用して、メッセージの内容を指定します。 既定では、**コンテンツ定義**は、ワークフローサービス定義内で <xref:System.ServiceModel.Channels.Message> またはメッセージコントラクト型を必要とする <xref:System.ServiceModel.Activities.ReceiveMessageContent> を使用します。|
+|**パラメーター**|**[パラメーター]** オプションボタンをクリックして <xref:System.ServiceModel.Activities.ReceiveParametersContent> を使用します。これにはデータコントラクトが必要です。 <xref:System.Activities.OutArgument> キーおよび値のペアのジェネリック コレクションを設定するには、データ グリッドを使用します。これらの値は、現在のワークフローの変数パラメーターに割り当てられます。|
 
-**コンテンツ定義**ダイアログ ボックスを使用して、**送信**、**受信**、 **ReceiveAndSendReply**、および**SendAndReceiveReply**デザイナー。 デザイナーへのアクセス方法は、どの場合も同様です。ここでは、Receive デザイナーを使用する例で手順を説明します。
+**[コンテンツ定義]** ダイアログボックスは、 **Send**、 **Receive**、 **Receiveandsendreply**、および**sendandreceivereply**の各デザイナーによって使用されます。 デザイナーへのアクセス方法は、どの場合も同様です。ここでは、Receive デザイナーを使用する例で手順を説明します。
 
-**受信**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**とアクティビティを通常配置して任意の場所は、ワークフロー デザイナー画面にドロップします。 この操作により、Receive という既定の <xref:System.ServiceModel.Activities.Receive> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 選択、**受信**アクティビティ デザイナーおよび (コンテンツ) のテキストの横にある省略記号のボタンをクリックし、**コンテンツ**プロパティ グリッドでプロパティ、**コンテンツ定義**ダイアログ ボックスを表示します。
+**Receive**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意の場所のワークフローデザイナー画面にドロップできます。 この操作により、Receive という既定の <xref:System.ServiceModel.Activities.Receive> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 **Receive**アクティビティデザイナーを選択し、[コンテンツ**定義**] ダイアログボックスが表示されるプロパティグリッドで、**コンテンツ**プロパティの (コンテンツ) テキストの横にある省略記号ボタンをクリックします。
 
-内でコンテンツを指定することができます、**メッセージ**のセクションを<xref:System.ServiceModel.Activities.ReceiveMessageContent>アクティビティ内、または、**パラメーター**のセクションを<xref:System.ServiceModel.Activities.ReceiveParametersContent>アクティビティ。
+コンテンツは、<xref:System.ServiceModel.Activities.ReceiveMessageContent> アクティビティの場合は**Message**セクション内で指定することも、<xref:System.ServiceModel.Activities.ReceiveParametersContent> アクティビティの場合は**Parameter**セクション内で指定することもできます。
 
 ## <a name="see-also"></a>関連項目
 

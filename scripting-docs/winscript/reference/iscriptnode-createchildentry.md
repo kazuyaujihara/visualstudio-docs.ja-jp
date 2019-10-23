@@ -1,5 +1,5 @@
 ---
-title: IScriptNode:。:Createchildentry |Microsoft Docs
+title: 'IScriptNode:: CreateChildEntry |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75369df719b0cd140ce621e916215eb18cf30a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c58ff83c43a1418e6fb7bd8945afa181af60c68a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787620"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573618"
 ---
-# <a name="iscriptnode-createchildentry"></a>IScriptNode:。:Createchildentry
-子インスタンスを追加します。`IScriptEntry`します。  
+# <a name="iscriptnode-createchildentry"></a>IScriptNode::CreateChildEntry
+@No__t_0 の子インスタンスを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,28 +40,28 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>パラメーター  
  `isn`  
- [in]親の子のインデックス。  
+ から親の子のインデックス。  
   
  `dwCookie`  
- [in]ホスト オブジェクトに子エントリを関連付けるために使用するアプリケーション定義の値。  
+ から子エントリをホストオブジェクトに関連付けるために使用されるアプリケーション定義の値。  
   
  `pszDelimiter`  
- [in]最後のスクリプト ブロックの区切り記号のアドレス。 解析、ホストは通常、スクリプト ブロックの終了を検出する (2 つ単一引用符) などの区切り記号を使用します。  
+ からスクリプトの終了ブロックの区切り記号のアドレス。 解析の場合、ホストは通常、スクリプトブロックの終了を検出するために区切り記号 (2 つの単一引用符など) を使用します。  
   
- 区切り記号は、前処理を提供するエンジンを作成するスクリプトをできます。 など、エンジンは、区切り記号として使用するための 2 つの単一引用符で単一引用符を置き換えることが。 エンジンは、区切り記号を使用する方法を決定します。  
+ 区切り記号を使用すると、スクリプト作成エンジンで前処理を行うことができます。 たとえば、区切り記号として使用する単一引用符を2つの単一引用符で置き換えることができます。 エンジンは、区切り記号の使用方法を決定します。  
   
- 区切り記号がスクリプト ブロックの末尾をマークしない場合は NULL に設定します。  
+ 区切り記号によってスクリプトブロックの終了がマークされない場合は、NULL に設定します。  
   
  `ppse`  
- [out]ポインターを受け取る変数のアドレス、`IScriptEntry`子インスタンスのインターフェイス。  
+ 入出力子インスタンスの `IScriptEntry` インターフェイスへのポインターを受け取る変数のアドレス。  
   
- `IScriptNode`このパラメーターは、Web ページを表すオブジェクトを返します、`IScriptEntry`インスタンスが、スクリプト ブロックを指定します。  
+ Web ページを表す `IScriptNode` オブジェクトの場合、このパラメーターは、スクリプトブロックを指定する `IScriptEntry` インスタンスを返します。  
   
- `IScriptEntry`スクリプト ブロックを表すオブジェクトの場合は、このパラメーターを返します、`IScriptEntry`インスタンスが関数オブジェクトを指定します。  
+ スクリプトブロックを表す `IScriptEntry` オブジェクトの場合、このパラメーターは関数オブジェクトを指定する `IScriptEntry` インスタンスを返します。  
   
- `IScriptEntry`関数を表すオブジェクトのオブジェクトをこのメソッドは失敗します。  
+ 関数オブジェクトを表す `IScriptEntry` オブジェクトの場合、このメソッドは失敗します。  
   
- `IScriptScriptlet`オブジェクトの場合、このメソッドは失敗します。  
+ @No__t_0 オブジェクトの場合、このメソッドは失敗します。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- `IScriptNode`インターフェイスは、Web ページまたはその要素を表します。 `IScriptEntry`インターフェイス (から派生`IScriptNode`) は、スクリプト ブロックまたは関数オブジェクトを表します。 `IScriptScriptlet`インターフェイス (から派生`IScriptEntry`) イベント ハンドラーを表します。  
+ @No__t_0 インターフェイスは、Web ページまたはその要素を表します。 @No__t_0 インターフェイス (`IScriptNode` から派生) は、スクリプトブロックまたは関数オブジェクトを表します。 @No__t_0 インターフェイス (`IScriptEntry` から派生) は、イベントハンドラーを表します。  
   
 ## <a name="see-also"></a>関連項目  
- [IScriptNode インターフェイス](../../winscript/reference/iscriptnode-interface.md)   
+ [Iscriptnode インターフェイス](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)

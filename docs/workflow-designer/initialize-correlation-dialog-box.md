@@ -1,36 +1,36 @@
 ---
-title: ワークフロー デザイナーの関連付け ダイアログ ボックスの初期化
+title: ワークフローデザイナー-[関連付けの初期化] ダイアログボックス
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab86b39cd927d516bc627630a29feee1698daa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0b23f10184516ea4ffc3b00ac98e32ca8b387c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536817"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650192"
 ---
 # <a name="initialize-correlation-dialog-box"></a>[関連付け初期化] ダイアログ ボックス
 
-**関連付けの初期化** ダイアログ ボックスは、ワークフロー デザイナーで編集に使用される、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>のプロパティ、<xref:System.ServiceModel.Activities.InitializeCorrelation>アクティビティ。 詳細については、次を参照してください。 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)します。
+**[関連付けの初期化]** ダイアログボックスは、<xref:System.ServiceModel.Activities.InitializeCorrelation> アクティビティの <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> プロパティを編集するためにワークフローデザイナーで使用されます。 詳細については、「 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)」を参照してください。
 
-次の表に、ユーザー インターフェイス (UI) 要素の**関連付けの初期化** ダイアログ ボックス。
+次の表では、 **[関連付けの初期化]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |UI 要素|説明|
 |-|-----------------|
 |**相関関係**|初期化する関連付けの <xref:System.ServiceModel.Activities.CorrelationHandle>。|
-|**初期化します。**|初期化するデータが格納されているキー/値ペア。 この値に対応、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>プロパティ。 有効なキー/値ペアの例では、"OrderID"OrderID という名前の変数のペアをという名前のキーです。|
+|**初期化**|初期化するデータが格納されているキー/値ペア。 この値は、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> プロパティに対応しています。 有効なキーと値のペアの例としては、OrderID という名前の変数と組み合わせた "OrderID" という名前のキーがあります。|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>[関連付け初期化] ダイアログ ボックスを開くには
 
-をクリックして**ビュー**上、 **InitializeCorrelation**アクティビティ デザイナーまたは選択、<xref:System.ServiceModel.Activities.InitializeCorrelation>ワークフロー デザイナーでアクティビティ。 省略記号ボタンをクリックし、横に、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>プロパティ グリッド内のプロパティ。
+**InitializeCorrelation**アクティビティデザイナーで **[表示]** をクリックするか、ワークフローデザイナーで <xref:System.ServiceModel.Activities.InitializeCorrelation> アクティビティを選択します。 次に、プロパティグリッドの [<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>] プロパティの横にある省略記号ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 

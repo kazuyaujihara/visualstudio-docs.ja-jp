@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetContextOfPosition |Microsoft Docs
+title: 'IDebugDocumentText:: GetContextOfPosition |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df63362c422289652d45ed4bbc80f117e17fb73c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6a35a85a6e4761e1bd0db67caafd0913e7e28a3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008718"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572145"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-指定された文字位置の範囲に対応するドキュメントのコンテキスト オブジェクトを作成します。  
+指定された文字位置の範囲に対応するドキュメントコンテキストオブジェクトを作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>パラメーター  
  `cCharacterPosition`  
- [in]開始文字位置の範囲の位置。  
+ から文字位置の範囲の開始位置。  
   
  `cNumChars`  
- [in]範囲の文字の数。  
+ から範囲内の文字数。  
   
  `ppsc`  
- [out]指定した文字位置の範囲に対応するドキュメントのコンテキスト オブジェクト。  
+ 入出力指定した文字位置の範囲に対応するドキュメントコンテキストオブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT GetContextOfPosition(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定された文字位置の範囲に対応するドキュメントのコンテキスト オブジェクトを作成します。  
+ このメソッドは、指定された文字位置の範囲に対応するドキュメントコンテキストオブジェクトを作成します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentText インターフェイス](../../winscript/reference/idebugdocumenttext-interface.md)

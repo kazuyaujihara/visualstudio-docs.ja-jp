@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118740"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314121"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加
 
@@ -62,8 +62,7 @@ ms.locfileid: "71118740"
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      このコードは複雑に見えますが、順番に見ていけば理解できます。 まず、メソッドの先頭の部分 (C# の場合は `object sender`、Visual Basic の場合は `sender As System.Object`) を見てください。 このパラメーターは、sender と呼ばれる、イベントが発生しているオブジェクトを参照します。 この場合、sender オブジェクトは NumericUpDown コントロールです。 したがって、メソッドの 1 行目で、sender が汎用オブジェクトではなく、具体的に NumericUpDown コントロールであると指定します。 (NumericUpDown コントロールはいずれもオブジェクトですが、オブジェクトがすべて NumericUpDown コントロールであるとは限りません)。NumericUpDown コントロールはこのメソッドで **answerBox** と名付けられます。これは、sum NumericUpDown コントロールだけではなく、フォームのすべての NumericUpDown コントロールに使用されるためです。 このメソッドで answerBox 変数を宣言するため、そのスコープはこのメソッドにのみ適用されます。 つまり、変数はこのメソッド内でのみ使用できます。
 

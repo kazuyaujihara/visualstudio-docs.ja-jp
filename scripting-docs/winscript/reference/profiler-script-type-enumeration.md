@@ -15,14 +15,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca90a566db422d75fefc44267ffe10504bb872ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e08583f9bb914adfbd144715646991c6070f3f32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816786"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574572"
 ---
-# <a name="profilerscripttype-enumeration"></a>PROFILER_SCRIPT_TYPE 列挙型
+# <a name="profiler_script_type-enumeration"></a>PROFILER_SCRIPT_TYPE 列挙型
 スクリプトの種類を指定します。  
   
 ## <a name="syntax"></a>構文  
@@ -40,13 +40,13 @@ typedef enum {
   
 |メンバー|説明|  
 |------------|-----------------|  
-|PROFILER_SCRIPT_TYPE_USER|ユーザーが記述したスクリプト コードを指定します。|  
-|PROFILER_SCRIPT_TYPE_DYNAMIC|実行時に動的に生成されるスクリプト コードを指定します。|  
-|PROFILER_SCRIPT_TYPE_NATIVE|ネイティブ関数とスクリプト エンジンによって定義されているオブジェクトのスクリプトの種類を指定します。|  
-|PROFILER_SCRIPT_TYPE_DOM|Internet Explorer への呼び出しなどのドキュメント オブジェクト モデル (DOM) に呼び出しを指定します、`document.getElementById`メソッド。|  
+|PROFILER_SCRIPT_TYPE_USER|ユーザーが記述したスクリプトコードを指定します。|  
+|PROFILER_SCRIPT_TYPE_DYNAMIC|実行中に動的に生成されるスクリプトコードを指定します。|  
+|PROFILER_SCRIPT_TYPE_NATIVE|スクリプトエンジンによって定義されるネイティブ関数およびオブジェクトのスクリプトの種類を指定します。|  
+|PROFILER_SCRIPT_TYPE_DOM|Internet Explorer のドキュメントオブジェクトモデル (DOM) への呼び出しを指定します。たとえば、`document.getElementById` メソッドを呼び出します。|  
   
 ## <a name="see-also"></a>関連項目  
- [アクティブ スクリプト Profiler の定数、列挙型および構造体](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+ [アクティブスクリプトプロファイラーの定数、列挙型、および構造体](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
+ [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

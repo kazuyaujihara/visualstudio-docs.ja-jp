@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication |Microsoft Docs
+title: 'IMachineDebugManagerCookie:: AddApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c71983dd5f1273679351bc45c1db2df62757d153
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da436308c71a66d3070d42128d8da03ae88d2935
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573910"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-実行中にアプリケーションを追加します。 アプリケーションの一覧。  
+実行中のアプリケーションの一覧にアプリケーションを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `pda`  
- [in]アプリケーションを実行するアプリケーションの一覧。  
+ からアプリケーションを実行中のアプリケーションの一覧に表示します。  
   
  `dwDebugAppCookie`  
- [in]デバッグ アプリケーションを識別するクッキー。  
+ からデバッグアプリケーションを識別するクッキー。  
   
  `pdwAppCookie`  
- [out]マシン デバッグ マネージャーから、アプリケーションを削除するために使用されるクッキー。  
+ 入出力コンピューターデバッグマネージャーからアプリケーションを削除するために使用されるクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,9 +55,9 @@ HRESULT AddApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、プロセス デバッグ マネージャーたびに`IProcessDebugManager::AddApplication`が呼び出されます。  
+ このメソッドは、`IProcessDebugManager::AddApplication` が呼び出されるたびにプロセスデバッグマネージャーによって呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
- [IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
- [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
+ [Imachinedebugmanagercookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+ [Imachinedebugmanagercookie:: RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

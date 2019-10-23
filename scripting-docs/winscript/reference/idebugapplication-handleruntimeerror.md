@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError |Microsoft Docs
+title: 'IDebugApplication:: HandleRuntimeError |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2fd4ba2b811cd6c4e38c10a0c68c5808f2c0870a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412436"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574332"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-現在のスレッドをブロックして、デバッガー IDE にエラーの通知を送信します。  
+現在のスレッドをブロックし、エラーの通知をデバッガー IDE に送信します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,19 +41,19 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>パラメーター  
  `pErrorDebug`  
- [in]このエラーが発生しました。  
+ から発生したエラー。  
   
  `pScriptSite`  
- [in]スレッドのスクリプト サイトです。  
+ からスレッドのスクリプトサイト。  
   
  `pbra`  
- [out]デバッガーは、アプリケーションを再開したときに実行するアクション。  
+ 入出力デバッガーがアプリケーションを再開したときに実行するアクション。  
   
  `perra`  
- [out]エラーがある場合、デバッガーは、アプリケーションを再開したときに実行するアクション。  
+ 入出力デバッガーがエラーが発生した場合にアプリケーションを再開したときに実行するアクション。  
   
  `pfCallOnScriptError`  
- [out]これはフラグ`TRUE`場合は、エンジンを呼び出す必要があります、`IActiveScriptSite::OnScriptError`メソッド。  
+ 入出力エンジンが `IActiveScriptSite::OnScriptError` メソッドを呼び出す必要がある場合に `TRUE` するフラグ。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -63,14 +63,14 @@ HRESULT HandleRuntimeError(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 言語エンジンは、実行時エラーが発生したスレッドのコンテキストでこのメソッドを呼び出します。 このメソッドは、現在のスレッドをブロックして、IDE のデバッガーに送信されるエラー通知を送信します。 デバッガー IDE、アプリケーションの再開時、このメソッドは、実行するアクションを返します。  
+ 言語エンジンは、実行時エラーの原因となったスレッドのコンテキストでこのメソッドを呼び出します。 このメソッドにより、現在のスレッドがブロックされ、デバッガー IDE に送信されるエラー通知が送信されます。 デバッガー IDE によってアプリケーションが再開されると、このメソッドは、実行するアクションと共にを返します。  
   
 > [!NOTE]
-> 実行時エラーの中にスタック フレームを列挙または式を評価すると、このようなタスクを実行するスレッドによって、言語エンジンを呼び出すことができます。  
+> ランタイムエラーが発生している間に、スタックフレームの列挙や式の評価などのタスクを実行するために、スレッドによって言語エンジンが呼び出される場合があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug インターフェイス](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
  [BREAKRESUMEACTION 列挙型](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 列挙型](../../winscript/reference/errorresumeaction-enumeration.md)

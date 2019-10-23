@@ -1,26 +1,26 @@
 ---
-title: Visual Studio アーキテクチャ ツー リング ガイダンス |Microsoft Docs
+title: Visual Studio アーキテクチャツールのガイダンス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: fce6b398-935e-4241-bdf4-875d09ff57c7
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d23afb98b1818f4f7320041f202857e61873975a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7c34e9cae335af12f59e6c25d5fb3c24e5c1749
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200555"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659343"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio アーキテクチャ ツーリング ガイダンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このアーキテクチャ ツー リング ガイダンスは、Visual Studio 2010 でのモデリング ツールの使用方法についての実用的なガイダンスのダウンロード可能なパッケージです。 統合では、すべてのモデリング ツールを使用する方法の概要を示し、ツールを使用する最も一般的なシナリオについて説明します。  
-  
- コンテンツの作成者、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers、特別なグループからメンバーを持つ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]製品チーム、Microsoft のサービス、Microsoft Valued Professionals (Mvp)、および[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コミュニティをリードです。  
-  
- [ツールのアーキテクチャ ガイダンスをダウンロードするには、ここをクリックします。](http://go.microsoft.com/fwlink/?LinkID=191984)
+このアーキテクチャツールのガイダンスは、Visual Studio 2010 のモデリングツールの使用に関する実用的なガイダンスのダウンロード可能なパッケージです。 ここでは、すべてのモデリングツールを統合方式で使用する方法の概要を示し、ツールが使用される最も一般的なシナリオについて説明します。
+
+ このコンテンツは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers によって作成されました。このグループは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 製品チーム、Microsoft サービス、マイクロソフトの最重要なプロフェッショナル (Mvp)、および [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コミュニティリーダーのメンバーが含まれています。
+
+ [アーキテクチャツールのガイダンスをダウンロードするには、ここをクリックして](http://go.microsoft.com/fwlink/?LinkID=191984)ください。

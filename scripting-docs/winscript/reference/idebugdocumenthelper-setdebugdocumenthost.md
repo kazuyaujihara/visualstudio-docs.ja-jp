@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost |Microsoft Docs
+title: 'IDebugDocumentHelper:: SetDebugDocumentHost |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948994"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574655"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-セット、`IDebugDocumentHost`このドキュメントにします。  
+このドキュメントの `IDebugDocumentHost` を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>パラメーター  
  `pddh`  
- [in]デバッグ ドキュメントのホスト。  
+ からデバッグドキュメントホスト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- `IDebugDocumentHost`スマート ホスト構文の色分け表示のインターフェイスを使用、遅延のテキストを取得し、新しく作成したは、制御するオブジェクトを返すドキュメントのコンテキスト。  
+ @No__t_0 インターフェイスは、スマートホストの構文の色分け、遅延テキストのフェッチ、新しく作成されたドキュメントコンテキストの制御オブジェクトの取得に使用されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   

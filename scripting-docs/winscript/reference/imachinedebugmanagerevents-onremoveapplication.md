@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onRemoveApplication |Microsoft Docs
+title: 'IMachineDebugManagerEvents:: onRemoveApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87ae129448de4425f961038739cfc05c87e285e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b50d91a75a8f251ad04b456b179fdd0ba0d1dc32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965324"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571480"
 ---
 # <a name="imachinedebugmanagereventsonremoveapplication"></a>IMachineDebugManagerEvents::onRemoveApplication
-アプリケーションが実行から削除されたときにイベントを処理するアプリケーションの一覧。  
+実行中のアプリケーションの一覧からアプリケーションが削除されたときに、イベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT onRemoveApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `pda`  
- [in]アプリケーションの実行から削除されたアプリケーションの一覧。  
+ から実行中のアプリケーションの一覧から削除されたアプリケーション。  
   
  `dwAppCookie`  
- [in]アプリケーションの一覧から、アプリケーションが追加されたときに提供されるクッキー。  
+ からアプリケーションの一覧からアプリケーションを追加したときに指定されたクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,8 +51,8 @@ HRESULT onRemoveApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、アプリケーションが実行から削除されたことを示すアプリケーションの一覧。  
+ このメソッドは、アプリケーションが実行中のアプリケーションの一覧から削除されたことを示します。  
   
 ## <a name="see-also"></a>関連項目  
- [IMachineDebugManagerEvents インターフェイス](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
+ [Imachinedebugmanagerevents インターフェイス](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)

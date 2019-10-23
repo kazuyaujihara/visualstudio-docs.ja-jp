@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c01c034fb08315737c57ef8674230b837a9fa6de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540226"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670337"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "62540226"
  自分とチームのカスタム スタート ページを作成するには、「[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)」を参照してください。
 
 ### <a name="environment-color-themes"></a>環境の配色テーマ
- 明色、暗色、青の配色テーマを変更するには、**[クイック起動]** に「environment」と入力して、**[環境 &#124; 全般]** を選択します。 エディターで配色オプションを変更するには、**[クイック起動]** に「`environment`」と入力して、**[環境 &#124; フォントおよび色]** を選択します。 「[方法: フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」も参照してください。
+ 明色、暗色、青の配色テーマを変更するには、 **[クイック起動]** に「environment」と入力して、 **[環境 &#124; 全般]** を選択します。 エディターで配色オプションを変更するには、 **[クイック起動]** に「`environment`」と入力して、 **[環境 &#124; フォントおよび色]** を選択します。 「[方法: フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」も参照してください。
 
 ### <a name="menus-and-toolbars"></a>メニューとツールバー
  メニュー項目やツールバーの項目を追加または削除するには、「[方法: メニューおよびツールバーをカスタマイズする](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)」を参照してください。
 
 ### <a name="main-menu-casing"></a>メイン メニューの大文字小文字の区別
- メイン メニューの大文字小文字の区別の変更は一般的に需要が高いため、これを **[タイトル文字]** と **[すべて大文字]** の間で変更できます。**[クイック起動]** に 「`environment`」と入力して **[環境 &#124; 全般]** を選択します。
+ メイン メニューの大文字小文字の区別の変更は一般的に需要が高いため、これを **[タイトル文字]** と **[すべて大文字]** の間で変更できます。 **[クイック起動]** に 「`environment`」と入力して **[環境 &#124; 全般]** を選択します。
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio IDE](../ide/visual-studio-ide.md)

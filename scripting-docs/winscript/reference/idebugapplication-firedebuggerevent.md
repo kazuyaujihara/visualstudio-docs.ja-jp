@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FireDebuggerEvent |Microsoft Docs
+title: 'IDebugApplication:: 焼討デバッガイベント |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad865f05cc70f462d65d6fbead4143b82a9fa489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00d895ed484e37f0ba38636a409876156ed97287
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990914"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575008"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-デバッガーの一般的なイベントが発生した`IApplicationDebugger`インターフェイス。  
+デバッガーの `IApplicationDebugger` インターフェイスに汎用イベントを発生させます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT FireDebuggerEvent(
   
 #### <a name="parameters"></a>パラメーター  
  `riid`  
- [in]オブジェクトの GUID。  
+ からオブジェクトの GUID。  
   
  `punk`  
- [in]デバッガーに渡すイベント オブジェクト。  
+ からデバッガーに渡すイベントオブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -52,11 +52,11 @@ HRESULT FireDebuggerEvent(
 |`E_NOTIMPL`|メソッドは現在実装されていません。|  
   
 ## <a name="remarks"></a>Remarks  
- GUID のセマンティクスと`IUnknown`が全面的に定義されているアプリケーションやデバッガー。  
+ GUID と `IUnknown` のセマンティクスは、アプリケーション/デバッガーが完全に定義されています。  
   
- この方法により、デバッガーのモデルのカスタム拡張機能現在実装されていません。  
+ このメソッドは、デバッガーモデルのカスタム拡張を可能にします。現在は実装されていません。  
   
- このメソッドにより`IApplicationDebugger::onDebuggerEvent`呼び出されます。  
+ このメソッドによって `IApplicationDebugger::onDebuggerEvent` が呼び出されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

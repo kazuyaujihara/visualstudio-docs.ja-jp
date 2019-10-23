@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27aaadfd1d3ff38e9a0382ff1863b73d2bccc325
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94a72228e1ad6ab49568f3291ad9add7209ef3da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539444"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571736"
 ---
-# <a name="jspropertyattributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES 列挙型
+# <a name="js_property_attributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES 列挙型
 プロパティの属性を指定します。  
   
 ## <a name="syntax"></a>構文  
@@ -33,17 +33,17 @@ enum JS_PROPERTY_ATTRIBUTES{   JS_PROPERTY_ATTRIBUTE_NONE = 0,   JS_PROPERTY_HAS
   
 ## <a name="members"></a>メンバー  
   
-|名前|説明|  
+|名|説明|  
 |----------|-----------------|  
 |`JS_PROPERTY_ATTRIBUTE_NONE`|プロパティに属性がありません。|  
 |`JS_PROPERTY_HAS_CHILDREN`|プロパティに子があります。|  
-|`JS_PROPERTY_FAKE`|プロパティは、"[Methods]"などの偽のノードを表します。|  
+|`JS_PROPERTY_FAKE`|プロパティは、"[メソッド]" などの偽のノードを表します。|  
 |`JS_PROPERTY_METHOD`|プロパティはメソッドです。|  
 |`JS_PROPERTY_READONLY`|プロパティは読み取り専用です。|  
 |`JS_PROPERTY_NATIVE_WINRT_POINTER`|プロパティは、ネイティブ WinRT オブジェクトへのポインターです。|  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [Windows スクリプト インターフェイスのリファレンス](../../winscript/reference/windows-script-interfaces-reference.md)

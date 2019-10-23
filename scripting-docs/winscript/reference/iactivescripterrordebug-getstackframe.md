@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetStackFrame |Microsoft Docs
+title: 'IActiveScriptErrorDebug:: GetStackFrame |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aecda7be418f2a89fb39bc1d754c8e94cf1130bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8542f83f926ba1a993527baecd6d5b667671b041
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954942"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576319"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-ランタイム エラーを有効になっているスタック フレームを提供します。  
+ランタイムエラーに対して有効なスタックフレームを提供します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>パラメーター  
  `ppdsf`  
- [out]エラーのスタック フレーム。  
+ 入出力エラーのスタックフレーム。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetStackFrame(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、実行時エラーを有効になっているスタック フレームを提供します。  
+ このメソッドは、実行時エラーに対して有効なスタックフレームを提供します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptErrorDebug インターフェイス](../../winscript/reference/iactivescripterrordebug-interface.md)

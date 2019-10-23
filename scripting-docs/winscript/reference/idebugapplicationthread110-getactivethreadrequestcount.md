@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::GetActiveThreadRequestCount |Microsoft Docs
+title: 'IDebugApplicationThread110:: GetActiveThreadRequestCount |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7f038c1d0958701a14899825a2adb0a11cf604d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440568"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574489"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-現在処理されているメカニズムを切り替え、PDM のスレッドからのスレッドの要求の数を返します。 この番号は 0 または 1 では、通常は。 ただし、数場合があります高い 1 つのスレッドの呼び出しの処理を開始がスレッドからの同期呼び出しをトリガーまたはそれ以外の場合、スレッドを中断でき、着信呼び出しを再度処理する (トリガーすることなどによって、 [IRemoteDebugApplicationEvents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)デバッガー スレッドで発行されるイベント)。  
+現在処理されている PDM のスレッド切り替え機構からのスレッド要求の数を返します。 通常、この数値は0または1です。 ただし、1つのスレッド呼び出しで処理が開始されてもスレッドからの同期呼び出しがトリガーされ、それ以外の場合はスレッドが中断され、着信呼び出しを再び処理できるようになります (たとえば、Iremotedebugapplicationevents をトリガーするなど)。 [インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)イベント。デバッガースレッドで発行されます)。  
   
 > [!IMPORTANT]
-> [IDebugApplicationThread110 インターフェイス](../../winscript/reference/idebugapplicationthread110-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
+> [IDebugApplicationThread110 インターフェイス](../../winscript/reference/idebugapplicationthread110-interface.md)は、PDM version 11.0 以降で実装されています。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT GetActiveThreadRequestCount([out, annotation("_Out_")] UINT * puiThreadR
   
 #### <a name="parameters"></a>パラメーター  
  `puiThreadRequests`  
- [out]スレッドの要求の数。  
+ 入出力スレッド要求の数。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplicationThread110 インターフェイス](../../winscript/reference/idebugapplicationthread110-interface.md)

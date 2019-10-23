@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Close |Microsoft Docs
+title: 'IDebugApplicationNode:: Close |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c634fd154c2470b1a154e5d1c9e97419a2e2e2b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 928dc94a5d700b2cad6a7acfb59a409240be7dc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990526"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574840"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-によりこのアプリケーションはすべての参照を解放し、非アクティブな状態を入力します。  
+このアプリケーションによってすべての参照が解放され、非アクティブ状態になります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT Close();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  

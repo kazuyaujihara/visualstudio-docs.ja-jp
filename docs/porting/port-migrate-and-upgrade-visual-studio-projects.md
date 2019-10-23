@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f2a49ae76d69f30691366f9b32cef2a6170284f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 97eaada072a4ff0038ae7b57810b0d3318df1035
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688067"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314167"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
@@ -47,11 +47,11 @@ ms.locfileid: "65688067"
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
-| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。 Visual Studio 2017 で .xproj ファイルを開くと、ファイルを .csproj 形式に移行するように求められます (.xproj ファイルのバックアップが作成されます)。 .NET Core プロジェクトのこの .csproj 形式は、Visual Studio 2015 以前のバージョンではサポートされていません。  xproj 形式は csproj に移行しなければ Visual Studio 2017 で利用できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio-2017)」をご覧ください。|
+| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。<br/><br/>Visual Studio 2017:xproj 形式は、csproj 形式への移行以外ではサポートされていません。 xproj ファイルを開くと、SDK スタイルの csproj 形式にファイルを移行するように求められます。 (xproj ファイルのバックアップが作成されます。)SDK スタイルの csproj プロジェクトは、Visual Studio 2015 以前ではサポートされません。 <br/><br/>Visual Studio 2019:バージョン 16.3 以降では、xproj プロジェクトの読み込みまたは移行を実行できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
 | ASP.NET Web アプリケーションと ASP.NET Core Web アプリケーション (Application Insights が有効) | Visual Studio のユーザーごとのリソース情報がユーザー インスタンス別にレジストリに保存されます。 この情報は、プロジェクトを開いていない状態で Azure Application Insights データを検索するときに利用されます。 Visual Studio 2015 では、Visual Studio 2017 とは異なるレジストリの場所が使用され、競合しません。<br/><br/>ユーザーが ASP.NET Web アプリケーションまたは ASP.NET Core Web アプリケーションを作成すると、リソースは .suo ファイルに保存されます。 ユーザーは Visual Studio 2015 や 2017 でプロジェクトを開くことができます。両方のバージョンで使用されているプロジェクトとソリューションが Visual Studio でサポートされている限り、両方でリソース情報が使用されます。 ユーザーは製品ごとに 1 回認証する必要があります。 たとえば、Visual Studio 2015 で作成されたプロジェクトを Visual Studio 2017 で開く場合、Visual Studio 2017 で認証が要求されます。 |
 | C#/Visual Basic Webform または Windows フォーム | プロジェクトを Visual Studio 2017 と Visual Studio 2015 で開くことができます。 |
-| データベース単体テスト プロジェクト (csproj、.vbproj) | 古いデータ単体テスト プロジェクトは Visual Studio 2017 で読み込まれますが、依存関係は GAC に保存されているものが使用されます。 単体テスト プロジェクトをアップグレードし、最新の依存関係を使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、**[SQL Server 単体テスト プロジェクトに変換する]** を選択します。 |
-| F# | Visual Studio 2017 では、Visual Studio 2013 と 2015 で作成したプロジェクトを開くことができます。 ただし、これらのプロジェクトで Visual Studio 2017 機能を有効にするには、プロジェクトのプロパティを開き、ターゲットの fsharp.core を F# 4.1 に変更します。 .NET ワークロードの場合、Visual Studio インストーラーの **[F# 言語サポート]** オプションは既定では選択されないことにもご注意ください。ワークロードにこのオプションを選択するか、**[開発作業]** の **[個別のコンポーネント]** から選択する方法で追加する必要があります。 |
+| データベース単体テスト プロジェクト (csproj、.vbproj) | 古いデータ単体テスト プロジェクトは Visual Studio 2017 で読み込まれますが、依存関係は GAC に保存されているものが使用されます。 単体テスト プロジェクトをアップグレードし、最新の依存関係を使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[SQL Server 単体テスト プロジェクトに変換する]** を選択します。 |
+| F# | Visual Studio 2017 では、Visual Studio 2013 と 2015 で作成したプロジェクトを開くことができます。 ただし、これらのプロジェクトで Visual Studio 2017 機能を有効にするには、プロジェクトのプロパティを開き、ターゲットの fsharp.core を F# 4.1 に変更します。 .NET ワークロードの場合、Visual Studio インストーラーの **[F# 言語サポート]** オプションは既定では選択されないことにもご注意ください。ワークロードにこのオプションを選択するか、 **[開発作業]** の **[個別のコンポーネント]** から選択する方法で追加する必要があります。 |
 | InstallShield<br/>MSI のセットアップ | Visual Studio 2010 で作成されたインストーラー プロジェクトは、[Visual Studio Installer Projects の拡張機能](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects)を使って以降のバージョンで開くことができます。 「[WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)」も参照してください。 InstallShield Limited Edition は、Visual Studio に付属しなくなりました。 Visual Studio 2017 で利用可能かどうかについては、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にご確認ください。 |
 | LightSwitch | LightSwitch は Visual Studio 2017 ではサポートされていません。 Visual Studio 2012 以前のバージョンで作成されたプロジェクトを Visual Studio 2013 または Visual Studio 2015 で開くとアップグレードされ、以後、Visual Studio 2013 または Visual Studio 2015 のみで開けるようになります。 |
 | Microsoft Azure Tools for Visual Studio | これらの種類のプロジェクトを開くには、最初に [Azure SDK for .NET](https://azure.microsoft.com/downloads/)をインストールした後、プロジェクトを開きます。 必要に応じて、プロジェクトが更新されます。 |
@@ -129,11 +129,11 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
-| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。 Visual Studio 2019 で .xproj ファイルを開くと、ファイルを .csproj 形式に移行するように求められます (.xproj ファイルのバックアップが作成されます)。 .NET Core プロジェクトのこの .csproj 形式は、Visual Studio 2015 以前のバージョンではサポートされていません。  xproj 形式は csproj に移行しなければ Visual Studio 2017 以降で利用できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio-2017)」をご覧ください。|
+| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。 Visual Studio 2019 で .xproj ファイルを開くと、ファイルを .csproj 形式に移行するように求められます (.xproj ファイルのバックアップが作成されます)。 .NET Core プロジェクトのこの .csproj 形式は、Visual Studio 2015 以前のバージョンではサポートされていません。  xproj 形式は csproj に移行しなければ Visual Studio 2017 以降で利用できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
 | ASP.NET Web アプリケーションと ASP.NET Core Web アプリケーション (Application Insights が有効) | Visual Studio のユーザーごとのリソース情報がユーザー インスタンス別にレジストリに保存されます。 この情報は、プロジェクトを開いていない状態で Azure Application Insights データを検索するときに利用されます。 Visual Studio 2015 では、Visual Studio 2017 および Visual Studio 2019 とは異なるレジストリの場所が使用され、競合しません。<br/><br/>ユーザーが ASP.NET Web アプリケーションまたは ASP.NET Core Web アプリケーションを作成すると、リソースは .suo ファイルに保存されます。 ユーザーは Visual Studio 2015、Visual Studio 2017、または Visual Studio 2019 でプロジェクトを開くことができます。両方のバージョンで使用されているプロジェクトとソリューションが Visual Studio でサポートされている限り、それぞれでリソース情報が使用されます。 ユーザーは製品ごとに 1 回認証する必要があります。 たとえば、Visual Studio 2017 で作成されたプロジェクトを Visual Studio 2019 で開く場合、Visual Studio 2019 で認証が要求されます。 |
 | C#/Visual Basic Webform または Windows フォーム | プロジェクトは、Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 で開くことができます。 |
 | コード化された UI テスト | UI 駆動型機能テストの自動化のためにコード化された UI テストは、Visual Studio 2019 では非推奨になりました。 <br/><br/>Visual Studio 2019 は、コード化された UI テストの最後のリリースとなります。 Web アプリのテストには Selenium を使用し、デスクトップと UWP アプリのテストには Appium と WinAppDriver を一緒に使用することをお勧めします。 |
-| データベース単体テスト プロジェクト (csproj、.vbproj) | 古いデータ単体テスト プロジェクトは Visual Studio 2019 で読み込まれますが、依存関係は GAC に保存されているものが使用されます。 単体テスト プロジェクトをアップグレードし、最新の依存関係を使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、**[SQL Server 単体テスト プロジェクトに変換する]** を選択します。 |
+| データベース単体テスト プロジェクト (csproj、.vbproj) | 古いデータ単体テスト プロジェクトは Visual Studio 2019 で読み込まれますが、依存関係は GAC に保存されているものが使用されます。 単体テスト プロジェクトをアップグレードし、最新の依存関係を使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[SQL Server 単体テスト プロジェクトに変換する]** を選択します。 |
 | F# | Visual Studio 2019 では、Visual Studio 2013、Visual Studio 2015、Visual Studio 2017 で作成されたプロジェクトを開くことができます。 新しいプロジェクトの以前の Visual Studio テンプレートとの主な違いは、FSharp.Core のバージョンが常に NuGet パッケージになったことです。 F# は任意の .NET ワークロードにより既定でインストールされます。|
 | InstallShield<br/>MSI のセットアップ | Visual Studio 2010 で作成されたインストーラー プロジェクトは、[Visual Studio Installer Projects の拡張機能](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects)を使って以降のバージョンで開くことができます。 「[WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)」も参照してください。 InstallShield Limited Edition は、Visual Studio に付属しなくなりました。 Visual Studio 2019 で利用可能かどうかについては、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にご確認ください。 |
 | LightSwitch | LightSwitch は Visual Studio 2019 または Visual Studio 2017 ではサポートされていません。 Visual Studio 2012 以前のバージョンで作成されたプロジェクトを Visual Studio 2013 または Visual Studio 2015 で開くとアップグレードされ、以後、Visual Studio 2013 または Visual Studio 2015 のみで開けるようになります。 |

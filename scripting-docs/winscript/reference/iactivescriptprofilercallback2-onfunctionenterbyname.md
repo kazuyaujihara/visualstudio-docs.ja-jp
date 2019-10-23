@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionEnterByName |Microsoft Docs
+title: 'IActiveScriptProfilerCallback2:: OnFunctionEnterByName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6fdb4addace1b0bbabdd4303c3943b976763514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0407441c77250b2cc27e9fee09c5039bb8e44ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993268"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571642"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
-プロファイラー オブジェクトをドキュメント オブジェクト モデル (DOM) の関数呼び出しを実行しようとして、スクリプト エンジンに通知します。  
+スクリプトエンジンがドキュメントオブジェクトモデル (DOM) 関数呼び出しを実行しようとしていることをプロファイラーオブジェクトに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -33,17 +33,17 @@ HRESULT OnFunctionEnterByName(
   
 #### <a name="parameters"></a>パラメーター  
  `pwszFunctionName`  
- [in]スクリプト エンジンが実行しようとする関数の名前。  
+ からスクリプトエンジンが実行する関数の名前。  
   
  `scriptType`  
- [in]関数の型。 有効な値の説明については、次を参照してください。 [PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)します。  
+ から関数の型。 有効な値の説明については、「 [PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)」を参照してください。  
   
 ## <a name="return-value"></a>戻り値  
- このメソッドの戻り値は、スクリプト エンジンによって無視されます。  
+ このメソッドの戻り値は、スクリプトエンジンによって無視されます。  
   
 ## <a name="remarks"></a>Remarks  
- DOM の呼び出しは、スクリプト エンジンは呼び出す代わりに、このメソッドを呼び出します。 [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)します。 これは一意のメソッドと DOM のプロパティの数が多いためです。  
+ DOM 呼び出しの場合、スクリプトエンジンは[IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)を呼び出す代わりに、このメソッドを呼び出します。 これは、DOM 内の一意のメソッドとプロパティの数が多いためです。  
   
 ## <a name="see-also"></a>関連項目  
- [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
+ [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)    
  [IActiveScriptProfilerCallback2 インターフェイス](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

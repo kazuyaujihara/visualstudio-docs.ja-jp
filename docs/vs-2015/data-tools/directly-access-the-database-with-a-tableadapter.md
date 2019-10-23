@@ -1,5 +1,5 @@
 ---
-title: TableAdapter でデータベースに直接アクセス |Microsoft Docs
+title: TableAdapter を使用してデータベースに直接アクセスする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -23,55 +23,55 @@ helpviewer_keywords:
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 924a14cc3938420f32a1a2c25265ebe94e261b15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58500e59a624dac55824033b8b9667754a9040c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431962"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657376"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter で直接データベースにアクセスする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-加え、 `InsertCommand`、 `UpdateCommand`、および`DeleteCommand`Tableadapter は、データベースに対して直接実行できるメソッドで作成されます。 これらのメソッド (`TableAdapter.Insert`、 `TableAdapter.Update`、および`TableAdapter.Delete`) データベースで直接データの操作を呼び出すことができます。  
-  
- これらのダイレクト メソッドを作成しない場合は、設定、TableAdapter の`GenerateDbDirectMethods`プロパティを`false`で、**プロパティ**ウィンドウ。 TableAdapter のメイン クエリだけでなく、TableAdapter にクエリを追加する場合は、これらの DbDirect メソッドを生成しないスタンドアロン クエリになります。  
-  
-## <a name="sendcommandsdirectly-to-a-database"></a>データベースに Sendcommandsdirectly  
- 実行しようとするタスクを実行する TableAdapter の DbDirect メソッドを呼び出します。  
-  
-#### <a name="to-insert-new-records-directly-into-a-database"></a>データベースに直接新しいレコードを挿入するには  
-  
-- 呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。 次の手順を使用して、`Region`例をテーブルに Northwind databaseas にします。  
-  
+@No__t_0、`UpdateCommand`、および `DeleteCommand` に加えて、データベースに対して直接実行できるメソッドを使用して Tableadapter が作成されます。 これらのメソッド (`TableAdapter.Insert`、`TableAdapter.Update`、および `TableAdapter.Delete`) を呼び出すと、データベース内のデータを直接操作できます。
+
+ これらのダイレクトメソッドを作成しない場合は、TableAdapter の `GenerateDbDirectMethods` プロパティを **[プロパティ]** ウィンドウの `false` に設定します。 Tableadapter のメインクエリに加えて、TableAdapter にクエリが追加されると、これらの DbDirect メソッドを生成しないスタンドアロンクエリになります。
+
+## <a name="sendcommandsdirectly-to-a-database"></a>Send@ を直接データベースに
+ 実行しようとしているタスクを実行する TableAdapter DbDirect メソッドを呼び出します。
+
+#### <a name="to-insert-new-records-directly-into-a-database"></a>新しいレコードをデータベースに直接挿入するには
+
+- TableAdapter の `Insert` メソッドを呼び出し、各列の値をパラメーターとして渡します。 次の手順では、Northwind データベースの `Region` テーブルを例として使用します。
+
     > [!NOTE]
-    > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。  
-  
+    > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
+
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
-     [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
-  
-#### <a name="to-update-records-directly-in-a-database"></a>データベースに直接レコードを更新するには  
-  
-- 呼び出す TableAdapter の`Update`メソッド、パラメーターとして各列の新しいと、元の値を渡します。  
-  
+     [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]
+
+#### <a name="to-update-records-directly-in-a-database"></a>データベース内のレコードを直接更新するには
+
+- TableAdapter の `Update` メソッドを呼び出し、各列の新しい値と元の値をパラメーターとして渡します。
+
     > [!NOTE]
-    > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。  
-  
+    > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
+
      [!code-csharp[VbRaddataSaving#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#18)]
-     [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]  
-  
-#### <a name="to-delete-records-directly-from-a-database"></a>データベースから直接レコードを削除するには  
-  
-- 呼び出す TableAdapter の`Delete`メソッドのパラメーターとして各列の値を渡す、`Delete`メソッド。 次の手順を使用して、`Region`例をテーブルに Northwind databaseas にします。  
-  
+     [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]
+
+#### <a name="to-delete-records-directly-from-a-database"></a>レコードをデータベースから直接削除するには
+
+- TableAdapter の `Delete` メソッドを呼び出し、`Delete` メソッドのパラメーターとして各列の値を渡します。 次の手順では、Northwind データベースの `Region` テーブルを例として使用します。
+
     > [!NOTE]
-    > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。  
-  
+    > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
+
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
-     [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]  
-  
-## <a name="see-also"></a>関連項目  
+     [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]
+
+## <a name="see-also"></a>参照
  [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)

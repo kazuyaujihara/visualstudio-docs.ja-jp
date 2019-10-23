@@ -18,54 +18,54 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8d5d8e3091b464084df065bb7b889db9fc2194f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567023"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648509"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter で直接データベースにアクセスする
 
-加え、 `InsertCommand`、 `UpdateCommand`、および`DeleteCommand`Tableadapter は、データベースに対して直接実行できるメソッドで作成されます。 これらのメソッドを呼び出すことができます (`TableAdapter.Insert`、 `TableAdapter.Update`、および`TableAdapter.Delete`) データベースで直接データを操作します。
+@No__t_0、`UpdateCommand`、および `DeleteCommand` に加えて、データベースに対して直接実行できるメソッドを使用して Tableadapter が作成されます。 これらのメソッド (`TableAdapter.Insert`、`TableAdapter.Update`、および `TableAdapter.Delete`) を呼び出して、データベース内のデータを直接操作することができます。
 
-これらのダイレクト メソッドを作成しない場合は、設定、TableAdapter の`GenerateDbDirectMethods`プロパティを`false`で、**プロパティ**ウィンドウ。 TableAdapter のメイン クエリだけでなく、TableAdapter にクエリを追加する場合はこれらを生成しないスタンドアロン クエリ`DbDirect`メソッド。
+これらのダイレクトメソッドを作成しない場合は、TableAdapter の `GenerateDbDirectMethods` プロパティを **[プロパティ]** ウィンドウの `false` に設定します。 Tableadapter のメインクエリに加えて、TableAdapter にクエリが追加されると、これらの `DbDirect` メソッドを生成しないスタンドアロンクエリになります。
 
-## <a name="send-commands-directly-to-a-database"></a>データベースに直接コマンドを送信します。
+## <a name="send-commands-directly-to-a-database"></a>コマンドをデータベースに直接送信する
 
-TableAdapter を呼び出す`DbDirect`実現しようとしているタスクを実行するメソッド。
+実行しようとしているタスクを実行する TableAdapter `DbDirect` メソッドを呼び出します。
 
-### <a name="to-insert-new-records-directly-into-a-database"></a>データベースに直接新しいレコードを挿入するには
+### <a name="to-insert-new-records-directly-into-a-database"></a>新しいレコードをデータベースに直接挿入するには
 
-- 呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。 次の手順を使用して、`Region`例として、Northwind データベースのテーブル。
+- TableAdapter の `Insert` メソッドを呼び出し、各列の値をパラメーターとして渡します。 次の手順では、Northwind データベースの `Region` テーブルを例として使用します。
 
     > [!NOTE]
-    > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。
+    > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
 
      [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]
      [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]
 
-### <a name="to-update-records-directly-in-a-database"></a>データベースに直接レコードを更新するには
+### <a name="to-update-records-directly-in-a-database"></a>データベース内のレコードを直接更新するには
 
-- 呼び出す TableAdapter の`Update`メソッド、パラメーターとして各列の新しいと、元の値を渡します。
+- TableAdapter の `Update` メソッドを呼び出し、各列の新しい値と元の値をパラメーターとして渡します。
 
     > [!NOTE]
-    > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。
+    > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
 
      [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]
      [!code-csharp[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]
 
-### <a name="to-delete-records-directly-from-a-database"></a>データベースから直接レコードを削除するには
+### <a name="to-delete-records-directly-from-a-database"></a>レコードをデータベースから直接削除するには
 
-- 呼び出す TableAdapter の`Delete`メソッドのパラメーターとして各列の値を渡す、`Delete`メソッド。 次の手順を使用して、`Region`例として、Northwind データベースのテーブル。
+- TableAdapter の `Delete` メソッドを呼び出し、`Delete` メソッドのパラメーターとして各列の値を渡します。 次の手順では、Northwind データベースの `Region` テーブルを例として使用します。
 
     > [!NOTE]
-    > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。
+    > 使用可能なインスタンスがない場合は、使用する TableAdapter をインスタンス化します。
 
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]

@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913221"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342422"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるコード割合の確認
 
@@ -46,11 +46,11 @@ ms.locfileid: "70913221"
 
 ::: moniker range=">=vs-2019"
 
-1. **テスト エクスプローラー**で **[実行]** メニューの **[すべてのテストのコード カバレッジの分析]** を選択します。
+1. **[テスト]** メニューで、 **[すべてのテストのコード カバレッジの分析]** を選択します。
 
    ![VS 2019 でのコード カバレッジの分析メニュー](../test/media/vs-2019/analyze-code-coverage.png)
 
-   **テスト エクスプローラー**が開いていない場合は、 **[テスト]** > **[Windows]** > **[テスト エクスプローラー]** の順に選択するか、**Ctrl**+**E**、**T** キーを押して開きます。
+   コード カバレッジは、[テスト エクスプローラー] ツール ウィンドウから実行することもできます。
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ ms.locfileid: "70913221"
 > [!TIP]
 > クラスを除外しても、派生クラスは除外されません。
 
-次に例を示します。
+例:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -292,7 +292,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    ::: moniker-end
 
-2. コマンド プロンプトで次のコマンドを実行します。
+2. コマンド プロンプトで、次のコマンドを実行します。
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage

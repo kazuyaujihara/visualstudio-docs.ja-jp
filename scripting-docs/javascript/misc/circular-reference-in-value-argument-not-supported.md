@@ -1,5 +1,5 @@
 ---
-title: サポートされていない値の引数の循環参照 |Microsoft Docs
+title: Value 引数の循環参照はサポートされていません |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 542fca58778a7b85b3044ce984b6ea049db12509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946369"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572335"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>value 引数の循環参照はサポートされません。
-呼び出しが試行された`JSON.stringify`値が無効です。 `value`引数、配列またはオブジェクトを循環参照が含まれています。  
+無効な値を使用して `JSON.stringify` を呼び出そうとしました。 @No__t_0 引数 (配列またはオブジェクト) に循環参照が含まれています。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 引数の循環参照を削除します。  
+- 引数から循環参照を削除します。  
   
 ## <a name="example"></a>例  
- に、この例では、コードによってランタイム エラーが発生`john`への参照を持つ`mary`と`mary`への参照を持つ`john`します。 循環参照を削除するか、削除または未設定プロパティ`brother`から、`mary`オブジェクトまたは`sister`プロパティから、`john`オブジェクト。  
+ この例のコードでは、`john` に `mary` への参照があり、`mary` に `john` への参照が含まれているため、ランタイムエラーが発生します。 循環参照を削除するには、プロパティ `brother` を `mary` オブジェクトから削除するか、または `john` オブジェクトの `sister` プロパティから設定解除します。  
   
 ```JavaScript  
 var john = new Object();  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)の    
+ [JSON. Parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)
