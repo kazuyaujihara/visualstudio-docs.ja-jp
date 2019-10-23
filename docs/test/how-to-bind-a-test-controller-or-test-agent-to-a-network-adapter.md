@@ -8,15 +8,15 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979329"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643780"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>方法:ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする
 
@@ -35,7 +35,7 @@ ms.locfileid: "62979329"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>ネットワーク アダプターの IP アドレスを取得するには
 
-1. Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**cmd**」と入力し、**Enter** キーを押します。
+1. Microsoft Windows の **[スタート]** ボタンをクリックし、 **[検索の開始]** ボックス内をクリックして「**cmd**」と入力し、**Enter** キーを押します。
 
 2. 「**ipconfig /all**」と入力します。
 
@@ -43,13 +43,13 @@ ms.locfileid: "62979329"
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>ネットワーク アダプターをテスト コントローラーにバインドするには
 
-1. Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
+1. Microsoft Windows の **[スタート]** ボタンをクリックし、 **[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
 
      **[サービス]** ダイアログ ボックスが表示されます。
 
-2. 結果ペインの **[名前]** 列で **[Visual Studio Test Controller]** サービスを右クリックし、**[停止]** をクリックします。
+2. 結果ペインの **[名前]** 列で **[Visual Studio Test Controller]** サービスを右クリックし、 **[停止]** をクリックします。
 
-     - または -
+     または
 
      管理者特権でのコマンド プロンプトを開き、次のコマンドを実行します。
 
@@ -89,13 +89,13 @@ ms.locfileid: "62979329"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>ネットワーク インターフェイス カードをテスト エージェントにバインドするには
 
-1. Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
+1. Microsoft Windows の **[スタート]** ボタンをクリックし、 **[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
 
     **[サービス]** ダイアログ ボックスが表示されます。
 
-2. 結果ウィンドウの **[名前]** 列で **[Visual Studio Test Agent]** サービスを右クリックし、**[停止]** をクリックします。
+2. 結果ウィンドウの **[名前]** 列で **[Visual Studio Test Agent]** サービスを右クリックし、 **[停止]** をクリックします。
 
-     - または -
+     または
 
      管理者特権でのコマンド プロンプトを開き、次のコマンドを実行します。
 

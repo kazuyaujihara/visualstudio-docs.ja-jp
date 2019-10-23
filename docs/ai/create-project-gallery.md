@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5694bfe49e88d0ea5911e72abba842e98f54e373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3967b637d547ed99ed840761b3b843068afee1af
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538075"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777484"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio で Azure Machine Learning ギャラリーから AI プロジェクトを作成する
 
@@ -25,11 +25,11 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 > [!NOTE]
 > Azure Machine Learning ワークベンチをインストールする必要があります。 インストールについては、「[Azure Machine Learning のインストールに関するクイックスタート](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)」をご覧ください
 
-1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、**[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー**を開きます
+1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、 **[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー**を開きます
 
     ![クラスターの選択](media/create-project-gallery/select-cluster.png)
 
-2. サーバー エクスプローラーで **[Azure Machine Learning]** ノードを右クリックし、**[ログイン]** を選択して指示に従い、Azure Machine Learning サブスクリプションにサインインします。
+2. サーバー エクスプローラーで **[Azure Machine Learning]** ノードを右クリックし、 **[ログイン]** を選択して指示に従い、Azure Machine Learning サブスクリプションにサインインします。
 
     ![ログイン](media/create-project-gallery/azureml-login.png)
 
@@ -37,12 +37,12 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 
     ![サンプル ギャラリー](media/create-project-gallery/gallery.png)
 
-4. このクイック スタートでは "**MNIST using TensorFlow**" サンプルを選び、**[インストール]** をクリックします。 次の内容を指定します。
+4. このクイック スタートでは "**MNIST using TensorFlow**" サンプルを選び、 **[インストール]** をクリックします。 次の内容を指定します。
 
    - **リソース グループ**:メタデータを格納する Azure リソース グループ
    - **アカウント**:Azure Machine Learning の実験アカウント
    - **ワークスペース**:Azure Machine Learning のワークスペース
-   - **プロジェクトの種類**:機械学習のフレームワーク。 この例では、**[TensorFlow]** を選びます。
+   - **プロジェクトの種類**:機械学習のフレームワーク。 この例では、 **[TensorFlow]** を選びます。
    - **ソリューションに追加**: 現在の Visual Studio ソリューションに追加するか、新しいソリューションを作成して開くかを指定します。
    - **プロジェクトのパス**:コードを保存する場所
    - **プロジェクト名**:「**TensorFlowMNIST**」と入力します。

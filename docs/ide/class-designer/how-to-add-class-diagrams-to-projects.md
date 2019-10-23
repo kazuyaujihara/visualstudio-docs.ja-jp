@@ -6,17 +6,17 @@ helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647780"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>方法: プロジェクトにクラス ダイアグラムを追加する
 
@@ -59,7 +59,7 @@ ms.locfileid: "66332765"
 
 **ソリューション エクスプローラー**で、クラス ファイルのコンテキスト メニューを開き (右クリック)、 **[クラス ダイアグラムの表示]** を選択します。
 
-- または -
+または
 
 **[クラス ビュー]** で、名前空間または型のコンテキスト メニューを開き、 **[クラス ダイアグラムで表示]** を選択します。
 

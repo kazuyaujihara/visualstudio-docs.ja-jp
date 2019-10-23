@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778431"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666187"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[その他]
 
-**[その他]** オプション ページを使用して、ページに貼り付けられた要素を HTML エディターでどのように処理するかを設定します。 このページにアクセスするには、メニュー バーで **[ツール]** > **[オプション]** を選択し、**[テキスト エディター]** > **[HTML (Web フォーム)]** > **[その他]** を展開します。
+**[その他]** オプション ページを使用して、ページに貼り付けられた要素を HTML エディターでどのように処理するかを設定します。 このページにアクセスするには、メニュー バーで **[ツール]**  >  **[オプション]** を選択し、 **[テキスト エディター]**  >  **[HTML (Web フォーム)]**  >  **[その他]** を展開します。
 
 ## <a name="miscellaneous-html-options"></a>その他の HTML オプション
 

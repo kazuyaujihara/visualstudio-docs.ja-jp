@@ -5,19 +5,19 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666583"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XML]、[その他]
 
-XML エディターのオート コンプリートとスキーマの設定を変更するには、**[その他]** オプション ページを使用します。 その他の XML オプションにアクセスするには、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[XML]** の順に選択して、**[その他]** を選択します。
+XML エディターのオート コンプリートとスキーマの設定を変更するには、 **[その他]** オプション ページを使用します。 その他の XML オプションにアクセスするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[XML]** の順に選択して、 **[その他]** を選択します。
 
 ## <a name="auto-insert"></a>自動挿入
 
@@ -27,7 +27,7 @@ XML エディターのオート コンプリートとスキーマの設定を変
 
 **属性値の引用符**
 
-XML 属性の作成時にエディターは文字 `="` および `"` を挿入し、引用符の内側にキャレット (**^**) を配置します。 既定では、このチェック ボックスはオンです。
+XML 属性の作成時にエディターは文字 `="` および `"` を挿入し、引用符の内側にキャレット ( **^** ) を配置します。 既定では、このチェック ボックスはオンです。
 
 **名前空間の宣言**
 

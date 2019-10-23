@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179868"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777765"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 
@@ -40,7 +40,7 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs)」と「[システム要件](/visualstudio/productinfo/vs2017-system-requirements-vs)」をご覧ください。
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2017 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs)」と「[システム要件](/visualstudio/productinfo/vs2017-system-requirements-vs)」をご覧ください。
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
 
@@ -50,7 +50,7 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/releases/2019/compatibility/)」と「[システム要件](/visualstudio/releases/2019/system-requirements/)」をご覧ください。
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2019 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/releases/2019/compatibility/)」と「[システム要件](/visualstudio/releases/2019/system-requirements/)」をご覧ください。
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
 

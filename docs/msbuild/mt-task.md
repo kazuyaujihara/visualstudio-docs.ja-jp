@@ -16,20 +16,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBUILD (Visual C++), MT task
-- MT task (MSBuild (Visual C++))
+- MSBUILD (C++), MT task
+- MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 11395230ac3721bbcef13b85aa1f0d244c19c6eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748058"
 ---
 # <a name="mt-task"></a>MT タスク
 Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) を参照してください。
@@ -38,7 +38,7 @@ Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細�
  以下の表で、**MT** タスクのパラメーターについて説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 > [!NOTE]
-> *mt.exe* のドキュメントではコマンド ライン オプションのプレフィックスとしてハイフン (**-**) を使用していますが、このトピックではスラッシュ (**/**) を使用しています。 どちらのプレフィックスも使用できます。
+> *mt.exe* のドキュメントではコマンド ライン オプションのプレフィックスとしてハイフン ( **-** ) を使用していますが、このトピックではスラッシュ ( **/** ) を使用しています。 どちらのプレフィックスも使用できます。
 
 |パラメーター|説明|
 |---------------|-----------------|
@@ -49,21 +49,21 @@ Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細�
 |**DependencyInformationFile**|省略可能な **String** 型のパラメーターです。<br /><br /> マニフェスト ツールのビルド依存関係情報を追跡するために Visual Studio で使用される依存関係情報ファイルを指定します。|
 |**EmbedManifest**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、アセンブリにマニフェスト ファイルを埋め込みます。 `false` の場合は、スタンドアロン マニフェスト ファイルとして作成します。|
 |**EnableDPIAwareness**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、アプリケーションを DPI 対応としてマークするマニフェスト情報を追加します。 DPI 対応のアプリケーションを作成すると、さまざまな高 DPI のディスプレイ設定で一貫して適切なユーザー インターフェイスの表示を実現できます。<br /><br /> 詳細については、「[High DPI](https://docs.microsoft.com/windows/desktop/win7devguide/high-dpi)」(高 DPI) を参照してください。|
-|**GenerateCatalogFiles**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、カタログ定義 (*.cdf*) ファイルを生成します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/makecdfs** オプションを参照してください。|
+|**GenerateCatalogFiles**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、カタログ定義 ( *.cdf*) ファイルを生成します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/makecdfs** オプションを参照してください。|
 |**GenerateCategoryTags**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、カテゴリ タグが生成されます。 このパラメーターが `true` の場合は、**ManifestFromManagedAssemblyMT** タスク パラメーターも指定する必要があります。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/category** オプションを参照してください。|
 |**InputResourceManifests**|省略可能な **String** 型のパラメーターです。<br /><br /> 識別子が指定されている RT_MANIFEST 型のリソースからマニュフェストを入力します。 \<file>[;[#]\<resource_id>] という形式のリソースを指定します。省略可能な \<resource_id> パラメーターは負以外の 16 ビットの数値です。<br /><br /> `resource_id` が指定されていない場合、CREATEPROCESS_MANIFEST_RESOURCE の既定値 (1) が使用されます。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/inputresource** オプションを参照してください。|
 |**ManifestFromManagedAssembly**|省略可能な **String** 型のパラメーターです。<br /><br /> 指定されたマネージド アセンブリからマニフェストを生成します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/managedassemblyname** オプションを参照してください。|
 |**ManifestToIgnore**|省略可能な **String** 型のパラメーターです。<br /><br /> (使用されていません)。|
 |**OutputManifestFile**|省略可能な **String** 型のパラメーターです。<br /><br /> 出力マニュフェストの名前を指定します。 このパラメーターを省略し、操作対象のマニフェストが 1 つだけの場合、そのマニフェストがそのまま変更されます。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/out** オプションを参照してください。|
 |**OutputResourceManifests**|省略可能な **String** 型のパラメーターです。<br /><br /> 識別子が指定されている RT_MANIFEST 型のリソースにマニュフェストを出力します。 リソースは、\<file>[;[#]\<resource_id>] という形式です。省略可能な \<resource_id> パラメーターは負以外の 16 ビットの数値です。<br /><br /> `resource_id` が指定されていない場合、CREATEPROCESS_MANIFEST_RESOURCE の既定値 (1) が使用されます。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/outputresource** オプションを参照してください。|
-|**RegistrarScriptFile**|省略可能な **String** 型のパラメーターです。<br /><br /> registration-free COM マニフェスト サポートに対して使用されるレジスタ スクリプト (*.rgs*) ファイルの名前を指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/rgs** オプションを参照してください。|
-|**ReplacementsFile**|省略可能な **String** 型のパラメーターです。<br /><br /> レジスタ スクリプト (*.rgs*) ファイルで置換できる文字列の値を格納するファイルを指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/replacements** オプションを参照してください。|
+|**RegistrarScriptFile**|省略可能な **String** 型のパラメーターです。<br /><br /> registration-free COM マニフェスト サポートに対して使用されるレジスタ スクリプト ( *.rgs*) ファイルの名前を指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/rgs** オプションを参照してください。|
+|**ReplacementsFile**|省略可能な **String** 型のパラメーターです。<br /><br /> レジスタ スクリプト ( *.rgs*) ファイルで置換できる文字列の値を格納するファイルを指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/replacements** オプションを参照してください。|
 |**ResourceOutputFileName**|省略可能な **String** 型のパラメーターです。<br /><br /> マニフェストをプロジェクト出力に埋め込むために使用する出力リソース ファイルを指定します。|
 |**Sources**|省略可能な `ITaskItem[]` 型のパラメーターです。<br /><br /> スペースで区切られたマニフェスト ソース ファイルのリストを指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/manifest** オプションを参照してください。|
 |**SuppressDependencyElement**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、依存関係要素を使用せずにマニフェストを生成します。 このパラメーターが `true` の場合は、**ManifestFromManagedAssemblyMT** タスク パラメーターも指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/nodependency** オプションを参照してください。|
 |**SuppressStartupBanner**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/nologo** オプションを参照してください。|
 |**TrackerLogDirectory**|省略可能な `String` 型のパラメーターです。<br /><br /> このタスクの追跡ログの格納先となる中間ディレクトリを指定します。|
-|**TypeLibraryFile**|省略可能な **String** 型のパラメーターです。<br /><br /> タイプ ライブラリ (*.tlb*) ファイルの名前を指定します。 このパラメーターを指定する場合は、**ComponentFileNameMT** タスク パラメーターも指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/tlb** オプションを参照してください。|
+|**TypeLibraryFile**|省略可能な **String** 型のパラメーターです。<br /><br /> タイプ ライブラリ ( *.tlb*) ファイルの名前を指定します。 このパラメーターを指定する場合は、**ComponentFileNameMT** タスク パラメーターも指定します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/tlb** オプションを参照してください。|
 |**UpdateFileHashes**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、**UpdateFileHashesSearchPathMT** タスク パラメーターで指定されたパスでファイルのハッシュ値を計算し、その計算値を使用して、マニュフェストの **file** 要素の **hash** 属性値を更新します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/hashupdate** オプションを参照してください。 この表の **UpdateFileHashesSearchPath** パラメーターも参照してください。|
 |**UpdateFileHashesSearchPath**|省略可能な `String` 型のパラメーターです。<br /><br /> ファイル ハッシュの更新時に使用する検索パスを指定します。 このパラメーターは **UpdateFileHashesMT** タスク パラメーターと共に使用します。<br /><br /> 詳細については、この表の **UpdateFileHashes** パラメーターを参照してください。|
 |**VerboseOutput**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、詳細なデバッグ情報を表示します。<br /><br /> 詳細については、「[Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/verbose** オプションを参照してください。|

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919004"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655487"
 ---
 # <a name="services-page-project-designer"></a>[サービス] ページ (プロジェクト デザイナー)
 
@@ -51,7 +51,7 @@ ms.locfileid: "68919004"
 
  **フォーム認証を使用する**
 
-認証プロバイダーがフォーム認証を使用することを示します。 つまり、アプリケーションがログインのユーザー インターフェイスを提供する必要があります。 詳細については、「[方法 :クライアント アプリケーション サービスでユーザーのログインを実装する](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)」を参照してください。
+認証プロバイダーがフォーム認証を使用することを示します。 つまり、アプリケーションがログインのユーザー インターフェイスを提供する必要があります。 詳細については、[クライアント アプリケーション サービスでユーザーのログインを実装する](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)」を参照してください。
 
  **認証サービスの場所**
 

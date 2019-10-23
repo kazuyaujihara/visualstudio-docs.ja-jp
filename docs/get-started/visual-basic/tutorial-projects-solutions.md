@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180161"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632573"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Visual Basic を使用するプロジェクトとソリューションについて理解する
 
@@ -127,7 +127,7 @@ ms.locfileid: "70180161"
 
 空のプロジェクトを用意しました。 コード ファイルを追加しましょう。
 
-1. **ソリューション エクスプローラー**で **QuickDate** プロジェクトの右クリック メニューまたはコンテキスト メニューから、 **[追加]**  >  **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で **QuickDate** プロジェクトの右クリック メニューまたはコンテキスト メニューから、 **[追加]**  >  **[新しい項目]** を選択します。
 
    **[新しい項目の追加]** ダイアログ ボックスが開きます。
 

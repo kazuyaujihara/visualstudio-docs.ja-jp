@@ -2,19 +2,19 @@
 title: 参照の近くに変数宣言を移動する
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e23c5c8d6ea0895f9e5a78e726bb7a7cede071bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0a82b48a556e26866393661d4b87836db765abb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540597"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666493"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>参照の近くへの宣言の移動リファクタリング
 
@@ -35,7 +35,7 @@ ms.locfileid: "62540597"
 1. 次に、以下のいずれかを実行します。
 
    - **キーボード**
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[宣言を参照の近くに移動]** を選択します。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[宣言を参照の近くに移動]** を選択します。
    - **マウス**
       - コードを右クリックして **[クイック アクションとリファクタリング]** メニューを選択し、[プレビュー] ウィンドウ ポップアップから **[宣言を参照の近くに移動]** を選択します。
 

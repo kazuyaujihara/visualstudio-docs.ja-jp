@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824706"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777735"
 ---
 # <a name="devops-with-unity-apps"></a>Unity アプリを使用した DevOps
 
@@ -40,7 +40,7 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 ## <a name="modeling"></a>モデリング
 
-参照リンク:**[アーキテクチャの分析とモデル化](../modeling/analyze-and-model-your-architecture.md)**
+参照リンク: **[アーキテクチャの分析とモデル化](../modeling/analyze-and-model-your-architecture.md)**
 
 一般的なコメント:これらのデザイン機能は、コーディング言語に関係がないか、C# などの .NET 言語と共に使用されますが、オブジェクト階層およびクラスのリレーションシップを含む従来のアプリケーションのパラダイムで動作します。 Unity 内でのゲームの設計には、さまざまなパラダイムが含まれ、たとえばグラフィカル オブジェクト、サウンド、シェーダー、スクリプトなどのリレーションシップがあります。 このため、Visual Studio モデリング ダイアグラム ツールが、Unity プロジェクト全体に特に関連するわけではありません。 C# スクリプト内でのリレーションシップを管理するために使用することもできますが、それは全体の中の一部にすぎません。
 
@@ -67,19 +67,19 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 Unity を使ったバージョン管理に関する注意事項:
 
-1. Unity は、既定では非表示の 1 つの非透過のライブラリでのゲーム資産に関するメタデータを追跡します。 ファイルとメタデータの同期を保つするには、メタデータを表示してより管理しやすいチャンク単位で格納する必要があります。 詳細については、「[Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html)」 (Unity で外部のバージョン管理システムを使用する) (Unity ドキュメント) を参照してください。
+1. Unity は、既定では非表示の 1 つの非透過のライブラリでのゲーム資産に関するメタデータを追跡します。 ファイルとメタデータの同期を保つするには、メタデータを表示してより管理しやすいチャンク単位で格納する必要があります。 詳細については、「[Using External Version Control Systems with Unity](https://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html)」 (Unity で外部のバージョン管理システムを使用する) (Unity ドキュメント) を参照してください。
 
-2. 上記のリンクで説明するように、Unity プロジェクトのすべてのファイルとフォルダーがソース管理に適しているわけではありません。 Assets フォルダーと ProjectSettings フォルダーを追加する必要がありますが、Library フォルダーと Temp フォルダーは追加しないでください。 ソース管理にならない生成されたファイルの追加のリストについては、StackOverflow の「[Unity3D ソース管理に Git を使用する方法](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)」を参照してください。 多くの開発者が、このテーマについて個別にブログに書いています。
+2. 上記のリンクで説明するように、Unity プロジェクトのすべてのファイルとフォルダーがソース管理に適しているわけではありません。 Assets フォルダーと ProjectSettings フォルダーを追加する必要がありますが、Library フォルダーと Temp フォルダーは追加しないでください。 ソース管理にならない生成されたファイルの追加のリストについては、StackOverflow の「[Unity3D ソース管理に Git を使用する方法](https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)」を参照してください。 多くの開発者が、このテーマについて個別にブログに書いています。
 
-3. テクスチャやオーディオ ファイルなど、Unity プロジェクトでのバイナリの資産が、大量のストレージを消費することがあります。 Git などのさまざまなソース管理システムは、変更がファイルのごく一部のみに影響する場合でも、すべての変更個所のファイルの一意のコピーを格納します。 これにより、Git リポジトリがいっぱいになる可能性があります。 これに対処するために、Unity 開発者は多くの場合、リポジトリに最終資産のみを追加し、OneDrive、DropBox、git の添付など、資産の作業履歴を保持するために様々な手段を使用しています。 通常このような資産は、ソース コードの変更に伴うバージョン管理を必要としないため、このアプローチが有効です。 また、開発者は、プロジェクト エディターの資産のシリアル化モードを、シーンファイルをバイナリ形式ではなくテキストで保存するためにテキストを強制するよう設定し、これによりソース管理でのマージが可能になります。 詳細については、「[Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html)」 (エディターの設定) (Unity ドキュメント) を参照してください。
+3. テクスチャやオーディオ ファイルなど、Unity プロジェクトでのバイナリの資産が、大量のストレージを消費することがあります。 Git などのさまざまなソース管理システムは、変更がファイルのごく一部のみに影響する場合でも、すべての変更個所のファイルの一意のコピーを格納します。 これにより、Git リポジトリがいっぱいになる可能性があります。 これに対処するために、Unity 開発者は多くの場合、リポジトリに最終資産のみを追加し、OneDrive、DropBox、git の添付など、資産の作業履歴を保持するために様々な手段を使用しています。 通常このような資産は、ソース コードの変更に伴うバージョン管理を必要としないため、このアプローチが有効です。 また、開発者は、プロジェクト エディターの資産のシリアル化モードを、シーンファイルをバイナリ形式ではなくテキストで保存するためにテキストを強制するよう設定し、これによりソース管理でのマージが可能になります。 詳細については、「[Editor Settings](https://docs.unity3d.com/Manual/class-EditorManager.html)」 (エディターの設定) (Unity ドキュメント) を参照してください。
 
 ## <a name="build"></a>ビルド
 
-参照リンク:**[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+参照リンク: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
-|内部設置型 Team Foundation Server (TFS)|可能|Unity プロジェクトは、Visual Studio が構築したシステムではなく、Unity の環境内で構築されています (Visual Studio Tools for Unity 内で構築すると、スクリプトはコンパイルしますが、実行可能ファイルを生成しません)。 [コマンド ラインから Unity プロジェクトをビルド](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity ドキュメント) できるため、Unity 自体がそのコンピューターにインストールされている場合は、TFS サーバーで MSBuild プロセスを構成して、適切な Unity コンポーネントを実行できます。<br /><br /> また、Unity は、[Unity クラウド構築](https://build.cloud.unity3d.com/landing/)も提供し、Git または SVN リポジトリを監視して、定期的なビルドを実行します。 現時点では、これは TFVC または Azure DevOps Services では機能しません。|
+|内部設置型 Team Foundation Server (TFS)|可能|Unity プロジェクトは、Visual Studio が構築したシステムではなく、Unity の環境内で構築されています (Visual Studio Tools for Unity 内で構築すると、スクリプトはコンパイルしますが、実行可能ファイルを生成しません)。 [コマンド ラインから Unity プロジェクトをビルド](https://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity ドキュメント) できるため、Unity 自体がそのコンピューターにインストールされている場合は、TFS サーバーで MSBuild プロセスを構成して、適切な Unity コンポーネントを実行できます。<br /><br /> また、Unity は、[Unity クラウド構築](https://build.cloud.unity3d.com/landing/)も提供し、Git または SVN リポジトリを監視して、定期的なビルドを実行します。 現時点では、これは TFVC または Azure DevOps Services では機能しません。|
 |Azure DevOps Services にリンクされたオンプレミスのビルド サーバー|可能|上記と同じ状態の場合、Azure DevOps Services でトリガーされたビルドを指して、オンプレミスの TFS のコンピューターを使用することがさらに可能になります。 手順については、「[Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts)」 (ビルド エージェントとリリース エージェント) を参照してください。|
 |Azure DevOps Services のホスト コントローラー サービス|いいえ|Unity ビルドは現在サポートされていません。|
 |事前スクリプトと事後スクリプトによるビルド定義|はい|Unity のコマンドラインを使用してビルドを実行するカスタムのビルド定義は、ビルド前およびビルド後のスクリプトに対して構成することもできます。|
@@ -98,14 +98,14 @@ Unity を使ったバージョン管理に関する注意事項:
 
 ## <a name="improve-code-quality"></a>コード品質の向上
 
-参照リンク:**[コード品質の向上](../test/improve-code-quality.md)**
+参照リンク: **[コード品質の向上](../test/improve-code-quality.md)**
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
 |[マネージド コードの品質の分析](../code-quality/code-analysis-for-managed-code-overview.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[コード クローン検出を使用した重複コードの検出](https://msdn.microsoft.com/library/hh205279.aspx)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
 |[マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
+|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|
 |[.NET Framework のメモリ分析の問題](https://msdn.microsoft.com/library/dn342825.aspx)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|
 
 ## <a name="release-management"></a>リリース管理
@@ -120,7 +120,7 @@ Unity を使ったバージョン管理に関する注意事項:
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp による監視
 
-参照リンク:**[HockeyApp による監視](https://www.hockeyapp.net/features/)**
+参照リンク: **[HockeyApp による監視](https://www.hockeyapp.net/features/)**
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Devenv, /Run switch
 - R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c56e3dc4272fd927cc060f5a5a9972e5b8e6ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 051462339ea25dde9c2b55394e1854c60a71dc7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945517"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747774"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -52,7 +52,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 - 空白を含む文字列を二重引用符で囲みます。
 
-- エラーなどの概要情報は、**[コマンド]** ウィンドウ、または `/Out`スイッチで指定した任意のログ ファイルに表示できます。
+- エラーなどの概要情報は、 **[コマンド]** ウィンドウ、または `/Out`スイッチで指定した任意のログ ファイルに表示できます。
 
 ## <a name="example"></a>例
 

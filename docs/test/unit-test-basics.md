@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342435"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659893"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -30,7 +30,7 @@ ms.locfileid: "71342435"
 
 コーディングに直接関係する単体テストの概要については、次のいずれかのトピックを参照してください。
 
-- [チュートリアル:マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [チュートリアル: マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -273,7 +273,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-|ボタン|説明|
+|Button|説明|
 |-|-|
 |![ビルド後に実行](../test/media/ute_runafterbuild_btn.png)|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、**テスト エクスプローラー**のツール バーの **[ビルド後にテストを実行]** を選択します。|
 
@@ -299,13 +299,13 @@ public void My_Test ()
 ![フィルターの検索カテゴリ](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|ボタン|説明|
+|Button|説明|
 |-|-|
 |![テスト エクスプローラー グループ ボタン](../test/media/ute_groupby_btn.png)|カテゴリ別にテストをグループ化するには、 **[グループ化]** をクリックします。|
 
 詳細については、「[テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)」を参照してください。
 
-## <a name="qa"></a>Q & A
+## <a name="qa"></a>Q&A
 
 **Q: 単体テストのデバッグ方法を教えてください。**
 
@@ -331,7 +331,7 @@ public void My_Test ()
 ![[メソッドの生成] のスタブ クイック アクション メニュー](../test/media/vs-2019/basics-generate-method-tdd.png)
 ::: moniker-end
 
-**Q:テストを実行する入力値として複数のデータ セットを取得する単体テストを作成できますか。**
+**Q: テストを実行する入力値として複数のデータ セットを取得する単体テストを作成できますか。**
 
 **A:** はい。 *データ ドリブン テスト メソッド* を使用すると、1 つの単体テスト メソッドである範囲の値をテストすることができます。 テストする変数の値が格納されているデータ ソースとデータ テーブルを指定する、テスト メソッドの `DataSource` 属性を使用します。  メソッドの本体で、 `TestContext.DataRow[`*ColumnName*`]` インデクサーを使用して変数に行の値を割り当てます。
 

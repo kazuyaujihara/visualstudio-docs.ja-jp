@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401b1b3d2b37f74ae28b0b27bad5b1715497a4e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978147"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652563"
 ---
 # <a name="customize-project-and-item-templates"></a>プロジェクト テンプレートと項目テンプレートのカスタマイズ
 
@@ -25,15 +25,15 @@ ms.locfileid: "62978147"
 
 - 既存のテンプレートを変更し、ユーザー テンプレートとしてエクスポートします。
 
-   詳細については、「[方法 :既存のテンプレートを更新する](../ide/how-to-update-existing-templates.md)」を参照してください。
+   詳細については、[既存のテンプレートを更新する](../ide/how-to-update-existing-templates.md)」を参照してください。
 
 - カスタム パラメーターをテンプレートに渡して、既存の値を置き換えます。
 
-   詳細については、「[方法 :テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
+   詳細については、[テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
 
 - テンプレートからプロジェクトを作成するウィザードをカスタマイズします。
 
-   詳細については、「[方法 :プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)」 (拡張機能) を参照してください。
+   詳細については、[プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)」 (拡張機能) を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -3,17 +3,17 @@ title: Direct2D および JavaScript アプリケーション用のテクスチ�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5d163aafa8b00ce1d59b1fc7b597ab5ca535a1ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824610"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635511"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>方法: Direct2D または JavaScript アプリで使用するためのテクスチャをエクスポートする
 

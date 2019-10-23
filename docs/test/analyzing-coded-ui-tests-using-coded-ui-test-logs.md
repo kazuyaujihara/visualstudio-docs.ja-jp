@@ -2,17 +2,17 @@
 title: コード化された UI テスト ログを使用したコード化された UI テストの分析
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824484"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665321"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>コード化された UI テスト ログを使用したコード化された UI テストの分析
 
@@ -27,11 +27,11 @@ ms.locfileid: "67824484"
 - テスト プロジェクトに *App.config* ファイルが存在しない場合:
 
    1. テストを実行すると起動される *QTAgent\*.exe* プロセスを判断します。 これを行う方法の 1 つは、Windows **タスク マネージャー**の **[詳細]** タブを観察することです。
-   
+
    2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* フォルダーから、対応する *.config* ファイルを開きます。 たとえば、実行しているプロセスが *QTAgent_40.exe* である場合、*QTAgent_40.exe.config* を開きます。
 
    2. **EqtTraceLevel** の値を、目的のログ レベルに変更します。
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->

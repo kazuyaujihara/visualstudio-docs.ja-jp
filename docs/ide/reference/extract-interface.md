@@ -2,8 +2,8 @@
 title: インターフェイスの抽出リファクタリング
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654416"
 ---
 # <a name="extract-an-interface-refactoring"></a>インターフェイスの抽出リファクタリング
 
@@ -37,11 +37,11 @@ ms.locfileid: "65531689"
 
 1. クラス名にカーソルを置きます。
 
-   - C#: 
+   - C#:
 
        ![強調表示されたコード - C#](media/extractinterface-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示されたコード - Visual Basic](media/extractinterface-highlight-vb.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "65531689"
 
    - **キーボード**
       - **Ctrl + R** キーを押し、次に **Ctrl + I** キーを押します。 (キーボード ショートカットは、選択したプロファイルによって異なる場合があります。)
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[インターフェイスの抽出]** を選択します。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[インターフェイスの抽出]** を選択します。
    - **マウス**
       - **[編集] > [リファクター] > [インターフェイスの抽出]** の順に選択します。
       - クラスの名前を右クリックして **[クイック アクションとリファクタリング]** メニューを選択し、[プレビュー] ウィンドウ ポップアップから **[インターフェイスの抽出]** を選択します。
@@ -68,13 +68,13 @@ ms.locfileid: "65531689"
 
    指定した名前のファイルにインターフェイスが作成されます。 さらに、選択したクラスにそのインターフェイスが実装されます。
 
-   - C#: 
+   - C#:
 
       ![結果のクラス - C#](media/extractinterface-class-cs.png)
 
       ![結果のインターフェイス - C#](media/extractinterface-interface-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![結果のクラス - Visual Basic](media/extractinterface-class-vb.png)
 

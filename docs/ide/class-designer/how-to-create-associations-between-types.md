@@ -11,17 +11,17 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74fdc2ce798380aace3a2bce714fd5627799b564
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975386"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631792"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の関連付けを作成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "62975386"
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>クラス ダイアグラムに関連行を定義するには
 
-1. **クラス デザイナー**のツールボックスで、**[関連]** を選択します。
+1. **クラス デザイナー**のツールボックスで、 **[関連]** を選択します。
 
 2. 関連付けでリンクする 2 つの図形間に線を描画します。
 
@@ -52,7 +52,7 @@ ms.locfileid: "62975386"
 
 2. **[クラスの詳細]** ウィンドウまたは **[プロパティ]** ウィンドウで、そのプロパティの名前フィールドを編集し、**Enter** キーを押します。
 
-   **[クラスの詳細]** ウィンドウ、関連行、**[プロパティ]** ウィンドウ、およびコード上の名前が更新されます。
+   **[クラスの詳細]** ウィンドウ、関連行、 **[プロパティ]** ウィンドウ、およびコード上の名前が更新されます。
 
 ## <a name="see-also"></a>関連項目
 

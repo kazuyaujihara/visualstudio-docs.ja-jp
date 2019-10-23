@@ -2,17 +2,17 @@
 title: 環境設定
 ms.date: 11/21/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb535a301ec7e6045a44b910cecc21f2306b94bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978215"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650885"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio の環境設定
 
@@ -32,15 +32,15 @@ Visual Studio を初めて開くとき、一連の設定を選択することで
 
 Visual Studio を初めて開いた後で、開発設定を変更するには、次の手順のようにします。
 
-1. メニュー バーで **[ツール]**、**[設定のインポートとエクスポート]** の順に選択し、**設定のインポートとエクスポート ウィザード**を開始します。
+1. メニュー バーで **[ツール]** 、 **[設定のインポートとエクスポート]** の順に選択し、**設定のインポートとエクスポート ウィザード**を開始します。
 
-1. **[設定のインポートとエクスポート]** で、**[すべての設定をリセット]**、**[次へ]** の順に選択します。
+1. **[設定のインポートとエクスポート]** で、 **[すべての設定をリセット]** 、 **[次へ]** の順に選択します。
 
    ![Visual Studio の設定のインポートとエクスポート ウィザード](media/reset-all-settings.png)
 
-1. **[現在の設定の保存]** ページで、**[はい]** または **[いいえ]** を選択し、**[次へ]** を選択します。
+1. **[現在の設定の保存]** ページで、 **[はい]** または **[いいえ]** を選択し、 **[次へ]** を選択します。
 
-1. **[設定の既定のコレクションの選択]** ページで、コレクションを選択し、**[完了]** を選択します。
+1. **[設定の既定のコレクションの選択]** ページで、コレクションを選択し、 **[完了]** を選択します。
 
    ![Visual Studio の設定コレクション](media/settings-collections.png)
 

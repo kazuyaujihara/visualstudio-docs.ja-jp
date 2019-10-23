@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Web performance tests, plug-ins
 - load tests, plug-ins
 ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8382d5014b88d9f1711a082e46530e1e3dfb96e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7cd3dbd5e7aeb00c2de1a656c26db3a377b8ffe8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965493"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665104"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>ロード テスト用のカスタム コードおよびカスタム プラグインの作成
 
@@ -24,9 +24,9 @@ ms.locfileid: "62965493"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="tasks"></a>[タスク]
+## <a name="tasks"></a>タスク
 
-|[タスク]|関連するトピック|
+|タスク|関連するトピック|
 |-|-----------------------|
 |**ロード テスト用のカスタム プラグインを作成する**:ロード テスト API を使用してカスタム プラグインを作成し、ロード テストのテスト機能を拡張できます。|-   [方法:ロード テスト API を使用する](../test/how-to-use-the-load-test-api.md)<br />-   [方法:ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)|
 |**Web パフォーマンス テスト用のカスタム プラグインを作成する:** Web パフォーマンス テスト API を使用してカスタム プラグインを作成し、Web パフォーマンス テスト (要求レベルのテストを含む) のテスト機能を拡張できます。 Web サービス テストを作成することもできます。<br /><br /> さらに、Web パフォーマンス テストの記録後、Web パフォーマンス テスト結果ビューアーに表示する前にこのパフォーマンス テストを変更できる Web レコーダー プラグインを作成できます。|-   [方法:Web パフォーマンス テスト API を使用する](../test/how-to-use-the-web-performance-test-api.md)<br />-   [方法:Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [方法:要求レベルのプラグインを作成する](../test/how-to-create-a-request-level-plug-in.md)<br />-   [方法:Web サービス テストを作成する](../test/how-to-create-a-web-service-test.md)<br />-   [方法:レコーダー プラグインを作成する](../test/how-to-create-a-recorder-plug-in.md)|

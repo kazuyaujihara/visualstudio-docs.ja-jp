@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430277"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645887"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法: プロジェクト テンプレートと項目テンプレートを配置して整理する
 
@@ -60,7 +60,7 @@ ms.locfileid: "62430277"
 
 ### <a name="user-templates"></a>ユーザー テンプレート
 
-*.vstemplate* ファイルを含む圧縮 (*.zip*) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは新しいプロジェクトのダイアログ ボックスと新しい項目のダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
+*.vstemplate* ファイルを含む圧縮 ( *.zip*) ファイルをユーザー テンプレート ディレクトリに追加すると、そのテンプレートは新しいプロジェクトのダイアログ ボックスと新しい項目のダイアログ ボックスに表示されます。 既定では、ユーザー テンプレートは次の場所に配置されます。
 
 ::: moniker range="vs-2017"
 
@@ -87,7 +87,7 @@ ms.locfileid: "62430277"
 ::: moniker-end
 
 > [!TIP]
-> ユーザー テンプレートの既知の場所は、**[ツール]** > **[オプション]** > **[プロジェクトおよびソリューション]** > **[場所]** で設定できます。
+> ユーザー テンプレートの既知の場所は、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトおよびソリューション]**  >  **[場所]** で設定できます。
 
 ::: moniker range="vs-2017"
 
@@ -106,9 +106,9 @@ ms.locfileid: "62430277"
 
 1. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
-1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順にクリックします。
+1. **[ファイル]** メニューで、 **[新規]** > **[プロジェクト]** の順にクリックします。
 
-   **HelloWorld** カテゴリが、**[新しいプロジェクト]** ダイアログ ボックスの **[インストール済み]** > **[Visual C#]** に表示されます。
+   **HelloWorld** カテゴリが、 **[新しいプロジェクト]** ダイアログ ボックスの **[インストール済み]** > **[Visual C#]** に表示されます。
 
 ### <a name="create-new-user-item-template-categories"></a>ユーザー項目テンプレートの新しいカテゴリを作成する
 
@@ -118,9 +118,9 @@ ms.locfileid: "62430277"
 
 1. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
-1. プロジェクトを作成するか、既存のプロジェクトを開きます。 その後、**[プロジェクト]** メニューの **[新しい項目の追加]** を選択します。
+1. プロジェクトを作成するか、既存のプロジェクトを開きます。 その後、 **[プロジェクト]** メニューの **[新しい項目の追加]** を選択します。
 
-   **HelloWorld** カテゴリが、**[新しい項目の追加]** ダイアログ ボックスの **[インストール済み]** > **[Visual C# アイテム]** に表示されます。
+   **HelloWorld** カテゴリが、 **[新しい項目の追加]** ダイアログ ボックスの **[インストール済み]** > **[Visual C# アイテム]** に表示されます。
 
 ### <a name="display-templates-in-parent-categories"></a>親カテゴリでのテンプレートの表示
 
@@ -146,7 +146,7 @@ ms.locfileid: "62430277"
 
 1. *.vstemplate* ファイルを保存して、閉じます。
 
-1. テンプレートのファイルを選んで右クリックし、**[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選択します。
+1. テンプレートのファイルを選んで右クリックし、 **[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選択します。
 
    ファイルは *.zip* ファイルに圧縮されます。
 

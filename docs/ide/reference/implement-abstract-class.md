@@ -2,17 +2,17 @@
 title: 抽象クラスの実装
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5e1d05e0142a0185909ff590ff507fb53c7dc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f8d61e6e2632d62d7244ec0918e56816c3a028e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823183"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662477"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio で抽象クラスを実装する
 
@@ -32,18 +32,18 @@ ms.locfileid: "62823183"
 
 1. 抽象クラスを継承しているが、必要なすべてのメンバーを実装していないことを示す赤い波線がある行に、カーソルを置きます。
 
-   - C#: 
+   - C#:
 
        ![強調表示された C# のコード](media/abstract-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示された VB のコード](media/abstract-highlight-vb.png)
 
 2. 次に、以下のいずれかを実行します。
 
    - **キーボード**
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
@@ -55,15 +55,15 @@ ms.locfileid: "62823183"
 
    > [!TIP]
    > - プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる[すべての変更を確認する](../../ide/preview-changes.md)ことができます。
-   > - 抽象クラスから継承する複数のクラスにまたがる適切なメソッド シグネチャを作成するには、プレビュー ウィンドウの下部にある **[ドキュメント]**、**[プロジェクト]**、**[ソリューション]** の各リンクを使います。
+   > - 抽象クラスから継承する複数のクラスにまたがる適切なメソッド シグネチャを作成するには、プレビュー ウィンドウの下部にある **[ドキュメント]** 、 **[プロジェクト]** 、 **[ソリューション]** の各リンクを使います。
 
    抽象メソッドのシグネチャが作成され、実装する準備が整います。
 
-   - C#: 
+   - C#:
 
        ![クラス実装の結果 C#](media/abstract-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![クラス実装の結果 VB](media/abstract-result-vb.png)
 

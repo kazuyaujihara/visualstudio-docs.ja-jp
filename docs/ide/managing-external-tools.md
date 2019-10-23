@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535686"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652387"
 ---
 # <a name="manage-external-tools"></a>外部ツールの管理
 
@@ -47,7 +47,7 @@ Visual Studio から **[ツール]** メニューを使用して外部ツール�
 
 **[ツール]** メニューに表示する外部ツールを追加できます。
 
-1. **[ツール]**、**[外部ツール]** の順に選択し、**[外部ツール]** ダイアログ ボックスを開きます。
+1. **[ツール]** 、 **[外部ツール]** の順に選択し、 **[外部ツール]** ダイアログ ボックスを開きます。
 
 1. **[追加]** をクリックして情報を入力します。 たとえば、次のエントリを指定すると、Visual Studio で現在開いているファイルのディレクトリで**エクスプローラー**が開きます。
 

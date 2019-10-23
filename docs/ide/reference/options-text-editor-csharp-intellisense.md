@@ -11,21 +11,21 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e7e76e025c2c426a83f00c1cf2af830eb1c26a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778685"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666241"
 ---
 # <a name="options-text-editor-c-intellisense"></a>[オプション]、[テキスト エディター]、[C#]、[IntelliSense]
 
-C# での IntelliSense の動作設定を変更するには、**[IntelliSense]** オプション ページを使用します。 このオプション ページにアクセスするには、**[ツール]** > **[オプション]** を選択し、さらに **[テキスト エディター]** > **[C#]** > **[IntelliSense]** の順に選択します。
+C# での IntelliSense の動作設定を変更するには、 **[IntelliSense]** オプション ページを使用します。 このオプション ページにアクセスするには、 **[ツール]**  >  **[オプション]** を選択し、さらに **[テキスト エディター]**  >  **[C#]**  >  **[IntelliSense]** の順に選択します。
 
 **[IntelliSense]** オプション ページには、以下のオプションがあります。
 

@@ -12,23 +12,23 @@ helpviewer_keywords:
 - saving files, automatically
 - files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a28d73677011ef2de3ce4dd844757108b317ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 865cf2ec43071a01a333961e118beab14abab82b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790891"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651893"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>[自動バックアップ]\ ([オプション] ダイアログ ボックス - [環境])
 
 **[オプション]** ダイアログ ボックスのこのページを使用し、ファイルを自動的にバックアップするかどうかを指定します。 Visual Studio が突然終了した場合に、変更したファイルを復元するかどうかを指定することもできます。
 
-このダイアログ ボックスにアクセスするには、**[ツール]** メニューを選択し、**[オプション]** を選択して、**[環境]** > **[自動バックアップ]** を選択します。 このページが一覧に表示されない場合は、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** を選択します。
+このダイアログ ボックスにアクセスするには、 **[ツール]** メニューを選択し、 **[オプション]** を選択して、 **[環境]**  >  **[自動バックアップ]** を選択します。 このページが一覧に表示されない場合は、 **[オプション]** ダイアログ ボックスの **[すべての設定を表示]** を選択します。
 
 **自動バックアップの実行間隔: [n] 分**
 

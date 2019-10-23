@@ -2,17 +2,17 @@
 title: メソッド オーバーライドの生成
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: afb32a7ddb9a53ac6585cc690a3ba8fd1098b080
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 075c7dc49ffba1d67bbb5b62d313f50b5d09e956
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790503"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668446"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio でオーバーライドを生成する
 
@@ -32,11 +32,11 @@ ms.locfileid: "62790503"
 
 1. オーバーライド メソッドを挿入する位置に、「`override`」 (C# の場合) または「`Overrides`」 (Visual Basic の場合) と入力し、その後にスペースを入力します。
 
-   - C#: 
+   - C#:
 
       ![オーバーライドの IntelliSense (C#)](media/override-intellisense-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![オーバーライドの IntelliSense (VB)](media/override-intellisense-vb.png)
 
@@ -48,11 +48,11 @@ ms.locfileid: "62790503"
 
    選択したメソッドまたはプロパティが、オーバーライドとしてクラスに追加され、実装する準備が整います。
 
-   - C#: 
+   - C#:
 
        ![オーバーライドの結果 (C#)](media/override-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![オーバーライドの結果 (VB)](media/override-result-vb.png)
 

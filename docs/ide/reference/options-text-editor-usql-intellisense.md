@@ -5,25 +5,25 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.IntelliSense
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d915019775b1eeb1a1f091bb389e5d5aa8e21e8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778200"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666657"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>[オプション]、[テキスト エディター]、[U-SQL]、[IntelliSense]
 
-**[IntelliSense]** オプション ページを使用して、テキスト エディターでの U-SQL 用のいくつかの設定を変更します。 このオプション ページにアクセスするには、**[ツール]** > **[オプション]** を選択し、さらに **[テキスト エディター]** > **[U-SQL]** > **[IntelliSense]** の順に選択します。
+**[IntelliSense]** オプション ページを使用して、テキスト エディターでの U-SQL 用のいくつかの設定を変更します。 このオプション ページにアクセスするには、 **[ツール]**  >  **[オプション]** を選択し、さらに **[テキスト エディター]**  >  **[U-SQL]**  >  **[IntelliSense]** の順に選択します。
 
 ## <a name="intellisense-settings"></a>IntelliSense 設定
 
-チェック ボックスをオンにして、**[クイック ヒント]** または **[Intellisense]** を有効にします。 クイック ヒントでは、変数の上にマウス カーソルを合わせるとその宣言全体が表示されます。
+チェック ボックスをオンにして、 **[クイック ヒント]** または **[Intellisense]** を有効にします。 クイック ヒントでは、変数の上にマウス カーソルを合わせるとその宣言全体が表示されます。
 
 ## <a name="completion-lists"></a>入力候補一覧
 

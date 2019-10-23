@@ -3,17 +3,17 @@ title: '方法: シェーダーをエクスポートする'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844398"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635549"
 ---
 # <a name="how-to-export-a-shader"></a>方法: シェーダーをエクスポートする
 
@@ -27,7 +27,7 @@ ms.locfileid: "62844398"
 
      開く**視覚シェーダー グラフ (.dgsl)** ファイルがない場合、「[方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)」に示された手順で作成します。
 
-2. **シェーダー デザイナー**のツール バーで、**[詳細]**、**[エクスポート]**、**[名前を付けてエクスポート]** を選択します。 **[シェーダーのエクスポート]** ダイアログ ボックスが表示されます。
+2. **シェーダー デザイナー**のツール バーで、 **[詳細]** 、 **[エクスポート]** 、 **[名前を付けてエクスポート]** を選択します。 **[シェーダーのエクスポート]** ダイアログ ボックスが表示されます。
 
 3. **[ファイルの種類]** ドロップダウン リストで、エクスポートする形式を選択します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "62844398"
 
      **C++ ヘッダー (\*.h)** HLSL バイトコードを含むバイト配列を定義する C スタイル ヘッダーとしてシェーダーをエクスポートします。 このオプションでは、修正のテストにアプリの再コンパイルが必要になるため、エンド ユーザーの問題に基づくコードのデバッグと修正に時間がかかる可能性があります。 しかし、アプリへの配置後のシェーダーの変更は不可能とはいえないまでも困難になるため、ユーザーが望ましくない方法でシェーダーを変更することが最も困難になります。
 
-4. エクスポートするシェーダーの名前を **[ファイル名]** コンボ ボックスに指定し、**[保存]** ボタンを選択します。
+4. エクスポートするシェーダーの名前を **[ファイル名]** コンボ ボックスに指定し、 **[保存]** ボタンを選択します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -2,23 +2,23 @@
 title: トラブルシューティング コード カバレッジ
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342478"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659876"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
 Visual Studio のコード カバレッジ分析ツールは、ネイティブ アセンブリとマネージド アセンブリのデータを収集します ( *.dll* または *.exe* ファイル)。 しかし、 **[コード カバレッジの結果]** ウィンドウに "空の結果が生成されました: ...." のようなエラーが表示される場合があります。結果が空になる理由はいくつかあります。 この記事はそれらの問題解決に役立ちます。
 
-## <a name="what-you-should-see"></a>表示内容
+## <a name="what-you-should-see"></a>表示される内容
 
 **[テスト]** メニューの **[コード カバレッジの分析]** コマンドを選択し、ビルドとテストが正常に実行された場合、 **[コード カバレッジ]** ウィンドウに結果の一覧が表示されます。 詳細を表示するために、項目を展開する必要がある場合があります。
 

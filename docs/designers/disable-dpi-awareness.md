@@ -2,16 +2,16 @@
 title: Visual Studio の DPI 認識を無効にする
 description: HDPI モニターでの Windows フォーム デザイナーの制限事項と Visual Studio を DPI 非対応プロセスとして実行する方法について説明します。
 ms.date: 04/05/2019
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: fdcf255b8ad7c613a83284759a1f4859041acfc4
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69619974"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637405"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio の DPI 認識を無効にする
 

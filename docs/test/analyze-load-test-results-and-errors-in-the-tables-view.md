@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665396"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのテーブル ビューでのロード テスト結果とエラーの分析
 
@@ -53,7 +53,7 @@ ms.locfileid: "68926482"
 |テーブル名|説明|
 |-|-|
 |エラー|ロード テストの実行中に発生したエラーの一覧が表示されます。 詳細については、このトピックの「[エラー テーブル](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)」と[ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)に関するページを参照してください。|
-|Pages|ロード テストの実行中にアクセスされたページの一覧が表示されます。 このテーブルのデータの一部は、ロード テストが完了するまで表示されません。 詳細については、「[方法 :Web ページ応答を表示する](../test/how-to-view-web-page-response-time-in-a-load-test.md)」を参照してください。|
+|Pages|ロード テストの実行中にアクセスされたページの一覧が表示されます。 このテーブルのデータの一部は、ロード テストが完了するまで表示されません。 詳細については、[Web ページ応答を表示する](../test/how-to-view-web-page-response-time-in-a-load-test.md)」を参照してください。|
 |要求|ロード テスト中に発行された個々の要求の詳細が表示されます。 これには、すべての HTTP 要求、およびイメージなどの依存要求が含まれます。 詳細については、このトピックの「[要求テーブル](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)」を参照してください。|
 |SQL トレース|SQL トレースの結果が表示されます。 このテーブルは、テスト中に SQL トレースが使用された場合にのみ、ロード テストの完了後に表示されます。 詳細については、このトピックの「[SQL トレース データ テーブル](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)」を参照してください。|
 |テスト|ロード テスト中に実行される個々のテストの詳細が表示されます。 詳細については、このトピックの「[テスト テーブル](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)」を参照してください。|
@@ -64,7 +64,7 @@ ms.locfileid: "68926482"
 
 ## <a name="collect-percentile-data"></a>パーセンタイル データの収集
 
-一部のロード テスト テーブルには、ネットワーク エミュレーションに基づいてグループ分けされた、パーセンタイル データおよび応答時間が格納される列を追加できます。 既定では、このデータは収集されません。 パーセンタイル データは、結果をローカルに保存したときではなく、データベースに保存したときのみ表示されます。 詳細については、「[ロード テストの結果リポジトリ内のロード テストの結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)」を参照してください。 また、このデータを収集するには、**ロード テスト エディター**の **[実行設定]** ノードで、変更する実行設定ノードを選択します。 **[プロパティ]** ウィンドウの **[タイミング詳細のストレージ]** プロパティで、 **[StatisticsOnly]** または **[AllIndividualDetails]** を選択します。 詳細については、「[方法 :Web ページ応答を表示する](../test/how-to-view-web-page-response-time-in-a-load-test.md)」を参照してください。
+一部のロード テスト テーブルには、ネットワーク エミュレーションに基づいてグループ分けされた、パーセンタイル データおよび応答時間が格納される列を追加できます。 既定では、このデータは収集されません。 パーセンタイル データは、結果をローカルに保存したときではなく、データベースに保存したときのみ表示されます。 詳細については、「[ロード テストの結果リポジトリ内のロード テストの結果の管理](../test/manage-load-test-results-in-the-load-test-results-repository.md)」を参照してください。 また、このデータを収集するには、**ロード テスト エディター**の **[実行設定]** ノードで、変更する実行設定ノードを選択します。 **[プロパティ]** ウィンドウの **[タイミング詳細のストレージ]** プロパティで、 **[StatisticsOnly]** または **[AllIndividualDetails]** を選択します。 詳細については、[Web ページ応答を表示する](../test/how-to-view-web-page-response-time-in-a-load-test.md)」を参照してください。
 
 ## <a name="the-requests-table"></a>[要求] テーブル
 
@@ -116,7 +116,7 @@ ms.locfileid: "68926482"
 次の表は、 **[トランザクション]** テーブルの列の一覧です。
 
 > [!NOTE]
-> すべての列を表示するには、アクティブな実行設定に関連付けられている "タイミングの詳細ストレージ" プロパティを有効にする必要があります。 詳細については、「[方法 :[タイミングの詳細ストレージ] プロパティを指定する](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)」を参照してください。
+> すべての列を表示するには、アクティブな実行設定に関連付けられている "タイミングの詳細ストレージ" プロパティを有効にする必要があります。 詳細については、[[タイミングの詳細ストレージ] プロパティを指定する](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)」を参照してください。
 
 |Column|説明|タイミングの詳細なしで表示|
 |-|-|-|
