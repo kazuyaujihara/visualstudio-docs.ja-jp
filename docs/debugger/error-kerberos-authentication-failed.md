@@ -1,5 +1,5 @@
 ---
-title: エラー :Kerberos 認証に失敗しました |Microsoft Docs
+title: 'エラー: Kerberos 認証に失敗しました |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe13fd3d0dc7e29fc12d369ec0865bcbc97b1a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850727"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737666"
 ---
-# <a name="error-kerberos-authentication-failed"></a>エラー :Kerberos 認証に失敗しました
+# <a name="error-kerberos-authentication-failed"></a>エラー : Kerberos 認証に失敗しました。
 リモート デバッグを実行するときに、次のエラー メッセージが表示されることがあります。
 
 ```cmd
@@ -34,17 +34,17 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - ターゲット コンピューターまたはデバッガー ホスト コンピューターがドメインではなくワークグループに属している
 
-   \- または -
+   \- または
 
 - ドメイン コントローラーで Kerberos が無効になっている。
 
-  Kerberos 認証が使用できない場合は、Visual Studio リモート デバッグ モニターの実行に使用するアカウントを変更してください。 手順については、次を参照してください。[エラー。ターゲット コンピューターに Visual Studio リモート デバッガー サービスは、このコンピューターに接続できない](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)します。
+  Kerberos 認証が使用できない場合は、Visual Studio リモート デバッグ モニターの実行に使用するアカウントを変更してください。 この手順については、「[エラー: ターゲットコンピューターの Visual Studio リモートデバッガーサービスがこのコンピューターに接続できません](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。」を参照してください。
 
   両方のコンピューターが同じドメインに接続しているにもかかわらず、このメッセージが表示される場合は、ターゲット コンピューターの DNS がデバッガー ホスト コンピューターの名前を正しく解決していることを確認してください。 以降の手順を参照してください。
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>ターゲット コンピューターの DNS がデバッガー ホスト コンピューター名を正しく解決していることを確認するには
 
-1. ターゲット コンピューターで **[スタート]** メニューを開き、**[アクセサリ]** をポイントして **[コマンド プロンプト]** をクリックします。
+1. ターゲット コンピューターで **[スタート]** メニューを開き、 **[アクセサリ]** をポイントして **[コマンド プロンプト]** をクリックします。
 
 2. **[コマンド プロンプト]** ウィンドウに次のように入力します。
 

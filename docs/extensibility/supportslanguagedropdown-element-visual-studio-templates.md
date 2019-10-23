@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6dbc2c5cae40078f033fa0fb85c6fda032e8ec4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d9b5727bd9aa09b05fc95d8f9f9b7913a6046b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316798"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719410"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 要素 (Visual Studio テンプレート)
-Web 項目テンプレートが複数の言語と同じかどうかと、かどうかを指定します、**言語**のオプションが有効になっている、**新しい項目の追加** ダイアログ ボックス。
+Web 項目テンプレートが複数の言語で同一であるかどうか、および **[新しい項目の追加]** ダイアログボックスで **[言語]** オプションが有効になっているかどうかを指定します。
 
  \<VSTemplate > \<TemplateData > \<SupportsLanguageDropDown >
 
@@ -50,17 +50,17 @@ Web 項目テンプレートが複数の言語と同じかどうかと、かど�
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**言語**オプションはから利用可能な**新しい項目の追加** ダイアログ ボックス。
+ テキストは `true` または `false` のいずれかである必要があります。 **[新しい項目の追加]** ダイアログボックスで **[言語]** オプションを使用できるかどうかを示します。
 
 ## <a name="remarks"></a>Remarks
- `SupportsLanguageDropDown` は、省略可能な要素です。 既定値は `false` です。
+ `SupportsLanguageDropDown` は、省略可能な要素です。 既定値は `false`です。
 
- `SupportsLanguageDropDown`要素は、Web 項目テンプレートの使用のみ。
+ @No__t_0 要素は、Web 項目テンプレートでのみ使用できます。
 
- この要素の値が設定されている場合`true`、項目テンプレートはすべてのプログラミング言語と同じ、**言語**でオプションが有効になっている、**新しい項目の追加** ダイアログ ボックス。 このオプションでは、テンプレートから作成する新しい項目のプログラミング言語を選択することができます。
+ この要素の値が `true` に設定されている場合、すべてのプログラミング言語で項目テンプレートが同じで、 **[新しい項目の追加]** ダイアログボックスで **[言語]** オプションが有効になります。 このオプションを使用すると、テンプレートから作成する新しい項目のプログラミング言語を選択できます。
 
 ## <a name="example"></a>例
- 次の例を表示するように指定します、**言語**オプションをドロップダウンします。
+ 次の例では、**言語**ドロップダウンオプションを表示するように指定します。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

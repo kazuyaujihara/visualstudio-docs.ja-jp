@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_hfadouble |Microsoft Docs
+title: 'IDiaSymbol:: get_hfaDouble |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f807ca27598580beb011376e115025ab0c3168fe
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 30a393f2725b4924a02bbaed12aef8b60273ffd0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808373"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740421"
 ---
-# <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
-ユーザー定義型 (UDT) が同種浮動小数点 (HFA) の集計データは double 型を含むかどうかを指定するフラグを取得します。
+# <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
+ユーザー定義型 (UDT) に double 型の同種の浮動小数点集計 (HFA) データが含まれているかどうかを指定するフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,22 +33,22 @@ HRESULT get_hfaDouble( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します`TRUE`UDT HFA データが含まれる型の倍精度浮動小数点。 そうしない場合を返します`FALSE`します。
+入出力UDT に double 型の HFA データが含まれている場合に `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

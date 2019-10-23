@@ -11,73 +11,73 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9bb993f6acaa7cd1cf3980e128e869a643d028c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d6ca60c74ae9956f38418ea6048bb0c8050be2c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310906"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724506"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>登録と選択 (ソース管理 VSPackage)
-公開するために VSPackage を登録する必要があるソース管理、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 1 つ以上のソース管理 VSPackage が登録されている場合、ユーザーは、どの VSPackage を読み込む適切なタイミングでを選択できます。 参照してください[Vspackage](../../extensibility/internals/vspackages.md) Vspackage とそれらを登録する方法の詳細についてはします。
+@No__t_0 に公開するには、ソース管理 VSPackage が登録されている必要があります。 複数のソース管理 VSPackage が登録されている場合、ユーザーは適切なタイミングで読み込む VSPackage を選択できます。 Vspackage とその登録方法の詳細については、「 [vspackage](../../extensibility/internals/vspackages.md) 」を参照してください。
 
-## <a name="registering-a-source-control-package"></a>ソース管理パッケージを登録します。
- ソース管理パッケージが登録されているように、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境は、サポートされる機能についてしクエリを見つけることができます。 これは、ことは、遅延読み込みスキームをその機能またはコマンドが必要ですか、明示的に要求された場合にのみのパッケージのインスタンスが作成されます。
+## <a name="registering-a-source-control-package"></a>ソース管理パッケージの登録
+ ソース管理パッケージは登録されているので、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境で検索して、サポートされている機能のクエリを実行できます。 これは、機能またはコマンドが必要な場合、または明示的に要求された場合にのみ、パッケージのインスタンスが作成される遅延読み込みスキームに従っています。
 
- Vspackage では、情報を配置、バージョン固有のレジストリ キー hkey_local_machine \software\microsoft\visualstudio で\\*X.Y*ここで、 *X*はメジャー バージョン番号と*Y*マイナー バージョン番号です。 この実習は、複数のバージョンのサイド バイ サイドでインストールをサポートする機能を提供します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+ Vspackage はバージョン固有のレジストリキー HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ に情報を格納し*ます。* ここで、 *x*はメジャーバージョン番号、 *Y*はマイナーバージョン番号です。 この方法では、複数のバージョンの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のサイドバイサイドインストールをサポートできます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ユーザー インターフェイス (UI) は、ソース管理 Vspackage と複数インストールされているソース管理プラグイン (ソース管理アダプター パッケージ) を使用しての中から選択をサポートしています。 ありますのみ 1 つのアクティブなソース管理プラグインまたは VSPackage を時にします。 ただし、以下のように、IDE では、自動ソリューションに基づくパッケージ スワッピング メカニズムをソース管理プラグインと Vspackage の切り替え。 この選択方法を有効にするソース管理 VSPackage の方は、いくつか要件があります。
+ @No__t_0 のユーザーインターフェイス (UI) は、インストールされている複数のソース管理プラグイン (ソース管理アダプターパッケージ経由) とソース管理 Vspackage の間での選択をサポートしています。 アクティブなソース管理プラグインまたは VSPackage は一度に1つしか存在できません。 ただし、以下で説明するように、IDE では、ソリューションベースの自動パッケージスワップメカニズムを使用して、ソース管理プラグインと Vspackage を切り替えることができます。 この選択メカニズムを有効にするために、ソース管理 VSPackage の一部にはいくつかの要件があります。
 
 ### <a name="registry-entries"></a>レジストリ エントリ
- ソース管理のパッケージには、次の 3 つのプライベート Guid が必要があります。
+ ソース管理パッケージには、次の3つのプライベート Guid が必要です。
 
-- パッケージ GUID:これは、メイン ソース コントロールの実装 (このセクションでは ID_Package と呼ばれます) を含むパッケージの GUID です。
+- パッケージ GUID: これは、ソース管理の実装 (このセクションでは ID_Package と呼ばれます) を含むパッケージの主要な GUID です。
 
-- ソース コントロールの GUID。ソース管理 VSPackage の使用、Visual Studio のソース コントロールのスタブを登録する GUID は、このコマンド UI コンテキスト GUID としても使用されます。 ソース管理サービスの GUID は GUID のソース管理下で登録されています。 例では、ソース コントロールの GUID は ID_SccProvider と呼ばれます。
+- ソース管理 GUID: これは、Visual Studio ソース管理スタブに登録するために使用されるソース管理 VSPackage の GUID であり、コマンド UI コンテキスト GUID としても使用されます。 ソース管理サービス GUID は、ソース管理 GUID の下に登録されます。 この例では、ソース管理の GUID は ID_SccProvider と呼ばれています。
 
-- ソース管理サービス GUID:これは、プライベート サービス (このセクションでは SID_SccPkgService と呼ばれます)、Visual Studio で使用される GUID です。 さらに、ソース管理パッケージは、Vspackage、ツール ウィンドウの他の Guid を定義する必要があります。
+- ソース管理サービス GUID: これは、Visual Studio によって使用されるプライベートサービス GUID です (このセクションでは SID_SccPkgService と呼ばれます)。 さらに、ソース管理パッケージでは、Vspackage、ツールウィンドウなどの他の Guid を定義する必要があります。
 
-  次のレジストリ エントリは、ソース管理 VSPackage によって行う必要があります。
+  次のレジストリエントリは、ソース管理 VSPackage によって作成される必要があります。
 
-| キー名 | エントリ |
+| キー名 | Entries |
 | - | - |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (default) = rg_sz:{ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (既定値) = 対応する rg_sz:\<パッケージのフレンドリ名 ><br /><br /> サービス = 対応する rg_sz: {SID_SccPkgService} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (既定値) = 対応する rg_sz: #\<ローカライズされた名前のリソース ID ><br /><br /> Package = rg_sz:{ID_Package} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (なおキー名、`SourceCodeControl`で既に使用されて[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を選択肢としてご利用いただけませんと\<PackageName >.) | (既定値) = 対応する rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (既定値) = rg_sz: {ID_SccProvider} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (既定値) = rg_sz: パッケージ > の \<Friendly 名<br /><br /> サービス = rg_sz: {SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (既定値) = rg_sz: # \<Resource ローカライズされた名前の ID ><br /><br /> Package = rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (キー名、`SourceCodeControl` は [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] で既に使用されており、\<PackageName > の選択肢としては使用できないことに注意してください)。 | (既定値) = rg_sz: {ID_Package} |
 
-## <a name="selecting-a-source-control-package"></a>ソース管理パッケージを選択します。
- 複数ソース管理プラグイン API ベースのプラグインをおよびソース管理 Vspackage を同時に登録することがあります。 ソース管理プラグインまたは VSPackage を選択するプロセスを確認する必要がありますを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プラグインをロードまたは適切な時に、VSPackage と必要になるまで、不要なコンポーネントの読み込みを遅らせることができます。 さらに、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]メニュー項目、ダイアログ ボックス、ツールバーなどの他の非アクティブの Vspackage からすべての UI を削除してアクティブな VSPackage の UI を表示する必要があります。
+## <a name="selecting-a-source-control-package"></a>ソース管理パッケージの選択
+ いくつかのソース管理プラグイン API ベースのプラグインとソース管理 Vspackage が同時に登録されている可能性があります。 ソース管理プラグインまたは VSPackage を選択するプロセスでは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] がプラグインまたは VSPackage を適切なタイミングで読み込む必要があります。また、不要なコンポーネントの読み込みが必要になるまで遅延させることができます。 さらに [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、メニュー項目、ダイアログボックス、ツールバーなど、他の非アクティブな Vspackage からすべての UI を削除し、アクティブな VSPackage の UI を表示する必要があります。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 次の操作のいずれかが実行されると、ソース管理 VSPackage を読み込みます。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、次のいずれかの操作が実行されたときに、ソース管理 VSPackage を読み込みます。
 
-- ソリューションには、(ソリューションがソース管理下にある場合) が開かれます。
+- ソリューションが開かれています (ソリューションがソース管理下にある場合)。
 
-   ソリューションまたはソース管理下にあるプロジェクトが開かれる場合、IDE には、ソース管理 VSPackage を読み込むには、そのソリューションの指定されたが行われます。
+   ソース管理下にあるソリューションまたはプロジェクトを開くと、IDE によって、そのソリューションに対して指定されたソース管理 VSPackage が読み込まれます。
 
-- ソース管理 VSPackage のメニュー コマンドのいずれかが実行されます。
+- ソース管理 VSPackage のメニューコマンドが実行されます。
 
-  ソース管理 VSPackage にするのには実際の場合にのみ必要なすべてのコンポーネントを読み込む必要があります (それ以外の場合の遅延読み込みと呼ばれます) を使用します。
+  ソース管理 VSPackage は、実際に使用される場合にのみ必要なコンポーネント (遅延読み込みとも呼ばれます) を読み込む必要があります。
 
-### <a name="automatic-solution-based-vspackage-swapping"></a>自動ソリューション ベースの VSPackage のスワップ
- ソース管理 Vspackage を手動で切り替えることができますを通じて、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **オプション** ダイアログ ボックス、**ソース管理**カテゴリ。 ソリューションに基づいたパッケージの自動スワップには、そのソリューションを開いたときに特定のソリューションに対して指定されているソース管理パッケージが自動的にアクティブに設定されることを意味します。 すべてのソース管理パッケージを実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 両方の切り替えを処理するソース管理プラグイン (ソース管理プラグイン API を実装する)、およびソース管理 Vspackage です。
+### <a name="automatic-solution-based-vspackage-swapping"></a>ソリューションベースの VSPackage の自動スワップ
+ ソース**管理カテゴリの下にある**[[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**オプション**] ダイアログボックスを使用して、ソース管理 vspackage を手動でスワップすることができます。 ソリューションベースの自動パッケージスワップは、特定のソリューションに対して指定されているソース管理パッケージが、そのソリューションを開いたときに自動的にアクティブに設定されることを意味します。 すべてのソース管理パッケージは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> と <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> を実装する必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、(ソース管理プラグイン API を実装する) ソース管理プラグインとソース管理 Vspackage の両方の切り替えを処理します。
 
- ソース コントロール アダプター パッケージを使用する任意のソース管理プラグイン API ベースに切り替えるにプラグインします。 ソース コントロール アダプターの中間パッケージへの切り替えのソース管理プラグインを決定するプロセスは、アクティブまたは非アクティブは、ユーザーに対して透過的に設定する必要があります。 アダプター パッケージは、ソース管理プラグインのアクティブなときに常にアクティブです。 単に読み込みとプラグインの DLL のアンロードを行う 2 つのソース管理プラグイン金額との間の切り替え。 適切な VSPackage を読み込む IDE との対話では、ソース管理 VSPackage に切り替え、します。
+ ソース管理アダプターパッケージは、任意のソース管理プラグイン API ベースのプラグインに切り替えるために使用されます。 中間ソース管理アダプターパッケージに切り替えて、アクティブまたは非アクティブに設定する必要があるソース管理プラグインを特定するプロセスは、ユーザーに対して透過的です。 アダプターパッケージは、任意のソース管理プラグインがアクティブになっている場合、常にアクティブです。 プラグイン DLL を単に読み込んでアンロードするために、2つのソース管理プラグインを切り替える。 ただし、ソース管理 VSPackage に切り替えるには、IDE を操作して適切な VSPackage を読み込む必要があります。
 
- ソース管理 VSPackage は、任意のソリューションが開かれ、VSPackage のレジストリ キーが、ソリューション ファイルが呼び出されます。 ソリューションが開かれると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]レジストリ値を検索し、適切なソース管理 VSPackage を読み込みます。 すべてのソース管理 Vspackage には、上記のレジストリ エントリが必要です。 ソース管理下にあるソリューションは、特定のソース管理 VSPackage に関連付けられたとマークされます。 ソース管理 Vspackage を実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>自動ソリューションに基づく VSPackage スワップを有効にします。
+ ソース管理 VSPackage は、ソリューションを開いたときに、VSPackage のレジストリキーがソリューションファイル内にある場合に呼び出されます。 ソリューションが開かれると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] によってレジストリ値が検索され、適切なソース管理 VSPackage が読み込まれます。 すべてのソース管理 Vspackage には、上記で説明したレジストリエントリが必要です。 ソース管理下にあるソリューションは、特定のソース管理 VSPackage に関連付けられているとマークされています。 ソース管理 Vspackage は、ソリューションベースの VSPackage の自動スワップを有効にするために <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> を実装する必要があります。
 
-### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio パッケージの選択と切り替え用の UI
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ソース管理 VSPackage の UI とプラグインの選択の提供、**オプション** ダイアログ ボックス、**ソース管理**カテゴリ。 VSPackage、ユーザーは、アクティブなソース管理プラグインを選択することができます。 ドロップダウン リストは次のとおりです。
+### <a name="visual-studio-ui-for-package-selection-and-switching"></a>パッケージの選択と切り替えを行うための Visual Studio UI
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、 **[ソース]** 管理 カテゴリの **[オプション]** ダイアログボックスで、ソース管理 VSPackage とプラグインの選択のための UI を提供します。 これにより、ユーザーはアクティブなソース管理プラグインまたは VSPackage を選択できます。 ドロップダウンリストには次のものが含まれます。
 
-- すべてのソース管理パッケージがインストールされています。
+- インストールされているすべてのソース管理パッケージ
 
-- ソース管理プラグインをすべてインストールされています。
+- インストールされているすべてのソース管理プラグイン
 
-- [なし] オプション、ソース コード管理を無効にします
+- "None" オプション。ソースコード管理を無効にします。
 
-  アクティブなソース コントロールの選択肢の UI のみが、表示されます。 VSPackage の選択は、前の VSPackage の UI を非表示にし、新しい UI を示しています。 アクティブな VSPackage は、ユーザーごとに選択されます。 複数のコピーを持つユーザー[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]同時に開き、別のアクティブな VSPackage を使用してそれぞれ、可能性のあることができます。 個別のインスタンスのことができる場合は、複数のユーザーが同じコンピューターにログオンして、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]それぞれ別のアクティブな VSPackage が開きます。 ときに複数のインスタンスの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ユーザー、ソース管理 VSPackage、最後の開いているソリューションが既定のソース管理 VSPackage、再起動時にアクティブに設定するためにアクティブだったで閉じられています。
+  アクティブなソース管理の選択肢の UI だけが表示されます。 VSPackage を選択すると、前の VSPackage の UI が非表示になり、新しい ui の UI が表示されます。 アクティブな VSPackage は、ユーザーごとに選択されます。 複数の [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のコピーを同時に開くと、それぞれのユーザーが異なる active VSPackage を使用する可能性があります。 複数のユーザーが同じコンピューターにログオンしている場合は、各ユーザーがそれぞれ異なる active VSPackage を持つ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を開くことができます。 @No__t_0 の複数のインスタンスがユーザーによって閉じられると、最後に開いたソリューションに対してアクティブだったソース管理 VSPackage が既定のソース管理 VSPackage になり、再起動時にアクティブに設定されます。
 
-  以前のバージョンのとは異なり[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の IDE の再起動は、ソース管理 Vspackage を切り替えるには、唯一の方法ではありません。 VSPackage の選択は自動です。 パッケージを切り替えるには、Windows ユーザーの特権 (管理者またはパワー ユーザーではない) 必要があります。
+  以前のバージョンの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] とは異なり、IDE の再起動は、ソース管理 Vspackage を切り替える唯一の方法ではなくなりました。 VSPackage の選択は自動的に行うことができます。 パッケージを切り替えるには、管理者またはパワーユーザーではなく、Windows ユーザー特権が必要です。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>

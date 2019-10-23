@@ -1,5 +1,5 @@
 ---
-title: ブレークポイントがヒット ダイアログ ボックスの場合 |Microsoft Docs
+title: ブレークポイントがヒットしたときのダイアログボックス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929205"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728141"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>[ブレークポイントのヒット時] ダイアログ ボックス
 このダイアログ ボックスでは、ブレークポイントにヒットしたときに発生するアクションをカスタマイズできます。
 
 ## <a name="uielement-list"></a>UIElement の一覧
- **メッセージを印刷**DebuggerDisplay 構文を使用して、メッセージを出力します。 詳細については、次を参照してください。 [DebuggerDisplay 属性を使用して](../debugger/using-the-debuggerdisplay-attribute.md)します。
+ **メッセージを印刷する**デバッガーの表示構文を使用して、メッセージを出力します。 詳細については、「[デバッガー表示属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)」を参照してください。
 
  このテキストボックスは、$ADDRESS などの特殊なキーワードもサポートしています。これらのキーワードはキーワード自身が使用することも、DebuggerDisplay 式の中かっこ ({}) 内で使用することもできます。 使用できるキーワードはダイアログ ボックスに一覧表示されます。
 
- **実行を継続**このコントロールが有効になっている場合にのみ**メッセージを印刷**が選択されています。 このコントロールを選択すると、ブレークポイントにヒットしたときに、これを中断するポイントとしてではなく、プログラムの実行をトレースするためのトレースポイントとして使用できます。
+ **実行を続行**するこのコントロールは **、メッセージの印刷**が選択されている場合にのみ有効になります。 このコントロールを選択すると、ブレークポイントにヒットしたときに、これを中断するポイントとしてではなく、プログラムの実行をトレースするためのトレースポイントとして使用できます。
 
 ## <a name="see-also"></a>関連項目
 - [ブレークポイントの使用](../debugger/using-breakpoints.md)

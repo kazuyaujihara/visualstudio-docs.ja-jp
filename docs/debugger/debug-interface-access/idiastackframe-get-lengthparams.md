@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_lengthparams |Microsoft Docs
+title: 'IDiaStackFrame:: get_lengthParams |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8505556e814493078bcd3944768011a2405510c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f40b6f19a421ec1431f82fca51626939b01de26e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839024"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741687"
 ---
-# <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
-スタックにプッシュするパラメーターのバイト数を取得します。
+# <a name="idiastackframeget_lengthparams"></a>IDiaStackFrame::get_lengthParams
+スタックにプッシュされたパラメーターのバイト数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_lengthParams ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]パラメーターのバイト数を返します。
+入出力パラメーターのバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`プロパティがサポートされていない場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 プロパティがサポートされていない場合は `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

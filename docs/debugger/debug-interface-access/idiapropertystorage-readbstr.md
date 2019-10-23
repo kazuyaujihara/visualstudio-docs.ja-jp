@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBSTR |Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadBSTR |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0bff81499fe8ea66ce5d4f50616adfec44d3002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef0b5bac11a1bf3da7e8081f7ae24b6a7a6f1a71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839629"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742914"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
-読み取り`BSTR`プロパティ セット内の値。
+プロパティセット内の `BSTR` 値を読み取ります。
 
 ## <a name="syntax"></a>構文
 
@@ -34,17 +34,17 @@ HRESULT ReadBSTR ( 
 #### <a name="parameters"></a>パラメーター
  `id`
 
-[in]読み取るプロパティの識別子 (`PROPID`として WTypes.h で定義されている、 `ULONG`)。
+から読み取るプロパティの識別子 (`PROPID` は、WTypes. h で `ULONG` として定義されています)。
 
  `pValue`
 
-[out]プロパティ値を返します。
+入出力プロパティ値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`BSTR`します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。 プロパティが `BSTR` 型でない場合は `E_INVALIDARG` を返します。
 
 ## <a name="remarks"></a>Remarks
- A `BSTR` 0 で終わるワイド文字列としての Windows によって定義されます。
+ @No__t_0 は、Windows によって、0で終わるワイド文字列として定義されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlines |Microsoft Docs
+title: 'IDiaSession:: findLines |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6082bfe8a3eee00d425441ff44a6eadd1c36e27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839291"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742122"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-指定したコンパイル単位とソース ファイル識別子内で行番号を取得します。
+指定されたコンパイル単位とソースファイルの識別子内の行番号を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,18 +35,18 @@ HRESULT findLines ( 
 #### <a name="parameters"></a>パラメーター
  `compiland`
 
-[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)コンパイル単位を表すオブジェクト。 行番号を検索するためのコンテキストとしては、このインターフェイスを使用します。
+からコンパイル単位を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクト。 このインターフェイスは、行番号を検索するコンテキストとして使用します。
 
  `file`
 
-[in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)で行番号を検索するソース ファイルを表すオブジェクト。
+から行番号を検索するソースファイルを表す[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)オブジェクト。
 
  `ppResult`
 
-[out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)行番号の一覧を含むオブジェクトを取得します。
+入出力取得した行番号の一覧を含む[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

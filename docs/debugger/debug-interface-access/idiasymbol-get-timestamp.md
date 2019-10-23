@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_timestamp |Microsoft Docs
+title: 'IDiaSymbol:: get_timeStamp |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de05b30147e91ed9d82dce03f7a72d34250598de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793705"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739110"
 ---
-# <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
+# <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
 基になる実行可能ファイルのタイムスタンプを取得します。
 
 ## <a name="syntax"></a>構文
@@ -33,13 +33,13 @@ HRESULT get_timeStamp ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]基になる実行可能ファイルのタイムスタンプを返します。
+入出力基になる実行可能ファイルのタイムスタンプを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
