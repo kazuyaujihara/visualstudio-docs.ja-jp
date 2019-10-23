@@ -1,6 +1,6 @@
 ---
 title: C++コアガイドラインの警告
-ms.date: 08/10/2017
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e616b380c223118b42d9cb345f17cb06db78779b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: MT
+ms.openlocfilehash: 02d284f909d601de8eb1361eee4f65304715361e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018481"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745934"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -60,11 +60,11 @@ int main()
 
 次の例では、 C++主要なチェックルールで検出できる警告のいくつかを示します。
 
-- C26494 は規則の種類です。 5:常にオブジェクトを初期化します。
+- C26494 は rule 型です。 5: 常にオブジェクトを初期化します。
 
-- C26485 はルールの境界です。 3:配列からポインターへの減衰がありません。
+- C26485 はルールの境界です。 3: 配列からポインターへの減衰がありません。
 
-- C26481 はルールの範囲です。 1:ポインターの算術演算を使用しないでください。 代わりに、`span` を使用してください。
+- C26481 は rule Bounds です。 1: ポインター演算は使用しないでください。 代わりに、`span` を使用してください。
 
 このコードC++をコンパイルするときに、コアチェックのコード分析のルールセットがインストールされ、有効になっている場合、最初の2つの警告が出力されますが、3番目の警告は抑制されます。 コード例のビルド出力を次に示します。
 
@@ -78,13 +78,13 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-コードC++をより適切に記述するための主要ガイドラインがあります。 ただし、ルールまたはプロファイルを適用できないインスタンスがある場合は、コード内で直接非表示にするのが簡単です。 @No__t-0 属性を使用して、次C++のコードブロックの規則違反を検出して報告するようにコアチェックを継続することができます。 個々のステートメントをマークして、特定のルールを抑制することができます。 特定のルール番号を含めずに `[[gsl::suppress(bounds)]]` を記述して、境界プロファイル全体を抑制することもできます。
+コードC++をより適切に記述するための主要ガイドラインがあります。 ただし、ルールまたはプロファイルを適用できないインスタンスがある場合は、コード内で直接非表示にするのが簡単です。 @No__t_0 属性を使用して、次C++のコードブロックの規則違反を検出および報告するようにコアチェックを維持することができます。 個々のステートメントをマークして、特定のルールを抑制することができます。 特定のルール番号を含めずに `[[gsl::suppress(bounds)]]` を記述して、境界プロファイル全体を抑制することもできます。
 
 ## <a name="supported-rule-sets"></a>サポートされている規則セット
 
 新しいルールがC++コアガイドラインチェッカーに追加されると、既存のコードに対して生成される警告の数が増加する可能性があります。 定義済みの規則セットを使用して、有効にする規則の種類をフィルター処理できます。 Visual Studio 2017 バージョン15.3 の場合、サポートされている規則セットは次のとおりです。
 
-- **所有者ポインター**の規則[は、コアガイドラインのC++所有者 @ no__t-2T > に関連するリソース管理のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
 - **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
 
@@ -96,7 +96,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
 - **型ルール**で[は、 C++コアガイドラインのタイププロファイル](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)が適用されます。
 
-警告を1つまたは複数のグループに制限することを選択できます。 **ネイティブの最小**および**ネイティブで推奨**されるC++規則セットには、他の PREfast チェックに加えて、コアチェック規則が含まれています。 確認には、使用可能なルール セット、プロジェクトのプロパティ ダイアログを開き、次のように選択します**コード Analysis\General**、にあるボックスを開き、**規則セット**コンボ ボックス、および選択**複数の規則セットの選択**。 Visual Studio での規則セットの使用方法の詳細については、「[規則セットを使用したコード分析規則のグループ化](using-rule-sets-to-group-code-analysis-rules.md)」を参照してください。
+警告を1つまたは複数のグループに制限することを選択できます。 **ネイティブの最小**および**ネイティブで推奨**されるC++規則セットには、他の PREfast チェックに加えて、コアチェック規則が含まれています。 使用可能な規則セットを表示するには、プロジェクトのプロパティ ダイアログボックスを開き、**コード分析** を選択し、**規則セット** コンボボックスでドロップダウンを開き、 **複数の規則セットを選択**します を選択します。 Visual Studio での規則セットの使用方法の詳細については、「[規則セットを使用したコード分析規則のグループ化](using-rule-sets-to-group-code-analysis-rules.md)」を参照してください。
 
 ## <a name="macros"></a>[マクロ]
 
@@ -122,7 +122,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 ## <a name="attributes"></a>属性
 
-Microsoft Visual C++コンパイラでは、gsl 抑制属性が制限付きでサポートされています。 関数内の expression ステートメントおよび block ステートメントの警告を抑制するために使用できます。
+Microsoft C++コンパイラでは、gsl 抑制属性のサポートが制限されています。 関数内の expression ステートメントおよび block ステートメントの警告を抑制するために使用できます。
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -154,18 +154,18 @@ Microsoft Visual C++コンパイラでは、gsl 抑制属性が制限付きで�
 
 3. **[追加オプション]** ウィンドウで、`/wd26400` を追加します。
 
-コマンドラインオプションを使用して、`/analyze-` を指定することにより、ファイルのすべてのコード分析を一時的に無効にすることができます。 これにより、' */analyze ' を '/analyze e-' でオーバーライド*する警告 D9025 が生成されます。これにより、後でコード分析を再度有効にするように通知されます。
+[コマンドライン] オプションを使用すると、`/analyze-` を指定することによって、ファイルのすべてのコード分析を一時的に無効にすることができます。 これにより、' */analyze ' を '/analyze e-' でオーバーライド*する警告 D9025 が生成されます。これにより、後でコード分析を再度有効にするように通知されます。
 
 ## <a name="corecheck_per_file"></a>特定のC++プロジェクトファイルに対する主要なガイドラインチェッカーの有効化
 
 場合によっては、フォーカスのあるコード分析を行っても、Visual Studio IDE を活用すると役立つことがあります。 次に示すのは、大規模なプロジェクトでビルド時間を節約し、結果をフィルター処理しやすくするために使用できるサンプルシナリオです。
 
-1. コマンドシェルで、`esp.extension` と `esp.annotationbuildlevel` の環境変数を設定します。
+1. コマンドシェルで、`esp.extension` と `esp.annotationbuildlevel` 環境変数を設定します。
 2. コマンドシェルから Visual Studio を開き、これらの変数を継承します。
 3. プロジェクトを読み込み、そのプロパティを開きます。
 4. コード分析を有効にし、適切な規則セットを選択します。ただし、コード分析の拡張機能は有効にしません。
 5. C++コアガイドラインチェッカーを使用して分析するファイルにアクセスし、そのプロパティを開きます。
-6. **[C/C++\ コマンドラインオプション]** を選択して `/analyze:plugin EspXEngine.dll` を追加する
+6. **[C/C++\ コマンドラインオプション]** を選択し、`/analyze:plugin EspXEngine.dll` を追加します。
 7. プリコンパイル済みヘッダーの使用を無効にします (**C//C++プリコンパイル済みヘッダー**)。 これは、拡張エンジンがプリコンパイル済みヘッダーから内部情報を読み取ることができ、後者が既定のプロジェクトオプションを使用してコンパイルされた場合、互換性がないために必要です。
 8. プロジェクトをリビルドします。 共通の PREFast チェックはすべてのファイルで実行する必要があります。 C++コアガイドラインチェッカーは既定では有効になっていないため、これを使用するように構成されているファイルでのみ実行する必要があります。
 
@@ -186,7 +186,7 @@ Microsoft Visual C++コンパイラでは、gsl 抑制属性が制限付きで�
 
 これらのプロパティは、必ず、Microsoft .Cpp. .targets ファイルをインポートする前に追加してください。 特定の規則セットを選択するか、カスタム規則セットを作成するか、他の PREfast チェックを含む既定の規則セットを使用することができます。
 
-コアチェッカーはC++ 、[前述](#corecheck_per_file)の方法と同じ方法を使用して、指定したファイルに対してのみ実行できますが、MSBuild ファイルを使用します。 環境変数は、@no__t 0 の項目を使用して設定できます。
+コアチェッカーはC++ 、[前述](#corecheck_per_file)の方法と同じ方法を使用して、指定したファイルに対してのみ実行できますが、MSBuild ファイルを使用します。 環境変数は、`BuildMacro` 項目を使用して設定できます。
 
 ```xml
 <ItemGroup>
@@ -213,20 +213,20 @@ MSBuild に依存しないビルドシステムを使用する場合でも、引
 いくつかの環境変数を設定し、コンパイラに適切なコマンドラインオプションを使用する必要があります。 "ネイティブツールコマンドプロンプト" 環境で作業することをお勧めします。これにより、コンパイラの特定のパス、インクルードディレクトリなどを検索する必要がなくなります。
 
 1. **環境変数**
-   - `set esp.extensions=cppcorecheck.dll`: C++コアガイドラインモジュールを読み込むようにエンジンに指示します。
-   - `set esp.annotationbuildlevel=ignore` にすると、SAL 注釈を処理するロジックが無効になります。 注釈は、 C++コアガイドラインチェッカーのコード分析には影響しませんが、処理には時間がかかります (時間がかかることがあります)。 この設定は省略可能ですが、強くお勧めします。
-   - @no__t 0 は、標準ヘッダーで起動する警告を無効にすることを強くお勧めします。 ここでは、プロジェクトの共通ヘッダーへのパスなど、さらにパスを追加できます。
+   - `set esp.extensions=cppcorecheck.dll`、 C++コアガイドラインモジュールを読み込むようにエンジンに指示します。
+   - `set esp.annotationbuildlevel=ignore` すると、SAL 注釈を処理するロジックが無効になります。 注釈は、 C++コアガイドラインチェッカーのコード分析には影響しませんが、処理には時間がかかります (時間がかかることがあります)。 この設定は省略可能ですが、強くお勧めします。
+   - `set caexcludepath=%include%` 標準ヘッダーで起動する警告を無効にすることを強くお勧めします。 ここでは、プロジェクトの共通ヘッダーへのパスなど、さらにパスを追加できます。
 2. **コマンドラインオプション**
-   - `/analyze` を使用すると、コード分析が可能になります (/analyze: only と/analyze: quiet も使用することを検討してください)。
-   - `/analyze:plugin EspXEngine.dll` このオプションは、PREfast にコード分析拡張エンジンを読み込みます。 次に、このエンジンはC++コアガイドラインチェッカーを読み込みます。
+   - `/analyze` により、コード分析が可能になります (/analyze: only と/analyze: quiet も使用することを検討してください)。
+   - このオプション `/analyze:plugin EspXEngine.dll`、PREfast にコード分析拡張エンジンを読み込みます。 次に、このエンジンはC++コアガイドラインチェッカーを読み込みます。
 
 ## <a name="use-the-guideline-support-library"></a>ガイドラインサポートライブラリを使用する
 
-ガイドラインサポートライブラリは、主要なガイドラインに従うことができるように設計されています。 GSL には、エラーが発生しやすい構造を代替として置き換えることができる定義が含まれています。 たとえば、パラメーターの @no__t 0 のペアを `span<T>` の型に置き換えることができます。 GSL は[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)で入手できます。 ライブラリはオープンソースであるため、ソースの表示、コメントの作成、または投稿を行うことができます。 このプロジェクトは[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)で参照できます。
+ガイドラインサポートライブラリは、主要なガイドラインに従うことができるように設計されています。 GSL には、エラーが発生しやすい構造を代替として置き換えることができる定義が含まれています。 たとえば、`T*, length` のパラメーターのペアを `span<T>` 型に置き換えることができます。 GSL は[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)で入手できます。 ライブラリはオープンソースであるため、ソースの表示、コメントの作成、または投稿を行うことができます。 プロジェクトは[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)にあります。
 
 ## <a name="vs2015_corecheck"></a>Visual Studio C++ 2015 プロジェクトのコアチェックガイドラインを使用する
 
-Visual Studio 2015 を使用する場合、 C++コアチェックのコード分析規則セットは既定ではインストールされません。 Visual Studio 2015 のコアチェックコード分析ツールを有効C++にするには、いくつかの追加の手順を実行する必要があります。 Microsoft では、Nuget パッケージを使用して Visual Studio 2015 プロジェクトのサポートを提供しています。 このパッケージには CppCoreCheck という名前が付けられており、 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)で入手できます。 このパッケージには、少なくとも Visual Studio 2015 with Update 1 がインストールされている必要があります。
+Visual Studio 2015 を使用する場合、 C++コアチェックのコード分析規則セットは既定ではインストールされません。 Visual Studio 2015 のコアチェックコード分析ツールを有効C++にするには、いくつかの追加の手順を実行する必要があります。 Microsoft では、Nuget パッケージを使用して Visual Studio 2015 プロジェクトのサポートを提供しています。 パッケージは CppCoreCheck という名前で、 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)で入手できます。 このパッケージには、少なくとも Visual Studio 2015 with Update 1 がインストールされている必要があります。
 
 また、パッケージは、ヘッダーのみのガイドラインサポートライブラリ (GSL) である依存関係として別のパッケージをインストールします。 GSL は、 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)で GitHub から入手することもできます。
 

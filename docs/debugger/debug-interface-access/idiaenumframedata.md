@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20fa21d739c79dad94a8445f6d0fe811337fd40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833620"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744564"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
-データ ソースに含まれるさまざまなフレーム データ要素を列挙します。
+データソースに格納されているさまざまなフレームデータ要素を列挙します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,27 +29,27 @@ IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表は、メソッドの`IDiaEnumFrameData`します。
+次の表は、`IDiaEnumFrameData` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|取得、`IEnumVARIANT Interface`この列挙子のバージョン。|
-|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|フレーム データ要素の数を取得します。|
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|インデックスを使用して、フレーム データ要素を取得します。|
-|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|指定した列挙体シーケンス内のデータ要素のフレーム数を取得します。|
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|指定された数の列挙体シーケンス内のデータ要素のフレームをスキップします。|
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|この列挙子の `IEnumVARIANT Interface` バージョンを取得します。|
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|フレームデータ要素の数を取得します。|
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|インデックスを使って、フレームデータ要素を取得します。|
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|列挙シーケンス内の指定された数のフレームデータ要素を取得します。|
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|列挙シーケンス内の指定された数のフレームデータ要素をスキップします。|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|相対仮想アドレス (RVA) でフレームを返します。|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|仮想アドレス (VA) でフレームを返します。|
 
 ## <a name="remarks"></a>Remarks
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-このインターフェイスから取得、 [idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)メソッド。 詳細については、例を参照してください。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+[IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)メソッドからこのインターフェイスを取得します。 詳細については、例を参照してください。
 
 ## <a name="example"></a>例
-この例は、取得する方法を示します (、`GetEnumFrameData`関数) を使用して、(、`ShowFrameData`関数)、`IDiaEnumFrameData`インターフェイス。 参照してください、 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)インターフェイスの例については、`PrintFrameData`関数。
+この例では、(`GetEnumFrameData` 関数) を取得し、`IDiaEnumFrameData` インターフェイスで (`ShowFrameData` 関数) を使用する方法を示します。 @No__t_1 関数の例については、 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)インターフェイスを参照してください。
 
 ```C++
 
@@ -100,12 +100,12 @@ void ShowFrameData(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>必要条件
-**ヘッダー:** Dia2.h
+## <a name="requirements"></a>［要件］
+**ヘッダー:** Dia2
 
-**ライブラリ:** diaguids.lib
+**ライブラリ:** diaguids
 
-**DLL:** msdia80.dll
+**Dll:** msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

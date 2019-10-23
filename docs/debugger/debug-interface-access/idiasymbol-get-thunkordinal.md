@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_thunkordinal |Microsoft Docs
+title: 'IDiaSymbol:: get_thunkOrdinal |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dadfff62502af59652e9113553e13b4942c540f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3bc8c523886d694ea413dedcf9a28e53e361882b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64822640"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739135"
 ---
-# <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
-関数のサンクの型を取得します。
+# <a name="idiasymbolget_thunkordinal"></a>IDiaSymbol::get_thunkOrdinal
+関数のサンク型を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,18 +33,18 @@ HRESULT get_thunkOrdinal ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]値を返します、 [THUNK_ORDINAL 列挙型](../../debugger/debug-interface-access/thunk-ordinal.md)関数のサンクの型を指定する列挙体。
+入出力関数のサンク型を指定する値を[THUNK_ORDINAL enumeration](../../debugger/debug-interface-access/thunk-ordinal.md)列挙から返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- このプロパティは有効な場合にのみとしてシンボルを[SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)の値`SymTagThunk`します。
+ このプロパティは、シンボルが[Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md)値 `SymTagThunk` の場合にのみ有効です。
 
- 「サンク」は、32 ビット メモリ アドレス空間 (フラットのアドレス空間とも呼ばれます) と (セグメント化されたアドレス空間と呼ばれます)、16 ビットのアドレス空間を変換するコードです。
+ "サンク" は、32ビットのメモリアドレス空間 (フラットアドレス空間とも呼ばれます) と16ビットのアドレス空間 (セグメント化されたアドレス空間と呼ばれます) の間で変換を行うコードの一部です。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

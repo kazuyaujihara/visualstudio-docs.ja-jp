@@ -1,5 +1,5 @@
 ---
-title: 要素のシンボル |Microsoft Docs
+title: Symbols 要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 303d13d94a413ad3ce17e0bd2b56fe95455e9f54
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce299f99699a7bc048b3dc7da39aea3f734addeb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316661"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719400"
 ---
 # <a name="symbols-element"></a>Symbols 要素
-Guid およびその他の VSCT 要素で使用される Id を定義します。 アンマネージ コードは、この情報通常は、ヘッダー ファイルで指定されている[Extern 要素](../extensibility/extern-element.md)します。 マネージ コードがこの情報を定義するシンボルの要素の子要素。
+他の VSCT 要素によって使用される Guid と Id を定義します。 アンマネージコードの場合、この情報は通常、 [Extern 要素](../extensibility/extern-element.md)によって指定されたヘッダーファイルから取得されます。 マネージコードでは、Symbols 要素の子要素を使用して、この情報を定義します。
 
- 既存の .cto ファイルから .vsct ファイルを作成する場合、シンボルがシンボル要素の子として生成されます。 詳細については、「[方法 :作成します。既存の Vsct ファイルです。Cto ファイル](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)します。
+ 既存の cto ファイルからの vsct ファイルを作成した場合、シンボルは Symbols 要素の子として生成されます。 詳細については、「[方法: を作成する」を参照してください。既存のからの vsct ファイル。Cto ファイル](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
 
- Symbols 要素と混同しないで、[定義要素](../extensibility/define-element.md)、プリプロセッサによって使用される名前と値のペアを定義します。
+ Symbols 要素は、プリプロセッサによって使用される名前と値のペアを定義する[Define 要素](../extensibility/define-element.md)と混同しないようにしてください。
 
 ## <a name="syntax"></a>構文
 
@@ -41,20 +41,20 @@ Guid およびその他の VSCT 要素で使用される Id を定義します�
 
 |属性|説明|
 |---------------|-----------------|
-|なし||
+|None||
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|GuidSymbol|GUID 記号を定義します。 GuidSymbol が 2 つの必須属性: 名前と値。 名前は、シンボルの名前と値が文字列として GUID の値。<br /><br /> 例:\<GuidSymbol 名"guidVsPackage1Pkg"の値を = ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/>|
-|IDSymbol|シンボルを定義します。 IDSymbol が 2 つの必須属性: 名前と値。 名前は、シンボルの名前と値が文字列としての記号の値。<br /><br /> 例:\<IDSymbol 名"MyMenuGroup"の値を = ="0x1020"/>|
+|いる guidsymbol|GUID シンボルを定義します。 GuidSymbol には、名前と値の2つの必須の属性があります。 名前は記号の名前で、値は文字列としての GUID の値です。<br /><br /> 例: \<GuidSymbol name = "guidVsPackage1Pkg" value = "{c5f54698-101a-4846-84d3-dc748f9cd848}"/>|
+|IDSymbol|シンボルを定義します。 IDSymbol には、name と value という2つの必須の属性があります。 名前は記号の名前で、値は文字列として記号の値になります。<br /><br /> 例: \<IDSymbol name = "MyMenuGroup" value = "0xが 0"/>|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[CommandTable 要素](../extensibility/commandtable-element.md)|.Vsct ファイルのルート要素。|
+|[CommandTable 要素](../extensibility/commandtable-element.md)|Vsct ファイルのルート要素。|
 
 ## <a name="example"></a>例
 

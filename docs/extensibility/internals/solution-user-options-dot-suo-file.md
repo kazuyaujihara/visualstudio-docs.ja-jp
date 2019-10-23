@@ -1,5 +1,5 @@
 ---
-title: ソリューション ユーザー オプション (します。Suo) ファイル |Microsoft Docs
+title: ソリューションユーザーオプション (..Suo) File |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,27 +14,27 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e54f89b9f231e4ae18e200718a5cc25cb3f3ceb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6f21e4a4a6530692709247e64b0d84aa7b06eb3a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322626"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723810"
 ---
 # <a name="solution-user-options-suo-file"></a>ソリューション ユーザー オプション (.Suo) ファイル
-ソリューション ユーザー オプション (.suo) ファイルには、ユーザーごとにソリューションのオプションが含まれています。 このファイルは、ソース コード管理にないチェックする必要があります。
+ソリューションユーザーオプション (.suo) ファイルには、ユーザーごとのソリューションオプションが含まれています。 このファイルをソースコード管理にチェックインしないでください。
 
- ソリューション ユーザー オプション (.suo) ファイルとは、構造化ストレージ、または複合、バイナリ形式で格納されているファイルです。 .Suo ファイル内の情報を識別するために使用されるキーをされているストリームの名前を持つには、ストリームにユーザー情報を保存します。 ソリューション ユーザー オプション ファイルは、ユーザーの設定を格納するために使用し、Visual Studio ソリューションを保存するときに自動的に作成されます。
+ ソリューションユーザーオプション (.suo) ファイルは、バイナリ形式で格納された構造化ストレージ (複合ファイル) です。 ユーザー情報をストリームに保存します。ストリームの名前は、.suo ファイル内の情報を識別するために使用されるキーです。 ソリューションユーザーオプションファイルは、ユーザー設定を保存するために使用され、Visual Studio がソリューションを保存するときに自動的に作成されます。
 
- 環境では、.suo ファイルが開いたら、現在読み込まれているすべての Vspackage を列挙します。 VSPackage に実装されている場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>インターフェイス、その環境は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> .suo ファイルからそのすべてのデータを読み込むことを VSPackage にメソッド。
+ 環境で .suo ファイルが開かれると、現在読み込まれているすべての Vspackage が列挙されます。 VSPackage が <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> インターフェイスを実装している場合、環境は、.suo ファイルからすべてのデータを読み込むように求める VSPackage の <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> メソッドを呼び出します。
 
- .Suo ファイルに書き込まれた、VSPackage の責任にどのようなストリームを把握することをお勧めします。 それを記述した各ストリームでは、VSPackage にコールバックを通じて環境<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A>ストリームの名前を指定すると、キーによって識別される特定のストリームを読み込めません。 ストリームの名前を渡してその特定のストリームの読み取りに VSPackage に、環境をバックアップし呼び出しますと`IStream`へのポインター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A>メソッド。
+ VSPackage は、.suo ファイルに書き込まれたストリームを知る必要があります。 VSPackage は、記述されたストリームごとに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> を通じて環境にコールバックし、ストリームの名前であるキーによって識別される特定のストリームを読み込みます。 次に、環境は VSPackage にコールバックし、ストリームの名前と <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> メソッドへの `IStream` ポインターを渡して、特定のストリームを読み取ります。
 
- 別の呼び出しが行われた時点で、`LoadUserOptions`するかどうかは、読み取る必要があります .suo ファイルの別のセクションを参照してください。 このプロセスでは、すべて .suo ファイル内のデータ ストリームの読み取りし、環境によって処理されるまで続けられます。
+ その時点で、`LoadUserOptions` に別の呼び出しが行われ、.suo ファイルの別のセクションに読み取る必要があるかどうかが確認されます。 このプロセスは、.suo ファイル内のすべてのデータストリームが環境によって読み取られ、処理されるまで続きます。
 
- ソリューションが保存または閉じると、環境は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A>メソッドへのポインターを<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A>メソッド。 `IStream`に渡されるを保存するバイナリ情報を含む、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A>メソッドを呼び出し、.suo ファイルに情報を書き込みます、 `SaveUserOptions` .suo に書き込む情報の別のストリームがあるかどうかをもう一度メソッドファイルです。
+ ソリューションが保存または閉じられると、環境は <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> メソッドへのポインターを使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> メソッドを呼び出します。 保存するバイナリ情報を含む `IStream` は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> メソッドに渡されます。このメソッドは、.suo ファイルに情報を書き込み、もう一度 `SaveUserOptions` メソッドを呼び出して、.suo ファイルに書き込む情報の別のストリームがあるかどうかを確認します。
 
- これら 2 つのメソッド、`SaveUserOptions`と`WriteUserOptions`へのポインターを渡して、.suo ファイルに保存する情報の各ストリームに対して再帰的に呼び出される`IVsSolutionPersistence`します。 .Suo ファイルに複数のストリームの書き込みを許可するには、再帰的に、呼び出されます。 この方法で、ユーザー情報は、ソリューションに保存されてし、次回にソリューションを開いたときにあることが保証されます。
+ これらの2つのメソッド (`SaveUserOptions` と `WriteUserOptions`) は、.suo ファイルに保存される情報のストリームごとに再帰的に呼び出され、`IVsSolutionPersistence` へのポインターで渡されます。 これらは再帰的に呼び出され、.suo ファイルへの複数のストリームの書き込みを可能にします。 このようにすると、ユーザー情報はソリューションと共に保持され、次にソリューションを開いたときに確実に表示されます。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

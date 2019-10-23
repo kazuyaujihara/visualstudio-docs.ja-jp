@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::clone |Microsoft Docs
+title: 'IDiaEnumInjectedSources:: Clone |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9baba1709e3e89a982c0347cb744950a14cbb0b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554132"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744542"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-現在の列挙子と同じ列挙状態を格納する列挙子を作成します。
+現在の列挙子と同じ列挙状態を含む列挙子を作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>パラメーター
  `ppenum`
 
-[out]返します、 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)列挙子の重複を含むオブジェクト。 挿入されたソースが重複していない、列挙子。
+入出力列挙子の複製を含む[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)オブジェクトを返します。 挿入されたソースは重複しておらず、列挙子のみです。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

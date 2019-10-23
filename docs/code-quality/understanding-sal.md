@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: e3740b9a7544d6cc6d5b9eceb548ae66e7d3f474
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: 6c58a8020b13c2d958fe17838960db77c7286ce8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445602"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745874"
 ---
 # <a name="understanding-sal"></a>SAL について
 
@@ -404,7 +404,7 @@ Microsoft パブリックヘッダーには既に注釈が付けられていま�
 
 [コード分析チームのブログ](http://go.microsoft.com/fwlink/p/?LinkId=251197)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)

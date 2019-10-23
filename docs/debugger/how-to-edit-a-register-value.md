@@ -1,5 +1,5 @@
 ---
-title: '方法: レジスタ値を編集 |Microsoft Docs'
+title: '方法: レジスタ値を編集するMicrosoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388416"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733419"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>方法: レジスタ値を編集 (C#、 C++、Visual Basic、 F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>方法: レジスタ値を編集する (C#、 C++、Visual Basic、 F#)
 
-[レジスタ] ウィンドウは、**[オプション]** ダイアログ ボックス、**[デバッグ]** ノードで、アドレスレベルのデバッグが有効になっている場合にのみ、使用できます。
+[レジスタ] ウィンドウは、 **[オプション]** ダイアログ ボックス、 **[デバッグ]** ノードで、アドレスレベルのデバッグが有効になっている場合にのみ、使用できます。
 
 ### <a name="to-change-the-value-of-a-register"></a>レジスタ値を変更するには
 

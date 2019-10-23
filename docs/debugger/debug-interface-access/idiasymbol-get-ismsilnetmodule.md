@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_ismsilnetmodule |Microsoft Docs
+title: 'IDiaSymbol:: get_isMSILNetmodule |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb96291f7a867bcdd0248cc68c2fbccb6ac9f87
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 322a4ef059c190e3ba73bbce6f80978530270ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64828794"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740185"
 ---
-# <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-モジュールは、.netmodule (メタデータおよびネイティブ シンボルのみを含む Microsoft Intermediate Language (MSIL) モジュール) かどうかを示すフラグを取得します。
+# <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
+モジュールが .netmodule (メタデータのみを含みネイティブシンボルを含まない Microsoft 中間言語 (MSIL) モジュール) かどうかを示すフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,23 +33,23 @@ HRESULT get_isMSILNetmodule(
 #### <a name="parameters"></a>パラメーター
  `pFlag`
 
-[out]返します`TRUE`; MSIL モジュールの場合を返しますそれ以外の場合、`FALSE`します。
+入出力モジュールが MSIL の場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- このプロパティは、`SymTagCompilandDetails`記号の型 (を参照してください[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md))。
+ このプロパティは `SymTagCompilandDetails` 記号の種類から使用できます (「 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)」を参照してください)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK バージョン 8.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

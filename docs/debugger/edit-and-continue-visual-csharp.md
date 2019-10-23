@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186357"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737928"
 ---
 # <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C#)
  C# のエディット コンティニュを使用すると、デバッグ中に中断モードでコードに変更を加えることができます。 デバッグ セッションを停止したり再開したりしなくても、変更を適用できます。 実行モードでは、ソース エディターは読み取り専用です。
 
- エディット コンティニュは、デバッグ セッションで行う必要があるほとんどの変更をサポートしますが、いくつか例外があります。 詳細については、 [(C# および Visual Basic) のサポートされているコード変更](../debugger/supported-code-changes-csharp.md) を参照してください。
+ エディット コンティニュは、デバッグ セッションで行う必要があるほとんどの変更をサポートしますが、いくつか例外があります。 詳細については、「[サポートさC#れているコード変更 (および Visual Basic)](../debugger/supported-code-changes-csharp.md)」を参照してください。
 
  エディットコンティニュは、Windows 10 の UWP、および .NET Framework 4.6 デスクトップ以降のバージョンを対象とする x86 および x64 アプリでサポートされています (.NET Framework はデスクトップバージョンのみ)。
 
@@ -36,9 +36,9 @@ ms.locfileid: "71186357"
 
  エディット コンティニュが有効なときは、 **[続行]** 、 **[ステップ]** 、 **[次のステートメントの設定]** などのデバッガー実行コマンドを使用したり、デバッガー ウィンドウで関数の評価を実行したりすると、サポートされている変更が自動的に適用されます。
 
- 詳細については、「[方法 :エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)」を参照してください。
+ 詳細については、「[方法: エディットコンティニュを使用C#する ()](../debugger/how-to-use-edit-and-continue-csharp.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-- [サポートされているコード変更 (C# および Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [サポートされてC#いるコード変更 (および Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [XAML を使用した実行中の XAML コードの作成とデバッグ Visual Studio でのホットリロード](../debugger/xaml-hot-reload.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_unmodifiedtype |Microsoft Docs
+title: 'IDiaSymbol:: get_unmodifiedType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47841f5fe4abeafe7c522784db337b1960081439
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806762"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738980"
 ---
-# <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-このシンボルには、元の型を取得します。 使用する場合、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)型に設定されます。
+# <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
+この記号の元の型を取得します。 [Symtagenum 列挙体](../../debugger/debug-interface-access/symtagenum.md)が型に設定されている場合は、を使用します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,23 +33,23 @@ HRESULT get_unmodifiedType( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)このシンボルの元の型を表すオブジェクト。
+入出力このシンボルの元の型を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- 現在の型が、返された元の型を変更します。 シンボルの元の型は、まず、記号の種類を取得し、元の型の型を返すを問い合わせるで決定できます。 いくつかの記号は、元の型の変更後の型を持てませんに注意してください。
+ 現在の型は、返された元の型を変更します。 シンボルの元の型を決定するには、最初にシンボルの型を取得し、次に元の型に対して返された型を問い合わせるします。 一部のシンボルでは、元の型の変更された型を持つことができないことに注意してください。
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

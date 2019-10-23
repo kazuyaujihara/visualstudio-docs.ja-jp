@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252512"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728596"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>チュートリアル: Visual Studio での並列アプリケーションのデバッグC#(、Visual Basic C++、)
 
@@ -45,7 +45,7 @@ ms.locfileid: "71252512"
 
 - グループ化やズームなどの機能を使用してウィンドウの表示を調整する方法
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルでは**マイコードのみ**が有効になっていることを前提としています (より新しいバージョンの Visual Studio では既定で有効になっています)。 **[ツール]** メニューの **[オプション]** をクリックし、 **[デバッグ]** ノードを展開して **[全般]** を選択し、 **['マイ コードのみ' 設定を有効にする]** を選択します。 この機能が設定されていなくてもこのチュートリアルを使用できますが、図と異なる結果になる可能性があります。
 
 ## <a name="c-sample"></a>C# のサンプル
@@ -119,7 +119,7 @@ ms.locfileid: "71252512"
 
      一方のボックスにはメイン スレッドの呼び出し履歴が表示され、もう一方のボックスには他の 4 つのスレッドの呼び出し履歴がグループ化されて表示されています。 4 つのスレッドがグループ化されているのは、これらのスレッドのスタック フレームが同じメソッド コンテキストを共有している (`A`、`B`、`C` という同じメソッドにある) からです。 同じボックスを共有しているスレッドのスレッド Id と名前を表示するには、ヘッダーを持つボックスの上にマウスポインターを移動します (4 個の**スレッド**)。 現在のスレッドは太字で表示されます。
 
-     ![スレッド id と名前を示すツールヒント](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
+     ![スレッド Id と名前を示すツールヒント](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
 
      黄色の矢印は、現在のスレッドのアクティブなスタック フレームを示します。
 
@@ -127,7 +127,7 @@ ms.locfileid: "71252512"
 
      ボックスを囲む青の強調表示は、そのボックスに現在のスレッドが含まれていることを示します。 現在のスレッドは、ツールヒントで太字のスタック フレームによっても示されます。 [スレッド] ウィンドウでメイン スレッドをダブルクリックすると、それに応じて **[並列スタック]** ウィンドウの青の強調表示が移動します。
 
-     ![並列スタックウィンドウで強調表示]されたメインスレッド(../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")
+     ![並列スタックウィンドウで強調表示されたメインスレッド](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>2 つ目のブレークポイントまで実行を再開するには
 
@@ -199,7 +199,7 @@ ms.locfileid: "71252512"
 
      **[並列スタック]** ウィンドウに大きな図がある場合は、**バード アイ ビュー**も便利です。 既定では、**鳥の目のビュー**はオンになっています。 ただし、次の図に示すように、ウィンドウの右下隅にあるスクロールバーの間にあるボタンをクリックすると、切り替えることができます。
 
-     ![並列スタックウィンドウの概観ビュー&#45;](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
+     ![&#45;並列スタックウィンドウの概観ビュー](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 
      鳥の目のビューでは、四角形を移動して図をすばやくパンできます。
 
@@ -244,9 +244,9 @@ ms.locfileid: "71252512"
 
      ![[タスク] ウィンドウの2つの待機中のタスク](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     一方、タスク 4 は、タスク 2 に割り当てられているスレッドが所有するモニターを待機しています。 (ヘッダー行を右クリックして [**列** > **スレッド割り当て**] を選択すると、タスク2のスレッド割り当て値が表示されます)。
+     一方、タスク 4 は、タスク 2 に割り当てられているスレッドが所有するモニターを待機しています。 (ヘッダー行を右クリックし、[**列** > **スレッド割り当て**] を選択すると、タスク2のスレッド割り当て値が表示されます)。
 
-     [![タスク] ウィンドウの待機中のタスクとツールヒント](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
+     ![[タスク] ウィンドウの待機中のタスクとツールヒント](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
      タスクにフラグを付けるには、 **[タスク]** ウィンドウの最初の列にあるフラグをクリックします。
 
@@ -278,7 +278,7 @@ ms.locfileid: "71252512"
 
      **[並列スタック]** ウィンドウで、S.P を右クリックし、 **[スレッドに移動]** をクリックします。 ウィンドウがスレッド ビューに切り替わり、対応するフレームが表示されます。 両方のタスクが同じスレッドにあることがわかります。
 
-     ![スレッドビューで強調表示]されたスレッド(../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")
+     ![スレッドビューで強調表示されたスレッド](../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")
 
      これもまた、 **[スレッド]** ウィンドウにはない、 **[並列スタック]** ウィンドウのタスク ビューならではの利点です。
 
@@ -298,7 +298,7 @@ ms.locfileid: "71252512"
 
      タスクを列でグループ化することもできます。 **[タスク]** ウィンドウで、 **[状態]** 列のヘッダーを右クリックし、 **[状態でグループ化]** をクリックします。 次の図は、 **[タスク]** ウィンドウを状態別にグループ化した状態を示しています。
 
-     ![[タスク] ウィンドウのグループ化]されたタスク(../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")
+     ![[タスク] ウィンドウのグループ化されたタスク](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")
 
      ほかにも任意の列でグループ化できます。 タスクをグループ化すると、一部のタスクに焦点を絞ることができます。 各グループは折りたたみ可能で、それぞれにグループ化されている項目の数が表示されます。
 

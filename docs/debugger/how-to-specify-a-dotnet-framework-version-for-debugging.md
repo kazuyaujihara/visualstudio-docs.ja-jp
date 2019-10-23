@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 1f6107d6396c6228be1d511e81003fbe7faf06c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535976"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732636"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>デバッグ用に古い .NET Framework バージョンを指定C#する (、 F#Visual Basic、)
 
@@ -64,5 +64,5 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
      それでもデバッグの開始時にエラー メッセージが表示される場合は、レジストリに正しいバージョン番号が入力されていることを確認します。 また、Visual Studio でサポートされている .NET Framework のバージョンを使用していることを確認します。 デバッガーは、現在のバージョンおよび以前のバージョンの .NET Framework と互換性がありますが、将来のバージョンとの上位互換性はない可能性があります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)

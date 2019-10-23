@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e459d4429d712a9ca4c245d581c6be3578711cd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e4269c620247f256d2cfae2e84b76ff60fcf9ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855116"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738607"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概要 (Debug Interface Access SDK)
-DIA SDK を使用して、Microsoft のデバッグ情報にアクセスします。 DIA SDK では、COM ベースの Microsoft デバッグ情報の形式が変更されるたびにコードを書き直す必要がなくなります API セットを提供します。 DIA SDK では以前のバージョンによって生成される .pdb ファイルと .dbg ファイルで設定されているデバッグ情報の一部から読み取ることもできます[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]5.0 以降のバージョン。
+Microsoft デバッグ情報にアクセスするには、DIA SDK を使用します。 DIA SDK には、Microsoft がデバッグ情報の形式を変更するたびにコードを書き直す必要がなくなり、COM ベースの API セットが用意されています。 DIA SDK では、[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] バージョン5.0 以降で生成される .pdb ファイルと dbg ファイルにある、以前のバージョンのデバッグ情報のセットから読み取ることもできます。
 
- DIA SDK 内の各インターフェイスは、それ以外の場合に記載されている場合を除く別の COM オブジェクトを表します。 追加のインターフェイス、およびその他のオブジェクトが作成、明示的なクエリを使用してなど[idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)または[idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)を呼び出すことではなく、`QueryInterface`で既存のインターフェイス ポインター。
+ DIA SDK 内の各インターフェイスは、特に指定されていない場合を除き、異なる COM オブジェクトを表します。 追加のインターフェイス (つまり、追加のオブジェクト) は、既存のインターフェイスポインターで `QueryInterface` を呼び出すことなく、 [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)や[IDiaSession:: findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)などの明示的なクエリによって作成されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortName |Microsoft Docs
+title: 'IDebugPort2:: GetPortName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2b058466608597656641a013a4dea0c1bc5716f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a382a77693fc8839721c0cdd139af2dd5208c69
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727720"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
-ポートの名前を取得します。
+ポート名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int GetPortName( 
 
 ## <a name="parameters"></a>パラメーター
 `pbstrName`\
-[out]ポートの名前を返します。
+入出力ポートの名前を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

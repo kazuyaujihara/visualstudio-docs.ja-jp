@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkframe::readmemory |Microsoft Docs
+title: 'IDiaStackWalkFrame:: readMemory |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837915"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741473"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
-イメージからは、メモリを読み取ります。
+イメージからメモリを読み取ります。
 
 ## <a name="syntax"></a>構文
 
@@ -37,26 +37,26 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>パラメーター
  `type`
 
-[in]1 つ、 [MemoryTypeEnum 列挙型](../../debugger/debug-interface-access/memorytypeenum.md)にアクセスするメモリの種類を指定する列挙値。
+からアクセスするメモリの種類を指定する[Memorytypeenum 列挙](../../debugger/debug-interface-access/memorytypeenum.md)値の1つ。
 
  `va`
 
-[in]読み取りを開始するイメージ内の仮想アドレスの位置。
+から読み取りを開始するイメージ内の仮想アドレスの場所。
 
  `cbData`
 
-[in]データバッファのサイズ（バイト単位）。
+からデータバッファーのサイズ (バイト単位)。
 
  `pcbData`
 
-[out]返されるバイト数を返します。 場合`data`は`NULL`、し`pcbData`使用可能なデータのバイト数合計にはが含まれています。
+入出力返されたバイト数を返します。 @No__t_0 が `NULL` 場合、`pcbData` には、使用可能なデータの合計バイト数が含まれます。
 
  `data`
 
-[out]指定された場所からのデータと共に格納されるバッファー。
+入出力指定された場所からデータを格納するバッファー。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

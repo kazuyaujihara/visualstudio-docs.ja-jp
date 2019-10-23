@@ -1,5 +1,5 @@
 ---
-title: 入れ子になったプロジェクト ウィザードのサポート |Microsoft Docs
+title: 入れ子になったプロジェクトに対するウィザードのサポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa1dedebab95e1c1b74e1705f3a8b39a1ebe3616
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e498f21499f4b07bf77bb79829fc6d92227f1f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312922"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721435"
 ---
 # <a name="wizard-support-for-nested-projects"></a>入れ子になったプロジェクト向けのウィザード サポート
-IDE の入れ子になったプロジェクトの親プロジェクトを実装できる 2 つのウィザードを実行します。**新しいプロジェクト**ウィザードと**項目の追加**ウィザード。
+IDE では、入れ子になったプロジェクトの親プロジェクトが実装できる2つのウィザードが実行されます。これは、**新しいプロジェクト**ウィザードと**項目の追加**ウィザードです。
 
- ユーザーが開始した場合、**新しいプロジェクト**を選択してウィザード**プロジェクトの追加** をクリック**新しいプロジェクト**ファイル メニューまたは選択して**追加**右クリックして**新しいプロジェクト**ソリューション エクスプ ローラーで、IDE が実行される、 **AddProject**コマンドとの親プロジェクトの実装、 **AddProject**テンプレート プロジェクト ファイル、またはウィザード (.vsz) ファイルを一連のコンテキスト パラメーターを持つか、コマンドを返します。
+ ユーザーが **[プロジェクトの追加]** を選択し、ファイル メニューの **[新しい]** プロジェクト をクリックするか、 **[追加]** を選択しソリューションエクスプローラーで **[新しいプロジェクト]** を右クリックして、**新しいプロジェクト**ウィザードを起動した場合は、IDE によって addproject が実行されます。コマンドおよび親プロジェクトの**addproject**コマンドの実装では、テンプレートプロジェクトファイル、または一連のコンテキストパラメーターを持つウィザード (.vsz) ファイルが返されます。
 
- 同様に、親プロジェクトの実装の**AddItem**ウィザードは、異なる一連のコンテキスト パラメーターを含む .vsz ファイルを返します。
+ 同様に、親プロジェクトの**AddItem**ウィザードの実装では、異なるコンテキストパラメーターのセットを持つ .vsz ファイルが返されます。
 
- ウィザードの詳細については、次を参照してください。[ウィザード (します。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)、[コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)と[プロジェクトと項目テンプレートを登録する](../../extensibility/internals/registering-project-and-item-templates.md)します。
+ ウィザードの詳細については、「ウィザード (」を参照してください[.Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)、[コンテキストパラメーター](../../extensibility/internals/context-parameters.md) 、および[プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)を行います。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

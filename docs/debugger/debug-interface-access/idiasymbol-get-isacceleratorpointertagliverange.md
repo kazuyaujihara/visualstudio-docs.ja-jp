@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange |Microsoft Docs
+title: 'IDiaSymbol:: get_isAcceleratorPointerTagLiveRange |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bd5a24a136bb9c04366449a91d825ddbecff2957
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836903"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740323"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-シンボルに対応するかどうかを示すフラグを取得、*定義範囲シンボル*C++ AMP のアクセラレータのコンパイルされたコードでポインター変数のタグの要素。 定義の範囲のシンボルは、アドレスの範囲の変数の場所です。
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+AMP アクセラレータ用にコンパイルされたコード内のポインター変数のタグコンポーネントの*定義範囲シンボル*にシンボルが対応するかどうかを示すフラグを取得します。 C++ 定義範囲シンボルは、アドレスの範囲の変数の場所です。
 
 ## <a name="syntax"></a>構文
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
 #### <a name="parameters"></a>パラメーター
  `pFlag`
 
-[out]ポインターを`BOOL`シンボルが定義の範囲のシンボルに対応するかどうかを示します。
+入出力シンボルが定義範囲のシンボルに対応するかどうかを示す `BOOL` へのポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

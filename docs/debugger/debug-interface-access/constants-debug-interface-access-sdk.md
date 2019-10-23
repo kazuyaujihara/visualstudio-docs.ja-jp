@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b10ab87f056bc153ec41c125b0e01ddefa139b80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555079"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745399"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>定数 (Debug Interface Access SDK)
-これらの文字列定数、DIA SDK を通じてプログラム デバッグ データベース (PDB) ファイルのさまざまなセクションを識別するために使用できます。
+これらの文字列定数を使用すると、プログラムデバッグデータベース (PDB) ファイルのさまざまなセクションを DIA SDK で識別できます。
 
 ## <a name="constants"></a>定数
-次は、C と C++ マクロとして宣言されます。
+次のは C/C++マクロとして宣言されています。
 
 |マクロ|[値]|
 |-----------|-----------|
-|`DiaTable_Symbols`|L「シンボル」|
-|`DiaTable_Sections`|L「セクション」|
-|`DiaTable_SrcFiles`|L"SourceFiles"|
+|`DiaTable_Symbols`|L "記号"|
+|`DiaTable_Sections`|L "セクション"|
+|`DiaTable_SrcFiles`|L "SourceFiles"|
 |`DiaTable_LineNums`|L"LineNumbers"|
-|`DiaTable_SegMap`|L"SegmentMap"|
+|`DiaTable_SegMap`|L "SegmentMap"|
 |`DiaTable_Dbg`|L"Dbg"|
-|`DiaTable_InjSrc`|L"InjectedSource"|
-|`DiaTable_FrameData`|L"FrameData"|
+|`DiaTable_InjSrc`|L "InjectedSource"|
+|`DiaTable_FrameData`|L "フレームデータ"|
 
 ## <a name="example"></a>例
-これらの記号のいずれかの使用例を次に示します。
+次に、これらのシンボルのいずれかを使用する例を示します。
 
 ```C++
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
@@ -52,8 +52,8 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }
 ```
 
-## <a name="requirements"></a>必要条件
-ヘッダー: dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: dia2
 
 ## <a name="see-also"></a>関連項目
 - [参照](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

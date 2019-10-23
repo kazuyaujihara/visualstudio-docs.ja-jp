@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByRVA |Microsoft Docs
+title: 'IDiaSymbol:: findInlineeLinesByRVA |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 737bc647cf3f5b64bdd8c48f7c827e8ef86a1386
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831758"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741205"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-により、クライアントは、行番号の情報がインライン展開されて、直接または間接的に、指定された相対仮想アドレス (RVA) 内でこのシンボルのすべての関数を反復処理する列挙体を取得します。
+クライアントが、指定された相対仮想アドレス (RVA) 内のこのシンボルに直接または間接的にインライン化されているすべての関数の行番号情報を反復処理できるようにする列挙体を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,18 +31,18 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 #### <a name="parameters"></a>パラメーター
  `rva`
 
-[in]として、RVA アドレスを指定します。
+からアドレスを RVA として指定します。
 
  `length`
 
-[in]このクエリをカバーする、バイト数では、アドレスの範囲を指定します。
+からこのクエリでカバーするアドレス範囲をバイト数で指定します。
 
  `ppResult`
 
-[out]保持する`IDiaEnumLineNumbers`取得される行番号の一覧を含むオブジェクト。
+入出力取得された行番号の一覧を含む `IDiaEnumLineNumbers` オブジェクトを保持します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

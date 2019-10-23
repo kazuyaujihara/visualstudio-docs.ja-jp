@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ad37e30cfcf913477044e67baaa65dc3af5b9d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69078200743f30c4ecfedce8e9be05ef9e7ce20b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353631"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721478"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 関数
-この関数は、ソース管理プラグインでサポートされているソース管理プラグイン API のバージョン番号を取得します。
+この関数は、ソース管理プラグインによってサポートされているソース管理プラグイン API のバージョン番号を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -32,15 +32,15 @@ LONG SccGetVersion(void);
  なし。
 
 ## <a name="return-value"></a>戻り値
- A`LONG`サポートされているソース管理プラグイン API のバージョン番号を含むデータ型。
+ サポートされているソース管理プラグイン API のバージョン番号を含む `LONG` データ型:
 
 |WORD|説明|
 |----------|-----------------|
-|HIWORD|メジャー バージョン|
-|LOWORD マクロ|［マイナー バージョン］|
+|HIWORD|メジャーバージョン|
+|LOWORD|マイナーバージョン|
 
 ## <a name="remarks"></a>Remarks
- ソース管理プラグインは、ソース管理プラグイン API のバージョン 1.3 をサポートする場合など、この関数では、0x0103 に返します。
+ たとえば、ソース管理プラグインがソース管理プラグイン API のバージョン1.3 をサポートしている場合、この関数は0x0103 を返します。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

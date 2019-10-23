@@ -1,5 +1,5 @@
 ---
-title: ダンプ ファイル概要機能拡張 API |Microsoft Docs
+title: ダンプファイルの概要機能拡張 API |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934a68aa1ae85e18ec05d587854a7ad4c176c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d34e60b0b932470dec8a69874e28b99ebe76316b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851510"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737981"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>ダンプ ファイルの概要機能拡張 API
 このセクションの機能拡張 API を使用すると、独自のカスタム デバッグ エンジンで使用できるように .Exe プロジェクト システムと **[ダンプの概要]** ページを拡張できます。

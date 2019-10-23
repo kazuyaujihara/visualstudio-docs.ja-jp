@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211120"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730257"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Visual Studio でC#のまたは Visual Basic プロジェクトのリモートデバッグ
 別のコンピューターに配置されている Visual Studio アプリケーションをデバッグするには、アプリを配置したコンピューターにリモートツールをインストールして実行し、Visual Studio からリモートコンピューターに接続するようにプロジェクトを構成してから、アプリを実行します。
@@ -33,7 +33,7 @@ ms.locfileid: "71211120"
 
 ユニバーサル Windows アプリ (UWP) のリモートデバッグの詳細については、「[インストールされているアプリパッケージのデバッグ](debug-installed-app-package.md)」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>［要件］
 
 リモートデバッガーは、windows 7 以降 (phone 以外) および windows server 2008 Service Pack 2 以降のバージョンでサポートされています。 要件の完全な一覧については、「[要件](../debugger/remote-debugging.md#requirements_msvsmon)」を参照してください。
 
@@ -67,7 +67,7 @@ ms.locfileid: "71211120"
 
 4. **[プロパティ]** ページで、 **[デバッグ]** タブをクリックします。
 
-    ![Remoteデバッガ csharp](../debugger/media/remotedebuggercsharp.png "Remoteデバッガ csharp")
+    ![Remoteデバッガ Csharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
 
 5. **[作業ディレクトリ]** テキスト ボックスが空であることを確認してください。
 
@@ -96,13 +96,13 @@ ms.locfileid: "71211120"
 
 11. ターゲットコンピューターでリモートデバッガーが実行されていることを確認します (そうでない場合は、 **[スタート]** メニューで**リモートデバッガー**を検索します)。 リモートデバッガーウィンドウは次のようになります。
 
-     ![Remoteデバッガウィンドウ](../debugger/media/remotedebuggerwindow.png "Remoteデバッガウィンドウ")
+     ![Remoteデバッガウィンドウ](../debugger/media/remotedebuggerwindow.png "リモート デバッガーのウィンドウ")
 
 12. Visual Studio でデバッグを開始します ( **[デバッグ] > [デバッグの開始]** 、または **F5** キー)。
 
 13. メッセージが表示されたら、リモートコンピューターに接続するためのネットワーク資格情報を入力します。
 
-     必要な資格情報は、ネットワークのセキュリティ構成によって異なります。 たとえば、ドメインコンピューターでは、ドメイン名とパスワードを入力できます。 ドメイン以外のコンピューターでは、コンピューター名と有効なユーザーアカウント名<strong>MJO-DL\name@something.com</strong>(など) を正しいパスワードと共に入力できます。
+     必要な資格情報は、ネットワークのセキュリティ構成によって異なります。 たとえば、ドメインコンピューターでは、ドメイン名とパスワードを入力できます。 ドメイン以外のコンピューターでは、コンピューター名と有効なユーザーアカウント名 ( <strong>MJO-DL\name@something.com</strong>など) と、正しいパスワードを入力することができます。
 
      WPF アプリケーションのメイン ウィンドウがリモート コンピューター上で開いていることを確認できるはずです。
 

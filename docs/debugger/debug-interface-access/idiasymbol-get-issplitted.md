@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_issplitted |Microsoft Docs
+title: 'IDiaSymbol:: get_isSplitted |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee91134997dad5f5361de6b07af1a99dfc420f5e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9511551a2f3530adc14bee0f6eec3cf360b41c03
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64794591"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740051"
 ---
-# <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
-データ シンボルが、集計またはその他の記号のコレクションに分割されて かどうかを指定するフラグを取得します。コンパイラは、非常に大規模なシンボルの一部である場合でも、個別のエンティティとしてシンボルを扱います。
+# <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
+データシンボルが集計または他のシンボルのコレクションに分割されているかどうかを指定するフラグを取得します。コンパイラは、シンボルを個別のエンティティとして処理しますが、これらは実際には大きなシンボルの一部でもあります。
 
 ## <a name="syntax"></a>構文
 
@@ -33,23 +33,23 @@ HRESULT get_isSplitted(
 #### <a name="parameters"></a>パラメーター
  `pFlag`
 
-[out]返します`TRUE`場合は、シンボルをシンボルの集計に分割されていますが、それ以外の場合を返します`FALSE`します。
+入出力シンボルがシンボルの集計に分割されている場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- [Idiasymbol::get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)メソッドを返します。`TRUE`分割シンボルの一部であるすべてのシンボルです。
+ [IDiaSymbol:: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)メソッドは、分割シンボルの一部であるすべてのシンボルに対して `TRUE` を返します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK バージョン 8.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

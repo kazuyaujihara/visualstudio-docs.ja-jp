@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress |Microsoft Docs
+title: 'IDiaSymbol:: get_liveRangeStartRelativeVirtualAddress |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 338775a2c36415d471d0d59176ce38f6df1827bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea82e9d1dee4b82e78ea3f6409acfdcfc30b2a27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806866"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739890"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-ローカル シンボルの有効なアドレスの範囲の開始位置を返します。
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+ローカルシンボルが有効なアドレス範囲の先頭を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,22 +33,22 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 #### <a name="parameters"></a>パラメーター
  `address`
 
-[out]アドレスの範囲の開始を返します。
+入出力アドレス範囲の先頭を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返される相対仮想アドレスは、シンボルの有効範囲の先頭です。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。 返される相対仮想アドレスは、シンボルが有効な範囲の先頭です。
 
 > [!NOTE]
-> 返されたエラー コードは、シンボルにライブの範囲の情報がないことを意味します。
+> 返されるエラーコードは、シンボルにライブ範囲情報が含まれていないことを意味します。
 
 ## <a name="remarks"></a>Remarks
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

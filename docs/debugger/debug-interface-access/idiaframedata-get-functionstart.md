@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_functionstart |Microsoft Docs
+title: 'IDiaFrameData:: get_functionStart |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 324cad63a597768dc2c13447c6d2d68756878695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839980"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743608"
 ---
-# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-ブロックが関数のエントリ ポイントを含むかどうかを示すフラグを取得します。
+# <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
+ブロックに関数のエントリポイントが含まれているかどうかを示すフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します`TRUE`ブロックには、エントリ ポイントが含まれている場合を返しますそれ以外の場合`FALSE`します。
+入出力ブロックにエントリポイントが含まれている場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- フレームを表す、インライン メソッドや関数の関数に挿入されるため、関数の開始をできないスタック フレームのことができます。
+ フレームが関数に挿入されたインラインメソッドまたは関数を表すため、スタックフレームが関数の開始にならない可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

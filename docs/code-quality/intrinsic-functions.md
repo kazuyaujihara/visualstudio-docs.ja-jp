@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445706"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745909"
 ---
 # <a name="intrinsic-functions"></a>組み込み関数
 SAL 内の式は、C/C++式にすることができます。これは、副作用のない式であることを示します。たとえば、+ +、--,、関数の呼び出しすべてにこのコンテキストでの副作用があります。  ただし、SAL には、関数に似たオブジェクトや、SAL 式で使用できる予約済みのシンボルがいくつか用意されています。 これらは*組み込み関数*と呼ばれます。
@@ -46,7 +46,7 @@ SAL 内の式は、C/C++式にすることができます。これは、副作�
 |`strlen(param)`|`param` は、null 終端文字を含まない、文字列内の要素の数です。 この注釈は、文字配列で使用するために予約されており、C ランタイム関数[strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)に似ています。|
 |`wcslen(param)`|`param` は、null 終端文字までの文字列内の要素の数です (ただし、含まれません)。 この注釈は、ワイド文字配列で使用するために予約されており、C ランタイム関数[wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)に似ています。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL について](../code-quality/understanding-sal.md)

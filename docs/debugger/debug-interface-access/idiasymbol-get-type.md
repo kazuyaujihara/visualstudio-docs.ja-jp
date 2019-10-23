@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_type |Microsoft Docs
+title: 'IDiaSymbol:: get_type |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa57b1f289f9cc5e8c57c08b6d51bb1677c3db4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 60f9b9fd91535cc16b96da530db8ab43c4eaabf2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835373"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739097"
 ---
-# <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-この記号の型を表すシンボルを取得します。
+# <a name="idiasymbolget_type"></a>IDiaSymbol::get_type
+この記号の型を表す記号を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,16 +33,16 @@ HRESULT get_type (
 #### <a name="parameters"></a>パラメーター
 `pRetVal`
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)この記号の型を表すオブジェクト。
+入出力この記号の型を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
-シンボルの種類を判断するには、このメソッドを呼び出すし、結果を確認する必要があります[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクト。 可能なシンボルには、型であるに注意してください。 たとえば、構造体の名前の型はありませんが、子のシンボルがあります (を使用して、 [idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)これらの子をチェックするメソッド)。
+シンボルに含まれる型を特定するには、このメソッドを呼び出し、結果の[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを確認する必要があります。 シンボルに型がない可能性があることに注意してください。 たとえば、構造体の名前に型はありませんが、子シンボルがある可能性があります ( [IDiaSymbol:: findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)メソッドを使用してこれらの子を確認します)。
 
 ## <a name="example"></a>例
 

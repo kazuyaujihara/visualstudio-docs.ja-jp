@@ -1,5 +1,5 @@
 ---
-title: Idiadatasource::loaddataforexe |Microsoft Docs
+title: 'IDiaDataSource:: loadDataForExe |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a86abb00ebc090c37f03a5533376ae0b9c3e8ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829847"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744955"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
-開き、.exe/.dll ファイルに関連付けられたデバッグ データを準備します。
+を開き、.exe/.dll ファイルに関連付けられているデバッグデータを準備します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,40 +35,40 @@ HRESULT loadDataForExe (
 #### <a name="parameters"></a>パラメーター
 executable
 
-[in].Exe または .dll ファイルへのパス。
+から.Exe ファイルまたは .dll ファイルへのパス。
 
-検索パス
+searchPath
 
-[in]デバッグ データを検索するパス。
+からデバッグデータを検索する代替パス。
 
 pCallback
 
-[in]`IUnknown`など、デバッグのコールバック インターフェイスをサポートするオブジェクトのインターフェイスを[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)、 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)、 [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)、または[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)インターフェイス。
+から[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)、 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)、 [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)、 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)の各インターフェイスなど、デバッグのコールバックインターフェイスをサポートするオブジェクトの `IUnknown` インターフェイス。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 次の表では、このメソッドの想定されるエラー コードの一部を示します。
+成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。 次の表に、このメソッドで使用できるエラーコードをいくつか示します。
 
 |[値]|説明|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|ファイルを開いて、できなかったか、ファイルがの形式が無効です。|
-|E_PDB_FORMAT|旧形式のファイルにアクセスしようとしています。|
+|E_PDB_NOT_FOUND|ファイルを開くことができませんでした。または、ファイルの形式が無効です。|
+|E_PDB_FORMAT|古い形式のファイルにアクセスしようとしました。|
 |E_PDB_INVALID_SIG|署名が一致しません。|
 |E_PDB_INVALID_AGE|年齢が一致しません。|
 |E_INVALIDARG|無効なパラメーター。|
-|E_UNEXPECTED|データ ソースは既に準備されています。|
+|E_UNEXPECTED|データソースは既に準備されています。|
 
 ## <a name="remarks"></a>Remarks
-.Exe/.dll ファイルのデバッグ ヘッダー名を関連するデバッグ データの場所。
+.Exe/.dll ファイルのデバッグヘッダーは、関連付けられたデバッグデータの場所に名前を付けます。
 
-このメソッドは、デバッグ ヘッダーを読み取りとし、検索し、デバッグ データを準備します。 検索の進行状況の報告されコールバックをとおして制御されます、必要に応じて、可能性があります。 たとえば、 [idialoadcallback::notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)が呼び出されたときに、`IDiaDataSource::loadDataForExe`を検索して、デバッグ ディレクトリを処理します。
+このメソッドは、デバッグヘッダーを読み取り、デバッグデータを検索して準備します。 検索の進行状況は、必要に応じて、コールバックを使用して報告および制御することができます。 たとえば、 [IDiaLoadCallback:: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)は、`IDiaDataSource::loadDataForExe` メソッドがデバッグディレクトリを検出して処理するときに呼び出されます。
 
-[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)と[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)インターフェイスは、実行可能ファイルからデータを読み取るための代替方法を提供するクライアント アプリケーションを使用するファイルのファイル標準的なファイル I/O を介して直接アクセスできません。
+[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)インターフェイスと[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)インターフェイスを使用すると、クライアントアプリケーションは、標準によってファイルに直接アクセスできない場合に、実行可能ファイルからデータを読み取るための別の方法を提供できます。ファイル i/o。
 
-検証を伴わない .pdb ファイルを読み込むには、使用、 [idiadatasource::loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)メソッド。
+検証せずに .pdb ファイルを読み込むには、 [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)メソッドを使用します。
 
-特定の条件に対して、.pdb ファイルを検証するには、使用、 [idiadatasource::loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)メソッド。
+特定の条件に対して .pdb ファイルを検証するには、 [IDiaDataSource:: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)メソッドを使用します。
 
-.Pdb ファイルをメモリから直接読み込むには使用、 [idiadatasource::loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)メソッド。
+メモリから .pdb ファイルを直接読み込むには、 [IDiaDataSource:: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)メソッドを使用します。
 
 ## <a name="example"></a>例
 

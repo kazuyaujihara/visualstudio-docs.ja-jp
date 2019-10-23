@@ -12,35 +12,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab089a7a37acb377a043ec2c3a4db2c6538e6312
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c199df38f2cd51307861462af49f58996fe84fe4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344711"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722171"
 ---
 # <a name="using-msbuild"></a>MSBuild の使用
-MSBuild では、ビルド、ビルド タスク、および構成をビルドするプロジェクト アイテムを完全に記述するプロジェクト ファイルを作成するために適切に定義された、拡張性の高い XML 形式を提供します。
+MSBuild には、ビルドするプロジェクト項目、ビルドタスク、およびビルド構成を完全に記述したプロジェクトファイルを作成するための、適切に定義された拡張可能な XML 形式が用意されています。
 
-## <a name="general-msbuild-considerations"></a>MSBuild の一般的な考慮事項
- MSBuild プロジェクト ファイル、たとえば、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] .csproj および[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、.vbproj ファイルには、ビルド時に使用されますが、デザイン時に使用されるデータを含めることができますもデータが含まれています。 などの MSBuild のプリミティブを使用して、ビルド時のデータが格納された[Item 要素 (MSBuild)](../../msbuild/item-element-msbuild.md)と[Property 要素 (MSBuild)](../../msbuild/property-element-msbuild.md)します。 プロジェクトの種類との関連プロジェクト サブタイプに固有のデータである、デザイン時のデータは、自由形式の XML 用に予約に格納されます。
+## <a name="general-msbuild-considerations"></a>MSBuild に関する一般的な考慮事項
+ MSBuild プロジェクトファイル ([!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] .csproj ファイル、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] .vbproj ファイルなど) には、ビルド時に使用されるデータが含まれますが、デザイン時に使用されるデータを含めることもできます。 ビルド時のデータは、 [Item 要素 (msbuild)](../../msbuild/item-element-msbuild.md)や[Property 要素 (msbuild)](../../msbuild/property-element-msbuild.md)などの msbuild プリミティブを使用して格納されます。 デザイン時データは、プロジェクトの種類および関連するプロジェクトのサブタイプに固有のデータであり、そのために予約された自由形式の XML に格納されます。
 
- MSBuild では、構成オブジェクトのネイティブ サポートはありませんが、構成に固有のデータを指定するための条件付き属性は提供します。 例:
+ MSBuild には構成オブジェクトのネイティブサポートはありませんが、構成固有のデータを指定するための条件付き属性が用意されています。 (例:
 
 ```xml
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>
 ```
 
- 条件付き属性の詳細については、次を参照してください。[条件構造](../../msbuild/msbuild-conditional-constructs.md)します。
+ 条件付き属性の詳細については、「[条件付き構成体](../../msbuild/msbuild-conditional-constructs.md)」を参照してください。
 
-### <a name="extending-msbuild-for-your-project-type"></a>種類のプロジェクトの MSBuild の拡張
- MSBuild のインターフェイスと Api は、の将来のバージョンで変更される可能性は[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 そのため、変更からシールドを提供するために、マネージ パッケージ フレームワーク (MPF) クラスを使用することをお勧めします。
+### <a name="extending-msbuild-for-your-project-type"></a>プロジェクトの種類の MSBuild の拡張
+ MSBuild のインターフェイスと Api は、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の将来のバージョンで変更される可能性があります。 そのため、managed package framework (MPF) クラスを使用することをお勧めします。これは、変更によってシールドが提供されるためです。
 
- Managed Package Framework (MPFProj) プロジェクトを作成して、新しいプロジェクト システムを管理するためのヘルパー クラスを提供します。 コードとコンパイル」の手順に従って、ソースを検索できる[- Visual Studio 2013 のプロジェクトの MPF](https://github.com/tunnelvisionlabs/MPFProj10)します。
+ プロジェクト用の Managed Package Framework (MPFProj) には、新しいプロジェクトシステムを作成および管理するためのヘルパークラスが用意されています。 ソースコードとコンパイルの手順については、「 [MPF For Projects-Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10)」を参照してください。
 
- プロジェクトに固有の MPF クラスは次のとおりです。
+ プロジェクト固有の MPF クラスは次のとおりです。
 
-|クラス|実装|
+|インスタンス|実装|
 |-----------|--------------------|
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|
@@ -48,10 +48,10 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|
 
- `Microsoft.VisualStudio.Package.ProjectElement` クラスは、MSBuild 項目用のラッパーです。
+ `Microsoft.VisualStudio.Package.ProjectElement` クラスは、MSBuild 項目のラッパーです。
 
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>単一ファイル ジェネレーターの vs します。MSBuild タスク
- 単一ファイル ジェネレーターは、デザイン時のみにアクセスできるが、デザイン時およびビルド時に MSBuild タスクを使用できます。 最大限の柔軟性の変換し、コードを生成する MSBuild タスクを使用してそのため。 詳細については、次を参照してください。[カスタム ツール](../../extensibility/internals/custom-tools.md)します。
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>単一ファイルジェネレーターと MSBuild タスク
+ 1つのファイルジェネレーターにはデザイン時にのみアクセスできますが、MSBuild タスクはデザイン時およびビルド時に使用できます。 そのため、柔軟性を最大限に高めるために、MSBuild タスクを使用してコードを変換および生成します。 詳細については、「[カスタムツール](../../extensibility/internals/custom-tools.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [MSBuild リファレンス](../../msbuild/msbuild-reference.md)

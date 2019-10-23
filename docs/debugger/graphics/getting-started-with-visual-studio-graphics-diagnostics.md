@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388696"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735702"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の使用を開始する
 このセクションでは、まずグラフィックス診断を初めて使用するための準備をしてから、Direct3D アプリケーションのフレームをキャプチャして Graphics Analyzer でそれらを確認します。
 
-## <a name="requirements"></a>必要条件
- Visual Studio のグラフィックス診断を使用するには、Visual Studio Enterprise、Visual Studio Professional、または Visual Studio Community を使用する必要があります。  Visual Studio のコードを含む、他のエディションでは、この機能は含まれません。
+## <a name="requirements"></a>［要件］
+ Visual Studio でグラフィックス診断を使用するには、Visual Studio Enterprise、Visual Studio Professional、または Visual Studio Community を使用する必要があります。  Visual Studio Code を含むその他のエディションには、この機能は含まれていません。
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -33,15 +33,15 @@ ms.locfileid: "63388696"
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10 用のグラフィック ツールをインストールするには
 
-1. Search では、次のように入力します。**アプリおよび機能**を開き、**アプリと機能**設定します。
+1. [検索] で「**アプリと機能**」と入力し、[**アプリ & 機能**の設定] を開きます。
 
-2. 右側にある、**アプリと機能**ダイアログ ボックスで、選択**省略可能な機能を管理する**(**アプリと機能**)。
+2. **アプリ & 機能** ダイアログの右側にある **オプション機能の管理** (**アプリ & 機能** の下) を選択します。
 
    **[オプション機能の管理]** ダイアログが表示されます。
 
-3. **[オプション機能の管理]** ダイアログで、**[機能の追加]** を選択します。 インストールできるオプション機能の一覧が表示されます。
+3. **[オプション機能の管理]** ダイアログで、 **[機能の追加]** を選択します。 インストールできるオプション機能の一覧が表示されます。
 
-4. 機能の一覧から **[グラフィック ツール]** を選択して、**[インストール]** を選択します。
+4. 機能の一覧から **[グラフィック ツール]** を選択して、 **[インストール]** を選択します。
 
    グラフィック ツールの機能は Windows 10 SDK をインストールするときにも、自動的にインストールされます。
 
@@ -52,15 +52,15 @@ ms.locfileid: "63388696"
  これで、必要なものがすべて揃い、グラフィックス診断の使用を開始する準備が整いました。 以下の手順に実行します。
 
 ### <a name="1---create-a-direct3d-app"></a>1 -、Direct3D アプリを作成する
- 非常に使用すると、グラフィックス診断を探索する独自の Direct3D アプリが既にあります。 場合、 それ以外の場合、次のいずれかを使用します。
+ 独自の Direct3D アプリを既に使用している場合は、グラフィックス診断を参照してください。 それ以外の場合は、次のいずれかを使用します。
 
-- **DirectX 11 アプリ (ユニバーサル Windows)** または**DirectX 12 アプリ (ユニバーサル Windows)** Windows 10 用のプロジェクト テンプレート。
-- [Direct3d12 UAP サンプル](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)Windows 10 用です。
+- Windows 10 用の**directx 11 アプリ (ユニバーサル windows)** または**directx 12 アプリ (ユニバーサル windows)** プロジェクトテンプレート。
+- Windows 10 の[Direct3D 12 UAP サンプル](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)。
 
   先に進む前に、アプリをビルドできるかどうかを確認します。
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2-グラフィックス診断セッションを開始する
- これで、最初のグラフィックス診断のセッションを開始する準備ができました。 Visual Studio のメイン メニューで、選択**デバッグ、グラフィックス、グラフィックス デバッグの開始**、キーを押すか**alt キーを押しながら f5 キー**します。 これで、グラフィックス診断の下でアプリが開始され、Visual Studio の診断セッションのウィンドウが表示されます。
+ これで、最初のグラフィックス診断のセッションを開始する準備ができました。 Visual Studio のメインメニューで、[**デバッグ]、[グラフィックス]、[グラフィックスデバッグの開始**] の順に選択するか、Alt キーを押し**ながら F5**キーを押します。 これで、グラフィックス診断の下でアプリが開始され、Visual Studio の診断セッションのウィンドウが表示されます。
 
 > [!IMPORTANT]
 > Windows 10 でアプリを実行しており、オプションのグラフィック ツール機能をまだインストールしていない場合は、今すぐインストールするよう求められます。 インストールは、Windows 10 でグラフィックス診断を使用する前に済ませておく必要があります。
@@ -70,13 +70,13 @@ ms.locfileid: "63388696"
 
 #### <a name="to-capture-single-frames"></a>1 つのフレームをキャプチャするには
 
-- Visual Studio の [グラフィックス] ツール バーまたは診断セッション ウィンドウで、**[フレームのキャプチャ]** を選択します。 または、アプリにフォーカスがある場合は、キーを押す、 **Print Screen**キーボードのキー。
+- Visual Studio の [グラフィックス] ツール バーまたは診断セッション ウィンドウで、 **[フレームのキャプチャ]** を選択します。 または、アプリにフォーカスがある場合は、キーボードの**Printscreen**キーを押します。
 
 #### <a name="to-capture-a-sequence-of-frames"></a>フレームのシーケンスをキャプチャするには
 
 - Visual Studio の診断セッション ウィンドウの **[キャプチャするフレーム]** にシーケンスでキャプチャするフレームの数を設定し、1 つのフレームをキャプチャするための前述の方法のいずれかに従ってシーケンスをキャプチャします。
 
-   再び 1 つのフレームをキャプチャするには、**[キャプチャするフレーム]** を *1* に設定します。
+   再び 1 つのフレームをキャプチャするには、 **[キャプチャするフレーム]** を *1* に設定します。
 
   キャプチャが終了したら、アプリケーションを終了するか、[グラフィックス] ツールバーまたは診断セッション ウィンドウから **[停止]** ボタンをクリックします。
 
@@ -85,7 +85,7 @@ ms.locfileid: "63388696"
 
  診断セッション ウィンドウで間違ったフレームを選択した場合や、別のフレームを確認する場合は、Graphics Analyzer から新しいフレームを選択できます。 グラフィックス ログ ウィンドウの **[レンダー ターゲット]** タブで、レンダー ターゲットのイメージの下にある **[フレーム一覧]** を展開し、確認する別のフレームを選択します。
 
- Graphics Analyzer ツールを一緒に使用する方法の詳細については、次を参照してください。、[例](graphics-diagnostics-examples.md)します。
+ Graphics Analyzer ツールを一緒に使用する方法の詳細については、[例](graphics-diagnostics-examples.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Direct3D 12 グラフィックス](/windows/desktop/direct3d12/direct3d-12-graphics)

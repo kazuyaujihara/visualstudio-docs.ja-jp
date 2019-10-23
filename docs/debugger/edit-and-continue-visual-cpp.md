@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435857"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737901"
 ---
-# <a name="edit-and-continue-c"></a>エディットコンティニュ (C++)
+# <a name="edit-and-continue-c"></a>エディット コンティニュ (C++)
 プロジェクトでC++は、エディットコンティニュを使用できます。 エディットコンティニュの制限事項については、「[サポートされてC++いるコード変更 ()](../debugger/supported-code-changes-cpp.md) 」を参照してください。
 
 Visual studio 2015 update 3 の機能強化の詳細については、「 [ C++ visual studio 2015 update 3 でのエディットコンティニュ](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)」を参照してください。
@@ -79,5 +79,5 @@ Visual studio 2015 update 3 の機能強化の詳細については、「 [ C++ 
 
  このような場合、変更が適用されるまで、デバッガーは元のコードを続けて実行します。 古いコードは、一時的なソース ファイル ウィンドウとして、 `enc25.tmp`などのタイトルで別のソース ウィンドウに表示されます。 編集されたソース コードは、元のソース ウィンドウに表示されます。 古いコードを編集しようとすると、警告メッセージが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [サポートされているコード変更 (C++)](../debugger/supported-code-changes-cpp.md)

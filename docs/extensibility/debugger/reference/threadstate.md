@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316140"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727497"
 ---
 # <a name="threadstate"></a>THREADSTATE
 スレッドの状態を指定します。
@@ -50,30 +50,30 @@ public enum enum_THREADSTATE { 
 
 ## <a name="fields"></a>フィールド
  `THREADSTATE_RUNNING`\
- スレッドが実行されていることを示します。
+ スレッドが実行中であることを示します。
 
  `THREADSTATE_STOPPED`\
- ブレークポイントのため、スレッドが停止していることを示します。
+ ブレークポイントが原因でスレッドが停止したことを示します。
 
  `THREADSTATE_FRESH`\
- スレッドが作成されたらは、コードがまだ実行されていないことを示します。
+ スレッドが作成されたが、まだコードを実行していないことを示します。
 
  `THREADSTATE_DEAD`\
- スレッドが実行されないことを示します。
+ スレッドが停止していることを示します。
 
  `THREADSTATE_FROZEN`\
- スレッドが固定されていることを示します (の実行を実行できません)。
+ スレッドが固定されていることを示します (実行は実行できません)。
 
 ## <a name="remarks"></a>Remarks
- 使用、`dwThreadState`のフィールド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体。
+ [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md)構造体の `dwThreadState` フィールドに使用されます。
 
-## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: msdbg. h
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: VisualStudio。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: VisualStudio を実行します。
 
 ## <a name="see-also"></a>関連項目
-- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [列挙体](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

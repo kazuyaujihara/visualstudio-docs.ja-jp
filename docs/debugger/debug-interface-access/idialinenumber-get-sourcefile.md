@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_sourcefile |Microsoft Docs
+title: 'IDiaLineNumber:: get_sourceFile |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f0041ef4d83003d1b42e0c95b1412262d08458c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828626"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743160"
 ---
-# <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
-ソース ファイルへの参照を取得します。
+# <a name="idialinenumberget_sourcefile"></a>IDiaLineNumber::get_sourceFile
+ソースファイルへの参照を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_sourceFile ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)ソース ファイルを表すオブジェクト。
+入出力ソースファイルを表す[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

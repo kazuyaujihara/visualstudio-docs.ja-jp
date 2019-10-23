@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec67013b41a5ec8876866044355534c42bfe2ee0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9967d776845088e707035c7b1c56855ac80af82
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848712"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736132"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 現在のフレームの残りの部分を、グラフィックス ログ ファイルにキャプチャします。
@@ -27,7 +27,7 @@ void CaptureCurrentFrame();
 ## <a name="remarks"></a>Remarks
  `BeginCapture` 関数によって開始されたキャプチャなど、別のキャプチャ操作が進行中の場合、そのキャプチャ操作は完了し、別個のフレームとしてグラフィックス ログに記録されます。 その直後、グラフィックス診断によって現在のフレームの残りの部分のキャプチャが開始され、それも個別のフレームとして記録されます。 present への呼び出しによって、現在のフレームの末尾がマークされます。
 
- フレームをキャプチャするには、キャプチャしてグラフィックス情報を記録するアプリを準備する必要があります: 呼び出したする必要があります、 [Init](init.md)のインスタンスを通じて、`VsgDbg`クラスを呼び出す前に`CaptureCurrentFrame`します。
+ フレームをキャプチャするには、グラフィックス情報をキャプチャして記録するようにアプリを準備する必要があります。つまり、`CaptureCurrentFrame` を呼び出す前に、`VsgDbg` クラスのインスタンスを使用して[Init](init.md)を呼び出す必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [Init](init.md)

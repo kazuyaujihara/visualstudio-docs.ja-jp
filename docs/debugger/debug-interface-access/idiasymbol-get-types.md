@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_types |Microsoft Docs
+title: 'IDiaSymbol:: get_types |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642e6875e81220cb20109ce45e8dca40777a63
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6d23ea3c4d885b3f7575c998999814d0808d03bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786568"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739056"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-このシンボルをコンパイラに固有の型の配列を取得します。
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
+このシンボルのコンパイラ固有の型の配列を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,21 +35,21 @@ HRESULT get_types ( 
 #### <a name="parameters"></a>パラメーター
  `cTypes`
 
-[in]データを保持するバッファーのサイズ。
+からデータを格納するバッファーのサイズ。
 
  `pcTypes`
 
-[out]記述された、型の数を返しますまたは、`types`パラメーターが`NULL`、利用可能なタイプの合計数、します。
+入出力書き込まれた型の数を返します。 `types` パラメーターが `NULL` の場合は、使用可能な型の合計数を返します。
 
  `types[]`
 
-[out]格納する配列、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)このシンボルのすべての型を表すオブジェクト。
+入出力このシンボルのすべての型を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを使用して入力する配列。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

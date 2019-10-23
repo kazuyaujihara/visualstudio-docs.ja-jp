@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_slot |Microsoft Docs
+title: 'IDiaSymbol:: get_slot |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6d0ccbdfe2b89fbeb1f504bf683fab2b5a83b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a47ba9144ab2a322148f167d50b54f1d6b7db80d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64823406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739316"
 ---
-# <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-場所のスロット番号を取得します。 使用する場合、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)は`LocIsSlot`します。
+# <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
+位置のスロット番号を取得します。 [LocationType 列挙](../../debugger/debug-interface-access/locationtype.md)が `LocIsSlot` 場合は、を使用します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_slot ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]場所のスロット数を返します。
+入出力位置のスロット番号を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
