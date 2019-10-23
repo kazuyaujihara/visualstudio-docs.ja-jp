@@ -1,5 +1,5 @@
 ---
-title: Idiaenumstackframes::next |Microsoft Docs
+title: 'IDiaEnumStackFrames:: Next |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffde40e221823d9656c4b6414b14067ac9d0537a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833307"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744039"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-列挙体シーケンスから、指定したスタック フレームの要素数を取得します。
+列挙シーケンスから指定された数のスタックフレーム要素を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>パラメーター
  celt
 
-[in]スタック フレームを取得する列挙子の要素の数。
+から取得する列挙子内のスタックフレーム要素の数。
 
  rgelt
 
-[out]要求を格納する配列を[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)オブジェクト。
+入出力要求された[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)オブジェクトを格納する配列。
 
  pceltFetched
 
-[out]フェッチされた列挙子内のスタックのフレーム要素を返します。
+入出力フェッチされた列挙子内のスタックフレーム要素の数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`スタック フレームがある場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 スタックフレームがなくなった場合は `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

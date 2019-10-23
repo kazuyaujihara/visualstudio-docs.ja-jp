@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea58bb790cf7c9aaac554728643f6e164e06418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654055"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747614"
 ---
 # <a name="customizing-element-creation-and-movement"></a>要素作成処理および要素移動処理のカスタマイズ
 
@@ -316,7 +316,7 @@ Merge ディレクティブには、次の2種類があります。
 
      使用できないポインターは表示されず、既存のものに新しい**入力ポート**をドロップできます。 新しい**入力ポート**を選択し、**コンポーネント**上の別のポイントにドラッグします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プログラム コードにおけるモデル内の移動およびモデルの更新](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [ツールおよびツールボックスのカスタマイズ](../modeling/customizing-tools-and-the-toolbox.md)

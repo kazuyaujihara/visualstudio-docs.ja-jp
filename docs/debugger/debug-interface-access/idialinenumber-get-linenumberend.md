@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_linenumberend |Microsoft Docs
+title: 'IDiaLineNumber:: get_lineNumberEnd |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c43c1d4b3b6a59f6601684fe20e238782448decb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828683"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743169"
 ---
-# <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-ステートメントまたは式の終了位置となる 1 ベースのソース行番号を取得します。
+# <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
+ステートメントまたは式の終了位置を示す、1から始まるソース行番号を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_lineNumberEnd ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]ステートメントまたは式の終了行番号を返します。 値が 0 の場合は、終了の情報が存在しません。
+入出力ステートメントまたは式の終了位置を示す行番号を返します。 値が0の場合、終了情報は存在しません。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

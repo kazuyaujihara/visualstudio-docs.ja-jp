@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23437983950efb8e86aaadd391e96b0e7d0c0a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 58b86452d9bfa00c9b107aa0b2748117c64a0384
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658212"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747480"
 ---
 # <a name="properties-of-domain-classes"></a>ドメイン クラスのプロパティ
 ドメインクラスには、次の表に示すプロパティがあります。 ドメインクラスの詳細については、「[モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「[ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -34,6 +34,6 @@ ms.locfileid: "72658212"
 |[表示名]|このドメインクラスの生成されたデザイナーに表示される名前。|\<none>|
 |ヘルプ キーワード|このドメインクラスの F1 ヘルプのインデックス作成に使用される省略可能なキーワードです。|\<none>|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

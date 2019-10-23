@@ -1,5 +1,5 @@
 ---
-title: Idiaenumtables::item |Microsoft Docs
+title: 'IDiaEnumTables:: Item |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03931580f774c29a67771d2251b51825242535c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829378"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743747"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-インデックスまたは名前を使用してテーブルを取得します。
+インデックスまたは名前を使ってテーブルを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,17 +34,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>パラメーター
  `index`
 
-[in]インデックスまたは名前、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)を取得します。 0 の範囲の場合は、整数のバリアントを使用すると、必要があります`count`-1 の場合、`count`によって返されるは、 [idiaenumtables::get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)メソッド。
+から取得する[IDiaTable](../../debugger/debug-interface-access/idiatable.md)のインデックスまたは名前。 整数バリアントを使用する場合は、0 ~ `count`-1 の範囲で指定する必要があります。この場合 `count` は[IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)メソッドによって返されます。
 
  `table`
 
-[out]返します、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)目的のテーブルを表すオブジェクト。
+入出力目的のテーブルを表す[IDiaTable](../../debugger/debug-interface-access/idiatable.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- 文字列のバリアントが指定されている場合、文字列は、特定のテーブルを名前します。 名前は、テーブル名のいずれかで定義されている[定数 (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)します。
+ 文字列バリアントが指定されている場合、文字列は特定のテーブルに名前を指定します。 名前は、[定数 (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)で定義されているテーブル名のいずれかである必要があります。
 
 ## <a name="example"></a>例
 

@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::next |Microsoft Docs
+title: 'IDiaEnumInjectedSources:: Next |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84dd3e1d107b8e55d5e94979627d1c1586534127
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554036"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744497"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-列挙体シーケンスに挿入されたソースの指定した数を取得します。
+列挙シーケンス内の指定した数の挿入されたソースを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>パラメーター
  celt
 
-[in]挿入されたソースを取得する列挙子の数。
+から取得する列挙子内の挿入されたソースの数。
 
  rgelt
 
-[out]配列を返します[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)目的の挿入されたソースを表すオブジェクト。
+入出力目的の挿入されたソースを表す[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)オブジェクトの配列を返します。
 
  pceltFetched
 
-[out]フェッチされた列挙子では、挿入されたソースの数を返します。
+入出力フェッチされた列挙子に挿入されたソースの数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`なくなる挿入されたソースがある場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 挿入されたソースがそれ以上ない場合は `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

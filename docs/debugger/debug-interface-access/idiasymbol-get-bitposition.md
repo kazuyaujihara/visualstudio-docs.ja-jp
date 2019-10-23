@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_bitposition |Microsoft Docs
+title: 'IDiaSymbol:: get_bitPosition |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7752e5f6bc7cb09fb80668aed8c3f8bc2bbeb312
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 709bb7e57ee6260ffcd7d8b1421526d3dd41052a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813741"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740905"
 ---
-# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-位置のビット位置を取得します。 使用するときに、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)は`LocIsBitField`します。
+# <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
+位置のビット位置を取得します。 [LocationType 列挙](../../debugger/debug-interface-access/locationtype.md)が `LocIsBitField` 場合に使用します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,20 +33,20 @@ HRESULT get_bitPosition ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]位置のビット位置を返します。
+入出力位置のビット位置を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenExByAddr |Microsoft Docs
+title: 'IDiaSymbol:: findChildrenExByAddr |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c434bf85ecbb00373de0f7f3914a6807391f6a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4dc49d9501e72fb81849943144973574a0d55fef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838016"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741281"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
-指定したアドレスに有効なシンボルの子を取得します。
+指定されたアドレスで有効なシンボルの子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,36 +37,36 @@ HRESULT findChildrenExByAddr ( 
 #### <a name="parameters"></a>パラメーター
  `symtag`
 
-[in]定義されているを取得するには、子のシンボル タグを指定します、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)します。 設定`SymTagNull`のすべての子を取得します。
+から[Symtagenum 列挙体](../../debugger/debug-interface-access/symtagenum.md)で定義されている、取得する子のシンボルタグを指定します。 すべての子を取得するには、を `SymTagNull` に設定します。
 
  `name`
 
-[in]取得する子の名前を指定します。 設定`NULL`のすべての子を取得します。
+から取得する子の名前を指定します。 すべての子を取得するには、を `NULL` に設定します。
 
  `compareFlags`
 
-[in]名前の一致に適用される比較オプションを指定します。 値から、 [NameSearchOptions 列挙型](../../debugger/debug-interface-access/namesearchoptions.md)列挙体は、単独または組み合わせて使用できます。
+から名前の一致に適用する比較オプションを指定します。 [Namesearchoptions 列挙](../../debugger/debug-interface-access/namesearchoptions.md)列挙の値は、単独で、または組み合わせて使用できます。
 
  `address`
 
-[in]シンボルのアドレス。
+から記号のアドレス。
 
  `ppResult`
 
-[out]返します、 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)子シンボルの一覧を含むオブジェクトを取得します。
+入出力取得した子シンボルのリストを格納している[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 返します`S_OK`シンボルの少なくとも 1 つの子が検出されましたが、またはを返す`S_FALSE`場合は子が見つかりませんでした。 それ以外の場合、エラー コードを返します。
+ シンボルの少なくとも1つの子が見つかった場合は `S_OK` を返し、子が見つからなかった場合は `S_FALSE` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- 返されるローカル シンボルには、ライブの範囲の情報が含まれます。
+ 返されるローカルシンボルには、live range 情報が含まれます。
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

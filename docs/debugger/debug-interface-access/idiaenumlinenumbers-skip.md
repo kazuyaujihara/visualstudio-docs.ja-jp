@@ -1,5 +1,5 @@
 ---
-title: Idiaenumlinenumbers::skip |Microsoft Docs
+title: 'IDiaEnumLineNumbers:: Skip |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68eccfebfc5218d59649aa09162b20467ceb670
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58b959db58688fd13c3539f720315971e774a96d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744361"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
-指定された数の列挙体シーケンス内の行番号をスキップします。
+列挙シーケンス内の指定された数の行番号をスキップします。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>パラメーター
  celt
 
-[in]スキップする列挙体シーケンス内の行番号の数。
+からスキップする列挙シーケンス内の行番号の数。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップする複数の行番号なしがある場合。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、スキップする行番号がない場合は `S_FALSE` を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

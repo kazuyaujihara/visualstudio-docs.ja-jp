@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_length |Microsoft Docs
+title: 'IDiaInjectedSource:: get_length |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c51910ee638338f588b1e81b844cf3f487a50e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828631"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743362"
 ---
-# <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
+# <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
 コードのバイト数を取得します。
 
 ## <a name="syntax"></a>構文
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]コードのバイト数を返します。
+入出力コードのバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドによって返される値のソース コードの長さは、同じの値によって返される、 [idiainjectedsource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)メソッド。
+ このメソッドによって返される値は、ソースコードの長さであり、 [IDiaInjectedSource:: get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)メソッドによって返される値と同じです。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

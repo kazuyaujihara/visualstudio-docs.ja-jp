@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fff76abdecdd8613a462225278053ef4f6d9694
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829733"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745476"
 ---
 # <a name="basictype"></a>BasicType
-シンボルの基本的な型を指定します。
+シンボルの基本型を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -50,47 +50,47 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elements
-基本的な型が指定されていない btNoType します。
+btNoType には基本型が指定されていません。
 
-btVoid 基本的な型は、`void`します。
+btVoid 基本型は `void` です。
 
-btChar 基本的な型は、 `char` (C/C++型)。
+btChar 基本型は `char` (C/C++型) です。
 
-btWChar 基本的な型は、ワイド (Unicode) 文字 (`WCHAR`)。
+btWChar 基本型はワイド (Unicode) 文字 (`WCHAR`) です。
 
-btInt 基本的な型は`signed int`(C/C++型)。
+btInt 基本型は `signed int` (C/C++ type) です。
 
-btUInt 基本的な型は`unsigned int`(C/C++型)。
+btUInt 基本型は `unsigned int` (C/C++ type) です。
 
-btFloat 基本的な型が浮動小数点数 (`FLOAT`)。
+btFloat 基本型は、浮動小数点数 (`FLOAT`) です。
 
-btBCD 基本的な型がバイナリ コード化された 10 進数 (`BCD`)。
+btBCD 基本型は、バイナリでコード化された10進数 (`BCD`) です。
 
-btBool 基本的な型がブール値 (`BOOL`)。
+btBool 基本型はブール値 (`BOOL`) です。
 
-btLong 基本的な型は、 `long int` (C/C++型)。
+btLong 基本型は `long int` (C/C++型) です。
 
-btULong 基本的な型は、 `unsigned long int` (C/C++型)。
+btULong 基本型は `unsigned long int` (C/C++型) です。
 
-btCurrency 基本的な型は、通貨です。
+btCurrency 基本型は currency です。
 
-btDate 基本的な型は日付/時刻 (`DATE`)。
+btDate 基本型は日付/時刻 (`DATE`) です。
 
-btVariant 基本的な型が変数の型の構造 (`VARIANT`)。
+btVariant 基本型は、変数型の構造体 (`VARIANT`) です。
 
-btComplex 基本的な型は、複雑な数値です。
+btComplex 基本型は複素数です。
 
-btBit 基本的な型は、少しです。
+btBit 基本型はビットです。
 
-btBSTR 基本的な型は、基本的なまたはバイナリ文字列 (`BSTR`)。
+btBSTR 基本型は、基本またはバイナリ文字列 (`BSTR`) です。
 
-btHresult 基本的な型は、`HRESULT`します。
+btHresult 基本型は `HRESULT` です。
 
 ## <a name="remarks"></a>Remarks
-この列挙体の値がによって返される、 [idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)メソッド。
+この列挙体の値は、 [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)メソッドによって返されます。
 
-## <a name="requirements"></a>必要条件
-ヘッダー: cvconst.h
+## <a name="requirements"></a>［要件］
+ヘッダー: cvconst. h
 
 ## <a name="see-also"></a>関連項目
 - [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)

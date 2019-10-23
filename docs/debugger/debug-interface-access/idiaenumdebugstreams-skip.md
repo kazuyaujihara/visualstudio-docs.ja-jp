@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreams::skip |Microsoft Docs
+title: 'IDiaEnumDebugStreams:: Skip |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90bf6b41400143d7a6703db24c031cb3ed31de2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25fb1cb952c41d412df72ff7c0f0ad90e56ee6c0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838185"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744703"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
-指定された数の列挙体シーケンス内の debug ストリームをスキップします。
+列挙シーケンス内の指定された数のデバッグストリームをスキップします。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>パラメーター
  `celt`
 
-[in]スキップする列挙体シーケンス内の debug ストリームの数。
+からスキップする列挙シーケンス内のデバッグストリームの数。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップするレコードがある場合。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、スキップするレコードがなくなった場合は `S_FALSE` を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

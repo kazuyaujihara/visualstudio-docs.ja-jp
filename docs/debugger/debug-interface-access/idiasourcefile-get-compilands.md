@@ -1,5 +1,5 @@
 ---
-title: Idiasourcefile::get_compilands |Microsoft Docs
+title: 'IDiaSourceFile:: get_compilands |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dea4b53daae31c90753ef7afb293e69157f58e41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838247"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741810"
 ---
-# <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-このファイルを参照する行番号のコンパイル単位の列挙子を取得します。
+# <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
+このファイルを参照している行番号を持つ compilands の列挙子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_compilands ( 
 #### <a name="parameters"></a>パラメーター
  `ppRetVal`
 
-[out]返します、 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)をこのファイルを参照する行番号を持つすべてのコンパイル単位の一覧を格納しているオブジェクト。
+入出力このファイルを参照している行番号を持つすべての compilands の一覧を含む[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

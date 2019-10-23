@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
+title: 'IDiaSymbol:: findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838998"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741156"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-対応するタグの値を指定すると、このメソッドは、指定の相対仮想アドレスにある場合は、このスタブ関数に含まれているシンボルの列挙体を返します。
+対応するタグ値が指定されている場合、このメソッドは、指定された相対仮想アドレスで、このスタブ関数に含まれるシンボルの列挙体を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -32,21 +32,21 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>パラメーター
  `tagValue`
 
-[in]Pointee シンボル レコードを検出するポインターのタグ値。
+からPointee シンボルレコードが存在するポインタータグ値。
 
  `rva`
 
-[in]指定したタグ値を持つ pointee 変数に対応するシンボルをフィルター処理に使用される rva を示します。
+から指定されたタグ値を持つ pointee 変数に対応するシンボルをフィルター処理するために使用される rva。
 
  `ppResult`
 
-[out]ポインター、`IDiaEnumSymbols`結果で初期化されるインターフェイス ポインター。
+入出力結果を使用して初期化される `IDiaEnumSymbols` インターフェイスポインターへのポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- のみこのメソッドを呼び出し、`IDiaSymbol`アクセラレータのスタブ関数に対応するインターフェイス。
+ このメソッドは、アクセラレータスタブ関数に対応する `IDiaSymbol` インターフェイスでのみ呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

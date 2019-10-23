@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2366c933bf072c295b29d06ff5610bd3735c0077
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831934"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741522"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-.Pdb ファイルに情報を使用してスタックの操作を行う方法の説明を提供します。
+.Pdb ファイルの情報を使用してスタックウォークを実行するメソッドを提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,21 +29,21 @@ IDiaStackWalker: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表は、メソッドの`IDiaStackWalker`します。
+次の表は、`IDiaStackWalker` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|X86 スタック フレームの列挙子を取得します。 プラットフォーム。|
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|特定のプラットフォームの種類のスタック フレームの列挙子を取得します。|
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|X86 プラットフォームのスタックフレーム列挙子を取得します。|
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|特定のプラットフォームの種類のスタックフレーム列挙子を取得します。|
 
 ## <a name="remarks"></a>Remarks
-このインターフェイスは、読み込まれたモジュールのスタック フレームの一覧の取得に使用されます。 各メソッドに渡される、 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) (クライアント アプリケーションによって実装される) のスタック フレームのリストを作成するために必要な情報を提供するオブジェクト。
+このインターフェイスは、読み込まれたモジュールのスタックフレームの一覧を取得するために使用されます。 各メソッドには、スタックフレームの一覧を作成するために必要な情報を提供する[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)オブジェクト (クライアントアプリケーションによって実装される) が渡されます。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-このインターフェイスは呼び出すことによって取得、`CoCreateInstance`クラス識別子を持つメソッド`CLSID_DiaStackWalker`とのインターフェイス ID`IID_IDiaStackWalker`します。 この例では、このインターフェイスを取得する方法を示します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+このインターフェイスは、クラス識別子 `CLSID_DiaStackWalker` と `IID_IDiaStackWalker` のインターフェイス ID を使用して `CoCreateInstance` メソッドを呼び出すことによって取得されます。 この例は、このインターフェイスを取得する方法を示しています。
 
 ## <a name="example"></a>例
-この例は、取得する方法を示します、`IDiaStackWalker`インターフェイス。
+この例では、`IDiaStackWalker` インターフェイスを取得する方法を示します。
 
 ```C++
 
@@ -59,12 +59,12 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="requirements"></a>必要条件
-ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: Dia2
 
-ライブラリ: diaguids.lib
+ライブラリ: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

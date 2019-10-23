@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832556"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742810"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-ファイルの位置によって指定された実行可能ファイルのバイト数を指定するクライアント アプリケーションを有効にします。
+クライアントアプリケーションが、ファイルの位置によって指定された実行可能ファイルのバイトを提供できるようにします。
 
 ## <a name="syntax"></a>構文
 
@@ -29,24 +29,24 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表は、メソッドの`IDiaReadExeAtOffsetCallback`します。
+ 次の表は、`IDiaReadExeAtOffsetCallback` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|実行可能ファイルから指定されたオフセットを開始位置として、指定されたバイト数を読み取ります。|
 
 ## <a name="remarks"></a>Remarks
- クライアント アプリケーションは、実行可能ファイルのファイルに絶対オフセットを使用する実行可能ファイルのバイト数を提供するために、このインターフェイスを実装します。 相対仮想アドレスを使用するには、実装、 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)インターフェイス。
+ クライアントアプリケーションは、実行可能ファイルに絶対オフセットを使用して実行可能ファイルのバイトを提供するために、このインターフェイスを実装します。 相対仮想アドレスを使用するには、 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)インターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
- このメソッドは、クライアント アプリケーションによって実装されに渡される、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド、ファイルの読み取りの代替方法として。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ このメソッドは、クライアントアプリケーションによって実装され、ファイルを読み取るための別の方法として[IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッドに渡されます。
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia80.dll
+ DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

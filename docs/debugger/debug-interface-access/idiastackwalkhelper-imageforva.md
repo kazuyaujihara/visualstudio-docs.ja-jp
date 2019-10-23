@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkhelper::imageforva |Microsoft Docs
+title: 'IDiaStackWalkHelper:: imageForVA |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 609a9370181937323f2bc3e8ca0a0765cd1f4a12
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837954"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741388"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-メモリの指定実行可能ファイルのメモリ領域で仮想アドレスをどこかで実行可能ファイルのイメージの開始を返します。
+実行可能ファイルのメモリ領域内のどこかに仮想アドレスが指定された場合に、メモリ内の実行可能イメージの開始を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,14 +34,14 @@ HRESULT imageForVA(
 #### <a name="parameters"></a>パラメーター
  `vaContext`
 
-[in]どこかで実行可能ファイルの領域にある仮想アドレス。
+から実行可能ファイルの領域内の任意の場所にある仮想アドレス。
 
  `pvaImageStart`
 
-[out]実行可能ファイルのイメージの開始仮想アドレスを返します。
+入出力実行可能ファイルのイメージの開始仮想アドレスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

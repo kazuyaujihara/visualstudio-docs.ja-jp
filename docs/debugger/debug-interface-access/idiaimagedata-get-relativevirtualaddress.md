@@ -1,5 +1,5 @@
 ---
-title: Idiaimagedata::get_relativevirtualaddress |Microsoft Docs
+title: 'IDiaImageData:: get_relativeVirtualAddress |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a0ff03784df581fc2f6c57b51b896096d97bba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfc7a808da6bb11907fc239f4b320e4dd93a2d19
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830215"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743426"
 ---
-# <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-アプリケーションを基準モジュールの仮想メモリの場所を取得します。
+# <a name="idiaimagedataget_relativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
+アプリケーションを基準として、モジュールの仮想メモリ内の場所を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]モジュールの仮想メモリの相対的なオフセットを返します。
+入出力モジュールの相対仮想メモリオフセットを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1764ec83a69dcc5daff267767594473bf690b341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839655"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742906"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
-読み取り`DWORD`プロパティ セット内の値。
+プロパティセット内の `DWORD` 値を読み取ります。
 
 ## <a name="syntax"></a>構文
 
@@ -34,17 +34,17 @@ HRESULT ReadDWORD ( 
 #### <a name="parameters"></a>パラメーター
  `id`
 
-[in]読み取るプロパティの識別子 (`PROPID`として WTypes.h で定義されている、 `ULONG`)。
+から読み取るプロパティの識別子 (`PROPID` は、WTypes. h で `ULONG` として定義されています)。
 
  `pValue`
 
-[out]プロパティ値を返します。
+入出力プロパティ値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`DWORD`します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。 プロパティが `DWORD` 型でない場合は `E_INVALIDARG` を返します。
 
 ## <a name="remarks"></a>Remarks
- A `DWORD` 32 ビット符号なし整数としての Windows によって定義されます。
+ @No__t_0 は、Windows によって32ビット符号なし整数として定義されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

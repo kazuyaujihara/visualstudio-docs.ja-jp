@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: feaf5d372279c6ab24053058a14aba4b3a71fd78
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829922"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744473"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
-データ ソースに含まれるさまざまな挿入されたソースを列挙します。
+データソースに格納されている、挿入されたさまざまなソースを列挙します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,25 +29,25 @@ IDiaEnumInjectedSources : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表は、メソッドの`IDiaEnumInjectedSources`します。
+次の表は、`IDiaEnumInjectedSources` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|取得、 [IEnumVARIANT インターフェイス](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)この列挙子のバージョン。|
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|この列挙子の[IEnumVARIANT インターフェイス](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)バージョンを取得します。|
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|挿入されたソースの数を取得します。|
-|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|インデックスを使用して、挿入されたソースを取得します。|
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|列挙体シーケンスに挿入されたソースの指定した数を取得します。|
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|列挙体シーケンスに挿入されたソースの指定した数をスキップします。|
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
+|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|インデックスを使って挿入されたソースを取得します。|
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|列挙シーケンス内の指定した数の挿入されたソースを取得します。|
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|列挙シーケンス内の、指定した数の挿入されたソースをスキップします。|
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 
 ## <a name="remarks"></a>Remarks
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-このインターフェイスは呼び出すことによって取得、 [idiasession::findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)または呼び出すことによって、特定のソース ファイルの名前を持つメソッド、 [idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)メソッドの GUID を`IDiaEnumInjectedSources`インターフェイス。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+このインターフェイスは、特定のソースファイルの名前を指定して[IDiaSession:: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)メソッドを呼び出すか、または `IDiaEnumInjectedSources` インターフェイスの GUID で[IDiaSession:: getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)メソッドを呼び出すことによって取得されます。
 
 ## <a name="example"></a>例
-この例は、取得する方法を示します (、`GetEnumInjectedSources`関数) を使用して、(、`DumpAllInjectedSources`関数)、`IDiaEnumInjectedSources`インターフェイス。 参照してください、 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)インターフェイスの実装については、`PrintPropertyStorage`関数。 別の出力を参照してください、 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)インターフェイス。
+この例では、(`GetEnumInjectedSources` 関数) を取得し、`IDiaEnumInjectedSources` インターフェイスで (`DumpAllInjectedSources` 関数) を使用する方法を示します。 @No__t_1 関数の実装については、 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)インターフェイスを参照してください。 別の出力については、「 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)インターフェイス」を参照してください。
 
 ```C++
 
@@ -105,12 +105,12 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 }
 ```
 
-## <a name="requirements"></a>必要条件
-ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: Dia2
 
-ライブラリ: diaguids.lib
+ライブラリ: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801423ee8ad5bb9a63ebb4f970d9c53e5fe8c1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605708"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748398"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>モデルからアプリを生成し構成する
 モデルからアプリケーションのパーツを生成または構成できます。
@@ -70,7 +70,7 @@ ms.locfileid: "72605708"
 
      たとえば、UML クラス図は一連のボックスと矢印で構成されていて、この表記法を使用すると、理論的には何でも定義できます。 一連の型を実際に記述する場合を除き、クラス図を使用することはお勧めしません。 たとえば、クラス図を調整して、さまざまな種類の web ページを記述できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)
 - [方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)

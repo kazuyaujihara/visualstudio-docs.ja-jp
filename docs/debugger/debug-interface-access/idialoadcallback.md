@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353e7dcbe1bcc44b9e8b7e9c7c417913ef07be35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ca58a206fec15bb8a9ae7f68a278a4530be47d8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828414"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743040"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
-プロシージャの検索、したがって、ユーザー インターフェイスの場所の試行の進行状況の報告を有効にする DIA シンボルからのコールバックを受け取ります。
+DIA シンボル検索プロシージャからコールバックを受信します。これにより、ユーザーインターフェイスは、場所の試行の進行状況についてレポートすることができます。
 
 ## <a name="syntax"></a>構文
 
@@ -29,27 +29,27 @@ IDiaLoadCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次のメソッドは、このインターフェイスによって公開されます。
+ このインターフェイスでは、次のメソッドが公開されています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|.Exe ファイルでデバッグ ディレクトリが見つかったときに呼び出されます。|
-|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|候補 .dbg ファイルが開かれたときに呼び出されます。|
-|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|候補の .pdb ファイルが開かれたときに呼び出されます。|
-|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|シンボルの検索パスを検索するレジストリのクエリを使用できるかどうかを決定します。|
-|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|シンボルを解決するのには、シンボル サーバーへのアクセスが許可されたかどうかを決定します。|
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|デバッグディレクトリが .exe ファイルで見つかったときに呼び出されます。|
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Dbg ファイルが開かれたときに呼び出されます。|
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|任意の .pdb ファイルが開かれたときに呼び出されます。|
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|シンボル検索パスを検索するためにレジストリクエリを使用できるかどうかを決定します。|
+|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|シンボルを解決するために、シンボルサーバーへのアクセスが許可されているかどうかを判断します。|
 
 ## <a name="remarks"></a>Remarks
- クライアント アプリケーションは、このインターフェイスを実装しへの呼び出しでの参照を提供します、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。
+ クライアントアプリケーションは、このインターフェイスを実装し、 [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッドの呼び出しでこのインターフェイスへの参照を提供します。
 
- 読み込みプロセスで適用可能な追加の制限事項を参照してください、 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)インターフェイス。
+ 読み込みプロセスに適用できるその他の制限については、 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)インターフェイスを参照してください。
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia80.dll
+ DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

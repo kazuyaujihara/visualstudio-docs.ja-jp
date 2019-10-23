@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97df4ceca2c511265a51f89c2f39a6595d200abf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658166"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748297"
 ---
 # <a name="properties-of-domain-roles"></a>ドメイン ロールのプロパティ
 次の表のプロパティは、ドメインロールに関連付けられています。 ドメインロールの詳細については、「[モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「[ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -41,6 +41,6 @@ ms.locfileid: "72658166"
 > [!NOTE]
 > 表示名の既定値は、関連付けられているプロパティ値に基づいています。各大文字の前に小文字の前にスペースを挿入し、その後に別の大文字の文字が続く場合は、その前にスペースを挿入します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン リレーションシップのプロパティ](../modeling/properties-of-domain-relationships.md)
