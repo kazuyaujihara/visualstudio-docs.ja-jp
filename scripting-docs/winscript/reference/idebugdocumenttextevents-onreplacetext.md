@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onReplaceText |Microsoft Docs
+title: 'IDebugDocumentTextEvents:: onReplaceText |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b65496f3bf64dfaf1a4fc1f1180dd6715277cd59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d037d45f1232ec8e70f7602df33532624fd0aa3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946701"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576005"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
-テキストが置き換えられることを示します。  
+テキストが置換されたことを示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT onReplaceText(
   
 #### <a name="parameters"></a>パラメーター  
  `cCharacterPosition`  
- [in]最初の文字の文字の位置を交換してください。  
+ から置き換えられた最初の文字の文字位置。  
   
  `cNumToReplace`  
- [in]置き換えられた文字の数。  
+ から置換された文字数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT onReplaceText(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、テキストが置き換えられることを示します。  
+ このメソッドは、テキストが置換されたことを示します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentTextEvents インターフェイス](../../winscript/reference/idebugdocumenttextevents-interface.md)

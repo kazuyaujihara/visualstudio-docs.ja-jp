@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete |Microsoft Docs
+title: 'IDebugApplication:: StepOutComplete |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f8ecfb835199afa0a60f3fde3c8fbdc8812240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f50d7e8a8936e52f4177450e7d163c4cfeaa55df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571041"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-シングル ステップ モードで、言語エンジンがその呼び出し元に戻ることをプロセス デバッグ マネージャーに通知します。  
+シングルステップモードの言語エンジンが呼び出し元に戻ることをプロセスデバッグマネージャーに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT StepOutComplete();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,7 +44,7 @@ HRESULT StepOutComplete();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 言語エンジンは、その呼び出し元に戻る直前に、シングル ステップ モードでこのメソッドを呼び出します。 プロセス デバッグ マネージャーでは、この機会を使用して、最初のチャンスに中断する必要があります、その他のすべてのスクリプト エンジンに通知します。 この手法は、モードの実装方法、言語間のステップです。  
+ 言語エンジンは、呼び出し元に戻る直前に、このメソッドをシングルステップモードで呼び出します。 プロセスデバッグマネージャーは、この機会を使用して、最初の機会に中断する必要がある他のすべてのスクリプトエンジンに通知します。 この手法では、言語間のステップモードが実装されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)

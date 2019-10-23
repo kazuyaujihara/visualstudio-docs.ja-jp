@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925703"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648732"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "68925703"
 > [!IMPORTANT]
 > コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 アプリケーションの作成には、次が必要です:
 
@@ -59,7 +59,7 @@ ms.locfileid: "68925703"
 
 7. T-sql スクリプトをクエリエディターに貼り付け、 **[実行]** ボタンをクリックします。
 
-     しばらくすると、クエリの実行が完了し、データベースオブジェクトが作成されます。 データベースには、次の2つのテーブルが含まれます。顧客と注文。 これらのテーブルにはデータが含まれていませんが、作成するアプリケーションを実行するときにデータを追加できます。 データベースには、4つの単純なストアドプロシージャも含まれています。
+     しばらくすると、クエリの実行が完了し、データベースオブジェクトが作成されます。 データベースには、Customer と Orders という2つのテーブルが含まれています。 これらのテーブルにはデータが含まれていませんが、作成するアプリケーションを実行するときにデータを追加できます。 データベースには、4つの単純なストアドプロシージャも含まれています。
 
 ## <a name="create-the-forms-and-add-controls"></a>フォームを作成してコントロールを追加する
 
@@ -86,9 +86,9 @@ ms.locfileid: "68925703"
 
 |Navigation フォームのコントロール|プロパティ|
 | - |----------------|
-|ボタン|Name = btnGoToAdd|
-|ボタン|Name = btnGoToFillOrCancel|
-|ボタン|Name = btnExit|
+|Button|Name = btnGoToAdd|
+|Button|Name = btnGoToFillOrCancel|
+|Button|Name = btnExit|
 
 **NewCustomer フォーム**
 
@@ -98,12 +98,12 @@ ms.locfileid: "68925703"
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|ボタン|Name = btnCreateAccount|
+|Button|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|
-|ボタン|Name = btnPlaceOrder|
-|ボタン|Name = btnAddAnotherAccount|
-|ボタン|Name = btnAddFinish|
+|Button|Name = btnPlaceOrder|
+|Button|Name = btnAddAnotherAccount|
+|Button|Name = btnAddFinish|
 
 **FillOrCancel フォーム**
 
@@ -112,22 +112,22 @@ ms.locfileid: "68925703"
 |FillOrCancel フォームのコントロール|プロパティ|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|ボタン|Name = btnFindByOrderID|
+|Button|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|ボタン|Name = btnCancelOrder|
-|ボタン|Name = btnFillOrder|
-|ボタン|Name = btnFinishUpdates|
+|Button|Name = btnCancelOrder|
+|Button|Name = btnFillOrder|
+|Button|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>接続文字列を保存する
-アプリケーションがデータベースの接続を開くとき、アプリケーションは接続文字列にアクセスする必要があります。 各フォームに文字列を手動で入力しないようにするには 、プロジェクトの app.config ファイルに文字列を格納し、アプリケーションの任意の形式からメソッドが呼び出されたときに文字列を返すメソッドを作成します。
+アプリケーションがデータベースの接続を開くとき、アプリケーションは接続文字列にアクセスする必要があります。 各フォームに文字列を手動で入力しないようにするには、プロジェクトの app.config ファイルに文字列を格納し、アプリケーションの任意の形式からメソッドが呼び出されたときに文字列を返すメソッドを作成*します。*
 
-接続文字列を見つけるには、**サーバーエクスプローラー**で**Sales**データ接続を右クリックし、 **[プロパティ]** を選択します。 **ConnectionString**プロパティを見つけ、 **ctrl**+**A**キー、 **ctrl**+**C**キーを使用して、文字列を選択してクリップボードにコピーします。
+接続文字列を見つけるには、**サーバーエクスプローラー**で**Sales**データ接続を右クリックし、 **[プロパティ]** を選択します。 **ConnectionString**プロパティを見つけ、 **ctrl** +**A**、 **ctrl** +**C**を使用して、文字列を選択してクリップボードにコピーします。
 
 1. を使用してC#いる場合は、**ソリューションエクスプローラー**で、プロジェクトの **[プロパティ]** ノードを展開し、**設定**ファイルを開きます。
     Visual Basic を使用している場合は、**ソリューションエクスプローラー**で **[すべてのファイルを表示]** をクリックし、 **[マイプロジェクト]** ノードを展開して、**設定の設定**ファイルを開きます。
 
-2. **[名前]** 列に「 `connString`」と入力します。
+2. **[名前]** 列に「`connString`」と入力します。
 
 3. **[種類]** ボックスの一覧で **[(接続文字列)]** を選択します。
 
@@ -175,7 +175,7 @@ Visual Basic を使用している場合は**ソリューションエクスプ�
 
 NewCustomer フォームロジックを完了するには、次の手順を実行します。
 
-1. `System.Data.SqlClient`名前空間をスコープにして、メンバーの名前を完全修飾する必要がないようにします。
+1. @No__t_0 名前空間をスコープに取り込み、メンバーの名前を完全修飾する必要がないようにします。
 
      ```csharp
      using System.Data.SqlClient;

@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180252"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647869"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -58,7 +58,7 @@ ms.locfileid: "70180252"
 
 ::: moniker-end
 
-2. メニュー バーの **[ファイル]** メニューから、 **[新規作成]**  >  **[ファイル]** を選択します。
+2. メニュー バーの **[ファイル]** メニューから、 **[新規作成]**  >  **[ファイル]** を選択するか、**Ctrl**+**N** キーを押します。
 
 3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、 **[Visual C# クラス]** を選択し、 **[開く]** を選択します。
 
@@ -80,7 +80,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
    `static void Main()` メソッドの署名がファイルに追加されているのがわかります。 [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) メソッドは、C# アプリケーションのエントリ ポイントです。
 
-利用できるコード スニペットは、プログラミング言語によって異なります。 目的の言語で使用可能なコード スニペットを確認するには、 **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** の順に選択し、言語のフォルダーを選択します。 C# の場合、リストは次のようになります。
+利用できるコード スニペットは、プログラミング言語によって異なります。 目的の言語で使用可能なコード スニペットを確認するには、 **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** の順に選択するか、**Ctrl**+**K**、**Ctrl**+**X** キーを押して、言語のフォルダーを選択します。 C# の場合、リストは次のようになります。
 
 ![C# コード スニペットのリスト](../media/tutorial-code-snippet-list.png)
 

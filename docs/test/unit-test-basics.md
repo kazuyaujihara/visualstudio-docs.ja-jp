@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891343"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659893"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -273,7 +273,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-|ボタン|説明|
+|Button|説明|
 |-|-|
 |![ビルド後に実行](../test/media/ute_runafterbuild_btn.png)|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、**テスト エクスプローラー**のツール バーの **[ビルド後にテストを実行]** を選択します。|
 
@@ -299,7 +299,7 @@ public void My_Test ()
 ![フィルターの検索カテゴリ](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|ボタン|説明|
+|Button|説明|
 |-|-|
 |![テスト エクスプローラー グループ ボタン](../test/media/ute_groupby_btn.png)|カテゴリ別にテストをグループ化するには、 **[グループ化]** をクリックします。|
 
@@ -369,7 +369,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。 **[コード カバレッジの結果]** ウィンドウに、行、関数、クラス、名前空間、およびモジュールで実行された製品コードのブロックのパーセンテージが表示されます。
 
-ソリューション内のテスト メソッドのコード カバレッジを実行するには、Visual Studio のメニューで、 **[テスト]** 、 **[コード カバレッジの分析]** の順に選択します。
+ソリューション内のテスト メソッドのコード カバレッジを実行するには、 **[テスト]**  >  **[すべてのテストのコード カバレッジの分析]** を選択します。
 
 カバレッジの結果は、 **[コード カバレッジの結果]** ウィンドウに表示されます。
 

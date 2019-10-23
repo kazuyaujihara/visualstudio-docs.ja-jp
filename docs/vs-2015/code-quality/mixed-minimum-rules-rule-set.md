@@ -1,27 +1,27 @@
 ---
-title: ルール セットの混合最小規則 |Microsoft Docs
+title: 混合最小規則の規則セット |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682202"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654856"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 混合最小規則は、潜在的なセキュリティ ホールやアプリケーションのクラッシュなど、共通言語ランタイムをサポートする C++ プロジェクトの最も重大な問題に集中します。 共通言語ランタイムをサポートする C++ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。  
+Microsoft Mixed Minimum ルールは、潜在的なセキュリティホールやアプリケーションのC++クラッシュなど、共通言語ランタイムをサポートするプロジェクトの最も重大な問題に焦点を当てています。 共通言語ランタイムをサポートする C++ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。
 
-|                                            ルール                                             |                                                  説明                                                  |
+|                                            規則                                             |                                                  説明                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                              [C6001](../code-quality/c6001.md)                              |                                          初期化されていないメモリの使用                                           |
 |                              [C6011](../code-quality/c6011.md)                              |                                          Null ポインターの逆参照                                           |
@@ -75,7 +75,7 @@ Microsoft 混合最小規則は、潜在的なセキュリティ ホールやア
 |        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         無効なサイズの文字列パラメーター                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   無効なサイズの到達不能な場所の文字列                                    |
 |        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        無効なサイズの文字列バッファー型                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              無効な注釈。'NeedsRelease' プロパティを void 型の値に対して使用することはできません。               |
+|                              [C6527](../code-quality/c6527.md)                              |              無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       認識されない書式指定文字列スタイル                                        |
 |                              [C6540](../code-quality/c6540.md)                              | この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります  |
 |                              [C6551](../code-quality/c6551.md)                              |                              無効なサイズ指定です: 式が解析可能ではありません                              |
@@ -101,7 +101,7 @@ Microsoft 混合最小規則は、潜在的なセキュリティ ホールやア
 |                             [C28215](../code-quality/c28215.md)                             |                    typefix は、既に typefix のあるパラメーターには適用できません                    |
 |                             [C28216](../code-quality/c28216.md)                             |        checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。         |
 |                             [C28217](../code-quality/c28217.md)                             |            関数について、注釈へのパラメーター数がファイルで検出されたものと一致しません             |
-|                             [C28218](../code-quality/c28218.md)                             |             関数のパラメーターの注釈のパラメーターと一致しませんファイルで検出されました。              |
+|                             [C28218](../code-quality/c28218.md)                             |             関数パラメーターの場合、注釈のパラメーターがファイルで見つかったものと一致しません              |
 |                             [C28219](../code-quality/c28219.md)                             |                 注釈 (注釈のパラメーター) には列挙型のメンバーが必要です                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  注釈 (注釈のパラメーター) には整数式が必要です                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        注釈のパラメーターには文字列式が必要です                         |
@@ -146,7 +146,7 @@ Microsoft 混合最小規則は、潜在的なセキュリティ ホールやア
 |                             [C28286](../code-quality/c28286.md)                             |                                    関数について、構文エラーが最後の近くにあります                                    |
 |                             [C28287](../code-quality/c28287.md)                             |                関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります                |
 |                             [C28288](../code-quality/c28288.md)                             |                  関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります                   |
-|                             [C28289](../code-quality/c28289.md)                             |                関数の場合。ReadableTo または WritableTo では、パラメーターとして limit-spec がなかった                |
+|                             [C28289](../code-quality/c28289.md)                             |                関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした                |
 |                             [C28290](../code-quality/c28290.md)                             |           関数の注釈は、実際のパラメーターの数より多い外部参照を含みます            |
 |                             [C28291](../code-quality/c28291.md)                             |                        deref レベル 0 での post null/notnull は、関数に対して意味がありません。                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            演算子に対する互換性のない型の、式のオペランドです                             |

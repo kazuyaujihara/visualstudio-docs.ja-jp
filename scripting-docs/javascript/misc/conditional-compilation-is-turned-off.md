@@ -1,5 +1,5 @@
 ---
-title: 条件付きコンパイルは無効になります |Microsoft Docs
+title: 条件付きコンパイルは無効になっています |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56621d6f7fcc195a4ece7654adeafd1096c37e8b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946577"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572933"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>条件付きコンパイルは無効になっています。
-初めてオンにする条件付きコンパイルなしの条件付きコンパイル変数を使用しようとしました。 通知の条件付きコンパイルの有効化、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]コンパイラに条件付きコンパイル変数としてで始まる識別子。 条件付きステートメントを使用してコードを開始することで行います。  
+条件付きコンパイル変数を使用しようとしましたが、最初に条件付きコンパイルを有効にしませんでした。 条件付きコンパイルを有効にすると、@ で始まる識別子を条件付きコンパイル変数として解釈するように [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] コンパイラに指示します。 これを行うには、次のステートメントを使用して条件付きコードを開始します。  
   
 ```js
 /*@cc_on @*/  
@@ -37,7 +37,7 @@ ms.locfileid: "62946577"
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)の    
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
  [@cc_on ステートメント](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if ステートメント](../../javascript/reference/at-if-statement-javascript.md)   

@@ -1,5 +1,5 @@
 ---
-title: 必要です ';' |Microsoft Docs
+title: "'; ' | が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433722"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576463"
 ---
 # <a name="expected-"></a>';' が必要です。
-行に 1 つ以上のステートメントを配置しようとしましたが、でしたいないセミコロンで区切ります。 ステートメントを終了するには、セミコロンを使用します。 いくつかのステートメントは、1 行に配置できますが、それぞれをセミコロンで区切る必要があります。  
+1行に複数のステートメントを配置しようとしましたが、セミコロンで区切っていませんでした。 セミコロンは、ステートメントを終了するために使用されます。 複数のステートメントを1行に配置することもできますが、それぞれをセミコロンで区切る必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- セミコロンで各ステートメントの終わりをマークします。  
+- 各ステートメントの最後にセミコロンを付けます。  
   
-- 関数の呼び出しが正しくかっこを使用してください。  
+- 関数呼び出しがかっこを正しく使用していることを確認します。  
   
-- ヘッダーにセミコロンを忘れていませんかどうかを確認、**の**ループします。  
+- For ループのヘッダー内でセミコロンを忘れないよう**に**してください。  
   
 ## <a name="see-also"></a>関連項目  
  [JavaScript コードの記述](../../javascript/writing-javascript-code.md)

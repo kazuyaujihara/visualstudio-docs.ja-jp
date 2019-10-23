@@ -2,17 +2,17 @@
 title: トラブルシューティング コード カバレッジ
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+author: jillre
+ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079579"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659876"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
@@ -29,6 +29,7 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>結果が表示されなかったり古い結果が表示されたりすることの考えられる原因
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>適切なエディションの Visual Studio を使用していますか?
+
 Visual Studio Enterprise が必要です。
 
 ### <a name="no-tests-were-executed"></a>テストが実行されなかった
@@ -43,7 +44,7 @@ Visual Studio Enterprise が必要です。
 
 テストを変更し、再実行したときに、まだ前のコード カバレッジの結果が表示され、コードの色分けも前の実行のものである場合があります。
 
-1. コード カバレッジの分析を実行します。
+1. **[コード カバレッジの分析]** を実行します。
 
 2. **[コード カバレッジの結果]** ウィンドウで、最新の結果セットが選択されていることを確認します。
 

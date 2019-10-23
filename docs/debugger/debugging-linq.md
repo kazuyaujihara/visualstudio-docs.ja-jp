@@ -1,4 +1,4 @@
----
+﻿---
 title: LINQ のデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -32,7 +32,7 @@ ms.locfileid: "62852374"
 ## <a name="BKMK_ViewingLINQResults"></a> LINQ の結果の表示
  LINQ ステートメントの結果を表示するには、DataTip、[ウォッチ] ウィンドウ、および [クイック ウォッチ] ダイアログ ボックスを使用します。 ソース ウィンドウを使用すると、ソース ウィンドウ内のクエリ上でポインターを停止し、DataTip を表示することができます。 LINQ 変数をコピーし、[ウォッチ] ウィンドウや [クイック ウォッチ] ダイアログ ボックスに貼り付けることができます。
 
- LINQ では、クエリは作成または宣言の時点では評価されず、実行時にのみ評価されます。 したがって、評価の時点までクエリには値がありません。 クエリの作成および評価の詳細については、[LINQ クエリ (c#) の概要](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) または [初めての LINQ クエリの作成](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query) を参照してください。。
+ LINQ では、クエリは作成または宣言の時点では評価されず、実行時にのみ評価されます。 したがって、評価の時点までクエリには値がありません。 クエリの作成および評価の詳細については、[LINQ クエリ (c#) の概要](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) または [書き込みで初めて Your の LINQ の作成](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query) を参照してください。
 
  クエリの結果を表示するためには、デバッガーがクエリを評価する必要があります。 そのため、LINQ クエリの結果をデバッガーで表示するときには、クエリが評価されることにより、次のような影響が生じます。
 

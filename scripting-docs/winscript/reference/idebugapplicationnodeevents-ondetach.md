@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onDetach |Microsoft Docs
+title: 'IDebugApplicationNodeEvents:: onDetach |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9162175727d439a6370071a5f3c9fa4c7ca88ee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb1a33cbec8ef032c1c4fedba28ad4013e676f0d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945681"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574675"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-アプリケーションのデバッグ ノード オブジェクトが親ノードからデタッチされたことを示すイベントを処理します。  
+デバッグアプリケーションノードオブジェクトが親ノードからデタッチされたことを示すイベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT onDetach();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,11 +44,11 @@ HRESULT onDetach();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、デバッグ アプリケーション ノードのオブジェクトが親ノードからデタッチされたことを示すイベントを処理します。  
+ このメソッドは、デバッグアプリケーションノードオブジェクトが親ノードからデタッチされたことを示すイベントを処理します。  
   
- 実装、`IDebugApplicationNode`インターフェイスは、このイベントを発生します。  
+ @No__t_0 インターフェイスの実装者は、このイベントを発生させます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplicationNodeEvents インターフェイス](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
+ [IDebugApplicationNodeEvents:: onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)    
  [IDebugApplicationNode インターフェイス](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c20947a125766547565d99c5762c20e23652da1a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009199"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561672"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-実装して、Windows スクリプト エンジンでは、スクリプトに追加する手順については、ソース コードのテキストを許可している場合、`IActiveScriptParseProcedure`インターフェイス。 これにより、解釈されたスクリプト言語 VBScript などの独立したオーサリング環境がないために別のメカニズム (以外の`IActiveScriptParse`または`IPersist`*)、名前空間にスクリプトの手順を追加します。  
+Windows スクリプトエンジンで、プロシージャのソースコードテキストをスクリプトに追加することが許可されている場合は、`IActiveScriptParseProcedure` インターフェイスが実装されます。 VBScript など、独立した作成環境を持たない解釈されたスクリプト言語では、スクリプトプロシージャを名前空間に追加するための代替メカニズム (`IActiveScriptParse` または `IPersist` * 以外) が提供されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
   
 |||  
 |-|-|  
 |メソッド|説明|  
-|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|指定したコードのプロシージャを解析し、名前空間に、プロシージャを追加します。|  
+|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|指定されたコードプロシージャを解析し、プロシージャを名前空間に追加します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト インターフェイス](../../winscript/reference/active-script-interfaces.md)

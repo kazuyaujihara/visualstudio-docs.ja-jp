@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840240"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574388"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE 列挙型
-実行するガベージ コレクションの型。 使用される、 [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)メソッド。  
+実行するガベージコレクションの型。 [IActiveScriptGarbageCollector:: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)メソッドで使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|通常のガベージ コレクションの操作を行います。 整数値は 0 です。|  
-|SCRIPTGCTYPE_EXHAUSTIVE|完全なガベージ コレクションの操作を行います。 整数値には 1 です。|  
+|SCRIPTGCTYPE_NORMAL|通常のガベージコレクションを実行します。 整数値は0です。|  
+|SCRIPTGCTYPE_EXHAUSTIVE|完全なガベージコレクションを実行します。 整数値は1です。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプトの定数、列挙型、およびエラー コード](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

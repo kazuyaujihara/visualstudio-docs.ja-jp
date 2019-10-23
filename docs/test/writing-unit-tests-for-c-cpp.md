@@ -1,19 +1,19 @@
 ---
 title: C/C++ 用の単体テストの記述
 description: CTest、Boost.Test、Google Test など、さまざまなテスト フレームワークを使用し、Visual Studio で C++ 単体テストを記述します。
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160180"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481915"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -37,11 +37,11 @@ C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes
 
 **Visual Studio 2017 以降 (すべてのエディション)** :
 
-- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、「[方法 :Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
+- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、[方法:Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
 
-- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、「[方法 :Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
+- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、[方法:Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
 
-- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、「[方法 :Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
+- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、[方法:Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
 
 **Visual Studio 2015 以前**
 
@@ -86,6 +86,8 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 次に、単体テストの *.cpp* ファイルで、テスト対象の型および関数が宣言されているヘッダー ファイルの `#include` ディレクティブを追加します。 「`#include "`」と入力すると、IntelliSense がアクティブ化して選択を支援します。 他のすべてのヘッダーについて繰り返します。
 
 ![インクルード ディレクティブを追加する](media/cpp-add-includes-test-project.png)
+
+ソース ファイル内の各 include ステートメントに完全なパスを入力しなくても済むように、必要なフォルダーを **[プロジェクト]**  >  **[プロパティ]**  >  **[C/C++]**  >  **[全般]**  >  **[追加のインクルード ディレクトリ]** に追加します。
 
 ### <a name="write-test-methods"></a>テスト メソッドを作成する
 

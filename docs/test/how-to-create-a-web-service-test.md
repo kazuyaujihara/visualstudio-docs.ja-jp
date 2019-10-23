@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950138"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653597"
 ---
 # <a name="how-to-create-a-web-service-test"></a>方法: Web サービス テストを作成する
 
@@ -33,15 +33,15 @@ Visual Studio Enterprise
 
 1. 新しい Web パフォーマンス テストを作成します。 ブラウザーが開いたら、すぐに **[停止]** を選択します。
 
-2. **Web パフォーマンス テスト エディター**で、Web パフォーマンス テストを右クリックし、**[Web サービス要求の追加]** を選択します。
+2. **Web パフォーマンス テスト エディター**で、Web パフォーマンス テストを右クリックし、 **[Web サービス要求の追加]** を選択します。
 
-3. 新しい要求の **[URL]** のプロパティで、**http://localhost/storecsvs/InstantOrder.asmx** などの Web サービスの名前を入力します。
+3. 新しい要求の **[URL]** のプロパティで、 **http://localhost/storecsvs/InstantOrder.asmx** などの Web サービスの名前を入力します。
 
-4. 別のセッションのブラウザーを開き、**[アドレス]** ツール バーに *.asmx* ページの URL を入力します。 テストするメソッドを選択して、SOAP メッセージを調べます。 これには、`SOAPAction` が含まれます。
+4. 別のセッションのブラウザーを開き、 **[アドレス]** ツール バーに *.asmx* ページの URL を入力します。 テストするメソッドを選択して、SOAP メッセージを調べます。 これには、`SOAPAction` が含まれます。
 
-5. **Web パフォーマンス テスト エディター**で、要求を右クリックし、**[ヘッダーの追加]** を選択して新しいヘッダーを追加します。 **[名前]** プロパティに「`SOAPAction`」と入力します。 **[値]** プロパティで、`SOAPAction` の値 (`"http://tempuri.org/CheckStatus"` など) を入力します。
+5. **Web パフォーマンス テスト エディター**で、要求を右クリックし、 **[ヘッダーの追加]** を選択して新しいヘッダーを追加します。 **[名前]** プロパティに「`SOAPAction`」と入力します。 **[値]** プロパティで、`SOAPAction` の値 (`"http://tempuri.org/CheckStatus"` など) を入力します。
 
-6. エディタの URL ノードを展開し、**[文字列ボディ]** ノードを選択して **[コンテンツの種類]** プロパティの値として「`text/xml`」と入力します。
+6. エディタの URL ノードを展開し、 **[文字列ボディ]** ノードを選択して **[コンテンツの種類]** プロパティの値として「`text/xml`」と入力します。
 
 7. 手順 4 のブラウザーに戻り、[Web サービスの説明] ページから SOAP 要求の XML 部分を選択し、クリップボードにコピーします。
 
@@ -60,11 +60,11 @@ Visual Studio Enterprise
      </soap:Envelope>
      ```
 
-9. **Web パフォーマンス テスト エディター**に戻り、**[文字列ボディ]** プロパティで省略記号 **(...)** を選択します。 クリップボードの内容をプロパティに貼り付けます。
+9. **Web パフォーマンス テスト エディター**に戻り、 **[文字列ボディ]** プロパティで省略記号 **(...)** を選択します。 クリップボードの内容をプロパティに貼り付けます。
 
 10. テストを成功させるためには、XML に含まれているプレースホルダー値を有効な値に置き換える必要があります。 前のサンプルでは、2 つの `string` と 1 つの `int` を置換することになります。 この Web サービスの操作は、注文をした登録ユーザーが存在する場合にのみ完了します。
 
-11. Web サービス要求を右クリックし、**[URL QueryString パラメーターの追加]** を選択します。
+11. Web サービス要求を右クリックし、 **[URL QueryString パラメーターの追加]** を選択します。
 
 12. クエリ文字列パラメーターに名前と値を代入します。 前の例では、名前は `op` となり、値は `CheckStatus` となります。 これは、実行される Web サービスの操作を識別します。
 

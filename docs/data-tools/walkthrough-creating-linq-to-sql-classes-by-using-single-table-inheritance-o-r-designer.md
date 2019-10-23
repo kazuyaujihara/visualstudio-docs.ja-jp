@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925401"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648055"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
-[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、 [「方法:O/R デザイナー](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)のトピックを使用して継承を構成し、の[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]継承の使用方法を示すいくつかの実際のデータを提供します。
+[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明されている一般的な手順について説明し、[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] での継承の使用方法を示すいくつかの実際のデータを提供します。
 
 このチュートリアルでは、次のタスクを実行します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "68925401"
 - Windows フォームにデータを表示します。
 
 ## <a name="create-a-table-to-inherit-from"></a>継承するテーブルの作成
-継承のしくみを確認するには、小さい`Person`テーブルを作成し、それを基底クラスとして使用`Employee`してから、それを継承するオブジェクトを作成します。
+継承のしくみを確認するには、小さな `Person` テーブルを作成し、それを基底クラスとして使用してから、継承する `Employee` オブジェクトを作成します。
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>ベース テーブルを作成して継承の動作を確認するには
 
@@ -49,7 +49,7 @@ ms.locfileid: "68925401"
 
 2. **テーブル デザイナー**で、次の列をテーブルに追加します。
 
-    |列名|データ型|Null を許容|
+    |列名|データの種類|Null を許容|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
@@ -91,7 +91,7 @@ ms.locfileid: "68925401"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>新しい Windows フォームアプリケーションを作成するには
 
-1. Visual Studio で、 **[ファイル]** メニューの [**新しい** > **プロジェクト**] をクリックします。
+1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
 
 2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
@@ -188,7 +188,7 @@ ms.locfileid: "68925401"
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [チュートリアル: LINQ to SQL クラスの作成 (O/R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [チュートリアル: LINQ to SQL クラスの作成 (O-R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [方法: Visual Basic またはでオブジェクトモデルを生成します。C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [方法: Visual Basic または C# でオブジェクト モデルを生成する](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

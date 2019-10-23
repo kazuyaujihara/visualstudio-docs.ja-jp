@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers |Microsoft Docs
+title: 'IDebugProperty:: EnumMembers |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 527bf9d3c51dad8ffe1645dc42081dc54189ad7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8c5f2cbb107d55e9ffe602cb7d3492701de10c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979163"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562423"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 プロパティのメンバーを列挙します。  
@@ -40,22 +40,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>パラメーター  
  `dwFieldSpec`  
- [in]指定します、`DBGPROP_INFO_FLAGS`列挙のデバッグ プロパティの構造内のフィールド入力するかを決定する定数。  
+ から列挙されたデバッグプロパティ構造内のどのフィールドに入力するかを決定する `DBGPROP_INFO_FLAGS` 定数を指定します。  
   
  `nRadix`  
- [in]任意の数値情報を解釈するときに使用する基数。  
+ から数値情報の解釈に使用される基数。  
   
  `refiid`  
- [in]この IID は、列挙子をフィルター処理するために渡されます。 IID は、のいずれか、`IDebugPropertyEnumType`インターフェイスから継承する`IDebugPropertyEnumType_All`します。  
+ からこの IID は、列挙子をフィルター処理するために渡されます。 IID は、`IDebugPropertyEnumType_All` から継承する `IDebugPropertyEnumType` インターフェイスの1つです。  
   
  `ppEnum`  
- [out]返します、`IEnumDebugPropertyInfo`インターフェイス メンバーのプロパティを列挙します。  
+ 入出力メンバープロパティを列挙する `IEnumDebugPropertyInfo` インターフェイスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
  [IDebugPropertyEnumType_All インターフェイス](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [IEnumDebugPropertyInfo インターフェイス](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

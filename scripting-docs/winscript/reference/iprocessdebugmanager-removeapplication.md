@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::RemoveApplication |Microsoft Docs
+title: 'IProcessDebugManager:: RemoveApplication |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c357fa5587d4fc5bf8c1752e20e7e0aa9df9835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d079d9089dbc47ac272388c680fa585a3532eea8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944776"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576537"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
-実行中のアプリケーションを削除します。 アプリケーションの一覧。  
+実行中のアプリケーションの一覧からアプリケーションを削除します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>パラメーター  
  `dwAppCookie`  
- [in]によって提供される cookie`IProcessDebugManager::AddApplication`アプリケーションがアプリケーションの一覧に追加したときにします。  
+ からアプリケーションがアプリケーションの一覧に追加されたときに `IProcessDebugManager::AddApplication` によって提供されるクッキー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,8 +47,8 @@ HRESULT RemoveApplication(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドの実行からアプリケーションを削除するアプリケーションの一覧。  
+ このメソッドは、実行中のアプリケーションの一覧からアプリケーションを削除します。  
   
 ## <a name="see-also"></a>関連項目  
- [Iprocessdebugmanager::addapplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
+ [Iprocessdebugmanager:: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
  [IProcessDebugManager インターフェイス](../../winscript/reference/iprocessdebugmanager-interface.md)

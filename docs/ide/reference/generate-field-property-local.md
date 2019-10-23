@@ -2,17 +2,17 @@
 title: フィールド、プロパティ、ローカル変数の生成
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8373339f921c032e52c00b5c8a54e910e5a1c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 626138341e398e67ff41ea116729dd349a1bb044
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790396"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660020"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Visual Studio でフィールド、プロパティ、またはローカル変数を生成する
 
@@ -32,18 +32,18 @@ ms.locfileid: "62790396"
 
 1. 赤い波線が表示されている行にカーソルを置きます。 赤い波線は、フィールド、ローカル変数、またはプロパティがまだ存在していないことを示します。
 
-   - C#: 
+   - C#:
 
        ![強調表示された C# のコード](media/field-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示された VB のコード](media/field-highlight-vb.png)
 
 2. 次に、以下のいずれかを実行します。
 
    - **キーボード**
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
@@ -58,11 +58,11 @@ ms.locfileid: "62790396"
 
    フィールド、プロパティ、またはローカル変数と、その使用法から推論された型が作成されます。
 
-   - C#: 
+   - C#:
 
        ![C# のメソッド生成結果](media/field-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![VB のメソッド生成結果](media/field-result-vb.png)
 

@@ -1,74 +1,72 @@
 ---
-title: '方法: XML ファイルを編集 |Microsoft Docs'
+title: '方法: XML ファイルを編集する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60b94274404c82695628dc72bd88bdf48145b7c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c099839cda87819ec0ec7932c2b2e6aa7698fa52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443434"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670885"
 ---
-# <a name="how-to-edit-xml-files"></a>方法: XML ファイルを編集する
+# <a name="how-to-edit-xml-files"></a>方法 : XML ファイルを編集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XML エディターは、XML ファイル用の新しいエディターです。 スタンドアロンの XML ファイル、または Visual Studio プロジェクトと関連付けられたファイルに対して使用できます。 XML エディターと関連付けられるファイル拡張子は、.config、.dtd、.xml、.xsd、.xdr、.xsl、.xslt、および .vssettings です。 XML エディターは、特定のエディターが登録されておらず、XML や DTD のコンテンツを含む他のファイルの種類にも関連付けられます。  
-  
+XML エディターは、XML ファイル用の新しいエディターです。 スタンドアロンの XML ファイル、または Visual Studio プロジェクトと関連付けられたファイルに対して使用できます。 XML エディターと関連付けられるファイル拡張子は、.config、.dtd、.xml、.xsd、.xdr、.xsl、.xslt、および .vssettings です。 XML エディターは、特定のエディターが登録されておらず、XML や DTD のコンテンツを含む他のファイルの種類にも関連付けられます。
+
 > [!NOTE]
-> XHTML ドキュメントは HTML エディターによって処理されます。  
-  
-### <a name="to-edit-an-xml-file"></a>XML ファイルを編集するには  
-  
-1. 編集するファイルをダブルクリックします。  
-  
-### <a name="to-add-a-new-xml-file-to-a-project"></a>新しい XML ファイルをプロジェクトに追加するには  
-  
-1. **プロジェクト**メニューの **新しい項目の追加**します。  
-  
-2. 選択**XML ファイル**から、**テンプレート**ウィンドウ。  
-  
-3. 内のファイル名を入力、**名前**フィールドとキーを押して**追加**します。  
-  
-     XML ファイルがプロジェクトに追加され、XML エディターによって開かれます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8" ?>` が含まれています。  
-  
-### <a name="to-add-an-existing-xml-file-to-a-project"></a>既存の XML ファイルをプロジェクトに追加するには  
-  
-1. **プロジェクト**メニューの **既存項目の追加**します。  
-  
-     **既存項目の追加** ダイアログ ボックスが表示されます。  
-  
-2. XML ファイルとキーを押して選択**追加**します。  
-  
-### <a name="to-create-a-new-xml-or-xslt-file"></a>新しい XML ファイルまたは XSLT ファイルを作成するには  
-  
-1. **ファイル**メニューの **新規**します。  
-  
-     **新しいファイル** ダイアログ ボックスが表示されます。  
-  
-2. 選択**XML ファイル**; 新しい XML ファイルを作成するか、選択する**XSLT ファイル**新しい XSLT スタイル シートを作成します。  
-  
-3. **[開く]** をクリックします。  
-  
-### <a name="to-create-a-project-for-xml-files"></a>XML ファイル用のプロジェクトを作成するには  
-  
-1. **ファイル**メニューの **新規**、し、**プロジェクト**します。  
-  
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
-  
-2. 任意のコード言語の選択**空のプロジェクト**、 をクリック**OK**します。  
-  
-3. プロジェクトに XML ファイルを追加します。  
-  
-     このプロジェクトに追加したスキーマは XML エディターによって検出され、このプロジェクトが開かれている間に編集する XML、スキーマ、または XSLT ファイルにおいて、検証と IntelliSense のために使用されます。  
-  
-## <a name="see-also"></a>関連項目  
- [XML エディター](../xml-tools/xml-editor.md)   
- [XML ドキュメントのプロパティと [プロパティ] ウィンドウ](../xml-tools/xml-document-properties-properties-window.md)   
- [方法: XML ドキュメントから XML スキーマを作成する](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+> XHTML ドキュメントは HTML エディターによって処理されます。
+
+### <a name="to-edit-an-xml-file"></a>XML ファイルを編集するには
+
+1. 編集するファイルをダブルクリックします。
+
+### <a name="to-add-a-new-xml-file-to-a-project"></a>新しい XML ファイルをプロジェクトに追加するには
+
+1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
+
+2. **[テンプレート]** ペインで **[XML ファイル]** を選択します。
+
+3. **[名前]** フィールドにファイル名を入力し、 **[追加]** をクリックします。
+
+     XML ファイルがプロジェクトに追加され、XML エディターによって開かれます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8" ?>` が含まれています。
+
+### <a name="to-add-an-existing-xml-file-to-a-project"></a>既存の XML ファイルをプロジェクトに追加するには
+
+1. **[プロジェクト]** メニューの **[既存項目の追加]** をクリックします。
+
+     **[既存項目の追加]** ダイアログボックスが表示されます。
+
+2. XML ファイルを選択し、 **[追加]** をクリックします。
+
+### <a name="to-create-a-new-xml-or-xslt-file"></a>新しい XML ファイルまたは XSLT ファイルを作成するには
+
+1. **[ファイル]** メニューの **[新規作成]** をクリックします。
+
+     **[新しいファイル]** ダイアログボックスが表示されます。
+
+2. 新しい XML ファイルを作成するには、 **[Xml ファイル]** を選択します。または、 **[Xslt ファイル]** を選択して新しい xslt スタイルシートを作成します。
+
+3. **[開く]** をクリックします。
+
+### <a name="to-create-a-project-for-xml-files"></a>XML ファイル用のプロジェクトを作成するには
+
+1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** を選択します。
+
+     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+
+2. 任意のコード言語を選択し、 **[空のプロジェクト]** を選択して、 **[OK]** をクリックします。
+
+3. プロジェクトに XML ファイルを追加します。
+
+     このプロジェクトに追加したスキーマは XML エディターによって検出され、このプロジェクトが開かれている間に編集する XML、スキーマ、または XSLT ファイルにおいて、検証と IntelliSense のために使用されます。
+
+## <a name="see-also"></a>参照
+ Xml[エディター](../xml-tools/xml-editor.md) [の Xml ドキュメントのプロパティ [プロパティ] ウィンドウ](../xml-tools/xml-document-properties-properties-window.md)[方法: xml ドキュメントから xml スキーマを作成する](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

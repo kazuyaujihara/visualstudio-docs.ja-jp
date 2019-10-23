@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsDebuggerThread |Microsoft Docs
+title: 'IDebugApplicationThread:: Queryisデバッガスレッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5594973f64446c0c6818522ad2ce2b174ab02610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: febce73e2c40d0df02acc42f6219eca30afb3f29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822163"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574533"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
-このスレッドがデバッガー スレッドであるかどうかを判断します。  
+このスレッドがデバッガースレッドであるかどうかを判断します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,18 +34,18 @@ HRESULT QueryIsDebuggerThread();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
   
 |[値]|説明|  
 |-----------|-----------------|  
-|`S_OK`|メソッドが成功し、これは、デバッガー スレッド。|  
-|`S_FALSE`|これはデバッガー スレッドではありません。|  
+|`S_OK`|メソッドは成功しました。これはデバッガースレッドです。|  
+|`S_FALSE`|これはデバッガースレッドではありません。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、このスレッドがデバッガー スレッドを決定します。  
+ このメソッドは、このスレッドがデバッガースレッドであるかどうかを判断します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplicationThread インターフェイス](../../winscript/reference/idebugapplicationthread-interface.md)

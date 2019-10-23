@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::ReplaceText |Microsoft Docs
+title: 'IDebugDocumentTextAuthor:: ReplaceText |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 920b6851f5fea42597be7ec5dcc55350024abea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beca5d0ce19a38346ef9b03e39169769c90ea008
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946766"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572037"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
-ドキュメントのテキストに置き換えます。  
+ドキュメント内のテキストを置換します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>パラメーター  
  `cCharacterPosition`  
- [in]置換する文字の範囲の位置を開始します。  
+ から置換する文字範囲の開始位置。  
   
  `cNumToReplace`  
- [in]置換する文字の数。  
+ から置換する文字数。  
   
  `pcharText[]`  
- [in]古い文字を置換する新しい文字を格納するバッファー。  
+ から古い文字を置き換える新しい文字を格納しているバッファー。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -55,7 +55,7 @@ HRESULT ReplaceText(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ドキュメントのテキストを置き換えます。  
+ このメソッドは、ドキュメント内のテキストを置換します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentTextAuthor インターフェイス](../../winscript/reference/idebugdocumenttextauthor-interface.md)

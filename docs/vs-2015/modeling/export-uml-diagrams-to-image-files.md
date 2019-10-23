@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 782d5da27898de7a332824e6fb07842710ab0656
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871841"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669655"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>UML 図をイメージ ファイルにエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-から[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、プログラムコントロールの下にあるイメージに UML ドキュメントをエクスポートできます。 たとえば、このエクスポートをドキュメントの自動生成の一部として実行できます。
+UML ドキュメントを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] からプログラムコントロールの下にあるイメージにエクスポートできます。 たとえば、このエクスポートをドキュメントの自動生成の一部として実行できます。
 
  ドキュメントをイメージに手動でエクスポートする場合は、図から図形をコピーして Word などの他のプログラムに貼り付けることができます。 ドキュメントを XPS 形式にして印刷することもできます。 詳細については、「[イメージとしてダイアグラムをエクスポート](../modeling/export-diagrams-as-images.md)する」を参照してください。
 
@@ -29,7 +29,7 @@ ms.locfileid: "68871841"
 > [!NOTE]
 > このコードをメニュー コマンドとして機能させるには、このコードを MEF コンポーネントに組み込む必要があります。 詳細については、「[モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
 
- このコードでは、まず[ishape. GetObject](/previous-versions/ee789371(v=vs.140))を<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>使用して、基になる実装のを取得します。 この型には <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> メソッドがあります。
+ このコードでは、まず[Ishape. GetObject](/previous-versions/ee789371(v=vs.140))を使用して、基になる実装の <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> を取得します。 この型には <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> メソッドがあります。
 
 ```
 namespace SaveToImage
@@ -141,5 +141,5 @@ namespace SaveToImage
 }
 ```
 
-## <a name="see-also"></a>関連項目
- [図をイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)[モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する
+## <a name="see-also"></a>参照
+ [図をイメージとしてエクスポート](../modeling/export-diagrams-as-images.md)[するモデリング図のメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する

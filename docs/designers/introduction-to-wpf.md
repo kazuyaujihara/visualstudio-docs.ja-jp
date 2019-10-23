@@ -3,20 +3,20 @@ title: WPF の概要
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5fe70c531a109294b49a1f6104f535cf8aca5a45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924457"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635443"
 ---
 # <a name="wpf-overview"></a>WPF の概要
 
@@ -428,7 +428,7 @@ WPF のアニメーション サポートを使用すると、コントロール
 
 ### <a name="triggers"></a>トリガー
 
-XAML マークアップの主な目的はアプリケーションの外観を実装することですが、XAML を使用してアプリケーションの動作の一部の機能を実装することもできます。 その一例として、ユーザーの操作に基づいて、アプリケーションの外観を変更するトリガーの使用があります。 詳しくは、「[スタイルとテンプレート](/dotnet/framework/wpf/controls/styling-and-templating)」をご覧ください。
+XAML マークアップの主な目的はアプリケーションの外観を実装することですが、XAML を使用してアプリケーションの動作の一部の機能を実装することもできます。 その一例として、ユーザーの操作に基づいて、アプリケーションの外観を変更するトリガーの使用があります。 詳細については、[スタイルとテンプレート](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)に関するページをご覧ください。
 
 ### <a name="control-templates"></a>コントロール テンプレート
 
@@ -545,7 +545,7 @@ WPF コントロールの既定のユーザー インターフェイスは、通
 
 ![2 つのオレンジ色のボタン](../designers/media/wpfintrofigure20.png)
 
-詳しくは、「[スタイルとテンプレート](/dotnet/framework/wpf/controls/styling-and-templating)」をご覧ください。
+詳細については、[スタイルとテンプレート](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)に関するページをご覧ください。
 
 ### <a name="resources"></a>リソース
 

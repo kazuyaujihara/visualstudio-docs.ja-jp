@@ -9,107 +9,107 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821663"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639568"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 
-このトピックでは、データベース ファイルをアップグレードするためのオプションを説明します ( *.mdf*)、新しいバージョンの Visual Studio をインストールした後。 手順についてには、次のタスクが含まれています。
+このトピックでは、新しいバージョンの Visual Studio をインストールした後で、データベースファイル ( *.mdf*) をアップグレードするためのオプションについて説明します。 これには、次のタスクの手順が含まれます。
 
-- 新しいバージョンの SQL Server Express LocalDB を使用するデータベース ファイルをアップグレードします。
+- 新しいバージョンの SQL Server Express LocalDB を使用するようにデータベースファイルをアップグレードする
 
-- SQL Server Express の新しいバージョンを使用するデータベース ファイルをアップグレードします。
+- 新しいバージョンの SQL Server Express を使用するようにデータベースファイルをアップグレードする
 
-- Visual Studio でのデータベース ファイルを使用して機能しますが、古いバージョンの SQL Server Express または LocalDB との互換性を保持
+- Visual Studio でデータベースファイルを操作するが、古いバージョンの SQL Server Express または LocalDB との互換性を維持する
 
-- 既定のデータベース エンジンを SQL Server Express を行う
+- 既定のデータベースエンジン SQL Server Express にする
 
-Visual Studio を使用してデータベース ファイルを含むプロジェクトを開くことができます ( *.mdf*) 以前のバージョンの SQL Server Express または LocalDB を使用して作成されました。 ただしを Visual Studio でプロジェクトの開発を続行するには、そのバージョンの SQL Server Express または Visual Studio と同じコンピューターにインストールされている LocalDB であるか、データベース ファイルをアップグレードする必要があります。 データベース ファイルをアップグレードする場合は、以前のバージョンの SQL Server Express または LocalDB を使用してアクセスできません。
+Visual Studio を使用して、古いバージョンの SQL Server Express または LocalDB を使用して作成されたデータベースファイル ( *.mdf*) を含むプロジェクトを開くことができます。 ただし、Visual Studio でプロジェクトの開発を続行するには、Visual Studio と同じコンピューターにそのバージョンの SQL Server Express または LocalDB がインストールされている必要があります。または、データベースファイルをアップグレードする必要があります。 データベースファイルをアップグレードしても、以前のバージョンの SQL Server Express または LocalDB を使用してアクセスすることはできません。
 
-また、ファイルのバージョンが SQL Server Express または現在インストールされている LocalDB のインスタンスとの互換性がない場合、以前のバージョンの SQL Server Express または LocalDB を通じて作成されたデータベース ファイルをアップグレードするように求め可能性があります。 この問題を解決するには、Visual Studio は、ファイルをアップグレードすることを求められます。
+また、ファイルのバージョンが現在インストールされている SQL Server Express または LocalDB のインスタンスと互換性がない場合は、以前のバージョンの SQL Server Express または LocalDB を使用して作成されたデータベースファイルをアップグレードするように求められることもあります。 この問題を解決するには、Visual Studio でファイルをアップグレードするように求められます。
 
 > [!IMPORTANT]
-> アップグレードする前に、データベース ファイルをバックアップすることをお勧めします。
+> アップグレードする前に、データベースファイルをバックアップすることをお勧めします。
 
 > [!WARNING]
-> アップグレードする場合、 *.mdf* LocalDB 2016 (V13) またはそれ以降の 32 ビットである LocalDB 2014 (V12) で作成されたファイルはできません、32 ビット バージョンの LocalDB でもう一度ファイルを開くことができません。
+> Localdb 2014 (V12) 32 ビットで作成された *.mdf*ファイルを localdb 2016 (V13) 以降にアップグレードした場合、そのファイルを、32ビットバージョンの localdb で再び開くことはできません。
 
 データベースをアップグレードする前に、次の条件を考慮してください。
 
-- 以前のバージョンと新しいバージョンの Visual Studio の両方で、プロジェクトで作業する場合、アップグレードしないでください。
+- 以前のバージョンと新しいバージョンの Visual Studio の両方でプロジェクトを操作する場合は、アップグレードしないでください。
 
-- SQL Server Express LocalDB はなくを使用する環境でアプリケーションを使用する場合、アップグレードしないでください。
+- アプリケーションが LocalDB ではなく SQL Server Express を使用する環境で使用される場合は、アップグレードしないでください。
 
-- LocalDB から受け入れないために、アプリケーションは、リモート接続を使用する場合にアップグレードしないでください。
+- アプリケーションがリモート接続を使用している場合は、LocalDB ではそれを受け付けないため、アップグレードしないでください。
 
-- アプリケーションには、インターネット インフォメーション サービス (IIS) が依存している場合、アップグレードしないでください。
+- アプリケーションがインターネットインフォメーションサービス (IIS) に依存している場合は、アップグレードしないでください。
 
-- サンド ボックス環境でデータベース アプリケーションをテストするデータベースを管理するしたくない場合は、アップグレードを検討します。
+- サンドボックス環境でデータベースアプリケーションをテストするが、データベースを管理しない場合は、アップグレードを検討してください。
 
-### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>LocalDB のバージョンを使用するデータベース ファイルをアップグレードするには
+### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>LocalDB バージョンを使用するようにデータベースファイルをアップグレードするには
 
-1. **サーバー エクスプ ローラー**を選択、**データベースへの接続**ボタンをクリックします。
+1. **サーバーエクスプローラー**で、 **[データベースへの接続]** ボタンをクリックします。
 
-2. **接続の追加** ダイアログ ボックスで、次の情報を指定します。
+2. **[接続の追加]** ダイアログボックスで、次の情報を指定します。
 
     - **データ ソース**: `Microsoft SQL Server (SqlClient)`
 
     - **サーバー名**:
 
-        - 既定のバージョンを使用する:`(localdb)\MSSQLLocalDB`します。  これを指定 ProjectV12 または ProjectV13 のいずれかによっては、Visual Studio のバージョンがインストールされているし、最初の LocalDB インスタンスの作成時にします。 **MSSQLLocalDB**ノード**SQL Server オブジェクト エクスプ ローラー**ポイントにバージョンを示しています。
+        - 既定のバージョンを使用する場合は `(localdb)\MSSQLLocalDB`。  これにより、インストールされている Visual Studio のバージョンと最初の LocalDB インスタンスが作成された日時に応じて、ProjectV12 または ProjectV13 のいずれかが指定されます。 **SQL Server オブジェクトエクスプローラー**の  **MSSQLLocalDB**ノードには、ポイントしているバージョンが表示されます。
 
-        - 特定のバージョンを使用する:`(localdb)\ProjectsV12`または`(localdb)\ProjectsV13`V12 は LocalDB 2014、V13 は LocalDB 2016。
+        - 特定のバージョンを使用する場合: `(localdb)\ProjectsV12` または `(localdb)\ProjectsV13`。 V12 は LocalDB 2014 で、V13 は LocalDB 2016 です。
 
-    - **データベース ファイルを添付**:プライマリの物理パス *.mdf*ファイル。
+    - **データベースファイルのアタッチ**: プライマリ *.mdf*ファイルの物理パス。
 
-    - **論理名**:ファイルで使用する名前です。
+    - 論理名(&L):ファイルで使用する名前です。
 
 3. **[OK]** ボタンを選択します。
 
-4. 求められたら、選択、**はい**ボタン ファイルをアップグレードします。
+4. メッセージが表示されたら、 **[はい]** をクリックしてファイルをアップグレードします。
 
-    データベースはアップグレードされ、LocalDB データベース エンジンに接続されて、LocalDB の古いバージョンと互換性がありません。
+    データベースがアップグレードされ、LocalDB データベースエンジンにアタッチされており、以前のバージョンの LocalDB と互換性がなくなりました。
 
-SQL Server Express LocalDB を使用して、接続のショートカット メニューを開き、に接続を変更することもできます。**接続の変更**します。 **接続の変更** ダイアログ ボックスで、サーバー名を変更して`(LocalDB)\MSSQLLocalDB`します。 **プロパティの詳細** ダイアログ ボックスに、必ず**ユーザー インスタンス**に設定されている**False**します。
+また、接続のショートカットメニューを開き、 **[接続の変更]** を選択して、LocalDB を使用するように SQL Server Express 接続を変更することもできます。 **[接続の変更]** ダイアログボックスで、サーバー名を `(LocalDB)\MSSQLLocalDB` に変更します。 **[詳細プロパティ**] ダイアログボックスで、 **[ユーザーインスタンス]** が **[False]** に設定されていることを確認します。
 
-### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>SQL Server Express バージョンを使用するデータベース ファイルをアップグレードするには
+### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>SQL Server Express のバージョンを使用するようにデータベースファイルをアップグレードするには
 
-1. データベースへの接続のショートカット メニューを選択**接続の変更**します。
+1. データベースへの接続のショートカットメニューで、 **[接続の変更]** を選択します。
 
-2. **接続の変更**ダイアログ ボックスで、**詳細**ボタンをクリックします。
+2. **[接続の変更]** ダイアログボックスで、 **[詳細設定]** をクリックします。
 
-3. **プロパティの詳細**ダイアログ ボックスで、 **OK**サーバー名を変更することがなくボタン。
+3. **[詳細プロパティ**] ダイアログボックスで、サーバー名を変更せずに **[OK** ] をクリックします。
 
-    SQL Server Express の現在のバージョンと一致するデータベース ファイルはアップグレードされます。
+    データベースファイルは、現在のバージョンの SQL Server Express と一致するようにアップグレードされます。
 
-### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Visual Studio でデータベースが SQL Server Express との互換性を保持するには
+### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Visual Studio でデータベースを操作するが、SQL Server Express との互換性を維持するには
 
-- Visual Studio では、アップグレードしなくても、プロジェクトを開きます。
+- Visual Studio で、アップグレードせずにプロジェクトを開きます。
 
-  - プロジェクトを実行するには、選択、 **F5**キー。
+  - プロジェクトを実行するには、 **F5**キーを押します。
 
-  - データベースを編集するには、開く、 *.mdf*ファイル**ソリューション エクスプ ローラー**でノードを展開および**サーバー エクスプ ローラー**データベースを使用します。
+  - データベースを編集するには、**ソリューションエクスプローラー**で *.mdf*ファイルを開き、**サーバーエクスプローラー**のノードを展開してデータベースを操作します。
 
-### <a name="to-make-sql-server-express-the-default-database-engine"></a>既定のデータベース エンジンを SQL Server Express を作成するには
+### <a name="to-make-sql-server-express-the-default-database-engine"></a>既定のデータベースエンジンを SQL Server Express するには
 
-1. メニュー バーで選択**ツール** > **オプション**します。
+1. メニューバーで、[**ツール** > **オプション**] を選択します。
 
-2. **オプション** ダイアログ ボックスで、展開、**データベース ツール**オプション、および選択**データ接続**します。
+2. **[オプション]** ダイアログボックスで、 **[データベースツール]** オプションを展開し、 **[データ接続]** を選択します。
 
-3. **SQL Server インスタンス名**テキスト ボックスに、SQL Server Express または使用する LocalDB のインスタンスの名前を指定します。 場合は、インスタンスがという名前が指定`.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`します。
+3. **[SQL Server インスタンス名]** テキストボックスに、使用する SQL Server Express または LocalDB のインスタンスの名前を指定します。 インスタンスに名前が付けられていない場合は、`.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` を指定します。
 
 4. **[OK]** ボタンを選択します。
 
-    SQL Server Express をアプリケーションの既定のデータベース エンジンとなります。
+    SQL Server Express は、アプリケーションの既定のデータベースエンジンになります。
 
 ## <a name="see-also"></a>関連項目
 

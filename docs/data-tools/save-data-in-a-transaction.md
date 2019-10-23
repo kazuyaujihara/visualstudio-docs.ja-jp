@@ -12,115 +12,115 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea312ca2858a02bc8a70c3e41dbb525c9d222adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641099"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>チュートリアル: トランザクションにデータを保存する
 
-このチュートリアルを使用して、トランザクションでデータを保存する方法について説明、<xref:System.Transactions>名前空間。 このチュートリアルでは、Windows フォーム アプリケーションを作成します。 Northwind サンプル データベース内のデータセットを 2 つのテーブルを作成するのにデータ ソース構成ウィザードを使用します。 Windows フォームにデータ バインド コントロールと BindingNavigator の保存 ボタンを TransactionScope 内部でデータベースを更新するためにコードを変更するを追加します。
+このチュートリアルでは、<xref:System.Transactions> 名前空間を使用してトランザクションにデータを保存する方法について説明します。 このチュートリアルでは、Windows フォームアプリケーションを作成します。 データソース構成ウィザードを使用して、Northwind サンプルデータベースに2つのテーブルのデータセットを作成します。 データバインドコントロールを Windows フォームに追加し、BindingNavigator の [保存] ボタンのコードを変更して、TransactionScope 内のデータベースを更新します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
-このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
+このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 一部として Visual Studio インストーラーでは、SQL Server Express LocalDB をインストールすることができます、 **.NET デスクトップ開発**ワークロード、または個々 のコンポーネントとして。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 Visual Studio インストーラーでは、SQL Server Express LocalDB を **.net デスクトップ開発**ワークロードの一部としてインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
-2. 次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**Visual Studio インストーラーにワークロード)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
+    1. Visual Studio で、 **[SQL Server オブジェクトエクスプローラー]** ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの**データストレージと処理**ワークロードの一部としてインストールされます)。 **[SQL Server]** ノードを展開します。 LocalDB インスタンスを右クリックし、 **[新しいクエリ]** をクリックします。
 
-       クエリ エディター ウィンドウが開きます。
+       クエリエディターウィンドウが開きます。
 
-    2. コピー、 [Northwind Transact SQL スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにします。 この T-SQL スクリプトでは、最初から、Northwind データベースを作成し、データを設定します。
+    2. [Northwind transact-sql スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにコピーします。 この T-sql スクリプトでは、Northwind データベースを最初から作成し、データを設定します。
 
-    3. T-SQL スクリプトをクエリ エディターに貼り付けて選択し、 **Execute**ボタンをクリックします。
+    3. T-sql スクリプトをクエリエディターに貼り付け、 **[実行]** ボタンをクリックします。
 
-       しばらくすると、クエリの実行が完了し、Northwind データベースを作成します。
+       しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
 ## <a name="create-a-windows-forms-application"></a>Windows フォーム アプリケーションを作成する
 
-作成するには、まず、 **Windows フォーム アプリケーション**します。
+最初の手順では、 **Windows フォームアプリケーション**を作成します。
 
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
+1. Visual Studio の **[ファイル]** メニューで、[**新規** > **プロジェクト**] を選択します。
 
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
-3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
+3. 中央のウィンドウで、 **[Windows フォーム App]** プロジェクトの種類を選択します。
 
-4. プロジェクトに名前を**SavingDataInATransactionWalkthrough**を選び、 **OK**。
+4. プロジェクトに**SavingDataInATransactionWalkthrough**という名前を入力し、[ **OK]** をクリックします。
 
      **SavingDataInATransactionWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
 
-## <a name="create-a-database-data-source"></a>データベースのデータ ソースを作成します。
+## <a name="create-a-database-data-source"></a>データベースデータソースの作成
 
-このステップでは、**データ ソース構成ウィザード**に基づいてデータ ソースを作成する、`Customers`と`Orders`Northwind サンプル データベース内のテーブル。
+この手順では、**データソース構成ウィザード**を使用して、Northwind サンプルデータベースの `Customers` テーブルと `Orders` テーブルに基づいてデータソースを作成します。
 
-1. 開くには、**データ ソース**ウィンドウで、**データ**メニューの  **データ ソースの**します。
+1. データ **[ソース]** ウィンドウを開くには、 **[データ]** メニューの **[データソースの表示]** をクリックします。
 
-2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。
+2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。
 
-3. **データ ソースの種類を選択**画面で、**データベース**、し、**次**します。
+3. **[データソースの種類を選択]** 画面で、 **[データベース]** を選択し、 **[次へ]** を選択します。
 
-4. **データ接続の選択**画面は、次のいずれか。
+4. **[データ接続の選択]** 画面で、次のいずれかの操作を行います。
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-         - または -
+         -または-
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。
 
-5. データベースにパスワードが必要な場合は、機密データを含めるしを選択するオプションを選択**次**します。
+5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、 **[次へ]** を選択します。
 
-6. **接続文字列をアプリケーション構成ファイルに保存**画面で、**次**します。
+6. **[アプリケーション構成ファイルへの接続文字列の保存]** 画面で、 **[次へ]** を選択します。
 
-7. **データベース オブジェクトの選択**画面で、展開、**テーブル**ノード。
+7. **[データベースオブジェクトの選択]** 画面で、 **[テーブル]** ノードを展開します。
 
-8. 選択、`Customers`と`Orders`テーブル、および選択**完了**します。
+8. @No__t_0 テーブルと `Orders` テーブルを選択し、 **[完了]** を選択します。
 
-     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
+     プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
 
-## <a name="add-controls-to-the-form"></a>コントロールをフォームに追加します。
+## <a name="add-controls-to-the-form"></a>フォームへのコントロールの追加
 
 **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
-1. **データソース**ウィンドウで、展開、**顧客**ノード。
+1. **[データソース]** ウィンドウで、 **[Customers]** ノードを展開します。
 
 2. **[データ ソース]** ウィンドウから **Form1** にメインの **[Customers]** ノードをドラッグします。
 
-   レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、 `CustomersTableAdapter`、 <xref:System.Windows.Forms.BindingSource>、および<xref:System.Windows.Forms.BindingNavigator>コンポーネント トレイに表示されます。
+   レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 コンポーネントトレイに、 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、`CustomersTableAdapter`、<xref:System.Windows.Forms.BindingSource>、および <xref:System.Windows.Forms.BindingNavigator> が表示されます。
 
-3. 関連するドラッグ**注文**ノード (main ではない**注文**が関連する子テーブル ノードの下、 **Fax**列) 下のフォームに、 **CustomersDataGridView**します。
+3. 関連する **orders** ノード (メインの **orders** ノードではなく、**Fax** 列の下にある 関連する子テーブル ノード) を、顧客 の  **datagridview** の下のフォームにドラッグします。
 
-   <xref:System.Windows.Forms.DataGridView> がフォームに表示されます。 `OrdersTableAdapter`と<xref:System.Windows.Forms.BindingSource>コンポーネント トレイに表示されます。
+   <xref:System.Windows.Forms.DataGridView> がフォームに表示されます。 コンポーネントトレイに `OrdersTableAdapter` と <xref:System.Windows.Forms.BindingSource> が表示されます。
 
-## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>System.Transactions アセンブリへの参照を追加します。
+## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>System.string アセンブリへの参照を追加します。
 
 トランザクションは、<xref:System.Transactions> 名前空間を使用します。 System.Transactions アセンブリへのプロジェクト参照は既定で追加されないため、手動で追加する必要があります。
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>System.Transactions の DLL ファイルへの参照を追加するには
 
-1. **プロジェクト**メニューの **参照の追加**します。
+1. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
 
-2. 選択**System.Transactions** (上、 **.NET** ] タブ)、し、[ **[ok]** します。
+2. **[.Net]** タブで [ **system.string] を選択し**、[ **OK]** を選択します。
 
      **System.Transactions** への参照がプロジェクトに追加されます。
 
-## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>BindingNavigator の SaveItem ボタンのコードを変更します。
+## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>BindingNavigator の SaveItem ボタンのコードを変更する
 
-既定でコードを追加、フォーム上にドロップされた最初のテーブルの`click`のボタンでは、保存のイベント、<xref:System.Windows.Forms.BindingNavigator>します。 追加テーブルを更新する場合は、手動でコードを追加する必要があります。 このチュートリアルでは、リファクタリング、既存のコードをファイルから保存ボタンの click イベント ハンドラー。 また、行が追加または削除する必要があるかどうかに基づいて、特定の更新機能を提供するメソッドを作成します。
+フォームに最初にドロップされたテーブルに対して、既定では、<xref:System.Windows.Forms.BindingNavigator> の [保存] ボタンの `click` イベントにコードが追加されます。 追加テーブルを更新する場合は、手動でコードを追加する必要があります。 このチュートリアルでは、[保存] ボタンのクリックイベントハンドラーから既存の保存コードをリファクターします。 また、行を追加または削除する必要があるかどうかに基づいて、特定の更新機能を提供するためのメソッドもいくつか作成します。
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>自動生成された保存コードを変更するには
 
-1. 選択、**保存**のボタンでは、 **CustomersBindingNavigator** (フロッピー ディスクのアイコンのボタン)。
+1. **顧客 Sbindingnavigator**の **[保存]** ボタン (フロッピーディスクのアイコンが付いたボタン) を選択します。
 
 2. `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードで置き換えます。
 
@@ -129,13 +129,13 @@ ms.locfileid: "62565718"
 
 関連するデータへの変更を解決する順序は次のとおりです。
 
-- 子レコードを削除します。 (この場合、レコードを削除、`Orders`テーブルです)。
+- 子レコードを削除します。 (この場合は、`Orders` テーブルからレコードを削除します)。
 
-- 親レコードを削除します。 (この場合、レコードを削除、`Customers`テーブルです)。
+- 親レコードを削除します。 (この場合は、`Customers` テーブルからレコードを削除します)。
 
-- 親レコードを挿入します。 (この場合は、内のレコードを挿入、`Customers`テーブルです)。
+- 親レコードを挿入します。 (この例では、`Customers` テーブルにレコードを挿入します)。
 
-- 子レコードを挿入します。 (この場合は、内のレコードを挿入、`Orders`テーブルです)。
+- 子レコードを挿入します。 (この例では、`Orders` テーブルにレコードを挿入します)。
 
 ### <a name="to-delete-existing-orders"></a>既存の注文を削除するには
 

@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName |Microsoft Docs
+title: 'IScriptScriptlet レット:: SetSubItemName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b9a4f67fb5a383666cb9f83fc2e0e38fbffb51f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab4f7afec9302126ccbfcbe7f2abafc74cbf17d6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786563"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571858"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-スクリプトレットのオブジェクトのホストの完全修飾名では、最後の識別子を設定します。  
+スクリプトレットのオブジェクトホストの完全修飾名の最後の識別子を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,9 +37,9 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>パラメーター  
  `psz`  
- スクリプトレットの名前が 1 つ以上のレベルを持つ場合は、ホストの完全修飾`psz`は 2 番目のレベルで識別子のバッファーのアドレスです。  
+ ホストの完全修飾されたスクリプトレット名に複数のレベルがある場合、`psz` は2番目のレベルの識別子のバッファーアドレスです。  
   
- スクリプトレットの名前が 1 つのレベルを持つ場合は、ホストの完全修飾`psz`は最初のレベルで識別子のバッファーのアドレスです。  
+ ホストの完全修飾されたスクリプトレット名に1つのレベルがある場合、`psz` は、最初のレベルの識別子のバッファーアドレスです。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

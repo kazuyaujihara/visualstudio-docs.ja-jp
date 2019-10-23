@@ -1,44 +1,44 @@
 ---
-title: ワークフロー デザイナー - InvokeDelegate
+title: ワークフローデザイナー-InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 5227d96e3fad03dd3e3309523a6d2c68a1abdc11
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537089"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650181"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
-**InvokeDelegate**を作成および構成デザイナーを使用する<xref:System.Activities.Statements.InvokeDelegate>アクティビティ。
+**Invokedelegate**デザイナーは、<xref:System.Activities.Statements.InvokeDelegate> アクティビティを作成および構成するために使用されます。
 
 ## <a name="the-invokedelegate-activity"></a>InvokeDelegate アクティビティ
 
 <xref:System.Activities.Statements.InvokeDelegate> はパブリック デリゲートを呼び出します。
 
-### <a name="use-the-invokedelegate-activity-designer"></a>InvokeDelegate アクティビティ デザイナーを使用します。
+### <a name="use-the-invokedelegate-activity-designer"></a>InvokeDelegate アクティビティデザイナーの使用
 
-アクセス、 **InvokeDelegate**内のアクティビティ デザイナー、**プリミティブ**のカテゴリ、**ツールボックス**します。 **InvokeDelegate**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**がずっと、アクティビティを通常配置など内に、ワークフロー デザイナー画面にドロップし、<xref:System.Activities.Statements.Sequence>します。 アクティビティ デザイナーをドロップを作成、 <xref:System.Activities.Statements.InvokeDelegate> 、既定値は、アクティビティ<xref:System.Activities.Activity.DisplayName%2A>InvokeDelegate の。 <xref:System.Activities.Activity.DisplayName%2A>のヘッダーで編集できる、 **InvokeDelegate**アクティビティ デザイナーまたは、 **DisplayName**プロパティ グリッドのボックスです。
+**ツールボックス**の **[プリミティブ]** カテゴリで、 **invokedelegate**アクティビティデザイナーにアクセスします。 **Invokedelegate**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置しているワークフローデザイナー画面 (<xref:System.Activities.Statements.Sequence> 内など) にドロップできます。 アクティビティデザイナーを削除すると、InvokeDelegate の既定の <xref:System.Activities.Activity.DisplayName%2A> を持つ <xref:System.Activities.Statements.InvokeDelegate> アクティビティが作成されます。 @No__t_0 は、 **Invokedelegate**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
 
 ### <a name="the-invokedelegate-properties"></a>InvokeDelegate プロパティ
 
-次の表に、<xref:System.Activities.Statements.InvokeDelegate> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドで編集できるし、一部は、ワークフロー デザイナー画面で編集できます。
+次の表に、<xref:System.Activities.Statements.InvokeDelegate> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティグリッドで編集できます。また、ワークフローデザイナーサーフェイスで編集することもできます。
 
-|プロパティ名|必須|使用方法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> アクティビティの表示名。 既定値は InvokeDelegate です。<br /><br /> ただし、<xref:System.Activities.Activity.DisplayName%2A>必須ではありませんいずれかを使用することをお勧めします。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> アクティビティの表示名。 既定値は InvokeDelegate です。<br /><br /> @No__t_0 は厳密には必須ではありませんが、使用することをお勧めします。|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|アクティビティの実行時に呼び出す <xref:System.Activities.ActivityDelegate> の名前。 このプロパティは、デザイナー画面で編集でき、必須です。|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|呼び出されたデリゲートの引数コレクション。 キーがパラメーター オブジェクトの名前、<xref:System.Activities.ActivityDelegate>式を持つが評価され、対応するパラメーター オブジェクトに割り当てられている引数を値とします。 表示する、 **DelegateArguments** 、このプロパティを設定するダイアログで、省略記号ボタンをクリックして、 **DelegateArguments**プロパティ グリッドのフィールド。 をクリックして、**引数の作成**引数を追加するフィールド。|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|呼び出されたデリゲートの引数コレクション。 キーは <xref:System.Activities.ActivityDelegate> のパラメーターオブジェクトの名前であり、値は、式が評価され、対応するパラメーターオブジェクトに割り当てられる引数です。 このプロパティを設定できる **[DelegateArguments]** ダイアログボックスを表示するには、プロパティグリッドの**DelegateArguments**フィールドで、省略記号ボタンをクリックします。 引数を追加するには、 **[引数の作成]** フィールドをクリックします。|
 
 ## <a name="see-also"></a>関連項目
 

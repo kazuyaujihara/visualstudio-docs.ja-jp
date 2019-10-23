@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onDestroy |Microsoft Docs
+title: 'IDebugDocumentTextEvents:: onDestroy |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137329e48f6cb36e36f0196fa226303468eec88a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd8162a33e61af0aab23d7414a2283ec60480960
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946753"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572920"
 ---
 # <a name="idebugdocumenttexteventsondestroy"></a>IDebugDocumentTextEvents::onDestroy
-基になるドキュメントが無効になってが破棄されたことを示します。  
+基になるドキュメントが破棄され、無効になったことを示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT onDestroy();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,7 +44,7 @@ HRESULT onDestroy();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、基になるドキュメントが破棄されている、無効になってことを示します。  
+ このメソッドは、基になるドキュメントが破棄され、無効になっていることを示します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentTextEvents インターフェイス](../../winscript/reference/idebugdocumenttextevents-interface.md)

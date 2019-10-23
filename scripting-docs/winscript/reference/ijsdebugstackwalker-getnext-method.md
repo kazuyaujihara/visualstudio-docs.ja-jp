@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugstackwalker::getnext メソッド |Microsoft Docs
+title: 'IJsDebugStackWalker:: GetNext メソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa667402b46a3404c31dfe26307a5893c68ffcc0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977875"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574032"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext メソッド
 次のフレームを取得します。  
@@ -42,8 +42,8 @@ HRESULT GetNext(
 ## <a name="remarks"></a>Remarks  
  列挙するスタック フレームがなくなると E_JsDEBUG_OUTSIDE_OF_VM を返します。  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [IJsDebugStackWalker インターフェイス](../../winscript/reference/ijsdebugstackwalker-interface.md)

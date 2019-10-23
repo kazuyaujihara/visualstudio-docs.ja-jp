@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d4b22b0a1127af423e97e2dc88ebbea5bf1748e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002246"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664873"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>方法: ロード テストに追加の実行設定を追加する
 
@@ -30,7 +30,7 @@ ms.locfileid: "63002246"
 
 2. (省略可能) **[実行設定]** フォルダーを展開します。
 
-3. **[実行設定]** フォルダーを右クリックして、**[実行設定の追加]** をクリックします。
+3. **[実行設定]** フォルダーを右クリックして、 **[実行設定の追加]** をクリックします。
 
      **[実行設定]** フォルダーに新しい実行設定が追加されます。
 
@@ -38,14 +38,14 @@ ms.locfileid: "63002246"
 
      **[プロパティ]** ウィンドウが開き、選択した実行設定のプロパティが表示されます。
 
-5. **[プロパティ]** ウィンドウで、**[名前]** プロパティのテキスト ボックスに新しい実行設定の名前を入力します。名前は実行設定の内容を説明するものにします (たとえば、「**実行設定: 実行時間 5 分**」など)。
+5. **[プロパティ]** ウィンドウで、 **[名前]** プロパティのテキスト ボックスに新しい実行設定の名前を入力します。名前は実行設定の内容を説明するものにします (たとえば、「**実行設定: 実行時間 5 分**」など)。
 
 6. **[プロパティ ]** ウィンドウを使用して、実行設定を変更します。 たとえば、テストを 5 分間実行するには、実行の継続時間を **00:05:00** に変更します。
 
     > [!NOTE]
     > 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
 
-     追加した実行設定をアクティブに設定すると、これを使用することができます。 詳細については、「[方法 :ロード テストのアクティブな実行設定を選択する](../test/how-to-select-the-active-run-setting-for-a-load-test.md)」を参照してください。
+     追加した実行設定をアクティブに設定すると、これを使用することができます。 詳細については、[ロード テストのアクティブな実行設定を選択する](../test/how-to-select-the-active-run-setting-for-a-load-test.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

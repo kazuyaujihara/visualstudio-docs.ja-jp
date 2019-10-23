@@ -6,85 +6,85 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f3cefc7c6e2a78d757bb931a430f09c6da103c1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 45f7b38f7dbb6ea470b2d9e186dc8e6bf4b33b1e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657329"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ドメイン固有言語を使って定義するプロジェクトを移行する[!INCLUDE[vs2010](../includes/vs2010-md.md)]のバージョンから[!INCLUDE[dsl](../includes/dsl-md.md)]を使用して配布されて[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]します。  
-  
- 一部として移行ツールが提供される[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]します。 ツールに変換します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクトおよびソリューションを使用して、または DSL Tools を定義します。  
-  
- 移行ツールを明示的に実行する必要があります: ことがない自動的に起動でソリューションを開くときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 ツールおよび詳細なガイダンスのドキュメントは、このパスで見つかんだことができます。  
-  
- **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
-  
-## <a name="before-you-migrate-your-dsl-projects"></a>DSL プロジェクトを移行する前に  
- 移行ツールを変更します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト ファイル (**.csproj**) とソリューション ファイル (**.sln**)。  
-  
-#### <a name="to-prepare-projects-for-migration"></a>移行するには、プロジェクトを準備します。  
-  
-- 必ず、 **.csproj**と **.sln**ファイルを書き込むことができます。 ソース管理下にある場合は、チェック アウトすることを確認します。  
-  
-- 移行するフォルダーのコピーを作成します。  
-  
-## <a name="migrating-a-collection-of-projects"></a>プロジェクトのコレクションを移行します。  
-  
-#### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>DSL プロジェクトおよびソリューションを Visual Studio 2010 に移行するには  
-  
-1. DSL の移行ツールを起動します。  
-  
-   - Windows エクスプ ローラー (またはファイル エクスプ ローラー) ツールをダブルクリックします。 または、コマンド プロンプトからツールを起動できます。 このツールは、この場所には。  
-  
-        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
-  
-2. ソリューションおよび変換するプロジェクトを含むフォルダーを選択します。  
-  
-   - ツールの上部にあるボックスにパスを入力またはクリックして**参照**します。  
-  
-     移行ツールには、定義または Dsl を使用するプロジェクトのツリーが表示されます。 ツリーには使用するすべてのプロジェクトが含まれています、 **Microsoft.VisualStudio.Modeling.Sdk**または**TextTemplating**アセンブリ。  
-  
-3. プロジェクトのツリーを確認し、変換したくないプロジェクトをオフにします。  
-  
-   - プロジェクトまたはツールによって、変更の一覧を表示するソリューションを選択します。  
-  
+ドメイン固有言語を定義して使用するプロジェクトを移行して、[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] と共に配布された [!INCLUDE[dsl](../includes/dsl-md.md)] のバージョンから [!INCLUDE[vs2010](../includes/vs2010-md.md)] することができます。
+
+ 移行ツールは、[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)] の一部として提供されています。 このツールは、DSL ツールを使用または定義する [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトとソリューションを変換します。
+
+ 移行ツールは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でソリューションを開いたときに自動的に起動されないため、明示的に実行する必要があります。 ツールと詳細なガイダンスドキュメントは、次のパスにあります。
+
+ **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+
+## <a name="before-you-migrate-your-dsl-projects"></a>DSL プロジェクトを移行する前に
+ 移行ツールによって、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトファイル ( **.csproj**) とソリューションファイル ( **.sln**) が変更されます。
+
+#### <a name="to-prepare-projects-for-migration"></a>プロジェクトを移行用に準備する。
+
+- **.Csproj**ファイルと **.sln**ファイルを書き込むことができることを確認します。 ソース管理されている場合は、チェックアウトされていることを確認します。
+
+- 移行するフォルダーのコピーを作成します。
+
+## <a name="migrating-a-collection-of-projects"></a>プロジェクトのコレクションの移行
+
+#### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>DSL プロジェクトとソリューションを Visual Studio 2010 に移行するには
+
+1. DSL 移行ツールを起動します。
+
+   - エクスプローラー (またはエクスプローラー) でツールをダブルクリックするか、コマンドプロンプトからツールを起動できます。 ツールは次の場所にあります。
+
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+
+2. 変換するソリューションおよびプロジェクトが含まれているフォルダーを選択します。
+
+   - ツールの上部にあるボックスにパスを入力するか、 **[参照]** をクリックします。
+
+     移行ツールには、Dsl を定義または使用するプロジェクトのツリーが表示されます。 ツリーには、 **VisualStudio**または**texttemplating**アセンブリを使用するすべてのプロジェクトが含まれます。
+
+3. プロジェクトのツリーを確認し、変換しないプロジェクトをオフにします。
+
+   - プロジェクトまたはソリューションを選択すると、ツールによって行われる変更の一覧が表示されます。
+
        > [!NOTE]
-       > フォルダー名の横に表示されるチェック ボックスは、影響を与えるありません。 プロジェクトおよびソリューションを検査するフォルダーを展開する必要があります。  
-  
-4. プロジェクトに変換します。  
-  
-   1. クリックして**変換**します。  
-  
-        各プロジェクト ファイルが変換される前のコピーを_プロジェクト_**.csproj**として保存されます_プロジェクト_**vs2008.csproj。**  
-  
-        各コピー_ソリューション_**.sln**として保存されます_ソリューション_**vs2008.sln。**  
-  
-   2. 報告されるすべての失敗した変換を調査します。  
-  
-        テキスト ウィンドウにエラーが報告されます。 さらに、ツリー ビューでは、変換に失敗した各ノードに赤いフラグを示しています。 そのエラーの詳細を取得するノードをクリックすることができます。  
-  
-5. **すべてのテンプレートの変換**ソリューションで正常に格納しているプロジェクトを変換します。  
-  
-   1. ソリューションを開きます。  
-  
-   2. をクリックして、**すべてのテンプレートの変換**ソリューション エクスプ ローラーのヘッダーにボタンをクリックします。  
-  
+       > フォルダー名の横に表示されるチェックボックスは無効です。 フォルダーを展開して、プロジェクトとソリューションを検査する必要があります。
+
+4. プロジェクトを変換します。
+
+   1. **[変換]** をクリックします。
+
+        各プロジェクトファイルが変換される前に、vs2008 のコピーが_プロジェクト_ **. .csproj**として**保存さ**_れます。_
+
+        各ソリューションのコピー **。 .sln**は**vs2008**として保存され_ます。_
+
+   2. 報告された失敗した変換を調査します。
+
+        エラーはテキストウィンドウに報告されます。 また、ツリービューでは、変換に失敗した各ノードに赤いフラグが表示されます。 ノードをクリックすると、そのエラーに関する詳細情報を取得できます。
+
+5. 正常に変換されたプロジェクトを含むソリューション内の**すべてのテンプレートを変換**します。
+
+   1. ソリューションを開きます。
+
+   2. ソリューションエクスプローラーのヘッダーにある **[すべてのテンプレートの変換]** ボタンをクリックします。
+
        > [!NOTE]
-       > この手順を不要なことできます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
-  
-6. 変換後のプロジェクトでのカスタム コードを更新します。  
-  
-   - プロジェクトをビルドし、すべてのエラーを調査しようとします。  
-  
-   - デザイナーをテストします。  
-  
-## <a name="see-also"></a>関連項目  
+       > この手順を不要にすることができます。 詳細については、「[すべてのテンプレートの変換を自動化する方法](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)」を参照してください。
+
+6. 変換されたプロジェクトのカスタムコードを更新します。
+
+   - プロジェクトをビルドし、エラーを調査します。
+
+   - デザイナーをテストします。
+
+## <a name="see-also"></a>参照
  [Visualization and Modeling SDK の新機能](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

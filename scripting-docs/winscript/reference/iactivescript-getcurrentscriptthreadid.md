@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID |Microsoft Docs
+title: 'IActiveScript:: GetCurrentScriptThreadID |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e1b6e7bae7d78c18e11cd1aac8d0844fb9e90a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dedb16e0c007ed05370fb54835f84f00784c1ae4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575775"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-現在実行中のスレッドのスクリプト エンジン定義の識別子を取得します。 識別子をなどのスクリプト スレッド実行の制御メソッドへの後続の呼び出しで使用できます、 [iactivescript::interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)メソッド。  
+現在実行中のスレッドのスクリプトエンジンで定義された識別子を取得します。 この識別子は、後続の呼び出しで[IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)メソッドなどのスレッド実行制御メソッドをスクリプト化するために使用できます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,13 +37,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>パラメーター  
  `pstidThread`  
- [out]現在のスレッドに関連付けられているスクリプトのスレッド識別子を受け取る変数のアドレス。 この識別子の解釈は、スクリプト エンジンへのままですが、Windows スレッド id のコピーだけができます。 Win32 スレッドが終了した場合はこの識別子は割り当てられていないようになり、別のスレッドに割り当てることができます、その後。  
+ 入出力現在のスレッドに関連付けられているスクリプトスレッド識別子を受け取る変数のアドレス。 この識別子の解釈は、スクリプトエンジンに残されていますが、Windows スレッド識別子のコピーである場合もあります。 Win32 スレッドが終了すると、この識別子は割り当てが解除され、その後別のスレッドに割り当てることができます。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または`E_POINTER`場合は、無効なポインターが指定されました。  
+ 成功した場合は `S_OK` を返します。無効なポインターが指定された場合は `E_POINTER` を返します。  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことができます、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイス。  
+ このメソッドは非ベースのスレッドから呼び出すことができます。この場合、非ベースのコールアウトによってオブジェクトをホストするか、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイスを使用することはできません。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955361"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572636"
 ---
-# <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 列挙型
+# <a name="breakpoint_state-enumeration"></a>BREAKPOINT_STATE 列挙型
 ブレークポイントの状態を示します。  
   
 ## <a name="syntax"></a>構文  
@@ -41,9 +41,9 @@ typedef enum tagBREAKPOINT_STATE {
   
 |メンバー|説明|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|ブレークポイントが存在しませんへの参照がまだ存在します。|  
-|BREAKPOINT_DISABLED|ブレークポイントが存在しますは無効です。|  
-|BREAKPOINT_ENABLED|ブレークポイントが存在し、有効な。|  
+|BREAKPOINT_DELETED|ブレークポイントは存在しなくなりましたが、まだ参照されています。|  
+|BREAKPOINT_DISABLED|ブレークポイントは存在しますが、無効になっています。|  
+|BREAKPOINT_ENABLED|ブレークポイントが存在し、有効になっています。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

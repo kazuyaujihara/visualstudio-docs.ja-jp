@@ -1,27 +1,27 @@
 ---
-title: '方法: ワークフロー デザイナーで検索を使用する'
+title: ワークフロー デザイナーで検索を使用する方法
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 12bda4af085b8ab41d3e11841f24cd5dfd389738
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949574"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650294"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>方法: ワークフロー デザイナーで検索を使用する
+# <a name="how-to-use-search-in-the-workflow-designer"></a>ワークフロー デザイナーで検索を使用する方法
 
-大規模でより複雑なワークフローを作成するためには、キーワードで項目を検索するワークフロー デザイナー内で検索できます。 デザイナーでは、置換はサポートされないことに注意してください。
+より大規模で複雑なワークフローの作成を容易にするために、ワークフローデザイナー内で検索して、キーワードによって項目を検索することができます。 デザイナーでは、置換はサポートされないことに注意してください。
 
 ## <a name="quick-find"></a>クイック検索
 
-クイック検索では、デザイナーで、次を検索します。
+クイック検索では、デザイナーで次のものが検索されます。
 
 - <xref:System.Activities.Activity> オブジェクト、<xref:System.Activities.Statements.FlowNode> オブジェクト、<xref:System.Activities.Statements.State> オブジェクト、遷移、およびその他のカスタム フロー制御項目のプロパティ。
 
@@ -31,24 +31,24 @@ ms.locfileid: "62949574"
 
 - 式
 
-### <a name="use-quick-find"></a>クイック検索を使用します。
+### <a name="use-quick-find"></a>クイック検索を使用する
 
-1. ワークフロー デザイナーを開いた状態で、キーを押します**Ctrl + F**、または選択**編集** > **検索し、置換** > **クイック検索**.
+1. ワークフローデザイナーを開いた状態で、Ctrl キーを押し**ながら F**キーを押すか、 **[編集]** を選択して [**クイック検索** > **検索  >  置換**] を選択します。
 
-2. 検索用語を入力してください、**検索**テキスト ボックス をクリック**次を検索**します。
+2. 検索する **[文字列]** ボックスに検索語句を入力し、 **[次を検索]** をクリックします。
 
-3. 検索用語は、現在のワークフローにあります。 次の図は、デザイナー内に配置されているアクティビティの表示名を示しています。
+3. 検索用語は、現在のワークフローにあります。 次の図は、デザイナーに配置されているアクティビティの表示名を示しています。
 
    ![ワークフロー デザイナーでの検索結果](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>フォルダーを指定して検索する
 
-ファイルには、検索は、XAML ファイルを含むワークフロー ファイル内の文字列を検索します。
+[フォルダーを検索] XAML ファイルを含むワークフローファイル内の文字列を検索します。
 
-### <a name="use-find-in-files"></a>ファイルの検索を使用してください。
+### <a name="use-find-in-files"></a>フォルダーを使用して検索
 
-1. Visual Studio で、キーを押します**Ctrl**+**Shift**+**F**、または選択**編集** >  。**検索し、置換** > **ファイル内の検索**します。
+1. Visual Studio で、 **Ctrl**キーを押し +**Shift**キーを押し +**F**を押すか、[ > **編集**] を選択して [**フォルダーを** **検索し** >  検索] を選択します。
 
-2. 検索項目を入力してください、**検索**テキスト ボックス をクリック**すべて検索**します。
+2. 検索する **[文字列]** ボックスに検索項目を入力し、 **[すべて検索]** をクリックします。
 
-3. 検索結果に示されます、**の検索結果**ビュー。 結果の項目をダブルクリックするとは、ワークフロー デザイナーで一致を含むアクティビティに移動します。
+3. 検索結果は、 **[検索結果]** ビューに表示されます。 結果項目をダブルクリックすると、ワークフローデザイナーでの一致を含むアクティビティに移動します。

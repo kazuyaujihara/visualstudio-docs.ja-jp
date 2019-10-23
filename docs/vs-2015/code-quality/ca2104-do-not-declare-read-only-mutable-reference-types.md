@@ -1,5 +1,5 @@
 ---
-title: CA2104:読み取りのみ変更可能な参照型を宣言しません |Microsoft Docs
+title: 'CA2104: 読み取り専用の変更可能な参照型を宣言しません |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fd81f9ea250cd1592f755a2aa6cb3ca09280a533
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666038"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:読み取り専用の変更可能な参照型を宣言しません
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: 読み取り専用の変更可能な参照型を宣言しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,20 +36,20 @@ ms.locfileid: "65687411"
  外部から参照できる型に、変更可能な参照型である、外部から参照可能な読み取り専用のフィールドがあります。
 
 ## <a name="rule-description"></a>規則の説明
- 変更可能な型とは、インスタンス データを変更できる型です。 <xref:System.Text.StringBuilder?displayProperty=fullName>クラスは、変更可能な参照型の例を示します。 クラスのインスタンスの値を変更できるメンバーが含まれています。 変更不可の参照型の例は、<xref:System.String?displayProperty=fullName>クラス。 インスタンス化された後、その値は変化しません。
+ 変更可能な型とは、インスタンス データを変更できる型です。 @No__t_0 クラスは、変更可能な参照型の一例です。 このクラスには、クラスのインスタンスの値を変更できるメンバーが含まれています。 変更できない参照型の例として、<xref:System.String?displayProperty=fullName> クラスがあります。 インスタンス化された後は、その値を変更することはできません。
 
- 読み取り専用修飾子 ([readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) c# で[ReadOnly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]と[const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) C++ で) 参照型のフィールド (C++ でのポインター) により、フィールドを防止参照型の別のインスタンスで置き換えられます。 ただし、修飾子は、参照型を変更できないよう、フィールドのインスタンス データを妨げません。
+ 参照型フィールド ( C++では[readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) 、 C#では[readonly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) 、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] では[const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) C++) に対して読み取り専用の修飾子を実行すると、そのフィールドを参照型の別のインスタンスに置き換えることができなくなります。 ただし、修飾子を使用しても、フィールドのインスタンスデータが参照型によって変更されるのを防ぐことはできません。
 
- 読み取り専用配列フィールドはこの規則から除外されますが、代わりに、違反が発生、 [ca 2105。配列フィールドを読み取ることができませんのみ](../code-quality/ca2105-array-fields-should-not-be-read-only.md)ルール。
+ 読み取り専用の配列フィールドはこのルールから除外されますが、代わりに[CA2105: array フィールド](../code-quality/ca2105-array-fields-should-not-be-read-only.md)には読み取り専用ルールを指定できません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、読み取り専用修飾子を削除するか、重大な変更が許容される場合は、変更不可の型でフィールドを置き換えます。
+ この規則違反を修正するには、読み取り専用の修飾子を削除するか、互換性に影響する変更が許容される場合は、フィールドを変更できない型に置き換えます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- フィールドの種類は変更可能なは場合、この規則による警告を抑制するのには安全です。
+ フィールドの種類が不変である場合は、このルールからの警告を抑制することが安全です。
 
 ## <a name="example"></a>例
- 次の例では、この規則違反の原因となるフィールド宣言を示します。
+ 次の例は、この規則に違反するフィールド宣言を示しています。
 
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cpp/FxCop.Security.MutableReferenceTypes.cpp#1)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cs/FxCop.Security.MutableReferenceTypes.cs#1)]

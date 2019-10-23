@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat |Microsoft Docs
+title: 'IActiveScriptStats:: GetStat |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 096f1cf5b9bf8b5533bd5c36d33f014c747ff9aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992014"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574334"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-スクリプトの標準的な統計情報のいずれかを返します。  
+標準スクリプト統計の1つを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,28 +39,28 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>パラメーター  
  `stid`  
- [in]返される統計情報を指定します。 値にする必要があります。  
+ から返す統計情報を指定します。 次の値である必要があります。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|スクリプトの開始や、統計がリセットされた後に実行されるステートメントの数を返します。|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|スクリプトが開始された後、または統計がリセットされた後に実行されたステートメントの数を返します。|  
   
  `pluHi`  
- [out]統計情報を表す 64 ビット符号なし整数の上位 32 ビット。  
+ 入出力統計を表す64ビット符号なし整数の上位32ビット。  
   
  `pluLo`  
- [out]統計情報を表す 64 ビット符号なし整数の下位 32 ビット。  
+ 入出力統計を表す64ビット符号なし整数の下位32ビット。  
   
 ## <a name="return-value"></a>戻り値  
- このメソッドは `HRESULT` を返します。 使用可能な値などが、次の表の値に限定されません。  
+ このメソッドは `HRESULT` を返します。 使用できる値は次のとおりです。ただし、次の表の値には制限されません。  
   
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、スクリプトの標準的な統計情報のいずれかを返します。  
+ このメソッドは、標準スクリプト統計の1つを返します。  
   
 ## <a name="see-also"></a>関連項目  
- [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
+ [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
  [IActiveScriptStats インターフェイス](../../winscript/reference/iactivescriptstats-interface.md)

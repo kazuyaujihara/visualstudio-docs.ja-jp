@@ -1,5 +1,5 @@
 ---
-title: オンラインの ClickOnce アプリでは、クエリ文字列の情報を取得します。
+title: オンライン ClickOnce アプリでクエリ文字列情報を取得する
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671bbe6e0541e0ef9c9ebc43ff1f5a2a4919c10e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 30169a43d88f0ee8ae2c428e5a3da0aef0b9d642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263259"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637859"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>方法: オンライン ClickOnce アプリケーションでクエリ文字列の情報を取得する
 *クエリ文字列* とは、URL のうちの疑問符 (?) で始まる部分であり、 *name=value*の形式で任意の情報を記述します。 たとえば、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] でホストされている `WindowsApp1` という `servername`アプリケーションがあり、このアプリケーションを起動するときに、 `username` という変数に値を渡すとします。 URL は次のようになります。
@@ -39,14 +39,14 @@ ms.locfileid: "66263259"
 > [!NOTE]
 > この機能を有効にする前に、この後の「セキュリティ」を参照してください。
 
- 作成する方法については、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]を使用して展開*Mage.exe*または*MageUI.exe*を参照してください[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
+ *Mage.exe*または*mageui.exe*を使用して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の配置を作成する方法については、「[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)する」を参照してください。
 
 > [!NOTE]
 > .NET Framework 3.5 SP1 以降では、オフラインの [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションにコマンド ライン引数を渡すことができます。 このアプリケーションに引数を提供する場合は、.APPREF-MS 拡張子を持つショートカット ファイルにパラメーターを渡すことができます。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>ClickOnce アプリケーションでクエリ文字列を取得するには
 
-1. プロジェクト内に次のコードを記述します。 このコードが機能するためには、System.Web への参照を設定し、System.Web、System.Collections.Specialized、および System.Deployment.Application に対して `using` ステートメントまたは `Imports` ステートメントを追加する必要があります。
+1. プロジェクト内に次のコードを記述します。 このコードを機能させるには、system.web への参照を取得し、system.web、system.string、および System.web の `using` ディレクティブまたは `Imports` ディレクティブを追加する必要があります。
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]

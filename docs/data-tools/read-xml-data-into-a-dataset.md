@@ -15,37 +15,37 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821924"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641374"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 
-ADO.NET では、XML データを操作するための単純なメソッドを提供します。 このチュートリアルでは、データセットに XML データを読み込む Windows アプリケーションを作成します。 データセットが表示し、<xref:System.Windows.Forms.DataGridView>コントロール。 最後に、XML ファイルの内容に基づく XML スキーマは、テキスト ボックスに表示されます。
+ADO.NET には、XML データを操作するための単純なメソッドが用意されています。 このチュートリアルでは、XML データをデータセットに読み込む Windows アプリケーションを作成します。 次に、データセットが <xref:System.Windows.Forms.DataGridView> コントロールに表示されます。 最後に、XML ファイルの内容に基づく XML スキーマがテキストボックスに表示されます。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-新規作成**Windows フォーム アプリ**のいずれかのプロジェクトC#または Visual Basic です。 プロジェクトに名前を**ReadingXML**します。
+または Visual Basic 用の新しい**Windows フォームアプリ**プロジェクトを作成します。 C# プロジェクトに**ReadingXML**という名前を指定します。
 
-## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>データセットに読み込まれる XML ファイルを生成します。
+## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>データセットに読み込む XML ファイルを生成します。
 
-このチュートリアルでは、データセットに XML データの読み取りに重点を置いています、ため、XML ファイルの内容が提供されます。
+このチュートリアルでは、XML データをデータセットに読み込むことに重点を置いて、XML ファイルの内容を示します。
 
 1. **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。
 
-2. 選択**XML ファイル**、ファイルに名前を**authors.xml**、し、**追加**します。
+2. **[Xml ファイル]** を選択し、ファイルに「 **authors .xml**」という名前を指定して、 **[追加]** を選択します。
 
-   XML ファイルでは、デザイナーに読み込まし、編集の準備ができています。
+   XML ファイルがデザイナーに読み込まれ、編集できる状態になります。
 
-3. XML 宣言の下のエディターには、次の XML データを貼り付けます。
+3. 次の XML データをエディターの XML 宣言の下に貼り付けます。
 
    ```xml
    <Authors_Table>
@@ -107,110 +107,110 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
    </Authors_Table>
    ```
 
-4. **ファイル**メニューの **保存 authors.xml**します。
+4. **[ファイル]** メニューの **[.xml の保存]** を選択します。
 
 ## <a name="create-the-user-interface"></a>ユーザー インターフェイスを作成する
 
-このアプリケーションのユーザー インターフェイスを次の構成します。
+このアプリケーションのユーザーインターフェイスは、次の要素で構成されています。
 
-- A<xref:System.Windows.Forms.DataGridView>データとして XML ファイルの内容を表示するコントロール。
+- XML ファイルの内容をデータとして表示する <xref:System.Windows.Forms.DataGridView> コントロール。
 
-- A <xref:System.Windows.Forms.TextBox> XML ファイルの XML スキーマを表示するコントロール。
+- XML ファイルの XML スキーマを表示する <xref:System.Windows.Forms.TextBox> コントロール。
 
-- 2 つ<xref:System.Windows.Forms.Button>コントロール。
+- 2つの <xref:System.Windows.Forms.Button> コントロール。
 
-  - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。
+  - 1つのボタンが XML ファイルをデータセットに読み込み、<xref:System.Windows.Forms.DataGridView> コントロールに表示します。
 
-  - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。
+  - 2番目のボタンは、データセットからスキーマを抽出し、<xref:System.IO.StringWriter> によって <xref:System.Windows.Forms.TextBox> コントロールに表示します。
 
 ### <a name="to-add-controls-to-the-form"></a>フォームにコントロールを追加するには
 
-1. 開いている`Form1`デザイン ビューで。
+1. デザインビューで `Form1` を開きます。
 
-2. **ツールボックス**、次のコントロールをフォームにドラッグします。
+2. **[ツールボックス]** から、次のコントロールをフォームにドラッグします。
 
-    - 1 つ<xref:System.Windows.Forms.DataGridView>コントロール
+    - 1つの <xref:System.Windows.Forms.DataGridView> コントロール
 
-    - 1 つ<xref:System.Windows.Forms.TextBox>コントロール
+    - 1つの <xref:System.Windows.Forms.TextBox> コントロール
 
-    - 2 つ<xref:System.Windows.Forms.Button>コントロール
+    - 2つの <xref:System.Windows.Forms.Button> コントロール
 
 3. 次のプロパティを設定します。
 
-    |コントロール|プロパティ|設定|
+    |Control|property|設定|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**垂直方向**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**[テキスト]**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**Text**|`Show Schema`|
+    ||**[テキスト]**|`Show Schema`|
 
-## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML データを受信するデータセットを作成します。
+## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML データを受け取るデータセットを作成する
 
-この手順でという名前の新しいデータセットを作成する`authors`します。 データセットの詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)します。
+この手順では、`authors` という名前の新しいデータセットを作成します。 データセットの詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」を参照してください。
 
-1. **ソリューション エクスプ ローラー**、ソース ファイルを選択します**Form1**を選び、**ビュー デザイナー**のボタンでは、**ソリューション エクスプ ローラー**ツールバー。
+1. **ソリューションエクスプローラー**で、 **Form1**のソースファイルを選択し、 **[ソリューションエクスプローラー]** ツールバーの **[デザイナーの表示]** をクリックします。
 
-2. [ツールボックス、[データ] タブ](../ide/reference/toolbox-data-tab.md)、ドラッグ、**データセット**に**Form1**します。
+2. [[ツールボックス] の [データ] タブ](../ide/reference/toolbox-data-tab.md)で、**データセット**を**Form1**にドラッグします。
 
-3. **データセットの追加**ダイアログ ボックスで、**型指定されていないデータセット**、し、 **OK**します。
+3. **[データセットの追加]** ダイアログボックスで、型指定されていない **[データセット]** を選択し、[ **OK]** を選択します。
 
-     **DataSet1**コンポーネント トレイに追加されます。
+     **DataSet1**がコンポーネントトレイに追加されます。
 
-4. **プロパティ**ウィンドウで、設定、**名前**と<xref:System.Data.DataSet.DataSetName%2A>プロパティ`AuthorsDataSet`します。
+4. **プロパティ** ウィンドウで、**名前** と `AuthorsDataSet` の <xref:System.Data.DataSet.DataSetName%2A> プロパティを設定します。
 
-## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>データセットに XML ファイルを読み取るためのイベント ハンドラーを作成します。
+## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>XML ファイルをデータセットに読み込むイベントハンドラーを作成する
 
-**読み取り XML**ボタンは、データセットに、XML ファイルを読み取ります。 プロパティを設定します、<xref:System.Windows.Forms.DataGridView>データセットにバインドするコントロール。
+**[Xml の読み取り]** ボタンをクリックすると、xml ファイルがデータセットに読み込まれます。 次に、それをデータセットにバインドする <xref:System.Windows.Forms.DataGridView> コントロールのプロパティを設定します。
 
-1. **ソリューション エクスプ ローラー**を選択します**Form1**を選び、**ビュー デザイナー**のボタンでは、**ソリューション エクスプ ローラー**ツールバー。
+1. **ソリューションエクスプローラー**で **[Form1]** を選択し、 **[ソリューションエクスプローラー]** ツールバーの **[デザイナーの表示]** をクリックします。
 
-2. 選択、**読み取り XML**ボタンをクリックします。
+2. **[XML の読み取り]** ボタンを選択します。
 
-     **コード エディター**で開き、`ReadXmlButton_Click`イベント ハンドラー。
+     **コードエディター**が `ReadXmlButton_Click` イベントハンドラーで開きます。
 
-3. 次のコードを入力、`ReadXmlButton_Click`イベント ハンドラー。
+3. @No__t_0 イベントハンドラーに次のコードを入力します。
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4. `ReadXMLButton_Click`イベント ハンドラーのコードの変更、`filepath =`正しいパスへのエントリ。
+4. @No__t_0 イベントハンドラーのコードで、`filepath =` エントリを正しいパスに変更します。
 
-## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>テキスト ボックスに、スキーマを表示するイベント ハンドラーを作成します。
+## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>イベントハンドラーを作成し、テキストボックスにスキーマを表示します。
 
-**スキーマの表示**ボタンを作成、<xref:System.IO.StringWriter>スキーマを使用して格納しに表示されるオブジェクト、<xref:System.Windows.Forms.TextBox>コントロール。
+**[スキーマの表示]** ボタンをクリックすると、スキーマを格納し、<xref:System.Windows.Forms.TextBox>control に表示される <xref:System.IO.StringWriter> オブジェクトが作成されます。
 
-1. **ソリューション エクスプ ローラー**を選択します**Form1**を選び、**ビュー デザイナー**ボタンをクリックします。
+1. **ソリューションエクスプローラー**で **[Form1]** を選択し、 **[ビューデザイナー]** をクリックします。
 
-2. 選択、**スキーマの表示**ボタンをクリックします。
+2. **[スキーマの表示]** ボタンを選択します。
 
-     **コード エディター**で開き、`ShowSchemaButton_Click`イベント ハンドラー。
+     **コードエディター**が `ShowSchemaButton_Click` イベントハンドラーで開きます。
 
 3. `ShowSchemaButton_Click` イベント ハンドラーに次のコードを貼り付けます。
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
 
-## <a name="test-the-form"></a>フォームをテストします。
+## <a name="test-the-form"></a>フォームをテストする
 
 フォームをテストして、期待どおりに動作することを確認します。
 
-1. 選択**F5**アプリケーションを実行します。
+1. **F5 キーを押し**てアプリケーションを実行します。
 
-2. 選択、**読み取り XML**ボタンをクリックします。
+2. **[XML の読み取り]** ボタンを選択します。
 
-     DataGridView は、XML ファイルの内容を表示します。
+     DataGridView には、XML ファイルの内容が表示されます。
 
-3. 選択、**スキーマの表示**ボタンをクリックします。
+3. **[スキーマの表示]** ボタンを選択します。
 
-     テキスト ボックスには、XML ファイルの XML スキーマが表示されます。
+     このテキストボックスには、XML ファイルの XML スキーマが表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-このチュートリアルでは、データセット、XML ファイルを読み取るだけでなく XML ファイルの内容に基づくスキーマの作成の基本を説明します。 次に実行する可能性のあるいくつかのタスクを次に示します。
+このチュートリアルでは、xml ファイルをデータセットに読み込む方法、および XML ファイルの内容に基づいてスキーマを作成する方法の基本について説明します。 次に、次のタスクについて説明します。
 
-- データセットと書き戻せる XML としてデータを編集します。 詳細については、「 <xref:System.Data.DataSet.WriteXml%2A> 」を参照してください。
+- データセット内のデータを編集し、XML として書き戻します。 詳細については、「<xref:System.Data.DataSet.WriteXml%2A>」を参照してください。
 
 - データセット内のデータを編集し、データベースに書き込みます。
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: 関数が必要です |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,15 +14,15 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 988ca00613d3dec4c55309fd77bc43705a6038ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007107"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576595"
 ---
 # <a name="function-expected"></a>関数が必要です。
-いずれかを呼び出すしようとするか、**関数プロトタイプ**できなかったオブジェクトのメソッドを`Function`オブジェクト、またはするには、関数呼び出しのコンテキストでオブジェクトを使用します。 次のコードがこのエラーを生成するため、たとえば、**example**は関数ではありません。  
+@No__t_1 オブジェクトではなかったオブジェクトに対して**関数プロトタイプ**メソッドのいずれかを呼び出そうとしたか、または関数呼び出しコンテキストでオブジェクトを使用しました。 たとえば、次のコードでは、**例**が関数ではないため、このエラーが生成されます。  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -31,10 +31,10 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- のみを呼び出す**関数プロトタイプ**メソッド`Function`オブジェクト。  
+- @No__t_1 のオブジェクトに対してのみ**関数プロトタイプ**メソッドを呼び出します。  
   
-- 関数呼び出し演算子を使用することを確認します。`()`関数のみを呼び出します。  
+- 関数呼び出し演算子 `()` を使用して関数だけを呼び出すようにしてください。  
   
 ## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
  [prototype プロパティ (Object)](../../javascript/reference/prototype-property-object-javascript.md)

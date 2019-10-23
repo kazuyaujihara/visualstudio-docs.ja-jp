@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913221"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659802"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるコード割合の確認
 
@@ -46,11 +46,11 @@ ms.locfileid: "70913221"
 
 ::: moniker range=">=vs-2019"
 
-1. **テスト エクスプローラー**で **[実行]** メニューの **[すべてのテストのコード カバレッジの分析]** を選択します。
+1. **[テスト]** メニューで、 **[すべてのテストのコード カバレッジの分析]** を選択します。
 
    ![VS 2019 でのコード カバレッジの分析メニュー](../test/media/vs-2019/analyze-code-coverage.png)
 
-   **テスト エクスプローラー**が開いていない場合は、 **[テスト]** > **[Windows]** > **[テスト エクスプローラー]** の順に選択するか、**Ctrl**+**E**、**T** キーを押して開きます。
+   コード カバレッジは、[テスト エクスプローラー] ツール ウィンドウから実行することもできます。
 
 ::: moniker-end
 

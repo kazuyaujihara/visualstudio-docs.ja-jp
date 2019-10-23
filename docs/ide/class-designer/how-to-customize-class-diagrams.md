@@ -8,17 +8,17 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647801"
 ---
 # <a name="how-to-customize-class-diagrams"></a>方法: クラス ダイアグラムをカスタマイズする
 
@@ -37,7 +37,7 @@ ms.locfileid: "62975217"
 
 2. **クラス デザイナー**のツール バーの **[拡大表示]** または **[縮小表示]** をクリックして、デザイナー画面のズーム レベルを変更します。
 
-     または
+     or
 
      特定のズームの値を指定します。 **[ズーム]** ドロップダウン リストから指定するか、有効なズーム レベルを入力します。有効な値の範囲は 10 ～ 400% です。
 
@@ -48,7 +48,7 @@ ms.locfileid: "62975217"
 
 1. **クラス デザイナー**でクラス ダイアグラム ファイルを開いて選択します。
 
-2. デザイン サーフェイスの空の領域を右クリックし、**[グループ メンバー]** をポイントします。
+2. デザイン サーフェイスの空の領域を右クリックし、 **[グループ メンバー]** をポイントします。
 
 3. 使用可能なオプションのうち 1 つを選択します。
 
@@ -94,7 +94,7 @@ ms.locfileid: "62975217"
 
 2. 非表示にする関連行または継承線を右クリックします。
 
-3. 関連行の場合は **[非表示]**、継承線の場合は **[継承線を隠す]** をクリックします。
+3. 関連行の場合は **[非表示]** 、継承線の場合は **[継承線を隠す]** をクリックします。
 
 4. **[すべてのメンバーの表示]** をクリックします。
 
@@ -106,7 +106,7 @@ ms.locfileid: "62975217"
 
 2. 非表示になっている関連行または継承線を持つ型を右クリックします。
 
-   関連行の場合は **[すべてのメンバーの表示]**、継承線の場合は **[基本クラスの表示]** または **[派生クラスの表示]** をクリックします。
+   関連行の場合は **[すべてのメンバーの表示]** 、継承線の場合は **[基本クラスの表示]** または **[派生クラスの表示]** をクリックします。
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>クラス ダイアグラムから図形を削除する
 型の基になるコードに影響を与えずに型シェイプをクラス ダイアグラムから削除できます。 クラス ダイアグラムからの型シェイプの削除は、そのダイアグラムだけに影響します。型を定義する基礎のコードと、型を表示する他のダイアグラムには影響しません。

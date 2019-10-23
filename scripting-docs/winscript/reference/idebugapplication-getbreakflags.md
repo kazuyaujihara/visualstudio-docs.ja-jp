@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags |Microsoft Docs
+title: 'IDebugApplication:: GetBreakFlags |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 389f50cf6883cd59cd540ef278aa1b4f69a6a629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a614429ebb8cc9271a0444536d14c45b69a9588f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990904"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574973"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-アプリケーションの現在の区切りフラグを返します。  
+アプリケーションの現在のブレークフラグを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>パラメーター  
  `pabf`  
- [out]アプリケーションの現在の区切りフラグ。  
+ 入出力アプリケーションの現在のブレークフラグ。  
   
  `pprdatSteppingThread`  
- [out]現在実行中のスレッド。  
+ 入出力現在実行中のスレッド。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT GetBreakFlags(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、アプリケーションの現在の区切りフラグを返します。  
+ このメソッドは、アプリケーションの現在のブレークフラグを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

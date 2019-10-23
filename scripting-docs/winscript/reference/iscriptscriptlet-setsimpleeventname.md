@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSimpleEventName |Microsoft Docs
+title: 'IScriptScriptlet レット:: SetSimpleEventName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e6d05066d59e14a7036fb8f371c9c20b886df7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47039be628e803b5b5c164b765b0cdf6778621bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786629"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571871"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-スクリプトレットに関連付けられている単純なイベント名を設定します。 任意の空白文字を含まない 1 単語の名前です。  
+スクリプトレットに関連付けられている単純なイベント名を設定します。 これは、空白が含まれていない単一の単語の名前です。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>パラメーター  
  `psz`  
- [in]関連付けられている単純なイベント名を含むバッファー、`IScriptScriptlet`オブジェクト。  
+ から@No__t_0 オブジェクトに関連付けられている単純なイベント名を格納するバッファー。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::evaluate メソッド |Microsoft Docs
+title: 'IJsDebugFrame:: Evaluate メソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b328d6071ae9dc96b8e7f62bad6d4417aa1730f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6227b97c1fd5fae32db3e13ef72751726c36b043
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558191"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573498"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate メソッド
 このスタック フレームのコンテキストで式を評価します。  
@@ -48,10 +48,10 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>戻り値  
   
 ## <a name="remarks"></a>Remarks  
- 次が返されます。S_OK を返します。評価が成功すると、* ppDebugProperty には評価結果が含まれています。 S_FALSE を返します。評価がエラーをスローします (または、評価操作がサポートされていません)、 \*pError にはエラー メッセージが含まれています。  
+ 次のメッセージを返します。"S_OK: Evaluation succeeds, *ppDebugProperty contains evaluation result." S_FALSE: 評価はエラーをスローします (または評価操作はサポートされていません)。 \*pError にはエラーメッセージが含まれています。  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [IJsDebugFrame インターフェイス](../../winscript/reference/ijsdebugframe-interface.md)

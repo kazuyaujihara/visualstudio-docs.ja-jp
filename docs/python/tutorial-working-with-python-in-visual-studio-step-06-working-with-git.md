@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810494"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289721"
 ---
 # <a name="step-6-work-with-git"></a>手順 6: Git の操作
 
@@ -26,13 +26,13 @@ Visual Studio には、ローカルの Git リポジトリと、GitHub や Azure
 
 この記事では、既存のプロジェクト向けのローカルの Git リポジトリを作成することの概要について説明し、Visual Studio の Git に関連するいくつかの機能を理解できるようにします。
 
-1. [前の手順](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)のプロジェクトなどを Visual Studio で開き、ソリューションを右クリックして、**[Add Solution to Source Control]\(ソリューションをソース管理に追加\)** を選択します。 Visual Studio によって、プロジェクト コードを含むローカルの Git リポジトリが作成されます。
+1. [前の手順](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)のプロジェクトなどを Visual Studio で開き、ソリューションを右クリックして、 **[Add Solution to Source Control]\(ソリューションをソース管理に追加\)** を選択します。 Visual Studio によって、プロジェクト コードを含むローカルの Git リポジトリが作成されます。
 
 1. プロジェクトが Git リポジトリで管理されていることを Visual Studio が検出すると、Git に関連するコントロールが Visual Studio ウィンドウの右下に表示されます。 コントロールには、保留中のコミット、変更、リポジトリの名前と分岐が表示されます。 コントロール上にカーソルを置き、追加情報を表します。
 
     ![Visual Studio ウィンドウの Git コントロールの上にカーソルを置くと表示される追加情報](media/working-with-git-01.png)
 
-1. 新しいリポジトリを作成するか Git コントロールのいずれかを選択すると、Visual Studio によって **[チーム エクスプローラー]** ウィンドウが開きます  (このウィンドウは、**[表示]** > **[チーム エクスプローラー]** メニュー コマンドを使用していつでも開くことができます)。ウィンドウには 3 つのメイン ウィンドウがあります。ウィンドウを切り替えるには、**チーム エクスプローラー**のヘッダーのドロップダウンを使用します。 発行操作を行う **[同期]** ウィンドウは、**[プッシュ]** コントロール (上矢印アイコン) を選択したときにも表示されます。
+1. 新しいリポジトリを作成するか Git コントロールのいずれかを選択すると、Visual Studio によって **[チーム エクスプローラー]** ウィンドウが開きます (このウィンドウは、 **[表示]**  >  **[チーム エクスプローラー]** メニュー コマンドを使用していつでも開くことができます)。ウィンドウには 3 つのメイン ウィンドウがあります。ウィンドウを切り替えるには、**チーム エクスプローラー**のヘッダーのドロップダウンを使用します。 発行操作を行う **[同期]** ウィンドウは、 **[プッシュ]** コントロール (上矢印アイコン) を選択したときにも表示されます。
 
     ![ローカル リポジトリの作成後の Visual Studio のチーム エクスプローラー](media/working-with-git-02.png)
 
@@ -50,13 +50,13 @@ Visual Studio には、ローカルの Git リポジトリと、GitHub や Azure
 
 1. リポジトリ名の Git コントロール (前の図の **CosineWave**) を選択します。**チーム エクスプローラー**に、別のリポジトリに完全にすばやく切り替えることができる**接続**インターフェイスが表示されます。
 
-1. ローカル リポジトリを使用する場合、変更をコミットすると、リポジトリでも直接変更されます。 リモート リポジトリに接続している場合は、**チーム エクスプローラー**でドロップダウン ヘッダーを選択し、**[同期]** を選択して **[同期]** セクションに切り替えて、そこに表示される **[プル]** コマンドと **[フェッチ]** コマンドを使用します。
+1. ローカル リポジトリを使用する場合、変更をコミットすると、リポジトリでも直接変更されます。 リモート リポジトリに接続している場合は、**チーム エクスプローラー**でドロップダウン ヘッダーを選択し、 **[同期]** を選択して **[同期]** セクションに切り替えて、そこに表示される **[プル]** コマンドと **[フェッチ]** コマンドを使用します。
 
 ## <a name="go-deeper"></a>詳しい説明
 
 リモート Git リポジトリからプロジェクトを作成する方法の短いチュートリアルについては、「[クイック スタート: Visual Studio で Python コードのリポジトリを複製する](quickstart-03-python-in-visual-studio-project-from-repository.md)」を参照してください。
 
-マージの競合、pull request があるコードのレビュー、リベース、分岐間のチェリー ピック変更などの包括的なチュートリアルについては、[Git と Azure Repos の使用開始](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)に関する記事を参照してください。
+マージの競合、pull request があるコードのレビュー、リベース、分岐間のチェリー ピック変更などの包括的なチュートリアルについては、[Git と Azure Repos の使用開始](/azure/devops/repos/git/gitquickstart)に関する記事を参照してください。
 
 ## <a name="tutorial-review"></a>チュートリアルのレビュー
 

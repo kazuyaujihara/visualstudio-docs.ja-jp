@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Skip |Microsoft Docs
+title: 'IEnumDebugStackFrames:: Skip |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1548784de8ad2cfc9d6368691da1b68a1bc1e3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29e5864d1304aeb4c916e93da8b151336596d979
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963313"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575534"
 ---
 # <a name="ienumdebugstackframesskip"></a>IEnumDebugStackFrames::Skip
-指定された数の列挙体シーケンス内のセグメントをスキップします。  
+列挙シーケンス内の指定された数のセグメントをスキップします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]スキップする列挙体シーケンス内のセグメントの数。  
+ からスキップする列挙シーケンス内のセグメントの数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT Skip(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、指定された数の列挙体シーケンス内のセグメントをスキップします。  
+ このメソッドは、列挙シーケンス内の指定された数のセグメントをスキップします。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumDebugStackFrames インターフェイス](../../winscript/reference/ienumdebugstackframes-interface.md)

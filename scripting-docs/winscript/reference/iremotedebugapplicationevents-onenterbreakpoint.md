@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnEnterBreakPoint |Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnEnterBreakPoint ポイント |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 123476100076811534343763f0e9675a90fdea16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad7b0dc3e4b6cd7e8779208121d7464e83e7bb3f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934648"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571988"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
-ブレークポイントを入力するため、イベントを処理します。  
+ブレークポイントを入力するためのイベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>パラメーター  
  `prdat`  
- [in]アプリケーション スレッド、ブレークポイントを入力します。  
+ からブレークポイントに入ったアプリケーションスレッド。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT OnEnterBreakPoint(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ブレークポイントを入力するため、イベントを処理します。  
+ このメソッドは、ブレークポイントを入力するためのイベントを処理します。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplicationEvents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)

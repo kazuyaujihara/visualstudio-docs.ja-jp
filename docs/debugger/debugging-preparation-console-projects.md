@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533319"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431471"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備:コンソールプロジェクト (C#、 C++、Visual Basic、 F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備: コンソールプロジェクトC#( C++、、Visual Basic F#、)
 
-コンソールプロジェクトのデバッグの準備は、Windows プロジェクトのデバッグの準備と似ています。コマンドライン引数の設定や、デバッグのためにアプリを一時停止する方法など、いくつかの考慮事項があります。 詳細については、「 [Windows フォームアプリケーション](../debugger/debugging-preparation-windows-forms-applications.md)」と[「デバッグの準備」を参照してください。Windows フォームアプリケーション (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 コンソール アプリケーションはどれも類似しているため、このトピックでは次のプロジェクトの種類について説明します。
+コンソールプロジェクトのデバッグの準備は、Windows プロジェクトのデバッグの準備と似ています。コマンドライン引数の設定や、デバッグのためにアプリを一時停止する方法など、いくつかの考慮事項があります。 詳細については、次を参照してください。 [Windows フォーム アプリケーション](../debugger/debugging-preparation-windows-forms-applications.md)、および[デバッグの準備。 Windows フォーム アプリケーション (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 コンソール アプリケーションはどれも類似しているため、このトピックでは次のプロジェクトの種類について説明します。
 
 - C#、Visual Basic、 F#コンソールアプリケーション
 
@@ -39,7 +39,7 @@ ms.locfileid: "68533319"
 
 ## <a name="set-command-line-arguments"></a>コマンドライン引数の設定
 
-コンソール アプリケーションのコマンド ライン引数を指定する必要がある場合があります。 詳細については、次を参照してください[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)、 [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)、または[c# デバッグ構成のプロジェクトの設定](../debugger/project-settings-for-csharp-debug-configurations.md)。
+コンソール アプリケーションのコマンド ライン引数を指定する必要がある場合があります。 詳細については、次を参照してください[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)、 [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)、または[c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)。
 
 すべてのプロジェクト プロパティと同様に、これらの引数はデバッグ セッション間および Visual Studio セッション間で保持されます。 このため、対象のコンソール アプリケーションを以前にデバッグしたことがある場合は、前回のセッションで **[\<プロジェクト名> プロパティ ページ]** ダイアログ ボックスに入力した引数が存在する場合があります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "68533319"
 
 - コードにブレークポイントを設定し、アプリケーションを開始します。
 
--  >  **F10**キー (**ステップオーバー**を**デバッグ**) または**F11** **キー (** [ステップインのデバッグ])を使用してアプリケーションを起動し、[実行]などの他のオプションを使用してコード内を移動します。 > 
+- **F10** (**デバッグ** > **ステップオーバー**) または**F11** (**デバッグ** > **ステップイン**) を使用してアプリケーションを起動し、 **[実行]** などの他のオプションを使用してコード内を移動します。
 
 - コードエディターで、行を右クリックし、[カーソル行の前**まで実行**] をクリックします。
 
@@ -57,10 +57,10 @@ ms.locfileid: "68533319"
 
   Visual Studio からコンソール アプリケーションを起動すると、 **[コンソール]** ウィンドウが Visual Studio ウィンドウの背後に表示される場合があります。 Visual Studio からコンソール アプリケーションを起動しようとしても、何も起こらない場合は、Visual Studio ウィンドウを移動してみてください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
 - [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
-- [Visual C++ プロジェクトの種類](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [プロジェクトのデバッグC++の準備](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#、F#、および Visual Basic のプロジェクト](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

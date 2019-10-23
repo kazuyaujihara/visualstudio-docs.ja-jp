@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, analyzing test results
 - load tests, managing test results
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3cd641a6361a8cf555e722ccd6c42414f5bdbe7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 62f93d75e9b0dc92f6bcbe86e09a39f96f9518a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926446"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665351"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>ロード テスト アナライザーを使用したロード テスト結果の分析
 
@@ -48,6 +48,6 @@ ms.locfileid: "68926446"
 |タスク|関連するトピック|
 |-|-|
 |**ロード テストの結果にアクセスする:** ロード テスト エディターからロード テストを実行すると、ロード テストの結果が自動的に開き、実行中のロード テストが**ロード テスト アナライザー**に表示されます。|-   [方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)|
-|**ロード テストへの分析メモの追加:** 分析を行っているときに、ロード テストにコメントを追加できます。 コメントは、ロード テスト結果と共に永続的に保存されます。 入力した説明は、ロード テスト エディターの **[ロード テストの結果を開いて管理]** ダイアログ ボックスのロード テストに関する **[説明]** 列にも表示されます。<br /><br /> 詳細については、「[方法 :ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)」を参照してください。<br /><br /> さらに、コメントは、ロード テスト結果に関する Excel レポートを作成するときにも表示されます。<br /><br /> 詳細については、「[テストの比較または傾向分析に備えたロード テストの結果レポートの作成](../test/compare-load-test-results.md)」を参照してください。||
+|**ロード テストへの分析メモの追加:** 分析を行っているときに、ロード テストにコメントを追加できます。 コメントは、ロード テスト結果と共に永続的に保存されます。 入力した説明は、ロード テスト エディターの **[ロード テストの結果を開いて管理]** ダイアログ ボックスのロード テストに関する **[説明]** 列にも表示されます。<br /><br /> 詳細については、[ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)」を参照してください。<br /><br /> さらに、コメントは、ロード テスト結果に関する Excel レポートを作成するときにも表示されます。<br /><br /> 詳細については、「[テストの比較または傾向分析に備えたロード テストの結果レポートの作成](../test/compare-load-test-results.md)」を参照してください。||
 |**ロード テストの結果の分析:** ロード テストの実行データにアクセスした後、その結果データを分析できます。 テスト結果を迅速に把握するには、ロード テストの概要を表示します。 ロード テストの概要には、主要な結果がわかりやすい形式で簡潔にまとめられています。<br /><br /> ロード テストの概要は印刷できます。 これによって利害関係者に結果を伝えるのが容易になります。<br /><br /> ロード テストの結果の詳細は、結果のグラフとテーブルを使用して分析できます。 これらには、**エラー**、**ページ**、**要求**、**SQL トレース**、**テスト**、**しきい値**、**トランザクション**が含まれます。|-   [ロード テスト結果の概要](../test/load-test-results-summary-overview.md)<br />-   [方法: Web ページの応答時間を表示する](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [しきい値規則違反の分析](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [グラフ ビューでのロード テスト結果の分析](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [テーブル ビューでのロード テスト結果とエラーの分析](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**ロード テストの結果で仮想ユーザー アクティビティを分析して、パフォーマンスの問題を特定する:** 仮想ユーザー アクティビティ チャートを使用して、ロード テスト中に仮想ユーザーが行っている操作を視覚化できます。 このチャートは、CPU のスパイク、1 秒あたりの要求数のドロップ、およびこれらのスパイクとドロップの際に実行されるテストまたはページを調べるのに役立ちます。|-   [詳細ビューでの仮想ユーザー アクティビティの分析](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

@@ -1,5 +1,5 @@
 ---
-title: どのような&#39;s デザインの新機能
+title: 設計&#39;の新機能
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187122"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659241"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015 の Visual Studio でデザインする場合は新機能
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual studio でのデザインの新機能 Visual studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 このリリースの Visual Studio では、コードの理解と設計の向上に役立つ次のような機能が強化されています。
 
@@ -30,7 +30,7 @@ ms.locfileid: "68187122"
 
  最終 (RTM) リリースでは、コマンドが選択、編集、管理の単位でセクションにグループ化され、グループの内容のレイアウトが変更されて、コード要素のショートカット メニューとリンクがずっと使いやすくなりました。 また、テスト プロジェクトが他のプロジェクトとは異なるスタイルで表示されること、およびマップの要素のアイコンがさらに適切なバージョンに更新されたことにも注意してください。
 
- ![新しいコード マップで選択した項目を表示する](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![新しいコードマップで選択した項目を表示する](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  その他の改良点は次のとおりです。
 
@@ -64,18 +64,18 @@ ms.locfileid: "68187122"
 
 - **アーキテクチャ エクスプローラー**。 アーキテクチャ エクスプローラーを使ってダイアグラムを作成できなくなりました。 しかし、ソリューション エクスプローラーを使って引き続き作成できます。
 
-## <a name="VersionSupport"></a> アーキテクチャ ツールとモデリング ツールのエディションのサポート
+## <a name="VersionSupport"></a>アーキテクチャおよびモデリングツールのエディションサポート
 
-Visual Studio 2015 は、いくつかのエディションで使用できます。 すべては、アーキテクチャとモデリング ツールのサポートを提供します。 各ツールの利用可能情報を次の表に示します。
+Visual Studio 2015 は、いくつかのエディションで使用できます。 これらのすべてが、アーキテクチャツールとモデリングツールのサポートを提供するわけではありません。 各ツールの利用可能情報を次の表に示します。
 
-|**機能**|**エンタープライズ**|**Professional**|**コミュニティ**|**Express**|
+|**機能**|**エンタープライズ**|**正規**|**Community**|**それら**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**コード マップ**|[はい]|読み取りとコード マップをフィルター処理、新しいジェネリック ノードを追加および選択範囲から新しいの有向グラフの作成にのみサポートします。|-|-|
+|**コード マップ**|[はい]|では、コードマップの読み取りとフィルター処理、新しいジェネリックノードの追加、および選択からの新しい有向グラフの作成のみがサポートされています。|-|-|
 |**UML クラス図**|[はい]|-|-|-|
 |**UML シーケンス図**|[はい]|-|-|-|
-|**UML ユース ケース図**|[はい]|-|-|-|
+|**UML ユースケース図**|[はい]|-|-|-|
 |**UML アクティビティ図**|[はい]|-|-|-|
 |**UML コンポーネント図**|[はい]|-|-|-|
 |**レイヤー図**|[はい]|-|-|-|
-|**グラフの directed** (DGML ダイアグラム)|[はい]|はい|-|-|
-|**コード クローン**|はい|-|-|-|
+|**有向グラフ**(DGML 図)|[はい]|[はい]|-|-|
+|**コードクローン**|[はい]|-|-|-|

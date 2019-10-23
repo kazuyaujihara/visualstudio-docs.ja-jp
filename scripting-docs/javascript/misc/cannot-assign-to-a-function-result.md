@@ -1,5 +1,5 @@
 ---
-title: 関数の結果に割り当てることはできません |Microsoft Docs
+title: 関数の結果 | を割り当てることはできません。Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca09fe3b516fbb8f27def982bf34a22d33d4ada
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946603"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572367"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>関数の結果に割り当てられません。
-関数の結果に値を代入しようとしました。 関数の結果を変数に割り当てることができますが、変数として使用できません。 関数自体に新しい値を代入する場合は、(関数呼び出し演算子) のかっこを省略します。 次の例では、このエラーを生成するような状況を示します。  
+関数の結果に値を割り当てようとしました。 関数の結果を変数に代入することはできますが、変数として使用することはできません。 関数自体に新しい値を代入する場合は、かっこ (関数呼び出し演算子) を省略します。 次の例は、このエラーが生成される状況を示しています。  
   
 ```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
@@ -30,19 +30,19 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- ものとして関数呼び出しの結果の値を使用しないで*に割り当てる*します。 関数呼び出しの結果を割り当てることができます*変数に*場合。  
+- 関数呼び出しの結果の値は、*割り当て*可能なものとして使用しないでください。 関数呼び出しの結果を*変数に*割り当てることができます。  
   
     ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
-- 代わりに、割り当てることができます、関数自体 (および戻り値ではありません) を変数にします。  
+- または、関数自体 (戻り値ではなく) を変数に代入することもできます。  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
  [JavaScript コードの記述](../../javascript/writing-javascript-code.md)   
  [関数](../../javascript/functions-javascript.md)

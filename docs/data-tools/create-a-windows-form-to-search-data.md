@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567612"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642719"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>データを検索する Windows フォームを作成する
 
@@ -27,51 +27,51 @@ ms.locfileid: "62567612"
 
 パラメーター クエリを使用することにより、データベースが最も得意とする作業 (レコードの迅速なフィルター処理) をデータベースに任せることができるため、アプリケーションの効率が高まります。 一方、データベース テーブル全体を要求し、それをネットワークを通じて転送し、アプリケーション ロジックを使用して必要なレコードを見つける場合は、アプリケーションが低速になり、効率が低下する可能性があります。
 
-パラメーター化クエリを追加するには、TableAdapter (およびコントロール パラメーターの値をそのまま使用し、クエリを実行する) を使用して、**検索条件ビルダー**  ダイアログ ボックス。 このダイアログ ボックスを開くには、**[データ]** メニュー (または TableAdapter スマート タグ) の **[クエリの追加]** をクリックします。
+**[検索条件ビルダー]** ダイアログボックスを使用して、任意の TableAdapter (および、パラメーター値を受け入れるコントロールとクエリを実行するコントロール) にパラメーター化されたクエリを追加できます。 このダイアログ ボックスを開くには、 **[データ]** メニュー (または TableAdapter スマート タグ) の **[クエリの追加]** をクリックします。
 
 このチュートリアルでは、以下のタスクを行います。
 
-- 使用してアプリケーションでのデータ ソースの構成の作成と、**データ ソースの構成**ウィザード。
+- **データソース構成**ウィザードを使用して、アプリケーションでデータソースを作成および構成します。
 
-- 内の項目のドロップ タイプを設定、**データソース**ウィンドウ。
+- **[データソース]** ウィンドウの項目のドロップタイプを設定します。
 
 - **[データ ソース]** ウィンドウからフォームに項目をドラッグし、データを表示するコントロールを作成します。
 
 - データを表示するコントロールをフォームに追加します。
 
-- 完了、**検索条件ビルダー**  ダイアログ ボックス。
+- **[検索条件ビルダー]** ダイアログボックスを完了しています。
 
-- フォームにパラメーターを入力し、パラメーター化クエリを実行します。
+- フォームにパラメーターを入力し、パラメーター化されたクエリを実行します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
-このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
+このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
-2. 次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**ワークロードで、 **Visual Studio インストーラー**)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
+    1. Visual Studio で、 **[SQL Server オブジェクトエクスプローラー]** ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、 **Visual Studio インストーラー**の**データストレージと処理**ワークロードの一部としてインストールされます)。 **[SQL Server]** ノードを展開します。 LocalDB インスタンスを右クリックし、 **[新しいクエリ]** をクリックします。
 
-       クエリ エディター ウィンドウが開きます。
+       クエリエディターウィンドウが開きます。
 
-    2. コピー、 [Northwind Transact SQL スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにします。 この T-SQL スクリプトでは、最初から、Northwind データベースを作成し、データを設定します。
+    2. [Northwind transact-sql スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにコピーします。 この T-sql スクリプトでは、Northwind データベースを最初から作成し、データを設定します。
 
-    3. T-SQL スクリプトをクエリ エディターに貼り付けて選択し、 **Execute**ボタンをクリックします。
+    3. T-sql スクリプトをクエリエディターに貼り付け、 **[実行]** ボタンをクリックします。
 
-       しばらくすると、クエリの実行が完了し、Northwind データベースを作成します。
+       しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
-## <a name="create-the-windows-forms-application"></a>Windows フォーム アプリケーションを作成します。
+## <a name="create-the-windows-forms-application"></a>Windows フォームアプリケーションを作成する
 
-新規作成**Windows フォーム アプリ**のいずれかのプロジェクトC#または Visual Basic です。 プロジェクトに **WindowsSearchForm** という名前を付けます。
+または Visual Basic 用の新しい**Windows フォームアプリ**プロジェクトを作成します。 C# プロジェクトに **WindowsSearchForm** という名前を付けます。
 
-## <a name="create-the-data-source"></a>データ ソースを作成します。
+## <a name="create-the-data-source"></a>データソースを作成する
 
 この手順では、**データ ソース構成**ウィザードを使用して、データベースからデータ ソースを作成します。
 
-1. 開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
+1. データ **[ソース]** ウィンドウを開くには、 **[データ]** メニューの **[データソースの表示]** をクリックします。
 
-2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
 
 3. **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
 
@@ -81,17 +81,17 @@ ms.locfileid: "62567612"
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、 **[次へ]** をクリックします。
 
-6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
-7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** ノードを展開します。
 
-8. **Customers** テーブルを選択し、**[完了]** をクリックします。
+8. **Customers** テーブルを選択し、 **[完了]** をクリックします。
 
-     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに **Customers** テーブルが表示されます。
+     プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに **Customers** テーブルが表示されます。
 
-## <a name="create-the-form"></a>フォームを作成します。
+## <a name="create-the-form"></a>フォームを作成する
 
 **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
@@ -101,13 +101,13 @@ ms.locfileid: "62567612"
 
      <xref:System.Windows.Forms.DataGridView> と、レコード間を移動するためのツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォーム上に表示されます。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。
 
-## <a name="add-parameterization-search-functionality-to-the-query"></a>パラメーター (検索機能) をクエリに追加します。
+## <a name="add-parameterization-search-functionality-to-the-query"></a>クエリへのパラメーター化 (検索機能) の追加
 
-WHERE 句を追加するには元のクエリを使用する、**検索条件ビルダー**  ダイアログ ボックス。
+**[検索条件ビルダー]** ダイアログボックスを使用して、元のクエリに where 句を追加できます。
 
-1. <xref:System.Windows.Forms.DataGridView> コントロールを選択し、**[データ]** メニューの **[クエリの追加]** をクリックします。
+1. <xref:System.Windows.Forms.DataGridView> コントロールを選択し、 **[データ]** メニューの **[クエリの追加]** をクリックします。
 
-2. 型**FillByCity**で、**新しいクエリ名**上の領域、**検索条件ビルダー**  ダイアログ ボックス。
+2. **[検索条件ビルダー]** ダイアログボックスの **[新しいクエリ名]** 領域に「 **fillbycity** 」と入力します。
 
 3. **[クエリ テキスト]** 領域でクエリに `WHERE City = @City` を追加します。
 
@@ -121,7 +121,7 @@ WHERE 句を追加するには元のクエリを使用する、**検索条件ビ
      ```
 
     > [!NOTE]
-    > アクセスおよび OLE DB データ ソースは疑問符 () を使用して ('? ') パラメーターを示すためにそのため、WHERE 句はようになります:`WHERE City = ?`します。
+    > データソースへのアクセスと OLE DB では、疑問符 ('? ') を使用してパラメーターを指定するため、WHERE 句は次のようになります。 `WHERE City = ?`。
 
 4. **[OK]** をクリックして **[検索条件ビルダー]** ダイアログ ボックスを閉じます。
 
@@ -129,19 +129,19 @@ WHERE 句を追加するには元のクエリを使用する、**検索条件ビ
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
 
-アプリケーションを実行し、フォームが開きます、入力としてのパラメーターを受け取る準備完了になります。
+アプリケーションを実行すると、フォームが開き、パラメーターを入力として取得できるようになります。
 
 1. **F5** キーを押してアプリケーションを実行します。
 
-2. **[City]** ボックスに「**London**」と入力し、**[FillByCity]** をクリックします。
+2. **[City]** ボックスに「**London**」と入力し、 **[FillByCity]** をクリックします。
 
-     データ グリッドには、条件を満たす顧客が取得されます。 この例では、**[City]** 列の値が **London** の顧客だけがデータ グリッドに表示されます。
+     データグリッドには、条件を満たす顧客が設定されます。 この例では、 **[City]** 列の値が **London** の顧客だけがデータ グリッドに表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリケーションの要件に応じて、パラメーター付きのフォームを作成した後に、追加の操作を実行できます。 このチュートリアルで行うことができる拡張には次のものがあります。
 
-- 関連するデータを表示するコントロールを追加します。 詳細については、次を参照してください。[データセットのリレーションシップ](relationships-in-datasets.md)します。
+- 関連するデータを表示するコントロールを追加します。 詳細については、「[データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
 
 - データセットを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4c10e3a337b44a4b7c9a1cb59165736bb3e7efb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871525"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648272"
 ---
 # <a name="n-tier-data-applications-overview"></a>n 層データ アプリケーションの概要
 *N 層*データアプリケーションは、複数の*層*に分割されるデータアプリケーションです。 n 層アプリケーションは、"分散アプリケーション" および "多階層アプリケーション" とも呼ばれ、クライアントとサーバー間に分散された別個の層に処理を分離します。 データにアクセスするアプリケーションを開発する場合は、アプリケーションを構成する各種の層を明確に分離する必要があります。
@@ -31,7 +31,7 @@ Visual Studio には、開発者が n 層アプリケーションを作成する
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)には、DataContext とデータクラスを別々の名前空間に生成する設定が用意されています。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)には<xref:System.Data.Linq.Table%601.Attach%2A> 、アプリケーションのさまざまな層から DataContext をまとめることができるメソッドが用意されています。 詳細については、「 [LINQ to SQL を使用した N 層とリモートアプリケーション](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)」を参照してください。
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)には、アプリケーションのさまざまな層から DataContext をまとめることができる <xref:System.Data.Linq.Table%601.Attach%2A> メソッドが用意されています。 詳細については、「 [LINQ to SQL を使用した N 層とリモートアプリケーション](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)」を参照してください。
 
 ## <a name="presentation-tier"></a>プレゼンテーション層
 *プレゼンテーション層*は、ユーザーがアプリケーションとやりとりする層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。
@@ -57,7 +57,7 @@ Visual Studio には、開発者が n 層アプリケーションを作成する
 
 次の図は、Visual Studio で使用できる機能および技術と、n 層アプリケーションの中間層においてそれらが適合する位置を示しています。
 
-![中間層コンポーネント](../data-tools/media/ntiermid.png)の中間層
+![Middle 層のコンポーネント ](../data-tools/media/ntiermid.png) 中間層
 
 通常、中間層は、データ接続を使用してデータ層に接続します。 一般に、このデータ接続はデータ アクセス コンポーネントに格納されます。
 
@@ -66,7 +66,7 @@ Visual Studio には、開発者が n 層アプリケーションを作成する
 
 次の図は、Visual Studio で使用できる機能および技術と、n 層アプリケーションのデータ層においてそれらが適合する位置を示しています。
 
-![データ層コンポーネント](../data-tools/media/ntierdatatier.png)のデータ層
+データ層 ](../data-tools/media/ntierdatatier.png) ![Data 層コンポーネント
 
 プレゼンテーション層のクライアントからデータ層に直接アクセスすることはできません。 代わりに、プレゼンテーション層とデータ層の間の通信では、中間層のデータ アクセス コンポーネントが使用されます。
 

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName |Microsoft Docs
+title: 'IScriptEntry:: SetItemName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ba226704f5b064c86b52c1b349650d509b2b549
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787659"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575366"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-識別する項目の名前を設定、`IScriptEntry`オブジェクト。  
+@No__t_0 オブジェクトを識別する項目の名前を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>パラメーター  
  `psz`  
- [in]項目の名前を格納するバッファーのアドレス。 項目の名前は、エントリを識別するために、ホストによって使用されます。  
+ から項目名を格納しているバッファーのアドレス。 項目名は、エントリを識別するためにホストによって使用されます。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -48,10 +48,10 @@ HRESULT SetItemName(
 |`E_FAIL`|メソッドは成功しませんでした。|  
   
 ## <a name="remarks"></a>Remarks  
- `IScriptEntry`オブジェクトの場合、このメソッドが戻る`S_OK`します。  
+ @No__t_0 オブジェクトの場合、このメソッドは `S_OK` を返します。  
   
- `IScriptScriptlet`オブジェクト (から派生する`IScriptEntry`)、このメソッドが戻る`E_FAIL`します。 `IScriptScriptlet`オブジェクトによって、項目の名前が設定されます[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)変更ことはできません。  
+ @No__t_0 オブジェクト (`IScriptEntry` から派生) の場合、このメソッドは `E_FAIL` を返します。 @No__t_0 オブジェクトの場合、項目名は[IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)によって設定され、変更することはできません。  
   
 ## <a name="see-also"></a>関連項目  
- [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
+ [Iscriptentry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

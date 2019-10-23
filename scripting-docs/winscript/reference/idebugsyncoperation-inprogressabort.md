@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::InProgressAbort |Microsoft Docs
+title: 'IDebugSyncOperation:: In進捗 Abort |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a794ea70d6d2fe937afb311e6961d53f22bd7ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40974c738c071e52648297ac90a0ab89d9681435
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004831"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576668"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
-別のスレッドで実行中の操作をキャンセルします。  
+別のスレッドで実行中の操作を取り消します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT InProgressAbort();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -42,13 +42,13 @@ HRESULT InProgressAbort();
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_NOTIMPL`|操作を取り消すことができません。|  
+|`E_NOTIMPL`|操作を取り消すことはできません。|  
 |`E_ABORT`|操作を完了できませんでした。|  
   
 ## <a name="remarks"></a>Remarks  
- プロセス デバッグ マネージャーは、別のスレッドで実行中の操作を中止するデバッガー スレッド内からは、このメソッドを呼び出します。  
+ プロセスデバッグマネージャーは、デバッガースレッド内からこのメソッドを呼び出して、別のスレッドで実行中の操作を取り消します。  
   
- 場合、`InProgressAbort`返しますメソッドは、操作を完了できません、`E_ABORT`できるだけ早くします。 このメソッドが返す`E_NOTIMPL`場合は、操作を取り消すことができません。  
+ @No__t_0 メソッドが操作を完了できない場合は、できるだけ早く `E_ABORT` を返します。 このメソッドは、操作を取り消すことができない場合に `E_NOTIMPL` を返すことができます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugSyncOperation インターフェイス](../../winscript/reference/idebugsyncoperation-interface.md)

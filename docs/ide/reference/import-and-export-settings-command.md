@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools.ImportandExportSettings
 - Import and Export Settings command
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9be5826edf0d7220d30ce5c4a99f333c2ab8b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0be61d8690c0605f6e7773efe02f5db351110f9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953219"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658773"
 ---
 # <a name="import-and-export-settings-command"></a>[設定のインポートとエクスポート] コマンド
 
@@ -46,7 +46,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 ## <a name="remarks"></a>解説
 
-スイッチを指定しないでこのコマンドを実行すると、**[設定のインポートとエクスポート]** ウィザードが開きます。 詳細については、[設定の同期](../synchronized-settings-in-visual-studio.md)と[環境設定](../environment-settings.md)に関するページを参照してください。
+スイッチを指定しないでこのコマンドを実行すると、 **[設定のインポートとエクスポート]** ウィザードが開きます。 詳細については、[設定の同期](../synchronized-settings-in-visual-studio.md)と[環境設定](../environment-settings.md)に関するページを参照してください。
 
 ## <a name="example"></a>例
 

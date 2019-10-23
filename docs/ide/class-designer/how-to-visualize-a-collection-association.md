@@ -10,17 +10,17 @@ helpviewer_keywords:
 - collections, collection associations
 - Class Designer [Visual Studio], collection associations
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e074eee5972bcf952108a36f52c0915057c470a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975074"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631320"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>方法: クラス デザイナーでコレクションの関連付けをビジュアル化する
 
@@ -32,7 +32,7 @@ ms.locfileid: "62975074"
 
 2. クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。
 
-3. クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。
+3. クラスで、フィールドまたはプロパティを右クリックし、 **[コレクションの関連として表示]** を選択します。
 
 プロパティまたはフィールドは、収集された型にリンクする関連行として表示されます。
 

@@ -1,5 +1,5 @@
 ---
-title: インターフェイスの抽出リファクタリング (c#) |Microsoft Docs
+title: インターフェイスの抽出リファクタリングC#() |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,67 +13,67 @@ helpviewer_keywords:
 - Extract Interface refactoring operation [C#]
 ms.assetid: 7d0aa225-3b33-4331-9652-5a67cac6f3d0
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667558"
 ---
 # <a name="extract-interface-refactoring-c"></a>インターフェイスの抽出リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-インターフェイスの抽出は、既存のクラス、構造体、またはインターフェイスから発信されたメンバーを持つ新しいインターフェイスを作成する簡単な方法を提供するリファクタリング操作です。  
-  
- いくつかのクライアントが同じクラス、構造体、またはインターフェイス メンバーのサブセットを使用する場合、または複数のクラス、構造体、またはインターフェイス メンバーのサブセットを共通のあるときに、インターフェイス内のメンバーのサブセットを具現化すると便利ですができます。 詳細については、インターフェイスを使用して、次を参照してください。[インターフェイス](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)します。  
-  
- インターフェイスの抽出では、新しいファイルにインターフェイスが生成され、新しいファイルの先頭にカーソルを位置付けます。 新しいインターフェイスや、新しいインターフェイスでの名前を使用して、生成されたファイルの名前を抽出するメンバーを指定することができます、**インターフェイスの抽出** ダイアログ ボックス。  
-  
-### <a name="to-use-extract-interface"></a>インターフェイスの抽出を使用するには  
-  
-1. という名前のコンソール アプリケーションを作成する`ExtractInterface`、し、置き換えます`Program`を次のコード  
-  
-    ```csharp  
-    // Invoke Extract Interface on ProtoA.  
-    // Note:  the extracted interface will be created in a new file.  
-    class ProtoA  
-    {  
-        public void MethodB(string s) { }  
-    }  
-    ```  
-  
-2. カーソルが配置`MethodB`、 をクリック**インターフェイスの抽出**上、**リファクタリング**メニュー。  
-  
-     **インターフェイスの抽出** ダイアログ ボックスが表示されます。  
-  
-     キーボード ショートカット CTRL + R 表示を入力することも、**インターフェイスの抽出** ダイアログ ボックス。  
-  
-     マウスを右クリックすることもできますを指す**リファクタリング**、順にクリックします**インターフェイスの抽出**を表示する、**インターフェイスの抽出** ダイアログ ボックス。  
-  
-3. クリックして**すべて選択**します。  
-  
-4. **[OK]** をクリックします。  
-  
-     新しいファイルや IProtoA.cs、次のコードを参照してください。  
-  
-    ```csharp  
-    using System;  
-    namespace TopThreeRefactorings  
-    {  
-        interface IProtoA  
-        {  
-            void MethodB(string s);  
-        }  
-    }  
-    ```  
-  
-## <a name="remarks"></a>Remarks  
- この機能は、クラス、構造体、またはインターフェイスに抽出するメンバーを含む、カーソルが置かれているときにのみアクセスできます。 この位置にカーソルがある場合は、インターフェイスの抽出リファクタリング操作を呼び出します。  
-  
- クラスまたは構造体でインターフェイスの抽出を呼び出すと、基底クラスとインターフェイスの一覧は、新しいインターフェイス名を含めるに変更されます。 インターフェイスのインターフェイスの抽出を呼び出すときは、基底クラスとインターフェイスの一覧は変更されません。  
-  
-## <a name="see-also"></a>関連項目  
+Extract Interface はリファクタリング操作であり、既存のクラス、構造体、またはインターフェイスからのメンバーを含む新しいインターフェイスを簡単に作成できます。
+
+ 複数のクライアントが、クラス、構造体、またはインターフェイスのメンバーの同じサブセットを使用している場合、または複数のクラス、構造体、またはインターフェイスが共通のメンバーのサブセットを持っている場合は、インターフェイスのメンバーのサブセットを具体化すると役立つことがあります。 インターフェイスの使用方法の詳細については、「[インターフェイス](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)」を参照してください。
+
+ [インターフェイスの抽出] では、新しいファイルにインターフェイスが生成され、新しいファイルの先頭にカーソルが配置されます。 **[インターフェイスの抽出]** ダイアログボックスを使用して、どのメンバーを新しいインターフェイスに抽出するか、新しいインターフェイスの名前、および生成されるファイルの名前を指定できます。
+
+### <a name="to-use-extract-interface"></a>Extract インターフェイスを使用するには
+
+1. @No__t_0 という名前のコンソールアプリケーションを作成し、`Program` を次のコードに置き換えます。
+
+    ```csharp
+    // Invoke Extract Interface on ProtoA.
+    // Note:  the extracted interface will be created in a new file.
+    class ProtoA
+    {
+        public void MethodB(string s) { }
+    }
+    ```
+
+2. カーソルを `MethodB` に配置し、 **[リファクター]** メニューの **[インターフェイスの抽出]** をクリックします。
+
+     **[インターフェイスの抽出]** ダイアログボックスが表示されます。
+
+     また、キーボードショートカット CTRL + R を入力して、 **[インターフェイスの抽出]** ダイアログボックスを表示することもできます。
+
+     マウスを右クリックして **[リファクター]** をポイントし、インターフェイスの **[抽出]** をクリックして **[インターフェイスの抽出]** ダイアログボックスを表示することもできます。
+
+3. [**すべて選択] を**クリックします。
+
+4. **[OK]** をクリックします。
+
+     新しいファイル IProtoA.cs と、次のコードが表示されます。
+
+    ```csharp
+    using System;
+    namespace TopThreeRefactorings
+    {
+        interface IProtoA
+        {
+            void MethodB(string s);
+        }
+    }
+    ```
+
+## <a name="remarks"></a>Remarks
+ この機能は、抽出するメンバーが含まれているクラス、構造体、またはインターフェイス内にカーソルが配置されている場合にのみアクセスできます。 カーソルがこの位置にある場合は、[インターフェイスの抽出] リファクタリング操作を呼び出します。
+
+ クラスまたは構造体で extract インターフェイスを呼び出すと、新しいインターフェイス名を含むように基底クラスとインターフェイスリストが変更されます。 インターフェイスで extract インターフェイスを呼び出す場合、基底クラスとインターフェイスリストは変更されません。
+
+## <a name="see-also"></a>参照
  [リファクタリング (C#)](../csharp-ide/refactoring-csharp.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnStateChange |Microsoft Docs
+title: 'IActiveScriptSite:: OnStateChange |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad5719a93aec2940f1180a6ff45a028b937b0dfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba8441d36f193f287dfec7406d5f136280c5a42e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992532"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570154"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
-スクリプト エンジンの状態が変更されたことをホストに通知します。  
+スクリプトエンジンによって状態が変更されたことをホストに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>パラメーター  
  `ssScriptState`  
- [in]新しいスクリプトの状態を示す値。 参照してください、 [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)メソッド、状態の説明についてはします。  
+ から新しいスクリプトの状態を示す値です。 状態の説明については、 [IActiveScript:: GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)メソッドを参照してください。  
   
 ## <a name="return-value"></a>戻り値  
  正常に終了した場合は `S_OK` を返します。  

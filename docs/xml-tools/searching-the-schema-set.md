@@ -3,17 +3,17 @@ title: XML スキーマエクスプローラー-スキーマセットの検索
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926802"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604650"
 ---
 # <a name="search-the-schema-set"></a>スキーマ セットを検索する
 
@@ -25,7 +25,7 @@ ms.locfileid: "68926802"
 
 ## <a name="keyword-search"></a>キーワード検索
 
-キーワード検索を実行するには、 **XML スキーマエクスプローラー**のツールバーの [**検索 schemaset** ] テキストボックスに部分文字列を入力します。
+キーワード検索を実行するには、 **XML スキーマエクスプローラー**のツールバーの **[検索 schemaset]** テキストボックスに部分文字列を入力します。
 
 ![XML スキーマ エクスプローラー キーワード検索](../xml-tools/media/schemaexplorersearch.gif)
 
@@ -43,7 +43,7 @@ ms.locfileid: "68926802"
 
 ## <a name="display-and-navigate-search-results"></a>検索結果の表示と移動
 
-検索が終了すると、ツール バーに概要結果ペインが追加され、検索結果が表示されます。 検索結果は、 **XML スキーマエクスプローラー**でも強調表示され、垂直スクロールバーの目盛りでマークされます。 検索結果を参照するには、 **XML スキーマエクスプローラー**のツールバーの [概要] 結果ペインで、[**次の検索結果に移動**] ボタンと [**前の検索結果**に移動] ボタンを使用します。キーボードのキーを使用して、 **f3**キーと**Shift**+**f3**キーを押すか、スクロールバーの目盛りをクリックします。
+検索が終了すると、ツール バーに概要結果ペインが追加され、検索結果が表示されます。 検索結果は、 **XML スキーマエクスプローラー**でも強調表示され、垂直スクロールバーの目盛りでマークされます。 検索結果を参照するには、 **XML スキーマエクスプローラー**のツールバーの 概要 結果ペインで、**次の検索結果に移動** ボタンと **前の検索結果**に移動 ボタンを使用します。キーボードのキーを使用して**f3**キーを**押し**+または、スクロールバーの目盛りをクリックします。
 
 概要結果ペインの [強調表示された**ノードをワークスペースに追加**] ボタンをクリックすると、ワークスペースに検索結果を追加できます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "68926802"
 
 ## <a name="clear-search-results"></a>検索結果のクリア
 
-検索結果を消去するには、 **XML スキーマエクスプローラー**の [検索] ツールバーの [概要] 結果ペインにある [ **x** ] ボタンをクリックします。
+検索結果を消去するには、 **XML スキーマエクスプローラー**の 検索 ツールバーの 概要 結果ペインにある  **x** ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 

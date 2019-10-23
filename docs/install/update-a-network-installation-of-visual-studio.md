@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを更新する
 description: --layout コマンドを実行して Visual Studio のネットワークベース インストールを更新する方法について説明します
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971369"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018810"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
@@ -42,7 +42,7 @@ ms.locfileid: "62971369"
 
 ::: moniker-end
 
-ファイル共有上にレイアウトをホストしている場合は、レイアウトのプライベート コピーを更新し (例: c:\vsoffline)、すべての更新されたコンテンツがダウンロードされた後に、ファイル共有にコピーします (例: \\server\products\VS)。 この操作を行わない場合、レイアウトの更新中にユーザーがセットアップを実行しても、レイアウトが完全に更新されていないため、レイアウトからすべてのコンテンツを取得できない可能性が非常に高くなります。
+ファイル共有上にレイアウトをホストしている場合は、レイアウトのプライベート コピーを更新し (例: c:\VSLayout)、すべての更新されたコンテンツがダウンロードされた後に、ファイル共有にコピーします (例: \\server\products\VS)。 この操作を行わない場合、レイアウトの更新中にユーザーがセットアップを実行しても、レイアウトが完全に更新されていないため、レイアウトからすべてのコンテンツを取得できない可能性が非常に高くなります。
 
 レイアウトを作成して更新する方法についていくつかの例を説明します。
 
@@ -87,7 +87,7 @@ ms.locfileid: "62971369"
 
 * ユーザーは、オフラインのインストール フォルダーからインストールした Visual Studio インスタンスを更新することができます。
   * Visual Studio インストーラーを実行します。
-  * 次に、**[更新]** をクリックします。
+  * 次に、 **[更新]** をクリックします。
 
 ::: moniker range="vs-2017"
 

@@ -3,29 +3,29 @@ title: XML エディターの IntelliSense 機能
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807977"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603964"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML エディターの IntelliSense 機能
 
 XML エディターでは、Visual Studio で提供されている他の言語のエディターに相当する、フル機能の IntelliSense を利用できます。 このセクションでは、XML スキーマ定義言語 (XSD) ドキュメントと XSLT ドキュメントで IntelliSense を使用する方法について説明します。
 
-## <a name="intellisense-in-an-xsd-document"></a>XSD ドキュメントでの IntelliSense
+## <a name="intellisense-in-an-xsd-document"></a>XSD ドキュメント内の IntelliSense
 
-入力すると予測される要素のドロップダウン リストを取得するスキーマをドキュメントに関連付けられて後、 `"<"`  をクリックしてまたは、**オブジェクト メンバーの一覧を表示**XML エディターのツールバーのボタンをクリックします。
+ドキュメントにスキーマが関連付けられると、XML エディター ツールバーの **オブジェクトメンバーリストを表示** ボタンを `"<"` またはクリックするたびに、期待される要素のドロップダウンリストが表示されます。
 
-![表示オブジェクト メンバー リスト ボタン](media/display-object-member-list-xml.png)
+![[オブジェクトメンバーリストの表示] ボタン](media/display-object-member-list-xml.png)
 
-XML ドキュメントにスキーマを関連付ける方法については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。
+スキーマを XML ドキュメントに関連付ける方法の詳細については、「 [xml ドキュメントの検証](../xml-tools/xml-document-validation.md)」を参照してください。
 
 開始タグの内部で「SPACE」と入力しても、現在の要素に追加できる属性をすべて示したドロップダウン リストを表示できます。
 
@@ -35,7 +35,7 @@ IntelliSense が提供する使用可能な値の一覧は、要素が `">"` で
 
 このような IntelliSense の一覧には、関連付けられているスキーマで見つかった `xsd:annotation` および `xsd:documentation` の情報に基づくツール ヒントも表示されます。
 
-## <a name="intellisense-in-an-xslt-document"></a>XSLT ドキュメントでの IntelliSense
+## <a name="intellisense-in-an-xslt-document"></a>XSLT ドキュメント内の IntelliSense
 
 XSLT ドキュメントに名前付きテンプレートまたは属性を追加した後は、IntelliSense を使用して次の項目を挿入できます。
 
@@ -49,15 +49,15 @@ XSLT ドキュメントに名前付きテンプレートまたは属性を追加
 
 - 特定の名前付きテンプレートのパラメーター名。
 
-詳細については、「[チュートリアル:XSLT IntelliSense を使用して](../xml-tools/walkthrough-using-xslt-intellisense.md)トピック。
+詳細については、「[チュートリアル: XSLT IntelliSense の使用](../xml-tools/walkthrough-using-xslt-intellisense.md)」を参照してください。
 
-## <a name="auto-completion"></a>オート コンプリート
+## <a name="auto-completion"></a>オートコンプリート
 
 XML エディターでは、必要な XML 構文が自動的に入力されるため、XML の編集も容易になっています。 たとえば、次の開始タグを入力します。
 
 `<book>`
 
-XML エディターにより終了タグが入力され、カーソルが開始タグの後に置かれます。 この例を次に (、"&#124;"カーソルの位置)。
+XML エディターにより終了タグが入力され、カーソルが開始タグの後に置かれます。 この例を次に示します ("&#124;" カーソル位置に注意してください)。
 
 `<book>`&#124;`</book>`
 
@@ -79,21 +79,21 @@ XML エディターにより引用符が追加され、カーソルが引用符�
 
 - DTD 宣言の終了 : `>`
 
-XML エディターは、名前空間を挿入することも宣言の名前空間の修飾要素を選択するか、IntelliSense の一覧とその要素または属性の名前空間からの属性がまだスコープ内ではありません。
+また、IntelliSense リストから名前空間の修飾された要素または属性を選択し、その要素または属性の名前空間がまだスコープ内にない場合は、XML エディターで名前空間の宣言を挿入することもできます。
 
 たとえば、IntelliSense の一覧から `e:Book` 要素を選択したときに、プレフィックスが、ドキュメント内で宣言されていない `http://books` 名前空間に関連付けられている場合は、XML エディターによって必要な名前空間宣言が自動的に挿入されます。 結果の XML テキストを次に示します。
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>かっこの一致
+## <a name="brace-matching"></a>中かっこの一致
 
-XML エディターでは、中かっこを強調表示することにより、閉じたばかりの要素について即座にフィードバックを返します。 キーボード ショートカットを使用することもできます (**Ctrl**+**]**) 中かっこから対応するかっこにジャンプします。
+XML エディターでは、中かっこを強調表示することにより、閉じたばかりの要素について即座にフィードバックを返します。 また、キーボードショートカット (**Ctrl** + **]** ) を使用して、1つの中かっこから対応する中かっこにジャンプすることもできます。
 
 XML エディターは、この動作を次の項目に対して行います。
 
 - 対応する開始タグと終了タグ
 
-- すべてのペア"\<"または">"山かっこします。
+- "@No__t_0" または ">" 山かっこのペア。
 
 - コメントの開始と終了
 
@@ -105,13 +105,13 @@ XML エディターは、この動作を次の項目に対して行います。
 
 - 属性の開始と終了の引用符
 
-## <a name="modify-the-intellisense-options"></a>IntelliSense オプションを変更します。
+## <a name="modify-the-intellisense-options"></a>IntelliSense オプションを変更する
 
-IntelliSense とオートコンプリートの機能は、既定で有効になっています。 これを修正して変更するただし、**ツール** > **オプション**設定します。
+IntelliSense とオートコンプリートの機能は、既定で有効になっています。 ただし、**ツール** > **オプション**の設定を変更することで、これを変更することができます。
 
-**自動挿入**のセクション、 **[その他]** ページは、次の動作を制御します。
+**[その他]** ページの **[自動挿入]** セクションでは、次の動作を制御します。
 
-|名前|説明|
+|名|説明|
 |-|-----------------|
 |終了タグ|新しい要素の終了タグを挿入します。|
 |属性値の引用符|新しい属性の名前を入力するときに属性値の引用符を挿入します。|
@@ -121,9 +121,9 @@ IntelliSense とオートコンプリートの機能は、既定で有効にな�
 
 1. **[ツール]** メニューの **[オプション]** を選択します。
 
-2. 展開**テキスト エディター**、展開**XML**、選択および **[その他]** します。
+2. **[テキストエディター]** 、 **[XML]** の順に展開し、 **[その他]** を選択します。
 
-3. 何も変更、**自動挿入**セクションし、をクリックして**OK**します。
+3. **[自動挿入]** セクションに変更を加え、 **[OK]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

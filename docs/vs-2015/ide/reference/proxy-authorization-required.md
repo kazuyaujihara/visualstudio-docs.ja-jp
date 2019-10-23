@@ -6,26 +6,26 @@ ms.technology: vs-ide-general
 ms.topic: troubleshooting
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67822069"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665717"
 ---
 # <a name="proxy-authorization-required"></a>プロキシ認証が要求される
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**プロキシ認証が要求**プロキシ サーバー経由の Visual Studio online リソースに接続されているユーザーとプロキシ サーバーが呼び出しをブロックするときに通常、エラーが発生します。
+プロキシ**認証が必要な**エラーは、通常、ユーザーがプロキシサーバー経由で Visual Studio online リソースに接続し、プロキシサーバーが呼び出しをブロックしている場合に発生します。
 
-このエラーを修正するには、次の手順の 1 つ以上を試してください。
+このエラーを修正するには、次の手順のうち1つ以上を試してください。
 
 - Visual Studio を再起動します。 プロキシ認証のダイアログ ボックスが表示されます。 ダイアログ ボックスに資格情報を入力します。
 
-- 上記の手順で問題が解決しない場合、考えられる原因は、プロキシ サーバーが http://go.microsoft.com のアドレスに対しては資格情報を要求せず、*.visualStudio.com のアドレスに対しては資格情報を要求することです。 これらのサーバーでは、Visual Studio ですべてのサインイン シナリオのブロックを解除する許可リストに、次の Url を追加する必要があります。
+- 上記の手順で問題が解決しない場合、考えられる原因は、プロキシ サーバーが http://go.microsoft.com のアドレスに対しては資格情報を要求せず、*.visualStudio.com のアドレスに対しては資格情報を要求することです。 これらのサーバーについては、次の Url を許可一覧に追加して、Visual Studio でのすべてのサインインシナリオのブロックを解除する必要があります。
 
   - *.windows.net
 
@@ -37,9 +37,9 @@ ms.locfileid: "67822069"
 
   - *.live.com
 
-- 削除することができます、[http://go.microsoft.com](http://go.microsoft.com ) アドレスを許可一覧から、プロキシ認証ダイアログ ボックスが両方に表示されるように、[http://go.microsoft.com](http://go.microsoft.com ) アドレスと Visual Studio を再起動すると、サーバー エンドポイント。
+- @No__t_0 アドレスを許可一覧から削除して、Visual Studio の再起動時にプロキシ認証ダイアログが http://go.microsoft.com アドレスとサーバーエンドポイントの両方に表示されるようにすることができます。
 
-- プロキシで既定の資格情報を使用する場合は、次の操作を行います。
+- プロキシで既定の資格情報を使用する場合は、次の手順を実行します。
 
    1. devenv.exe.config (devenv.exe の構成ファイル) を次の場所から探します。 **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (または **%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE**)
 
@@ -51,6 +51,6 @@ ms.locfileid: "67822069"
       </defaultProxy>
       ```
 
-      ネットワークの適切なプロキシ アドレスを挿入`proxyaddress="<http://<yourproxy:port#>`します。
+      @No__t_0 にネットワークの正しいプロキシアドレスを挿入します。
 
-- 指示に従って、[このブログの投稿](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)プロキシを使用できるようにコードを追加します。
+- [このブログの投稿](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)に記載されている手順に従って、プロキシを使用するためのコードを追加します。

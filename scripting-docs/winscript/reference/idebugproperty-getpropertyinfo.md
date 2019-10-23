@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetPropertyInfo |Microsoft Docs
+title: 'IDebugProperty:: GetPropertyInfo |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51cf7fae597d95b0d9098d6b2dc6950c2d06bfa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0698e09cd9643322a237a81d971248577fd97e0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979150"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562330"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
-値を取得、`IDebugProperty`メソッドまたはインデックス付きプロパティを説明します。  
+メソッドまたはインデックス付きプロパティを記述する `IDebugProperty` の値を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,18 +39,18 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>パラメーター  
  `dwFields`  
- [in]指定します、`DBGPROP_INFO_FLAGS`入力するフィールドを決定する定数、`DebugPropertyInfo`構造体。  
+ から@No__t_1 構造体に入力するフィールドを決定する `DBGPROP_INFO_FLAGS` 定数を指定します。  
   
  `nRadix`  
- [in]任意の数値情報を書式設定で使用する基数。  
+ から数値情報の書式設定で使用される基数。  
   
  `pPropertyInfo`  
- [out]返します、`DebugPropertyInfo`プロパティを記述する構造体。  
+ 入出力プロパティを記述する `DebugPropertyInfo` 構造体を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
  [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)

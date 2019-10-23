@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange |Microsoft Docs
+title: 'IScriptEntry:: GetRange |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787738"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575432"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-開始位置とエントリの長さを返します。  
+エントリの開始位置と長さを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,18 +38,18 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>パラメーター  
  `pichMin`  
- [out]`IScriptEntry`スクリプト ブロックを指定するオブジェクトは、0 を返します。  
+ 入出力スクリプトブロックを指定する `IScriptEntry` オブジェクトの場合、は0を返します。  
   
- `IScriptEntry`関数オブジェクトを指定するオブジェクトが現在のスクリプト ブロックで、関数の開始位置を返します。  
+ 関数オブジェクトを指定する `IScriptEntry` オブジェクトの場合は、現在のスクリプトブロック内の関数の開始位置を返します。  
   
- `IScriptScriptlet`オブジェクト、0 を返します。  
+ @No__t_0 オブジェクトの場合、は0を返します。  
   
  `pcch`  
- [out]`IScriptEntry`スクリプト ブロックを指定するオブジェクトは、テキストの長さを返します。  
+ 入出力スクリプトブロックを指定する `IScriptEntry` オブジェクトの場合は、テキストの長さを返します。  
   
- `IScriptEntry`関数オブジェクトを指定するオブジェクトが関数定義の長さを返します。  
+ 関数オブジェクトを指定する `IScriptEntry` オブジェクトの場合は、関数定義の長さを返します。  
   
- `IScriptScriptlet`オブジェクト、エントリの長さを返します。  
+ @No__t_0 オブジェクトの場合は、エントリの長さを返します。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

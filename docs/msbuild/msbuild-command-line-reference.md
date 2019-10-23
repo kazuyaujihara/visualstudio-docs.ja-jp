@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96d242a8c7af44f47db3ebad5e6af03389a6fc0
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107364"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252646"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild コマンド ライン リファレンス
 *MSBuild.exe* を使用してプロジェクト ファイルやソリューション ファイルをビルドするとき、スイッチをいくつか含めて、プロセスのさまざまな側面を指定できます。
@@ -43,7 +43,7 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ## <a name="switches"></a>スイッチ
 
-|切り替え|省略形|説明|
+|Switch|省略形|説明|
 |------------|----------------|-----------------|
 |-help|/? または -h|使用方法を表示します。 たとえば、次のようなコマンドになります。<br /><br /> `msbuild.exe -?`|
 |-detailedsummary|-ds|ビルド ログの最後に、ビルドされた構成に関する詳細情報と、それらの構成がノードに対してどのようにスケジュールされているかについて表示します。|
@@ -64,9 +64,9 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ### <a name="switches-for-loggers"></a>ロガーのスイッチ
 
-|切り替え|省略形|説明|
+|Switch|省略形|説明|
 |------------|----------------|-----------------|
-|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|指定したパラメーターをコンソール logger に渡し、コンソール ウィンドウにビルド情報を表示します。 次のパラメーターを指定できます。<br /><br /> -   **PerformanceSummary**。 タスク、ターゲット、およびプロジェクトで経過した時間を表示します。<br />-   **Summary**。 エラーや警告の概要を終了時に表示します。<br />-   **NoSummary**。 エラーや警告の概要を終了時に表示しません。<br />-   **ErrorsOnly**。 エラーのみを表示します。<br />-   **WarningsOnly**。 警告のみを表示します。<br />-   **NoItemAndPropertyList**。 詳細レベルが `diagnostic` に設定されている場合、各プロジェクト ビルドの開始時に項目とプロパティの一覧を表示しません。<br />-   **ShowCommandLine**。 `TaskCommandLineEvent` メッセージを表示します。<br />-   **ShowTimestamp**。 タイムスタンプをメッセージの先頭に表示します。<br />-   **ShowEventId**。 開始したイベント、終了したイベント、およびメッセージのイベント ID を表示します。<br />-   **ForceNoAlign**。 テキストをコンソール バッファーのサイズに合わせません。<br />-   **DisableConsoleColor**。 すべてのログ メッセージに、コンソールの既定の色を使用します。<br />-   **DisableMPLogging**。 マルチプロセッサ以外のモードで実行されている場合にマルチプロセッサ ログ出力方法を無効にします。<br />-   **EnableMPLogging**。 マルチプロセッサ以外のモードで実行されている場合でもマルチプロセッサ ログ出力方法を有効にします。 このログ出力方法はデフォルトで有効です。<br />-   **Verbosity**。 このロガーの **-verbosity** 設定をオーバーライドします。<br /><br /> 次の例に示すように、セミコロンまたはコンマを使用して複数のパラメーターを区切ります。<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
+|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|指定したパラメーターをコンソール logger に渡し、コンソール ウィンドウにビルド情報を表示します。 次のパラメーターを指定できます。<br /><br /> -   **PerformanceSummary**。 タスク、ターゲット、およびプロジェクトで経過した時間を表示します。<br />-   **Summary**。 エラーや警告の概要を終了時に表示します。<br />-   **NoSummary**。 エラーや警告の概要を終了時に表示しません。<br />-   **ErrorsOnly**。 エラーのみを表示します。<br />-   **WarningsOnly**。 警告のみを表示します。<br />-   **NoItemAndPropertyList**。 詳細レベルが `diagnostic` に設定されている場合、各プロジェクト ビルドの開始時に項目とプロパティの一覧を表示しません。<br />-   **ShowCommandLine**。 `TaskCommandLineEvent` メッセージを表示します。<br />-   **ShowTimestamp**。 タイムスタンプをメッセージの先頭に表示します。<br />-   **ShowEventId**。 開始したイベント、終了したイベント、およびメッセージのイベント ID を表示します。<br />-   **ForceNoAlign**。 テキストをコンソール バッファーのサイズに合わせません。<br />-   **DisableConsoleColor**。 すべてのログ メッセージに、コンソールの既定の色を使用します。<br />-   **DisableMPLogging**。 マルチプロセッサ以外のモードで実行されている場合にマルチプロセッサ ログ出力方法を無効にします。<br />-   **EnableMPLogging**。 マルチプロセッサ以外のモードで実行されている場合でもマルチプロセッサ ログ出力方法を有効にします。 このログ出力方法はデフォルトで有効です。<br />-   **Verbosity**。 このロガーの **-verbosity** 設定をオーバーライドします。<br /><br /> 次の例に示すように、複数のパラメーターを区切るにはセミコロンを使用します。<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
 |-distributedFileLogger|-dfl|各 MSBuild ノードのビルド出力を、そのノード独自のファイルに記録します。 これらのファイルの初期位置は、現在のディレクトリです。 既定では、ファイルの名前は *MSBuild\<NodeId>.log* になります。 **-fileLoggerParameters** スイッチを使用して、ファイルの場所と fileLogger の他のパラメーターを指定できます。<br /><br /> **-fileLoggerParameters** スイッチを使用してログ ファイル名を指定すると、分散ロガーはその名前をテンプレートとして使用し、各ノードのログ ファイルを作成するときに、その名前にノード ID を追加します。|
 |-distributedlogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|MSBuild のイベントを記録して、各ノードに異なる logger インスタンスをアタッチします。 複数の logger を指定するには、各 logger を個別に指定します。<br /><br /> logger を指定するには、logger の構文を使用します。 logger の構文については、この後に示されている **-logger** スイッチを参照してください。<br /><br /> このスイッチを使用する方法を次の例に示します。<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[number]*|-fl[`number`]|ビルド出力を、現在のディレクトリにある単一のファイルに記録します。 `number` を指定しない場合、出力ファイルの名前は *msbuild.log* になります。 `number` を指定した場合、出力ファイルの名前は *msbuild\<n>.log* になります。ここで、\<n> は `number` です。 `Number` は、1 から 9 までの数値を指定できます。<br /><br /> **-fileLoggerParameters** スイッチを使用して、ファイルの場所と fileLogger の他のパラメーターを指定できます。|

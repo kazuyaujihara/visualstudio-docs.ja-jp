@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::GetLanguageInfo | Microsoft Docs
+title: 'IDebugExpressionContext:: Get言語 Info |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed5546f07a81d9c2825f3dbdc4f2bb28887948f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e6dd3d3bb254cd91f411da3b6b587bc37c3a777
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946291"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576407"
 ---
 # <a name="idebugexpressioncontextgetlanguageinfo"></a>IDebugExpressionContext::GetLanguageInfo
-このコンテキストを所有している言語の名前と GUID を返します。  
+このコンテキストを所有する言語の名前と GUID を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetLanguageInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstrLanguageName`  
- [out]言語の名前。  
+ 入出力言語の名前。  
   
  `pLanguageID`  
- [out]言語の一意の id。  
+ 入出力言語の一意の id。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT GetLanguageInfo(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、このコンテキストを所有している言語の名前と GUID を返します。  
+ このメソッドは、このコンテキストを所有する言語の名前と GUID を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugExpressionContext インターフェイス](../../winscript/reference/idebugexpressioncontext-interface.md)

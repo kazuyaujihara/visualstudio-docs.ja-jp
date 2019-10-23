@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition |Microsoft Docs
+title: 'IActiveScriptError:: GetSourcePosition |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4446235a9584bc45fad84b6f92ecc02592e554f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76ed307f988a3e5bf77ff978c466eda6e5dfee18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009625"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576893"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-スクリプト エンジンでスクリプトの実行中にエラーが発生したソース コード内の場所を取得します。  
+スクリプトエンジンでスクリプトを実行中にエラーが発生したソースコード内の場所を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,16 +39,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>パラメーター  
  `pdwSourceContext`  
- [out]コンテキストを識別するクッキーを受け取る変数のアドレス。 このパラメーターの解釈は、ホスト アプリケーションによって異なります。  
+ 入出力コンテキストを識別するクッキーを受け取る変数のアドレス。 このパラメーターの解釈は、ホストアプリケーションによって異なります。  
   
  `pulLineNumber`  
- [out]エラーが発生したソース ファイル内の行番号を受け取る変数のアドレス。  
+ 入出力エラーが発生したソースファイル内の行番号を受け取る変数のアドレス。  
   
  `pichCharPosition`  
- [out]エラーが発生した行の文字位置を受け取る変数のアドレス。  
+ 入出力エラーが発生した行内の文字位置を受け取る変数のアドレス。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または`E_FAIL`場合は、場所を取得できませんでした。  
+ 成功した場合は `S_OK` を返し、場所が取得されなかった場合は `E_FAIL` します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

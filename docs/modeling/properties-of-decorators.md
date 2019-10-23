@@ -4,66 +4,66 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e34268b1c360c686a61da631100cb671acd59d1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996798"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658242"
 ---
 # <a name="properties-of-decorators"></a>デコレーターのプロパティ
-デコレーターは、アイコン、テキスト、または図形またはコネクタを図に表示される展開/折りたたみの山かっこです。 デコレーターの 3 種類のプロパティを次の表に示します。 一部のプロパティには、シェイプのデコレータでのみ、またはコネクタのデコレーターでのみが表示されます。
+デコレーターは、図の図形またはコネクタに表示されるアイコン、テキスト、または展開/折りたたみの山かっこです。 次の表は、3種類のデコレータのプロパティを示しています。 一部のプロパティは、図形デコレーターまたはコネクタデコレーターにのみ表示されます。
 
- 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。
+ 詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。 これらのプロパティの使用方法の詳細については、「[ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
 
 ## <a name="expandcollapse-decorator"></a>デコレータの展開/折りたたみ
 
-|プロパティ|説明|既定値|
+|property|説明|既定|
 |-|-|-|
-|DisplayName|生成されたデザイナーに表示されるデコレータの名前。|折りたたみデコレータを展開します。|
-|名前|デコレータの名前。|ExpandCollapseDecorator|
-|メモ|このデコレータに関連付けられている非公式のメモ。|\<none>|
-|HorizontalOffset|(インチ単位)、デコレーターの既定の位置を基準とした水平オフセット。 (図形にのみ。)|0|
-|Verticaloffset があります。|(インチ単位)、デコレーターの既定の位置を基準とした垂直オフセット。 (図形にのみ。)|0|
-|OffsetFromLine|インチ単位で、既定位置を基準として、コマンドラインからのデコレーターのオフセット。 (コネクタでのみ。)|0|
-|OffsetFromShape|インチ単位で、既定位置を基準として、図形からのデコレーターのオフセット。 (コネクタでのみ。)|0|
-|位置|デコレーターの既定の位置。|SourceTop|
+|DisplayName|生成されたデザイナーに表示されるデコレータの名前。|折りたたみデコレータの展開|
+|名|デコレータの名前。|ExpandCollapseDecorator|
+|ノート|このデコレータに関連付けられている非公式のメモ。|\<none>|
+|System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
+|System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
+|OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
+|OffsetFromShape|形状からの、既定の位置を基準とする、インチ単位の、デコレータのオフセット。 (コネクタの場合のみ)。|0|
+|位置|デコレータの既定の位置。|Microsoft.visualstudio.modeling.diagrams.connectordecoratorposition.sourcetop|
 
-## <a name="icon-decorator"></a>デコレーターのアイコン
+## <a name="icon-decorator"></a>アイコンデコレータ
 
-|プロパティ|説明|既定値|
+|property|説明|既定|
 |-|-|-|
-|DefaultIcon|表示されるアイコンまたはイメージ ファイルのパス。|\<none>|
-|DisplayName|生成されたデザイナーに表示されるデコレータの名前。|デコレーターのアイコン|
-|名前|デコレータの名前。|IconDecorator|
-|メモ|デコレータに関連付けられている非公式のメモ。|\<none>|
-|HorizontalOffset|(インチ単位)、デコレーターの既定の位置を基準とした水平オフセット。 (図形にのみ。)|0|
-|Verticaloffset があります。|(インチ単位)、デコレーターの既定の位置を基準とした垂直オフセット。 (図形にのみ。)|0|
-|OffsetFromLine|インチ単位で、既定位置を基準として、コマンドラインからのデコレーターのオフセット。 (コネクタでのみ。)|0|
-|OffsetFromShape|インチ単位で、既定位置を基準として、図形からのデコレーターのオフセット。 (コネクタでのみ。)|0|
-|位置|デコレーターの既定の位置。|SourceTop|
+|DefaultIcon|表示するアイコンまたはイメージファイルのパス。|\<none>|
+|DisplayName|生成されたデザイナーに表示されるデコレータの名前。|アイコンデコレータ|
+|名|デコレータの名前。|IconDecorator|
+|ノート|デコレータに関連付けられている非公式のメモ。|\<none>|
+|System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
+|System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
+|OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
+|OffsetFromShape|形状からの、既定の位置を基準とする、インチ単位の、デコレータのオフセット。 (コネクタの場合のみ)。|0|
+|位置|デコレータの既定の位置。|Microsoft.visualstudio.modeling.diagrams.connectordecoratorposition.sourcetop|
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|プロパティ|説明|既定値|
+|property|説明|既定|
 |-|-|-|
 |DefaultText|表示される既定のテキスト。|group1|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|group1|
-|FontSize|デコレーターに表示されるテキストのフォント サイズ。|8|
-|FontStyle|デコレーターに表示されるテキストのフォント スタイル。|Regular|
-|名前|デコレータの名前。|group1|
-|メモ|デコレータに関連付けられている非公式のメモ。|\<none>|
-|HorizontalOffset|(インチ単位)、デコレーターの既定の位置を基準とした水平オフセット。 (図形にのみ。)|0|
-|Verticaloffset があります。|(インチ単位)、デコレーターの既定の位置を基準とした垂直オフセット。 (図形にのみ。)|0|
-|OffsetFromLine|インチ単位で、既定位置を基準として、コマンドラインからのデコレーターのオフセット。 (コネクタでのみ。)|0|
-|OffsetFromShape|インチ単位で、既定位置を基準として、図形からのデコレーターのオフセット。 (コネクタでのみ。)|0|
-|位置|デコレーターの既定の位置。|TargetBottom|
+|FontSize|デコレータに表示されるテキストのフォントサイズ。|8|
+|FontStyle|デコレータに表示されるテキストのフォントスタイル。|Regular|
+|名|デコレータの名前。|group1|
+|ノート|デコレータに関連付けられている非公式のメモ。|\<none>|
+|System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
+|System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
+|OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
+|OffsetFromShape|形状からの、既定の位置を基準とする、インチ単位の、デコレータのオフセット。 (コネクタの場合のみ)。|0|
+|位置|デコレータの既定の位置。|Microsoft.visualstudio.modeling.diagrams.connectordecoratorposition.targetbottom|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

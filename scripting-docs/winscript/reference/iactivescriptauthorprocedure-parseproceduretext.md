@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText |Microsoft Docs
+title: IActiveScriptAuthorProcedure::P arseProcedureText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955160"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572818"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-コード プロシージャを解析し、エンジンを作成するスクリプトにコード プロシージャのテキストを追加し、作成、`IScriptEntry`コード プロシージャに対応するオブジェクト。  
+コードプロシージャを解析し、コードプロシージャのテキストをスクリプト作成エンジンに追加し、コードプロシージャに対応する `IScriptEntry` オブジェクトを作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,28 +44,28 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>パラメーター  
  `pszCode`  
- [in]スクリプトのテキストを解析します。  
+ から解析するスクリプトテキスト。  
   
  `pszFormalParams`  
- [in]プロシージャの仮パラメーター名のアドレス。 パラメーター名は、エンジンを作成するスクリプトの適切な区切り記号で区切る必要があります。 名前は、かっこで囲まれていない必要があります。  
+ からプロシージャの仮パラメーター名のアドレス。 パラメーター名は、スクリプト作成エンジンの適切な区切り記号で区切る必要があります。 名前をかっこで囲むことはできません。  
   
  `pszProcedureName`  
- [in]解析するプロシージャ名のアドレス。  
+ から解析するプロシージャ名のアドレス。  
   
  `pszItemName`  
- [in]項目の名前を含むバッファーのアドレスに関連付けられている、`IScriptEntry`オブジェクト。  
+ から@No__t_0 オブジェクトに関連付けられている項目名を格納しているバッファーアドレス。  
   
  `pszDelimiter`  
- [in]最後のスクリプト ブロックの区切り記号のアドレス。 ときに`pszCode`解析は、テキストのストリームからホスト通常 (など、2 つ単一引用符)、区切り記号を使用して、スクリプト ブロックの終了を検出します。 スクリプト ブロックの終わりをマークする区切り記号がない場合は、このパラメーターを NULL に設定します。  
+ からスクリプトの終了ブロックの区切り記号のアドレス。 テキストのストリームから `pszCode` を解析する場合、ホストは通常、スクリプトブロックの終了を検出するために区切り記号 (2 つの単一引用符など) を使用します。 スクリプトブロックの末尾を示す区切り記号がない場合は、このパラメーターを NULL に設定します。  
   
  `dwCookie`  
- [in]アプリケーション定義の値に関連付けられた新しい`IScriptEntry`オブジェクト。  
+ から新しい `IScriptEntry` オブジェクトに関連付けられているアプリケーション定義の値。  
   
  `dwFlags`  
- [in]使用されません。  
+ から使用しません。  
   
  `pdispFor`  
- [in]使用されません。  
+ から使用しません。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -75,7 +75,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 現在[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]エンジンがこのメソッドを実装していません。  
+ 現在の [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] エンジンは、このメソッドを実装していません。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptAuthorProcedure インターフェイス](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

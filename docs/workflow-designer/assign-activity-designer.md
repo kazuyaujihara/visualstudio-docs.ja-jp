@@ -1,25 +1,25 @@
 ---
-title: ワークフロー デザイナー、Assign アクティビティ デザイナー
+title: ワークフローデザイナー-Assign アクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4179c23cefbf995242288c1e778f9e0413bfe28e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 44d4136aabd5bd383cc3718dc5c6c1676f94e45d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993255"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650728"
 ---
 # <a name="assign-activity-designer"></a>Assign アクティビティ デザイナー
 
-**割り当てる**作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.Assign>アクティビティ。
+**Assign**アクティビティデザイナーは、<xref:System.Activities.Statements.Assign> アクティビティを作成および構成するために使用されます。
 
 ## <a name="the-assign-activity"></a>Assign アクティビティ
 
@@ -27,19 +27,19 @@ ms.locfileid: "62993255"
 
 ### <a name="using-the-assign-activity-designer"></a>Assign アクティビティ デザイナーの使用
 
-**割り当てる**アクティビティ デザイナーが記載されて、**プリミティブ**のカテゴリ、**ツールボックス**をクリックしてアクセスする、**ツールボックス** タブ (または、選択**ツールボックス**から、**ビュー**メニューまたは CTRL + ALT + X)。
+**Assign**アクティビティデザイナーは、[**ツールボックス]** の **[プリミティブ]** カテゴリにあります。このカテゴリにアクセスするには、 **[ツール]** ボックス タブをクリックします (または、 **[表示]** メニューの **[ツールボックス]** を選択するか、CTRL + ALT + X キーを押します)。
 
-**割り当てる**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**ことで、アクティビティを配置して、このような内に、ワークフロー デザイナー画面にドロップし、<xref:System.Activities.Statements.Sequence>します。 削除、**割り当てる**アクティビティ デザイナーを作成、 <xref:System.Activities.Statements.Assign> 、既定値は、アクティビティ**DisplayName**割り当ての。 <xref:System.Activities.Activity.DisplayName%2A>のヘッダーで編集できる、**割り当てる**アクティビティ デザイナーまたは、 **DisplayName**プロパティ グリッドのボックスです。
+**Assign**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティが配置されているワークフローデザイナー画面 (<xref:System.Activities.Statements.Sequence> 内など) にドロップできます。 **Assign**アクティビティデザイナーを削除すると、assign という既定の**DisplayName**を持つ <xref:System.Activities.Statements.Assign> アクティビティが作成されます。 @No__t_0 は、 **Assign**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
 
 ### <a name="the-assign-properties"></a>Assign のプロパティ
 
-次の表に、<xref:System.Activities.Statements.Assign> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドで編集することができ、その一部は、ワークフロー デザイナー画面で編集できます。
+次の表に、<xref:System.Activities.Statements.Assign> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティグリッドで編集することができ、一部のプロパティはワークフローデザイナー画面で編集できます。
 
-|プロパティ名|必須|使用方法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Assign> アクティビティの表示名。 既定値は Assign です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.Assign.To%2A>|True|<xref:System.Activities.Statements.Assign.Value%2A> を割り当てる変数または引数。 値は、有効な Visual Basic 識別子である必要があります。 プロパティを設定するには、Visual Basic の式を入力、**に**ボックスに、**割り当てる**アクティビティ デザイナーまたはプロパティ グリッドでします。|
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|変数に割り当てられる値。 設定する、 <xref:System.Activities.Statements.Assign.Value%2A>、Visual Basic の式を入力、**値**ボックスに、**割り当てる**アクティビティ デザイナーまたはプロパティ グリッドでします。|
+|<xref:System.Activities.Statements.Assign.To%2A>|True|<xref:System.Activities.Statements.Assign.Value%2A> を割り当てる変数または引数。 この値は、有効な Visual Basic 識別子である必要があります。 プロパティを設定するには、 **Assign**アクティビティデザイナーまたはプロパティグリッドの **[To]** ボックスに Visual Basic 式を入力します。|
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|変数に割り当てられる値。 @No__t_0 を設定するには、 **Assign**アクティビティデザイナーまたはプロパティグリッドの **[値]** ボックスに Visual Basic 式を入力します。|
 
 ## <a name="see-also"></a>関連項目
 

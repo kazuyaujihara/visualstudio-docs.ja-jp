@@ -1,5 +1,5 @@
 ---
-title: '方法: 活動ツールボックスに追加 (レガシ) |Microsoft Docs'
+title: '方法: ツールボックスにアクティビティを追加する (レガシ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,29 +9,28 @@ helpviewer_keywords:
 - activities, adding to Toolbox
 ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c3a8c6f397bbafdbdb29ecbb193c4200a26335c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943369"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656621"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>方法: ツールボックスにアクティビティを追加する (レガシ)
-従来のワークフロー ソリューションを構築するときに[!INCLUDE[wfd1](../includes/wfd1-md.md)]を対象とする、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]または[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]、カスタム アクティビティをワークフロー プロジェクトに追加でき、そのデザイナーに配置、**ツールボックス**の簡単なアクセスします。 アクティビティを直接追加することも、**ツールボックス**ダイナミック リンク ライブラリ (DLL) から。  
-  
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>DLL からツールボックスにアクティビティを追加するには  
-  
-1. ツールボックス ウィンドウの画面を右クリックして**Windows ワークフロー**、 をクリックし、**アイテムの選択**。  
-  
-2. **ツールボックス アイテムの選択**ダイアログ ボックスで、 をクリックして、 **System.Activities コンポーネント** タブをクリックして**参照**ウィンドウの下部右側にあるからです。  
-  
-3. 追加するカスタム アクティビティの実装を格納するファイルのディレクトリから DLL を選択、**ツールボックス**、 をクリックし、**オープン**します。  
-  
-4. クリックして**OK**をツールボックスにアクティビティの追加を完了します。  
-  
-## <a name="see-also"></a>関連項目  
- [従来のアクティビティ デザイナーの使用](../workflow-designer/using-the-legacy-activity-designer.md)   
- [従来のワークフロー アクティビティ](../workflow-designer/legacy-workflow-activities.md)
+@No__t_1 または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とする従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)] を使用してワークフローソリューションを構築する場合、簡単にアクセスできるように、カスタムアクティビティを **[ツールボックス]** に配置したワークフロープロジェクトとそのデザイナーに追加できます。 ダイナミックリンクライブラリ (DLL) から、**ツールボックス**にアクティビティを直接追加することもできます。
+
+### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>DLL からツールボックスにアクティビティを追加するには
+
+1. **[Windows Workflow]** の下にある ツールボックス ウィンドウ画面を右クリックし、 **[アイテムの選択]** をクリックします。
+
+2. **[ツールボックスアイテムの選択]** ダイアログボックスで、 **[システムコンポーネント]** タブをクリックし、ウィンドウの右下にある **[参照]** をクリックします。
+
+3. **[ツールボックス]** に追加するカスタムアクティビティの実装が格納されているファイルディレクトリから DLL を選択し、 **[開く]** をクリックします。
+
+4. **[OK]** をクリックして、ツールボックスへのアクティビティの追加を完了します。
+
+## <a name="see-also"></a>参照
+ [従来のアクティビティデザイナー](../workflow-designer/using-the-legacy-activity-designer.md) [レガシワークフローアクティビティ](../workflow-designer/legacy-workflow-activities.md)の使用

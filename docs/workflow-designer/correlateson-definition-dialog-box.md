@@ -1,38 +1,38 @@
 ---
-title: ワークフロー デザイナー - [CorrelatesOn の定義] ダイアログ ボックス
+title: ワークフローデザイナー-Correlateson の定義 ダイアログボックス
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7b7336a3f3b0c2725f4e52116d0add8bf13b90e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401f72f55f23779f7c6257437034a4ebc294d219
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949822"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650596"
 ---
 # <a name="correlateson-definition-dialog-box"></a>[CorrelatesOn の定義] ダイアログ ボックス
 
-**CorrelatesOn**  ダイアログ ボックスは、ワークフロー デザイナーで編集に使用される、<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>のプロパティを<xref:System.ServiceModel.Activities.Receive>アクティビティ。 詳細については、次を参照してください。[アクティビティ デザイナーの受信](../workflow-designer/receive-activity-designer.md)します。
+**Correlateson**  ダイアログボックスは、<xref:System.ServiceModel.Activities.Receive> アクティビティの <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> プロパティを編集するためにワークフローデザイナーで使用されます。 詳細については、「 [Receive アクティビティデザイナー](../workflow-designer/receive-activity-designer.md)」を参照してください。
 
 <xref:System.ServiceModel.Activities.Receive> アクティビティの間の相関関係によって、ワークフロー内でさまざまなサービス操作が相互に接続される方法が指定されます。
 
-次の表に、ユーザー インターフェイス (UI) 要素の**CorrelatesOn**  ダイアログ ボックス。
+次の表では、 **correlateson**  ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |UI 要素|説明|
 |-|-----------------|
 |**CorrelatesWith**|適切なワークフロー インスタンスにメッセージをルーティングするために使用される <xref:System.ServiceModel.Activities.CorrelationHandle>。|
-|**XPath クエリ**|受信メッセージから相関関係データを抽出するためのクエリを含む、キーと値のペア。 この値に対応、<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>プロパティ。 XPath クエリは、<xref:System.ServiceModel.MessageQuerySet> オブジェクトに含まれます。|
+|**XPath クエリ**|受信メッセージから相関関係データを抽出するためのクエリを含む、キーと値のペア。 この値は、<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> プロパティに対応しています。 XPath クエリは、<xref:System.ServiceModel.MessageQuerySet> オブジェクトに含まれます。|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>[CorrelatesOn] ダイアログ ボックスを起動するには
 
-**受信**からアクティビティ デザイナーをドラッグできる**ツールボックス**とアクティビティを通常配置して任意の場所に、ワークフロー デザイナー画面にドロップします。 アクティビティ デザイナーをドロップを作成、 <xref:System.ServiceModel.Activities.Receive> 、既定値は、アクティビティ<xref:System.Activities.Activity.DisplayName%2A>の受信。 開くには、 **CorrelatesOn の定義**ダイアログ ボックスで、**受信**アクティビティ デザイナーであると、プロパティ グリッドのコレクションのテキストの横にある省略記号ボタンを選択して、 **CorrelatesOn**プロパティ。
+**Receive**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意の場所でワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除すると、既定の <xref:System.Activities.Activity.DisplayName%2A> Receive の <xref:System.ServiceModel.Activities.Receive> アクティビティが作成されます。 Correlateson の**定義** ダイアログボックスを開くには、 **Receive**アクティビティデザイナーを選択し、プロパティグリッドで、 **correlateson**プロパティのコレクションテキストの横にある省略記号ボタンを選択します。
 
 ## <a name="see-also"></a>関連項目
 

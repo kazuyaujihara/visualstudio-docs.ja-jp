@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: [スタート] ページのユーザー設定の保存 |Microsoft Docs'
+title: 'チュートリアル: スタートページへのユーザー設定の保存 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 79a54867044961d972e2ded452958d2463038e7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe3d1040089a4b78368a4da94933a4a1440afafd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318520"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647907"
 ---
-# <a name="walkthrough-save-user-settings-on-a-start-page"></a>チュートリアル: [スタート] ページのユーザー設定を保存します。
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>チュートリアル: スタートページにユーザー設定を保存する
 
-スタート ページのユーザー設定を永続化することができます。 このチュートリアルでは、ユーザーが、ボタンをクリックするし、開始ページが読み込まれるたびに、その設定を取得し、設定をレジストリに保存するコントロールを作成できます。 スタート ページ プロジェクト テンプレートには、カスタマイズ可能なユーザー コントロールが含まれています。 既定のスタート ページの XAML は、そのコントロールを呼び出すため、スタート ページ自体を変更する必要はありません。
+スタートページのユーザー設定を保持することができます。 このチュートリアルに従うと、ユーザーがボタンをクリックしたときにレジストリに設定を保存するコントロールを作成し、スタートページが読み込まれるたびにその設定を取得できます。 スタートページのプロジェクトテンプレートにはカスタマイズ可能なユーザーコントロールが含まれており、既定のスタートページの XAML でそのコントロールが呼び出されるため、スタートページ自体を変更する必要はありません。
 
-このチュートリアルでインスタンス化される設定ストアのインスタンスである、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>インターフェイスでは、読み取りし、が呼び出されると、次のレジストリの場所に書き込み。**HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**
+このチュートリアルでインスタンス化されている設定ストアは <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> インターフェイスのインスタンスであり、次のレジストリ位置が呼び出されたときに読み取りと書き込みを行います。 **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
-設定ストアが読み取りし、書き込みに Visual Studio の実験用インスタンスで実行されている、 **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<CollectionName >。**
+Visual Studio の実験用インスタンスで実行されている場合、設定ストアは、 **HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName >** の読み取りと書き込みを行います。
 
-設定を保持する方法の詳細については、次を参照してください。 [Extending User Settings and オプション](../extensibility/extending-user-settings-and-options.md)します。
+設定を保持する方法の詳細については、「[ユーザー設定とオプションの拡張](../extensibility/extending-user-settings-and-options.md)」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 > [!NOTE]
-> このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
+> このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 >
-> 使用して、スタート ページ プロジェクト テンプレートをダウンロードする**拡張機能マネージャー**します。
+> スタートページのプロジェクトテンプレートは、**拡張機能マネージャー**を使用してダウンロードできます。
 
-## <a name="set-up-the-project"></a>プロジェクトを設定します。
+## <a name="set-up-the-project"></a>プロジェクトを設定する
 
-1. スタート ページ プロジェクトを作成する」の説明に従って[カスタム スタート ページを作成する](creating-a-custom-start-page.md)します。 プロジェクトに名前を**SaveMySettings**します。
+1. 「[カスタムスタートページを作成する](creating-a-custom-start-page.md)」の説明に従って、スタートページプロジェクトを作成します。 プロジェクトに**Savemysettings**という名前を設定します。
 
-2. **ソリューション エクスプ ローラー**、StartPageControl プロジェクトに次のアセンブリ参照を追加します。
+2. **ソリューションエクスプローラー**で、次のアセンブリ参照を StartPageControl プロジェクトに追加します。
 
     - EnvDTE
 
@@ -47,23 +47,23 @@ ms.locfileid: "66318520"
 
     - Microsoft.VisualStudio.Shell.Interop.11.0
 
-3. 開いている*MyControl.xaml*します。
+3. *Mycontrol .xaml*を開きます。
 
-4. XAML ウィンドウの最上位から<xref:System.Windows.Controls.UserControl>要素の定義、名前空間宣言の後、次のイベント宣言を追加します。
+4. XAML ペインの最上位の <xref:System.Windows.Controls.UserControl> 要素定義で、名前空間の宣言の後に次のイベント宣言を追加します。
 
     ```xml
     Loaded="OnLoaded"
     ```
 
-5. デザイン ペインで、コントロールの主な領域をクリックし、キーを押します**削除**します。
+5. デザインペインで、コントロールのメイン領域をクリックし、 **del**キーを押します。
 
-     この手順を削除、<xref:System.Windows.Controls.Border>要素と、その中のすべてしレベル上位のみを残します<xref:System.Windows.Controls.Grid>要素。
+     この手順では、<xref:System.Windows.Controls.Border> 要素とその中のすべてを削除し、最上位の <xref:System.Windows.Controls.Grid> 要素だけを残します。
 
-6. **ツールボックス**、ドラッグ、<xref:System.Windows.Controls.StackPanel>グリッド コントロール。
+6. **[ツールボックス]** から <xref:System.Windows.Controls.StackPanel> コントロールをグリッドにドラッグします。
 
-7. ここで、ドラッグ、 <xref:System.Windows.Controls.TextBlock>、 <xref:System.Windows.Controls.TextBox>、ボタンをクリックし、 <xref:System.Windows.Controls.StackPanel>。
+7. 次に、<xref:System.Windows.Controls.TextBlock>、<xref:System.Windows.Controls.TextBox>、およびボタンを <xref:System.Windows.Controls.StackPanel> にドラッグします。
 
-8. 追加、 **X:name**属性、<xref:System.Windows.Controls.TextBox>と`Click`イベントを<xref:System.Windows.Controls.Button>次の例のようにします。
+8. 次の例に示すように、<xref:System.Windows.Controls.TextBox> の**x:Name**属性と、<xref:System.Windows.Controls.Button> の `Click` イベントを追加します。
 
     ```xml
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -73,17 +73,17 @@ ms.locfileid: "66318520"
     </StackPanel>
     ```
 
-## <a name="implement-the-user-control"></a>ユーザー コントロールを実装します。
+## <a name="implement-the-user-control"></a>ユーザーコントロールを実装する
 
-1. XAML ウィンドウで右クリックし、`Click`の属性、<xref:System.Windows.Controls.Button>要素、およびクリック**イベント ハンドラーへ移動**します。
+1. XAML ペインで、<xref:System.Windows.Controls.Button> 要素の `Click` 属性を右クリックし、 **[イベントハンドラーに移動]** をクリックします。
 
-     この手順が開きます*MyControl.xaml.cs*、スタブのハンドラーを作成し、`Button_Click`イベント。
+     この手順では、 *MyControl.xaml.cs*を開き、`Button_Click` イベントのスタブハンドラーを作成します。
 
-2. 次の追加`using`ステートメント ファイルの先頭にします。
+2. 次の `using` ディレクティブをファイルの先頭に追加します。
 
      [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]
 
-3. 追加のプライベート`SettingsStore`プロパティは、次の例に示すようにします。
+3. 次の例に示すように、プライベート `SettingsStore` プロパティを追加します。
 
     ```csharp
     private IVsWritableSettingsStore _settingsStore = null;
@@ -115,9 +115,9 @@ ms.locfileid: "66318520"
     }
     ```
 
-     このプロパティは、まずへの参照を取得します。、<xref:EnvDTE80.DTE2>インターフェイスから、オートメーション オブジェクト モデルを含む、<xref:System.Windows.FrameworkElement.DataContext%2A>のユーザー コントロール、および、使用のインスタンスを取得する DTE、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>インターフェイス。 そのインスタンスを使用して現在のユーザー設定を返します。
+     このプロパティは、まず、ユーザーコントロールの <xref:System.Windows.FrameworkElement.DataContext%2A> から、オートメーションオブジェクトモデルを含む <xref:EnvDTE80.DTE2> インターフェイスへの参照を取得し、次に DTE を使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> インターフェイスのインスタンスを取得します。 次に、そのインスタンスを使用して、現在のユーザー設定を返します。
 
-4. 入力、`Button_Click`イベントとして次のとおりです。
+4. @No__t_0 イベントに次のように入力します。
 
     ```csharp
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -132,9 +132,9 @@ ms.locfileid: "66318520"
     }
     ```
 
-     これは、レジストリ内の"MySettings"コレクション内の"MySetting"フィールドにテキスト ボックスのコンテンツを書き込みます。 コレクションが存在しない場合は作成されます。
+     これにより、テキストボックスの内容が、レジストリの "Mysetting" コレクションの "MySetting" フィールドに書き込まれます。 コレクションが存在しない場合は作成されます。
 
-5. 次のハンドラーを追加、`OnLoaded`ユーザー コントロールのイベント。
+5. ユーザーコントロールの `OnLoaded` イベントに対して、次のハンドラーを追加します。
 
     ```csharp
     private void OnLoaded(Object sender, RoutedEventArgs e)
@@ -146,57 +146,57 @@ ms.locfileid: "66318520"
     }
     ```
 
-     このコードは、テキスト ボックスのテキストを"MySetting"の現在の値に設定します。
+     このコードは、テキストボックスのテキストを "MySetting" の現在の値に設定します。
 
-6. ユーザー コントロールをビルドします。
+6. ユーザーコントロールをビルドします。
 
-7. **ソリューション エクスプ ローラー**オープン*source.extension.vsixmanifest*します。
+7. **ソリューションエクスプローラー**で、 *source.extension.vsixmanifest*を開きます。
 
-8. マニフェストのエディターで次のように設定します。**製品名**に**個人用設定のスタート ページの保存**します。
+8. マニフェストエディターで、 **[製品名]** を設定して **[個人用設定の開始] ページを保存**します。
 
-     表示するには、この機能はスタート ページの名前を設定、**スタート ページのカスタマイズ**の一覧で、**オプション** ダイアログ ボックス。
+     この機能は、 **[オプション]** ダイアログボックスの **[スタートページのカスタマイズ]** の一覧に表示されるスタートページの名前を設定します。
 
-9. ビルド*StartPage.xaml*します。
+9. *StartPage を*ビルドします。
 
-## <a name="test-the-control"></a>コントロールをテストします。
+## <a name="test-the-control"></a>コントロールをテストする
 
 1. **F5**キーを押します。
 
-     Visual Studio の実験用インスタンスを開きます。
+     Visual Studio の実験用インスタンスが開きます。
 
-2. 実験用インスタンスでは、上、**ツール** メニューのをクリックして**オプション**します。
+2. 実験用インスタンスで、 **[ツール]** メニューの **[オプション]** をクリックします。
 
-3. **環境**ノード、をクリックして**スタートアップ**、[、**スタート ページのカスタマイズ**一覧で、 **[インストールされている拡張機能] ページの保存個人用設定を開始]** .
+3. **[環境]** ノードで、 **[起動]** をクリックし、 **[スタートページのカスタマイズ]** ボックスの一覧の **[インストールされている拡張機能] [マイ設定の保存] スタートページ**を選択します。
 
      **[OK]** をクリックします。
 
-4. 場合は、開いているし、[スタート ページを閉じ、**ビュー** ] メニューのをクリックして**スタート ページ**します。
+4. 開いている場合はスタートページを閉じ、 **[表示]** メニューの **[スタートページ]** をクリックします。
 
-5. [スタート] ページで、をクリックして、 **MyControl**タブ。
+5. スタートページで、 **[Mycontrol]** タブをクリックします。
 
-6. テキスト ボックスに「 **Cat**、 をクリックし、**個人用設定の保存**します。
+6. テキストボックスに「 **Cat**」と入力し、 **[設定を保存]** をクリックします。
 
-7. スタート ページを閉じて、再び開きます。
+7. スタートページを閉じてから、もう一度開きます。
 
-     "Cat"という単語は、テキスト ボックスに表示する必要があります。
+     テキストボックスに "Cat" という単語が表示されます。
 
-8. "Cat"という単語を"Dog"ワードに置き換えます。 ボタンをクリックしてしないでください。
+8. "Cat" という単語を "Dog" という語に置き換えます。 ボタンはクリックしないでください。
 
-9. スタート ページを閉じて、再び開きます。
+9. スタートページを閉じてから、もう一度開きます。
 
-     場合でも、Visual Studio 自体を終了するまで、終了は、設定、Visual Studio は、メモリ内のツール ウィンドウを保持しているためにを保存するしなかった場合でも、テキスト ボックスに単語"Dog"が表示されます。
+     設定を保存していない場合でも、テキストボックスに "Dog" という単語が表示されます。これは、visual Studio 自体が閉じられた場合でも、visual Studio がツールウィンドウをメモリ内に保持するためです。
 
 10. Visual Studio の実験用インスタンスを終了します。
 
-11. キーを押して**F5**実験用インスタンスを再開します。
+11. **F5**キーを押して、実験的なインスタンスを再度開きます。
 
-12. "Cat"という単語は、テキスト ボックスに表示する必要があります。
+12. テキストボックスに "Cat" という単語が表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-保存し、別のイベント ハンドラーから異なる値を取得および設定を使用して任意の数のカスタム設定を取得するには、このユーザー コントロールを変更することができます、`SettingsStore`プロパティ。 異なるを使用する限り`propertyName`呼び出しごとにパラメーター<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>値は、レジストリで互いを上書きしないでください。
+このユーザーコントロールを変更して、さまざまなイベントハンドラーの異なる値を使用して `SettingsStore` プロパティを取得および設定することにより、任意の数のカスタム設定を保存および取得することができます。 @No__t_1 を呼び出すたびに別の `propertyName` パラメーターを使用している限り、値はレジストリ内で相互に上書きされません。
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
-- [Visual Studio のコマンドをスタート ページに追加します。](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
+- [スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

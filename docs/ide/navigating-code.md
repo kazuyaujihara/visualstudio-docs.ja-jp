@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919511"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667007"
 ---
 # <a name="navigate-code"></a>コード間の移動
 
@@ -109,7 +109,7 @@ Visual Studio 2017 バージョン 15.8 以降では、次の **[移動]** ナ�
 
 ## <a name="peek-definition"></a>定義をここに表示
 
-[定義をここに表示] では、コード エディター内で現在の場所から移動することなく、選択した要素の定義がウィンドウに表示されます。 詳細については、「[方法 :[定義をここに表示] を使用してコードを表示および編集する](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)」と「[[定義へ移動] と [定義をここに表示]](../ide/go-to-and-peek-definition.md)」を参照してください。
+[定義をここに表示] では、コード エディター内で現在の場所から移動することなく、選択した要素の定義がウィンドウに表示されます。 詳細については、[[定義をここに表示] を使用してコードを表示および編集する](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)」と「[[定義へ移動] と [定義をここに表示]](../ide/go-to-and-peek-definition.md)」を参照してください。
 
 入力 | 関数
 ------------ | ---
@@ -148,7 +148,7 @@ Visual Basic コード ファイル内でカーソルをメソッド間で移動
 
 ## <a name="enhanced-scroll-bar"></a>強化されたスクロール バー
 
-コード ウィンドウの強化されたスクロール バーを使用すると、コード全体を見渡すことができます。 マップ モードでは、スクロール バーでカーソルを上下に移動するときに、コードのプレビューを見ることができます。 詳細については、「[方法 :ScrollBar のカスタマイズによるコードの追跡](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)」を参照してください。
+コード ウィンドウの強化されたスクロール バーを使用すると、コード全体を見渡すことができます。 マップ モードでは、スクロール バーでカーソルを上下に移動するときに、コードのプレビューを見ることができます。 詳細については、[ScrollBar のカスタマイズによるコードの追跡](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)」を参照してください。
 
 ## <a name="codelens-information"></a>CodeLens 情報
 

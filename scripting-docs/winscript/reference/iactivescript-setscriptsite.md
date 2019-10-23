@@ -1,5 +1,5 @@
 ---
-title: Iactivescript::setscriptsite |Microsoft Docs
+title: 'IActiveScript:: SetScriptSite |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935555"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575331"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-スクリプト エンジンに通知、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)ホストによって提供されるインターフェイスのサイト。 その他の前にこのメソッドを呼び出す[IActiveScript](../../winscript/reference/iactivescript.md)インターフェイス メソッドを使用します。  
+ホストによって提供される[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイスサイトのスクリプトエンジンに通知します。 他の[IActiveScript](../../winscript/reference/iactivescript.md)インターフェイスメソッドを使用する前に、このメソッドを呼び出してください。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>パラメーター  
  `pScriptSite`  
- [in]スクリプト エンジンのこのインスタンスに関連するスクリプトのホストが指定したサイトのアドレス。 サイトをこのスクリプト エンジンのインスタンスを一意に割り当てる必要があります。その他のスクリプト エンジンで共有できません。  
+ からスクリプトエンジンのこのインスタンスに関連付けられる、ホストが提供するスクリプトサイトのアドレス。 サイトは、このスクリプトエンジンインスタンスに一意に割り当てられている必要があります。他のスクリプトエンジンと共有することはできません。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -45,10 +45,10 @@ HRESULT SetScriptSite(
 |戻り値|説明|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_FAIL`|不明なエラーが発生しました。スクリプト エンジンは、サイトの初期化を終了できませんでした。|  
+|`E_FAIL`|特定できないエラーが発生しました。スクリプトエンジンは、サイトの初期化を完了できませんでした。|  
 |`E_INVALIDARG`|引数が無効です。|  
 |`E_POINTER`|無効なポインターが指定されました。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、サイトが既に設定)。|  
+|`E_UNEXPECTED`|呼び出しは想定されていませんでした (たとえば、サイトが既に設定されています)。|  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

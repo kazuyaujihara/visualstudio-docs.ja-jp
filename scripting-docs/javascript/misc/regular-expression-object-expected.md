@@ -14,20 +14,20 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a42cf4b76f4de6d4170f7ef85dafc00841964cfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf9e2e99c6a539f450afcfe9eef1f5588d5b84f6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006422"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573704"
 ---
-# <a name="regular-expression-object-expected"></a>正規表現オブジェクトが必要です。
-呼び出そうとしたか、 **RegExp.prototype.toString**または**RegExp.prototype.valueOf**メソッド以外の型のオブジェクトを`RegExp`します。 呼び出し元のオブジェクト型でなければなりません`RegExp`します。  
+# <a name="regular-expression-object-expected"></a>Regular Expression オブジェクトが必要です。
+@No__t_2 以外の型のオブジェクトに対して、 **regexp**または**regexp**の値のメソッドを呼び出そうとしました。 この種類の呼び出しのオブジェクトは `RegExp` 型である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- のみを呼び出す、 **RegExp.prototype.toString**または**RegExp.prototype.valueOf**型のオブジェクトに対するメソッド`RegExp`します。  
+- @No__t_2 型のオブジェクトに対してのみ、 **regexp**または**regexp**を呼び出します。  
   
 ## <a name="see-also"></a>関連項目  
- [Regular Expression オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)   
- [正規表現構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)の    
+ [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

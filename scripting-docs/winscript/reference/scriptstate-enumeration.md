@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6a05c5e73d26a8daa9e46c317422d85d1c40be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10dd6366e2d0783ec2e9d6bdadc001e9f999901e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840162"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575677"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE 列挙型
-スクリプト エンジンの状態を指定します。 この列挙体を使って、 [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) 、 [iactivescript::setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) 、および[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッド。  
+スクリプトエンジンの状態を指定します。 この列挙体は、 [IActiveScript:: GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) 、 [IActiveScript:: setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) 、および[IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッドによって使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,12 +44,12 @@ typedef enum tagSCRIPTSTATE {
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|スクリプトが作成された直後がまだ初期化されていないを使用して、`IPersist*`インターフェイスと[iactivescript::setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md)します。|  
-|SCRIPTSTATE_INITIALIZED|スクリプトが初期化されてはいない (他のオブジェクトへの接続またはシンク イベント) を実行しているをコードを実行します。 コードを呼び出すことによって実行を照会することができます、 [iactivescriptparse::parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)メソッド。|  
-|SCRIPTSTATE_STARTED|コードを実行できるスクリプトによって追加されたオブジェクトのイベントをシンクはありませんが、 [iactivescript::addnameditem](../../winscript/reference/iactivescript-addnameditem.md)メソッド。|  
-|SCRIPTSTATE_CONNECTED|スクリプトが読み込まれ、イベントをシンクに接続されています。|  
-|SCRIPTSTATE_DISCONNECTED|スクリプトが読み込まれるとランタイム実行の状態が、シンク イベントから一時的に切断されています。|  
-|SCRIPTSTATE_CLOSED|スクリプトが閉じられました。 スクリプト エンジンは動作しなくなり、ほとんどのメソッドに対してエラーを返します。|  
+|SCRIPTSTATE_UNINITIALIZED|スクリプトは作成されたばかりですが、`IPersist*` インターフェイスと[IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)を使用してまだ初期化されていません。|  
+|SCRIPTSTATE_INITIALIZED|スクリプトは初期化されていますが、実行されていない (他のオブジェクトまたはシンクイベントに接続している) か、任意のコードを実行しています。 [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)メソッドを呼び出すことにより、コードの実行をクエリできます。|  
+|SCRIPTSTATE_STARTED|スクリプトでコードを実行できますが、 [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)メソッドによって追加されたオブジェクトのイベントはまだシンクされていません。|  
+|SCRIPTSTATE_CONNECTED|スクリプトが読み込まれ、シンクイベント用に接続されています。|  
+|SCRIPTSTATE_DISCONNECTED|スクリプトが読み込まれ、実行時の実行状態になっていますが、シンクイベントから一時的に切断されています。|  
+|SCRIPTSTATE_CLOSED|スクリプトは閉じられました。 スクリプト エンジンは動作しなくなり、ほとんどのメソッドに対してエラーを返します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプトの定数、列挙型、およびエラー コード](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

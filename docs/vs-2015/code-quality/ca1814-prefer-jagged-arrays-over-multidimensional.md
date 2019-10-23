@@ -1,5 +1,5 @@
 ---
-title: CA1814:多次元よりジャグ配列を優先 |Microsoft Docs
+title: 'CA1814: ジャグ配列を多次元 | で優先します。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201708"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668415"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814:複数次元の配列ではなくジャグ配列を使用します
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: 複数次元の配列ではなくジャグ配列を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Category|Microsoft.Performance|
+|カテゴリ|Microsoft. パフォーマンス|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- メンバーは、多次元配列として宣言されます。
+ メンバーは多次元配列として宣言されます。
 
 ## <a name="rule-description"></a>規則の説明
  ジャグ配列とは、その要素も配列である配列です。 要素を構成する配列のサイズは異なってもよいため、データ セットによっては無駄な空間が少なくなります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するには、ジャグ配列に多次元配列を変更します。
+ この規則違反を修正するには、多次元配列をジャグ配列に変更します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 多次元配列領域が無駄にならない場合は、この規則による警告を抑制します。
+ 多次元配列でスペースを無駄にしない場合は、この規則の警告を非表示にします。
 
 ## <a name="example"></a>例
- 次の例では、ジャグ配列と多次元配列の宣言を示します。
+ 次の例は、ジャグ配列と多次元配列の宣言を示しています。
 
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/cs/FxCop.Performance.JaggedArrays.cs#1)]
  [!code-vb[FxCop.Performance.JaggedArrays#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/vb/FxCop.Performance.JaggedArrays.vb#1)]

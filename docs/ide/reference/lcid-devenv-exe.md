@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LCID devenv switch
 - /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deb2ce5eba108127dce82bab77fe7ed4fb78fb14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 991886289ac2c2ee06e37476169dff6d2354a52e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970128"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659977"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -43,7 +43,7 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="remarks"></a>解説
 
-IDE を読み込み、環境用の既定の自然言語を設定します。 この変更はセッションが変わっても保持され、IDE の **[ツール]** > **[オプション]** > **[環境]** > **[国際対応の設定]** > **[言語]** ボックスにこの変更が表示されます。
+IDE を読み込み、環境用の既定の自然言語を設定します。 この変更はセッションが変わっても保持され、IDE の **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[国際対応の設定]**  >  **[言語]** ボックスにこの変更が表示されます。
 
 指定した言語がシステムで利用できない場合、`/LCID` スイッチは無視されます。
 
@@ -52,7 +52,7 @@ Visual Studio でサポートされる言語の LCID の一覧を次の表に示
 |言語|LCID|
 |--------------|----------|
 |中国語 (簡体字、中国)|2052|
-|では |1028|
+|では|1028|
 |英語|1033|
 |フランス語|1036|
 |ドイツ語|1031|

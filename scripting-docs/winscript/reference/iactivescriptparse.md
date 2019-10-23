@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81f64352c15dce233058d49b70e35da7e2238688
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009339"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561641"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
-Windows スクリプト エンジンをスクリプトに追加する未加工のテキスト コード スクリプトレットを許可またはにより、実行時に評価される式のテキストでは、実装されているか、`IActiveScriptParse`インターフェイス。 これにより、解釈されたスクリプト言語 VBScript などの独立したオーサリング環境がないために別のメカニズム (以外の`IPersist*`)、スクリプト エンジンにスクリプト コードを取得して、さまざまなオブジェクトにスクリプトの断片をアタッチするにはイベント。  
+Windows スクリプトエンジンで、スクリプトに未加工のテキストコードのスクリプトを追加したり、実行時に式のテキストを評価したりできるようにするには、`IActiveScriptParse` インターフェイスを実装します。 VBScript など、独立した作成環境を持たない解釈されたスクリプト言語では、スクリプトコードをスクリプトエンジンに取り込み、さまざまなオブジェクトイベントにスクリプトフラグメントをアタッチするための代替メカニズム (`IPersist*` 以外) が用意されています.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|スクリプト エンジンを初期化します。|  
-|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|コード スクリプトレットをスクリプトに追加します。|  
-|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|名前空間に宣言を追加して、適切なコードを評価する、指定したコード スクリプトレットを解析します。|  
+|[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|スクリプトエンジンを初期化します。|  
+|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|スクリプトにコードレットを追加します。|  
+|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|指定されたコードレットを解析し、名前空間に宣言を追加し、必要に応じてコードを評価します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト インターフェイス](../../winscript/reference/active-script-interfaces.md)

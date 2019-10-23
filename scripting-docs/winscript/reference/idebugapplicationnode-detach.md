@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Detach |Microsoft Docs
+title: IDebugApplicationNode::D etach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6f4fdf0e5c49062f0d930b64de8fb1b06888d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ffb422bec21bec65f1550368d898608a5f65015
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990348"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574806"
 ---
 # <a name="idebugapplicationnodedetach"></a>IDebugApplicationNode::Detach
-プロジェクト ツリーからこのアプリケーションのノードを削除します。  
+プロジェクトツリーからこのアプリケーションノードを削除します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT Detach();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,8 +44,8 @@ HRESULT Detach();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、プロジェクト ツリーから、このアプリケーションのノードを削除します。  
+ このメソッドは、プロジェクトツリーからこのアプリケーションノードを削除します。  
   
 ## <a name="see-also"></a>関連項目  
- [IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
+ [IDebugApplicationNode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
  [IDebugApplicationNode インターフェイス](../../winscript/reference/idebugapplicationnode-interface.md)

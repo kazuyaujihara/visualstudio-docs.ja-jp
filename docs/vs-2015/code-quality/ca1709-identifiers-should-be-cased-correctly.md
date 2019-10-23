@@ -1,5 +1,5 @@
 ---
-title: CA1709:識別子では、大文字と小文字が正しく区別する必要があります |Microsoft Docs
+title: 'CA1709: 識別子は大文字と小文字が正しく使用されます。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,57 +12,57 @@ helpviewer_keywords:
 - IdentifiersShouldBeCasedCorrectly
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189169"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669192"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別子では、大文字と小文字が正しく区別されなければなりません
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: 識別子では、大文字と小文字が正しく区別されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください。 [ca 1709。識別子では、大文字と小文字が正しく区別する必要があります](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)します。  
-  
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldBeCasedCorrectly|  
-|CheckId|CA1709|  
-|Category|Microsoft.Naming|  
-|互換性に影響する変更点|– アセンブリ、名前空間、型、メンバー、およびパラメーターで発生した場合。<br /><br /> 改行のジェネリック型パラメーターで発生した場合。|  
-  
-## <a name="cause"></a>原因  
- 識別子の名前の小文字が正しくありません。  
-  
- \- または -  
-  
- 2 文字の頭字語を含む識別子の名前と、2 番目の文字は小文字です。  
-  
- \- または -  
-  
- 識別子の名前には、次の 3 つ以上の大文字の頭字語が含まれています。  
-  
-## <a name="rule-description"></a>規則の説明  
- 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。  
-  
- 慣例により、パラメーター名は camel 形式の規則を使用してください。名前空間、型、およびメンバー名は pascal 形式を使用して大文字小文字の区別します。 Camel 形式名では、最初の文字は、小文字と名の残りの単語の最初の文字は大文字です。 名の camel 形式の例では、"packetSniffer"、"ioFile"および"fatalErrorCode"を示します。 Pascal 形式の名前には、最初の文字の大文字と名の残りの単語の最初の文字は大文字です。 Pascal 形式の名の例では、"PacketSniffer"、"IOFile"および"FatalErrorCode"を示します。  
-  
- このルールは、名は大文字と小文字の単語に分割し、2 文字の単語を"In"などの一般的な 2 文字の単語または"My"の一覧を確認します。 一致が見つからない場合、単語は頭字語と見なされます。 さらに、このルールでは、名前には、いずれかの行に 4 つの大文字または名前の最後の行に 3 つの大文字が含まれている場合、頭字語が前提としています。  
-  
- 慣例により、2 文字の頭字語はすべて大文字を使用して、3 文字以上の頭字語は pascal 形式を使用して大文字小文字の区別します。 次の例では、この名前付け規則を使用します。'DB'、'CR'、'Cpa' および 'Ecma'。 次の例では、規則に違反します。'Io'、'XML' および 'DoD' と、nonparameter 名、'xp' および 'cpl'。  
-  
- 'ID' は、この規則の違反が発生する特殊なケースです。 'Id' は、頭字語ではありませんが、'id' の省略形です。  
-  
-## <a name="how-to-fix-violations"></a>違反の修正方法  
- 名前を変更するは、大文字と小文字を正しく区別できるようにします。  
-  
-## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
- 名前付けの規則がある場合、または識別子は、適切な名前、たとえば、企業やテクノロジの名を表している場合、この警告を抑制しても安全です。  
-  
- 特定の用語、略語、および頭字語を追加することも、コード分析カスタム辞書にします。 ユーザー辞書に指定された語句では、この規則の違反は発生しません。 詳細については、「[方法 :コード分析辞書をカスタマイズします。](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
-  
-## <a name="related-rules"></a>関連規則  
- [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+Visual Studio の最新のドキュメントについては、「 [CA1709: identifier は大文字にする必要があり](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)ます」を参照してください。
+
+|||
+|-|-|
+|TypeName|IdentifiersShouldBeCasedCorrectly|
+|CheckId|CA1709|
+|カテゴリ|Microsoft.Naming|
+|互換性に影響する変更点|中断-アセンブリ、名前空間、型、メンバー、およびパラメーターで発生した場合。<br /><br /> 非ブレーク-ジェネリック型パラメーターで発生した場合。|
+
+## <a name="cause"></a>原因
+ 識別子の名前の大文字と小文字が正しくありません。
+
+ \- または
+
+ 識別子の名前に2文字の頭字語が含まれ、2番目の文字が小文字になっています。
+
+ \- または
+
+ 識別子の名前には、3文字以上の大文字の頭字語が含まれています。
+
+## <a name="rule-description"></a>規則の説明
+ 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
+
+ 慣例として、パラメーター名には camel 形式の文字を使用します。名前空間、型、およびメンバーの名前は、Pascal 形式を使用します。 Camel 形式の名前では、最初の文字は小文字で、名前に含まれる残りの単語の最初の文字は大文字になります。 Camel 形式の名前の例としては、"packetSniffer"、"ioFile"、"Fat Alerrorcode" などがあります。 Pascal 形式の名前では、最初の文字は大文字になり、名前の残りの単語の最初の文字は大文字になります。 Pascal 形式の名前の例としては、"PacketSniffer"、"IOFile"、"Fat Alerrorcode" などがあります。
+
+ このルールでは、大文字小文字に基づいて名前が単語に分割され、2文字の単語が、"In" や "My" などの一般的な2文字の単語の一覧と照合されます。 一致するものが見つからない場合、単語は頭字語であると見なされます。 さらに、この規則では、名前の先頭に4文字の大文字が含まれている場合に、名前の末尾に3つの大文字が含まれていることを前提としています。
+
+ 慣例として、2文字の頭字語ではすべて大文字が使用され、3文字以上の頭字語では Pascal 形式が使用されます。 次の例では、' DB '、' CR '、' Cpa '、および ' Ecma ' という名前付け規則を使用します。 次の例では、' Io '、' XML '、' DoD ' の規則に違反しています。また、パラメーター名が ' xp '、' cpl ' 以外の場合は、この規則に違反します。
+
+ "ID" は特殊なケースで、この規則に違反する原因になります。 ' Id ' は頭字語ではありませんが、' id ' の省略形です。
+
+## <a name="how-to-fix-violations"></a>違反の修正方法
+ 大文字と小文字が正しくなるように名前を変更します。
+
+## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
+ 独自の名前付け規則がある場合、または識別子が会社またはテクノロジの名前などの適切な名前を表す場合は、この警告を抑制することが安全です。
+
+ また、コード分析カスタム辞書に特定の用語、略語、および頭字語を追加することもできます。 カスタム辞書に指定された用語は、このルールの違反を引き起こすことはありません。 詳細については、「[方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)」を参照してください。
+
+## <a name="related-rules"></a>関連規則
+ [CA1708: 識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

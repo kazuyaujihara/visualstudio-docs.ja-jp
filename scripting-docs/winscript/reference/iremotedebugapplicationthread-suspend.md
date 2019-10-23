@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Suspend |Microsoft Docs
+title: 'IRemoteDebugApplicationThread:: Suspend |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ba783b1f6f275eafe05872ad3755b425b65407e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5d4d8c541016de71ee1aabffe0b211f850cb7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788154"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575471"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
 スレッドを中断します。  
@@ -37,7 +37,7 @@ HRESULT Suspend(
   
 #### <a name="parameters"></a>パラメーター  
  `pdwCount`  
- [out]スレッドの中断カウントします。  
+ 入出力スレッドの中断カウント。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT Suspend(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、スレッドを一時停止、中断カウントが増加します。  
+ このメソッドは、スレッドを中断すると、中断カウントをインクリメントします。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplicationThread インターフェイス](../../winscript/reference/iremotedebugapplicationthread-interface.md)

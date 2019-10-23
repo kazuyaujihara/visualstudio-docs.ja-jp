@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891337"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646640"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -83,7 +83,7 @@ Visual Studio には、マネージド コードおよびネイティブ コー�
 
 ### <a name="run-tests-after-every-build"></a>各ビルドの後にテストを実行する
 ::: moniker range="vs-2017"
-|ボタン|説明|
+|Button|説明|
 |-|-|
 |![ビルド後に実行](../test/media/ute_runafterbuild_btn.png)|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、**テスト エクスプローラー**のツール バーの **[ビルド後にテストを実行]** を選択します。|
 
@@ -320,6 +320,7 @@ Visual Studio Enterprise エディションで利用可能な Visual Studio の�
 ソリューションのテスト メソッドのコード カバレッジを実行するには:
 
 ::: moniker range="vs-2017"
+
 1. 一番上のメニュー バーで **[テスト]** を選択し、 **[コード カバレッジの分析]** を選択します。
 
 2. サブメニューから次のいずれかのコマンドを選択します。
@@ -327,9 +328,13 @@ Visual Studio Enterprise エディションで利用可能な Visual Studio の�
     - **[選択されたテスト]** : テスト エクスプローラーで選択したテスト メソッドを実行します。
 
     - **[All tests (すべてのテスト)]** : ソリューション内のすべてのテスト メソッドを実行します。
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 * テスト エクスプローラー内を右クリックし、 **[選択されたテストのコード カバレッジの分析]** を選択します。
+
 ::: moniker-end
 
 **[コード カバレッジの結果]** ウィンドウに、行、関数、クラス、名前空間、およびモジュールで実行された製品コードのブロックのパーセンテージが表示されます。
@@ -338,7 +343,7 @@ Visual Studio Enterprise エディションで利用可能な Visual Studio の�
 
 ## <a name="test-shortcuts"></a>テスト ショートカット
 
-テストは**テスト エクスプローラー**から実行できます。テストのコード エディター内で右クリックし、 **[テストの実行]** を選択するか、Visual Studio の[テスト エクスプローラー ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)を使用します。 ショートカットの一部はコンテキストベースです。 つまり、コード エディター内のカーソルの位置に基づいてテストが実行またはデバッグされます。 カーソルがテスト メソッド内にある場合、そのテスト メソッドが実行されます。 カーソルがクラス レベルにある場合、そのクラスのすべてのテストが実行されます。 名前空間レベルの場合も同じことが適用されます。
+テストはテスト エクスプローラーから実行できます。テストのコード エディター内で右クリックし、 **[テストの実行]** を選択するか、Visual Studio の既定の[テスト エクスプローラー ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)を使用します。 ショートカットの一部はコンテキストベースです。 つまり、コード エディター内のカーソルの位置に基づいてテストが実行またはデバッグされます。 カーソルがテスト メソッド内にある場合、そのテスト メソッドが実行されます。 カーソルがクラス レベルにある場合、そのクラスのすべてのテストが実行されます。 名前空間レベルの場合も同じことが適用されます。
 
 |頻繁に使用されるコマンド| ショートカット キー|
 |-|------------------------|

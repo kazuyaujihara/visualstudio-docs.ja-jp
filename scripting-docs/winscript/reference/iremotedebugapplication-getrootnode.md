@@ -1,5 +1,5 @@
 ---
-title: :Getrootnode |Microsoft Docs
+title: 'IRemoteDebugApplication:: GetRootNode |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef8337e27bb5a666e8d5d8d38abcafb044da02ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a9d2579c15c2b986b3b7f6921ed0abc40cbf4f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944219"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577491"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
-アプリケーションに関連付けられているすべてのノードを追加するアプリケーションのノードを返します。  
+アプリケーションに関連付けられているすべてのノードが追加されるアプリケーションノードを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>パラメーター  
  `ppdanRoot`  
- [out]アプリケーションに関連付けられているすべてのノードを追加するデバッグ アプリケーション ノード。  
+ 入出力アプリケーションに関連付けられているすべてのノードが追加される [デバッグアプリケーション] ノード。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetRootNode(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、アプリケーションに関連付けられているすべてのノードを追加するアプリケーションのノードを返します。  
+ このメソッドは、アプリケーションに関連付けられているすべてのノードが追加されるアプリケーションノードを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)

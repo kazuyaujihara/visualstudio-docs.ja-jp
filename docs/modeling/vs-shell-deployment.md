@@ -2,30 +2,30 @@
 title: VS Shell 配置
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e010d2efd8174f2c61d7c97eb63d585f47812ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934301"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663656"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 配置
 
-分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、次を参照してください。[分離シェルのカスタマイズ](https://vspartner.com/pages/vsshells)します。
+分離シェルを使用すると、ドメイン固有言語と対話するために必要な Visual Studio の機能と、そのソリューションをどのように表示するかを決定できます。 Visual Studio の分離シェルの詳細については、「[分離シェルのカスタマイズ](https://vspartner.com/pages/vsshells)」を参照してください。
 
-Visual Studio Shell は、デプロイ ターゲットとして設定します。
+Visual Studio シェルを配置ターゲットとして設定するには、次のようにします。
 
-1. **DslPackage**プロジェクトを開き、 **source.extension.tt**します。
+1. **Dslpackage**プロジェクトで、 **source.extension.tt**を開きます。
 
-2. `<SupportedProducts>`を挿入します。
+2. @No__t_0 挿入:
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   置換*MyIsolatedShell*分離シェルのパッケージの名前に置き換えます。
+   *MyIsolatedShell*を分離シェルパッケージの名前に置き換えます。

@@ -1,20 +1,20 @@
 ---
-title: モデリング ソリューションの構築 |Microsoft Docs
+title: モデリングソリューションを構築する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2b82bd903fe594ca2f2b650833cd29bfb54efa85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edf9eaee512eda7439d1beea7303cd0e74b27178
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68155640"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661037"
 ---
 # <a name="structure-your-modeling-solution"></a>モデリング ソリューションの構築
 
@@ -26,7 +26,7 @@ ms.locfileid: "68155640"
 
 このトピックでは、複数のチーム メンバーと、複数のチームを必要とするほどの大規模なプロジェクトでの作業を想定しています。 プロジェクトのコードとモデルは、[!INCLUDE[esprtfs](../includes/esprtfs-md.md)] などのソース管理システムに格納されます。 少なくとも数人のチーム メンバーが Visual Studio を使用してモデルを開発しているときに、他のチーム メンバーは他のバージョンの Visual Studio を使って、モデルを表示できます。
 
-各ツールとモデリング機能をサポートする Visual Studio のバージョンを確認するを参照してください。[アーキテクチャとモデリング ツールのバージョンのサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
+各ツールとモデリング機能をサポートする Visual Studio のバージョンを確認するには、「[アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 ## <a name="solution-structure"></a>ソリューション構造
 
@@ -34,13 +34,13 @@ ms.locfileid: "68155640"
 
 #### <a name="to-divide-an-application-into-layers"></a>1 つのアプリケーションを複数のレイヤーに分割するには
 
-1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャは、後ほど[、Microsoft アプリケーション アーキテクチャ ガイドでアプリケーションのアーキタイプ](http://go.microsoft.com/fwlink/?LinkId=196681)します。
+1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](http://go.microsoft.com/fwlink/?LinkId=196681)」の「application アーキタイプ」で説明しています。
 
 2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。このソリューションを「アーキテクチャ ソリューション」と呼びます。 このソリューションは、システムの全体設計の作成に使われます。 このソリューションにはモデルは含まれますが、コードは含まれません。
 
-    このソリューションにレイヤー図を追加します。 レイヤー図で、作成するアプリケーション用に選択した構造を描画します。 たとえば、これらの層とそれらの間の依存関係図を表示する可能性があります。プレゼンテーションです。ビジネス ロジック。データです。
+    このソリューションにレイヤー図を追加します。 レイヤー図で、作成するアプリケーション用に選択した構造を描画します。 たとえば、この図には、プレゼンテーション、ロジック、データの各レイヤーと、そのレイヤー間の依存関係が示されることがあります。
 
-    作成、レイヤー図と新しい Visual Studio ソリューションと同時を使用して、**新しい UML またはレイヤー図**コマンドを**アーキテクチャ**メニュー。
+    **[アーキテクチャ]** メニューの **[新しい UML またはレイヤー図]** を使用すると、レイヤー図と新しい Visual Studio ソリューションを同時に作成できます。
 
 3. 重要なビジネス概念を表すアーキテクチャ モデル UML 図や、すべてのレイヤーのデザインで参照されるユース ケースに追加します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "68155640"
 
     これで、レイヤーごとのモデルと、アプリケーション アーキテクチャ用のモデルが準備できました。 各モデルは、独自のソリューションに含まれます。 これにより、チーム メンバーが同時に、複数のレイヤー上で作業できます。
 
-2. アーキテクチャ ソリューションに、各レイヤー ソリューションのモデリング プロジェクトを追加します。 そのためには、アーキテクチャ ソリューションを開きます。 ソリューション エクスプ ローラーでソリューション ノードを右クリックし、追加 をポイントし、クリックして**既存のプロジェクト**します。 1 つのレイヤー ソリューションのモデリング プロジェクト (.modelproj) に移動します。
+2. アーキテクチャ ソリューションに、各レイヤー ソリューションのモデリング プロジェクトを追加します。 そのためには、アーキテクチャ ソリューションを開きます。 ソリューションエクスプローラーで、ソリューションノードを右クリックして 追加 をポイントし、**既存のプロジェクト** をクリックします。 1 つのレイヤー ソリューションのモデリング プロジェクト (.modelproj) に移動します。
 
     各モデルは 2 つのソリューション ("ホーム" ソリューションとアーキテクチャ ソリューション) に表示されるようになりました。
 
@@ -80,9 +80,9 @@ ms.locfileid: "68155640"
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>レイヤーごとに個別のパッケージを使用するには
 
-1. 各レイヤーのソリューションで、アーキテクチャ モデリング プロジェクトを追加します。 ソリューション エクスプ ローラーでソリューション ノードを右クリックして**追加**、 をクリックし、**既存のプロジェクト**します。 これで 1 つのモデリング プロジェクトに、すべてのソリューション (アーキテクチャ プロジェクトと各レイヤーの開発プロジェクト) からアクセスできるようになりました。
+1. 各レイヤーのソリューションで、アーキテクチャ モデリング プロジェクトを追加します。 ソリューションエクスプローラーで、ソリューションノードを右クリックして **[追加]** をポイントし、 **[既存のプロジェクト]** をクリックします。 これで 1 つのモデリング プロジェクトに、すべてのソリューション (アーキテクチャ プロジェクトと各レイヤーの開発プロジェクト) からアクセスできるようになりました。
 
-2. 共有 UML モデルでは、各レイヤーのパッケージを作成します。ソリューション エクスプ ローラーで、モデリング プロジェクトを選択します。 UML モデル エクスプ ローラーで、モデル ルート ノードを右クリックして**追加**、 をクリックし、**パッケージ**します。
+2. 共有 UML モデルで、各レイヤーのパッケージを作成します。ソリューション エクスプローラーで、モデリング プロジェクトを選択します。 UML モデルエクスプローラーで、モデルルートノードを右クリックし、 **[追加]** をポイントして、 **[パッケージ]** をクリックします。
 
     各モデルには、要件と、対応するレイヤーのデザインを記述する UML 図が入ります。
 
@@ -90,7 +90,7 @@ ms.locfileid: "68155640"
 
     この方法を使用すると、各レイヤーの設計要素から、レイヤーの設定要素と、そのレイヤーが依存している共通アーキテクチャを直接参照することができます。
 
-    複数のパッケージに対する同時作業では競合が発生することがありますが、パッケージは個別ファイルに保存されるため、競合を非常に簡単に管理できます。 依存パッケージから参照されている要素を削除した場合には、大きな問題が発生します。 詳細については、次を参照してください。[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)します。
+    複数のパッケージに対する同時作業では競合が発生することがありますが、パッケージは個別ファイルに保存されるため、競合を非常に簡単に管理できます。 依存パッケージから参照されている要素を削除した場合には、大きな問題が発生します。 詳細については、「[バージョン管理のモデルとダイアグラムの管理](../modeling/manage-models-and-diagrams-under-version-control.md)」を参照してください。
 
 ## <a name="creating-architecture-templates"></a>アーキテクチャ テンプレートの作成
 
@@ -100,24 +100,24 @@ ms.locfileid: "68155640"
 
 #### <a name="to-create-a-solution-template"></a>ソリューション テンプレートを作成するには
 
-1. [テンプレートのエクスポート ウィザードのインストールをダウンロードして](http://go.microsoft.com/fwlink/?LinkId=196686)していない場合は、します。
+1. [テンプレートのエクスポートウィザード](http://go.microsoft.com/fwlink/?LinkId=196686)をまだ実行していない場合は、ダウンロードしてインストールします。
 
 2. 将来のプロジェクトの開始点として使用するソリューション構造を作成します。
 
-3. **[ファイル]** メニューの **[VSIX としてテンプレートをエクスポート]** をクリックします。 **ウィザードの VSIX としてテンプレートをエクスポート**が開きます。
+3. **[ファイル]** メニューの **[VSIX としてテンプレートをエクスポート]** をクリックします。 [ **VSIX としてテンプレートをエクスポート] ウィザード**が開きます。
 
 4. ウィザードの指示に従って、テンプレートに含めるプロジェクトを追加し、テンプレートの名前と説明を入力して、出力する場所を指定します。
 
 > [!NOTE]
-> このトピックの内容は、Visual Studio ALM Rangers が作成した『Visual Studio アーキテクチャ ツーリング ガイダンス』から抽出して、わかりやすくしたものです。このガイダンスは、Most Valued Professional (MVP)、Microsoft Services、および Visual Studio 製品チームとライターのコラボレーションにより作成されました。 [ここをクリックすると、完全なガイダンス パッケージをダウンロードします。](http://go.microsoft.com/fwlink/?LinkID=191984)
+> このトピックの内容は、Visual Studio ALM Rangers が作成した『Visual Studio アーキテクチャ ツーリング ガイダンス』から抽出して、わかりやすくしたものです。このガイダンスは、Most Valued Professional (MVP)、Microsoft Services、および Visual Studio 製品チームとライターのコラボレーションにより作成されました。 [完全なガイダンスパッケージをダウンロードするには、ここをクリックしてください。](http://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>関連資料
 
-[整理と、モデルの管理](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/)- Clint Edmondson によるビデオ。
+[モデルの整理と管理](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/)-Clint Edmondson によるビデオ。
 
-[Visual Studio アーキテクチャ ツー リング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)– チームでのモデルの管理に関するガイダンスをさらに
+[Visual Studio アーキテクチャツールのガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)–チーム内のモデルの管理に関するその他のガイダンス
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-[モデルおよびバージョン管理下にある図](../modeling/manage-models-and-diagrams-under-version-control.md)
-[開発プロセスでモデルを使用](../modeling/use-models-in-your-development-process.md)
+モデル[と図のバージョン](../modeling/manage-models-and-diagrams-under-version-control.md)管理の管理 
+[開発プロセスでモデルを使用する](../modeling/use-models-in-your-development-process.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString |Microsoft Docs
+title: 'IActiveScriptSite:: GetDocVersionString |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ecc592b6b7fcae5f516a3c1dd111c027e67b6dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992749"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571134"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-現在のドキュメントのバージョンを一意に識別するホスト定義の文字列を取得します。 (メモ帳で編集されている HTML ページの大文字と小文字) のように Windows スクリプトのスコープ外関連のドキュメントを変更した場合は、スクリプト エンジン保存できますこのと共に強制的に再コンパイル、スクリプトが読み込まれる、次回の永続化された状態。  
+現在のドキュメントのバージョンを一意に識別するホスト定義の文字列を取得します。 関連ドキュメントが Windows スクリプトのスコープ外で変更された場合 (メモ帳で編集されている HTML ページの場合のように)、スクリプトエンジンは永続化された状態と共にこれを保存し、次回スクリプトが読み込まれるときに再コンパイルを強制することができます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,13 +37,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>パラメーター  
  `pstrVersionString`  
- [out]ホストが定義するドキュメントのバージョン文字列のアドレス。  
+ 入出力ホスト定義ドキュメントのバージョン文字列のアドレス。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または`E_NOTIMPL`場合、このメソッドはサポートされていません。  
+ 成功した場合は `S_OK` を返します。このメソッドがサポートされていない場合は `E_NOTIMPL` を返します。  
   
 ## <a name="remarks"></a>Remarks  
- 場合`E_NOTIMPL`返されるか、スクリプト エンジンでは、スクリプトは、ドキュメントとの同期にすると想定する必要があります。  
+ @No__t_0 が返された場合、スクリプトエンジンは、スクリプトがドキュメントと同期していると想定する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveNamedItem |Microsoft Docs
+title: 'IActiveScriptAuthor:: RemoveNamedItem |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 052704b9a1bef8c50c457e51438f0204813c2efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cade532d2ca276237981855cafe12804307d0bb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955147"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572848"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-削除、`NamedItem`エンジンを作成するスクリプトの名前空間のオブジェクト。  
+スクリプト作成エンジンの名前空間から `NamedItem` オブジェクトを削除します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT RemoveNamedItem(
   
 #### <a name="parameters"></a>パラメーター  
  `pszName`  
- [in]識別するバッファーのアドレス、`NamedItem`削除するオブジェクト。  
+ から削除する `NamedItem` オブジェクトを識別するバッファーのアドレス。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -45,10 +45,10 @@ HRESULT RemoveNamedItem(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`S_FALSE`|`NamedItem`エンジンを作成するスクリプトの名前空間でオブジェクトがありません。|  
+|`S_FALSE`|@No__t_0 オブジェクトは、スクリプト作成エンジンの名前空間に存在しません。|  
   
 ## <a name="remarks"></a>Remarks  
- [Iactivescript::addnameditem](../../winscript/reference/iactivescript-addnameditem.md)を挿入するために使用、`NamedItem`オブジェクトに、スクリプト エンジンの名前空間を作成します。  
+ [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)は、スクリプト作成エンジンの名前空間に `NamedItem` オブジェクトを挿入するために使用されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)   

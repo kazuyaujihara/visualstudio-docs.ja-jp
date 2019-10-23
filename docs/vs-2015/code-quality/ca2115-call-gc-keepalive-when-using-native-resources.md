@@ -1,5 +1,5 @@
 ---
-title: CA2115:GC を呼び出します。ネイティブ リソースを使用する場合、KeepAlive |Microsoft Docs
+title: 'CA2115: GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c035c05480279012fba1101c3a60b020d34b1890
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e0aa10cc453919a2a79ee6d3d46db95c19d8756e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687338"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658693"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,34 +33,34 @@ ms.locfileid: "65687338"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- メソッドがファイナライザーを持つ型で宣言されている参照、<xref:System.IntPtr?displayProperty=fullName>または<xref:System.UIntPtr?displayProperty=fullName>フィールドします、は呼び出しません<xref:System.GC.KeepAlive%2A?displayProperty=fullName>します。
+ ファイナライザーを持つ型で宣言されたメソッドが、<xref:System.IntPtr?displayProperty=fullName> または <xref:System.UIntPtr?displayProperty=fullName> フィールドを参照していますが、<xref:System.GC.KeepAlive%2A?displayProperty=fullName> を呼び出していません。
 
 ## <a name="rule-description"></a>規則の説明
- ガベージ コレクションは、マネージ コード内に参照がある場合、オブジェクトを終了します。 オブジェクトへのアンマネージ参照は、ガベージ コレクションを妨げません。 この規則では、アンマネージ コードでまだ使用されているのに、アンマネージ リソースが終了されたときに発生する可能性のあるエラーを検出します。
+ ガベージコレクションは、マネージコードにそれ以上の参照がない場合に、オブジェクトを終了します。 オブジェクトへのアンマネージ参照によって、ガベージコレクションが妨げられることはありません。 この規則では、アンマネージ コードでまだ使用されているのに、アンマネージ リソースが終了されたときに発生する可能性のあるエラーを検出します。
 
- このルールは、仮定<xref:System.IntPtr>と<xref:System.UIntPtr>フィールドに格納されているアンマネージ リソースへのポインター。 ファイナライザーの目的は、アンマネージ リソースを解放はであるため、ルールでは、ファイナライザーでは、ポインター フィールドによって示されるアンマネージ リソースを解放前提としています。 このルールでは、メソッドがアンマネージ リソースをアンマネージ コードに渡すポインター フィールドを参照することも想定しています。
+ このルールは、<xref:System.IntPtr> および <xref:System.UIntPtr> フィールドにアンマネージリソースへのポインターが格納されていることを前提としています。 ファイナライザーの目的はアンマネージリソースを解放することであるため、この規則では、ポインターフィールドが指すアンマネージリソースがファイナライザーによって解放されることを前提としています。 また、アンマネージリソースをアンマネージコードに渡すために、メソッドがポインターフィールドを参照していることも前提としています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するへの呼び出しを追加<xref:System.GC.KeepAlive%2A>メソッドに渡して、現在のインスタンス (`this` c# および C++ で)、引数として。 コードの最後の行の後にガベージ コレクションからオブジェクトを保護する必要がありますに呼び出しを配置します。 呼び出しの直後に<xref:System.GC.KeepAlive%2A>オブジェクトへの参照を管理対象がないと仮定ガベージ コレクションの準備完了と見なされますもう一度です。
+ この規則違反を修正するには、メソッドに <xref:System.GC.KeepAlive%2A> への呼び出しを追加し、現在のインスタンス (およびC# C++の `this`) を引数として渡します。 オブジェクトをガベージコレクションから保護する必要があるコードの最後の行の後に、呼び出しを配置します。 @No__t_0 の呼び出しの直後に、オブジェクトは、マネージ参照がないと仮定して、ガベージコレクションの準備が整っていると見なされます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- このルールは、偽陽性につながる可能性があるいくつかの想定です。 場合は、安全にこの規則による警告を抑制することができます。
+ この規則は、偽陽性の原因となる可能性のあるいくつかの仮定を行います。 次の場合に、この規則による警告を抑制することができます。
 
-- ファイナライザーの内容を解放しません、<xref:System.IntPtr>または<xref:System.UIntPtr>メソッドによって参照されるフィールド。
+- ファイナライザーでは、メソッドによって参照される <xref:System.IntPtr> または <xref:System.UIntPtr> フィールドの内容が解放されることはありません。
 
-- メソッドは渡さない、<xref:System.IntPtr>または<xref:System.UIntPtr>フィールドをアンマネージ コードにします。
+- メソッドは、<xref:System.IntPtr> または <xref:System.UIntPtr> フィールドをアンマネージコードに渡しません。
 
-  慎重に除外する前に他のメッセージを確認します。 このルールは、再生やデバッグが困難なエラーを検出します。
+  除外する前に、他のメッセージを慎重に確認してください。 このルールは、再現およびデバッグが困難なエラーを検出します。
 
 ## <a name="example"></a>例
- 次の例では、`BadMethod`への呼び出しを含まない`GC.KeepAlive`そのため、ルールに違反するとします。 `GoodMethod` 修正後のコードが含まれています。
+ 次の例では、`BadMethod` に `GC.KeepAlive` の呼び出しが含まれていないため、規則に違反します。 修正されたコードが `GoodMethod` に含まれています。
 
 > [!NOTE]
-> この例は、コードをコンパイルして実行が擬似コード、アンマネージ リソースの作成または解放はされないために、この警告は発生しません。
+> この例は擬似コードですが、コードをコンパイルして実行しますが、アンマネージリソースが作成または解放されないため、警告は発生しません。
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>

@@ -2,21 +2,21 @@
 title: XML エディター
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7898ff0a592ff8aaf6c6a44672024e13e2f0221
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608354"
 ---
 # <a name="xml-editor"></a>XML エディター
 
-Visual Studio の XML エディターでは、テキスト エディターに基づいており、XML 言語の追加サポートが含まれています。 Visual Studio で XML ファイルを開くと、XML エディターで開きます。
+Visual Studio の XML エディターは、テキストエディターに基づいており、XML 言語の追加サポートが含まれています。 Visual Studio で XML ファイルを開くと、xml エディターが開きます。
 
 XML エディターには、次の機能が含まれています。
 
@@ -34,30 +34,30 @@ XML エディターには、次の機能が含まれています。
 
 - DTD または XDR (XML-Data Reduced) スキーマの XML スキーマへの変換。
 
-- XSLT この構文をチェックします。
+- XSLT 構文チェック。
 
 - 要素の展開と折りたたみが可能なドキュメントのアウトライン表示。
 
-- 統合、 [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)します。 これにより、XML スキーマの階層を表示します。
+- [XML スキーマエクスプローラー](../xml-tools/xml-schema-explorer.md)との統合。 これにより、XML スキーマの階層ビューが提供されます。
 
-XML エディターがなどのよく知られているファイル拡張子では、呼び出された *.xml*、 *.xsd*、 *.xsl*、および *.config*します。ファイルに XML が含まれている場合は、未知のファイル拡張子についても XML エディターが呼び出されます。
+Xml エディターは、 *.xml*、 *.xsd*、 *.xsl*、 *.config*などのよく知られているファイル拡張子に対して呼び出されます。また、ファイルに XML が含まれている場合は、不明なファイル拡張子でも呼び出されます。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md)とオートコンプリート属性セット名、テンプレート モードおよびの名前にできます。 名前付きテンプレートのパラメーターの指定したモード、または指定した名前。
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md)を使用すると、指定したモードまたは指定した名前付きテンプレートの属性セット名、テンプレートモード、および名前、およびパラメーター名をオートコンプリートできます。
 
 ## <a name="xslt-profiler"></a>XSLT プロファイラー
 
-[XSLT プロファイラー](../xml-tools/xslt-profiler.md)詳細な XSLT パフォーマンス レポートする際に役立つ計測、評価、および XSLT コード内のパフォーマンスに関連する問題を対象に作成します。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントも含まれています。
+Xslt[プロファイラー](../xml-tools/xslt-profiler.md)は、xslt コード内のパフォーマンス関連の問題を測定、評価、およびターゲットするのに役立つ、詳細な xslt パフォーマンスレポートを作成します。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントも含まれています。
 
 ## <a name="xslt-hierarchy"></a>XSLT 階層
 
-[XSLT 階層ツール](../xml-tools/walkthrough-using-xslt-hierarchy.md)インクルードされたスタイル シートやビルトイン テンプレート規則にブレークポイントを追加することができます。
+[XSLT 階層ツール](../xml-tools/walkthrough-using-xslt-hierarchy.md)を使用すると、インクルードされているスタイルシートや組み込みのテンプレート規則にブレークポイントを追加できます。
 
 ## <a name="see-also"></a>関連項目
 
-- [XML エディターのオプションの書式設定](../ide/reference/options-text-editor-xml-formatting.md)
-- [XML エディターのオプション - その他](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [XML エディターのオプション-書式設定](../ide/reference/options-text-editor-xml-formatting.md)
+- [XML エディターのオプション-その他](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)

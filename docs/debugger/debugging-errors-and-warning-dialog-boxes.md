@@ -1,5 +1,5 @@
 ---
-title: デバッグ エラーと警告のダイアログ ボックス |Microsoft Docs
+title: デバッグエラーと警告ダイアログボックス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852221"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431676"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>デバッグ エラーと警告関連のダイアログ ボックス
 ここでは、アプリケーションのデバッグ中に表示される可能性があるエラーおよび警告のダイアログ ボックスの一覧を示します。
@@ -38,7 +38,7 @@ ms.locfileid: "67852221"
 
  [[デバッガーは、ソース コードまたは逆アセンブリを表示できません] ダイアログ ボックス](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [デバッガーのメモリ不足実行されているサービス](../debugger/error-debugger-services-no-memory.md)
+ [デバッガーサービスでメモリが不足しています](../debugger/error-debugger-services-no-memory.md)
 
  [[デバッグ セッションで実行可能] ダイアログ ボックス](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -56,10 +56,10 @@ ms.locfileid: "67852221"
 
  [コンピューターに接続できません](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [エラー: システム上でカーネル デバッガーが有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [エラー : "Debugging Isn't Possible Because a Kernel Debugger is Enabled on the System"](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>関連項目
- [スクリプトと Web のデバッグ。エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [スクリプトと Web のデバッグ: エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [リモート デバッグ エラー](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ ms.locfileid: "67852221"
 
  [SQL デバッグ セットアップのトラブルシューティング](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Visual C++ のデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
+ [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
 
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

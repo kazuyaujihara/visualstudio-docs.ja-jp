@@ -1,5 +1,5 @@
 ---
-title: ビジュアライザーを記述C#|Microsoft Docs
+title: '| にC#ビジュアライザーを記述します。Microsoft Docs'
 ms.custom: seodec18
 ms.date: 04/12/2019
 ms.topic: conceptual
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890917"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637951"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>チュートリアル: C# でビジュアライザーを記述します。\#
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>チュートリアル : C\# でビジュアライザーを記述する
 このチュートリアルでは、C# を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この簡単な文字列ビジュアライザーは、それ自体ではそれほど役に立ちませんが、他のデータ型を表示する、より役に立つビジュアライザーを作成するために必要な基本手順として使用できます。
 
 > [!NOTE]
@@ -29,22 +29,22 @@ ms.locfileid: "67890917"
 
 ビジュアライザー コードは、デバッガーによって読み取られる DLL に配置する必要があります。 このため、最初の手順として、DLL のクラス ライブラリ プロジェクトを作成します。
 
-## <a name="create-a-visualizer-manually"></a>ビジュアライザーを手動で作成します。
+## <a name="create-a-visualizer-manually"></a>ビジュアライザーを手動で作成する
 
-ビジュアライザーを作成するのには、次のタスクを実行します。
+ビジュアライザーを作成するには、次のタスクを実行します。
 
 ### <a name="to-create-a-class-library-project"></a>クラス ライブラリ プロジェクトを作成するには
 
 1. 新しいクラス ライブラリ プロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 型**Ctrl + Q**を検索ボックスを開き、「**クラス ライブラリ**、選択**テンプレート**、を選択し、**新しいクラス ライブラリ (.NET Standard)作成**. 表示されたダイアログ ボックスで、 **[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl キーを押しながら Q キーを押し**て検索ボックスを開き、「**クラスライブラリ**」と入力します。次に、 **[テンプレート]** を選択し、[**新しいクラスライブラリの作成] (.NET Standard)** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 左側のウィンドウで、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#** 、選択 **.NET Standard**、中央のペインの **クラス ライブラリ (します。NET Standard)** します。
+    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログボックスの左ペインで、 **[ビジュアルC# ]** の下の **[.NET Standard]** を選択し、中央のペインで **[クラスライブラリ (.NET Standard)]** を選択します。
     ::: moniker-end
 
-2. クラス ライブラリでは、適切な名前を入力します。 `MyFirstVisualizer`、順にクリックします**作成**または**OK**します。
+2. クラスライブラリの適切な名前 (`MyFirstVisualizer` など) を入力し、 **[作成]** または **[OK]** をクリックします。
 
    クラス ライブラリを作成したら、Microsoft.VisualStudio.DebuggerVisualizers.DLL への参照を追加し、この DLL で定義されているクラスを使用できるようにします。 ただし、参照を追加する前に、クラス名をわかりやすい名前に変更する必要があります。
 
@@ -59,13 +59,13 @@ ms.locfileid: "67890917"
 
 3. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
-4. **参照の追加**] ダイアログ ボックス [、**参照**] タブで [**参照**Microsoft.VisualStudio.DebuggerVisualizers.DLL を見つけるとします。
+4. **[参照の追加]** ダイアログボックスの [**参照] タブで**、 **[参照]** を選択し、VisualStudio を見つけます。
 
-    DLL を検索する *\<Visual Studio インストール ディレクトリ > \Common7\IDE\PublicAssemblies* Visual Studio のインストール ディレクトリのサブディレクトリ。
+    DLL は、Visual Studio のインストールディレクトリの *\<Visual Studio インストールディレクトリ > \Common7\IDE\PublicAssemblies*サブディレクトリにあります。
 
 5. **[OK]** をクリックします。
 
-6. DebuggerSide.cs の `using` ステートメントに次のステートメントを追加します。
+6. DebuggerSide.cs で、次の `using` ディレクティブに追加します。
 
    ```csharp
    using Microsoft.VisualStudio.DebuggerVisualizers;
@@ -99,19 +99,19 @@ ms.locfileid: "67890917"
   }
   ```
 
-  `Show` メソッドには、ビジュアライザーのダイアログ ボックス (または他のユーザー インターフェイス) を実際に作成し、デバッガーからビジュアライザーに渡された情報を表示するコードが格納されます。 したがって、このダイアログ ボックスを作成し、情報を表示するコードを追加する必要があります。 このチュートリアルでは、Windows フォーム メッセージ ボックスを使用します。 最初に、System.Windows.Forms の参照と `using` ステートメントを追加する必要があります。
+  `Show` メソッドには、ビジュアライザーのダイアログ ボックス (または他のユーザー インターフェイス) を実際に作成し、デバッガーからビジュアライザーに渡された情報を表示するコードが格納されます。 したがって、このダイアログ ボックスを作成し、情報を表示するコードを追加する必要があります。 このチュートリアルでは、Windows フォーム メッセージ ボックスを使用します。 最初に、reference と `using` ディレクティブを追加する必要があります。
 
 ### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms を追加するには
 
 1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
-2. **参照の追加**] ダイアログ ボックスの [、**参照**] タブで [**参照**System.Windows.Forms.DLL を見つけてします。
+2. **[参照の追加]** ダイアログボックスの [**参照] タブで**、 **[参照]** を選択し、system.string を見つけます。
 
-    DLL を検索する*C:\Windows\Microsoft.NET\Framework\v4.0.30319*します。
+    DLL は*C:\Windows\Microsoft.NET\Framework\v4.0.30319*で見つけることができます。
 
 3. **[OK]** をクリックします。
 
-4. DebuggerSide.cs の `using` ステートメントに次のステートメントを追加します。
+4. DebuggerSide.cs で、次の `using` ディレクティブに追加します。
 
    ```csharp
    using System.Windows.Forms;
@@ -135,7 +135,7 @@ ms.locfileid: "67890917"
 
 ### <a name="to-add-the-debuggee-side-code"></a>デバッグ対象側のコードを追加するには
 
-1. DebuggerSide.cs の `using` ステートメントと `namespace MyFirstVisualizer` の間に次の属性コードを追加します。
+1. @No__t_0 ディレクティブの後、`namespace MyFirstVisualizer` する前に、次の属性コードを DebuggerSide.cs に追加します。
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -167,16 +167,16 @@ ms.locfileid: "67890917"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>ソリューションにコンソール アプリケーション プロジェクトを追加するには
 
-1. ソリューション エクスプ ローラーでソリューションを右クリックし、選択**追加**、 をクリックし、**新しいプロジェクト**します。
+1. ソリューションエクスプローラーで、ソリューションを右クリックし、 **[追加]** をクリックして、 **[新しいプロジェクト]** をクリックします。
 
     ::: moniker range=">=vs-2019"
-    検索ボックスに「**コンソール アプリ**、選択**テンプレート**、を選択し、**新しいコンソール アプリ (.NET Framework) の作成**です。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
+    検索ボックスに「 **console app**」と入力し、 **[テンプレート]** を選択し、[**新しいコンソールアプリの作成] (.NET Framework)** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual C#]** の下にある **[Windows デスクトップ]** を選択し、次に真ん中のウィンドウで **[コンソール アプリ (.NET Framework)]** を選択します。
     ::: moniker-end
 
-2. クラス ライブラリでは、適切な名前を入力します。 `MyTestConsole`、順にクリックします**作成**または**OK**します。
+2. クラスライブラリの適切な名前 (`MyTestConsole` など) を入力し、 **[作成]** または **[OK]** をクリックします。
 
    次に、必要な参照を追加して、MyTestConsole が MyFirstVisualizer を呼び出すことができるようにします。
 
@@ -184,7 +184,7 @@ ms.locfileid: "67890917"
 
 1. **ソリューション エクスプローラー**で、 **[MyTestConsole]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
-2. **参照の追加**ダイアログ ボックスで、**参照** タブで、Microsoft.VisualStudio.DebuggerVisualizers.DLL を選択します。
+2. **[参照の追加]** ダイアログボックスの **[参照] タブで**、[VisualStudio] を選択します。
 
 3. **[OK]** をクリックします。
 
@@ -205,7 +205,7 @@ ms.locfileid: "67890917"
     > [!NOTE]
     > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、新しいファイル名に合わせて TestConsole.cs のクラス宣言が自動的に変更されます。
 
-3. TestConsole.cs の `using` ステートメントに次のコードを追加します。
+3. TestConsole.cs で、次のコードを `using` ディレクティブに追加します。
 
    ```csharp
    using MyFirstVisualizer;
@@ -230,9 +230,9 @@ ms.locfileid: "67890917"
 
    テストは成功です。 これで、最初のビジュアライザーの作成とテストが完了しました。
 
-   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、「[方法 :ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)」をご覧ください。
+   作成したビジュアライザーをテスト ハーネスから呼び出すのではなく、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用する場合は、ビジュアライザーをインストールする必要があります。 詳細については、「[方法: ビジュアライザーをインストール](../debugger/how-to-install-a-visualizer.md)する」を参照してください。
 
-## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>ビジュアライザー項目テンプレートを使用して、ビジュアライザーを作成します。
+## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>ビジュアライザー項目テンプレートを使用してビジュアライザーを作成する
 
 このチュートリアルのこれまでの部分では、ビジュアライザーを手動で作成する方法について説明し、 これを演習形式で実行しました。 簡単なビジュアライザーがどのように動作するかを理解したことを踏まえて、ここでは、ビジュアライザー項目テンプレートを使用して、ビジュアライザーをより簡単に作成する方法を紹介します。
 
@@ -242,9 +242,9 @@ ms.locfileid: "67890917"
 
 1. **[ファイル]** メニューで **[新規]、[プロジェクト]** の順に選びます。
 
-2. **新しいプロジェクト**ダイアログ ボックスで、 **Visual c#** 、 **.NET Standard**します。
+2. **[新しいプロジェクト]** ダイアログボックスの **[ビジュアルC# ]** で、 **[.NET Standard]** を選択します。
 
-3. 中央のペインで選択**クラス ライブラリ**します。
+3. 中央のペインで、 **[クラスライブラリ]** を選択します。
 
 4. **[名前]** ボックスに、クラス ライブラリに対する適切な名前 (MySecondVisualizer など) を入力します。
 
@@ -258,7 +258,7 @@ ms.locfileid: "67890917"
 
 2. ショートカット メニューの **[追加]** を選び、次に **[新しい項目]** をクリックします。
 
-3. **新しい項目の追加**ダイアログ ボックスで、 **Visual c# アイテム**、**デバッガー ビジュアライザー**します。
+3. **[新しい項目の追加]** ダイアログボックスの **[ C#ビジュアル項目**] で、 **[デバッガービジュアライザー]** を選択します。
 
 4. **[名前]** ボックスに、適切な名前 (SecondVisualizer.cs など) を入力します。
 
@@ -269,5 +269,5 @@ ms.locfileid: "67890917"
 ## <a name="see-also"></a>関連項目
 
 - [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)
-- [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
+- [方法 : ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

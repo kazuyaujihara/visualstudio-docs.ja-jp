@@ -1,5 +1,5 @@
 ---
-title: 設定ストアの使用 |Microsoft Docs
+title: 設定ストアを使用する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4487020232b897d62711bb9053f43ad2ef2694f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f9c42835e720fd3c33e53d862192e3e2863a4423
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338106"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632598"
 ---
 # <a name="using-the-settings-store"></a>設定ストアの使用
-設定ストアの 2 つの種類があります。
+設定ストアには、次の2種類があります。
 
-- 構成設定は読み取り専用の Visual Studio および VSPackage の設定を示します。 Visual Studio では、このストアにすべての既知の .pkgdef ファイルから設定をマージします。
+- 構成設定。読み取り専用の Visual Studio と VSPackage の設定です。 Visual Studio は、すべての既知の pkgdef ファイルの設定をこのストアにマージします。
 
-- ユーザーの設定は、書き込み可能な設定のページに表示されるものなど、**オプション** ダイアログ ボックス、プロパティ ページ、およびその他の特定のダイアログ ボックス。 Visual Studio 拡張機能は、これらの少量のデータのローカル記憶域を使用できます。
+- ユーザー設定は、 **[オプション]** ダイアログボックス、プロパティページ、およびその他の特定のダイアログボックスのページに表示される設定などの書き込み可能な設定です。 Visual Studio 拡張機能では、少量のデータのローカルストレージにこれらを使用できます。
 
-  このチュートリアルでは、構成設定ストアからデータを読み取る方法を示します。 参照してください[ユーザー設定ストアへの書き込み](../extensibility/writing-to-the-user-settings-store.md)ユーザー設定ストアに書き込む方法の詳細について。
+  このチュートリアルでは、構成設定ストアからデータを読み取る方法について説明します。 ユーザー設定ストアに書き込む方法の詳細については[、「ユーザー設定ストアへの書き込み](../extensibility/writing-to-the-user-settings-store.md)」を参照してください。
 
-## <a name="creating-the-example-project"></a>サンプル プロジェクトを作成します。
- このセクションでは、デモについては、メニュー コマンドを使用して単純な拡張機能プロジェクトを作成する方法を示します。
+## <a name="creating-the-example-project"></a>サンプルプロジェクトの作成
+ このセクションでは、デモンストレーション用のメニューコマンドを使用して単純な拡張機能プロジェクトを作成する方法について説明します。
 
-1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`SettingsStoreExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。
+1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 @No__t_1 という名前の [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、 **[新しいプロジェクト]** ダイアログボックスの **[ビジュアルC# /拡張機能]** で見つけることができます。
 
-2. という名前のカスタム コマンド項目テンプレートを追加するようになりました**SettingsStoreCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**SettingsStoreCommand.cs**します。 カスタム コマンドを作成する方法の詳細については、次を参照してください[メニュー コマンドを使用して拡張機能の作成。](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. 次に、 **Settingsstorecommand**という名前のカスタムコマンド項目テンプレートを追加します。 **[新しい項目の追加]** ダイアログで、 **[ C#ビジュアル/機能拡張**] にアクセスし、 **[カスタムコマンド]** を選択します。 ウィンドウの下部にある **名前** フィールドで、コマンドファイル名 を**SettingsStoreCommand.cs**に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。
 
 ## <a name="using-the-configuration-settings-store"></a>構成設定ストアの使用
- このセクションでは、検出し、構成設定を表示する方法を示します。
+ このセクションでは、構成設定を検出して表示する方法について説明します。
 
-1. 次の追加、SettingsStorageCommand.cs ファイルでステートメントを使用します。
+1. SettingsStorageCommand.cs ファイルで、次の using ディレクティブを追加します。
 
    ```
    using System.Collections.Generic;
@@ -45,16 +45,16 @@ ms.locfileid: "66338106"
    using System.Windows.Forms;
    ```
 
-2. `MenuItemCallback`構成設定のストアを取得する次の行を追加、削除、メソッドの本体。
+2. @No__t_0 で、メソッドの本体を削除し、次の行を追加して構成設定ストアを取得します。
 
    ```
    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);
    ```
 
-    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>マネージ ヘルパー クラスを経由では、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>サービス。
+    @No__t_0 は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> サービスを介したマネージヘルパークラスです。
 
-3. Windows Phone ツールがインストールされているかどうかを調べるようになりました。 コードは、次のようになります。
+3. 次に、Windows Phone ツールがインストールされているかどうかを確認します。 コードは、次のようになります。
 
    ```
    private void MenuItemCallback(object sender, EventArgs e)
@@ -69,19 +69,19 @@ ms.locfileid: "66338106"
 
 4. コードをテストします。 プロジェクトをビルドし、デバッグを開始します。
 
-5. 実験用インスタンスでは、上、**ツール** メニューのをクリックして**呼び出す SettingsStoreCommand**します。
+5. 実験用インスタンスで、 **[ツール]** メニューの **[Settingsstorecommand の呼び出し]** をクリックします。
 
-    メッセージ ボックスというを表示する必要があります**Microsoft Windows Phone Developer Tools:** 続けて**True**または**False**します。
+    **Microsoft Windows Phone 開発者ツール**というメッセージボックスが表示されます。その後に**True**または**False**が続きます。
 
-   Visual Studio では、システム レジストリに設定ストアを保持します。
+   Visual Studio では、設定ストアはシステムレジストリに保持されます。
 
-#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>レジストリ エディターを使用して、構成設定を確認するには
+#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>レジストリエディターを使用して構成設定を確認するには
 
 1. Regedit.exe を開きます。
 
-2. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts に移動します\\します。
+2. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts \\ に移動します。
 
     > [!NOTE]
-    > \14.0Exp_Config\ といない \14.0_Config を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリ ハイブ"14.0Exp_Config"です。
+    > \14.0_Config \\ ではなく、\ 14.0を含むキーを確認していることを確認します。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリハイブ "14.0 Exp_Config" にあります。
 
-3. \Installed Products\ ノードを展開します。 前の手順でメッセージがある場合**Microsoft Windows Phone 開発者ツールをインストールします。True**、\Installed Products\ 場合に、Microsoft Windows Phone Developer Tools ノードが含まれている必要があります。 メッセージが場合**Microsoft Windows Phone 開発者ツールをインストールします。False**、し \Installed Products\ は Microsoft Windows Phone Developer Tools ノードを含めることはできません。
+3. [\ インストールされた製品] ノードを展開します。 前の手順のメッセージが**microsoft Windows Phone 開発者ツールインストールされている場合: True**の場合は、\ インストールされた製品 \ に microsoft Windows Phone 開発者ツールノードが含まれている必要があります。 メッセージが**microsoft Windows Phone 開発者ツールインストールされている場合: False**の場合、[\ インストールされた製品] に microsoft Windows Phone 開発者ツールノードを含めることはできません。

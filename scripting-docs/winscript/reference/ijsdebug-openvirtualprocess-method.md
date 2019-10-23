@@ -1,5 +1,5 @@
 ---
-title: Ijsdebug::openvirtualprocess メソッド |Microsoft Docs
+title: 'IJsDebug:: OpenVirtualProcess メソッド |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3de39beb28a68ec3b8e0d76b17a7e914a464ecfe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583595"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577747"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess メソッド
 新しい仮想プロセス オブジェクトの作成に使用するファクトリ メソッド。  
@@ -54,8 +54,8 @@ HRESULT OpenVirtualProcess(
 ## <a name="remarks"></a>Remarks  
  Jscript9diag と Jscript9 が一致しない場合は E_JsDEBUG_MISMATCHED_RUNTIME を返します。  
   
-## <a name="requirements"></a>必要条件  
- **ヘッダー:** jscript9diag.h です  
+## <a name="requirements"></a>［要件］  
+ **ヘッダー:** jscript9diag.h  
   
 ## <a name="see-also"></a>関連項目  
  [IJsDebug インターフェイス](../../winscript/reference/ijsdebug-interface.md)

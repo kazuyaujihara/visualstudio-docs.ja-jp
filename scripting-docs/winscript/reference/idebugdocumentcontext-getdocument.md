@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::GetDocument |Microsoft Docs
+title: 'IDebugDocumentContext:: GetDocument |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfcc5b3e2d2e197619f9bc4ec19b55c9eaf1d2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf4c52d1a866df12a129f1d4f2e864068c876fa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974437"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577080"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 このコンテキストを含むドキュメントを返します。  
@@ -37,7 +37,7 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>パラメーター  
  `ppsd`  
- [out]このドキュメントは、このコンテキストが含まれています。  
+ 入出力このコンテキストを含むドキュメント。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT GetDocument(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- `GetDocument`メソッドは、このコンテキストを含むドキュメントを返します。  
+ @No__t_0 メソッドは、このコンテキストを含むドキュメントを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentContext インターフェイス](../../winscript/reference/idebugdocumentcontext-interface.md)

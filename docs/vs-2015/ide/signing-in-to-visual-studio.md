@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2015 へのサインイン |Microsoft Docs
+title: Visual Studio 2015 | にサインインします。Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679832"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661219"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio へのサインイン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 
 - 無料のソフトウェア、トレーニング、サポートなど、Visual Studio Dev Essentials プログラムにおける**さまざまな特典にアクセスできます** 。 詳細については、「 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 」をご覧ください。
 
-- **Visual Studio の設定を同期する** – どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 「[Visual Studio での同期された設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)」をご覧ください。
+- **Visual Studio の設定を同期する** – どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 「 [Visual Studio での同期された設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)」をご覧ください。
 
 - **Visual Studio Express エディションのロックを完全に解除する** – 任意のエディションの Visual Studio Express を、30 日の評価期間にとらわれることなく使用できます。
 
@@ -46,7 +46,7 @@ Visual Studio の開発環境をカスタマイズし、最適化するには、
 
  設定が終わったら、Visual Studio が起動し、サインインして、作業を開始できるようになります。 ログインしているかどうかを確認するには、Visual Studio 環境の右上隅に表示されているプロファイル名を探します。
 
- ![現在ログインしているユーザー](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Currentlly ログインユーザー](../ide/media/vs2015-username.png "VS2015_UserName")
 
  サインアウトしない限り、Visual Studio を起動すると自動的にサインインすることになり、同期された設定への変更が自動的に適用されます。 サインアウトするには、Visual Studio 環境の自分のプロファイル名の横にある下矢印をクリックし、 **[アカウント設定]** をクリックして、 **[サインアウト]** リンクをクリックします。 再度サインインするには、Visual Studio 環境の右上隅の **[サインイン]** をクリックします。
 

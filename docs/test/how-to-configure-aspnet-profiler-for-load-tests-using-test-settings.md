@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979303"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643753"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>方法: Visual Studio でテストの設定を使用してロード テスト用の ASP.NET プロファイラーを構成する
 
@@ -29,24 +29,24 @@ ASP.NET プロファイラー診断データ アダプターを使用すると�
 > [!NOTE]
 > ASP.NET プロファイラー診断データ アダプターは、インターネット インフォメーション サービス (IIS) プロセスをプロファイルします。 そのため、開発用 Web サーバーに対しては機能しません。 ロード テスト内で Web サイトをプロファイルするには、IIS が実行されているコンピューターにテスト エージェントをインストールする必要があります。 テスト エージェントはロードを生成しませんが、収集のみを目的としたエージェントとなります。 詳細については、[テスト エージェントのインストールと構成](../test/lab-management/install-configure-test-agents.md)に関するページを参照してください。
 
-詳細については、「[方法 :配布されたロード テストのテスト設定を作成する](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)」を参照してください。
+詳細については、[配布されたロード テストのテスト設定を作成する](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)」を参照してください。
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>テストの設定に対して ASP.NET プロファイラーを構成する
 
-この手順を実行する前に、Visual Studio からテストの設定を開き、**[データと診断]** ページを選択する必要があります。
+この手順を実行する前に、Visual Studio からテストの設定を開き、 **[データと診断]** ページを選択する必要があります。
 
 1. ASP.NET プロファイラーのデータの収集に使用するロールを選択します。
 
     > [!WARNING]
     > このロールは Web サーバーである必要があります。
 
-2. **[ASP.NET プロファイラー]** を選択して、ASP.NET のプロファイル データの収集を有効にし、**[構成]** を選択します。
+2. **[ASP.NET プロファイラー]** を選択して、ASP.NET のプロファイル データの収集を有効にし、 **[構成]** を選択します。
 
      ASP.NET のプロファイル データの収集を構成するダイアログ ボックスが表示されます。
 
 3. **[プロファイラー サンプリング間隔]** で、ASP.NET のプロファイル サンプルを次に取得するまで待機する CPU のクロック サイクル数 (停止なし) を示す値を入力します。
 
-4. 階層の相互作用のプロファイルを有効にするには、**[階層の相互作用のプロファイルを有効にする]** を選択します。
+4. 階層の相互作用のプロファイルを有効にするには、 **[階層の相互作用のプロファイルを有効にする]** を選択します。
 
      階層の相互作用のプロファイルでは、成果物 (*MyPage.aspx*、*CompanyLogo.gif* など) ごとに Web サーバーに送信される要求の数と、各要求の処理に要する時間がカウントされます。 さらに、ページ要求の一環として使用された ADO.NET 接続と、その要求処理の一環としてクエリやストアド プロシージャ呼び出しが実行された回数が収集されます。
 

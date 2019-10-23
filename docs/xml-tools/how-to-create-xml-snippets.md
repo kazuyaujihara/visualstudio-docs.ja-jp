@@ -1,19 +1,19 @@
 ---
-title: '方法: XML スニペットを作成する'
+title: '方法 : XML スニペットを作成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926502"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645936"
 ---
 # <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成する
 
@@ -23,23 +23,23 @@ XML エディターを使用して、新しい XML スニペットを作成で�
 
 新しい XML コードスニペットを作成するには、新しい XML ファイルを作成し、**スニペットの挿入**機能を使用します。
 
-1. [**ファイル**] メニューの [**新規作成**] をクリックし、[**ファイル**] をクリックします。
+1. **[ファイル]** メニューの **[新規作成]** をクリックし、 **[ファイル]** をクリックします。
 
-2. [ **XML ファイル**] をクリックし、[**開く**] をクリックします。
+2. **[XML ファイル]** をクリックし、 **[開く]** をクリックします。
 
-3. エディターペイン内を右クリックし、[**スニペットの挿入**] を選択します。
+3. エディターペイン内を右クリックし、 **[スニペットの挿入]** を選択します。
 
-4. 一覧から [**スニペット**] を選択し、enter キーを押します。
+4. 一覧から **[スニペット]** を選択し **、enter キーを押します。**
 
 5. 新しいスニペットに必要な変更を加えます。
 
-6. [**ファイル**] メニューの [ **XMLFile の保存**] を選択します。
+6. **[ファイル]** メニューの **[XMLFile の保存]** を選択します。
 
-     [**ファイル名を付けて保存**] ダイアログボックスが表示されます。
+     **[ファイル名を付けて保存]** ダイアログボックスが表示されます。
 
-7. 新しいスニペットの名前を入力し、[**保存の種類**] ボックスの一覧の [**スニペットファイル**] を選択します。
+7. 新しいスニペットの名前を入力し、 **[保存の種類]** ボックスの一覧の **[スニペットファイル]** を選択します。
 
-8. [**保存**先] ドロップダウンリストを使用して、ファイルの場所を*My Documents\Visual Studio 2005 \ Code \code snippets\xml\my XML スニペット*フォルダーに変更し、[**保存**] をクリックします。
+8. **[保存]** 先 ドロップダウンリストを使用して、ファイルの場所を*My Documents\Visual Studio 2005 \ Code \code snippets\xml\my XML スニペット*フォルダーに変更し、 **[保存]** をクリックします。
 
 ## <a name="snippet-description"></a>スニペットの説明
 
@@ -56,7 +56,7 @@ XML エディターを使用して、新しい XML スニペットを作成で�
 </SnippetTypes>
 ```
 
-この`Expansion`型は、[**スニペットの挿入**] コマンドを呼び出すときにスニペットを表示するかどうかを決定します。 この`SurroundsWith`型は、[コマンド**で囲む**] コマンドを呼び出すときにスニペットを表示するかどうかを決定します。
+@No__t_0 型は、 **[スニペットの挿入]** コマンドを呼び出すときにスニペットを表示するかどうかを決定します。 @No__t_0 型は、[コマンド**で囲む**] コマンドを呼び出すときにスニペットを表示するかどうかを決定します。
 
 ### <a name="code-element"></a>コード要素
 
@@ -104,7 +104,7 @@ name 要素の値は、編集可能な領域としてマークされます。
 </Literal
 ```
 
-リテラルは関数を参照することもできます。 XML エディターには、 **Lookupprefix**という名前の関数が含まれています。 **Lookupprefix**関数は、このスニペットが呼び出される XML ドキュメント内の場所から指定された名前空間 URI を検索し、その名前空間に対して定義されている名前空間プレフィックス (存在する場合) とコロン:) (:) が含まれているものを返します。を指定します。 次に、 **lookupprefix**関数を`Literal`使用する要素の例を示します。
+リテラルは関数を参照することもできます。 XML エディターには、 **Lookupprefix**という名前の関数が含まれています。 **Lookupprefix**関数は、このスニペットが呼び出される XML ドキュメント内の場所から指定された名前空間 URI を検索し、その名前空間に対して定義されている名前空間プレフィックス (存在する場合) とコロン:) (:) が含まれているものを返します。を指定します。 次に、 **Lookupprefix**関数を使用する `Literal` 要素の例を示します。
 
 ```xml
 <Literal Editable="false">
@@ -119,4 +119,4 @@ name 要素の値は、編集可能な領域としてマークされます。
 
 - [XML スニペット](../xml-tools/xml-snippets.md)
 - [方法: XML スニペットを使用する](../xml-tools/how-to-use-xml-snippets.md)
-- [方法: Xml スキーマから XML スニペットを生成する](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [方法: xml スキーマから XML スニペットを生成する](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

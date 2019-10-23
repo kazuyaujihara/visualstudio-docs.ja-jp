@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976197"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574383"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>スマート ホスト ヘルパー インターフェイスの実装
 [IDebugDocumentHelper インターフェイス](../winscript/reference/idebugdocumenthelper-interface.md)は、スマート ホストに必要な多くのインターフェイスの実装を提供することで、アクティブ デバッグ用のスマート ホストを作成するタスクを大幅に簡略化します。  
@@ -72,7 +72,7 @@ ms.locfileid: "62976197"
   
 3. ドキュメントの親ヘルパー (または、ドキュメントがルートの場合は NULL) で [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) を呼び出して、ツリー内でのドキュメントの位置を定義し、デバッガーに認識されるようにします。  
   
-4. [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) または [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) を呼び出して、ドキュメントのテキストを定義します  (ブラウザーのようにドキュメントがインクリメント方式でダウンロードされる場合、これらのメソッドを複数回呼び出すことができます。)  
+4. [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) または [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) を呼び出して、ドキュメントのテキストを定義します (ブラウザーのようにドキュメントがインクリメント方式でダウンロードされる場合、これらのメソッドを複数回呼び出すことができます。)  
   
 5. [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) を呼び出して、各スクリプト ブロックの範囲と、関連付けられているスクリプト エンジンを定義します。  
   

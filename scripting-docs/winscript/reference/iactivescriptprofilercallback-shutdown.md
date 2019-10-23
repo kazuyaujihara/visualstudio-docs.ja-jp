@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Shutdown |Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: Shutdown |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: deecfe4134a4b0e18591823f194ceaf6d1eb0a14
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993424"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571646"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-プロファイラー オブジェクトをスクリプト エンジンのプロファイリングを停止するたびに通知するために呼び出されます。 これにより、必要な場合、プロファイラーのオブジェクトでそのクリーンアップ ルーチンを呼び出すことができます。 スクリプト エンジンのシャット ダウンするとき、またはへの呼び出しに、このメソッドはスクリプト エンジンによって呼び出されますも[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)は失敗します。  
+スクリプトエンジンでプロファイリングが停止されたときに、プロファイラーオブジェクトに通知するために呼び出されます。 このようにして、profiler オブジェクトは必要に応じてクリーンアップルーチンを呼び出すことができます。 このメソッドは、スクリプトエンジンがシャットダウンしたとき、または[IActiveScriptProfilerCallback:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)の呼び出しが失敗したときに、スクリプトエンジンによっても呼び出されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,10 +34,10 @@ HRESULT Shutdown(
   
 #### <a name="parameters"></a>パラメーター  
  `hrReason`  
- [in]シャット ダウンの理由です。 スクリプト エンジンのシャット ダウン場合`S_OK`が渡されます。 場合に呼び出し[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)エラー HRESULT を返します、HRESULT が渡されます。 この値を取得する場合は、 [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)します。  
+ からシャットダウンの理由。 スクリプトエンジンがシャットダウン中の場合、`S_OK` が渡されます。 [IActiveScriptProfilerCallback:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)を呼び出すと、エラー hresult が返される場合は、hresult が渡されます。 それ以外の場合、この値は[IActiveScriptProfilerControl:: StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)から取得されます。  
   
 ## <a name="return-value"></a>戻り値  
- このメソッドの戻り値は、スクリプト エンジンによって無視されます。  
+ このメソッドの戻り値は、スクリプトエンジンによって無視されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptProfilerCallback インターフェイス](../../winscript/reference/iactivescriptprofilercallback-interface.md)

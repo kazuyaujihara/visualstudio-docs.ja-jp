@@ -14,21 +14,21 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39a1d803229dd614d0022ca14eb79b39f27f88b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006445"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575645"
 ---
 # <a name="syntax-error-javascript"></a>構文エラー (JavaScript)
-1 つまたは複数の文法規則に違反するステートメントを作成して[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]します。  
+@No__t_0 の文法規則の1つ以上に違反するステートメントを作成しました。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 行番号が示される、プログラムの構文を再確認してください。  
+- 示されている行番号でプログラムの構文を再確認します。  
   
-- 宛先を間違えるかっこまたは中かっこを探します。  
+- 誘導かっこまたは中かっこを検索します。  
   
 ## <a name="see-also"></a>関連項目  
  [Error オブジェクト](../../javascript/reference/error-object-javascript.md)

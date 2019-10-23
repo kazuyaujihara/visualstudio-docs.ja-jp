@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::SetNextStatement |Microsoft Docs
+title: 'IRemoteDebugApplicationThread:: SetNextStatement |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c4b19322a15e92adcf2609c479af6b21e2078bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e690d0e5b7567aabc88aabde907b67517f12aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788142"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575508"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-特定のフレームのコンテキストで指定したコードのコンテキストにできるだけ近い、引き続き強制的に実行します。  
+指定されたフレームのコンテキストで、指定されたコードコンテキストにできるだけ近いうちに実行を継続します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>パラメーター  
  `pStackFrame`  
- [in]スタック フレーム オブジェクト。 この引数には、null の場合、現在のスタック フレームを使用することを意味する可能性があります。  
+ からスタックフレームオブジェクト。 この引数は NULL にすることができます。これは、現在のスタックフレームが使用されることを意味します。  
   
  `pCodeContext`  
- [in]コード コンテキスト。 この引数には、null の場合、現在のコード コンテキストを使用することを意味する可能性があります。  
+ からコードコンテキスト。 この引数は NULL にすることができます。これは、現在のコードコンテキストを使用する必要があることを意味します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -51,7 +51,7 @@ HRESULT SetNextStatement(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、実行を継続によって指定されたコードのコンテキストにできるだけ近い`pCodeContext`で指定されたフレームのコンテキストで`pStackFrame`します。 これらの引数のいずれかの可能性があります`NULL`、現在のフレームまたはコンテキストを表します。  
+ このメソッドは、`pStackFrame` によって指定されたフレームのコンテキストで、`pCodeContext` によって指定されたコードコンテキストにできるだけ近づけるように実行を強制します。 これらの引数のいずれかが、現在のフレームまたはコンテキストを表す `NULL` である可能性があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplicationThread インターフェイス](../../winscript/reference/iremotedebugapplicationthread-interface.md)

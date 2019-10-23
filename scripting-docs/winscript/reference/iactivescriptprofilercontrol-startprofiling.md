@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling |Microsoft Docs
+title: 'IActiveScriptProfilerControl:: StartProfiling |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993138"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571573"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-スクリプト エンジンのプロファイリングを開始します。 スクリプト エンジンを呼び出すことによって、プロファイラー オブジェクトのインスタンスを作成する[CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)します。  
+スクリプトエンジンでのプロファイリングを開始します。 スクリプトエンジンは、 [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)を呼び出すことによって、プロファイラーオブジェクトのインスタンスを作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,13 +36,13 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>パラメーター  
  `clsidProfilerObject`  
- [in]クラス id (CLSID) プロファイラー オブジェクトを作成します。  
+ から作成されるプロファイラーオブジェクトのクラス識別子 (CLSID)。  
   
  `dwEventMask`  
- [in]イベントの種類を指定する 4 バイトのビットマスク。 ビットが定義されている[PROFILER_EVENT_MASK 列挙型](../../winscript/reference/profiler-event-mask-enumeration.md)します。  
+ からイベントの種類を指定する4バイトビットマスク。 ビットは[PROFILER_EVENT_MASK 列挙型](../../winscript/reference/profiler-event-mask-enumeration.md)で定義されます。  
   
  `dwContext`  
- [in]プロファイラーのオブジェクトに渡される 4 バイト値。  
+ からプロファイラーオブジェクトに渡される4バイトの値。  
   
 ## <a name="return-value"></a>戻り値  
  HRESULT を返します。 次の値を指定できます。  
@@ -50,7 +50,7 @@ HRESULT StartProfiling(
 |戻り値|説明|  
 |------------------|-------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`ACTIVPROF_E_PROFILER_PRESENT`|プロファイルは既に有効です。|  
+|`ACTIVPROF_E_PROFILER_PRESENT`|プロファイルは既に有効になっています。|  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptProfilerControl インターフェイス](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

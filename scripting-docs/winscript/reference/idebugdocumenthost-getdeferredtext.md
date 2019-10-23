@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenthost::getdeferredtext |Microsoft Docs
+title: 'IDebugDocumentHost:: GetDeferredText |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 273b4eb52b7263d34c347dff3a00479945b809df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446567"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569422"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-使用して追加された文字の範囲を返します、`IDebugDocumentHelper::AddDeferredText`元ホスト ドキュメント内のメソッド。  
+元のホストドキュメントで `IDebugDocumentHelper::AddDeferredText` メソッドを使用して追加された文字の範囲を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,19 +41,19 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>パラメーター  
  `dwTextStartCookie`  
- [in]テキストの開始位置を表すホスト定義のクッキー。  
+ からテキストの開始位置を表すホスト定義のクッキー。  
   
  `pcharText`  
- [入力、出力]文字のテキスト バッファー。 このパラメーターがある場合に、このメソッドで文字が返されません`NULL`します。  
+ [入力、出力]文字テキストバッファー。 このパラメーターが `NULL` 場合、このメソッドは文字を返しません。  
   
  `pstaTextAttr`  
- [入力、出力]文字の属性のバッファー。 このパラメーターがある場合に、このメソッドで属性が返されません`NULL`します。  
+ [入力、出力]文字属性バッファー。 このパラメーターが `NULL` 場合、このメソッドは属性を返しません。  
   
  `pcNumChars`  
- [入力、出力]返される文字/属性の実際の数を示します。 このパラメーターは、このメソッドを呼び出す前にゼロに設定する必要があります。  
+ [入力、出力]返される文字/属性の実際の数を示します。 このメソッドを呼び出す前に、このパラメーターを0に設定する必要があります。  
   
  `cMaxChars`  
- [in]返される文字の最大数。  
+ から返す最大文字数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -64,12 +64,12 @@ HRESULT GetDeferredText(
 |`E_NOTIMPL`|メソッドが実装されていません。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドが返す可能性があります`E_NOTIMPL`ホストが要求されていない場合、`IDebugDocumentHelper::AddDeferredText`します。  
+ ホストが `IDebugDocumentHelper::AddDeferredText` を呼び出さない場合、このメソッドは `E_NOTIMPL` を返す可能性があります。  
   
 > [!NOTE]
-> このメソッドは、元のドキュメントからテキストを返します。 ホストを追跡するありません編集内容やその他の変更をドキュメントにします。  
+> このメソッドは、元のドキュメントからテキストを返します。 ホストは、ドキュメントに対する編集やその他の変更を追跡しません。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHost インターフェイス](../../winscript/reference/idebugdocumenthost-interface.md)   
- [:Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [SOURCE_TEXT_ATTR 列挙型](../../winscript/reference/source-text-attr-enumeration.md)

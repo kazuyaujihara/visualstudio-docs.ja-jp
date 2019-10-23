@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint |Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnLeaveBreakPoint |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f10ffdd19abd2aada2a98d6d0ae523686abb2e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f4be875f5b420ff96e22ee06cdbeb2929466381
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935025"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571945"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-ブレークポイントを残し、イベントを処理します。  
+ブレークポイントから抜けるイベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>パラメーター  
  `prdat`  
- [in]ブレークポイントのまま、アプリケーション スレッドです。  
+ からブレークポイントを残したアプリケーションスレッド。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT OnLeaveBreakPoint(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ブレークポイントを残し、イベントを処理します。  
+ このメソッドは、ブレークポイントから出るためのイベントを処理します。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplicationEvents インターフェイス](../../winscript/reference/iremotedebugapplicationevents-interface.md)

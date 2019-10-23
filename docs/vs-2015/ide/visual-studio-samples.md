@@ -1,5 +1,5 @@
 ---
-title: サンプル |Microsoft Docs
+title: Samples |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - sample applications [Visual Studio]
 ms.assetid: 3070fa13-46c7-4252-a1c2-857b4a2c9528
 caps.latest.revision: 58
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b84292e35fd07a7ab3d47c36a6a6c7a79224c201
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ca8edf15aaf8a48ee7003d7c7a5f66d7762b87d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698139"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667069"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio のサンプル
+# <a name="visual-studio-samples"></a>Visual Studio Samples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [MSDN コード ギャラリー](http://go.microsoft.com/fwlink/?LinkID=127810) Web サイトで、Visual Studio のサンプルを見つけることができます。
 
- また、 **[新しいプロジェクト]** ダイアログ ボックスを使用して、サンプルを参照することもできます (このダイアログ ボックスを開くには、メニュー バーで **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順に選択します)。
+ また、 **[新しいプロジェクト]** ダイアログ ボックスを使用して、サンプルを参照することもできます (このダイアログ ボックスを開くには、メニュー バーで **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順に選択します)。
 
 ## <a name="finding-samples"></a>サンプルの検索
  次に、サンプルを検索できる他の場所を示します。
@@ -38,8 +38,8 @@ ms.locfileid: "65698139"
 |[JavaScript のサンプル](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|JavaScript でさまざまな機能を使用する方法を示します。|
 |[C++ のサンプル](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|C++ でさまざまな機能を使用する方法を示します。|
 |[DirectX のサンプル](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|DirectX の使い方を示します。|
-|[Office 開発のサンプル](https://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Visual Studio 内で Office 開発ツールを使用する方法を示します。 最新のサンプルでは、次を参照してください。 [MSDN デベロッパー サンプル。コードから学習](http://go.microsoft.com/fwlink/?LinkID=248199)します。|
+|[Office 開発のサンプル](https://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Visual Studio 内で Office 開発ツールを使用する方法を示します。 最新のサンプルについては、「 [コード レシピ: サンプルコードから学ぶ](http://go.microsoft.com/fwlink/?LinkID=248199)」をご覧ください。|
 |[VSSDK のサンプル](https://aka.ms/vs2015sdksamples)|Visual Studio を拡張する方法を示します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual C# と Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

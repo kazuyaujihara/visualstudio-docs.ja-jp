@@ -1,5 +1,5 @@
 ---
-title: CA1026:既定のパラメーターを使用する |Microsoft Docs
+title: 'CA1026: 既定のパラメーターを使用することはできません |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - DefaultParametersShouldNotBeUsed
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8fffbdc2cf9f4e09fe98c8e14b6692802ab3f275
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704182"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661940"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026:既定パラメーターを使用することはできません
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: 既定のパラメーターを使用できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|カテゴリ|Microsoft.Design|
+|カテゴリ|Microsoft Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 外部から参照の型には、既定のパラメーターを使用する、外部から参照できるメソッドが含まれています。
+ 外部から参照できる型には、既定のパラメーターを使用する外部から参照できるメソッドが含まれています。
 
 ## <a name="rule-description"></a>規則の説明
- 既定のパラメーターを使用するメソッドは下で、共通言語仕様 (CLS); を使用します。ただし、CLS では、これらのパラメーターに割り当てられている値を無視するコンパイラが使用できます。 既定のパラメーター値を無視するコンパイラ用に記述されたコードでは、既定の各パラメーターの引数を明示的に指定する必要があります。 プログラミング言語間で使用する動作を維持するためには、既定のパラメーターを提供するメソッドのオーバー ロードを持つ既定のパラメーターを使用するメソッドを置き換える必要があります。
+ 既定のパラメーターを使用するメソッドは、共通言語仕様 (CLS) で許可されています。ただし、CLS では、これらのパラメーターに割り当てられている値をコンパイラで無視できます。 既定のパラメーター値を無視するコンパイラ用に記述されたコードでは、既定のパラメーターごとに引数を明示的に指定する必要があります。 プログラミング言語全体で必要な動作を維持するには、既定のパラメーターを使用するメソッドを、既定のパラメーターを指定するメソッドのオーバーロードに置き換える必要があります。
 
- コンパイラは、マネージ コードにアクセスするときの既定のパラメーターの値を管理拡張機能の C++ の無視します。 Visual Basic コンパイラを使用する既定のパラメーターを持つメソッドをサポートしている、 [(省略可能)](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)キーワード。
+ マネージコードにアクセスC++するときに、コンパイラはマネージ拡張の既定のパラメーターの値を無視します。 Visual Basic コンパイラは、[省略可能](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)なキーワードを使用する既定のパラメーターを持つメソッドをサポートしています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、既定パラメーターを指定するメソッドのオーバー ロードを持つ既定のパラメーターを使用するメソッドを置き換えます。
+ この規則違反を修正するには、既定のパラメーターを使用するメソッドを、既定のパラメーターを指定するメソッドのオーバーロードに置き換えます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、既定のパラメーターを使用するメソッドと同等の機能を提供するオーバー ロードされたメソッドを示します。
+ 次の例は、既定のパラメーターを使用するメソッドと、同等の機能を提供するオーバーロードされたメソッドを示しています。
 
  [!code-vb[FxCop.Design.DefaultParameters#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.DefaultParameters/vb/FxCop.Design.DefaultParameters.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA 1025:反復する引数を params 配列で置き換えます](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+ [CA1025: 反復する引数を params 配列で置き換えます](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [言語への非依存性、および言語非依存コンポーネント](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

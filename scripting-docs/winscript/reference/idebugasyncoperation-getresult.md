@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetResult |Microsoft Docs
+title: 'IDebugAsyncOperation:: GetResult |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49cf761c85fce3f8fc2f6705d114ab042e0c2ecd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55c51649a5bc3094dd306166e013a892ce67e236
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822046"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573283"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-同期デバッグ操作から返されたオブジェクトのパラメーターと戻り値を提供します。  
+同期デバッグ操作からの戻り値と戻り値オブジェクトパラメーターを提供します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>パラメーター  
  `phrResult`  
- [out]操作が完了すると場合、`phrResult`の戻り値は、`IDebugSyncOperation::Execute`します。  
+ 入出力操作が完了すると、`phrResult` が `IDebugSyncOperation::Execute` の戻り値になります。  
   
  `ppunkResult`  
- [out]操作が完了すると場合、`ppunkResult`操作によって返されるオブジェクトのパラメーターです。  
+ 入出力操作が完了した場合、`ppunkResult` は操作によって返されるオブジェクトパラメーターです。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -49,10 +49,10 @@ HRESULT GetResult(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_PENDING`|操作が完了していません。|  
+|`E_PENDING`|操作は完了していません。|  
   
 ## <a name="remarks"></a>Remarks  
- かどうか、操作が完了したら、このメソッドが戻る、`HRESULT`オブジェクトからパラメーターと`IDebugSyncOperation::Execute`します。  
+ 操作が完了している場合、このメソッドは `IDebugSyncOperation::Execute` から `HRESULT` とオブジェクトのパラメーターを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetDispID | Microsoft Docs
+title: 'IDispatchEx:: GetDispID |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95ab1d72e5b2f608c51ac6e56be1986df8945ec2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57f0faf6004e2219600f0dbd63749a7e65ca438c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000868"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576596"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-1 つのメンバー名を対応するように DISPID を後続の呼び出しのために使用する、マップ`IDispatchEx::InvokeEx`します。  
+1つのメンバー名を対応する DISPID にマップします。これは、後続の `IDispatchEx::InvokeEx` への呼び出しで使用できます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,20 +39,20 @@ HRESULT GetDispID(
   
 #### <a name="parameters"></a>パラメーター  
  `bstrName`  
- マップする名前で渡されます。  
+ マップされる名前が渡されました。  
   
  `grfdex`  
  メンバー識別子を取得するためのオプションを決定します。 次の値の組み合わせを指定できます。  
   
 |[値]|説明|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|名前参照は、大文字と小文字で実行するように要求します。 大文字のルックアップをサポートしていないオブジェクトによって無視可能性があります。|  
-|fdexNameEnsure|存在しない場合、メンバーを作成することを要求します。 値で、新しいメンバーを作成する必要があります`VT_EMPTY`します。|  
-|fdexNameImplicit|ベース オブジェクトが明示的に指定されていない場合に、呼び出し元が特定の名前のメンバーのオブジェクトを検索することを示します。|  
-|fdexNameCaseInsensitive|名前参照で大文字と小文字を行うように要求します。 大文字のルックアップをサポートしていないオブジェクトによって無視可能性があります。|  
+|fdexNameCaseSensitive|大文字と小文字を区別する方法で名前の参照を実行するように要求します。 大文字と小文字を区別する検索をサポートしていないオブジェクトによって無視される場合があります。|  
+|fdexNameEnsure|メンバーが存在しない場合に作成されることを要求します。 新しいメンバーは `VT_EMPTY` 値を使用して作成する必要があります。|  
+|fdexNameImplicit|ベースオブジェクトが明示的に指定されていない場合に、呼び出し元が特定の名前のメンバーのオブジェクトを検索していることを示します。|  
+|fdexNameCaseInsensitive|大文字と小文字を区別せずに名前参照を実行するように要求します。 大文字と小文字を区別しない検索をサポートしていないオブジェクトによって無視される場合があります。|  
   
  `pid`  
- DISPID 結果を受信する呼び出し元が割り当てた場所へのポインター。 エラーが発生する場合`pid`DISPID_UNKNOWN が含まれています。  
+ DISPID の結果を受信するために、呼び出し元に割り当てられた場所へのポインター。 エラーが発生した場合、`pid` には DISPID_UNKNOWN が含まれます。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -60,15 +60,15 @@ HRESULT GetDispID(
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|`E_OUTOFMEMORY`|メモリ不足です。|  
+|`E_OUTOFMEMORY`|メモリが不足しています。|  
 |`DISP_E_UNKNOWNNAME`|名前が不明です。|  
   
 ## <a name="remarks"></a>Remarks  
- `GetDispID` 代わりに使用できる`GetIDsOfNames`指定されたメンバーの DISPID を取得します。  
+ 指定されたメンバーの DISPID を取得するために、`GetIDsOfNames` の代わりに `GetDispID` を使用できます。  
   
- `IDispatchEx`追加と削除、メンバーの Dispid のセットの一定していないオブジェクトの有効期間を使用します。  
+ @No__t_0 によってメンバーの追加と削除が許可されるため、Dispid のセットは、オブジェクトの有効期間にわたって一定のままになりません。  
   
- 未使用`riid`パラメーター`IDispatch::GetIDsOfNames`が削除されました。  
+ @No__t_1 の未使用の `riid` パラメーターが削除されました。  
   
 ## <a name="example"></a>例  
   

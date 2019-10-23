@@ -62,13 +62,14 @@
           href: using-the-assert-classes.md
         - name: Microsoft Fakes
           items:
-            - name: Microsoft Fakes を使用したテストでコードを分離する
+            - name: テスト対象のコードを分離する
+              displayName: 'shim, stub, fakes'
               href: isolating-code-under-test-with-microsoft-fakes.md
-            - name: スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
+            - name: スタブを使用してアプリケーションの各部分を分離する
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
-            - name: shim を使用して単体テストでアプリケーションを他のアセンブリから分離する
+            - name: shim を使用して他のアセンブリからアプリを分離する
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
-            - name: Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
+            - name: コード生成、コンパイル、名前付け規則
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: データ ドリブン単体テスト
           items:
@@ -119,13 +120,13 @@
     - name: はじめに
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Live Unit Testing の新機能
+    - name: 新機能
       href: live-unit-testing-whats-new.md
-    - name: Live Unit Testing の概要
+    - name: 作業開始
       href: live-unit-testing-start.md
-    - name: Enterprise エディションで Live Unit Testing を使用する
+    - name: 構成と使用
       href: live-unit-testing.md
-    - name: Live Unit Testing に関する FAQ
+    - name: よくあるご質問
       href: live-unit-testing-faq.md
 - name: Web パフォーマンスおよびロード テスト
   items:

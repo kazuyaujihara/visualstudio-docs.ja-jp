@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars |Microsoft Docs
+title: 'IActiveScriptAuthor:: GetChars |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935374"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576251"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-要求完了のコンテキストの終了文字のセットを返します。  
+要求された完了コンテキストの完了文字のセットを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,19 +38,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>パラメーター  
  `fRequestedList`  
- [in]要求完了のコンテキスト。  
+ から要求された完了コンテキスト。  
   
-|定数|値|説明|  
+|定数|[値]|説明|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|左側にある列挙型を要求します。|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|メンバー入力候補のコンテキストを要求します。|  
-|SCRIPT_CMPL_PARAM_TRIGGER|0x0003|パラメーター リストを要求します。|  
-|SCRIPT_CMPL_COMMIT|0x0004|パラメーター リストの要求の完了します。|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|左辺の列挙を要求します。|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|メンバーの完了コンテキストを要求します。|  
+|SCRIPT_CMPL_PARAM_TRIGGER|0x0003|パラメーターリストを要求します。|  
+|SCRIPT_CMPL_COMMIT|0x0004|パラメーターリストの完了を要求します。|  
   
  `pbstrChars`  
- [out]要求完了のコンテキストに対応する文字。  
+ 入出力要求された完了コンテキストに対応する文字。  
   
-|`fRequestedList` パラメーター|返された文字列|  
+|`fRequestedList` パラメーター|返される文字|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  

@@ -8,31 +8,31 @@ helpviewer_keywords:
 - Domain-Specific Language, commands
 ms.assetid: 7d025d0b-6543-4a49-9f6b-8b8cfcad77ee
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 220ceab29cb2b9bc1b117a98326d22c3c546a162
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 599bf14a3d37fbd6bdff111f79e658f44624792b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658460"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform コマンド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DslTextTransform.cmd、TextTransform.exe を呼び出すし、一般的なオプションを使用して実行するスクリプトです。 DslTextTransformation.cmd を使用して、夜間のビルドを自動化することができます、[!INCLUDE[dsl](../includes/dsl-md.md)]プロジェクト。 詳細については、次を参照してください。 [TextTransform ユーティリティを使ってファイルを生成する](../modeling/generating-files-with-the-texttransform-utility.md)します。  
-  
- DslTextTransform.cmd については、次のディレクトリにあります。  
-  
- **\<Visual Studio SDK Installation Path>\VisualStudioIntegration\Tools\Bin**  
-  
- DslTextTransform.cmd への入力として、次の引数を指定できます。  
-  
-- ドメイン モデル プロジェクトの出力ディレクトリ。  
-  
-- デザイナー定義プロジェクトの出力ディレクトリ。  
-  
-- テキスト テンプレート ファイルの場所。  
-  
-  DslTextTransform.cmd では、既定のディレクティブ プロセッサとアセンブリを使用して、指定したテキスト テンプレート ファイルを処理します。 カスタム ディレクティブ プロセッサを作成する場合は、独自 TextTransform.exe を呼び出すバッチ ファイルを作成できます。 このバッチ ファイルでは、アセンブリと関連付けられているカスタム ディレクティブ プロセッサを指定できます。
+DslTextTransform は、TextTransform を呼び出すスクリプトであり、共通のオプションを使用して実行されます。 DslTextTransformation を使用すると、[!INCLUDE[dsl](../includes/dsl-md.md)] プロジェクトの夜間ビルドを自動化できます。 詳細については、「 [TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)」を参照してください。
+
+ DslTextTransform は、次のディレクトリにあります。
+
+ **\<Visual Studio SDK インストールパス > \VisualStudioIntegration\Tools\Bin**
+
+ DslTextTransform への入力として、次の引数を指定できます。
+
+- ドメインモデルプロジェクトの出力ディレクトリ。
+
+- デザイナー定義プロジェクトの出力ディレクトリ。
+
+- テキストテンプレートファイルの場所。
+
+  DslTextTransform は、既定のディレクティブプロセッサとアセンブリを使用して、指定されたテキストテンプレートファイルを処理します。 カスタムディレクティブプロセッサを作成する場合は、TextTransform を呼び出す独自のバッチファイルを作成できます。 このバッチファイルでは、アセンブリおよび関連付けられているカスタムディレクティブプロセッサを指定できます。

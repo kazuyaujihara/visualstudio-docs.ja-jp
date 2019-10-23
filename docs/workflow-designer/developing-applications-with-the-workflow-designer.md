@@ -11,37 +11,37 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650528"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>ワークフロー デザイナーでアプリを開発する
 
-ワークフロー デザイナーはビジュアル デザイナーとグラフィカル作成およびデバッグ用のデバッガー [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) Visual Studio でアプリケーションを (WF)。 複合ワークフロー アプリケーション、アクティビティ ライブラリ、またはテンプレートおよびアクティビティ デザイナーを使用して Windows Communication Foundation (WCF) サービスを作成することができます。
+ワークフローデザイナーは、visual Studio で[Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) アプリケーションをグラフィカルに構築およびデバッグするためのビジュアルデザイナーおよびデバッガーです。 テンプレートとアクティビティデザイナーを使用して、複合ワークフローアプリケーション、アクティビティライブラリ、または Windows Communication Foundation (WCF) サービスを作成できます。
 
-## <a name="install-windows-workflow-foundation"></a>Windows Workflow Foundation をインストールします。
+## <a name="install-windows-workflow-foundation"></a>Windows Workflow Foundation のインストール
 
-ワークフロー プロジェクトのテンプレートを使用して、Visual Studio で、最初にインストール、 **Windows Workflow Foundation**コンポーネント。
+Visual Studio でワークフロープロジェクトテンプレートを使用するには、最初に**Windows Workflow Foundation**コンポーネントをインストールします。
 
-1. Visual Studio インストーラーを開きます。 簡単に開くことを選択して**ツール** > **ツールの入手と機能**Visual Studio でします。
+1. Visual Studio インストーラーを開きます。 **ツールを選択し**て Visual Studio の [ツール]  >  **[機能]** を選択すると、簡単に開くことができます。
 
-1. Visual Studio インストーラーでは、選択、**個々 のコンポーネント**タブ。
+1. Visual Studio インストーラーで、 **[個々のコンポーネント]** タブを選択します。
 
-1. 下へスクロールして、**開発アクティビティ**カテゴリと選択し、 **Windows Workflow Foundation**コンポーネント。
+1. **[開発アクティビティ]** カテゴリまで下へスクロールし、 **Windows Workflow Foundation**コンポーネントを選択します。
 
-   ![Visual Studio for Windows Workflow Foundation のコンポーネント](media/windows-workflow-foundation-component.png)
+   ![Visual Studio の Windows Workflow Foundation コンポーネント](media/windows-workflow-foundation-component.png)
 
 1. **[変更]** を選択します。
 
-   Visual Studio のインストール、 **Windows Workflow Foundation**コンポーネント。
+   Visual Studio によって**Windows Workflow Foundation**コンポーネントがインストールされます。
 
 ## <a name="see-also"></a>関連項目
 

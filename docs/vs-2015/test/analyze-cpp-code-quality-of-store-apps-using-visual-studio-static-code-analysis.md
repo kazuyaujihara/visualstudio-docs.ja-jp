@@ -1,5 +1,5 @@
 ---
-title: C++静的コード分析のストア アプリ
+title: C++静的コード分析ストアアプリ
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686533"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672712"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの C++ コード品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")
+Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Visual Studio express edition のコード分析ツールは、コードを調べてプログラミング上の一般的な問題や違反がないことを確認します。 コード分析の警告はコンパイラのエラーや警告とは異なります。コード分析は、有効であってもコードの作成者やコードを利用する他のユーザーにとって問題になる可能性がある特定のコード パターンを検索するからです。 また、コード分析では、テストでは検出できないコードの欠陥を見つけることができます。 開発プロセス中に定期的にコード分析ツールを実行することで、高品質なアプリを完成させることができます。
 
@@ -35,13 +35,13 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
   プロジェクトをビルドするたびに自動的にコード分析を実行するには:
 
-1. ソリューション エクスプローラーでプロジェクト名を選択し、**[プロパティ]** をクリックします。
+1. ソリューション エクスプローラーでプロジェクト名を選択し、 **[プロパティ]** をクリックします。
 
-2. プロジェクトのプロパティ ページで **[コード分析]**、**[ビルド時に C/C++ のコード分析を有効化]** の順に選択します。
+2. プロジェクトのプロパティ ページで **[コード分析]** 、 **[ビルド時に C/C++ のコード分析を有効化]** の順に選択します。
 
    ソリューションがコンパイルされ、コード分析が実行されます。 結果は、[コード分析] ウィンドウに表示されます。
 
-   ![[コード分析] ウィンドウ](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![コード分析ウィンドウ](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
  特定の警告を分析するには、[コード分析] ウィンドウで警告のタイトルを選択します。 警告が展開され、問題に関する詳細情報が表示されます。 コード分析は、可能な場合は警告につながる行番号と分析ロジックを表示します。
@@ -50,7 +50,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
  警告を展開すると、警告の原因となったコード行が Visual Studio のコード エディターで強調表示されます。
 
- ![強調表示されたソース コード](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
+ ![強調表示されたソースコード](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
  問題を理解した後は、コード内で解決できます。 その後、コード分析に戻り、[コード分析] ウィンドウに警告が表示されなくなったことと、修正によって新たな警告が発生していないことを確認します。
 
@@ -66,7 +66,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
 2. 警告の下部にある **[アクション]** リンクをクリックします。
 
-3. **[メッセージの非表示]**、**[ソース内]** の順に選択します。
+3. **[メッセージの非表示]** 、 **[ソース内]** の順に選択します。
 
    メッセージを非表示にすると、コードの該当行に対して警告を抑制する`#pragma(warning:`*警告 ID*`)` が挿入されます。
 
@@ -78,7 +78,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 ## <a name="Warnings"></a> C++ のコード分析の警告
  コード分析は、C++ コードに次の警告を発生させます。
 
-|                                      ルール                                      |                                                  説明                                                  |
+|                                      規則                                      |                                                  説明                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          初期化されていないメモリの使用                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          Null ポインターの逆参照                                           |
@@ -132,7 +132,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無効なサイズの文字列パラメーター                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無効なサイズの到達不能な場所の文字列                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無効なサイズの文字列バッファー型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              無効な注釈。'NeedsRelease' プロパティを void 型の値に対して使用することはできません。               |
+|                       [C6527](../code-quality/c6527.md)                        |              無効な注釈です: 'NeedsRelease' プロパティは、void 型の値では使用できません               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       認識されない書式指定文字列スタイル                                        |
 |                       [C6540](../code-quality/c6540.md)                        | この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります  |
 |                       [C6551](../code-quality/c6551.md)                        |                              無効なサイズ指定です: 式が解析可能ではありません                              |
@@ -158,7 +158,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix は、既に typefix のあるパラメーターには適用できません                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 注釈は、特定の関数パラメーターの事後条件にのみ適用されます。         |
 |                      [C28217](../code-quality/c28217.md)                       |            関数について、注釈へのパラメーター数がファイルで検出されたものと一致しません             |
-|                      [C28218](../code-quality/c28218.md)                       |             関数のパラメーターの注釈のパラメーターと一致しませんファイルで検出されました。              |
+|                      [C28218](../code-quality/c28218.md)                       |             関数パラメーターの場合、注釈のパラメーターがファイルで見つかったものと一致しません              |
 |                      [C28219](../code-quality/c28219.md)                       |                 注釈 (注釈のパラメーター) には列挙型のメンバーが必要です                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  注釈 (注釈のパラメーター) には整数式が必要です                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        注釈のパラメーターには文字列式が必要です                         |
@@ -203,7 +203,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |                      [C28286](../code-quality/c28286.md)                       |                                    関数について、構文エラーが最後の近くにあります                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                関数について、\_At\_() 注釈 (認識されないパラメーター名) に構文エラーがあります                |
 |                      [C28288](../code-quality/c28288.md)                       |                  関数について、\_At\_() 注釈 (無効のパラメーター名) に構文エラーがあります                   |
-|                      [C28289](../code-quality/c28289.md)                       |                関数の場合。ReadableTo または WritableTo では、パラメーターとして limit-spec がなかった                |
+|                      [C28289](../code-quality/c28289.md)                       |                関数について: ReadableTo または WritableTo には、パラメーターとして limit-spec がありませんでした                |
 |                      [C28290](../code-quality/c28290.md)                       |           関数の注釈は、実際のパラメーターの数より多い外部参照を含みます            |
 |                      [C28291](../code-quality/c28291.md)                       |                        deref レベル 0 での post null/notnull は、関数に対して意味がありません。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            演算子に対する互換性のない型の、式のオペランドです                             |

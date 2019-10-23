@@ -1,5 +1,5 @@
 ---
-title: Rethrow アクティビティ デザイナー |Microsoft Docs
+title: アクティビティデザイナーの再スロー |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,35 +8,33 @@ f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8b023a42da1c862927606c4bec0215120a5e5a11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c65469242a60c64d6f31bfaea4fdbbf2d5251a34
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937758"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663369"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow アクティビティ デザイナー
-**を再スロー**作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.Rethrow>アクティビティ。  
-  
-## <a name="the-rethrow-activity"></a>Rethrow アクティビティ  
- <xref:System.Activities.Statements.Rethrow> アクティビティでは、以前にスローされた例外をスローします。 このアクティビティは、<xref:System.Activities.Statements.Catch> アクティビティの <xref:System.Activities.Statements.TryCatch> ハンドラーでのみ使用できます。  
-  
-### <a name="using-the-rethrow-activity-designer"></a>ReThrow アクティビティ デザイナーの使用  
- **を再スロー**アクティビティ デザイナーが記載されて、**エラー処理**のカテゴリ、**ツールボックス**をクリックしてアクセスする、**ツールボックス** タブの左側にある、 [!INCLUDE[wfd2](../includes/wfd2-md.md)] (または、選択**ツールバー**から、**ビュー**メニューまたは CTRL + ALT + X)。  
-  
- **を再スロー**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**ドロップ、[!INCLUDE[wfd2](../includes/wfd2-md.md)]サーフェス任意の場所、アクティビティを通常配置など内、<xref:System.Activities.Statements.Sequence>します。 これを作成、 <xref:System.Activities.Statements.Rethrow> 、既定値は、アクティビティ**DisplayName** Throw の。 <xref:System.Activities.Activity.DisplayName%2A>のヘッダーに値を編集できる、**を再スロー**アクティビティ デザイナーまたは、 **DisplayName**プロパティ グリッドのボックスです。  
-  
-### <a name="the-rethrow-properties"></a>Rethrow のプロパティ  
- 次の表に、<xref:System.Activities.Statements.Rethrow> のプロパティと、デザイナーでのその使用方法を示します。  
-  
-|プロパティ名|必須|使用方法|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Rethrow> アクティビティの表示名を指定します (省略可能)。 既定値は Rethrow です。|  
-  
-## <a name="see-also"></a>関連項目  
- [コレクション](../workflow-designer/collection-activity-designers.md)   
- [スローします。](../workflow-designer/throw-activity-designer.md)   
- [TryCatch](../workflow-designer/trycatch-activity-designer.md)
+再**スロー**アクティビティデザイナーは、<xref:System.Activities.Statements.Rethrow> アクティビティを作成および構成するために使用されます。
+
+## <a name="the-rethrow-activity"></a>Rethrow アクティビティ
+ <xref:System.Activities.Statements.Rethrow> アクティビティでは、以前にスローされた例外をスローします。 このアクティビティは、<xref:System.Activities.Statements.Catch> アクティビティの <xref:System.Activities.Statements.TryCatch> ハンドラーでのみ使用できます。
+
+### <a name="using-the-rethrow-activity-designer"></a>ReThrow アクティビティ デザイナーの使用
+ 再**スロー**アクティビティデザイナーは、 **[ツールボックス]** の **[エラー処理]** カテゴリにあります。これにアクセスするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] の左側にある **[ツールボックス]** タブをクリックします (または、 **[表示**] メニューまたは CTRL + ALT + X)
+
+ 再**スロー**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意の場所 (<xref:System.Activities.Statements.Sequence> 内など) にドロップして [!INCLUDE[wfd2](../includes/wfd2-md.md)] 画面にドロップできます。 これにより、Throw という既定の**DisplayName**を持つ <xref:System.Activities.Statements.Rethrow> アクティビティが作成されます。 @No__t_0 値は、再**スロー**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
+
+### <a name="the-rethrow-properties"></a>Rethrow のプロパティ
+ 次の表に、<xref:System.Activities.Statements.Rethrow> のプロパティと、デザイナーでのその使用方法を示します。
+
+|プロパティ名|必要|使用方法|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Rethrow> アクティビティの表示名を指定します (省略可能)。 既定値は Rethrow です。|
+
+## <a name="see-also"></a>参照
+ [コレクション](../workflow-designer/collection-activity-designers.md)[スロー](../workflow-designer/throw-activity-designer.md) [TryCatch](../workflow-designer/trycatch-activity-designer.md)

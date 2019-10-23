@@ -1,72 +1,72 @@
 ---
-title: データ ツールC++
+title: 用データツールC++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565241"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639506"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ 用の Visual Studio データ ツール
 
-多くの場合、ネイティブ C++ は、データ ソースにアクセスするときに、最速のパフォーマンスを提供します。 ただし、ツールの Visual Studio での C++ アプリケーションのデータは、.NET アプリケーションはそれほど高度ではありません。 たとえば、**データ ソース**ウィンドウは、ドラッグ アンド ドロップにデータ ソースには使用できません、C++デザイン サーフェイス。 オブジェクト リレーショナル レイヤーを必要な場合は独自に作成またはサード パーティ製の製品を使用する必要があります。 Microsoft Foundation Class ライブラリを使用するアプリケーションはメモリにデータを格納し、ユーザーに表示するドキュメントとビュー、と共に、いくつかのデータベース クラスを使用することもできますも、データ バインディング機能についても同様です。 詳細については、次を参照してください。 [Visual c でのデータ アクセス](/cpp/data/data-access-in-cpp)します。
+ネイティブC++では、多くの場合、データソースにアクセスするときに最速のパフォーマンスが得られます。 ただし、Visual Studio でC++のアプリケーションのデータツールは、.net アプリケーションの場合ほど豊富ではありません。 たとえば、 **[データソース]** ウィンドウを使用して、 C++デザイン画面にデータソースをドラッグアンドドロップすることはできません。 オブジェクトリレーショナルレイヤーが必要な場合は、独自のものを作成するか、サードパーティ製品を使用する必要があります。 これはデータバインディング機能にも当てはまりますが、Microsoft Foundation Class ライブラリを使用するアプリケーションでは、一部のデータベースクラスをドキュメントやビューと共に使用して、データをメモリに格納し、ユーザーに表示することができます。 詳細については、「[ビジュアルC++でのデータアクセス](/cpp/data/data-access-in-cpp)」を参照してください。
 
-SQL データベースに接続するには、ネイティブ C++ アプリケーションは、ODBC および OLE DB ドライバーおよび ADO プロバイダーは、Windows に含まれているを使用できます。 これらは、それらのインターフェイスをサポートする任意のデータベースに接続できます。 ODBC ドライバーは、標準です。 OLE DB は、旧バージョンとの互換性のために提供されます。 このようなデータ テクノロジの詳細については、次を参照してください。 [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85))します。
+SQL データベースに接続するにはC++ 、ネイティブアプリケーションで ODBC および OLE DB ドライバーと、Windows に含まれている ADO プロバイダーを使用できます。 これらのインターフェイスをサポートする任意のデータベースに接続できます。 ODBC ドライバーは標準です。 OLE DB は、旧バージョンとの互換性のために用意されています。 これらのデータテクノロジの詳細については、「 [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85))」を参照してください。
 
-SQL Server 2005 でのカスタム機能を利用し、後で、使用して、 [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client)します。 ネイティブ クライアントでは、SQL Server ODBC ドライバーと 1 つのネイティブ ダイナミック リンク ライブラリ (DLL) で SQL Server OLE DB プロバイダーも含まれています。 これらは、Microsoft SQL Server にネイティブ コード Api (ODBC、OLE DB と ADO) を使用してアプリケーションをサポートします。 SQL Server Native Client は、SQL Server Data Tools と共にインストールされます。 プログラミング ガイドは、ここでは。[SQL Server ネイティブ クライアントのプログラミング](/sql/relational-databases/native-client/sql-server-native-client-programming)します。
+SQL Server 2005 以降のカスタム機能を利用するには、 [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 Native client には、1つのネイティブダイナミックリンクライブラリ (DLL) に SQL Server ODBC ドライバーと SQL Server OLE DB プロバイダーも含まれています。 これらは、ネイティブコード Api (ODBC、OLE DB、ADO) を使用して Microsoft SQL Server するアプリケーションをサポートします。 SQL Server Native Client SQL Server Data Tools と共にインストールされます。 プログラミングガイドについては、「 [SQL Server native client プログラミング](/sql/relational-databases/native-client/sql-server-native-client-programming)」を参照してください。
 
-## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>C++ アプリケーションから ODBC および SQL Native Client で localDB に接続するには
+## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>ODBC を使用して localDB に接続し、 C++アプリケーションから SQL Native Client するには
 
 1. SQL Server Data Tools をインストールします。
 
-2. サンプル SQL データベースに接続する場合は、Northwind データベースをダウンロードし、新しい場所に解凍します。
+2. 接続するサンプルの SQL データベースが必要な場合は、Northwind データベースをダウンロードし、新しい場所に解凍します。
 
-3. SQL Server Management Studio を使用して、アタッチ、解凍*Northwind.mdf* localDB へのファイル。 SQL Server Management Studio の起動時には、「(localdb) \MSSQLLocalDB に接続します。
+3. SQL Server Management Studio を使用して、解凍した*Northwind .mdf*ファイルを localDB にアタッチします。 SQL Server Management Studio が開始されたら、(localdb) \MSSQLLocalDB. に接続します。
 
-   ![SSMS 接続ダイアログ](../data-tools/media/raddata-ssms-connect-dialog.png)
+   ![SSMS の接続ダイアログ](../data-tools/media/raddata-ssms-connect-dialog.png)
 
-   左側のウィンドウで [localdb] ノードを右クリックしを選択し、**アタッチ**します。
+   次に、左側のウィンドウで localdb ノードを右クリックし、 **[アタッチ]** を選択します。
 
-   ![SSMS でデータベースをアタッチします。](../data-tools/media/raddata-ssms-attach-database.png)
+   ![SSMS のデータベースのアタッチ](../data-tools/media/raddata-ssms-attach-database.png)
 
-4. ODBC の Windows SDK サンプルをダウンロードして、新しい場所に解凍します。 このサンプルでは、データベースと問題のクエリとコマンドへの接続に使用される ODBC の基本的なコマンドを示します。 これらの関数に関する詳細については、 [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)します。 最初に読み込む (C++ フォルダーには) ソリューション、ソリューションを Visual Studio の現在のバージョンにアップグレードする Visual Studio が提供されます。 **[はい]** をクリックします。
+4. ODBC Windows SDK サンプルをダウンロードし、新しい場所に解凍します。 このサンプルでは、データベースへの接続とクエリとコマンドの実行に使用される基本的な ODBC コマンドを示します。 これらの関数の詳細については、 [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)を参照してください。 ソリューションを初めて読み込むと ( C++フォルダー内にある)、visual studio はソリューションを現在のバージョンの visual studio にアップグレードすることを提供します。 **[はい]** をクリックします。
 
-5. ネイティブ クライアントを使用する必要がその*ヘッダー*ファイルと*lib*ファイル。 これらのファイルには、関数および sql.h で定義された ODBC 関数以外の SQL Server に固有の定義が含まれます。 **プロジェクト** > **プロパティ** > **vc++ ディレクトリ**次のインクルード ディレクトリを追加します。
+5. Native client を使用するには、その*ヘッダー*ファイルと*lib*ファイルが必要です。 これらのファイルには、SQL .h で定義されている ODBC 関数以外の SQL Server に固有の関数と定義が含まれています。 [**プロジェクト** >  の**プロパティ** > **VC + + ディレクトリ**] で、次のインクルードディレクトリを追加します。
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
-   このライブラリ ディレクトリ:
+   このライブラリディレクトリは次のようになります。
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
 
-6. これらの行を追加*odbcsql.cpp*します。 #Define コンパイルされない無関係な OLE DB 定義を防止します。
+6. これらの行を*odbcsql .cpp*に追加します。 #Define によって、無関係の OLE DB 定義がコンパイルされるのを防ぐことができます。
 
    ```cpp
    #define _SQLNCLI_ODBC_
    #include <sqlncli.h>
    ```
 
-    そのサンプルで実際に使用されない、ネイティブ クライアントの機能のため、上記の手順はコンパイルして実行する必要はありませんに注意してください。 ただし、この機能を使用するため、プロジェクトが構成されているようになりました。 詳細については、「[SQL Server Native Client プログラミング](/sql/relational-databases/native-client/sql-server-native-client)」を参照してください。
+    このサンプルでは、実際には native client の機能を使用していないので、コンパイルして実行するために上記の手順は必要ありません。 しかし、この機能を使用できるようにプロジェクトが構成されました。 詳細については、「[SQL Server Native Client プログラミング](/sql/relational-databases/native-client/sql-server-native-client)」を参照してください。
 
-7. ODBC サブシステムで使用するドライバーを指定します。 サンプルでは、コマンドライン引数としてのドライバー接続文字列の属性を渡します。 **プロジェクト** > **プロパティ** > **デバッグ**、このコマンドの引数を追加します。
+7. ODBC サブシステムで使用するドライバーを指定します。 このサンプルでは、のドライバー接続文字列属性をコマンドライン引数として渡します。 [**プロジェクト** >  の**プロパティ** > **デバッグ**] で、次のコマンド引数を追加します。
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. **F5** キーを押してアプリケーションをビルドし、実行します。 データベースを入力するように求められますドライバーからのダイアログ ボックスを表示する必要があります。 入力`(localdb)\MSSQLLocalDB`、確認と**セキュリティ接続を使用**します。 **[OK]** を押します。 接続に成功を示すメッセージをコンソールに表示されます。 表示されます、コマンド プロンプトで SQL ステートメントを入力することができます。 次の画面には、クエリの例と、結果が表示されます。
+8. **F5** キーを押してアプリケーションをビルドし、実行します。 ドライバーから、データベースを入力するように求めるダイアログボックスが表示されます。 @No__t_0 を入力し、 **[信頼できる接続を使用する]** チェックボックスをオンにします。 **[OK]** を押します。 接続が成功したことを示すメッセージが表示されたコンソールが表示されます。 SQL ステートメントを入力できるコマンドプロンプトも表示されます。 次の画面は、クエリの例と結果を示しています。
 
-   ![ODBC のサンプル クエリの出力](../data-tools/media/raddata-odbc-sample-query-output.png)
+   ![ODBC サンプルクエリの出力](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>関連項目
 

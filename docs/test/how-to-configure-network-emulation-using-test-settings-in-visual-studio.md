@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c4738caa4fac8596db5b92c6cafa1c0f370e0363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f49f7952b287989d6e828d92b4c3479731dc2c21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664807"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>方法:Visual Studio でテストの設定を使用してネットワーク エミュレーションを構成する
 
@@ -56,7 +56,7 @@ Visual Studio は、すべてのテストの種類にソフトウェア ベー�
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>テストの設定を使用したネットワーク エミュレーションの構成
 
-この手順を実行する前に、Visual Studio からテストの設定を開き、**[データと診断]** ページを選択する必要があります。
+この手順を実行する前に、Visual Studio からテストの設定を開き、 **[データと診断]** ページを選択する必要があります。
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>テストの設定を使用してネットワーク エミュレーションを構成するには
 
@@ -65,7 +65,7 @@ Visual Studio は、すべてのテストの種類にソフトウェア ベー�
     > [!NOTE]
     > ネットワーク エミュレーション アダプターは、クライアント ロールとサーバー ロールのどちらか一方でのみ構成する必要があります。 両方のロールでこのアダプターを使用する必要はありません。 このアダプターは 2 つのロール間での通信に影響するネットワーク ノイズをエミュレートするので、両方のロールで使用する必要はありません。 必要な場合を除き、ネットワーク エミュレーション アダプターにはクライアント ロールを選択して、サーバー ロールで余分なオーバーヘッドが発生しないようにします。
 
-2. **[ネットワーク エミュレーション]** をクリックし、**[構成]** をクリックします。
+2. **[ネットワーク エミュレーション]** をクリックし、 **[構成]** をクリックします。
 
      ネットワーク エミュレーションを構成するダイアログ ボックスが表示されます。
 

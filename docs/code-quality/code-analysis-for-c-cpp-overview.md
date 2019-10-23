@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919884"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163063"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 
@@ -46,15 +46,15 @@ C/C++コード分析ツールは、c/C++ソースコードで発生する可能�
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 バージョン15.7 以降**CMake を含む任意のビルドシステムを使用して、コマンドラインからツールを実行できます。
+**Visual Studio 2017 バージョン 15.7 以降:** CMake を含む任意のビルドシステムを使用して、コマンドラインからツールを実行できます。
 
 ## <a name="pragma-support"></a>#pragma サポート
 
-この`#pragma`ディレクティブを使用すると、警告をエラーとして扱うことができます。警告を有効または無効にしたり、個々のコード行の警告を非表示にしたりすることができます。 詳細については、「[プラグマ ディレクティブと __Pragma キーワード](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)」を参照してください。
+@No__t-0 ディレクティブを使用して、警告をエラーとして扱うことができます。警告を有効または無効にし、個々のコード行の警告を非表示にします。 詳細については、「[プラグマ ディレクティブと __Pragma キーワード](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)」を参照してください。
 
 ## <a name="annotation-support"></a>注釈のサポート
 
-注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、「 [SAL 注釈を使用しC++て C/コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)」を参照してください。
+注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、[SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) を参照してください。
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>チェックイン ポリシーの一部としての分析ツールの実行
 
@@ -66,8 +66,8 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="see-also"></a>関連項目
 
-- [クイック スタート:C/のコード分析C++](quick-start-code-analysis-for-c-cpp.md)
-- [チュートリアル: C/C++コードを分析して欠陥を分析する](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [クイック スタート:C/C++](quick-start-code-analysis-for-c-cpp.md) のコード分析
+- [チュートリアル: C/C++コードの欠陥の分析 @ no__t-1
 - [C/C++ コードの警告に対応するコードの分析](code-analysis-for-c-cpp-warnings.md)
 - [C++ Core ガイドライン チェッカーの使用](using-the-cpp-core-guidelines-checkers.md)
 - [C++コアガイドラインチェッカーリファレンス](code-analysis-for-cpp-corecheck.md)

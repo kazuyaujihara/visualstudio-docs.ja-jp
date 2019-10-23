@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987762"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536080"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio でのデバッガーの生産性に関するヒントとテクニックについて説明します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "70987762"
 
 Visual Studio でサポートされているほとんどの言語で、デバッグ セッション中にコードを編集し、デバッグを続行できます。 この機能を使用するには、デバッガーの一時停止中にカーソルを使用してコードをクリックし、編集を行い、**F5**、**F10**、または **F11** キーを押してデバッグを続行します。
 
-![エディット コンティニュのデバッグ](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![エディットコンティニュのデバッグ](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 機能の使用および機能制限の詳細については、[エディット コンティニュ](../debugger/edit-and-continue.md)に関するページを参照してください。
 
@@ -53,7 +53,7 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 2. **[ブレークポイントの設定]** ウィンドウで、式を入力します。
 
-    ![条件付きブレークポイント](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "Conditionalbreakpoint ポイント")
+    ![条件付きブレークポイント](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint ポイント")
 
 3. 別の種類の条件に関心がある場合は、 **[ブレークポイントの設定]** ダイアログボックスで [**条件式**の代わりに**フィルター** ] を選択し、フィルターのヒントに従います。
 
@@ -84,7 +84,7 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 3. **[ローカル]** ウィンドウで変数を探し ([**デバッグ] > [Windows > ローカル**])、変数を右クリックして **[オブジェクト ID の作成]** を選択します。
 
-    ![オブジェクト ID を作成]する(../debugger/media/dbg-tips-watch-create-object-id.png "Createobjectid")
+    ![オブジェクト ID を作成する](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
 4. **$** ウィンドウに、 **[ローカル]** ウィンドウを閉じます。 この変数はオブジェクト ID です。
 
@@ -96,33 +96,33 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 関数の戻り値を表示するには、コードのステップ実行中に **[自動変数]** ウィンドウに表示される関数を確認します。 関数の戻り値を表示するには、関心のある関数が既に実行されていることを確認します (関数呼び出しで現在停止している場合は、 **F10**キーを1回押します)。 ウィンドウが閉じている場合は、 **[デバッグ > Windows > 自動変数]** を使用して **[自動]** 変数 ウィンドウを開きます。
 
-![自動変数ウィンドウ](../debugger/media/dbg-tips-autos-window.png "Autoswindow")
+![自動変数ウィンドウ](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 また、 **[イミディエイト]** ウィンドウに関数を入力して、戻り値を表示することもできます。 ( **Windows > イミディエイトでデバッグ >** 使用して開きます)。
 
-![イミディエイトウィンドウ](../debugger/media/dbg-tips-immediate-window.png "イミディエイトウィンドウ")
+![イミディエイト ウィンドウ](../debugger/media/dbg-tips-immediate-window.png "イミディエイトウィンドウ")
 
-また、のように、 **[ウォッチ]** ウィンドウと **[イミディエイト]** ウィンドウ`$ReturnValue`で[擬似変数](../debugger/pseudovariables.md)を使用することもできます。
+@No__t_3 など、 **[ウォッチ]** ウィンドウと **[イミディエイト]** ウィンドウで[擬似変数](../debugger/pseudovariables.md)を使用することもできます。
 
 ## <a name="string_visualizer"></a>ビジュアライザー内の文字列の検査
 
 文字列を使用する場合は、書式設定された文字列全体を表示すると便利です。 プレーンテキスト、XML、HTML、または JSON 文字列を表示するには、文字列値を含む変数にマウスポインターを置いた状態で、虫眼鏡アイコン![Visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "ビジュアライザーアイコン")をクリックします。
 
-![文字列ビジュアライザーを開く](../debugger/media/dbg-tips-string-visualizers.png "Openstringvisualizer")
+![文字列ビジュアライザーを開く](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
 文字列ビジュアライザーは、文字列の種類に応じて文字列の形式が正しくないかどうかを調べるのに役立ちます。 たとえば、空白の**値**フィールドは、ビジュアライザー型によって文字列が認識されないことを示します。 詳細については、「[[文字列ビジュアライザー] ダイアログボックス](../debugger/string-visualizer-dialog-box.md)」を参照してください。
 
-![JSON 文字列ビジュアライザー](../debugger/media/dbg-tips-string-visualizer-json.png "Jsonstringvisualizer")
+![JSON 文字列ビジュアライザー](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
 デバッガーウィンドウに表示されるデータセットや DataTable オブジェクトなど、他のいくつかの型については、組み込みビジュアライザーを開くこともできます。
 
 ## <a name="break-into-code-on-handled-exceptions"></a>処理された例外のコードの中断
 
-デバッガーは、ハンドルされない例外でコードにブレークします。 ただし、処理された例外 ( `try/catch`ブロック内で発生する例外など) もバグの原因になる可能性があり、発生した場合は調査する必要があります。 **[例外設定]** ダイアログボックスでオプションを構成することによって、処理された例外のコードに中断するようにデバッガーを構成することもできます。 **[デバッグ > Windows > 例外設定]** を選択して、このダイアログボックスを開きます。
+デバッガーは、ハンドルされない例外でコードにブレークします。 ただし、処理された例外 (`try/catch` ブロック内で発生する例外など) もバグの原因になる可能性があり、発生した場合は調査する必要があります。 **[例外設定]** ダイアログボックスでオプションを構成することによって、処理された例外のコードに中断するようにデバッガーを構成することもできます。 **[デバッグ > Windows > 例外設定]** を選択して、このダイアログボックスを開きます。
 
-**[例外設定]** ダイアログボックスを使用すると、特定の例外でコードを中断するようにデバッガーに指示できます。 次の図では、が発生する`System.NullReferenceException`たびにデバッガーがコードに分割されます。 詳細については、「[例外の管理](../debugger/managing-exceptions-with-the-debugger.md)」を参照してください。
+**[例外設定]** ダイアログボックスを使用すると、特定の例外でコードを中断するようにデバッガーに指示できます。 次の図では、`System.NullReferenceException` が発生するたびにデバッガーがコードに分割されます。 詳細については、「[例外の管理](../debugger/managing-exceptions-with-the-debugger.md)」を参照してください。
 
-![[例外設定] ダイアログボックス](../debugger/media/dbg-tips-exception-settings.png "Exceptionsettingsdialogbox")
+![[例外設定] ダイアログボックス](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
 ## <a name="debug-deadlocks-and-race-conditions"></a>デッドロックと競合状態のデバッグ
 
@@ -130,9 +130,9 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 #### <a name="to-show-threads-in-your-source-code"></a>ソースコードでスレッドを表示するには
 
-1. デバッグ中に、 **[ソースのスレッドを表示]** する ボタンをクリックし、 **[デバッグ]** ツールバーの [ソース(../debugger/media/dbg-multithreaded-show-threads.png "Threadmarker") ![にスレッドを表示する]] をクリックします。
+1. デバッグ中に、 **[ソースのスレッドを表示]** する ボタンをクリックし、 **[デバッグ]** ツールバーの [![ソースにスレッドを表示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")] をクリックします。
 
-2. ウィンドウ左端の余白に注目します。 この行には、2つの布スレッドに似*たスレッドマーカーアイコン*![スレッド]マーカー(../debugger/media/dbg-thread-marker.png "threadmarker")が表示されます。 スレッド マーカーは、スレッドが停止している位置を示します。
+2. ウィンドウ左端の余白に注目します。 この行には、2つの布スレッドに似た*スレッドマーカー*アイコン![スレッドマーカー](../debugger/media/dbg-thread-marker.png "ThreadMarker")が表示されます。 スレッド マーカーは、スレッドが停止している位置を示します。
 
     スレッドマーカーは、ブレークポイントによって部分的に非表示になっている可能性があります。
 
@@ -142,7 +142,7 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Web サービスとネットワークリソース (UWP) のペイロードを調べる
 
-UWP アプリでは、 `Windows.Web.Http` API を使用して実行されたネットワーク操作を分析できます。 このツールを使用すると、web サービスとネットワークリソースをデバッグできます。 ツールを使用するには、 **[デバッグ > パフォーマンスプロファイラー]** を選択します。 **[ネットワーク]** を選択し、 **[開始]** を選択します。 アプリで、`Windows.Web.Http` を使用するシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
+UWP アプリでは、`Windows.Web.Http` API を使用して実行されたネットワーク操作を分析できます。 このツールを使用すると、web サービスとネットワークリソースをデバッグできます。 ツールを使用するには、 **[デバッグ > パフォーマンスプロファイラー]** を選択します。 **[ネットワーク]** を選択し、 **[開始]** を選択します。 アプリで、`Windows.Web.Http` を使用するシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
 
 ![ネットワーク使用率プロファイリングツール](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -156,7 +156,7 @@ UWP アプリでは、 `Windows.Web.Http` API を使用して実行されたネ�
 
 実行中のアプリにアタッチするために、デバッガーは、デバッグしようとしているアプリとまったく同じビルド用に生成されたシンボル (.pdb) ファイルを読み込みます。 場合によっては、シンボルファイルに関するわずかな知識が役に立つことがあります。 **[モジュール]** ウィンドウを使用して、Visual Studio がシンボルファイルを読み込む方法を調べることができます。
 
-デバッグ **[> Windows > モジュール]** を選択して、デバッグ中に **[モジュール]** ウィンドウを開きます。 **[モジュール]** ウィンドウでは、デバッガーがユーザーコードまたは[*マイコード*](../debugger/just-my-code.md)として処理しているモジュール、およびモジュールのシンボルの読み込み状態を知ることができます。 ほとんどのシナリオでは、デバッガーはユーザーコードのシンボルファイルを自動的に検出しますが、.NET framework コード、システムコード、またはサードパーティのライブラリコードをステップイン (デバッグ) する場合は、適切なシンボルファイルを取得するために追加の手順が必要になります。
+デバッグ **[> Windows > モジュール]** を選択して、デバッグ中に **[モジュール]** ウィンドウを開きます。 **[モジュール]** ウィンドウでは、デバッガーがユーザーコードまたは[*マイコード*](../debugger/just-my-code.md)として処理しているモジュール、およびモジュールのシンボルの読み込み状態を知ることができます。 ほとんどのシナリオでは、デバッガーはユーザーコードのシンボルファイルを自動的に検出しますが、.NET コード、システムコード、またはサードパーティのライブラリコードをステップイン (デバッグ) する場合は、適切なシンボルファイルを取得するために追加の手順が必要になります。
 
 ![[モジュール] ウィンドウでシンボル情報を表示する](../debugger/media/dbg-tips-modules-window.png "Viewシンボル情報")
 
@@ -166,7 +166,7 @@ UWP アプリでは、 `Windows.Web.Http` API を使用して実行されたネ�
 
 デバッガーがコードをユーザーコードとして分類する方法を確認するには、「[マイコードのみ](../debugger/just-my-code.md)」を参照してください。 シンボルファイルの詳細については、「 [Visual Studio デバッガーでのシンボル (.pdb) ファイルとソースファイルの指定](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)」を参照してください。
 
-## <a name="learn-more"></a>詳細情報
+## <a name="learn-more"></a>詳細を表示
 
 その他のヒントとテクニック、さらに詳しい情報については、次のブログ投稿を参照してください。
 

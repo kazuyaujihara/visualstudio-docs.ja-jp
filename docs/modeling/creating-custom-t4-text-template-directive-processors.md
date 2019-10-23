@@ -4,67 +4,67 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 836e2c24d9f236c7b87dfff60b934221b7645f1b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476648"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654063"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する
 
-*テキスト テンプレート変換プロセス*は、*テキスト テンプレート*ファイルとして入力し、テキスト ファイルを出力として生成します。 *テキスト テンプレート変換エンジン*コントロール、プロセスと、エンジンは、テキスト テンプレート変換ホストおよび 1 つまたは複数のテキスト テンプレートと対話する*ディレクティブ プロセッサ*を完了する、プロセスです。 詳細については、[テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)を参照してください。
+*テキストテンプレート変換プロセス*では、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 *テキストテンプレート変換エンジン*はプロセスを制御し、エンジンはテキストテンプレート変換ホストと1つ以上のテキストテンプレート*ディレクティブプロセッサ*を操作してプロセスを完了します。 詳細については、「[テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
 
 カスタム ディレクティブ プロセッサを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> を継承するクラスを作成します。
 
-これらの 2 つの違いは<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>ユーザーからパラメーターを取得し、テンプレートの出力ファイルを生成するコードを生成するために必要な最小のインターフェイスを実装します。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 実装して、必要がありますは設計パターン。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 2 つの特別なパラメーターを処理する`requires`と`provides`します。  たとえば、カスタム ディレクティブ プロセッサ可能性がありますから、ユーザーは、開いているファイル名をそのまま使用ファイルを読み取るし、という名前の変数で、ファイルのテキストを格納`fileText`します。 サブクラスの<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>クラスの値として、ユーザーからファイル名を取得する可能性があります、`requires`パラメーター、およびの値として、テキストを格納する変数の名前、`provides`パラメーター。 このプロセッサは開きとファイルの読み取り、指定された変数で、ファイルのテキストを格納します。
+これらの2つの違いは、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> は、ユーザーからパラメーターを取得し、テンプレートの出力ファイルを生成するコードを生成するために必要な最小限のインターフェイスを実装することです。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> は、要求/提供デザインパターンを実装します。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> は、`requires` と `provides` の2つの特別なパラメーターを処理します。  たとえば、カスタムディレクティブプロセッサは、ユーザーからのファイル名を受け取り、ファイルを開いて読み取り、そのファイルのテキストを `fileText` という名前の変数に格納する場合があります。 @No__t_0 クラスのサブクラスは、`requires` パラメーターの値としてユーザーからファイル名を受け取り、`provides` パラメーターの値としてテキストを格納する変数の名前を受け取る場合があります。 このプロセッサは、ファイルを開いて読み取り、指定した変数にファイルのテキストを格納します。
 
-Visual Studio でテキスト テンプレートからカスタム ディレクティブ プロセッサを呼び出すと、前に登録する必要があります。
+Visual Studio でテキストテンプレートからカスタムディレクティブプロセッサを呼び出す前に、それを登録する必要があります。
 
-レジストリ キーを追加する方法の詳細については、次を参照してください。[カスタム ディレクティブ プロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)します。
+レジストリキーを追加する方法の詳細については、「[カスタムディレクティブプロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)」を参照してください。
 
-## <a name="custom-directives"></a>カスタム ディレクティブ
+## <a name="custom-directives"></a>カスタムディレクティブ
 
-カスタム ディレクティブのようになります。
+カスタムディレクティブは次のようになります。
 
 `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" ... #>`
 
-テキスト テンプレートから外部データまたはリソースにアクセスする場合は、カスタム ディレクティブ プロセッサを使用できます。
+テキストテンプレートから外部データまたはリソースにアクセスする場合は、カスタムディレクティブプロセッサを使用できます。
 
-ディレクティブ プロセッサが再利用するためのコードを分解する方法を提供するため、別のテキスト テンプレートでは、1 つのディレクティブ プロセッサが提供する機能を共有できます。 組み込み`include`ディレクティブは、使用してコードを取り除くし、別のテキスト テンプレート間で共有するためも同様です。 違いは任意の機能を`include`は固定され、パラメーターを受け入れませんディレクティブを提供します。 テキスト テンプレートに共通の機能を提供し、テンプレート パラメーターを渡す場合は、カスタム ディレクティブ プロセッサを作成する必要があります。
+複数のテキストテンプレートで、1つのディレクティブプロセッサが提供する機能を共有できます。そのため、ディレクティブプロセッサを使用すると、コードを再利用することができます。 組み込みの `include` ディレクティブは似ています。これは、コードを記述して別のテキストテンプレート間で共有するために使用できるためです。 違いは、`include` ディレクティブによって提供される機能が固定されていて、パラメーターを受け入れないことです。 テキストテンプレートに共通の機能を提供し、テンプレートでパラメーターを渡すことができるようにするには、カスタムディレクティブプロセッサを作成する必要があります。
 
-カスタム ディレクティブ プロセッサの例をいくつか考えられます。
+カスタムディレクティブプロセッサの例としては、次のようなものがあります。
 
-- ユーザー名とパスワードをパラメーターとして受け取るデータベースからデータを返すディレクティブ プロセッサ。
+- パラメーターとしてユーザー名とパスワードを受け取るデータベースからデータを返すディレクティブプロセッサ。
 
-- 開いて、ファイルを読み取るディレクティブ プロセッサは、パラメーターとして、ファイルの名前を受け取ります。
+- ファイルの名前をパラメーターとして受け取るファイルを開いて読み取るためのディレクティブプロセッサ。
 
-### <a name="principal-parts-of-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの主要な要素
+### <a name="principal-parts-of-a-custom-directive-processor"></a>カスタムディレクティブプロセッサの主要部分
 
-ディレクティブ プロセッサを開発するには、いずれかから継承するクラスを作成する必要があります<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>または<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>します。
+ディレクティブプロセッサを開発するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> のいずれかから継承するクラスを作成する必要があります。
 
-最も重要な`DirectiveProcessor`を実装する必要があるメソッドは、次のとおりです。
+実装する必要がある最も重要な `DirectiveProcessor` メソッドは次のとおりです。
 
-- `bool IsDirectiveSupported(string directiveName)` -戻り`true`ディレクティブ プロセッサは、名前付きディレクティブを扱うことができる場合。
+- `bool IsDirectiveSupported(string directiveName)`-ディレクティブプロセッサが名前付きディレクティブを処理できる場合は `true` を返します。
 
-- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -テンプレート エンジンでは、テンプレートのディレクティブの各インスタンスに対してこのメソッドを呼び出します。 プロセッサは、結果を保存する必要があります。
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-テンプレートエンジンは、テンプレート内でディレクティブが出現するたびにこのメソッドを呼び出します。 プロセッサは結果を保存する必要があります。
 
-ProcessDirective() に対するすべての呼び出し後に、テンプレート エンジンはこれらのメソッドを呼び出します。
+ProcessDirective () を呼び出すと、テンプレートエンジンは次のメソッドを呼び出します。
 
-- `string[] GetReferencesForProcessingRun()` -テンプレート コードを必要とするアセンブリの名前を返します。
+- `string[] GetReferencesForProcessingRun()`-テンプレートコードで必要とされるアセンブリの名前を返します。
 
-- `string[] GetImportsForProcessingRun()` -テンプレート コードで使用できる名前空間を返します。
+- `string[] GetImportsForProcessingRun()`-テンプレートコードで使用できる名前空間を返します。
 
-- `string GetClassCodeForProcessingRun()` -メソッド、プロパティ、およびテンプレート コードで使用できるその他の宣言のコードを返します。 これを行う最も簡単な方法では、c# または Visual Basic コードを含む文字列を作成します。 ディレクティブ プロセッサを任意の CLR 言語を使用するテンプレートから呼び出すことができるように、CodeDom ツリーとして、ステートメントを作成し、テンプレートで使用する言語でツリーをシリアル化の結果を返すできます。
+- `string GetClassCodeForProcessingRun()`-テンプレートコードで使用できるメソッド、プロパティ、およびその他の宣言のコードを返します。 これを行う最も簡単な方法は、 C#または Visual Basic コードを含む文字列を作成することです。 任意の CLR 言語を使用するテンプレートからディレクティブプロセッサを呼び出すことができるようにするには、ステートメントを CodeDom ツリーとして構築し、テンプレートで使用される言語でツリーをシリアル化した結果を返すことができます。
 
-- 詳細については、「[チュートリアル:カスタム ディレクティブ プロセッサを作成する](../modeling/walkthrough-creating-a-custom-directive-processor.md)します。
+- 詳細については、「[チュートリアル: カスタムディレクティブプロセッサを作成](../modeling/walkthrough-creating-a-custom-directive-processor.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [カスタム ディレクティブ プロセッサの展開](../modeling/deploying-a-custom-directive-processor.md)カスタム ディレクティブ プロセッサを登録する方法について説明します。
-- [チュートリアル: カスタム ディレクティブ プロセッサを作成](../modeling/walkthrough-creating-a-custom-directive-processor.md)カスタム ディレクティブ プロセッサを作成する方法、登録およびディレクティブ プロセッサをテストする方法と、出力ファイルを HTML として書式設定する方法について説明します。
+- [カスタムディレクティブプロセッサをデプロイ](../modeling/deploying-a-custom-directive-processor.md)するカスタムディレクティブプロセッサを登録する方法について説明します。
+- [チュートリアル: カスタム](../modeling/walkthrough-creating-a-custom-directive-processor.md)ディレクティブプロセッサを作成する方法、カスタムディレクティブプロセッサを作成する方法、ディレクティブプロセッサを登録およびテストする方法、および出力ファイルを HTML として書式設定する方法について説明します。

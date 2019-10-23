@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d92b4b2e00b25a509d29511008876d781c8a577a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad9b8598cb027c96f6fb6fad6f3d343e6058cfdb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955176"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575857"
 ---
 # <a name="errorresumeaction-enumeration"></a>ERRORRESUMEACTION 列挙型
 ランタイム エラーから継続する方法について記述します。  
@@ -41,9 +41,9 @@ typedef enum tagERRORRESUMEACTION {
   
 |メンバー|説明|  
 |------------|-----------------|  
-|ERRORRESUMEACTION_ReexecuteErrorStatement|エラーが発生したステートメントを再実行します。|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|言語エンジンがエラーを処理することができます。|  
-|ERRORRESUMEACTION_SkipErrorStatement|エラーが発生したステートメントの後のコードでの実行を再開します。|  
+|ERRORRESUMEACTION_ReexecuteErrorStatement|エラーを生成したステートメントを再実行します。|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|言語エンジンがエラーを処理できるようにします。|  
+|ERRORRESUMEACTION_SkipErrorStatement|エラーを生成したステートメントの後のコードで実行を再開します。|  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

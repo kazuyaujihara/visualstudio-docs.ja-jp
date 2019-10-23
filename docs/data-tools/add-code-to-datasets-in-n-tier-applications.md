@@ -1,5 +1,5 @@
 ---
-title: N 層アプリケーションでのデータセットにコードを追加します。
+title: n 層アプリケーションのデータセットにコードを追加する
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -8,45 +8,45 @@ dev_langs:
 helpviewer_keywords:
 - n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b776e75df2830b89fd1ffe9aed197e9cd1019851
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3e5b3e44e1de085b5389ad0f50aed758f09a2759
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648950"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションでのデータセットにコードを追加します。
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 
-データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](/dotnet/visual-basic/language-reference/modifiers/partial)または[部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)します。
+データセットの機能を拡張するには、データセットの部分クラスファイルを作成し、そのデータセットにコードを追加します ( *DatasetName*にコードを追加するのではありません)。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「[部分](/dotnet/visual-basic/language-reference/modifiers/partial)クラスまたは[部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)」を参照してください。
 
-(型指定されたデータセット) のデータセット定義を変更するたびに、データセットを定義するコードが生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更するときにも生成されます。 コードが、データセットの再生成中に削除されないようにするには、データセットの部分クラス ファイルにコードを追加します。
+データセットを定義するコードは、(型指定されたデータセット内の) データセット定義に変更が加えられるたびに生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更を加えた場合にも生成されます。 データセットの再生成時にコードが削除されないようにするには、データセットの部分クラスファイルにコードを追加します。
 
-既定では、データセットと TableAdapter コードを分離したら、結果はプロジェクトごとに別個のクラス ファイルが。 元のプロジェクトにという名前のファイル*DatasetName.Designer.vb* (または*DatasetName.Designer.cs*) TableAdapter コードを格納しています。 指定されているプロジェクト、 **DataSet プロジェクト**プロパティという名前のファイルは、 *DatasetName.DataSet.Designer.vb* (または*DatasetName.DataSet.Designer.cs*).このファイルには、データセット コードが含まれています。
-
-> [!NOTE]
-> データセットと Tableadapter を分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
+既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む*DatasetName* (または*DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト**" プロパティで指定されているプロジェクトには、 *DatasetName* (または*DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
 
 > [!NOTE]
-> 検証コードを追加する必要があると、に型指定されたデータセットが生成するための機能を提供します<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、次を参照してください。 [n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)します。
+> データセットと Tableadapter を分離すると ( **DataSet プロジェクト**プロパティを設定することによって)、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションでのデータセットにコードを追加するには
+> [!NOTE]
+> 検証コードを追加する必要がある場合、型指定されたデータセットは、<xref:System.Data.DataTable.ColumnChanging> および <xref:System.Data.DataTable.RowChanging> のイベントハンドラーを生成するための機能を提供します。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
 
-1. 含むプロジェクトを見つけ、 *.xsd*ファイル。
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションのデータセットにコードを追加するには
 
-2. 選択、 **.xsd**ファイル データセットを開きます。
+1. *.Xsd*ファイルが含まれているプロジェクトを見つけます。
 
-3. コード (タイトル バーのテーブル名) を追加し、選択するデータ テーブルを右クリックして**コードの表示**します。
+2. **.Xsd**ファイルを選択して、データセットを開きます。
 
-     部分クラスが作成され、コード エディターで開きます。
+3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、 **[コードの表示]** を選択します。
 
-4. 部分クラス宣言内でコードを追加します。
+     部分クラスが作成され、コードエディターで開きます。
 
-     次の例は、NorthwindDataSet 内 CustomersDataTable にコードを追加する場所を示しています。
+4. 部分クラス宣言内にコードを追加します。
+
+     次の例は、NorthwindDataSet 内の顧客 Sdatatable にコードを追加する場所を示しています。
 
     ```vb
     Partial Public Class CustomersDataTable
@@ -69,4 +69,4 @@ ms.locfileid: "65458473"
 - [n 層アプリケーションの TableAdapters にコードを追加する](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Tableadapter の作成および構成](create-and-configure-tableadapters.md)
 - [階層更新の概要](hierarchical-update.md)
-- [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)

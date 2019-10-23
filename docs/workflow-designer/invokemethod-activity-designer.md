@@ -1,51 +1,51 @@
 ---
-title: ワークフロー デザイナーで InvokeMethod アクティビティ デザイナー
+title: ワークフローデザイナー-InvokeMethod アクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 593ec198cdfdd8acd1967abb046384711e1fa9ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537642"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650170"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod アクティビティ デザイナー
 
-**InvokeMethod**を作成および構成デザイナーを使用する<xref:System.Activities.Statements.InvokeMethod>アクティビティ。
+**InvokeMethod**デザイナーは、<xref:System.Activities.Statements.InvokeMethod> アクティビティを作成および構成するために使用します。
 
 ## <a name="the-invokemethod-activity"></a>InvokeMethod アクティビティ
 
 <xref:System.Activities.Statements.InvokeMethod> は、指定されたオブジェクトまたは型のパブリック メソッドを呼び出します。
 
-### <a name="use-the-invokemethod-activity-designer"></a>InvokeMethod アクティビティ デザイナーを使用します。
+### <a name="use-the-invokemethod-activity-designer"></a>InvokeMethod アクティビティデザイナーの使用
 
-アクセス、 **InvokeMethod**内のアクティビティ デザイナー、**プリミティブ**のカテゴリ、**ツールボックス**します。 **InvokeMethod**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**がずっと、アクティビティを通常配置など内に、ワークフロー デザイナー画面にドロップし、<xref:System.Activities.Statements.Sequence>します。 アクティビティ デザイナーをドロップを作成、 <xref:System.Activities.Statements.InvokeMethod> 、既定値は、アクティビティ<xref:System.Activities.Activity.DisplayName%2A>InvokeMethod の。 <xref:System.Activities.Activity.DisplayName%2A>のヘッダーで編集できる、 **InvokeMethod**アクティビティ デザイナーまたは、 **DisplayName**プロパティ グリッドのボックスです。
+**ツールボックス**の **[プリミティブ]** カテゴリで、 **InvokeMethod**アクティビティデザイナーにアクセスします。 **InvokeMethod**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置しているワークフローデザイナー画面にドロップできます (<xref:System.Activities.Statements.Sequence> 内など)。 アクティビティデザイナーを削除すると、既定の <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod の <xref:System.Activities.Statements.InvokeMethod> アクティビティが作成されます。 @No__t_0 は、 **InvokeMethod**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod プロパティ
 
-次の表は、<xref:System.Activities.Statements.InvokeMethod>プロパティと、デザイナーでの使用方法について説明します。 これらのプロパティは、プロパティ グリッドで編集できるし、一部は、ワークフロー デザイナー画面で編集できます。
+次の表は、<xref:System.Activities.Statements.InvokeMethod> のプロパティと、デザイナーでのそれらの使用方法を示しています。 これらのプロパティは、プロパティグリッドで編集できます。また、ワークフローデザイナーサーフェイスで編集することもできます。
 
-|プロパティ名|必須|使用方法|
+|プロパティ名|必要|使用方法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> アクティビティの表示名。 既定値は InvokeMethod です。<br /><br /> ただし、<xref:System.Activities.Activity.DisplayName%2A>必須ではありませんいずれかを使用することをお勧めします。|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|アクティビティの実行時に呼び出すメソッドの名前。 呼び出されたメソッドとして宣言する必要があります**パブリック**します。 このプロパティは、デザイナー画面で編集でき、必須です。|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|呼び出されたメソッドのパラメーター コレクション。 パラメーターは、メソッド シグネチャ内で出現する順序でコレクションに追加する必要があります。 表示する、**パラメーター** 、このプロパティを設定するダイアログで、省略記号ボタンをクリックして、**パラメーター**プロパティ グリッドのフィールド。 をクリックして、**引数の作成**パラメーターを追加するボタンをクリックします。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> アクティビティの表示名。 既定値は InvokeMethod です。<br /><br /> @No__t_0 は厳密には必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|アクティビティの実行時に呼び出すメソッドの名前。 呼び出されたメソッドは**パブリック**として宣言されなければなりません。 このプロパティは、デザイナー画面で編集でき、必須です。|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|呼び出されたメソッドのパラメーター コレクション。 パラメーターは、メソッド シグネチャ内で出現する順序でコレクションに追加する必要があります。 このプロパティを設定できる **[パラメーター]** ダイアログボックスを表示するには、プロパティグリッドの **[パラメーター]** フィールドで、省略記号ボタンをクリックします。 **[引数の作成]** ボタンをクリックして、パラメーターを追加します。|
 |<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|メソッド呼び出しの戻り値。|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|メソッドが非同期で呼び出されるかどうかを指定します。 既定値は**False**します。|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|メソッドが非同期で呼び出されるかどうかを指定します。 既定値は**False**です。|
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|呼び出すメソッドを格納するオブジェクト。 このプロパティは、デザイナー画面で設定することもできます。<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> および <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> のいずれかを設定する必要があります。|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> の型。 このプロパティは、デザイナー画面で編集できます。 このプロパティは、メソッド呼び出しが静的である場合にのみ設定する必要があります。|
 
-C# としてパラメーターを渡す**アウト**パラメーター (たとえば、`Method1(out myParam))`を使用して、 **OutArgument**の代わりに**InOutArgument**
+パラメーターをC# **out**パラメーターとして渡すには (たとえば、`Method1(out myParam))` のように、 **InOutArgument**の代わりに**outargument<int>** を使用します。
 
-呼ばれる引数を持つメソッド**TargetObject**または**結果**を使用して呼び出すことはできません、<xref:System.Activities.Statements.InvokeMethod>アクティビティ。 これは、<xref:System.Activities.Statements.InvokeMethod> アクティビティによって <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>、<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>、および <xref:System.Activities.Statements.InvokeMethod.Result%2A> が <xref:System.Activities.Activity.CacheMetadata%2A> に登録されるためです。
+**TargetObject**または**Result**という引数を持つメソッドは、<xref:System.Activities.Statements.InvokeMethod> アクティビティを使用して呼び出すことはできません。 これは、<xref:System.Activities.Statements.InvokeMethod> アクティビティによって <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>、<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>、および <xref:System.Activities.Statements.InvokeMethod.Result%2A> が <xref:System.Activities.Activity.CacheMetadata%2A> に登録されるためです。
 
 <xref:System.Activities.Activity.CacheMetadata%2A> にパラメーターを登録するアルゴリズムは次のとおりです。
 
@@ -55,9 +55,9 @@ C# としてパラメーターを渡す**アウト**パラメーター (たと�
 
 3. <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> コレクションを繰り返し処理し、各引数を登録します。
 
-型の結果の例外は、<xref:System.Activities.InvalidWorkflowException>次のメッセージ。' InvokeMethod':名前が 'TargetObject' の変数 RuntimeArgument または DelegateArgument を既にが存在します。 名前は、環境スコープ内で一意であることが必要です。
+結果の例外の種類は <xref:System.Activities.InvalidWorkflowException> となり、メッセージの内容は、"'InvokeMethod': 名前が 'TargetObject' の変数 RuntimeArgument または DelegateArgument は既に存在します" となります。 名前は、環境スコープ内で一意であることが必要です。
 
-この制限には適用されません<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>と<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>します。 ワークフローの引数がないに登録されていないため、<xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>のコレクション、<xref:System.Activities.Statements.InvokeMethod>内のアクティビティ、<xref:System.Activities.Activity.CacheMetadata%2A>メソッド。
+この制限は、<xref:System.Activities.Statements.InvokeMethod.TargetType%2A> と <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> には適用されません。 これらは、ワークフロー引数ではなく、<xref:System.Activities.Activity.CacheMetadata%2A> メソッドの <xref:System.Activities.Statements.InvokeMethod> アクティビティの <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> コレクションに登録されていません。
 
 ## <a name="see-also"></a>関連項目
 

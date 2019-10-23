@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345418"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648718"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access データベース内のデータに接続する
 
 Visual Studio を使用して、Access データベース ( *.mdb*ファイルまたは *.accdb*ファイル) に接続できます。 接続を定義すると、 **[データ ソース ウィンドウ]** にデータが表示されます。 そこから、テーブルまたはビューをデザイン画面にドラッグすることができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 これらの手順を使用するには、Windows フォームまたは WPF プロジェクト、Access データベース ( *.accdb*ファイル)、または access 2000-2003 データベース ( *.mdb*ファイル) のいずれかが必要です。 ファイルの種類に対応する手順に従ってください。
 
@@ -33,7 +33,7 @@ Visual Studio を使用して、Access データベース ( *.mdb*ファイル�
 
 1. Visual Studio で Windows フォームまたは WPF アプリケーションプロジェクトを開きます。
 
-2. **[データソース]** ウィンドウを開くには、 **[表示]** メニューの [**その他の Windows** > **データソース**] をクリックします。
+2. **[データソース]** ウィンドウを開くには、 **[表示]** メニューの [**その他の Windows**  > **データソース**] をクリックします。
 
    ![[表示]、[その他のウィンドウ]、[データ ソース]](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Visual Studio を使用して、Access データベース ( *.mdb*ファイル�
 
 1. Visual Studio で Windows フォームまたは WPF アプリケーションプロジェクトを開きます。
 
-2. **[表示]** メニューの [**その他の Windows** > **データソース**] をクリックします。
+2. **[表示]** メニューの [**その他の Windows**  > **データソース**] をクリックします。
 
    ![[表示]、[その他のウィンドウ]、[データ ソース]](../data-tools/media/viewdatasources.png)
 
@@ -105,7 +105,7 @@ Visual Studio を使用して、Access データベース ( *.mdb*ファイル�
 
     プロジェクトにデータセットが追加され、テーブルとビューが **[データ ソース]** ウィンドウに表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 先ほど作成したデータセットは、 **[データソース]** ウィンドウで使用できます。 これで、以下のタスクをどれでも実行できます。
 
@@ -113,7 +113,7 @@ Visual Studio を使用して、Access データベース ( *.mdb*ファイル�
 
 - **データセット デザイナー**でデータ ソースを開き、データセットを構成しているオブジェクトを追加または編集します。
 
-- データセット内のデータ<xref:System.Data.DataTable.ColumnChanging>テーブル<xref:System.Data.DataTable.RowChanging>のイベントまたはイベントに検証ロジックを追加します (「[データセットのデータを検証](../data-tools/validate-data-in-datasets.md)する」を参照してください)。
+- データセット内のデータテーブルの <xref:System.Data.DataTable.ColumnChanging> または <xref:System.Data.DataTable.RowChanging> イベントに検証ロジックを追加します (「[データセットのデータを検証](../data-tools/validate-data-in-datasets.md)する」を参照してください)。
 
 ## <a name="see-also"></a>関連項目
 

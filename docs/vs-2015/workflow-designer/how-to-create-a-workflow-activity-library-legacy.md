@@ -1,5 +1,5 @@
 ---
-title: '方法: ワークフロー アクティビティ ライブラリを作成 (レガシ) |Microsoft Docs'
+title: '方法: ワークフローアクティビティライブラリを作成する (レガシ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,47 +10,43 @@ helpviewer_keywords:
 - projects, workflow activity libraries
 ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d5bc4566c1ea520ac1050227ac8e4c0aee22e617
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604962"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>方法: ワークフロー アクティビティ ライブラリを作成する (レガシ)
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] が備えている従来の [!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用してワークフロー アクティビティ ライブラリ プロジェクトを作成するには、次の手順を実行します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
-  
-### <a name="to-create-a-workflow-activity-library-project"></a>ワークフロー アクティビティ ライブラリ プロジェクトを作成するには  
-  
-1. Visual Studio を起動します。  
-  
-2. **[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** を選択します。  
-  
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
-  
-3. いずれかを選択、 **.NET Framework 3.0**オプションまたは **.NET Framework 3.5**オプションで、ドロップダウン リストの上部にある、**新しいプロジェクト**従来のデザイナーにアクセスするウィンドウ。  
-  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] が備えている従来の [!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用してワークフロー アクティビティ ライブラリ プロジェクトを作成するには、次の手順を実行します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
+
+### <a name="to-create-a-workflow-activity-library-project"></a>ワークフロー アクティビティ ライブラリ プロジェクトを作成するには
+
+1. Visual Studio を起動します。
+
+2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** を選択します。
+
+     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+
+3. レガシデザイナーにアクセスするには、 **[新しいプロジェクト]** ウィンドウの上部にあるドロップダウンリストの **[.NET Framework 3.0]** オプションまたは **[.NET Framework 3.5]** オプションを選択します。
+
     > [!NOTE]
-    > 既定のオプションに[!INCLUDE[vs2010](../includes/vs2010-md.md)]は **.NET Framework 4**します。 このオプションは、[!INCLUDE[wf](../includes/wf-md.md)] を対象とする [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] アプリケーションを作成する場合に使用され、従来のデザイナーは使用しません。  
-  
-4. **プロジェクトの種類**ウィンドウで、Visual c# または Visual Basic (**他の言語**) し、**ワークフロー**します。  
-  
-5. **テンプレート**ペインで、 **Workflow Activity Library**します。  
-  
-6. **名前**ボックスに、簡単に特定できるように、プロジェクトのわかりやすい名前を入力します。  
-  
-7. **場所**ボックスに、プロジェクトを保存またはをクリックするディレクトリを入力**参照**それに移動します。  
-  
-     ソリューション ディレクトリをプロジェクトの作成を実行する場合に、選択、**ソリューションのディレクトリを作成** チェック ボックスとの名前を入力、**ソリューション名**ボックス。  
-  
-8. **[OK]** をクリックします。  
-  
-## <a name="see-also"></a>関連項目  
- [従来のワークフロー プロジェクトを作成します。](../workflow-designer/creating-legacy-workflow-projects.md)   
- [従来のアクティビティ デザイナーの使用](../workflow-designer/using-the-legacy-activity-designer.md)   
- [従来のワークフロー アクティビティ](../workflow-designer/legacy-workflow-activities.md)   
- [ワークフロー アクティビティの開発](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Windows Workflow Foundation アクティビティ](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+    > @No__t_0 の既定のオプションは **.NET Framework 4**です。 このオプションは、[!INCLUDE[wf](../includes/wf-md.md)] を対象とする [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] アプリケーションを作成する場合に使用され、従来のデザイナーは使用しません。
+
+4. **プロジェクトの種類** ペインで、 C# ビジュアル または Visual Basic (**その他の言語 の**下) を選択し、**ワークフロー** を選択します。
+
+5. **[テンプレート]** ペインで、 **[ワークフローアクティビティライブラリ]** を選択します。
+
+6. **[名前]** ボックスに、プロジェクトのわかりやすい名前を入力します。
+
+7. **[場所]** ボックスに、プロジェクトを保存するディレクトリを入力するか、 **[参照]** をクリックして移動します。
+
+     プロジェクト用にソリューションディレクトリを作成する場合は、 **[ソリューションのディレクトリを作成]** する チェックボックスをオンにして、 **[ソリューション名]** ボックスに名前を入力します。
+
+8. **[OK]** をクリックします。
+
+## <a name="see-also"></a>参照
+ 従来[のアクティビティデザイナーを使用して従来の](../workflow-designer/using-the-legacy-activity-designer.md)[ワークフロープロジェクトを作成する](../workflow-designer/creating-legacy-workflow-projects.md)従来のワークフロー[アクティビティ](../workflow-designer/legacy-workflow-activities.md)[ワークフローアクティビティ](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52) [Windows Workflow Foundation アクティビティ](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

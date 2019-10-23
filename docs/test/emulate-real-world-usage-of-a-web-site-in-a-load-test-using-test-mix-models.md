@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c3125a229faed10b141834565fec71e3b9f0a0d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918339"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664962"
 ---
 # <a name="test-mix-models-overview"></a>テスト ミックス モデルの概要
 
@@ -79,13 +79,13 @@ ms.locfileid: "68918339"
 
    たとえば、テストの **[テスト ミックスの編集]** ダイアログ ボックスの **[1 ユーザーの 1 時間あたりのテスト数]** の値を、1 時間あたり 2 ユーザーに設定したとします。 **"遅延のペースに分布を適用"** プロパティを **False** に設定すると、基本的にテスト実行時の設定を変更する余裕はなくなります。 テストは 30 分ごとに実行されます。 これにより、1 時間あたり 2 回のテストが行われます。
 
-  詳細については、「[方法 :配分を適用してユーザー ペースのテスト ミックス モデルを使用するときの遅延をペース配分する](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)」を参照してください。
+  詳細については、[配分を適用してユーザー ペースのテスト ミックス モデルを使用するときの遅延をペース配分する](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)」を参照してください。
 
 ### <a name="SequentialOrder"></a> 順次処理
 順次処理に基づいてオプションを選択すると、仮想ユーザーは、テストが定義されている順序に従って、シナリオでのすべてのテストを実行するようになります。
 
 ## <a name="test-iterations-property"></a>[テスト イテレーション] プロパティ
-実行設定プロパティの中で、[テスト イテレーション] プロパティの値を指定できます。 この値は、1 回のロード テストで実行されるテストの反復回数です。 指定された回数のテスト イテレーションが開始されると、負荷プロファイルの設定にかかわらず、他のテスト イテレーションは開始されません。 指定された回数のテスト イテレーションが完了すると、ロード テストが終了します。 詳細については、「[方法 :実行設定でテスト イテレーションの回数を指定する](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)」を参照してください。
+実行設定プロパティの中で、[テスト イテレーション] プロパティの値を指定できます。 この値は、1 回のロード テストで実行されるテストの反復回数です。 指定された回数のテスト イテレーションが開始されると、負荷プロファイルの設定にかかわらず、他のテスト イテレーションは開始されません。 指定された回数のテスト イテレーションが完了すると、ロード テストが終了します。 詳細については、[実行設定でテスト イテレーションの回数を指定する](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)」を参照してください。
 
 ## <a name="initialize-and-terminate-tests"></a>初期化テストと終了テスト
 各仮想ユーザーのロード テスト セッションの始まりと終わりに実行するテストを選択できます。 詳細については、「[テキスト ミックス モデルを編集して仮想ユーザーがテストを実行する確率を指定する](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)」を参照してください。

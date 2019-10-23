@@ -23,21 +23,21 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666621"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XAML]、[その他]
 
-**[その他]** プロパティ ページでは、XAML ドキュメントで要素と属性を書式設定する方法を指定します。 **[オプション]** ダイアログ ボックスを開くには、**[ツール]** メニューをクリックし、**[オプション]** をクリックします。 **[その他]** プロパティ ページにアクセスするには、**[テキスト エディター]** > **[XAML]** > **[その他]** ノードを展開します。
+**[その他]** プロパティ ページでは、XAML ドキュメントで要素と属性を書式設定する方法を指定します。 **[オプション]** ダイアログ ボックスを開くには、 **[ツール]** メニューをクリックし、 **[オプション]** をクリックします。 **[その他]** プロパティ ページにアクセスするには、 **[テキスト エディター]**  >  **[XAML]**  >  **[その他]** ノードを展開します。
 
 ## <a name="auto-insert"></a>自動挿入
 
@@ -47,7 +47,7 @@ ms.locfileid: "62969242"
 |-|-|
 |**終了タグ**|大なり記号 (>) で開始タグを閉じたときに、要素の終了タグが自動的に生成されるかどうかを指定します。|
 |**属性値の引用符**|ステートメント入力候補のドロップダウン リストから属性値を選択したときに、それを囲む引用符が生成されるかどうかを指定します。|
-|**MarkupExtension の終わり中かっこ**|左中かっこ (**{**) を入力したときに、マークアップ拡張の右中かっこ (**}**) が自動的に生成されるかどうかを指定します。|
+|**MarkupExtension の終わり中かっこ**|左中かっこ ( **{** ) を入力したときに、マークアップ拡張の右中かっこ ( **}** ) が自動的に生成されるかどうかを指定します。|
 |**MarkupExtension のパラメーターを区切るコンマ**|マークアップ拡張に複数のパラメーターを入力したときに、コンマが生成されるかどうかを指定します。|
 
 ## <a name="errors-and-warnings"></a>エラーと警告

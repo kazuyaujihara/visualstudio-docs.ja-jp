@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetEventName |Microsoft Docs
+title: 'IScriptScriptlet レット:: GetEventName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56566c85aed88faadf740392ad3ec06aa848431e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc56514800ad8388badf6e13a7fa6761b816969d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786758"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561508"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
 スクリプトレットに関連付けられているイベントの名前を返します。  
@@ -37,7 +37,7 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstr`  
- [out]関連付けられているイベントの名前を格納しているバッファー、`IScriptScriptlet`オブジェクト。  
+ 入出力@No__t_0 オブジェクトに関連付けられているイベント名を格納しているバッファー。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

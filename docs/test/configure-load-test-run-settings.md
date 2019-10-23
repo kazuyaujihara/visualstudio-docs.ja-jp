@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, configuring run settings
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 751dda344f65160fc76a528380d1f61e2cae5bec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35da7997e5a0e3260064e6f3de7ac4f9e0740fa4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665221"
 ---
 # <a name="configure-load-test-run-settings"></a>ロード テストの実行設定の構成
 
-*実行設定*とは、ロード テストの実行方法に影響を与えるプロパティのセットです。 実行設定は、**[プロパティ]** ウィンドウでカテゴリ別に整理されています。
+*実行設定*とは、ロード テストの実行方法に影響を与えるプロパティのセットです。 実行設定は、 **[プロパティ]** ウィンドウでカテゴリ別に整理されています。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -27,9 +27,9 @@ ms.locfileid: "62784146"
 
 ![ロード テストの実行設定](../test/media/loadtestrunsettings.png)
 
-## <a name="tasks"></a>[タスク]
+## <a name="tasks"></a>タスク
 
-|[タスク]|関連するトピック|
+|タスク|関連するトピック|
 |-|-|
 |**ロード テストに実行設定を追加する:** さまざまな条件でテストを実行できるように、**新しいロード テスト ウィザード**を実行したときに作成された実行設定に加えて、さらに実行設定を自分のロード テストに追加できます。|-   [方法: ロード テストに追加の実行設定を追加する](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**ロード テストで使用するアクティブな実行設定を指定する:** ロード テスト エディターを使用してロード テストで使用する実行設定を選択できます。 アクティブな実行設定は "[Active]" というサフィックスで識別されます。|-   [方法: ロード テストのアクティブな実行設定を選択する](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|

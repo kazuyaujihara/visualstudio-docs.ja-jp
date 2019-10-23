@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d9be8cd5107b109e084fcd75bc30ae0f32ab43a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969099"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655740"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -65,7 +65,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - 空白を含む文字列を二重引用符で囲みます。
 
-- エラーなどのビルドの概要情報は、**[コマンド]** ウィンドウ、または `/Out` スイッチで指定された任意のログ ファイルに表示できます。
+- エラーなどのビルドの概要情報は、 **[コマンド]** ウィンドウ、または `/Out` スイッチで指定された任意のログ ファイルに表示できます。
 
 ## <a name="example"></a>例
 

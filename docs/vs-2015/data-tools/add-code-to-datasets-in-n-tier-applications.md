@@ -1,5 +1,5 @@
 ---
-title: N 層アプリケーションでのデータセットにコードを追加 |Microsoft Docs
+title: N 層アプリケーションのデータセットにコードを追加する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -11,44 +11,44 @@ helpviewer_keywords:
 - n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c788e422ea8613b77d7d0c0460d7c026916baa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673114"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[部分クラスとメソッド](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)します。
+データセットの機能を拡張するには、データセットの部分クラスファイルを作成し、そのデータセットにコードを追加します ( *DatasetName*にコードを追加するのではありません)。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「[部分](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)クラスまたは[部分クラスとメソッド](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)」を参照してください。
 
-データセット定義を変更するたびに、データセットを定義するコードが生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更するときにも生成されます。 コードが、データセットの再生成中に削除されないようにするには、データセットの部分クラス ファイルにコードを追加します。
+データセットを定義するコードは、データセット定義が変更されるたびに生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更を加えた場合にも生成されます。 データセットの再生成時にコードが削除されないようにするには、データセットの部分クラスファイルにコードを追加します。
 
-既定では、データセットと `TableAdapter` コードを分離すると、結果としてプロジェクトごとに別個のクラス ファイルが生成されます。 元のプロジェクトに、filenamed *DatasetName*します。(または*DatasetName*します。Designer.cs) を含む、`TableAdapter`コード。 指定されているプロジェクト、 **Dataset プロジェクト**プロパティという名前のファイルは、 *DatasetName*します。DataSet.Designer.vb (または*DatasetName*します。DataSet.Designer.cs)。このファイルには、データセット コードが含まれています。
-
-> [!NOTE]
-> データセットを分離する場合と`TableAdapter`s (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
+既定では、データセットと `TableAdapter` コードを分離すると、結果としてプロジェクトごとに別個のクラス ファイルが生成されます。 元のプロジェクトには、filenamed *DatasetName*があります。デザイナー .vb (または*DatasetName*)。Designer.cs) に `TableAdapter` コードが含まれています。 " **Dataset プロジェクト**" プロパティで指定されているプロジェクトには、 *DatasetName*という名前のファイルがあります。*DatasetName*(または。DataSet.Designer.cs)。このファイルには、データセットコードが含まれています。
 
 > [!NOTE]
-> 検証コードを追加する必要があると、データセット デザイナーが生成するための機能を提供します<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、次を参照してください。 [n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)します。
+> データセットと `TableAdapter`s ( **Dataset プロジェクト**プロパティを設定することによって) を分離すると、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
+
+> [!NOTE]
+> 検証コードを追加する必要がある場合、データセットデザイナーには <xref:System.Data.DataTable.ColumnChanging> および <xref:System.Data.DataTable.RowChanging> のイベントハンドラーを生成する機能が用意されています。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 
-1. .Xsd ファイル (データセット) を含むプロジェクトを見つけます。
+1. .Xsd ファイル (データセット) が含まれているプロジェクトを見つけます。
 
-2. 選択、 **.xsd**ファイル データセットを開きます。
+2. **.Xsd**ファイルを選択して、データセットを開きます。
 
-3. コード (タイトル バーのテーブル名) を追加し、選択するデータ テーブルを右クリックして**コードの表示**します。
+3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、 **[コードの表示]** を選択します。
 
-     部分クラスが作成され、コード エディターで開きます。
+     部分クラスが作成され、コードエディターで開きます。
 
-4. 部分クラス宣言内でコードを追加します。
+4. 部分クラス宣言内にコードを追加します。
 
-     次の例は、NorthwindDataSet 内 CustomersDataTable にコードを追加する場所を示しています。
+     次の例は、NorthwindDataSet 内の顧客 Sdatatable にコードを追加する場所を示しています。
 
     ```vb
     Partial Public Class CustomersDataTable

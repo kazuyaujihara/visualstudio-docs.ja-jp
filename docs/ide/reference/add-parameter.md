@@ -2,17 +2,17 @@
 title: メソッドにパラメーターを追加するクイック アクション
 ms.date: 09/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792272"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658796"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>クイック アクションを使用してメソッドにパラメーターを追加する
 
@@ -32,14 +32,14 @@ ms.locfileid: "62792272"
 
 1. メソッドの呼び出しに追加の引数を追加します。
 
-   呼び出す場所で、メソッドの名前の下に赤い "波線" が表示されます。
+   呼び出す場所で、メソッドの名前の下に赤い波線が表示されます。
 
-2. [クイック アクション] メニューが表示されるまで赤い "波線" の上にポインターを合わせます。 [クイック アクション] メニューの**下矢印**を選択した後、**[パラメーターを [メソッド] に追加する]** を選択します。
+2. [クイック アクション] メニューが表示されるまで赤い波線の上にポインターを合わせます。 [クイック アクション] メニューの**下矢印**を選択した後、 **[パラメーターを [メソッド] に追加する]** を選択します。
 
    ![Visual Studio でのメソッドにパラメーターを追加するクイック アクション](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > また、[クイック アクション] メニューにアクセスするには、メソッドの呼び出しの行にカーソルを合わせて **Ctrl**+**.** キーを押すか、 または、ファイルの余白の電球アイコンを選択するという方法もあります。
+   > また、[クイック アクション] メニューにアクセスするには、メソッドの呼び出しの行にカーソルを合わせて **Ctrl**+ **.** キーを押すか、 (ピリオド)、または、ファイルの余白の電球アイコンを選択するという方法もあります。
 
    Visual Studio によって、メソッドの宣言に新しいパラメーターが追加されます。
 

@@ -1,5 +1,5 @@
 ---
-title: 予想 '}' |Microsoft Docs
+title: "'} ' が必要です。Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02d6772a6bfe8d71c65fb866f097d3f2da97f86a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d19d1cc24928e070ae3569858d6db83a1b59a36d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935012"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577554"
 ---
 # <a name="expected-"></a>'}' が必要です。
-オブジェクト初期化子または関数本体、ループのコード ブロックの終了をマークする右中かっこを含めるしていません。 このエラーの例があります、**の**ループの本体をマークする左かっこのみをループします。  
+関数本体、ループ、コードブロック、またはオブジェクト初期化子の末尾を示す右中かっこが含まれていませんでした。 このエラーの例としては、ループの本体をマークする左中かっこだけを含む**for**ループが考えられます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 関数、ループ、ブロック、またはオブジェクト初期化子の終了をマークする右中かっこを追加します。  
+- 関数、ループ、ブロック、またはオブジェクト初期化子の終わりを示す右中かっこを追加します。  
   
 ## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
  [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)

@@ -9,22 +9,22 @@ helpviewer_keywords:
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eb0c600830c114ca24f9cdc0619fd84c6e18d232
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871811"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668570"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>プログラム コードでレイヤー モデル内を移動し、レイヤー モデルを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックでは、プログラム コードを使ってナビゲートおよび更新できるレイヤー モデルの要素と関係について説明します。 ユーザーの視点から見たレイヤー図の詳細については、 [「レイヤー図:参照](../modeling/layer-diagrams-reference.md)図[とレイヤー図:ガイドライン](../modeling/layer-diagrams-guidelines.md)。
+このトピックでは、プログラム コードを使ってナビゲートおよび更新できるレイヤー モデルの要素と関係について説明します。 ユーザーの視点から見たレイヤー図の詳細については、「[レイヤー図: 参照](../modeling/layer-diagrams-reference.md)と[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)」を参照してください。
 
- このトピックで説明される `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` モデルは、より一般的な <xref:Microsoft.VisualStudio.GraphModel> モデルの入門となります。 [メニューコマンドまたはジェスチャ拡張機能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)を作成する場合は、 `Layer`モデルを使用します。 [レイヤー検証拡張機能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)を記述している場合は、 `GraphModel`を使用する方が簡単です。
+ このトピックで説明される `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` モデルは、より一般的な <xref:Microsoft.VisualStudio.GraphModel> モデルの入門となります。 [メニューコマンドまたはジェスチャ拡張機能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)を作成する場合は、`Layer` モデルを使用します。 [レイヤー検証拡張機能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)を作成する場合は、`GraphModel` を使用する方が簡単です。
 
 ## <a name="transactions"></a>トランザクション
  モデルを更新する場合、変更を `ILinkedUndoTransaction` で囲むことを検討します。 これにより変更が 1 つのトランザクションにグループ化されます。 いずれかの変更が失敗した場合、トランザクション全体がロールバックされます。 ユーザーが変更を元に戻した場合は、すべての変更がまとめて元に戻されます。
@@ -41,7 +41,7 @@ using (ILinkedUndoTransaction t =
 ```
 
 ## <a name="containment"></a>含有
- ![ILayer と ILayerModel の両方に ilayer を含めることができます。](../modeling/media/layerapi-containment.png "LayerApi_Containment")
+ ![ILayer と ILayerModel の両方に Ilayer を含めることができます。](../modeling/media/layerapi-containment.png "LayerApi_Containment")
 
  レイヤー ([ILayer](/previous-versions/ff644251(v=vs.140))) とレイヤーモデル ([Ilayermodel](/previous-versions/ff643069(v=vs.140))) には、コメントとレイヤーを含めることができます。
 
@@ -52,7 +52,7 @@ using (ILinkedUndoTransaction t =
 ## <a name="dependency-links"></a>依存関係リンク
  依存関係リンクはオブジェクトによって表されます。 どちらの方向にもナビゲートできます。
 
- ![ILayerDependencyLink は、2つの ilayer を接続します。](../modeling/media/layerapi-dependency.png "LayerApi_Dependency")
+ ![ILayerDependencyLink は、2つの Ilayer を接続します。](../modeling/media/layerapi-dependency.png "LayerApi_Dependency")
 
  依存関係リンクを作成するには、`source.CreateDependencyLink(target)` を呼び出します。
 
@@ -97,14 +97,14 @@ IEnumerable<ILayerComment> comments =
 
  [Ilayerartifactreference](/previous-versions/ff644536(v=vs.140))。 カテゴリ プロパティは、参照される成果物の種類 (クラス、実行ファイル、アセンブリなど) を示します。 カテゴリは、対象となる成果物を識別子が特定する方法を決定します。
 
- [Artifactreferenceextensions。 createartifactreferenceasync](/previous-versions/ff695840(v=vs.140))は、 <xref:EnvDTE.Project>または<xref:EnvDTE.ProjectItem>から成果物参照を作成します。 これは非同期操作です。 そのため、作成が完了したときに呼び出すコールバックを通常は提供します。
+ [Artifactreferenceextensions。 CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140))は、<xref:EnvDTE.Project> または <xref:EnvDTE.ProjectItem> から成果物参照を作成します。 これは非同期操作です。 そのため、作成が完了したときに呼び出すコールバックを通常は提供します。
 
  レイヤー成果物参照は、ユースケース図の成果物と混同してはなりません。
 
 ## <a name="shapes-and-diagrams"></a>図形と図
- レイヤーモデル`ILayerElement`内の各要素を表すために、と[ishape](/previous-versions/ee806673(v=vs.140))の2つのオブジェクトが使用されます。 `IShape` は、図の位置と形のサイズを表します。 レイヤー モデルでは、すべての `ILayerElement` には 1 つの `IShape` があり、レイヤー図のすべての `IShape` には 1 つの `ILayerElement` があります。 `IShape` は UML モデルにも使用されます。 そのため、すべての `IShape` にレイヤー要素があるわけではありません。
+ 2つのオブジェクトは、レイヤーモデル内の各要素を表すために使用されます。 `ILayerElement`、および[Ishape](/previous-versions/ee806673(v=vs.140))です。 `IShape` は、図の位置と形のサイズを表します。 レイヤー モデルでは、すべての `ILayerElement` には 1 つの `IShape` があり、レイヤー図のすべての `IShape` には 1 つの `ILayerElement` があります。 `IShape` は UML モデルにも使用されます。 そのため、すべての `IShape` にレイヤー要素があるわけではありません。
 
- 同様に、は`ILayerModel` 1 つの[idiagram](/previous-versions/ee789658(v=vs.140))に表示されます。
+ 同様に、`ILayerModel` は1つの[Idiagram](/previous-versions/ee789658(v=vs.140))に表示されます。
 
  カスタム コマンドまたはジェスチャ ハンドラーのコードでは、`DiagramContext` インポートから現在の図や現在の形の選択を取得できます。
 

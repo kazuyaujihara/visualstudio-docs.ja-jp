@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670591"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio のロックを解除する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>プロダクト キーを使って Visual Studio のロックを解除するには
 
-1. **[ファイル] > [アカウントの設定]** を選んで [アカウント設定] ダイアログを開き、**[プロダクト キーを使用してライセンスを取得します]** リンクをクリックします。
+1. **[ファイル] > [アカウントの設定]** を選んで [アカウント設定] ダイアログを開き、 **[プロダクト キーを使用してライセンスを取得します]** リンクをクリックします。
 
 2. 所定の場所にプロダクト キーを入力します。
 
@@ -50,7 +50,7 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 ### <a name="updating-stale-licenses"></a>古いライセンスの更新
  Visual Studio のライセンスが古くなっているという、次のようなメッセージが表示されることがあります。
 
- ![Visual Studio の [ユーザー情報] ダイアログ](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Visual Studio の [ユーザー情報] ダイアログ](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  このメッセージは、使用しているサブスクリプションはまだ有効だが、サブスクリプションを最新の状態に維持するために Visual Studio が使用するライセンス トークンが更新されなかったため、次のいずれかの理由でライセンス トークンが古くなったことを示します。
 

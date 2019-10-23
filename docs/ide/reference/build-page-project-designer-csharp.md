@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461452"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668221"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
 
@@ -34,7 +34,7 @@ ms.locfileid: "68461452"
 次のオプションを使用すると、表示または変更する構成およびプラットフォームを選択できます。
 
 > [!NOTE]
-> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、これらのオプションは表示されません。 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
+> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、これらのオプションは表示されません。 詳細については、[デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
 
 **構成**
 
@@ -42,7 +42,7 @@ ms.locfileid: "68461452"
 
 **プラットフォーム**
 
-表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、「[方法 :構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。
+表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、[構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
 ## <a name="general"></a>全般
 
@@ -104,17 +104,14 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 エラーとして扱う警告を指定するには、次の設定が使用されます。 ビルドが警告を検出したときに、どのような状況でエラーを返すのかを、次のいずれかのオプションを選択して指定します。 詳しくは、「[/warnaserror (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)」をご覧ください。
 
-**None**
+**[なし]** - 警告をエラーとして扱いません。
 
-警告をエラーとして扱いません。
+**[すべて]** - すべての警告をエラーとして扱います。
 
-**[特定の警告]**
+**[特定の警告]** - 指定した警告をエラーとして扱います。 警告番号が複数ある場合は、コンマまたはセミコロンで区切ります。
 
-指定した警告をエラーとして扱います。 警告番号が複数ある場合は、コンマまたはセミコロンで区切ります。
-
-**All**
-
-すべての警告をエラーとして扱います。
+> [!TIP]
+> コード分析の警告がエラーとして扱われないようにするには、「[Code analysis FAQ](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)」(コード分析の FAQ) を参照してください。
 
 ## <a name="output"></a>Output
 

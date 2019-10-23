@@ -1,5 +1,5 @@
 ---
-title: Idebugapplication::setname |Microsoft Docs
+title: 'IDebugApplication:: SetName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ac0b253d5193fc507e2d74a2d9dbcdd893e9fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a3e5115d4adc3fc3dfa93f10c90cb0d2b36f0e4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990763"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571105"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 アプリケーションの名前を設定します。  
@@ -37,7 +37,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>パラメーター  
  `pstrName`  
- [in]アプリケーションの名前。  
+ からアプリケーションの名前。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,9 +47,9 @@ HRESULT SetName(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドに指定された名前が後続の呼び出しで返される、`IRemoteDebugApplication::GetName`メソッド。  
+ このメソッドに指定された名前は、後続の `IRemoteDebugApplication::GetName` メソッドの呼び出しで返されます。  
   
- このメソッドを呼び出す前に呼び出す必要があります、`IProcessDebugManager::AddApplication`メソッド。  
+ @No__t_0 メソッドを呼び出す前に、このメソッドを呼び出す必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

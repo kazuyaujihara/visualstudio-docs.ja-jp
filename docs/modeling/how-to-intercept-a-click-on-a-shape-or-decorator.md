@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445176"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605288"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
-次の手順では、図形または、アイコン デコレーターに対するクリックする方法を説明します。 数回のクリックをインターセプトできるをダブルクリックしたにドラッグ、およびその他のジェスチャをし応答要素。
+次の手順では、図形またはアイコンデコレータのクリックをインターセプトする方法を示します。 クリック、ダブルクリック、ドラッグなどのジェスチャをインターセプトし、要素を応答させることができます。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>図形のクリックをインターセプトするには
- 生成されたコード ファイルから別のコード ファイルで、Dsl プロジェクトでは、shape クラスの部分クラス定義を作成します。 オーバーライド`OnDoubleClick()`または名前の先頭にある他の方法の 1 つ`On...`します。 例えば:
+ Dsl プロジェクトで、生成されたコードファイルとは別のコードファイルで、shape クラスの部分クラス定義を記述します。 @No__t_0、または `On...` で始まる名前を持つ他のメソッドの1つをオーバーライドします。 (例:
 
 ```csharp
 public partial class MyShape // change
@@ -34,20 +34,20 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> 設定`e.Handled`に`true`図形または図に渡されるイベントの場合を除き、します。
+> イベントを含んでいる図形または図に渡す場合を除き、`e.Handled` を `true` に設定します。
 
-## <a name="to-intercept-clicks-on-decorators"></a>デコレーターの数回のクリックをインターセプトするには
- イメージのデコレーターは、OnDoubleClick メソッドを持つ ImageField クラスのインスタンスで実行されます。 ImageField サブクラスを作成する場合、数回のクリックをインターセプトすることができます。 フィールドは InitializeShapeFields メソッドで設定されます。 そのため、通常 ImageField ではなく、サブクラスのインスタンスを作成するには、そのメソッドを変更する必要があります。 InitializeShapeFields メソッドは、shape クラスの生成されたコード内に示します。 シェイプ クラスを上書きするには、設定した場合、`Generates Double Derived`プロパティを次の手順で説明します。
+## <a name="to-intercept-clicks-on-decorators"></a>デコレーターのクリックをインターセプトするには
+ Image デコレーターは、Ondoubleclick: メソッドを持つ ImageField クラスのインスタンスで実行されます。 ImageField サブクラスを作成すると、クリックをインターセプトできます。 これらのフィールドは、InitializeShapeFields メソッドで設定されます。 そのため、通常の ImageField ではなく、サブクラスをインスタンス化するようにメソッドを変更する必要があります。 InitializeShapeFields メソッドは、shape クラスの生成されたコードに含まれています。 次の手順で説明するように `Generates Double Derived` プロパティを設定した場合は、shape クラスをオーバーライドできます。
 
- InitializeShapeFields はインスタンス メソッドが、1 回だけクラスごとに呼び出されます。 そのため、ダイアグラム内の各図形の 1 つインスタンスではなく、各クラスの各フィールドに対して ClickableImageField の 1 つだけのインスタンスが存在します。 ユーザーをダブルクリックすると、インスタンスは、例のコードに示すよう先のインスタンスにヒットしたを識別する必要があります。
+ InitializeShapeFields はインスタンスメソッドですが、クラスごとに1回だけ呼び出されます。 このため、各クラスの各フィールドには ClickableImageField のインスタンスが1つだけ存在します。図の各図形に対して1つのインスタンスは存在しません。 ユーザーがインスタンスをダブルクリックするときに、ヒットしたインスタンスを識別する必要があります。この例のコードでは、その例を示しています。
 
-#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>アイコン、デコレーターに対するクリックするには
+#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>アイコンデコレータのクリックをインターセプトするには
 
-1. 開くか、DSL ソリューションを作成します。
+1. DSL ソリューションを開くか、作成します。
 
-2. 選択またはアイコン デコレータでは、図形を作成し、ドメイン クラスにマップします。
+2. アイコンデコレータを持つ図形を選択または作成し、それをドメインクラスにマップします。
 
-3. コード ファイル内のファイルとは別に、`GeneratedCode`フォルダー、ImageField の新しいサブクラスを作成します。
+3. @No__t_0 フォルダー内のファイルとは別のコードファイルで、ImageField の新しいサブクラスを作成します。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -83,9 +83,9 @@ public partial class MyShape // change
     }
     ```
 
-     処理済みイベントが含まれている図形に渡されるしたくない場合は true に設定してください。
+     イベントが含まれている図形に渡されないようにする場合は、[処理済み] を [true] に設定する必要があります。
 
-4. 次の部分クラス定義を追加することで、図形渡してで InitializeShapeFields メソッドをオーバーライドします。
+4. 次の部分クラス定義を追加して、shape クラスの InitializeShapeFields メソッドをオーバーライドします。
 
     ```csharp
     public partial class MyShape // change
@@ -114,36 +114,36 @@ public partial class MyShape // change
 
 1. ソリューションをビルドして実行します。
 
-2. 図形のインスタンス上のアイコンをダブルクリックします。 テスト メッセージが表示されます。
+2. 図形のインスタンス上のアイコンをダブルクリックします。 テストメッセージが表示されます。
 
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>インターセプトをクリックしておよびドラッグ CompartmentShape リスト
- 次の例では、順序にドラッグしてコンパートメント シェイプで項目を変更することができます。 このコードを実行します。
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>CompartmentShape リストへのクリックとドラッグのインターセプト
+ 次のサンプルでは、コンパートメント図形内の項目をドラッグして並べ替えることができます。 このコードを実行するには:
 
-1. 使用して、新しい DSL ソリューションを作成、**クラス ダイアグラム**ソリューション テンプレート。
+1. **クラスダイアグラム**のソリューションテンプレートを使用して、新しい DSL ソリューションを作成します。
 
-    コンパートメント シェイプを含む独自のソリューションを操作することもできます。 このコードでは、シェイプによって表されるモデル要素と、コンパートメント リスト項目で表される要素間に埋め込みリレーションシップがあることを前提としています。
+    コンパートメントシェイプを含む独自のソリューションを使用することもできます。 このコードは、図形によって表されるモデル要素と、コンパートメントリスト項目で表される要素の間に埋め込みリレーションシップがあることを前提としています。
 
-2. 設定、 **Double Derived の生成**コンパートメント シェイプのプロパティ。
+2. コンパートメントシェイプの**Double 派生**プロパティを生成するように設定します。
 
-3. 内のファイルに次のコードを追加、 **Dsl**プロジェクト。
+3. **Dsl**プロジェクト内のファイルに次のコードを追加します。
 
-4. 独自の DSL を一致するようにこのコードではドメイン クラスとシェイプの名前を調整します。
+4. このコード内のドメインクラスと図形名を、独自の DSL と一致するように調整します。
 
-   要約すると、コードの次のように動作します。 この例で`ClassShape`コンパートメント シェイプの名前を指定します。
+   要約すると、コードは次のように機能します。 この例では、`ClassShape` はコンパートメントシェイプの名前です。
 
-- マウス イベント ハンドラーのセットは、作成時に、各コンパートメント インスタンスにアタッチされます。
+- 一連のマウスイベントハンドラーは、作成時に各コンパートメントインスタンスにアタッチされます。
 
-- `ClassShape.MouseDown`イベントは、現在の項目を格納します。
+- @No__t_0 イベントには、現在のアイテムが格納されます。
 
-- 移動したときに、マウス、現在のアイテムから MouseAction のインスタンスが作成されたカーソルを設定し、解放されるまでマウスをキャプチャします。
+- マウスを現在の項目の外に移動すると、MouseAction のインスタンスが作成されます。これにより、カーソルが設定され、マウスが解放されるまでキャプチャされます。
 
-     項目のテキストを選択するなど、他のマウス操作で干渉を避けるため、マウスが、元の項目を左になるまで、MouseAction は作成されません。
+     項目のテキストを選択するなど、その他のマウス操作が妨げられないように、マウスが元の項目を左に移動するまで、MouseAction は作成されません。
 
-     MouseAction を作成する代わりには、MouseUp リッスンするように単純になります。 ただし、これは正しく機能しません、コンパートメントの外側にドラッグした後、マウスを離した場合。 MouseAction はマウスがリリースされた場所に関係なく、適切なアクションを実行できません。
+     MouseAction を作成する代わりに、単に MouseUp をリッスンすることもできます。 ただし、これは、ユーザーがマウスを離したときに、コンパートメントの外にマウスをドラッグした場合には正常に機能しません。 MouseAction は、マウスが離されている場所に関係なく、適切なアクションを実行できます。
 
-- マウスがリリースされると、MouseAction.MouseUp はモデル要素間のリンクの順序を並べ替えます。
+- マウスが離されると、MouseAction. MouseUp は、モデル要素間のリンクの順序を再配置します。
 
-- ロールの順序の変更には、表示を更新する規則が適用されます。 この動作が既に定義されているし、コードを追加する必要はありません。
+- ロールの順序を変更すると、表示を更新するルールが起動します。 この動作は既に定義されており、追加のコードは必要ありません。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)
 - [デコレーターのプロパティ](../modeling/properties-of-decorators.md)

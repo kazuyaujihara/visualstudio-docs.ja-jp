@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts |Microsoft Docs
+title: 'IRemoteDebugApplication:: Enumglobal式のコンテキスト |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92ab12dc9944c328e744c7f39252facb8e91a3f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 594dc2c09a76cd6027a9abcb38b5951768cceef9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944267"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576820"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-このアプリケーションで実行されているすべての言語用のグローバル式のコンテキストを列挙します。  
+このアプリケーションで実行されているすべての言語のグローバル式コンテキストを列挙します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>パラメーター  
  `ppedec`  
- [out]このアプリケーションで実行されているすべての言語用のグローバル式のコンテキストを一覧する列挙子。  
+ 入出力このアプリケーションで実行されているすべての言語のグローバル式コンテキストを一覧表示する列挙子です。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT EnumGlobalExpressionContexts(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、このアプリケーションで実行されているすべての言語用のグローバル式のコンテキストを列挙します。  
+ このメソッドは、このアプリケーションで実行されているすべての言語のグローバル式コンテキストを列挙します。  
   
 ## <a name="see-also"></a>関連項目  
  [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -12,34 +12,34 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b961af0bf35bb4476f9f336fcf5298bb0bd3651
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24c3549cf98e49f3419ef0e7387a6c236c15e9e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648840"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへの Windows フォーム コントロールのバインド
 
-データを Windows フォームにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータ バインド コントロールを作成するから項目をドラッグ、**データソース**Visual Studio での Windows フォーム デザイナー ウィンドウ。
+データを Windows フォームにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータバインドコントロールを作成するには、 **[データソース]** ウィンドウから Visual Studio の Windows フォームデザイナーに項目をドラッグします。
 
-![データ ソースのドラッグ操作](../data-tools/media/raddata-data-source-drag-operation.png)
+![データソースのドラッグ操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> 場合、**データソース**ウィンドウが表示されないを選択して開くことができます**ビュー** > **その他の Windows** > **データ ソース**、またはキーを押して**Shift**+**Alt**+**D**します。 表示する Visual Studio で開くプロジェクトがあります、**データソース**ウィンドウ。
+> **[データソース]** ウィンドウが表示されていない場合は、[**他の Windows**  > **データソース**を**表示** > ] を選択するか、 **Shift**キーを押しながら +**Alt** +**D**キーを押して開くことができます。 **[データソース]** ウィンドウを表示するには、Visual Studio でプロジェクトを開いておく必要があります。
 
-項目をドラッグする前にバインドするコントロールの種類を設定できます。 自体、または個々 の列にテーブルを選択するかどうかに応じて異なる値が表示されます。  カスタム値を設定することもできます。 表については、**詳細**各列が個別のコントロールにバインドされていることを意味します。
+項目をドラッグする前に、バインド先のコントロールの種類を設定できます。 テーブル自体を選択するか、個々の列を選択するかによって、異なる値が表示されます。  また、カスタム値を設定することもできます。 テーブルの場合、 **Details**は各列が個別のコントロールにバインドされていることを意味します。
 
-![データ ソースを DataGridView にバインドします。](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
+![データソースを DataGridView にバインド](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
-## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource と BindingNavigator コントロール
+## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource コントロールと BindingNavigator コントロール
 
-<xref:System.Windows.Forms.BindingSource> コンポーネントは 2 つの目的で利用できます。 最初に、コントロールのデータをバインドするときに、抽象化レイヤーを提供します。 フォームのコントロールにバインドされます、<xref:System.Windows.Forms.BindingSource>データ ソースへの直接の代わりにコンポーネント。 また、オブジェクトのコレクションを管理できます。 <xref:System.Windows.Forms.BindingSource> に型を追加すると、その型の一覧が作成されます。
+<xref:System.Windows.Forms.BindingSource> コンポーネントは 2 つの目的で利用できます。 まず、コントロールをデータにバインドするときに抽象レイヤーを提供します。 フォーム上のコントロールは、データソースに直接ではなく、<xref:System.Windows.Forms.BindingSource> コンポーネントにバインドされます。 また、オブジェクトのコレクションを管理できます。 <xref:System.Windows.Forms.BindingSource> に型を追加すると、その型の一覧が作成されます。
 
 <xref:System.Windows.Forms.BindingSource> コンポーネントの詳細については、次のトピックを参照してください。
 
@@ -49,38 +49,38 @@ ms.locfileid: "62818765"
 
 - [BindingSource コンポーネント アーキテクチャ](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
 
-[BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)Windows アプリケーションで表示されるデータを移動するためのユーザー インターフェイスを提供します。
+[BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)は、Windows アプリケーションによって表示されるデータ間を移動するためのユーザーインターフェイスを提供します。
 
-## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView コントロールでデータをバインドします。
+## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView コントロールのデータにバインドする
 
-[DataGridView コントロール](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)、テーブル全体がその 1 つのコントロールにバインドします。 ドラッグすると、 **DataGridView**レコードを移動するためのツール ストリップをフォームに (<xref:System.Windows.Forms.BindingNavigator>) も表示されます。 [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。 次の図に、 [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) Customers テーブルには、Orders テーブルにリレーションシップが含まれているためにも追加されます。 これらの変数が宣言されたすべての自動生成されたコード フォーム クラスのプライベート メンバーとして。 塗りつぶしの自動生成されたコード、 **DataGridView**にある、`Form_Load`イベント ハンドラー。 データベースを更新するデータを保存するためのコードにある、`Save`のイベント ハンドラー、 **BindingNavigator**します。 移動したり、必要に応じてこのコードを変更します。
+[DataGridView コントロール](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)の場合、テーブル全体がその1つのコントロールにバインドされます。 **DataGridView**をフォームにドラッグすると、レコード間を移動するためのツールストリップ (<xref:System.Windows.Forms.BindingNavigator>) も表示されます。 [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。 次の図では、Customers テーブルが Orders テーブルに関連付けられているので、 [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx)も追加されています。 これらの変数はすべて、自動的に生成されるコードでは、フォームクラスのプライベートメンバーとして宣言されます。 **DataGridView**を埋めるための自動生成されたコードは、`Form_Load` イベントハンドラーにあります。 データベースを更新するためにデータを保存するコードは、 **BindingNavigator**の `Save` イベントハンドラーにあります。 必要に応じて、このコードを移動または変更できます。
 
-![BindingNavigator を含む GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
+![BindingNavigator を使用した GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
-動作をカスタマイズすることができます、 **DataGridView**と**BindingNavigator**ごとの右上隅のスマート タグをクリックしています。
+各の右上隅にあるスマートタグをクリックすると、 **DataGridView**と**BindingNavigator**の動作をカスタマイズできます。
 
-![DataGridView コントロールとバインドのナビゲーターのスマート タグ](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
+![DataGridView とバインドのナビゲーターのスマートタグ](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
 
-コントロール、アプリケーション ニーズがない場合内から利用できる、**データソース**ウィンドウ、コントロールを追加することができます。 詳細については、次を参照してください。[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。
+アプリケーションが必要とするコントロールが **[データソース]** ウィンドウ内から使用できない場合は、コントロールを追加できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
 
-項目をドラッグすることも、**データ ソース**既にデータにコントロールをバインドするフォーム上のコントロールにウィンドウ。 データに既にバインドされているコントロールには、そのデータ バインドは、最も最近ドラッグされた項目にリセットがあります。 有効なドロップ ターゲットにするには、コントロールにから上にドラッグした項目の基になるデータ型を表示することは、**データソース**ウィンドウ。 などのデータ型を持つ項目のドラッグを有効ながない<xref:System.DateTime>上に、<xref:System.Windows.Forms.CheckBox>ため、<xref:System.Windows.Forms.CheckBox>日付を表示することはできません。
+**[データソース]** ウィンドウからフォーム上の既存のコントロールに項目をドラッグして、コントロールをデータにバインドすることもできます。 既にデータにバインドされているコントロールのデータバインディングは、最後にドラッグした項目にリセットされます。 有効なドロップターゲットにするには、コントロールが **[データソース]** ウィンドウからドラッグした項目の基になるデータ型を表示できる必要があります。 たとえば、データ型が <xref:System.DateTime> の項目を <xref:System.Windows.Forms.CheckBox> にドラッグすることはできません。これは、<xref:System.Windows.Forms.CheckBox> が日付を表示できないためです。
 
-## <a name="bind-to-data-in-individual-controls"></a>個々 のコントロールでデータをバインドします。
+## <a name="bind-to-data-in-individual-controls"></a>個々のコントロールのデータにバインドする
 
-データ ソースをバインドすると**詳細**データセット内の各列は個別のコントロールにバインドします。
+データソースを**詳細**にバインドすると、データセット内の各列が別のコントロールにバインドされます。
 
-![詳細へのデータ ソースをバインドします。](../data-tools/media/raddata-bind-data-source-to-details.png)
+![データソースを詳細にバインドする](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
-> 前の図に、Orders テーブルからではなく、Customers テーブルの Orders プロパティからドラッグしてください。 バインドして、`Customer.Orders`で行われたプロパティのナビゲーション コマンド、 **DataGridView**詳細コントロールにすぐに反映されます。 Orders テーブルからドラッグした場合、コントロールは、データセットにもバインドが、それらはないと同期できません、 **DataGridView**します。
+> 前の図では、Orders テーブルからではなく、Customers テーブルの Orders プロパティからドラッグすることに注意してください。 @No__t_0 プロパティにバインドすることにより、 **DataGridView**で行われたナビゲーションコマンドが、詳細コントロールにすぐに反映されます。 Orders テーブルからドラッグした場合でも、コントロールはデータセットにバインドされますが、 **DataGridView**と同期されることはありません。
 
-次の図は、既定の Customers テーブルに Orders プロパティにバインドした後、フォームに追加されるデータ バインド コントロール**詳細**で、**データソース**ウィンドウ。
+次の図は、Customers テーブルの Orders プロパティが **[データソース]** ウィンドウの**詳細**にバインドされた後にフォームに追加される既定のデータバインドコントロールを示しています。
 
-![Orders テーブルな詳細にバインドされています。](../data-tools/media/raddata-orders-table-bound-to-details.png)
+![Orders テーブルが詳細にバインドされました](../data-tools/media/raddata-orders-table-bound-to-details.png)
 
-各コントロールがスマート タグを持つことにも注意してください。 このタグは、そのコントロールのみに適用されるカスタマイズを使用できます。
+各コントロールにはスマートタグがあることにも注意してください。 このタグは、そのコントロールにのみ適用されるカスタマイズを有効にします。
 
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Windows フォーム (.NET Framework) におけるデータ バインディング](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows フォームでのデータバインディング (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

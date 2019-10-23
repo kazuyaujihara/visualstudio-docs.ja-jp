@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652297"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>依存関係図へのカスタム プロパティの追加
 
@@ -22,7 +22,7 @@ ms.locfileid: "68870671"
 
 ## <a name="non-visible-properties"></a>非表示のプロパティ
 
-コードで依存関係図の要素に値をアタッチするだけの場合は、MEF コンポーネントを定義する必要はありません。 [Ilayerelement](/previous-versions/ff644511(v=vs.140))に`Properties`という名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらは、依存関係図の一部として保存されます。
+コードで依存関係図の要素に値をアタッチするだけの場合は、MEF コンポーネントを定義する必要はありません。 [Ilayerelement](/previous-versions/ff644511(v=vs.140))には `Properties` という名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらは、依存関係図の一部として保存されます。
 
 ## <a name="editable-properties"></a>編集可能なプロパティ
 
@@ -38,7 +38,7 @@ ms.locfileid: "68870671"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio アプリケーションの [スタート] メニューの **[Visual Studio Tools]** セクションで、**開発者コマンドプロンプト**を開きます。 次のように入力します。
+> 3. Visual Studio アプリケーションの スタート メニューの  **Visual Studio Tools** セクションで、**開発者コマンドプロンプト**を開きます。 次のように入力します。
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >

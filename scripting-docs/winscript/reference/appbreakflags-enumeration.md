@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0862e6fc670be6cd3d3ca9fbf67f453aa0772a90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de6efbc20843fcaa73965334c18cf0e5c2a0abab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009772"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572661"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS 列挙型
 アプリケーションおよびスレッドの現在のデバッグ状態を示します。  
@@ -37,19 +37,19 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |メンバー|[値]|説明|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|言語エンジンが、BREAKREASON_DEBUGGER_BLOCK ですべてのスレッドですぐに中断する必要があります。|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|言語エンジンは、BREAKREASON_DEBUGGER_HALT ですぐに中断する必要があります。|  
-|APPBREAKFLAG_STEP|0x00010000|言語エンジンは、BREAKREASON_STEP でステップ実行のスレッドですぐに中断する必要があります。|  
-|APPBREAKFLAG_NESTED|0x00020000|アプリケーションがブレークポイントで実行が入れ子になったです。|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|デバッガーは、ソース レベルでステップ実行します。|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|デバッガーはコードのバイト レベルのステップ実行します。|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|デバッガーは、コンピューター レベルでステップ実行します。|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|ステップの種類を取り除くのマスクです。|  
-|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|ブレークポイントは、実行中です。|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|言語エンジンは、BREAKREASON_DEBUGGER_BLOCK を持つすべてのスレッドですぐに中断する必要があります。|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|言語エンジンは、BREAKREASON_DEBUGGER_HALT を使用してすぐに中断する必要があります。|  
+|APPBREAKFLAG_STEP|0x00010000|言語エンジンは、BREAKREASON_STEP を使用して、ステップ実行スレッドですぐに中断する必要があります。|  
+|APPBREAKFLAG_NESTED|0x00020000|アプリケーションは、ブレークポイントで入れ子になって実行されています。|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|デバッガーは、ソースレベルでステップ実行しています。|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|デバッガーは、バイトコードレベルでステップ実行しています。|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|デバッガーはコンピューターレベルでステップ実行しています。|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|ステップの種類をファクタリングするマスク。|  
+|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|ブレークポイントが進行中です。|  
   
 ## <a name="remarks"></a>Remarks  
- 一部のフラグは、言語エンジンは、その他のフラグは、デバッガーのステップ実行モードを指定では、次の機会に中断する必要がありますを指定します。  
+ フラグによっては、次の機会に言語エンジンを中断するように指定し、他のフラグはデバッガーのステップ実行モードを指定します。  
   
 ## <a name="see-also"></a>関連項目  
- [アクティブ スクリプト デバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
+ [アクティブスクリプトデバッガーの定数、列挙型、および構造体](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON 列挙型](../../winscript/reference/breakreason-enumeration.md)

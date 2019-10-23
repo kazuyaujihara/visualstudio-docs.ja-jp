@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo |Microsoft Docs
+title: 'IDebugDocumentHelper:: GetScriptBlockInfo |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a92aa00d7997ceccc583c88a070f6fbc7d4359d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549716"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576094"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-文字とスクリプト ブロックに対応するスクリプト エンジンの範囲を取得します。  
+スクリプトブロックに対応する文字の範囲とスクリプトエンジンを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,16 +40,16 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `dwSourceContext`  
- [in]スクリプト ブロックのソース コンテキスト。  
+ からスクリプトブロックのソースコンテキスト。  
   
  `ppasd`  
- [out]このスクリプト ブロックのスクリプト エンジンです。  
+ 入出力このスクリプトブロックのスクリプトエンジン。  
   
  `piCharPos`  
- [out]スクリプト ブロックの先頭の位置。  
+ 入出力スクリプトブロックの開始位置。  
   
  `cChars`  
- [out]スクリプト ブロック内の文字の数。  
+ 入出力スクリプトブロック内の文字数。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -59,7 +59,7 @@ HRESULT GetScriptBlockInfo(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、文字とスクリプト ブロックに対応するスクリプト エンジンの範囲を取得します。  
+ このメソッドは、スクリプトブロックに対応する文字の範囲とスクリプトエンジンを取得します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)

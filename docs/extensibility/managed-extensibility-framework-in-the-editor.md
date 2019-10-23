@@ -1,5 +1,5 @@
 ---
-title: Managed Extensibility Framework、エディターで |Microsoft Docs
+title: エディターでの Managed Extensibility Framework |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,46 +10,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65731a905c157737ca4c01416f9d76fdecba30d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f376a43b6d59ba494db2ad4e5ef26b260d91f6ad
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351041"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632604"
 ---
-# <a name="managed-extensibility-framework-in-the-editor"></a>エディターでの managed Extensibility Framework
-エディターは、Managed Extensibility Framework (MEF) コンポーネントを使用して構築されます。 エディターを拡張する、独自の MEF コンポーネントをビルドして、コード エディターのコンポーネントもを使用できます。
+# <a name="managed-extensibility-framework-in-the-editor"></a>エディターでの Managed Extensibility Framework
+エディターは、Managed Extensibility Framework (MEF) コンポーネントを使用して作成されます。 独自の MEF コンポーネントをビルドしてエディターを拡張することができます。また、コードでエディターコンポーネントを使用することもできます。
 
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Managed Extensibility Framework の概要
- MEF では、.NET ライブラリを追加し、アプリケーションや、MEF プログラミング モデルを次のコンポーネントの機能を変更することができます。 Visual Studio エディターでは、ことができます、提供および両方 MEF コンポーネント パーツを使用します。
+ MEF は、MEF プログラミングモデルに準拠するアプリケーションまたはコンポーネントの機能を追加および変更できる .NET ライブラリです。 Visual Studio エディターでは、MEF コンポーネントパーツを提供および使用することができます。
 
- MEF が .NET Framework version 4 に含まれている*System.ComponentModel.Composition.dll*アセンブリ。
+ MEF は、.NET Framework version 4 *system.componentmodel*アセンブリに含まれています。
 
- MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+ MEF の詳細については、「 [Managed Extensibility Framework (mef)](/dotnet/framework/mef/index)」を参照してください。
 
-### <a name="component-parts-and-composition-containers"></a>コンポーネントの部分と合成コンテナー
- コンポーネントの一部は、クラス、または、次のいずれか (または両方) を実行できるクラスのメンバーには。
+### <a name="component-parts-and-composition-containers"></a>コンポーネントパーツと合成コンテナー
+ コンポーネントパーツは、次のいずれかまたは両方の操作を実行できるクラスまたはクラスのメンバーです。
 
-- 別のコンポーネントを使用します。
+- 別のコンポーネントを使用する
 
-- 別のコンポーネントで消費されます。
+- 別のコンポーネントによって使用される
 
-  たとえば、倉庫の在庫コンポーネントによって提供される製品の可用性データに依存する注文エントリ コンポーネントを含むショッピング アプリケーションを検討してください。 在庫部品をできる MEF の用語で*エクスポート*製品の可用性データ、および注文のエントリに、一部は*インポート*データ。 注文の入力部分とインベントリの一部が; 相互について知っておく必要は*合成コンテナー* (ホスト アプリケーションによって提供される) のエクスポート、セットを維持し、エクスポートの解決を担当してインポートします。
+  たとえば、倉庫の在庫コンポーネントによって提供される製品の可用性データに依存する注文エントリコンポーネントを持つショッピングアプリケーションを考えてみます。 MEF 用語では、在庫部分は製品の可用性データを*エクスポート*でき、注文エントリパーツはデータを*インポート*できます。 注文エントリパーツと在庫部分は、互いについて知る必要はありません。(ホストアプリケーションによって提供される)*合成コンテナー*は、エクスポートのセットを維持し、エクスポートとインポートを解決します。
 
-  合成コンテナー、<xref:System.ComponentModel.Composition.Hosting.CompositionContainer>は、通常、ホストによって所有されます。 合成コンテナーを保持する*カタログ*エクスポートされた構成部品の。
+  合成コンテナー (<xref:System.ComponentModel.Composition.Hosting.CompositionContainer>) は、通常、ホストによって所有されます。 合成コンテナーは、エクスポートされたコンポーネントパーツの*カタログ*を保持します。
 
-### <a name="export-and-import-component-parts"></a>エクスポートおよびインポート コンポーネント パーツ
- パブリック クラスまたはクラス (プロパティまたはメソッド) のパブリック メンバーとして実装されます限り、機能をエクスポートできます。 コンポーネント部分を派生する必要はありません<xref:System.ComponentModel.Composition.Primitives.ComposablePart>します。 代わりに、追加する必要があります、<xref:System.ComponentModel.Composition.ExportAttribute>属性をクラスまたはクラス メンバーをエクスポートします。 この属性を指定します、*コントラクト*一部を別のコンポーネントで、機能をインポートできます。
+### <a name="export-and-import-component-parts"></a>コンポーネントパーツのエクスポートとインポート
+ パブリッククラスまたはクラスのパブリックメンバー (プロパティまたはメソッド) として実装されている限り、任意の機能をエクスポートできます。 @No__t_0 からコンポーネント部分を派生させる必要はありません。 代わりに、エクスポートするクラスまたはクラスメンバーに <xref:System.ComponentModel.Composition.ExportAttribute> 属性を追加する必要があります。 この属性は、別のコンポーネントパーツが機能をインポートする際に使用する*コントラクト*を指定します。
 
-### <a name="the-export-contract"></a>エクスポートのコントラクト
- <xref:System.ComponentModel.Composition.ExportAttribute>エクスポートされるエンティティ (クラス、インターフェイス、または構造体) を定義します。 通常、エクスポート属性は、エクスポートの種類を指定するパラメーターを受け取ります。
+### <a name="the-export-contract"></a>エクスポートコントラクト
+ @No__t_0 は、エクスポートされるエンティティ (クラス、インターフェイス、または構造体) を定義します。 通常、export 属性は、エクスポートの種類を指定するパラメーターを受け取ります。
 
 ```
 [Export(typeof(ContentTypeDefinition))]
 class TestContentTypeDefinition : ContentTypeDefinition {   }
 ```
 
- 既定で、<xref:System.ComponentModel.Composition.ExportAttribute>属性は、エクスポート クラスの型であるコントラクトを定義します。
+ 既定では、<xref:System.ComponentModel.Composition.ExportAttribute> 属性は、エクスポートするクラスの型であるコントラクトを定義します。
 
 ```
 [Export]
@@ -58,9 +58,9 @@ class TestContentTypeDefinition : ContentTypeDefinition {   }
 class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 ```
 
- 例では、既定で`[Export]`属性は等価`[Export(typeof(TestAdornmentLayerDefinition))]`します。
+ この例では、既定の `[Export]` 属性は `[Export(typeof(TestAdornmentLayerDefinition))]` と同じです。
 
- 次の例に示すようにも、プロパティまたはメソッドをエクスポートできます。
+ 次の例に示すように、プロパティまたはメソッドをエクスポートすることもできます。
 
 ```
 [Export]
@@ -69,38 +69,38 @@ class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 public AdornmentLayerDefinition scarletLayerDefinition;
 ```
 
-### <a name="import-a-mef-export"></a>インポートと MEF エクスポート
- MEF エクスポートを使用する場合は、(通常は型) で、エクスポートされた、追加のコントラクトを知る必要があります、<xref:System.ComponentModel.Composition.ImportAttribute>をその値を持つ属性です。 既定は、インポート属性は、それを変更するクラスの型は、1 つのパラメーターを移動します。 次の行のコードのインポート、<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>型。
+### <a name="import-a-mef-export"></a>MEF エクスポートをインポートする
+ MEF エクスポートを使用する場合は、エクスポートされたコントラクト (通常は型) を把握し、その値を持つ <xref:System.ComponentModel.Composition.ImportAttribute> 属性を追加する必要があります。 既定では、import 属性は、変更するクラスの型であるパラメーターを1つ受け取ります。 次のコード行では、<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> 型がインポートされます。
 
 ```
 [Import]
 internal IClassificationTypeRegistryService ClassificationRegistry;
 ```
 
-## <a name="get-editor-functionality-from-a-mef-component-part"></a>MEF コンポーネント パーツからエディター機能を取得します。
- 既存のコードが、MEF コンポーネント パーツの場合は、エディター コンポーネント パーツを使用する MEF メタデータを使用できます。
+## <a name="get-editor-functionality-from-a-mef-component-part"></a>MEF コンポーネントパーツからエディター機能を取得する
+ 既存のコードが MEF コンポーネントのパーツである場合、MEF メタデータを使用してエディターコンポーネントのパーツを使用できます。
 
-#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>MEF コンポーネント パーツからエディター機能を使用するには
+#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>MEF コンポーネントパーツからエディター機能を使用するには
 
-1. 参照を追加*System.Composition.ComponentModel.dll*は、エディターのアセンブリをグローバル アセンブリ キャッシュ (GAC) にします。
+1. グローバルアセンブリキャッシュ (GAC) にある*system.componentmodel*への参照、およびエディターアセンブリへの参照を追加します。
 
-2. 関連する追加ステートメントを使用します。
+2. 関連する using ディレクティブを追加します。
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3. 追加、`[Import]`属性、サービス インターフェイスを次のようにします。
+3. 次のように、`[Import]` 属性をサービスインターフェイスに追加します。
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4. サービスを入手した場合は、ときに、そのコンポーネントのいずれかを使用できます。
+4. サービスを取得したら、そのコンポーネントのいずれかを使用できます。
 
-5. 独自のアセンブリをコンパイルしたときに、*.\Common7\IDE\Components\* Visual Studio のインストールのフォルダー。
+5. アセンブリをコンパイルしたら、*.. に配置します。Visual Studio インストールの \Common7\IDE\Components \* フォルダー。
 
 ## <a name="see-also"></a>関連項目
-- [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)
+- [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)

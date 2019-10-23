@@ -1,5 +1,5 @@
 ---
-title: CA2004:GC への呼び出しを削除します。KeepAlive |Microsoft Docs
+title: 'CA2004: GC の呼び出しを削除します。KeepAlive |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA2004
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e75ab22212945e5a6b4465e1e1f64ca48a9daa4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e34a8e7d4860a599155554410e13df5a6eb3bfe1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672491"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004:GC.KeepAlive への呼び出しを削除します
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: GC.KeepAlive への呼び出しを削除します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
-|Category|Microsoft.Reliability|
+|カテゴリ|Microsoft.Reliability|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- クラスの使用`SafeHandle`への呼び出しがまだ含まれているが`GC.KeepAlive`します。
+ クラスは `SafeHandle` を使用しますが、`GC.KeepAlive` の呼び出しを含みます。
 
 ## <a name="rule-description"></a>規則の説明
- 変換する場合`SafeHandle`使用状況、呼び出しをすべて削除`GC.KeepAlive`(オブジェクト)。 この場合は、クラス必要はありませんを呼び出す`GC.KeepAlive`、ファイナライザーはありませんが、依存するいると仮定すると`SafeHandle`して OS ハンドルを完了します。  呼び出しで保持するためのコスト`GC.KeepAlive`ごくわずかであり、パフォーマンスの認識によって測定される場合がありますがへの呼び出し`GC.KeepAlive`必要であるか、または有効期間がコードになりますが困難になりますが、存在しなくなった問題を解決するためには維持します。
+ @No__t_0 使用法に変換する場合は、`GC.KeepAlive` (object) へのすべての呼び出しを削除します。 この場合、クラスはファイナライザーを持たないものの、`SafeHandle` に依存してそれらの OS ハンドルを完了することを前提として、`GC.KeepAlive` を呼び出す必要はありません。  パフォーマンスによって測定されるように `GC.KeepAlive` を呼び出すことによるコストはごくわずかですが、`GC.KeepAlive` への呼び出しが必要か、または存在しなくなった可能性のある有効期間の問題を解決するのに十分であるという認識は、コードの保守が困難になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 呼び出しを削除`GC.KeepAlive`します。
+ @No__t_0 の呼び出しを削除します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 変換する技術的には位置が正しくない場合にのみ、この警告を抑制できます`SafeHandle`クラスで使用します。
+ この警告が表示されないようにするには、クラス内の `SafeHandle` 使用法に変換するのが技術的に適切でない場合に限られます。

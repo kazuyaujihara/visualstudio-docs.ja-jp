@@ -1,23 +1,23 @@
 ---
-title: ワークフロー デザイナーのステート マシン アクティビティ デザイナー
+title: ワークフローデザイナーステートマシンアクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: b5ea5034f5967b5ba94b57746fd30bf7f1d750e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809522"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649919"
 ---
 # <a name="state-machine-activity-designers"></a>ステート マシン アクティビティ デザイナー
 
-ワークフロー デザイナーには、さまざまなワークフローを構築するときに使用できるアクティビティ デザイナーが含まれています。 このセクションでは、ステート マシン ワークフローの作成と管理を目的とした、システムによって提供されるアクティビティ デザイナーを紹介します。 次のトピックでは、これらのデザイナーについて説明し、その使用方法についてのガイドラインを示します。
+ワークフローデザイナーには、ワークフローを構築するときに使用できるアクティビティデザイナーが多数用意されています。 このセクションでは、ステート マシン ワークフローの作成と管理を目的とした、システムによって提供されるアクティビティ デザイナーを紹介します。 次のトピックでは、これらのデザイナーについて説明し、その使用方法についてのガイドラインを示します。
 
 ## <a name="reference"></a>参照
  <xref:System.Activities.Statements.StateMachine>

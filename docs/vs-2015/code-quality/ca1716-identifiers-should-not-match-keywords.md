@@ -1,5 +1,5 @@
 ---
-title: CA1716:識別子はキーワードと |Microsoft Docs
+title: 'CA1716: 識別子はキーワード | と一致させることはできません。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189114"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669099"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:識別子はキーワードと同一にすることはできません
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: 識別子はキーワードと同一にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Category|Microsoft.Naming|
+|カテゴリ|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 名前空間、型、または viritual またはインターフェイス メンバーの名前では、プログラミング言語で予約済みキーワードと一致します。
+ 名前空間、型、または viritual またはインターフェイスのメンバーの名前が、プログラミング言語で予約されているキーワードと一致しています。
 
 ## <a name="rule-description"></a>規則の説明
- 識別子の名前空間、型、および仮想インターフェイス メンバーを共通言語ランタイムを対象とする言語で定義されているキーワードと一致する必要があります。 によって使用される言語とキーワードの場合は、コンパイラのエラーやあいまいさづらくなる可能性、ライブラリを使用します。
+ 名前空間、型、および仮想およびインターフェイスのメンバーの識別子は、共通言語ランタイムを対象とする言語で定義されているキーワードと一致させることはできません。 使用されている言語とキーワードによっては、ライブラリを使用するのが困難になることがあります。
 
- このルールは、次の言語のキーワードを確認します。
+ このルールでは、次の言語のキーワードについて確認します。
 
 - Visual Basic
 
@@ -46,10 +46,10 @@ ms.locfileid: "68189114"
 
 - C++/CLI
 
-  大文字と小文字が使用される[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]他の言語キーワード、および大文字小文字の比較を使用します。
+  @No__t_0 キーワードには大文字と小文字を区別しない比較が使用され、その他の言語では大文字と小文字を区別する比較が使用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- キーワードの一覧に表示されていない名前を選択します。
+ キーワードの一覧に表示されない名前を選択してください。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- このルールから警告を抑制するには、識別子は、API のユーザーを混同しないでことと、ライブラリが使用可能なすべての言語で使用できることと確信している場合、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。
+ 識別子が API のユーザーと混同しないこと、および [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] で使用可能なすべての言語でライブラリが使用可能であることが確信できる場合は、この規則からの警告を抑制することができます。

@@ -1,25 +1,25 @@
 ---
-title: ワークフロー デザイナーの Receive アクティビティ デザイナー
+title: ワークフローデザイナー-Receive アクティビティデザイナー
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c9dc2a561ce424239df5ec08eb353453b831464
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969333"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650037"
 ---
 # <a name="receive-activity-designer"></a>Receive アクティビティ デザイナー
 
-**受信**作成および構成するアクティビティ デザイナーが使用される、<xref:System.ServiceModel.Activities.Receive>アクティビティ。 <xref:System.ServiceModel.Activities.Receive> アクティビティは、メッセージ (<xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream>、<xref:System.Xml.Linq.XElement> などの組み込みの型、アプリケーション定義のデータ コントラクト、メッセージ コントラクト、またはシリアル化可能な XML クラス) を受信するアクティビティです。
+**Receive**アクティビティデザイナーは、<xref:System.ServiceModel.Activities.Receive> アクティビティを作成および構成するために使用されます。 <xref:System.ServiceModel.Activities.Receive> アクティビティは、メッセージ (<xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream>、<xref:System.Xml.Linq.XElement> などの組み込みの型、アプリケーション定義のデータ コントラクト、メッセージ コントラクト、またはシリアル化可能な XML クラス) を受信するアクティビティです。
 
 ## <a name="the-receive-activity"></a>Receive アクティビティ
 
@@ -27,30 +27,30 @@ ms.locfileid: "62969333"
 
 ### <a name="using-the-receive-activity-designer"></a>Receive アクティビティ デザイナーの使用
 
-アクセス、**受信**内のアクティビティ デザイナー、**メッセージング**のカテゴリ、**ツールボックス**します。 **受信**からアクティビティ デザイナーをドラッグすることができます、**ツールボックス**とアクティビティを通常配置して任意の場所は、ワークフロー デザイナー画面にドロップします。 この操作により、Receive という既定の <xref:System.ServiceModel.Activities.Receive> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 <xref:System.Activities.Activity.DisplayName%2A>のヘッダーで編集できる、**受信**アクティビティ デザイナーまたは、 **DisplayName**プロパティ グリッドのボックスです。
+**[ツールボックス]** の **[メッセージング]** カテゴリで**Receive**アクティビティデザイナーにアクセスします。 **Receive**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している任意の場所のワークフローデザイナー画面にドロップできます。 この操作により、Receive という既定の <xref:System.ServiceModel.Activities.Receive> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 @No__t_0 は、 **Receive**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
 
-作成する、<xref:System.ServiceModel.Activities.SendReply>アクティビティに、選択したバインドと<xref:System.ServiceModel.Activities.Receive>アクティビティを右クリックし、**受信**アクティビティ デザイナー、 をクリックして、 **SendReply の作成**コンテキスト メニューの項目、**SendReplyToReceive**下デザイナーに表示されます、**受信**デザイナー。 <xref:System.ServiceModel.Activities.SendReply> アクティビティは、サービスでの要求/応答メッセージ交換パターンの一部として応答メッセージを送信するアクティビティであり、 構成できますが、 **SendReplyToReceive**デザイナー。
+@No__t_0 アクティビティを作成して、選択した <xref:System.ServiceModel.Activities.Receive> アクティビティにバインドするには、 **Receive**アクティビティデザイナーを右クリックし、コンテキストメニューの **[SendReply の作成]** 項目をクリックします。 **SendReplyToReceive**デザイナーが表示され**ます。受信**デザイナー。 <xref:System.ServiceModel.Activities.SendReply> アクティビティは、サービスでの要求/応答メッセージ交換パターンの一部として応答メッセージを送信するアクティビティであり、 **SendReplyToReceive**デザイナーを使用して構成できます。
 
-または、 **ReceiveAndSendReply**テンプレート デザイナーで、**メッセージング**のカテゴリ、**ツールボックス**の事前構成済みのペアを作成するために使用する<xref:System.ServiceModel.Activities.Receive>と<xref:System.ServiceModel.Activities.SendReply>アクティビティ。 使用の詳細については、 **ReceiveAndSendReply**と**SendReplyToReceive**テンプレートを参照してください、 [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)トピック。
+または、 **[ツールボックス]** の **[メッセージング]** カテゴリの**receiveandsendreply**テンプレートデザイナーを使用して、構成済みの <xref:System.ServiceModel.Activities.Receive> と <xref:System.ServiceModel.Activities.SendReply> アクティビティのペアを作成することもできます。 **Receiveandsendreply**と**SendReplyToReceive**テンプレートの使用の詳細については、「 [receiveandsendreply](../workflow-designer/receiveandsendreply-template-designer.md) 」トピックを参照してください。
 
 ### <a name="the-receive-activity-properties"></a>Receive アクティビティのプロパティ
 
-次の表に、<xref:System.ServiceModel.Activities.Receive> のプロパティと、デザイナーでのその使用方法を示します。 プロパティ グリッドで、またはワークフロー デザイナー画面で、これらのプロパティを編集できます。 必須のプロパティは <xref:System.ServiceModel.Activities.Receive.OperationName%2A> プロパティのみです。
+次の表に、<xref:System.ServiceModel.Activities.Receive> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティグリッドまたはワークフローデザイナー画面で編集できます。 必須のプロパティは <xref:System.ServiceModel.Activities.Receive.OperationName%2A> プロパティのみです。
 
-| プロパティ名 | 必須 | 使用方法 |
+| プロパティ名 | 必要 | 使用方法 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.Receive> アクティビティの表示名を指定します。 既定値は Receive です。<br /><br /> 既定値以外の <xref:System.Activities.Activity.DisplayName%2A> の使用は必須ではありませんが、使用することをお勧めします。 |
-| <xref:System.ServiceModel.Activities.Receive.OperationName%2A> | True | この <xref:System.ServiceModel.Activities.Receive> アクティビティによって実装されるサービス操作の名前を指定します。 このプロパティを使用して構築の既定値を**アクション**プロパティ場合、**アクション**プロパティが明示的に設定されていません。 |
+| <xref:System.ServiceModel.Activities.Receive.OperationName%2A> | True | この <xref:System.ServiceModel.Activities.Receive> アクティビティによって実装されるサービス操作の名前を指定します。 このプロパティは **、action プロパティ**が明示的に設定されていない場合に、 **action**プロパティの既定値を構築するために使用されます。 |
 | <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> | False | サービス コントラクトの名前を指定します。 このプロパティは、サービス操作を個々のサービス コントラクトにグループ化するために使用します。 同じ <xref:System.ServiceModel.Activities.Receive> を持つすべての <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> アクティビティは、同じサービス コントラクト (WSDL ポートの種類) にグループ化されます。 既定値は、最上位レベル (ルート) アクティビティの完全修飾 CLR 名です。 |
-| <xref:System.ServiceModel.Activities.Receive.Content%2A> | False | 受信するメッセージまたはパラメーターの内容を指定します。 <xref:System.ServiceModel.Activities.ReceiveMessageContent> アクティビティまたは <xref:System.ServiceModel.Activities.ReceiveParametersContent> アクティビティを指定できます。 このプロパティの横にある省略記号ボタンを選択して編集、**コンテンツ**フィールドにプロパティ グリッドまたはをクリックすると、**定義しています.** ボタンの横にある、**コンテンツ**のラベルを**受信**アクティビティ デザイナー画面。 両方を表示、**コンテンツ定義**ダイアログ。 このボックスを使用する方法の詳細については、次を参照してください。、[コンテンツ定義 ダイアログ ボックス](../workflow-designer/content-definition-dialog-box.md)トピック。 |
-| <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | False | <xref:System.ServiceModel.Activities.Receive> オブジェクトを持つワークフローのサービス操作における <xref:System.ServiceModel.MessageQuerySet> アクティビティ間の相関関係を指定します。 横にある省略記号ボタンをクリックして、<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>プロパティを開く [プロパティ] グリッドで、 **[CorrelatesOn の定義**] ダイアログ ボックス。 このダイアログ ボックスの使用に関する詳細については、次を参照してください。、[コンテンツ定義 ダイアログ ボックス](../workflow-designer/content-definition-dialog-box.md)トピック。 |
-| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | 適切なワークフロー インスタンスにメッセージをルーティングするために使用される <xref:System.ServiceModel.Activities.CorrelationHandle> を指定します。<br /><br /> 横にある省略記号ボタンをクリックして、<xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>プロパティを開く プロパティ グリッドで、**式エディター**  ダイアログ ボックス。 このダイアログ ボックスの使用に関する詳細については、次を参照してください。、[方法。式エディターを使用して](../workflow-designer/how-to-use-the-expression-editor.md)トピック。 |
-| <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | False | ワークフロー内のこの <xref:System.ServiceModel.Activities.CorrelationInitializer> アクティビティを構成する複数の <xref:System.ServiceModel.Activities.CorrelationHandle> オブジェクトを初期化する <xref:System.ServiceModel.Activities.Receive> オブジェクトのコレクションを指定します。 横にある省略記号ボタンをクリックして、<xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A>プロパティを開く [プロパティ] グリッドで、 **[関連付け初期化子**] ダイアログ ボックス。 詳細については、このボックスを使用して、次を参照してください。、[関連付け初期化子の追加 ダイアログ ボックス](../workflow-designer/add-correlationinitializers-dialog-box.md)トピック。 |
-| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | False | メッセージが既存のワークフロー インスタンスと関連付けられていない場合に、新しいワークフロー インスタンスを作成して、このメッセージを処理するかどうかを決定する値を指定します。 値が設定されている場合**true**メッセージが既存のワークフロー インスタンスに関連付けられていない場合は、メッセージを処理する新しいワークフロー インスタンスが作成されます。 |
-| <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | この <xref:System.ServiceModel.Activities.Receive> アクティビティによって実装されるサービス操作の既知の型のコレクションを指定します。 このプロパティは、<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> に設定された <xref:System.Runtime.Serialization.DataContractSerializer> プロパティと共に使用する必要があり、 <xref:System.Xml.Serialization.XmlSerializer> が使用されている場合は無視されます。<br /><br /> 横にある省略記号ボタンを選択して、 **KnownTypes**プロパティ グリッドでフィールド、**型コレクション エディター**  ダイアログ ボックスの関連する型を追加できます。 詳細については、このボックスを使用して、次を参照してください。、[型コレクション エディター ダイアログ ボックス](../workflow-designer/type-collection-editor-dialog-box.md)トピック。 |
-| <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | メッセージの <xref:System.Net.Security.ProtectionLevel> を指定します。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>認証のみを意味します。<br />2。<xref:System.Net.Security.ProtectionLevel>署名データ送信されるデータの整合性を確保することを意味します。<br />3。<xref:System.Net.Security.ProtectionLevel>手段の暗号化と機密性と送信されるデータの整合性を確保するデータに署名します。 |
+| <xref:System.ServiceModel.Activities.Receive.Content%2A> | False | 受信するメッセージまたはパラメーターの内容を指定します。 <xref:System.ServiceModel.Activities.ReceiveMessageContent> アクティビティまたは <xref:System.ServiceModel.Activities.ReceiveParametersContent> アクティビティを指定できます。 このプロパティを編集するには、プロパティグリッドの **[コンテンツ]** フィールドの横にある省略記号ボタンを選択するか、 **Receive**アクティビティデザイナー画面で**コンテンツ**ラベルの横にある **[定義...]** ボタンをクリックします。 どちらの場合も、 **[コンテンツ定義]** ダイアログボックスが表示されます。 このボックスの使用方法の詳細については、「[[コンテンツ定義] ダイアログボックス](../workflow-designer/content-definition-dialog-box.md)」を参照してください。 |
+| <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | False | <xref:System.ServiceModel.Activities.Receive> オブジェクトを持つワークフローのサービス操作における <xref:System.ServiceModel.MessageQuerySet> アクティビティ間の相関関係を指定します。 プロパティグリッドの <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> プロパティの横にある省略記号ボタンをクリックして、 **Correlateson 定義** ダイアログボックスを開きます。 このダイアログボックスの使用方法の詳細については、「[[コンテンツ定義] ダイアログボックス](../workflow-designer/content-definition-dialog-box.md)」を参照してください。 |
+| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | 適切なワークフロー インスタンスにメッセージをルーティングするために使用される <xref:System.ServiceModel.Activities.CorrelationHandle> を指定します。<br /><br /> プロパティグリッドの [<xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>] プロパティの横にある省略記号ボタンをクリックして、 **[式エディター]** ダイアログボックスを開きます。 このダイアログボックスの使用方法の詳細については、「[方法: 式エディターを使用](../workflow-designer/how-to-use-the-expression-editor.md)する」を参照してください。 |
+| <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | False | ワークフロー内のこの <xref:System.ServiceModel.Activities.CorrelationInitializer> アクティビティを構成する複数の <xref:System.ServiceModel.Activities.CorrelationHandle> オブジェクトを初期化する <xref:System.ServiceModel.Activities.Receive> オブジェクトのコレクションを指定します。 プロパティグリッドの [<xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A>] プロパティの横にある省略記号ボタンをクリックして、 **[関連付け初期化子の追加]** ダイアログボックスを開きます。 このボックスの使用方法の詳細については、「[ [CorrelationInitializers の追加] ダイアログボックス](../workflow-designer/add-correlationinitializers-dialog-box.md)」を参照してください。 |
+| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | False | メッセージが既存のワークフロー インスタンスと関連付けられていない場合に、新しいワークフロー インスタンスを作成して、このメッセージを処理するかどうかを決定する値を指定します。 この値が**true**に設定されている場合、メッセージが既存のワークフローインスタンスと関連付けられていない場合に、新しいワークフローインスタンスが作成され、メッセージが処理されます。 |
+| <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | この <xref:System.ServiceModel.Activities.Receive> アクティビティによって実装されるサービス操作の既知の型のコレクションを指定します。 このプロパティは、<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> に設定された <xref:System.Runtime.Serialization.DataContractSerializer> プロパティと共に使用する必要があり、 <xref:System.Xml.Serialization.XmlSerializer> が使用されている場合は無視されます。<br /><br /> プロパティグリッドの **[Knowntypes]** フィールドの横にある省略記号ボタンをクリックすると、 **[型コレクションエディター]** ダイアログボックスが表示され、関連する型を追加できます。 このボックスの使用方法の詳細については、「[[型コレクションエディター] ダイアログボックス](../workflow-designer/type-collection-editor-dialog-box.md)」を参照してください。 |
+| <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | メッセージの <xref:System.Net.Security.ProtectionLevel> を指定します。<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> は認証のみを意味します。<br />2. <xref:System.Net.Security.ProtectionLevel> は、送信されるデータの整合性を確保するためにデータに署名することを意味します。<br />3. <xref:System.Net.Security.ProtectionLevel> は、データを暗号化して署名することを意味します。これは、送信されるデータの機密性と整合性を確保するのに役立ちます。 |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | <xref:System.ServiceModel.Activities.Receive> アクティビティによって実装されるサービス操作に使用するシリアライザーの型を指定します。 既定値は <xref:System.Runtime.Serialization.DataContractSerializer> です。この場合、ある型のインスタンスが、提供されたデータ コントラクトを使用する XML ストリームまたはドキュメントへとシリアル化または逆シリアル化されます。 XML をより厳密に制御する必要がある場合は、<xref:System.Xml.Serialization.XmlSerializer> も使用できます。 |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | メッセージのアクション ヘッダーを指定します。 明示的に設定されていない場合に、既定値:`https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`します。 |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | メッセージのアクション ヘッダーを指定します。 明示的に設定されていない場合、その値の既定値は `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` です。 |
 
 ## <a name="see-also"></a>関連項目
 

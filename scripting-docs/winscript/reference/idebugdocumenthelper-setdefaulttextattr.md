@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr |Microsoft Docs
+title: 'IDebugDocumentHelper:: SetDefaultTextAttr |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948955"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574635"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-スクリプト ブロックではない文字列に使用する既定の属性を設定します。  
+スクリプトブロックに含まれていないテキストに使用する既定の属性を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>パラメーター  
  `staTextAttr`  
- 既定のソース テキストの属性。  
+ 既定のソーステキスト属性。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,7 +47,7 @@ HRESULT SetDefaultTextAttr(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 既定の属性を変更するにはこのメソッドによって、スクリプト ブロックの外側のテキストの既定の属性は SOURCETEXT_ATTR_NONSOURCE です。 ユーザー インターフェイスでは、読み取り専用としてスクリプト ブロックの外側のテキストをマークするのに、この情報を使用できます。  
+ 既定の属性がこのメソッドによって変更されない限り、スクリプトブロック外のテキストの既定の属性は SOURCETEXT_ATTR_NONSOURCE です。 ユーザーインターフェイスは、この情報を使用して、スクリプトブロック外のテキストを読み取り専用としてマークできます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   

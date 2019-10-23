@@ -1,50 +1,50 @@
 ---
-title: '方法: ワークフロー コンソール アプリケーションの作成 |Microsoft Docs'
+title: '方法: ワークフローコンソールアプリケーションを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f1334655f2a8b8587922628664e43784b54ce971
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444611"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604920"
 ---
-# <a name="how-to-create-a-workflow-console-application"></a>方法: ワークフロー コンソール アプリケーションを作成する
-[!INCLUDE[wf](../includes/wf-md.md)] を利用して、無人または有人のプロセスの実行のためのワークフローを作成できます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]は、このようなワークフローを作成するためのデザイン サーフェイスを備えています。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内からワークフローを作成する場合に使用でき、デザイナーを再ホストする他のアプリケーションに統合することもできます。  
-  
- このトピックでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)] の[!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用して、コンソール アプリケーションのワークフローを作成する方法について説明します。  
-  
-### <a name="to-create-a-workflow-console-application"></a>ワークフロー コンソール アプリケーションを作成するには  
-  
-1. [!INCLUDE[vs2010](../includes/vs2010-md.md)]を起動します。  
-  
-2. **ファイル**メニューで、**新規**、し、**プロジェクト**.  
-  
-     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
-  
-3. **インストールされたテンプレート**ペインで、**ワークフロー**いずれかから、 **Visual c#** または**Visual Basic**に応じてグループの場合、言語の設定。  
-  
-4. 中央のペインで選択**ワークフロー コンソール アプリケーション**します。  
-  
-5. **名前**ボックスに、簡単に特定できるように、プロジェクトのわかりやすい名前を入力します。  
-  
-6. **場所**ボックスに、プロジェクトを保存またはをクリックするディレクトリを入力**参照**それに移動します。  
-  
-7. **ソリューション**ボックスに、新しいソリューションの名前を入力します。 クリックして**OK**アプリケーションを作成します。  
-  
+# <a name="how-to-create-a-workflow-console-application"></a>ワークフロー コンソール アプリケーションを作成する方法
+[!INCLUDE[wf](../includes/wf-md.md)] を利用して、無人または有人のプロセスの実行のためのワークフローを作成できます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]は、このようなワークフローを作成するためのデザイン サーフェイスを備えています。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内からワークフローを作成する場合に使用でき、デザイナーを再ホストする他のアプリケーションに統合することもできます。
+
+ このトピックでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)] の[!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用して、コンソール アプリケーションのワークフローを作成する方法について説明します。
+
+### <a name="to-create-a-workflow-console-application"></a>ワークフロー コンソール アプリケーションを作成するには
+
+1. [!INCLUDE[vs2010](../includes/vs2010-md.md)] を起動します。
+
+2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+
+     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
+
+3. **[インストールされたテンプレート]** ペインで、好みの言語に応じて、  **C#ビジュアル**または**Visual Basic**のグループのいずれかから **[ワークフロー]** を選択します。
+
+4. 中央のペインで、 **[ワークフローコンソールアプリケーション]** を選択します。
+
+5. **[名前]** ボックスに、プロジェクトのわかりやすい名前を入力します。
+
+6. **[場所]** ボックスに、プロジェクトを保存するディレクトリを入力するか、 **[参照]** をクリックして移動します。
+
+7. **[ソリューション]** ボックスに、新しいソリューションの名前を入力します。 **[OK]** をクリックしてアプリケーションを作成します。
+
     > [!NOTE]
-    > 既存のソリューションのワークフロー コンソール アプリケーションを追加する場合は、そのソリューションを開きます[!INCLUDE[vs2010](../includes/vs2010-md.md)]でソリューションを右クリックして**ソリューション エクスプ ローラー**、選択および**追加**、し**新しいプロジェクト.** 開く、**新しいプロジェクト** ダイアログ ボックス。 上記の手順を実行します。  
-  
-8. プロジェクト テンプレートで XAML のワークフロー定義が作成され、コンソール アプリケーション定義がソース コードに記述されます。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]で、作成したワークフロー用のキャンバスが開かれて表示されます。  
-  
-9. ワークフローを作成するアクティビティまたはからには、その他のワークフロー項目をドラッグ、**ツールボックス**ワークフロー デザイン サーフェイスにします。  
-  
-## <a name="see-also"></a>関連項目  
+    > ワークフローコンソールアプリケーションを既存のソリューションに追加する場合は、[!INCLUDE[vs2010](../includes/vs2010-md.md)] でそのソリューションを開き、**ソリューションエクスプローラー**でソリューションを右クリックして、 **[追加]** 、 **[新しいプロジェクト...]** の順に選択します。 を選択すると、 **[新しいプロジェクト]** ダイアログボックスが開きます。 上記の手順を実行します。
+
+8. プロジェクト テンプレートで XAML のワークフロー定義が作成され、コンソール アプリケーション定義がソース コードに記述されます。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]で、作成したワークフロー用のキャンバスが開かれて表示されます。
+
+9. ワークフローを作成するには、アクティビティまたはその他のワークフロー項目を、**ツールボックス**からワークフローのデザイン画面にドラッグします。
+
+## <a name="see-also"></a>参照
  [ワークフロー プロジェクトの作成](../workflow-designer/creating-a-workflow-project.md)

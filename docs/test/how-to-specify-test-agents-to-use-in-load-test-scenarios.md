@@ -9,15 +9,15 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786433"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653401"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>方法:ロード テスト シナリオで使用するテスト エージェントを指定する
 
@@ -60,9 +60,9 @@ ms.locfileid: "62786433"
      エージェントは、"**Agent1, Agent2, Agent3**" のように、コンマで区切る必要があります。 プロパティが空白の場合、シナリオでは、使用できるすべてのエージェントが使用されます。
 
     > [!NOTE]
-    > ローカルの実行では、**[使用するエージェント]** プロパティは無視されます。 リモート実行では、**[使用するエージェント]** で指定されているエージェントが存在しない場合、シナリオのテストは実行されません。
+    > ローカルの実行では、 **[使用するエージェント]** プロパティは無視されます。 リモート実行では、 **[使用するエージェント]** で指定されているエージェントが存在しない場合、シナリオのテストは実行されません。
 
-5. プロパティを変更した後で、**[ファイル]** メニューの **[保存]** を指定します。 その後で、新しい **[使用するエージェント]** の値を使用して、ロード テストを実行できます。
+5. プロパティを変更した後で、 **[ファイル]** メニューの **[保存]** を指定します。 その後で、新しい **[使用するエージェント]** の値を使用して、ロード テストを実行できます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428990"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655940"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>方法:複数ファイルの項目テンプレートを作成する
 
@@ -53,17 +53,17 @@ ms.locfileid: "62428990"
      > [!NOTE]
      > このテンプレートから派生した項目がプロジェクトに追加されると、ユーザーが **[新しい項目の追加]** ダイアログ ボックスで入力した名前からファイル名が派生されます。
 
-1. テンプレートに組み込むファイルを選んで右クリックし、**[送る]** > **[圧縮 (zip 形式) フォルダー]** の順に選択します。
+1. テンプレートに組み込むファイルを選んで右クリックし、 **[送る]**  >  **[圧縮 (zip 形式) フォルダー]** の順に選択します。
 
    選択したファイルは *.zip* ファイルに圧縮されます。
 
-1. ユーザー項目テンプレートの場所に *.zip* ファイルをコピーします。 既定のディレクトリは、*%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates* です。 詳細については、「[方法 :テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+1. ユーザー項目テンプレートの場所に *.zip* ファイルをコピーします。 既定のディレクトリは、 *%USERPROFILE%\Documents\Visual Studio \<バージョン\>\Templates\ItemTemplates* です。 詳細については、[テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 1. Visual Studio をいったん閉じて開きなおします。
 
-1. 新しいプロジェクトを作成するか、既存のプロジェクトを開き、**[プロジェクト]** > **[新しい項目の追加]** の順に選ぶか、**Ctrl**+**Shift**+**A** キーを押します。
+1. 新しいプロジェクトを作成するか、既存のプロジェクトを開き、 **[プロジェクト]**  >  **[新しい項目の追加]** の順に選ぶか、**Ctrl**+**Shift**+**A** キーを押します。
 
-   複数ファイルの項目テンプレートが、**[新しい項目の追加]** ダイアログ ボックスに表示されます。
+   複数ファイルの項目テンプレートが、 **[新しい項目の追加]** ダイアログ ボックスに表示されます。
 
 ## <a name="example"></a>例
 

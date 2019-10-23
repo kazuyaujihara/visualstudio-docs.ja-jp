@@ -11,15 +11,15 @@ helpviewer_keywords:
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703988"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672668"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ ms.locfileid: "65703988"
 ## <a name="running-visual-studio-as-an-administrator"></a>管理者としての Visual Studio の実行
  IDE を起動するたびに管理アクセス許可を使用して Visual Studio を起動するか、管理アクセス許可で常に実行するようにアプリケーション ショートカットを変更できます。 詳細については、Windows のヘルプを参照してください。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)]、または [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)]、または [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには
 
 1. **[スタート]** 画面で、「**Visual Studio**」と入力します。 インストールされている Visual Studio のバージョンが表示されます。
 
 2. 起動する Visual Studio のバージョンを選択し、ショートカット メニューを表示します (画面の下部に表示されます)。 **[管理者として実行]** を選択します。
 
-     Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
+     Visual Studio の起動時には、 **[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>または [!INCLUDE[win7](../includes/win7-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>または [!INCLUDE[win7](../includes/win7-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1. **[スタート]** メニューをクリックし、**[すべてのプログラム]** をクリックします。
+1. **[スタート]** メニューをクリックし、 **[すべてのプログラム]** をクリックします。
 
-2. **[Microsoft Visual Studio** *Version]* フォルダーで、**[Visual Studio** *Version]* をクリックし、ショートカット メニューを開き、**[管理者として実行]** をクリックします。
+2. **[Microsoft Visual Studio** *Version]* フォルダーで、 **[Visual Studio** *Version]* をクリックし、ショートカット メニューを開き、 **[管理者として実行]** をクリックします。
 
-     Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
+     Visual Studio の起動時には、 **[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)

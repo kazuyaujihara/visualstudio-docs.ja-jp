@@ -1,5 +1,5 @@
 ---
-title: Iactivescript::setscriptstate |Microsoft Docs
+title: 'IActiveScript:: SetScriptState |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea947e00ffd5a3498261f4a3a8acd4791e8ace60
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935532"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577988"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-特定の状態には、スクリプト エンジンを設定します。 このメソッドは、ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことができます、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイス。  
+指定された状態にスクリプトエンジンを配置します。 このメソッドは非ベースのスレッドから呼び出すことができます。この場合、非ベースのコールアウトによってオブジェクトをホストするか、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)インターフェイスを使用することはできません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>パラメーター  
  `ss`  
- [in]スクリプト エンジンを特定の状態に設定します。 定義されている値のいずれかを指定することができます、 [SCRIPTSTATE 列挙型](../../winscript/reference/scriptstate-enumeration.md)列挙体。  
+ からスクリプトエンジンを特定の状態に設定します。 [Scriptstate 列挙](../../winscript/reference/scriptstate-enumeration.md)型に定義されている値のいずれかを指定できます。  
   
 ## <a name="return-value"></a>戻り値  
  次のいずれかの値を返します。  
@@ -45,17 +45,17 @@ HRESULT SetScriptState(
 |戻り値|説明|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_FAIL`|スクリプト エンジンが初期化された状態に遷移をサポートしていません。 ホストする必要がありますこのスクリプト エンジンを破棄し、作成、初期化、および同じ効果を実現するために新しいスクリプト エンジンを読み込みます。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンがされていないされて読み込まれるまたは初期化) し、そのために失敗しました。|  
-|`OLESCRIPT_S_PENDING`|メソッドが正常にキューに登録が状態がまだ変更されていません。 ときに状態の変更、サイトはコールバックを通じて、 [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッド。|  
-|`S_FALSE`|メソッドが成功しましたが、スクリプトが既に指定された状態。|  
+|`E_FAIL`|スクリプトエンジンは、初期化された状態への移行をサポートしていません。 ホストは、このスクリプトエンジンを破棄し、同じ効果を得るために新しいスクリプトエンジンを作成、初期化、および読み込みする必要があります。|  
+|`E_UNEXPECTED`|呼び出しは想定されていませんでした (たとえば、スクリプトエンジンがまだ読み込まれていないか初期化されていないため)。そのため失敗しました。|  
+|`OLESCRIPT_S_PENDING`|メソッドは正常にキューに登録されましたが、状態はまだ変更されていません。 状態が変化すると、 [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッドを使用してサイトがコールバックされます。|  
+|`S_FALSE`|メソッドは成功しましたが、スクリプトは既に指定された状態にあります。|  
   
 ## <a name="remarks"></a>Remarks  
- スクリプト エンジンの状態に関する詳細については、のスクリプト エンジンの状態を参照してください[Windows スクリプト エンジン](../../winscript/windows-script-engines.md)します。  
+ スクリプトエンジンの状態の詳細については、「 [Windows スクリプト](../../winscript/windows-script-engines.md)エンジン」の「スクリプトエンジンの状態」セクションを参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
- [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
+ [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
+ [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
+ [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

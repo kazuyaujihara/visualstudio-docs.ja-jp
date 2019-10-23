@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::GetCount |Microsoft Docs
+title: 'IEnumDebugExtendedPropertyInfo:: GetCount |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e56f1def9d797cc67d0a71813a4dd4b35589d7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b51e4cd765a03226800af95b5de318862d87946
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583621"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576837"
 ---
 # <a name="ienumdebugextendedpropertyinfogetcount"></a>IEnumDebugExtendedPropertyInfo::GetCount
-数を取得`ExtendedDebugPropertyInfo`構造体、列挙子にします。  
+列挙子内の `ExtendedDebugPropertyInfo` 構造体の数を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,10 +37,10 @@ HRESULT GetCount (
   
 #### <a name="parameters"></a>パラメーター  
  `pcelt`  
- [out]数を返します`ExtendedDebugPropertyInfo`構造体、列挙子にします。  
+ 入出力列挙子内の `ExtendedDebugPropertyInfo` 構造体の数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`、通常`S_OK`します。  
+ は、有効な `HRESULT` (通常は `S_OK`) を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IEnumDebugExtendedPropertyInfo インターフェイス](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   

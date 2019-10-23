@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 715086a2c0d9196680dd1f332ee9b5122e144e5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950073"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653477"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>方法:Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する
 
@@ -26,15 +26,15 @@ ms.locfileid: "62950073"
 > テーブル ビューのプレーン テキストや詳細ビューのスクリーンショットは Microsoft Word にコピーできますが、HTML 形式で適用されないので、さらに書式設定や編集が必要となります。
 
 > [!TIP]
-> また、編成された Microsoft Excel レポートを自動的に生成することもできます。 詳細については、「[方法 :Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
+> また、編成された Microsoft Excel レポートを自動的に生成することもできます。 詳細については、[Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
 
 ## <a name="copy-summary-view-data"></a>概要ビューのデータのコピー
 
 1. **ロード テスト結果**で、概要ビューが現在表示されていない場合に、ツール バーの **[概要]** をクリックします。
 
-2. 概要ビューで右クリックし、**[すべて選択]** を選択します。
+2. 概要ビューで右クリックし、 **[すべて選択]** を選択します。
 
-3. 概要ビューで右クリックし、**[コピー]** を選択します。 これにより、概要ビュー データは HTML 形式でクリップボードに表示されます。
+3. 概要ビューで右クリックし、 **[コピー]** を選択します。 これにより、概要ビュー データは HTML 形式でクリップボードに表示されます。
 
 4. Microsoft Word で、概要ビュー データを目的の場所に貼り付けます。
 
@@ -44,11 +44,11 @@ ms.locfileid: "62950073"
 
 1. **ロード テスト結果**で、グラフ ビューが現在表示されていない場合に、ツールバーの **[グラフ]** を選択します。
 
-2. (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
+2. (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、[グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 
      ![グラフ ビューのズーム コントロール](../test/media/ltest_zoomcontrol.png)
 
-3. Microsoft Word 文書にコピーするグラフで右クリックし、**[コピー]** を選択します。
+3. Microsoft Word 文書にコピーするグラフで右クリックし、 **[コピー]** を選択します。
 
 4. Microsoft Word で、グラフおよび関連したテーブル データを目的の場所に貼り付けます。
 

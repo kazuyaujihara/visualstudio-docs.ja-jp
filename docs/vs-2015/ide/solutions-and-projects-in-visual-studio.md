@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679876"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661191"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Visual Studio でアプリケーション、Web サイト、Web アプリ、ス�
 
  次の図は、プロジェクトとソリューションの関係、およびそれらに論理的に含まれる項目を示しています。
 
- ![Visual Studio のプロジェクトとソリューション](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Visual Studio のプロジェクトとソリューション](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  カスタム プロジェクトや項目テンプレートを作成することもできます。 詳細については、「[Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)」 (プロジェクトと項目テンプレートの作成) をご覧ください。
 
@@ -80,7 +80,7 @@ Visual Studio でアプリケーション、Web サイト、Web アプリ、ス�
 ## <a name="managing-projects-in-solution-explorer"></a>ソリューション エクスプローラーでのプロジェクトの管理
  新しいプロジェクトを作成した後は、 **ソリューション エクスプローラー** を使用して、プロジェクト、ソリューション、およびそれらの関連項目を表示して管理します。 次の図に、2 つのプロジェクトを含む C# ソリューションが表示されたサーバー エクスプローラーを示します。
 
- ![ソリューション エクスプ ローラー](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![ソリューション エクスプローラー](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>このセクションの内容
 

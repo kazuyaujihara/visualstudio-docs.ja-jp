@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName |Microsoft Docs
+title: 'IDebugDocumentHost:: GetPathName |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e36411cdd378e78ac3bc59df5330eb8ecb47b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33ebcde4cf1db28e199f13fae720374bd1b64763
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008749"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569283"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
-ドキュメントのソース ファイルの完全なパスとファイル名を返します。  
+ドキュメントのソースファイルの完全パスとファイル名を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,10 +38,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstrLongName`  
- [out]長い名前を含む文字列。  
+ 入出力長い名前を含む文字列。  
   
  `pfIsOriginalFile`  
- [out]フラグが true の場合`pbstrLongName`それ以外の場合は false、ドキュメントの元のファイルを参照します。  
+ 入出力@No__t_0 がドキュメントの元のファイルを参照している場合は true、それ以外の場合は false を示すフラグ。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -49,10 +49,10 @@ HRESULT GetPathName(
 |[値]|説明|  
 |-----------|-----------------|  
 |`S_OK`|メソッドが成功しました。|  
-|`E_FAIL`|ソース ファイルがありませんを作成または確認できます。|  
+|`E_FAIL`|ソースファイルを作成または特定できません。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、ドキュメントのソース ファイルの完全なパスとファイル名を返します。  
+ このメソッドは、ドキュメントのソースファイルの完全パスとファイル名を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHost インターフェイス](../../winscript/reference/idebugdocumenthost-interface.md)

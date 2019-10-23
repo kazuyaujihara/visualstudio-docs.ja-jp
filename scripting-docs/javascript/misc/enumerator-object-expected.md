@@ -1,5 +1,5 @@
 ---
-title: Enumerator オブジェクトが必要です |Microsoft Docs
+title: Enumerator オブジェクトが必要です。Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90b6b923f631c7785428a1b3879528e97c1bfd6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946343"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572866"
 ---
-# <a name="enumerator-object-expected"></a>Enumerator オブジェクトが必要です
-呼び出そうとしたか、 **Enumerator.prototype.atEnd、Enumerator.prototype.item、Enumerator.prototype.moveFirst、** または**Enumerator.prototype.moveNext**他の型のオブジェクトのメソッド`Enumerator`します。 呼び出し元のオブジェクト型でなければなりません`Enumerator`します。 この規則に違反するコードの例を次に示します。  
+# <a name="enumerator-object-expected"></a>列挙子オブジェクトが必要です。
+@No__t_2 以外の型のオブジェクトに対して、 **enumerator** 、enumerator、列挙子、列挙子、列挙子、または**列挙**子を呼び出そうとしています。 この種類の呼び出しのオブジェクトは `Enumerator` 型である必要があります。 この規則を解除するコードの例を次に示します。  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- のみを呼び出す、 **Enumerator.prototype.atEnd**、 **Enumerator.prototype.item**、 **Enumerator.prototype.moveFirst**、または**Enumerator.prototype.moveNext**型のオブジェクトに対するメソッド`Enumerator`します。 オブジェクトかどうかを確認するを`Enumerator`オブジェクトを使用します。  
+- @No__t_4 型のオブジェクトに対して **、enumerator、** enumerator **、enumerator、** **enumerator、enumerator**、または enumerator. prototype. **moveNext**を呼び出します。 オブジェクトが `Enumerator` オブジェクトであるかどうかを調べるには、次のように使用します。  
   
     ```js
     if(x instanceof Enumerator)  

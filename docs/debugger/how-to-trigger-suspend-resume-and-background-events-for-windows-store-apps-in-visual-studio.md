@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925484"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450406"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリのデバッグ中に中断イベント、再開イベント、およびバックグラウンドイベントをトリガーする方法
 
@@ -79,11 +79,11 @@ ms.locfileid: "68925484"
 
     - Visual C# プロジェクトと Visual Basic プロジェクトの場合は、 **[起動しないが、開始時にコードをデバッグ]** をクリックします。
 
-         ![&#35;C&#47;VB デバッグ起動アプリケーションプロパティ](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![C&#35;&#47;VB デバッグ起動アプリケーションプロパティ](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - ビジュアルC++プロジェクトの場合は、 **[アプリケーションの起動]** ボックスの一覧の **[いいえ]** をクリックします。
+    - プロジェクトC++の場合は、 **[アプリケーションの起動]** ボックスの一覧の **[いいえ]** をクリックします。
 
-         ![&#43;C&#43;VB&#47;アプリケーションデバッグプロパティの起動](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![&#43;&#43;C&#47;VB アプリケーションデバッグプロパティの起動](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. **F5** キーを押して、アプリをデバッグ モードにします。 デバッグ モードであることを示すために、 **[デバッグの場所]** ツール バーの **[プロセス]** の一覧にアプリのパッケージ名が表示されます。
 
@@ -105,11 +105,11 @@ ms.locfileid: "68925484"
 
 2. **操作** ウィンドウで、 **[表示]** をクリックし、 **[分析およびデバッグ ログの表示]** がオンになっていることを確認します。
 
-3. **[イベントビューアー (ローカル)]** ツリーで、[ノード] [**アプリケーションとサービスログ** > ] [**Microsoft** > **Windows** > **backgroundタスクインフラストラクチャ**] の順に展開します。
+3. **イベントビューアー (ローカル)** ツリーで、ノード **アプリケーションとサービスログ**  > **Microsoft**  > **Windows**  > **backgroundタスクインフラストラクチャ** の順に展開します。
 
 4. **診断** ログを選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio での UWP アプリのテスト](../test/testing-store-apps-with-visual-studio.md)
 - [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [アプリケーションのライフサイクル](/windows/uwp/launch-resume/app-lifecycle)

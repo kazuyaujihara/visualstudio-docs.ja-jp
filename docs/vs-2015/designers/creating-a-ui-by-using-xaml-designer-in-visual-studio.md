@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695632"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657946"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio での XAML デザイナーを使用した UI の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  [デザイン] ビューでは、 *アートボード* を含むウィンドウがアクティブ ウィンドウになり、主要な作業画面として使用できます。 要素を追加または描画し、必要に応じて変更することにより、アプリのページを視覚的にデザインできます。 詳細については、「 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)」を参照してください。 次の図は、デザイン ビューに表示されるアートボードを示しています。
 
- ![XAML デザイナーのデザイン ビュー](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![XAML デザイナーのデザインビュー](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  アートボードで使用できる機能は次のとおりです。
 
@@ -58,7 +58,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  デザイン ビューでは、画面の左下に次のように表示される追加のアートボード コマンドを使用できます。
 
- ![デザイン ビュー コマンド](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![デザインビューコマンド](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  このツール バーでは、次のコマンドを使用できます。
 
@@ -81,15 +81,15 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 ## <a name="device-window"></a>デバイス ウィンドウ
  XAML デザイナーの [デバイス] ウィンドウを使用すると、Windows ストアまたは Windows Phone プロジェクトについて、さまざまなビュー、表示、表示オプションをデザイン時にシミュレートできます。 [デバイス] ウィンドウは、XAML デザイナーを使用しているときに **[デザイン]** メニューから使用できます。 次のように表示されます。
 
- ![[デバイス] ウィンドウ](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![デバイスウィンドウ](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  [デバイス] ウィンドウで使用可能なオプションは、次のとおりです。
 
  **表示** アプリの異なる画面サイズと解像度を指定します。
 
- **印刷の向き**アプリの向きを指定します。**[横]** または **[縦]** に指定します。
+ **向き** アプリの向きを **[横]** または **[縦]** に指定します。
 
- **Edge**アプリの端の位置揃えを指定します。**[両方]**、**[左]**、**[右]**、または **[なし]** に指定します。
+ **エッジ** アプリの端の位置揃えを **[両方]** 、 **[左]** 、 **[右]** 、または **[なし]** に指定します。
 
  **ハイコントラスト** 選択したコントラスト設定に基づいてアプリをプレビューします。 **[既定]** 以外の値を設定すると、App.xaml 内に設定された `RequestedTheme` プロパティをオーバーライドします。
 
@@ -114,9 +114,9 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
 - 選択した要素のコンテキスト メニューを使用する。 アートボードで選択した要素に対しても、同じメニューを使用できます。
 
-  [ドキュメント アウトライン] ウィンドウを表示するには、メニュー バーで **[表示]**、 **[その他のウィンドウ]**、 **[ドキュメント アウトライン]** の順に選択します。
+  [ドキュメント アウトライン] ウィンドウを表示するには、メニュー バーで **[表示]** 、 **[その他のウィンドウ]** 、 **[ドキュメント アウトライン]** の順に選択します。
 
-  ![[ドキュメント アウトライン] ウィンドウ](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![ドキュメントアウトラインウィンドウ](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   [ドキュメント アウトライン] ウィンドウで使用可能なオプションは、次のとおりです。
 
@@ -131,11 +131,11 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 ## <a name="properties-window"></a>[プロパティ] ウィンドウ
  [プロパティ] ウィンドウでは、コントロールのプロパティの値を設定できます。 次のように表示されます。
 
- ![[プロパティ] ウィンドウ](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
+ ![プロパティ ウィンドウ](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- [プロパティ] ウィンドウの上部にはさまざまなオプションがあります。 現在選択されている要素の名前を変更するには、 **[名前]** ボックスを使用します。 左上にあるアイコンは、現在選択されている要素を表します。 プロパティをカテゴリ別またはアルファベット順に並べ替えるには、 **[並べ替え]** の一覧で **[カテゴリ]**、 **[名前]** 、または **[ソース]** をクリックします。 コントロールのイベントの一覧を表示するには、 **[イベント]** ボタン (稲妻のシンボルが表示されている) をクリックします。 プロパティを検索するには、 **[検索プロパティ]** ボックスにプロパティの名前を入力し始めます。 入力した文字列に一致するプロパティが [プロパティ] ウィンドウに表示されます。 一部のプロパティでは、下矢印ボタンを選択して、詳細プロパティを設定することができます。 プロパティの使用とイベントの処理の詳細ついては、「 [クイック スタート: コントロールの追加とイベントの処理](http://go.microsoft.com/fwlink/?LinkID=247983)」を参照してください。
+ [プロパティ] ウィンドウの上部にはさまざまなオプションがあります。 現在選択されている要素の名前を変更するには、 **[名前]** ボックスを使用します。 左上にあるアイコンは、現在選択されている要素を表します。 プロパティをカテゴリ別またはアルファベット順に並べ替えるには、 **[並べ替え]** の一覧で **[カテゴリ]** 、 **[名前]** 、または **[ソース]** をクリックします。 コントロールのイベントの一覧を表示するには、 **[イベント]** ボタン (稲妻のシンボルが表示されている) をクリックします。 プロパティを検索するには、 **[検索プロパティ]** ボックスにプロパティの名前を入力し始めます。 入力した文字列に一致するプロパティが [プロパティ] ウィンドウに表示されます。 一部のプロパティでは、下矢印ボタンを選択して、詳細プロパティを設定することができます。 プロパティの使用とイベントの処理の詳細ついては、「 [クイック スタート: コントロールの追加とイベントの処理](http://go.microsoft.com/fwlink/?LinkID=247983)」を参照してください。
 
  各プロパティの値の右側には、 *プロパティ マーカー* がボックスのシンボルとして表示されます。 プロパティ マーカーの外観は、プロパティに適用されるデータ バインドやリソースの有無を示します。 たとえば、白色のボックス シンボルは既定値を示します。黒色のボックス シンボルは、通常、ローカル リソースが適用されていることを示します。オレンジ色のボックスは、通常、データ バインドが適用されていることを示します。 プロパティ マーカーをクリックすると、スタイルの定義に移動したり、データ バインディング ビルダーを開いたり、リソース ピッカーを開いたりできます。
 
-## <a name="see-also"></a>関連項目
- [XAML デザイナーで要素の操作](../designers/working-with-elements-in-xaml-designer.md)[を作成し、リソースの適用方法](../designers/how-to-create-and-apply-a-resource.md)[チュートリアル。XAML デザイナーでデータにバインドする](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+## <a name="see-also"></a>参照
+ [リソースの作成と適用方法](../designers/how-to-create-and-apply-a-resource.md)に[関する XAML デザイナーの要素の操作](../designers/working-with-elements-in-xaml-designer.md)[チュートリアル: XAML デザイナー内のデータへのバインド](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

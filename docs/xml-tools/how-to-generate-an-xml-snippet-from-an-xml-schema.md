@@ -1,21 +1,21 @@
 ---
-title: '方法: XML スキーマから XML スニペットを生成する'
+title: '方法 : XML スキーマから XML スニペットを生成する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926812"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645378"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: Xml スキーマから XML スニペットを生成する
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: xml スキーマから XML スニペットを生成する
 
 Xml エディターには、xml スキーマ定義言語 (XSD) スキーマから XML スニペットを生成する機能があります。 たとえば、XML ファイルを作成しているときに、要素名の横に位置しているときに、 **tab**キーを押して要素に、その要素のスキーマ情報から生成された xml データを設定することができます。
 
@@ -56,7 +56,7 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。
 
-3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします ( **...** ) で、**スキーマ**フィールド。
+3. ドキュメントのプロパティウィンドウで、 **[スキーマ]** フィールドの参照ボタン (. **[..]** ) をクリックします。
 
      **[XSD スキーマ]** ダイアログボックスが表示されます。
 
@@ -84,11 +84,11 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 
      ルート要素を追加するには、に**お問い合わせください**。
 
-3. メンバーの一覧から **[Contact]** を選択し、enter キーを押します。
+3. メンバーの一覧から **[Contact]** を**選択し、enter キーを**押します。
 
      エディターには開始タグ `<Contact` が追加され、要素名の後にカーソルが置かれます。
 
-4. **Tab**キーを押して、 `Contact`スキーマ情報に基づいて要素の XML データを生成します。
+4. **Tab**キーを押して、スキーマ情報に基づいて `Contact` 要素の XML データを生成します。
 
 ## <a name="input"></a>入力
 
@@ -139,9 +139,9 @@ Xml エディターには、xml スキーマ定義言語 (XSD) スキーマか�
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>出力
 
-`Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 とマークさ`bold`れている項目は、XML スニペット内の編集可能なフィールドを指定します。
+`Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 @No__t_0 とマークされた項目は、XML スニペット内の編集可能なフィールドを指定します。
 
 ```xml
 <Contact>

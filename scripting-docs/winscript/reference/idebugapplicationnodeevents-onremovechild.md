@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild |Microsoft Docs
+title: 'IDebugApplicationNodeEvents:: onRemoveChild |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e59624e5ec6659e0fea3d55fdaddf7949eac18f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ff7b28f14c26029d64197ba919cc97c90a856c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822161"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574664"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-デバッグのアプリケーション ノード オブジェクトから子ノードが削除されたときにイベントを処理します。  
+デバッグアプリケーションノードオブジェクトから子ノードが削除されると、イベントを処理します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,7 +37,7 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>パラメーター  
  `prddpChild`  
- [in]削除された子アプリケーション ノード。  
+ から削除された子アプリケーションノード。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -47,11 +47,11 @@ HRESULT onRemoveChild(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、デバッグ アプリケーション ノード オブジェクトから子ノードが削除されたときにイベントを処理します。  
+ このメソッドは、子ノードがデバッグアプリケーションノードオブジェクトから削除されると、イベントを処理します。  
   
- 実装、`IDebugApplicationNode`インターフェイスは、このイベントを発生します。  
+ @No__t_0 インターフェイスの実装者は、このイベントを発生させます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplicationNodeEvents インターフェイス](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
+ [IDebugApplicationNodeEvents:: onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
  [IDebugApplicationNode インターフェイス](../../winscript/reference/idebugapplicationnode-interface.md)

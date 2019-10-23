@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie インターフェイス |Microsoft Docs
+title: IDebugCookie Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,22 +13,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b48b917ee3376c417beffd9972d76a444513ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974515"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573197"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie インターフェイス
-使用するために、設定するデバッグ cookie を許可、`IMachineDebugManagerCookie`インターフェイス。 詳細については、次を参照してください。 [IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)します。 このインターフェイスはプロセス デバッグ マネージャー (PDM) によって実装され、スクリプト デバッガーによって使用されます。  
+@No__t_0 インターフェイスで使用するために、デバッグ cookie を設定できるようにします。 詳細については、「 [Imachinedebugmanagercookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)」を参照してください。 このインターフェイスは、プロセスデバッグマネージャー (PDM) によって実装され、スクリプトデバッガーによって使用されます。  
   
 ## <a name="methods"></a>メソッド  
- 継承されたメソッドだけでなく`IUnknown`、`IDebugCookie`インターフェイスは、次のメソッドを公開します。  
+ @No__t_1 インターフェイスは、`IUnknown` から継承されたメソッドに加えて、次のメソッドを公開します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|アプリケーションのデバッグの cookie を設定します。|  
+|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|デバッグアプリケーションクッキーを設定します。|  
   
 ## <a name="see-also"></a>関連項目  
  [IMachineDebugManagerCookie インターフェイス](../../winscript/reference/imachinedebugmanagercookie-interface.md)

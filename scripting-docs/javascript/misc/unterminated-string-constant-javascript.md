@@ -1,5 +1,5 @@
 ---
-title: 未終了の文字列定数 (JavaScript) |Microsoft Docs
+title: 未終了の文字列定数です。 (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,22 +14,22 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3c5f38ba41e2cadfd0a8234413c63cc96b6744a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a140c7587d4ca00c66590a471cfb32827cf5f780
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435639"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575892"
 ---
 # <a name="unterminated-string-constant-javascript"></a>未終了の文字列型の定数です。(JavaScript)
-終わりの引用符に、文字列定数が終了しませんでした。 文字列定数は、引用符のペアで囲む必要があります。  
+終わりの引用符で文字列定数を終了しませんでした。 文字列定数は、1組の引用符で囲む必要があります。  
   
 > [!NOTE]
-> 一致する単一引用符または二重引用符のペアを使用することができます。 単一引用符で囲まれた文字列内で二重引用符を含めることができ、単一引用符を二重引用符で囲まれた文字列内に格納できます。  
+> 一致する単一引用符または二重引用符を使用できます。 二重引用符は単一引用符で囲まれた文字列に含めることができ、単一引用符は二重引用符で囲まれた文字列内に含めることができます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 文字列の末尾に二重引用符を追加します。  
+- 終わりの引用符を文字列の末尾に追加します。  
   
 ## <a name="see-also"></a>関連項目  
  [文字列オブジェクト](../../javascript/reference/string-object-javascript.md)   

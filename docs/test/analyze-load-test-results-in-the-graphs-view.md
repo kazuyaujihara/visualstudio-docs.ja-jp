@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926466"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665375"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのグラフ ビューでのテスト結果の分析
 
@@ -32,7 +32,7 @@ ms.locfileid: "68926466"
 
 一度に最高で 4 つのグラフ パネルを表示できます。 **パネル レイアウト**のツール バー ボタンを使用して、異なるパネル レイアウトに切り替えることができます。
 
-複数の組み込みグラフが提供されています。 組み込みグラフをそのまま使用することも、カスタマイズすることもできます。 さらに、独自のグラフを作成することもできます。 詳細については、「[方法 :グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」および「[方法:カスタム グラフを作成する](../test/how-to-create-custom-graphs-in-load-test-results.md)」を参照してください。
+複数の組み込みグラフが提供されています。 組み込みグラフをそのまま使用することも、カスタマイズすることもできます。 さらに、独自のグラフを作成することもできます。 詳細については、[グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」および「[方法:カスタム グラフを作成する](../test/how-to-create-custom-graphs-in-load-test-results.md)」を参照してください。
 
 ## <a name="built-in-graphs"></a>組み込みグラフ
 
@@ -52,7 +52,7 @@ ms.locfileid: "68926466"
 > [!NOTE]
 > 自動的に生成される応答時間グラフには、応答時間のパフォーマンス カウンターのみを追加できます。
 
-カウンター情報は、グラフ内と、グラフの下にある凡例内の両方に表示されます。 グラフの一部を拡大表示することもできます。 詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
+カウンター情報は、グラフ内と、グラフの下にある凡例内の両方に表示されます。 グラフの一部を拡大表示することもできます。 詳細については、[グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 
 ## <a name="counters-displayed-in-graphs"></a>グラフに表示されるカウンター
 

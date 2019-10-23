@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug |Microsoft Docs
+title: 'IActiveScriptSiteDebugEx:: OnCanNotJITScriptErrorDebug |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c643478da37b5a66c22b201ef8f8248df02e4ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7358d2b372f0801b8c45816e1fc36018b37799b2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992338"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572183"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-プロセス デバッグ マネージャーとは、スクリプト実行時のエラーについて、ホストには、Just In Time スクリプト デバッガーが見つからないことを通知します。  
+プロセスデバッグマネージャーがジャストインタイムスクリプトデバッガーを見つけられない場合に、スクリプトの実行時エラーをホストに通知します。  
   
- 処理する必要があります、デバッガーに、ホストを実装する[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)します。 ユーザー操作に基づいて、ホストか、デバッガーをアタッチ、戻ってください。 または、OnScriptErrorDebug のデバッガーの起動を返す`pfEnterDebugger`パラメーター。 プロセス デバッグ マネージャーによって、解釈される外部のデバッガーがない場合でも、実行時エラーについての通知を取得するには、このインターフェイスを実装することも必要があります。  
+ ホストにデバッガーを実装するには、 [IActiveScriptSiteDebug:: OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)を処理する必要があります。 ホストは、ユーザーの操作に基づいて、デバッガーをアタッチしてを返すか、OnScriptErrorDebug `pfEnterDebugger` パラメーターでデバッガーの開始を返すことができます。 また、プロセスデバッグマネージャーで解釈できる外部デバッガーがない場合でも、ランタイムエラーに関する通知を取得するには、このインターフェイスを実装する必要があります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,10 +40,10 @@ HRESULT OnCanNotJITScriptErrorDebug(
   
 #### <a name="parameters"></a>パラメーター  
  `pErrorDebug`  
- [in]発生した実行時エラー。  
+ から発生したランタイムエラー。  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- [out]呼び出すかどうか[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)デバッグなしで続行をユーザーが決定した場合。  
+ 入出力ユーザーがデバッグなしで続行することを決定した場合に[IActiveScriptSiteDebug:: OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)を呼び出すかどうか。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -53,7 +53,7 @@ HRESULT OnCanNotJITScriptErrorDebug(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- 通知を取得するには、このインターフェイスを実装することも必要があります。  
+ 通知を取得するには、このインターフェイスも実装する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptSiteDebugEx インターフェイス](../../winscript/reference/iactivescriptsitedebugex-interface.md)

@@ -22,30 +22,30 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], about
 ms.assetid: 4909e38d-2ea8-4caf-92b1-857bd162ab7c
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8b6c71c98c20efedfca6502a48e69f6d81a86dc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bab5b86856029615231d908f1e523bb3d42583aa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154912"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662626"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>クラスと他の型の使用 (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio のクラス デザイナーを使用すると、クラスと型の作成および編集時に、より簡単に作業対象のクラスと型に集中できるようになります。 より視覚的に Visual C# .NET、Visual Basic .NET、または C++ コードを操作するには、クラス ダイアグラムを使用します。  
-  
-## <a name="in-this-section"></a>このセクションの内容  
- [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)  
-  
- [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)  
-  
- [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)  
-  
- [クラスおよび型のリファクタリング (クラス デザイナー)](../ide/refactoring-classes-and-types-class-designer.md)  
-  
- [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)  
-  
+Visual Studio のクラス デザイナーを使用すると、クラスと型の作成および編集時に、より簡単に作業対象のクラスと型に集中できるようになります。 より視覚的に Visual C# .NET、Visual Basic .NET、または C++ コードを操作するには、クラス ダイアグラムを使用します。
+
+## <a name="in-this-section"></a>このセクションの内容
+ [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)
+
+ [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)
+
+ [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)
+
+ [クラスおよび型のリファクタリング (クラス デザイナー)](../ide/refactoring-classes-and-types-class-designer.md)
+
+ [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)
+
  [クラス デザイナーのエラーに関する追加情報](../ide/additional-information-about-class-designer-errors.md)

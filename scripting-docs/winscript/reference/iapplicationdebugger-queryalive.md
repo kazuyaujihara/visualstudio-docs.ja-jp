@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::QueryAlive |Microsoft Docs
+title: 'IApplicationDebugger:: QueryAlive |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b4c455305116863a4a8ad16ff21cd7554a36239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 867d00a4ef42aa8759496540edc1937fc6f2a0a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991176"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577826"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
-デバッガーが応答性の高いかどうかを示します。  
+デバッガーが応答するかどうかを示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,7 +34,7 @@ HRESULT QueryAlive();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- このメソッドには、パラメーターはありません。  
+ このメソッドはパラメーターを受け取りません。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドは `HRESULT` を返します。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -44,9 +44,9 @@ HRESULT QueryAlive();
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、デバッガーが応答性の高いかどうかを示します。 このメソッドの実装を常に返します`S_OK`します。  
+ このメソッドは、デバッガーが応答しているかどうかを示します。 このメソッドの実装では、常に `S_OK` を返す必要があります。  
   
- デバッガー プロセスが予期せず終了した場合、COM は、このメソッド呼び出しのマーシャ リング プロキシからエラーを返します。  
+ デバッガープロセスが予期せずに終了した場合、COM はこのメソッドの呼び出しに対してマーシャリングプロキシからエラーを返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IApplicationDebugger インターフェイス](../../winscript/reference/iapplicationdebugger-interface.md)

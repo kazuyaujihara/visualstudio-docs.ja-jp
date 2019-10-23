@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817510"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349704"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio でのデバッグタスクの検索
 
@@ -34,7 +34,10 @@ ms.locfileid: "71817510"
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>特定のオブジェクトのプロパティまたは値が変更される場合にのみコードを一時停止する
 
-C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)を設定します。 .NET Core 3 を使用するアプリでは、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)を設定することもできます。
+C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)を設定します。 
+::: moniker range=">= vs-2019"
+.NET Core 3 を使用するアプリでは、[データブレークポイント](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)を設定することもできます。
+::: moniker-end
 
 それ以外のC#場合F# 、とだけでは、[条件付きブレークポイントを使用してオブジェクト ID を追跡](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f)できます。
 
@@ -62,6 +65,12 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 これを行うには[、[逆アセンブリ] ウィンドウでブレークポイントを設定](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows)します。
 
+## <a name="execute-code"></a>コードの実行
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>デバッグ中にコードをステップ実行するコマンドについて説明します。
+
+詳細については、「[デバッガーでのコード間の移動](navigating-through-code-with-the-debugger.md)」を参照してください。
+
 ## <a name="inspect-data"></a>データの検査
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>アプリの実行中に変数の値を確認する
@@ -76,19 +85,7 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 デバッグ中に組み込み[文字列ビジュアライザー](view-strings-visualizer.md)を開きます。
 
-## <a name="additional-tasks"></a>その他のタスク
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>デバッグ中にコードをステップ実行するコマンドについて説明します。
-
-詳細については、「[デバッガーでのコード間の移動](navigating-through-code-with-the-debugger.md)」を参照してください。
-
-### <a name="edit-code-during-a-debugging-session"></a>デバッグセッション中のコードの編集
-
-[エディットコンティニュ](edit-and-continue.md)を使用します。 XAML の場合は、 [Xaml ホットリロード](xaml-hot-reload.md)を使用します。
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>コードを変更せずに出力ウィンドウにメッセージを送信する
-
-トレースポイントを設定します。 詳細については、「[トレースポイントの使用](using-tracepoints.md)」を参照してください。
+## <a name="configure-debugging"></a>デバッグを構成する
 
 ### <a name="customize-information-shown-in-the-debugger"></a>デバッガーに表示される情報をカスタマイズする
 
@@ -99,6 +96,16 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 ### <a name="configure-debugger-settings"></a>デバッガー設定の構成
 
 デバッガーのオプションとデバッガーのプロジェクト設定を構成するには、「[デバッガーの設定と準備](debugger-settings-and-preparation.md)」を参照してください。
+
+## <a name="additional-tasks"></a>その他のタスク
+
+### <a name="edit-code-during-a-debugging-session"></a>デバッグセッション中のコードの編集
+
+[エディットコンティニュ](edit-and-continue.md)を使用します。 XAML の場合は、 [Xaml ホットリロード](xaml-hot-reload.md)を使用します。
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>コードを変更せずに出力ウィンドウにメッセージを送信する
+
+トレースポイントを設定します。 詳細については、「[トレースポイントの使用](using-tracepoints.md)」を参照してください。
 
 ### <a name="debug-on-remote-machines"></a>リモートコンピューターでのデバッグ
 

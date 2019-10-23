@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody |Microsoft Docs
+title: 'IScriptEntry:: SetBody |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46ebccb57885480d34d79cbd27e99dc6a35b343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af865c8366481204ee413377a083b09d8c97383
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575377"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-本文内にあるテキストを設定、`IScriptEntry`スクリプト ブロックまたは`IScriptScriptlet`スクリプトレットします。  
+@No__t_0 スクリプトブロックの本文またはスクリプトレットの `IScriptScriptlet` に含まれるテキストを設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,11 +37,11 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>パラメーター  
  `psz`  
- [in]`IScriptEntry`スクリプト ブロック、`psz`スクリプト タグで囲まれたテキストです。  
+ から@No__t_0 スクリプトブロックの場合、`psz` は、スクリプトタグで囲まれたテキストです。  
   
- `IScriptEntry`関数のブロック、`psz`は関数本体です。  
+ @No__t_0 関数ブロックの場合、`psz` は関数本体です。  
   
- `IScriptScriptlet`オブジェクト (から派生した`IScriptEntry`)、`psz`スクリプトレットのスクリプトのテキストです。  
+ @No__t_0 オブジェクト (`IScriptEntry` から派生) の場合、`psz` はスクリプトレットのスクリプトテキストです。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  
@@ -53,5 +53,5 @@ HRESULT SetBody(
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="see-also"></a>関連項目  
- [IScriptEntry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
+ [Iscriptentry インターフェイス](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

@@ -1,5 +1,5 @@
 ---
-title: アクティブ スクリプトのインターフェイスの作成 |Microsoft Docs
+title: アクティブスクリプト作成インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22e06b9723100141a0e3679e401d1bc339dddad5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003610"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562209"
 ---
 # <a name="active-script-authoring-interfaces"></a>アクティブ スクリプト作成インターフェイス
-ActivAut.h のヘッダー ファイルでは、このセクションにリストされたインターフェイスを提供します。  
+ActivAut ヘッダーファイルには、このセクションに記載されているインターフェイスが用意されています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- 次のインターフェイスは、Web ページの作成を有効にします。  
+ 次のインターフェイスを使用すると、Web ページを作成できます。  
   
 - [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)  
   

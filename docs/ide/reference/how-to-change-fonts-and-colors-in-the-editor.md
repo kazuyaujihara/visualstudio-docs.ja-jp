@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 7aa359e9918cb808989bb1f0e65de516af422dc6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605404"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668249"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>方法: Visual Studio でエディターのフォントと色を変更する
 
@@ -33,9 +33,7 @@ ms.locfileid: "68605404"
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>既定のフォント フェイス、サイズ、色を変更する
 
-1. **[ツール]** メニューの **[オプション]** を選び、 **[環境]** フォルダーで **[フォントおよび色]** を選びます。
-
-     [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) が開きます。
+1. **[ツール]** メニューの **[オプション]** を選択します。 **[環境]** で、[[フォントおよび色]](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) を選択します。
 
 2. **[設定の表示]** の **[テキスト エディター]** を選びます。
 

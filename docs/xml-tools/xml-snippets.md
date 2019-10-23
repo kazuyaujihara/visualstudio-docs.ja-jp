@@ -3,25 +3,25 @@ title: XML スニペット
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66736431b295f974bda1ca855d88cd5f5f868e7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c261893b50a217d888300ca01f3bc190bc065c94
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807722"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658759"
 ---
 # <a name="xml-snippets"></a>XML スニペット
 
-XML エディターと呼ばれる、機能を提供する*XML スニペット*、XML ファイルをより迅速にビルドすることができます。 XML スニペットは、ファイルに挿入することで再利用できます。 XML スキーマ定義言語 (XSD) スキーマに基づいて XML データを生成することもできます。
+Xml エディターには、xml*スニペット*と呼ばれる機能が用意されています。この機能を使用すると、xml ファイルをより迅速に作成できます。 XML スニペットは、ファイルに挿入することで再利用できます。 Xml スキーマ定義言語 (XSD) スキーマに基づいて XML データを生成することもできます。
 
 ## <a name="reusable-xml-snippets"></a>再利用可能な XML スニペット
 
-XML エディターには、一般的なタスクを対象とした多くのスニペットが含まれています。 これによって、XML ファイルをより簡単に作成できます。 たとえば、XML スキーマを作成して、"Complex Type Sequence Element"と"Simple Type Element"スニペットを使用してはファイルに次の XML テキストに挿入します。 その後で、必要に応じて `name` の値を変更します。
+XML エディターには、いくつかの一般的なタスクに対応する多くのスニペットが含まれています。 これによって、XML ファイルをより簡単に作成できます。 たとえば、XML スキーマを作成する場合は、"複合型のシーケンス要素" と "単純型の要素" を使用して、次の XML テキストをファイルに挿入します。 その後で、必要に応じて `name` の値を変更します。
 
 ```xml
 <xs:element name="name">
@@ -37,19 +37,19 @@ XML エディターには、一般的なタスクを対象とした多くのス�
 </xs:element>
 ```
 
-スニペットは 2 つの方法で挿入できます。 **スニペットの挿入**コマンドは、カーソル位置にある XML スニペットを挿入します。 **ブロックの挿入**コマンドは、選択したテキストの周囲の XML スニペットをラップします。 両方のコマンドが使用可能ないずれかから、 **IntelliSense**サブメニュー、**編集**メニューで、またはエディター内で右クリック メニューから。
+スニペットは 2 つの方法で挿入できます。 **[スニペットの挿入]** コマンドを実行すると、XML スニペットがカーソル位置に挿入されます。 [**ブロック**の挿入] コマンドは、選択したテキストの周囲に XML スニペットをラップします。 どちらのコマンドも、 **[編集]** メニューの **[IntelliSense]** サブメニュー、またはエディター内の右クリックメニューから使用できます。
 
-詳細については、「[方法 :XML スニペットを使用する](../xml-tools/how-to-use-xml-snippets.md)します。
+詳細については、「[方法: XML スニペットを使用する](../xml-tools/how-to-use-xml-snippets.md)」を参照してください。
 
-## <a name="schema-generated-xml-snippets"></a>スキーマから生成される XML スニペット
+## <a name="schema-generated-xml-snippets"></a>スキーマによって生成される XML スニペット
 
-XML エディターでは、XML スキーマから XML スニペットを生成する機能もあります。 この機能を使用すると、要素に、その要素のスキーマ情報から生成された XML 要素を格納することができます。 詳細については、「[方法 :XML スキーマから XML スニペットを生成](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)します。
+Xml エディターでは、xml スキーマから XML スニペットを生成することもできます。 この機能を使用すると、要素に、その要素のスキーマ情報から生成された XML 要素を格納することができます。 詳細については、「[方法: xml スキーマから xml スニペットを生成](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)する」を参照してください。
 
-## <a name="create-new-xml-snippets"></a>新しい XML スニペットを作成します。
+## <a name="create-new-xml-snippets"></a>新しい XML スニペットを作成する
 
-既定では、Visual Studio に含まれているスニペットに加えても作成し、独自の XML スニペットを使用できます。 詳細については、「[方法 :XML スニペットを作成する](../xml-tools/how-to-create-xml-snippets.md)します。
+既定では、Visual Studio に含まれているスニペットに加えて、独自の XML スニペットを作成して使用することもできます。 詳細については、「[方法: XML スニペットを作成](../xml-tools/how-to-create-xml-snippets.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のコード スニペット](../ide/code-snippets.md)
+- [Visual Studio でのコードスニペット](../ide/code-snippets.md)
 - [XML エディター](../xml-tools/xml-editor.md)

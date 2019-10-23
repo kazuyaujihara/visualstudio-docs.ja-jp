@@ -1,5 +1,5 @@
 ---
-title: 関数には有効なプロトタイプ オブジェクトがありません |Microsoft Docs
+title: 関数に有効なプロトタイプオブジェクト | がありません。Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb3cffa4bffd616560aa95ace4ad82a4368ebbd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007504"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574604"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>関数には、有効なプロトタイプ オブジェクトが存在しません。
-使用しようとする**instanceof**オブジェクトは、特定の関数クラスから派生しましたが、オブジェクトの再定義するかどうかを判断する`prototype`プロパティをいずれかとして`null`、または外部のオブジェクトの種類 (両方無効[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]オブジェクト)。 外部オブジェクトには、ホスト オブジェクト モデル (たとえば、Internet Explorer のドキュメントまたはウィンドウ オブジェクト) からオブジェクトまたは外部の COM オブジェクトを指定できます。  
+**Instanceof**を使用して、オブジェクトが特定の関数クラスから派生したかどうかを判断しようとしましたが、オブジェクトの `prototype` プロパティを `null` または外部オブジェクト型 (両方とも有効な [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] オブジェクト) として再定義しました。 外部オブジェクトには、ホストオブジェクトモデル (Internet Explorer のドキュメントまたはウィンドウオブジェクトなど) のオブジェクト、または外部 COM オブジェクトを指定できます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 関数のことを確認`prototype`プロパティは、有効な参照[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]オブジェクト。  
+- 関数の `prototype` プロパティが有効な [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] オブジェクトを参照していることを確認します。  
   
 ## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
+ [関数オブジェクト](../../javascript/reference/function-object-javascript.md)の    
  [prototype プロパティ (Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: '方法: マネージ コード プロジェクトのコード分析の構成 |Microsoft Docs'
+title: '方法: マネージコードプロジェクトのコード分析を構成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,48 +11,48 @@ helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 618f6ff3-db0e-46cb-b08d-dfa35e62c9e7
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ac04a3d8834e3fc24f148fc36327d101e43720a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429166"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658856"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>方法: マネージド コード プロジェクトのコード分析を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]と[!INCLUDE[vsPro](../includes/vspro-md.md)]、コード分析の一覧から選択できる*ルール セット*マネージ コード プロジェクトに適用します。 既定の規則セットは Microsoft 最小推奨規則です。 ソリューション内の 1 つのプロジェクトまたはすべてのプロジェクトに別の規則セットを適用することもできます。  
-  
+@No__t_0、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] と [!INCLUDE[vsPro](../includes/vspro-md.md)] では、マネージコードプロジェクトに適用するコード分析*規則セット*の一覧から選択できます。 既定の規則セットは Microsoft 最小推奨規則です。 ソリューション内の 1 つのプロジェクトまたはすべてのプロジェクトに別の規則セットを適用することもできます。
+
 > [!NOTE]
-> ASP.NET Web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法。ASP.NET Web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。  
-  
-### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成するには  
-  
-1. **ソリューション エクスプ ローラー**プロジェクトをクリックします。  
-  
-2. **分析** メニューのをクリックして**コード分析を構成** *ProjectName*します。  
-  
-3. **構成**と**プラットフォーム**リスト、ビルド構成とターゲット プラットフォームをクリックします。  
-  
-4. 選択した構成を使用して、プロジェクトをビルドするたびに、コード分析を実行するには、選択、**を有効にするビルドに対するコード分析 (CODE_ANALYSIS 定数を定義します)** チェック ボックスをオンします。 手動では開くことでもコード分析を実行することができます、**分析**メニューをクリックすると**でコード分析を実行** *ProjectName*します。  
-  
-5. 既定では、外部ツールによって自動的に生成されたコードからの警告はコード分析では報告されません。 生成されたコードからの警告を表示するには、オフ、**結果生成されたコードを表示しない**チェック ボックスをオンします。  
-  
+> ASP.NET Web アプリケーションのルールセットを構成する方法の詳細については、「[方法: ASP.NET Web アプリケーションのコード分析を構成](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)する」を参照してください。
+
+### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成するには
+
+1. **ソリューションエクスプローラー**で、プロジェクトをクリックします。
+
+2. **[分析]** メニューの [ *ProjectName***のコード分析の構成**] をクリックします。
+
+3. **[構成]** と **[プラットフォーム]** の一覧で、ビルド構成とターゲットプラットフォームをクリックします。
+
+4. 選択した構成を使用してプロジェクトがビルドされるたびにコード分析を実行するには、 **[ビルド時にコード分析を有効にする (CODE_ANALYSIS 定数を定義する)]** チェックボックスをオンにします。 **[分析]** メニューを開き、[ *ProjectName***でコード分析を実行**] をクリックして、手動でコード分析を実行することもできます。
+
+5. 既定では、外部ツールによって自動的に生成されたコードからの警告はコード分析では報告されません。 生成されたコードからの警告を表示するには、[**生成されたコードから結果**を表示しない] チェックボックスをオフにします。
+
     > [!NOTE]
-    > コード分析のエラーおよび警告がフォームやテンプレートで表示される場合、このオプションを使用しても、生成されたコードからこのエラーおよび警告の出力は抑制されません。 フォームまたはテンプレートのソース コードは表示することも保持することもできます。  
-  
-6. **この規則セットを実行**ボックスの一覧で、次のいずれかの操作を行います。  
-  
-    - 使用する規則セットをクリックします。  
-  
-    - クリックして **\<[参照...] >** を既存のカスタム規則セットを指定されていないリスト。  
-  
-    - カスタム規則セットを定義します。  
-  
-         詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。  
-  
-## <a name="see-also"></a>関連項目  
- [チュートリアル: カスタム規則の構成と設定](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
+    > コード分析のエラーおよび警告がフォームやテンプレートで表示される場合、このオプションを使用しても、生成されたコードからこのエラーおよび警告の出力は抑制されません。 フォームまたはテンプレートのソース コードは表示することも保持することもできます。
+
+6. [**この規則セットを実行**する] の一覧で、次のいずれかの操作を行います。
+
+    - 使用する規則セットをクリックします。
+
+    - [@No__t_1Browse] をクリックします。 **>** 、一覧に含まれていない既存のカスタム規則セットを指定します。
+
+    - カスタム規則セットを定義します。
+
+         詳細については、「[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)」を参照してください。
+
+## <a name="see-also"></a>参照
+ [チュートリアル: カスタム規則セットの構成と使用](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

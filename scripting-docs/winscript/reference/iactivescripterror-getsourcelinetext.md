@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourceLineText |Microsoft Docs
+title: 'IActiveScriptError:: GetSourceLineText |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 702f1655b244116e1bb7dca3d5fc90de3d1f5bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ded57f97ec40167bac34bf0f288c2e3d15a5c4b7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955007"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576918"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-スクリプト エンジンでスクリプトの実行中にエラーが発生したソース ファイル内の行を取得します。  
+スクリプトエンジンでスクリプトを実行中にエラーが発生したソースファイルの行を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,10 +37,10 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>パラメーター  
  `pbstrSourceLine`  
- [out]エラーが発生したソース コードの行を受け取るバッファーのアドレス。  
+ 入出力エラーが発生したソースコードの行を受け取るバッファーのアドレス。  
   
 ## <a name="return-value"></a>戻り値  
- 返します`S_OK`成功した場合、または`E_FAIL`ソース ファイル内の行が取得されなかった場合。  
+ 成功した場合は `S_OK` を返します。ソースファイル内の行が取得されなかった場合は `E_FAIL` を返します。  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

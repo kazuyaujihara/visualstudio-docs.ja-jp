@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close |Microsoft Docs
+title: 'IActiveScript:: Close |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935680"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575781"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-により、スクリプト エンジンは、現在読み込まれているスクリプトの破棄の状態が失われるおよび closed の状態を入力するため、他のオブジェクトが任意のインターフェイス ポインターを解放します。 イベント シンク、すぐに実行されたスクリプトのテキスト、および実行中のマクロの呼び出しが完了した後、状態の変更 (を使用して、 [iactivescript::interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)実行中のスクリプト スレッドをキャンセルする)。 循環参照の問題を防ぐために、インターフェイスが解放される前に、作成、ホストによってこのメソッドを呼び出す必要があります。  
+スクリプトエンジンが現在読み込まれているスクリプトを破棄し、その状態を失わせ、他のオブジェクトに対するインターフェイスポインターを解放して、closed 状態にします。 イベントシンク、直ちに実行されたスクリプトテキスト、および既に進行中のマクロの呼び出しは、状態が変更される前に完了します (実行中のスクリプトスレッドをキャンセルするには、 [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)を使用します)。 循環参照の問題を防ぐために、インターフェイスが解放される前に、このメソッドを作成ホストから呼び出す必要があります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,9 +39,9 @@ HRESULT Close(void);
 |[値]|説明|  
 |-----------|-------------|  
 |`S_OK`|成功。|  
-|`E_UNEXPECTED`|呼び出しが予期されていませんでした (たとえば、スクリプト エンジンが既に終了状態に)。|  
-|`OLESCRIPT_S_PENDING`|メソッドが正常にキューに登録が状態がまだ変更されていません。 状態の変更、サイトが場合にコールバックする、 [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッド。|  
-|`S_FALSE`|メソッドが成功しましたが、スクリプトは既に終了されています。|  
+|`E_UNEXPECTED`|呼び出しは想定されていませんでした (たとえば、スクリプトエンジンは既に closed 状態です)。|  
+|`OLESCRIPT_S_PENDING`|メソッドは正常にキューに登録されましたが、状態はまだ変更されていません。 状態が変化すると、 [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)メソッドに対してサイトがコールバックされます。|  
+|`S_FALSE`|メソッドは成功しましたが、スクリプトは既に閉じられています。|  
   
 ## <a name="see-also"></a>関連項目  
  [IActiveScript](../../winscript/reference/iactivescript.md)

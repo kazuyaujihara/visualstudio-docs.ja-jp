@@ -5,45 +5,45 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33ae88358d77ac7c70a74cecb879eef3c4ca8b8c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823982"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658114"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Visual Studio の他のエディションでモデルおよびダイアグラムを読み取る
 
 モデルの作成をサポートしていないバージョンの Visual Studio でモデルを開くと、モデルは読み取り専用モードで開きます。 このモードでは、ダイアグラムのレイアウトは変更できますが、モデルは変更できません。
 
-モデルの作成をサポートする Visual Studio のバージョンを確認するを参照してください。[アーキテクチャとモデリング ツールのバージョンのサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
+モデルの作成をサポートしている Visual Studio のバージョンを確認するには、「[アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>モデルおよび図へのアクセス
 
-依存関係図を読み取るには、まず Visual Studio を使用して、モデリング プロジェクトを開き、し、その中で図を開く必要があります。
+依存関係図を読み取るには、最初に Visual Studio を使用してモデリングプロジェクトを開き、その中でダイアグラムを開く必要があります。
 
-このため、依存関係図を読みたい場合も必要が作成されたモデリング プロジェクトへのアクセス。 これを行うか、ソース管理からプロジェクトにアクセスするか、プロジェクト ファイルのコピーを取得します。
+このため、依存関係図を読み取る場合は、それが作成されたモデリングプロジェクトにもアクセスできる必要があります。 これを行うには、ソース管理からプロジェクトにアクセスするか、プロジェクトファイルのコピーを取得します。
 
 > [!NOTE]
 > これは、コードから生成されたコード マップおよび .NET クラス図には適用されません。 これらの図はモデリング プロジェクトとは関係なく表示できます。
 
-依存関係図を読み取るには、必要なファイルの最小セットがとおりです。
+依存関係図を読み取るには、最低限必要なファイルセットは次のとおりです。
 
-- 2 つのダイアグラム ファイルを読み取るには、たとえば、ダイアグラムの**MyDiagram.classdiagram と MyDiagram.classdiagram.layout**します。
+- 読み取り対象のダイアグラムの2つの図ファイル (例、 **mydiagram. classdiagram と MyDiagram。** [...])。
 
     > [!NOTE]
-    > 依存関係を示す図については、という名前のファイルもがする必要があります_MyDiagram_**. layerdiagram.suppressions**します。
+    > 依存関係図については、 _Mydiagram_ **. レイヤー図の抑制**という名前のファイルも必要です。
 
-- モデリング プロジェクト ファイル (**MyModel.modelproj**)
+- モデリングプロジェクトファイル (**Mymodel. modelproj**)
 
-- ルート モデル ファイル (**ModelDefinition\MyModel.uml**)
+- ルートモデルファイル (**ModelDefinition\MyModel.uml**)
 
-- ダイアグラムで参照されているすべてのパッケージのパッケージ ファイル (**ModelDefinition\MyPackage.uml**)
+- ダイアグラムで参照されているすべてのパッケージのパッケージファイル (**Modeldefinition\ mypackagethe uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>読み取り専用モードで行える変更
 
@@ -53,9 +53,9 @@ ms.locfileid: "62823982"
 
 - 図形を展開および折りたたむ。
 
-これらの変更は保存できます。 変更内容を他のユーザーに表示されるようにする場合は、送信しなければならない以上で、更新された **.layout**ファイル。
+これらの変更は保存できます。 他のユーザーに変更を表示する場合は、少なくとも更新された**レイアウト**ファイルを送信する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
+- [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)
 - [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)

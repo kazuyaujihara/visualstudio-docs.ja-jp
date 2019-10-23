@@ -14,26 +14,26 @@ helpviewer_keywords:
 - sorting datasets, using data views
 - dataset filtering, using data views
 ms.assetid: f4f100f1-776d-46dc-b2fd-5b35b98d9561
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 17416a3b64d6cbb5f01192440a9df735f0b9fb94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68adaf6df9f97bee94e7cb393fa01ee133444c80
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566730"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648456"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows フォーム アプリケーションのデータのフィルター処理および並べ替えを行う
 
 データをフィルター処理するには、<xref:System.Windows.Forms.BindingSource.Filter%2A> プロパティに目的のレコードを返す文字列式を設定します。
 
-設定してデータを並べ替える、<xref:System.Windows.Forms.BindingSource.Sort%2A>プロパティを並べ替える。 追加の列名を`DESC`を降順で並べ替える付加したり`ASC`を昇順で並べ替えます。
+データを並べ替えるには、並べ替えに使用する列名に <xref:System.Windows.Forms.BindingSource.Sort%2A> プロパティを設定します。降順で並べ替えるには `DESC` を追加し、昇順に並べ替えるには `ASC` を追加します。
 
 > [!NOTE]
-> アプリケーションを使用しない場合<xref:System.Windows.Forms.BindingSource>フィルター処理できる、コンポーネントを使用してデータを並べ替えると<xref:System.Data.DataView>オブジェクト。 詳細については、次を参照してください。 [Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)します。
+> アプリケーションで <xref:System.Windows.Forms.BindingSource> コンポーネントを使用しない場合は <xref:System.Data.DataView> オブジェクトを使用してデータのフィルター処理と並べ替えを行うことができます。 詳細については、「 [Dataviews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)」を参照してください。
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>BindingSource コンポーネントを使用してデータをフィルター処理するには
 
@@ -42,7 +42,7 @@ ms.locfileid: "62566730"
      [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
      [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]
 
-## <a name="to-sort-data-by-using-a-bindingsource-component"></a>BindingSource コンポーネントを使用してデータを並べ替える
+## <a name="to-sort-data-by-using-a-bindingsource-component"></a>BindingSource コンポーネントを使用してデータを並べ替えるには
 
 - <xref:System.Windows.Forms.BindingSource.Sort%2A> プロパティに並べ替える列を設定します。 たとえば、以下のコードは、`CompanyName` 列に基づいて降順に顧客を並べ替えます。
 

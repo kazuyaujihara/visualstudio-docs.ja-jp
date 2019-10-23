@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback インターフェイス |Microsoft Docs
+title: IActiveScriptProfilerCallback Interface |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,35 +11,35 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e8f64f187638af7f9ab4bf6b80e88fe6992c78e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ae520dcb36e00dfaba8702db6294a5a47484b0a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386085"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571715"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>IActiveScriptProfilerCallback インターフェイス
-イベントが発生したときにプロファイラー オブジェクトを通知するスクリプト エンジンで使用されるメソッドを提供します。 このインターフェイスは、プロファイラー オブジェクトによって実装されます。  
+イベントの発生時にプロファイラーオブジェクトに通知するために、スクリプトエンジンによって使用されるメソッドを提供します。 このインターフェイスは、profiler オブジェクトによって実装されます。  
   
 ## <a name="methods"></a>メソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|スクリプト エンジンでプロファイリングが開始されるたびに、プロファイラー オブジェクトを初期化するために呼び出されます。|  
-|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|解放し、プロファイラー オブジェクトをリリース スクリプト エンジンのプロファイリングを停止するたびに呼び出されます。|  
-|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|スクリプトのコンパイル、スクリプト エンジン オブジェクトをプロファイラーに通知します。|  
-|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|スクリプトをコンパイルするときに、スクリプト エンジン オブジェクトは、関数が発生しました、プロファイラーに通知します。|  
-|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|ドキュメント オブジェクト モデル (DOM) への呼び出しではない関数呼び出しの実行を開始するスクリプト エンジンは、プロファイラーのオブジェクトに通知します。|  
-|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|オブジェクト、スクリプト エンジン関数の実行が完了するを呼び出すことがない DOM への呼び出しをプロファイラーに通知します。|  
+|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|プロファイリングをスクリプトエンジンで開始するときに、プロファイラーオブジェクトを初期化するために呼び出されます。|  
+|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|スクリプトエンジンでプロファイリングが停止されたときに、プロファイラーオブジェクトを解放および解放するために呼び出されます。|  
+|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|スクリプトエンジンによってスクリプトがコンパイルされたことをプロファイラーオブジェクトに通知します。|  
+|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|スクリプトをコンパイルするときに、スクリプトエンジンによって関数が検出されたことをプロファイラーオブジェクトに通知します。|  
+|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|スクリプトエンジンがドキュメントオブジェクトモデル (DOM) への呼び出しではない関数呼び出しを実行しようとしていることをプロファイラーオブジェクトに通知します。|  
+|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|スクリプトエンジンが DOM への呼び出しではない関数呼び出しの実行を完了したことをプロファイラーオブジェクトに通知します。|  
   
 ## <a name="remarks"></a>Remarks  
- 関数呼び出しにドキュメント オブジェクト モデル (DOM) の通知がによって提供される、 [IActiveScriptProfilerCallback2 インターフェイス](../../winscript/reference/iactivescriptprofilercallback2-interface.md)します。  
+ ドキュメントオブジェクトモデル (DOM) への関数呼び出しの通知は、 [IActiveScriptProfilerCallback2 インターフェイス](../../winscript/reference/iactivescriptprofilercallback2-interface.md)によって提供されます。  
   
 > [!NOTE]
-> プロファイリング、スクリプトが実行されているときに開始および停止する機能を追加するには、次のメソッドを呼び出します。 これらのメソッドを使用する場合、完全な呼び出し履歴を取得できます[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]開始またはプロファイリングを停止するときに実行します。  
+> スクリプトの実行時にプロファイリングを開始および停止する機能を追加するには、次のメソッドを呼び出します。 これらのメソッドを使用すると、プロファイリングの開始時または停止時に [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] が実行されている場合に、完全な呼び出し履歴を取得できます。  
 > 
-> - 呼び出す[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)をプロファイリングが開始したことをプロファイラーに通知します。  
->   - 呼び出す[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)をプロファイリングするをすぐに停止することをプロファイラーに通知します。  
+> - [IActiveScriptProfilerControl2:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)を呼び出して、プロファイリングを開始したことをプロファイラーに通知します。  
+>   - [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)を呼び出して、プロファイリングをすぐに停止することをプロファイラーに通知します。  
   
 ## <a name="see-also"></a>関連項目  
  [アクティブ スクリプト プロファイラーのインターフェイス](../../winscript/reference/active-script-profiler-interfaces.md)

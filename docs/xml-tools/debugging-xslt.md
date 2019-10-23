@@ -2,42 +2,42 @@
 title: XSLT コードをデバッグする方法
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043537"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646074"
 ---
 # <a name="debugging-xslt"></a>XSLT のデバッグ
 
-Visual Studio での XSLT コードをデバッグすることができます。 XSLT デバッガーのブレークポイントの設定、XSLT 実行状態の表示をサポートしにします。 XSLT スタイル シートや XSLT アプリケーションをデバッグする XSLT デバッガーを使用できます。
+Visual Studio で XSLT コードをデバッグできます。 XSLT デバッガーは、ブレークポイントの設定、XSLT 実行状態の表示などをサポートしています。 Xslt デバッガーを使用すると、xslt スタイルシートや XSLT アプリケーションをデバッグできます。
 
-ステップ イン、ステップ オーバー、または、コードからステップによって、一度に 1 行のコードを実行できます。 XSLT デバッガーのコードのステップ実行機能を使用するためのコマンドは、デバッガー、他の Visual Studio の場合と同じです。
+コードをステップイン、ステップオーバー、またはステップアウトすることで、一度に1行ずつコードを実行できます。 XSLT デバッガーのコードステップ機能を使用するためのコマンドは、他の Visual Studio デバッガーのコマンドと同じです。
 
 デバッグを開始すると、XSLT デバッガーのウィンドウが開き、入力ドキュメントと XSLT 出力が表示されます。
 
 > [!NOTE]
-> XSLT デバッガーは Visual Studio Professional および Enterprise エディションで利用できます。
+> XSLT デバッガーは、Visual Studio の Professional および Enterprise エディションでのみ使用できます。
 
-## <a name="debug-from-the-xml-editor"></a>XML エディターからのデバッグします。
+## <a name="debug-from-the-xml-editor"></a>XML エディターからのデバッグ
 
-スタイル シートまたはエディターで開き、入力 XML ファイルのいずれかがある場合は、デバッガーを起動することができます。 これにより、スタイル シートを設計するようにデバッグできます。
+エディターでスタイルシートまたは入力 XML ファイルを開いている場合は、デバッガーを起動できます。 これにより、スタイルシートをデザインするときにデバッグを行うことができます。
 
-1. Visual Studio で、スタイル シートまたは XML ファイルを開きます。
+1. Visual Studio でスタイルシートまたは XML ファイルを開きます。
 
-1. 選択**XSLT のデバッグの開始**から、 **XML**メニューまたはキーを押して**Alt**+**f5 キーを押して**。
+1. **[XML]** メニューの **[XSLT デバッグの開始]** を選択するか、 **Alt**キーを押し +**F5**キーを押します。
 
-## <a name="debug-from-an-app-that-uses-xslt"></a>XSLT を使用するアプリをデバッグします。
+## <a name="debug-from-an-app-that-uses-xslt"></a>XSLT を使用するアプリからデバッグする
 
-アプリケーションのデバッグ中に XSLT にステップ インすることができます。 キーを押すと**F11**上、<xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>呼び出し、デバッガーが XSLT コードにステップ インできます。
+アプリケーションのデバッグ中に XSLT にステップインできます。 @No__t_1 の呼び出しで**F11**キーを押すと、デバッガーは XSLT コードにステップインできます。
 
 > [!NOTE]
 > <xref:System.Xml.Xsl.XslTransform> クラスから XSLT へのステップ インは、サポートされていません。 デバッグ中の XSLT へのステップ インをサポートしている XSLT プロセッサは、<xref:System.Xml.Xsl.XslCompiledTransform> クラスだけです。
@@ -46,9 +46,9 @@ Visual Studio での XSLT コードをデバッグすることができます。
 
 1. <xref:System.Xml.Xsl.XslCompiledTransform> オブジェクトをインスタンス化するときに、コード内で `enableDebug` パラメーターを `true` に設定します。 この設定によって、コードがコンパイルされるときにデバッグ情報を作成するように XSLT プロセッサに指示します。
 
-1. キーを押して**F11** XSLT コードにステップ インします。
+1. **F11**キーを押して、XSLT コードにステップインします。
 
-   新しいドキュメント ウィンドウに XSLT スタイル シートが読み込まれ、XSLT デバッガーが起動します。
+   XSLT スタイルシートが新しいドキュメントウィンドウに読み込まれ、XSLT デバッガーが起動します。
 
    または、ブレーク ポイントをスタイル シートに追加し、アプリケーションを実行することもできます。
 
@@ -88,10 +88,10 @@ namespace ConsoleApplication
 
 ## <a name="xslt-profiler"></a>XSLT プロファイラー
 
-[XSLT プロファイラー](../xml-tools/xslt-profiler.md)はにより、開発者は、計測、評価、および詳細な XSLT パフォーマンス レポートを作成して XSLT コード内のパフォーマンスに関連する問題を特定するツールです。 詳細については、次を参照してください。 [XSLT プロファイラー](../xml-tools/xslt-profiler.md)します。
+[Xslt プロファイラー](../xml-tools/xslt-profiler.md)は、詳細な xslt パフォーマンスレポートを作成することによって、開発者が xslt コードのパフォーマンス関連の問題を測定、評価、および特定するためのツールです。 詳細については、「 [XSLT profiler](../xml-tools/xslt-profiler.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: XSLT スタイル シートをデバッグします。](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [最初に、Visual Studio デバッガーについてください。](../debugger/debugger-feature-tour.md)
+- [チュートリアル: XSLT スタイルシートのデバッグ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [最初に Visual Studio デバッガーを確認する](../debugger/debugger-feature-tour.md)
 - [デバッグの基礎: ブレークポイント](../debugger/using-breakpoints.md)

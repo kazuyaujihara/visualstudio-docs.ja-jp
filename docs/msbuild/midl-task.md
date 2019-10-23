@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817572"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747251"
 ---
 # <a name="midl-task"></a>MIDL タスク
 Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Definition Language) コンパイラ ツール (*midl.exe*) をラップします。 詳細については、「[MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) を参照してください。
@@ -141,7 +141,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      `true` の場合、enum の値が有効範囲内にあるかどうかをチェックします。
 
-     詳細については、*midl.exe* のコマンド ライン ヘルプ (**/?**) の **/error enum** オプションを参照してください。
+     詳細については、*midl.exe* のコマンド ライン ヘルプ ( **/?** ) の **/error enum** オプションを参照してください。
 
 - **ErrorCheckRefPointers**
 
@@ -201,7 +201,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      省略可能な **Boolean** 型のパラメーターです。
 
-     `true` の場合、タイプ ライブラリ (*.tlb*) ファイルは生成されません。
+     `true` の場合、タイプ ライブラリ ( *.tlb*) ファイルは生成されません。
 
      詳細については、「[MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/notlb** オプションを参照してください。
 
@@ -307,7 +307,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
     |**4**|**/Zp4**|
     |**8**|**/Zp8**|
 
-     詳細については、「[MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/Zp** オプションを参照してください。 **/Zp** オプションは、**/pack** オプションおよび以前の **/align** オプションに相当します。
+     詳細については、「[MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/Zp** オプションを参照してください。 **/Zp** オプションは、 **/pack** オプションおよび以前の **/align** オプションに相当します。
 
 - **SuppressCompilerWarnings**
 

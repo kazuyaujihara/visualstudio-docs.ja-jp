@@ -1,52 +1,55 @@
 ---
-title: 'チュートリアル: コード スニペットの実装 |Microsoft Docs'
+title: 'チュートリアル: コードスニペットの実装 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: madskristensen
 ms.author: madsk
 manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4b6d0346ce10c780254b26a4f2c710ed171ef5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 84674a12165a3c5cd47c9004274669d377d330c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320734"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632502"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>チュートリアル: コード スニペットを実装します。
-コード スニペットを作成し、拡張機能のユーザーが、独自のコードを追加できるようにエディター拡張機能に含めることができます。
+# <a name="walkthrough-implement-code-snippets"></a>チュートリアル: コードスニペットの実装
+コードスニペットを作成してエディター拡張機能に含めると、拡張機能のユーザーが独自のコードに追加できるようになります。
 
- コード スニペットは、コードまたはその他のファイルに組み込むことのできるテキストの一部です。 特定のプログラミング言語では、登録されているすべてのスニペットを表示する、**ツール** メニューのをクリックして**コード スニペット マネージャー**します。 スニペットは、先を右クリックして、ファイルのスニペットを挿入するスニペットの挿入 をクリックしてまたは**ブロックの挿入**スニペットを見つけて、ダブルクリックします。 キーを押します**タブ**または**Shift**+**タブ**スニペットの関連する部分を変更し、キーを押します **」と入力**または**Esc**をそのまま使用します。 詳細については、次を参照してください。[コード スニペット](../ide/code-snippets.md)します。
+ コードスニペットは、ファイルに組み込むことができるコードまたはその他のテキストの断片です。 特定のプログラミング言語用に登録されているすべてのスニペットを表示するには、 **[ツール]** メニューの **[コードスニペットマネージャー]** をクリックします。 スニペットをファイルに挿入するには、スニペットを配置する場所を右クリックし、[スニペットの挿入] または [**ブロック**の挿入] をクリックして、目的のスニペットを見つけてダブルクリックします。 Tab キーまた**は Shift** +**tab**キー**を押して**スニペットの関連部分を変更し、enter キーまたは**Esc**キー**を押して**受け入れます。 詳細については、「[コードスニペット](../ide/code-snippets.md)」を参照してください。
 
- コード スニペットは、.snippet * ファイル名拡張子を持つ XML ファイルに含まれています。 スニペットは、ユーザーが検索され、それらを変更できるように、スニペットの挿入後に強調表示されているフィールドを含めることができます。 スニペット ファイルの情報も提供する、**コード スニペット マネージャー**適切なカテゴリでスニペット名を表示できるようにします。 スニペットのスキーマについては、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。
+ コードスニペットは、スニペット * ファイル名拡張子を持つ XML ファイルに含まれています。 スニペットには、スニペットが挿入された後に強調表示されるフィールドを含めることができます。これにより、ユーザーはそれらを見つけて変更できます。 スニペットファイルは、**コードスニペットマネージャー**に関する情報も提供します。これにより、スニペット名が正しいカテゴリに表示されます。 スニペットスキーマの詳細については、「[コードスニペットスキーマリファレンス](../ide/code-snippets-schema-reference.md)」を参照してください。
 
- このチュートリアルでは、これらのタスクを実行する方法について説明します。
+ このチュートリアルでは、次のタスクを実行する方法について説明します。
 
-1. 作成し、特定の言語のコード スニペットを登録します。
+1. 特定の言語のコードスニペットを作成して登録します。
 
-2. 追加、**スニペットの挿入**ショートカット メニューにコマンド。
+2. **[スニペットの挿入]** コマンドをショートカットメニューに追加します。
 
-3. スニペットの展開を実装します。
+3. スニペット拡張を実装します。
 
-   このチュートリアルに基づいて[チュートリアル。ステートメント入力候補を表示](../extensibility/walkthrough-displaying-statement-completion.md)します。
+   このチュートリアルは、 [「チュートリアル: Display ステートメントの入力候補](../extensibility/walkthrough-displaying-statement-completion.md)」に基づいています。
 
-## <a name="prerequisites"></a>必須コンポーネント
- Visual Studio 2015 以降で、ダウンロード センターから、Visual Studio SDK をインストールしないでください。 Visual Studio のセットアップのオプション機能として含まれています。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
+## <a name="prerequisites"></a>必要条件
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-## <a name="create-and-register-code-snippets"></a>作成し、コード スニペットの登録
- 通常、コード スニペットは、登録済みの言語サービスに関連付けられます。 ただし、実装する必要はありません、<xref:Microsoft.VisualStudio.Package.LanguageService>コード スニペットを登録します。 代わりに、スニペット インデックス ファイルの GUID を指定するだけですとで同じ GUID を使用して、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>プロジェクトに追加します。
+## <a name="create-and-register-code-snippets"></a>コードスニペットの作成と登録
+ 通常、コードスニペットは、登録されている言語サービスに関連付けられています。 ただし、コードスニペットを登録するために <xref:Microsoft.VisualStudio.Package.LanguageService> を実装する必要はありません。 代わりに、スニペットインデックスファイルで GUID を指定し、プロジェクトに追加した <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> で同じ GUID を使用します。
 
- 次の手順では、コード スニペットを作成し、特定の GUID に関連付ける方法を示します。
+ 次の手順では、コードスニペットを作成し、特定の GUID に関連付ける方法を示します。
 
 1. 次のディレクトリ構造を作成します。
 
-    **%InstallDir%\TestSnippets\Snippets\1033\\**
+    **%InstallDir%\TestSnippets\Snippets\1033 \\**
 
-    場所 *%installdir%* は Visual Studio インストール フォルダーです。 (コード スニペットがインストールには、このパスは使用は、通常、パスを指定できます、します。)
+    ここで、 *% InstallDir%* は Visual Studio のインストールフォルダーです。 (通常、このパスはコードスニペットのインストールに使用されますが、任意のパスを指定できます)。
 
-2. \1033\ フォルダー内に作成、 *.xml*ファイルし、名前を付けます**TestSnippets.xml**します。 (がある限り、任意の名前を指定できますが、この名前は通常、スニペットのインデックス ファイルの使用、 *.xml*ファイル名拡張子)。次のテキストを追加およびプレース ホルダーの GUID を削除して、独自に追加します。
+2. \ 1033 \ フォルダーで、 *.xml*ファイルを作成し、「 **testsnippets .xml**」という名前を指定します。 (通常、この名前はスニペットのインデックスファイルに使用されますが、 *.xml*ファイル名拡張子を持つ限り、任意の名前を指定できます)。次のテキストを追加し、プレースホルダー GUID を削除して、独自の GUID を追加します。
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -63,7 +66,7 @@ ms.locfileid: "66320734"
    </SnippetCollection>
    ```
 
-3. スニペット フォルダーにファイルを作成、名前を付けます**テスト**`.snippet`、し、次のテキストを追加します。
+3. スニペットフォルダー内にファイルを作成し、 **test** `.snippet` という名前を指定して、次のテキストを追加します。
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -105,131 +108,131 @@ ms.locfileid: "66320734"
    </CodeSnippets>
    ```
 
-   次の手順では、コード スニペットを登録する方法を示します。
+   次の手順は、コードスニペットを登録する方法を示しています。
 
-### <a name="to-register-code-snippets-for-a-specific-guid"></a>特定の GUID のコード スニペットを登録するには
+### <a name="to-register-code-snippets-for-a-specific-guid"></a>特定の GUID のコードスニペットを登録するには
 
-1. 開く、 **CompletionTest**プロジェクト。 このプロジェクトを作成する方法については、次を参照してください。[チュートリアル。ステートメント入力候補を表示](../extensibility/walkthrough-displaying-statement-completion.md)します。
+1. [確認]**テスト**プロジェクトを開きます。 このプロジェクトを作成する方法の詳細については、「[チュートリアル: 表示ステートメント入力候補](../extensibility/walkthrough-displaying-statement-completion.md)」を参照してください。
 
 2. プロジェクトで、次のアセンブリへの参照を追加します。
 
-    - Microsoft.VisualStudio.TextManager.Interop
+    - VisualStudio。相互運用
 
-    - Microsoft.VisualStudio.TextManager.Interop.8.0
+    - VisualStudio (Microsoft. 相互運用性)
 
-    - microsoft.msxml
+    - microsoft msxml
 
-3. プロジェクトで、開く、 **source.extension.vsixmanifest**ファイル。
+3. プロジェクトで、 **source.extension.vsixmanifest**ファイルを開きます。
 
-4. 確認します、**資産** タブには、 **VsPackage**コンテンツの種類とに**プロジェクト**プロジェクトの名前に設定されます。
+4. **[アセット]** タブに**VsPackage**コンテンツタイプが含まれており、その**プロジェクト**がプロジェクトの名前に設定されていることを確認します。
 
-5. CompletionTest プロジェクトを選択し、[プロパティ] ウィンドウで次のように設定します。 **Pkgdef ファイルの生成**に**true**します。 プロジェクトを保存します。
+5. 作成 テストプロジェクトを選択し、プロパティウィンドウ  **Pkgdef ファイルの生成** を **true** に設定します。 プロジェクトを保存します。
 
-6. 追加の静的な`SnippetUtilities`クラスをプロジェクト。
+6. 静的 `SnippetUtilities` クラスをプロジェクトに追加します。
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7. SnippetUtilities クラスの GUID を定義しで使用される値を指定する、 *SnippetsIndex.xml*ファイル。
+7. SnippetUtilities クラスで、GUID を定義し、 *SnippetsIndex*ファイルで使用した値を指定します。
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8. 追加、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>を`TestCompletionHandler`クラス。 この属性は、プロジェクト内のパブリックまたは内部にある (静的ではない) クラスに追加できます。 (追加する必要があります、 `using` Microsoft.VisualStudio.Shell 名前空間のステートメント)。
+8. @No__t_1 クラスに <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> を追加します。 この属性は、プロジェクト内の任意のパブリックまたは内部 (非静的) クラスに追加できます。 (場合によっては、VisualStudio 名前空間の `using` ディレクティブを追加する必要があります)。
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
 
-9. プロジェクトをビルドして実行します。 プロジェクトの実行時に起動する Visual Studio の実験用インスタンスを登録したスニペットを表示するか、**コード スニペット マネージャー**下、 **TestSnippets**言語。
+9. プロジェクトをビルドして実行します。 プロジェクトの実行時に起動される Visual Studio の実験用インスタンスでは、先ほど登録したスニペットが**testsnippets**言語の下にある**コードスニペットマネージャー**に表示されます。
 
-## <a name="add-the-insert-snippet-command-to-the-shortcut-menu"></a>ショートカット メニューに スニペットの挿入コマンドを追加します。
- **スニペットの挿入**テキスト ファイルのショートカット メニューでコマンドが含まれていません。 そのため、コマンドを有効にする必要があります。
+## <a name="add-the-insert-snippet-command-to-the-shortcut-menu"></a>[スニペットの挿入] コマンドをショートカットメニューに追加する
+ **[スニペットの挿入]** コマンドは、テキストファイルのショートカットメニューには含まれていません。 そのため、コマンドを有効にする必要があります。
 
-#### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>スニペットの挿入コマンドのショートカット メニューを追加するには
+#### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>[スニペットの挿入] コマンドをショートカットメニューに追加するには
 
-1. 開く、`TestCompletionCommandHandler`クラス ファイル。
+1. @No__t_0 クラスファイルを開きます。
 
-     このクラスを実装するため、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>、アクティブ化することができます、**スニペットの挿入**コマンド、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッド。 コマンドを有効にする前に確認して、このメソッドが呼び出されていない automation 関数の内側ためと、**スニペットの挿入**コマンドがクリックされると、スニペット ピッカーのユーザー インターフェイス (UI) が表示されます。
+     このクラスは <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> を実装しているため、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドで **[スニペットの挿入]** コマンドをアクティブにすることができます。 コマンドを有効にする前に、このメソッドがオートメーション関数の内部で呼び出されていないことを確認してください。これは、 **[スニペットの挿入]** コマンドをクリックすると、スニペットピッカーユーザーインターフェイス (UI) が表示されるためです。
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2. プロジェクトをビルドして実行します。 実験用のインスタンスを持つファイルを開く、 *.zzz*ファイル名拡張子とでは、任意の場所を右クリックします。 **スニペットの挿入**ショートカット メニューに表示する必要があります。
+2. プロジェクトをビルドして実行します。 実験用インスタンスで、ファイル名拡張子が*zzz*のファイルを開き、その中の任意の場所を右クリックします。 ショートカットメニューに **[スニペットの挿入]** コマンドが表示されます。
 
-## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>スニペット ピッカーの UI でスニペットの展開を実装します。
- このセクションでは、スニペット ピッカー UI が実行されるようにコード スニペットの展開を実装する方法を示しています。 ときに表示される**スニペットの挿入**、ショートカット メニューをクリックします。 ユーザーのコード スニペットのショートカットを入力してキーを押すと、コード スニペットが展開されても**タブ**します。
+## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>スニペットピッカー UI でのスニペット拡張の実装
+ このセクションでは、ショートカットメニューの **[スニペットの挿入]** をクリックしたときにスニペットピッカー UI が表示されるように、コードスニペット拡張を実装する方法について説明します。 コードスニペットは、ユーザーがコードスニペットのショートカットを入力し、 **tab**キーを押したときにも展開されます。
 
- スニペット ピッカー UI を表示し、ナビゲーションと後の挿入スニペットの受け入れを有効にするには、使用、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>メソッド。 によって挿入自体が処理される、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>メソッド。
+ スニペットピッカー UI を表示し、ナビゲーションと挿入後のスニペットの受け入れを有効にするには、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドを使用します。 挿入自体は、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> メソッドによって処理されます。
 
- コード スニペット拡張の実装はレガシ<xref:Microsoft.VisualStudio.TextManager.Interop>インターフェイス。 レガシ コードを現在のエディター クラスから変換するときは、従来のインターフェイスを行番号と列番号の組み合わせを使用して、テキスト バッファーに場所を指定するが、現在のクラスを使用して、1 つのインデックスに注意してください。 そのため、バッファーがそれぞれが 10 文字を持つ 3 つの行 (および、改行は、1 つの文字としてカウントされます)、3 番目の行の 4 番目の文字が現在の実装では 27 の位置が、2 行目は、以前の実装に 3 を配置します。
+ コードスニペット拡張の実装では、従来の <xref:Microsoft.VisualStudio.TextManager.Interop> インターフェイスが使用されます。 現在のエディタークラスからレガシコードに変換する場合は、従来のインターフェイスでは、行番号と列番号の組み合わせを使用してテキストバッファー内の場所を指定しますが、現在のクラスは1つのインデックスを使用することに注意してください。 したがって、バッファーには、それぞれが10文字 (1 文字としてカウントする改行) を持つ3つの行が含まれている場合、3行目の4番目の文字は現在の実装では27の位置にありますが、前の実装では行2の位置3にあります。
 
-#### <a name="to-implement-snippet-expansion"></a>スニペットの展開を実装するには
+#### <a name="to-implement-snippet-expansion"></a>スニペット拡張を実装するには
 
-1. 含むファイルを`TestCompletionCommandHandler`クラスで、次の追加`using`ステートメント。
+1. @No__t_0 クラスを含むファイルに、次の `using` ディレクティブを追加します。
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2. ように、`TestCompletionCommandHandler`クラスの実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient>インターフェイス。
+2. @No__t_0 クラスが <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> インターフェイスを実装するようにします。
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3. `TestCompletionCommandHandlerProvider`クラスは、インポート、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>します。
+3. @No__t_0 クラスで、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> をインポートします。
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4. コードの拡張インターフェイスのいくつかのプライベート フィールドを追加し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>します。
+4. コード拡張インターフェイスと <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> にプライベートフィールドを追加します。
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
 
-5. コンス トラクター、`TestCompletionCommandHandler`クラスで、次のフィールドを設定します。
+5. @No__t_0 クラスのコンストラクターで、次のフィールドを設定します。
 
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6. ユーザーがクリックしたときに、スニペット ピッカーを表示する、**スニペットの挿入**コマンドで、次のコードを追加、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>メソッド。 (この説明を読みやすくする、`Exec()`ステートメント入力候補に対して使用されるコードが示されていません代わりに、コードのブロックが、既存のメソッドを追加します。)。文字をチェックするコードの後に、次のコード ブロックを追加します。
+6. ユーザーが **[スニペットの挿入]** コマンドをクリックしたときにスニペットピッカーを表示するには、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドに次のコードを追加します。 (この説明を読みやすくするために、ステートメント入力候補に使用される `Exec()`code は表示されません。代わりに、既存のメソッドにコードのブロックが追加されます)。文字をチェックするコードの後に、次のコードブロックを追加します。
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. 展開が明示的に受け入れられるまで、スニペットに移動できるフィールドがある場合は、拡張セッションが開いたままです。セッションが閉じられ、として返されるフィールドのスニペットがない場合は、`null`によって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A>メソッド。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>メソッドのスニペット ピッカー UI コードを前の手順で追加した後に、スニペットのナビゲーションを処理するために次のコードを追加 (ユーザーが押したとき**タブ**または**Shift** +**タブ**スニペットの挿入後)。
+7. 移動できるフィールドがスニペットにある場合、拡張が明示的に許可されるまで拡張セッションは開いたままになります。スニペットにフィールドがない場合、セッションは閉じられ、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> メソッドによって `null` として返されます。 @No__t_0 メソッドで、前の手順で追加したスニペットピッカー UI コードの後に、スニペットナビゲーションを処理する次のコードを追加します (ユーザーがスニペットの挿入後に**Tab**キーまたは Shift +**tab** **キー**を押した場合)。
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8. ユーザーが対応するショートカットを入力して、キーを押すと、コード スニペットを挿入する**タブ**、コードを追加して、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>メソッド。 スニペットを挿入するプライベート メソッドは、後の手順で表示されます。 前の手順で追加したナビゲーション コードの後に、次のコードを追加します。
+8. ユーザーが対応するショートカットを入力して**tab**キーを押したときにコードスニペットを挿入するには、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドにコードを追加します。 スニペットを挿入するプライベートメソッドが、後の手順で表示されます。 前の手順で追加したナビゲーションコードの後に、次のコードを追加します。
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
 
-9. メソッドの実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient>インターフェイス。 関心のある唯一のメソッドは、この実装で<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>します。 その他のメソッドが返す必要がありますのみ<xref:Microsoft.VisualStudio.VSConstants.S_OK>します。
+9. @No__t_0 インターフェイスのメソッドを実装します。 この実装では、対象となるメソッドは <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A> と <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> だけです。 他のメソッドは <xref:Microsoft.VisualStudio.VSConstants.S_OK> を返すだけです。
 
      [!code-csharp[VSSDKCompletionTest#34](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_13.cs)]
      [!code-vb[VSSDKCompletionTest#34](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_13.vb)]
 
-10. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> メソッドを実装します。 実際には、拡張を挿入するヘルパー メソッドは、後の手順について説明します。 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>から取得できる行と列の情報を提供します、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>します。
+10. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> メソッドを実装します。 展開を実際に挿入するヘルパーメソッドについては、後の手順で説明します。 @No__t_0 は、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> から取得できる行と列の情報を提供します。
 
      [!code-csharp[VSSDKCompletionTest#35](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_14.cs)]
      [!code-vb[VSSDKCompletionTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_14.vb)]
 
-11. 次のプライベート メソッドは、ショートカット、またはタイトルとパスに基づいて、コード スニペットを挿入します。 呼び出して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A>メソッドは、スニペットを使用します。
+11. 次のプライベートメソッドは、ショートカットまたはタイトルとパスに基づいて、コードスニペットを挿入します。 次に、スニペットを使用して <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A> メソッドを呼び出します。
 
      [!code-csharp[VSSDKCompletionTest#36](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_15.cs)]
      [!code-vb[VSSDKCompletionTest#36](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_15.vb)]
 
-## <a name="build-and-test-code-snippet-expansion"></a>ビルドし、テストのコード スニペットの展開
- スニペットの展開は、プロジェクトで機能するかどうかをテストすることができます。
+## <a name="build-and-test-code-snippet-expansion"></a>コードスニペットの展開のビルドとテスト
+ プロジェクトでスニペットの展開が機能するかどうかをテストできます。
 
-1. ソリューションをビルドします。 デバッガーでこのプロジェクトを実行する場合は、Visual Studio の 2 番目のインスタンスが開始します。
+1. ソリューションをビルドします。 デバッガーでこのプロジェクトを実行すると、Visual Studio の2番目のインスタンスが開始されます。
 
-2. テキスト ファイルを開き、いくつかのテキストを入力します。
+2. テキストファイルを開き、テキストを入力します。
 
-3. テキストのどこかを右クリックし、クリックして**スニペットの挿入**します。
+3. テキスト内の任意の場所を右クリックし、 **[スニペットの挿入]** をクリックします。
 
-4. 示すポップアップを使用した UI が表示されます、スニペット ピッカー**テスト置換フィールド**します。 ポップアップをダブルクリックします。
+4. スニペットピッカー UI (**テスト置換フィールド**)」というポップアップが表示されます。 ポップアップをダブルクリックします。
 
      次のスニペットを挿入する必要があります。
 
@@ -238,12 +241,12 @@ ms.locfileid: "66320734"
     MessageBox.Show("second");
     ```
 
-     キーを押さない**Enter**または**Esc**します。
+     **Enter キーまた**は**Esc**キーは押さないでください。
 
-5. キーを押して**タブ**と**shift キーを押し**+**タブ**"first"と「秒」の間で切り替えをします。
+5. Tab キーおよび**Shift** +**tab**キー**を押して**、"first" と "second" の間を切り替えます。
 
-6. 押すことによって、カーソルをそのまま使用**Enter**または**Esc**します。
+6. **Enter**キーまたは**Esc**キーを押して、挿入を受け入れます。
 
-7. テキストの部分によって異なる、"test"を入力し、キーを押します**タブ**します。"Test"は、コード スニペットのショートカットであるため、スニペットを再び挿入する必要があります。
+7. テキストの別の部分に「test」と入力し、 **tab**キーを押します。"Test" はコードスニペットのショートカットであるため、スニペットを再び挿入する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ

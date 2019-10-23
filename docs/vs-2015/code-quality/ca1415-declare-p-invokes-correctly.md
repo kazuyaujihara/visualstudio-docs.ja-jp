@@ -1,5 +1,5 @@
 ---
-title: CA1415:P/invoke を正しく宣言 |Microsoft Docs
+title: 'CA1415: Declare P-正しく呼び出される |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57482b720b1a7801fc75e06a5eb5d05d3b1a1417
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691855"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652682"
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415:P/Invoke を正しく宣言します
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invoke を正しく宣言します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|カテゴリ|Microsoft.Interoperability|
-|互換性に影響する変更点|非的な P/invoke パラメーターを宣言する場合は、アセンブリの外部表示できません。 あり - 場合は、アセンブリの外部パラメーターを宣言する P/invoke を確認できます。|
+|カテゴリ|Microsoft. 相互運用性|
+|互換性に影響する変更点|非互換性-パラメーターを宣言する P/Invoke がアセンブリの外部に表示されない場合。 中断-パラメーターを宣言する P/Invoke がアセンブリの外部に表示される可能性があります。|
 
 ## <a name="cause"></a>原因
- プラットフォーム呼び出しメソッド宣言が正しくありません。
+ プラットフォーム呼び出しメソッドが正しく宣言されていません。
 
 ## <a name="rule-description"></a>規則の説明
- プラットフォームがメソッドへのアクセスのアンマネージ コードを呼び出すし、によって定義されている、`Declare`キーワード[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]または<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>します。 現時点では、このルールは、プラットフォーム呼び出しメソッドの宣言を OVERLAPPED 構造体パラメーターへのポインターを持つ Win32 関数を対象とすると、対応するマネージ型のパラメーターがないへのポインターを検索、<xref:System.Threading.NativeOverlapped?displayProperty=fullName>構造体。
+ プラットフォーム呼び出しメソッドはアンマネージコードにアクセスし、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> の `Declare` キーワードを使用して定義されます。 現在、このルールでは、オーバーラップ構造のパラメーターへのポインターを持ち、対応するマネージパラメーターが <xref:System.Threading.NativeOverlapped?displayProperty=fullName> 構造体へのポインターではない、Win32 関数を対象とするプラットフォーム呼び出しメソッドの宣言を検索します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、プラットフォームを正しく宣言メソッドを呼び出します。
+ この規則違反を修正するには、プラットフォーム呼び出しメソッドを正しく宣言します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例はプラットフォームが、規則に違反して、規則に適合するメソッドを呼び出します。
+ 次の例は、規則に違反し、規則を満たすプラットフォーム呼び出しメソッドを示しています。
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DeclarePInvokes/cs/FxCop.Interoperability.DeclarePInvokes.cs#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [アンマネージ コードとの相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

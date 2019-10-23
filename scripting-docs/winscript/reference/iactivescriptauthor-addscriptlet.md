@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddScriptlet |Microsoft Docs
+title: 'IActiveScriptAuthor:: AddScriptlet レット |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a349a848f282e6b3a228c7b17009e0261801be5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935459"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577986"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-コード スクリプトレットをルート レベルの子として追加`IScriptNode`オブジェクト。 ホストでは、スクリプトレットの完全修飾名をレベルが 2 つだけ許可されます。  
+ルートレベル `IScriptNode` オブジェクトの子としてコードスクリプトレットを追加します。 ホストでは、スクリプトレットの完全修飾名には、2つのレベルのみを指定できます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,28 +44,28 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>パラメーター  
  `pszDefaultName`  
- [in]スクリプトレットに関連付ける既定の名前のアドレス。  
+ からスクリプトレットに関連付ける既定の名前のアドレス。  
   
  `pszCode`  
- [in]スクリプトレット テキストのアドレス。  
+ からスクリプトレットテキストのアドレス。  
   
  `pszItemName`  
- [in]ホストでスクリプトレットの完全修飾の名前の最上位レベルの識別子のバッファーのアドレス。  
+ からホストの完全修飾スクリプトレット名の最上位レベル識別子のバッファーアドレス。  
   
  `pszSubItemName`  
- [in]ホストでスクリプトレットの完全修飾の名前の 2 番目のレベルの識別子のバッファーのアドレス。 名前に 1 つだけのレベルがある場合は NULL に設定します。  
+ からホストの完全修飾スクリプトレット名の第2レベル識別子のバッファーアドレス。 名前にレベルが1つしかない場合は NULL に設定します。  
   
  `pszEventName`  
- [in]スクリプトレットがイベント ハンドラーであるイベントの名前を格納するバッファーのアドレス。  
+ からスクリプトレットがイベントハンドラーであるイベント名を格納しているバッファーのアドレス。  
   
  `pszDelimiter`  
- [in]最後のスクリプト ブロックの区切り記号のアドレス。 ときに`pszCode`解析は、テキストのストリームからホスト通常 (など、2 つ単一引用符)、区切り記号を使用して、スクリプト ブロックの終了を検出します。 区切り記号がスクリプト ブロックの末尾をマークしない場合は、このパラメーターを NULL に設定します。  
+ からスクリプトの終了ブロックの区切り記号のアドレス。 テキストのストリームから `pszCode` を解析する場合、ホストは通常、スクリプトブロックの終了を検出するために区切り記号 (2 つの単一引用符など) を使用します。 区切り記号がスクリプトブロックの末尾をマークしない場合は、このパラメーターを NULL に設定します。  
   
  `dwCookie`  
- [in]ホスト オブジェクトとスクリプトレットを関連付けるために使用するアプリケーション定義の値。  
+ からスクリプトレットをホストオブジェクトに関連付けるために使用されるアプリケーション定義の値。  
   
  `dwFlags`  
- [in]使用されません。  
+ から使用しません。  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186338"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651777"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 で問題を報告する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、 **[ヘルプ] > [フィードバックの送信]、[問題の報告]** の順にクリックします。
 
-![[問題の報告] メニュー項目](../ide/media/report-a-problem-menu-item.png "[問題の報告] メニュー項目")
+![[問題の報告] のメニュー項目](../ide/media/report-a-problem-menu-item.png "[問題の報告] のメニュー項目")
 
 ## <a name="describe-the-problem"></a>問題について説明します
 
@@ -41,7 +41,7 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 3. ドロップダウンから、問題のある領域を選択します。 不明な場合は、問題があると思われる妥当な場所を記載します。
 
-   ![[問題の報告] ダイアログ](../ide/media/report-a-problem-dialog.png "[問題の報告] ダイアログ")
+   ![[問題の報告] のダイアログ](../ide/media/report-a-problem-dialog.png "[問題の報告] のダイアログ")
 
 ## <a name="provide-a-screenshot-optional"></a>スクリーンショットを提供します (オプション)
 
