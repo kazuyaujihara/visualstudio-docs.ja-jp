@@ -1,5 +1,5 @@
 ---
-title: 相互運用機能アセンブリ コマンド ハンドラーの登録 |Microsoft Docs
+title: 相互運用機能アセンブリの登録コマンドハンドラー |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e90ffc6b065b6d69bbe09bfe1887764ccc9955
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbc0d162a11df034bec4d1f357ef8abd106da401
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353330"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724689"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
-VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、そのコマンドを正しくルーティングされるようにします。
+VSPackage は、統合開発環境 (IDE: integrated development environment) がコマンドを適切にルーティングできるように [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に登録する必要があります。
 
- 手動で編集するか、Registrar (.rgs) ファイルを使用して、レジストリを更新できます。 詳細については、「 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)」を参照してください。
+ レジストリを更新するには、手動で編集するか、レジストラー (.rgs) ファイルを使用します。 詳細については、「 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)」を参照してください。
 
- 管理パッケージ フレームワーク (MPF) は、この機能によって、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>クラス。
+ Managed Package Framework (MPF) は、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> クラスを通じてこの機能を提供します。
 
-- [コマンドの表形式のリファレンス](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f)アンマネージ サテライト dll の UI ではリソースがあります。
+- [コマンドテーブル形式の参照](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f)リソースは、アンマネージサテライト UI dll にあります。
 
-## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンド ハンドラーの登録
- ユーザー インターフェイス (UI) のハンドラーとして機能する VSPackage-ベースのコマンドは、VSPackage にちなんだ名前のレジストリ エントリを必要と`GUID`します。 このレジストリ エントリには、VSPackage の UI のリソース ファイルとそのファイル内でメニュー リソースの場所を指定します。 Hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ自体も\\ *\<バージョン >* \Menus、場所 *\<バージョン >* バージョンである[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]たとえば 9.0、します。
+## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンドハンドラーの登録
+ ユーザーインターフェイス (UI) ベースのコマンドのハンドラーとして機能する VSPackage には、VSPackage `GUID` の後に、という名前のレジストリエントリが必要です。 このレジストリエントリは、VSPackage の UI リソースファイルとそのファイル内の menu リソースの場所を指定します。 レジストリエントリ自体は、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ *\<Version >* ] の下にあります。 *\<Version >* は、9.0 などの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のバージョンです。
 
 > [!NOTE]
-> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\ *\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルが初期化されます。 ルート パスの詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)します。
+> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<Version >* のルートパスは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] シェルの初期化時に代替ルートでオーバーライドできます。 ルートパスの詳細については、「 [Windows インストーラーを使用した Vspackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」を参照してください。
 
-### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU のリソースのレジストリ エントリ
- レジストリ エントリの構造です。
+### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU リソースレジストリエントリ
+ レジストリエントリの構造は次のとおりです。
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
@@ -42,22 +42,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>
 ```
 
- \<*GUID*> は、 `GUID` {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX} の形式で、VSPackage の。
+ \<*GUID*> は、{VSPackage} という形式の、XXXXXXXXX} の `GUID` です。
 
- *\<リソース情報 >* コンマで区切られた 3 つの要素で構成されます。 これらの要素の順序では。
+ *\<Resource 情報 >* は、コンマで区切られた3つの要素で構成されます。 これらの要素の順序は次のとおりです。
 
- \<*リソース DLL へのパス*>、 \< *] メニューの [リソース ID*>、 \<*メニュー バージョン*>
+ *リソース DLL > へ*の \< パス、\<*メニューリソース ID*>、\<*メニューバージョン*>
 
- 次の表は、フィールドの\<*リソース情報*>。
+ 次の表では、> \<*リソース情報*のフィールドについて説明します。
 
 | 要素 | 説明 |
 |---------------------------| - |
-| \<*リソース DLL へのパス*> | これは、リソース メニュー リソースを含む DLL への完全パスまたはこれが空白のまま、VSPackage のリソース DLL が使用することを示す (自体、VSPackage が登録されているパッケージのサブキーで、指定した)。<br /><br /> このフィールドを空白になります。 |
-| \<*メニュー リソース ID*> | これはのリソース ID、`CTMENU`からがコンパイルされると、VSPackage のすべての UI 要素が含まれるリソースを[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)ファイル。 |
-| \<*メニューのバージョン*> | これは、バージョンとして使用する数値、`CTMENU`リソース。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内容を再マージに必要なかどうかを決定する値を使用して、 `CTMENU` 、キャッシュのすべてを持つリソース`CTMENU`リソース。 再マージは、devenv の setup コマンドを実行することによってトリガーされます。<br /><br /> この値が 1 に設定されで変更のたびにインクリメントされます。 最初にする必要がありますする、`CTMENU`リソース、を再マージが発生する前にします。 |
+| *リソース DLL への \< パス*> | これは、メニューリソースを含むリソース DLL への完全なパスです。これは、VSPackage のリソース DLL が使用されることを示します。これは、VSPackage 自体が登録されている Packages サブキーで指定されています。<br /><br /> 慣例として、このフィールドは空白にしておきます。 |
+| \<*メニューリソース ID* > | これは、 [VSPackage ファイルからコンパイルされた](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)のすべての UI 要素を含む、`CTMENU` リソースのリソース ID です。 |
+| \<*メニューバージョン*> | これは、`CTMENU` リソースのバージョンとして使用される番号です。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、この値を使用して、`CTMENU` リソースの内容をすべての `CTMENU` リソースのキャッシュと再マージする必要があるかどうかを判断します。 Devenv のセットアップコマンドを実行すると、再マージがトリガーされます。<br /><br /> この値は、最初に1に設定し、`CTMENU` リソースのすべての変更の後、再マージが発生する前にインクリメントする必要があります。 |
 
 ### <a name="example"></a>例
- リソースのエントリをいくつかの例を次に示します。
+ いくつかのリソースエントリの例を次に示します。
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
