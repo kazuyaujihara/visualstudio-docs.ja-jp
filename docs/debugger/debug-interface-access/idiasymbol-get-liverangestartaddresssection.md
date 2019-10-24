@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressSection |Microsoft Docs
+title: 'IDiaSymbol:: get_liveRangeStartAddressSection |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99b5a14a321a28bdbe7337dcc7cdfa5febdad5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786529"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739907"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
-ローカル シンボルの有効範囲の開始アドレスのセクションの一部を返します。
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+ローカルシンボルが有効な範囲の開始アドレスのセクション部分を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,25 +33,25 @@ HRESULT get_liveRangeStartAddressSection ( 
 #### <a name="parameters"></a>パラメーター
  `section`
 
-[out]アドレス範囲の開始のセクションの一部を返します。
+入出力開始アドレス範囲のセクション部分を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 > [!NOTE]
-> 返されたエラー コードは、シンボルにライブの範囲の情報がないことを意味します。
+> 返されるエラーコードは、シンボルにライブ範囲情報が含まれていないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- セクションとオフセットで構成されるアドレスは、シンボルの有効範囲の先頭です。
+ セクションとオフセットによって形成されるアドレスは、記号が有効な範囲の先頭です。
 
- アドレスのオフセットの部分を取得する[IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)します。
+ アドレスのオフセット部分を取得するには、 [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)を使用します。
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

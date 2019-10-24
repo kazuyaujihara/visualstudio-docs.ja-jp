@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 571a92adf4ebbdce12ec8ea45866835e3f6a6772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666917"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748147"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 定義図の使用
 @No__t_0 定義の図は、ドメイン固有言語を定義するための重要なツールです。 ドメイン モデルに要素を追加し、図で関係を定義し、図のレイアウトを読みやすいように変更できます。
@@ -70,6 +70,6 @@ ms.locfileid: "72666917"
 ### <a name="show-as-class"></a>クラスとして表示する
  ドメインリレーションシップに派生リレーションシップがある場合、または他のドメインリレーションシップとの埋め込みまたは参照リレーションシップがある場合は、リレーションシップを右クリックし、[**クラスとして表示]** をクリックすることで、リレーションシップをクラスとして表示できます。 リレーションシップが **[ドメインプロパティ]** コンパートメントと共に表示され、継承ツリーとリレーションシップツリーが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,5 +1,5 @@
 ---
-title: エラー :DCOM 通信を開始できません |。Microsoft Docs
+title: 'エラー: DCOM 通信を開始できません |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1112ec72e8aca764f749a6d8f1925302f569b17e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a5e45df06d4b9490160c94902457ea630548966
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850071"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736728"
 ---
-# <a name="error-unable-to-initiate-dcom-communication"></a>エラー :DCOM 通信を初期化できません。
+# <a name="error-unable-to-initiate-dcom-communication"></a>エラー : DCOM 通信を初期化できません。
 ローカル コンピューターがリモート コンピューターと通信しようとしたときに DCOM エラーが発生しました。 このエラーは、リモート サーバーのファイアウォール、またはリモート コンピューターで Windows 認証が破損していることに原因があります。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- リモート コンピューターの Windows ファイアウォールが有効にされている場合は、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)ローカル デバッグのファイアウォールを構成する方法についてはします。
+- リモートコンピューターで Windows ファイアウォールが有効になっている場合は、ローカルデバッグ用にファイアウォールを構成する手順については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
 
 - Windows 認証を復元するために、両方のコンピューターを再起動してみます。 Kerberos エラーがないかどうかローカル コンピューターとリモート コンピューターのイベント ログを確認し、既知の問題がないかどうかドメイン管理者に問い合わせてください。
 

@@ -1,5 +1,5 @@
 ---
-title: エラー :Web サイトのワーカー プロセスが IIS によって停止されました |Microsoft Docs
+title: 'エラー: Web サイトのワーカープロセスが IIS によって停止されました |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850002"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736354"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー : Web サイトのワーカー プロセスが IIS によって停止されました
 デバッガーが Web サイト上のコードの実行を停止しました。 このため、インターネット インフォメーション サービス (IIS: Internet Information Services) はワーカー プロセスが応答を停止したと見なしました。 したがって、IIS がワーカー プロセスを終了しました。
 
  デバッグを継続するには、ワーカー プロセスが継続できるように IIS を設定する必要があります。 このエラー メッセージは、IIS 7 より古いバージョンの IIS では表示されません。
@@ -30,11 +30,11 @@ ms.locfileid: "62850002"
 
 1. **[管理ツール]** ウィンドウを開きます。
 
-   1. をクリックして**開始**を選択し**コントロール パネルの**です。
+   1. **[スタート]** ボタンをクリックし、 **[コントロール パネル]** をクリックします。
 
-   2. **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、**[管理ツール]** をダブルクリックします。
+   2. **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、 **[管理ツール]** をダブルクリックします。
 
-2. **[管理ツール]** ウィンドウで、**[インターネット インフォメーション サービス (IIS) マネージャー]** をダブルクリックします。
+2. **[管理ツール]** ウィンドウで、 **[インターネット インフォメーション サービス (IIS) マネージャー]** をダブルクリックします。
 
     IIS マネージャーが開きます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "62850002"
 
 4. [\<computer name>] ノードの下にある **[アプリケーション プール]** をクリックします。
 
-5. **[アプリケーション プール]** ボックスの一覧で、アプリケーションが実行されているプールの名前を右クリックし、**[詳細設定]** をクリックします。
+5. **[アプリケーション プール]** ボックスの一覧で、アプリケーションが実行されているプールの名前を右クリックし、 **[詳細設定]** をクリックします。
 
 6. **[詳細設定]** ダイアログ ボックスの **[プロセス モデル]** セクションで、以下のいずれかを実行します。
 

@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_noinline |Microsoft Docs
+title: 'IDiaSymbol:: get_noInline |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e5cc592f6be2e3fdd4f791c637e588e10a187ae2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786269"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739745"
 ---
-# <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-関数がインラインのものとしてマークされているかどうかを指定するフラグを取得します (を使用して、 [noinline](/cpp/cpp/noinline)属性)。
+# <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
+関数がインラインでないとマークされている ( [noinline](/cpp/cpp/noinline)属性を使用している) かどうかを指定するフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,20 +33,20 @@ HRESULT get_noInline(
 #### <a name="parameters"></a>パラメーター
  `pFlag`
 
-[out]返します`TRUE`関数の場合、 `noinline` 、それ以外の属性`FALSE`します。
+入出力関数に `noinline` 属性がある場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK バージョン 8.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

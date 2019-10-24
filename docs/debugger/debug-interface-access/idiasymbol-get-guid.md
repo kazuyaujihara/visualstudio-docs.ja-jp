@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_guid |Microsoft Docs
+title: 'IDiaSymbol:: get_guid |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0fe27279c1f973743813cae00827a8ff063af4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e0618c3bf0c06ba0b529004f38985fd5dd90d688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740605"
 ---
-# <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
+# <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 シンボルのグローバル一意識別子 (GUID) を取得します。
 
 ## <a name="syntax"></a>構文
@@ -33,20 +33,20 @@ HRESULT get_guid ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]シンボルの GUID を返します。
+入出力シンボルの GUID を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

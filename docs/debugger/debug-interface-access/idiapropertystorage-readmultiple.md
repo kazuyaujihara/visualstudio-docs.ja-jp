@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadMultiple |Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadMultiple |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839538"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742883"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-指定された、現在のプロパティ セットからのプロパティを読み取ります。
+指定されたプロパティを現在のプロパティセットから読み取ります。
 
 ## <a name="syntax"></a>構文
 
@@ -35,21 +35,21 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>パラメーター
  `cpspec`
 
-[in]指定したプロパティの数、`rgpspec`配列。 0 の場合、メソッドはプロパティは返されませんが、返すは`S_OK`成功コードとして。
+から@No__t_0 配列に指定されたプロパティの数。 0の場合、メソッドはプロパティを返しませんが、成功コードとして `S_OK` を返します。
 
  `rgpspec`
 
-[in]プロパティの読み取りの配列。 プロパティ ID、または、省略可能な文字列名のいずれかのプロパティを指定できます。 配列内の特定の順序でプロパティを指定する必要はありません。 配列は、単純なプロパティの戻り値の重複したプロパティ値の重複するプロパティを含めることができます。 2 回目に開こうとしてでアクセスが拒否される非単純プロパティが返す必要があります。 配列は、プロパティの Id と文字列 Id の組み合わせを含めることができます。 この配列は以上である必要があります`cpspec`プロパティ値の数。
+から読み取るプロパティの配列。 プロパティは、プロパティ ID または省略可能な文字列名のいずれかで指定できます。 配列内の特定の順序でプロパティを指定する必要はありません。 配列には重複するプロパティを含めることができます。その結果、単純なプロパティに対して戻り値のプロパティ値が重複します。 非単純なプロパティは、2回目に開こうとしたときにアクセスが拒否されたことを返します。 配列には、プロパティ Id と文字列 Id の組み合わせを含めることができます。 この配列には、少なくとも `cpspec` のプロパティ値が必要です。
 
  `rgvar`
 
-[入力、出力]配列の`PROPVARIANT`(Microsoft.VisualStudio.OLE.Interop 名前空間の) 内の各プロパティの値を格納する構造体します。 配列は以上である必要があります`cpspec`サイズ内の要素。 呼び出し元は、配列内の値を初期化する必要はありません。
+[入力、出力]各プロパティの値が格納される `PROPVARIANT` 構造体の配列 (VisualStudio 名前空間内) を指定します。 配列は、少なくとも `cpspec` の要素のサイズにする必要があります。 呼び出し元は、配列内の値を初期化する必要はありません。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`1 つまたは複数のプロパティが見つからなかった場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 1つ以上のプロパティが見つからなかった場合に `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- かどうか、プロパティが見つかりません、対応するエントリに、`rgvar`配列に含まれる、`VARIANT`の型と`VT_EMPTY`します。
+ プロパティが見つからなかった場合は、`rgvar` 配列内の対応するエントリに `VT_EMPTY` の型の `VARIANT` が格納されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

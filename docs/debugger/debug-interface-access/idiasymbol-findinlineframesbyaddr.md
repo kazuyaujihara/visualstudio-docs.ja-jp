@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr |Microsoft Docs
+title: 'IDiaSymbol:: findInlineFramesByAddr |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a5af94d6a5d6100f8ffb6047f57ee59f780da5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 57cb155d5cfcb4f2b59c101388dcc4907e1b6d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831725"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741183"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-により、クライアントは、すべての指定したアドレスにインライン フレームを反復処理する列挙体を取得します。
+指定されたアドレスのすべてのインラインフレームをクライアントが反復処理できるようにする列挙体を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,18 +33,18 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>パラメーター
  `isect`
 
-[in]アドレスのセクションのコンポーネントを指定します。
+からアドレスのセクション部分を指定します。
 
  `offset`
 
-[in]アドレスのオフセットのコンポーネントを指定します。
+からアドレスのオフセットコンポーネントを指定します。
 
  `ppResult`
 
-[out]保持する`IDiaEnumSymbols`取得されるフレームの一覧を含むオブジェクト。
+入出力取得されたフレームの一覧を含む `IDiaEnumSymbols` オブジェクトを保持します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

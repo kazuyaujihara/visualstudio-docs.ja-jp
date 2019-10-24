@@ -12,18 +12,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dea4b4781fd8026c29436bbd37a6bfa6824e73b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 749b3faf938fbc862fdf9b406127c898ee6b6d98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339479"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727564"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)エバリュエーターと[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- このインターフェイスを実装するオブジェクトのコレクションを表します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイス。
+ このインターフェイスは、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイスを実装するオブジェクトのコレクションを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,32 +31,32 @@ ms.locfileid: "66339479"
 IEnumDebugObjects : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装についてのメモ
- 式エバリュエーターを実装するオブジェクトのセットを指定するには、このインターフェイスを実装する、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイス。 存在するための標準 COM 列挙型ではないことに注意してください、 [GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)メソッド。
+## <a name="notes-for-implementers"></a>実装に関する注意事項
+ 式エバリュエーターは、このインターフェイスを実装して、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイスを実装するオブジェクトのセットを提供します。 これは、 [GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)メソッドが存在するため、標準の COM 列挙ではないことに注意してください。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)このインターフェイスを返します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+- [Getelements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)は、このインターフェイスを返します。
 
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、次のメソッドを実装します。
 
 |メソッド|説明|
 |------------|-----------------|
-|[次へ](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|次のセットを取得します。 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列挙体からのオブジェクト。|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|指定されたエントリ数をスキップします。|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|最初のエントリを列挙型をリセットします。|
+|[次へ](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|列挙体から次の[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトのセットを取得します。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|指定された数のエントリをスキップします。|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|列挙体を最初のエントリにリセットします。|
 |[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|現在の列挙体のコピーを取得します。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|列挙内のエントリの数を取得します。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|列挙体のエントリ数を取得します。|
 
 ## <a name="remarks"></a>Remarks
- このインターフェイスは、配列内のオブジェクトのセットを列挙するためにデバッグ エンジンを使用します。
+ このインターフェイスを使用すると、デバッグエンジンは配列内のオブジェクトのセットを列挙できます。
 
-## <a name="requirements"></a>必要条件
- ヘッダー: ee.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: ee
 
- 名前空間: Microsoft.VisualStudio.Debugger.Interop
+ 名前空間: VisualStudio。
 
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: VisualStudio を実行します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

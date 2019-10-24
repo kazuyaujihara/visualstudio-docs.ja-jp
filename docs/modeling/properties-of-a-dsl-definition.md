@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7ff2be87a91e6c01ec275bcff1d77aa6481df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ae26dc54c8f57348ed00196d86629e3515a1835
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658275"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748339"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義のプロパティ
 DslDefinition プロパティは、バージョン番号付けなど *、ドメイン固有言語*定義のプロパティを定義します。 DslDefinition プロパティは、*ドメイン固有言語デザイナー*でダイアグラムの空いている領域をクリックすると、 **[プロパティ]** ウィンドウに表示されます。
@@ -42,6 +42,6 @@ DslDefinition プロパティは、バージョン番号付けなど *、ドメ�
 |マイナーバージョン|このドメイン固有言語定義の増分マイナービルド番号。|0|
 |Revision|このドメイン固有言語定義の増分リビジョンビルド番号。|0|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

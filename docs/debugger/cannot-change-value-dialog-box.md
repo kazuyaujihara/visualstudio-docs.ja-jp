@@ -1,5 +1,5 @@
 ---
-title: ダイアログ ボックスの値を変更することはできません |Microsoft Docs
+title: '[値を変更できません] ダイアログボックス |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564152"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745742"
 ---
 # <a name="cannot-change-value-dialog-box"></a>[値を変更できません] ダイアログ ボックス
 ## <a name="error"></a>Error
- `The value of this variable cannot be changed` &#124;`The name` *名前* `does not exist in the current context` &#124; *さまざまな他のメッセージ*
+ `The value of this variable cannot be changed` &#124; `The name`*名*`does not exist in the current context` &#124; *その他のさまざまなメッセージ*
 
  このメッセージ ボックスが表示されるのは、デバッガー ウィンドウ ([自動変数]、[ウォッチ]、または [ローカル] の各ウィンドウ)、または [クイック ウォッチ] ダイアログ ボックスで変数の内容を不正な値に変更しようとした場合です。 たとえば、整数値を文字列に設定しようとすると、このメッセージ ボックスが表示されます。
 
-## <a name="solution"></a>ソリューション
+## <a name="solution"></a>解決策:
  デバッグ用ウィンドウや [クイック ウォッチ] ダイアログ ボックスに入力した内容が、設定する変数に対して有効な値を表していることを確認します。
 
 ## <a name="see-also"></a>関連項目

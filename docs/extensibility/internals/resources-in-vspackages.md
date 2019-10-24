@@ -1,5 +1,5 @@
 ---
-title: Vspackage のリソース |Microsoft Docs
+title: Vspackage | のリソースMicrosoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,43 +12,43 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3abcfebb7bbcc0eaa6a05760de4531f020b41ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318727"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724155"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage のリソース
-ネイティブ UI、サテライト Dll マネージ サテライト Dll、または、マネージ VSPackage 自体には、ローカライズされたリソースを埋め込むことができます。
+ローカライズされたリソースは、ネイティブサテライト UI Dll、マネージサテライト Dll、またはマネージ VSPackage 自体に埋め込むことができます。
 
- Vspackage では、一部のリソースを埋め込むことができません。 次のマネージ型を埋め込むことができます。
+ 一部のリソースは Vspackage に埋め込むことができません。 次のマネージ型を埋め込むことができます。
 
 - 文字列
 
-- (これはまた、文字列) パッケージ ロード キー
+- パッケージ読み込みキー (文字列でもあります)
 
-- ツール ウィンドウのアイコン
+- ツールウィンドウのアイコン
 
-- コンパイル済みのコマンド テーブルの出力 (CTO) ファイル
+- コンパイルされたコマンドテーブル出力 (CTO) ファイル
 
 - CTO ビットマップ
 
-- コマンド ライン ヘルプ
+- コマンドラインヘルプ
 
-- ダイアログ ボックスのデータについて
+- ダイアログボックスのデータについて
 
-  リソース ID を管理対象のパッケージ内のリソースが選択されています。 CTMENU 名前を指定する必要があります、CTO ファイルは例外です。 CTO ファイルとしてリソース テーブルには表示する必要があります、`byte[]`します。 その他のすべてのリソース項目は、型によって識別されます。
+  マネージパッケージ内のリソースは、リソース ID によって選択されます。 例外は、CTO ファイルです。このファイルには、CTMENU という名前を付ける必要があります。 CTO ファイルは、リソーステーブルに `byte[]` として表示される必要があります。 他のすべてのリソース項目は、型によって識別されます。
 
-  使用することができます、<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>に示すために属性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージ リソースが使用できることです。
+  @No__t_0 属性を使用して、マネージリソースが使用可能であることを [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を示すことができます。
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  設定<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>こうすることを示します[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を使用して、リソースについては、検索するときは、アンマネージ サテライト Dll を無視する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>します。 場合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]リソース ID が同じである 2 つ以上のリソースが検出した見つけた最初のリソースを使用します。
+  この方法で <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> を設定すると、<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> などを使用してリソースを検索するときに、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] がアンマネージサテライト Dll を無視するように指定します。 同じリソース ID を持つ2つ以上のリソースが検出された [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 場合は、検出された最初のリソースが使用されます。
 
 ## <a name="example"></a>例
- 次の例は、ツール ウィンドウ アイコンのマネージ表現です。
+ 次の例は、ツールウィンドウアイコンのマネージ表現です。
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- 次の例では、CTMENU 名前を指定する必要があります、CTO バイト配列を埋め込む方法を示します。
+ 次の例は、CTO のバイト配列を埋め込む方法を示しています。この配列には、CTMENU という名前を付ける必要があります。
 
 ```
 <data name="CTMENU"
@@ -81,10 +81,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>実装に関する注意事項
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可能であれば、Vspackage の読み込みを遅延します。 VSPackage で CTO ファイルを埋め込み、結果を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドがマージされたテーブルを作成する場合は、セットアップ中にメモリ内でこのようなすべての Vspackage を読み込む必要があります。 VSPackage でコードを実行することがなく、メタデータを調べることで、VSPackage からリソースを抽出できます。 パフォーマンスの低下はごくわずかであるため、VSPackage ではこの時点で初期化されていません。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、可能な限り Vspackage の読み込みを遅延します。 VSPackage に CTO ファイルを埋め込むと、セットアップ中に、マージされたコマンドテーブルを作成するときに、このようなすべての Vspackage をメモリに読み込む必要 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] があります。 リソースを VSPackage から抽出するには、VSPackage でコードを実行せずにメタデータを調べます。 VSPackage は現時点で初期化されていないため、パフォーマンスが低下することは少なくありません。
 
- ときに[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]セットアップ後の VSPackage からリソースを要求、パッケージが既に読み込まれ、初期化される可能性が高いため、パフォーマンスの低下はごくわずかです。
+ セットアップ後に VSPackage からリソースを要求する [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] と、そのパッケージは既に読み込まれて初期化される可能性があるため、パフォーマンスが低下することは少なくありません。
 
 ## <a name="see-also"></a>関連項目
 - [VSPackage の管理](../../extensibility/managing-vspackages.md)
-- [MFC アプリケーションのローカライズされたリソース:サテライト DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [MFC アプリケーションのローカライズされたリソース: サテライト DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
