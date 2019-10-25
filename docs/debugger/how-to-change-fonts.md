@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848069"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733936"
 ---
 # <a name="how-to-change-fonts"></a>方法: フォントを変更する
-フォント、フォント スタイル、および spy++ ウィンドウのフォント サイズを変更することができます。
+Spy + + windows のフォント、フォントスタイル、およびフォントサイズを変更できます。
 
-### <a name="to-change-font-options"></a>フォントのオプションを変更するには
+### <a name="to-change-font-options"></a>フォントオプションを変更するには
 
-1. **ビュー** ] メニューの [選択**フォント**します。
+1. **[表示]** メニューの **[フォント]** をクリックします。
 
-2. フォント、フォント スタイル、およびフォント サイズを選択します。
+2. フォント、フォントスタイル、およびフォントサイズを選択します。
 
 3. **[OK]** をクリックします。
 
-   選択**既定としてフォントを保存**このフォントを使用するすべての将来 spy++ ウィンドウになります。
+   [**フォントを既定値として保存**する] を選択すると、今後のすべての Spy + + ウィンドウでこのフォントが使用されます。
 
 ## <a name="see-also"></a>関連項目
 - [Spy++ の使用](../debugger/using-spy-increment.md)

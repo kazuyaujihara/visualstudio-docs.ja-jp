@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_symtag |Microsoft Docs
+title: 'IDiaSymbol:: get_symTag |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdd4ed102718a1c81be55c848a2d3c891c0ba99
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 99f24e47ff04c6a7d37633c4f04bbd058b861cd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830613"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739230"
 ---
-# <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
-シンボル型の分類子を取得します。
+# <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
+シンボルの種類の分類子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_symTag ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]値を返します、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)シンボルの種類の分類子を指定する列挙体。
+入出力シンボル型の分類子を指定する[Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md)型の列挙体から値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="example"></a>例
 

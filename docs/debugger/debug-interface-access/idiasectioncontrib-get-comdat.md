@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_comdat |Microsoft Docs
+title: 'IDiaSectionContrib:: get_comdat |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742722"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-セクションは COMDAT レコードであるかどうかを示すフラグを取得します。
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
+セクションが COMDAT レコードであるかどうかを示すフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します`TRUE`セクションが COMDAT レコード以外の場合を返しますそれ以外の場合、`FALSE`します。
+入出力セクションが COMDAT レコードの場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- COMDAT レコードとは、パッケージ化された関数をリンカーに表示する一般的なオブジェクト ファイル形式 (COFF) レコードです。
+ COMDAT レコードは、パッケージ化された関数がリンカーから参照できるようにする COFF (Common Object File Format) レコードです。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

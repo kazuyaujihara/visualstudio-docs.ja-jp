@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9874dec57c873164ec1875f31fd15c817781bb7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ab4776029f13a68746a6b4d6ca0343450f477a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839928"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743218"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
-この行を提供するコンパイル単位の一意の識別子を取得します。
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
+この行を提供したコンパイル単位の一意の識別子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します`DWORD`この行を提供するコンパイル単位の一意の識別子を格納しています。
+入出力この行を提供したコンパイル単位の一意の識別子を含む `DWORD` を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

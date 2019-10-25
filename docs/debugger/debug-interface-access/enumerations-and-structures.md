@@ -1,5 +1,5 @@
 ---
-title: 列挙体と構造体 |Microsoft Docs
+title: 列挙型と構造体 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a38138b5688d0c6573b18f3b0d875abcf627c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6769af8a417c111de6c8dfc68cd7cda548eaa24c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554936"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745227"
 ---
 # <a name="enumerations-and-structures"></a>列挙型と構造体
 
-これらは、列挙型および DIA SDK によって使用される構造です。
+これらは、DIA SDK によって使用される列挙型と構造体です。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -32,11 +32,11 @@ ms.locfileid: "62554936"
 
 - [BasicType 列挙型](../../debugger/debug-interface-access/basictype.md)
 
- シンボルの基本的な型を指定します。
+ シンボルの基本型を指定します。
 
 - [CV_access_e 列挙型](../../debugger/debug-interface-access/cv-access-e.md)
 
- メンバー関数と変数の可視性 (アクセス レベル) のスコープを指定します。
+ メンバー関数と変数の可視性 (アクセスレベル) のスコープを指定します。
 
 - [CV_call_e 列挙型](../../debugger/debug-interface-access/cv-call-e.md)
 
@@ -44,15 +44,15 @@ ms.locfileid: "62554936"
 
 - [CV_CFL_LANG 列挙型](../../debugger/debug-interface-access/cv-cfl-lang.md)
 
- アプリケーションまたはリンクされているモジュールのソース コードの言語を指定します。
+ アプリケーションまたはリンクされたモジュールのソースコード言語を指定します。
 
 - [CV_CPU_TYPE_e 列挙型](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 
- ターゲット プロセッサを指定します。
+ ターゲットプロセッサを指定します。
 
 - [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)
 
- ターゲットのレジスタを指定します。
+ ターゲットレジスタを指定します。
 
 - [DataKind 列挙型](../../debugger/debug-interface-access/datakind.md)
 
@@ -60,7 +60,7 @@ ms.locfileid: "62554936"
 
 - [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)
 
- シンボルの場所の情報の種類を示します。
+ シンボルに含まれる位置情報の種類を示します。
 
 - [MemoryTypeEnum 列挙型](../../debugger/debug-interface-access/memorytypeenum.md)
 
@@ -72,11 +72,11 @@ ms.locfileid: "62554936"
 
 - [StackFrameTypeEnum 列挙型](../../debugger/debug-interface-access/stackframetypeenum.md)
 
- スタック フレームの種類を指定します。
+ スタックフレームの種類を指定します。
 
 - [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)
 
- 記号の種類を指定します。
+ シンボルの種類を指定します。
 
 - [THUNK_ORDINAL 列挙型](../../debugger/debug-interface-access/thunk-ordinal.md)
 
@@ -84,13 +84,13 @@ ms.locfileid: "62554936"
 
 - [UdtKind 列挙型](../../debugger/debug-interface-access/udtkind.md)
 
- さまざまなユーザー定義型 (UDT) をについて説明します。
+ さまざまなユーザー定義型 (UDT) について説明します。
 
 ### <a name="structures"></a>構造体
 
 [DiaAddressMapEntry 構造体](../../debugger/debug-interface-access/diaaddressmapentry.md)
 
-アドレス マップ内のエントリについて説明します。
+アドレスマップのエントリを記述します。
 
 ### <a name="related-sections"></a>関連項目
 

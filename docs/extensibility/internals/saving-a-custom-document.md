@@ -1,5 +1,5 @@
 ---
-title: カスタム ドキュメントの保存 |Microsoft Docs
+title: カスタムドキュメントを保存する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,34 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90938e44b4227f8aad43542fc99136745a8af4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf67335b6a12b966eb148b3f8dcaf16339e2a29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318740"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724084"
 ---
 # <a name="saving-a-custom-document"></a>カスタム ドキュメントの保存
-環境ハンドル、**保存**、**名前を付けて保存**、および**すべて保存**コマンド。 ユーザーがクリックすると**保存**、**名前を付けて保存**、**すべてを保存または**上、**ファイル**メニューまたはすべてを保存、次に、ソリューションを閉じる処理が行われます。
+環境は、 **[保存]** 、名前を付け **[て保存]** 、および **[すべてを保存]** コマンドを処理します。 ユーザーが [**ファイル**の保存]、[名前を付け**て保存**]、**または [すべて**を保存]**をクリックする**と、すべて保存が行われるため、次のプロセスが実行されます。
 
- ![カスタマー エディター保存](../../extensibility/internals/media/private.gif "プライベート")保存、名前を付けて保存および処理のカスタム エディターをすべて保存 コマンド
+ ![ユーザーエディターの保存](../../extensibility/internals/media/private.gif "Private")カスタムエディターのすべてのコマンド処理を保存、名前を付けて保存、および保存する
 
- このプロセスの詳細については、次の手順。
+ このプロセスについては、次の手順で詳しく説明します。
 
-1. **保存**と**名前を付けて保存**、環境を使用して、コマンド、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスのアクティブなドキュメント ウィンドウを確認して、どのような項目を保存するためです。 アクティブなドキュメント ウィンドウがわかったら、環境は、実行中の document テーブル内のドキュメントの階層のポインターと項目の識別子 (itemID) を検索します。 詳細については、次を参照してください。[を実行しているドキュメント テーブル](../../extensibility/internals/running-document-table.md)します。
+1. [名前を付けて**保存**] コマンドと [名前を付け**て保存**] コマンドでは、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> サービスを使用して、アクティブなドキュメントウィンドウと、どの項目を保存するかを決定します。 アクティブなドキュメントウィンドウが判明すると、環境は、実行中のドキュメントテーブル内のドキュメントの階層ポインターと項目識別子 (itemID) を検索します。 詳細については、「 [Document Table の実行](../../extensibility/internals/running-document-table.md)」を参照してください。
 
-     すべて保存 コマンドは、環境は、保存するのにすべての項目の一覧をコンパイルするのに、実行中の document テーブルの情報を使用します。
+     [すべてを保存] コマンドの場合、環境は、実行中のドキュメントテーブルの情報を使用して、保存するすべての項目の一覧をコンパイルします。
 
-2. ソリューションが受信すると、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼び出し、選択した項目のセットを反復処理 (によって公開されている複数の選択は、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービス)。
+2. ソリューションは <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 呼び出しを受け取ると、選択された一連の項目 (つまり、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> サービスによって公開される複数の選択項目) を反復処理します。
 
-3. ソリューションの選択範囲の各項目を呼び出す階層ポインターを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>メソッドを上書き保存 メニュー コマンドを有効にするかどうかを判断します。 1 つまたは複数の項目がダーティの場合は、[保存] コマンドが有効にします。 階層は、標準のエディターを使用している場合のクエリを実行する階層デリゲート ダーティ状態、エディターを呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>メソッド。
+3. ソリューションでは、選択した項目ごとに、階層ポインターを使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> メソッドを呼び出し、[保存] メニューコマンドを有効にする必要があるかどうかを判断します。 1つ以上の項目がダーティの場合、[保存] コマンドが有効になります。 階層で標準エディターが使用されている場合、階層は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> メソッドを呼び出すことによって、ダーティステータスのクエリをエディターに委任します。
 
-4. ソリューションがダーティ選択項目ごとに呼び出す階層ポインターを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>メソッドを適切な階層。
+4. 選択された各項目がダーティである場合、ソリューションは階層ポインターを使用して、適切な階層で <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> メソッドを呼び出します。
 
-     カスタム エディターでは、場合は、ドキュメント データ オブジェクトと、プロジェクト間の通信はプライベートです。 したがって、任意の特殊な永続化の問題は、これら 2 つのオブジェクトの間で処理されます。
+     カスタムエディターの場合、ドキュメントデータオブジェクトとプロジェクト間の通信はプライベートになります。 したがって、この2つのオブジェクトの間で、特別な永続化の問題が処理されます。
 
     > [!NOTE]
-    > 独自の永続化を実装する場合を呼び出すことを確認する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>時間を節約するメソッド。 このメソッドは、ファイルを保存しても安全であるかどうかを確認するチェック (たとえば、ファイルは読み取り専用)。
+    > 独自の永続性を実装する場合は、必ず <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> メソッドを呼び出して時間を節約してください。 このメソッドは、ファイルが安全に保存されていることを確認します (たとえば、ファイルが読み取り専用ではない)。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

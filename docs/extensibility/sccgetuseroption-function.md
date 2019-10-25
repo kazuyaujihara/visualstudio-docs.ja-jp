@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eabf9cfc9d878d4d12096c8d264e8ee332031adf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353651"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721438"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 関数
 この関数は、さまざまなユーザー固有のオプションを取得します。
@@ -35,18 +35,18 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグインのコンテキストのポインター。
+からソース管理プラグインのコンテキストポインター。
 
- nOption
+ いいえ
 
-[in]検索するオプション（可能なオプションについては備考を参照）。
+から取得するオプション (使用可能なオプションについては、「解説」を参照してください)。
 
  lpVal
 
-[out]オプションに関連付けられている値。
+入出力オプションに関連付けられている値。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
 |[値]|説明|
 |-----------|-----------------|
@@ -57,9 +57,9 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>Remarks
  このコマンドでは、次のオプションがサポートされています。
 
-|ユーザー オプション|説明|
+|ユーザーオプション|説明|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|ユーザーがファイルのローカル バージョンをチェック アウトするかどうかを判断します。 `lpVal` 割り当てられている`SCC_USEROPT_COLV_YES`(ユーザーがローカル ファイルをチェック アウトする) または`SCC_USEROPT_COLV_NO`します。|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|ユーザーがローカルバージョンのファイルをチェックアウトするかどうかを指定します。 `lpVal` は `SCC_USEROPT_COLV_YES` (ユーザーがローカルファイルをチェックアウトする) または `SCC_USEROPT_COLV_NO` に割り当てられます。|
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

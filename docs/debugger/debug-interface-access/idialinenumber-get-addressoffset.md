@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_addressoffset |Microsoft Docs
+title: 'IDiaLineNumber:: get_addressOffset |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c29f2f8b84c68e9f4f0f7425ed5566b9180b1ac3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99addc04a7b9dc2f2b77d1943605f8c24af6aa7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828692"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743284"
 ---
-# <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-メモリ アドレス ブロックの開始位置のオフセットの部分を取得します。
+# <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
+ブロックの開始位置となるメモリアドレスのオフセット部分を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]ブロックの開始位置、メモリ アドレスのオフセットの部分を返します。
+入出力ブロックの開始位置となるメモリアドレスのオフセット部分を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="example"></a>例
 

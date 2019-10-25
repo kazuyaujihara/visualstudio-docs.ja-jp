@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5180581b0a0934c049d9c4ea199fa3396a1d1237
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a21473f983c56181e3a5d2fc7f9e97cd1c2d6e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658122"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748268"
 ---
 # <a name="properties-of-swimlanes"></a>スイムレーンのプロパティ
 スイムレーンを図に追加できます。 スイムレーンは、図を垂直方向または水平方向の領域に分割します。 スイムレーン内に表示される他の図形を定義できます。 詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。 これらのプロパティの使用方法の詳細については、「[ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -50,6 +50,6 @@ ms.locfileid: "72658122"
 |固定ツールヒントのテキスト|固定のツールヒントに使用されるテキスト。|\<none>|
 |ヘルプ キーワード|このスイムレーンの F1 ヘルプのインデックス作成に使用されるキーワードです。|\<none>|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

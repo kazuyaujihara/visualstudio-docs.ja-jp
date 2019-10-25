@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924197"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721997"
 ---
 # <a name="vspackage-registration"></a>VSPackage の登録
-Vspackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]インストールされていることを通知し、読み込む必要があります。 このプロセスは、レジストリに情報を書き込むことによって行われます。 これは、一般的なインストーラーのジョブです。
+Vspackage は、インストールされていて、読み込む必要がある [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] をアドバイズする必要があります。 このプロセスは、レジストリに情報を書き込むことによって行われます。 これは、一般的なインストーラーのジョブです。
 
 > [!NOTE]
-> VSPackage の開発中に自己登録を使用するために受け入れられるプラクティスです。 ただし、 [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)]パートナーは、セットアップの一環として自己登録を使用して製品を出荷することはできません。
+> VSPackage の開発中に自己登録を使用するために受け入れられるプラクティスです。 ただし、[!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] パートナーは、セットアップの一部として自己登録を使用して製品を出荷することはできません。
 
  Windows インストーラーパッケージ内のレジストリエントリは、通常、レジストリテーブルで作成されます。 レジストリテーブルにファイル拡張子を登録することもできます。 ただし、Windows インストーラーでは、プログラム識別子 (ProgId)、クラス、拡張機能、動詞テーブルを使用した組み込みのサポートが提供されます。 詳細については、「[データベーステーブル](/windows/desktop/Msi/database-tables)」を参照してください。
 
- レジストリエントリが、選択したサイドバイサイド戦略に適したコンポーネントに関連付けられていることを確認してください。 たとえば、共有ファイルのレジストリエントリは、そのファイルの Windows インストーラーコンポーネントに関連付けられている必要があります。 同様に、バージョン固有のファイルのレジストリエントリは、そのファイルのコンポーネントに関連付けられている必要があります。 そうしないと、1つのバージョン[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の VSPackage をインストールまたはアンインストールすると、他のバージョンの VSPackage が壊れる可能性があります。 詳細については、「 [Visual Studio の複数のバージョンのサポート](../../extensibility/supporting-multiple-versions-of-visual-studio.md)」を参照してください。
+ レジストリエントリが、選択したサイドバイサイド戦略に適したコンポーネントに関連付けられていることを確認してください。 たとえば、共有ファイルのレジストリエントリは、そのファイルの Windows インストーラーコンポーネントに関連付けられている必要があります。 同様に、バージョン固有のファイルのレジストリエントリは、そのファイルのコンポーネントに関連付けられている必要があります。 そうしないと、1つのバージョンの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に対して VSPackage をインストールまたはアンインストールすると、他のバージョンの VSPackage が壊れる可能性があります。 詳細については、「 [Visual Studio の複数のバージョンのサポート](../../extensibility/supporting-multiple-versions-of-visual-studio.md)」を参照してください。
 
 > [!NOTE]
 > 登録を管理する最も簡単な方法は、開発者の登録とインストール時の登録の両方に同じファイル内の同じデータを使用することです。 たとえば、一部のインストーラー開発ツールでは、ビルド時に .reg 形式のファイルを使用できます。 開発者が独自の日常的な開発とデバッグを行うために .reg ファイルを保持している場合は、それらの同じファイルをインストーラーに自動的に含めることができます。 登録データを自動的に共有できない場合は、インストーラーの登録データのコピーが最新であることを確認する必要があります。
@@ -47,7 +47,7 @@ Vspackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]イ
 
 - インストール、アンインストール、インストールのロールバック、およびアンインストールのロールバックを正しくサポートするには、RegPkg を呼び出して自己登録するすべてのマネージ VSPackage に対して4つのカスタムアクションを作成する必要があります。
 
-- サイドバイサイドのサポートを行うには、サポートされているすべての[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]バージョンのに対して RegSvr32 または regpkg を呼び出す4つのカスタムアクションを作成する必要があります。
+- サイドバイサイドのサポートを行うには、サポートされているすべてのバージョンの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に対して RegSvr32 または RegPkg を呼び出す4つのカスタムアクションを作成する必要があります。
 
 - 自己登録されたモジュールを使用したインストールは、他の機能やアプリケーションで自己登録キーが使用されているかどうかを示す方法がないため、安全にロールバックすることはできません。
 

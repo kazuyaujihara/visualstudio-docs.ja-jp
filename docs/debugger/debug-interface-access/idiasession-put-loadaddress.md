@@ -1,5 +1,5 @@
 ---
-title: Idiasession::put_loadaddress |Microsoft Docs
+title: IDiaSession::p ut_loadAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d004491feedff26c350cd7d40c544bc6b6de0f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 39db3bc0e0107e734f5de3f6902a2ca0fcc55bb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "64783732"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741890"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
+このシンボルストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT put_loadAddress ( 
 #### <a name="parameters"></a>パラメーター
  `NewVal`
 
-[in]実行可能ファイルのアドレスをロードします。
+から実行可能ファイルのアドレスを読み込みます。
 
 ## <a name="remarks"></a>Remarks
- シンボルの仮想アドレス (VA) プロパティは、このメソッドの値を使用して計算されます。 このプロパティは 0 以外設定されていない限り、仮想アドレスは計算されません。
+ シンボル仮想アドレス (VA) のプロパティは、このメソッドの値を使用して計算されます。 このプロパティがゼロ以外に設定されている場合を除き、仮想アドレスは計算されません。
 
 > [!NOTE]
-> 取得する場合は、このメソッドを呼び出す必要があります、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)オブジェクトし、シンボルで任意の仮想プロパティを使用する必要がある場合、オブジェクトの使用を開始する前にします。
+> シンボルに対して仮想プロパティを使用する必要がある場合は、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)オブジェクトを取得し、オブジェクトの使用を開始する前に、このメソッドを呼び出す必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

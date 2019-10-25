@@ -1,5 +1,5 @@
 ﻿---
-title: StackFrameTypeEnum |Microsoft Docs
+title: Stackフレーム Typeenum |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854831"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738550"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-スタック フレームの種類を指定します。
+スタックフレームの種類を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,23 +36,23 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elements
-`FrameTypeFPO` フレーム ポインターを指定します。FPO 情報を使用できます。
+`FrameTypeFPO` フレームポインターを省略します。FPO info を利用できます。
 
-`FrameTypeTrap` カーネル トラップ フレーム。
+`FrameTypeTrap` カーネルトラップフレーム。
 
-`FrameTypeTSS` カーネル トラップ フレーム。
+`FrameTypeTSS` カーネルトラップフレーム。
 
-`FrameTypeStandard` 標準 EBP スタック フレーム。
+`FrameTypeStandard` 標準の EBP スタックフレームです。
 
-`FrameTypeFrameData` フレーム ポインターを指定します。フレーム データ情報は利用可能です。
+`FrameTypeFrameData` フレームポインターを省略します。使用可能なフレームデータ情報です。
 
-`FrameTypeUnknown` すべてのデバッグ情報がないフレーム。
+デバッグ情報が含まれていないフレームを `FrameTypeUnknown` します。
 
 ## <a name="remarks"></a>Remarks
-この列挙体の値が呼び出しによって返される、 [idiastackframe::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)メソッド。
+この列挙体の値は、 [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)メソッドの呼び出しによって返されます。
 
-## <a name="requirements"></a>必要条件
-ヘッダー: cvconst.h
+## <a name="requirements"></a>［要件］
+ヘッダー: cvconst. h
 
 ## <a name="see-also"></a>関連項目
 - [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)

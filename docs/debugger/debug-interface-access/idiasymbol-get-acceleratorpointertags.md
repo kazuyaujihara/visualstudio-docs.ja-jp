@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags |Microsoft Docs
+title: 'IDiaSymbol:: get_acceleratorPointerTags |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827295"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741115"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-C++ AMP のアクセラレータのスタブ関数に対応するすべてのアクセラレータ ポインター タグ値を返します。
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+C++ AMP accelerator スタブ関数に対応するすべてのアクセラレータポインタータグ値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>パラメーター
  `cnt`
 
-[in]出力配列のサイズ`pPointerTags`します。
+から出力配列 `pPointerTags` のサイズ。
 
  `pcnt`
 
-[out]アクセラレータ ポインター タグの数、 C++ AMP のアクセラレータのスタブ関数。
+入出力C++ AMP accelerator スタブ関数内のアクセラレータポインタータグの数。
 
  `pPointerTags`
 
-[out]A`DWORD`でアクセラレータ ポインター タグの値が入力配列のポインター、 C++ AMP のアクセラレータのスタブ関数。
+入出力C++ AMP accelerator スタブ関数のアクセラレータポインターのタグ値を格納する `DWORD` 配列ポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドが、 `IDiaSymbol` C++ AMP のアクセラレータのスタブ関数に対応するインターフェイス。
+ このメソッドは、 C++ AMP accelerator スタブ関数に対応する `IDiaSymbol` インターフェイスで呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

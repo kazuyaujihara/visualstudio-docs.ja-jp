@@ -1,5 +1,5 @@
 ---
-title: SortOrder 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: 順序の要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edab3547a16f32f3a8177b3efa7a342c4aae5955
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2875bcb4583c1d2ec47a935d1a8bb4f0de109a92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331856"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719925"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 要素 (Visual Studio テンプレート)
-いずれかに表示される、同じカテゴリ内の他のテンプレート間で、テンプレートの配置に使用する値を指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。
+**[新しいプロジェクト]** ダイアログボックスまたは **[新しい項目の追加]** ダイアログボックスに表示されるテンプレートを、同じカテゴリの他のテンプレートの中に配置するために使用される値を指定します。
 
  \<VSTemplate > \<TemplateData > \<SortOrder >
 
@@ -50,17 +50,17 @@ ms.locfileid: "66331856"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- `integer`並べ替え順序の値を表します。
+ 並べ替え順序の値を表す `integer`。
 
 ## <a name="remarks"></a>Remarks
- `SortOrder` は、省略可能な要素です。 既定値は 100、およびすべての値は 10 の倍数である必要があります。
+ `SortOrder` は、省略可能な要素です。 既定値は100で、すべての値は10の倍数である必要があります。
 
- `SortOrder`ユーザーが作成したテンプレートの要素は無視されます。 すべてのユーザーが作成したテンプレートは、アルファベット順に並べ替えられます。
+ @No__t_0 要素は、ユーザーが作成したテンプレートでは無視されます。 ユーザーが作成したすべてのテンプレートはアルファベット順に並べ替えられます。
 
- いずれかで、低の並べ替え順序の値を持つテンプレートが表示されます、**新しいプロジェクト**または**新しい項目の追加**高の並べ替え順序の値を持つテンプレートの前に ダイアログ ボックス。
+ 並べ替え順序の値が低いテンプレートは、 **[新しいプロジェクト]** ダイアログボックスまたは **[新しい項目の追加]** ダイアログボックスで、並べ替え順の値が大きいテンプレートよりも前に表示されます。
 
 ## <a name="example"></a>例
- 次の例では、標準のメタデータ[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス テンプレートです。
+ 次の例は、標準 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] クラステンプレートのメタデータを示しています。
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +79,7 @@ ms.locfileid: "66331856"
 </VSTemplate>
 ```
 
- この例で、`SortOrder`要素が比較的高い。 可能性がありますの他の[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項目テンプレートには、`SortOrder`よりも小さい値`290`と前にこのテンプレートに表示されます、**新しい項目の** ダイアログ ボックス。
+ この例では、`SortOrder` 要素は比較的高いです。 他の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 項目テンプレートは `290` よりも低い `SortOrder` 値を持つ可能性があり、 **[新しい項目]** ダイアログボックスではこのテンプレートの前に表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

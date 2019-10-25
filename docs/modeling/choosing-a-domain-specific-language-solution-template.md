@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748524"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>ドメイン固有言語ソリューション テンプレートの選択
 ドメイン固有言語ソリューションを作成するには、ドメイン固有言語デザイナーウィザードで使用できるソリューションテンプレートの1つを選択します。 作成する言語に最も近いテンプレートを選択することにより、開始ソリューションに加える必要がある変更を最小限に抑えることができます。
@@ -31,6 +31,6 @@ ms.locfileid: "72653682"
 |最小限の WPF デザイナー|-小規模モデル<br />-モデルを表示する Windows Presentation Foundation ユーザーインターフェイス|このテンプレートは、DSL がグラフィカルなデザイナーではなく、WPF ユーザーインターフェイスにバインドされているアプリケーションを構築する場合に使用します。<br /><br /> ユーザーインターフェイスのデザイナーは、Dsl\ uiフォルダーにあります。<br /><br /> UI デザイナーを開く前に、プロジェクトをビルドする必要があります。<br /><br /> 詳細については、「 [WPF ベースのドメイン固有言語を作成](../modeling/creating-a-wpf-based-domain-specific-language.md)する」を参照してください。|
 |DSL ライブラリ|-最小ライブラリ|このテンプレートは、他の DSL 定義にインポートできる部分的な DSL 定義を構築する場合に使用します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの概要](../modeling/overview-of-domain-specific-language-tools.md)

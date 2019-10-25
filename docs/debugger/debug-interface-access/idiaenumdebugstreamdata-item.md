@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata::item |Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: Item |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838507"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744821"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 指定されたレコードを取得します。
@@ -36,22 +36,22 @@ HRESULT Item ( 
 #### <a name="parameters"></a>パラメーター
  インデックス
 
-[in]取得するレコードのインデックス。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される[idiaenumdebugstreamdata::get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)します。
+から取得するレコードのインデックス。 インデックスは 0 ~ `count`-1 の範囲にあり、`count` は[IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)によって返されます。
 
  cbData
 
-[in]データバッファのサイズ（バイト単位）。
+からデータバッファーのサイズ (バイト単位)。
 
  pcbData
 
-[out]返されるバイト数を返します。 場合`data`は`NULL`、し`pcbData`指定されたレコードで使用できるデータのバイト数合計にはが含まれています。
+入出力返されたバイト数を返します。 @No__t_0 が `NULL` 場合、`pcbData` には、指定されたレコードで使用可能なデータの合計バイト数が含まれます。
 
  data[]
 
-[out]デバッグ ストリーム レコードのデータが入力バッファー。
+入出力デバッグストリームレコードデータを格納するバッファー。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_INVALIDARG`無効なパラメーターの場合、`index`パラメーターが範囲外です。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。 無効なパラメーターの場合は `E_INVALIDARG` を返し、`index` パラメーターが範囲外の場合はを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

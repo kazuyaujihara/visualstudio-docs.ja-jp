@@ -1,5 +1,5 @@
 ---
-title: 例外の後にシステム コードを調べる |Microsoft Docs
+title: 例外の後にシステムコードを調べる |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,25 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9467ce7001f0061c20a5097220bd93b24937db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98f3eb98024e20350151904f297f7e7b4d6f1fea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894035"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733381"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>方法: 例外の後にシステム コードを調べる
+# <a name="how-to-examine-system-code-after-an-exception"></a>方法 : 例外の後にシステム コードを調べる
 例外が発生した場合、システム コール内のコードを調べて、例外の原因を判断する必要がある場合があります。 システム コードのシンボルが読み込まれていない場合、または [マイ コードのみ] が有効な場合にこの操作を行う方法を次の手順に示します。
 
 ### <a name="to-examine-system-code-following-an-exception"></a>例外の後にシステム コードを調べるには
 
-1. **[呼び出し履歴]** ウィンドウを右クリックし、**[外部コードの表示]** をクリックします。
+1. **[呼び出し履歴]** ウィンドウを右クリックし、 **[外部コードの表示]** をクリックします。
 
      [マイ コードのみ] が有効でない場合、ショートカット メニューにこのオプションは表示されず、既定でシステム コードが表示されます。
 
 2. **[呼び出し履歴]** ウィンドウに表示される外部コード フレームを右クリックします。
 
-3. **[シンボルの読み込み元]** をポイントし、**[Microsoft シンボル サーバー]** をクリックします。
+3. **[シンボルの読み込み元]** をポイントし、 **[Microsoft シンボル サーバー]** をクリックします。
 
     1. [マイ コードのみ] が有効な場合、ダイアログ ボックスが表示されます。 [マイ コードのみ] が無効になったことが示されます。 これは、システム コールにステップ インするために必要です。
 

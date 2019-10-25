@@ -1,5 +1,5 @@
 ---
-title: エラー :リモート コンピューターは DCOM 通信を開始できませんでした。Microsoft Docs
+title: 'エラー: リモートコンピューターは DCOM 通信を開始できませんでした |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb796b3a4b3cbc2b239a09ac8c173e746f194c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d61fe145a8dc301c928b81f9b57f1a574865a1d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850897"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737550"
 ---
-# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>エラー :リモート コンピューターは DCOM 通信を初期化できませんでした
+# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>エラー : リモート コンピューターは DCOM 通信を初期化できませんでした。
 リモート コンピューターがローカル コンピューターと通信しようとしたときに DCOM エラーが発生しました。 ローカル コンピューターは、
 
  Visual Studio を実行しているコンピューターです。 このエラーが発生する原因は複数あります。
@@ -32,7 +32,7 @@ ms.locfileid: "62850897"
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-1. ローカル コンピューターの Windows ファイアウォールが有効にされている場合は、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)ローカル デバッグのファイアウォールを構成する方法についてはします。
+1. ローカルコンピューターで Windows ファイアウォールが有効になっている場合は、ローカルデバッグ用にファイアウォールを構成する手順については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
 
 2. リモート サーバーからローカル コンピューターのファイル共有を開いてみて Windows 認証をテストします。
 

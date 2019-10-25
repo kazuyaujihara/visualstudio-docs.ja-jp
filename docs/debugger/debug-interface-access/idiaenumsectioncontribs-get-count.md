@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsectioncontribs::get_count |Microsoft Docs
+title: 'IDiaEnumSectionContribs:: get_Count |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7cd47426e08cf9dfbf0ceb7abe166e35499856c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d12bf9190e8413d12998df24d95d2b14c1222a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553963"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744339"
 ---
-# <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
-セクションの投稿物の数を取得します。
+# <a name="idiaenumsectioncontribsget_count"></a>IDiaEnumSectionContribs::get_Count
+セクションの投稿の数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]セクションの投稿物の数を返します。
+入出力セクションの投稿の数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_iscvtcil |Microsoft Docs
+title: 'IDiaSymbol:: get_isCVTCIL |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a4741c4f3a13b77dd871cefdb7a9d6430250b98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796596"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740267"
 ---
-# <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-共通中間言語 (CIL) モジュールからネイティブのモジュールにモジュールが変換されたかどうかを示すフラグを取得します。
+# <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
+モジュールが共通中間言語 (CIL) モジュールからネイティブモジュールに変換されたかどうかを示すフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,23 +33,23 @@ HRESULT get_isCVTCIL(
 #### <a name="parameters"></a>パラメーター
  `pFlag`
 
-[out]返します`TRUE`モジュールは、ネイティブ コードに CIL から変換された場合を返しますそれ以外の場合、`FALSE`します。
+入出力モジュールが CIL からネイティブコードに変換された場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- このプロパティは、`SymTagCompilandDetails`記号の型 (を参照してください[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)します。
+ このプロパティは `SymTagCompilandDetails` 記号の種類から使用できます (「 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)」を参照してください)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK バージョン 8.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

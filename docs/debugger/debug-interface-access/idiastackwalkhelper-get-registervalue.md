@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue |Microsoft Docs
+title: 'IDiaStackWalkHelper:: get_registerValue |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831833"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741414"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 レジスタの値を取得します。
 
 ## <a name="syntax"></a>構文
@@ -34,17 +34,17 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>パラメーター
  `index`
 
-[in]値、 [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)から値を取得する登録を指定する列挙体。
+から値を取得するレジスタを指定する[CV_HREG_e 列挙](../../debugger/debug-interface-access/cv-hreg-e.md)列挙の値です。
 
  `pRetVal`
 
-[out]レジスタの現在の値を返します。
+入出力レジスタの現在の値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- サイズに関係なく、`pRetVal`パラメーター、実装がのみ何レジスタは、通常は保持を格納する必要があります。 など、8 ビット レジスタのみ、最下位 8 ビットの指定された値を保持します。 この 8 ビット値は、このメソッドから返されるときに 64 ビットに拡張されます。
+ @No__t_0 パラメーターのサイズにかかわらず、実装には、通常、レジスタが保持しているものだけを格納する必要があります。 たとえば、8ビットレジスタは、指定された値のうち最も下位の8ビットだけを保持します。 この8ビット値は、このメソッドから返された場合は64ビットに拡張されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

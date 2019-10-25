@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag |Microsoft Docs
+title: 'IDiaSymbol:: findSymbolsForAcceleratorPointerTag |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827732"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741131"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-C++ AMP のスタブ関数では、アクセラレータのポインターのタグの数を返します。
+C++ AMP スタブ関数内のアクセラレータポインタータグの数を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,14 +31,14 @@ HRESULT findSymbolsForAccleratorPointerTag (
 #### <a name="parameters"></a>パラメーター
  `tagValue`
 
-[in]Pointee シンボル レコードを検出するポインターのタグ値。
+からPointee シンボルレコードが存在するポインタータグ値。
 
  `ppResult`
 
-[out]ポインター、`IDiaEnumSymbols`結果で初期化されるインターフェイス ポインター。
+入出力結果を使用して初期化される `IDiaEnumSymbols` インターフェイスポインターへのポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

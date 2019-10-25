@@ -1,5 +1,5 @@
 ---
-title: '方法: 表示を更新する |Microsoft Docs'
+title: '方法: ビューを更新する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 683aca32921d73c07bcf4905015f0198f3e7e826
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847723"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733009"
 ---
-# <a name="how-to-refresh-the-view"></a>方法: ビューの更新
-Spy++ システム テーブルの「スナップショット」を取得し、この情報に基づいてビューを更新します。 システム ビューを定期的に更新することが重要です。 Spy++ ビューを開き、ビューを更新していない場合は、これらのプロセス、スレッド、およびその後に作成される windows をしない表示されます。 また、存在しなくなった項目を表示することがあります。 **更新**コマンドは、メッセージ ビューを除くすべてのビューを使用できます。
+# <a name="how-to-refresh-the-view"></a>方法: ビューを更新する
+Spy + + はシステムテーブルの "スナップショット" を取得し、この情報に基づいてビューを更新します。 システムビューを定期的に更新することが重要です。 Spy + + ビューを開いていて、ビューを更新していない場合は、その後に作成されたプロセス、スレッド、およびウィンドウは表示されません。 また、存在しなくなった項目が表示される場合もあります。 **Refresh**コマンドは、Messages ビュー以外のすべてのビューで使用できます。
 
 ### <a name="to-refresh-the-currently-active-view"></a>現在アクティブなビューを更新するには
 
-- 選択**更新**から、**ウィンドウ** メニューの または をクリックして、**更新**ツールバーのボタンをクリックします。
+- **[ウィンドウ]** メニューの 最新の状態に **[更新]** をクリックするか、ツールバーの **[更新]** ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [Spy++ の使用](../debugger/using-spy-increment.md)
-- [+ + SSpy ビュー](../debugger/spy-increment-views.md)
+- [SSpy + + ビュー](../debugger/spy-increment-views.md)
 - [Spy++ リファレンス](../debugger/spy-increment-reference.md)

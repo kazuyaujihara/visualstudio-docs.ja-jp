@@ -1,5 +1,5 @@
 ---
-title: DebugBreak と _ _debugbreak |Microsoft Docs
+title: DebugBreak と __debugbreak |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852706"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738360"
 ---
-# <a name="debugbreak-and-debugbreak"></a>DebugBreak と __debugbreak
+# <a name="debugbreak-and-__debugbreak"></a>DebugBreak と __debugbreak
 DebugBreak Win32 関数または [__debugbreak](/cpp/intrinsics/debugbreak) 組み込み関数は、コード内のどこからでも呼び出すことができます。 `DebugBreak` および `__debugbreak` を呼び出した場合の動作は、その位置にブレークポイントを設定した場合と同様です。
 
  `DebugBreak` はシステム関数の呼び出しであるため、システム デバッグ シンボルをインストールして、中断の後に正しい呼び出し履歴情報が表示されるようにする必要があります。 そうしなかった場合、デバッガーによって表示される呼び出し履歴情報は、1 フレームずれて表示されることがあります。 `__debugbreak` を使用した場合、シンボルは不要です。

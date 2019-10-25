@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_intro |Microsoft Docs
+title: 'IDiaSymbol:: get_intro |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4680af2d41ef3fa06a89784003c98982a09c2b63
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836801"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740344"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-関数が紹介の仮想関数であるかどうかを指定するフラグを取得します。
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
+関数が導入仮想関数であるかどうかを指定するフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>パラメーター
 `pRetVal`
 
-[out]返します`TRUE`関数が仮想; 入門場合を返しますそれ以外の場合、`FALSE`します。
+入出力関数が導入されている場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="example"></a>例
 
@@ -52,14 +52,14 @@ class B : public A {
 }
 ```
 
-両方`A::f1`と`B::f1`は仮想関数ですが`A::f1`は、仮想メソッドの概要。
+@No__t_0 と `B::f1` はどちらも仮想機能ですが、`A::f1` は仮想の導入です。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

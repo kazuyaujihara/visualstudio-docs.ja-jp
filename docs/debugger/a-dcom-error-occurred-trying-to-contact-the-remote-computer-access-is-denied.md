@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1c9f9c23df04ca19f68dada718fba12dc51f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffc9cae027a078a62b1ef7bab16994a418d76763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564692"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745828"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>リモート コンピューターにアクセスしようとしたときに、DCOM エラーが発生しました。 アクセスが拒否されました。
 リモート デバッグでは、DCOM を使用して次のような状況でローカル コンピューターとリモート コンピューターとの間で通信します。
@@ -34,7 +34,7 @@ ms.locfileid: "62564692"
 
 - マネージド C++ (C + +/CLI) コードをデバッグする場合。
 
-- Visual Studio 2013 で、**[ツール] > [オプション] > [デバッグ]** ページの **[ネイティブのエディット コンティニュを有効にする]** がオンになっている場合。
+- Visual Studio 2013 で、 **[ツール] > [オプション] > [デバッグ]** ページの **[ネイティブのエディット コンティニュを有効にする]** がオンになっている場合。
 
 - 一部のサード パーティのデバッグ シナリオ
 

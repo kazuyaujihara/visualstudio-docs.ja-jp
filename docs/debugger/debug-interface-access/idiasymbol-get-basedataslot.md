@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseDataSlot |Microsoft Docs
+title: 'IDiaSymbol:: get_baseDataSlot |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 12aa68a549f47b27fd2b750d41631f4fabd546ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837700"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740955"
 ---
-# <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-基本データ スロットを取得します。
+# <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
+基本データスロットを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -30,10 +30,10 @@ HRESULT get_baseDataSlot(
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]ポインター、`DWORD`基本データ スロットを保持しています。
+入出力基本データスロットを保持する `DWORD` へのポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

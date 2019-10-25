@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsymbols::item |Microsoft Docs
+title: 'IDiaEnumSymbols:: Item |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c230f641612c099495c54db67da9c7e755cbdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12766fe52f7f515b7ca411b17d58117e4e56cc9f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829442"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743949"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
-インデックスを使用して、シンボルを取得します。
+インデックスを使ってシンボルを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>パラメーター
  インデックス
 
-[in]インデックス、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)を取得するオブジェクト。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される、 [idiaenumsymbols::get_count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)メソッド。
+から取得する[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトのインデックス。 インデックスは 0 ~ `count`-1 の範囲にあり、`count` は[IDiaEnumSymbols:: get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)メソッドによって返されます。
 
  シンボル
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)必要なシンボルを表すオブジェクト。
+入出力目的のシンボルを表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

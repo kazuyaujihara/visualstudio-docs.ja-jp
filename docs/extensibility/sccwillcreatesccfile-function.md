@@ -1,5 +1,5 @@
 ---
-title: SccWillCreateSccFile 関数 |Microsoft Docs
+title: 'Scc: ファイル関数 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dc7b9f5b298260b2bcca88c75087059bd8f0065
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ac7657258b79b2e53bee8138bc5b2728f618eac
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338449"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720118"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 関数
-この関数は、ソース管理プラグインは、MSSCCPRJ の作成をサポートするかどうかを決定します。指定されたファイルごとのファイルを SCC です。
+この関数は、ソース管理プラグインが MSSCCPRJ.SCC の作成をサポートしているかどうかを判断します。指定された各ファイルの SCC ファイル。
 
 ## <a name="syntax"></a>構文
 
@@ -36,31 +36,31 @@ SCCRTN SccWillCreateSccFile(
 #### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグインのコンテキストのポインター。
+からソース管理プラグインのコンテキストポインター。
 
  nFiles
 
-[in]含まれるファイル名の数、`lpFileNames`配列の長さと、`pbSccFiles`配列。
+から@No__t_0 配列に含まれるファイル名の数および `pbSccFiles` 配列の長さ。
 
- lpFileNames
+ lpFileNames 名
 
-[in]チェックする完全修飾ファイル名の配列 (呼び出し元が配列を割り当てる必要があります)。
+から確認する完全修飾ファイル名の配列 (配列は呼び出し元によって割り当てられる必要があります)。
 
  pbSccFiles
 
 [入力、出力]結果を格納する配列。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
 |[値]|説明|
 |-----------|-----------------|
 |SCC_OK|成功。|
-|SCC_E_INVALIDFILEPATH|配列内のパスのいずれかが無効です。|
+|SCC_E_INVALIDFILEPATH|配列内のパスの1つが無効です。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
 ## <a name="remarks"></a>Remarks
- この関数は、ソース管理プラグインが、MSSCCPRJ でのサポートを提供するかどうかを判断ファイルの一覧で呼び出されます。SCC ファイル (用、MSSCCPRJ の詳細については指定されたファイルごとします。SCC ファイルを参照してください[MSSCCPRJ します。SCC ファイル](../extensibility/mssccprj-scc-file.md))。 ソース管理プラグインは、MSSCCPRJ を作成する機能があるかどうかを宣言できます。宣言することでファイルを SCC`SCC_CAP_SCCFILE`の初期化中にします。 プラグイン返します`TRUE`または`FALSE`の 1 ファイルあたり、 `pbSccFiles` MSSCCPRJ がある特定のファイルのうちの配列。SCC のサポート。 プラグイン成功コードが関数から返された場合、返される配列内の値が受け入れられます。 失敗した場合、配列は無視されます。
+ この関数は、ソース管理プラグインが MSSCCPRJ.SCC でサポートを提供するかどうかを判断するために、ファイルのリストを使用して呼び出されます。指定された各ファイルの SCC ファイル (MSSCCPRJ.SCC の詳細については、「」を参照してください)。SCC ファイル、「Mssccprj.scc」を参照してください[。SCC ファイル](../extensibility/mssccprj-scc-file.md))。 ソース管理プラグインでは、MSSCCPRJ.SCC を作成する機能があるかどうかを宣言できます。初期化中に `SCC_CAP_SCCFILE` を宣言することによる SCC ファイル。 このプラグインは `pbSccFiles` 配列内のファイルごとに `TRUE` または `FALSE` を返し、指定されたファイルのどれが MSSCCPRJ.SCC しているかを示します。SCC サポート。 プラグインが関数から成功コードを返す場合、返される配列の値は受け入れられます。 失敗した場合、配列は無視されます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

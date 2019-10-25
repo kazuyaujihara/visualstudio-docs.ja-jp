@@ -1,5 +1,5 @@
 ﻿---
-title: グラフィックス イベント呼び出し履歴 |Microsoft Docs
+title: グラフィックスイベント呼び出し履歴 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848781"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735511"
 ---
 # <a name="graphics-event-call-stack"></a>グラフィックス イベント呼び出し履歴
 Visual Studio Graphics Analyzer のグラフィックス イベント呼び出し履歴を使用すると、問題のあるグラフィックス イベントとアプリのソース コードとの間の関係をマップできます。
 
  [イベント呼び出し履歴] ウィンドウを次に示します。
 
- ![DrawIndexed イベントの前の呼び出し履歴。](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
+ ![DrawIndexed イベントの前のコールスタック。](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
 
 ## <a name="understanding-the-graphics-event-call-stack"></a>グラフィックス イベント呼び出し履歴について
  [イベント呼び出し履歴] を使用すると、特定の Direct3D イベントが発生するまでの実行フローを理解できます。 これは Visual Studio の呼び出し履歴ウィンドウに似ていますが、実行中のアプリにおいて現在のスレッドの現在の呼び出し履歴を表示するのではなく、選択した Direct3D イベントが発生した時点の呼び出し履歴を表示する点が異なります。 [イベント呼び出し履歴] から、選択した Direct3D イベントの呼び出しサイトに移動して、前後のコードを確認できます。

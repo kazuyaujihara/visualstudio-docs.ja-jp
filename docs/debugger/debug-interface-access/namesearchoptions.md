@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661809"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738611"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 シンボルとファイル名の検索オプションを指定します。
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elements
 `nsNone` オプションは指定されていません。
 
-`nsfCaseSensitive`大文字と小文字が区別される名前の一致を適用します。
+`nsfCaseSensitive` では、大文字と小文字が区別されます。
 
-`nsfCaseInsensitive`大文字と小文字を区別しない名前の一致を適用します。
+`nsfCaseInsensitive` では、大文字と小文字を区別しない名前の一致が適用されます。
 
-`nsfFNameExt`名前をパスとして扱い、ファイル名を適用します。 ext 名と一致します。
+`nsfFNameExt` は、名前をパスとして扱い、ファイル名を適用します。 ext 名と一致します。
 
-`nsfRegularExpression`アスタリスク (*) と疑問符 (?) をワイルドカードとして使用して、大文字と小文字を区別した名前の一致を適用します。 (その他の一般的な正規表現文字はサポートされていません)。
+`nsfRegularExpression` は、アスタリスク (*) と疑問符 (?) をワイルドカードとして使用して、大文字と小文字を区別した名前の一致を適用します。 (その他の一般的な正規表現文字はサポートされていません)。
 
-`nsfUndecoratedName`非装飾名と装飾名の両方を持つシンボルにのみ適用されます。
+`nsfUndecoratedName` は、非装飾名と装飾名の両方を持つシンボルにのみ適用されます。
 
 ## <a name="remarks"></a>Remarks
 この列挙の値は、次のメソッドに渡されます。
@@ -64,7 +64,7 @@ enum NameSearchOptions {
 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 ヘッダー: dia2
 
 ## <a name="see-also"></a>関連項目

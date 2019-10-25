@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3454ff5ef087b67dda5d48849d4a6c4eceb7e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aafdd2270606ba6e56713e9166dbae2b8c635b41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839356"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742275"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-ソース ファイルの識別子を使用してソース ファイルを取得します。
+ソースファイル識別子でソースファイルを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,17 +34,17 @@ HRESULT findFileById ( 
 #### <a name="parameters"></a>パラメーター
  `uniqueId`
 
-[in]ソース ファイルの識別子を指定します。
+からソースファイルの識別子を指定します。
 
  `ppResult`
 
-[out]返します、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)ソース ファイルを表すオブジェクトを取得します。
+入出力取得したソースファイルを表す[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- ソース ファイルの識別子は、すべてのソース ファイルを一意にする DIA SDK に内部的に使用される一意の値です。 通常、DIA SDK に内部的にこのメソッドが使用されます。
+ ソースファイル識別子は、すべてのソースファイルを一意にするために DIA SDK に内部的に使用される一意の値です。 このメソッドは、通常、DIA SDK に内部的に使用されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

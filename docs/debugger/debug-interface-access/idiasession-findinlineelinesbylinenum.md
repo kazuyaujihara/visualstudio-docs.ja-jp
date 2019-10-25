@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByLinenum |Microsoft Docs
+title: 'IDiaSession:: findInlineeLinesByLinenum |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493e1a2f6df57019183f36daf246ef69e8f1a4d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe238f3bc66d6a7c5978c5d7cbebcd185fcd43d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402608"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742223"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
-により、クライアントは、すべての関数がインライン展開されて、直接または間接的に、指定したソース ファイルと行番号での行番号情報を反復処理する列挙体を取得します。
+指定したソースファイルと行番号で、直接または間接的にインライン化されているすべての関数の行番号情報をクライアントが反復処理できるようにする列挙体を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,29 +35,29 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>パラメーター
  `compiland`
 
-[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)行番号を検索するためのコンパイル単位を表すオブジェクト。 このパラメーターを `NULL` とすることはできません。
+から行番号を検索するコンパイル単位を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクト。 このパラメーターを `NULL` とすることはできません。
 
  `file`
 
-[in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)を検索するソース ファイルを表すオブジェクト。 このパラメーターを `NULL` とすることはできません。
+から検索するソースファイルを表す[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)オブジェクト。 このパラメーターを `NULL` とすることはできません。
 
  `linenum`
 
-[in]1 から始まる行番号を指定します。
+から1から始まる行番号を指定します。
 
 > [!NOTE]
-> 0 を使用して、すべての行を指定することはできません (を使用して、 [idiasession::findlines](../../debugger/debug-interface-access/idiasession-findlines.md)すべての行を検索するメソッド)。
+> 0を使用してすべての行を指定することはできません (すべての行を検索するには、 [IDiaSession:: findlines](../../debugger/debug-interface-access/idiasession-findlines.md)メソッドを使用します)。
 
  `column`
 
-[in]列番号を指定します。 すべての列を指定するのにには、0 を使用します。 列は、行へのバイト オフセットです。
+から列番号を指定します。 すべての列を指定するには0を使用します。 列は、1行に対するバイトオフセットです。
 
  `ppResult`
 
-[out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)取得された行番号の一覧を含むオブジェクト。
+入出力取得された行番号の一覧を含む[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_upperbound |Microsoft Docs
+title: 'IDiaSymbol:: get_upperBound |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25db69ac60fcc045637b797a4be3c45a4147cf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3528780e80e8afc5076446f16b1a64ef1700ee30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816485"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738952"
 ---
-# <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
-FORTRAN 配列の次元の上限を表すシンボルを取得します。
+# <a name="idiasymbolget_upperbound"></a>IDiaSymbol::get_upperBound
+FORTRAN 配列次元の上限を表す記号を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_upperBound ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) FORTRAN 配列の次元の上限を表すオブジェクト。
+入出力FORTRAN 配列次元の上限を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

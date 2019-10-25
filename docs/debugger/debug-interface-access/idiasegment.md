@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 855b40f3d35d884a366e8fdc36ed1ec4f2bef85a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742338"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-セクション数からアドレス空間のセグメントにデータをマップします。
+セクション番号のデータをアドレス空間のセグメントにマップします。
 
 ## <a name="syntax"></a>構文
 
@@ -29,28 +29,28 @@ IDiaSegment : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表は、メソッドの`IDiaSegment`します。
+次の表は、`IDiaSegment` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|セグメントの数を取得します。|
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|セグメントのセクションの開始位置のオフセットを取得します。|
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|セグメント番号を取得します。|
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|セクションの先頭にあるセグメント内のオフセットを取得します。|
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|セグメント内のバイト数を取得します。|
-|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|セグメントを読み取れるかどうかを示すフラグを取得します。|
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|セグメントを読み取ることができるかどうかを示すフラグを取得します。|
 |[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|セグメントを変更できるかどうかを示すフラグを取得します。|
 |[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|セグメントが実行可能かどうかを示すフラグを取得します。|
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|このセグメントに対応するセクションを取得します。|
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|このセグメントにマップされるセクション番号を取得します。|
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|セクションの先頭の相対仮想アドレス (RVA) を取得します。|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|セクションの先頭の仮想アドレス (VA) を取得します。|
 
 ## <a name="remarks"></a>Remarks
-ほとんどのアプリケーションのことはありません、DIA SDK は既に、相対仮想アドレスをセクションのオフセット位置から翻訳を実行するためのセグメント マップ内の情報を使用します。
+DIA SDK では、セクションオフセットから相対仮想アドレスへの変換が既に実行されているため、ほとんどのアプリケーションではセグメントマップの情報が使用されません。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-このインターフェイスを呼び出すことによって取得、 [idiaenumsegments::item](../../debugger/debug-interface-access/idiaenumsegments-item.md)または[idiaenumsegments::next](../../debugger/debug-interface-access/idiaenumsegments-next.md)メソッド。 詳細については、例を参照してください。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+このインターフェイスを取得するには、 [IDiaEnumSegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)または[IDiaEnumSegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)メソッドを呼び出します。 詳細については、例を参照してください。
 
 ## <a name="example"></a>例
-この関数には、テーブルと最も近いシンボルのすべてのセグメントのアドレスが表示されます。
+この関数は、テーブル内のすべてのセグメントのアドレスと、最も近い記号を表示します。
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -93,12 +93,12 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>必要条件
-ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: Dia2
 
-ライブラリ: diaguids.lib
+ライブラリ: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

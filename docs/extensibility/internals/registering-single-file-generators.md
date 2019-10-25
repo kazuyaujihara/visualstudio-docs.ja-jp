@@ -1,5 +1,5 @@
 ---
-title: 単一ファイル ジェネレーターの登録 |Microsoft Docs
+title: 1つのファイルジェネレーターの登録 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +11,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0c3bf7c8260506eabf56113992c985e1cc8669
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e9026da08272d69bac246f98ae741a47527d627f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351016"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724562"
 ---
 # <a name="registering-single-file-generators"></a>単一ファイル ジェネレーターの登録
-カスタム ツールで使用できるようにする[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、そのために登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]をインスタンス化でき、特定のプロジェクトの種類に関連付けます。
+カスタムツールを [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] で使用できるようにするには、そのツールをインスタンス化して特定のプロジェクトの種類に関連付ける [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に登録する必要があります。
 
-### <a name="to-register-a-custom-tool"></a>カスタム ツールを登録するには
+### <a name="to-register-a-custom-tool"></a>カスタムツールを登録するには
 
-1. カスタム ツールの DLL を登録するかで、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ローカル レジストリかシステム レジストリの HKEY_CLASSES_ROOT の下。
+1. カスタムツール DLL を [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ローカルレジストリまたはシステムレジストリの [HKEY_CLASSES_ROOT] の下に登録します。
 
-    たとえば、マネージ MSDataSetGenerator カスタム ツールに付属している登録情報をここでは[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:
+    たとえば、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に付属しているマネージ MSDataSetGenerator カスタムツールの登録情報を次に示します。
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,24 +36,24 @@ ms.locfileid: "66351016"
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. 必要なレジストリ キーを作成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ジェネレーターでの hive\\*GUID*場所*GUID* GUID は、特定の言語のプロジェクト システムまたはサービスによって定義されます。 カスタム ツールのプログラムによる名前のキーの名前になります。 カスタム ツールのキーでは、次の値があります。
+2. [ジェネレーター \\*guid* ] の下にある目的の [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive で、レジストリキーを作成します。 *guid*は、特定の言語のプロジェクトシステムまたはサービスによって定義された guid です。 キーの名前は、カスタムツールのプログラム名になります。 カスタムツールキーの値は次のとおりです。
 
    - (既定)
 
-        省略可能です。 カスタム ツールのわかりやすい説明を提供します。 このパラメーターは省略可、ただし推奨されるは。
+        省略可能です。 カスタムツールについてのわかりやすい説明を提供します。 このパラメーターは省略可能ですが、推奨されます。
 
    - CLSID
 
-        必須。 実装する COM コンポーネントのクラス ライブラリの識別子を指定します<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>します。
+        必須です。 @No__t_0 を実装する COM コンポーネントのクラスライブラリの識別子を指定します。
 
    - GeneratesDesignTimeSource
 
-        必須。 このカスタムのツールによって生成されたファイルからの種類をビジュアル デザイナーを使用できる構成されるかどうかを示します。 このパラメーターの値は、ビジュアル デザイナーを使用できない種類の 0 (ゼロ) やビジュアル デザイナーを使用可能な型の (1 つ) の 1 にする必要があります。
+        必須です。 このカスタムツールによって生成されたファイルの型をビジュアルデザイナーで使用できるようにするかどうかを示します。 このパラメーターの値は、ビジュアルデザイナーで使用できない型の場合は (0) 0、ビジュアルデザイナーで使用できる型の場合は (1) 0 である必要があります。
 
    > [!NOTE]
-   > 使用するカスタム ツールの対象となる言語ごとに個別にカスタム ツールを登録する必要があります。
+   > カスタムツールを使用する言語ごとに、カスタムツールを個別に登録する必要があります。
 
-    たとえば、MSDataSetGenerator 自身を登録 1 回の各言語。
+    たとえば、MSDataSetGenerator は、言語ごとに1回登録します。
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8a65b19baeb3a03c8ada039bce354140aecbf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3954f271d4bcdc222841bbcb435cdadf115ac263
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666884"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748139"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>ドメイン固有言語をカスタマイズするコードを記述する
 
@@ -72,6 +72,6 @@ DslDefinition. dsl で定義したクラスのインスタンスは、*メモリ
 
 - **シリアル化**。 ストアには、ファイルに格納されているオブジェクトをシリアル化するための標準的な方法が用意されています。 シリアル化および逆シリアル化の規則をカスタマイズできます。 詳細については、「 [File Storage および XML シリアル化のカスタマイズ](../modeling/customizing-file-storage-and-xml-serialization.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語のカスタマイズおよび拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)

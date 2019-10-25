@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887774"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729089"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>サポートされてC#いるコード変更 (および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。
@@ -33,9 +33,9 @@ ms.locfileid: "70887774"
 |言語要素/機能|サポートされている編集操作|制限事項|
 |-|-|-|
 |種類|メソッド、フィールド、コンス トラクター、他を追加します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|反復子|追加または変更します。|いいえ|
+|Iterators|追加または変更します。|Ｘ|
 |非同期/待機式|追加または変更します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|動的オブジェクト|追加または変更します。|いいえ|
+|動的オブジェクト|追加または変更します。|Ｘ|
 |ラムダ式|追加または変更します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |LINQ 式|追加または変更します。|[ラムダ式と同じ](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
@@ -76,10 +76,10 @@ ms.locfileid: "70887774"
 |try-catch-finally ブロック|アクティブなステートメントが含まれている場合に変更する|
 |using ステートメント|追加|
 |非同期メソッド/ラムダ|.NET Framework 4 以下を対象とするプロジェクトで非同期メソッド/ラムダを変更する ([詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)を参照)|
-|反復子|.NET Framework 4 以下を対象とするプロジェクトの反復子を変更する ([詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)を参照)|
+|Iterators|.NET Framework 4 以下を対象とするプロジェクトの反復子を変更する ([詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)を参照)|
 
 ## <a name="unsafe-code"></a>アンセーフ コード
- アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディットコンティニュは、 `stackalloc`演算子を含むメソッド内で終了するアンセーフコードへの変更をサポートしていません。
+ アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュでは、`stackalloc` 演算子を含むメソッド内に存在するアンセーフ コードへの変更はサポートしていません。
 
 ## <a name="unsupported-app-scenarios"></a>サポートされていないアプリのシナリオ
 
@@ -95,7 +95,7 @@ ms.locfileid: "70887774"
 
 - SQL デバッグ
 
-- ワトソン博士のダンプのデバッグ。
+- ワトソン博士ダンプのデバッグ。
 
 - 埋め込まれたランタイム アプリケーションのデバッグ
 
@@ -107,4 +107,4 @@ ms.locfileid: "70887774"
 
 ## <a name="see-also"></a>関連項目
 - [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

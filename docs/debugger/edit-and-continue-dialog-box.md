@@ -1,5 +1,5 @@
 ---
-title: '[エディット コンティニュ] ダイアログ ボックス |Microsoft Docs'
+title: '[エディットコンティニュ] ダイアログボックス |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851320"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737943"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[エディット コンティニュ] ダイアログ ボックス
 このダイアログ ボックスは、デバッグ中にコードを編集したときに、**エディット コンティニュ**でそのコード変更を適用できることが認識された場合に表示されます (ネイティブのみ)。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。
 
- **決してダイアログ ボックスを表示このもう一度**場合、このチェック ボックスをオン**エディット コンティニュ**今後のアクセス許可を要求することがなくコードの変更を適用します。 この警告を再度オンにするには、**[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーを開き、**[エディット コンティニュ]** ページをクリックし、**[デバッグ コマンドで呼び出す]** と **[常に確認メッセージを表示する]** をオンにします。
+ **次回からこのダイアログボックスを表示しない**このチェックボックスをオンにすると、**エディットコンティニュ**は、今後、アクセス許可を確認せずにコード変更を適用します。 この警告を再度オンにするには、 **[オプション]** ダイアログ ボックスで、 **[デバッグ]** フォルダーを開き、 **[エディット コンティニュ]** ページをクリックし、 **[デバッグ コマンドで呼び出す]** と **[常に確認メッセージを表示する]** をオンにします。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

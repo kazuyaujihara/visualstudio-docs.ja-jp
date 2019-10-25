@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1316f56b9a780e101c6ab76ee55b79e0b5a181d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658387"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747535"
 ---
 # <a name="model-your-app39s-architecture"></a>アプリ&#39;のアーキテクチャをモデル化する
 ソフトウェアシステムまたはアプリケーションがユーザーのニーズを満たしているかどうかを確認するために、Visual Studio でソフトウェアシステムまたはアプリケーションの全体的な構造と動作についての説明の一部としてモデルを作成できます。 モデルを使用して、設計全体で使用するパターンを記述することもできます。 これらのモデルは、既存のアーキテクチャの理解、変更についての話し合い、開発者の意図の伝達に役立ちます。
@@ -102,7 +102,7 @@ ms.locfileid: "72658387"
 
 - 開発者が採用できるバリエーションの説明。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コードの視覚化](../modeling/visualize-code.md)
 - [ユーザー要件のモデリング](../modeling/model-user-requirements.md)

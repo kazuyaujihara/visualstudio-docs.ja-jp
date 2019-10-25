@@ -1,5 +1,5 @@
 ---
-title: コンテキスト オブジェクトの選択 |Microsoft Docs
+title: 選択コンテキストオブジェクト |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef76f417fe2b4371c73d78bbb90b0bd48470746a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc4f0aad4dd3f28f28259d0ca439a0cda1a520d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318634"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723915"
 ---
 # <a name="selection-context-objects"></a>コンテキスト オブジェクトの選択
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) が何を IDE に表示するかを判断するグローバルの選択コンテキスト オブジェクトを使用します。 IDE では、各ウィンドウは、独自の選択コンテキスト オブジェクトの選択のグローバル コンテキストにプッシュを持つことができます。 IDE は、そのウィンドウにフォーカスがあるウィンドウから値を持つグローバルの選択コンテキストを更新します。 詳細については、次を参照してください。[ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)します。
+@No__t_0 統合開発環境 (IDE) は、グローバル選択コンテキストオブジェクトを使用して、IDE に表示する内容を決定します。 IDE の各ウィンドウは、グローバル選択コンテキストにプッシュされた独自の選択コンテキストオブジェクトを持つことができます。 IDE は、ウィンドウにフォーカスがあるときに、グローバル選択コンテキストをウィンドウの値で更新します。 詳細については、「[ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)」を参照してください。
 
- ウィンドウ フレームまたは IDE でのサイトごとと呼ばれるサービス<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>します。 ウィンドウ フレームに配置されている VSPackage によって作成されたオブジェクトを呼び出す必要があります、`QueryService`へのポインターを取得するメソッド、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>インターフェイス。
+ IDE 内の各ウィンドウフレームまたはサイトには、<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> というサービスがあります。 ウィンドウフレーム内に配置されている VSPackage によって作成されたオブジェクトは、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> インターフェイスへのポインターを取得するために `QueryService` メソッドを呼び出す必要があります。
 
- フレーム ウィンドウには、開始するときに、グローバルの選択コンテキストを伝達されてから、選択コンテキスト情報の特定の部分を保持できます。 この機能は、空の選択範囲を開始する可能性のあるツール ウィンドウに便利です。
+ フレームウィンドウを使用すると、選択コンテキスト情報の一部を、開始時にグローバル選択コンテキストに反映させることができます。 この機能は、空の選択によって開始する必要があるツールウィンドウに役立ちます。
 
- Vspackage を監視するグローバルの選択コンテキストのトリガー イベントを変更します。 Vspackage が実装することで、次のタスクを実行できます`IVsTrackSelectionEx`と<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>インターフェイス。
+ グローバル選択コンテキストを変更すると、Vspackage が監視できるイベントがトリガーされます。 Vspackage は、`IVsTrackSelectionEx` と <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> インターフェイスを実装することで、次のタスクを実行できます。
 
 - 階層内の現在アクティブなファイルを更新します。
 
-- 特定の種類の要素への変更を監視します。 例では、VSPackage が特別なを使用している場合、**プロパティ**ウィンドウで、アクティブな変更を監視できます**プロパティ**ウィンドウし、必要な場合に自分を再起動します。
+- 特定の種類の要素に対する変更を監視します。 たとえば、VSPackage で特別な**プロパティ**ウィンドウを使用する場合は、[アクティブな**プロパティ**] ウィンドウで変更を監視し、必要に応じて自分で再起動できます。
 
-  次の順序は、選択の追跡の一般的な手順を示しています。
+  次のシーケンスは、選択の追跡の典型的な例を示しています。
 
-1. IDE では、新しく開かれたウィンドウから選択コンテキストを取得し、グローバルの選択コンテキスト内に配置します。 HIERARCHY_DONTPROPAGATE または SELCONTAINER_DONTPROPAGATE を選択コンテキストを使用する場合、グローバルなコンテキストにその情報は反映されません。 詳細については、次を参照してください。[ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)します。
+1. IDE は、新しく開いたウィンドウから選択コンテキストを取得し、グローバルな選択コンテキストに配置します。 選択コンテキストが HIERARCHY_DONTPROPAGATE または SELCONTAINER_DONTPROPAGATE を使用する場合、その情報はグローバルコンテキストに反映されません。 詳細については、「[ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)」を参照してください。
 
-2. 通知イベントは、それらを要求したすべての VSPackage にブロードキャストされます。
+2. 通知イベントは、要求したすべての VSPackage にブロードキャストされます。
 
-3. VSPackage は、階層には、ツール、またはその他の同様のタスクを再アクティブ化の更新などのアクティビティを実行することによって受信イベントに対して動作します。
+3. VSPackage は、階層を更新したり、ツールを再アクティブ化したり、その他の同様のタスクを実行したりすることによって、受信するイベントに対して動作します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>

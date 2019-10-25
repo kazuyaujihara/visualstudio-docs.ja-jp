@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlinesbyva |Microsoft Docs
+title: 'IDiaSession:: Find Byva |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832407"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742069"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-指定された仮想アドレス (VA) の範囲内に含まれる行の行番号情報を取得します。
+指定した仮想アドレス (VA) 範囲に含まれる行の行番号情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>パラメーター
 `va`
 
-[in]として、問い合わせください。 アドレスを指定します。
+からアドレスを VA として指定します。
 
 `length`
 
-[in]このクエリをカバーするアドレス範囲のバイト数を指定します。
+からこのクエリでカバーするアドレス範囲のバイト数を指定します。
 
 `ppResult`
 
-[out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)番号ものを対象指定されたアドレス範囲のすべての行のリストを含むオブジェクト。
+入出力指定されたアドレス範囲に対応するすべての行番号のリストを含む[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
-この例では、関数の仮想アドレスと長さを使用して関数に含まれるすべての行番号を取得する関数を使用します。
+この例は、関数の仮想アドレスと長さを使用して、関数に含まれるすべての行番号を取得する関数を示しています。
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

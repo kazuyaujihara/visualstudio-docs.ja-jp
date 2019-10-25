@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589054"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730433"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio でコンソールを使用して JavaScript をデバッグする
 
@@ -249,7 +249,7 @@ JavaScript コンソール ウィンドウを使用すると、1 回につき、
 
 `cd` コマンドを使用して実行コンテキストを切り替えることもできますが、別の実行コンテキストの名前を知っている必要があります。また、使用する参照がスコープ内になければなりません。 **[ターゲット]** リストを使用すると、別の実行コンテキストに簡単にアクセスできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
 - [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)

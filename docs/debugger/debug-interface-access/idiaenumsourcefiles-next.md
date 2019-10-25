@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsourcefiles::next |Microsoft Docs
+title: 'IDiaEnumSourceFiles:: Next |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829629"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744073"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-列挙体シーケンス内のソース ファイルの指定した数を取得します。
+列挙シーケンス内の指定された数のソースファイルを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>パラメーター
  celt
 
-[in]ソース ファイルを取得する列挙子の数。
+から取得する列挙子内のソースファイルの数。
 
  rgelt
 
-[out]格納する配列、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)目的のソース ファイルを表すオブジェクト。
+入出力目的のソースファイルを表す[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)オブジェクトを使用して入力する配列。
 
  pceltFetched
 
-[out]フェッチされた列挙子では、ソース ファイルの数を返します。
+入出力フェッチされた列挙子内のソースファイルの数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`これ以上のソース ファイルがある場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 ソースファイルが存在しない場合は `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames |Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadPropertyNames |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742868"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-対応する文字列名を取得では、プロパティの識別子を指定します。
+指定されたプロパティ識別子の対応する文字列名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>パラメーター
  `cpropid`
 
-[in]プロパティ id の数`rgpropid`です。
+から@No__t_0 内のプロパティ id の数。
 
  `rgpropid`
 
-[in]プロパティ id の名前を取得する対象の配列 (`PROPID`として WTypes.h で定義されている、 `ULONG`)。
+から名前を取得する対象のプロパティ id の配列 (`PROPID` は、WTypes .h で `ULONG` として定義されています)。
 
  `rglpwstrName`
 
-[入力、出力]指定したプロパティ id のプロパティ名の配列。 配列のプロパティ名の要求の数を保持するために事前に割り当てる必要があり、以上を格納できる必要があります`cpropid``BSTR`文字列。
+[入力、出力]指定されたプロパティ id のプロパティ名の配列。 配列は、要求された数のプロパティ名を保持するために事前に割り当てられている必要があり、少なくとも `cpropid``BSTR` の文字列を保持できる必要があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- 返されるプロパティの名前を解放する必要があります (呼び出すことによって、`SysFreeString`関数) が必要な不要になった場合。
+ 返されたプロパティ名は、不要になったときに (`SysFreeString` 関数を呼び出すことによって) 解放する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

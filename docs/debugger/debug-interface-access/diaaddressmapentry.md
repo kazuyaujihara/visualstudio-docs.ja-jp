@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54b326116b1e1b677a997b264cf0c168a93febb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554897"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745264"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
-アドレス マップ内のエントリについて説明します。
+アドレスマップのエントリを記述します。
 
 ## <a name="syntax"></a>構文
 
@@ -32,25 +32,25 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elements
-`rva` A. イメージの相対仮想アドレス (RVA)
+イメージ A の相対仮想アドレス (RVA) を `rva` します。
 
-`rvaTo` 相対仮想アドレス`rva`B. イメージ内にマップされます
+`rvaTo`、イメージ B のにマップされる相対仮想アドレス `rva` です。
 
 ## <a name="remarks"></a>Remarks
-アドレス マップは、(A) をもう 1 つ (B) 1 つのイメージのレイアウトからの翻訳を提供します。 配列の`DiaAddressMapEntry`構造体の順に並べ替えて`rva`アドレス マップを定義します。
+アドレスマップは、1つのイメージレイアウト (A) から別のイメージレイアウト (B) への変換を提供します。 @No__t_1 によって並べ替えられた `DiaAddressMapEntry` 構造体の配列は、アドレスマップを定義します。
 
-アドレスに変換する`addrA`、イメージ アドレス内`addrB`B の図で、次の手順に従います。
+イメージ A のアドレスをアドレスに変換するには、イメージ B で次の手順を実行し `addrB` ます。 `addrA`
 
-1. マップのエントリを検索`e`が大きいもの`rva`に等しいまたはそれよりも小さい`addrA`します。
+1. マップで、`addrA` 以下の最大 `rva` を持つエントリ `e` を検索します。
 
 2. `delta = addrA - e.rva` を設定します。
 
 3. `addrB = e.rvaTo + delta` を設定します。
 
-    配列の`DiaAddressMapEntry`に構造体が渡される、 [idiaaddressmap::set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)メソッド。
+    @No__t_0 構造体の配列は、 [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)メソッドに渡されます。
 
-## <a name="requirements"></a>必要条件
-ヘッダー: dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: dia2
 
 ## <a name="see-also"></a>関連項目
 - [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)

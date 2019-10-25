@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431735"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745319"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
-ターゲット プロセッサを指定します。
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
+ターゲットプロセッサを指定します。
 
 > [!NOTE]
-> 列挙要素の後で、プロセッサが識別される、`CV_CFL_*`プレフィックス。
+> プロセッサは、`CV_CFL_*` プレフィックスの後の列挙要素で識別されます。
 
 ## <a name="syntax"></a>構文
 
@@ -96,10 +96,10 @@ typedef enum CV_CPU_TYPE_e {
 ```
 
 ## <a name="remarks"></a>Remarks
-この列挙体の値が呼び出しによって返される、 [idiasymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)メソッド。
+この列挙体の値は、 [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)メソッドの呼び出しによって返されます。
 
-## <a name="requirements"></a>必要条件
-ヘッダー: cvconst.h
+## <a name="requirements"></a>［要件］
+ヘッダー: cvconst. h
 
 ## <a name="see-also"></a>関連項目
 - [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)

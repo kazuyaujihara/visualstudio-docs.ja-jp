@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::Enum |Microsoft Docs
+title: 'IDiaPropertyStorage:: Enum |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00bd1ea5e20d30fa1d2c32101b56f55d169f1ce2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839681"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742941"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 このセット内のプロパティの列挙子を取得します。
@@ -33,10 +33,10 @@ HRESULT Enum ( 
 #### <a name="parameters"></a>パラメーター
  `ppenum`
 
-[out]返します、`IEnumSTATPROPSTG`プロパティの列挙型を表す (Microsoft.VisualStudio.OLE.Interop 名前空間の) 内のオブジェクト。
+入出力プロパティの列挙体を表す `IEnumSTATPROPSTG` オブジェクト (VisualStudio 名前空間内) を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

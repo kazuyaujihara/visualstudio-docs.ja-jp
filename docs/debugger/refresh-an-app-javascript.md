@@ -1,5 +1,5 @@
 ---
-title: UWP アプリの更新 |Microsoft Docs
+title: UWP アプリを更新する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,16 +19,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408644"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730309"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio で UWP アプリを更新します。
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio での UWP アプリの更新
 
- 選択して、JavaScript を使用して UWP アプリを更新して、デバッグ中に、コードに変更を行うことができます、**更新の Windows アプリ**のボタンでは、**デバッグ**ツールバー。 このボタンを選択すると、デバッガーを停止したり再起動したりせずにアプリが再度読み込まれます。 更新機能によって、HTML、CSS、および JavaScript コードを変更し、その結果をすばやく確認できます。 この機能は UWP アプリをサポートします。
+ デバッグ中にコードを変更した後、 **[デバッグ]** ツールバーの **[Windows アプリケーションの更新]** ボタンを選択することで、JavaScript を使用して UWP アプリを更新できます。 このボタンを選択すると、デバッガーを停止したり再起動したりせずにアプリが再度読み込まれます。 更新機能によって、HTML、CSS、および JavaScript コードを変更し、その結果をすばやく確認できます。 この機能は、UWP アプリでサポートされています。
 
  更新では、アプリの状態は保持されません。また、アプリに対する次の変更は反映されません。
 
@@ -47,19 +47,19 @@ ms.locfileid: "63408644"
 
 ### <a name="to-refresh-an-app"></a>アプリを更新するには
 
-1. UWP プロジェクトを Visual Studio で開いて、次のように選択します。**ローカル マシン**デバッグ ターゲットとして。
+1. Visual Studio で UWP プロジェクトを開いた状態で、デバッグターゲットとして **[ローカルコンピューター]** を選択します。
 
-     ![デバッグ ターゲット リスト](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![デバッグターゲットリストの選択](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. F5 キーを押して、アプリをデバッグ モードで実行します。
 
-4. Visual Studio に切り替えます 
+4. Visual Studio に切り替えます
 
-5. UWP アプリのホーム ページで、HTML の一部を編集します。
+5. UWP アプリのホームページで、一部の HTML を編集します。
 
-7. をクリックして、**更新の Windows アプリ**のように、ボタン。![Windows アプリのボタンを更新](../debugger/media/js_refresh.png "JS_Refresh")します。 (または F4 キーを押します)。
+7. **[Windows アプリケーションの更新]** ボタンをクリックします。次のように表示されます。 [ ![Windows アプリケーションの更新] ボタン](../debugger/media/js_refresh.png "JS_Refresh")。 (または F4 キーを押します)。
 
-8. アプリに切り替えます。 アプリが再度読み込まれ、更新された HTML は、アプリを表示するために使用します。
+8. アプリに切り替えます。 アプリが再読み込みされ、更新された HTML がアプリのレンダリングに使用されます。
 
 ## <a name="see-also"></a>関連項目
-- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
+- [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

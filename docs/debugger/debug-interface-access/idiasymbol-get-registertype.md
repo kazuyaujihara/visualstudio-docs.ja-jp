@@ -1,5 +1,5 @@
 ﻿---
-title: IDiaSymbol::get_registerType |Microsoft Docs
+title: 'IDiaSymbol:: get_registerType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835540"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739434"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
-Register 型を取得します。
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
+レジスタの種類を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -30,10 +30,10 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]ポインター、 `DWORD` register 型を保持しています。
+入出力レジスタ型を保持する `DWORD` へのポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

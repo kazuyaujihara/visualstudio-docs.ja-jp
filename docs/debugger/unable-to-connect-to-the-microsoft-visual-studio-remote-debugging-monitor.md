@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924526"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728829"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 リモートデバッグモニターがリモートコンピューターに適切に設定されていないか、ネットワークの問題またはファイアウォールの存在によりリモートコンピューターにアクセスできないために、このメッセージが表示されることがあります。
@@ -30,7 +30,7 @@ ms.locfileid: "68924526"
 
 ## <a name="specificerrors"></a>詳細なエラーメッセージは何ですか?
 
-`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor`メッセージは generic です。 通常、より具体的なメッセージがエラー文字列に含まれ、問題の原因を特定したり、より正確な修正プログラムを検索したりするのに役立ちます。 メインエラーメッセージに追加される一般的なエラーメッセージのいくつかを次に示します。
+@No__t_0 メッセージは汎用です。 通常、より具体的なメッセージがエラー文字列に含まれ、問題の原因を特定したり、より正確な修正プログラムを検索したりするのに役立ちます。 メインエラーメッセージに追加される一般的なエラーメッセージのいくつかを次に示します。
 
 - [デバッガーがリモートコンピューターに接続できません。デバッガーは、指定されたコンピューター名を解決できませんでした](#cannot_connect)
 - [接続要求がリモートデバッガーによって拒否されました](#rejected)
@@ -111,13 +111,13 @@ Visual Studio はリモートデバッガーに接続できませんでした。
 
 ### <a name="dns"></a> リモート コンピューターに到達できません
 
-リモートコンピューター名を使用して接続できない場合は、代わりに IP アドレスを使用してください。 リモートコンピューターの`ipconfig`コマンドラインでを使用して、IPv4 アドレスを取得できます。 HOSTS ファイルを使用している場合は、そのファイルが正しく構成されていることを確認します。
+リモートコンピューター名を使用して接続できない場合は、代わりに IP アドレスを使用してください。 リモートコンピューターのコマンドラインで `ipconfig` を使用すると、IPv4 アドレスを取得できます。 HOSTS ファイルを使用している場合は、そのファイルが正しく構成されていることを確認します。
 
 それでも失敗する場合は、リモートコンピューターがネットワーク上でアクセス可能であることを確認します (リモートコンピューターに[ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10))を実行します)。 一部の Microsoft Azure シナリオを除き、インターネット経由のリモートデバッグはサポートされていません。
 
 ### <a name="server_incorrect"></a>サーバー名が正しくないか、サードパーティ製のソフトウェアがリモートデバッガーに干渉しています
 
-Visual Studio で、プロジェクトのプロパティを確認し、サーバー名が正しいことを確認します。 [ C#および Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)および[C++](../debugger/remote-debugging-cpp.md#remote_cplusplus)のトピックを参照してください。 ASP.NET の場合は、プロジェクトの種類に応じて、プロパティ、**Web/サーバー**、プロパティ、**デバッグ** の順に開きます。
+Visual Studio で、プロジェクトのプロパティを確認し、サーバー名が正しいことを確認します。 [ C#および Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)および[C++](../debugger/remote-debugging-cpp.md#remote_cplusplus)のトピックを参照してください。 ASP.NET の場合は、プロジェクトの種類に応じて、プロパティ、 **Web/サーバー**、プロパティ、**デバッグ** の順に開きます。
 
 > [!NOTE]
 > プロセスにアタッチする場合、プロジェクトのプロパティのリモート設定は使用されません。

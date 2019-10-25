@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_length |Microsoft Docs
+title: 'IDiaSymbol:: get_length |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 114d9f7b00bbe5d322e7b6893e96fbbabec9d002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739983"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-この記号によって表されるオブジェクトによって使用されるメモリのバイトまたはビット数を取得します。
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
+このシンボルによって表されるオブジェクトによって使用されるメモリのビット数またはバイト数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,16 +33,16 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]この記号によって表されるオブジェクトによって使用されるメモリのビットまたはバイト数を返します。
+入出力このシンボルによって表されるオブジェクトによって使用されるメモリのバイト数またはビット数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- 場合、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)のシンボルは`LocIsBitField`、このメソッドによって返される文字数は bits では、文字数はそれ以外の場合、その他のすべての場所の種類のバイト数でします。
+ シンボルの[LocationType 列挙](../../debugger/debug-interface-access/locationtype.md)が `LocIsBitField` 場合、このメソッドによって返される長さはビット単位です。それ以外の場合、長さはバイト単位で他のすべての場所の種類になります。
 
 ## <a name="example"></a>例
 
@@ -52,12 +52,12 @@ ULONGLONG   length;
 pSymbol->get_length( &length );
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

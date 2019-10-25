@@ -1,5 +1,5 @@
 ---
-title: Idiaimagedata::get_imagebase |Microsoft Docs
+title: 'IDiaImageData:: get_imageBase |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829063"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743437"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-イメージのベースでのメモリ位置を取得します。
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
+イメージの基になるメモリ位置を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]推奨されるイメージのベース値を返します。
+入出力推奨されるイメージのベース値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- イメージ ベースの競合によってイメージは、可能性がありますにリベースされます自動的には、未使用のメモリの場所が読み込まれるときにします。 このメソッドは、コンパイル時に、モジュールに格納された基本ヒント (推奨されるメモリの場所) を返します。
+ イメージベースの競合により、イメージが読み込まれるときに、未使用のメモリ位置に自動的に再配置される場合があります。 このメソッドは、コンパイル時にモジュールに格納された基本ヒント (推奨されるメモリの場所) を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

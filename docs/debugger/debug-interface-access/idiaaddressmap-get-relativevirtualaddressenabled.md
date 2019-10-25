@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18a242a47978fbd6acb2b6161ada2199ced8c434
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72ea881470eb3cfbb1c544324218b122a4470efc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554296"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745197"
 ---
-# <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
+# <a name="idiaaddressmapget_relativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 計算と相対仮想アドレス (RVA) の使用が有効かどうかを示します。
 
 ## <a name="syntax"></a>構文
@@ -31,17 +31,17 @@ HRESULT get_relativeVirtualAddressEnabled ( 
 ```
 
 #### <a name="parameters"></a>パラメーター
- pRetVal
+ の場合は、
 
-[out]返します`TRUE`Rva の計算が有効になっている場合。
+入出力RVAs の計算が有効になっている場合は `TRUE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- Rva は PDB ファイルのセグメントが最初に読み込まれているいる場合に有効です。 呼び出すことによって、Rva の使用を一時的に無効にできます、 [idiaaddressmap::put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)メソッド。
+ RVAs は、セグメントが PDB ファイルから最初に読み込まれた場合に有効になります。 RVAs の使用は、 [IDiaAddressMap::P ut_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)メソッドを呼び出すことによって一時的に無効にすることができます。
 
- 呼び出しても、新しいイメージのヘッダーを確立できる、 [idiaaddressmap::set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)メソッドへの呼び出しに続けて、 `put_relativeVirtualAddressEnabled` Rva を新しいイメージ ヘッダーを使用して使用できるようにするメソッド。
+ また、新しいイメージヘッダーを設定するには、 [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)メソッドを呼び出した後、`put_relativeVirtualAddressEnabled` メソッドを呼び出して、新しいイメージヘッダーを使用して RVAs を使用できるようにします。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

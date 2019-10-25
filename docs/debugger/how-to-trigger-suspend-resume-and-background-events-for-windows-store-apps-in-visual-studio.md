@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732268"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリのデバッグ中に中断イベント、再開イベント、およびバックグラウンドイベントをトリガーする方法
 
@@ -109,7 +109,7 @@ ms.locfileid: "72450406"
 
 4. **診断** ログを選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio での UWP アプリのテスト](../test/testing-store-apps-with-visual-studio.md)
 - [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [アプリケーションのライフサイクル](/windows/uwp/launch-resume/app-lifecycle)

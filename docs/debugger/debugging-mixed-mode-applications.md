@@ -1,5 +1,5 @@
 ---
-title: 混合モード アプリケーションのデバッグ |Microsoft Docs
+title: 混合モードアプリケーションのデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c245b6c56b7480a9395394d707aa0f02fb22fc9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852064"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738191"
 ---
 # <a name="debugging-mixed-mode-applications"></a>方法 : 混合モード アプリケーションをデバッグする
 混合モード アプリケーションとは、ネイティブ コード (C++) とマネージド コード (共通言語ランタイムで動作する Visual Basic、Visual C#、C++ など) の組み合わせから成るアプリケーションです。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] での混合モード アプリケーションのデバッグはきわめて透過的です。つまり、単一モードのアプリケーションをデバッグする場合とほとんど同じです。 ただし、特殊な注意事項があります。
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>混合モードのデバッグでの C++ のエディット コンティニュの有効化
 
-C++ のエディット コンティニュを有効にする、次を参照してください。[を有効にすると、エディット コンティニュを無効にする方法](../debugger/how-to-enable-and-disable-edit-and-continue.md)します。
+のC++エディットコンティニュを有効にする方法については、「[エディットコンティニュを有効または無効にする方法](../debugger/how-to-enable-and-disable-edit-and-continue.md)」を参照してください。
 
 > [!NOTE]
 > Visual Studio 2013 で C++ に対してエディット コンティニュを使用するには、従来のデバッグ エンジンに戻る必要があります。 Microsoft アプリケーション ライフサイクル管理ブログにある「[Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)」 (Visual Studio 2013 でマネージド互換モードに切り替える) を参照してください。
@@ -48,7 +48,7 @@ C++ のエディット コンティニュを有効にする、次を参照して
 
 1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2. **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーを開き、**[全般]** カテゴリを選択します。
+2. **[オプション]** ダイアログ ボックスで、 **[デバッグ]** フォルダーを開き、 **[全般]** カテゴリを選択します。
 
 3. **[プロパティの評価とその他の暗黙的な関数の呼び出しを常に有効にする]** チェック ボックスをオフにします。
 

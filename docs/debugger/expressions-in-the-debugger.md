@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849950"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736215"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーで式
+# <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーの式
 Visual Studio デバッガーには式エバリュエーターという機能があり、 **[クイック ウォッチ]** ダイアログ ボックス、 **[ウォッチ]** ウィンドウ、または **[イミディエイト]** ウィンドウで式を入力するときに役立ちます。 式エバリュエーターは **[ブレークポイント]** ウィンドウなど、他のデバッガー機能でも使用できます。
 
-次のセクションでは、Visual Studio でサポートされる言語の式の評価の制限事項について説明します。
+以下のセクションでは、Visual Studio でサポートされている言語の式の評価に関する制限事項について説明します。
 
 ## <a name="f-expressions-are-not-supported"></a>F# の式はサポートされていません。
 F# の式は認識されません。 F# のコードをデバッグする場合は、デバッガー ウィンドウまたはダイアログ ボックスに式を入力する前に、式を C# の構文に変換する必要があります。 式を F# から C# に変換するときは、C# では等価をテストするのに `==` 演算子を使用しますが、F# では単一の `=`を使用することにご注意ください。
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - サポートされていない式
 
 ### <a name="dynamic-objects"></a>動的オブジェクト
-デバッガー式では、静的に型指定された変数を動的として使用できます。 実装するオブジェクトが<xref:System.Dynamic.IDynamicMetaObjectProvider>動的ビュー ノードの追加 ウォッチ ウィンドウで評価されます。 [動的ビュー] ノードにはオブジェクトのメンバーが表示されますが、そのメンバーの値を編集することはできません。
+デバッガー式では、静的に型指定された変数を動的として使用できます。 @No__t_0 を実装するオブジェクトがウォッチウィンドウで評価されると、[動的ビュー] ノードが追加されます。 [動的ビュー] ノードにはオブジェクトのメンバーが表示されますが、そのメンバーの値を編集することはできません。
 
 動的オブジェクトでは、以下の機能はサポートされていません。
 

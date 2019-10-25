@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430d0e271f83332f7163c9c0c947f96756ca7a7d
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72165141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745992"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Visual Studio での Clang-Tidy の使用
 
@@ -28,23 +28,23 @@ Clang-コンパイルが成功した後に実行されます。場合によっ�
 
 ## <a name="msbuild"></a>MSBuild
 
-プロジェクトプロパティウィンドウの **[コード分析]**  >  **[全般]** ページで、コード分析とビルドの両方の一部として実行するように clang-Tidy を構成できます。 ツールを構成するオプションについては、「Clang-Tidy サブメニュー」を参照してください。
+プロジェクトプロパティウィンドウの [**コード分析** > **全般**] ページで、コード分析とビルドの両方の一部として実行するように clang-Tidy を構成できます。 ツールを構成するオプションについては、「Clang-Tidy サブメニュー」を参照してください。
 
-詳細については、「[方法 :C/C++ Projects @ No__t のコード分析プロパティを設定します。
+詳細については、「[方法: C/C++プロジェクトのコード分析プロパティを設定する](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)」を参照してください。
 
 ## <a name="cmake"></a>CMake
 
-CMake プロジェクトでは、`CMakeSettings.json` で Clang のチェックを構成できます。 開いたら、CMake プロジェクト設定エディターの右上隅にある [JSON の編集] をクリックします。 次のキーが認識されます。
+CMake プロジェクトでは、`CMakeSettings.json` 内で Clang-Tidy チェックを構成できます。 開いたら、CMake プロジェクト設定エディターの右上隅にある [JSON の編集] をクリックします。 次のキーが認識されます。
 
-- `enableMicrosoftCodeAnalysis`:Microsoft コード分析を有効にします
-- `enableClangTidyCodeAnalysis`:Clang-Tidy 分析を有効にします
-- `clangTidyChecks`:Clang-構成。コンマ区切りのリストとして指定します。つまり、有効または無効にします。
+- `enableMicrosoftCodeAnalysis`: Microsoft コード分析を有効にします
+- `enableClangTidyCodeAnalysis`: Clang-Tidy 分析を有効にします
+- `clangTidyChecks`: Clang-Tidy 構成。コンマ区切りのリストとして指定されています。つまり、有効または無効になっていることを確認します。
 
 "Enable" オプションのいずれも指定されていない場合、Visual Studio は、使用されているプラットフォームツールセットと一致する分析ツールを選択します。
 
 ## <a name="warning-display"></a>警告の表示
 
-Clang-Tidy を実行すると、エラー一覧に警告が表示されます。また、コードの関連するセクションの下にエディター上の波線が表示されます。 エラー一覧の [カテゴリ] 列を使用して、Clang-Tidy 警告を並べ替えて整理します。 [**ツール** >  の**オプション**] の [コード分析の波線を無効にする] 設定を切り替えることによって、エディター内の警告を構成できます。
+Clang-Tidy を実行すると、エラー一覧に警告が表示されます。また、コードの関連するセクションの下にエディター上の波線が表示されます。 エラー一覧の [カテゴリ] 列を使用して、Clang-Tidy 警告を並べ替えて整理します。 [**ツール** > **オプション**] の [コード分析の波線を無効にする] 設定を切り替えることによって、エディター内の警告を構成できます。
 
 ## <a name="clang-tidy-configuration"></a>Clang-Tidy 構成
 

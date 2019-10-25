@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d913a229dafb64570728434576716ba396648af3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828203"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742827"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。
+実行可能ファイルから指定されたオフセットを開始位置として、指定されたバイト数を読み取ります。
 
 ## <a name="syntax"></a>構文
 
@@ -36,22 +36,22 @@ HRESULT ReadExecutableAt ( 
 #### <a name="parameters"></a>パラメーター
  fileOffset
 
-[in]読み取りを開始する実行可能ファイル内のオフセット。
+から読み取りを開始する実行可能ファイル内のオフセット。
 
  cbData
 
-[in]読み取るバイト数。
+から読み取るバイト数。
 
  pcbData
 
-[out]読み取られたバイト数を返します。
+入出力読み取ったバイト数を返します。
 
  data[]
 
-[入力、出力]ファイルから読み取られたバイトに設定している配列。
+[入力、出力]ファイルから読み取られたバイトを格納する配列。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、ファイルの絶対オフセットを使用する実行可能ファイルからバイトのデータを読み込む DIA サポート コードによって呼び出されます。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。
+ このメソッドは、DIA サポートコードによって呼び出され、絶対ファイルオフセットを使用して実行可能ファイルからデータバイトを読み込みます。 このメソッドは、 [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッドをサポートするために呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

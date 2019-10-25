@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_objectpointertype |Microsoft Docs
+title: 'IDiaSymbol:: get_objectPointerType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dac79a040a8eff68c36c82b9a85935d969b5ec
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e4254a121ce29578438f4ee7264345aa30bafd7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808904"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739618"
 ---
-# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
-クラスのメソッドのオブジェクトへのポインターの種類を取得します。
+# <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
+クラスメソッドのオブジェクトポインターの型を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,16 +33,16 @@ HRESULT get_objectPointerType ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)クラスのメソッドのオブジェクトへのポインターを表すオブジェクト。
+入出力クラスメソッドのオブジェクトポインターを表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- このプロパティを使用したシンボルにのみ適用されます、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)の入力`SymTagFunctionType`します。
+ このプロパティは、 [Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md)型が `SymTagFunctionType` のシンボルにのみ適用されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: ソース管理ランタイムの詳細 |Microsoft Docs
+title: ソース管理のランタイムの詳細 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84fd82c5da5deea2d718baf67799e5bf877131
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d2469bc25fabd9659e09d6ca841ebc44a743cca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322562"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723409"
 ---
 # <a name="source-control-runtime-details"></a>ソース管理ランタイムの詳細
-プロジェクトは、ユーザーは、ウィザードなどのオートメーション コント ローラーまたはソース管理にプロジェクトのファイルを追加するとき、ソース管理に追加されます。 ソース管理されているある自体のプロジェクトが指定はしません。ソース管理をサポートしていますが、これを手動で追加する必要があります。
+プロジェクトは、ユーザーがプロジェクト内のファイルをソース管理に追加するとき、またはウィザードなどのオートメーションコントローラーを介して追加されるときに、ソース管理に追加されます。 プロジェクトは、それ自体がソース管理下にあることを指定していません。ソース管理はサポートされていますが、手動で追加する必要があります。
 
-## <a name="registering-with-a-source-control-package"></a>ソース管理のパッケージへの登録
- ソース管理に、プロジェクト内のファイルが追加されると、環境を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>cookie としてソース管理システムで使用される 4 つの不透明な文字列を提供します。 プロジェクト ファイル内には、これらの文字列を格納します。 これらの文字列渡す必要があります (ソース管理パッケージを管理する Visual Studio コンポーネント) のソース コントロール スタブをプロジェクトの種類の起動時に呼び出すことによって<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>します。 これでさらに適切なソース管理パッケージを読み込みますありの実装への呼び出しを転送`IVsSccManager2::RegisterSccProject`します。
+## <a name="registering-with-a-source-control-package"></a>ソース管理パッケージへの登録
+ プロジェクト内のファイルがソース管理に追加されると、環境は <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> を呼び出して、ソース管理システムによって cookie として使用される4つの不透明な文字列を提供します。 これらの文字列をプロジェクトファイルに格納します。 これらの文字列は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A> を呼び出すことによって、プロジェクトの種類のスタートアップ時にソース管理スタブ (ソース管理パッケージを管理する Visual Studio コンポーネント) に渡す必要があります。 次に、適切なソース管理パッケージを読み込み、`IVsSccManager2::RegisterSccProject` の実装に呼び出しを転送します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>

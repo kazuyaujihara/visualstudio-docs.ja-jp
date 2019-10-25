@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cd8d1eb94ba488b621fb30f9ac598ce9c71722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d3a3e1995dbc36b02d90da6343e8cc9a6d48eba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653987"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748448"
 ---
 # <a name="customizing-text-and-image-fields"></a>テキストおよびイメージ フィールドのカスタマイズ
 図形にテキストデコレータを定義すると、その図形はテキストフィールドで表されます。 TextFields およびその他の図形フィールドの初期化の例については、DSL ソリューションでのを調べてください。
@@ -261,7 +261,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [シェイプとコネクタの定義](../modeling/defining-shapes-and-connectors.md)
 - [ダイアグラムへの背景イメージの設定](../modeling/setting-a-background-image-on-a-diagram.md)

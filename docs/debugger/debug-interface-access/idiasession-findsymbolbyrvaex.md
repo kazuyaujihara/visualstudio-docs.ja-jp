@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findsymbolbyrvaex |Microsoft Docs
+title: 'IDiaSession:: findSymbolByRVAEx |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6c8e3523a49bd4fc22a86c9ec86b1e8cd2038e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839252"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742037"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-が含まれているか、指定された相対仮想アドレス (RVA) およびオフセットに最も近い指定の記号の型を取得します。
+指定した相対仮想アドレス (RVA) とオフセットを格納している、またはそれに最も近いシンボルの種類を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByRVAEx ( 
 #### <a name="parameters"></a>パラメーター
  `rva`
 
-[in]RVA を指定します。
+からRVA を指定します。
 
  `symtag`
 
-[in]検索する記号の型。 値から取得されます、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)列挙体。
+から検索するシンボルの種類。 値は[Symtagenum](../../debugger/debug-interface-access/symtagenum.md)列挙型から取得されます。
 
  `ppSymbol`
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)シンボルを表すオブジェクトを取得します。
+入出力取得されたシンボルを表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
  `displacement`
 
-[out]指定された相対仮想アドレスからのオフセットを示す値を返します`rva`します。
+入出力@No__t_0 で指定された相対仮想アドレスからのオフセットを指定する値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="example"></a>例
 

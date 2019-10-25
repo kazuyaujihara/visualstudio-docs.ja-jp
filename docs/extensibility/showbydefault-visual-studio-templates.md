@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault 要素 (Visual Studio テンプレート)
+title: ShowByDefault よる要素 (Visual Studio テンプレート)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331978"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720104"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 要素 (Visual Studio テンプレート)
-場合`false`、テンプレートのみ表示されることを指定します。 指定された名前の[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)します。
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault よる要素 (Visual Studio テンプレート)
+@No__t_0 の場合は、指定された[Templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)の下にのみテンプレートが表示されることを指定します。
 
- \<VSTemplate> \<TemplateData> \<ShowByDefault>
+ \<VSTemplate > \<TemplateData > \<ShowByDefault >
 
 ## <a name="syntax"></a>構文
 
@@ -53,7 +53,7 @@ ms.locfileid: "66331978"
  テキストは、`true` または `false` である必要があります。 true の場合、すべてのプロジェクトの種類のテンプレートが表示されることを指定します。 false の場合、指定された `TemplateGroupID` にのみテンプレートが表示されます。
 
 ## <a name="remarks"></a>Remarks
- `ShowByDefault` は、省略可能な要素です。 既定値は `true` です。
+ `ShowByDefault` は、省略可能な要素です。 既定値は `true`です。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] テンプレートのメタデータの例を次に示します。

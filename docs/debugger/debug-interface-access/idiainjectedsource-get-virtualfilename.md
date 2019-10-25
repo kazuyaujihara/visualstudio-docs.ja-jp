@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_virtualfilename |Microsoft Docs
+title: 'IDiaInjectedSource:: get_virtualFilename |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d60a8c46c4a9e6f17e0123554ac25cb14bbf430b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828400"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743300"
 ---
-# <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-ファイル以外のソース コードに与えられた名前を取得します。挿入されたコードは、します。
+# <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
+ファイル以外のソースコードに指定された名前を取得します。つまり、挿入されたコードです。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_virtualFilename ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]挿入されたファイル以外のソース コードに与えられた名前を返します。
+入出力挿入されたファイル以外のソースコードに指定された名前を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

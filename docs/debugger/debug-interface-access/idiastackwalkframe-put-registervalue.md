@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkframe::put_registervalue |Microsoft Docs
+title: IDiaStackWalkFrame::p ut_registerValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 440c7d19382b813b3f34451d7c177c6e8b57f16f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24bcafcc373e3c03bd1e656f26ee9a8aa443d320
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831848"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741486"
 ---
-# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
+# <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 レジスタの値を設定します。
 
 ## <a name="syntax"></a>構文
@@ -34,14 +34,14 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>パラメーター
  `index`
 
-[in]値、 [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)への書き込みにレジスタを指定する列挙体。
+から書き込み先のレジスタを指定する[CV_HREG_e enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)列挙子の値。
 
  `NewVal`
 
-[in]新しい値を登録します。
+から新しいレジスタ値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

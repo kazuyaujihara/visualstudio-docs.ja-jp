@@ -1,5 +1,5 @@
 ---
-title: '[Dataset ビジュアライザー] ダイアログ ボックス |Microsoft Docs'
+title: '[データセットビジュアライザー] ダイアログボックス |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563547"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745597"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>[DataSet ビジュアライザー] ダイアログ ボックス
 DataSet ビジュアライザーを使用すると、DataSet、DataTable、DataView、または DataViewManager オブジェクトの内容を表示できます。 このビジュアライザーにアクセスするには、デバッガー変数ウィンドウまたは DataTip 内の各オブジェクトに対応する [値] の隣に表示される、虫眼鏡アイコンをクリックします。
@@ -32,7 +32,7 @@ DataSet ビジュアライザーを使用すると、DataSet、DataTable、DataV
  このビジュアライザー内でオブジェクトに変更を加えることができます。 変更は行をコミットするとすぐに保存されます。
 
 ## <a name="uielement-list"></a>UIElement の一覧
- テーブルでは、このドロップダウン リスト ボックスを使用して、視覚化するデータセット内のテーブルを選択します。
+ [テーブル] このドロップダウンリストボックスを使用して、視覚化するデータセット内のテーブルを選択します。
 
 ## <a name="see-also"></a>関連項目
 

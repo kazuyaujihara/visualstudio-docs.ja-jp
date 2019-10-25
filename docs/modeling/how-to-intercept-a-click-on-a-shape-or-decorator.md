@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605288"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748378"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 次の手順では、図形またはアイコンデコレータのクリックをインターセプトする方法を示します。 クリック、ダブルクリック、ドラッグなどのジェスチャをインターセプトし、要素を応答させることができます。
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)
 - [デコレーターのプロパティ](../modeling/properties-of-decorators.md)

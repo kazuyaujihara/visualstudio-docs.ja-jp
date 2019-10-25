@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_addresssection |Microsoft Docs
+title: 'IDiaSectionContrib:: get_addressSection |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89642ac461de6157de7c75e91532191f85b167a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ccca5decf432169add7ebf6d70a33fe6b5c1c9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832500"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742768"
 ---
-# <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
-投稿物のアドレスのセクションの一部を取得します。
+# <a name="idiasectioncontribget_addresssection"></a>IDiaSectionContrib::get_addressSection
+貢献の住所のセクション部分を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]投稿物のアドレスのセクションの一部を返します。
+入出力貢献の住所のセクション部分を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

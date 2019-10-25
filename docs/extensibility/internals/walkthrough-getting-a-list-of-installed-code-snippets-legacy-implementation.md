@@ -1,5 +1,5 @@
 ---
-title: コード スニペット (レガシ) がインストールされている一覧の取得 |Microsoft Docs
+title: インストールされているコードスニペットの一覧を取得する (レガシ) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de116d6abb995375ba04ae1e8407eba7754ae5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 072827bbb9676ba49df5ccd69f329ea9b04c78b2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323371"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721656"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)
-コード スニペットは、(これにより、インストールされているコード スニペットの一覧の中から選択) メニューのコマンドを使用して、または、元のバッファーに挿入できるコードの IntelliSense のコンプリート リストから、スニペット ショートカットを選択します。
+コードスニペットは、メニューコマンド (インストールされているコードスニペットの一覧を選択できる) を使用するか、IntelliSense の入力候補一覧からスニペットのショートカットを選択することにより、ソースバッファーに挿入できるコードの一部です。
 
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>メソッドは、言語固有の GUID のすべてのコード スニペットを取得します。 これらのスニペットのショートカットは、IntelliSense のコンプリート リストに挿入できます。
+ @No__t_0 メソッドは、特定の言語 GUID のすべてのコードスニペットを取得します。 これらのスニペットのショートカットは、IntelliSense の入力候補一覧に挿入できます。
 
- 参照してください[従来の言語サービスでのコード スニペットのサポート](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)詳細については、マネージ パッケージ フレームワーク (MPF) の言語サービスでコード スニペットを実装します。
+ Managed package framework (MPF) 言語サービスでコードスニペットを実装する方法の詳細については[、「従来の言語サービスでのコードスニペットのサポート](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)」を参照してください。
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>コード スニペットの一覧を取得するには
+### <a name="to-retrieve-a-list-of-code-snippets"></a>コードスニペットの一覧を取得するには
 
-1. 次のコードでは、特定の言語コード スニペットの一覧を取得する方法を示します。 配列で、結果が格納されている<xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>構造体。 このメソッドは、静的な<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>を取得するメソッド、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>からインターフェイス、<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>サービス。 ただし、サービス プロバイダーが、VSPackage と呼び出しに指定された使用も、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>メソッド。
+1. 次のコードは、特定の言語のコードスニペットの一覧を取得する方法を示しています。 結果は <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 構造体の配列に格納されます。 このメソッドは、静的 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> メソッドを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> サービスから <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> インターフェイスを取得します。 ただし、VSPackage に指定されたサービスプロバイダーを使用して、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> メソッドを呼び出すこともできます。
 
     ```csharp
     using System;
@@ -101,12 +101,12 @@ ms.locfileid: "66323371"
     }
     ```
 
-### <a name="to-call-the-getsnippets-method"></a>GetSnippets メソッドを呼び出す
+### <a name="to-call-the-getsnippets-method"></a>GetSnippets メソッドを呼び出すには
 
-1. 次のメソッドを呼び出す方法を示しています、`GetSnippets`解析操作の完了時のメソッド。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>解析操作の理由で開始された後、メソッドが呼び出された<xref:Microsoft.VisualStudio.Package.ParseReason>します。
+1. 次のメソッドは、解析操作の完了時に `GetSnippets` メソッドを呼び出す方法を示しています。 @No__t_0 メソッドは、<xref:Microsoft.VisualStudio.Package.ParseReason> 理由で開始された解析操作の後に呼び出されます。
 
 > [!NOTE]
-> `expansionsList`配列リストでは、パフォーマンス上の理由がキャッシュされます。 一覧には、言語サービスを停止して再度読み込むまで、スニペットへの変更は反映されません (停止して再起動をなど[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
+> @No__t_0 配列の一覧は、パフォーマンス上の理由からキャッシュされます。 スニペットへの変更は、言語サービスが停止および再読み込みされるまで (たとえば、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を停止して再起動することによって)、一覧には反映されません。
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>スニペットの情報を使用するには
+### <a name="to-use-the-snippet-information"></a>スニペット情報を使用するには
 
-1. 次のコードは、によって返されるスニペットの情報を使用する方法を示します、`GetSnippets`メソッド。 `AddSnippets`コード スニペットの一覧を設定するために使用するすべての解析理由に応じて、パーサーからメソッドが呼び出されます。 最初に、完全な解析が完了した後、配置がかかります。
+1. 次のコードは、`GetSnippets` メソッドによって返されるスニペット情報の使用方法を示しています。 @No__t_0 メソッドは、コードスニペットの一覧を設定するために使用される解析の理由に応じて、パーサーから呼び出されます。 これは、完全な解析が初めて実行された後に行われます。
 
-     `AddDeclaration`メソッドは、後で、入力候補一覧に表示される宣言のリストを構築します。
+     @No__t_0 メソッドは、後でコンプリートリストに表示される宣言の一覧を作成します。
 
-     `TestDeclaration`クラスには宣言の型と同様に、入力候補一覧に表示できるすべての情報が含まれています。
+     @No__t_0 クラスには、入力候補一覧と宣言の種類に表示できるすべての情報が含まれています。
 
     ```csharp
     class TestAuthoringScope : AuthoringScope
