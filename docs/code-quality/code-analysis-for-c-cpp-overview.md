@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163063"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806310"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 
-C/C++コード分析ツールは、c/C++ソースコードで発生する可能性のある欠陥に関する情報を提供します。 このツールで報告される一般的なコーディング エラーとして、バッファー オーバーラン、初期化されていないメモリ、Null ポインターの逆参照、メモリ リーク、リソース リークなどがあります。 このツールでは、 [ C++コアガイドライン](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)に対してチェックを実行することもできます。
+C/C++コード分析ツールは、c/C++ソースコードで発生する可能性のある欠陥に関する情報を提供します。 このツールで報告される一般的なコーディング エラーとして、バッファー オーバーラン、初期化されていないメモリ、Null ポインターの逆参照、メモリ リーク、リソース リークなどがあります。 このツールでは、 [ C++コアガイドライン](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)に対してチェックを実行することもできます。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (統合開発環境) の統合
 
@@ -46,15 +46,15 @@ C/C++コード分析ツールは、c/C++ソースコードで発生する可能�
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 バージョン 15.7 以降:** CMake を含む任意のビルドシステムを使用して、コマンドラインからツールを実行できます。
+**Visual Studio 2017 バージョン15.7 以降:** CMake を含む任意のビルドシステムを使用して、コマンドラインからツールを実行できます。
 
 ## <a name="pragma-support"></a>#pragma サポート
 
-@No__t-0 ディレクティブを使用して、警告をエラーとして扱うことができます。警告を有効または無効にし、個々のコード行の警告を非表示にします。 詳細については、「[プラグマ ディレクティブと __Pragma キーワード](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)」を参照してください。
+`#pragma` ディレクティブを使用して、警告をエラーとして扱うことができます。警告を有効または無効にし、個々のコード行の警告を非表示にします。 詳細については、「[プラグマ ディレクティブと __Pragma キーワード](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)」を参照してください。
 
 ## <a name="annotation-support"></a>注釈のサポート
 
-注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、[SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) を参照してください。
+注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、「 [SAL 注釈を使用しC++て C/コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)」を参照してください。
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>チェックイン ポリシーの一部としての分析ツールの実行
 
@@ -66,8 +66,8 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="see-also"></a>関連項目
 
-- [クイック スタート:C/C++](quick-start-code-analysis-for-c-cpp.md) のコード分析
-- [チュートリアル: C/C++コードの欠陥の分析 @ no__t-1
+- [クイックスタート: C/のコード分析C++](quick-start-code-analysis-for-c-cpp.md)
+- [チュートリアル: C/C++コードを分析して欠陥を分析する](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ コードの警告に対応するコードの分析](code-analysis-for-c-cpp-warnings.md)
 - [C++ Core ガイドライン チェッカーの使用](using-the-cpp-core-guidelines-checkers.md)
 - [C++コアガイドラインチェッカーリファレンス](code-analysis-for-cpp-corecheck.md)

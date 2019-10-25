@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445658"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807075"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -80,24 +80,24 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ほとんどの規則のリファレンストピックについては、「 [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md)」を参照してください。
 
 Visual Studio 2017 バージョン15.3 の場合、サポートされている規則セットは次のとおりです。
-- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
-- **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
+- **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
 
-- **生のポインター規則** [ C++は、主要なガイドラインからの生のポインターに関連するリソース管理のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **生のポインター規則** [ C++は、主要なガイドラインからの生のポインターに関連するリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
-- **一意のポインターの規則**[はC++ 、コアガイドラインから一意のポインターセマンティクスを持つ型に関連するリソース管理チェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **一意のポインターの規則**[はC++ 、コアガイドラインから一意のポインターセマンティクスを持つ型に関連するリソース管理チェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
-- **境界ルール**で[は、 C++コアガイドラインの境界プロファイル](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)が適用されます。
+- **境界ルール**で[は、 C++コアガイドラインの境界プロファイル](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)が適用されます。
 
-- **型ルール**で[は、 C++コアガイドラインのタイププロファイル](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)が適用されます。
+- **型ルール**で[は、 C++コアガイドラインのタイププロファイル](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)が適用されます。
 
 **Visual Studio 2017 バージョン 15.5**:
 
 - **クラスの規則**特殊なメンバー関数と仮想仕様の適切な使用に焦点を当てるいくつかのルール。 これは、[クラスおよびクラス階層](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)で推奨されるチェックのサブセットです。
 - **同時実行ルール**1つの規則。正しく宣言されていないガードオブジェクトをキャッチします。 詳細については、「[同時実行に関するガイドライン](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)」を参照してください。
 - **宣言の規則**グローバル変数の宣言方法に焦点を当てた、[インターフェイスガイドライン](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces)のいくつかの規則。
-- **関数の規則**@No__t_1 指定子の導入に役立つ2つのチェック。 これは、[関数の設計と実装を明確](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)にするためのガイドラインの一部です。
+- **関数の規則**`noexcept` 指定子の導入に役立つ2つのチェック。 これは、[関数の設計と実装を明確](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)にするためのガイドラインの一部です。
 - **共有ポインターの規則**[リソース管理](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)ガイドラインの適用の一環として、共有ポインターが関数に渡されるかローカルで使用される方法に固有のいくつかの規則が追加されました。
 - **スタイルルール**1つの単純だが重要なチェック。 [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)の使用を禁止します。 これは、でC++コーディングスタイルと式およびステートメントの使用を改善するための最初の手順です。
 
@@ -131,7 +131,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 ## <a name="attributes"></a>属性
 
-Microsoft Visual C++コンパイラでは、gsl 抑制属性が制限付きでサポートされています。 関数内の expression ステートメントおよび block ステートメントの警告を抑制するために使用できます。
+Microsoft C++コンパイラでは、gsl 抑制属性のサポートが制限されています。 関数内の expression ステートメントおよび block ステートメントの警告を抑制するために使用できます。
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -231,11 +231,11 @@ MSBuild に依存しないビルドシステムを使用する場合でも、こ
    - このオプション `/analyze:plugin EspXEngine.dll`、PREfast にコード分析拡張エンジンを読み込みます。 次に、このエンジンはC++コアガイドラインチェッカーを読み込みます。
 
 ## <a name="use-the-guideline-support-library"></a>ガイドラインサポートライブラリを使用する
-ガイドラインサポートライブラリは、主要なガイドラインに従うことができるように設計されています。 GSL には、エラーが発生しやすい構造を代替として置き換えることができる定義が含まれています。 たとえば、`T*, length` のパラメーターのペアを `span<T>` 型に置き換えることができます。 GSL は[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)で入手できます。 ライブラリはオープンソースであるため、ソースの表示、コメントの作成、または投稿を行うことができます。 プロジェクトは[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)にあります。
+ガイドラインサポートライブラリは、主要なガイドラインに従うことができるように設計されています。 GSL には、エラーが発生しやすい構造を代替として置き換えることができる定義が含まれています。 たとえば、`T*, length` のパラメーターのペアを `span<T>` 型に置き換えることができます。 GSL は[http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl)で入手できます。 ライブラリはオープンソースであるため、ソースの表示、コメントの作成、または投稿を行うことができます。 プロジェクトは[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)にあります。
 
 ## <a name="vs2015_corecheck"></a>Visual Studio C++ 2015 プロジェクトのコアチェックガイドラインを使用する
 
-Visual Studio 2015 を使用する場合、 C++コアチェックのコード分析規則セットは既定ではインストールされません。 Visual Studio 2015 のコアチェックコード分析ツールを有効C++にするには、いくつかの追加の手順を実行する必要があります。 Microsoft では、Nuget パッケージを使用して Visual Studio 2015 プロジェクトのサポートを提供しています。 パッケージは CppCoreCheck という名前で、 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)で入手できます。 このパッケージには、少なくとも Visual Studio 2015 with Update 1 がインストールされている必要があります。
+Visual Studio 2015 を使用する場合、 C++コアチェックのコード分析規則セットは既定ではインストールされません。 Visual Studio 2015 のコアチェックコード分析ツールを有効C++にするには、いくつかの追加の手順を実行する必要があります。 Microsoft では、Nuget パッケージを使用して Visual Studio 2015 プロジェクトのサポートを提供しています。 パッケージは CppCoreCheck という名前で、 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck)で入手できます。 このパッケージには、少なくとも Visual Studio 2015 with Update 1 がインストールされている必要があります。
 
 また、パッケージは、ヘッダーのみのガイドラインサポートライブラリ (GSL) である依存関係として別のパッケージをインストールします。 GSL は、 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)で GitHub から入手することもできます。
 
@@ -253,6 +253,6 @@ Visual Studio 2015 を使用する場合、 C++コアチェックのコード分
 
    NuGet パッケージは、プロジェクトに対してコード分析を有効にしたときに呼び出される追加の MSBuild *. .targets*ファイルをプロジェクトに追加します。 この *.targets*ファイルは、Visual C++ Studio コード分析ツールに追加の拡張機能としてコアチェック規則を追加します。 パッケージがインストールされている場合は、[プロパティページ] ダイアログボックスを使用して、リリースおよび試験的な規則を有効または無効にすることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio C++ Core Check リファレンス](code-analysis-for-cpp-corecheck.md)

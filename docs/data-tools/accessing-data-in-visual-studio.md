@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648985"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807055"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
 
@@ -94,7 +94,7 @@ Azure サービスに接続する場合は、最新の[AZURE SDK ツール](http
 
 ### <a name="data-providers"></a>データ プロバイダー
 
-ADO.NET で使用するデータベースには、カスタム*ADO.NET データプロバイダー*が必要です。そうでない場合は、ODBC または OLE DB インターフェイスを公開する必要があります。 Microsoft では、SQL Server 製品用の[ADO.NET データプロバイダー](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 、および ODBC および OLE DB プロバイダーの一覧を提供しています。
+ADO.NET で使用するデータベースには、カスタム*ADO.NET データプロバイダー*が必要です。そうでない場合は、ODBC または OLE DB インターフェイスを公開する必要があります。 Microsoft では、SQL Server 製品用の[ADO.NET データプロバイダー](/dotnet/framework/data/adonet/ado-net-overview) 、および ODBC および OLE DB プロバイダーの一覧を提供しています。
 
 ### <a name="data-modeling"></a>データ モデリング
 
@@ -144,9 +144,9 @@ Python アプリケーションを作成するには、 [Visual Studio で pytho
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash; ADO.NET のアーキテクチャについて説明します。また、ADO.NET のクラスを使用してアプリケーション データを管理し、データ ソースおよび XML と対話する方法についても説明します。
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)は、開発者がリレーショナルデータベースに対して直接ではなく、概念モデルに対してプログラミングできるデータアプリケーションを作成する方法を &mdash;Describes ます。
+[ADO.NET Entity Framework](/ef/ef6/)は、開発者がリレーショナルデータベースに対して直接ではなく、概念モデルに対してプログラミングできるデータアプリケーションを作成する方法を &mdash;Describes ます。
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) &mdash;Describes [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] を使用して、web 上または[Open Data Protocol (OData)](https://www.odata.org/)を実装するイントラネットにデータサービスを配置する方法について説明します。
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] を使用して、web 上または[Open Data Protocol (OData)](https://www.odata.org/)を実装するイントラネットにデータサービスを配置する方法について説明します。
 
 [Office ソリューションのデータ](../vsto/data-in-office-solutions.md)&mdash;Contains、office ソリューションでのデータの動作について説明するトピックへのリンクを示します。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 

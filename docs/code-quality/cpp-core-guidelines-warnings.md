@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02d284f909d601de8eb1361eee4f65304715361e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: HT
+ms.openlocfilehash: 69adb52b4fa7649bd99ecb5d4e29aa69390f6076
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745934"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807110"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 
@@ -84,17 +84,17 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 
 新しいルールがC++コアガイドラインチェッカーに追加されると、既存のコードに対して生成される警告の数が増加する可能性があります。 定義済みの規則セットを使用して、有効にする規則の種類をフィルター処理できます。 Visual Studio 2017 バージョン15.3 の場合、サポートされている規則セットは次のとおりです。
 
-- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **所有者ポインター**の規則[は、コアガイドラインから > 所有者 \<T に関連C++したリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
-- **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
+- **定数規則**[は、主要なガイドラインにC++よる const 関連のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)適用します。
 
-- **生のポインター規則** [ C++は、主要なガイドラインからの生のポインターに関連するリソース管理のチェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **生のポインター規則** [ C++は、主要なガイドラインからの生のポインターに関連するリソース管理のチェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
-- **一意のポインターの規則**[はC++ 、コアガイドラインから一意のポインターセマンティクスを持つ型に関連するリソース管理チェックを](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
+- **一意のポインターの規則**[はC++ 、コアガイドラインから一意のポインターセマンティクスを持つ型に関連するリソース管理チェックを](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)適用します。
 
-- **境界ルール**で[は、 C++コアガイドラインの境界プロファイル](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)が適用されます。
+- **境界ルール**で[は、 C++コアガイドラインの境界プロファイル](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)が適用されます。
 
-- **型ルール**で[は、 C++コアガイドラインのタイププロファイル](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)が適用されます。
+- **型ルール**で[は、 C++コアガイドラインのタイププロファイル](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)が適用されます。
 
 警告を1つまたは複数のグループに制限することを選択できます。 **ネイティブの最小**および**ネイティブで推奨**されるC++規則セットには、他の PREfast チェックに加えて、コアチェック規則が含まれています。 使用可能な規則セットを表示するには、プロジェクトのプロパティ ダイアログボックスを開き、**コード分析** を選択し、**規則セット** コンボボックスでドロップダウンを開き、 **複数の規則セットを選択**します を選択します。 Visual Studio での規則セットの使用方法の詳細については、「[規則セットを使用したコード分析規則のグループ化](using-rule-sets-to-group-code-analysis-rules.md)」を参照してください。
 
@@ -222,11 +222,11 @@ MSBuild に依存しないビルドシステムを使用する場合でも、引
 
 ## <a name="use-the-guideline-support-library"></a>ガイドラインサポートライブラリを使用する
 
-ガイドラインサポートライブラリは、主要なガイドラインに従うことができるように設計されています。 GSL には、エラーが発生しやすい構造を代替として置き換えることができる定義が含まれています。 たとえば、`T*, length` のパラメーターのペアを `span<T>` 型に置き換えることができます。 GSL は[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)で入手できます。 ライブラリはオープンソースであるため、ソースの表示、コメントの作成、または投稿を行うことができます。 プロジェクトは[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)にあります。
+ガイドラインサポートライブラリは、主要なガイドラインに従うことができるように設計されています。 GSL には、エラーが発生しやすい構造を代替として置き換えることができる定義が含まれています。 たとえば、`T*, length` のパラメーターのペアを `span<T>` 型に置き換えることができます。 GSL は[http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl)で入手できます。 ライブラリはオープンソースであるため、ソースの表示、コメントの作成、または投稿を行うことができます。 プロジェクトは[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)にあります。
 
 ## <a name="vs2015_corecheck"></a>Visual Studio C++ 2015 プロジェクトのコアチェックガイドラインを使用する
 
-Visual Studio 2015 を使用する場合、 C++コアチェックのコード分析規則セットは既定ではインストールされません。 Visual Studio 2015 のコアチェックコード分析ツールを有効C++にするには、いくつかの追加の手順を実行する必要があります。 Microsoft では、Nuget パッケージを使用して Visual Studio 2015 プロジェクトのサポートを提供しています。 パッケージは CppCoreCheck という名前で、 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)で入手できます。 このパッケージには、少なくとも Visual Studio 2015 with Update 1 がインストールされている必要があります。
+Visual Studio 2015 を使用する場合、 C++コアチェックのコード分析規則セットは既定ではインストールされません。 Visual Studio 2015 のコアチェックコード分析ツールを有効C++にするには、いくつかの追加の手順を実行する必要があります。 Microsoft では、Nuget パッケージを使用して Visual Studio 2015 プロジェクトのサポートを提供しています。 パッケージは CppCoreCheck という名前で、 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck)で入手できます。 このパッケージには、少なくとも Visual Studio 2015 with Update 1 がインストールされている必要があります。
 
 また、パッケージは、ヘッダーのみのガイドラインサポートライブラリ (GSL) である依存関係として別のパッケージをインストールします。 GSL は、 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)で GitHub から入手することもできます。
 
