@@ -25,7 +25,7 @@
 ### [サブスクリプション管理者に連絡してください](contact-my-admin.md)
 ### 利点
 #### ツール
-##### [Azure クレジット](vs-azure.md)
+##### [Azure DevTest の個人クレジット](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Azure 重量課金](vs-azure-payg.md)
 ##### [CAST の強調表示](vs-cast.md)
