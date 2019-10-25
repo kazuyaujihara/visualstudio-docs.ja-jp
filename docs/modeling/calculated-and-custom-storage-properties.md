@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc7d4ef8e281cd56b7a585d516cd5d48028a00f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653704"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748540"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算プロパティおよびカスタム格納プロパティ
 ドメイン固有言語 (DSL) 内のすべてのドメインプロパティは、図および言語エクスプローラーでユーザーに表示できます。また、プログラムコードからアクセスすることもできます。 ただし、プロパティの値が格納される方法は異なります。
@@ -107,7 +107,7 @@ void SetAgeValue(int value)
 
  トランザクションの詳細については、「[プログラムコードでのモデルの移動と更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プログラム コードにおけるモデル内の移動およびモデルの更新](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [ドメイン プロパティのプロパティ](../modeling/properties-of-domain-properties.md)

@@ -1,5 +1,5 @@
 ﻿---
-title: IDiaSymbol::get_restrictedType |Microsoft Docs
+title: 'IDiaSymbol:: get_restrictedType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eac7e512d2fbfb5367725b3878d292444961b6de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739394"
 ---
-# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-指定するかどうか、`this`ポインターがフラグが設定された制限付きとします。
+# <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
+@No__t_0 ポインターに制限付きのフラグが設定されているかどうかを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -30,10 +30,10 @@ HRESULT get_restrictedType(
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]ポインターを`BOOL`を指定するかどうか、`this`ポインターがフラグが設定された制限付きとします。
+入出力@No__t_1 ポインターが restricted としてフラグ付けされているかどうかを指定する `BOOL` へのポインター。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

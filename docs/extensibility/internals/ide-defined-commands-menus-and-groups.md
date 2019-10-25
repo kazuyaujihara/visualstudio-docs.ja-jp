@@ -1,5 +1,5 @@
 ---
-title: IDE 定義コマンド、メニューのおよびグループ |Microsoft Docs
+title: IDE で定義されているコマンド、メニュー、およびグループ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5158a9d1a06ec6f08c67777e4f1ce2e4d37220e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af6d3e180e2b3d5eb2e0f6c85b7488761e160c69
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315659"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727294"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義コマンド、メニュー、およびグループ
-によって使用される多くのメニューのコマンドおよびコマンド グループが定義済み、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。 これらのコマンドを拡張するときにもご利用いただけます[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+多くのメニュー、コマンド、およびコマンドグループは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE で使用するように既に定義されています。 これらのコマンドは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を拡張するときに使用することもできます。
 
-## <a name="finding-environment-defined-commands"></a>環境定義コマンドを見つける
- 環境のコマンドは、一連の 4 つの .vsct ファイルで定義されます。
+## <a name="finding-environment-defined-commands"></a>環境定義コマンドの検索
+ 環境コマンドは、次の4つの vsct ファイルで定義されています。
 
-- SharedCmdDef.vsct
+- SharedCmdDef. vsct
 
-- SharedCmdPlace.vsct
+- SharedCmdPlace vsct
 
-- ShellCmdDef.vsct
+- ShellCmdDef. vsct
 
-- ShellCmdPlace.vsct
+- ShellCmdPlace vsct
 
-  これらのファイルにある *\<Visual Studio SDK インストール パス >* \VisualStudioIntegration\Common\Inc\\します。 これらのファイルは、定義と、メニューとメニューのグループ、およびコマンドの独自のコンテナーとして、VSPackage のコマンド テーブル (.vsct) の構成ファイルを使用できるグループの Guid を提供します。
+  これらのファイルは *\<Visual STUDIO SDK インストールパス >* \VisualStudioIntegration\Common\Inc \\ にあります。 これらのファイルには、独自のメニュー、グループ、およびコマンドのコンテナーとして、VSPackage のコマンドテーブル構成 (vsct) ファイルで使用できるメニューとグループの定義と Guid が用意されています。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Visual Studio メニューの GUID および ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
- Visual Studio のメニュー バーでメニューおよびが含まれているグループの GUID と ID 値を示します。
+ Visual Studio のメニューバーのメニューの GUID と ID の値、およびそれらに含まれるグループの数を示します。
 
 - [Visual Studio ツール バーの GUID および ID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 
- Visual Studio IDE でツールバーおよびが含まれているグループの GUID と ID 値を示します。
+ Visual Studio IDE のツールバーの GUID と ID の値、およびそれらに含まれるグループの数を示します。
 
 - [Visual Studio コマンドの GUID および ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 
- Visual Studio IDE で定義されているコマンドの GUID と ID の値を示します。
+ Visual Studio IDE で定義されているコマンドの GUID と ID の値を指定します。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio Command Table (.Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

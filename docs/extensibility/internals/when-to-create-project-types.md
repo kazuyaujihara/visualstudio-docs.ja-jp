@@ -10,54 +10,54 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8be01ef0592deab48d923828ccfd3f86f1311a4d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff29843965c220c505266a9cd973e5695c0b9dab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323062"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721562"
 ---
 # <a name="when-to-create-project-types"></a>プロジェクト タイプを作成する状況
-カスタマイズするため、単位を提供する新しいプロジェクトの種類を作成する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ユーザー向けです。 ただし、新しいプロジェクトの種類を作成する必要はありませんすべての[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]カスタマイズします。 次のガイドラインを使用するとは新しいプロジェクトの種類が、シナリオに必要かどうかを判断できます。
+新しいプロジェクトの種類を作成すると、ユーザーの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] をカスタマイズするための基礎となります。 ただし、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のすべてのカスタマイズでは、新しいプロジェクトの種類を作成する必要はありません。 次のガイドラインは、シナリオに新しいプロジェクトの種類が必要かどうかを判断するのに役立ちます。
 
-## <a name="create-a-new-project-type"></a>新しいプロジェクトの種類を作成します。
- カスタマイズする場合は、プロジェクトの種類を作成する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の次の方法の 1 つ以上を実行します。
+## <a name="create-a-new-project-type"></a>新しいプロジェクトの種類を作成する
+ 次の1つまたは複数の方法で動作するように [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] をカスタマイズする場合は、プロジェクトの種類を作成する必要があります。
 
-- ビルドに参加、デプロイ、構成、およびソース管理。
+- ビルド、配置、構成、ソース管理に参加します。
 
-- デバッグのサポートを提供します。
+- デバッグサポートを提供します。
 
-- プロジェクト アイテムの表示**ソリューション エクスプ ローラー**します。
+- **ソリューションエクスプローラー**にプロジェクト項目を表示します。
 
-- 使用して、**プロジェクトを開く**または**新しいプロジェクト** ダイアログ ボックス。
+- **[プロジェクトを開く]** または **[新しいプロジェクト]** ダイアログボックスを使用します。
 
 - プロジェクトの入れ子をサポートします。
 
-## <a name="extend-an-existing-project-type"></a>既存のプロジェクトの種類を拡張します。
- 使用できる新しいプロジェクトの種類を作成したい場合があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]変更または既存のプロジェクトの種類の動作を拡張する次の方法でのビルド プロセスを変更するなど、[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]プロジェクト。
+## <a name="extend-an-existing-project-type"></a>既存のプロジェクトの種類を拡張する
+ 既存のプロジェクトの種類の動作を変更または拡張するために、次の方法で [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を使用できる新しいプロジェクトの種類を作成することもできます。たとえば、[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] プロジェクトのビルドプロセスを変更できます。
 
-- 1 つの単位として複数のファイルを使用します。
+- 複数のファイルを1つの単位として操作します。
 
-- サブ項目の階層として 1 つのファイルを表示します。
+- サブ項目の階層として1つのファイルを表示します。
 
-- エディターの周囲のコマンドのコンテキストを表示します。
+- エディターの周囲にコマンドコンテキストを表示します。
 
-- エディターに対し、サービス コンテキストを表示します。
+- エディターのサービスコンテキストを表示します。
 
-## <a name="use-an-existing-project-type"></a>既存のプロジェクトの種類を使用して、
- 新しいプロジェクトを作成する必要がありますされません。 次の表では、プロジェクトの種類を作成する必要はありませんが、タスクを示します。
+## <a name="use-an-existing-project-type"></a>既存のプロジェクトの種類を使用する
+ 新しいプロジェクトを作成する必要はない場合があります。 次の表に、プロジェクトの種類を作成する必要がないタスクを示します。
 
 |タスク|説明|
 |----------|-----------------|
-|コマンドの処理|すべての VSPackage では、コマンドを処理できます。|
-|エディターの構築|カスタム エディターを登録することができます。 詳細については、次を参照してください。[ドキュメント Windows およびエディター](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)します。|
-|Windows を所有しています。|新しいプロジェクトの種類を追加せず、両方のツールとドキュメント ウィンドウを作成できます。|
-|[プロパティ] ウィンドウでプロパティを公開します。|すべてのオブジェクトには、プロパティを公開できます。|
+|コマンドの処理|VSPackage は、コマンドを処理できます。|
+|エディターのビルド|カスタムエディターを登録できます。 詳細については、「[ドキュメントウィンドウとエディター](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)」を参照してください。|
+|所有しているウィンドウ|新しいプロジェクトの種類を追加せずに、ツールウィンドウとドキュメントウィンドウの両方を作成できます。|
+|プロパティウィンドウでのプロパティの公開|すべてのオブジェクトがプロパティを公開できます。|
 
-## <a name="create-a-project-subtype"></a>プロジェクト サブタイプを作成します。
- プロジェクト サブタイプを使用して、新しいプロジェクトの種類を作成することがなく、マネージ プロジェクトの種類を拡張することができます。 プロジェクト サブタイプでは、COM の集計を使用して、Microsoft で記述されたマネージ プロジェクトを拡張する[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]または[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]します。 COM の集計を含むマネージ プロジェクト システムの実装の大部分を再利用し、集計と、インターフェイスのサポートの使用を特定のシナリオをカスタマイズできます。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)します。
+## <a name="create-a-project-subtype"></a>プロジェクトのサブタイプを作成する
+ プロジェクトのサブタイプを使用して、新しいプロジェクトの種類を作成することなく、マネージプロジェクトの種類を拡張することができます。 プロジェクトのサブタイプは、COM 集計を使用して、Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] または [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] で記述されたマネージプロジェクトを拡張します。 COM 集計を使用すると、マネージプロジェクトシステムの実装の大部分を再利用しながら、集計やサポートインターフェイスを使用して特定のシナリオに合わせてカスタマイズできます。 プロジェクトのサブタイプの詳細については、「[プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [Windows のドキュメントおよびエディター](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
-- [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [ドキュメントウィンドウとエディター](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+- [チェック リスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

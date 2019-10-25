@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkframe::searchforreturnaddressstart |Microsoft Docs
+title: 'IDiaStackWalkFrame:: searchForReturnAddressStart |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf7de77016f5ccc15f2cea8bf3172321dd824096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ad1c42a39b9c35cc1436488e19481f2b286b6f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838055"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741447"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-指定したアドレスに近いのリターン アドレスの指定したスタック フレームを検索します。
+指定したスタックフレーム内で、指定したアドレスまたはその近くの戻りアドレスを検索します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,18 +35,18 @@ HRESULT searchForReturnAddressStart ( 
 #### <a name="parameters"></a>パラメーター
  `frame`
 
-[in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)現在のスタック フレームを表すオブジェクト。
+から現在のスタックフレームを表す[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)オブジェクト。
 
  `startAddress`
 
-[in]元の検索を開始する仮想メモリ アドレス。
+から検索を開始する仮想メモリアドレス。
 
  `returnAddress`
 
-[out]最も近い関数には、アドレスを返します`startAddress`します。
+入出力@No__t_0 に最も近い関数の戻り先アドレスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

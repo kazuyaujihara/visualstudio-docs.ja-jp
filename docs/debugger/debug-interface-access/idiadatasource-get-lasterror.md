@@ -1,5 +1,5 @@
 ---
-title: Idiadatasource::get_lasterror |Microsoft Docs
+title: 'IDiaDataSource:: get_lastError |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48595dda70560f555533a1857f73db4d7bd20a86
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554197"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744974"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
-最後の読み込みエラーのファイル名を取得します。
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
+前回の読み込みエラーのファイル名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,12 +31,12 @@ HRESULT get_lastError (
 ```
 
 #### <a name="parameters"></a>パラメーター
- pRetVal
+ の場合は、
 
-[out]最後の読み込みエラーに関連付けられている .pdb ファイル名を含む文字列を返します。
+入出力最後の読み込みエラーに関連付けられた .pdb ファイル名を含む文字列を返します。
 
 ## <a name="return-value"></a>戻り値
- 読み込み操作による最後のエラー コードを返します。 返します`E_INVALIDARG`場合、`pRetVal`パラメーターが`NULL`します。
+ 読み込み操作によって発生した最後のエラーコードを返します。 @No__t_1 パラメーターが `NULL` 場合は `E_INVALIDARG` を返します。
 
 ## <a name="example"></a>例
 

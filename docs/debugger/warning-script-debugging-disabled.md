@@ -1,5 +1,5 @@
 ---
-title: 警告 :スクリプト デバッグが無効 |Microsoft Docs
+title: '警告: スクリプトのデバッグが無効です |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901024"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728199"
 ---
-# <a name="warning-script-debugging-disabled"></a>警告 :スクリプト デバッグが無効
+# <a name="warning-script-debugging-disabled"></a>警告 : スクリプト デバッグが無効
 Internet Explorer では、スクリプトのデバッグは現在無効になっています。
 
  この警告は、Internet Explorer でスクリプトのデバッグを有効にしないままスクリプトをデバッグした場合に発生します。 セキュリティ上の理由から、Internet Explorer ではスクリプトのデバッグは既定で無効になっています。
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer でスクリプトのデバッグを有効にするには
 
-1. Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。
+1. Internet Explorer で、 **[ツール]** メニューの **[インターネット オプション]** を選択します。
 
 2. **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。
 
@@ -44,4 +44,4 @@ Internet Explorer では、スクリプトのデバッグは現在無効にな�
      新しい設定が反映されます。
 
 ## <a name="see-also"></a>関連項目
-- [方法: ](../debugger/how-to-attach-to-script.md)スクリプトにアタッチする
+- [方法 : スクリプトにアタッチする](../debugger/how-to-attach-to-script.md)

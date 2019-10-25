@@ -1,5 +1,5 @@
 ---
-title: '[エディット コンティニュ] ダイアログ ボックス (C++) |Microsoft Docs'
+title: '[エディットコンティニュ] ダイアログボックスC++() |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851422"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737972"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>[エディット コンティニュ] ダイアログ ボックス (C++)
 エディット コンティニュでは、ネイティブ コードに対して行われた変更を適用できない場合があります。 これは一時的な条件の場合もあります。 エディット コンティニュでネイティブ コードの変更をすぐに適用できないときでも、デバッグ セッションの進行中 (実行中のプロシージャに対して現在行っている呼び出しが完了した後など) に適用できる場合もあります。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。

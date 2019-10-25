@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba409c831dd508dae796bca1ea2837674459690d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02c3915be318e7c4b3d82965f6d4640069f7a0c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719392"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 要素 (Visual Studio テンプレート)
-指定します、かどうかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。
+**[新しい項目の追加]** ダイアログボックスで **[マスターページの選択]** チェックボックスがオンになっているかどうかを指定します。
 
- \<VSTemplate> \<TemplateData> \<SupportsMasterPage>
+ \<VSTemplate > \<TemplateData > \<SupportsMasterPage >
 
 ## <a name="syntax"></a>構文
 
@@ -45,20 +45,20 @@ ms.locfileid: "66316690"
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類し、定義でどのように表示するデータを指定します、**新しいプロジェクト**または**新しい項目の** ダイアログ ボックス。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類するデータを指定し、 **[新しいプロジェクト]** または **[新しい項目]** ダイアログボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。
+ テキストは `true` または `false` のいずれかである必要があります。 **[新しい項目の追加]** ダイアログボックスで **[マスターページの選択]** チェックボックスがオンになっているかどうかを示します。
 
 ## <a name="remarks"></a>Remarks
- `SupportsMasterPage` は、省略可能な要素です。 既定値は `false` です。
+ `SupportsMasterPage` は、省略可能な要素です。 既定値は `false`です。
 
- `SupportsMasterPage`要素は、Web 項目テンプレートの使用のみ。
+ @No__t_0 要素は、Web 項目テンプレートでのみ使用できます。
 
 ## <a name="example"></a>例
- 次の例では、マスター ページのサポートが含まれる Web プロジェクトのメタデータを示します。
+ 次の例は、マスターページのサポートを含む Web プロジェクトのメタデータを示しています。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

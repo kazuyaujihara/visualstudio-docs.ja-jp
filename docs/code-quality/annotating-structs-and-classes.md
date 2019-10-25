@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446299"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747050"
 ---
 # <a name="annotating-structs-and-classes"></a>構造体とクラスに注釈を付ける
 
@@ -110,7 +110,7 @@ struct MyBuffer
 - `bufferSize` の `_Field_range_` は、`bufferSize` の値が1から `MaxBufferSize` (両方を含む) であることを指定します。
 - @No__t_0 と `_Field_size_` の注釈の最終的な結果は同等です。 同様のレイアウトを持つ構造体またはクラスの場合、`_Field_size_` は、同等の `_Struct_size_bytes_` 注釈よりも参照と計算が少なくなるため、読み取りと保守が簡単になります。 `_Field_size_` では、バイトサイズへの変換は必要ありません。 Byte サイズが唯一のオプションである場合 (たとえば、void ポインターフィールドの場合) は、`_Field_size_bytes_` を使用できます。 @No__t_0 と `_Field_size_` の両方が存在する場合は、両方ともツールで使用できます。 2つの注釈が一致しない場合の対処方法は、ツールによって異なります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL について](../code-quality/understanding-sal.md)

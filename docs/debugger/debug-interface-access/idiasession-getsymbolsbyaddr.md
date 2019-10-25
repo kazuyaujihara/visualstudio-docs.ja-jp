@@ -1,5 +1,5 @@
 ---
-title: Idiasession::getsymbolsbyaddr |Microsoft Docs
+title: 'IDiaSession:: Getシンボル Byaddr |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f114d14da44d782dbda9e9f792f9268ceb598e23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe5c047876b6e23c24ad850900cb0c66a4819d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832332"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741900"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
-そのアドレスの順序でシンボルを検索する列挙子を取得します。
+アドレスの順序で記号を検索する列挙子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT getSymbolsByAddr( 
 #### <a name="parameters"></a>パラメーター
  `ppEnumbyAddr`
 
-[out]返します、 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)オブジェクト。 このインターフェイスを使用して、メモリの場所でシンボル ストア内のシンボルを検索します。
+入出力[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)オブジェクトを返します。 このインターフェイスを使用して、メモリ位置によってシンボルストア内のシンボルを検索します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

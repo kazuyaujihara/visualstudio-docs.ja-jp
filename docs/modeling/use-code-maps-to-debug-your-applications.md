@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a88a72e043f1a4bdbc3bb520161e2f6be92e394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663780"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748275"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>コード マップを使用してアプリケーションをデバッグする
 
@@ -140,7 +140,7 @@ ms.locfileid: "72663780"
 
  これで、調査が完了しました。 コードのマップにより、問題を正常に検出して修正しました。 また、コード内を移動することや確認したことの記憶に役立ち、問題を解決するための手順を示すマップも備わりました。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [デバッグ中の、呼び出し履歴に関するメソッドのマッピング](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [コードの視覚化](../modeling/visualize-code.md)

@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_lexicalparent |Microsoft Docs
+title: 'IDiaSymbol:: get_lexicalParent |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 87d44f2c8dfb723f9f2653d6f9d89a2c1c71ef5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813733"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739970"
 ---
-# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
-シンボルの構文の親への参照を取得します。
+# <a name="idiasymbolget_lexicalparent"></a>IDiaSymbol::get_lexicalParent
+記号の構文上の親への参照を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,18 +33,18 @@ HRESULT get_lexicalParent ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)シンボルの構文の親を表すオブジェクト。
+入出力記号の構文上の親を表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- シンボルの構文の親は、外側の関数またはモジュールにです。 たとえば、関数パラメーターまたはローカル変数の構文の親は、関数の構文の親は、モジュールで定義されている、関数自体です。
+ シンボルの構文上の親は、外側の関数またはモジュールです。 たとえば、関数パラメーターまたはローカル変数の構文の親は、関数自体です。関数の構文の親は、定義されているモジュールです。
 
- 親の構文が記載されているように表示される可能なシンボル[シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)します。
+ 構文の親として使用できるシンボルは、[シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)に記載されています。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

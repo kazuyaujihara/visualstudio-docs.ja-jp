@@ -1,5 +1,5 @@
 ---
-title: '方法: WPF ツリー ビジュアライザーを使用する |Microsoft Docs'
+title: '方法: WPF ツリービジュアライザーを使用する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821374"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731923"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>方法: WPF ツリー ビジュアライザーを使用する
-WPF ツリー ビジュアライザーを使用すると、WPF オプションのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 ビジュアル ツリーの詳細については、次を参照してください。 [WPF のツリー](/dotnet/framework/wpf/advanced/trees-in-wpf)します。 依存関係プロパティの詳細については、次を参照してください。[依存関係プロパティの概要](/dotnet/framework/wpf/advanced/dependency-properties-overview)します。
+WPF ツリー ビジュアライザーを使用すると、WPF オプションのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 ビジュアルツリーの詳細については、「 [WPF のツリー](/dotnet/framework/wpf/advanced/trees-in-wpf)」を参照してください。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](/dotnet/framework/wpf/advanced/dependency-properties-overview)」を参照してください。
 
- WPF ツリー ビジュアライザーを開くと、2 つのペインが表示されます。**ビジュアル ツリー**左側、**プロパティの**_名前_ **:** _型_右側のウィンドウ。 内のオブジェクトを選択、**ビジュアル ツリー**ウィンドウで、および**のプロパティ**_名前_ **:** _型_ペインがそのオブジェクトのプロパティを表示する自動的に更新されます。
+ WPF ツリービジュアライザーを開くと、左側に**ビジュアルツリー**が表示され、右側に [_名前_ **:** _種類_] ペイン**のプロパティ**が2つ表示されます。 **[ビジュアルツリー]** ウィンドウで任意のオブジェクトを選択すると、[_名前_ **:** _種類_] ペイン**のプロパティ**が自動的に更新され、そのオブジェクトのプロパティが表示されます。
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>WPF ツリー ビジュアライザーを開くには
 
@@ -50,7 +50,7 @@ WPF ツリー ビジュアライザーを使用すると、WPF オプション�
 
 ### <a name="to-search-the-properties-list"></a>プロパティ リストを検索するには
 
-- **プロパティの**_名前_ **:** _型_ウィンドウ内で検索する文字列を入力、 **をフィルター処理**ボックス。
+- [**プロパティ**_名_ **:** _型_] ペインで、検索する文字列を **[フィルター]** ボックスに入力します。
 
   WPF ツリー ビジュアライザーで、入力した文字列と一致するプロパティが即時に検索され、入力した文字列と一致したこれらのプロパティのみが一覧に表示されます。 より正確に一致する項目を検索するには、次の文字を入力します。
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70265976e5c6e7c2b3f536f2b8648aaba44df528
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830260"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743853"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
-アドレスの順序で前のシンボルを取得します。
+前の記号を order by アドレスで取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,21 +35,21 @@ HRESULT Prev ( 
 #### <a name="parameters"></a>パラメーター
  celt
 
-[in]シンボルを取得する列挙子の数。
+から取得する列挙子内のシンボルの数。
 
  rgelt
 
-[out]格納する配列[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)必要なシンボルを表すオブジェクト。
+入出力目的のシンボルを表す[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクトを使用して入力する配列。
 
  pceltFetched
 
-[out]フェッチされた列挙子の記号の数を返します。
+入出力フェッチされた列挙子内のシンボルの数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`前のシンボルがない場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 前のシンボルがない場合は `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、フェッチされる要素の数によって、列挙子の位置を更新します。
+ このメソッドは、フェッチされた要素の数で列挙子の位置を更新します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

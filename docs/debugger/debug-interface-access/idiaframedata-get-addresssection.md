@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_addresssection |Microsoft Docs
+title: 'IDiaFrameData:: get_addressSection |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e3c6b02477097bd9dfe3fa0cf4292c3a8723f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 524d6b36cc163c0bbce1a3eb27497d4c63edd50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832815"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743664"
 ---
-# <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-フレームのコード アドレスのセクションの一部を取得します。
+# <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
+フレームのコードアドレスのセクション部分を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]フレームのコード アドレスのセクションの一部を返します。
+入出力フレームのコードアドレスのセクション部分を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

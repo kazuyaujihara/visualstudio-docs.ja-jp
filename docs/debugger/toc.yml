@@ -434,6 +434,10 @@
                   href: deploy-windows-store-apps-from-visual-studio.md
             - name: インストールされているアプリケーション パッケージをデバッグする
               href: debug-installed-app-package.md
+            - name: デバッグ中に XAML のプロパティを調べます。
+              href: inspect-xaml-properties-while-debugging.md
+            - name: 実行中の XAML コードを記述およびデバッグする
+              href: xaml-hot-reload.md
             - name: Blend での XAML のデバッグ
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML と CSS
@@ -490,6 +494,10 @@
               items:
                 - name: WPF のデバッグ
                   href: debugging-wpf.md
+                - name: デバッグ中に XAML のプロパティを調べます。
+                  href: inspect-xaml-properties-while-debugging.md
+                - name: 実行中の XAML コードを記述およびデバッグする
+                  href: xaml-hot-reload.md
                 - name: WPF ツリー ビジュアライザーを使用する
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF トレース情報を表示する

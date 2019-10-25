@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cbc0ea5694e462faf6d3995bc68723a3f522e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605841"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748221"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>モデル、クラス、およびリレーションシップについて
 ドメイン固有言語 (DSL) は、DSL 定義ファイルと、ユーザーが記述するカスタムプログラムコードによって定義されます。 DSL ソリューションのプログラムコードの大部分は、このファイルから生成されます。
@@ -148,6 +148,6 @@ ms.locfileid: "72605841"
 
  派生リレーションシップは、その基本リレーションシップを専門としています。 リンク先のドメインクラスは、基本リレーションシップによってリンクされたクラスから派生する必要があります。 派生したリレーションシップのリンクがモデル内に作成されると、派生リレーションシップと基本リレーションシップの両方のインスタンスになります。 プログラムコードでは、ベースまたは派生クラスのいずれかによって生成されたプロパティを使用して、リンクの反対側の端に移動できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

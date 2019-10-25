@@ -1,5 +1,5 @@
 ---
-title: Idialoadcallback::restrictsymbolserveraccess |Microsoft Docs
+title: 'IDiaLoadCallback:: RestrictSymbolServerAccess |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de567f0417714e1246e11ba074c9b0134e92ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d590af5162d3efd2ef2c9702a3fe9f45250993
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839772"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743018"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
-シンボルを解決するのには、シンボル サーバーへのアクセスが許可されたかどうかを決定します。
+シンボルを解決するために、シンボルサーバーへのアクセスが許可されているかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,10 +29,10 @@ HRESULT RestrictSymbolServerAccess();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- すべてのコード以外のリターン`S_OK`シンボルを解決するシンボル サーバーを使用できないようにします。
+ @No__t_0 以外のリターンコードは、シンボルサーバーを使用してシンボルを解決できません。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,5 +1,5 @@
 ---
-title: オートメーション コードの提供 |Microsoft Docs
+title: コードの自動化の提供 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,27 +10,27 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c7fa6836f3c396471e3b330d94b67d0978252e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 874446aa6bf2e40a120aac49e7d91fd3d861d1d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341543"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724960"
 ---
 # <a name="providing-automation-for-code"></a>コードのオートメーションの提供
-コードのオートメーション モデルを作成する必要はありません。 環境の SDK では、そのため、サンプルは提供されません。 コード モデルを把握するには、次を参照してください。、<xref:EnvDTE.CodeModel>オブジェクト。
+コードのオートメーションモデルを作成する必要はありません。 環境 SDK には、そのためのサンプルが用意されていません。 コードモデルの詳細については、<xref:EnvDTE.CodeModel> オブジェクトを参照してください。
 
- コード モデルを実装するには、内部データ構造によって決定されるインターフェイスを実装する必要があります。 オブジェクトから派生する必要があります、`IDispatch`クラス。
+ コードモデルを実装するには、内部データ構造によって決定されるインターフェイスを実装する必要があります。 オブジェクトは `IDispatch` クラスから派生する必要があります。
 
- オブジェクトを拡張すると、<xref:EnvDTE.CodeModel>と<xref:EnvDTE.FileCodeModel>から利用できる、<xref:EnvDTE.Project>オブジェクトし、次のようになります。
+ 拡張、<xref:EnvDTE.CodeModel> および <xref:EnvDTE.FileCodeModel> するオブジェクトは、<xref:EnvDTE.Project> オブジェクトから使用でき、次のようになります。
 
 - <xref:EnvDTE.Project.CodeModel%2A>
 
 - <xref:EnvDTE.ProjectItem.FileCodeModel%2A>
 
- 実装することができます、`CodeModel`または`FileCodeModel`から返すオブジェクトのインターフェイス、`Project`と<xref:EnvDTE.ProjectItem>オブジェクト。 このプロジェクト システムの適切なインターフェイスからの機能を提供します。
+ @No__t_2 および <xref:EnvDTE.ProjectItem> オブジェクトから返すオブジェクトに、`CodeModel` または `FileCodeModel` インターフェイスだけを実装することを選択できます。 このインターフェイスには、プロジェクトシステムに適した機能をすべて提供します。
 
- メソッドやプロパティなどの機能を追加する場合をからは入手できず、標準`CodeModel`と`FileCodeModel`インターフェイスは、standard から継承するインターフェイスを作成します。 エンドユーザーが探しに知っていただけるように、プロジェクト システムでドキュメントを必ず。 標準のインターフェイスを返しますが、ユーザーが呼び出すことができます、`QueryInterface`メソッドまたは存在することがわかっている場合、インターフェイスにキャストします。
+ 標準 `CodeModel` および `FileCodeModel` インターフェイスからは使用できない機能 (メソッドやプロパティなど) を追加する場合は、標準から継承する独自のインターフェイスを作成します。 エンドユーザーが見つけられるように、プロジェクトシステムでドキュメント化してください。 標準のインターフェイスを返しますが、ユーザーは `QueryInterface` メソッドを呼び出すことも、存在することがわかっている場合はインターフェイスにキャストすることもできます。
 
 ## <a name="see-also"></a>関連項目
 - [オートメーション モデルの概要](../../extensibility/internals/automation-model-overview.md)

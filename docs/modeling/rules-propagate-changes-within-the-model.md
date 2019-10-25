@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808eecab2b4f468b730b6c58cce32d08ca523d0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 74d64b4fe0c0aa5293e11daad13f632c4a487736
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747419"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 ストアルールを作成して、視覚化およびモデリング SDK (VMSDK) で、ある要素から別の要素に変更を反映させることができます。 ストア内のいずれかの要素に変更が加えられると、通常、最も外側のトランザクションがコミットされるときに、規則が実行されるようにスケジュールされます。 要素の追加や削除など、さまざまな種類のイベントに対して異なる種類のルールがあります。 ルールは、特定の種類の要素、図形、または図に適用できます。 多くの組み込み機能がルールによって定義されています。たとえば、ルールによって、モデルが変更されたときにダイアグラムが更新されます。 独自の規則を追加することで、ドメイン固有言語をカスタマイズできます。
@@ -207,6 +207,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [イベント ハンドラーによって変更内容がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)

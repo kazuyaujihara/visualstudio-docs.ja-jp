@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkframe::get_registervalue |Microsoft Docs
+title: 'IDiaStackWalkFrame:: get_registerValue |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d60fa2ebefb7e1e4eefccce866a1059fdbc78a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5d1010cf9231e4777c8aef8de4a71d23937974e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837980"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741505"
 ---
-# <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
+# <a name="idiastackwalkframeget_registervalue"></a>IDiaStackWalkFrame::get_registerValue
 レジスタの値を取得します。
 
 ## <a name="syntax"></a>構文
@@ -34,14 +34,14 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>パラメーター
  `index`
 
-[in]値、 [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)レジスタの値を取得するを指定する列挙体。
+から値を取得するレジスタを指定する[CV_HREG_e enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)列挙子の値。
 
  `pRetVal`
 
-[out]レジスタの現在の値を返します。
+入出力レジスタの現在の値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

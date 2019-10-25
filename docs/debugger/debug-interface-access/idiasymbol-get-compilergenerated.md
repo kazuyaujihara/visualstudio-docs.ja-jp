@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_compilergenerated |Microsoft Docs
+title: 'IDiaSymbol:: get_compilerGenerated |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8cc1d59accb63ea7ef8b939e9e0912ee03dc4e8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c67a3ae78db3f91f25f69c1045856c5d167c2d34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808703"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740825"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
-シンボルが、コンパイラによって生成されたかどうかを示すフラグを取得します。
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
+シンボルがコンパイラによって生成されたかどうかを示すフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,20 +33,20 @@ HRESULT get_compilerGenerated ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します`TRUE`コンパイラ; シンボルを生成する場合を返しますそれ以外の場合、`FALSE`シンボルは、ユーザーが記述したソースから生成された場合。
+入出力コンパイラがシンボルを生成した場合は `TRUE` を返します。それ以外の場合は、ユーザーが記述したソースからシンボルが生成された場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

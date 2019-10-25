@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f019fcb42d908d81d4e356f664772029141993
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654148"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748503"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性の制御
 *デコレータ*は、ドメイン固有言語 (DSL) の図形に表示されるアイコンまたはテキストの行です。 モデルのプロパティの状態に応じて、デコレータを表示したり、非表示にしたりすることができます。 たとえば、人物を表す図形では、ユーザーの性別、子の数などに応じて異なるアイコンが表示される場合があります。
@@ -103,7 +103,7 @@ ms.locfileid: "72654148"
 
 8. ソリューションをリビルドして実行します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [シェイプとコネクタの定義](../modeling/defining-shapes-and-connectors.md)
 - [ダイアグラムへの背景イメージの設定](../modeling/setting-a-background-image-on-a-diagram.md)

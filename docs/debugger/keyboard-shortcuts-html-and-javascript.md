@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f800a74fb1cb9d0909bd1f95571eb7a3c27b06
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588968"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731497"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>ショートカット キー (HTML および JavaScript)
 
@@ -58,7 +58,7 @@ HTML および JavaScript を使用して UWP アプリをデバッグするた�
 |選択した CSS 値を 1 つ増やす|↑ キー|
 |選択した CSS 値を 1 つ減らす|↓ キー|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
 - [クイック スタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

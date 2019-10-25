@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_callingconvention |Microsoft Docs
+title: 'IDiaSymbol:: get_callingConvention |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9865d917e24abf58bdcf63e8abb21370f223aad2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1b0581e7a49ac8c8681077a7f40133498a48789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806995"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740877"
 ---
-# <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
-呼び出し規約、メソッドのインジケーターを返します。
+# <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
+メソッドの呼び出し規約のインジケーターを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,20 +33,20 @@ HRESULT get_callingConvention ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]値を返します、 [CV_call_e 列挙型](../../debugger/debug-interface-access/cv-call-e.md)メソッドを指定する列挙体の呼び出し規約。
+入出力メソッドの呼び出し規約を指定する[CV_call_e enumeration](../../debugger/debug-interface-access/cv-call-e.md)列挙体から値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

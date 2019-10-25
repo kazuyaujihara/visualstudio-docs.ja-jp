@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371db781cae5c988e6c8ff4c4776c5f43d6f047a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d733a51bd599b85dcc6d1121b8d21e1a687a351
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554353"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745036"
 ---
-# <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
-クライアントは有効または、計算と相対仮想アドレス (RVA) の使用を無効にできます。
+# <a name="idiaaddressmapput_relativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
+クライアントが相対仮想アドレス (RVA) の計算と使用を有効または無効にすることを許可します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,17 +33,17 @@ HRESULT put_relativeVirtualAddressEnabled ( 
 #### <a name="parameters"></a>パラメーター
  NewVal
 
-[in]設定`TRUE`を有効にする、または`FALSE`を無効にします。
+からを `TRUE` に設定して、を有効にするか、`FALSE` を無効にします。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- DIA インターフェイス、および実行可能ファイルのイメージのベースを基準と説明されているデバッグ オブジェクトのアドレスは、相対仮想アドレスとして取得できます。
+ DIA インターフェイスによって記述され、実行可能ファイルのイメージベースに対して相対的なデバッグオブジェクトのアドレスは、相対仮想アドレスとして取得できます。
 
- セグメントが PDB ファイルから最初に読み込まれるときに、Rva の使用を有効になっています。 Rva の使用の現在の状態を取得する、 [idiaaddressmap::get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)メソッド。
+ RVAs の使用は、セグメントが PDB ファイルから最初に読み込まれるときに有効になります。 RVAs の使用の現在の状態を取得するには、 [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)メソッドを呼び出します。
 
- `put_relativeVirtualAddress`に成功した呼び出しの後の Rva を有効にするメソッドを呼び出す必要があります、 [idiaaddressmap::set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)メソッドが新しいイメージのヘッダーを確立します。
+ RVAs メソッドを呼び出して、 [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)メソッドの呼び出しが正常に完了した後に、新しいイメージヘッダーが確立された後にを有効にする必要があります。 `put_relativeVirtualAddress`
 
 ## <a name="see-also"></a>関連項目
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

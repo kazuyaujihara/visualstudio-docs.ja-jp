@@ -10,37 +10,37 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07962ff9e0f9371b1fc308a35600a6819602b4f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331712"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719449"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>ソース管理プラグインを検索するためのキーとして使用される文字列
-次の文字列は、詳細を確認するソース管理プラグイン レジストリにアクセスするためのキーです。
+次の文字列は、ソース管理プラグインに関する情報を検索するためにレジストリにアクセスするためのキーです。
 
- `STR_SCC_PROVIDER_REG_LOCATION`、 `STR_PROVIDERREGKEY`、 `STR_SCCPROVIDERPATH`、および`STR_SCCPROVIDERNAME`レジストリ キーまたは値が、ソース管理プラグインとして for Visual Studio DLL を登録するために使用されます。
+ `STR_SCC_PROVIDER_REG_LOCATION`、`STR_PROVIDERREGKEY`、`STR_SCCPROVIDERPATH`、および `STR_SCCPROVIDERNAME` は、Visual Studio のソース管理プラグインとして DLL を登録するために使用されるレジストリキーまたは値です。
 
- `SCC_PROJECTNAME_KEY`、 `SCC_PROJECTAUX_KEY`、 `SCC_KEY, SCC_FILE_SIGNATURE`、および`SCC_STATUS_FILE`、MSSCCPRJ の形式を記述するために使用します。SCC ファイルです。
+ `SCC_PROJECTNAME_KEY`、`SCC_PROJECTAUX_KEY`、`SCC_KEY, SCC_FILE_SIGNATURE`、および `SCC_STATUS_FILE` は、MSSCCPRJ.SCC の形式を説明するために使用されます。SCC ファイル。
 
-## <a name="string-keys-and-values"></a>文字列キーと値
+## <a name="string-keys-and-values"></a>文字列のキーと値
 
-|キー|値|
+|キー|[値]|
 |---------|-----------|
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
 |`STR_PROVIDERREGKEY`|ProviderRegKey|
 |`STR_SCCPROVIDERPATH`|SCCServerPath|
 |`STR_SCCPROVIDERNAME`|SCCServerName|
-|`STR_SCC_INI_SECTION`|ソース コード管理|
+|`STR_SCC_INI_SECTION`|ソースコード管理|
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|
-|`SCC_STATUS_FILE`|MSSCCPRJ します。SCC|
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC.SCC|
 |`SCC_KEY`|SCC|
-|`SCC_FILE_SIGNATURE`|コントロールのソース コード ファイル|
-|`SCC_NSE`|Namespace の拡張機能|
-|`SCC_NSE_PREFIX`|Protocal プレフィックス|
+|`SCC_FILE_SIGNATURE`|ソースコード管理ファイル|
+|`SCC_NSE`|名前空間の拡張|
+|`SCC_NSE_PREFIX`|廃棄プレフィックス|
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
 |`STR_SCCHELPCOLLECTION`|HelpCollection|
 |`STR_UI_LANGUAGE`|UILanguage|

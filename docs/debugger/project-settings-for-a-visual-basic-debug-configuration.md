@@ -1,5 +1,5 @@
 ---
-title: VB のプロジェクト設定の構成のデバッグ |Microsoft Docs
+title: VB デバッグ構成のプロジェクト設定 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,28 +23,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d948595dcf34bba32708f04e4bdf2f16ba1166
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408665"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730611"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Visual Basic デバッグ構成のプロジェクト設定
-「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、**[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。
+「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、 **[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。
 
 > [!WARNING]
-> このトピックは UWP アプリには適用されません。 参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> このトピックは UWP アプリには適用されません。 「[デバッグセッションを開始する (VB C#、 C++ 、XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) 」を参照してください。
 
 ### <a name="debug-tab"></a>[デバッグ] タブ
 
 | 設定 | 説明 |
 |------------------------------| - |
-| **構成** | アプリケーションをコンパイルするためのモードを設定します。 **[Active (Debug)]\(アクティブ (デバッグ)\)**、**[デバッグ]**、**[リリース]**、**[すべての構成]** から選択します。 |
-| **開始動作** | [デバッグ] メニューの [開始] を選択したときに発生するアクションを指定します。<br /><br /> -   既定値は **[プロジェクトの開始]** で、デバッグのスタートアップ プロジェクトを起動します。 <br />-   **[外部プログラムの開始]** では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロジェクトに含まれないプログラムを起動してアタッチできます。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。<br />-   **[ブラウザーを開始時に使用する URL]** は、Web アプリケーションのデバッグを有効にします。 |
+| **構成** | アプリケーションをコンパイルするためのモードを設定します。 **[Active (Debug)]\(アクティブ (デバッグ)\)** 、 **[デバッグ]** 、 **[リリース]** 、 **[すべての構成]** から選択します。 |
+| **開始動作** | [デバッグ] メニューの [開始] を選択したときに発生するアクションを指定します。<br /><br /> -   既定値は **[プロジェクトの開始]** で、デバッグのスタートアップ プロジェクトを起動します。 <br />-    **[外部プログラムの開始]** では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロジェクトに含まれないプログラムを起動してアタッチできます。 詳細については、「[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)」を参照してください。<br />-    **[ブラウザーを開始時に使用する URL]** は、Web アプリケーションのデバッグを有効にします。 |
 | **コマンド ライン引数** | デバッグするプログラムのコマンド ライン引数を指定します。 コマンド名は、[外部プログラムの開始] に指定されたプログラム名です。 [開始動作] を [URL の開始] に設定した場合、コマンド ライン引数は無視されます。 |
 | **作業ディレクトリ** | デバッグするプログラムの作業ディレクトリを指定します。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では、作業ディレクトリはアプリケーションが起動されるディレクトリです。 既定の作業ディレクトリは、現在の構成に応じて、\bin\Debug または \bin\Release です。 |
-| **リモート コンピューターの使用** | このチェック ボックスがオンの場合、リモート デバッグは有効です。 テキスト ボックスには、デバッグ用にアプリケーションを実行するリモート コンピューターの名前または [Msvsmon サーバー名](../debugger/remote-debugging.md)を入力できます。 リモート コンピューター上の EXE ファイルの場所は、[ビルド] タブの [出力パス] プロパティで指定します。また、EXE ファイルがリモート コンピューターの共有ディレクトリにあることも必要です。 |
+| **リモート コンピューターの使用** | このチェック ボックスがオンの場合、リモート デバッグは有効です。 テキスト ボックスには、デバッグ用にアプリケーションを実行するリモート コンピューターの名前または [Msvsmon サーバー名](../debugger/remote-debugging.md)を入力できます。 リモートコンピューター上の EXE の場所は、[ビルド] タブの [出力パス] プロパティで指定します。この場所は、リモートコンピューター上の共有可能なディレクトリである必要があります。 |
 | **Unmanaged code debugging (アンマネージド コード デバッグ)** | マネージド アプリケーションからネイティブ (アンマネージド) Win32 コードの呼び出しをデバッグできます。 これは、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトで [デバッガーのタイプ] に [混合] を選択するのと同じ効果があります。 |
 | **SQL Server デバッグ** | SQL Server データベース オブジェクトのデバッグを許可します。 |
 

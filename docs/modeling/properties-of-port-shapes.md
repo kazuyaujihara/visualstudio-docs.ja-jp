@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5fbe5dc38eaf029f0061c90c1ca37b1d9210b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60498c57e80b474bae8d5c320183442bbc4fcfd4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747444"
 ---
 # <a name="properties-of-port-shapes"></a>ポート シェイプのプロパティ
 ポート図形を使用して、生成されたデザイナーのドメインクラスを表すことができます。
@@ -53,6 +53,6 @@ ms.locfileid: "72658141"
 |固定ツールヒントのテキスト|固定のツールヒントに使用されるテキスト。|\<none>|
 |ヘルプ キーワード|この図形の F1 ヘルプのインデックスを作成するために使用されるキーワード。|\<none>|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

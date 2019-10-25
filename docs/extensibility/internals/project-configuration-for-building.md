@@ -1,5 +1,5 @@
 ---
-title: プロジェクトのビルドの構成 |Microsoft Docs
+title: ビルドのプロジェクト構成 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,49 +11,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd9464105d777c0d488175ad67e1481022caa2d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 956449d1207a9831f9dd04a707fffe4b9b5a4221
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328537"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726044"
 ---
 # <a name="project-configuration-for-building"></a>ビルドのためのプロジェクト構成
-特定のソリューションのソリューション構成の一覧は、ソリューション構成 ダイアログ ボックスによって管理されます。
+特定のソリューションのソリューション構成の一覧は、[ソリューション構成] ダイアログボックスによって管理されます。
 
- ユーザーは、それぞれ独自の一意の名前を持つその他のソリューション構成を作成できます。 ユーザーは、新しいソリューション構成を作成するときは、対応する名前が存在しない場合に、IDE が プロジェクト、またはデバッグに対応する構成名を既定値です。 ユーザーには、必要に応じて特定の要件を満たすために選択を変更できます。 この動作の唯一の例外は、プロジェクトに新しいソリューション構成の名前に一致する構成がサポートされている場合です。 たとえば、ソリューションには、Project1 と Project2 が含まれています。 Project1 では、デバッグ、製品版、および MyConfig1 のプロジェクト構成を持ちます。 Project2 では、デバッグ、製品版、および MyConfig2 のプロジェクト構成を持ちます。
+ ユーザーは、それぞれ独自の一意の名前を持つ追加のソリューション構成を作成できます。 ユーザーが新しいソリューション構成を作成すると、IDE では、プロジェクト内の対応する構成名が既定で設定されます。対応する名前が存在しない場合はデバッグが行われます。 ユーザーは、必要に応じて、特定の要件を満たすように選択を変更できます。 この動作の唯一の例外は、プロジェクトが新しいソリューション構成の名前と一致する構成をサポートしている場合です。 たとえば、Project1 と Project2 がソリューションに含まれているとします。 Project1 には、プロジェクト構成の Debug、Retail、および MyConfig1 があります。 Project2 には、プロジェクト構成の Debug、Retail、および MyConfig2 があります。
 
- ユーザーは、MyConfig2 という名前の新しいソリューション構成を作成する場合 Project1 は既定ではソリューションの構成のデバッグ構成をバインドします。 Project2 も、既定では、ソリューション構成にその MyConfig2 構成をバインドします。
+ ユーザーが MyConfig2 という名前の新しいソリューション構成を作成した場合、Project1 はそのデバッグ構成を既定でソリューション構成にバインドします。 また、Project2 では、MyConfig2 構成が既定でソリューション構成にバインドされます。
 
 > [!NOTE]
-> バインディングでは大文字です。
+> バインディングでは大文字と小文字が区別されません。
 
- ユーザーが選択すると、**複数選択**項目構成ドロップダウン リストで、環境には使用可能な構成の一覧を提供するダイアログ ボックスが表示されます。
+ ユーザーが [構成] ボックスの一覧で**複数の選択**項目を選択すると、使用可能な構成の一覧を示すダイアログボックスが表示されます。
 
- ![複数の構成](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")複数の構成
+ ![複数の構成](../../extensibility/internals/media/vsmultiplecfgs.gif "Vs乗算 Ecfgs")複数の構成
 
- このダイアログ ボックス内で、ユーザーは、1 つまたは複数の構成を選択できます。 選択すると、プロパティ ページ ダイアログ ボックスに表示されるプロパティの値は、選択した構成の値の積集合を反映します。
+ このダイアログボックスでは、ユーザーは1つまたは複数の構成を選択できます。 選択すると、[プロパティページ] ダイアログボックスに表示されるプロパティ値に、選択した構成の値の積集合が反映されます。
 
- 参照してください[ソリューション構成](../../extensibility/internals/solution-configuration.md)を追加し、ソリューションとプロジェクトの構成の名前を変更に関する情報についてはします。
+ ソリューションとプロジェクトの構成の追加と名前変更に関する詳細については、「[ソリューションの構成](../../extensibility/internals/solution-configuration.md)」を参照してください。
 
- プロジェクトの依存関係とビルドの順序は、独立したソリューション構成: ソリューション内のプロジェクトのすべての 1 つの依存関係ツリーを設定できますのみ、します。 ソリューションまたはプロジェクトを右クリックし、いずれかを選択すると、**プロジェクトの依存関係**または**プロジェクトのビルド順序**オプションが表示されます、**プロジェクトの依存関係** ダイアログ ボックス。 開くこともできます、**プロジェクト**メニュー。
+ プロジェクトの依存関係とビルドの順序は、ソリューション構成に依存しません。つまり、ソリューション内のすべてのプロジェクトに対して1つの依存関係ツリーしか設定できません。 ソリューションまたはプロジェクトを右クリックし、 **[プロジェクトの依存関係]** または **[プロジェクトのビルド順序]** オプションを選択すると、 **[プロジェクトの依存関係]** ダイアログボックスが開きます。 また、 **[プロジェクト]** メニューから開くこともできます。
 
  ![プロジェクトの依存関係](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")プロジェクトの依存関係
 
- プロジェクトの依存関係は、プロジェクトのビルド順序を決定します。 ダイアログ ボックスで、ビルドの順序 タブを使用すると、ソリューション内のプロジェクトはビルド、および依存関係 タブを使用して、ビルドの順序を変更するのには、正確な順序を表示できます。
+ プロジェクトの依存関係によって、プロジェクトのビルド順序が決まります。 ダイアログボックスの [ビルド順序] タブを使用すると、ソリューション内のプロジェクトがビルドされる正確な順序を表示し、[依存関係] タブを使用してビルド順序を変更できます。
 
 > [!NOTE]
-> 指定された明示的な依存関係のための環境で、チェック ボックスが選択されているが淡色表示の一覧でのプロジェクトが追加されました、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス、および変更することはできません。 たとえばからのプロジェクト参照を追加、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]別のプロジェクトにプロジェクト参照を削除することによってのみ削除できるビルドの依存関係を自動的に追加します。 依存関係のループの作成はそうために、プロジェクトがオフ、淡色表示のチェック ボックスを選択できません (Project2、時に依存する Project1 および Project1 に依存する Project2 など)、ビルドを停止するとします。
+> リスト内のチェックボックスがオンになっているが淡色表示になっているプロジェクトは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> または <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> インターフェイスによって指定された明示的な依存関係があるため、環境によって追加されており、変更することはできません。 たとえば、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] プロジェクトから別のプロジェクトにプロジェクト参照を追加すると、参照を削除することによってのみ削除できるビルド依存関係が自動的に追加されます。 チェックボックスが明確で淡色表示になっているプロジェクトは選択できません。これにより、依存関係ループ (Project1 は Project2 に依存し、Project2 は Project1 に依存します) が作成され、ビルドが停止します。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビルド プロセスには、一般的なコンパイルとリンクに関する単一のビルド コマンドで呼び出される操作が含まれます。 その他の 2 つのビルド プロセスもサポートされていることができます。 前回のビルドと構成の出力項目が変更された場合を決定する、最新の状態のチェックからすべての出力項目を削除するクリーン操作。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のビルドプロセスには、1つのビルドコマンドで呼び出される一般的なコンパイル操作とリンク操作が含まれます。 他にも2つのビルドプロセスがサポートされています。前のビルドからすべての出力項目を削除するためのクリーン操作と、構成内の出力項目が変更されたかどうかを確認するための最新のチェック。
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 対応するオブジェクトを返します<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>(から返された<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>)、ビルド プロセスを管理します。 構成を使用する呼び出しが発生しているときに、ビルド操作の状態を報告、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>、環境によって実装されるインターフェイスおよびビルド ステータス イベントに関心があるその他のオブジェクト。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> オブジェクトは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> から返された対応する <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> を返して、ビルドプロセスを管理します。 ビルド操作の発生中に状態を報告するために、構成は、環境およびビルドステータスイベントに関係するその他のオブジェクトによって実装されたインターフェイスである <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> を呼び出します。
 
- 作成されると、デバッガーの制御下で実行できるかどうかを判断する構成設定を使用できます。 構成の実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>デバッグをサポートします。
+ ビルドが完了すると、構成設定を使用して、デバッガーの制御下で実行できるかどうかを判断できます。 構成は、デバッグをサポートするために <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> を実装します。
 
- プロジェクトの依存関係を実装したら、オートメーション モデルでの依存関係をプログラムで操作できます。 呼び出す<xref:EnvDTE.SolutionBuild.BuildDependencies%2A>オートメーション モデル。 ソリューションのビルド マネージャーの構成とそのプロパティの直接操作できる使用可能な API レベルの VSIP インターフェイスはありません。
+ プロジェクトの依存関係を実装した後は、オートメーションモデルを使用して依存関係をプログラムで操作できます。 オートメーションモデルで <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> を呼び出します。 ソリューションビルドマネージャーの構成とそのプロパティを直接操作できる、使用可能な VSIP API レベルのインターフェイスはありません。
 
- さらに、プロジェクトの依存関係 ウィンドウのグリッドを行うことができます。 詳細については、次を参照してください。[プロパティ表示グリッド](../../extensibility/internals/properties-display-grid.md)します。
+ また、[プロジェクトの依存関係] ウィンドウにグリッドを指定することもできます。 詳細については、「 [Properties Display Grid](../../extensibility/internals/properties-display-grid.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435916"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745695"
 ---
 # <a name="com-and-activex-debugging"></a>COM および ActiveX のデバッグ
 ここでは、COM アプリケーションと ActiveX コントロールのデバッグに関するヒントを紹介します。
@@ -41,7 +41,7 @@ ms.locfileid: "72435916"
 ## <a name="related-sections"></a>関連項目
  [最初にデバッガーを確認する](../debugger/debugger-feature-tour.md)デバッグドキュメントのより大きなセクションへのリンクを示します。 情報には、デバッガーの新機能、設定と準備、ブレークポイント、例外処理、エディットコンティニュ、マネージコードのデバッグ、 C++プロジェクトのデバッグ、COM と ActiveX のデバッグ、dll のデバッグ、SQL のデバッグ、およびユーザーが含まれます。インターフェイス参照。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [COM の概要](/cpp/atl/introduction-to-com)

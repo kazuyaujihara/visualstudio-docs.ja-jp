@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639398"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806992"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>チュートリアル: n 層データアプリケーションの作成
 *n 層*データ アプリケーションとは、データにアクセスするアプリケーションの中でも、複数の論理レイヤー、つまり*層*に分離されるアプリケーションです。 アプリケーション コンポーネントをこのように別個の層に分離すると、アプリケーションの保守容易性とスケーラビリティが向上します。 これは、ソリューション全体を再設計しなくても 1 つの層に適用できる、新しい技術を簡単に導入できるようにすることで実現されます。 n 層アーキテクチャには、プレゼンテーション層、中間層、およびデータ層が存在します。 通常、中間層には、データ アクセス層、ビジネス ロジック層、および認証や検証などの共有コンポーネントが含まれます。 データ層には、リレーショナル データベースが含まれます。 通常、n 層アプリケーションでは、機密情報が中間層のデータ アクセス層に格納され、プレゼンテーション層にアクセスするエンド ユーザーから分離されます。 詳細については、「 [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)」を参照してください。
@@ -48,7 +48,7 @@ n 層アプリケーションで各層を分離する 1 つの方法は、アプ
 
 - データ テーブルにデータを読み込むコードを記述する。
 
-![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版について、次を参照してください[ビデオ操作方法: n 層データ アプリケーションの作成](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版について、次を参照してください[ビデオ操作方法: n 層データ アプリケーションの作成](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
 ## <a name="prerequisites"></a>必要条件
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。

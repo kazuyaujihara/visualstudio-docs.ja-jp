@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730324"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio でC++のプロジェクトのリモートデバッグ
 別のコンピューターで Visual Studio アプリケーションをデバッグするには、アプリを配置するコンピューターにリモートツールをインストールして実行し、Visual Studio からリモートコンピューターに接続するようにプロジェクトを構成してから、アプリをデプロイして実行します。
@@ -59,7 +59,7 @@ ms.locfileid: "72450427"
 
 2. ブレークポイントを、アプリケーション内の達しやすい任意の箇所 (たとえば、`CMainFrame::OnCreate` の開始時の **MainFrm.cpp**) に設定します。
 
-3. ソリューションエクスプローラーで、プロジェクトを右クリックし、[**プロパティ**] を選択します。 **[デバッグ]** タブを開きます。
+3. ソリューションエクスプローラーで、プロジェクトを右クリックし、 **[プロパティ]** を選択します。 **[デバッグ]** タブを開きます。
 
 4. **[起動するデバッガー]** を **[リモート Windows デバッガー]** に設定します。
 
@@ -79,13 +79,13 @@ ms.locfileid: "72450427"
 
     追加のファイルを展開する (オプション) 場合は、フォルダーが両方のコンピューターに存在している必要があります。
 
-6. ソリューションエクスプローラーで、ソリューションを右クリックし、[ **Configuration Manager**] を選択します。
+6. ソリューションエクスプローラーで、ソリューションを右クリックし、 **[Configuration Manager]** を選択します。
 
 7. **[デバッグ]** 構成の **[配置]** チェック ボックスをオンにします。
 
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
 
-8. デバッグを開始します (**[デバッグ] > [デバッグの開始]**、または **F5** キー)。
+8. デバッグを開始します ( **[デバッグ] > [デバッグの開始]** 、または **F5** キー)。
 
 9. 実行可能ファイルが、リモート コンピューターに自動的に配置されます。
 
@@ -96,17 +96,17 @@ ms.locfileid: "72450427"
 11. Visual Studio コンピューターで、実行がブレークポイントで停止したことを確認できるはずです。
 
     > [!TIP]
-    > また、これらのファイルは別の手順でも配置できます。 **ソリューション エクスプローラー**で、**[mymfc]** ノードを右クリックして **[配置]** を選択します。
+    > また、これらのファイルは別の手順でも配置できます。 **ソリューション エクスプローラー**で、 **[mymfc]** ノードを右クリックして **[配置]** を選択します。
 
-    アプリケーションで必要な非コードファイルがある場合は、[**リモート Windows デバッガー** ] ページで**配置する追加ファイル**で指定できます。
+    アプリケーションで必要な非コードファイルがある場合は、 **[リモート Windows デバッガー]** ページで**配置する追加ファイル**で指定できます。
 
-    または、ファイルをプロジェクトに追加し、各ファイルの [**プロパティ**] ページで [**コンテンツ**] プロパティを **[はい]** に設定します。 これらのファイルは、[**リモート Windows デバッガー** ] ページで指定した**配置ディレクトリ**にコピーされます。 また、**配置ディレクトリ**のサブフォルダーにファイルをコピーする必要がある場合は、**項目の種類**を [**ファイルのコピー** ] に変更し、追加のプロパティを指定することもできます。
+    または、ファイルをプロジェクトに追加し、各ファイルの **[プロパティ]** ページで **[コンテンツ]** プロパティを **[はい]** に設定します。 これらのファイルは、 **[リモート Windows デバッガー]** ページで指定した**配置ディレクトリ**にコピーされます。 また、**配置ディレクトリ**のサブフォルダーにファイルをコピーする必要がある場合は、**項目の種類**を **[ファイルのコピー]** に変更し、追加のプロパティを指定することもできます。
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>リモート シンボルを使用したデバッグのセットアップ
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 - [Windows ファイアウォールをリモート デバッグ用に構成する](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

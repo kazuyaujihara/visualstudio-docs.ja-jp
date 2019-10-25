@@ -1,5 +1,5 @@
 ---
-title: '方法: ビジュアライザーをインストール |Microsoft Docs'
+title: '方法: ビジュアライザーをインストールする |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389321"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733107"
 ---
-# <a name="how-to-install-a-visualizer"></a>方法: ビジュアライザーをインストールする
+# <a name="how-to-install-a-visualizer"></a>方法 : ビジュアライザーをインストールする
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
 
 > [!NOTE]
-> UWP アプリでは、標準のテキストだけでは、HTML、XML、および JSON ビジュアライザーがサポートされます。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
+> UWP アプリでは、標準のテキスト、HTML、XML、および JSON ビジュアライザーのみがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。
 
 ### <a name="to-install-a-visualizer"></a>ビジュアライザーをインストールするには
 
@@ -46,4 +46,4 @@ ms.locfileid: "63389321"
 
 ## <a name="see-also"></a>関連項目
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
-- [方法: ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [方法 : ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)

@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851758"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738070"
 ---
 # <a name="debugging-wcf-services"></a>WCF サービスのデバッグ
 ## <a name="in-this-section"></a>このセクションの内容
- [WCF デバッグの制約](../debugger/limitations-on-wcf-debugging.md)WCF デバッグの制限について説明します。
+ [WCF デバッグに関する制限事項](../debugger/limitations-on-wcf-debugging.md)WCF のデバッグに関する制限事項について説明します。
 
- [方法: WCF サービスにステップ イン](../debugger/how-to-step-into-wcf-services.md)WCF サービスにステップ インに対するデバッガーのサポートについて説明します。
+ [方法: WCF サービスにステップインする](../debugger/how-to-step-into-wcf-services.md)WCF サービスにステップインするためのデバッガーのサポートについて説明します。
 
- [方法: 自己ホスト型 WCF サービスをデバッグ](../debugger/how-to-debug-a-self-hosted-wcf-service.md)外部の IIS を実行する WCF サービスをデバッグする方法について説明します、または[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]開発サーバーです。
+ [方法: 自己ホスト型 WCF サービスをデバッグ](../debugger/how-to-debug-a-self-hosted-wcf-service.md)するIIS または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーの外部で実行される WCF サービスをデバッグする方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

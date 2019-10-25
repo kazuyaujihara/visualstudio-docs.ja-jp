@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4e0ccae38b79cf8efb4b7b426fb65ae909c5d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316591"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718656"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 要素 (Visual Studio テンプレート)
-項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、重要な場合に[ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)に設定されている`false`します。 ときに[ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)に設定されている`true`、項目テンプレートはすべてのプロジェクト タイプで使用できます。
+項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、 [showbydefault Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)が `false` に設定されている場合に重要です。 [ [Showbydefault Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md) ] が `true` に設定されている場合、すべてのプロジェクトの種類で項目テンプレートを使用できます。
 
- \<VSTemplate> \<TemplateData> \<TemplateGroupID>
+ \<VSTemplate > \<TemplateData > \<TemplateGroupID >
 
 ## <a name="syntax"></a>構文
 
@@ -55,7 +55,7 @@ ms.locfileid: "66316591"
 ## <a name="remarks"></a>Remarks
  `TemplateGroupID` は要素です。
 
- 値、`TemplateGroupID`要素は、プロジェクト システムの登録と使用 (hkey_local_machine \software\microsoft\visualstudio\\ *\<バージョン番号 >* \Projects\\)フィルター テンプレートに表示される、**新しい項目の追加** ダイアログ ボックス。
+ @No__t_0 要素の値は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version number >* \ Projects \\) と共に使用して、[**新しい項目の追加] に表示されるテンプレートをフィルター処理します。** ダイアログボックス。
 
 |Visual C++ の値|説明|
 |------------------------|-------------|

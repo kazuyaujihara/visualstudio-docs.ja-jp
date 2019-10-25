@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでの構文の色分け |Microsoft Docs
+title: 従来の言語サービスの構文色分け |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,44 +13,44 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 19561363affada05154e15142bd32a30a5d051d0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331133"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722829"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>従来の言語サービスでの構文の配色変更
-構文の色表示機能は、さまざまな色とスタイルのソース ファイルに表示されるプログラミング言語のさまざまな要素を原因となる機能です。 この機能をサポートするには、パーサーや構文の要素またはファイル内のトークンの種類を識別できるスキャナーを指定する必要があります。 多くの言語は、さまざまな方法でそれらを色分けして、キーワード、区切り記号 (丸かっこまたは中かっこを使用)、およびコメントを区別します。
+構文の色づけは、プログラミング言語のさまざまな要素を異なる色やスタイルのソースファイルに表示する機能です。 この機能をサポートするには、ファイル内の字句要素またはトークンの種類を識別できるパーサーまたはスキャナーを用意する必要があります。 多くの言語では、キーワード、区切り記号 (かっこや中かっこなど)、コメントを区別するためにさまざまな方法で色分けしています。
 
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 詳細については、「[エディターと言語サービスの拡張](../../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
 
 > [!NOTE]
-> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
 
 ## <a name="implementation"></a>実装
- Managed package framework (MPF) を含む色付けをサポートするために、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。 このクラスの対話、<xref:Microsoft.VisualStudio.Package.IScanner>トークンと色を決定します。 スキャナーの詳細については、次を参照してください。[レガシ言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)します。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、マークの色の情報を使用して、トークンの各文字と、ソース ファイルを表示するエディターにその情報を返します。
+ 色付けをサポートするために、managed package framework (MPF) には、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> インターフェイスを実装する <xref:Microsoft.VisualStudio.Package.Colorizer> クラスが含まれています。 このクラスは、トークンと色を決定するために <xref:Microsoft.VisualStudio.Package.IScanner> と対話します。 スキャナーの詳細については、「[従来の言語サービスパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)」を参照してください。 @No__t_0 クラスは、トークンの各文字に色情報をマークし、その情報をソースファイルを表示するエディターに返します。
 
- エディターに返されるカラー情報は、装飾が可能な項目の一覧にインデックスです。 各装飾が可能な項目は、太字など、色の値とフォントの属性のセットを指定しますまたは取り消し線。 エディターでは、言語サービスが使用できる既定の配色可能な項目のセットが用意されています。 行う必要があるすべては、適切な色のトークンの種類ごとのインデックスを指定します。 ただし、トークンの場合、カスタムの配色可能な項目と指定したインデックスのセットを提供し、既定の一覧ではなくの配色可能な項目の一覧を参照できます。 設定する必要があります、`RequestStockColors`を 0 にレジストリ エントリ (を指定しないか、`RequestStockColors`エントリすべてに) カスタム カラーをサポートするためにします。 名前付きパラメーターを使用には、このレジストリ エントリを設定することができます、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>ユーザー定義の属性。 言語サービスを登録して、そのオプションの設定の詳細については、次を参照してください。[従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md)します。
+ エディターに返されるカラー情報は、装飾項目の一覧のインデックスです。 各装飾項目は、カラー値と、太字や取り消し線などのフォント属性のセットを指定します。 このエディターには、言語サービスで使用できる既定の装飾項目のセットが用意されています。 必要なのは、トークンの種類ごとに適切な色のインデックスを指定することだけです。 ただし、カスタム装飾項目のセットと、トークン用に提供するインデックスを指定し、既定のリストではなく、独自の装飾項目のリストを参照することができます。 また、カスタムの色をサポートするには、`RequestStockColors` レジストリエントリを 0 (または `RequestStockColors` エントリをまったく指定しない) に設定する必要があります。 このレジストリエントリは、名前付きパラメーターを使用して <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> ユーザー定義属性に設定できます。 言語サービスの登録とそのオプションの設定の詳細については、「[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください。
 
 ## <a name="custom-colorable-items"></a>カスタムの配色可能な項目
- オーバーライドする必要があります、独自のカスタムの配色可能な項目を指定する、<xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A>と<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 最初のメソッドは、言語サービスをサポートするカスタムの配色可能な項目の数を返し、2 つ目は、インデックスを使用してカスタムの装飾が可能な項目を取得します。 カスタムの配色可能な項目の既定の一覧を作成します。 言語サービスのコンス トラクター、行う必要があるすべてが各装飾が可能な項目を名前を指定します。 Visual Studio では、ユーザーがさまざまな配色可能な項目を選択する場合に自動的に処理します。 この名前に表示されます、**フォントおよび色**プロパティ ページで、**オプション** ダイアログ ボックス (Visual Studio から使用可能な**ツール**メニュー) し、この名前を決定します。ユーザーがオーバーライドされる色。 ユーザーの選択肢では、レジストリ内のキャッシュに格納され、色の名前でアクセスします。 **フォントおよび色**プロパティ ページではすべての色の名前をアルファベット順が表示される前に各色の名前、言語名で追加して、カスタム カラーをグループ化することができますので、"**TestLanguage-コメント**「と」**TestLanguage-キーワード**"。 または、配色可能な項目の種類によってグループ化することができます"**コメント (TestLanguage)** 「と」**キーワード (TestLanguage)** "。 言語名でグループ化をお勧めします。
+ 独自のカスタム装飾項目を指定するには、<xref:Microsoft.VisualStudio.Package.LanguageService> クラスの <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> および <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> メソッドをオーバーライドする必要があります。 最初のメソッドは、言語サービスがサポートするカスタム装飾項目の数を返します。2番目のメソッドは、インデックスを使用してカスタム装飾項目を取得します。 カスタム装飾項目の既定の一覧を作成します。 言語サービスのコンストラクターでは、各装飾項目に名前を指定するだけで済みます。 ユーザーが別の装飾項目のセットを選択した場合は、Visual Studio によって自動的に処理されます。 この名前は、 **[オプション]** ダイアログボックス (Visual Studio の **[ツール]** メニューから利用可能) の **[フォントおよび色]** プロパティページに表示されます。この名前によって、ユーザーが上書きした色が決まります。 ユーザーの選択は、レジストリのキャッシュに格納され、色の名前によってアクセスされます。 **[フォントおよび色]** プロパティページには、すべての色名がアルファベット順に一覧表示されるため、各色の名前の前に使用する言語名を使用して、カスタムの色をグループ化できます。たとえば、"**Testlanguage-Comment**" や "**Testlanguage-Keyword**" などです。 または、「**Comment (testlanguage)** 」と「**Keyword (testlanguage)** 」と入力して、装飾項目をグループ化することもできます。 言語名でグループ化することをお勧めします。
 
 > [!CAUTION]
-> 既存の装飾が可能な項目の名前の競合を回避する装飾が可能な項目の名前に言語名を含めることを強くお勧めします。
+> 既存の装飾項目名との競合を避けるために、装飾項目名に言語名を含めることを強くお勧めします。
 
 > [!NOTE]
-> 開発中に、色のいずれかの名前を変更する場合は、Visual Studio が初めてアクセスされた色を作成するキャッシュをリセットする必要があります。 実行して行うことができます、**実験用ハイブをリセット**Visual Studio SDK のプログラム メニューからコマンド。
+> 開発中にいずれかの色の名前を変更した場合は、最初に色にアクセスしたときに Visual Studio によって作成されたキャッシュをリセットする必要があります。 これを行うには、Visual Studio SDK の プログラム メニューから **実験用ハイブのリセット** コマンドを実行します。
 
- 装飾が可能な項目の一覧の最初の項目が参照されていないことに注意してください。 Visual Studio は、常に、既定のテキストの色とその項目の属性を提供します。 これに対処する最も簡単な方法では、最初の項目としてプレース ホルダーの装飾が可能な項目を指定します。
+ 装飾項目の一覧の最初の項目が参照されないことに注意してください。 Visual Studio では、常に、その項目の既定のテキストの色と属性が提供されます。 これを処理する最も簡単な方法は、プレースホルダー装飾 item を最初の項目として指定することです。
 
-### <a name="high-color-colorable-items"></a>High Color の配色可能な項目
- 装飾が可能な項目は、24 ビットまたは高の色値もサポートできます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>インターフェイス。 MPF<xref:Microsoft.VisualStudio.Package.ColorableItem>クラスでサポート、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>インターフェイスと 24 ビット カラーと通常の色のコンス トラクターで指定されます。 詳細については、<xref:Microsoft.VisualStudio.Package.ColorableItem> クラスのトピックを参照してください。 次の例では、キーワードおよびコメントの 24 ビット カラーを設定する方法を示します。 24 ビット カラーがユーザーのデスクトップでサポートされている場合、24 ビット カラーを使用します。それ以外の場合、通常のテキストの色が使用されます。
+### <a name="high-color-colorable-items"></a>High Color 装飾 Items
+ 装飾項目では、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> インターフェイスを使用して、24ビットまたは高色の値をサポートすることもできます。 MPF <xref:Microsoft.VisualStudio.Package.ColorableItem> クラスは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> インターフェイスをサポートし、24ビットの色は通常の色と共にコンストラクターで指定されます。 詳細については、<xref:Microsoft.VisualStudio.Package.ColorableItem> クラスのトピックを参照してください。 次の例は、キーワードとコメントに24ビットの色を設定する方法を示しています。 24ビット色は、ユーザーのデスクトップで24ビットカラーがサポートされている場合に使用されます。それ以外の場合は、通常のテキストの色が使用されます。
 
- ただし、これらは、言語の既定の色ユーザーは、好きなように、これらの色を変更できます。
+ これらは言語の既定の色であることに注意してください。ユーザーは、必要に応じてこれらの色を変更できます。
 
 ### <a name="example"></a>例
- この例を宣言して設定を使用してカスタムの配色可能な項目の配列の 1 つの方法を示しています、<xref:Microsoft.VisualStudio.Package.ColorableItem>クラス。 この例では、24 ビット カラーを使用して、キーワードおよびコメントの色を設定します。
+ この例では、<xref:Microsoft.VisualStudio.Package.ColorableItem> クラスを使用して、カスタム装飾項目の配列を宣言して設定する方法の1つを示します。 この例では、24ビットカラーを使用して、キーワードとコメントの色を設定します。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -95,16 +95,16 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="the-colorizer-class-and-the-scanner"></a>Colorizer クラスとスキャナー
- 基本<xref:Microsoft.VisualStudio.Package.LanguageService>クラスには、<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A>メソッドその instantiantes、<xref:Microsoft.VisualStudio.Package.Colorizer>クラス。 返される、スキャナー、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>にメソッドが渡される、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスのコンス トラクター。
+ 基本 <xref:Microsoft.VisualStudio.Package.LanguageService> クラスには、<xref:Microsoft.VisualStudio.Package.Colorizer> クラスを instantiantes する <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> メソッドがあります。 @No__t_0 メソッドから返されたスキャナーは、<xref:Microsoft.VisualStudio.Package.Colorizer> クラスコンストラクターに渡されます。
 
- 実装する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>バージョンのメソッド、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、スキャナーを使用してすべてのトークンの色の情報を取得します。
+ @No__t_0 メソッドは、<xref:Microsoft.VisualStudio.Package.LanguageService> クラスの独自のバージョンで実装する必要があります。 @No__t_0 クラスは、スキャナーを使用して、すべてのトークンカラー情報を取得します。
 
- 設定する必要があります、スキャナー、<xref:Microsoft.VisualStudio.Package.TokenInfo>構造体のすべてのトークンに検索します。 この構造体は、スパン、トークンが占める、色のインデックスを使用するように情報を格納、トークン、およびトークンのトリガーの種類 (を参照してください<xref:Microsoft.VisualStudio.Package.TokenTriggers>)。 色づけの span と色のインデックスに必要な<xref:Microsoft.VisualStudio.Package.Colorizer>クラス。
+ スキャナーは、検出されたすべてのトークンの <xref:Microsoft.VisualStudio.Package.TokenInfo> 構造を設定する必要があります。 この構造体には、トークンが占有するスパン、使用する色インデックス、トークンの種類、トークントリガー (「<xref:Microsoft.VisualStudio.Package.TokenTriggers>」を参照) などの情報が含まれます。 @No__t_0 クラスによる色付けに必要なのは、span と color インデックスだけです。
 
- 格納されている色のインデックス、<xref:Microsoft.VisualStudio.Package.TokenInfo>構造体は値では通常、<xref:Microsoft.VisualStudio.Package.TokenColor>列挙体は、キーワードと演算子などのさまざまな言語要素に対応する名前付きのインデックスを多数提供します。 項目が含まれる、カスタムの配色可能な項目の一覧と一致する場合、<xref:Microsoft.VisualStudio.Package.TokenColor>列挙体をだけ使用列挙色としての各トークンです。 ただし、追加の配色可能なアイテムがある場合、またはその順序で既存の値を使用したくない、ニーズに合うよう、そのリストに該当するインデックスを返すカスタムの配色可能な項目一覧を配置できます。 インデックスをキャストするようにしてください、<xref:Microsoft.VisualStudio.Package.TokenColor>で格納するときに、<xref:Microsoft.VisualStudio.Package.TokenInfo>構造体。[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]インデックスのみが表示されます。
+ @No__t_0 構造体に格納されている色のインデックスは、通常、<xref:Microsoft.VisualStudio.Package.TokenColor> 列挙の値です。これにより、キーワードや演算子など、さまざまな言語要素に対応する名前付きインデックスがいくつか提供されます。 カスタム装飾 items リストが <xref:Microsoft.VisualStudio.Package.TokenColor> 列挙に示されている項目と一致する場合は、列挙体を各トークンの色としてのみ使用できます。 ただし、追加の装飾項目がある場合、または既存の値をその順序で使用しない場合は、必要に応じてカスタム装飾項目リストを配置し、そのリストに適切なインデックスを返すことができます。 @No__t_1 構造に格納する場合は、インデックスを <xref:Microsoft.VisualStudio.Package.TokenColor> にキャストするだけで済みます。 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] には、インデックスのみが表示されます。
 
 ### <a name="example"></a>例
- 次の例は、スキャナーが 3 つのトークンの種類を識別する方法を示しています。 数字、句読点、および識別子 (数または区切り記号ではないもの)。 この例では、例示を目的としてのみが、包括的なパーサーとスキャナーの実装を表していません。 あることを前提としていますが、`Lexer`クラス、`GetNextToken()`文字列を返すメソッド。
+ 次の例では、スキャナーが3種類のトークンを識別する方法を示します。数値、句読点、識別子 (数字または句読点ではないもの) です。 この例は、説明を目的としたものであり、包括的なパーサーとスキャナーの実装を表しているわけではありません。 これは、文字列を返す `GetNextToken()` メソッドを持つ `Lexer` クラスがあることを前提としています。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

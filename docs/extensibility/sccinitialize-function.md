@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a855ecbc65211234b29808fc9e4cf256cd6b25f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 552ec06a4eabf55872358fc8e5d731e47c1eb6ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353584"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721181"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 関数
-この関数は、ソース管理プラグインを初期化し、機能と統合開発環境 (IDE) に制限を提供します。
+この関数は、ソース管理プラグインを初期化し、統合開発環境 (IDE: integrated development environment) に機能と制限を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,56 +40,56 @@ SCCRTN SccInitialize (
 #### <a name="parameters"></a>パラメーター
  `ppvContext`
 
-[in]ソース管理プラグインは、ここでそのコンテキストの構造体へのポインターを配置できます。
+からソース管理プラグインは、コンテキスト構造へのポインターをここに配置できます。
 
  `hWnd`
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
 
  `lpCallerName`
 
-[in]ソース管理プラグインを呼び出し元のプログラムの名前。
+からソース管理プラグインを呼び出すプログラムの名前。
 
  `lpSccName`
 
-[入力、出力]ソース管理プラグインが独自の名前を格納するバッファー (超えない`SCC_NAME_LEN`)。
+[入力、出力]ソース管理プラグインが独自の名前を格納するバッファー (`SCC_NAME_LEN` を超えないようにする)。
 
  `lpSccCaps`
 
-[out]ソース管理プラグインの機能フラグを返します。
+入出力ソース管理プラグインの機能フラグを返します。
 
  `lpAuxPathLabel`
 
-[入力、出力]ソース管理プラグインが説明する文字列を格納するバッファー、`lpAuxProjPath`パラメーターによって返される、 [SccOpenProject](../extensibility/sccopenproject-function.md)と[SccGetProjPath](../extensibility/sccgetprojpath-function.md) (超えない`SCC_AUXLABEL_LEN`)。
+[入力、出力][Sccopenproject](../extensibility/sccopenproject-function.md)によって返された `lpAuxProjPath` パラメーターを記述する文字列と[Sccgetprojpath](../extensibility/sccgetprojpath-function.md) (`SCC_AUXLABEL_LEN` を超えることはできません) をソース管理プラグインが配置するバッファー。
 
  `pnCheckoutCommentLen`
 
-[out]チェック アウト コメントの最大許容長を返します。
+入出力チェックアウトコメントに許容される最大長を返します。
 
  `pnCommentLen`
 
-[out]その他のコメントの最大許容長を返します。
+入出力他のコメントに許容される最大長を返します。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|ソース コントロールの初期化に成功しました。|
+|SCC_OK|ソース管理の初期化に成功しました。|
 |SCC_E_INITIALIZEFAILED|システムを初期化できませんでした。|
-|SCC_E_NOTAUTHORIZED|指定された操作を実行できません。|
-|SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムは初期化されませんでした。|
+|SCC_E_NOTAUTHORIZED|ユーザーは、指定された操作を実行できません。|
+|SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムが初期化されませんでした。|
 
 ## <a name="remarks"></a>Remarks
- IDE は、ソース管理プラグインが初めて読み込まれるときに、この関数を呼び出します。 プラグインに、呼び出し元の名前など、特定の情報を渡す IDE できます。 IDE のコメントと機能、プラグインの許容される最大長などの特定の情報も取得バックアップします。
+ IDE は、ソース管理プラグインを最初に読み込むときに、この関数を呼び出します。 これにより、IDE が呼び出し元の名前などの特定の情報をプラグインに渡すことができます。 また、IDE は、コメントの最大許容長やプラグインの機能など、特定の情報を取得します。
 
- `ppvContext`を指す、`NULL`ポインター。 ソース管理プラグインが構造体を使用して独自の割り当てし、その構造内にポインターを格納`ppvContext`します。 IDE はこのにポインターを渡す他のすべての VSSCI API 関数、プラグインとプラグインの複数のインスタンスをサポートするためにグローバル ストレージを使用しなくても利用可能なコンテキスト情報を指定することができます。 ときにこの構造体を解放する必要があります、 [SccUninitialize](../extensibility/sccuninitialize-function.md)が呼び出されます。
+ @No__t_0 が `NULL` ポインターを指しています。 ソース管理プラグインは、独自に使用する構造体を割り当て、その構造体へのポインターを `ppvContext` に格納できます。 IDE は、このポインターを他のすべての VSSCI API 関数に渡します。これにより、プラグインは、グローバルストレージに頼らずに、プラグインの複数のインスタンスをサポートすることなく、コンテキスト情報を使用できるようになります。 [Sccuninitialize](../extensibility/sccuninitialize-function.md)の解除が呼び出されたときに、この構造体の割り当てを解除する必要があります。
 
- `lpCallerName`と`lpSccName`パラメーター名を交換するには、IDE とソース管理プラグインを有効にします。 これらの名前は、複数のインスタンスを区別するためだけに使用可能性がありますか、メニューまたはダイアログ ボックスに実際に表示することがあります。
+ @No__t_0 パラメーターと `lpSccName` パラメーターを使用すると、IDE とソース管理プラグインで名前を交換できます。 これらの名前は、複数のインスタンスを区別するためだけに使用できます。また、実際にはメニューやダイアログボックスに表示される場合もあります。
 
- `lpAuxPathLabel`パラメーターは、ソリューション ファイルに格納されているプラグインへの呼び出しで、ソース コントロールに渡されるを補助プロジェクト パスを識別するために、コメントとして使用する文字列、 [SccOpenProject](../extensibility/sccopenproject-function.md)します。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 文字列を使用して"SourceSafe プロジェクト:";その他のソース管理プラグインは、この特定の文字列を使用して控える必要があります。
+ @No__t_0 パラメーターは、ソリューションファイルに格納され、 [Sccopenproject](../extensibility/sccopenproject-function.md)への呼び出しでソース管理プラグインに渡される補助プロジェクトパスを識別するためのコメントとして使用される文字列です。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] は、"SourceSafe プロジェクト:" という文字列を使用します。その他のソース管理プラグインでは、この特定の文字列を使用しないようにする必要があります。
 
- `lpSccCaps`パラメーターは、ソース管理プラグインのプラグインの機能を示すビットフラグを格納する場所。 (機能ビットフラグの完全な一覧を参照してください。[機能フラグ](../extensibility/capability-flags.md))。 たとえば、SCC_CAP_TEXTOUT ビット プラグインは、機能の設定、呼び出し元が提供のコールバック関数に結果を記述するプラグインのプランのかどうか。 バージョン コントロールの結果のウィンドウを作成する IDE この通知はします。
+ @No__t_0 パラメーターを指定すると、プラグインの機能を示す bitflags を格納するための場所がソース管理プラグインに与えられます。 (機能のビットフラグの完全な一覧については、「[機能フラグ](../extensibility/capability-flags.md)」を参照してください)。 たとえば、プラグインが呼び出し元から提供されるコールバック関数に結果を書き込むことを計画している場合、プラグインは機能ビット SCC_CAP_TEXTOUT を設定します。 これにより、IDE がバージョン管理の結果のウィンドウを作成するように通知されます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

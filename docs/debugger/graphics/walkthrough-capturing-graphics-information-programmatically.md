@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 187328e4ef4d1de0c865120400f84e65385160fc
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252888"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734770"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>チュートリアル: プログラムによるグラフィックス情報のキャプチャ
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断を使用すると、Direct3D アプリケーションからプログラムによってグラフィックス情報をキャプチャできます。
@@ -23,7 +23,7 @@ ms.locfileid: "71252888"
 
 - アプリケーションがまったくレンダリングしないとき (DirectCompute を使用して計算を実行するときなど)、プログラムによるキャプチャを開始します。
 
-- レンダリング`CaptureCurrentFrame`の問題を手動テストで予測およびキャプチャするのが困難であるが、実行時にアプリの状態に関する情報を使用してプログラムで予測できる場合は、を呼び出します。
+- レンダリングの問題が発生した場合 `CaptureCurrentFrame`when の呼び出しは、手動テストで予測およびキャプチャするのは困難ですが、実行時にアプリの状態に関する情報を使用してプログラムで予測することができます。
 
 ## <a name="CaptureDX11_2"></a> Windows 10 のプログラムによるキャプチャ
 このチュートリアルのパートでは、Windows 10 で DirectX 11.2 API を使用するアプリケーションでのプログラムによるキャプチャについて説明します。ここでは、堅牢なキャプチャ方法を使用します。
@@ -37,7 +37,7 @@ ms.locfileid: "71252888"
 - グラフィックス情報をキャプチャする
 
 > [!NOTE]
-> プログラムによるキャプチャの以前の実装で[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、キャプチャ機能を提供するために Remote Tools for Visual Studio が使用されていました。
+> プログラムによるキャプチャの以前の実装では、キャプチャ機能を提供するために [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の Remote Tools for Visual Studio に依存していました。
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>プログラムによるキャプチャを使用するためにアプリケーションを準備する
 アプリケーションでプログラムによるキャプチャを使用するには、必要なヘッダーをインクルードすることが必要です。 これらのヘッダーは、Windows 10 の SDK の一部です。
@@ -63,7 +63,7 @@ ms.locfileid: "71252888"
 DirectX 11.2 からグラフィックス情報をキャプチャする前に、DXGI デバッグ インターフェイスを取得する必要があります。
 
 > [!IMPORTANT]
-> プログラムによるキャプチャを使用する場合は、引き続きグラフィックス診断 (の[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]場合は Alt + F5 キー) または[コマンドラインキャプチャツール](command-line-capture-tool.md)の下でアプリを実行する必要があります。
+> プログラムによるキャプチャを使用する場合は、引き続き、グラフィックス診断 ([!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の Alt + F5 キー) または[コマンドラインキャプチャツール](command-line-capture-tool.md)でアプリを実行する必要があります。
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis インターフェイスを取得するには
 
@@ -74,7 +74,7 @@ DirectX 11.2 からグラフィックス情報をキャプチャする前に、D
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  使用する前に有効`HRESULT`なインターフェイスを取得するために、 [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1)によって返されるを必ず確認してください。
+  使用する前に有効なインターフェイスを取得するには、 [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1)によって返される `HRESULT` を必ず確認してください。
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -84,7 +84,7 @@ DirectX 11.2 からグラフィックス情報をキャプチャする前に、D
   ```
 
   > [!NOTE]
-  > が`DXGIGetDebugInterface1` ( `E_NOINTERFACE` [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) を返す場合は、アプリがグラフィックス診断で実行されていることを確認してください (で Alt + F5 キーを押します)。`error: E_NOINTERFACE No such interface supported`
+  > @No__t_0 によって `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`) が返された場合は、アプリがグラフィックス診断の下で実行されていることを確認します ([!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] で Alt + F5 キーを押します)。
 
 ### <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 これで、正しい `IDXGraphicsAnalysis` インターフェイスを取得できたので、 `BeginCapture` および `EndCapture` を使用してグラフィックス情報をキャプチャできます。
@@ -107,14 +107,14 @@ DirectX 11.2 からグラフィックス情報をキャプチャする前に、D
     ...
     ```
 
-- を`EndCapture`呼び出した後、グラフィックスオブジェクトを解放します。
+- @No__t_0 の呼び出しの後、グラフィックスオブジェクトを解放します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 このチュートリアルでは、プログラムでグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。
 
 - グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 「[概要](overview-of-visual-studio-graphics-diagnostics.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [チュートリアル: グラフィックス情報をキャプチャする](walkthrough-capturing-graphics-information.md)
+- [チュートリアル: グラフィックス情報のキャプチャ](walkthrough-capturing-graphics-information.md)
 - [Capturing Graphics Information](capturing-graphics-information.md)
 - [コマンド ライン キャプチャ ツール](command-line-capture-tool.md)

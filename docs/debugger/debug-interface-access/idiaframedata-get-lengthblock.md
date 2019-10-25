@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_lengthblock |Microsoft Docs
+title: 'IDiaFrameData:: get_lengthBlock |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 468e3bee84c7312def06c32cb411c00526ba3b1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5b175c7e51e5ee8aaab29788f71219091d26f0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832862"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743586"
 ---
-# <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
-フレームによって説明されているコードのブロックのバイト単位の長さを取得します。
+# <a name="idiaframedataget_lengthblock"></a>IDiaFrameData::get_lengthBlock
+フレームによって記述されたコードブロックの長さをバイト単位で取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_lengthBlock ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]フレームのコードのバイト数を返します。
+入出力フレーム内のコードのバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドによって返される値がプログラム文字列の解釈で通常使用される (を参照してください、 [idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)プログラム文字列の定義のメソッド)。
+ このメソッドによって返される値は、通常、プログラム文字列の解釈に使用されます (プログラム文字列の定義については、 [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)メソッドを参照してください)。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

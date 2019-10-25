@@ -1,5 +1,5 @@
 ---
-title: エラー :Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
+title: 'エラー : Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850655"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737565"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>エラー :Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
-このエラー メッセージは、Visual Studio がリモート コンピューター上で Visual Studio リモート デバッグ モニターの適切なインスタンスを見つけることができなかったことを示します。 リモート デバッグを行うには、Visual Studio リモート デバッグ モニターをインストールする必要があります。 ダウンロードして、リモート デバッガー セットアップについては、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>エラー : Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
+このエラー メッセージは、Visual Studio がリモート コンピューター上で Visual Studio リモート デバッグ モニターの適切なインスタンスを見つけることができなかったことを示します。 リモート デバッグを行うには、Visual Studio リモート デバッグ モニターをインストールする必要があります。 リモートデバッガーのダウンロードと設定の詳細については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
 
 > [!IMPORTANT]
-> 製品のバグによりこのメッセージを受信した場合は、次のようにしてください。 [Visual Studio にこの問題を報告](../ide/how-to-report-a-problem-with-visual-studio.md)します。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。
+> 製品のバグが原因でこのメッセージが表示されたと思われる場合は、[この問題を Visual Studio に報告](../ide/how-to-report-a-problem-with-visual-studio.md)してください。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Visual Studio 2010 以前でのデバッグ中にこのメッセージが表示される
- 使用している Visual Studio のバージョンが Visual Studio 2010 以前の場合、ファイルとプリンターの共有が有効でないときに、このエラーを受け取る可能性があります。 この問題の詳細については、Visual Studio 2010 バージョンのドキュメントを参照してください。[エラー: Microsoft Visual Studio リモート デバッグ モニター (MSVSMON します。EXE) は、リモート コンピューター上で実行するのには表示されません。-Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
+ 使用している Visual Studio のバージョンが Visual Studio 2010 以前の場合、ファイルとプリンターの共有が有効でないときに、このエラーを受け取る可能性があります。 この問題について詳しくは、Visual Studio 2010 バージョンのドキュメント「[Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. (エラー: Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))」(Visual Studio 2010) をご覧ください
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>ローカルでのデバッグ中にこのメッセージが表示される
  ローカルでのデバッグ中にこのメッセージが表示される場合、ウイルス対策ソフトウェアまたはサード パーティ製のファイアウォールに原因がある可能性があります。 Visual Studio は 32 ビット アプリケーションであるため、リモート デバッガーの 64 ビット バージョンを使用して 64 ビット アプリケーションをデバッグします。 2 つのプロセスは、ローカル コンピューター内のローカル ネットワークを使用して通信します。 コンピューターからトラフィックが送信されることはありませんが、サード パーティのセキュリティ ソフトウェアが通信を妨げる可能性があります。
@@ -55,7 +55,7 @@ ms.locfileid: "62850655"
 
 - リモート デバッガーのアクセス許可に該当ユーザーを追加します (リモート デバッガーのウィンドウで **[ツール] > [アクセス許可]** を選択)。
 
-- 前の手順の方法を使用できない場合は、すべてのユーザーにリモート デバッグの実行を許可します。 リモート デバッガー ウィンドウで、**[ツール] > [オプション]** ダイアログに移動します。 **[認証なし]** を選択すると、 **[すべてのユーザーにデバッグを許可する]** をチェックできるようになります。 ただし、このオプションの使用は、他に選択肢がない場合、またはプライベート ネットワーク上で作業している場合に限る必要があります。
+- 前の手順の方法を使用できない場合は、すべてのユーザーにリモート デバッグの実行を許可します。 リモート デバッガー ウィンドウで、 **[ツール] > [オプション]** ダイアログに移動します。 **[認証なし]** を選択すると、 **[すべてのユーザーにデバッグを許可する]** をチェックできるようになります。 ただし、このオプションの使用は、他に選択肢がない場合、またはプライベート ネットワーク上で作業している場合に限る必要があります。
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>リモート コンピューター上のファイアウォールがリモート デバッガーへの着信接続を許可しない
  Visual Studio とリモート デバッガーの間の通信を許可するように、Visual Studio のコンピューター上のファイアウォールとリモート コンピューター上のファイアウォールを構成する必要があります。 リモート デバッガーが使用するポートについては、「 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)」を参照してください。 Windows ファイアウォールを構成する方法については、「 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)」を参照してください。
@@ -64,15 +64,15 @@ ms.locfileid: "62850655"
  Windows のウイルス対策ソフトウェアがリモート デバッガーの接続を許可しても、その他のサード パーティ製のウイルス対策ソフトウェアがそれらの接続をブロックする可能性があります。 これらの接続を許可する方法については、ウイルス対策ソフトウェアのマニュアルを参照してください。
 
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>ネットワーク セキュリティ ポリシーによってリモート コンピューターと Visual Studio の間の通信がブロックされる
- ネットワーク セキュリティを調べ、通信をブロックしていないことを確認します。 Windows ネットワークのセキュリティ ポリシーの詳細については、次を参照してください。[セキュリティ ポリシー設定](/windows/device-security/security-policy-settings/security-policy-settings)します。
+ ネットワーク セキュリティを調べ、通信をブロックしていないことを確認します。 Windows ネットワークセキュリティポリシーの詳細については、「[セキュリティポリシー設定](/windows/device-security/security-policy-settings/security-policy-settings)」を参照してください。
 
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>ネットワークがビジー状態でリモート デバッグをサポートできない
  リモート デバッグを別の時点で実行するか、ネットワークでの作業を別の時点にスケジュールし直す必要がある場合があります。
 
 ## <a name="more-help"></a>その他のヘルプ
- コマンド ライン スイッチを含む、複数のリモート デバッガーのヘルプを取得する次のようにクリックします。**ヘルプ > 使用状況**リモート デバッガー ウィンドウにします。 次の行をコピーして web ページが表示できる開いていない場合、**ファイル エクスプ ローラー**ウィンドウ。 (を交換する必要がある\<Visual Studio インストール ディレクトリ > Visual Studio のインストールの場所を使用します)。
+ コマンドラインスイッチなど、リモートデバッガーのヘルプを表示するには、リモートデバッガーウィンドウで **[ヘルプ > の使用状況]** をクリックします。 開いていない場合は、次の行を**ファイルエクスプローラー**ウィンドウにコピーして、web ページを表示できます。 (@No__t_0Visual Studio インストールディレクトリ > を Visual Studio インストールの場所に置き換える必要があります)。
 
- res://*\<Visual Studio インストール ディレクトリ >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<Visual Studio のインストールディレクトリ >* \ COMMON7 \ IDE \ リモート %2 0 デバッガー \ x64 \ ccmsetup.exe/help .htm
 
 ## <a name="see-also"></a>関連項目
 - [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4a9e7ba92b9f48cf22999d53ecf6c7b7d832ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e68516a798bcd4d1437ab504c09b4cc529eb889
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316948"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719425"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 要素 (Visual Studio テンプレート)
-指定するかどうか、**別のファイルにコードを配置**チェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。
+**[新しい項目の追加]** ダイアログボックスで **[別のファイルにコードを配置]** する チェックボックスをオンにするかどうかを指定します。
 
  \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
 
@@ -45,22 +45,22 @@ ms.locfileid: "66316948"
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、いずれかでどのように表示を定義、**新しいプロジェクト**または**新しい項目の** ダイアログ ボックス。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、 **[新しいプロジェクト]** ダイアログボックスまたは **[新しい項目]** ダイアログボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**別のファイルにコードを配置**チェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。
+ テキストは `true` または `false` のいずれかである必要があります。 **[新しい項目の追加]** ダイアログボックスで **[別のファイルにコードを配置]** する チェックボックスがオンになっているかどうかを示します。
 
 ## <a name="remarks"></a>Remarks
- `SupportsCodeSeparation` は、省略可能な要素です。 既定値は `false` です。
+ `SupportsCodeSeparation` は、省略可能な要素です。 既定値は `false`です。
 
- `SupportsCodeSeparation`要素は、Web 項目テンプレートの使用のみ。
+ @No__t_0 要素は、Web 項目テンプレートでのみ使用できます。
 
- コードの分離、または分離コード ページ モデルでは、1 つのファイルと、別のファイルのプログラミング コードにマークアップを格納することができます。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 他の .NET 言語は、このモデルを使用します。
+ コードの分離または分離コードページモデルを使用すると、マークアップを1つのファイルに保持し、プログラミングコードを別のファイルに保持できます。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] およびその他の .NET 言語では、このモデルを使用します。
 
 ## <a name="example"></a>例
- 次の例を表示するように指定します、**別のファイルにコードを配置**オプション。
+ 次の例では、[**コードを別のファイルに配置**する] オプションを指定します。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

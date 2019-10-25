@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738133"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備: コンソールプロジェクトC#( C++、、Visual Basic F#、)
 
@@ -57,7 +57,7 @@ ms.locfileid: "72431471"
 
   Visual Studio からコンソール アプリケーションを起動すると、 **[コンソール]** ウィンドウが Visual Studio ウィンドウの背後に表示される場合があります。 Visual Studio からコンソール アプリケーションを起動しようとしても、何も起こらない場合は、Visual Studio ウィンドウを移動してみてください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)
 - [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
 - [プロジェクトのデバッグC++の準備](../debugger/debugging-preparation-visual-cpp-project-types.md)

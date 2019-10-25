@@ -1,5 +1,5 @@
 ---
-title: '方法: スクリプト ドキュメントを表示 |Microsoft Docs'
+title: '方法: スクリプトドキュメントを表示する |Microsoft Docs'
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906078"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731861"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>方法: スクリプト ドキュメントを表示 (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>方法: スクリプトドキュメントを表示する (JavaScript)
 
-サーバー側スクリプト ファイルは、ソリューション エクスプ ローラーで表示されます。 クライアント側スクリプト ファイルは、デバッグ モードまたは中断モードのときにのみ表示されます。 クライアント側スクリプト ファイルに表示されます、**スクリプト ドキュメント**ノード。
+サーバー側のスクリプトファイルはソリューションエクスプローラーに表示されます。 クライアント側スクリプト ファイルは、デバッグ モードまたは中断モードのときにのみ表示されます。 クライアント側のスクリプトファイルは、**スクリプトドキュメント**ノードに表示されます。
 
 > [!NOTE]
-> 前へ[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]サーバー側スクリプトから生成されたクライアント側スクリプト ファイルは、スクリプト エクスプ ローラー ウィンドウに表示します。
+> @No__t_0 以前は、サーバー側スクリプトから生成されたクライアント側スクリプトファイルは [スクリプトエクスプローラー] ウィンドウに表示されていました。
 
 ### <a name="to-view-a-server-side-script-document"></a>サーバー側スクリプト ドキュメントを表示するには
 
-1. **ソリューション エクスプローラー**で、**[\<Website Pathname>]** ノードを開きます。
+1. **ソリューション エクスプローラー**で、 **[\<Website Pathname>]** ノードを開きます。
 
 2. 表示するスクリプト ファイルをダブルクリックします。
 
@@ -39,7 +39,7 @@ ms.locfileid: "62906078"
 
 ### <a name="to-view-a-client-side-script-document"></a>クライアント側スクリプト ドキュメントを表示するには
 
-1. **ソリューション エクスプローラー**で、**[スクリプト ドキュメント]** ノードを開きます。
+1. **ソリューション エクスプローラー**で、 **[スクリプト ドキュメント]** ノードを開きます。
 
 2. 表示するスクリプト ファイルをダブルクリックします。
 

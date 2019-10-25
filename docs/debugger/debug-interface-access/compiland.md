@@ -13,29 +13,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb4ca05374c86912cd48956262645b80fb14e40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745440"
 ---
 # <a name="compiland"></a>コンパイル単位
-1 つである`SymTagCompiland`の .exe ファイルにリンクされた各コンパイル単位シンボルします。 コンパイル単位の情報を使用したシンボルに分割されて、`SymTagCompiland`タグで、追加のコンパイル単位シンボルを読み込むことがなく取得できます、および記号を`SymTagCompilandDetails`タグで、追加のシンボルを読み込む必要があります。
+.Exe ファイルにリンクされているコンパイル単位ごとに1つの `SymTagCompiland` シンボルがあります。 コンパイル単位情報は `SymTagCompiland` タグを持つシンボル間で分割されます。これは追加のコンパイル単位シンボルを読み込まずに取得できます。また、`SymTagCompilandDetails` タグを持つシンボルは、追加のシンボルを読み込む必要がある場合があります。
 
 ## <a name="properties"></a>プロパティ
- 次の表では、この記号の型の有効なプロパティを示します。
+ 次の表は、このシンボルの種類に対して有効なプロパティを示しています。
 
-|プロパティ|データの種類|説明|
+|property|データの種類|説明|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` エディット コンティニュは、コンパイルで有効化された場合。|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|.Exe ファイルの記号。|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|構文の親のシンボルの ID。|
-|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|オブジェクトがから読み込まれたライブラリまたはオブジェクトのファイルの名前。|
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|コンパイル単位のオブジェクト ファイルのファイル名。|
-|[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|ソース ファイルの名前。|
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|コンパイル時にエディットコンティニュが有効になった場合は `TRUE` します。|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|.Exe ファイルのシンボル。|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|構文の親シンボルの ID。|
+|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|オブジェクトが読み込まれたライブラリまたはオブジェクトファイルの名前。|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|コンパイル単位のオブジェクトファイルのファイル名。|
+|[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|ソースファイルの名前。|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|シンボルのインデックス ID。|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返します`SymTagCompiland`(の 1 つ、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)値)。|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|@No__t_0 ( [Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md)値のいずれか) を返します。|
 
 ## <a name="see-also"></a>関連項目
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1b958b9226a0a8ded0f886af81efc3b1b5aaf9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f8d097f76bcdb419be56d7fd1501fb93e872b1b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670743"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748235"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>モデルおよびエクスポート ダイアグラムの共有
 Visual Studio では、いくつかの方法でモデルと図を同僚と共有できます。
@@ -49,6 +49,6 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
 |[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|図の一部を PowerPoint や Word などのアプリケーションにコピーすることも、図 を XPS ファイルに出力することもできます。|
 |[アーキテクチャの分析およびモデリング](../modeling/analyze-and-model-your-architecture.md)|モデルと図の概要。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)

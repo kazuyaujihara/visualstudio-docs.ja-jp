@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70413c2e446f8ed226a58eb8ddfe62ede4a1d61f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ff7299868b96aedb7cc096b4e939a0f8015aeb8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720775"
 ---
 # <a name="sccremove-function"></a>SccRemove 関数
 この関数は、ソース管理システムからファイルを削除します。
@@ -39,48 +39,48 @@ SCCRTN SccRemove(
 #### <a name="parameters"></a>パラメーター
  pvContext
 
-[in]ソース管理プラグイン コンテキスト構造体。
+からソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
 
  nFiles
 
-[in]指定されたファイルの数、`lpFileNames`配列。
+から@No__t_0 配列に指定されたファイルの数。
 
- lpFileNames
+ lpFileNames 名
 
-[in]削除するファイルの完全修飾のローカル パス名の配列。
+から削除するファイルの完全修飾ローカルパス名の配列。
 
  lpComment
 
-[in]削除される各ファイルに適用されるコメントです。
+から削除する各ファイルに適用されるコメント。
 
- 方法は限られて
+ 限ら
 
-[in]コマンドのフラグ (未使用)。
+からコマンドフラグ (未使用)。
 
  pvOptions
 
-[in]ソース管理プラグインに固有のオプション。
+からソース管理プラグイン固有のオプション。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|アンインストールが正常に完了しました。|
-|SCC_E_FILENOTCONTROLLED|選択したファイルはソース管理下ではありません。|
-|SCC_E_OPNOTSUPPORTED|ソース管理システムでは、この操作はサポートしません。|
-|SCC_E_ISCHECKEDOUT|ユーザーが現在チェック アウトを持つために、ファイルを削除できません。|
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。|
-|SCC_E_NOTAUTHORIZED|この操作を実行できません。|
+|SCC_OK|削除に成功しました。|
+|SCC_E_FILENOTCONTROLLED|選択されたファイルはソース管理下にありません。|
+|SCC_E_OPNOTSUPPORTED|ソース管理システムでは、この操作はサポートされていません。|
+|SCC_E_ISCHECKEDOUT|現在、ユーザーがチェックアウトしているため、ファイルを削除できません。|
+|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。|
+|SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。ファイルは削除されませんでした。|
-|SCC_I_OPERATIONCANCELED|操作が完了する前に取り消されました。|
+|SCC_I_OPERATIONCANCELED|操作は完了前に取り消されました。|
 
 ## <a name="remarks"></a>Remarks
- この関数は、ソース管理システムからファイルを削除しますが、ユーザーのローカル ハード ドライブからは削除されません。
+ この関数は、ソース管理システムからファイルを削除しますが、ユーザーのローカルハードドライブからは削除しません。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

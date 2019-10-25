@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_countLiveRanges |Microsoft Docs
+title: 'IDiaSymbol:: get_countLiveRanges |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837464"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740752"
 ---
-# <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-ローカル シンボルに関連付けられている有効なアドレス範囲の数を取得します。
+# <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
+ローカルシンボルに関連付けられている有効なアドレス範囲の数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,17 +33,17 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>パラメーター
  `count`
 
-[out]アドレス範囲の数を返します。
+入出力アドレス範囲の数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="requirements"></a>必要条件
- ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ ヘッダー: Dia2
 
- ライブラリ: diaguids.lib
+ ライブラリ: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

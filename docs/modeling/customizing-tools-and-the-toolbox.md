@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e3a791fc53f7a1e9ff093cc46e3d73003417cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653953"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747603"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>ツールおよびツールボックスのカスタマイズ
 
@@ -232,7 +232,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  カスタムコードを使用して "hard" 制約を適用しますが、ユーザーが一時的に無効な接続を行うことができるかどうかを検討する必要があります。 その必要がある場合、制約を変更して、ユーザーが変更内容を保存しようとするまで、接続が検証されないようにすることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [要素作成処理および要素移動処理のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)
 - [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)

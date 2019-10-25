@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7d17b90ab195e41a5b3dacb3b2ab4985dce245
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448751"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807062"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>SAL 注釈を使って C/C++ のコード障害を減らす方法
 SAL は、Microsoft ソースコード注釈言語です。 ソースコードの注釈を使用すると、コードの意図を明確にすることができます。 これらの注釈を使用すると、自動化された静的分析ツールでコードをより正確に分析することができ、誤検知や誤否定も大幅に減少します。
@@ -57,7 +57,7 @@ SAL は、Microsoft ソースコード注釈言語です。 ソースコード�
      SAL 注釈の使用方法を示す例を示します。 また、一般的な落とし穴についても説明します。
 
 ## <a name="related-resources"></a>関連資料
-[コード分析チームのブログ](http://go.microsoft.com/fwlink/?LinkId=251197)
+[コード分析チームのブログ](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>参照
-[Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)
+[Windows ドライバーの SAL 2.0 注釈](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)

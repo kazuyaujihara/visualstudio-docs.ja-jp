@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706a20a00792e7c67b39535322fbd2530f2a2ad3
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588990"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736705"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー ： Web サーバーでデバッグを開始できません
 
@@ -161,5 +161,5 @@ IIS 構成が問題の原因になっていない場合は、次の手順を試�
 
     デバッガーで動作するアプリを取得できない場合は、基本的な ASP.NET アプリケーションをサーバー上でローカルに作成し、基本的なアプリのデバッグを試してみてください。 (既定の ASP.NET MVC テンプレートを使用することもできます)。基本的なアプリをデバッグできる場合は、2つの構成の違いを特定するのに役立ちます。 URL 書き換えルールなど、web.config ファイルの設定の相違点を探します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

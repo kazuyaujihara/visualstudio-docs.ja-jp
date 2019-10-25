@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51173fcf2e8f6785b61bfd348178a59b5fb933dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654019"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748458"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>ファイル格納処理および XML シリアル化処理をカスタマイズする
 
@@ -306,7 +306,7 @@ Xml プロパティノードは、クラスノードの下にあります。
 |ロール要素名|ソースロールから派生した XML 要素の名前を指定します。 既定値は、ロールのプロパティ名です。|
 |完全なフォームを使用する|True の場合、各ターゲット要素またはモニカーは、リレーションシップを表す XML ノードで囲まれます。 リレーションシップに独自のドメインプロパティがある場合は、これを true に設定する必要があります。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プログラム コードにおけるモデル内の移動およびモデルの更新](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)

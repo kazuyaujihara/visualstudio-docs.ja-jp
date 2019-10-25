@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: debf263fa18d2a6af8e95ee959002686540e2c06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44fcc45191d6c1e42256a503e98f753b54535e5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658203"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748317"
 ---
 # <a name="properties-of-domain-properties"></a>ドメイン プロパティのプロパティ
 *ドメインプロパティ*は、値を保持できるモデル要素の機能です。 たとえば、`Person` ドメイン クラスに `Name` プロパティと `BirthDate` プロパティを指定することができます。 DSL 定義で、ドメイン プロパティは図のドメイン クラス ボックスと DSL エクスプローラーのドメイン クラスの下に一覧表示されます。 詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
@@ -48,6 +48,6 @@ ms.locfileid: "72658203"
 |**Setter アクセス修飾子**|Setter 用のアクセス修飾子。 これはプログラム コードがプロパティを設定できる範囲を制御します。|`public`|
 |**Type**|プロパティの種類。 使用可能な種類の一覧に追加するには、DSL エクスプローラーで DSL のルートを右クリックし、 **[外部型の追加]** をクリックします。|`String`|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

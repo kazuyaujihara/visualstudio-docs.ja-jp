@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44be5f88542d867d8baf25fbc3cdd3c060231d7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0864522c079ff1f694072fec3147d006cd2ce43d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833404"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743894"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
-データ ソースに含まれるさまざまなシンボルを列挙します。
+データソースに格納されているさまざまなシンボルを列挙します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,23 +29,23 @@ IDiaEnumSymbols : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表は、メソッドの`IDiaEnumSymbols`します。
+次の表は、`IDiaEnumSymbols` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|取得、`IEnumVARIANT Interface`この列挙子のバージョン。|
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|この列挙子の `IEnumVARIANT Interface` バージョンを取得します。|
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|シンボルの数を取得します。|
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|インデックスを使用して、シンボルを取得します。|
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|指定された数の列挙体シーケンス内のシンボルを取得します。|
-|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|指定された数の列挙体シーケンス内のシンボルをスキップします。|
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|インデックスを使ってシンボルを取得します。|
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|列挙シーケンス内の指定された数のシンボルを取得します。|
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|列挙シーケンス内の指定された数のシンボルをスキップします。|
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 
 ## <a name="remarks"></a>Remarks
-このインターフェイスは、記号などの特定の種類でグループ化され記号`SymTagUDT`(ユーザー定義型) または`SymTagBaseClass`します。 アドレスでグループ化されたシンボルを使用するには、使用、 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)インターフェイス。
+このインターフェイスは、特定の種類のシンボル (`SymTagUDT` (ユーザー定義型) や `SymTagBaseClass` など) でグループ化されたシンボルを提供します。 アドレスによってグループ化されたシンボルを操作するには、 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)インターフェイスを使用します。
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-次のメソッドを呼び出すことによって、このインターフェイスを取得します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+このインターフェイスを取得するには、次のメソッドを呼び出します。
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -54,10 +54,10 @@ IDiaEnumSymbols : IUnknown
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
 
 ## <a name="example"></a>例
-この例は、取得する方法を示します、`IDiaEnumSymbols`インターフェイスし、一覧のユーザー定義型 (Udt) をその列挙体を使用します。
+この例では、`IDiaEnumSymbols` インターフェイスを取得し、その列挙体を使用してユーザー定義型 (Udt) を一覧表示する方法を示します。
 
 > [!NOTE]
-> `CDiaBSTR` ラップするクラスは、`BSTR`し、自動的に処理をインスタンス化がスコープから外れたときに、文字列を解放します。
+> `CDiaBSTR` は、`BSTR` をラップし、インスタンス化がスコープ外になったときに文字列の解放を自動的に処理するクラスです。
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)
@@ -85,12 +85,12 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 }
 ```
 
-## <a name="requirements"></a>必要条件
-ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: Dia2
 
-ライブラリ: diaguids.lib
+ライブラリ: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

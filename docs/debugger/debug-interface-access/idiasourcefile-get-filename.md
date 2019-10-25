@@ -1,5 +1,5 @@
 ---
-title: Idiasourcefile::get_filename |Microsoft Docs
+title: 'IDiaSourceFile:: get_fileName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e871570ad49a4efe2df320f98fe56b5372c6bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838351"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741807"
 ---
-# <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
-ソース ファイル名を取得します。
+# <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
+ソースファイル名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ HRESULT get_fileName ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]ソース ファイル名を返します。
+入出力ソースファイル名を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

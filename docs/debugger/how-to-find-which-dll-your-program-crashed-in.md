@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラム クラッシュが発生している DLL 確認 |Microsoft Docs'
+title: '方法: プログラムがクラッシュした DLL を検索する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,24 +22,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733269"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>方法: プログラムでクラッシュしている DLL を検索 (C#、 C++、Visual Basic、 F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>方法: プログラムがクラッシュした DLL を検索するC#( C++、、Visual Basic F#、)
 
- システム DLL または他の開発者が作成したコードを呼び出す部分でアプリケーションがクラッシュした場合、クラッシュが発生した DLL を確認する必要があります。 プログラム外の DLL でクラッシュが発生している場合は、**[モジュール]** ウィンドウを使用してその場所を確認できます。
+ システム DLL または他の開発者が作成したコードを呼び出す部分でアプリケーションがクラッシュした場合、クラッシュが発生した DLL を確認する必要があります。 プログラム外の DLL でクラッシュが発生している場合は、 **[モジュール]** ウィンドウを使用してその場所を確認できます。
 
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>[モジュール] ウィンドウを使ってクラッシュの発生場所を確認するには
 
 1. クラッシュが発生したアドレスをメモします。
 
-    アドレスが、エラー メッセージに表示されない場合は、別の方法を使用して DLL を特定する必要があります。 システム DLL を疑いがある場合は、[シンボルを読み込む](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)デバッグするときに、Microsoft シンボル サーバーからです。 それ以外の場合、する必要があります[ダンプ ファイル作成](../debugger/using-dump-files.md)で情報を代わりにヒープします。 さまざまな[ツール](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)ダンプ ファイルを作成します。
+    アドレスがエラーメッセージに表示されない場合は、別の方法を使用して DLL を識別することが必要になる場合があります。 システム DLL を使用していると思われる場合は、デバッグ時に Microsoft シンボルサーバーから[シンボルを読み込む](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)ことができます。 それ以外の場合は、代わりにヒープ情報を含む[ダンプファイルを作成](../debugger/using-dump-files.md)する必要があります。 ダンプファイルを作成するためのさまざまな[ツール](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)が用意されています。
 
-2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[モジュール]** をクリックします。
+2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、 **[モジュール]** をクリックします。
 
 3. **[モジュール]** ウィンドウの **[アドレス]** 列に注目します。 必要に応じて、スクロール バーを使用します。
 
@@ -51,4 +51,4 @@ ms.locfileid: "62894048"
 
 ## <a name="see-also"></a>関連項目
 - [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)
-- [方法: [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)
+- [方法 : [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)

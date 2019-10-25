@@ -69,8 +69,8 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 
 |       言語        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
-| 中国語 (簡体字、中国)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| 中国語 (繁体字) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+| 簡体中国語  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| 繁体中国語 | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
 |         チェコ語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
 |        ドイツ語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
 |        英語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |

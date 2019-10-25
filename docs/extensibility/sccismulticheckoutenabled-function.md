@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93cbefe716b46b3dd3fe481447612c5c7f65daa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8fb5439ac68200ba1a3bbf3af665595528173e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353568"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721080"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 関数
-この関数は、ソース管理プラグインのファイルに複数のチェック アウトできるかどうかを確認します。
+この関数は、ソース管理プラグインがファイルに対して複数のチェックアウトを許可しているかどうかを確認します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,22 +34,22 @@ SCCRTN SccIsMultiCheckoutEnabled(
 #### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグイン コンテキスト構造体。
+からソース管理プラグインのコンテキスト構造。
 
  pbMultiCheckout
 
-[out]このプロジェクト (0 以外の場合は複数のチェック アウトがサポートされている) 複数のチェック アウトが有効になっているかどうかを指定します。
+入出力このプロジェクトに対して複数のチェックアウトを有効にするかどうかを指定します (0 以外の場合は複数のチェックアウトがサポートされます)。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|チェックは成功しました。|
+|SCC_OK|チェックに成功しました。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
 ## <a name="remarks"></a>Remarks
- 2 つのチェックかどうかファイル チェック アウトできる同時に 1 つ以上のユーザーを決定するようになります。 最初に、ソース管理システムでは、複数のチェック アウトをサポートする必要があります。 ソース管理プラグインは、初期化中にこの機能を指定することによって指定できます、`SCC_CAP_MULTICHECKOUT`します。 その後、2 番目のチェック、IDE は、現在のプロジェクトが複数のチェック アウトをサポートしているかどうかを判断するには、この関数を呼び出します。 成功した場合、プラグインを返しますがコードし、設定の選択されたプロジェクトは、複数のチェック アウトがサポートされている場合、`pbMultiCheckout`に 0 以外の場合 (`TRUE`) または`FALSE`します。
+ IDE は2つのチェックを行い、複数のユーザーが同時にファイルをチェックアウトできるかどうかを判断します。 まず、ソース管理システムが複数のチェックアウトをサポートしている必要があります。 ソース管理プラグインは、`SCC_CAP_MULTICHECKOUT` を指定することにより、初期化中にこの機能を指定できます。 その後、2番目のチェックとして、IDE はこの関数を呼び出して、現在のプロジェクトが複数のチェックアウトをサポートしているかどうかを判断します。 選択したプロジェクトで複数のチェックアウトがサポートされている場合、プラグインは成功コードを返し、`pbMultiCheckout` を0以外 (`TRUE`) または `FALSE` に設定します。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

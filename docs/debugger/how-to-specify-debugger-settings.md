@@ -1,5 +1,5 @@
 ---
-title: '方法: デバッガーの設定の指定 |Microsoft Docs'
+title: '方法: デバッガー設定を指定する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714965"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732710"
 ---
-# <a name="how-to-specify-debugger-settings"></a>方法: デバッガー設定を指定する
+# <a name="how-to-specify-debugger-settings"></a>方法 : デバッガー設定を指定する
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、変数の表示方法、特定の警告を表示するかどうか、ブレークポイントの設定方法、実行中のプログラムを中断した場合の影響など、デバッガーの動作のさまざまな設定を指定できます。 デバッガーの設定は **[オプション]** ダイアログ ボックスで指定します。
 
 ### <a name="to-set-debugger-options"></a>デバッガー オプションを設定するには
@@ -37,7 +37,7 @@ ms.locfileid: "66714965"
 
 3. **[デバッグ]** フォルダーで、目的のオプションのカテゴリをクリックします。
 
-     最も一般的なオプションは、 **[全般]** カテゴリに配置されています。 詳細については、[[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。
+     最も一般的なオプションは、 **[全般]** カテゴリに配置されています。 詳細については、「 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)」を参照してください。
 
 4. 目的のオプションをオンまたはオフにします。 F1 キーを押すとオプションについてのヘルプが表示されます。
 

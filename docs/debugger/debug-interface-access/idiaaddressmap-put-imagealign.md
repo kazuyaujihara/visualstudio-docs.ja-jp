@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07bdd71300ed485862a4a95f1f9cbc06b32772
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2b1a6bf037dc87d84fab21622571158fb0682f60
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402649"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745047"
 ---
-# <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
+# <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
 イメージの配置を設定します。
 
 ## <a name="syntax"></a>構文
@@ -33,18 +33,18 @@ HRESULT put_imageAlign ( 
 #### <a name="parameters"></a>パラメーター
  NewVal
 
-[in]実行可能ファイルの新しいイメージの配置の値。
+から実行可能ファイルの新しいイメージの配置値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>Remarks
- イメージ (読み込まれて実行可能ファイル) は、指定されたメモリ境界に揃えて配置されます。 この配置は、コンパイルとリンク時のオプションと現在のシステム アーキテクチャによって、影響を受けることができます。 イメージの配置は、バイト境界には常にします。 次のイメージの配置の値は有効です。1、2、4、8、16、32、および 64 バイトの境界。
+ イメージ (読み込まれた実行可能ファイル) は、指定されたメモリ境界に合わせて調整されます。 このアラインメントは、現在のシステムアーキテクチャと、コンパイルおよびリンク時のオプションによって影響を受ける可能性があります。 イメージの配置は、常にバイト境界上にあります。 次の画像の配置値は有効です: 1、2、4、8、16、32、および64バイト境界。
 
- 現在のイメージの配置への呼び出しで取得できる、 [idiaaddressmap::get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)メソッド。
+ 現在のイメージの配置は、 [IDiaAddressMap:: get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)メソッドの呼び出しを使用して取得できます。
 
 > [!NOTE]
-> このメソッドを呼び出すことが時間によっては、イメージが既に読み込まれて。 `put_imageAlign`メソッドは通常新しい配置が必要ですし、イメージを移動または変更されている場合に使用します。
+> イメージは、このメソッドを呼び出すことができる時間によって既に読み込まれています。 @No__t_0 メソッドは、通常、イメージが移動または変更され、新しい配置が必要な場合に使用されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

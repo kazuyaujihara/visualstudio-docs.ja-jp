@@ -1,5 +1,5 @@
 ﻿---
-title: Idiasymbol::get_thisadjust |Microsoft Docs
+title: 'IDiaSymbol:: get_thisAdjust |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfdfb07f0ea20cf13a56eed7f380e3ec195fe52
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e92a18ce7b9b7206121d1ad514217f79d2f8628a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800784"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739154"
 ---
-# <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-論理取得`this`調整メソッドの権限を保持します。
+# <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
+メソッドの論理 `this` adjustor を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,16 +33,16 @@ HRESULT get_thisAdjust ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します、論理`this`調整メソッドの権限を保持します。
+入出力メソッドの論理 `this` adjustor を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
- 複数の継承によってメソッド自体が、真を計算する必要があります`this`値のオフセット位置に追加することによって`this`します。
+ 複数の継承ケースでは、メソッド自体が `this` にオフセットを追加することによって true `this` 値を計算する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

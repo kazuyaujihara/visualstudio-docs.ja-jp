@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe60767fe61de5c49718f25281d9b547305bbe84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653794"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747559"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>イベント ハンドラーによって変更内容がモデル外に反映される
 
@@ -184,7 +184,7 @@ private static void AlbumTitleAdjuster(object sender,
 |トランザクションコミット済み||
 |トランザクションロールバック||
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)
 - [サンプルコード: サーキットダイアグラム](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft .NET Framework 2.0 または 3.0 を使用する場合にのみサポートは、混合モードのデバッグ |Microsoft Docs
+title: 混合モードのデバッグは、Microsoft .NET Framework 2.0 または 3.0 | を使用する場合にのみサポートされます。Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 827d3c5fcc625601019d6cbf61cdbf7c771b63b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730916"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>混合モード デバッグは、Microsoft .NET Framework 2.0 以上を使用している場合にのみサポートされます
-2.0 より前のバージョンの Microsoft .NET Framework では、64 ビット プロセスの混合モード デバッグはサポートされません。 つまり、デバッグ中にマネージド コードからネイティブ コードにステップ インすることや、ネイティブ コードからマネージド コードにステップ インすることはできません。
+2\.0 より前のバージョンの Microsoft .NET Framework では、64 ビット プロセスの混合モード デバッグはサポートされません。 つまり、デバッグ中にマネージド コードからネイティブ コードにステップ インすることや、ネイティブ コードからマネージド コードにステップ インすることはできません。
 
  この問題を回避するには、次の操作を実行します。
 
@@ -37,11 +37,11 @@ ms.locfileid: "62929852"
 
 1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
 
-2. プロパティ ページで、**[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
+2. プロパティ ページで、 **[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
 
 3. **[プラットフォーム]** をクリックして、プラットフォームの一覧から **[x86]** を選択します。
 
-     Visual Basic コンパイラおよび C# コンパイラの既定では、どの CPU 上でも実行されるコードが生成されます。 64 ビット コンピューター上では、これらのバイナリは 64 ビット プロセスとして実行されます。 32 ビット プロセスとして実行するには、**[Any CPU]** でなく **[Win32]** を選択する必要があります。
+     Visual Basic コンパイラおよび C# コンパイラの既定では、どの CPU 上でも実行されるコードが生成されます。 64 ビット コンピューター上では、これらのバイナリは 64 ビット プロセスとして実行されます。 32 ビット プロセスとして実行するには、 **[Any CPU]** でなく **[Win32]** を選択する必要があります。
 
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>オペレーティング システムを 32 ビットに変更するには (C/C++)
 
@@ -51,7 +51,7 @@ ms.locfileid: "62929852"
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- 参照してください[SQL デバッグ セットアップ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))します。
+- 「 [SQL デバッグ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))のセットアップ」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

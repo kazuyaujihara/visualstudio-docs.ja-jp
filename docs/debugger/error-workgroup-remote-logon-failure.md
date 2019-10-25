@@ -1,5 +1,5 @@
 ---
-title: エラー :ワークグループ リモート ログオン エラー |Microsoft Docs
+title: 'エラー: ワークグループリモートログオンの失敗 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399229"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736258"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>エラー :ワークグループ リモート ログオン エラー
+# <a name="error-workgroup-remote-logon-failure"></a>エラー : ワークグループ リモート ログオン エラー
 このエラーには、次のメッセージが表示されます。
 
  ログオン エラー: 不明なユーザー名、または不適切なパスワードです。
@@ -53,11 +53,11 @@ ms.locfileid: "63399229"
 
 3. **[ユーザー権利の割り当て]** をクリックします。
 
-4. **[ポリシー]** 列の **[プログラムのデバッグ]** をダブルクリックして、**[ローカル セキュリティ ポリシーの設定]** ダイアログ ボックスに現在のローカル グループ ポリシーの割り当てを表示します。
+4. **[ポリシー]** 列の **[プログラムのデバッグ]** をダブルクリックして、 **[ローカル セキュリティ ポリシーの設定]** ダイアログ ボックスに現在のローカル グループ ポリシーの割り当てを表示します。
 
-     ![ローカル セキュリティ ポリシーのユーザー権限](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
+     ![ローカルセキュリティポリシーのユーザー権利](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
-5. 新しいユーザーを追加するには、**[ユーザーまたはグループの追加]** をクリックします。
+5. 新しいユーザーを追加するには、 **[ユーザーまたはグループの追加]** をクリックします。
 
 ### <a name="to-change-the-sharing-and-security-model"></a>共有とセキュリティ モデルを変更するには
 
@@ -67,11 +67,11 @@ ms.locfileid: "63399229"
 
 3. **[セキュリティ オプション]** をクリックします。
 
-4. **ポリシー**列をダブルクリックして**ネットワーク アクセス。ローカル アカウントの共有とセキュリティ モデル**します。
+4. **[ポリシー]** 列で、 **[ネットワーク アクセス: ローカル アカウントの共有とセキュリティ モデル]** をダブルクリックします。
 
-5. **ネットワーク アクセス。ローカル アカウントの共有とセキュリティ モデル** ダイアログ ボックスに、値を変更**クラシック - ローカル ユーザー自身として認証** をクリックし、**適用**ボタンをクリックします。
+5. **[ネットワーク アクセス: 共有とローカル アカウントのセキュリティ モデル]** ダイアログ ボックスで、値を **[クラシック - ローカル ユーザーがローカル ユーザーとして認証する]** に変更し、 **[適用]** をクリックします。
 
-     ![ローカル セキュリティ ポリシーのセキュリティ オプション](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![ローカルセキュリティポリシーのセキュリティオプション](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>関連項目
 - [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

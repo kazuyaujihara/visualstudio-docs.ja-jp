@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_lengthprolog |Microsoft Docs
+title: 'IDiaFrameData:: get_lengthProlog |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad162a8a29bd9432424ce64d00e820a0bfde1dd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00b85d1db996487d76d396d6e4df9ea557e6aae5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839954"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743557"
 ---
-# <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
-プロローグ コード ブロック内のバイト数を取得します。
+# <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
+ブロック内のプロローグコードのバイト数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,13 +33,13 @@ HRESULT get_lengthProlog ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]プロローグ コードのバイト数を返します。
+入出力プロローグコードのバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 このプロパティがサポートされていない場合は、`S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- プロローグ コードは、レジスタの保持し、CPU の状態を設定し、関数のスタックを確立する命令のシーケンスです。
+ プロローグコードは、レジスタを保持し、CPU 状態を設定し、関数のスタックを確立する命令のシーケンスです。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

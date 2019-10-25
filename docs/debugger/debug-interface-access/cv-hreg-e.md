@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554975"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745317"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
-ターゲットのレジスタを指定します。
+# <a name="cv_hreg_e"></a>CV_HREG_e
+ターゲットレジスタを指定します。
 
 > [!NOTE]
-> `CV_HREG_e`列挙体が大きすぎて全体は、ここで、複製に、簡易バージョンが参照として提供されます。 存在しないエントリが斜体で記号を付けます。 完全な列挙型は cvconst.h ヘッダー ファイルで使用できます。
+> ここでは `CV_HREG_e` 列挙体が大きすぎて完全には複製できないため、省略されたバージョンが参照として提供されます。 欠落しているエントリは、斜体で区切っています。 完全な列挙体は、cvconst .h ヘッダーファイルで使用できます。
 
 ## <a name="syntax"></a>構文
 
@@ -409,30 +409,30 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_REG_ * を使用して、Intel 80x86 および ix86 プロセッサを p コードを登録します。
+CV_REG_ * Intel 80x86 と ix86 processor、および p コードによって使用されるレジスタです。
 
-CV_R68_ * 68 K プロセッサで使用を登録します。
+CV_R68_ * 68K processor によって使用されるレジスタです。
 
-CV_M4_ * MIPS 4000 シリーズのプロセッサで使用される登録します。
+CV_M4_ * MIPS 4000 シリーズプロセッサで使用されるレジスタ。
 
-CV_ALPHA_ * Digital Equipment Corporation Alpha AXP シリーズのプロセッサで使用される登録します。
+CV_ALPHA_ * デジタル機器 Corporation Alpha シリーズのプロセッサによって使用されるレジスタです。
 
-CV_PPC_ */IBM Motorola PowerPC プロセッサで使用を登録します。
+CV_PPC_ * Motorola/IBM PowerPC プロセッサによって使用されるレジスタです。
 
-CV_SH3_ * と CV_SH_\*日立 SH3 と日立 SH シリーズのプロセッサによって使用されるレジスタ。
+CV_SH3_ * と CV_SH_ は、Hitachi SH3 および Hitachi SH シリーズのプロセッサによって使用されるレジスタ \* ます。
 
-CV_ARM_ * Advanced RISC Machine (ARM) プロセッサが使用を登録します。
+CV_ARM_ * Advanced RISC Machine (ARM) プロセッサで使用されるレジスタです。
 
-CV_IA64_ * Intel の IA64 シリーズのプロセッサで使用される登録します。
+CV_IA64_ * Intel IA64 シリーズプロセッサで使用されるレジスタです。
 
-CV_TRI_ * Infineon テクノロジ TriCore プロセッサで使用を登録します。
+CV_TRI_ * Infineon Technologies TriCore processor によって使用されるレジスタです。
 
-CV_AM33_ * 登録し、松下/Panasonic AM33 で使用される、プロセッサに関連します。
+CV_AM33_ * Matsushita/Panasonic AM33 および関連するプロセッサによって使用されるレジスタです。
 
-CV_M32R_ * 三菱 M32R プロセッサで使用を登録します。
+CV_M32R_ * 三菱 M32R processor によって使用されるレジスタです。
 
 ## <a name="remarks"></a>Remarks
-各プロセッサの種類は、独自のレジスタのセットを使用します。
+各プロセッサの種類は、独自の一意のレジスタセットを使用します。
 
 この列挙体の値は、次のメソッドに渡されます。
 
@@ -447,7 +447,7 @@ CV_M32R_ * 三菱 M32R プロセッサで使用を登録します。
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
 ## <a name="requirements"></a>要件:
-ヘッダー: cvconst.h
+ヘッダー: cvconst. h
 
 ## <a name="see-also"></a>関連項目
 - [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)

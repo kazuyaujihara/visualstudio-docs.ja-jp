@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::item |Microsoft Docs
+title: 'IDiaEnumInjectedSources:: Item |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fd803520a6b6bb58679dd30dbf913450ce6066a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91be2f4f437cfeed30b0741d10bf719ba0ed2b71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833571"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744502"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
-インデックスを使用して、挿入されたソースを取得します。
+インデックスを使って挿入されたソースを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>パラメーター
  インデックス
 
-[in]インデックス、 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)を取得するオブジェクト。 インデックスが範囲 0 `count`-1 の場合、`count`によって返される、 [idiaenuminjectedsources::get_count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)メソッド。
+から取得する[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)オブジェクトのインデックス。 インデックスは、0 ~ `count`-1 の範囲です。この場合、`count` は[IDiaEnumInjectedSources:: get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)メソッドによって返されます。
 
  injectedSource
 
-[out]返します、 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)挿入されたソースを表すオブジェクト。
+入出力挿入されたソースを表す[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

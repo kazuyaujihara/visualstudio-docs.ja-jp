@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430765"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737996"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio から UWP アプリを展開する
 
@@ -114,7 +114,7 @@ Windows 10 のリモート デバイスで有効にする必要があります[�
 
 - C++デバッグ] プロパティページで、[ **[アプリケーションの起動]** の値を **[はい]** に設定します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [高度なリモート配置オプション](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [インストールされているアプリケーション パッケージをデバッグする](../debugger/debug-installed-app-package.md)

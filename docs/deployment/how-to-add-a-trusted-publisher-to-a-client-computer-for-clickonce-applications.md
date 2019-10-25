@@ -1,5 +1,5 @@
 ---
-title: ClickOnce アプリ用のクライアント コンピューターを信頼された発行元を追加します。
+title: ClickOnce アプリ用の信頼された発行者をクライアントコンピューターに追加する
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9a874415d35d08fe00989b034c0bd828dbb6d567
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263157"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806896"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する
 信頼されたアプリケーションの配置を使用すると、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションをユーザーに確認することなく高いレベルの信頼で実行できるように、クライアント コンピューターを構成できます。 以下の手順では、コマンド ライン ツールの CertMgr.exe を使用して、クライアント コンピューターの信頼された発行者ストアに発行者の証明書を追加する方法について説明します。
@@ -38,7 +38,7 @@ ms.locfileid: "66263157"
 
 1. CA からデジタル証明書を取得します。
 
-2. 証明書を Base64 X.509 ( *.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「[Export a certificate](http://go.microsoft.com/fwlink/?LinkId=164793)」 (証明書をエクスポートする) を参照してください。
+2. 証明書を Base64 X.509 ( *.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「[Export a certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))」 (証明書をエクスポートする) を参照してください。
 
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "66263157"
 
 1. CA からデジタル証明書を取得します。
 
-2. 証明書を Base64 X.509 ( *.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。
+2. 証明書を Base64 X.509 ( *.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))」を参照してください。
 
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。
 
@@ -57,15 +57,15 @@ ms.locfileid: "66263157"
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
 ## <a name="see-also"></a>関連項目
-- [チュートリアル: ClickOnce アプリケーションを手動で展開します。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
 - [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)
-- [方法: ClickOnce のセキュリティ設定を有効にします。](../deployment/how-to-enable-clickonce-security-settings.md)
-- [方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定します。](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [方法: ClickOnce アプリケーションのカスタム アクセス許可の設定](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [方法: 制限されたアクセス許可を使用して ClickOnce アプリケーションをデバッグします。](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [方法: ClickOnce アプリケーションのクライアント コンピューターに信頼された発行元を追加します。](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [方法: アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [方法: ClickOnce のセキュリティ設定を有効にする](../deployment/how-to-enable-clickonce-security-settings.md)
+- [方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [方法: ClickOnce アプリケーションのカスタム アクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [方法 : アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [方法: アプリケーション マニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [方法: ClickOnce 信頼プロンプトの動作を構成する](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

@@ -1,5 +1,5 @@
 ---
-title: クライアント側スクリプトのデバッグ |Microsoft Docs
+title: クライアント側のスクリプトのデバッグ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564087"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745696"
 ---
 # <a name="client-side-script-debugging"></a>クライアント側スクリプトのデバッグ
 Visual Studio デバッガーには、ASP.NET ページ内のクライアント側スクリプトのエラーを検出および修正するための包括的なデバッグ環境が用意されています。
 
 ## <a name="opening-script-documents"></a>スクリプト ドキュメントを開く
-**ソリューション エクスプローラー**では、閲覧できるサーバー側およびクライアント側のスクリプト ドキュメントのリストを表示できます。 **ソリューション エクスプローラー**で、任意のスクリプト ドキュメントを開くことができます。 詳細については、「[方法 :スクリプト ドキュメントを表示する](../debugger/how-to-view-script-documents.md)」を参照してください。
+**ソリューション エクスプローラー**では、閲覧できるサーバー側およびクライアント側のスクリプト ドキュメントのリストを表示できます。 **ソリューション エクスプローラー**で、任意のスクリプト ドキュメントを開くことができます。 詳細については、「 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)」を参照してください。
 
 ## <a name="breakpoint-mapping"></a>ブレークポイントのマップ
  Visual Studio では、サーバー側コードを直接デバッグすることはできませんが、サーバー側ファイルにブレークポイントを設定できます。 Visual Studio では、設定されたブレークポイントがクライアント側ファイルの対応する場所に自動的にマップされ、マップされたブレークポイントがクライアント側コードに作成されます。
@@ -35,7 +35,7 @@ Visual Studio デバッガーには、ASP.NET ページ内のクライアント�
 ## <a name="manually-or-automatically-attaching-to-script"></a>手動または自動によるスクリプトへのアタッチ
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]でスクリプトをデバッグするには、デバッグするスクリプトにデバッガーをアタッチする必要があります。 これは手動で行うことも、自動的に行うこともできます。
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガー インターフェイスを使用して、アタッチする実行中のスクリプト プロセスを選択することにより、手動でアタッチできます。 詳細については、「[方法 :スクリプトにアタッチする](../debugger/how-to-attach-to-script.md)」を参照してください。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガー インターフェイスを使用して、アタッチする実行中のスクリプト プロセスを選択することにより、手動でアタッチできます。 詳細については、「 [How to: Attach to Script](../debugger/how-to-attach-to-script.md)」を参照してください。
 
  次のいずれかの状況が発生すると、デバッガーは自動的にスクリプトにアタッチされます。
 

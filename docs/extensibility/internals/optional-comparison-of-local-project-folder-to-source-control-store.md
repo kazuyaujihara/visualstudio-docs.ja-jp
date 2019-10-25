@@ -1,5 +1,5 @@
 ---
-title: ソース管理ストアをプロジェクト フォルダーの比較 |Microsoft Docs
+title: プロジェクトフォルダーをソース管理ストアに比較する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d675868e10a99a192681c52495ad3b37e384d390
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 45bd5b105a2fd24078bc85d8cf5b044351cd78be
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350699"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726124"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>ソース管理ストアとローカルのプロジェクト フォルダーとの比較 (オプション)
-ソースの制御関数を使用して、ローカルのプロジェクト フォルダーとソース管理の間の比較が行われますプラグイン API 1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)と[SccDirDiff](../../extensibility/sccdirdiff-function.md)します。
+ソース管理プラグイン API 1.2 では、ローカルのプロジェクトフォルダーとソース管理を比較するには、関数[Sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md)と[Sccdirdiff](../../extensibility/sccdirdiff-function.md)を使用します。
 
- 内で**ソリューション エクスプ ローラー**、個々 のファイルではなく、フォルダーが選択されている場合、**バージョンを比較**ショートカット メニューを起動、新しい[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)と[SccDirDiff](../../extensibility/sccdirdiff-function.md)ソース管理プラグインでします。
+ **ソリューションエクスプローラー**内では、個々のファイルではなくフォルダーを選択すると、 **[バージョンの比較]** ショートカットメニューによって、ソース管理プラグインの新しい[sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md)と[sccdirdiff](../../extensibility/sccdirdiff-function.md)が呼び出されます。
 
 ## <a name="new-capability-flags"></a>新しい機能フラグ
  `SCC_CAP_DIRECTORYDIFF`
@@ -33,10 +33,10 @@ ms.locfileid: "66350699"
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- `SccDirQueryInfo`関数は、前に呼び出されます`SccDirDiff`作業ディレクトリがソース管理の対象を判断します。 `SccDirDiff`関数は、現在のローカル ディレクトリと、対応するソース管理フォルダーの相違を表示します。 このコマンドは、ソース管理、ディレクトリに変更の一覧を表示するプラグインを確認します。 ソース管理プラグインは、相違点を表示する独自の UI を提供します。
+ @No__t_0 関数は、作業ディレクトリがソース管理されているかどうかを判断するために `SccDirDiff` する前に呼び出されます。 @No__t_0 関数は、現在のローカルディレクトリとそれに対応するソース管理フォルダーの相違点を表示します。 このコマンドは、ソース管理プラグインに対して、ディレクトリへの変更の一覧を表示するように要求します。 ソース管理プラグインには、違いを表示するための独自の UI が用意されています。
 
 > [!NOTE]
-> この関数と同じコマンド フラグを使用して[SccDiff](../../extensibility/sccdiff-function.md)します。 ソース管理プラグイン プロバイダーとしては、ディレクトリの"クイック diff"操作をサポートすることができます。
+> この関数は、 [Sccdiff](../../extensibility/sccdiff-function.md)と同じコマンドフラグを使用します。 ソース管理プラグインプロバイダーは、ディレクトリの "クイック diff" 操作をサポートしないことを選択できます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

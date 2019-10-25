@@ -13,25 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 089d824a6f693d7a0661b2e099ded82e0b02f403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dd6a98f377ba295d6a866c9db95671de4ff16ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554413"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745101"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>はじめに (Debug Interface Access SDK)
-デバッグ インターフェイスへのアクセス (DIA) SDK では、説明のドキュメントと DIA API を使用する方法を示すサンプルを提供します。 DIA sdk インターフェイスとメソッドを使用して .pdb と .dbg ファイルを開き、シンボル、値、属性、アドレス、およびその他のデバッグ情報のコンテンツを検索するカスタム アプリケーションを開発します。 この SDK には、C++ アプリケーションで見られる記号に関連付けられているプロパティの参照テーブルも提供します。
+Debug Interface Access (DIA) SDK には、説明ドキュメントと、DIA API の使用方法を示すサンプルが用意されています。 DIA SDK のインターフェイスとメソッドを使用して、.pdb ファイルと dbg ファイルを開き、シンボル、値、属性、アドレス、その他のデバッグ情報の内容を検索するカスタムアプリケーションを開発します。 この SDK には、アプリケーションでC++見つかったシンボルに関連付けられたプロパティの参照テーブルも用意されています。
 
- 最適な DIA SDK を使用するには、は、次のようにについて理解する必要があります。
+ DIA SDK を最適に使用するには、次のことを理解している必要があります。
 
-- C++ プログラミング言語
+- C++プログラミング言語
 
 - COM プログラミング
 
-- Visual Studio 統合開発環境 (IDE) のサンプルのコンパイル
+- サンプルをコンパイルするための Visual Studio 統合開発環境 (IDE)
 
-  DIA SDK は、通常、Visual Studio をインストールし、その既定の場所は *[ドライブ]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 インストールの一環として、DIA SDK を実装すると、msdia90.dll は自動的に登録を含めるので、これを使用するために必要な`dia2.h`プログラムへのリンクで`diaguids.lib`します。
+  DIA SDK は通常、Visual Studio と共にインストールされ、その既定の場所は *[drive] \ (* visual studio 9.0 \ DIA SDK) です。 インストールの一部として、DIA SDK を実装する msdia90 が自動的に登録されるため、使用するために必要なのは、プログラムに `dia2.h` を含め、`diaguids.lib` にリンクすることだけです。
 
   ヘッダー: include\dia2.h
 
@@ -45,11 +45,11 @@ ms.locfileid: "62554413"
 
 [概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 
-中の基本的なアーキテクチャをレビューします。
+DIA の基本的なアーキテクチャを確認します。
 
 [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
 
-DIA API を使用して、.pdb ファイルを照会する方法の手順を説明します。
+DIA API を使用して .pdb ファイルのクエリを実行する手順について説明します。
 
 ## <a name="see-also"></a>関連項目
 

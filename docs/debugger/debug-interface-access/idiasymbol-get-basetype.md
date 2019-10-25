@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_basetype |Microsoft Docs
+title: 'IDiaSymbol:: get_baseType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a3d1bb8b2f3095fd35488c47f823e7b3603995b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837608"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740917"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-このシンボルの基本型を取得します。<em>します。</em>
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
+このシンボルの基本型を取得し<em>ます。</em>
 
 ## <a name="syntax"></a>構文
 
@@ -33,16 +33,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>パラメーター
 `pRetVal`
 
-[out]値を返します、 [BasicType 列挙型](../../debugger/debug-interface-access/basictype.md)シンボルの基本型を指定する列挙体。
+入出力シンボルの基本型を指定する[Basictype 列挙](../../debugger/debug-interface-access/basictype.md)型の値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+成功した場合は `S_OK` を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> @No__t_0 の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
 ## <a name="remarks"></a>Remarks
-シンボルの基本的な型は、まず、記号の種類を取得し、その基本型の型が返されますを問い合わせるで決定できます。 注一部のシンボルは、基本データ型を持てません — たとえば、構造体名。
+シンボルの基本型を決定するには、最初にシンボルの型を取得し、次に基本型に対して返された型を問い合わせるします。 一部のシンボルには、構造体の名前など、基本型を使用できない場合があることに注意してください。
 
 ## <a name="example"></a>例
 
@@ -59,12 +59,12 @@ if (pType->get_type( &pBaseType ) == S_OK)
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK v7.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

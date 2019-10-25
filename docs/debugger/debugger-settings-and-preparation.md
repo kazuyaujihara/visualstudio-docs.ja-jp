@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536068"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738279"
 ---
 # <a name="debugger-settings-and-preparation"></a>デバッガーの設定と準備
 ここでは、デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備について説明します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクト テンプレートを使ってプログラムを作成する場合、これらの設定はデバッグ構成で正しく設定されます。
@@ -46,7 +46,7 @@ ms.locfileid: "72536068"
 
  [方法: デバッグ用に古い .NET Framework バージョンを指定](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)するレジストリキーを設定して、使用するバージョンをデバッガーに示す方法について説明します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
 - [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

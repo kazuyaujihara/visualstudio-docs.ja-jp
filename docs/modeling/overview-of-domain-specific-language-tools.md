@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 82bccbd9558a5dad87e9fe13f9ed7136a5d77d8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658316"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747523"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>ドメイン固有言語ツールの概要
 Visual Studio でホストされているドメイン固有言語ツール (DSL ツール) を使用すると、ドメイン固有言語を設計し、その言語に基づくモデルを作成するためにユーザーが必要とするすべてのものを生成することができます。
@@ -74,7 +74,7 @@ Visual Studio でホストされているドメイン固有言語ツール (DSL 
 
  Visual Studio で DSL ツールソリューションをビルドして実行すると、Visual Studio の2番目のインスタンスによって、ドメイン固有言語がその言語のユーザーにどのように表示されるかがわかります。 すべてが正常に動作することを確認した後、DslPackage プロジェクトのビルド フォルダーにある `.vsix` ファイルを配布できます。 このファイルは、他のコンピューターに Visual Studio 拡張機能として DSL をインストールするために使用できます。  詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [実験用インスタンス](../extensibility/the-experimental-instance.md)
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

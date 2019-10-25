@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_cplusplusexceptionhandling |Microsoft Docs
+title: 'IDiaStackFrame:: get_cplusplusExceptionHandling |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d78a4c73d7954f48c87c1eafec4d0b35fc1292ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839063"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741755"
 ---
-# <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-C++ 例外処理は、有効であることを示すフラグを取得します。
+# <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
+例外処理が有効かどうC++かを示すフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,15 +33,15 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]返します`TRUE`場合C++例外処理はこのフレームに対して有効で、それ以外の`FALSE`します。
+入出力このフレームにC++対して例外処理が有効になっている場合は `TRUE` を返します。それ以外の場合は `FALSE` を返します。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`プロパティがサポートされていない場合。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 プロパティがサポートされていない場合は `S_FALSE` を返します。 それ以外の場合はエラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- C++ 例外処理は、構造化と同じホストまたはシステム例外の処理ではありません。
+ C++例外処理は、構造化例外処理またはシステム例外処理と同じではありません。
 
- 例外処理が有効で構成されている場合を決定、呼び出し、 [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)メソッド。
+ 構造化例外処理が有効かどうかを判断するには、 [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

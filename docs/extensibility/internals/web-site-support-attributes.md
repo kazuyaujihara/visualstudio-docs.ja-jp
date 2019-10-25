@@ -1,5 +1,5 @@
 ---
-title: Web サイト サポートの属性 |Microsoft Docs
+title: Web サイトサポート属性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +10,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a508acaf174e5e4e4b4b615e5f38c600f0669ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07486ea3a962bcb81f65ad0b61ea2e41b3248678
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323393"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721613"
 ---
 # <a name="web-site-support-attributes"></a>Web サイト サポートの属性
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイト プロジェクトは、プログラミング言語の Web サポートを提供する拡張できます。 言語には、自らを登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]にプロジェクト テンプレートが表示できるように、**新しい Web サイト**ダイアログ ボックスの言語が選択されているとします。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイトプロジェクトを拡張して、Web プログラミング言語をサポートすることができます。 言語が選択されたときに **[新しい Web サイト]** ダイアログボックスにプロジェクトテンプレートが表示されるようにするには、言語を [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] に登録する必要があります。
 
-IronPython Studio サンプルには、web サイトのサポートが含まれています。 このサンプルには、IronPython を新しい Web プロジェクトの分離コードの言語として登録する次の属性クラスが含まれています。
+IronPython Studio サンプルには、web サイトのサポートが含まれています。 このサンプルには、新しい Web プロジェクトの分離コードとして IronPython を登録するための次の属性クラスが含まれています。
 
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- この属性は、言語のプロジェクトに配置されます。 Web でのプログラミング言語の一覧に、言語を追加、**言語**の一覧で、**新しい Web サイト** ダイアログ ボックス。 たとえば、次のコードでは、一覧に IronPython を追加します。
+ この属性は言語プロジェクトに適用されます。 この言語は、 **[新しい Web サイト]** ダイアログボックスの **[言語]** ボックスの一覧に表示される Web プログラミング言語の一覧に追加されます。 たとえば、次のコードでは、IronPython がリストに追加されます。
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- この属性は、またテンプレート フォルダーをポイントするテンプレートのパスを設定します。 テンプレート フォルダーの場所の詳細については、次を参照してください。 [Web サイトのサポート テンプレート](../../extensibility/internals/web-site-support-templates.md)します。
+ この属性は、テンプレートフォルダーを指すようにテンプレートパスを設定することもできます。 テンプレートフォルダーの場所の詳細については、「 [Web サイトサポートテンプレート](../../extensibility/internals/web-site-support-templates.md)」を参照してください。
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- この属性は、言語のプロジェクトに配置されます。 別のファイルの種類 (プライマリ) (関連) 1 つのファイルの種類を入れ子にする Web サイト プロジェクトのできる、**ソリューション エクスプ ローラー**します。
+ この属性は言語プロジェクトに適用されます。 これにより、Web サイトプロジェクトは、**ソリューションエクスプローラー**内の別のファイルの種類 (プライマリ) の下にあるファイルの種類 (関連) を入れ子にすることができます。
 
- たとえば、次のコードでは、IronPython の分離コード ファイルが .aspx ファイルに関連することを指定します。 IronPython の Web サイト ソリューションで新しい .aspx Web ページが作成されると、新しい .py ソース ファイルが生成され、.aspx ページの子ノードとして表示されます。
+ たとえば、次のコードでは、IronPython codebehind ファイルが .aspx ファイルに関連付けられていることを指定しています。 IronPython Web サイトソリューションに新しい .aspx Web ページが作成されると、新しい .py ソースファイルが生成され、.aspx ページの子ノードとして表示されます。
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
@@ -43,16 +43,16 @@ public class PythonProjectPackage : ProjectPackage
 ```
 
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- この属性は、言語のプロジェクトのパッケージに配置されます。 言語の IntelliSense のプロバイダーを選択します。
+ この属性は、言語プロジェクトパッケージに配置されます。 言語の IntelliSense プロバイダーを選択します。
 
- たとえば、次のコードを指定する PythonIntellisenseProvider で、実装のインスタンス<xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>、言語サービスを提供するオンデマンドで作成する必要があります。
+ たとえば、次のコードでは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> を実装する PythonIntellisenseProvider のインスタンスをオンデマンドで作成し、言語サービスを提供するように指定しています。
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- IVsIntellisenseProject 実装では、参照を処理し、コードを含む Web ページを要求したがキャッシュされていないときに、言語コンパイラを呼び出します。
+ IVsIntellisenseProject 実装は、コードを含む Web ページが要求されているがキャッシュされていない場合に、参照を処理し、言語コンパイラを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [Web サイト サポート](../../extensibility/internals/web-site-support.md)

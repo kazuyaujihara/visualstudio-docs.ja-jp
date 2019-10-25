@@ -1,5 +1,5 @@
 ---
-title: '方法: 高パフォーマンス クラスター上のデバッグ |Microsoft Docs'
+title: '方法: 高パフォーマンスクラスターでデバッグする |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894327"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733668"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>方法: 高パフォーマンス クラスター上でデバッグ (C#、Visual Basic、 C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>方法: 高パフォーマンスクラスターでデバッグする (C#、Visual Basic、) C++
 
-高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモート セットアップ要件は、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。
+高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモートセットアップの要件については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
 
  高パフォーマンス クラスター上でデバッグするときは、リモート デバッグに使用できる [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のデバッグ ウィンドウとデバッグ手法をすべて使用できます。 ただし、リモートでデバッグするため、外部のコンソール ウィンドウは使用できません。
 
- **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))と[チュートリアル。[スレッド] ウィンドウを使用してデバッグ](../debugger/how-to-use-the-threads-window.md)します。
+ **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))と[チュートリアル。[スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md).
 
  以下の手順では、高パフォーマンス クラスター上でのデバッグに特に役立つ手法を示します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "62894327"
 
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>[ブレークポイントのフィルター] ダイアログ ボックスを開くには
 
-1. ソース ウィンドウ、**[逆アセンブル]** ウィンドウ、**[呼び出し履歴]** ウィンドウ、または **[ブレークポイント]** ウィンドウでブレークポイント グリフを右クリックします。
+1. ソース ウィンドウ、 **[逆アセンブル]** ウィンドウ、 **[呼び出し履歴]** ウィンドウ、または **[ブレークポイント]** ウィンドウでブレークポイント グリフを右クリックします。
 
 2. ショートカット メニューの **[フィルター]** をクリックします。 このオプションは、最上位レベルまたは **[ブレークポイント]** のサブメニューとして表示されます。
 
@@ -99,7 +99,7 @@ ms.locfileid: "62894327"
 ## <a name="see-also"></a>関連項目
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [方法: [プロセス] ウィンドウを使用します。](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
-- [マルチ スレッド アプリケーションのデバッグの開始します。](../debugger/get-started-debugging-multithreaded-apps.md)
+- [方法: [プロセス] ウィンドウを使用する](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [マルチスレッドアプリのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)
 - [スレッドとプロセス](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [ブレークポイントの使用](../debugger/using-breakpoints.md)

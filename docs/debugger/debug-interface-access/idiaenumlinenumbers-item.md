@@ -1,5 +1,5 @@
 ---
-title: Idiaenumlinenumbers::item |Microsoft Docs
+title: 'IDiaEnumLineNumbers:: Item |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25825d4a0c7e3253e1461a163c8211c3e3bdcda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bba71efce68864b8737011ab7dda5cb8da3267c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829746"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744399"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
-インデックスを使用して、行番号を取得します。
+インデックスを使って行番号を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>パラメーター
  インデックス
 
-[in]インデックス、 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)を取得するオブジェクト。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される、 [idiaenumlinenumbers::get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)メソッド。
+から取得する[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)オブジェクトのインデックス。 インデックスは 0 ~ `count`-1 の範囲にあり、`count` は[IDiaEnumLineNumbers:: get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)メソッドによって返されます。
 
  lineNumber
 
-[out]返します、 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)目的の行番号を表すオブジェクト。
+入出力目的の行番号を表す[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合は `S_OK` を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

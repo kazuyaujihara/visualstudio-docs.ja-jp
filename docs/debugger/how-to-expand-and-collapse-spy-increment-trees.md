@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450363"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733307"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>方法: Spy++ ツリーの展開と折りたたみを行う
 ウィンドウ内のアイコンをクリックするか、 **[ツリー]** メニューを使用して、ウィンドウ、プロセス、およびスレッドビューを展開したり折りたたんだりできます。 ツリーの + アイコンと-アイコンは、 C++プロジェクトウィンドウと同様に機能します。
@@ -38,7 +38,7 @@ ms.locfileid: "72450363"
 
 2. **ツリー**メニューから、展開または折りたたみのいずれかのコマンドを選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Spy++ の使用](../debugger/using-spy-increment.md)
 - [Spy++ ビュー](../debugger/spy-increment-views.md)
 - [Spy++ リファレンス](../debugger/spy-increment-reference.md)

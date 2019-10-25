@@ -1,5 +1,5 @@
 ---
-title: '&lt;署名&gt;要素 (ClickOnce 配置) |Microsoft Docs'
+title: '&lt;Signature&gt; 要素 (ClickOnce 配置) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f69dcec6bbee5358184b74a71274cb26e4de60b3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927490"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806849"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;署名&gt;要素 (ClickOnce 配置)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; 要素 (ClickOnce 配置)
 この配置マニフェストにデジタル署名するために必要な情報が含まれます。
 
 ## <a name="syntax"></a>構文
@@ -34,12 +34,12 @@ ms.locfileid: "62927490"
 ```
 
 ## <a name="remarks"></a>Remarks
- エンベロープ署名を使用して配置マニフェストに署名は省略可能では、お勧めします。 XML ファイルへの署名の詳細については、World Wide Web Consortium 推奨事項、"Xml-signature Syntax and Processing、"」の説明を参照してください。 [ http://www.w3.org/TR/xmldsig-core/](http://www.w3.org/TR/xmldsig-core/)します。
+ エンベロープ署名を使用した配置マニフェストへの署名はオプションですが、推奨されます。 XML ファイルに署名する方法の詳細については、「 [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/)」で説明されている World Wide Web コンソーシアムの推奨事項「xml 署名の構文と処理」を参照してください。
 
- マニフェストに署名する場合は、すべてのファイル ハッシュを指定する必要があります。 ユーザーは、ハッシュされていないファイルの内容を確認できないため、ハッシュされていないファイルをマニフェストに署名できません。
+ マニフェストに署名する場合は、すべてのファイルに対してハッシュを指定する必要があります。 ハッシュされていないファイルを含むマニフェストに署名することはできません。これは、ハッシュされていないファイルの内容をユーザーが確認できないためです。
 
 ## <a name="example"></a>例
- 次のコード例を示しています、`Signature`で使用される配置マニフェスト内の要素を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開します。
+ 次のコード例は、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の配置で使用される配置マニフェストの `Signature` 要素を示しています。
 
 ```xml
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">

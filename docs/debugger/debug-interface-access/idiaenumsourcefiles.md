@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829616"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744028"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
-データ ソースに含まれるさまざまなソース ファイルを列挙します。
+データソースに格納されているさまざまなソースファイルを列挙します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,25 +29,25 @@ IDiaEnumSourceFiles : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表は、メソッドの`IDiaEnumSourceFiles`します。
+次の表は、`IDiaEnumSourceFiles` のメソッドを示しています。
 
 |メソッド|説明|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|取得、`IEnumVARIANT Interface`この列挙子のバージョン。|
-|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|ソース ファイルの数を取得します。|
-|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|インデックスを使用してソース ファイルを取得します。|
-|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|列挙体シーケンス内のソース ファイルの指定した数を取得します。|
-|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|指定された数の列挙体シーケンス内のソース ファイルをスキップします。|
-|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|先頭に、列挙体シーケンスをリセットします。|
-|[IDiaEnumSourceFiles::Clon](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|この列挙子の `IEnumVARIANT Interface` バージョンを取得します。|
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|ソースファイルの数を取得します。|
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|インデックスを使ってソースファイルを取得します。|
+|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|列挙シーケンス内の指定された数のソースファイルを取得します。|
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|列挙シーケンス内の指定された数のソースファイルをスキップします。|
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|列挙シーケンスを先頭にリセットします。|
+|[IDiaEnumSourceFiles::Clon](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 
 ## <a name="remarks"></a>Remarks
 
-## <a name="notes-for-callers"></a>呼び出し元のノート
-このインターフェイスを呼び出すことによって取得、`QueryInterface`メソッドを[IDiaTable](../../debugger/debug-interface-access/idiatable.md)オブジェクト。 詳細については、例を参照してください。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+このインターフェイスを取得するには、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)オブジェクトの `QueryInterface` メソッドを呼び出します。 詳細については、例を参照してください。
 
 ## <a name="example"></a>例
-この例は、取得する方法を示します、 `IDiaEnumSourceFiles` DIA のセッション オブジェクト内のテーブルの一覧からインターフェイス。 ソース ファイルの情報へのアクセスの例は、次を参照してください。、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)インターフェイス。
+この例では、DIA session オブジェクトのテーブルの一覧から `IDiaEnumSourceFiles` インターフェイスを取得する方法を示します。 ソースファイルの情報にアクセスする例については、 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)インターフェイスを参照してください。
 
 ```C++
 
@@ -79,12 +79,12 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>必要条件
-ヘッダー:Dia2.h
+## <a name="requirements"></a>［要件］
+ヘッダー: Dia2
 
-ライブラリ: diaguids.lib
+ライブラリ: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
