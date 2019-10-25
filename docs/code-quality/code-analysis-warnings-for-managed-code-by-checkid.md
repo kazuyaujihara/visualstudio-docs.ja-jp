@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 621615879f4e9ee61a2830fd93c53a2baf64b898
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622441"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806164"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -339,7 +339,7 @@ ms.locfileid: "72622441"
 | CA1064 | [CA1064: 例外は public として設定する必要があります](../code-quality/ca1064.md) | 内部例外は、その内部スコープ内でのみ認識されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 内部例外が <xref:System.Exception>、<xref:System.SystemException>、または <xref:System.ApplicationException> から継承されている場合、外部コードには、例外の処理内容を把握するのに十分な情報がありません。 |
 | CA1065 | [CA1065: 予期しない場所に例外を発生させません](../code-quality/ca1065.md) | 例外をスローしないはずのメソッドが例外をスローします。 |
 | CA1068 | [CA1068: CancellationToken パラメーターは最後に指定する必要があります](../code-quality/ca1068.md) | メソッドに、最後のパラメーターではない CancellationToken パラメーターが指定されています。 |
-| CA1200 | [CA1200: プレフィックスで cref タグを使用しないようにします](../code-quality/ca1200.md) | XML ドキュメントタグの[cref](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute)属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 コンパイラで参照が検証されないようにするため、プレフィックス付きの `cref` タグは使用しないでください。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
+| CA1200 | [CA1200: プレフィックスで cref タグを使用しないようにします](../code-quality/ca1200.md) | XML ドキュメントタグの[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 コンパイラで参照が検証されないようにするため、プレフィックス付きの `cref` タグは使用しないでください。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
 | CA1300 | [CA1300: MessageBoxOption を指定します](../code-quality/ca1300.md) | テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。 |
 | CA1301 | [CA1301: アクセラレータが重複しないようにします](../code-quality/ca1301.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールが重複するアクセスキーを持っている場合、アクセスキーの動作は適切に定義されていません。 |
 | CA1302 | [CA1302: ロケール特有の文字列をハードコードしません](../code-quality/ca1302.md) | System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 Environment.GetFolderPath メソッドは、Environment.SpecialFolder 列挙体に関連付けられ、ローカライズされ、現在実行されているコンピューターに適切な位置を返します。 |
@@ -416,7 +416,7 @@ ms.locfileid: "72622441"
 | CA1822 |[CA1822: メンバーを static に設定します](../code-quality/ca1822.md) | インスタンス データにアクセスしない、またはインスタンス メソッドを呼び出さないメンバーは、静的 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では共有) としてマークできます。 メソッドを静的としてマークすると、コンパイラはこれらのメンバーに対する非仮想呼び出しサイトを出力します。 パフォーマンス重視のコードでは、これにより大きくパフォーマンスを向上できます。 |
 | CA1823 | [CA1823: 使用されていないプライベート フィールドを使用しません](../code-quality/ca1823.md) | アセンブリ内でアクセスされていないと思われるプライベート フィールドが検出されました。 |
 | CA1824 |[CA1824: アセンブリを NeutralResourcesLanguageAttribute に設定します](../code-quality/ca1824.md) | NeutralResourcesLanguage 属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語をリソースマネージャーに通知します。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。 |
-| CA1825 |[CA1825: 長さ0の配列割り当てを回避する](../code-quality/ca1825.md) | 長さ0の配列を初期化すると、不要なメモリ割り当てにつながります。 代わりに、<xref:System.Array.Empty%2A?displayProperty=nameWithType> を呼び出すことによって、静的に割り当てられた空の配列インスタンスを使用します。 メモリ割り当ては、このメソッドのすべての呼び出しで共有されます。 |
+| CA1825 |[CA1825: 長さ0の配列割り当てを回避する](../code-quality/ca1825.md) | 長さ0の配列を初期化すると、不要なメモリ割り当てにつながります。 代わりに、<xref:System.Array.Empty%2A?displayProperty=nameWithType>を呼び出すことによって、静的に割り当てられた空の配列インスタンスを使用します。 メモリ割り当ては、このメソッドのすべての呼び出しで共有されます。 |
 | CA1900 | [CA1900: 値型フィールドはポータブルでなければなりません](../code-quality/ca1900.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
 | CA1903 | [CA1903: 対象のフレームワークから API のみを使用します](../code-quality/ca1903.md) | メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。 |

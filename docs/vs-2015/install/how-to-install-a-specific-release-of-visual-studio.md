@@ -13,7 +13,7 @@ ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63433073"
@@ -45,8 +45,8 @@ ms.locfileid: "63433073"
 > [!IMPORTANT]
 > 使用する言語によって、"enu" (英語) を次の値のいずれかに置き換えてください。
 >
-> - chs (簡体字中国語)
->   - cht (繁体字中国語)
+> - chs (簡体中国語)
+>   - cht (繁体中国語)
 >   - csy (チェコ語)
 >   - deu (ドイツ語)
 >   - esn (スペイン語)
