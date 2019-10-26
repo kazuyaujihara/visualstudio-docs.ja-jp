@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648718"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924514"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access データベース内のデータに接続する
 
@@ -109,7 +109,7 @@ Visual Studio を使用して、Access データベース ( *.mdb*ファイル�
 
 先ほど作成したデータセットは、 **[データソース]** ウィンドウで使用できます。 これで、以下のタスクをどれでも実行できます。
 
-- **[データソース]** ウィンドウで項目を選択し、フォームまたはデザインサーフェイスにドラッグします (「 [Visual Studio でのデータへの Windows フォームコントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)」または「 [WPF データバインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)」を参照してください)。
+- **[データソース]** ウィンドウで項目を選択し、フォームまたはデザインサーフェイスにドラッグします (「 [Visual Studio でのデータへの Windows フォームコントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)」または「 [WPF データバインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」を参照してください)。
 
 - **データセット デザイナー**でデータ ソースを開き、データセットを構成しているオブジェクトを追加または編集します。
 

@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56c49f0d3cef6dbb054c8d7d97b4e875b83cb518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648817"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924549"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -50,7 +50,7 @@ ms.locfileid: "72648817"
 
 - データセットおよび TableAdapter。 詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」および「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
-- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)」をご覧ください。
+- WPF データ バインディング。 詳しくは、「[データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」をご覧ください。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 
@@ -110,7 +110,7 @@ ms.locfileid: "72648817"
 
 8. **[完了]** をクリックします。
 
-   Visual Studio によって新しい `AdventureWorksLTDataSet.xsd` ファイルがプロジェクトに追加され、対応する**adventureworksltdataset.xsd**アイテムが **[データソース]** ウィンドウに追加されます。 @No__t_0 ファイルでは、`AdventureWorksLTDataSet` という名前の型指定されたデータセットと `ProductTableAdapter` という名前の TableAdapter が定義されています。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
+   Visual Studio によって新しい `AdventureWorksLTDataSet.xsd` ファイルがプロジェクトに追加され、対応する**adventureworksltdataset.xsd**アイテムが **[データソース]** ウィンドウに追加されます。 `AdventureWorksLTDataSet.xsd` ファイルでは、`AdventureWorksLTDataSet` という名前の型指定されたデータセットと `ProductTableAdapter`という名前の TableAdapter が定義されています。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
 
 9. プロジェクトをビルドします。
 
@@ -262,4 +262,4 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 - [Visual Studio でデータに WPF コントロールをバインドする](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
-- [データ バインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)
+- [データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)
