@@ -1,5 +1,5 @@
 ---
-title: 単にデバッガーを無効にする |Microsoft Docs
+title: Just-in-time デバッガーを無効にする |Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,36 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c848281a89213a216bd8ec3ac1e651b6dfc32e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905719"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911453"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time デバッガーを無効にする
 
-Just-In-Time デバッガー ダイアログ ボックスは、アプリが実行中にエラーが発生したときに開くし、アプリが継続するを防ぐ可能性があります。
+実行中のアプリでエラーが発生すると、[Just-in-time デバッガー] ダイアログボックスが開き、アプリが続行されないようにすることができます。
 
-Just-In-Time デバッガーでは、エラーをデバッグする Visual Studio を起動するオプションを選択できます。 必要があります[Visual Studio](http://visualstudio.microsoft.com)または別の選択したデバッガーが、エラーに関する詳細情報を表示またはそれをデバッグしようとしています。 インストールされています。
+Just-in-time デバッガーでは、Visual Studio を起動してエラーをデバッグするオプションが用意されています。 エラーに関する詳細情報を表示したり、デバッグを試行したりするには、 [Visual Studio](https://visualstudio.microsoft.com/)または別の選択したデバッガーがインストールされている必要があります。
 
-Visual Studio のユーザーを参照してください、エラーをデバッグしようとする必要がある場合[Just-In-Time デバッガーを使用してデバッグ](../debugger/debug-using-the-just-in-time-debugger.md)します。 場合は、エラーを修正するか、開けない Just-In-Time デバッガーを保持することはできません、 [Visual Studio からデバッグを使用しないジャスト イン タイム](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)します。
+Visual Studio ユーザーで、エラーのデバッグを試行する場合は、 [Just-in-time デバッガーを使用](../debugger/debug-using-the-just-in-time-debugger.md)したデバッグに関する参照してください。 エラーを修正できない場合、または Just-in-time デバッガーを開いたままにしたい場合は、 [Visual Studio から just-in-time デバッグを無効](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)にすることができます。
 
-Visual Studio のインストールが不要になった操作を行いますがあれば、可能性がある必要があります。 [Windows レジストリからデバッグを使用しないジャスト イン タイム](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)します。
+Visual Studio がインストールされていても、不要になった場合は、 [Windows レジストリから just-in-time デバッグを無効](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)にすることが必要になる場合があります。
 
-Visual Studio インストールを持っていない場合は、時間で Just スクリプトのデバッグまたはサーバー側のデバッグを無効にしてデバッグを防ぐことができます。
+Visual Studio がインストールされていない場合は、スクリプトのデバッグまたはサーバー側のデバッグを無効にすることで、Just-in-time デバッグを防止できます。
 
 - Web アプリを実行しようとしている場合は、スクリプトのデバッグを無効にします。
 
-  Windows で**コントロール パネルの**  > **ネットワークとインターネット** > **インターネット オプション**、**無効にするスクリプト デバッグ (Internet Explorer)** と**スクリプトのデバッグ (その他) を無効にする**します。 正確な手順と設定は、Windows と、ブラウザーのバージョンによって異なります。
+  Windows の**コントロールパネル**で > [**ネットワークとインターネット** > の**インターネットオプション**] の **[スクリプトデバッグを無効にする (internet Explorer)]** を選択し、 **[スクリプトのデバッグを無効にする (その他)]** を選択します。 正確な手順と設定は、使用している Windows とブラウザーのバージョンによって異なります。
 
-  ![インターネット オプションの JIT](../debugger/media/jitinternetoptions.png "JIT インターネット オプション")
+  ![JIT インターネットオプション](../debugger/media/jitinternetoptions.png "JIT インターネットオプション")
 
 - IIS で ASP.NET web アプリをホストしている場合は、サーバー側のデバッグを無効にします。
 
-  1. IIS マネージャーで**機能ビュー**下で、 **ASP.NET**セクションで、ダブルクリックして **.NET コンパイル**、またはそれを選択し、 **機能を開く**で、**アクション**ウィンドウ。
-  1. **動作** > **デバッグ**、 **False**します。 手順は、古いバージョンの IIS で異なります。
+  1. IIS マネージャーの **[機能ビュー]** の **[ASP.NET]** セクションで、 **[.net コンパイル]** をダブルクリックするか、 **[操作]** ウィンドウの 機能を **[開く]** を選択します。
+  1. [**動作** > **デバッグ**] で、 **[False]** を選択します。 以前のバージョンの IIS では、手順は異なります。
 
-時間内でデバッグを無効にした後、アプリでは、エラーを処理し、通常どおりに実行することができます。
+Just-in-time デバッグを無効にすると、アプリはエラーを処理して正常に実行できる可能性があります。
 
-アプリには、まだハンドルされないエラーがある場合、エラー メッセージが表示することがあります。 またはアプリがクラッシュまたはハング可能性があります。 エラーが修正されるまで、アプリが正常に実行できません。 アプリの所有者に連絡し、その修正を依頼しようとすることができます。
+アプリに未処理のエラーが残っている場合は、エラーメッセージが表示されるか、アプリがクラッシュまたはハングする可能性があります。 このエラーが修正されるまで、アプリは正常に実行されません。 アプリの所有者に連絡して、それを修正するように依頼することができます。

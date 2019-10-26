@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745750"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911615"
 ---
 # <a name="cc-assertions"></a>アサーション
 アサート ステートメントでは、プログラム内で true になる必要のある条件を指定します。 この条件が true にならない場合、アサーションは失敗し、プログラムの実行が中断され、[[アサートに失敗しました] ダイアログ ボックス](../debugger/assertion-failed-dialog-box.md)が表示されます。
@@ -169,7 +169,7 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-ASSERT を次のように [IsKindOf](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#iskindof) 関数と組み合わせて使用すると、関数の引数の型チェックを行うことができます。
+ASSERT を次のように [IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) 関数と組み合わせて使用すると、関数の引数の型チェックを行うことができます。
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
@@ -178,7 +178,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 `ASSERT` マクロは、リリース バージョンではコードを生成しません。 リリース バージョンで式を評価する必要がある場合は、ASSERT の代わりに [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) マクロを使用します。
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID と CObject::AssertValid
-[CObject::AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid) メソッドを使用すると、オブジェクトの内部状態を実行時にチェックできます。 `AssertValid` からクラスを派生させる場合、必ずしも `CObject` をオーバーライドする必要はありませんが、そうすることによって、クラスの信頼性を高めることができます。 `AssertValid` によって、オブジェクトのすべてのメンバー変数に対し、有効な値を保持しているかどうかを検証するアサーションが実行されます。 たとえば、ポインターのメンバー変数が NULL でないかどうかをチェックできます。
+[CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) メソッドを使用すると、オブジェクトの内部状態を実行時にチェックできます。 `AssertValid` からクラスを派生させる場合、必ずしも `CObject` をオーバーライドする必要はありませんが、そうすることによって、クラスの信頼性を高めることができます。 `AssertValid` によって、オブジェクトのすべてのメンバー変数に対し、有効な値を保持しているかどうかを検証するアサーションが実行されます。 たとえば、ポインターのメンバー変数が NULL でないかどうかをチェックできます。
 
 `AssertValid` 関数の宣言方法を次に示します。
 
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-エラー処理コードが正しく機能していれば、アサート ステートメントに達する前に、発生したエラーは処理され、`myErr` は 0 にリセットされるはずです。 @No__t_0 に別の値がある場合、アサーションは失敗し、プログラムは停止し、[[アサートに失敗しました] ダイアログボックス](../debugger/assertion-failed-dialog-box.md)が表示されます。
+エラー処理コードが正しく機能していれば、アサート ステートメントに達する前に、発生したエラーは処理され、`myErr` は 0 にリセットされるはずです。 `myErr` に別の値がある場合、アサーションは失敗し、プログラムは停止し、[[アサートに失敗しました] ダイアログボックス](../debugger/assertion-failed-dialog-box.md)が表示されます。
 
 ただし、アサート ステートメントは、エラー処理コードに代わるものではありません。 最終リリース バージョンのコードで問題となる可能性のあるアサート ステートメントの例を次に示します。
 
