@@ -1,6 +1,6 @@
 ---
 title: WPF のデバッグ |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,20 +16,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e0887169f6f46d481a970c1b6f77a3805234df9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738002"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888432"
 ---
 # <a name="debugging-wpf"></a>WPF のデバッグ
+
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] には、WPF アプリケーションのデバッグを容易にする追加の機能があります。
 
 ## <a name="related-topics"></a>関連トピック
 
 | Title | 説明 |
 | - | - |
+| [実行中の XAML コードを記述およびデバッグする](../xaml-tools/xaml-hot-reload.md) | XAML ホットリロードを使用すると、WPF オブジェクトのビジュアルツリーを探索し、そのツリー内のオブジェクトの WPF 依存関係プロパティを表示できます。 このトピックでは、XAML ホットリロードの使用方法について説明します。 |
+| [デバッグ中にXAML のプロパティを調べる](../xaml-tools/xaml-hot-reload.md) | ライブビジュアルツリーを使用すると、WPF オブジェクトのビジュアルツリーを調べて、そのツリー内のオブジェクトの WPF 依存関係プロパティを表示できます。 |
 | [方法: WPF ツリー ビジュアライザーを使用する](../debugger/how-to-use-the-wpf-tree-visualizer.md) | WPF ツリー ビジュアライザーを使用すると、WPF オブジェクトのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 このトピックでは、WPF ツリー ビジュアライザーのユーザー インターフェイスについて説明します。 |
 | [方法: WPF トレース情報を表示する](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、WPF アプリケーションからデバッグ トレース情報を受け取り、その情報を **[出力]** ウィンドウに表示することができます。 このトピックでは、WPF トレース情報の表示を有効にする方法およびカスタマイズする方法について説明します。 |
 

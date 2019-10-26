@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731923"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888402"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>方法: WPF ツリー ビジュアライザーを使用する
 WPF ツリー ビジュアライザーを使用すると、WPF オプションのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 ビジュアルツリーの詳細については、「 [WPF のツリー](/dotnet/framework/wpf/advanced/trees-in-wpf)」を参照してください。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](/dotnet/framework/wpf/advanced/dependency-properties-overview)」を参照してください。
 
  WPF ツリービジュアライザーを開くと、左側に**ビジュアルツリー**が表示され、右側に [_名前_ **:** _種類_] ペイン**のプロパティ**が2つ表示されます。 **[ビジュアルツリー]** ウィンドウで任意のオブジェクトを選択すると、[_名前_ **:** _種類_] ペイン**のプロパティ**が自動的に更新され、そのオブジェクトのプロパティが表示されます。
+
+ > [!NOTE]
+ > また、[ライブビジュアルツリーとライブプロパティエクスプローラー](../xaml-tools/inspect-xaml-properties-while-debugging.md)を使用して、WPF オブジェクトのビジュアルツリーを確認することもできます。 WPF ツリービジュアライザーは従来の機能であり、アクティブな開発ではありません。
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>WPF ツリー ビジュアライザーを開くには
 
