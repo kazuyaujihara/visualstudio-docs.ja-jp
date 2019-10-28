@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745584"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911578"
 ---
 # <a name="debug-64-bit-applications"></a>64 ビット アプリケーションをデバッグする
 ローカル コンピューターまたはリモート コンピューターで実行されている 64 ビット アプリケーションをデバッグできます。
@@ -54,7 +54,7 @@ ms.locfileid: "72745584"
 
 ## <a name="see-also"></a>関連項目
 
-- [64 ビット アプリケーション](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [64 ビット アプリケーション](/dotnet/framework/64-bit-apps)
 - [64 ビット用プログラムの構成](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
 - [Visual Studio IDE の 64 ビット サポート](../ide/visual-studio-ide-64-bit-support.md)
 - [ダンプ ファイルの使用](../debugger/using-dump-files.md)

@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807014"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924550"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
 
@@ -56,7 +56,7 @@ ms.locfileid: "72807014"
 
 - Entity Data Model および ADO.NET Entity Framework。 詳細については、「 [Entity Framework の概要](/dotnet/framework/data/adonet/ef/overview)」を参照してください。
 
-- WPF データ バインディング。 詳細については、「[データ バインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)」をご覧ください。
+- WPF データ バインディング。 詳細については、「[データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」をご覧ください。
 
 ## <a name="create-the-service-project"></a>サービスプロジェクトを作成する
 
@@ -106,7 +106,7 @@ WCF データサービスを作成し、Entity Data Model のデータを WPF �
 
 作成した Entity Data Model を操作するには、サービスを構成する必要があります。
 
-1. @No__t_0 コードファイルで、 **adventureworksservice.svc**クラスの宣言を次のコードに置き換えます。
+1. `AdventureWorks.svc` コードファイルで、 **adventureworksservice.svc**クラスの宣言を次のコードに置き換えます。
 
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
@@ -301,4 +301,4 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 - [データセットへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [WCF の概要 (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Entity Framework の概要 (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [データバインディングの概要 (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+- [データバインディングの概要 (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)

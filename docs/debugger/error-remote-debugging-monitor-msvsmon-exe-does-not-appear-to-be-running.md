@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737565"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911531"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>エラー : Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
 このエラー メッセージは、Visual Studio がリモート コンピューター上で Visual Studio リモート デバッグ モニターの適切なインスタンスを見つけることができなかったことを示します。 リモート デバッグを行うには、Visual Studio リモート デバッグ モニターをインストールする必要があります。 リモートデバッガーのダウンロードと設定の詳細については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。
@@ -41,7 +41,7 @@ ms.locfileid: "72737565"
  リモート コンピューターに [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) してみてください。 ping に応答しない場合は、リモート ツールも接続できません。 リモート コンピューターを再起動するか、またはネットワークでリモート コンピューターが正しく構成されていることを確認してください。
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>リモート デバッガーのバージョンが Visual Studio のバージョンと一致していない
- ローカルで実行している Visual Studio のバージョンは、リモート コンピューターで実行されているリモート デバッグ モニターのバージョンと一致している必要があります。 これを解決するには、リモート デバッグ モニターの一致するバージョンをダウンロードして、インストールします。 [ダウンロード センター](http://www.microsoft.com/en-us/download) に移動して、適切なバージョンのリモート デバッガーを検索します。
+ ローカルで実行している Visual Studio のバージョンは、リモート コンピューターで実行されているリモート デバッグ モニターのバージョンと一致している必要があります。 これを解決するには、リモート デバッグ モニターの一致するバージョンをダウンロードして、インストールします。 [ダウンロード センター](https://www.microsoft.com/download) に移動して、適切なバージョンのリモート デバッガーを検索します。
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>ローカル コンピューターとリモート コンピューターの認証モードが異なる
  ローカル コンピューターとリモート コンピューターで、同じ認証モードを使用する必要があります。 これを解決するには、両方のマシンで同じ認証モードを使用するようにします。 認証モードの詳細については、「 [Windows 認証の概要](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))」を参照してください。
@@ -70,9 +70,9 @@ ms.locfileid: "72737565"
  リモート デバッグを別の時点で実行するか、ネットワークでの作業を別の時点にスケジュールし直す必要がある場合があります。
 
 ## <a name="more-help"></a>その他のヘルプ
- コマンドラインスイッチなど、リモートデバッガーのヘルプを表示するには、リモートデバッガーウィンドウで **[ヘルプ > の使用状況]** をクリックします。 開いていない場合は、次の行を**ファイルエクスプローラー**ウィンドウにコピーして、web ページを表示できます。 (@No__t_0Visual Studio インストールディレクトリ > を Visual Studio インストールの場所に置き換える必要があります)。
+ コマンドラインスイッチなど、リモートデバッガーのヘルプを表示するには、リモートデバッガーウィンドウで **[ヘルプ > の使用状況]** をクリックします。 開いていない場合は、次の行を**ファイルエクスプローラー**ウィンドウにコピーして、web ページを表示できます。 (Visual Studio インストールディレクトリ > を Visual Studio インストールの場所に置き換える必要があり \<)。
 
- res:// *\<Visual Studio のインストールディレクトリ >* \ COMMON7 \ IDE \ リモート %2 0 デバッガー \ x64 \ ccmsetup.exe/help .htm
+ res:// *\<Visual Studio インストールディレクトリ >* \ COMMON7 \ IDE \ リモート %2 0 デバッガー \ x64 \ ccmsetup.exe/help .htm
 
 ## <a name="see-also"></a>関連項目
 - [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

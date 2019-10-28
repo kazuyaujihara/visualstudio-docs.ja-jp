@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925357"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911414"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能C#(、Visual Basic C++、)
 
-IntelliTrace を使用すると、イベントとアプリケーションを呼び出すメソッドとを記録することができます。この機能により、さまざまな実行ポイントでの状態 (呼び出し履歴およびローカル変数の値) を確認することができます。 通常どおりのデバッグの開始 - 既定では、IntelliTrace はオンになっています。このため、IntelliTrace が記録する情報が **[イベント]** タブの新しい **[診断ツール]** ウィンドウに表示されます。イベントについて記録された呼び出し履歴とローカルを確認するには、目的のイベントを選択し、 **[デバッグ履歴の有効化]** をクリックします。
+IntelliTrace を使用すると、イベントとアプリケーションを呼び出すメソッドとを記録することができます。この機能により、さまざまな実行ポイントでの状態 (呼び出し履歴およびローカル変数の値) を確認することができます。 通常どおりデバッグを開始します。 IntelliTrace は既定でオンになっており、 **[イベント]** タブの下にある 新しい **[診断ツール]** ウィンドウに intellitrace が記録されている情報を確認できます。イベントを選択し、[**履歴デバッグのアクティブ化] をクリックします。** このイベントに記録された呼び出し履歴とローカル変数を表示します。
 
-詳細な手順については、「 [チュートリアル:IntelliTrace](../debugger/walkthrough-using-intellitrace.md)の使用。
+ステップ バイ ステップの説明については、「[チュートリアル: IntelliTrace の使用](../debugger/walkthrough-using-intellitrace.md)」を参照してください。
 
 IntelliTrace は Visual Studio Enterprise Edition で使用できますが、Visual Studio Professional Edition または Community Edition では使用できません。
 
@@ -123,7 +123,7 @@ IntelliTrace データをファイルに保存する場合は、IntelliTrace が
 
 ## <a name="forums"></a>フォーラム
 
-[Visual Studio デバッガー](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>ビデオ
 

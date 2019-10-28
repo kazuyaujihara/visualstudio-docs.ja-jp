@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e1085d13612cefee370aeac5fe67c7ddd2af8bae
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919804"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911768"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -36,8 +36,8 @@ Publish-WebApplicationWebSite
 | パラメーター | 既定値 |
 | --- | --- |
 | Aliases |none |
-| 必須? |true |
-| 位置 |named |
+| 必須? |TRUE |
+| 位置 |名前付き |
 | 既定値 |none |
 | パイプライン入力を許可する |False |
 | ワイルドカード文字を許可する |False |
@@ -49,19 +49,19 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | --- | --- |
 | Aliases |none |
 | 必須? |False |
-| 位置 |named |
+| 位置 |名前付き |
 | 既定値 |none |
 | パイプライン入力を許可する |False |
 | ワイルドカード文字を許可する |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](http://go.microsoft.com/fwlink/p/?LinkID=623089)」を参照してください。
+Web サイトに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [Azure Cloud Services と ASP.NET を使ってみる](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md)」を参照してください。
 
 | パラメーター | 既定値 |
 | --- | --- |
 | Aliases |none |
 | 必須? |False |
-| 位置 |named |
+| 位置 |名前付き |
 | 既定値 |none |
 | パイプライン入力を許可する |False |
 | ワイルドカード文字を許可する |False |
@@ -73,7 +73,7 @@ Azure の SQL データベースのユーザー名およびパスワード。
 | --- | --- |
 | Aliases |none |
 | 必須? |False |
-| 位置 |named |
+| 位置 |名前付き |
 | 既定値 |none |
 | パイプライン入力を許可する |False |
 | ワイルドカード文字を許可する |False |
@@ -85,12 +85,12 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | --- | --- |
 | Aliases |none |
 | 必須? |False |
-| 位置 |named |
+| 位置 |名前付き |
 | 既定値 |False |
 | パイプライン入力を許可する |False |
 | ワイルドカード文字を許可する |False |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 この中には、Web サイトの名前やユーザー名など、プロジェクトの作成時に指定した情報が含まれます。 また、プロビジョニングを行うデータベースがある場合はそれも含まれます。 次のコードは JSON 構成ファイルの例を示しています。
@@ -121,5 +121,5 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
 
 JSON 構成ファイルは、デプロイ対象を変更するように編集できます。 webSite のセクションは必須ですが、データベースのセクションは省略可能です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 詳しくは、「[Publish-WebApplicationVM (Windows PowerShell スクリプト)](vs-azure-tools-publish-webapplicationvm.md)」をご覧ください。

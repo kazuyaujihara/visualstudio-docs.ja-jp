@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253429"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911810"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>複数のサービス構成を使用するための Visual Studio での Azure プロジェクトの構成
 
 Visual Studio の Azure クラウド サービス プロジェクトには、`ServiceDefinition.csdef`、`ServiceConfiguration.Local.cscfg` および `ServiceConfiguration.Cloud.cscfg` の 3 つの構成ファイルが含まれています。
 
@@ -55,7 +55,7 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 ## <a name="settings-page"></a>設定ページ
 
-**[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](http://go.microsoft.com/fwlink?LinkID=171026)によって提供されるクラス (具体的には[GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx)メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
+**[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](/previous-versions/azure/dn602775(v=azure.11))によって提供されるクラス (具体的には[GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100))メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>ストレージ アカウントの接続文字列の構成
 
@@ -95,7 +95,7 @@ Web ロールには、通常ポート 80 の HTTP エンドポイントが 1 つ
 
 ## <a name="certificates-page"></a>[証明書] ページ
 
-**[証明書]** プロパティ ページでは、証明書についての情報をサービス構成に追加します。 証明書はサービスと共にパッケージ化されないことに注意してください。[Azure Portal](http://portal.azure.com) を使用して、Azure に証明書を個別にアップロードする必要があります。
+**[証明書]** プロパティ ページでは、証明書についての情報をサービス構成に追加します。 証明書はサービスと共にパッケージ化されないことに注意してください。[Azure Portal](https://portal.azure.com) を使用して、Azure に証明書を個別にアップロードする必要があります。
 
 ここで証明書を追加すると、証明書に関する情報がサービス構成に追加されます。 証明書はサービスにパッケージ化されないため、Azure Portal を介して証明書を個別にアップロードする必要があります。
 
