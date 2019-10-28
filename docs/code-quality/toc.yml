@@ -751,6 +751,8 @@
                   href: ca5397.md
                 - name: 'CA5398:ハードコーディングされた SslProtocols 値を回避します'
                   href: ca5398.md
+                - name: 'CA5403:証明書をハードコーディングしない'
+                  href: ca5403.md
             - name: 使用法に関する警告
               items:
                 - name: 概要
