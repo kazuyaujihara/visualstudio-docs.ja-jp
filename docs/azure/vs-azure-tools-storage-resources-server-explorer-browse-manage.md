@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624100"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911718"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 
@@ -120,7 +120,7 @@ BLOB データはローカルにキャッシュされ、Azure Blob Storage で�
 
 BLOB をアップロードするには、コンテナーを開き、BLOB コンテナー ビューに表示されたら、 **[BLOB のアップロード]** をクリックします
 
-アップロード対象ファイル (複数可) を選択し、任意の種類のファイルをアップロードできます。 **[Azure のアクティビティ ログ]** ウィンドウにアップロードの進行状況が表示されます。 BLOB データを操作する方法の詳細については、[.NET で Azure Blob Storage を使用する方法](http://go.microsoft.com/fwlink/p/?LinkId=267911)に関する記事をご覧ください。
+アップロード対象ファイル (複数可) を選択し、任意の種類のファイルをアップロードできます。 **[Azure のアクティビティ ログ]** ウィンドウにアップロードの進行状況が表示されます。 BLOB データを操作する方法の詳細については、[.NET で Azure Blob Storage を使用する方法](/azure/storage/blobs/storage-quickstart-blobs-dotnet)に関する記事をご覧ください。
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>BLOB に転送されたログを表示するには
 
@@ -155,10 +155,10 @@ BLOB を選択し、 **[BLOB を開く]** をクリックします。
 
 ![キューの表示](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-ストレージ サービスのキューの詳細については、「[.NET を使用して Azure Queue Storage を使用する](http://go.microsoft.com/fwlink/?LinkID=264702)」をご覧ください。 ストレージ サービス キューの Web サービスについては、「 [キュー サービスの概念](http://go.microsoft.com/fwlink/?LinkId=264788)」を参照してください。 Visual Studio を使用して、ストレージ サービス キューにメッセージを送信する方法については、「 [ストレージ サービスのキューにメッセージを送信する](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)」を参照してください。
+ストレージ サービスのキューの詳細については、「[.NET を使用して Azure Queue Storage を使用する](/azure/storage/queues/storage-dotnet-how-to-use-queues)」をご覧ください。 ストレージ サービス キューの Web サービスについては、「 [キュー サービスの概念](/rest/api/storageservices/Queue-Service-Concepts)」を参照してください。 Visual Studio を使用して、ストレージ サービス キューにメッセージを送信する方法については、「 [ストレージ サービスのキューにメッセージを送信する](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)」を参照してください。
 
 > [!NOTE]
-> ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、「[Service Bus のキュー、トピック、サブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)」をご覧ください。
+> ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、「[Service Bus のキュー、トピック、サブスクリプション](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)」をご覧ください。
 
 ## <a name="work-with-table-resources"></a>テーブル リソースの操作
 
@@ -183,7 +183,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 テーブル デザイナーで、エンティティ (単一の行) またはプロパティ (単一のセル) のショートカット メニューを開き、 **[編集]** を選択します。
 
-![テーブル エンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![テーブルエンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 単一テーブルのエンティティが、同じ一連のプロパティ (列) を持っている必要はありません。 テーブル データの表示と編集には、次の制限があることに留意してください。
 
@@ -225,7 +225,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 ## <a name="refresh-storage-data"></a>ストレージ データの更新
 
-サーバー エクスプローラーでストレージ アカウントに接続したり、ストレージ アカウントからデータを取得したりする場合、操作が完了するまでに最大で 1 分かかることがあります。 サーバー エクスプローラーが接続できない場合、操作がタイムアウトする可能性があります。データの取得中、Visual Studio の他の部分では作業を続行できます。 操作に時間がかかりすぎる場合に操作を取り消すには、サーバー エクスプローラー ツール バーの **[更新の中止]** をクリックします。
+サーバー エクスプローラーでストレージ アカウントに接続したり、ストレージ アカウントからデータを取得したりする場合、操作が完了するまでに最大で 1 分かかることがあります。 サーバーエクスプローラーが接続できない場合は、操作がタイムアウトする可能性があります。データの取得中は、Visual Studio の他の部分で作業を続けることができます。 操作に時間がかかりすぎる場合に操作を取り消すには、サーバー エクスプローラー ツール バーの **[更新の中止]** をクリックします。
 
 ### <a name="to-refresh-blob-container-data"></a>BLOB コンテナー データを更新するには
 
@@ -291,6 +291,6 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 サーバー エクスプローラーからストレージ アカウントを削除しても、ストレージ アカウントやアカウントに含まれているデータには影響しません。 サーバー エクスプローラーからの参照が削除されるだけです。 ストレージ アカウントを完全に削除するには、[Azure Portal](https://portal.azure.com/) を使用します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure Storage サービスの使用方法の詳細については、[Azure Storage サービスへのアクセス](/azure/storage/common/storage-introduction)に関するページをご覧ください。

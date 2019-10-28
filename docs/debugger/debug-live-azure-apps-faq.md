@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211214"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911407"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグについてよく寄せられる質問
 
@@ -31,7 +31,7 @@ ms.locfileid: "71211214"
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>スナップショット デバッガーがシンボルを読み込む方法を教えてください。
 
-スナップショット デバッガーを使用するには、ローカルのアプリケーションまたは Azure App Service にデプロイされているアプリケーションに一致するシンボルが必要です (埋め込みの PDB は現在サポートされていません)。スナップショット デバッガーでは、Azure App Service からシンボルが自動的にダウンロードされます。 Visual Studio 2017 バージョン 15.2 以降、Azure App Service にデプロイすると、アプリのシンボルもデプロイされます。
+スナップショット デバッガーを使用するには、ローカルのアプリケーションまたは Azure App Service にデプロイされているアプリケーションに一致するシンボルが必要です (埋め込み Pdb は現在サポートされていません)。スナップショットデバッガーによって、Azure App Service からシンボルが自動的にダウンロードされます。 Visual Studio 2017 バージョン 15.2 以降、Azure App Service にデプロイすると、アプリのシンボルもデプロイされます。
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>スナップショット デバッガーはアプリケーションのリリース ビルドに対して動作しますか?
 
@@ -125,7 +125,7 @@ AKS の場合:
 
    - サーバー証明書
       - 対応するサーバー証明書の拇印は、Azure KeyVault にシークレットとしてデプロイされます。 VS は、仮想マシンまたは仮想マシンスケールセットのリソースに対応するリージョンで、プレフィックス MSVSAZ * を使用して KeyVault の検索または作成を試みます。 そのリージョンにデプロイされたすべての仮想マシンまたは仮想マシンスケールセットのリソースは、同じ KeyVault を共有します。
-      - サーバー証明書の拇印シークレットを削除するには、Azure portal にアクセスし、リソースをホストしているのと同じリージョンで MSVSAZ * KeyVault を見つけます。 ラベルが付けられているシークレットを削除します`remotedebugcert<<ResourceName>>`
+      - サーバー証明書の拇印シークレットを削除するには、Azure portal にアクセスし、リソースをホストしているのと同じリージョンで MSVSAZ * KeyVault を見つけます。 ラベルが付けられているシークレットを削除し `remotedebugcert<<ResourceName>>`
       - また、PowerShell を使用して、リソースからサーバーシークレットを削除する必要があります。
 
       仮想マシンの場合:
@@ -181,7 +181,7 @@ AKS の場合:
 
 - 仮想マシン/仮想マシンスケールセットのリソースブレードを Azure portal > 拡張機能を > > Microsoft.insights.vmdiagnosticssettings 拡張機能をアンインストールします。
 
-- [Az powershell](https://docs.microsoft.com/powershell/azure/overview)の Powershell コマンドレット
+- [Az powershell](/powershell/azure/overview)の Powershell コマンドレット
 
    仮想マシン:
 

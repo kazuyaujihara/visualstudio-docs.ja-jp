@@ -1,5 +1,5 @@
 ---
-title: シミュレーターで UWP アプリの実行 |Microsoft Docs
+title: シミュレーターで UWP アプリを実行する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,43 +13,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 30952d191d6163e6ba82491342b5084e8e3f67b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0b559f4684fd4fd8b9eabff4b46b1defb5ef1f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930120"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911336"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>シミュレーターで UWP アプリを実行する
 
-UWP アプリ用の Visual Studio シミュレーターは、UWP アプリをシミュレートするデスクトップ アプリケーションです。 通常は、接続されたデバイス、またはリモート コンピューターのローカル コンピューター上でデバッグします。 ただし、一部のシナリオでの Visual Studio シミュレーターを使用して、別の物理的な画面サイズと解像度をエミュレートすることがあります。 また、一般的なタッチと回転イベントのシミュレートし、ネットワーク接続のプロパティをシミュレートできます。
+UWP アプリ用の Visual Studio シミュレーターは、UWP アプリをシミュレートするデスクトップアプリケーションです。 通常は、ローカルコンピューター、接続されているデバイス、またはリモートコンピューターでデバッグします。 ただし、シナリオによっては、Visual Studio シミュレーターを使用して、さまざまな物理画面のサイズと解像度をエミュレートすることが必要になる場合があります。 また、一般的なタッチイベントとローテーションイベントをシミュレートし、ネットワーク接続のプロパティをシミュレートすることもできます。
 
-シミュレーターをすることができますを設計、開発、デバッグ、および UWP アプリをテスト環境を提供します。 ただし、Microsoft Store にアプリを発行する前に、実際のデバイスでアプリをテストする必要があります。
+シミュレーターは、UWP アプリを設計、開発、デバッグ、およびテストできる環境を提供します。 ただし、Microsoft Store にアプリを発行する前に、実際のデバイスでアプリをテストする必要があります。
 
-UWP アプリ用の Visual Studio シミュレーターはローカル コンピューターに分離された環境で実行されません。 したがって、シミュレーターで発生したエラー (回復できないシステム エラーなど) がコンピューター全体に影響を与える場合があります。
+UWP アプリ用の Visual Studio シミュレーターは、ローカルコンピューターの分離環境では実行されません。 したがって、シミュレーターで発生したエラー (回復できないシステム エラーなど) がコンピューター全体に影響を与える場合があります。
 
 > [!IMPORTANT]
 > Visual Studio 2015 シミュレーターには、位置情報ボタンがありません。 これは、Windows 10 シミュレーターに位置情報シミュレーションが含まれていないためです。
 
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> シミュレーターをターゲットとして設定する
 
-シミュレーターで UWP アプリを実行するには、選択**シミュレーター**横にドロップダウン リストからリスト、**デバッグの開始**ボタン、デバッガーを**標準**ツールバー。 このオプションは使用可能な場合、アプリの**ターゲット プラットフォームの最小値。バージョン**が開発用コンピューターにオペレーティング システム未満です。
+シミュレーターで UWP アプリを実行するには、デバッガーの **[標準]** ツールバーの **[デバッグの開始]** ボタンの横にあるドロップダウンリストから **[シミュレーター]** を選択します。 このオプションは、アプリの**ターゲットプラットフォームの最小バージョン**が、開発用コンピューターのオペレーティングシステム以下である場合にのみ使用できます。
 
-![シミュレーターで実行されている](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
+![シミュレーターでの実行](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
 ## <a name="BKMK_Choose_an_interaction_mode"></a> 対話モードを選択する
 
 次の対話モードを選択できます。
 
-- ![マウス モード ボタン](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn")マウス モード: 対話モードをマウス ジェスチャに設定します。 マウス ジェスチャには、クリック、ダブルクリック、およびドラッグがあります。
+- ![マウスモードボタン](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn")マウスモード: 対話モードをマウスジェスチャに設定します。 マウス ジェスチャには、クリック、ダブルクリック、およびドラッグがあります。
 
-- ![タッチ エミュレーション [スタート] ボタン](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn")タッチ エミュレーションの開始: 対話モードを 1 本の指のタッチ ジェスチャに設定します。 1 本指のイベントには、タップ、ドラッグ、およびスワイプがあります。
+- ![タッチエミュレーションの開始ボタン](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn")タッチエミュレーションの開始: 対話モードを1本の指のタッチジェスチャに設定します。 1 本指のイベントには、タップ、ドラッグ、およびスワイプがあります。
 
-   ![シミュレーターの 1 本の指のターゲット](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
+   ![シミュレーター1本指ターゲット](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
    
    シングル ターゲット アイコンは、シミュレーター内のイベントの位置を示します。 ポインターを配置するには、マウスを使用します。
 
-   ![1 本指タッチのターゲット](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
+   ![1本指タッチターゲット](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
    
    タッチ モードをアクティブにするには、マウスの左ボタンを押します。 たとえば、タップをシミュレートする場合はボタンをクリックし、ドラッグまたはスワイプする場合はボタンを長押しします。
 
@@ -57,7 +57,7 @@ UWP アプリ用の Visual Studio シミュレーターはローカル コンピ
 
 対話モードを、2 本の指によるピンチ ジェスチャとズーム ジェスチャに設定します。
 
-![シミュレーターの 2 本指のターゲット](../debugger/media/simulator_twofinger.png)
+![シミュレーター2本指ターゲット](../debugger/media/simulator_twofinger.png)
 
 ダブル ターゲット アイコンは、デバイス画面上の 2 本の指の位置を示します。
 
@@ -88,7 +88,7 @@ UWP アプリ用の Visual Studio シミュレーターはローカル コンピ
  シミュレーターを任意の方向に 90 度回転させることで、デバイスの方向を縦長と横長の間で切り替えることができます。
 
 > [!NOTE]
-> シミュレーターでは、プロジェクトのプロパティ [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) は考慮されません。 たとえば、プロジェクトで方向が `Landscape`に設定されている場合でも、シミュレーターの方向を回転させて縦向きにすると、シミュレーターに表示されるイメージも回転され、サイズが変更されます。 実際のデバイスでこれらの設定をテストしてください。
+> シミュレーターでは、プロジェクトのプロパティ [DisplayProperties.AutoRotationPreferences](/uwp/api/Windows.Graphics.Display.DisplayProperties#Windows_Graphics_Display_DisplayProperties_AutoRotationPreferences) は考慮されません。 たとえば、プロジェクトで方向が `Landscape`に設定されている場合でも、シミュレーターの方向を回転させて縦向きにすると、シミュレーターに表示されるイメージも回転され、サイズが変更されます。 実際のデバイスでこれらの設定をテストしてください。
 
 > [!NOTE]
 > シミュレーターを回転させたときに、シミュレーターの 1 つの辺がシミュレーターを表示している画面よりも大きくなる場合、シミュレーターのサイズは画面に収まるように自動的に変更されます。 シミュレーターは、再度回転させた場合でも、元のサイズに戻ることはありません。
@@ -96,13 +96,13 @@ UWP アプリ用の Visual Studio シミュレーターはローカル コンピ
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> シミュレートされる画面のサイズと解像度を変更する
  シミュレートされる画面のサイズと解像度を変更するには、パレットの **[解像度の変更]** ボタンをクリックし、一覧から新しいサイズと解像度を選択します。
 
- 画面サイズと解像度は *画面の幅 (インチ)、ピクセル幅 X ピクセル高さ*で一覧表示されます。 画面のサイズと解像度の両方がシミュレートされます。 シミュレーター上の位置座標は、選択したデバイスのサイズと解像度の座標に変換されます。
+ 画面サイズと解像度は *画面の幅 (インチ)、ピクセル幅 X ピクセル高さ*で一覧表示されます。 画面のサイズと解像度の両方がシミュレートされます。 シミュレーター上の位置座標は、選択したデバイスのサイズと解像度に変換されます。
 
 > [!NOTE]
-> ビットマップ イメージのスケーリングされたバージョンをアプリに保存できます。Windows は、現在のスケールで正しいイメージを読み込みます。 詳細については、次を参照してください。[デザインと UI の概要](/windows/uwp/layout/design-and-ui-intro)します。 ただし、Windows によって解像度に合ったイメージが選択されるようにシミュレーターの解像度を変更した場合、新しいイメージを表示するにはデバッグ セッションを停止して再度開始する必要があります。
+> ビットマップ イメージのスケーリングされたバージョンをアプリに保存できます。Windows は、現在のスケールで正しいイメージを読み込みます。 詳細については、「[デザインと UI の概要](/windows/uwp/layout/design-and-ui-intro)」を参照してください。 ただし、Windows によって解像度に合ったイメージが選択されるようにシミュレーターの解像度を変更した場合、新しいイメージを表示するにはデバッグ セッションを停止して再度開始する必要があります。
 
-## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Microsoft Store に送信するアプリのスクリーン ショットをキャプチャします。
- Microsoft Store にアプリを送信するときに、アプリのスクリーン ショットを含める必要があります。
+## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Microsoft Store に送信するアプリのスクリーンショットをキャプチャする
+ Microsoft Store にアプリを送信する場合は、アプリのスクリーンショットを含める必要があります。
 
 > [!NOTE]
 > スクリーンショットは、シミュレーターの現在の解像度で保存されます。 解像度を変更するには、 **[解像度の変更]** ボタンをクリックします。
@@ -115,7 +115,7 @@ UWP アプリ用の Visual Studio シミュレーターはローカル コンピ
 
 ## <a name="BKMK_Simulate_network_connection_properties"></a> ネットワーク接続のプロパティをシミュレートする
 
-アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API を使用すると、 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) および署名を行うイベント [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) に応答できます。 例については、「[クイック スタート:従量制ネットワーク接続のコスト制約を管理する](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)します。
+アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API を使用すると、 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) および署名を行うイベント [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) に応答できます。 「 [従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)」をご覧ください。
 
 ご利用のネットワーク コストを認識するコードをデバッグまたはテストするには、シミュレーターを使って、[GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) によって返される [ConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)オブジェクトを通じて公開されるネットワークのプロパティを模倣します。
 
@@ -131,15 +131,15 @@ UWP アプリ用の Visual Studio シミュレーターはローカル コンピ
 
 4. [[ネットワーク コストの種類]](/uwp/api/windows.networking.connectivity.networkcosttype) の一覧からプロファイルの **NetworkCostType** 値を選択します。
 
-5. **[データの限度の状態フラグ]** の一覧から、[ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) プロパティまたは [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) プロパティを true に設定できます。または、**[データの限度を下回っています]** を選択すると、両方の値を false に設定できます。
+5. **[データの限度の状態フラグ]** の一覧から、[ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) プロパティまたは [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) プロパティを true に設定できます。または、 **[データの限度を下回っています]** を選択すると、両方の値を false に設定できます。
 
 6. **[ローミングの状態]** の一覧から、 [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) プロパティを設定します。
 
 7. **[プロパティの設定]** をクリックして、前景の [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) イベントおよび [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 型の背景の **SystemTrigger**をトリガーして、ネットワーク プロパティをシミュレートします。
 
-ネットワーク接続の管理に関する詳細についてを参照してください。
+ネットワーク接続の管理の詳細については、以下を参照してください。
 
-[クイック スタート:従量制ネットワーク接続管理のコスト制約](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
 [ネットワーク情報のサンプル](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -153,9 +153,9 @@ UWP アプリ用の Visual Studio シミュレーターはローカル コンピ
 
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> キーボードを使用してシミュレーター内を移動する
 
-キーを押して、シミュレーター ツールバーをナビゲートできます**CTRL + ALT + ↑**シミュレーター ウィンドウからシミュレーター ツールバーにフォーカスを移動します。 ツール バーのボタンの間を移動するには、 **上向きの矢印** と **下向きの矢印** を使用します。
+シミュレーターツールバー内を移動するには、 **CTRL + ALT + 上方向**キーを押して、シミュレーターウィンドウからシミュレーターツールバーにフォーカスを切り替えます。 ツール バーのボタンの間を移動するには、 **上向きの矢印** と **下向きの矢印** を使用します。
 
-シミュレーターを終了するには、キーを押して**CTRL + ALT + F4**します。
+シミュレーターを終了するには、 **CTRL + ALT + F4**キーを押します。
 
 ## <a name="see-also"></a>関連項目
 

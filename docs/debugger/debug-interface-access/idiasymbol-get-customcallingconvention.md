@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_customcallingconvention |Microsoft Docs
+title: 'IDiaSymbol:: get_customCallingConvention |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 733c18fd9fceaad6c976ab47a85420a27982cfbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 01fb33108c9952b8543d36b64b7743f4c0531be5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858492"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740732"
 ---
-# <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-関数がカスタム呼び出し規約を持つかどうかを指定するフラグを取得します。
+# <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
+関数にカスタム呼び出し規約があるかどうかを指定するフラグを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -33,20 +33,20 @@ HRESULT get_customCallingConvention(
 #### <a name="parameters"></a>パラメーター
  `pFlag`
 
-[out]返します`TRUE`関数には、カスタム呼び出し規約; 場合を返しますそれ以外の場合、`FALSE`関数には、既知の呼び出し規約。
+入出力関数にカスタム呼び出し規約がある場合は `TRUE` を返します。それ以外の場合、`FALSE`を返します。関数には既知の呼び出し規約があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
+ 成功した場合は `S_OK`を返します。それ以外の場合は、`S_FALSE` またはエラーコードを返します。
 
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> `S_FALSE` の戻り値は、そのシンボルに対してプロパティを使用できないことを意味します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>［要件］
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|Dia2.h|
-|バージョン:|DIA SDK バージョン 8.0|
+|ヘッダー:|dia2|
+|バージョン:|DIA SDK v1.0|
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

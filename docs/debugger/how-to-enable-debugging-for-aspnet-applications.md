@@ -1,5 +1,5 @@
 ---
-title: ASP.NET アプリのデバッグの有効化 |Microsoft Docs
+title: ASP.NET apps のデバッグを有効にする |Microsoft Docs
 ms.custom: ''
 ms.date: 09/21/2018
 ms.topic: conceptual
@@ -18,114 +18,114 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6f20a2272214a525b00ebf07ebc6e5e803b138c
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848398"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911352"
 ---
-# <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio での ASP.NET または ASP.NET Core アプリをデバッグします。
+# <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio での ASP.NET または ASP.NET Core アプリのデバッグ
 
-Visual Studio で ASP.NET と ASP.NET Core アプリをデバッグすることができます。 ASP.NET と ASP.NET Core では、プロセスとは異なると、IIS Express または IIS サーバーをローカルで実行するかどうか。
+Visual Studio では、ASP.NET アプリと ASP.NET Core アプリをデバッグできます。 このプロセスは、ASP.NET と ASP.NET Core と、IIS Express またはローカルの IIS サーバーのどちらで実行するかによって異なります。
 
 >[!NOTE]
->次の手順と設定は、ローカル サーバー上のアプリのデバッグにのみ適用されます。 サーバーを使用してリモートの IIS でアプリをデバッグ**プロセスにアタッチ**、これらの設定を無視します。 詳細と IIS で ASP.NET アプリのリモート デバッグについては、次を参照してください。 [ASP.NET の IIS コンピューター上のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)または[リモート IIS コンピューター上の ASP.NET Core のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)します。
+>次の手順と設定は、ローカルサーバー上のアプリをデバッグする場合にのみ適用されます。 リモート IIS サーバー上のアプリをデバッグ**するには、[プロセスにアタッチ**] を使用し、これらの設定は無視します。 IIS での ASP.NET アプリのリモートデバッグの詳細および手順については、「リモートデバッグの[ASP.NET on a iis computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 」または「remote [debug ASP.NET CORE on remote iis computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)」を参照してください。
 
-組み込みの IIS Express サーバーは、Visual Studio に含まれています。 IIS Express は ASP.NET と ASP.NET Core プロジェクトでは、既定のデバッグ サーバーおよびが事前に構成します。 デバッグ、および初期のデバッグとテストに最適に最も簡単な方法です。
+組み込みの IIS Express サーバーは、Visual Studio に含まれています。 IIS Express は、ASP.NET および ASP.NET Core プロジェクトの既定のデバッグサーバーであり、事前に構成されています。 これは最も簡単なデバッグ方法であり、最初のデバッグとテストに最適です。
 
-ASP.NET または ASP.NET Core アプリ ローカル IIS サーバー (バージョン 8.0 以降) でアプリを実行するように構成をデバッグすることもできます。 IIS をローカルでデバッグするには、次の要件を満たす必要があります。
+アプリを実行するように構成されているローカル IIS サーバー (バージョン8.0 以降) で、ASP.NET または ASP.NET Core アプリをデバッグすることもできます。 ローカル IIS でデバッグするには、次の要件を満たしている必要があります。
 
 <a name="iis"></a>
-- 選択**開発時 IIS サポート**Visual Studio をインストールするときにします。 (必要に応じて、Visual Studio インストーラーを再実行して、選択**変更**、し、このコンポーネントを追加します)。
-- 管理者として Visual Studio を実行します。
-- インストールし、適切なバージョンの ASP.NET または ASP.NET Core で IIS が正しく構成します。 詳細と手順については、次を参照してください。 [IIS 8.0 を使用して ASP.NET 3.5 および ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)または[IIS と Windows での ASP.NET Core のホスト](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/index)します。
-- エラーのない、アプリが IIS で実行することを確認します。
+- Visual Studio をインストールするときに、 **[開発時 IIS サポート]** を選択します。 (必要に応じて、Visual Studio インストーラーを再実行し、 **[変更]** を選択して、このコンポーネントを追加します)。
+- Visual Studio を管理者として実行している。
+- ASP.NET や ASP.NET Core の適切なバージョンで IIS をインストールして正しく構成します。 詳細と手順については、 [ASP.NET 3.5 と ASP.NET 4.5 を使用した iis 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) 、および[iis を使用した Windows でのホスト ASP.NET Core](/aspnet/core/host-and-deploy/iis/index)に関する説明を参照してください。
+- アプリケーションが IIS でエラーなしで実行されていることを確認します。
 
-## <a name="debug-aspnet-apps"></a>ASP.NET アプリをデバッグします。
+## <a name="debug-aspnet-apps"></a>ASP.NET アプリのデバッグ
 
-IIS Express は、既定値は、およびが事前に構成します。 をローカルの IIS でデバッグしている場合は、を満たしていることを確認してください、[ローカル IIS のデバッグの要件](#iis)します。
+IIS Express が既定であり、事前に構成されています。 ローカル IIS でデバッグしている場合は、[ローカル iis デバッグの要件](#iis)を満たしていることを確認してください。
 
-1. Visual Studio で ASP.NET プロジェクトを選択**ソリューション エクスプ ローラー**  をクリックし、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
+1. Visual**ソリューションエクスプローラー** Studio で ASP.NET プロジェクトを選択し、 **[プロパティ]** アイコンをクリックし、 **Alt**キーを押し+**enter**キーを押すか、右クリックして **[プロパティ]** を選択します。
 
-1. 選択、 **Web**タブ。
+1. **[Web]** タブを選択します。
 
-1. **プロパティ** ウィンドウで、**サーバー**、
-   - IIS express の場合は、選択**IIS Express**ドロップダウン リストから。
-   - ローカルの IIS
-     1. 選択**ローカル IIS**ドロップダウン リストから。
-     1. 次に、**プロジェクト URL**フィールドで、**仮想ディレクトリの作成**IIS でのアプリをまだ設定していない場合は。
+1. **[プロパティ]** ウィンドウの **[サーバー]** の下で、
+   - IIS Express には、ドロップダウンから **[IIS Express]** を選択します。
+   - ローカル IIS の場合
+     1. ドロップダウンから **[ローカル IIS]** を選択します。
+     1. IIS でまだアプリを設定していない場合は、 **[プロジェクトの URL]** フィールドの横にある **[仮想ディレクトリの作成]** を選択します。
 
-1. **デバッガー**、 **ASP.NET**します。
+1. **[デバッガー]** で、 **[ASP.NET]** を選択します。
 
-   ![ASP.NET デバッガー設定](media/dbg-aspnet-enable-debugging2.png "ASP.NET デバッガーの設定")
+   ![ASP.NET デバッガーの設定](media/dbg-aspnet-enable-debugging2.png "ASP.NET デバッガーの設定")
 
-1. 使用**ファイル** > **選択した項目の保存**または**Ctrl**+**S**変更を保存します。
+1. **ファイル** > 使用**して、選択した項目を保存**するか、 **Ctrl**+**S**を使用して変更を保存します。
 
-1. プロジェクトで、アプリをデバッグするには、いくつかのコードにブレークポイントを設定します。 Visual Studio のツールバーで、構成に設定を確認します**デバッグ**に必要なブラウザーが表示されますおよび**IIS Express (\<ブラウザー名 >)** または**ローカル IIS (\<ブラウザー名 >)** エミュレーター フィールドにします。
+1. アプリをデバッグするには、プロジェクトで、いくつかのコードにブレークポイントを設定します。 Visual Studio のツールバーで、構成が **[デバッグ]** に設定されていることを確認し、必要なブラウザーが**IIS Express (\<ブラウザー名 >)** または**ローカル IIS (\<ブラウザー名 >)** に [エミュレーター] フィールドに表示されていることを確認します。
 
-1. デバッグを開始する次のように選択します**IIS Express (\<ブラウザー名 >)** または**ローカル IIS (\<ブラウザー名 >)** ツールバーで、次のように選択します。 **[デバッグ開始]**。から、**デバッグ**メニューのまたはキーを押して**F5**します。 デバッガーがブレークポイントで一時停止します。 デバッガーがブレークポイントにヒットできない場合は、次を参照してください。[トラブルシューティング デバッグ](#troubleshoot-debugging)します。
+1. デバッグを開始するには、ツールバーの [ **IIS Express] (\<ブラウザー名 >)** または**ローカル IIS (\<ブラウザー名 >)** を選択し、 **[デバッグ]** メニューの **[デバッグの開始]** をクリックするか、 **F5**キーを押します。 デバッガーはブレークポイントで一時停止します。 デバッガーがブレークポイントに到達できない場合は、「[デバッグのトラブルシューティング](#troubleshoot-debugging)」を参照してください。
 
-## <a name="debug-aspnet-core-apps"></a>ASP.NET Core アプリをデバッグします。
+## <a name="debug-aspnet-core-apps"></a>ASP.NET Core アプリのデバッグ
 
-IIS Express は、既定値は、およびが事前に構成します。 をローカルの IIS でデバッグしている場合は、を満たしていることを確認してください、[ローカル IIS のデバッグの要件](#iis)します。
+IIS Express が既定であり、事前に構成されています。 ローカル IIS でデバッグしている場合は、[ローカル iis デバッグの要件](#iis)を満たしていることを確認してください。
 
-1. Visual Studio で ASP.NET Core プロジェクトを選択**ソリューション エクスプ ローラー**  をクリックし、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
+1. Visual Studio**ソリューションエクスプローラー**で ASP.NET Core プロジェクトを選択し、 **[プロパティ]** アイコンをクリックして、 **Alt**+**enter**キーを押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[デバッグ]** タブを選択します。
 
-1. **プロパティ** ウィンドウで、次へ を**プロファイル**、
-   - IIS express の場合は、選択**IIS Express**ドロップダウン リストから。
-   - ローカル IIS ドロップダウン リストからアプリ名を選択または選択**新規**新しいプロファイル名を作成し、選択**OK**します。
+1. **[プロパティ]** ウィンドウで、 **[プロファイル]** の横にある
+   - IIS Express には、ドロップダウンから **[IIS Express]** を選択します。
+   - ローカル IIS の場合は、ドロップダウンからアプリ名を選択するか、[**新規**作成] を選択して新しいプロファイル名を作成し、[ **OK]** を選択します。
 
-1. 横に**起動**、いずれかを選択**IIS Express**または**IIS**ドロップダウン リストから。
+1. **[起動]** の横で、ドロップダウンリストから **[IIS Express]** または **[IIS]** を選択します。
 
-1. 必ず**起動ブラウザー**が選択されています。
+1. **起動ブラウザー**が選択されていることを確認します。
 
-1. **環境変数**、ことを確認します**ASPNETCORE_ENVIRONMENT**の値が存在**開発**します。 そうでない場合は、選択**追加**し追加します。
+1. **[環境変数]** で、 **ASPNETCORE_ENVIRONMENT**に " **Development**" という値が含まれていることを確認します。 それ以外の場合は、 **[追加]** を選択して追加します。
 
-   ![ASP.NET Core デバッガー設定](../debugger/media/dbg-aspnet-enable-debugging3.png "ASP.NET Core デバッガーの設定")
+   ![デバッガー設定の ASP.NET Core](../debugger/media/dbg-aspnet-enable-debugging3.png "デバッガー設定の ASP.NET Core")
 
-1. 使用**ファイル** > **選択した項目の保存**または**Ctrl**+**S**変更を保存します。
+1. **ファイル** > 使用**して、選択した項目を保存**するか、 **Ctrl**+**S**を使用して変更を保存します。
 
-1. プロジェクトで、アプリをデバッグするには、いくつかのコードにブレークポイントを設定します。 Visual Studio のツールバーで、構成に設定を確認します**デバッグ**、いずれかと**IIS Express**、またはエミュレーター フィールドで、新しい IIS プロファイル名が表示されます。
+1. アプリをデバッグするには、プロジェクトで、いくつかのコードにブレークポイントを設定します。 Visual Studio のツールバーで、構成が **[デバッグ]** に設定されていること、 **IIS Express**または新しい IIS プロファイル名のいずれかが [エミュレーター] フィールドに表示されていることを確認します。
 
-1. デバッグを開始する次のように選択します**IIS Express**または **\<IIS プロファイル名 >** ツールバーで、次のように選択します。**デバッグの開始**から、 **のデバッグ。** メニューのまたはキーを押して**F5**します。 デバッガーがブレークポイントで一時停止します。 デバッガーがブレークポイントにヒットできない場合は、次を参照してください。[トラブルシューティング デバッグ](#troubleshoot-debugging)します。
+1. デバッグを開始するには、ツールバーの **[IIS Express]** または [ **IIS プロファイル > 名の\<** ] を選択し、 **[デバッグ]** メニューの **[デバッグの開始]** を選択するか、 **F5**キーを押します。 デバッガーはブレークポイントで一時停止します。 デバッガーがブレークポイントに到達できない場合は、「[デバッグのトラブルシューティング](#troubleshoot-debugging)」を参照してください。
 
-## <a name="troubleshoot-debugging"></a>デバッグをトラブルシューティングします。
+## <a name="troubleshoot-debugging"></a>デバッグのトラブルシューティング
 
-ローカル IIS のデバッグは、ブレークポイントに進むことはできない場合、は、以下の手順を実行のトラブルシューティングを行う。
+ローカル IIS デバッグがブレークポイントに進行できない場合は、次の手順に従ってトラブルシューティングを行います。
 
-1. IIS から web アプリを起動し、正しく動作するかどうかを確認します。 Web アプリが実行されているままにします。
+1. IIS から web アプリを起動し、正常に動作することを確認します。 Web アプリを実行したままにします。
 
-2. Visual studio で、次のように選択します**デバッグ > プロセスにアタッチ**またはキーを押します**Ctrl**+**Alt**+**P**、と。ASP.NET または ASP.NET Core のプロセスへの接続 (通常**w3wp.exe**または**dotnet.exe**)。 詳細については、次を参照してください。[プロセスにアタッチ](attach-to-running-processes-with-the-visual-studio-debugger.md)と[ASP.NET プロセスの名前を見つける方法](how-to-find-the-name-of-the-aspnet-process.md)します。
+2. Visual Studio で、**デバッグ > プロセスにアタッチ** を選択するか、 **Ctrl**+**Alt**+**P**キーを押して、ASP.NET**または**ASP.NET Core プロセス (通常は w3wp.exe または**dotnet**) に接続します。 詳細については、「[プロセスにアタッチ](attach-to-running-processes-with-the-visual-studio-debugger.md)」と「 [ASP.NET プロセスの名前を検索する方法](how-to-find-the-name-of-the-aspnet-process.md)」を参照してください。
 
-かどうかは、接続し、使用して、ブレークポイントにヒット、**プロセスにアタッチ**を使用していませんが、**デバッグ** > **デバッグの開始**または**F5**、設定がプロジェクトのプロパティで正しくないです。 ホスト ファイルを使用する場合は、正しく構成されてもを確認します。
+**[プロセスにアタッチ]** を使用してブレークポイントに接続してヒットしたが、デバッグ >  **[デバッグの開始]** または**F5** **を使用し**て実行できない場合は、プロジェクトのプロパティで設定が間違っている可能性があります。 HOSTS ファイルを使用する場合は、それも正しく構成されていることを確認してください。
 
-## <a name="configure-debugging-in-the-webconfig-file"></a>Web.config ファイルでデバッグを構成します。
+## <a name="configure-debugging-in-the-webconfig-file"></a>Web.config ファイルでデバッグを構成する
 
-ASP.NET プロジェクトが*web.config*両方アプリの構成と起動については、デバッグの設定などが含まれるファイルが既定では、します。 *Web.config*デバッグ用に、ファイルを正しく構成する必要があります。 **プロパティ**前のセクションでは更新プログラムの設定、 *web.config*ファイルもに手動で構成できます。
+ASP.NET プロジェクトには、既定で web.config ファイルがあります。このファイルには、アプリケーション構成と起動情報 (デバッグ設定を含む) の両方が含まれ*ています*。 Web.config*ファイルは*、デバッグ用に正しく構成されている必要があります。 前のセクションの**プロパティ**設定によって*web.config*ファイルが更新されますが、手動で構成することもできます。
 
 > [!NOTE]
-> ASP.NET Core プロジェクトが最初に*web.config*が、ファイル、 *appsettings.json*と*launchSettings.json*ファイルをアプリの構成および起動情報。 アプリのデプロイを作成、 *web.config*ファイルまたはファイルをプロジェクトで、デバッグ情報を通常は含まれません。
+> ASP.NET Core プロジェクトには、最初*は web.config ファイルが*ありませんが、アプリの構成と起動情報には、 *Appsettings*ファイルと*launchsettings. json*ファイルを使用します。 アプリを配置すると、プロジェクトに*web.config ファイルが*作成されますが、通常、デバッグ情報は含まれません。
 
 > [!TIP]
-> デプロイ プロセスは更新、 *web.config*設定、デバッグする前に、ようにして、 *web.config*デバッグ用に構成します。
+> 配置プロセス*で web.config の設定が*更新される可能性があるため、デバッグを試行する前に、web.config がデバッグ用に*構成され*ていることを確認してください。
 
-**手動で構成する、 *web.config*デバッグ用のファイル。**
+**デバッグ用に web.config*ファイルを*手動で構成するには、次のようにします。**
 
-1. Visual Studio で開き、ASP.NET プロジェクトの*web.config*ファイル。
+1. Visual Studio で、ASP.NET プロジェクトの*web.config*ファイルを開きます。
 
-2. *Web.config* XML ファイルは、タグでマークされた入れ子のセクションを格納するためです。 `configuration/system.web/compilation` セクションを見つけます。 (場合、`compilation`要素の存在は作成しません)。
+2. *Web.config は XML*ファイルであるため、タグでマークされた入れ子のセクションが含まれています。 `configuration/system.web/compilation` セクションを見つけます。 (`compilation` 要素が存在しない場合は作成します)。
 
-3. 確認、`debug`属性、`compilation`要素に設定されて`true`します。 (場合、`compilation`要素が含まれていない、`debug`属性、追加しに設定`true`)。
+3. `compilation` 要素の `debug` 属性が `true`に設定されていることを確認します。 (`compilation` 要素に `debug` 属性が含まれていない場合は、それを追加して `true`に設定します)。
 
-   既定の IIS Express サーバーではなくローカルの IIS を使用する場合、以下のことを確認、`targetFramework`属性の値、`compilation`要素が、IIS サーバー上のフレームワークに一致します。
+   既定の IIS Express サーバーではなくローカル IIS を使用している場合は、`compilation` 要素の `targetFramework` 属性値が IIS サーバーのフレームワークと一致していることを確認してください。
 
-   `compilation`の要素、 *web.config*ファイルは、次の例のようになります。
+   *Web.config ファイルの*`compilation` 要素は、次の例のようになります。
 
    > [!NOTE]
-   > この例は、部分的な*web.config*ファイル。 通常は追加の XML セクションがある、`configuration`と`system.web`要素、および`compilation`他の属性と要素が、要素に含めることも可能性があります。
+   > この例は *、部分的な web.config ファイル*です。 通常、`configuration` 要素と `system.web` 要素には追加の XML セクションがあり、`compilation` 要素には他の属性や要素が含まれる場合もあります。
 
    ```xml
    <configuration>
@@ -138,55 +138,55 @@ ASP.NET プロジェクトが*web.config*両方アプリの構成と起動につ
    </configuration>
    ```
 
-*web.config* ファイルに変更が加えられると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] によってその変更が自動的に検出され、新しい構成設定が適用されます。 コンピューターや変更を有効にする IIS サーバーを再起動する必要はありません。
+*web.config* ファイルに変更が加えられると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] によってその変更が自動的に検出され、新しい構成設定が適用されます。 変更を有効にするために、コンピューターまたは IIS サーバーを再起動する必要はありません。
 
-Web サイトで複数の仮想ディレクトリとサブディレクトリを含めることができます*web.config*それぞれファイル。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリから構成設定を継承する*web.config*上位レベルの URL パスにあるファイル。 階層*web.config*ファイルの設定すべてに適用[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]かや、階層内のアプリ。 別の構成を設定、 *web.config*ファイル階層内の下位に高いファイル設定が上書きされます。
+*Web*サイトには、複数の仮想ディレクトリとサブディレクトリを含めることができ、それぞれに web.config ファイルが含まれています。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリは、URL パスの上位レベルにある web.config ファイルから構成設定を継承*します。* 階層の*web.config*ファイルの設定は、階層内の下位にあるすべての [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリに適用されます。 階層の下位にある web.config*ファイルで*別の構成を設定すると、上位のファイルの設定が上書きされます。
 
-例では、指定した場合の`debug="true"`で<em>www.microsoft.com/aaa/web.config</em>、任意のアプリ、 *aaa*フォルダーまたはサブフォルダーの*aaa* 、その設定を継承これらのアプリのいずれか、独自の設定をオーバーライドする場合を除く*web.config*ファイル。
+たとえば、 <em>www.microsoft.com/aaa/web.config</em>で `debug="true"` を指定した場合、 *aaa*フォルダーまたは*aaa*のサブフォルダー内のすべてのアプリは、その設定を継承し*ます。* ただし、これらのアプリのいずれかが独自の web.config で設定をオーバーライドする場合を除きます。拡張子.
 
-## <a name="publish-in-debug-mode-using-the-file-system"></a>ファイル システムを使用してデバッグ モードでの発行します。
+## <a name="publish-in-debug-mode-using-the-file-system"></a>ファイルシステムを使用したデバッグモードでの発行
 
-IIS にアプリを発行するさまざまな方法はあります。 次の手順では、作成およびデバッグ ファイル システムを使用して発行プロファイルを展開する方法を示します。 これを行うは、管理者として Visual Studio する実行する必要があります。
+IIS にアプリを発行するには、さまざまな方法があります。 次の手順は、ファイルシステムを使用してデバッグ発行プロファイルを作成し、デプロイする方法を示しています。 これを行うには、Visual Studio を管理者として実行している必要があります。
 
 > [!IMPORTANT]
-> コードまたは再構築を変更する場合は、再パブリッシュする手順を繰り返す必要があります。
+> コードを変更するか、リビルドする場合は、これらの手順を繰り返して再発行する必要があります。
 
-1. Visual Studio でプロジェクトを右クリックし、選択**発行**します。
+1. Visual Studio で、プロジェクトを右クリックし、 **[発行]** を選択します。
 
-3. 選択**IIS、FTP など**クリック**発行**します。
+3. [ **IIS]、[FTP]** などを選択し、 **[発行]** をクリックします。
 
-    ![IIS に発行](media/dbg-aspnet-local-iis.png "IIS への公開")
+    ![IIS に発行する](media/dbg-aspnet-local-iis.png "IIS に公開する")
 
-4. **CustomProfile**ダイアログ ボックスの**メソッドを公開**、選択**ファイル システム**します。
+4. **[Customprofile]** ダイアログで、 **[発行方法]** の **[ファイルシステム]** を選択します。
 
-5. **ターゲットの場所**、**参照**(**.**).
+5. **[ターゲットの場所]** で、 **[参照]** ( **...** ) を選択します。
 
-   - ASP.NET では、選択**ローカル IIS**、アプリでは、作成した web サイトを選択し、**オープン**します。
+   - ASP.NET の場合、 **[ローカル IIS]** を選択し、アプリ用に作成した web サイトを選択して、 **[開く]** を選択します。
 
-     ![Asp.net IIS に発行](media/dbg-aspnet-local-iis1.png "ASP.NET を IIS に発行します。")
+     ![IIS への ASP.NET への発行](media/dbg-aspnet-local-iis1.png "ASP.NET を IIS に発行する")
 
-   - ASP.NET Core, 選択**ファイル システム**、アプリでは、セットアップし、フォルダーを選択します**オープン**します。
+   - ASP.NET Core で、**ファイルシステム** を選択し、アプリ用に設定したフォルダーを選択して、**開く** を選択します。
 
 1. **[次へ]** を選択します。
 
-1. **構成**を選択します**デバッグ**ドロップダウン リストから。
+1. **[構成]** で、ドロップダウンから **[デバッグ]** を選択します。
 
 1. **[保存]** を選択します。
 
-1. **発行**ダイアログ ボックスで、必ず**CustomProfile** (または作成したプロファイルの名前) が表示されたらと**LastUsedBuildConfiguration**に設定されている**デバッグ**します。
+1. **[発行]** ダイアログで、 **customprofile** (または先ほど作成したプロファイルの名前) が表示され、 **Lastused buildconfiguration**が**Debug**に設定されていることを確認します。
 
 1. **[発行]** を選びます。
 
-    ![IIS に発行](media/dbg-aspnet-local-iis-select-site.png "IIS への公開")
+    ![IIS に発行する](media/dbg-aspnet-local-iis-select-site.png "IIS に公開する")
 
 > [!IMPORTANT]
-> デバッグ モードは、アプリのパフォーマンスを大幅に低下します。 最適なパフォーマンスを次のように設定します。`debug="false"`で、 *web.config*運用アプリを展開またはパフォーマンスの測定を実施するときに、リリース ビルドを指定します。
+> デバッグモードでは、アプリのパフォーマンスが大幅に低下します。 最適なパフォーマンスを得るには、web.config で `debug="false"` を設定し、運用アプリをデプロイするとき、またはパフォーマンス測定を実行するときにリリースビルドを*指定します*。
 
 ## <a name="see-also"></a>関連項目
 - [ASP.NET のデバッグ : システム要件](aspnet-debugging-system-requirements.md)
-- [方法: ユーザー アカウントでワーカー プロセスを実行します。](how-to-run-the-worker-process-under-a-user-account.md)
-- [方法: ASP.NET プロセスの名前を見つける](how-to-find-the-name-of-the-aspnet-process.md)
+- [方法 : ユーザー アカウントでワーカー プロセスを実行する](how-to-run-the-worker-process-under-a-user-account.md)
+- [方法 : ASP.NET プロセスの名前を見つける](how-to-find-the-name-of-the-aspnet-process.md)
 - [配置した Web アプリケーションのデバッグ](debugging-deployed-web-applications.md)
 - [チュートリアル: Web フォームのデバッグ](walkthrough-debugging-a-web-form.md)
-- [方法: ASP.NET の例外をデバッグします。](how-to-debug-aspnet-exceptions.md)
-- [Web アプリケーションをデバッグする: エラーとトラブルシューティング](debugging-web-applications-errors-and-troubleshooting.md)
+- [方法 : ASP.NET の例外をデバッグする](how-to-debug-aspnet-exceptions.md)
+- [Web アプリケーションをデバッグする: エラーおよびトラブルシューティング](debugging-web-applications-errors-and-troubleshooting.md)

@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648766"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924524"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 
 データを [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] コントロールにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータバインドコントロールを作成するには、 **[データソース]** ウィンドウから Visual Studio の [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグします。 このトピックでは、データ バインド [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
 
-Visual Studio でデータバインドコントロールを作成する方法に関する一般的な情報については、「 [Visual studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] データ バインディングの詳細については、「[データ バインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)」を参照してください。
+Visual Studio でデータバインドコントロールを作成する方法に関する一般的な情報については、「 [Visual studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] データ バインディングの詳細については、「[データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」を参照してください。
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>データへの WPF コントロールのバインドに関連するタスク
 
@@ -46,7 +46,7 @@ Visual Studio でデータバインドコントロールを作成する方法に
 
 ## <a name="generated-xaml-and-code"></a>生成される XAML およびコード
 
-**[データソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグすると、Visual Studio によって、新しいデータバインドコントロールを定義する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] (または、既存のコントロールをデータソースにバインドする) が生成されます。 一部のデータソースでは、Visual Studio によって、データソースにデータが格納されるコードビハインドファイル内のコードも生成されます。
+**[データソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]に項目をドラッグすると、Visual Studio によって、新しいデータバインドコントロールを定義する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] (または、既存のコントロールをデータソースにバインドする) が生成されます。 一部のデータソースでは、Visual Studio によって、データソースにデータが格納されるコードビハインドファイル内のコードも生成されます。
 
 次の表に、 **[データソース]** ウィンドウで、Visual Studio がデータソースの種類ごとに生成する [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] とコードを示します。
 
@@ -67,7 +67,7 @@ Visual Studio でデータバインドコントロールを作成する方法に
 
 Visual Studio は、分離コード ファイルに次の変更も加えます。
 
-- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベント ハンドラーは、テーブルにデータを読み込み、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得して、最初のデータ項目を現在の項目にします。 @No__t_0 イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
+- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベント ハンドラーは、テーブルにデータを読み込み、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得して、最初のデータ項目を現在の項目にします。 <xref:System.Windows.FrameworkElement.Loaded> イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
 
 ### <a name="entity-data-models"></a>エンティティ データ モデル
 
@@ -81,7 +81,7 @@ Visual Studio は、分離コード ファイルに次の変更も加えます�
 
 - デザイナーにドラッグされたエンティティ (または、デザイナーにドラッグされたプロパティを含むエンティティ) のクエリを返す新しいメソッドを追加する。 新しいメソッドには `Get<EntityName>Query` という名前が付いています。 `\<EntityName>` はエンティティの名前です。
 
-- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベントハンドラーは `Get<EntityName>Query` メソッドを呼び出して、エンティティにデータを格納し、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得してから、最初のデータ項目を現在の項目にします。 @No__t_0 イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
+- コントロールを格納する <xref:System.Windows.FrameworkElement.Loaded> 要素の [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] イベント ハンドラーを作成する。 イベントハンドラーは `Get<EntityName>Query` メソッドを呼び出して、エンティティにデータを格納し、コンテナーのリソースから <xref:System.Windows.Data.CollectionViewSource> を取得してから、最初のデータ項目を現在の項目にします。 <xref:System.Windows.FrameworkElement.Loaded> イベントハンドラーが既に存在する場合、Visual Studio はこのコードを既存のイベントハンドラーに追加します。
 
 ### <a name="services"></a>Services
 

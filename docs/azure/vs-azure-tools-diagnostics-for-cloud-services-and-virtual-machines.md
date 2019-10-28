@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962973"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911855"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
@@ -36,7 +36,7 @@ Visual Studio では、Azure SDK 2.6 以降のプロジェクトには、次の�
 * Azure SDK 2.4 以前では、接続文字列は、診断プラグインが診断ログを転送するためのストレージ アカウント情報を取得する目的でランタイムとして使用されます。
 * Azure SDK 2.6 以降では、Visual Studio が診断接続文字列を使用して、発行時に Azure Diagnostics 拡張機能を適切なストレージ アカウント情報で設定します。 接続文字列を使用して、Visual Studio が発行時に使用するさまざまなサービス構成に対して、異なるストレージ アカウントを定義できます。 ただし、Azure SDK 2.5 以降は診断プラグインを使用できないため、.cscfg ファイルだけでは診断拡張機能を設定することはできません。 拡張機能は、Visual Studio や PowerShell などのツールを使用して、別途設定する必要があります。
 * PowerShell を使用した診断拡張機能の設定プロセスを単純化するために、Visual Studio からの出力パッケージには、各ロールの診断拡張機能用のパブリック構成 XML が含まれます。 Visual Studio は、診断接続文字列を使用して、パブリック構成内のストレージ アカウント情報を取り込みます。 パブリック構成ファイルは、拡張機能フォルダーに作成されます。 パブリック構成ファイルには、PaaSDiagnostics.&lt;ロール名\>.PubConfig.xml のパターンで名前が付けられます。 このパターンを PowerShell ベースのデプロイで使用すれば、各構成をロールにマップすることができます。
-* [Azure ポータル](http://go.microsoft.com/fwlink/p/?LinkID=525040)は、.cscfg ファイル内の接続文字列を使用して診断データにアクセスします。 このデータが **[監視]** タブに表示されます。ポータルで監視データを詳細出力するようにサービスを設定するには、接続文字列が必要です。
+* [Azure ポータル](https://portal.azure.com)は、.cscfg ファイル内の接続文字列を使用して診断データにアクセスします。 データが **[監視]** タブに表示されます。ポータルで詳細監視データを表示するようにサービスを設定するには、接続文字列が必要です。
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>プロジェクトを Azure SDK 2.6 以降に移行する
 Azure SDK 2.5 から Azure SDK 2.6 以降に移行するとき、.wadcfgx ファイルに指定した診断ストレージ アカウントがある場合は、そのストレージ アカウントがそのファイルにそのまま残ります。 さまざまなストレージ構成で異なるストレージ アカウントを使用できる柔軟性を活用するには、接続文字列をプロジェクトに手動で追加します。 Azure SDK 2.4 以前から Azure SDK 2.6 にプロジェクトを移行する場合、診断接続文字列は保持されます。 ただし、前のセクションで説明したように、Azure SDK 2.6 では接続文字列の扱いが変更されているので注意してください。
@@ -51,7 +51,7 @@ Azure SDK 2.5 から Azure SDK 2.6 以降に移行するとき、.wadcfgx ファ
 
 たとえば、このチェック ボックスを選択し、診断接続文字列に `UseDevelopmentStorage=true` を指定した場合、プロジェクトを Azure に発行すると、Visual Studio によって、診断接続文字列が発行ウィザードで指定したストレージ アカウントに自動的に更新されます。 ただし、実際のストレージ アカウントが診断接続文字列として指定されている場合は、そのアカウントが使用されます。
 
-## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>診断機能の Azure SDK 2.4 以前と Azure SDK 2.5 以降の違い
+## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Azure SDK 2.4 以前と Azure SDK 2.5 以降の診断機能の違い
 プロジェクトを Azure SDK 2.4 以前から Azure SDK 2.5 以降にアップグレードする場合、次の診断機能の違いに留意してください。
 
 * **構成 API は非推奨になりました**。 Azure SDK 2.4 以前のバージョンでは、プログラムから診断を構成できましたが、Azure SDK 2.5 以降ではプログラムによる診断の構成は非推奨扱いとなりました。 現在、診断の構成をコードで定義している場合、その診断機能を引き続き利用するためには、移行したプロジェクトでそれらの設定を最初から構成し直す必要があります。 Azure SDK 2.4 の診断構成ファイルは diagnostics.wadcfg です。 Azure SDK 2.5 以降の診断構成ファイルは diagnostics.wadcfgx です。
@@ -80,7 +80,7 @@ Azure SDK 2.5 から Azure SDK 2.6 以降に移行するとき、.wadcfgx ファ
    * **[Microsoft Azure ストレージ エミュレーター]** を選択した場合、接続文字列は `UseDevelopmentStorage=true` に設定されます。
    * **[サブスクリプション]** オプションを選択した場合は、使用する Azure サブスクリプションを選択し、アカウント名を入力できます。 Azure サブスクリプションを管理するには、 **[アカウントの管理]** を選択します。
    * **[手動で入力された資格情報]** オプションを選択した場合は、使用する Azure アカウントの名前とキーを入力します。
-5. **[診断構成]** ダイアログ ボックスを表示するには、 **[構成]** を選択します。 **[全般]** と **[ログ ディレクトリ]** を除く各タブは、収集できる診断データのソースを表します。 既定の **[全般]** タブでは、診断データの収集オプションとして、 **[エラーのみ]** 、 **[すべての情報]** 、 **[カスタム プラン]** が提供されます。 既定の **[エラーのみ]** オプションでは、警告またはトレース メッセージが転送されないため、必要とするストレージ容量が最小限で済みます。 **[すべての情報]** オプションは最も多くの情報を転送し、最も多くのストレージを使用するため、コストが最も高いオプションです。
+5. **[診断構成]** ダイアログ ボックスを表示するには、 **[構成]** を選択します。 **[全般]** と **[ログ ディレクトリ]** を除く各タブは、収集できる診断データのソースを表します。 既定の **[全般**] タブには、 **[エラーのみ]** 、 **[すべての情報]** 、 **[カスタムプラン]** の各診断データの収集オプションが用意されています。 既定の **[エラーのみ]** オプションでは、警告またはトレース メッセージが転送されないため、必要とするストレージ容量が最小限で済みます。 **[すべての情報]** オプションは最も多くの情報を転送し、最も多くのストレージを使用するため、コストが最も高いオプションです。
 
    > [!NOTE]
    > [ディスククォータ (MB)] でサポートされる最小サイズは 50 MB で、既定のサイズは 4 GB です。 ただし、メモリ ダンプを収集する場合は、10 GB のような高い値に増やしてください。
@@ -108,7 +108,7 @@ Azure 仮想マシンの診断データを Visual Studio で収集できます�
     ![Azure 仮想マシン拡張機能をインストールする](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > 他の診断拡張機能も仮想マシンで使用できます。 詳細については、「[Windows 用の仮想マシン拡張機能とその機能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)」を参照してください。
+   > 他の診断拡張機能も仮想マシンで使用できます。 詳細については、「[Windows 用の仮想マシン拡張機能とその機能](/azure/virtual-machines/windows/extensions-features)」を参照してください。
    >
    >
 5. 拡張機能を追加してその **[診断構成]** ダイアログ ボックスを表示するには、 **[追加]** を選択します。
@@ -118,12 +118,12 @@ Azure 仮想マシンの診断データを Visual Studio で収集できます�
 
     ![Enable Azure diagnostics and configuration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    既定の **[全般]** タブでは、診断データの収集オプションとして、 **[エラーのみ]** 、 **[すべての情報]** 、 **[カスタム プラン]** が提供されます。 既定のオプションの **[エラーのみ]** では、警告またはトレース メッセージが転送されないため、必要とするストレージ容量が最小限で済みます。 **[すべての情報]** オプションは転送する情報量が最も多いため、ストレージ コストが最も高いオプションです。
+    既定の **[全般]** タブには、 **[エラーのみ]** 、 **[すべての情報]** 、 **[カスタムプラン]** の各診断データの収集オプションが用意されています。 既定のオプションの **[エラーのみ]** では、警告またはトレース メッセージが転送されないため、必要とするストレージ容量が最小限で済みます。 **[すべての情報]** オプションは転送する情報量が最も多いため、ストレージ コストが最も高いオプションです。
 7. この例では、収集するデータをカスタマイズできるよう、 **[カスタム プラン]** オプションを選択します。
 8. **[ディスク クォータ (MB)]** ボックスでは、ストレージ アカウントで診断データ用に割り当てる容量を指定します。 既定の値は必要に応じて変更可能です。
 9. 収集する診断データに対応する各タブで、 **[\<ログの種類\> の転送を有効にする]** チェック ボックスをオンにします。
 
-    たとえば、アプリケーション ログを収集する場合は、 **[アプリケーション ログ]** タブで **[アプリケーション ログの転送を有効にする]** チェック ボックスをオンにします。それ以外にも、診断データの種類ごとに必要な情報があれば指定します。 各タブの構成情報については、この記事の後半にある「**診断データのソースを構成する**」セクションを参照してください。
+    たとえば、アプリケーションログを収集する場合は、 **[アプリケーションログ]** タブの **[アプリケーションログの転送を有効に]** する チェックボックスをオンにします。また、診断データの種類ごとに必要なその他の情報を指定します。 各タブの構成情報については、この記事の後半にある「**診断データのソースを構成する**」セクションを参照してください。
 10. 目的の診断データの収集をすべて有効にしたら、 **[OK]** を選択します。
 11. 更新したプロジェクトを保存します。
 
@@ -160,7 +160,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 ![パフォーマンス カウンター](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-リストにないパフォーマンス カウンターを追跡するには、構文の候補を使用してパフォーマンス カウンターを入力し、 **[追加]** を選択します。 追跡できるパフォーマンス カウンターは、仮想マシンのオペレーティング システムによって決まります。構文の詳細については、[カウンター パスの指定](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)に関するページを参照してください。
+リストにないパフォーマンス カウンターを追跡するには、構文の候補を使用してパフォーマンス カウンターを入力し、 **[追加]** を選択します。 仮想マシン上のオペレーティングシステムによって、追跡できるパフォーマンスカウンターが決まります。構文の詳細については、「[カウンターパスの指定](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)」を参照してください。
 
 ### <a name="infrastructure-logs"></a>インフラストラクチャ ログ
 インフラストラクチャ ログには、Azure 診断インフラストラクチャ、RemoteAccess モジュール、および RemoteForwarder モジュールに関する情報があります。 インフラストラクチャ ログに関する情報を収集するには、 **[インフラストラクチャ ログの転送を有効にする]** チェック ボックスをオンします。 ストレージ アカウントへのインフラストラクチャ ログの転送間隔を増減するには、 **[転送間隔 (分)]** の値を変更します。
@@ -188,13 +188,13 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 名前空間のクラスを通して ASP.NET で ETW フレームワークがサポートされています。 Microsoft.WindowsAzure.Diagnostics は、標準の [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) クラスを継承して拡張する名前空間です。この名前空間では、Azure 環境のログ記録フレームワークとして [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) を使用できます。 詳細については、[Microsoft Azure でログ記録とトレースを制御する方法](https://msdn.microsoft.com/magazine/ff714589.aspx)と [Azure クラウドサービスと仮想マシンでの診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
 
 ### <a name="crash-dumps"></a>クラッシュ ダンプ
-ロール インスタンスがクラッシュしたときの情報を取り込むには、 **[クラッシュ ダンプの転送を有効にする]** チェック ボックスをオンにします。 (ASP.NET によってほとんどの例外が処理されるため、これは一般的に worker ロールに対してのみ機能します)。クラッシュ ダンプに充てる記憶域スペースの割合を増減するには、 **[ディレクトリのクォータ (%)]** の値を変更します。 クラッシュ ダンプが保存されるストレージ コンテナーを変更でき、ダンプの種類として **[フル]** または **[ミニ]** を選択できます。
+ロール インスタンスがクラッシュしたときの情報を取り込むには、 **[クラッシュ ダンプの転送を有効にする]** チェック ボックスをオンにします。 (ASP.NET ではほとんどの例外が処理されるため、この方法は一般に worker ロールに対してのみ有効です)。クラッシュダンプに割り当てるストレージ領域の割合を増減するには、 **[ディレクトリクォータ (%)]** の値を変更します。 クラッシュ ダンプが保存されるストレージ コンテナーを変更でき、ダンプの種類として **[フル]** または **[ミニ]** を選択できます。
 
 次のスクリーンショットは、現在追跡されているプロセスを一覧表示しています。 取り込むプロセスのチェック ボックスをオンにしてください。 別のプロセスを一覧に追加するには、プロセス名を入力し、 **[プロセスの追加]** を選択します。
 
 ![クラッシュ ダンプ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-詳細については、「[Microsoft Azure でログ記録とトレースを制御する](https://msdn.microsoft.com/magazine/ff714589.aspx)」と「[Microsoft Azure Diagnostics Part 4:Custom logging components and Azure Diagnostics 1.3 changes](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/)」(Microsoft Azure 診断第 4 部: カスタム ログ コンポーネントと Azure 診断 1.3 の変更点) を参照してください。
+詳細については、「 [Microsoft Azure でログ記録とトレースを制御](https://msdn.microsoft.com/magazine/ff714589.aspx)する」および[Microsoft Azure 診断パート 4: カスタムログコンポーネントと Azure 診断1.3 の変更点](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)」を参照してください。
 
 ## <a name="view-the-diagnostics-data"></a>診断データの表示
 クラウド サービスまたは仮想マシンの診断データを収集したら、そのデータを表示することができます。
@@ -256,7 +256,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
     サーバー エクスプローラーでデータ収集を変更した場合、その変更は、クラウド サービスを再度フル デプロイするまで有効になります。 既定の発行設定を使用する場合、変更は上書きされません。 既定の発行設定は、再度のフル デプロイを行うためではなく、既存のデプロイを更新するためのものです。 デプロイ時に設定が消去されるようにするには、発行ウィザードの **[詳細設定]** タブに移動し、 **[配置の更新]** チェック ボックスをオフにします。 このチェック ボックスをオフにした状態で再デプロイすると、ロールの **[プロパティ]** エディターで行った .wadcfgx (または .wadcfg) ファイルの設定に戻ります。 デプロイを更新した場合、Azure は前の設定を保持します。
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Azure クラウド サービスの問題のトラブルシューティング
-クラウド サービス プロジェクトで、ロールが "ビジー" 状態のままになる、リサイクルを繰り返す、内部サーバー エラーをスローするなどの問題が発生した場合、問題を診断して修正するために使用できる各種のツールと手法があります。 一般的な問題とソリューションの具体例や、エラーを診断して修正するために使用できる概念とツールの概要については、[Azure PaaS 計算診断データ](http://blogs.msdn.com/b/kwill/archive/2013/08/09/windows-azure-paas-compute-diagnostics-data.aspx)に関するページを参照してください。
+クラウド サービス プロジェクトで、ロールが "ビジー" 状態のままになる、リサイクルを繰り返す、内部サーバー エラーをスローするなどの問題が発生した場合、問題を診断して修正するために使用できる各種のツールと手法があります。 一般的な問題とソリューションの具体例や、エラーを診断して修正するために使用できる概念とツールの概要については、[Azure PaaS 計算診断データ](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/)に関するページを参照してください。
 
 ## <a name="q--a"></a>Q & A
 **バッファー サイズとは何ですか。その大きさはどのくらいが適切ですか。**
@@ -271,9 +271,9 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 タイム スタンプは、クラウド サービスをホストしているデータ センターのローカル タイム ゾーンです。 ログ テーブルでは次の 3 つのタイム スタンプ列が使用されます。
 
-* **PreciseTimeStamp**:イベントの ETW タイムスタンプ。 つまり、クライアントのイベントがログに記録された時刻です。
-* **TIMESTAMP**:アップロード頻度境界に切り捨てられた **PreciseTimeStamp** の値。 たとえば、アップロード頻度が 5 分で、イベント時刻が 00:17:12 の場合、TIMESTAMP は 00:15:00 になります。
-* **Timestamp**:エンティティが Azure テーブルに作成された時刻のタイムスタンプ。
+* **PreciseTimeStamp**: イベントの ETW タイムスタンプ。 つまり、クライアントのイベントがログに記録された時刻です。
+* **TIMESTAMP**: アップロード頻度の境界に丸められた**PreciseTimeStamp**の値。 たとえば、アップロード頻度が 5 分で、イベント時刻が 00:17:12 の場合、TIMESTAMP は 00:15:00 になります。
+* **Timestamp**: Azure テーブルでエンティティが作成されたタイムスタンプ。
 
 **診断情報を収集するためのコストを管理するにはどうすればよいですか。**
 
@@ -283,9 +283,9 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 既定では、IIS は失敗した要求のログを収集しません。 Web ロールの web.config ファイルを編集することで、失敗した要求のログを収集するように IIS を設定できます。
 
-**OnStart など RoleEntryPoint のメソッドからトレース情報を取得できません。何が問題なのでしょうか?**
+**OnStart などの RoleEntryPoint メソッドからトレース情報を取得していません。何が問題なのですか。**
 
-**RoleEntryPoint** のメソッドは、IIS ではなく WAIISHost.exe のコンテキストで呼び出されます。 通常であればトレースを有効にする web.config の構成情報は適用されません。 この問題を解決するには、Web ロール プロジェクトに .config ファイルを追加し、そのファイルに **RoleEntryPoint** コードを含む出力アセンブリと同じ名前を付けます。 既定の Web ロール プロジェクトでは、.config ファイルの名前は WAIISHost.exe.config にする必要があります。このファイルに次の行を追加します。
+**RoleEntryPoint** のメソッドは、IIS ではなく WAIISHost.exe のコンテキストで呼び出されます。 通常であればトレースを有効にする web.config の構成情報は適用されません。 この問題を解決するには、Web ロール プロジェクトに .config ファイルを追加し、そのファイルに **RoleEntryPoint** コードを含む出力アセンブリと同じ名前を付けます。 既定の web ロールプロジェクトでは、.config ファイルの名前は Waiishost.exe である必要があります。このファイルに次の行を追加します。
 
 ```xml
 <system.diagnostics>
@@ -301,5 +301,5 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 **[プロパティ]** ウィンドウで、 **[出力ディレクトリにコピー]** プロパティを **[常にコピーする]** に設定します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Azure の診断ログの詳細については、[Azure Cloud Services および Virtual Machines での診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページと「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。

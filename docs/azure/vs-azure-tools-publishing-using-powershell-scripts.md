@@ -9,28 +9,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179793"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911742"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発およびテスト環境への発行
 
 Visual Studio で Web アプリケーションを作成するときに、Azure への Web サイトの発行を自動化するための Windows PowerShell スクリプトを生成できます。後でこのスクリプトを使用して、Web サイトを Azure App Service の Web アプリとして、または仮想マシンとして Azure に発行できます。 Windows PowerShell スクリプトは、要件に合わせて Visual Studio エディターで編集および拡張できます。また、既存のビルド スクリプト、テスト スクリプト、発行スクリプトと統合することもできます。
 
 これらのスクリプトを使用すると、サイトのカスタマイズされたバージョン (開発およびテスト環境とも呼ばれます) を、一時的に使用するためにプロビジョニングできます。 たとえば、テスト スイートの実行、バグの再現、バグ修正のテスト、提案された変更の試験的な適用を行うために、Azure 仮想マシンまたは Web サイトのステージング スロットで Web サイトの特定のバージョンをセットアップしたり、デモまたはプレゼンテーション用にカスタム環境をセットアップしたりできます。 プロジェクトを発行するスクリプトを作成したら、必要に応じてそのスクリプトを再実行することで、同一の環境を再作成できます。また、Web アプリケーションの独自のビルドでスクリプトを実行して、テスト用のカスタム環境を作成することもできます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 * **Azure ワークロード**がインストールされた Visual Studio 2015 以降、または Visual Studio 2013 と Azure SDK 2.3 以降。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
 * Azure PowerShell 0.7.4 以降。 「 [Azure PowerShell のインストールと構成の方法](/powershell/azure/overview)」を参照してください。
-* [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) 以降。
+* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) 以降。
 
 ## <a name="additional-tools"></a>その他のツール
 
-Azure 開発のために、Visual Studio で PowerShell を使用するための他のツールとリソースが用意されています。 「 [PowerShell Tools for Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkId=404012)」をご覧ください。
+Azure 開発のために、Visual Studio で PowerShell を使用するための他のツールとリソースが用意されています。 「 [PowerShell Tools for Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=AdamRDriscoll.PowerShellToolsforVisualStudio2015)」をご覧ください。
 
 ## <a name="generating-the-publish-scripts"></a>発行スクリプトの生成
 
@@ -154,7 +154,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    ![Web 配置パッケージの作成](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   詳細については、「[方法 :Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」を参照してください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
+   詳細については、「[方法: Visual Studio で Web 配置パッケージを作成](https://msdn.microsoft.com/library/dd465323.aspx)する」を参照してください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
 1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、 **[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。
@@ -250,7 +250,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
         #Write a function to build and package your web application
     ```
 
-    Web アプリケーションをビルドするには、MsBuild.exe を使用します。 詳細については、MSBuild コマンドライン リファレンス ([http://go.microsoft.com/fwlink/?LinkId=391339](http://go.microsoft.com/fwlink/?LinkId=391339)) を参照してください。
+    Web アプリケーションをビルドするには、MsBuild.exe を使用します。 詳細については、MSBuild コマンドライン リファレンス ([http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)) を参照してください。
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -322,7 +322,7 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Find-AzureVM |指定された Azure 仮想マシンを取得します。 |
 | Format-DevTestMessageWithTime |メッセージの先頭に日付と時刻を追加します。 この関数は、エラー ストリームと詳細ストリームに書き込まれるメッセージを対象としています。 |
 | Get-AzureSQLDatabaseConnectionString |Azure SQL データベースに接続するための接続文字列をアセンブルします。 |
-| Get-AzureVMStorage |指定された場所またはアフィニティ グループの最初のストレージ アカウントの名前を "devtest *" という名前パターン (大文字と小文字を区別しない) で返します。"devtest*" ストレージ アカウントが場所またはアフィニティ グループと一致しない場合、そのアカウントは無視されます。 場所またはアフィニティ グループを指定します。 |
+| Get-AzureVMStorage |*指定された場所またはアフィニティグループに、"devtest" (大文字と小文字を区別しない) という名前の最初のストレージアカウントの名前を返します。"Devtest*" ストレージアカウントが場所またはアフィニティグループと一致しない場合、関数はそれを無視します。 場所またはアフィニティ グループを指定します。 |
 | Get-MSDeployCmd |MsDeploy.exe ツールを実行するためのコマンドを返します。 |
 | New-AzureVMEnvironment |JSON 構成ファイル内の値と一致する、サブスクリプション内の仮想マシンを検出または作成します。 |
 | Publish-WebPackage |MsDeploy.exe と Web 発行パッケージの .ZIP ファイルを使用して、リソースを Web サイトにデプロイします。 この関数では出力は生成されません。 MSDeploy.exe の呼び出しに失敗した場合は、例外がスローされます。 さらに詳しい出力を取得するには、 **-Verbose** オプションを使用します。 |
@@ -332,7 +332,7 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Test-AzureModule |インストールされている Azure モジュールのバージョンが 0.7.4 以降の場合は、 `$true` を返します。 モジュールがインストールされていないか以前のバージョンの場合は、 `$false` を返します。 この関数にはパラメーターはありません。 |
 | Test-AzureModuleVersion |Azure モジュールのバージョンが 0.7.4 以降の場合は、 `$true` を返します。 モジュールがインストールされていないか以前のバージョンの場合は、 `$false` を返します。 この関数にはパラメーターはありません。 |
 | Test-HttpsUrl |入力 URL を System.Uri オブジェクトに変換します。 URL が絶対 URL で、スキームが https の場合は、 `$True` を返します。 URL が相対 URL の場合、スキームが https でない場合、または入力文字列を URL に変換できない場合は、 `$false` を返します。 |
-| Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合は、 `$false`を返します。 |
+| Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合、`$false` を返します。 |
 | Write-ErrorWithTime |現在の時刻が先頭に付加されたエラー メッセージを書き込みます。 この関数は、 **Format-DevTestMessageWithTime** 関数を呼び出して先頭に時刻を付加してから、メッセージをエラー ストリームに書き込みます。 |
 | Write-HostWithTime |現在の時刻が先頭に付加されたメッセージをホスト プログラムに書き込みます (**Write-Host**)。 ホスト プログラムへの書き込み結果はさまざまです。 Windows PowerShell をホストするほとんどのプログラムが、これらのメッセージを標準出力に書き込みます。 |
 | Write-VerboseWithTime |現在の時刻が先頭に付加された詳細メッセージを書き込みます。 この関数は **Write-Verbose** を呼び出すので、**Verbose** パラメーターを指定してスクリプトを実行した場合、または **VerbosePreference** 設定が **Continue** に設定されている場合にのみ、メッセージが表示されます。 |
@@ -347,5 +347,5 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Publish-WebApplication |Visual Studio Web プロジェクト用の Web アプリ、仮想マシン、SQL データベース、ストレージ アカウントを作成し、デプロイします。 |
 | Test-WebApplication |この関数は実装されていません。 この関数にコマンドを追加すると、アプリケーションをテストできます。 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 PowerShell スクリプトの詳細については、「[Windows PowerShell を使用したスクリプト](https://technet.microsoft.com/library/bb978526.aspx)」をお読みください。また、「[スクリプト センター](https://azure.microsoft.com/documentation/scripts/)」で他の Azure PowerShell スクリプトもご覧ください。
