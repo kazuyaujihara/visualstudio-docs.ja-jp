@@ -1,6 +1,6 @@
 ---
 title: 'チュートリアル 2: 制限時間ありの計算クイズの作成'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,16 +9,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118861"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516601"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>チュートリアル 2: 制限時間ありの計算クイズの作成
 
-このチュートリアルでは、クイズの受け手が制限時間内にランダムに表示される 4 つの計算問題に答えるクイズを作成します。 以下の方法について説明します。
+このチュートリアルでは、クイズの受け手が制限時間内にランダムに表示される 4 つの計算問題に答えるクイズを作成します。
+
+> [!NOTE]
+> このチュートリアルでは、C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
+
+このチュートリアルでは、次のタスクについて説明します。
 
 - <xref:System.Random> クラスを使用して乱数を生成します。
 
@@ -34,13 +39,6 @@ ms.locfileid: "71118861"
 
 ## <a name="tutorial-links"></a>チュートリアルのリンク
 
-クイズの完全バージョンをダウンロードするには、「[Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」(計算クイズのチュートリアルの完全なサンプル) を参照してください。
-
-> [!NOTE]
-> このチュートリアルでは、C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
-
-## <a name="related-topics"></a>関連トピック
-
 |Title|説明|
 |-----------|-----------------|
 |[手順 1:プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|最初にプロジェクトを作成し、プロパティを変更し、`Label` コントロールを追加します。|
@@ -51,3 +49,15 @@ ms.locfileid: "71118861"
 |[手順 6:減算問題を追加する](../ide/step-6-add-a-subtraction-problem.md)|乱数を生成し、タイマーを使用し、正しい解答を確認する減算問題を追加します。|
 |[手順 7:乗算問題と除算問題の追加](../ide/step-7-add-multiplication-and-division-problems.md)|乱数を生成し、タイマーを使用し、正しい解答を確認する乗算問題および除算問題を追加します。|
 |[手順 8:クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)|色の変更、ヒントの追加など、その他の機能を試します。|
+
+無料で利用できる便利なビデオ学習リソースもあります。 C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎:入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。
+
+## <a name="next-steps"></a>次の手順
+
+チュートリアルを開始するには、「 **[手順 1:プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** 」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+* [その他の C# のチュートリアル](/visualstudio/get-started/csharp/)
+* [Visual Basic のチュートリアル](/visualstudio/get-started/visual-basic/)
+* [C++ のチュートリアル](/cpp/get-started/tutorial-console-cpp)

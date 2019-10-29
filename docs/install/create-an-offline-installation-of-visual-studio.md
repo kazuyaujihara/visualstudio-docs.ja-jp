@@ -1,7 +1,7 @@
 ---
 title: オフライン インストールを作成する
 description: インターネット接続の信頼性が低い場合や帯域幅が低い場合にオフラインで Visual Studio をインストールする方法について説明します。
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381094"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789987"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 
@@ -164,9 +164,9 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 > ローカル インストール キャッシュから実行するとき、セットアップは各ファイルのローカル バージョンを使います。 ただし、インストール中にキャッシュにないコンポーネントを選択すると、セットアップ中にインターネットからのダウンロードが試みられます。
 
 ::: moniker range="vs-2019"
-
-> 16.1 以降のインストールおよび更新において、オフライン システムで "次のパラメーターと一致する製品が見つかりません" というエラーが発生する場合は、バージョン 16.3.5 以降で --noweb スイッチを使用してください。
-
+> [!IMPORTANT]
+> オフライン インストールで、"次のパラメーターと一致する製品が見つかりません" というエラー メッセージが表示される場合は、バージョン 16.3.5 以降で `--noweb` スイッチを使用していることを確認します。
+>
 ::: moniker-end
 
 以前にダウンロードしたファイルのみがインストールされるように、レイアウト キャッシュの作成に利用したものと同じコマンド ライン オプションを使用します。 たとえば、次のコマンドでレイアウト キャッシュを作成した場合、
@@ -180,6 +180,8 @@ vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.Mana
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+[コマンドライン パラメーター](use-command-line-parameters-to-install-visual-studio.md)の使用方法に関する他の例については、「[Visual Studio のインストールに使用するコマンド ライン パラメーターの例](command-line-parameter-examples.md)」ページをご覧ください。 
 
 > [!NOTE]
 > 署名が無効であるというエラーが発生する場合は、更新された証明書をインストールする必要があります。 オフライン キャッシュ内の証明書フォルダーを開きます。 各証明書ファイルをダブルクリックした後、証明書マネージャー ウィザードの指示に従って操作します。 パスワードを求められたら、空のままにしてください。

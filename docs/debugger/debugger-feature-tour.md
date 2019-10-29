@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "72349754"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>最初に Visual Studio デバッガーを見る
@@ -31,9 +31,9 @@ ms.locfileid: "72349754"
 
 コード エディターでファイルを開いている場合、コード行の左にある余白をクリックすることでブレークポイントを設定できます。
 
-![ブレークポイントを設定する](../debugger/media/dbg-tour-set-a-breakpoint.gif "ブレークポイントを設定する")
+![ブレークポイントを設定する](../debugger/media/dbg-tour-set-a-breakpoint.gif "ブレークポイントの設定")
 
-**F5** キーを押す ( **[デバッグ]、[デバッグの開始] の順に選択する**) か、デバッグ ツールバーの **[デバッグの開始]** ボタン![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始")を選択します。デバッガーが最初のブレークポイントで実行されます。 アプリがまだ実行されていない場合、F5 キーを押すとデバッガーが起動し、最初のブレークポイントで停止します。
+**F5** キーを押す ( **[デバッグ] > [デバッグの開始]** ) か、[デバッグ] ツール バーの **[デバッグの開始]** ボタン ![デバッグの開始](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始") を選択します。デバッガーが最初のブレークポイントまで実行されます。 アプリがまだ実行されていない場合、F5 キーを押すとデバッガーが起動し、最初のブレークポイントで停止します。
 
 ブレークポイントは、詳細に調べたいコード行またはコード セクションがわかっている場合に便利な機能です。
 
@@ -72,9 +72,9 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>マウスを使用し、コード内のポイントにすばやく移動する
 
-デバッガーの使用中、コード行にマウス カーソルを合わせると、 **[クリックで実行]** ボタン ![クリックで実行](../debugger/media/dbg-tour-run-to-click.png "クリックで実行") が左に表示されます。
+デバッガーの使用中、コード行をマウスでポイントすると、 **[クリックで実行]** ボタン ![クリックで実行](../debugger/media/dbg-tour-run-to-click.png "RunToClick") が左に表示されます。
 
-![クリックで実行](../debugger/media/dbg-tour-run-to-click-2.png "クリックで実行")
+![クリックで実行](../debugger/media/dbg-tour-run-to-click-2.png "[Run To Click (クリックで実行)]")
 
 > [!NOTE]
 > **[クリックで実行]** (ここまで実行します) ボタンは [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] の新機能です。
@@ -93,11 +93,11 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 
 ## <a name="run-to-cursor"></a>[カーソル行の前まで実行]
 
-赤色の **[デバッグの停止]** ボタン ![デバッグの停止](../debugger/media/dbg-tour-stop-debugging.png "デバッグの停止") を押すか、**Shift** + **F5** キーを押してデバッガーを停止します。
+赤色の **[デバッグの停止]** ボタン ![デバッグの停止](../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします") を選択するか、**Shift** + **F5** キーを押して、デバッガーを停止します。
 
 アプリ内のコード行を右クリックし、 **[カーソル行の前まで実行]** を選択します。 このコマンドによってデバッグが開始され、現在のコード行に一時的なブレークポイントが設定されます。
 
-![カーソル行の前まで実行](../debugger/media/dbg-tour-run-to-cursor.png "カーソル行の前まで実行")
+![カーソル行の前まで実行](../debugger/media/dbg-tour-run-to-cursor.png "[カーソル行の前まで実行]")
 
 ブレークポイントを設定した場合、最初のブレークポイントでデバッガーが一時停止します。
 
@@ -110,11 +110,11 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 
 ## <a name="restart-your-app-quickly"></a>アプリを簡単に再起動する
 
-デバッグ ツールバーにある **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "アプリの再起動") ボタンをクリックします (**Ctrl + Shift +F5**)。
+[デバッグ] ツール バーの **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "アプリの再起動") ボタンをクリックします (**Ctrl + Shift +F5**)。
 
 **[再起動]** を押すと、アプリを停止してからデバッガーを再起動する場合と比較して時間の節約になります。 デバッガーは、コードを実行すると最初にヒットするブレークポイントで一時停止します。
 
-デバッガーを停止、コード エディターに戻る場合、 **[再起動]** ではなく、赤色の ![[デバッグの停止]](../debugger/media/dbg-tour-stop-debugging.png "デバッグの停止") 停止ボタンを押すことができます。
+デバッガーを停止してコード エディターに戻りたい場合は、 **[再起動]** ではなく、赤色の停止 ![デバッグの停止](../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします") ボタンを押すことでできます。
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>コードを編集してデバッグを続行する (C#、VB、C++、XAML)
 
@@ -208,7 +208,7 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 デバッグのプロパティは、プロジェクトの種類ごとに固有です。 たとえば、開始するときにアプリケーションに渡す引数を指定できます。 ソリューション エクスプローラーでプロジェクトを右クリックし、 **[プロパティ]** を選択することで、プロジェクト固有のプロパティにアクセスできます。 デバッグのプロパティは、通常、特定のプロジェクトの種類に応じて、 **[ビルド]** タブまたは **[デバッグ]** タブに表示されます。
 
-![プロジェクトのプロパティ](../debugger/media/dbg-tour-project-properties.png "プロジェクトのプロパティ")
+![プロジェクトのプロパティ](../debugger/media/dbg-tour-project-properties.png "プロジェクト プロパティ")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Azure App Service でライブ ASP.NET アプリをデバッグする
 

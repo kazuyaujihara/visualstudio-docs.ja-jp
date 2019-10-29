@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff87247afb79d62867da9e55f7a059192789d79
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118849"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572467"
 ---
 # <a name="step-9-try-other-features"></a>手順 9: その他の機能を試す
 さらに詳しく学習するために、アイコンおよび色の変更、ゲーム タイマーの追加、サウンドの追加を試します。 ゲームをよりやりがいのあるものにするために、ボードの拡大およびタイマーの調整を試します。
@@ -48,8 +48,6 @@ ms.locfileid: "71118849"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- プログラミングに行き詰まった場合や疑問がある場合は、MSDN フォーラムのいずれかに質問を投稿してみてください。 [Visual Basic フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) と [Visual C# フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)を参照してください。
-
-- 無料で利用できる便利なビデオ学習リソースがあります。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎:入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。 Visual C# でのプログラミングの詳細については、「[C# の基礎:入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。
+- 無料で利用できる便利なビデオ学習リソースがあります。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎:入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。 C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。
 
 - チュートリアルの前の手順に戻るには、「[手順 8:プレーヤーが勝利したかどうかを確認するメソッドの追加](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)」を参照してください。

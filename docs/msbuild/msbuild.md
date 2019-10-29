@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bf80e9df7910b0b581ae956978fb2020542ae96f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823495"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747264"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
 
  Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj*、*vbproj*、*vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
 
- C++ に対する MSBuild の詳細については、「[MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
+ C++ に対する MSBuild の詳細については、「[MSBuild (C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
 
  次の例では、Visual Studio IDE の代わりに、MSBuild コマンド ラインでビルドを実行する状況について説明します。
 

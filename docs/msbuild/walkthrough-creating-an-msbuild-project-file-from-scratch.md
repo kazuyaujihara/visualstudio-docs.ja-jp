@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445312"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748034"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
 .NET Framework を対象とするプログラミング言語は、MSBuild プロジェクト ファイルを使用してアプリケーションのビルド プロセスを記述および制御します。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成すると、適切な XML が自動的に追加されますが、 その XML がどのように構成されているかや、それに変更を加えてビルドを制御するにはどうすればよいかを知っておくことも有用です。
 
- C++ プロジェクトのプロジェクト ファイルを作成する方法の詳細については、「[MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
+ C++ プロジェクトのプロジェクト ファイルを作成する方法の詳細については、「[MSBuild (C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
 
  このチュートリアルでは、テキスト エディターのみを使用して、基本的なプロジェクト ファイルをインクリメント方式で作成する方法について説明します。 このチュートリアルの手順を以下に示します。
 
@@ -51,9 +51,9 @@ ms.locfileid: "63445312"
 
 #### <a name="to-create-the-minimal-application"></a>最低限の内容のみを含むアプリケーションを作成するには
 
-1. コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します (*\My Documents\\*、*\Desktop\\* など)。
+1. コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します ( *\My Documents\\* 、 *\Desktop\\* など)。
 
-2. 「**md HelloWorld**」と入力して、*\HelloWorld\\* というサブフォルダーを作成します。
+2. 「**md HelloWorld**」と入力して、 *\HelloWorld\\* というサブフォルダーを作成します。
 
 3. 「**cd HelloWorld**」と入力して、その新しいフォルダーに移動します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "63445312"
 
 7. コマンド プロンプトで「**helloworld**」と入力して、アプリケーションをテストします。
 
-     "**Hello, world!**"  というメッセージが表示されます。
+     "**Hello, world!** " というメッセージが表示されます。
 
 8. コマンド プロンプトで「**del helloworld.exe**」と入力して、アプリケーションを削除します。
 
@@ -178,7 +178,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 2. 「**helloworld**」と入力してアプリケーションをテストします。
 
-     "**Hello, world!**"  というメッセージが表示されます。
+     "**Hello, world!** " というメッセージが表示されます。
 
 > [!NOTE]
 > 詳細レベルを上げると、ビルドの詳細情報を表示できます。 詳細レベルを "detailed" に設定するには、コマンド プロンプトで次のコマンドを入力します。
@@ -263,11 +263,11 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
      *\Bin\\* フォルダーが作成され、Visual C# コンパイラが呼び出されて、*MSBuildSample* アプリケーションが作成されて *\Bin\\* フォルダーに配置されます。
 
-2. 「**dir Bin**」と入力して、*\Bin\\* フォルダーが作成されていることと、そこに *MSBuildSample* アプリケーションが含まれていることを確認します。
+2. 「**dir Bin**」と入力して、 *\Bin\\* フォルダーが作成されていることと、そこに *MSBuildSample* アプリケーションが含まれていることを確認します。
 
 3. 「**Bin\MSBuildSample**」と入力してアプリケーションをテストします。
 
-     "**Hello, world!**"  というメッセージが表示されます。
+     "**Hello, world!** " というメッセージが表示されます。
 
 ## <a name="add-build-targets"></a>ビルド ターゲットを追加する
  次に、次の 2 つのターゲットをプロジェクト ファイルに追加します。
@@ -342,7 +342,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 3. 「**Bin\Greetings**」と入力して、Greetings アプリケーションをテストします。
 
-     "**Hello, world!**"  というメッセージが表示されます。
+     "**Hello, world!** " というメッセージが表示されます。
 
 4. 「**msbuild helloworld.csproj -t:clean**」を入力して、MSBuildSample アプリケーションを削除します。
 
@@ -356,7 +356,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 7. 「**msbuild**」と入力します。
 
-     プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、*helloworld.csproj* ファイルがビルドされます。 その結果、*\Bin\\* フォルダーに *MSBuildSample* アプリケーションが作成されます。
+     プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、*helloworld.csproj* ファイルがビルドされます。 その結果、 *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが作成されます。
 
      *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが含まれていることを確認するには、「**dir Bin**」と入力します。
 

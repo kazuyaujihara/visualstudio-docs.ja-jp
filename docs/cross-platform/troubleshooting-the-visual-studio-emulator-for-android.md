@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261051"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777814"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
@@ -134,7 +134,7 @@ ms.locfileid: "66261051"
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     セットアップに誤りがあり、Windows 10 を使っている場合は、 [netcfg -d コマンドを使ってネットワーク デバイスを再インストール](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (セクション 6) してみることもできます。
+     セットアップに誤りがあり、Windows 10 を使っている場合は、 [netcfg -d コマンドを使ってネットワーク デバイスを再インストール](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (セクション 6) してみることもできます。
 
 - これらの手順を実行しても問題が解決しない場合は、エミュレーターに干渉している可能性のあるサード パーティ ソフトウェアの情報について、「 [Emulator fails to start (first use)](#NoStart) 」をご覧ください。
 
@@ -179,7 +179,7 @@ ms.locfileid: "66261051"
 
   6. Windows 8 Professional 以上を実行していることを確認します (Windows Server 2008 はサポートされていません)。 Windows Server 2012 はサポートされていますが、デスクトップ エクスペリエンスを有効にする必要があります。
 
-     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー** + **R** キーを押して、「`eventvwr`」と入力)、**[Windows ログ]**、**[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
+     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー** + **R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
 
      プロセッサが最小要件を満たしているにもかかわらず、ハイパーバイザーでまだ障害が発生する場合は、コンピューターに使用可能な BIOS アップグレードがあるかどうかを確認してみてください。 アップグレードがあり、アップグレードすることを選択する場合は、BIOS のアップグレード時に製造元からの注意事項 (BIOS が完全に破損する可能性のある、停電により BIOS ファームウェアのアップグレードが中断されないようにするなど) をすべて確認してください。
 
@@ -209,7 +209,7 @@ ms.locfileid: "66261051"
 
   2. vEthernet (Internal Ethernet Port Windows Phone Emulator Internal Switch) アダプターの場合は、コンテキスト メニューから **[プロパティ]** を選択します。
 
-      ![Hyper&#45;V で使用される仮想アダプター](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Hyper&#45;V により使用される仮想アダプター](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       ここでアダプター プロパティが表示されます。
 
@@ -283,15 +283,15 @@ ms.locfileid: "66261051"
 
 1. Hyper-V マネージャーを開き、使用しているエミュレーター プロファイルの VM を選択します。
 
-2. **[保存された状態の削除]**(右下) を選択します。
+2. **[保存された状態の削除]** (右下) を選択します。
 
 3. **[設定...]** を選択します。
 
-4. プロセッサ ノードを展開し、**[互換性]** を選択します。
+4. プロセッサ ノードを展開し、 **[互換性]** を選択します。
 
 5. **[プロセッサ バージョンが異なる物理コンピューターへ移行する]** を有効にします。
 
-6. サービスを (**[操作]** で) 再起動し、もう一度試します。
+6. サービスを ( **[操作]** で) 再起動し、もう一度試します。
 
 ## <a name="GooglePlay"></a> エミュレーターが Google Play サービスを使用するアプリを実行できません
  エミュレーターには Google Play サービスのライブラリは付属していません。 ただし、エミュレーターはフラッシュ可能な zip ファイルのドラッグ アンド ドロップ インストールをサポートします。
@@ -311,6 +311,6 @@ ms.locfileid: "66261051"
 ## <a name="Support"></a> サポート リソース
  ホスト コンピューターがシステム要件を満たしていて、このトラブルシューティング ガイドに記載されていない問題が発生した場合は次のようにします。
 
-- [android エミュレーター](http://stackoverflow.com/questions/tagged/android-emulator) と visual-studio タグの試用について StackOverflow で質問を投稿します。
+- [android エミュレーター](https://stackoverflow.com/questions/tagged/android-emulator) と visual-studio タグの試用について StackOverflow で質問を投稿します。
 
 - Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。

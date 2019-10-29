@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f51489b888a0b85b53856e413eb4704d24161b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925725"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777717"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
@@ -77,7 +77,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 
  Visual Studio 2015 では、Emulator Manager を使用してデバイス プロファイルをインストール、アンインストール、開始できます。 Emulator Manager にアクセスするには、 **[ツール]** 、 **[Visual Studio Emulator for Android]** の順に選択します。
 
- ![Visual Studio Emulator for Android Manager](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
+ ![The Visual Studio Emulator for Android Manager](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
 
  既定では、4 つのインストール済みデバイス プロファイルがあり (KitKat and Lollipop phone/5" および tablet/7" 構成)、白いテキストとアイコンで示されます。 一覧の他のプロファイルは、 **[プロファイルのインストール]** ボタンをクリックしてインストールが完了するまで、グレー表示になっています。 API レベルで一覧をフィルター処理でき、プロファイルの右下にある詳細矢印をクリックすると構成の詳細が表示されます。
 
@@ -100,7 +100,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 ## <a name="Support"></a> サポート リソース
  ホスト コンピューターがシステム要件を満たしていて、このトラブルシューティング ガイドに記載されていない問題が発生した場合は次のようにします。
 
-- [android エミュレーター](http://stackoverflow.com/questions/tagged/android-emulator)と visual-studio タグの試用について StackOverflow で質問を投稿します。
+- [android エミュレーター](https://stackoverflow.com/questions/tagged/android-emulator)と visual-studio タグの試用について StackOverflow で質問を投稿します。
 
 - Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。
 

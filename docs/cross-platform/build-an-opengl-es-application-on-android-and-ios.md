@@ -1,7 +1,7 @@
 ---
 title: Android および iOS での OpenGL ES アプリケーションのビルド | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2019
+ms.date: 10/09/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: a15902278e9a73488b315729a2db6e8fb5d53935
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079278"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588916"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android および iOS での OpenGL ES アプリケーションのビルド
 
@@ -25,13 +25,13 @@ ms.locfileid: "71079278"
 
 ## <a name="requirements"></a>必要条件
 
-iOS 用および Android 用 OpenGL ES アプリを作成するには、その前にすべてのシステム要件を満たしていることを確認してください。 C++ によるモバイル開発ワークロードをまたインストールしていない場合は、Visual Studio インストーラーにインストールします。 iOS 用にビルドするには、オプションの C++ iOS 開発ツールを含めます。 Android 用にビルドするには、C++ Android 開発ツールと、必要な以下のサードパーティ ツールをインストールします。Android NDK、Apache Ant、Google Android Emulator。 Intel プラットフォームでエミュレーターのパフォーマンスを向上させるには、Intel Hardware Accelerated Execution Manager (HAXM) もインストールすることをお勧めします。 次に、システムでの実行に向けて Intel HAXM と Android Emulator を構成します。 詳細情報と詳細な手順については、「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」をご覧ください。
+iOS 用および Android 用 OpenGL ES アプリを作成するには、その前にすべてのシステム要件を満たしていることを確認してください。 C++ によるモバイル開発ワークロードをまたインストールしていない場合は、Visual Studio インストーラーにインストールします。 OpenGL ES テンプレートを取得し、iOS 用にビルドするには、オプションの C++ iOS 開発ツールを含めます。 Android 用にビルドするには、C++ Android 開発ツールと、必要な以下のサードパーティ ツールをインストールします。Android NDK、Apache Ant、Google Android Emulator。 Intel プラットフォームでエミュレーターのパフォーマンスを向上させるには、Intel Hardware Accelerated Execution Manager (HAXM) もインストールすることをお勧めします。 次に、システムでの実行に向けて Intel HAXM と Android Emulator を構成します。 詳細情報と詳細な手順については、「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」をご覧ください。
 
 iOS アプリをビルドしてテストするには、インストール手順に従って設定されている Mac コンピューターが必要になります。 iOS 開発の設定方法について詳しくは、[iOS を使用してビルドするためのツールのインストールと構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)に関するページをご覧ください。
 
 ## <a name="create-a-new-opengles-application-project"></a>新しい OpenGLES アプリケーション プロジェクトの作成
 
-このチュートリアルでは、まず新しい OpenGL ES アプリケーション プロジェクトを作成します。 その後、Visual Studio Emulator for Android で、既定のアプリをビルドして実行します。 次に、iOS 用アプリをビルドし、iOS デバイスでアプリを実行します。
+このチュートリアルでは、まず新しい OpenGL ES アプリケーション プロジェクトを作成します。 その後、Android Emulator で既定のアプリをビルドして実行します。 次に、iOS 用アプリをビルドし、iOS デバイスでアプリを実行します。
 
 ::: moniker range="vs-2017"
 
@@ -45,7 +45,7 @@ iOS アプリをビルドしてテストするには、インストール手順�
 
    Visual Studio は新しいソリューションを作成し、ソリューション エクスプローラーを開きます。
 
-   ![ソリューション エクスプ ローラーの MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![ソリューション エクスプローラーの MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ iOS アプリをビルドしてテストするには、インストール手順�
 
    Visual Studio は新しいソリューションを作成し、ソリューション エクスプローラーを開きます。
 
-   ![ソリューション エクスプ ローラーの MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![ソリューション エクスプローラーの MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ iOS アプリをビルドしてテストするには、インストール手順�
 
 - `MyOpenGLESApp.Android.Packaging` は、Android デバイスまたはエミュレーターに配置する *.apk* ファイルを作成します。 このファイルには、リソースと、マニフェスト プロパティを設定した AndroidManifest.xml ファイルが含まれています。 Ant のビルド プロセスを制御する *build.xml* ファイルも含まれています。 それは既定でスタートアップ プロジェクトとして設定されているため、Visual Studio から直接、配置して実行できます。
 
-- **MyOpenGLESApp.iOS.Application** には、`MyOpenGLESApp.iOS.StaticLibrary` で C++ スタティック ライブラリ コードにリンクする iOS アプリを作成するためのリソースと Objective-C グルー コードが含まれています。 このプロジェクトは、Visual Studio およびリモート エージェントによってご使用の Mac に転送されるビルド パッケージを作成します。 このプロジェクトをビルドする場合、Visual Studio はファイルとコマンドを送信して、アプリを Mac でビルドおよび配置します。
+- `MyOpenGLESApp.iOS.Application` には、`MyOpenGLESApp.iOS.StaticLibrary` で C++ スタティック ライブラリ コードにリンクする iOS アプリを作成するためのリソースと Objective-C グルー コードが含まれています。 このプロジェクトは、Visual Studio およびリモート エージェントによってご使用の Mac に転送されるビルド パッケージを作成します。 このプロジェクトをビルドする場合、Visual Studio はファイルとコマンドを送信して、アプリを Mac でビルドおよび配置します。
 
 ## <a name="build-and-run-the-android-app"></a>Android アプリのビルドと実行
 
@@ -95,7 +95,7 @@ iOS アプリをビルドしてテストするには、インストール手順�
 
    Android 共有ライブラリと Android アプリ用のビルド プロセスの出力が [出力] ウィンドウに表示されます。
 
-   ![Android プロジェクト用のビルド出力](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
+   ![Android プロジェクト用の出力のビルド](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
 
 1. 配置ターゲットとして、いずれかのエミュレートされた Android デバイス プロファイルを選択します。
 
@@ -103,11 +103,11 @@ iOS アプリをビルドしてテストするには、インストール手順�
 
    別のエミュレーターをインストールしてあるか、Android デバイスを接続してある場合は、配置対象のドロップダウン リストからそれらを選択できます。 アプリを実行するには、ビルドしたソリューション プラットフォームが、ターゲット デバイスのプラットフォームと一致している必要があります。
 
-1. F5 キーを押してデバッグを開始するか、Shift キーを押しながら F5 キーを押してデバッグなしで開始します。
+1. **F5** キーを押してデバッグを開始するか、**Shift** + **F5** キーを押してデバッグなしで開始します。
 
    Visual Studio によってエミュレーターが起動されます。コードを読み込んで配置するのに数秒かかります。 エミュレーターでアプリがどのように表示されるかを次に示します。
 
-   ![Android エミュレーターで実行されているアプリ](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
+   ![Android Emulator で実行されているアプリ](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
 
    アプリが開始されると、ブレークポイントの設定や、デバッガーを使用したステップ実行、ローカルの確認、値のウォッチができるようになります。
 
@@ -127,7 +127,7 @@ iOS アプリを iOS デバイスに配置するには、Mac 上の Xcode への
 
 ### <a name="to-set-up-automatic-signing-on-xcode"></a>Xcode の自動署名を設定するには
 
-1. [Xcode](https://developer.apple.com/xcode/downloads/) バージョン 10.2.1 以降をまだ Mac にインストールしていない場合は、インストールします。
+1. [Xcode](https://developer.apple.com/xcode/) をまだ Mac にインストールしていない場合は、インストールします。
 
 1. Mac で Xcode アプリを開きます。
 
@@ -141,7 +141,7 @@ iOS アプリを iOS デバイスに配置するには、Mac 上の Xcode への
 
 1. 自動署名を有効にするには、 [Automatically manage signing**]\(署名の自動管理\) をオンにします。
 
-   ![Xcode 自動署名](../cross-platform/media/cppmdd-opengles-iosxcodesign.png "CPPMDD_OpenGLES_iOSXcodeSign")
+   ![Xcode の自動署名](../cross-platform/media/cppmdd-opengles-iosxcodesign.png "CPPMDD_OpenGLES_iOSXcodeSign")
 
 1. 開発**チーム**として追加した Apple ID のチーム名を選択します。
 
@@ -149,9 +149,9 @@ iOS アプリを iOS デバイスに配置するには、Mac 上の Xcode への
 
 ### <a name="to-build-and-run-the-ios-app-on-an-ios-device"></a>iOS デバイスで iOS アプリをビルドして実行するには
 
-1. Mac でリモート エージェントを実行し、Visual Studio がリモート エージェントとペアリングされていることを確認します。 リモート エージェントを開始するには、ターミナル アプリのウィンドウを開き、「 `vcremote`」を参照してください。 詳細については、「[Visual Studio でリモート エージェントを構成する](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS)」を参照してください。
+1. Mac でリモート エージェントを実行し、Visual Studio がリモート エージェントとペアリングされていることを確認します。 リモート エージェントを開始するには、ターミナル アプリのウィンドウを開き、「 `vcremote`」を参照してください。 詳細については、「 [Visual Studio でリモート エージェントを構成する](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS)」を参照してください。
 
-   ![vcremote を実行している Mac ターミナル ウィンドウ](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
+   ![Vcremote が実行されている Mac ターミナル ウィンドウ](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
 
 1. iOS デバイスを Mac に接続します。 デバイスを初めてコンピューターに接続すると、アラートで、デバイスにアクセスするコンピューターを信頼するかどうかがたずねられます。 デバイスが Mac コンピューターを信頼するようにできます。
 
@@ -163,7 +163,7 @@ iOS アプリを iOS デバイスに配置するには、Mac 上の Xcode への
 
 1. 再度、アンロードした MyOpenGLESApp.iOS.Application プロジェクトのショートカット メニューを開き、 **[Edit project.pbxproj]\(project.pbxproj の編集\)** を選択して、プロジェクト ファイルを編集します。 `project.pbxproj` ファイルで、`buildSettings` 属性を探し、Apple チーム ID を使用して、`DEVELOPMENT_TEAM` を追加します。 次のスクリーンショットに、Apple チーム ID の `123456ABC` の値の例を示します。 Xcode から Apple チーム ID の値を見つけることができます。 **[ビルド設定]** に移動し、開発チーム名にマウス ポインターを移動して、ヒントを表示します。 ヒントに、チーム ID が表示されます。
 
-   ![開発チームの設定](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "CPPMDD_OpenGLES_iOSDevelopmentTeam")
+   ![開発チームを設定する](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "CPPMDD_OpenGLES_iOSDevelopmentTeam")
 
 1. `project.pbxproj` ファイルを閉じてから、アンロードした MyOpenGLESApp.iOS.Application プロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** を選択して、プロジェクトを再読み込みします。
 
@@ -181,7 +181,7 @@ iOS アプリを iOS デバイスに配置するには、Mac 上の Xcode への
 
    アプリが開始されたら、ブレークポイントを設定し、Visual Studio デバッガーを使用してローカルを確認したり、呼び出し履歴を確認したり、値を観察したりできます。
 
-   ![iOS アプリケーションのブレークポイントにあるデバッガー](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
+   ![iOS アプリのブレークポイントにあるデバッガー](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
 
 1. **Shift** + **F5** キーを押してデバッグを停止します。
 

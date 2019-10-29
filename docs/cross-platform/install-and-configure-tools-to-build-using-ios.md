@@ -1,7 +1,7 @@
 ---
 title: iOS を使用してビルドするためのツールのインストールおよび構成 | Microsoft Docs
 ms.custom: ''
-ms.date: 05/13/2019
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,21 +12,21 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586816"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588872"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
-Visual C++ for Cross-Platform Mobile Development を使用して、iOS コードを編集およびデバッグし、iOS シミュレーターまたは iOS デバイスに配置することができます。ただし、ライセンスの制限により、コードのビルドと実行は、リモートの Mac 上で行わなければなりません。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。
+Visual Studio でクロスプラットフォームの **C++ によるモバイル開発**ツールを使用して、iOS Simulator または iOS デバイス用の iOS コードを編集、デバッグ、配置することができます。 ただし、ライセンスの制限により、コードのビルドと実行はリモート環境の Mac で行う必要があります。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。
 
 > [!NOTE]
-> Mac ではなくクラウド ホスト型 Mac サービスを使用する場合の詳細については、「[Visual Studio をクラウドでホストされた Mac に接続するよう構成する](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)」をご覧ください。 ここでは、Visual Studio Tools for Apache Cordova を使用してビルドする場合の手順を説明します。 C++ を使ってビルドする場合は、remotebuild を vcremote に置き換えてください。
+> Mac ではなくクラウド ホスト型 Mac サービスを使用する場合の詳細については、「[Visual Studio をクラウドでホストされた Mac に接続するよう構成する](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)」をご覧ください。 ここでは、Visual Studio Tools for Apache Cordova を使用してビルドする場合の手順を説明します。 C++ を使用してビルドする場合は、`remotebuild` を `vcremote` に置き換えます。
 
-iOS を使用してビルドするためのツールをインストールしたら、このトピックを参照して、Visual Studio と Mac で iOS 開発を行うためにリモート エージェントを素早く構成して更新する方法を確認してください。
+iOS を使用してビルドするためのツールをインストールしたら、この記事を参照して、Visual Studio および Mac で iOS 開発用のリモート エージェントを素早く構成して更新する方法を確認してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -44,9 +44,9 @@ iOS のコードを開発するためのリモート エージェントをイン
 
    Xcode は、App Store からダウンロードできます。
 
-- Xcode コマンド ライン ツール
+- Xcode コマンドライン ツール
 
-   Xcode コマンド ライン ツールをインストールするには、Mac 上でターミナル アプリを開き、次のコマンドを入力します。
+   Xcode コマンドライン ツールをインストールするには、Mac 上でターミナル アプリを開き、次のコマンドを入力します。
 
    `xcode-select --install`
 
@@ -64,13 +64,13 @@ iOS のコードを開発するためのリモート エージェントをイン
 
 - [Node.js](https://nodejs.org/) バージョン 8.11.3 と npm バージョン 5.6.0
 
-   バージョン 8.11.3 の Node.js を Mac にインストールします。 Node.js パッケージをインストールする場合、それは npm バージョン 5.6.0 に付属しているはずです。 他のバージョンの Node.js と npm では、リモート エージェント vcremote で使用されている一部のモジュールに対応していないことがあり、その場合、vcremote のインストールが失敗する可能性があります。
+   バージョン 8.11.3 の Node.js を Mac にインストールします。 Node.js パッケージをインストールする場合、それは npm バージョン 5.6.0 に付属しているはずです。 他のバージョンの Node.js と npm は、リモート エージェント `vcremote` で使用されている一部のモジュールに対応していない場合があり、`vcremote` のインストールが失敗する可能性があります。
 
 ## <a name="Install"></a> iOS 用リモート エージェントをインストールする
 
-Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
+C++ によるモバイル開発ワークロードをインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988) と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
 
-リモート エージェントをインストールする前に、[前提条件](#prerequisites)を満たしていること、[Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) をインストール済みであることを確認してください。
+リモート エージェントをインストールする前に、[前提条件](#prerequisites)を満たしていること、および「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)」のインストール手順が完了していることを確認してください。
 
 ### <a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには
 
@@ -80,10 +80,10 @@ Visual C++ for Cross-Platform Mobile Development をインストールすると�
 
    グローバル インストール ( **-g**) スイッチが推奨されますが、必須ではありません。
 
-   インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。 インストールが完了したら、スキップしたオプションの依存関係に関する警告は無視しても安全です。
+   インストールの間に、Mac に `vcremote` がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) および 2 つの npm パッケージ `vcremote-lib` と `vcremote-utils` もインストールされます。 インストールが完了したら、スキップしたオプションの依存関係に関する警告は無視しても安全です。
 
    > [!NOTE]
-   > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity -enable`を入力します。
+   > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で `vcremote` をインストールする必要がある場合は、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity -enable`を入力します。
 
 Visual Studio を新しいバージョンに更新した場合は、リモート エージェントも現在のバージョンに更新する必要があります。 リモート エージェントを更新するには、リモート エージェントをダウンロードしてインストールする手順を繰り返します。
 
@@ -97,11 +97,11 @@ Visual Studio で iOS コードをビルドして実行するには、リモー�
 
    `vcremote`
 
-   これにより、既定のビルド ディレクトリである ~/vcremote でエージェントが起動します。 追加の構成オプションについては、「 [Configure the remote agent on the Mac](#ConfigureMac)」を参照してください。
+   このコマンドにより、既定のビルド ディレクトリ `~/vcremote` でエージェントが起動されます。 追加の構成オプションについては、「 [Configure the remote agent on the Mac](#ConfigureMac)」を参照してください。
 
-エージェントを初めて起動するとき、また、新しいクライアント証明書を作成するときは必ず、そのエージェントを Visual Studio に構成するために必要な情報 (ホスト名、ポート、PIN など) が提供されます。
+エージェントを初めて起動するとき、および新しいクライアント証明書を作成するたびに、そのエージェントを Visual Studio で構成するために必要な情報 (ホスト名、ポート、PIN など) が提供されます。
 
-![vcremote を使用してセキュリティで保護された PIN を生成します](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
+![vcremote を使用したセキュリテ暗証番号 (PIN) の生成](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
 
 ホスト名を使用して Visual Studio にリモート エージェントを構成する場合は、Windows からホスト名を使用して Mac を ping し、到達可能であることを確認してください。 そうでない場合は、代わりに IP アドレスを使用する必要があります。
 
@@ -111,7 +111,7 @@ Visual Studio で iOS コードをビルドして実行するには、リモー�
 
 #### <a name="to-disable-secured-connection-mode"></a>セキュリティで保護された接続モードを無効にするには
 
-- vcremote のセキュリティで保護された接続モードを無効にするには、Mac 上のターミナル アプリで次のコマンドを入力します。
+- `vcremote` のセキュリティ保護接続モードを無効にするには、Mac 上のターミナル アプリで次のコマンドを入力します。
 
    `vcremote --secure false`
 
@@ -125,7 +125,7 @@ Visual Studio で iOS コードをビルドして実行するには、リモー�
 
 #### <a name="to-stop-the-remote-agent"></a>リモート エージェントを停止するには
 
-- vcremote が実行されているターミナル ウィンドウで、**Control**+**C** キーを押します。
+- `vcremote` が実行されているターミナル ウィンドウで、**Control** + **C** キーを押します。
 
 ## <a name="ConfigureVS"></a> Visual Studio でリモート エージェントを構成する
 
@@ -133,7 +133,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 ### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio でリモート エージェントを構成するには
 
-1. エージェントが Mac 上でまだ実行されていない場合は、「 [リモート エージェントを起動する](#Start)」の手順に従います。 Visual Studio をリモート エージェントと正常にペアリングして接続し、プロジェクトをビルドするためには、Mac が vcremote を実行している必要があります。
+1. エージェントが Mac 上でまだ実行されていない場合は、「 [リモート エージェントを起動する](#Start)」の手順に従います。 Visual Studio をリモート エージェントと正常にペアリングして接続し、プロジェクトをビルドするには、Mac で `vcremote` が実行されている必要があります。
 
 1. Mac 上で、Mac のホスト名または IP アドレスを取得します。
 
@@ -152,13 +152,13 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 1. **[ペアリングする]** を選択してペアリングを有効にします。
 
-   ![iOS のビルドにおける vcremote 接続を構成します](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
+   ![iOS のビルドにおける vcremote 接続の構成](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 
    ペアリングは、ホスト名またはポートを変更するまで維持されます。 **[オプション]** ダイアログ ボックスでホスト名またはポートを変更した場合にその変更を元に戻すには、 **[元に戻す]** ボタンを選択して前のペアリングに戻します。
 
    ペアリングが成功しなかった場合は、「 [Start the remote agent](#Start)」の手順に従って、リモート エージェントが実行されていることを確認します。 リモート エージェントの PIN が生成されてから経過した時間が長すぎる場合は、Mac 上で「 [Generate a new security PIN](#GeneratePIN) 」の手順に従ってからもう一度実行します。 Mac のホスト名を使用している場合は、代わりに IP アドレスを **[ホスト名]** に使用してみてください。
 
-1. **[リモート ルート]** フィールドのフォルダー名を更新して、Mac のホーム ( *~* ) ディレクトリ内のリモート エージェントで使用されるフォルダーを指定します。 既定では、リモート エージェントはリモート ルートとして /Users/`username`/vcremote を使用します。
+1. **[リモート ルート]** フィールドのフォルダー名を更新して、Mac のホーム ( *~* ) ディレクトリ内のリモート エージェントで使用されるフォルダーを指定します。 既定の場合、リモート エージェントではリモート ルートとして `/Users/<username>/vcremote` が使用されます。
 
 1. **[OK]** を選択して、リモート ペアリング接続設定を保存します。
 
@@ -184,7 +184,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 ### <a name="to-generate-a-new-server-certificate"></a>新しいサーバー証明書を生成するには
 
-1. vcremote エージェントを停止します。
+1. `vcremote` エージェントを停止します。
 
 1. ターミナル アプリで、次のコマンドを入力します。
 
@@ -196,13 +196,13 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    `vcremote generateClientCert`
 
-   これにより、新しい一時 PIN が生成されます。
+   このコマンドでは、新しい一時 PIN が生成されます。
 
 1. 新しい PIN を使用して Visual Studio をペアリングするには、「 [Visual Studio でリモート エージェントを構成する](#ConfigureVS)」の手順を繰り返します。
 
 ## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
-さまざまなコマンド ライン オプションを使用して、リモート エージェントを構成することができます。 たとえば、ビルド要求をリッスンするポートを指定したり、ファイル システムに保持するビルドの最大数を指定したりできます。 既定では、10 個のビルドに制限されます。 最大数を超えたビルドは、リモート エージェントによってシャットダウン時に削除されます。
+さまざまなコマンドライン オプションを使用して、リモート エージェントを構成することができます。 たとえば、ビルド要求をリッスンするポートを指定したり、ファイル システムに保持するビルドの最大数を指定したりできます。 既定では、10 個のビルドに制限されます。 最大数を超えたビルドは、リモート エージェントによってシャットダウン時に削除されます。
 
 ### <a name="to-configure-the-remote-agent"></a>リモート エージェントを構成するには
 
@@ -210,7 +210,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    `vcremote --help`
 
-- セキュア モードを無効にして、単純な HTTP ベースの接続を有効にするには、次のように入力します。
+- セキュリティ保護モードを無効にして、単純な HTTP ベースの接続を有効にするには、次のように入力します。
 
    `vcremote --secure false`
 
@@ -220,7 +220,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    `vcremote --serverDir directory_path`
 
-   ここで *directory_path* は、ログ ファイル、ビルド、サーバー証明書を配置する Mac 上の場所です。 既定では、この場所は */Users/\<username>/vcremote* です。 ビルドはこの場所でビルド番号順に編成されます。
+   ここで *directory_path* は、ログ ファイル、ビルド、サーバー証明書を配置する Mac 上の場所です。 既定では、この場所は `/Users/<username>/vcremote` です。 ビルドはこの場所でビルド番号順に編成されます。
 
 - バックグラウンド プロセスを使用して、server.log という名前のファイルに `stdout` と `stderr` をキャプチャするには、次のように入力します。
 
@@ -238,21 +238,21 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 ### <a name="debugging-on-an-ios-device"></a>iOS デバイスでのデバッグ
 
-iOS デバイスでのデバッグがうまくいかない場合、[ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) というツールに問題がある可能性があります。これは、iOS デバイスとの通信に使用されるツールです。 このツールは通常、vcremote のインストール中、Homebrew からインストールされます。 回避策としては以下の手順を行います。
+iOS デバイスでのデバッグがうまくいかない場合、[ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) というツールに問題がある可能性があります。これは、iOS デバイスとの通信に使用されるツールです。 このツールは通常、`vcremote` のインストールの間に、Homebrew からインストールされます。 回避策としては以下の手順を行います。
 
-ターミナル アプリを開き、次を順番に実行することで ideviceinstaller とその依存関係を更新します。
+ターミナル アプリを開き、次のコマンドを順番に実行することで、`ideviceinstaller` とその依存関係を更新します。
 
 1. Homebrew が確実に更新されるようにする
 
    `brew update`
 
-1. libimobiledevice と usbmuxd をアンインストールする
+1. `libimobiledevice` と `usbmuxd` をアンインストールします
 
    `brew uninstall --ignore-dependencies libimobiledevice`
 
    `brew uninstall --ignore-dependencies usbmuxd`
 
-1. 最新版の libimobiledevice と usbmuxd をインストールする
+1. 最新バージョンの `libimobiledevice` と `usbmuxd` をインストールします
 
    `brew install --HEAD usbmuxd`
 
@@ -262,22 +262,22 @@ iOS デバイスでのデバッグがうまくいかない場合、[ideviceinsta
 
    `brew install --HEAD libimobiledevice`
 
-1. ideviceinstaller をアンインストールし、再インストールする
+1. `ideviceinstaller` をアンインストールして再インストールします
 
    `brew uninstall ideviceinstaller`
 
    `brew install ideviceinstaller`
 
-デバイスにインストールされているアプリを一覧表示してみることで、ideviceinstaller でデバイスと通信できることを確認します。
+デバイスにインストールされているアプリを一覧表示してみることで、`ideviceinstaller` でデバイスと通信できることを確認します。
 
 `ideviceinstaller -l`
 
-ideviceinstaller にエラーが出て、フォルダー `/var/db/lockdown` にアクセスできない場合、次を利用し、フォルダーの特権を変更してください。
+フォルダー `/var/db/lockdown` にアクセスできないというエラーが `ideviceinstaller` で発生する場合は、次のようにしてフォルダーの権限を変更します。
 
 `sudo chmod 777 /var/db/lockdown`
     
-ideviceinstaller でデバイスと通信できるかどうか、再度確認します。
+その後、`ideviceinstaller` でデバイスと通信できるかどうか、再度確認します。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual C++ for Cross-Platform Mobile Development のインストール](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

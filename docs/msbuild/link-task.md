@@ -22,23 +22,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825413"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747287"
 ---
 # <a name="link-task"></a>Link タスク
-Visual C++ リンカー ツール (*link.exe*) をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
+Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
  次には、**Link** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。

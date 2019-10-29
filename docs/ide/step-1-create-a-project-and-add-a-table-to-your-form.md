@@ -1,6 +1,6 @@
 ---
 title: '手順 1: プロジェクトの作成とフォームへのテーブルの追加'
-ms.date: 05/31/2019
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0562588fe81780b7bb5787c4ec0b9861fd4c9408
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119064"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516785"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのテーブルの追加
 
@@ -44,11 +44,11 @@ ms.locfileid: "71119064"
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、 **[プロジェクトの種類]** 一覧から **[デスクトップ]** を選択します。
 
-1. **[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、 **[次へ]** を選択します。
+   **[プロジェクトの種類]** フィルターを適用したら、C# または Visual Basic の **[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、 **[次へ]** を選択します。
 
-   ![Windows フォーム アプリ (.NET Framework) 用の Visual Basic テンプレートを選択する](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows フォーム アプリ (.NET Framework) 用の C# または Visual Basic テンプレートを選択する](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > **[Windows フォーム アプリ (.NET Framework)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。

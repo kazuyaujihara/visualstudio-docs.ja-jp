@@ -11,22 +11,22 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569707"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747342"
 ---
 # <a name="clangcompile-task"></a>ClangCompile タスク
 
-Visual C++ コンパイラ ツール (clang.exe) をラップします。
+Microsoft C++ コンパイラ ツール clang.exe をラップします。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -51,7 +51,7 @@ Visual C++ コンパイラ ツール (clang.exe) をラップします。
 |**FunctionLevelLinking**|省略可能な **bool** 型のパラメーターです。<br/><br/>コンパイラが個々の関数をパッケージ関数 (COMDAT) の形式でパッケージ化できるようになります。 エディット コンティニュの機能に必要です。<br/><br/>`ffunction-sections` を使用してください。|
 |**GccToolChain**|省略可能な **string** 型のパラメーターです。<br/><br/>Gcc ツール チェーンのフォルダー パス。|
 |**GNUMode**|省略可能な **bool** 型のパラメーターです。<br/><br/>|
-|**MSCompatibility**|省略可能な **bool** 型のパラメーターです。<br/><br/>Microsoft Visual C++ の完全互換性を有効にします。|
+|**MSCompatibility**|省略可能な **bool** 型のパラメーターです。<br/><br/>Microsoft C++ の完全互換性を有効にします。|
 |**MSCompatibilityVersion**|省略可能な **string** 型のパラメーターです。<br/><br/>_MSC_VER にレポートする Microsoft コンパイラのバージョン番号を表す、ドットで区切られた値 (0 = 定義しない (既定値))。|
 |**MSExtensions**|省略可能な **bool** 型のパラメーターです。<br/><br/>Microsoft コンパイラでサポートされている非標準のコンストラクトの一部を受け入れます。|
 |**MSCompilerVersion**|省略可能な **string** 型のパラメーターです。<br/><br/>MSC_VER にレポートする Microsoft コンパイラのバージョン番号 (0 = 定義しない (既定値))。|
@@ -80,7 +80,7 @@ Visual C++ コンパイラ ツール (clang.exe) をラップします。
 |**UseMultiToolTask**|省略可能な **bool** 型のパラメーターです。<br/><br/>複数プロセッサによるコンパイルです。|
 |**UseShortEnums**|省略可能な **bool** 型のパラメーターです。<br/><br/>列挙型は、入力された使用できる値に必要なバイト数と同じバイト数を使用します。|
 |**Verbose**|省略可能な **bool** 型のパラメーターです。<br/><br/>実行するコマンドを表示して、詳細出力を使用します。|
-|**WarningLevel**|省略可能な **string** 型のパラメーターです。<br/><br/>コード エラーに対するコンパイラの警告レベルを指定します。 その他のフラグは、**[その他のオプション]** に直接追加する必要があります (`/w`、`/Weverything` を使います)。<br/><br/>**TurnOffAllWarnings**: すべてのコンパイラ警告を無効にします (`w` を使います)。<br/>**EnableAllWarnings**: 既定で無効にされている警告を含む、すべての警告を有効にします (`Wall` を使います)。|
+|**WarningLevel**|省略可能な **string** 型のパラメーターです。<br/><br/>コード エラーに対するコンパイラの警告レベルを指定します。 その他のフラグは、 **[その他のオプション]** に直接追加する必要があります (`/w`、`/Weverything` を使います)。<br/><br/>**TurnOffAllWarnings**: すべてのコンパイラ警告を無効にします (`w` を使います)。<br/>**EnableAllWarnings**: 既定で無効にされている警告を含む、すべての警告を有効にします (`Wall` を使います)。|
 
 ## <a name="see-also"></a>関連項目
 
