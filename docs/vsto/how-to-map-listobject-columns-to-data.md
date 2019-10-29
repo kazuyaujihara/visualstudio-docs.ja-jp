@@ -1,5 +1,5 @@
 ---
-title: '方法: ListObject 列をデータにマップする'
+title: '方法: データに ListObject 列をマップする'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0056687e8ca28af4dbc9032d7bbee0cf976378
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cffd9f009d193f5ed687560b4f13940273fd82ad
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253681"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985901"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>方法: ListObject 列をデータにマップする
+# <a name="how-to-map-listobject-columns-to-data"></a>方法: データに ListObject 列をマップする
   <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールを <xref:System.Data.DataTable>にバインドするとき、リストの中のすべての列を表示しなくてもよい場合や、データにバインドされていない特定の列が含まれている場合があります。 <xref:Microsoft.Office.Tools.Excel.ListObject> メソッドを呼び出すと、 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> に表示する列をマップできます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。SharePoint リストに接続されている Excel でリストを作成しますか](http://go.microsoft.com/fwlink/?LinkID=130263)。
 
 ## <a name="map-columns"></a>マップ列
 
@@ -36,12 +34,12 @@ ms.locfileid: "71253681"
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2. クラス (ドキュメントレベルのプロジェクトの`Startup`場合) または`ThisAddIn`クラス (VSTO アドインプロジェクトの場合) のイベントハンドラーにサンプルの列とデータを追加します。 `Sheet1`
+2. `Sheet1` クラス (ドキュメントレベルプロジェクトの場合) または `ThisAddIn` クラス (VSTO アドインプロジェクトの場合) の `Startup` イベントハンドラーにサンプルの列とデータを追加します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3. <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> メソッドを呼び出し、列名を表示順に渡します。 リストオブジェクトは新しく作成さ<xref:System.Data.DataTable>れたにバインドされますが、リストオブジェクト内の列の順序は、 <xref:System.Data.DataTable>に表示される順序とは異なります。
+3. <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> メソッドを呼び出し、列名を表示順に渡します。 リストオブジェクトは新しく作成された <xref:System.Data.DataTable>にバインドされますが、リストオブジェクト内の列の順序は、<xref:System.Data.DataTable>に表示される順序とは異なります。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -63,6 +61,6 @@ ms.locfileid: "71253681"
 - [実行時に VSTO アドインの Word 文書と Excel ブックを拡張する](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [方法: データを使用した ListObject コントロールの塗りつぶし](../vsto/how-to-fill-listobject-controls-with-data.md)
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
+- [方法: ListObject コントロールにデータを読み込む](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject コントロール](../vsto/listobject-control.md)

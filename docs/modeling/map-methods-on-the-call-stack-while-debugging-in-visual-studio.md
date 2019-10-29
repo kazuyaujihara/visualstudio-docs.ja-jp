@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668234"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985042"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio でデバッグを行うときの呼び出し履歴に対するメソッドのマップ
 
@@ -59,7 +59,7 @@ ms.locfileid: "72668234"
 
   参照トピック
 
-- [ビデオ: コードマップデバッガーの統合を使用して視覚的にデバッグする (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [ビデオ: コードマップデバッガーの統合を使用して視覚的にデバッグする (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [呼び出し履歴をマップする](#MapStack)
 
@@ -178,7 +178,7 @@ ms.locfileid: "72668234"
 
 - **新しい呼び出し履歴を自動的に追加しないようにマップを停止操作方法ますか?**
 
-   マップツール&#45;バーの [コードマップに呼び出し履歴を自動的 ](../debugger/media/debuggermap_automaticupdateicon.gif) に表示する] を選択 ![Button ます。 現在の呼び出し履歴をマップに手動で追加するには、 **ctrl**  + **Shift**  +  **`** を押します。
+   マップツールバー &#45;の ![] ボタンをクリックして、[コードマップに呼び出し履歴を自動的に表示](../debugger/media/debuggermap_automaticupdateicon.gif)ます。 現在の呼び出し履歴をマップに手動で追加するには、 **ctrl**  + **Shift**  +  **`** を押します。
 
    マップは、デバッグ中にマップ上の既存の呼び出し履歴を強調表示し続けます。
 

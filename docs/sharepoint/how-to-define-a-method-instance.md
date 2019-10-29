@@ -1,5 +1,5 @@
 ---
-title: '方法: メソッド インスタンスの定義 |Microsoft Docs'
+title: '方法: メソッドインスタンスを定義する |Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814112"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981810"
 ---
-# <a name="how-to-define-a-method-instance"></a>方法: メソッド インスタンスを定義します。
-  モデルでは、少なくとも 1 つのメソッド インスタンスのすべてのメソッドを定義する必要があります。
+# <a name="how-to-define-a-method-instance"></a>方法: メソッドインスタンスを定義する
+  モデル内のすべてのメソッドに対して、少なくとも1つのメソッドインスタンスを定義する必要があります。
 
- 使用してメソッド インスタンスの追加、 **BDC メソッドの詳細**ウィンドウ。 Visual Studio が追加、メソッドのインスタンスを追加すると、`<MethodInstance>`プロジェクトでモデル ファイルの xml 要素。 属性の詳細については、`<MethodInstance>`要素を参照してください[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)します。
+ **[BDC メソッドの詳細]** ウィンドウを使用して、メソッドインスタンスを追加します。 メソッドインスタンスを追加すると、Visual Studio によって、プロジェクトのモデルファイルの XML に `<MethodInstance>` 要素が追加されます。 `<MethodInstance>` 要素の属性の詳細については、「 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))」を参照してください。
 
-### <a name="to-define-a-method-instance"></a>メソッド インスタンスを定義するには
+### <a name="to-define-a-method-instance"></a>メソッドインスタンスを定義するには
 
-1. **BDC メソッドの詳細**ウィンドウが、メソッドのノードを展開し、展開、**インスタンス**ノード。
+1. **[BDC メソッドの詳細]** ウィンドウで、メソッドのノードを展開し、 **[インスタンス]** ノードを展開します。
 
-2. **メソッド インスタンスの追加**一覧で、選択**Finder インスタンスの作成**です。
+2. **[メソッドインスタンスの追加]** ボックスの一覧で、 **[Finder インスタンスの作成]** を選択します。
 
-     新しいメソッド インスタンスの下に表示されます、**インスタンス**ノード。
+     **インスタンス**ノードの下に新しいメソッドインスタンスが表示されます。
 
-3. メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
+3. メニューバーで、[ > の**プロパティウィンドウ**を**表示**] を選択します。
 
-4. **プロパティ**ウィンドウ、メソッドのインスタンスのプロパティを設定します。 各プロパティの詳細については、次を参照してください。 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)します。
+4. **[プロパティ]** ウィンドウで、メソッドインスタンスのプロパティを設定します。 各プロパティの詳細については、「 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)
-- [方法: エンティティ モデルを追加します。](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [方法: メソッドにパラメーターを追加します。](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [方法: パラメーターの型記述子を定義します。](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [ビジネス データ接続モデルを設計します。](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [BDC モデルのデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)
+- [方法: モデルにエンティティを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [方法: メソッドにパラメーターを追加する](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [方法: パラメーターの型記述子を定義する](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)

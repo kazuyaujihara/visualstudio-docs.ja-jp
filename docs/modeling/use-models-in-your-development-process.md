@@ -9,16 +9,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c38cb246a1ec3e8a20793b37f0a231d2e118bd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663760"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986290"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 
-Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](http://go.microsoft.com/fwlink/?LinkID=252078)」を参照してください。
+Visual Studio では、システム、アプリケーション、またはコンポーネントについて理解し、変更するためのモデルを使用することができます。 モデルは、システムが動作する世界を視覚化できるようにして、ユーザーのニーズを明確化し、システムのアーキテクチャを定義し、コードを分析し、コードが要件を満たしていることを確認できるようにします。 「 [Channel 9 ビデオ: モデリングによるアーキテクチャの改善](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)」を参照してください。
 
 どのバージョンの Visual Studio が各モデルの種類をサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -86,7 +86,7 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 - 各イテレーションの終盤で、要件ワーク ショップを開催して、要件や次のイテレーションで開発されるユーザー ストーリーを詳細に定義します。 優先度を決定できるユーザーとビジネスの利害関係者、および開発者とシステムのテスト担当者を招待します。 2 週間分のイテレーションの要件を定義するには 3 時間かかります。
 
-- すべてのユーザーにとって、ワークショップの目的は、次のイテレーションが終了するまでに達成する事柄について同意することです。 要件を明確化するには、ツールの 1 つとしてモデルを使用します。 ワークショップの出力はイテレーションバックログです。これは、[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 内の Team Foundation およびテストスイートの開発タスクの一覧です。
+- すべてのユーザーにとって、ワークショップの目的は、次のイテレーションが終了するまでに達成する事柄について同意することです。 要件を明確化するには、ツールの 1 つとしてモデルを使用します。 ワークショップの出力はイテレーションバックログです。これは、[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]内の Team Foundation およびテストスイートの開発タスクの一覧です。
 
 - 要件のワーク ショップでは、開発タスクの見積もりを決定する必要がある限りは、設計のみについて話し合います。 それ以外の場合は、ユーザーが直接体験するシステムの動作について話し合いを続けます。 要件モデルとアーキテクチャのモデルは別にしておいてください。
 
@@ -131,10 +131,10 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 |**カテゴリ**|**Links**|
 |-|-|
-|**ビデオ**|![link ビデオ ](../data-tools/media/playvideo.gif) [MSDN の操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link video ](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 を使用した UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link ビデオ ](../data-tools/media/playvideo.gif) [MSDN の「How Do I シリーズ: UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467) 」|
-|**フォーラム**|- [Visual Studio の視覚化ツールとモデリング ツール](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**ビデオ**|![のビデオへのリンク](../data-tools/media/playvideo.gif) [MSDN の操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ビデオへのリンク ![](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 を使用した UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![のビデオへのリンク](../data-tools/media/playvideo.gif) [MSDN の操作方法シリーズ: UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**フォーラム**|- [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**ブログ**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**技術記事とジャーナル**|[MSDN アーキテクチャ センター](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>関連項目
 

@@ -26,15 +26,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254939"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985380"
 ---
 # <a name="word-solutions"></a>Word ソリューション
-  Visual Studio には、Microsoft Office Word のドキュメント レベルのカスタマイズおよび VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 これらのソリューションを使用して、Word の自動化、Word の機能拡張、Word のユーザー インターフェイス (UI) のカスタマイズを行うことができます。 ドキュメント レベルのカスタマイズと VSTO アドインの違いの詳細については、次の [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) を参照してください。
+  Visual Studio には、Microsoft Office Word のドキュメント レベルのカスタマイズおよび VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 これらのソリューションを使用して、Word の自動化、Word の機能拡張、Word のユーザー インターフェイス (UI) のカスタマイズを行うことができます。 ドキュメントレベルのカスタマイズと VSTO アドインの違いの詳細については、「 [Office ソリューションの開発の&#40;概要&#41;vsto](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -58,26 +58,26 @@ ms.locfileid: "71254939"
 ## <a name="doclevel"></a>Word のドキュメントレベルのカスタマイズの作成
  Microsoft Office Word のドキュメント レベルのカスタマイズは、特定の文書に関連付けられたアセンブリで構成されます。 このアセンブリは、一般には UI のカスタマイズと Word の自動化によってドキュメントの機能を拡張します。 Word 自体と関連付けられる VSTO アドインとは異なり、カスタマイズに実装した機能は、関連付けられた文書が Word で開かれている場合にのみ利用できます。
 
- Word のドキュメント レベルのカスタマイズ プロジェクトを作成するには、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスで Word 文書または Word テンプレートのプロジェクト テンプレートを使用します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+ Word のドキュメント レベルのカスタマイズ プロジェクトを作成するには、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスで Word 文書または Word テンプレートのプロジェクト テンプレートを使用します。 詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
  ドキュメントレベルのカスタマイズのしくみの詳細については、「[ドキュメントレベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
 
 ### <a name="word-customization-programming-model"></a>Word カスタマイズのプログラミングモデル
  Word のドキュメント レベルのプロジェクトを作成すると、 `ThisDocument`と呼ばれる、ソリューションの基礎となるクラスが Visual Studio によって生成されます。 このクラスは、ソリューションに関連付けられたドキュメントを表し、コードを記述する際の開始点となります。
 
- `ThisDocument`クラスおよびドキュメントレベルのプロジェクトで使用できるその他の機能の詳細については、「[プログラムによるドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)」を参照してください。
+ `ThisDocument` クラスおよびドキュメントレベルのプロジェクトで使用できるその他の機能の詳細については、「[プログラムによるドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)」を参照してください。
 
 ## <a name="applevel"></a>Word 用の VSTO アドインの開発
  Microsoft Office Word の VSTO アドインは、Word によって読み込まれるアセンブリで構成されます。 このアセンブリは、一般には UI のカスタマイズと Word の自動化によって Word の機能を拡張します。 特定のドキュメントに関連付けられているドキュメントレベルのカスタマイズとは異なり、VSTO アドインに実装した機能は、1つのドキュメントに限定されません。
 
- Word 用の VSTO アドイン プロジェクトを作成するには、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスで Word アドイン プロジェクト テンプレートを使用します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+ Word 用の VSTO アドイン プロジェクトを作成するには、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスで Word アドイン プロジェクト テンプレートを使用します。 詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
  VSTO アドインが機能するしくみの概要については、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
 
 ### <a name="word-add-in-programming-model"></a>Word アドインのプログラミングモデル
  Word VSTO アドイン プロジェクトを作成すると、 `ThisAddIn`と呼ばれる、ソリューションの基礎となるクラスが Visual Studio によって生成されます。 このクラスは、コードを記述する際の開始点となり、Word のオブジェクト モデルを VSTO アドインに公開します。
 
- `ThisAddIn`クラスおよび vsto アドインで使用できるその他の機能の詳細については、「[プログラム vsto アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
+ `ThisAddIn` クラスおよび VSTO アドインで使用できるその他の機能の詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
 ## <a name="UI"></a>Word のユーザーインターフェイスをカスタマイズする
  Word のユーザー インターフェイスをカスタマイズする方法はいくつかあります。 一部のオプションはすべてのプロジェクト タイプで使用できますが、VSTO アドインまたはドキュメント レベルのカスタマイズでのみ使用できるオプションもあります。
@@ -107,12 +107,12 @@ ms.locfileid: "71254939"
 
 ### <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |[Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)|Word オブジェクト モデルに用意されている主な型の概要について説明します。|
-|[拡張オブジェクトを使用した Word の自動化](../vsto/automating-word-by-using-extended-objects.md)|Word ソリューションで使用できる ( [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]に用意されている) 拡張オブジェクトについて説明します。|
+|[拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)|Word ソリューションで使用できる ( [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]に用意されている) 拡張オブジェクトについて説明します。|
 |[Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)|Windows フォーム コントロールを Word 文書に追加する方法について説明します。|
-|[チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。|
-|[チュートリアル: Word 用の最初の VSTO アドインを作成する](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Word 用の基本的な VSTO アドインを作成する方法を示します。|
+|[チュートリアル: 初めての Word 用ドキュメントレベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。|
+|[チュートリアル: 初めての Word 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Word 用の基本的な VSTO アドインを作成する方法を示します。|
 |[チュートリアル: 実行時に VSTO アドインでドキュメントにコントロールを追加する](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|VSTO アドインを使用して、実行時に Windows フォームのボタンおよび <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を文書に追加する方法を示します。|
-|[Office 開発における Word 2010](http://go.microsoft.com/fwlink/?LinkId=199020)|Word ソリューションの開発に関する文書やリファレンス ドキュメントへのリンクを示します (Visual Studio を使用した Office 開発に限定されません)。|
+|[Office 開発における Word 2010](/previous-versions/office/developer/office-2010/ff601860(v=office.14))|Word ソリューションの開発に関する文書やリファレンス ドキュメントへのリンクを示します (Visual Studio を使用した Office 開発に限定されません)。|

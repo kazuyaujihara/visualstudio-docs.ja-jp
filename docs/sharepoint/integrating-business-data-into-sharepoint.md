@@ -1,5 +1,5 @@
 ---
-title: SharePoint にビジネス データの統合 |Microsoft Docs
+title: SharePoint へのビジネスデータの統合 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,40 +19,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbbdba27b5ccc52e64575aad018af4ca20cf2e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06d9e8059db8daa1c27b8c1d5fecc50940b7facb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008798"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986385"
 ---
-# <a name="integrate-business-data-into-sharepoint"></a>SharePoint ビジネス データを統合します。
-  ビジネス データは、SharePoint に統合できます。 ビジネス データがなどのバック エンド サーバーのアプリケーションから取得できます[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]Siebel、および SAP、または Web サービス。 ユーザーは、表示、追加、更新、または外部リストまたは SharePoint のビジネス データ Web パーツを使用してビジネス データを削除できます。  ユーザーは、Microsoft Outlook などの Microsoft Office アプリケーションでこのデータをオフラインにもアクセスできます。 詳細については、次を参照してください。[場所できますする外部データの表示](http://go.microsoft.com/fwlink/?LinkId=169295)します。
+# <a name="integrate-business-data-into-sharepoint"></a>SharePoint へのビジネスデータの統合
+  ビジネスデータを SharePoint に統合できます。 ビジネスデータは、[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]、Siebel、SAP などのバックエンドサーバーアプリケーションや Web サービスから取得できます。 ユーザーは、SharePoint の外部リストまたはビジネスデータ Web パーツを使用して、ビジネスデータの表示、追加、更新、または削除を行うことができます。  また、ユーザーは、Microsoft Outlook などの Microsoft Office アプリケーションで、このデータにオフラインでアクセスすることもできます。 詳細については、「[どこで外部データを表示できるか](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))」を参照してください。
 
- SharePoint にデータを統合するには、ビジネス データ接続 (BDC) サービスのモデルを作成します。 BDC サービスは、ビジネス アプリケーションでデータに関する情報を格納する SharePoint のアプリケーションです。 詳細については、次を参照してください。[ビジネス データ接続 (BDC) サービス](http://go.microsoft.com/fwlink/?LinkID=169276)します。
+ データを SharePoint に統合するには、Business Data Connectivity (BDC) サービスのモデルを作成します。 BDC サービスは、データに関する情報をビジネスアプリケーションに格納する、SharePoint のアプリケーションです。 詳細については、「 [Business Data Connectivity (BDC) サービス](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14))」を参照してください。
 
-## <a name="models-in-visual-studio"></a>Visual Studio でモデル
- Visual Studio でモデルを使用すると、取得およびバックエンド データ ソースからデータを更新するカスタム コードを記述できます。 複数のデータ ソースからデータを集計することもできます。 データを含む顧客の一覧を表示するなど、[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]データベースと Web サービス。
+## <a name="models-in-visual-studio"></a>Visual Studio のモデル
+ Visual Studio のモデルを使用すると、バックエンドデータソースからデータを取得および更新するためのカスタムコードを記述できます。 複数のデータソースからデータを集計することもできます。 たとえば、[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] データベースと Web サービスのデータを含む顧客の一覧を表示できます。
 
- SharePoint に既に配置されているモデルをインポートすることもできます。 モデルにインポートした後は、カスタム コードを追加またはだけパッケージ化し、複数の SharePoint サーバー ファームに、モデルをデプロイする Visual Studio を使用できます。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+ 既に SharePoint に配置されているモデルをインポートすることもできます。 モデルをインポートした後、カスタムコードを追加することも、Visual Studio を使用してモデルをパッケージ化し、複数の SharePoint サーバーファームに配置することもできます。 詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
-## <a name="design-a-model-in-visual-studio"></a>Visual Studio でモデルを設計します。
- デザイナーといくつかのツール ウィンドウを使用してモデルを設計することができます。 モデルを設計する際、Visual Studio には、モデルの XML が生成されます。 詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
+## <a name="design-a-model-in-visual-studio"></a>Visual Studio でのモデルのデザイン
+ デザイナーといくつかのツールウィンドウを使用して、モデルをデザインできます。 モデルをデザインすると、Visual Studio によってモデル XML が生成されます。 詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
  モデルには、エンティティとメソッドが含まれています。
 
 ### <a name="entities"></a>エンティティ
- エンティティには、フィールドのコレクションについて説明します。 たとえば、エンティティは、データベース内のテーブルを表すことができます。 エンティティは、SharePoint の外部コンテンツ タイプとして表示されます。 外部コンテンツ タイプの詳細については、次を参照してください[外部コンテンツの種類は何ですか?。](http://go.microsoft.com/fwlink/?LinkId=169293)
+ エンティティは、フィールドのコレクションを記述します。 たとえば、エンティティはデータベース内のテーブルを表すことができます。 エンティティは、SharePoint の外部コンテンツタイプとして表示されます。 外部コンテンツタイプの詳細については、「[外部コンテンツタイプとは](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14))」を参照してください。
 
 ### <a name="methods"></a>メソッド
- メソッドには、エンティティのフィールドの操作を実行する場合は、外部コンテンツ タイプのコンシューマーができます。 たとえば、Updater メソッドが、アドレスを変更するユーザーを有効にし、生年月日、顧客の可能性があります、`Address`と`BirthDate`のフィールドには、`Customer`エンティティ。
+ メソッドを使用すると、外部コンテンツ型のコンシューマーは、エンティティのフィールドに対してアクションを実行できます。 たとえば、Updater メソッドを使用すると、ユーザーがアドレスを変更できるようにすることができます。また、`Address` と `BirthDate` が `Customer` エンティティのフィールドである顧客の生年月日を指定することもできます。
 
- Visual Studio では、モデル内の各エンティティ サービス コード ファイルを生成します。 モデルにメソッドを追加するときに Visual Studio は、サービス コード ファイルに対応するメソッドを生成します。 適切なタスクを実行するには、各メソッドにコードを追加します。 たとえば、Creator メソッドをモデルに追加する場合 Visual Studio は、サービス コード ファイルで Creator メソッドを生成します。 ユーザーがクリックしたときに、BDC サービスでこのメソッドが呼び出されます、**新しい項目の**モデルに基づいている一覧でボタンをクリックします。 そのため、データ ソースに新しいデータを追加する作成者メソッドにコードを追加します。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+ Visual Studio は、モデル内の各エンティティに対してサービスコードファイルを生成します。 メソッドをモデルに追加すると、Visual Studio によって、対応するメソッドがサービスコードファイルに生成されます。 各メソッドにコードを追加して、適切なタスクを実行します。 たとえば、作成者メソッドをモデルに追加すると、Visual Studio によってサービスコードファイルに Creator メソッドが生成されます。 このメソッドは、ユーザーがモデルに基づくリストの **[新しい項目]** ボタンをクリックしたときに、BDC サービスによって呼び出されます。 そのため、データソースに新しいデータを追加するコードを Creator メソッドに追加します。 詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[ビジネス データ接続モデルを作成します。](../sharepoint/creating-a-business-data-connectivity-model.md)|方法、新しいモデルを作成または sharepoint サイトからエクスポートしたモデルのインポートを示しています。|
-|[ビジネス データ接続モデルを設計します。](../sharepoint/designing-a-business-data-connectivity-model.md)|Visual Studio デザイン ツールを使用してモデルの要素をデザインする方法について説明します。|
-|[Vs の SharePoint Designer を使用する場合。BCS を使用して visual Studio 開発ソリューション](http://go.microsoft.com/fwlink/?LinkID=183448)|Visual Studio を使用して、または SharePoint デザイナーを使用して、bdc モデルを作成するかどうかを判断します。|
+|[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)|新しいモデルを作成する方法、または SharePoint からエクスポートするモデルをインポートする方法について説明します。|
+|[ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)|Visual Studio のデザインツールを使用して、モデルの要素をデザインする方法について説明します。|
+|[BCS を使用してソリューションをビルドするときに SharePoint デザイナーと Visual Studio のどちらを使用するか](/previous-versions/office/developer/sharepoint-2010/ee558875(v=office.14))|Visual Studio を使用するか、SharePoint デザイナーを使用して BDC のモデルを作成するかを決定します。|

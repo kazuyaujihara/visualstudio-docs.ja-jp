@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606205"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983700"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 
@@ -96,7 +96,7 @@ hostspecific="true"
 
 このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時](../modeling/design-time-code-generation-by-using-t4-text-templates.md)テンプレートには適用できますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)には適用されません。
 
-@No__t_0 が `true`、Visual Studio を使用している場合は、`this.Host` を IServiceProvider にキャストして Visual Studio の機能にアクセスできます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 (例:
+`hostspecific` が `true`、Visual Studio を使用している場合は、`this.Host` を IServiceProvider にキャストして Visual Studio の機能にアクセスできます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 (例:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Content of myFile is:
 
 `VB`
 
-@No__t_0 属性は、ステートメントおよび式ブロックのソースコードに使用する言語 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] または [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
+`language` 属性は、ステートメントおよび式ブロックのソースコードに使用する言語 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] または [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
 
 (例:
 
@@ -235,7 +235,7 @@ This is the common footer.
 
 デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。
 
-詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](http://go.microsoft.com/fwlink/?LinkId=208373)を参照してください。
+詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)を参照してください。
 
 ## <a name="linepragmas-attribute"></a>linePragmas グマ属性
 

@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009803"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984181"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint ソリューションのセキュリティ
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint アプリケーションのセキュリティを強化するために、次の機能が組み込まれています。
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint アプリケーションのセキュリティを強化するために、次の機能が組み込まれています。
 
-## <a name="safe-control-entries"></a>安全なコントロール エントリ
- 作成したすべての SharePoint プロジェクト項目[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]が、**安全なコントロール エントリ**を安全な場所を表すプロパティがコレクションを制御します。 その**セーフ**サブプロパティでは、セキュリティで保護されたと見なされるコントロールを指定することができます。 詳細については、次を参照してください。[プロジェクト項目でのパッケージと展開の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)と[安全な Web パーツを指定する](http://go.microsoft.com/fwlink/?LinkId=177521)します。
+## <a name="safe-control-entries"></a>安全なコントロールエントリ
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] で作成されたすべての SharePoint プロジェクトアイテムには、安全なコントロールのコレクションを表す "**安全なコントロールエントリ**" プロパティがあります。 **セーフ**サブプロパティを使用すると、セキュリティで保護されていると考えられるコントロールを指定できます。 詳細については、「[プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)する」および「[安全な Web パーツの指定](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19)」を参照してください。
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 属性
- 既定では、ランタイム コード アクセス セキュリティ (CAS) システムによって完全に信頼されている唯一のアプリケーションは、共有マネージ コード アセンブリをアクセスできます。 AllowPartiallyTrustedCallers 属性を持つ完全に信頼されたアセンブリをマークするには、部分的に信頼されたアセンブリへのアクセスが使用できます。
+ 既定では、ランタイムコードアクセスセキュリティ (CAS) システムによって完全に信頼されているアプリケーションのみが、共有マネージコードアセンブリにアクセスできます。 完全に信頼されたアセンブリを AllowPartiallyTrustedCallers 属性でマークすると、部分的に信頼されたアセンブリにアクセスできるようになります。
 
- AllowPartiallyTrustedCallers 属性は、システムのグローバル アセンブリ キャッシュに展開されていないすべての SharePoint ソリューションに追加されます ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 これには、サンド ボックス ソリューションまたは SharePoint アプリケーションの Bin ディレクトリにデプロイされたソリューションが含まれます。 詳細については、次を参照してください。 [Microsoft .NET Framework のバージョン 1 のセキュリティ変更](http://go.microsoft.com/fwlink/?LinkId=177515)と[SharePoint Foundation の Web パーツを配置する](http://go.microsoft.com/fwlink/?LinkId=177509)します。
+ AllowPartiallyTrustedCallers 属性は、システムのグローバルアセンブリキャッシュ ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]) に配置されていない SharePoint ソリューションに追加されます。 これには、SharePoint アプリケーションの Bin ディレクトリに配置されたサンドボックスソリューションまたはソリューションが含まれます。 詳細については、「 [Microsoft .NET Framework のバージョン1のセキュリティの変更](/previous-versions/msp-n-p/ff921345(v=pandp.10))」および「 [SharePoint Foundation での Web パーツの配置](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))」を参照してください。
 
-## <a name="safe-against-script-property"></a>[スクリプト] プロパティに対して安全
- *スクリプト インジェクション*がコントロールまたは Web ページに悪意のあるコードを挿入します。 スクリプト インジェクションから SharePoint 2010 サイトを保護するため、共同作成者は表示または既定の Web パーツまたはそれらのプロパティを編集することはできません。 この動作は、SafeAgainstScript と呼ばれる SafeControl 属性によって制御されます。 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]、この属性を設定して、プロジェクト項目の**安全なコントロール エントリ**サブプロパティ**スクリプトに対して安全**します。 詳細については、次を参照してください。[プロジェクト項目でのパッケージと展開の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)と[方法。安全なコントロールとしてマークが制御](../sharepoint/how-to-mark-controls-as-safe-controls.md)します。
+## <a name="safe-against-script-property"></a>スクリプトプロパティに対して安全
+ *スクリプトインジェクション*は、悪意のある可能性のあるコードをコントロールや Web ページに挿入することです。 SharePoint 2010 サイトをスクリプトインジェクションに対して保護するために、共同作成者は既定で Web パーツまたはそのプロパティを表示または編集することはできません。 この動作は、SafeAgainstScript という名前の SafeControl 属性によって制御されます。 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]で、**スクリプトに対して**プロジェクト項目の**安全なコントロールエントリ**のサブプロパティにこの属性を設定します。 詳細については、「[プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)する」および「[方法: コントロールを安全なコントロールとしてマークする](../sharepoint/how-to-mark-controls-as-safe-controls.md)」を参照してください。
 
-## <a name="vista-and-windows-7-user-account-control"></a>Vista および Windows 7 のユーザー アカウント制御
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)]ユーザー アカウント制御 (UAC) と呼ばれるセキュリティ機能を組み込むことです。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] および [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] のシステム上の [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] で SharePoint ソリューションを開発する場合は、UAC により、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] をシステム管理者として実行することが求められます。 **開始**メニュー、ショートカット メニューを開き[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、選び、**管理者として実行**します。
+## <a name="vista-and-windows-7-user-account-control"></a>Vista および Windows 7 ユーザーアカウント制御
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] と [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] には、ユーザーアカウント制御 (UAC) と呼ばれるセキュリティ機能が組み込まれています。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] および [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] のシステム上の [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] で SharePoint ソリューションを開発する場合は、UAC により、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] をシステム管理者として実行することが求められます。 **[スタート]** メニューから [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]のショートカットメニューを開き、 **[管理者として実行]** を選択します。
 
- 構成する、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を常に管理者として実行、ショートカット メニューを開き、選択ショートカット**プロパティ**、選択、 **[詳細設定]** ボタン、**プロパティ**ダイアログ ボックスで、クリックして、**管理者として実行**チェック ボックスをオンします。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ショートカットを常に管理者として実行するように構成するには、ショートカットメニューを開き、 **[プロパティ]** をクリックします。次に、 **[プロパティ]** ダイアログボックスの **[詳細設定]** をクリックし、 **[管理者として実行]** チェックボックスをオンにします。
 
- 詳細については、次を参照してください。 [Windows Vista のユーザー アカウント制御を構成すると理解](http://go.microsoft.com/fwlink/?LinkID=156476)します。 [Windows 7 ユーザー アカウント制御](http://go.microsoft.com/fwlink/?LinkId=177523)します。
+ 詳細については、「 [Windows Vista でのユーザーアカウント制御の理解と構成](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10))」を参照してください。 および[Windows 7 ユーザーアカウント制御](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10))。
 
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint の権限に関する考慮事項
  SharePoint ソリューションを開発するには、SharePoint ソリューションを実行し、デバッグするために十分な権限が必要です。 SharePoint ソリューションをテストする前に、次の手順に従って必要な権限を取得してください。
@@ -50,38 +50,38 @@ ms.locfileid: "63009803"
 
 2. 自分のユーザー アカウントを SharePoint サーバーのファーム管理者として追加します。
 
-    1. SharePoint 2010 サーバーの全体管理では、選択、**ファーム管理者グループの管理**リンク。
+    1. SharePoint 2010 サーバーの全体管理で、 **[ファーム管理者グループの管理]** リンクを選択します。
 
-    2. **ファーム管理者**ページで、選択、**新規**メニュー オプション
+    2. **[ファーム管理者]** ページで、 **[新規]** メニューオプションを選択します。
 
 3. 自分のユーザー アカウントを WSS_ADMIN_WPG グループに追加します。
 
-## <a name="additional-security-resources"></a>追加のセキュリティ リソース
+## <a name="additional-security-resources"></a>その他のセキュリティリソース
  セキュリティの問題の詳細については、次を参照してください。
 
 ### <a name="visual-studio-security"></a>Visual Studio のセキュリティ
 
-- [セキュリティとユーザーのアクセス許可](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [セキュリティとユーザーのアクセス許可](/previous-versions/visualstudio/visual-studio-2010/ms165099(v=vs.100))
 
-- [ネイティブ モードと .NET Framework コードでのセキュリティ](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [ネイティブコードと .NET Framework コードのセキュリティ](/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
 
-- [.NET Framework におけるセキュリティ](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [.NET Framework におけるセキュリティ](/previous-versions/dotnet/netframework-4.0/fkytk30f(v=vs.100))
 
 ### <a name="sharepoint-security"></a>SharePoint のセキュリティ
 
-- [SharePoint Foundation の管理とセキュリティ](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [SharePoint Foundation の管理とセキュリティ](/previous-versions/office/developer/sharepoint-2010/ee537811(v=office.14))
 
-- [SharePoint セキュリティ リソース センター](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [SharePoint セキュリティリソースセンター](/sharepoint/dev/)
 
-- [SharePoint Foundation での Web パーツをセキュリティで保護します。](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [SharePoint Foundation での Web パーツのセキュリティ保護](/previous-versions/office/developer/sharepoint-2010/cc768613(v=office.14))
 
-- [Web アプリケーションのセキュリティを向上させるには。脅威と対策](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Web アプリケーションのセキュリティの向上: 脅威と対策](/previous-versions/msp-n-p/ff649874(v=pandp.10))
 
 ### <a name="general-security"></a>一般的なセキュリティ
 
-- [MSDN セキュリティ開発ライフ サイクル](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN セキュリティ開発ライフサイクル](https://www.microsoft.com/msrc?rtc=1)
 
-- [セキュリティで保護された ASP.NET アプリケーションの構築:認証、承認、およびセキュリティで保護された通信](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [セキュリティで保護された ASP.NET アプリケーションの構築: 認証、承認、セキュリティで保護された通信](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
 ## <a name="see-also"></a>関連項目
 

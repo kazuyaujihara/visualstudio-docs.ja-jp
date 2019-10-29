@@ -16,35 +16,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988285"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985073"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint のエラーに関する追加情報
-  トラブルシューティングで支援が見つかります[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint ツールのエラーと警告のトラブルシューティングのトピックとパブリック フォーラム。
+  詳細については、トラブルシューティングのトピックとパブリックフォーラムの「SharePoint ツールのエラーと警告のトラブルシューティング」を参照してください [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-## <a name="troubleshoot-errors-and-issues"></a>エラーおよび問題をトラブルシューティングします。
- 一般的なエラーとその他の問題の支援について[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint ツールでは、次のトピックを参照してください。
+## <a name="troubleshoot-errors-and-issues"></a>エラーと問題のトラブルシューティング
+ SharePoint ツール [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の一般的なエラーとその他の問題については、次のトピックを参照してください。
 
-- [SharePoint ソリューションをトラブルシューティングします。](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [SharePoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
-- [SharePoint ソリューションをデバッグします。](../sharepoint/debugging-sharepoint-solutions.md)
+- [SharePoint ソリューションのデバッグ](../sharepoint/debugging-sharepoint-solutions.md)
 
-- [SharePoint のパッケージ化とデプロイをトラブルシューティングします。](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [SharePoint のパッケージ化と配置のトラブルシューティング](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>その他のリソース
- 次の表、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ツールのフォーラムやその他のリソースを使用できます。
+ 次の表に、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ツールフォーラムとその他の利用可能なリソースを示します。
 
 |用語|定義|
 |----------|----------------|
-|[SharePoint 開発](http://go.microsoft.com/fwlink/?LinkId=179593)|SharePoint 開発に関する質問フォーラムを提供[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。|
-|[Visual Studio フォーラム](http://go.microsoft.com/fwlink/?LinkID=150452)|に関する質問については、フォーラムを提供します。[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。|
-|[Microsoft ヘルプおよびサポート](http://go.microsoft.com/fwlink/?LinkID=108287)|サポート技術情報 (KB: Knowledge Base) の文書、ダウンロード ファイルや更新プログラム、Support Webcast、およびその他のサービスへのアクセスを提供します。|
+|[SharePoint 開発](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]での SharePoint 開発に関する質問のためのフォーラムを提供します。|
+|[Visual Studio フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]に関する質問のためのフォーラムを提供します。|
+|[マイクロソフト ヘルプおよびサポート](https://support.microsoft.com/)|サポート技術情報 (KB: Knowledge Base) の文書、ダウンロード ファイルや更新プログラム、Support Webcast、およびその他のサービスへのアクセスを提供します。|
 
- 必要な回答が見つからない場合は、Microsoft 製品サポート サービスに連絡またはサポート技術情報の記事を検索してなどのオンライン サポート オプションを表示できます。 詳細については、次を参照してください。、 [Microsoft ヘルプとサポート](http://go.microsoft.com/fwlink/?LinkID=155371)ページ。
+ それでも必要な回答が見つからない場合は、マイクロソフト製品サポートサービスに問い合わせるか、サポート技術情報記事を検索するなど、オンラインサポートオプションにアクセスできます。 詳細については、 [Microsoft ヘルプとサポート](https://support.microsoft.com/)のページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)

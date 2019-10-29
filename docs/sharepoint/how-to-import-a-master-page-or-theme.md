@@ -1,5 +1,5 @@
 ---
-title: '方法: マスター ページまたはテーマのインポート |Microsoft Docs'
+title: '方法: マスターページまたはテーマをインポートする |Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,48 +13,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c5078d31e2dcb7f11e5c19e0f8cb228e2f75d50
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427401"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984201"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>方法: マスター ページまたはテーマをインポートします。
-  付与できますページ、SharePoint サイトで一貫した外観を作成してマスター ページとテーマを使用します。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] これらの要素のテンプレートが指定されない SharePoint Designer で作成できにインポートできますが、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[ビルディング ブロック。ページとユーザー インターフェイス](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft web サイト。
+# <a name="how-to-import-a-master-page-or-theme"></a>方法: マスターページまたはテーマをインポートする
+  マスターページとテーマを作成して使用することで、SharePoint サイトのページに一貫した外観を与えることができます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ではこれらの要素のテンプレートは提供されませんが、SharePoint デザイナーで作成して [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]にインポートすることができます。 詳細については、Microsoft web サイトの「[ビルディングブロック: Pages And User Interface](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 」を参照してください。
 
-### <a name="to-import-a-master-page-or-theme"></a>マスター ページまたはテーマをインポートするには
+### <a name="to-import-a-master-page-or-theme"></a>マスターページまたはテーマをインポートするには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を作成または SharePoint プロジェクトを開きます。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で、SharePoint プロジェクトを作成するか開きます。
 
-     SharePoint プロジェクトを作成する方法については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
+     SharePoint プロジェクトを作成する方法の詳細については、「 [sharepoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。
 
-2. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+2. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
-3. **新しい項目の追加** ダイアログ ボックスで、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+3. **[新しい項目の追加]** ダイアログボックスで、 **[SharePoint]** ノードを展開し、 **[2010]** ノードを選択します。
 
-4. SharePoint テンプレートの一覧で選択、**モジュール**テンプレート、モジュールの名前を指定します。
+4. SharePoint テンプレートの一覧で、**モジュール**テンプレートを選択し、モジュールの名前を指定します。
 
-     モジュールには、SharePoint で指定した場所に配置するためのファイル (たとえば、マスター ページまたはテーマ ファイル) が含まれています。
+     モジュールには、SharePoint で指定した場所に配置するためのファイル (マスターページやテーマファイルなど) が含まれています。
 
-5. モジュールで、削除の既定のファイルの名前は*Sample.txt*します。
+5. モジュールで、 *Sample .txt*という名前の既定のファイルを削除します。
 
-6. モジュール ノードを選択します。
+6. モジュールノードを選択します。
 
-7. メニュー バーで、**プロジェクト** > **既存項目の追加**、マスター ページまたはテーマ ファイルを選択します。
+7. メニューバーで、[ > **プロジェクト**]、 **[既存項目の追加]** の順に選択し、マスターページまたはテーマファイルを選択します。
 
-     マスター ページのファイル拡張子を持ち、.master、およびテーマ ファイル .thmx という拡張子があります。
+     マスターページファイルの拡張子は .master で、テーマファイルの拡張子は thmx です。
 
-8. マスター ページを追加した場合は、変更、**配置競合の解決**設定**自動**モジュールのプロパティで。
+8. マスターページを追加した場合は、モジュールのプロパティで、**配置競合の解決**設定を**自動**に変更します。
 
     > [!NOTE]
-    > エラーは、マスター ページの名前は既定のマスター ページまたはカスタム マスター ページのいずれかとしてマークされている既存のマスター ページの名前と同じ場合に発生することができます。 この問題を解決する方法については、次を参照してください。[チュートリアル。カスタム マスター ページとサイトのページにイメージをインポート](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)します。
+    > マスターページの名前が、既定のマスターページまたはカスタムマスターページとしてマークされている既存のマスターページの名前と同じである場合に、エラーが発生することがあります。 この問題を解決する方法の詳細については、「[チュートリアル: イメージを使用したカスタムマスターページおよびサイトページのインポート](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)」を参照してください。
 
-9. モジュールで、開く*Elements.xml*します。
+9. モジュールで、 *Elements .xml*を開きます。
 
-     更新する必要があります、 *Elements.xml*マスター ページまたはテーマを追加するを参照するファイル。
+     追加したマスターページまたはテーマを参照するように、*要素の .xml*ファイルを更新する必要があります。
 
-10. マスター ページのモジュールの既存のマークアップを次のマークアップに置き換えます。
+10. マスターページの場合は、既存のモジュールマークアップを次のマークアップに置き換えます。
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/masterpage">
@@ -63,7 +63,7 @@ ms.locfileid: "63427401"
     </Module>
     ```
 
-     テーマのモジュールの既存のマークアップを次のマークアップに置き換えます。
+     テーマの場合は、既存のモジュールマークアップを次のマークアップに置き換えます。
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/theme"
@@ -72,25 +72,25 @@ ms.locfileid: "63427401"
     </Module>
     ```
 
-     必ず、プレース ホルダーの値をモジュールとマスター ページまたはテーマの実際の名前に置き換えます。
+     プレースホルダーの値は、モジュールの実際の名前とマスターページまたはテーマに置き換えてください。
 
-     属性`Type="GhostableInLibrary"`、コンテンツ データベースに項目を追加することを示します、`Url`モジュールの属性は、ファイルを SharePoint コンテンツ データベースに保存する場所を指定します。
+     属性 `Type="GhostableInLibrary"` は、項目がコンテンツデータベースに追加されることを示します。また、モジュールの `Url` 属性は、SharePoint コンテンツデータベース内のファイルを格納する場所を指定します。
 
-11. マスター ページのデプロイの範囲を変更する**ソリューション エクスプ ローラー**、デザイナーの機能で機能ファイルを開きからの新しい配置スコープを選択し、**スコープ**一覧。
+11. マスターページの配置スコープを変更するには、**ソリューションエクスプローラー**で、機能デザイナーで機能ファイルを開き、 **[スコープ]** ボックスの一覧から新しい展開スコープを選択します。
 
-     値**Web**マスター ページは、プロジェクトで現在指定されている web サイトにのみ適用されることを意味します。 値**サイト**マスター ページは、すべてのサブサイトとルート web を含む現在のサイト コレクションに適用されることを意味します。 その他の値は適用されません。
+     値が**Web**の場合は、プロジェクトで現在指定されている web サイトにのみマスターページが適用されることを意味します。 **Site**の値は、すべてのサブサイトとルート web を含む、現在のサイトコレクションにマスターページが適用されることを意味します。 その他の値は適用されません。
 
     > [!NOTE]
-    > 設定することはありません、テーマのスコープに何も以外のテーマは、サイト コレクション レベルにのみ適用される、ので推奨**サイト**します。 エラーは、サブ サイトにテーマを使用する場合に発生します。
+    > テーマはサイトコレクションレベルにのみ適用されるため、テーマのスコープを **[サイト]** 以外に設定しないことをお勧めします。 テーマがサブサイトで使用されている場合、エラーが発生することがあります。
 
-12. メニュー バーで、**ビルド** > **ソリューションの配置**します。
+12. メニューバーで、 **[ビルド]** 、[**ソリューションの配置** > ] の順に選択します。
 
-13. ファイルが正しく展開されているかどうかを確認するには、SharePoint サイトを開き、**サイトの操作**メニューで、選択、**サイト設定**コマンドを使用し、いずれかを選択し、**マスター ページ**リンクまたは**テーマ**リンク。
+13. ファイルが正しく配置されているかどうかを確認するには、SharePoint サイトを開き、 **[サイトの操作]** メニューを選択し、 **[サイトの設定]** コマンドを選択して、 **[マスターページ]** リンクまたは **[テーマ]** リンクを選択します。
 
-     マスター ページまたはテーマのいずれかのリストが表示され、マスター ページまたはインポートしたテーマのいずれかが含まれています。
+     マスターページまたはテーマの一覧が表示され、インポートしたマスターページまたはテーマのいずれかが含まれます。
 
 ## <a name="see-also"></a>関連項目
-- [マスター ページ](http://go.microsoft.com/fwlink/?LinkId=184955)
+- [マスター ページ](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
-- [SharePoint 用ページを作成します。](../sharepoint/creating-pages-for-sharepoint.md)
-- [モジュールを使用して、ソリューションにファイルを含める](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+- [SharePoint のページを作成する](../sharepoint/creating-pages-for-sharepoint.md)
+- [モジュールを使用してソリューションにファイルを含める](../sharepoint/using-modules-to-include-files-in-the-solution.md)

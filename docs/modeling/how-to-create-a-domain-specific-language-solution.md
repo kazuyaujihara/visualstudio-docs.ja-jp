@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609391"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985115"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 ドメイン固有言語 (DSL) は、特化した Visual Studio ソリューションを使用して作成されます。
@@ -114,7 +114,7 @@ ms.locfileid: "72609391"
 
  **既存の厳密な名前のキーを使用する**DSL を別のアセンブリと統合する場合は、このオプションを使用します。
 
- 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](http://go.microsoft.com/fwlink/?LinkId=186073)」を参照してください。
+ 厳密な名前付けの詳細については、「[厳密な名前付きアセンブリの作成と使用](/dotnet/standard/assembly/create-use-strong-named)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

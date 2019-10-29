@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a7293672bb0b4e74515b71d2e0c4f961440b8c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255973"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986057"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel ソリューションのグローバリゼーションとローカリゼーション
   ここでは、Windows に英語以外の言語を設定しているコンピューターで実行される Microsoft Office Excel ソリューションにおいて、特に考慮が必要な事項について説明します。 Microsoft Office ソリューションのグローバリゼーションとローカリゼーションは、ほとんどの点で、Visual Studio を使用して他の種類のソリューションを作成する場合と同じです。 一般的な情報については、「[アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)」を参照してください。
@@ -36,7 +36,7 @@ ms.locfileid: "71255973"
 
  マネージド コードに渡されるデータや、マネージド コードによって処理されるデータに英語 (米国) の書式を使用した場合でも、Excel では、エンド ユーザーのロケール設定に従って、データが正確に解釈および表示されます。 Excel がデータを正確に書式設定できるのは、マネージド コードによってデータと共にロケール ID 1033 が渡されるからです。このロケール ID は、データが英語 (米国) の書式であることを示し、ユーザーのロケール設定に合わせてデータを再度書式設定する必要があることを示します。
 
- たとえば、エンドユーザーの地域別オプションがドイツ語 (ドイツ) ロケールに設定されている場合は、2005年6月29日がこのように書式設定されます。29.06.2005. ただし、ソリューションで日付を文字列として Excel に渡す場合は、日付を英語 (米国) 形式に設定する必要があります。6/29/2005。 セルが日付セルとして書式設定されている場合、Excel はこの日付をドイツ語 (ドイツ) の書式で表示します。
+ たとえば、エンド ユーザーの地域オプションがドイツ語 (ドイツ) ロケールに設定されている場合、ユーザーは 2005 年 6 月 29 日という日付が 29.06.2005 として書式設定されると予測します。 ですが、ソリューションがこの日付を文字列として Excel に渡す場合は、英語 (米国) の書式に従って 6/29/2005 と書式設定する必要があります。 セルが日付セルとして書式設定されている場合、Excel はこの日付をドイツ語 (ドイツ) の書式で表示します。
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>他のロケール Id を Excel オブジェクトモデルに渡す
  共通言語ランタイム (CLR) は、ロケールに依存するデータを受け入れる Excel オブジェクト モデルのすべてのメソッドとプロパティに対して、自動的にロケール ID 1033 を渡します。 どのオブジェクト モデルへの呼び出しでも、この動作を自動的に変更する方法はありません。 ただし、 <xref:System.Type.InvokeMember%2A> を使用してメソッドを呼び出し、メソッドの *culture* パラメーターにロケール ID を渡すことで、特定のメソッドに別のロケール ID を渡すことができます。
@@ -47,7 +47,7 @@ ms.locfileid: "71255973"
  この場合でも、ドキュメントのテキストを操作するコードのすべての部分がテキストの言語と一致しているか確認する必要があります。また、ブックマーク、名前付き範囲、および他の表示フィールドが Office ドキュメントの再設定に対応しているか確認する必要もあります。この再設定は、異なる文法やテキストの長さに合わせて調整する場合に必要とされたものです。 含まれるテキストが比較的少ないドキュメント テンプレートの場合は、テキストをリソース ファイルに保存して実行時に読み込む方法も考えられます。
 
 ### <a name="text-direction"></a>テキストの方向
- Excel では、テキストが右から左へ表記されるようにワークシートのプロパティを設定できます。 デザイナーに配置されているホストコントロール`RightToLeft` (またはプロパティを持つコントロール) は、実行時にこれらの設定と自動的に一致します。 Word には、テキストの配置を変更するだけで、双方向テキスト用のドキュメント設定がないため、コントロールをこの設定にマップすることはできません。 ユーザーは、代わりにテキストの配置を各コントロールに設定する必要があります。 コードを記述して、すべてのコントロールでテキストが右から左へ表記されるようにできます。
+ Excel では、テキストが右から左へ表記されるようにワークシートのプロパティを設定できます。 デザイナーに配置されているホストコントロール (または、`RightToLeft` プロパティを持つコントロール) は、実行時にこれらの設定と自動的に一致します。 Word には、テキストの配置を変更するだけで、双方向テキスト用のドキュメント設定がないため、コントロールをこの設定にマップすることはできません。 ユーザーは、代わりにテキストの配置を各コントロールに設定する必要があります。 コードを記述して、すべてのコントロールでテキストが右から左へ表記されるようにできます。
 
 ### <a name="change-culture"></a>カルチャの変更
  ドキュメント レベルのカスタマイズ コードは、通常、Excel のメイン UI スレッドを共有します。そのため、スレッド カルチャに対して行った変更は、そのスレッドで実行されている、すべてのものに影響します。変更はカスタマイズに限定されません。
@@ -55,9 +55,9 @@ ms.locfileid: "71255973"
  Windows フォーム コントロールは、アプリケーション レベルの VSTO アドインがホスト アプリケーションによって起動される前に初期化されます。 このような場合は、カルチャを変更してから UI コントロールを設定する必要があります。
 
 ## <a name="install-the-language-packs"></a>言語パックをインストールする
- Windows の言語を英語以外に設定している場合は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の言語パックをインストールすることにより、Windows と同じ言語で [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] のメッセージを表示できます。 エンド ユーザーが英語以外を設定している Windows でソリューションを実行する場合は、Windows と同じ言語でランタイム メッセージを表示するために、適切な言語パックが必要になります。 言語パックは、 [Microsoft ダウンロードセンター](http://www.microsoft.com/downloads)から入手できます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]
+ Windows の言語を英語以外に設定している場合は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の言語パックをインストールすることにより、Windows と同じ言語で [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] のメッセージを表示できます。 エンド ユーザーが英語以外を設定している Windows でソリューションを実行する場合は、Windows と同じ言語でランタイム メッセージを表示するために、適切な言語パックが必要になります。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 言語パックは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download)から入手できます。
 
- さらに、ClickOnce メッセージ用に、再頒布可能な .NET Framework Language Pack が必要です。 .NET Framework 言語パックは、 [Microsoft ダウンロードセンター](http://www.microsoft.com/downloads)から入手できます。
+ さらに、ClickOnce メッセージ用に、再頒布可能な .NET Framework Language Pack が必要です。 .NET Framework 言語パックは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download)から入手できます。
 
 ## <a name="regional-settings-and-excel-com-calls"></a>地域設定と Excel COM 呼び出し
  管理対象のクライアントが COM オブジェクトのメソッドを呼び出して、カルチャ固有の情報を渡す必要がある場合、現在のスレッド ロケールに一致する <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (ロケール) が使用されます。 現在のスレッド ロケールは、既定では、ユーザーの地域設定から継承されます。 ただし、Visual Studio の Office 開発ツールを使用して作成された Excel ソリューションから Excel オブジェクト モデルを呼び出す場合は、自動的に英語 (米国) のデータ形式 (ロケール ID 1033) が Excel オブジェクト モデルに渡されます。 日付や通貨など、ロケールに依存する書式設定を持つデータはすべて、Microsoft Office Excel に渡したり、プロジェクトのコードからデータを読み込んだりする前に、英語 (米国) のデータ形式を使用して書式設定する必要があります。
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  同じコードを Visual Studio の Office 開発ツールを使用して作成したソリューションで使用し、COM 相互運用機能を通じて Excel に渡すと、日付の書式を en-US スタイルに設定した場合と同じ結果が得られます。
 
- 次に例を示します。
+ (例:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

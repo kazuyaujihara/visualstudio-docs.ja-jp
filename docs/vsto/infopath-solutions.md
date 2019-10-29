@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d227e3c87810156e6e4262a79cfcc9b126d68417
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7eda46c04cdbe5ba73e32e124486cfc391e5ac17
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551743"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985744"
 ---
 # <a name="infopath-solutions"></a>InfoPath ソリューション
   Visual Studio には、Microsoft Office InfoPath 2013 および InfoPath 2010 の VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 InfoPath は、Office 2016 では使用できません。
@@ -38,7 +38,7 @@ ms.locfileid: "69551743"
  InfoPath 用の VSTO アドインは、他の Microsoft Office アプリケーションの VSTO アドインと似ています。 このようなソリューションは、アプリケーションが読み込むアセンブリで構成されます。 エンド ユーザーは、どのフォームまたはフォーム テンプレートが開いているかに関係なく、このアセンブリの機能にアクセスできます。 VSTO アドインの詳細については、「vsto アドインの[プログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)」と「 [Vsto アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
 
 > [!NOTE]
-> Visual Studio 2015 には、以前のバージョンの Visual Studio で提供されていた InfoPath フォーム テンプレート プロジェクトは含まれていません。 また、Visual Studio 2015 を使用して、以前のバージョンの Visual Studio で作成した InfoPath フォーム テンプレート プロジェクトを開いて編集することもできません。 ただし、Visual Studio Tools for Applications を使用すると、InfoPath フォーム テンプレート プロジェクトを開いて編集できます。 詳細については、「 [InfoPath 2010 での VSTO 2008 プロジェクト](http://go.microsoft.com/fwlink/?LinkID=218903)の使用」を参照してください。
+> Visual Studio 2015 には、以前のバージョンの Visual Studio で提供されていた InfoPath フォーム テンプレート プロジェクトは含まれていません。 また、Visual Studio 2015 を使用して、以前のバージョンの Visual Studio で作成した InfoPath フォーム テンプレート プロジェクトを開いて編集することもできません。 ただし、Visual Studio Tools for Applications を使用すると、InfoPath フォーム テンプレート プロジェクトを開いて編集できます。 詳細については、「 [InfoPath 2010 での VSTO 2008 プロジェクト](https://blogs.msdn.microsoft.com/infopath/2011/04/14/working-with-vsto-2008-projects-in-infopath-2010/)の使用」を参照してください。
 
 ## <a name="automate-infopath-by-using-an-add-in"></a>アドインを使用して InfoPath を自動化する
  Visual Studio の Office 開発ツールを使用して作成した Office VSTO アドインから InfoPath オブジェクト モデルにアクセスするには、プロジェクトの `Application` クラスの `ThisAddIn` フィールドを使用します。 `Application` フィールドは InfoPath の現在のインスタンスを表す <xref:Microsoft.Office.Interop.InfoPath.Application> オブジェクトを返します。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
@@ -60,9 +60,9 @@ ms.locfileid: "69551743"
 - [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
-- [方法: Visual Studio での Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
-- [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)
+- [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)
 - [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
-- [Office 開発における InfoPath 2010](http://go.microsoft.com/fwlink/?LinkId=199012)
+- [Office 開発における InfoPath 2010](/previous-versions/office/developer/office-2010/ff604966(v=office.14))

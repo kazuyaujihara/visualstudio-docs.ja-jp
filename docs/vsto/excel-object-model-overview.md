@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551581"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986085"
 ---
 # <a name="excel-object-model-overview"></a>Excel オブジェクトモデルの概要
   Microsoft Office Excel を使用するソリューションを開発するため、Excel オブジェクト モデルによって提供されるオブジェクトと対話することができます。 このトピックでは、特に重要なオブジェクトについて説明します。
@@ -47,8 +47,6 @@ ms.locfileid: "69551581"
 
   ここでは、Excel オブジェクト モデルの概念について簡単に説明します。 Excel オブジェクトモデル全体の詳細については、「 [excel オブジェクトモデルドキュメントの使用](#ExcelOMDocumentation)」を参照してください。
 
-  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。Excel 2007 アドインでイベントハンドラーを使用する](http://go.microsoft.com/fwlink/?LinkID=130291)、および[操作方法:バブル チャートを Excel で作成するのにには、図形を使用しますか](http://go.microsoft.com/fwlink/?LinkID=130313)。
-
 ## <a name="access-objects-in-an-excel-project"></a>Excel プロジェクト内のオブジェクトへのアクセス
  Excel 用の新しい VSTO アドインプロジェクトを作成すると、Visual Studio によって自動的に*ThisAddIn .vb*または*ThisAddIn.cs*コードファイルが作成されます。 `Me.Application` または `this.Application` を使用して、アプリケーション オブジェクトにアクセスすることができます。
 
@@ -61,7 +59,7 @@ ms.locfileid: "69551581"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- プロジェクト内の `Globals` クラスを使用して、それぞれのクラスの外部から `ThisWorkbook`、`Sheet1`、`Sheet2`、または `Sheet3` にアクセスすることができます。 詳細については、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。 次の例では<xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 、コード`Sheet1`が*n*クラスまたは`ThisWorkbook`クラスの`Sheet`いずれかに配置されているかどうかに関係なく、のメソッドを呼び出します。
+ プロジェクト内の `Globals` クラスを使用して、それぞれのクラスの外部から `ThisWorkbook`、`Sheet1`、`Sheet2`、または `Sheet3` にアクセスすることができます。 詳細については、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。 次の例では、コードが `Sheet`*n*クラスまたは `ThisWorkbook` クラスのいずれかに配置されているかどうかに関係なく、`Sheet1` の <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> メソッドを呼び出します。
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
@@ -99,24 +97,24 @@ ms.locfileid: "69551581"
 ### <a name="range-object"></a>Range オブジェクト
  <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトは、Excel アプリケーション内で特に使用されるオブジェクトです。 Excel 内で任意の領域を操作するには、その領域を <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトとして表し、その範囲のメソッドとプロパティを作業する必要があります。 <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトは、セル、行、列、セルの 1 つ以上のブロックを含むセルの選択を表します。連続する場合もしない場合もあり、セルのグループが複数のシートにわたっている場合もあります。
 
- Visual Studio は <xref:Microsoft.Office.Tools.Excel.NamedRange> および <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 型を提供することで <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトを拡張します。 これらの型は <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトとほぼ同じ機能を含むだけでなく、データ バインド機能や新しいイベントなどの新機能も含んでいます。 詳細については、「 [NamedRange control](../vsto/namedrange-control.md) and [XmlMappedRange control](../vsto/xmlmappedrange-control.md)」を参照してください。
+ Visual Studio は <xref:Microsoft.Office.Tools.Excel.NamedRange> および <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 型を提供することで <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトを拡張します。 これらの型は <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトとほぼ同じ機能を含むだけでなく、データ バインディング機能や新しいイベントなどの新機能も含んでいます。 詳細については、「 [NamedRange control](../vsto/namedrange-control.md) and [XmlMappedRange control](../vsto/xmlmappedrange-control.md)」を参照してください。
 
 ## <a name="ExcelOMDocumentation"></a>Excel オブジェクトモデルのドキュメントを使用する
  Excel オブジェクト モデルに関する詳細については、Excel プライマリ相互運用機能アセンブリ (PIA) のリファレンスと、VBA オブジェクト モデルのリファレンスを参照してください。
 
 ### <a name="primary-interop-assembly-reference"></a>プライマリ相互運用機能アセンブリのリファレンス
- Excel PIA のリファレンス ドキュメントは、Excel のプライマリ相互運用機能アセンブリの種類について説明しています。 このドキュメントは、次の場所から入手できます。[Excel 2010 プライマリ相互運用機能アセンブリの参照](http://go.microsoft.com/fwlink/?LinkId=189585)。
+ Excel PIA のリファレンス ドキュメントは、Excel のプライマリ相互運用機能アセンブリの種類について説明しています。 このドキュメントは、 [Excel 2010 プライマリ相互運用機能アセンブリ参照](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019)の場所から入手できます。
 
- PIA のイベントの実装方法、PIA のクラスとインターフェイスの違いなど、Excel PIA の設計に関する詳細を参照してください[Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)。
+ PIA のクラスとインターフェイスの違い、PIA のイベントの実装方法など、Excel PIA のデザインの詳細については、「 [Office プライマリ相互運用機能アセンブリのクラスとインターフェイスの概要](/previous-versions/office/office-12/ms247299(v=office.12))」を参照してください。
 
 ### <a name="vba-object-model-reference"></a>VBA オブジェクトモデルのリファレンス
- VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Excel オブジェクト モデルについて説明しています。 詳細については、「 [Excel 2010 オブジェクトモデルのリファレンス](http://go.microsoft.com/fwlink/?LinkId=199768)」を参照してください。
+ VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Excel オブジェクト モデルについて説明しています。 詳細については、「 [Excel 2010 オブジェクトモデルのリファレンス](/office/vba/api/overview/Excel/object-model)」を参照してください。
 
- VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Excel PIA の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンスの Worksheet オブジェクトは、Excel PIA 内<xref:Microsoft.Office.Interop.Excel.Worksheet>のオブジェクトに対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Excel プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
+ VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Excel PIA の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンスの Worksheet オブジェクトは、Excel PIA の <xref:Microsoft.Office.Interop.Excel.Worksheet> オブジェクトに対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Excel プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
 
 ### <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |[Excel ソリューション](../vsto/excel-solutions.md)|Microsoft Office Excel でドキュメント レベルのカスタマイズと VSTO アドインを作成する方法について説明します。|
 |[範囲の操作](../vsto/working-with-ranges.md)|範囲を使用して一般的なタスクを実行する方法を示す例を提供します。|

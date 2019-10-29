@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b8ae7c56cf6f7cb20dd237c9106498a752e267
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254965"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985392"
 ---
 # <a name="word-object-model-overview"></a>Word オブジェクトモデルの概要
   Visual Studio で Word ソリューションを開発するときは、Word オブジェクト モデルと対話します。 このオブジェクト モデルは、Word のプライマリ相互運用機能アセンブリで提供されるクラスとインターフェイスで構成されています。これらのクラスとインターフェイスは <xref:Microsoft.Office.Interop.Word> 名前空間に定義されています。
@@ -44,7 +44,7 @@ ms.locfileid: "71254965"
 
  次の図は、これらのオブジェクトを Word オブジェクト モデルの階層で一元的に示したものです。
 
- ![Word オブジェクトモデルグラフィック](../vsto/media/wrwordobjectmodel.gif "Word オブジェクトモデルグラフィック")
+ ![Word オブジェクトモデルグラフィック](../vsto/media/wrwordobjectmodel.gif "Word オブジェクト モデル グラフィック")
 
  一見すると、オブジェクトが重複しているように見えます。 たとえば、 <xref:Microsoft.Office.Interop.Word.Document> オブジェクトと <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトは両方とも <xref:Microsoft.Office.Interop.Word.Application> オブジェクトのメンバーですが、 <xref:Microsoft.Office.Interop.Word.Document> オブジェクトは <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトのメンバーでもあります。 <xref:Microsoft.Office.Interop.Word.Document> オブジェクトと <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトの両方に、 <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトと <xref:Microsoft.Office.Interop.Word.Range> オブジェクトが含まれています。 このような重複は、同じ型のオブジェクトにアクセスする方法が複数存在するために生じます。 たとえば、 <xref:Microsoft.Office.Interop.Word.Range> オブジェクトに書式を適用するときにも、現在の選択範囲、特定の段落、セクション、または文書全体を範囲としてアクセスしたいことがあります。
 
@@ -74,7 +74,7 @@ ms.locfileid: "71254965"
 
  Visual Studio の Office 開発ツールには、 <xref:Microsoft.Office.Interop.Word.Document> オブジェクトを拡張する <xref:Microsoft.Office.Tools.Word.Document> 型が用意されています。 この型は、 *オブジェクトのすべての機能に対するアクセスを提供する* ホスト項目 <xref:Microsoft.Office.Interop.Word.Document> であり、追加のイベントと、マネージド コントロールを追加する機能を備えています。
 
- ドキュメント レベルのプロジェクトを作成する場合は、プロジェクトで生成された <xref:Microsoft.Office.Tools.Word.Document> クラスを使用して `ThisDocument` のメンバーにアクセスできます。 <xref:Microsoft.Office.Tools.Word.Document>ホスト項目のメンバーにアクセスするには、 `ThisDocument`クラスのコードから**Me**または**この**キーワードを使用するか、 `Globals.ThisDocument`クラスの`ThisDocument`外部にあるコードからを使用します。 詳細については、「[プログラムによるドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)」を参照してください。 たとえば、文書の最初の段落を選択するには次のコードを使用します。
+ ドキュメント レベルのプロジェクトを作成する場合は、プロジェクトで生成された <xref:Microsoft.Office.Tools.Word.Document> クラスを使用して `ThisDocument` のメンバーにアクセスできます。 <xref:Microsoft.Office.Tools.Word.Document> ホスト項目のメンバーにアクセスするには、`ThisDocument` クラスのコードから**Me**または**この**キーワードを使用するか、`ThisDocument` クラスの外部のコードから `Globals.ThisDocument` を使用します。 詳細については、「[プログラムによるドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)」を参照してください。 たとえば、文書の最初の段落を選択するには次のコードを使用します。
 
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]
@@ -111,7 +111,7 @@ ms.locfileid: "71254965"
 
 - <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトは文書と共に保存されるため、コードの実行を停止したり文書を閉じたりしても、削除されません。
 
-- ブックマーク<xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A>は、 <xref:Microsoft.Office.Interop.Word.View>オブジェクトのプロパティを**false**または**true**に設定することによって、非表示にしたり表示したりできます。
+- <xref:Microsoft.Office.Interop.Word.View> オブジェクトの <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> プロパティを**false**または**true**に設定すると、ブックマークを非表示にしたり表示したりできます。
 
   Visual Studio は <xref:Microsoft.Office.Interop.Word.Bookmark> ホスト コントロールを提供することで <xref:Microsoft.Office.Tools.Word.Bookmark> オブジェクトを拡張します。 <xref:Microsoft.Office.Tools.Word.Bookmark> ホスト コントロールは、ネイティブな <xref:Microsoft.Office.Interop.Word.Bookmark>と同様に動作しますが、付加的なイベントやデータ バインディング機能を備えています。 Windows フォームのテキスト ボックス コントロールにデータをバインドするのと同じ方法で、文書の Bookmark コントロールにデータをバインドできます。 詳細については、「 [Bookmark コントロール](../vsto/bookmark-control.md)」を参照してください。
 
@@ -119,18 +119,18 @@ ms.locfileid: "71254965"
  Word オブジェクト モデルの詳細については、Word プライマリ相互運用機能アセンブリ (PIA) のリファレンス、および Visual Basic for Applications (VBA) オブジェクト モデルのリファレンスを参照してください。
 
 ### <a name="primary-interop-assembly-reference"></a>プライマリ相互運用機能アセンブリのリファレンス
- Word PIA のリファレンス ドキュメントでは、Word プライマリ相互運用機能アセンブリの型について説明しています。 このドキュメントは、次の場所から入手できます。[Word 2010 プライマリ相互運用機能アセンブリの参照](http://go.microsoft.com/fwlink/?LinkId=189588)。
+ Word PIA のリファレンス ドキュメントでは、Word プライマリ相互運用機能アセンブリの型について説明しています。 このドキュメントは、 [Word 2010 のプライマリ相互運用機能アセンブリ参照](../vsto/office-primary-interop-assemblies.md)の場所から入手できます。
 
- PIA のイベントの実装方法、PIA のクラスとインターフェイスの違いなど、Word PIA の設計に関する詳細を参照してください[Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)。
+ PIA のクラスとインターフェイスの違い、PIA のイベントの実装方法など、Word PIA の設計の詳細については、「 [Office プライマリ相互運用機能アセンブリのクラスとインターフェイスの概要](/previous-versions/office/office-12/ms247299(v=office.12))」を参照してください。
 
 ### <a name="vba-object-model-reference"></a>VBA オブジェクトモデルのリファレンス
- VBA オブジェクト モデルのリファレンスでは、VBA コードに公開される Word オブジェクト モデルについて説明しています。 詳細については、「 [Word 2010 オブジェクトモデルのリファレンス](http://go.microsoft.com/fwlink/?LinkId=199772)」を参照してください。
+ VBA オブジェクト モデルのリファレンスでは、VBA コードに公開される Word オブジェクト モデルについて説明しています。 詳細については、「 [Word 2010 オブジェクトモデルのリファレンス](/office/vba/api/overview/Word/object-model)」を参照してください。
 
- VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Word PIA の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンス内の Document オブジェクトは、Word PIA <xref:Microsoft.Office.Interop.Word.Document>内のオブジェクトに対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Word プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
+ VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Word PIA の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンス内の Document オブジェクトは、Word PIA の <xref:Microsoft.Office.Interop.Word.Document> オブジェクトに対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Word プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)
-- [拡張オブジェクトを使用した Word の自動化](../vsto/automating-word-by-using-extended-objects.md)
+- [拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)
 - [ドキュメントを操作する](../vsto/working-with-documents.md)
 - [ドキュメント内のテキストの操作](../vsto/working-with-text-in-documents.md)
 - [テーブルを操作する](../vsto/working-with-tables.md)

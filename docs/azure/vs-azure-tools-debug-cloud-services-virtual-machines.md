@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 18d2364794eef2177c4cfc607ecc6da38143ba54
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911869"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024585"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
 
@@ -49,7 +49,7 @@ Azure コンピューティング エミュレーターを使用してローカ�
 クラウド サービスのリモート デバッグを有効にしても、パフォーマンスが低下したり、追加料金が発生したりすることはありません。 運用サービスでは、サービスを利用するクライアントに悪影響が生じる可能性があるため、リモート デバッグを使用しないでください。
 
 > [!NOTE]
-> Visual Studio からクラウド サービスを発行する場合、.NET Framework 4 または .NET Framework 4.5 を対象とするサービスのどのロールに対しても **IntelliTrace** を有効にできます。 **IntelliTrace**を使用すると、過去にロール インスタンスで発生したイベントを調べ、そのときのコンテキストを再現できます。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)に関するページ、および「[IntelliTrace の使用](/debugger/intellitrace)」を参照してください。
+> Visual Studio からクラウド サービスを発行する場合、.NET Framework 4 または .NET Framework 4.5 を対象とするサービスのどのロールに対しても **IntelliTrace** を有効にできます。 **IntelliTrace**を使用すると、過去にロール インスタンスで発生したイベントを調べ、そのときのコンテキストを再現できます。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)に関するページ、および「[IntelliTrace の使用](../debugger/intellitrace.md)」を参照してください。
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>クラウド サービスのリモート デバッグを有効にするには
 

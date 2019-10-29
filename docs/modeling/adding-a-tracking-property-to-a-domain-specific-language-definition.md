@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fd1fb2bc6440b02e0aad163ee55a7a7f86807a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9843e881ddfa202778321dc2e1510c2e121095db
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652291"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984169"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>ドメイン固有言語の定義に追跡プロパティを追加する
 
@@ -48,9 +48,9 @@ ms.locfileid: "72652291"
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 
@@ -238,7 +238,7 @@ HelperClasses.cs ファイルに、次のように `TrackingHelper` クラスと
 
 ## <a name="add-custom-code-for-the-custom-type-descriptor"></a>カスタム型記述子のカスタムコードを追加する
 
-@No__t_1 ドメインクラスの型記述子の `GetCustomProperties` メソッドを実装します。
+`ExampleModel` ドメインクラスの型記述子の `GetCustomProperties` メソッドを実装します。
 
 > [!NOTE]
 > DSL ツールがカスタム型記述子のために生成するコード `ExampleModel` `GetCustomProperties` を呼び出します。ただし、DSL ツールは、メソッドを実装するコードを生成しません。
@@ -334,12 +334,12 @@ HelperClasses.cs ファイルに、次のように `TrackingHelper` クラスと
 
 ## <a name="add-custom-code-for-the-model"></a>モデルのカスタムコードを追加する
 
-@No__t_1 ドメインクラスの `GetCustomElementsValue` メソッドを実装します。
+`ExampleModel` ドメインクラスの `GetCustomElementsValue` メソッドを実装します。
 
 > [!NOTE]
 > DSL ツールが `ExampleModel` を呼び出すために生成するコード `GetCustomElementsValue`;ただし、DSL ツールは、メソッドを実装するコードを生成しません。
 
-@No__t_0 メソッドを定義すると、`ExampleModel` の CustomElements 計算プロパティのロジックが提供されます。 このメソッドは、ユーザーが更新した値を持つ名前空間追跡プロパティを持つ `ExampleElement` ドメインクラスの数をカウントし、モデル内の要素の合計の比率としてこのカウントを表す文字列を返します。
+`GetCustomElementsValue` メソッドを定義すると、`ExampleModel`の CustomElements 計算プロパティのロジックが提供されます。 このメソッドは、ユーザーが更新した値を持つ名前空間追跡プロパティを持つ `ExampleElement` ドメインクラスの数をカウントし、モデル内の要素の合計の比率としてこのカウントを表す文字列を返します。
 
 また、`ExampleModel` に `OnDefaultNamespaceChanged` メソッドを追加し、`ExampleModel` の `DefaultNamespacePropertyHandler` 入れ子になったクラスの `OnValueChanged` メソッドをオーバーライドして `OnDefaultNamespaceChanged` を呼び出します。
 
@@ -412,7 +412,7 @@ DefaultNamespace プロパティは名前空間の追跡プロパティを計算
 
 ## <a name="add-custom-code-for-the-tracking-property"></a>Tracking プロパティのカスタムコードを追加する
 
-@No__t_1 ドメインクラスに `CalculateNamespace` メソッドを追加します。
+`ExampleElement` ドメインクラスに `CalculateNamespace` メソッドを追加します。
 
 このメソッドを定義すると、`ExampleModel` の CustomElements 計算プロパティのロジックが提供されます。 このメソッドは、ユーザー状態によって更新された名前空間の追跡プロパティを持つ `ExampleElement` ドメインクラスの数をカウントし、モデル内の要素の合計の比率としてこのカウントを表す文字列を返します。
 
@@ -720,7 +720,7 @@ XML シリアル化のカスタムの読み込み後動作をサポートする�
 
 2. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。
 
-    @No__t_0 の実験用ビルドでは、空のテストファイルを含む**デバッグ**ソリューションが開きます。
+    [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] の実験用ビルドでは、空のテストファイルを含む**デバッグ**ソリューションが開きます。
 
 3. **ソリューションエクスプローラー**で、[trackingPropertyDsl] ファイルをダブルクリックしてデザイナーで開き、デザイン画面をクリックします。
 

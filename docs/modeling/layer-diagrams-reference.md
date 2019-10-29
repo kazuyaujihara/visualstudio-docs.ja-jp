@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661493"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984085"
 ---
 # <a name="dependency-diagrams-reference"></a>依存関係図: リファレンス
 
@@ -48,7 +48,7 @@ Visual Studio では、*依存関係図*を使用して、システムの高レ�
 
 - チェックイン操作とビルド操作による検証を追加することによって、必要とされるアーキテクチャをコードの開発中および保守中に補強する。
 
-このトピックでは、依存関係図で使用できる要素について説明します。 依存関係図を作成して描画する方法の詳細については、「[依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)」を参照してください。 レイヤーパターンの詳細については、[パターン & プラクティス](http://go.microsoft.com/fwlink/?LinkId=145794)に関するサイトを参照してください。
+このトピックでは、依存関係図で使用できる要素について説明します。 依存関係図を作成して描画する方法の詳細については、「[依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)」を参照してください。 レイヤーパターンの詳細については、[パターン & プラクティス](https://archive.codeplex.com/?p=apparch)に関するサイトを参照してください。
 
 ## <a name="reading-dependency-diagrams"></a>依存関係図の読み取り
 

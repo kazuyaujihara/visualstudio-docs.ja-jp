@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60d7bac159b22c4bfd8b9592fc8242457c01a464
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255653"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986319"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>実行時に Office ドキュメントにコントロールを追加する
   コントロールは、実行時に、Microsoft Office Word 文書と Microsoft Office Excel ブックに追加できます。 それらを実行時に削除することもできます。 実行時にドキュメントに追加したりドキュメントから削除したりするコントロールのことを、 *ダイナミック コントロール*といいます。
@@ -42,8 +42,6 @@ ms.locfileid: "71255653"
 
 - [Windows フォームコントロールをドキュメントに追加](#WindowsForms)します。
 
-  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。実行時にドキュメントサーフェイスにコントロールを追加する](http://go.microsoft.com/fwlink/?LinkId=132782).
-
 ## <a name="ControlsCollection"></a>コントロールコレクションを使用して実行時にコントロールを管理する
  実行時にコントロールを追加、取得、または削除するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection> オブジェクトと <xref:Microsoft.Office.Tools.Word.ControlCollection> オブジェクトのヘルパー メソッドを使用します。
 
@@ -53,7 +51,7 @@ ms.locfileid: "71255653"
 
 - Word のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> クラスの `ThisDocument` プロパティを使用します。 このクラスの詳細については、「 [Document host item](../vsto/document-host-item.md)」を参照してください。
 
-- Excel または Word の VSTO アドインプロジェクトで`Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet>は、実行時に生成するまたは<xref:Microsoft.Office.Tools.Word.Document>のプロパティを使用します。 これらのオブジェクトを実行時に生成する方法の詳細については、「[実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
+- Excel または Word の VSTO アドインプロジェクトでは、実行時に生成する <xref:Microsoft.Office.Tools.Excel.Worksheet> または <xref:Microsoft.Office.Tools.Word.Document> の `Controls` プロパティを使用します。 これらのオブジェクトを実行時に生成する方法の詳細については、「[実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
 ### <a name="add-controls"></a>コントロールの追加
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> 型と <xref:Microsoft.Office.Tools.Word.ControlCollection> 型には、ドキュメントとワークシートにホスト コントロールや Windows フォームのコモン コントロールを追加するために使用できるヘルパー メソッドが含まれています。 各メソッドの名前は、 `Add`*コントロール クラス*という形式になっています。ここで、 *コントロール クラス* は、追加するコントロールのクラス名です。 たとえば、ドキュメントに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> メソッドを使用します。
@@ -66,7 +64,7 @@ ms.locfileid: "71255653"
 ### <a name="access-and-delete-controls"></a>コントロールへのアクセスと削除
  <xref:Microsoft.Office.Tools.Excel.Worksheet> または <xref:Microsoft.Office.Tools.Word.Document> の `Controls` プロパティを使用すると、デザイン時に追加したコントロールを含め、ドキュメント内のすべてのコントロールを反復処理できます。 デザイン時に追加するコントロールは、 *スタティック コントロール*とも呼ばれます。
 
- 動的コントロールを削除するには、 `Delete`コントロールのメソッドを呼び出すか、各`Remove`コントロールコレクションのメソッドを呼び出します。 次のコード例では、Excel のドキュメント レベルのプロジェクトで <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> メソッドを使用して <xref:Microsoft.Office.Tools.Excel.NamedRange> を `Sheet1` から削除します。
+ 動的コントロールを削除するには、コントロールの `Delete` メソッドを呼び出すか、各コントロールコレクションの `Remove` メソッドを呼び出します。 次のコード例では、Excel のドキュメント レベルのプロジェクトで <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> メソッドを使用して <xref:Microsoft.Office.Tools.Excel.NamedRange> を `Sheet1` から削除します。
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]
@@ -80,11 +78,11 @@ ms.locfileid: "71255653"
 
 ホスト コントロールをプログラムでドキュメントに追加するには、そのコントロールを一意に識別する名前を指定し、ドキュメント上にコントロールを追加する場所を指定する必要があります。 具体的な手順については、次のトピックを参照してください。
 
-- [方法: ワークシートへの ListObject コントロールの追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [方法: ワークシートに ListObject コントロールを追加する](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
-- [方法: ワークシートへの NamedRange コントロールの追加](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [方法: ワークシートに NamedRange コントロールを追加する](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 
-- [方法: ワークシートへのグラフコントロールの追加](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [方法: ワークシートにグラフコントロールを追加する](../vsto/how-to-add-chart-controls-to-worksheets.md)
 
 - [方法: Word 文書にコンテンツコントロールを追加する](../vsto/how-to-add-content-controls-to-word-documents.md)
 
@@ -112,7 +110,7 @@ ms.locfileid: "71255653"
 
 - Word では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> オブジェクトの <xref:Microsoft.Office.Tools.Word.ControlCollection> メソッドの 1 つを使用します。
 
-  コントロールを追加するには、<xref:System.Windows.Forms.Control>、コントロールの場所、およびコントロールを一意に識別する名前を `AddControl` メソッドに渡します。 `AddControl` メソッドは、コントロールがワークシートまたはドキュメントとどのようにやり取りするかを定義するオブジェクトを返します。 このメソッドは、 <xref:Microsoft.Office.Tools.Excel.ControlSite> (Excel <xref:Microsoft.Office.Tools.Word.ControlSite>の場合) またはオブジェクト (Word の場合) を返します。 `AddControl`
+  コントロールを追加するには、<xref:System.Windows.Forms.Control>、コントロールの場所、およびコントロールを一意に識別する名前を `AddControl` メソッドに渡します。 `AddControl` メソッドは、コントロールがワークシートまたはドキュメントとどのようにやり取りするかを定義するオブジェクトを返します。 `AddControl` メソッドは、<xref:Microsoft.Office.Tools.Excel.ControlSite> (Excel の場合) または <xref:Microsoft.Office.Tools.Word.ControlSite> オブジェクト (Word の場合) を返します。
 
   次のコード例は、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> メソッドを使用して、ドキュメント レベルの Excel プロジェクトのワークシートにカスタム ユーザー コントロールを動的に追加する方法を示しています。 この例では、ユーザー コントロールの名前は `UserControl1`で、 <xref:Microsoft.Office.Interop.Excel.Range> の名前は `range1`です。 このコード例を使用するには、プロジェクトの `Sheet`*n* クラスから実行します。
 
@@ -142,9 +140,9 @@ ms.locfileid: "71255653"
 ## <a name="see-also"></a>関連項目
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [Office ドキュメントでのダイナミックコントロールの永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)
-- [方法: ワークシートへの ListObject コントロールの追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [方法: ワークシートへの NamedRange コントロールの追加](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [方法: ワークシートへのグラフコントロールの追加](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [方法: ワークシートに ListObject コントロールを追加する](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [方法: ワークシートに NamedRange コントロールを追加する](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [方法: ワークシートにグラフコントロールを追加する](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [方法: Word 文書にコンテンツコントロールを追加する](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [方法: Word 文書に Bookmark コントロールを追加する](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)

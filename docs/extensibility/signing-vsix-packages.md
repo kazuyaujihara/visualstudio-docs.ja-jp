@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a709b50dd61beb874ea4cb80ebfb92a8fcd49e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8e2e97845c7ef17476e18e0068663772341ad8eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720050"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983119"
 ---
 # <a name="signing-vsix-packages"></a>VSIX パッケージの署名
 拡張機能アセンブリは、Visual Studio で実行する前に署名する必要はありませんが、これを行うことをお勧めします。
@@ -30,7 +30,7 @@ ms.locfileid: "72720050"
 > Visual Studio 2015 以降では、SHA256 暗号化以外のものを使用して署名された VSIX パッケージは、無効な署名があるものとして識別されます。 VSIX のインストールはブロックされませんが、ユーザーに警告が表示されます。
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>VSIXSignTool を使用した VSIX への署名
- Nuget.org の[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)では、SHA256 暗号化署名ツールを使用でき[ます。](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)
+ Nuget.org の[VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)では、SHA256 暗号化署名ツールを使用でき[ます。](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)
 
 #### <a name="to-use-the-vsixsigntool"></a>VSIXSignTool を使用するには
 

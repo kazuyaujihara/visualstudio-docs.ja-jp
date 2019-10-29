@@ -14,32 +14,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810756"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985361"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange コントロール
-  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールが Microsoft Office Excel 内のセルに非繰り返しスキーマ要素がマップされている場合にのみ作成される範囲。 たとえば、ときに、`maxOccurs`スキーマ要素の属性が 1 に等しい。 Visual Studio には、XML が割り当てられた範囲が作成されたら、それに対して、Excel オブジェクト モデルを走査することがなく直接プログラミングできます。 のみを削除することができます、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>要素のマッピングが削除されると、Excel 内のコントロール。
+  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールは、非繰り返しスキーマ要素が Microsoft Office Excel のセルにマップされている場合にのみ作成される範囲です。 たとえば、スキーマ要素の `maxOccurs` 属性が1と等しい場合です。 XML にマップされた範囲が Visual Studio によって作成された後は、Excel オブジェクトモデルを走査する必要なく、直接プログラミングできます。 要素のマッピングが削除された場合、Excel 内の <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールのみを削除できます。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Excel では、XML のマッピングを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130288)。
+## <a name="bind-data-to-the-control"></a>コントロールにデータをバインドする
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールでは、単一のデータフィールド (単純データバインディング) へのバインドがサポートされています。 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは、複合データバインディングをサポートでき、繰り返しスキーマ要素がセルにマップされるときに自動的に作成されます。 詳細については、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
 
-## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールは、1 つのデータ フィールド (単純データ バインディング) へのバインドをサポートしています。 <xref:Microsoft.Office.Tools.Excel.ListObject>コントロールは、複合データ バインディングをサポートしているし、繰り返されるスキーマ要素がセル上にマップされている場合は自動的に作成します。 詳細については、次を参照してください。 [ListObject コントロール](../vsto/listobject-control.md)します。
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールは、<xref:System.Windows.Forms.Control.DataBindings%2A> プロパティを使用してデータソースにバインドされます。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> がワークシートセルに追加されると、Visual Studio は、マップされたセル内のデータからデータセットを自動的に生成し、そのデータセットにコントロールをバインドします。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> の既定のデータバインディングプロパティは <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>です。
 
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールを使用してデータ ソースにバインドする、<xref:System.Windows.Forms.Control.DataBindings%2A>プロパティ。 ときに、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Visual Studio は、自動的に、マップされたセルのデータからデータ セットを生成し、そのデータ セットに、コントロールをバインドにワークシートのセルに追加されます。 既定のデータ バインディング プロパティ、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>は<xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>します。
-
- バインドされたデータ セット内のデータが任意のメカニズムにより更新された場合、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールが変更を反映します。
+ バインドされたデータセット内のデータが任意のメカニズムによって更新されると、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 制御によって変更が反映されます。
 
 ## <a name="formatting"></a>書式設定
- 同じ書式設定を適用することができます、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールに適用できる、<xref:Microsoft.Office.Interop.Excel.Range>します。 これには、罫線、フォント、番号形式、スタイルが含まれます。
+ <xref:Microsoft.Office.Interop.Excel.Range>に適用できる <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールに同じ書式設定を適用できます。 これには、罫線、フォント、番号形式、スタイルが含まれます。
 
 ## <a name="events"></a>イベント
- 利用可能なイベント、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールは。
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールで使用できるイベントは次のとおりです。
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 
@@ -58,8 +56,8 @@ ms.locfileid: "62810756"
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
 ## <a name="see-also"></a>関連項目
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
-- [方法: ワークシートに XMLMappedRange コントロールを追加します。](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
-- [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [方法: Visual Studio 内でワークシートにスキーマを割り当てる](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
+- [方法: ワークシートに XMLMappedRange コントロールを追加する](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [方法: Visual Studio 内のワークシートにスキーマをマップする](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

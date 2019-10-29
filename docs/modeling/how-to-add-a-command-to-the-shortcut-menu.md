@@ -1,5 +1,5 @@
 ---
-title: '方法: ショートカット メニューにコマンドを追加する'
+title: '方法: ショートカットメニューにコマンドを追加する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666717"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985130"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカット メニューにコマンドを追加する
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカットメニューにコマンドを追加する
 
 ドメイン固有言語 (DSL) にメニュー コマンドを追加すると、ユーザーが DSL に固有のタスクを実行できるようになります。 ユーザーが図を右クリックすると、コンテキスト (ショートカット) メニューにコマンドが表示されます。 特定の状況でのみメニューにコマンドが表示されるように、コマンドを定義できます。 たとえば、ユーザーが特定の型の要素または特定の状態の要素をクリックした場合にだけコマンドを表示するようにできます。
 
@@ -28,8 +28,6 @@ ms.locfileid: "72666717"
 2. [Package.tt でパッケージのバージョン番号を更新](#version)します。 Commands.vsct を変更するときには必ずこの操作を実行してください。
 
 3. [CommandSet クラスにメソッドを記述](#CommandSet)して、コマンドが表示されるようにし、コマンドで実行する内容を定義します。
-
-   サンプルについては、[視覚化とモデリング SDK の web サイト](http://go.microsoft.com/fwlink/?LinkID=185579)を参照してください。
 
 > [!NOTE]
 > [切り取り]、[貼り付け]、[すべて選択]、[印刷] など、既存の一部のコマンドの動作を変更することもできます。このためには、CommandSet.cs でメソッドをオーバーライドします。 詳細については、「[方法: 標準メニューコマンドを変更](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)する」を参照してください。
@@ -102,7 +100,7 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
     </VisibilityConstraints>
     ```
 
-4. GUID と ID に使用する名前を定義します。 このためには、`Symbols` 要素内で `CommandTable` 要素の後に `Commands` 要素を追加します。
+4. Guid と Id に使用する名前を定義します。 このためには、`Symbols` 要素内で `CommandTable` 要素の後に `Commands` 要素を追加します。
 
     ```xml
     <Symbols>
@@ -362,7 +360,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [方法: 標準のメニュー コマンドを修正する](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [方法: 標準メニューコマンドを変更する](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)
 - [サンプルコード: サーキットダイアグラム](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
