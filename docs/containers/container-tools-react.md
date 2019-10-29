@@ -1,17 +1,17 @@
 ---
-title: Visual Studio コンテナー ツールと ASP.NET Core
+title: ASP.NET Core および React.js での Visual Studio コンテナー ツール
 author: ghogen
 description: Visual Studio コンテナー ツールと Docker for Windows を使用する方法について説明します
 ms.author: ghogen
-ms.date: 06/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: bcc30ec13096b37d7540c187d11c846d6c575093
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179929"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516448"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>クイック スタート: Visual Studio で React シングルページ アプリを含む Docker を使用する
 
@@ -23,12 +23,16 @@ Visual Studio を使用すると、コンテナー化された ASP.NET Core ア�
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、かつ/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 * Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* [Node.js](https://nodejs.org/en/download/)
+* Windows コンテナー (Windows 10 バージョン 1903 以降) の場合、この記事で参照されている Docker イメージを使用するため。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core 2.2 を使って開発するための [.NET Core 2.2 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* [Node.js](https://nodejs.org/en/download/)
+* Windows コンテナー (Windows 10 バージョン 1903 以降) の場合、この記事で参照されている Docker イメージを使用するため。
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>インストールとセットアップ
@@ -47,7 +51,7 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
    ![Docker サポートの追加](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Linux のコンテナーの種類を選択して、 **[OK]** をクリックします。
+1. コンテナーの種類を選択し、 **[OK]** をクリックします。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. **[ASP.NET Core Web アプリケーション]** テンプレートを使って新しいプロジェクトを作成します。
@@ -59,10 +63,12 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
    ![Docker サポートの追加](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. コンテナーの種類として Linux を選択します。
+1. コンテナーの種類を選択します。
 ::: moniker-end
 
-## <a name="dockerfile-overview"></a>Dockerfile の概要
+次のステップは、Linux コンテナーと Windows コンテナーのどちらを使用しているかによって異なります。
+
+## <a name="modify-the-dockerfile-linux-containers"></a>Dockerfile (Linux コンテナー) を変更する
 
 *Dockerfile* (Docker の最終イメージを作成するためのレシピ) は、プロジェクトで作成されます。 その中に含まれるコマンドの詳細については、「[Dockerfile reference](https://docs.docker.com/engine/reference/builder/)」 (Dockerfile リファレンス) を参照してください。
 
@@ -104,9 +110,74 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
 新しいプロジェクト ダイアログの **[Configure for HTTPS]\(HTTPS 用に構成する\)** チェック ボックスがオンになっている場合、*Dockerfile* は 2 つのポートを公開します。 1 つのポートは HTTP トラフィック用、もう 1 つのポートは HTTPS 用に使用されます。 チェック ボックスがオンになっていない場合は、HTTP トラフィック用に単一のポート (80) が公開されます。
 
+## <a name="modify-the-dockerfile-windows-containers"></a>Dockerfile (Windows コンテナー) を変更する
+
+プロジェクト ノードをダブルクリックしてプロジェクト ファイルを開き、次のプロパティを `<PropertyGroup>` 要素の子として追加して、プロジェクト ファイル (*.csproj) を更新します。
+
+   ```xml
+    <DockerfileFastModeStage>base</DockerfileFastModeStage>
+   ```
+
+次の行を追加して、Dockerfile を更新します。 これにより、ノードと npm がコンテナーにコピーされます。
+
+   1. Dockerfile の最初の行に ``# escape=` `` を追加します
+   1. `FROM … base` の前に、次の行を追加します
+
+      ```
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      ```
+
+   1. `FROM … build` の前と後に、次の行を追加します
+
+      ```
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      ```
+
+   1. 完成した Dockerfile は次のようになります。
+
+      ```
+      # escape=`
+      #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+      #For more information, please see https://aka.ms/containercompat
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
+      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+
+      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      WORKDIR /app
+      EXPOSE 80
+      EXPOSE 443
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+
+      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      WORKDIR /src
+      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
+      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY . .
+      WORKDIR "/src/WebApplication37"
+      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+
+      FROM build AS publish
+      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+
+      FROM base AS final
+      WORKDIR /app
+      COPY --from=publish /app/publish .
+      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ```
+
+1. `**/bin` を削除して、.dockerignore ファイルを更新します。
+
 ## <a name="debug"></a>デバッグ
 
-ツールバーのデバッグ ドロップダウンから **[Docker]** を選択し、アプリのデバッグを開始します。 証明書の信頼を求めるメッセージが表示される場合があります。続行するには、証明書を信頼することを選びます。
+ツールバーのデバッグ ドロップダウンから **[Docker]** を選択し、アプリのデバッグを開始します。 証明書の信頼を求めるメッセージが表示される場合があります。続行するには、証明書を信頼することを選びます。  初めてビルドするときは、Docker によって基本イメージがダウンロードされるため、少し時間がかかることがあります。
 
 **[出力]** ウィンドウの **[コンテナー ツール]** オプションに、実行されているアクションの内容が表示されます。 *npm.exe* に関連付けられたインストール手順が表示されるはずです。
 

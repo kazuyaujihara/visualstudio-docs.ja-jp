@@ -1,6 +1,6 @@
 ---
 title: '[ビルド イベント] ページ (プロジェクト デザイナー) (C#)'
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461849"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789824"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 
-**プロジェクト デザイナー**の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、「[方法 :ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」と「[方法:ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
+**プロジェクト デザイナー**の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、[ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」および「[方法: ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
@@ -60,6 +60,33 @@ ms.locfileid: "68461849"
 |**常時**|ビルド後イベントは、ビルドが成功したかどうかに関係なく実行されます。|
 |**ビルドが成功したとき**|ビルド後イベントは、ビルドが成功した場合に実行されます。 したがって、ビルドが成功した場合は、最新のプロジェクトについてもイベントが実行されます。|
 |**ビルドがプロジェクト出力を更新したとき**|ビルド後イベントは、コンパイラの出力ファイル (.exe または .dll) が以前のコンパイラの出力ファイルと異なる場合にのみ実行されます。 したがって、ビルド後イベントは、プロジェクトが最新の場合は実行されません。|
+
+## <a name="in-the-project-file"></a>プロジェクト ファイルで
+
+以前のバージョンの Visual Studio では、IDE で **PreBuildEvent** または **PostBuildEvent** の設定を変更すると、Visual Studio によってプロジェクト ファイルに `PreBuildEvent` または `PostBuildEvent` プロパティが追加されます。 たとえば、IDE で **PreBuildEvent** のコマンド ラインの設定が次のようになっているとします。
+
+```input
+"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
+```
+
+この場合、プロジェクト ファイルの設定は次のようになります。
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、**PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+> [!NOTE]
+> これらのプロジェクト ファイルの変更は、SDK スタイルのプロジェクトをサポートするために行われました。 プロジェクト ファイルを古い形式から SDK スタイルの形式に手動で移行する場合は、`PreBuildEvent` および `PostBuildEvent` プロパティを削除し、前のコードで示されているように `PreBuild` および `PostBuild` ターゲットで置き換える必要があります。 プロジェクトが SDK スタイルのプロジェクトであるかどうかを確認する方法については、[プロジェクトの形式の確認](/nuget/resources/check-project-format)に関する記事を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

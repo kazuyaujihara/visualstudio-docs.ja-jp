@@ -3,20 +3,20 @@ title: 共通のクイック アクション
 description: スペルミスのあるキーワードや記号の修正、マージの競合の解決、必要なインポートの削除、型の生成、ローカル変数の導入など、C# および Visual Basic での最も一般的なクイック アクション
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652245"
 ---
 # <a name="common-quick-actions"></a>共通のクイック アクション
 
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>不必要な using/Import を削除する
 
-**[不要な using の削除]/[不要なインポートの削除]** クイック アクションは、現在のファイルで使われていない `using` および `Import` ステートメントを削除します。 この項目を選ぶと、使われていない名前空間のインポートが削除されます。
+**[不要な using の削除]/[不要なインポートの削除]** クイック アクションは、現在のファイルで使われていない `using` および `Import` ディレクティブを削除します。 この項目を選ぶと、使われていない名前空間のインポートが削除されます。
 
 | 該当言語 | サポートされているバージョン |
 | - | - |
@@ -184,7 +184,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 - 参照アセンブリの型に using/import を提案する
 - NuGet パッケージの型に using/import を提案する
 
-有効にした場合、現在はインポートされていなくても参照アセンブリまたは NuGet パッケージには存在する名前空間の型を使うと、using/import ステートメントが作成されます。
+有効にした場合、現在はインポートされていなくても参照アセンブリまたは NuGet パッケージには存在する名前空間の型を使うと、using または import ディレクティブが作成されます。
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

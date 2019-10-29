@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831870"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450448"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>手順 3: 対話型 REPL ウィンドウを使用する
 
@@ -54,7 +54,7 @@ Visual Studio の Python 用 **対話型**ウィンドウによって機能豊�
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. *.py* ファイルの `import`、`from` および `make_dot_string` 関数ステートメントを選択し、右クリックして **[Interactive に送信]** を選択します (または **Ctrl**+**Enter** キーを押します)。 コードの断片がすぐに**対話型**ウィンドウに貼り付けられて、実行されます。 ここで `make_dot_string` 関数を選択し、同じコマンドを繰り返します。これにより、そのコード フラグメントがもう一度実行されます。 このコードでは関数を定義しているため、この関数を数回呼び出すことですばやくテストすることができます。
+1. *.py* ファイルの `import`、`from` および `make_dot_string` 関数ステートメントを選択し、右クリックして **[Interactive に送信]** を選択します (または **Ctrl**+**Enter** キーを押します)。 コードの断片がすぐに**対話型**ウィンドウに貼り付けられて、実行されます。 コードでは関数が定義されているため、数回呼び出すことですばやくその関数をテストすることができます。
 
     ![対話型ウィンドウへのコードの送信とそのテスト](media/vs-getting-started-python-14-interactive4.png)
 

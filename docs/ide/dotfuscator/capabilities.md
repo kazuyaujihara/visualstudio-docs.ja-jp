@@ -15,14 +15,14 @@ helpviewer_keywords:
 description: Visual Studio に含まれている Dotfuscator Community の無料コピーの機能について説明します。
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744782"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747940"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator の機能
 
@@ -32,12 +32,12 @@ Dotfuscator Community は、.NET アプリケーション用の "*ビルド後�
 Visual Studio のユーザーは、それを使用して、[アセンブリを難読化][obfuscation]し、[アクティブな防御策][checks]をアプリケーションに導入できます。その際に Dotfuscator が元のソース コードにアクセスする必要はありません。
 Dotfuscator は、複数層の保護戦略を作成して複数の方法でアプリケーションを保護しています。
 
-Dotfuscator Community では、[Universal Windows Platform (UWP)][uwp]、[Xamarin][xamarin] など、多様な .NET アセンブリとアプリケーションの種類をサポートしています。
+Dotfuscator Community では、[Universal Windows Platform (UWP)][uwp] や [Xamarin][xamarin] など、多様な .NET アセンブリとアプリケーションの種類がサポートされています。
 
 ## <a name="intellectual-property-protection"></a>知的財産の保護
 
 アプリケーションの設計、動作、および実装は、知的財産 (IP) の形式です。
-ただし、.NET 用に作成されたアプリケーションは本質的に開いた本のようなものです。[.NET アセンブリには高レベルのメタデータと中間コードが含まれているので][assemblies]、簡単にリバース エンジニアリングできます。
+ただし、.NET 用に作成されたアプリケーションは本質的に開いた本のようなものです。.NET アセンブリには[高レベルのメタデータと中間コードが含まれているので][assemblies]、簡単にリバース エンジニアリングできます。
 
 Dotfuscator Community には、[名前の変更][renaming]の形式で基本的な [.NET 難読化][obfuscation]が含まれています。
 Dotfuscator でコードを難読化すると、重要な命名に関する情報が非公開になるので、リバース エンジニアリングによるソース コードへの不正アクセスのリスクが軽減されます。
@@ -45,15 +45,15 @@ Dotfuscator でコードを難読化すると、重要な命名に関する情�
 
 Dotfuscator Community の多数の[アプリケーション整合性保護機能](#application-integrity-protection)によって、リバース エンジニアリングをさらに防ぐことができます。
 たとえば、不正なアクターが、プログラムのロジックを理解するために、アプリケーションの実行中のインスタンスにデバッガーをアタッチしようとすることがあります。
-Dotfuscator は[デバッグ対策の動作][debug]をアプリケーションに挿入してこの攻撃を防ぐことができます。
+Dotfuscator では[デバッグ対策の動作][debug]をアプリケーションに挿入してこの攻撃を防ぐことができます。
 
 ## <a name="application-integrity-protection"></a>アプリケーション整合性の保護
 
 ソース コードの保護だけでなく、アプリケーションが指定したとおりに使用されていることを確認することも重要です。
 攻撃者は、ライセンス ポリシーを回避する (つまり、ソフトウェアを違法コピーする)、アプリケーションが処理する機密データを盗用または操作する、またはアプリケーションの動作を変更する目的で、アプリケーションを乗っ取ろうとすることがあります。
 
-Dotfuscator Community は、[改ざん防止][tamper]、[デバッグ防止][debug]、[ルート化されたデバイスの防止][root]の手段などの[アプリケーション検証コード][checks]をアセンブリに挿入できます。
-無効なアプリケーションの状態が検出された場合、検証コードから[アプリケーション コードを呼び出し、適切な方法で状況に対処することができます][check-app]。
+Dotfuscator Community では、[改ざん防止][tamper]、[デバッグ防止][debug]、[ルート化されたデバイスの防止][root]の手段などの[アプリケーション検証コード][checks]をアセンブリに挿入できます。
+無効なアプリケーションの状態が検出された場合、[検証コードからアプリケーション コードを呼び出し、適切な方法で状況に対処する][check-app]ことができます。
 また、アプリケーションの無効な使用に対処するコードを作成したくない場合は、Dotfuscator でソース コードを変更することなく、[応答動作][check-action]を挿入できます。
 
 これらの多くの方法は、評価版や試用版のソフトウェアの[有効期間][shelflife]を強制するためにも使用できます。

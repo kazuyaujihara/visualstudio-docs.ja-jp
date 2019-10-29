@@ -1,31 +1,31 @@
 ---
-title: Visual C++ コードの使用 (クラス デザイナー)
+title: C++ コードの使用 (クラス デザイナー)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975009"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748898"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>クラス デザイナーでの Visual C++ コードの使用
+# <a name="work-with-c-code-in-class-designer"></a>クラス デザイナーでの C++ コードの使用
 
 **クラス デザイナー**は、*クラス ダイアグラム* と呼ばれるビジュアル デザイン サーフェイスを表示します。クラス ダイアグラムは、プロジェクトのコード要素を視覚的に表現するものです。 クラス ダイアグラムを使用して、プロジェクト内のクラスおよびその他の型を設計し、視覚化できます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "62975009"
 
 ### <a name="update-and-performance-issues"></a>更新およびパフォーマンスの問題
 
-Visual C++ プロジェクトの場合、ソース ファイルでの変更がクラス ダイアグラムに表示されるまでに 30 ～ 60 秒かかることがあります。 この遅延によって、**クラス デザイナー**で "**選択内で型が見つかりませんでした**" というエラーがスローされることもあります。 このようなエラーが表示された場合は、エラー メッセージで **[キャンセル]** をクリックし、**クラス ビュー**にコード要素が表示されるまで待ちます。 その後、**クラス デザイナー**が型を表示できるようになります。
+C++ プロジェクトの場合、ソース ファイルでの変更がクラス ダイアグラムに表示されるまでに 30 から 60 秒かかることがあります。 この遅延によって、**クラス デザイナー**で "**選択内で型が見つかりませんでした**" というエラーがスローされることもあります。 このようなエラーが表示された場合は、エラー メッセージで **[キャンセル]** をクリックし、**クラス ビュー**にコード要素が表示されるまで待ちます。 その後、**クラス デザイナー**が型を表示できるようになります。
 
 コードに加えた変更でクラス ダイアグラムが更新されない場合は、ダイアグラムを閉じて、再度開く必要がある場合があります。
 
@@ -88,11 +88,11 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
 
 ## <a name="limitations-for-c-code-elements"></a>C++ コード要素の制限事項
 
-- Visual C++ のプロジェクトがロードされるとき、**クラス デザイナー**は読み取り専用で機能します。 クラス ダイアグラムは変更できますが、クラス ダイアグラムから変更内容をソース コードに保存することはできません。
+- C++ のプロジェクトがロードされるとき、**クラス デザイナー**は読み取り専用で機能します。 クラス ダイアグラムは変更できますが、クラス ダイアグラムから変更内容をソース コードに保存することはできません。
 
-- **クラス デザイナー**は、ネイティブ C++ セマンティクスのみをサポートします。 マネージド コードにコンパイルされた Visual C++ プロジェクトでは、**クラス デザイナー**はネイティブ型のコード要素のみを視覚化します。 このため、プロジェクトにクラス ダイアグラムを追加することはできますが、**クラス デザイナー**では、`IsManaged` プロパティが `true` に設定されている要素 (つまり、値型および参照型) を視覚化することはできません。
+- **クラス デザイナー**は、ネイティブ C++ セマンティクスのみをサポートします。 マネージド コードにコンパイルされた C++ プロジェクトの場合、**クラス デザイナー**ではネイティブ型のコード要素のみが視覚化されます。 このため、プロジェクトにクラス ダイアグラムを追加することはできますが、**クラス デザイナー**では、`IsManaged` プロパティが `true` に設定されている要素 (つまり、値型および参照型) を視覚化することはできません。
 
-- Visual C++ プロジェクトでは、**クラス デザイナー**は型の定義のみを読み取ります。 たとえば、ヘッダー (.h) ファイルで型を定義して、実装 (.cpp) ファイルでメンバーを定義するとします。 実装 (.cpp) ファイルで [クラス ダイアグラムで表示] を起動しても、**クラス デザイナー**には何も表示されません。 もう 1 つの例として、`#include` ステートメントを使用して他のファイルをインクルードし、実際のクラス定義は含まない .cpp ファイルで、[クラス ダイアグラムで表示] を起動する場合があります。この場合も、**クラス デザイナー**には何も表示されません。
+- C++ プロジェクトの場合、**クラス デザイナー**では型の定義のみが読み取られます。 たとえば、ヘッダー (.h) ファイルで型を定義して、実装 (.cpp) ファイルでメンバーを定義するとします。 実装 (.cpp) ファイルで [クラス ダイアグラムで表示] を起動しても、**クラス デザイナー**には何も表示されません。 もう 1 つの例として、`#include` ステートメントを使用して他のファイルをインクルードし、実際のクラス定義は含まない .cpp ファイルで、[クラス ダイアグラムで表示] を起動する場合があります。この場合も、**クラス デザイナー**には何も表示されません。
 
 - IDL (.idl) ファイルでは COM インターフェイスとタイプ ライブラリが定義されますが、このファイルはネイティブ C++ コードにコンパイルされない限り、ダイアグラムには表示されません。
 
@@ -112,7 +112,7 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
 
 - [クラスと型のデザインおよび表示](designing-and-viewing-classes-and-types.md)
 - [クラス デザイナーのエラーに関する追加情報](additional-information-about-errors.md)
-- [クラス デザイナーの Visual C++ クラス](visual-cpp-classes.md)
-- [クラス デザイナーの Visual C++ 構造体](visual-cpp-structures.md)
-- [クラス デザイナーの Visual C++ 列挙体](visual-cpp-enumerations.md)
-- [クラス デザイナーにおける Visual C++ の typedef](visual-cpp-typedefs.md)
+- [クラス デザイナーの C++ クラス](visual-cpp-classes.md)
+- [クラス デザイナーの C++ 構造体](visual-cpp-structures.md)
+- [クラス デザイナーの C++ 列挙体](visual-cpp-enumerations.md)
+- [クラス デザイナーにおける C++ の typedef](visual-cpp-typedefs.md)

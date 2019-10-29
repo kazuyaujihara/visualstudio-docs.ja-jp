@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314089"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576294"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題の作成
 
@@ -73,7 +73,7 @@ ms.locfileid: "72314089"
      オブジェクトの後にドットを入力すると、IntelliSense はプロパティ、メソッド、イベントなどのオブジェクトのメンバーの一覧を表示します。
 
     > [!NOTE]
-    > `Next()` を呼び出す場合など、`Random` オブジェクトで `randomizer.Next(50)` メソッドを使用するときは、50 未満の乱数を取得します (0 ～ 49)。 この例では、`randomizer.Next(51)` を呼び出します。 2 つの乱数を合計した答えが 0 ～ 100 になるようにするため、50 ではなく 51 を使用しました。 `Next()` メソッドに 50 を渡した場合、0 ～ 49 の数値が選択されるため、答えの最大値が 100 ではなく 98 になります。 メソッドの最初の 2 つのステートメントが実行された後、**addend1** と **addend2** の 2 つの整数変数は、それぞれ 0 ～ 50 の乱数を保持します。 このスクリーンショットは Visual C# コードを表示していますが、IntelliSense は Visual Basic の場合でも同様に動作します。
+    > `Next()` を呼び出す場合など、`Random` オブジェクトで `randomizer.Next(50)` メソッドを使用するときは、50 未満の乱数を取得します (0 ～ 49)。 この例では、`randomizer.Next(51)` を呼び出します。 2 つの乱数を合計した答えが 0 ～ 100 になるようにするため、50 ではなく 51 を使用しました。 `Next()` メソッドに 50 を渡した場合、0 ～ 49 の数値が選択されるため、答えの最大値が 100 ではなく 98 になります。 メソッドの最初の 2 つのステートメントが実行された後、**addend1** と **addend2** の 2 つの整数変数は、それぞれ 0 ～ 50 の乱数を保持します。 このスクリーンショットでは C# のコードが示されていますが、IntelliSense は Visual Basic の場合でも同様に動作します。
 
      次のステートメントについて詳しく見てみましょう。
 

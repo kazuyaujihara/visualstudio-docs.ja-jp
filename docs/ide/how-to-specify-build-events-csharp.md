@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483704"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656588"
 ---
 # <a name="how-to-specify-build-events-c"></a>方法: ビルド イベントを指定する (C#)
 
@@ -72,7 +72,7 @@ ms.locfileid: "68483704"
 
 1. コマンド用の新しい**コンソール アプリ** プロジェクトを作成します。 プロジェクトに **ChangeOSVersionCS** という名前を付けます。
 
-2. *Program.cs* で、ファイルの先頭にある他の `using` ステートメントに次の行を追加します。
+2. *Program.cs* で、ファイルの先頭にある他の `using` ディレクティブに次の行を追加します。
 
    ```csharp
    using System.Xml;

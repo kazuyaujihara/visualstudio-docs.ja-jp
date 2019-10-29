@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745921"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>コード分析のためのサンプル C++ プロジェクト
 
@@ -34,7 +34,7 @@ ms.locfileid: "72018433"
 
 1. **[ファイル]** メニューをクリックし、 **[新規作成]** をポイントし、 **[新しいプロジェクト]** をクリックします。
 
-2. **[プロジェクトの種類]** ツリー リストで、Visual C++ が VS の既定の言語になっていない場合、 **[その他の言語]** を展開します。
+2. **[プロジェクトの種類]** ツリー リストで、C++ が VS の既定の言語になっていない場合、 **[その他の言語]** を展開します。
 
 3. **[Visual C++]** を展開し、 **[全般]** をクリックします。
 

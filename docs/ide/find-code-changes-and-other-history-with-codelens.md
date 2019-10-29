@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980889"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653846"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 
@@ -23,7 +23,7 @@ CodeLens では、エディターを離れずにコードに関する情報を�
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> ソース管理の CodeLens インジケーターは、Visual Studio Community エディションでは使用できません。
+> CodeLens は Visual Studio Community エディションで使用できますが、"*ソース管理*" のインジケーターはこのエディションでは使用できません。
 
 ::: moniker-end
 
@@ -275,7 +275,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> ソース管理のインジケーターは、Visual Studio Community エディションでは使用できません。
+> CodeLens は Visual Studio Community エディションで使用できますが、"*ソース管理*" のインジケーターはこのエディションでは使用できません。
 
 ::: moniker-end
 

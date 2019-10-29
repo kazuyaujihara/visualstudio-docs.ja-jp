@@ -13,23 +13,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), CL task
-- CL task (MSBuild (Visual C++))
+- MSBuild (C++), CL task
+- CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ec3be0adf6f262cafbebe2da714f4e74777329c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569694"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747353"
 ---
 # <a name="cl-task"></a>CL タスク
-Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コンパイラは、実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*) ファイル、またはコード モジュール (*.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」を参照してください。
+Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コンパイラは、実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*) ファイル、またはコード モジュール ( *.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
  次の一覧では、**CL** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
@@ -62,7 +62,7 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    省略可能な String 型のパラメーター。
 
-   コマンド ラインで常に出力される文字列。 既定値は "**/c**" です。
+   コマンド ラインで常に出力される文字列。 既定値は " **/c**" です。
 
 - **AssemblerListingLocation**
 
@@ -78,17 +78,17 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **NoListing** - *\<なし>*
+  - **NoListing** -  *\<なし>*
 
-  - **AssemblyCode** - **/FA**
+  - **AssemblyCode** -  **/FA**
 
-  - **AssemblyAndMachineCode** - **/FAc**
+  - **AssemblyAndMachineCode** -  **/FAc**
 
-  - **AssemblyAndSourceCode** - **/FAs**
+  - **AssemblyAndSourceCode** -  **/FAs**
 
-  - **All** - **/FAcs**
+  - **All** -  **/FAcs**
 
-    詳細については、「[/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/FA**、**/FAc**、**/FAs**、および **/FAcs** の各オプションに関する記述を参照してください。
+    詳細については、「[/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/FA**、 **/FAc**、 **/FAs**、および **/FAcs** の各オプションに関する記述を参照してください。
 
 - **BasicRuntimeChecks**
 
@@ -98,13 +98,13 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Default** -                          *\<none>*
+  - **Default** -                           *\<none>*
 
-  - **StackFrameRuntimeCheck** - **/RTCs**
+  - **StackFrameRuntimeCheck** -  **/RTCs**
 
-  - **UninitializedLocalUsageCheck** - **/RTCu**
+  - **UninitializedLocalUsageCheck** -  **/RTCu**
 
-  - **EnableFastChecks** -                          **/RTC1**
+  - **EnableFastChecks** -                           **/RTC1**
 
     詳細については、「[/RTC (ランタイム エラー チェック)](/cpp/build/reference/rtc-run-time-error-checks)」を参照してください。
 
@@ -146,11 +146,11 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Cdecl** - **/Gd**
+  - **Cdecl** -  **/Gd**
 
-  - **FastCall** -                          **/Gr**
+  - **FastCall** -                           **/Gr**
 
-  - **StdCall** -                          **/Gz**
+  - **StdCall** -                           **/Gz**
 
     詳細については、「[/Gd、/Gr、/Gv、/Gz (呼び出し規則)](/cpp/build/reference/gd-gr-gv-gz-calling-convention)」を参照してください。
 
@@ -162,11 +162,11 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Default** - *\<none>*
+  - **Default** -  *\<none>*
 
-  - **CompileAsC** - **/TC**
+  - **CompileAsC** -  **/TC**
 
-  - **CompileAsCpp** - **/TP**
+  - **CompileAsCpp** -  **/TP**
 
     詳細については、「[/Tc、/Tp、/TC、/TP (ソース ファイル タイプの指定)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type)」を参照してください。
 
@@ -178,15 +178,15 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **false** - *\<なし>*
+  - **false** -  *\<なし>*
 
-  - **true** - **/clr**
+  - **true** -  **/clr**
 
-  - **Pure** - **/clr:pure**
+  - **Pure** -  **/clr:pure**
 
-  - **Safe** - **/clr:safe**
+  - **Safe** -  **/clr:safe**
 
-  - **OldSyntax** - **/clr:oldSyntax**
+  - **OldSyntax** -  **/clr:oldSyntax**
 
     詳細については、「[/clr (共通言語ランタイムのコンパイル)](/cpp/build/reference/clr-common-language-runtime-compilation)」を参照してください。
 
@@ -202,15 +202,15 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    省略可能な String 型のパラメーター。
 
-   プログラムに対して作成するデバッグ情報の種類を選択し、デバッグ情報をオブジェクト (*.obj*) ファイルに保存するのかプログラム データベース (PDB) に保存するのかを選択します。
+   プログラムに対して作成するデバッグ情報の種類を選択し、デバッグ情報をオブジェクト ( *.obj*) ファイルに保存するのかプログラム データベース (PDB) に保存するのかを選択します。
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **OldStyle** - **/Z7**
+  - **OldStyle** -  **/Z7**
 
-  - **ProgramDatabase** - **/Zi**
+  - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue** - **/ZI**
+  - **EditAndContinue** -  **/ZI**
 
     詳細については、「[/Z7、/Zi、/ZI (デバッグ情報の形式)](/cpp/build/reference/z7-zi-zi-debug-information-format)」を参照してください。
 
@@ -238,9 +238,9 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **StreamingSIMDExtensions** - **/arch:SSE**
+  - **StreamingSIMDExtensions** -  **/arch:SSE**
 
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**
+  - **StreamingSIMDExtensions2** -  **/arch:SSE2**
 
     詳細については、「[/arch (x86)](/cpp/build/reference/arch-x86)」を参照してください。
 
@@ -268,13 +268,13 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **None** - **/errorReport:none**
+  - **None** -  **/errorReport:none**
 
-  - **Prompt** - **/errorReport:prompt**
+  - **Prompt** -  **/errorReport:prompt**
 
-  - **Queue** - **/errorReport:queue**
+  - **Queue** -  **/errorReport:queue**
 
-  - **Send** - **/errorReport:send**
+  - **Send** -  **/errorReport:send**
 
     詳細については、「[/errorReport (内部コンパイラ エラーの報告)](/cpp/build/reference/errorreport-report-internal-compiler-errors)」を参照してください。
 
@@ -286,13 +286,13 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **false** - *\<なし>*
+  - **false** -  *\<なし>*
 
-  - **Async** - **/EHa**
+  - **Async** -  **/EHa**
 
-  - **Sync** - **/EHsc**
+  - **Sync** -  **/EHsc**
 
-  - **SyncCThrow** - **/EHs**
+  - **SyncCThrow** -  **/EHs**
 
     詳細については、「[/EH (例外処理モデル)](/cpp/build/reference/eh-exception-handling-model)」を参照してください。
 
@@ -312,11 +312,11 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Neither** - *\<なし>*
+  - **Neither** -  *\<なし>*
 
-  - **Size** - **/Os**
+  - **Size** -  **/Os**
 
-  - **Speed** - **/Ot**
+  - **Speed** -  **/Ot**
 
     詳細については、「[/Os、/Ot (実行可能ファイルのサイズの優先、実行速度の優先)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code)」を参照してください。
 
@@ -336,11 +336,11 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Precise** - **/fp:precise**
+  - **Precise** -  **/fp:precise**
 
-  - **Strict** - **/fp:strict**
+  - **Strict** -  **/fp:strict**
 
-  - **Fast** - **/fp:fast**
+  - **Fast** -  **/fp:fast**
 
     詳細については、「[/fp (浮動小数点の動作の指定)](/cpp/build/reference/fp-specify-floating-point-behavior)」を参照してください。
 
@@ -400,13 +400,13 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Default** - *\<none>*
+  - **Default** -  *\<none>*
 
-  - **Disabled** - **/Ob0**
+  - **Disabled** -  **/Ob0**
 
-  - **OnlyExplicitInline** - **/Ob1**
+  - **OnlyExplicitInline** -  **/Ob1**
 
-  - **AnySuitable** - **/Ob2**
+  - **AnySuitable** -  **/Ob2**
 
     詳細については、「[/Ob (関数のインライン展開)](/cpp/build/reference/ob-inline-function-expansion)」を参照してください。
 
@@ -452,7 +452,7 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    省略可能な `Boolean` 型のパラメーターです。
 
-   `true` の場合は、オブジェクト (*.obj*) ファイルの既定の C ランタイム ライブラリ名が省略されます。 既定では、コンパイラでライブラリ名が *.obj* ファイルにプッシュされ、リンカーに適切なライブラリが示されます。
+   `true` の場合は、オブジェクト ( *.obj*) ファイルの既定の C ランタイム ライブラリ名が省略されます。 既定では、コンパイラでライブラリ名が *.obj* ファイルにプッシュされ、リンカーに適切なライブラリが示されます。
 
    詳細については、「[/Zl (既定のライブラリ名の省略)](/cpp/build/reference/zl-omit-default-library-name)」を参照してください。
 
@@ -480,13 +480,13 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Disabled** - **/Od**
+  - **Disabled** -  **/Od**
 
-  - **MinSpace** - **/O1**
+  - **MinSpace** -  **/O1**
 
-  - **MaxSpeed** - **/O2**
+  - **MaxSpeed** -  **/O2**
 
-  - **Full** - **/Ox**
+  - **Full** -  **/Ox**
 
     詳細については、「[/O オプション (コードの最適化)](/cpp/build/reference/o-options-optimize-code)」を参照してください。
 
@@ -494,15 +494,15 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    省略可能な **String** 型のパラメーターです。
 
-   ビルド時にプリコンパイル済みヘッダー (*.pch*) ファイルを作成または使用します。
+   ビルド時にプリコンパイル済みヘッダー ( *.pch*) ファイルを作成または使用します。
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **NotUsing** - *\<なし>*
+  - **NotUsing** -  *\<なし>*
 
-  - **Create** - **/Yc**
+  - **Create** -  **/Yc**
 
-  - **Use** - **/Yu**
+  - **Use** -  **/Yu**
 
     詳細については、「[/Yc (プリコンパイル済みヘッダー ファイルの作成)](/cpp/build/reference/yc-create-precompiled-header-file)」と「[/Yu (プリコンパイル済みヘッダー ファイルの使用)](/cpp/build/reference/yu-use-precompiled-header-file)」を参照してください。 この表にある **PrecompiledHeaderFile** および **PrecompiledHeaderOutputFile** パラメーターも参照してください。
 
@@ -590,13 +590,13 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **MultiThreaded** - **/MT**
+  - **MultiThreaded** -  **/MT**
 
-  - **MultiThreadedDebug** - **/MTd**
+  - **MultiThreadedDebug** -  **/MTd**
 
-  - **MultiThreadedDLL** - **/MD**
+  - **MultiThreadedDLL** -  **/MD**
 
-  - **MultiThreadedDebugDLL** - **/MDd**
+  - **MultiThreadedDebugDLL** -  **/MDd**
 
     詳細については、「[/MD、/MT、/LD (ランタイム ライブラリの使用)](/cpp/build/reference/md-mt-ld-use-run-time-library)」を参照してください。
 
@@ -646,17 +646,17 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **既定** - **/Zp1**
+  - **既定** -  **/Zp1**
 
-  - **1Byte** - **/Zp1**
+  - **1Byte** -  **/Zp1**
 
-  - **2Bytes** - **/Zp2**
+  - **2Bytes** -  **/Zp2**
 
-  - **4Bytes** - **/Zp4**
+  - **4Bytes** -  **/Zp4**
 
-  - **8Bytes** - **/Zp8**
+  - **8Bytes** -  **/Zp8**
 
-  - **16Bytes** - **/Zp16**
+  - **16Bytes** -  **/Zp16**
 
     詳細については、「[/Zp (構造体メンバーの配置)](/cpp/build/reference/zp-struct-member-alignment)」を参照してください。
 
@@ -740,17 +740,17 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **TurnOffAllWarnings** - **/W0**
+  - **TurnOffAllWarnings** -  **/W0**
 
-  - **Level1** - **/W1**
+  - **Level1** -  **/W1**
 
-  - **Level2** - **/W2**
+  - **Level2** -  **/W2**
 
-  - **Level3** - **/W3**
+  - **Level3** -  **/W3**
 
-  - **Level4** - **/W4**
+  - **Level4** -  **/W4**
 
-  - **EnableAllWarnings** - **/Wall**
+  - **EnableAllWarnings** -  **/Wall**
 
     詳細については、「[/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/W**_n_ オプションをご覧ください。
 
@@ -782,7 +782,7 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    *ファイルの読み取り追跡ログ*を表す項目の配列を指定します。
 
-   ファイルの読み取り追跡ログ (*.tlog*) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される入力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
+   ファイルの読み取り追跡ログ ( *.tlog*) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される入力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
 
 - **TLogWriteFiles**
 
@@ -790,7 +790,7 @@ Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コン�
 
    *ファイルの書き込み追跡ログ*を表す項目の配列を指定します。
 
-   ファイルの書き込み追跡ログ (*.tlog*) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される出力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
+   ファイルの書き込み追跡ログ ( *.tlog*) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される出力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
 
 - **TrackFileAccess**
 

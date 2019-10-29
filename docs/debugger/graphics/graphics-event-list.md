@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735542"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911491"
 ---
 # <a name="graphics-event-list"></a>グラフィックス イベント一覧
 Visual Studio Graphics Analyzer でグラフィックス イベント一覧を使用して、ゲームまたはアプリのフレームのレンダリング中に記録された Direct3D イベントを調査できます。
@@ -88,7 +88,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 またはそれより前のバージョンのユーザー定義イベント
  Direct3D 11 またはそれより前のバージョンでグループやマーカーを作成するには、このセクションで説明する API を使用します。 次の表は、Direct3D 11 またはそれより前のさまざまなバージョンで使用できる API をまとめたものです。
 
-|API の説明|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API ファミリー (Direct3D 11.0 以前)|
+|API の説明|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|D3DPerf_ API ファミリー (Direct3D 11.0 以前)|
 |---------------------| - | - | - |
 |イベント グループを作成する|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |イベント グループを終了する|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>リソース履歴
-Visual Studio 2017 以降には、 **[リソース履歴]** ウィンドウが含まれています。  **[イベント一覧]** ウィンドウのエントリの横にある [ウォッチ アイコン ![watch アイコン ](media/gfx_watch.png) を選択すると、次のような **[リソース履歴]** ウィンドウが表示されます。
+Visual Studio 2017 以降には、 **[リソース履歴]** ウィンドウが含まれています。  **[イベント一覧]** ウィンドウのエントリの横にある [ウォッチ アイコン ![](media/gfx_watch.png) ウォッチアイコンを選択すると、次のような **[リソース履歴]** ウィンドウが表示されます。
 
 ![リソース履歴](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Visual Studio 2017 以降には、 **[リソース履歴]** ウィンドウが�
 |-----------| - |
 | **Type** | エントリの種類 (通常は*作成*、*読み取り*、*書き込み*) が表示されます。 |
 | **表示** | その時点でのリソースのサムネイルが表示されます。  サムネイルをダブルクリックすると、その時点でのリソースの詳細ビューが表示されます。 |
-| **Event** | イベントを生成したメソッド呼び出しを表示します。  個々の項目の追加の履歴を表示するには、該当する行の [ウォッチ] アイコン ![watch アイコン ](media/gfx_watch.png) を選択します。  また、上のスクリーンショットの `m_commandList` など、青のテキストで描画されたアイテムを選択して、詳細を確認することもできます。 |
+| **Event** | イベントを生成したメソッド呼び出しを表示します。  個々の項目の追加の履歴を表示するには、該当する行の [ウォッチ] アイコン ![ウォッチ](media/gfx_watch.png) アイコンを選択します。  また、上のスクリーンショットの `m_commandList` など、青のテキストで描画されたアイテムを選択して、詳細を確認することもできます。 |
 
 <!-- /VERSIONLESS -->
 

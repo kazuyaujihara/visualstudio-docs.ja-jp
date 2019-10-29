@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Visual Studio に含まれている Dotfuscator Community の無料コピーをアップグレードする方法について説明します。
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557243"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748892"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community をアップグレードする
 
@@ -38,7 +38,7 @@ Dotfuscator のバージョンをアップグレードすると、さらに多�
 
 ## <a name="registering-dotfuscator-community"></a>Dotfuscator Community の登録
 
-Dotfuscator Community の登録ユーザーは、[コマンド ライン サポート][cli]などの追加機能にアクセスできます。コマンド ラインを使用すると、Dotfuscator Community を自動ビルド プロセスに簡単に統合できます。 また、登録することで、[難読化されたスタック トレースをデコードする][decode-obfuscated]ために使用される組み込みツールへのアクセスが許可されます。
+Dotfuscator Community の登録ユーザーは、[コマンドライン サポート][cli]などの追加機能にアクセスできます。コマンドラインを使用すると、Dotfuscator Community を自動ビルド プロセスに簡単に統合できます。 また、登録することで、[難読化されたスタック トレースをデコードする][decode-obfuscated]ために使用される組み込みツールへのアクセスが許可されます。
 
 登録は無料で、簡単な手順ですぐに実行できます。
 Dotfuscator Community に登録するには、[Dotfuscator Community の完全なユーザー ガイドの手順][register-ce]を参照してください。
@@ -62,7 +62,7 @@ Dotfuscator Community では基本的なレベルの保護機能が提供され�
 Dotfuscator Professional は業界標準の [.NET 難読化ツール][net-obfuscator]です。継続的なサポート、保守、製品の更新が必要な企業の開発者に適しています。
 また、Dotfuscator Professional は Visual Studio との統合が強化され、商業目的の使用についてライセンスが付与されます。
 
-Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要][product-about]に関するページと、[Community Edition との比較][product-compare]に関するページを参照してください。
+Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要に関するページ][product-about]と、[Community Edition との比較][product-compare]を参照してください。
 [preemptive.com では、完全にサポートされている評価版を入手できます][eval]。
 
 ## <a name="see-also"></a>関連項目

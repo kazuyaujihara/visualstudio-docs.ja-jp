@@ -1,31 +1,27 @@
 ---
-title: コンテナー ログ、環境変数、ファイル システム アクセス
+title: Docker のコンテナー ログ、環境変数、ファイル システム アクセス
 description: Visual Studio でツール ウィンドウを使用してアプリをホストしているコンテナー内の状況を表示することにより、コンテナーベースのアプリをデバッグおよび診断する機能を向上させる方法について説明します。
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 05/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 3fb9a52f990a2e492c63a6e71a7cc2063110c816
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126095"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535629"
 ---
-# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Visual Studio でコンテナーを表示および診断する方法
+# <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 
 **[コンテナー]** ウィンドウを使用すると、アプリをホストしているコンテナー内の状況を表示できます。 コマンド プロンプトを使用して Docker コマンドを実行し、コンテナーの状況を表示および診断することに慣れている場合、このウィンドウには Visual Studio IDE を離れることなくコンテナーを監視できるさらに便利な方法が用意されています。
-
-> [!NOTE]
-> 現在、[コンテナー] ウィンドウは、Visual Studio 2019 用に[ダウンロード](https://aka.ms/vscontainerspreview)できるプレビュー拡張機能として利用できます。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) をインストールする
-- [[コンテナー] ウィンドウ拡張機能](https://aka.ms/vscontainerspreview)をインストールする
+- [Visual Studio 2019 バージョン 16.4 Preview 2](https://visualstudio.microsoft.com/downloads) 以降、または以前のバージョンの Visual Studio 2019 を使用している場合は[コンテナー ウィンドウ拡張機能](https://aka.ms/vscontainerspreview)をインストールします。
 
 ## <a name="view-information-about-your-containers"></a>コンテナーに関する情報を表示する
 
@@ -42,7 +38,7 @@ ms.locfileid: "71126095"
 
 **[環境]** タブには、コンテナーの環境変数が表示されます。 アプリのコンテナーでは、これらの変数をさまざまな方法で設定できます。たとえば、Dockerfile、.env ファイル、または Docker コマンドを使用してコンテナーを起動するときに -e オプションを使用します。
 
-![[コンテナー] ウィンドウの [環境] タブのスクリーンショット](media/view-and-diagnose-containers/container-environment-vars.png)
+![[コンテナー] ウィンドウの [環境] タブのスクリーンショット](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > 環境変数の変更は、リアルタイムでは反映されません。 また、このタブの環境変数はコンテナーのシステム環境変数であり、アプリにローカルなユーザー環境変数は反映されません。
@@ -51,7 +47,7 @@ ms.locfileid: "71126095"
 
 **[ポート]** タブで、お使いのコンテナーに有効なポート マッピングを確認できます。
 
-![[コンテナー] ウィンドウの [ポート] タブのスクリーンショット](media/view-and-diagnose-containers/container-ports.png)
+![[コンテナー] ウィンドウの [ポート] タブのスクリーンショット](media/view-and-diagnose-containers/containers-ports.png)
 
 既知のポートがリンクされているため、ポートに使用できるコンテンツがある場合は、リンクをクリックしてブラウザーを開くことができます。
 
@@ -59,12 +55,12 @@ ms.locfileid: "71126095"
 
 **[ログ]** タブには、`docker logs` コマンドの結果が表示されます。 既定では、タブにはコンテナー上の stdout と stderr のストリームが表示されますが、出力を構成することができます。 詳細については、[Docker のログ記録](https://docs.docker.com/config/containers/logging/)に関する記事を参照してください。  既定では、 **[ログ]** タブにはログがストリームされますが、これを無効にするには、タブの **[停止]** ボタンをクリックします。
 
-![[コンテナー] ウィンドウの [ログ] タブのスクリーンショット](media/view-and-diagnose-containers/containers-logs.jpg)
+![[コンテナー] ウィンドウの [ログ] タブのスクリーンショット](media/view-and-diagnose-containers/containers-logs.png)
 
 ログを消去するには、 **[ログ]** タブの **[クリア]** ボタンを使用します。すべてのログを取得するには、 **[更新]** ボタンを使用します。
 
 > [!NOTE]
-> Visual Studio では、stdout と stderr が **[出力]** ウィンドウに自動的にリダイレクトされるため、Visual Studio から開始されたコンテナー (つまり、 **[ソリューション コンテナー]** セクションのコンテナー) ではこのタブにログが表示されません。代わりに **[出力]** ウィンドウを使用します。
+> Windows コンテナーでデバッグを使用しないで実行すると、Visual Studio により stdout と stderr が **[出力]** ウィンドウに自動的にリダイレクトされるため、**Ctrl** + **F5** キーを使用して Visual Studio から開始されたコンテナーでは、このタブにログが表示されません。代わりに **[出力]** ウィンドウを使用します。
 
 ## <a name="view-the-filesystem"></a>ファイルシステムを表示する
 
@@ -81,6 +77,32 @@ Visual Studio でファイルを開くには、ファイルを参照してダブ
 ## <a name="start-stop-and-remove-containers"></a>コンテナーの開始、停止、および削除
 
 既定では、Docker で管理されているコンピューター上のすべてのコンテナーが **[コンテナー]** ウィンドウに表示されます。 ツール バーのボタンを使用して、コンテナーの開始、停止、または不要になったコンテナーの削除を行うことができます。  この一覧は、コンテナーが作成または削除されると動的に更新されます。
+
+## <a name="open-a-terminal-window-in-a-running-container"></a>実行中のコンテナーでターミナル ウィンドウを開く
+
+**[コンテナー]** ウィンドウの **[ターミナル ウィンドウを開く]** ボタンを使用して、コンテナーでターミナル ウィンドウ (コマンド プロンプトまたは対話型シェル) を開くことができます。
+
+![[コンテナー] ウィンドウの [ターミナル ウィンドウを開く] のスクリーンショット](media/view-and-diagnose-containers/containers-open-terminal-window.png)
+
+Windows コンテナーの場合は、Windows のコマンド プロンプトが開きます。 Linux コンテナーの場合は、Bash シェルを使用してウィンドウが開きます。
+
+![Bash ウィンドウのスクリーンショット](media/view-and-diagnose-containers/container-bash-window.png)
+
+通常、ターミナル ウィンドウは、Visual Studio の外部に別のウィンドウとして開かれます。 ドッキング可能なツール ウィンドウとしてコマンドライン環境を Visual Studio IDE に統合する場合は、[Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal) をインストールします。
+
+## <a name="attach-the-debugger-to-a-process"></a>デバッガーをプロセスにアタッチする
+
+[コンテナー] ウィンドウのツール バーにある **[プロセスにアタッチ]** ボタンを使用して、コンテナーで実行されているプロセスにデバッガーをアタッチできます。 このボタンを使用すると **[プロセスにアタッチ]** ダイアログが表示され、コンテナーで実行されている使用可能なプロセスが表示されます。  
+
+![[プロセスにアタッチ] ダイアログ ボックスのスクリーンショット](media/view-and-diagnose-containers/containers-attach-to-process.jpg)
+
+コンテナー内のマネージド プロセスにアタッチすることができます。 別のコンテナーでプロセスを探すには、 **[検索]** ボタンを使用し、 **[Docker コンテナーの選択]** ダイアログで別のコンテナーを選択します。
+
+## <a name="viewing-images"></a>イメージを表示する
+
+**[コンテナー]** ウィンドウの **[イメージ]** タブを使用して、ローカル コンピューター上のイメージを表示することもできます。 外部リポジトリから取得されたイメージは、ツリー ビューでまとめられています。 イメージを選択して、イメージの詳細を調べます。
+
+イメージを削除するには、ツリー ビューでイメージを右クリックして **[削除]** を選択するか、イメージを選択してツール バーの **[削除]** ボタンを使用します。
 
 ## <a name="next-steps"></a>次の手順
 

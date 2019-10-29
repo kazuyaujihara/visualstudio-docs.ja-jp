@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314200"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572485"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>手順 9: レビュー、コメントの追加、およびコードのテスト
 
@@ -65,7 +65,7 @@ ms.locfileid: "72314200"
     > [!TIP]
     > IDE はコードを簡単に記述できるように設計されており、そのための方法の 1 つとして*コード スニペット*が用意されています。 スニペットは、小さなコードのブロックに展開されるショートカットです。
     >
-    >  使用可能なすべてのスニペットを表示できます。 メニュー バーで、 **[ツール]**  >  **[コード スニペット マネージャー]** の順に選択します。 C# では、`if` スニペットは **Visual C#** に含まれています。 Visual Basic の場合、`if` スニペットは **[条件とループ]**  >  **[コード パターン]** にあります。 このマネージャーを使用して、既存のスニペットを参照したり独自のスニペットを追加したりすることができます。
+    >  使用可能なすべてのスニペットを表示できます。 メニュー バーで、 **[ツール]**  >  **[コード スニペット マネージャー]** の順に選択します。 C# では、`if` スニペットは **Visual C#** に含まれています。 Visual Basic の場合、`if` スニペットは **[コード パターン]**  >  **[条件とループ]** にあります。 このマネージャーを使用して、既存のスニペットを参照したり独自のスニペットを追加したりすることができます。
     >
     >  コードの入力時にスニペットをアクティブにするには、そのスニペットを入力して **Tab** キーを押します。 多くのスニペットは **IntelliSense** ウィンドウに表示されます。**Tab** キーを 2 回押すのは、1 回目で **IntelliSense** ウィンドウからスニペットを選択し、2 回目でそのスニペットを使用するように IDE に指示するためです (IntelliSense は `if` スニペットはサポートしますが、`ifelse` スニペットはサポートしません)。
 

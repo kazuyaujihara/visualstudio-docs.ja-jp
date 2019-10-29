@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02827ebd5617485f180f4a16652b1cc841c41f4
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314222"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647466"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>手順 7: 乗算問題と除算問題の追加
 
@@ -48,7 +48,7 @@ ms.locfileid: "72314222"
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     乗算記号 (×) と除算記号 (÷) はキーボードから簡単に入力できないため、Visual C# および Visual Basic では、乗算にはアスタリスク (*)、除算にはスラッシュ記号 (/) を使用します。
+     乗算記号 (×) と除算記号 (÷) はキーボードから簡単に入力できないため、C# および Visual Basic では、乗算にはアスタリスク (*)、除算にはスラッシュ記号 (/) を使用します。
 
 4. タイマーの <xref:System.Windows.Forms.Timer.Tick> イベント ハンドラーの最後の部分を、残り時間がなくなったら正しい解答を表示するように変更します。
 
@@ -64,6 +64,6 @@ ms.locfileid: "72314222"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「 **[手順 8:クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)** 」を参照してください。
+- チュートリアルの次の手順に進むには、「 **[手順 8:クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)** 」をご覧ください。
 
 - チュートリアルの前の手順に戻るには、「[手順 6:減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。
