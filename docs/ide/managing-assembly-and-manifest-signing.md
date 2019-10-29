@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461497"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748870"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>アセンブリおよびマニフェストへの署名の管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "68461497"
 
 Visual Basic プロジェクトと C# プロジェクトのアセンブリへの署名については、「[厳密な名前付きアセンブリの作成と使用](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)」を参照してください。
 
-Visual C++ プロジェクトのアセンブリへの署名については、[厳密名アセンブリ (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli) に関する記事を参照してください。
+C++ プロジェクトのアセンブリへの署名については、「[厳密名アセンブリ (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)」を参照してください。
 
 > [!NOTE]
 > 厳密な名前の署名は、アセンブリのリバース エンジニアリングに対して保護されません。 リバース エンジニアリングに対して保護する方法については、「[Dotfuscator Community](dotfuscator/index.md)」を参照してください。

@@ -1,5 +1,5 @@
 ---
-title: クラス デザイナーの Visual C++ クラス
+title: クラス デザイナーの C++ クラス
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748924"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>クラス デザイナーの Visual C++ クラス
+# <a name="c-classes-in-class-designer"></a>クラス デザイナーの C++ クラス
 
 **クラス デザイナー**は、C++ クラスをサポートし、Visual Basic および C# クラスの図形と同じ方法でネイティブの C++ クラスを視覚化します。ただし、C++ クラスは複数の継承関係を持つことができる点が異なります。 クラスの図形を展開して、表示されるクラスのフィールドとメソッドを増やしたり、図形を折りたたんでスペースを節約したりすることができます。
 
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、**[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。A: 
+また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、 **[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。A:
 
 ## <a name="multiple-inheritance"></a>多重継承
 
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
 クラスの図形を右クリックして **[基底クラスの表示]** をクリックすると、選択したクラスの基底クラスが表示されます。
 
 > [!NOTE]
-> **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、**[クラス ビュー]** に移動し、型ノード、**[派生型]** サブフォルダーの順に展開して、これらの型をクラス ダイアグラムにドラッグすることで表示できます。
+> **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、 **[クラス ビュー]** に移動し、型ノード、 **[派生型]** サブフォルダーの順に展開して、これらの型をクラス ダイアグラムにドラッグすることで表示できます。
 
 複数クラスの継承の詳細については、「[Multiple Inheritance](https://msdn.microsoft.com/library/6td5yws2.aspx)」 (多重継承) と「[Multiple Base Classes](/cpp/cpp/multiple-base-classes)」 (複数の基底クラス) を参照してください。
 
@@ -91,7 +91,7 @@ class Swimmer
 };
 ```
 
-これらの宣言をクラス ダイアグラムで表示すると、クラス名の `Swimmer` とその純粋仮想関数である `swim` は、抽象クラスの図形で、**[抽象クラス]** の表記とともに斜体で表示されます。 抽象クラス型の図形は、枠線が点線である点を除いて、通常のクラスと同じです。
+これらの宣言をクラス ダイアグラムで表示すると、クラス名の `Swimmer` とその純粋仮想関数である `swim` は、抽象クラスの図形で、 **[抽象クラス]** の表記とともに斜体で表示されます。 抽象クラス型の図形は、枠線が点線である点を除いて、通常のクラスと同じです。
 
 抽象基底クラスからの派生クラスは、基底クラスの各純粋仮想関数をオーバーライドする必要があります。オーバーライドしない場合、派生クラスをインスタンス化できません。 そのため、たとえば、`Fish` クラスを `Swimmer` クラスから派生させた場合、`Fish` は `swim` メソッドをオーバーライドする必要があります。
 
@@ -156,14 +156,14 @@ typedef struct
 |コード要素|クラス デザイナー ビュー|
 |------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|
-|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> テンプレート クラス<br /><br /> `B<T2>`<br /><br /> テンプレート クラス<br /><br /> (B は、**[入れ子にされた型]** の下のクラス A の中に含まれます)|
+|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> テンプレート クラス<br /><br /> `B<T2>`<br /><br /> テンプレート クラス<br /><br /> (B は、 **[入れ子にされた型]** の下のクラス A の中に含まれます)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> クラス<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> テンプレート クラス|
 
 次の表は、テンプレート継承の例です。
 
 |コード要素|クラス デザイナー ビュー|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> クラス<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> クラス<br /><br /> (B は、**[入れ子にされた型]** の下のクラス C の中に含まれます)<br /><br /> `C<T>`<br /><br /> テンプレート クラス|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> クラス<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> クラス<br /><br /> (B は、 **[入れ子にされた型]** の下のクラス C の中に含まれます)<br /><br /> `C<T>`<br /><br /> テンプレート クラス|
 
 次の表は、標準特殊クラス接続の例です。
 
@@ -174,7 +174,7 @@ typedef struct
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual C++ コードの使用](working-with-visual-cpp-code.md)
+- [C++ のコードを操作する](working-with-visual-cpp-code.md)
 - [クラスと構造体](/cpp/cpp/classes-and-structs-cpp)
 - [匿名クラス型](/cpp/cpp/anonymous-class-types)
 - [多重継承](https://msdn.microsoft.com/library/6td5yws2.aspx)

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381073"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516323"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -229,9 +229,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 >
 
 ::: moniker range="vs-2019"
-
-> オフライン インストールで、"A project matching the following parameters cannot be found" (次のパラメーターに一致するプロジェクトが見つかりません) というエラー メッセージが表示される場合は、バージョン 16.3.5 以降で --noweb スイッチを使用していることを確認してください。
-
+> [!IMPORTANT]
+> オフライン インストールで、"次のパラメーターと一致する製品が見つかりません" というエラー メッセージが表示される場合は、バージョン 16.3.5 以降で `--noweb` スイッチを使用していることを確認します。
+>
 ::: moniker-end
 
 レイアウトからインストールする場合、インストールされる内容はレイアウトから取得されます。 ただし、レイアウトに含まれないコンポーネントを選択した場合は、インターネットから取得されます。  Visual Studio のセットアップでレイアウトにない内容がダウンロードされないようにするには、`--noWeb` オプションを使用します。 `--noWeb` が使用されていて、インストール対象として選択されている内容がレイアウトにない場合、セットアップは失敗します。

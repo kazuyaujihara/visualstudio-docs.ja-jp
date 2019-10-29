@@ -1,7 +1,7 @@
 ---
 title: プロジェクトの移植、移行、およびアップグレード
-description: 以前のバージョンの Visual Studio で作成されたプロジェクトに対する Visual Studio 2017 でのサポートと、Visual Studio がプロジェクトを移行する必要があるタイミングを決定する方法のリファレンス。
-ms.date: 04/16/2019
+description: 現在および以前のバージョンの Visual Studio で作成されたプロジェクトのサポートに関するリファレンス。
+ms.date: 10/17/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 97eaada072a4ff0038ae7b57810b0d3318df1035
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 139eb491304e1c83c579919781a6cd24bdf6e1eb
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314167"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777825"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
 ::: moniker range="vs-2017"
 
-通常、新しいバージョンの Visual Studio はいずれも、以前の種類のプロジェクト、ファイル、その他のアセットに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が一般に試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releasenotes/vs2017-relnotes/)を参照してください。)
+通常、各バージョンの Visual Studio は、以前の種類のプロジェクト、ファイル、その他のアセットのほとんどに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releasenotes/vs2017-relnotes/)を参照してください。)
 
 一部の種類のプロジェクトに対するサポートは、今後変更される場合もあります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がないプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio Developer Community のサイト](https://developercommunity.visualstudio.com)を参照してください。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72314167"
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
-| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。<br/><br/>Visual Studio 2017:xproj 形式は、csproj 形式への移行以外ではサポートされていません。 xproj ファイルを開くと、SDK スタイルの csproj 形式にファイルを移行するように求められます。 (xproj ファイルのバックアップが作成されます。)SDK スタイルの csproj プロジェクトは、Visual Studio 2015 以前ではサポートされません。 <br/><br/>Visual Studio 2019:バージョン 16.3 以降では、xproj プロジェクトの読み込みまたは移行を実行できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
+| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。 Visual Studio 2017 では、xproj 形式は csproj 形式への移行以外ではサポートされていません。 xproj ファイルを開くと、SDK スタイルの csproj 形式にファイルを移行するように求められます。 (xproj ファイルのバックアップが作成されます。)SDK スタイルの csproj プロジェクトは、Visual Studio 2015 以前ではサポートされません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
 | ASP.NET Web アプリケーションと ASP.NET Core Web アプリケーション (Application Insights が有効) | Visual Studio のユーザーごとのリソース情報がユーザー インスタンス別にレジストリに保存されます。 この情報は、プロジェクトを開いていない状態で Azure Application Insights データを検索するときに利用されます。 Visual Studio 2015 では、Visual Studio 2017 とは異なるレジストリの場所が使用され、競合しません。<br/><br/>ユーザーが ASP.NET Web アプリケーションまたは ASP.NET Core Web アプリケーションを作成すると、リソースは .suo ファイルに保存されます。 ユーザーは Visual Studio 2015 や 2017 でプロジェクトを開くことができます。両方のバージョンで使用されているプロジェクトとソリューションが Visual Studio でサポートされている限り、両方でリソース情報が使用されます。 ユーザーは製品ごとに 1 回認証する必要があります。 たとえば、Visual Studio 2015 で作成されたプロジェクトを Visual Studio 2017 で開く場合、Visual Studio 2017 で認証が要求されます。 |
 | C#/Visual Basic Webform または Windows フォーム | プロジェクトを Visual Studio 2017 と Visual Studio 2015 で開くことができます。 |
 | データベース単体テスト プロジェクト (csproj、.vbproj) | 古いデータ単体テスト プロジェクトは Visual Studio 2017 で読み込まれますが、依存関係は GAC に保存されているものが使用されます。 単体テスト プロジェクトをアップグレードし、最新の依存関係を使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[SQL Server 単体テスト プロジェクトに変換する]** を選択します。 |
@@ -72,7 +72,7 @@ ms.locfileid: "72314167"
 | Visual Studio Tools for Apache Cordova | プロジェクトは Visual Studio 2017 で開くことができますが、下位互換性はありません。 Visual Studio 2015 からプロジェクトを開くと、プロジェクトを変更するように求められます。 この変更により、`taco.json` ファイルの代わりにツールセットを利用し、Cordova ライブラリのバージョン、そのプラットフォームとプラグイン、そのノード/npm 依存関係を管理するようにプロジェクトがアップグレードされます。 詳細については、[移行ガイド](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)を参照してください。 |
 | Web 配置 (wdproj) | 発行プロファイルのサポートが追加されたことで、Visual Studio 2012 では Web 配置プロジェクトのサポートが削除されました。 Visual Studio 2017 には等価なものがないため、そのようなプロジェクトの自動移行パスはありません。 そこで、[StackOverflow](https://stackoverflow.com/a/12061065/1203388) に説明されているように、テキスト エディターで wdproj ファイルを開き、pubxml (発行プロファイル) ファイルに任意のカスタマイズをコピーおよび貼り付けます。 |
 | Windows Communication Foundation、Windows Workflow Foundation | このプロジェクトは、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 で開くことができます。 |
-| Windows Presentation Foundation | このプロジェクトは、Visual Studio 2013、Visual Studio 2012、Visual Studio 2010 SP1 で開くことができます。 |
+| Windows Presentation Foundation | このプロジェクトは、Visual Studio 2017、Visual Studio 2013、Visual Studio 2012、Visual Studio 2010 SP1 で開くことができます。 |
 | Windows ストア/フォン アプリ | Visual Studio 2017 では、Windows Store 8.1 と 8.0 または Windows Phone 8.1 と 8.0 のプロジェクトはサポートされていません。 これらのアプリを維持するには、引き続き Visual Studio 2015 を使用してください。 Windows Phone 7.x プロジェクトを維持するには、Visual Studio 2012 を使用してください。 |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio がプロジェクトを移行するタイミングを決定する方法
@@ -112,11 +112,11 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 ::: moniker range="vs-2019"
 
-通常、新しいバージョンの Visual Studio はいずれも、以前の種類のプロジェクト、ファイル、その他のアセットに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が一般に試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。)
+通常、新しいバージョンの Visual Studio はいずれも、以前の種類のプロジェクト、ファイル、その他のアセットに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。)
 
-一部の種類のプロジェクトに対するサポートは、今後変更される場合もあります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。
+一部の種類のプロジェクトに対するサポートは、今後変更される場合があります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。
 
-この記事では、Visual Studio 2019 の移行が可能なプロジェクト タイプに対する詳細を提供しています。 また、Visual Studio 2019 で非推奨となった、または近いうちに非推奨となるプロジェクト タイプに関する詳細も提供します。 この記事では、Visual Studio 2019 でサポートされなくなったことで移行できないプロジェクト タイプは除外されています。 また、移行に関する問題がないサポート対象のプロジェクト タイプ ([対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページでその一覧を確認できます) もこの記事では除外されています。
+この記事では、Visual Studio 2019 の移行が可能なプロジェクト タイプに対する詳細を提供しています。 また、Visual Studio 2019 で非推奨となった、または近いうちに非推奨となるプロジェクト タイプに関する情報も含まれます。 この記事では、Visual Studio 2019 でサポートされなくなったことで移行できないプロジェクト タイプは除外されています。 また、移行に関する問題がないサポート対象のプロジェクト タイプ ([対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関するページでその一覧を確認できます) もこの記事では除外されています。
 
 > [!IMPORTANT]
 > 特定のプロジェクト タイプでは、Visual Studio インストーラーを通じて特定のワークロードをインストールする必要があります。 ワークロードがインストールされていない場合、Visual Studio は不明な、または互換性のないプロジェクトの種類を報告します。 その場合、インストール オプションを確認して、やり直してください。 Visual Studio 2019 でサポートされているプロジェクトの詳細について、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事をご覧ください。
@@ -125,11 +125,11 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 次の一覧は、Visual Studio 2019 より前のバージョンで作成されたプロジェクトに対する Visual Studio 2019 でのサポートをまとめたものです。
 
-一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2017 バージョン](port-migrate-and-upgrade-visual-studio-projects.md)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
+表示されるはずのプロジェクトまたはファイルの種類が見つからない場合、[この記事の Visual Studio 2017 バージョン](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)を調べてください。 このページの下部にある **[次のフィードバックを送信]**  >  **[このページ]** ボタンを使用して、プロジェクトの詳細を提供することもできます。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
-| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。 Visual Studio 2019 で .xproj ファイルを開くと、ファイルを .csproj 形式に移行するように求められます (.xproj ファイルのバックアップが作成されます)。 .NET Core プロジェクトのこの .csproj 形式は、Visual Studio 2015 以前のバージョンではサポートされていません。  xproj 形式は csproj に移行しなければ Visual Studio 2017 以降で利用できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
+| .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。<br/><br/>Visual Studio 2017:xproj 形式は、csproj 形式への移行以外ではサポートされていません。 xproj ファイルを開くと、SDK スタイルの csproj 形式にファイルを移行するように求められます。 (xproj ファイルのバックアップが作成されます。)SDK スタイルの csproj プロジェクトは、Visual Studio 2015 以前ではサポートされません。 <br/><br/>Visual Studio 2019:バージョン 16.3 以降では、xproj プロジェクトの読み込みまたは移行を実行できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
 | ASP.NET Web アプリケーションと ASP.NET Core Web アプリケーション (Application Insights が有効) | Visual Studio のユーザーごとのリソース情報がユーザー インスタンス別にレジストリに保存されます。 この情報は、プロジェクトを開いていない状態で Azure Application Insights データを検索するときに利用されます。 Visual Studio 2015 では、Visual Studio 2017 および Visual Studio 2019 とは異なるレジストリの場所が使用され、競合しません。<br/><br/>ユーザーが ASP.NET Web アプリケーションまたは ASP.NET Core Web アプリケーションを作成すると、リソースは .suo ファイルに保存されます。 ユーザーは Visual Studio 2015、Visual Studio 2017、または Visual Studio 2019 でプロジェクトを開くことができます。両方のバージョンで使用されているプロジェクトとソリューションが Visual Studio でサポートされている限り、それぞれでリソース情報が使用されます。 ユーザーは製品ごとに 1 回認証する必要があります。 たとえば、Visual Studio 2017 で作成されたプロジェクトを Visual Studio 2019 で開く場合、Visual Studio 2019 で認証が要求されます。 |
 | C#/Visual Basic Webform または Windows フォーム | プロジェクトは、Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 で開くことができます。 |
 | コード化された UI テスト | UI 駆動型機能テストの自動化のためにコード化された UI テストは、Visual Studio 2019 では非推奨になりました。 <br/><br/>Visual Studio 2019 は、コード化された UI テストの最後のリリースとなります。 Web アプリのテストには Selenium を使用し、デスクトップと UWP アプリのテストには Appium と WinAppDriver を一緒に使用することをお勧めします。 |
@@ -162,7 +162,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 | Visual Studio Tools for Apache Cordova | Apache Cordova のサポートは、Visual Studio 2019 で削除されました。 Visual Studio 2019 には等価なものがないため、そのようなプロジェクトの自動移行パスはありません。<br/><br/>Cordova Tools for Visual Studio Code 拡張機能 (Cordova の最新バージョンのサポートを提供) を使用することも、Visual Studio 2017 を引き続き使用することもできます。 |
 | Web 配置 (wdproj) | 発行プロファイルのサポートが追加されたことで、Visual Studio 2012 では Web 配置プロジェクトのサポートが削除されました。 Visual Studio 2019 には等価なものがないため、そのようなプロジェクトの自動移行パスはありません。 そこで、[StackOverflow](https://stackoverflow.com/a/12061065/1203388) に説明されているように、テキスト エディターで wdproj ファイルを開き、pubxml (発行プロファイル) ファイルに任意のカスタマイズをコピーおよび貼り付けます。 |
 | Windows Communication Foundation、Windows Workflow Foundation | このプロジェクトは、Visual Studio 2019、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 で開くことができます。 |
-| Windows Presentation Foundation | このプロジェクトは、Visual Studio 2017、Visual Studio 2013、Visual Studio 2012、Visual Studio 2010 SP1 で開くことができます。 |
+| Windows Presentation Foundation | このプロジェクトは、Visual Studio 2019、Visual Studio 2017、Visual Studio 2013、Visual Studio 2012、Visual Studio 2010 SP1 で開くことができます。 |
 | Windows Phone アプリ | Windows Phone のプロジェクトは、Visual Studio 2019 ではサポートされていません。 <br/><br/>Windows Phone 8.x アプリを維持するには、Visual Studio 2015 を使用してください。 Windows Phone 7.x プロジェクトを維持するには、Visual Studio 2012 を使用してください。 |
 | Windows ストア アプリ | JavaScript ユニバーサル Windows プロジェクトは、Visual Studio 2019 ではサポートされていません。 これらのプロジェクトを維持するには、Visual Studio 2017 を使用してください。 <br/><br/>Windows 10 Fall Creators Update (ビルド 16299) より前の Windows 10 SDK は、Visual Studio 2019 インストーラーから削除されました。 古い SDK を手動でダウンロードすることも、新しい SDK を使用するようにプロジェクトを再ターゲットすることもできます。<br/><br/>project.json を使用しているユニバーサル Windows プロジェクトはサポートされていません。 パッケージ参照を使用するようにこれらのプロジェクトをアップグレードすることをお勧めします。 または、project.json ファイルで Microsoft.NET.Test.Sdk バージョン 16.0.0.0 への参照を追加します。<br/><br/>Windows Phone 8.1 および 8.0 のプロジェクトは、Visual Studio 2019 ではサポートされていません。 これらのアプリを維持するには、引き続き Visual Studio 2015 を使用してください。 |
 | Xamarin | Visual Studio および Visual Studio for Mac の Xamarin Live Player 拡張機能は削除されました。 これにより、ペアリングの画面とすべての統合が削除されます。 代わりに、Xamarin.Forms Previewer でビルドを使用してください。<br/><br/>Visual Studio Emulator for Android は、Visual Studio インストーラーから削除されました。 代わりに、Google Android エミュレーターで新しい HYPER-V サポートを使用してください。 |

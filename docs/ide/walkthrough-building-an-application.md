@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416890"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647170"
 ---
 # <a name="walkthrough-build-an-application"></a>チュートリアル: アプリケーションを構築する
 
@@ -65,7 +65,7 @@ ms.locfileid: "68416890"
 
 ### <a name="build-the-solution"></a>ソリューションをビルドする
 
-- メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
+- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、**Ctrl** + **Shift** + **B** キーを押します。
 
     **[出力]** ウィンドウに、ビルドの結果が表示されます。 ビルドに成功しました。
 
@@ -129,7 +129,7 @@ ms.locfileid: "68416890"
 
    ![出力ウィンドウ、Visual Basic ビルド警告](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   詳細については、「[方法 :コンパイラ警告の非表示](../ide/how-to-suppress-compiler-warnings.md)」を参照してください。
+   詳細については、[コンパイラ警告の非表示](../ide/how-to-suppress-compiler-warnings.md)」を参照してください。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>出力ウィンドウに追加のビルド詳細を表示する
 
@@ -161,13 +161,13 @@ ms.locfileid: "68416890"
     > [!TIP]
     > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、 **[出力]** ウィンドウの内容を検索できます。
 
-詳細については、「[方法 :ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
+詳細については、[ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
 ## <a name="create-a-release-build"></a>リリース ビルドを作成する
 
 出荷用に最適化されたバージョンとしてサンプル アプリケーションをビルドすることができます。 リリース ビルドでは、ビルドの開始前に実行可能ファイルをネットワーク共有にコピーすることを指定します。
 
-詳細については、「[方法 :ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)」と「[Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)」を参照してください。
+詳細については、[ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)」と「[Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)」を参照してください。
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Visual Basic 用にリリース ビルドを指定する
 

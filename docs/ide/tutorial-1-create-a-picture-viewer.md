@@ -1,6 +1,6 @@
 ---
 title: 'チュートリアル 1: ピクチャ ビューアーの作成'
-ms.date: 08/30/2019
+ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,19 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118666"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516623"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>チュートリアル 1: ピクチャ ビューアーの作成
 
 このチュートリアルでは、ピクチャをファイルから読み込んでウィンドウに表示するアプリを作成します。 **Windows フォーム デザイナー**を使用してボタンやピクチャ ボックスなどのコントロールをフォームにドラッグする方法、それらのプロパティを設定する方法、およびコンテナーを使用してフォームのサイズを滑らかに変更する方法を習得できます。 また、コードの記述の基本事項についても学習します。
 
 > [!NOTE]
-> このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
+> このチュートリアルでは、C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
 
 このチュートリアルでは、次のタスクについて説明します。
 
@@ -59,6 +59,8 @@ ms.locfileid: "71118666"
 |[手順 9:レビュー、コメントの追加、およびコードのテスト](../ide/step-9-review-comment-and-test-your-code.md)|コードのレビューとテストを行います。 必要に応じてコメントを追加します。|
 |[手順 10:その他のボタンおよびチェック ボックスに対するコードの記述](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|他のボタンやチェック ボックスを使用できるようにするために、IntelliSense を使用してコードを記述します。|
 |[手順 11:アプリを実行して他の機能を試す](../ide/step-11-run-your-program-and-try-other-features.md)|アプリを実行して背景色を設定します。 色、フォント、および境界線の変更など、その他の機能を試します。|
+
+無料で利用できる便利なビデオ学習リソースもあります。 C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎:入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

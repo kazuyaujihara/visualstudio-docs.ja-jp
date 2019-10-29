@@ -13,19 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a670ec4b5b6689c68820b37b20a4e1a942dc3bd
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289606"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621552"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>手順 3: 各ラベルへのランダムなアイコンの割り当て
+
 ゲームで毎回、同じアイコンが同じセルに表示されていたのでは、やりがいがありません。 これを避けるには、`AssignIconsToSquares()` メソッドを使用して、フォームのラベル コントロールにアイコンをランダムに割り当てます。
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>各ラベルにランダムなアイコンを割り当てるには
 
-1. 次のコードを追加する前に、メソッドのしくみについて検討します。 新しいキーワード `foreach` (Visual C# の場合) および `For Each` (Visual Basic の場合) があります (1 つの行は意図的にコメント アウトされています。これについてはこの手順の最後に説明します)。
+1. 次のコードを追加する前に、メソッドのしくみについて検討します。 新しいキーワード `foreach` (C# の場合) および `For Each` (Visual Basic の場合) があります。 (1 つの行は意図的にコメント アウトされています。これについてはこの手順の最後に説明します)。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
@@ -33,9 +34,9 @@ ms.locfileid: "72289606"
       > [!IMPORTANT]
       > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
 
-2. 前の手順で示されているように、`AssignIconsToSquares()` メソッドを追加します。 このメソッドを、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」で追加したコードのすぐ下に配置できます。
+2. 前の手順で示されているように、`AssignIconsToSquares()` メソッドを追加します。 このメソッドを、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」をご覧ください。
 
-     前に説明したように、`AssignIconsToSquares()` メソッドに新しいものが含まれています。つまり、`foreach` ループ (Visual C# の場合) および `For Each` (Visual Basic の場合) です。 `For Each` ループは、同じ処理を繰り返し実行する必要がある場合にいつでも使用できます。 ここでは、次のコードで説明されているように、<xref:System.Windows.Forms.TableLayoutPanel> のラベルごとに同じステートメントを実行する必要があります。 最初の行では、`control` という名前の変数を作成し、その変数に一度に 1 つずつコントロールを格納して、そのコントロールに対してループ内のステートメントを実行します。
+     前に説明したように、`AssignIconsToSquares()` メソッドに新しいものが含まれています。つまり、`foreach` ループ (C# の場合) および `For Each` (Visual Basic の場合) です。 `For Each` ループは、同じ処理を繰り返し実行する必要がある場合にいつでも使用できます。 ここでは、次のコードで説明されているように、<xref:System.Windows.Forms.TableLayoutPanel> のラベルごとに同じステートメントを実行する必要があります。 最初の行では、`control` という名前の変数を作成し、その変数に一度に 1 つずつコントロールを格納して、そのコントロールに対してループ内のステートメントを実行します。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
@@ -54,7 +55,7 @@ ms.locfileid: "72289606"
 
      コード内にわからない部分があれば、コード要素の上にマウス ポインターを合わせると、関連するヒントが表示されます。 Visual Studio デバッガーを使用して、プログラムの実行中にコードの各行をステップ実行することもできます。 詳しくは、「[How Do I:Step with The Debugger in Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx)」 (操作方法: Visual Studio のデバッガーでステップ実行する) または「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」をご覧ください。
 
-3. ゲーム ボードをアイコンで埋めるには、プログラムが起動したらすぐに `AssignIconsToSquares()` メソッドを呼び出す必要があります。 Visual C# を使用している場合は、**Form1**_constructor_ の `InitializeComponent()` メソッドの呼び出しのすぐ下にステートメントを追加し、フォームが新しいメソッドを呼び出してフォーム自体の設定後に表示されるようにします。 新しいオブジェクト (クラスや構造体など) を作成するときは、コンストラクターを呼び出します。 詳しくは、「[コンストラクター (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)」または「[コンストラクターとデストラクターの使用方法](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))」(Visual Basic の場合) をご覧ください。
+3. ゲーム ボードをアイコンで埋めるには、プログラムが起動したらすぐに `AssignIconsToSquares()` メソッドを呼び出す必要があります。 C# を使用している場合は、**Form1**_constructor_ の `InitializeComponent()` メソッドの呼び出しのすぐ下にステートメントを追加し、フォームが新しいメソッドを呼び出してフォーム自体の設定後に表示されるようにします。 新しいオブジェクト (クラスや構造体など) を作成するときは、コンストラクターを呼び出します。 詳しくは、「[コンストラクター (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)」または「[コンストラクターとデストラクターの使用方法](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))」(Visual Basic の場合) をご覧ください。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -70,7 +71,8 @@ ms.locfileid: "72289606"
 
 5. いったんプログラムを終了して、再び実行します。 次の図に示すように、各ラベルに別のアイコンが割り当てられています。
 
-     ![ランダムなアイコンが表示された [マッチング ゲーム]](../ide/media/express_tut4step3.png) ランダムなアイコンが表示された [マッチング ゲーム]
+     ![ランダムなアイコンが表示された絵合わせゲーム](../ide/media/express_tut4step3.png)<br/>
+*ランダムなアイコンが表示された絵合わせゲーム*
 
      アイコンは、まだ非表示に設定されていないため、表示されています。 アイコンをプレーヤーに非表示にするには、各ラベルの **ForeColor** プロパティをその **BackColor** プロパティと同じ色に設定できます。
 
@@ -86,6 +88,6 @@ ms.locfileid: "72289606"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 4:各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)」をご覧ください。
+- チュートリアルの次の手順に進むには、「 **[手順 4:各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)** 」をご覧ください。
 
 - チュートリアルの前の手順に戻るには、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」をご覧ください。

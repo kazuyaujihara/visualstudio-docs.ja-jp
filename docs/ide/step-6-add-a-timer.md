@@ -13,22 +13,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289640"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647500"
 ---
 # <a name="step-6-add-a-timer"></a>手順 6: タイマーの追加
 次に、絵合わせゲームに <xref:System.Windows.Forms.Timer> コントロールを追加します。 タイマーは、指定されたミリ秒間待機してから、*ティック*と呼ばれるイベントを発生させます。 タイマーは、アクションを開始したり定期的に繰り返したりする場合に便利です。 ここではタイマーの使用例として、プレーヤーが 2 つのアイコンを選択し、アイコンが一致しない場合は、短時間の経過後にその 2 つのアイコンが再び非表示になるようにします。
 
 ## <a name="to-add-a-timer"></a>タイマーを追加するには
 
-1. **Windows フォーム デザイナー**のツール ボックスから、( **[コンポーネント]** カテゴリ内の) **[タイマー]** を選択して **Enter** キーを押すか、タイマーをダブルクリックして、タイマー コントロールをフォームに追加します。 次の図に示しているように、タイマーのアイコンが **[Timer1]** という名前で、フォームの下の領域に表示されます。
+1. **Windows フォーム デザイナー**のツール ボックスから、( **[コンポーネント]** カテゴリ内の) **[タイマー]** を選択して **Enter** キーを押すか、タイマーをダブルクリックして、タイマー コントロールをフォームに追加します。 次の図で示されているように、タイマーのアイコンが **[Timer1]** という名前で、フォームの下の領域に表示されます。
 
      ![タイマー](../ide/media/express_timer.png)<br/>
-**タイマー**
+***タイマー***
 
     > [!NOTE]
     > ツール ボックスが空の場合は、フォームのコードではなくフォーム デザイナーを選択してから、ツール ボックスを開いてください。
@@ -43,7 +43,7 @@ ms.locfileid: "72289640"
       > [!IMPORTANT]
       > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
 
-     Tick イベント ハンドラーは、3 つのことを実行します。まず、<xref:System.Windows.Forms.Timer.Stop> メソッドを呼び出してタイマーを停止します。 次に、2 つの参照変数 `firstClicked` および `secondClicked` を使用して、プレーヤーがクリックした 2 つのラベルを再び非表示にします。 最後に、`firstClicked` 参照変数と `secondClicked` 参照変数を `null` (Visual C# の場合) または `Nothing` (Visual Basic の場合) にリセットします。 この手順は、プログラム自体がリセットされるしくみであるため重要です。 この時点では、<xref:System.Windows.Forms.Label> コントロールが追跡されておらず、プレーヤーはラベルを再びクリックできる状態になっています。
+     Tick イベント ハンドラーは、3 つのことを実行します。まず、<xref:System.Windows.Forms.Timer.Stop> メソッドを呼び出してタイマーを停止します。 次に、2 つの参照変数 `firstClicked` および `secondClicked` を使用して、プレーヤーがクリックした 2 つのラベルを再び非表示にします。 最後に、`firstClicked` 参照変数と `secondClicked` 参照変数を `null` (C# の場合) または `Nothing` (Visual Basic の場合) にリセットします。 この手順は、プログラム自体がリセットされるしくみであるため重要です。 この時点では、<xref:System.Windows.Forms.Label> コントロールが追跡されておらず、プレーヤーはラベルを再びクリックできる状態になっています。
 
     > [!NOTE]
     > Timer オブジェクトには、タイマーを開始する `Start()` メソッドと、タイマーを停止する `Stop()` メソッドがあります。 **[プロパティ]** ウィンドウでタイマーの **[Enabled]** プロパティを **[True]** に設定した場合、タイマーはプログラムが起動するとすぐに時間を刻み始めます。 一方、 **[False]** に設定したままにした場合、その `Start()` メソッドが呼び出されるまでは時間の刻みは始まりません。 通常、タイマーは、**Interval** プロパティを使用して、次に時間を刻むまでに待機するミリ秒数を判断し、その Tick イベントを繰り返し発生させます。 ここでは、タイマーの `Stop()` メソッドが Tick イベント内で呼び出されるしくみになっています。 これにより、タイマーが*ワン ショット モード*になります。つまり、`Start()` メソッドが呼び出されると、タイマーは指定された間隔分の時間を待機し、Tick イベントを 1 回発生させた後に、停止するようになります。
@@ -63,6 +63,6 @@ ms.locfileid: "72289640"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 7:ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」をご覧ください。
+- チュートリアルの次の手順に進むには、「 **[手順 7:ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)** 」をご覧ください。
 
 - チュートリアルの前の手順に戻るには、「[手順 5:ラベルの参照の追加](../ide/step-5-add-label-references.md)」をご覧ください。

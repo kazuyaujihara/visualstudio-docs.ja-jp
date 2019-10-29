@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119019"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516700"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>手順 1: Windows フォーム アプリ プロジェクトを作成する
 
@@ -50,7 +50,7 @@ ms.locfileid: "71119019"
 
    **[プロジェクトの種類]** フィルターを適用したら、C# または Visual Basic の **[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、 **[次へ]** を選択します。
 
-   ![Windows フォーム アプリ (.NET Framework) 用の C# テンプレートを選択する](./media/create-new-project-search-winforms-filtered.png)
+   ![Windows フォーム アプリ (.NET Framework) 用の C# または Visual Basic テンプレートを選択する](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > **[Windows フォーム アプリ (.NET Framework)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからインストールできます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
