@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 4b505b1a8669c0eff14e7afcdb88275cd1502f95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38082d854a6c817503d2765c48c5b08c0bd2a5b3
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581245"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888535"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>R Tools for Visual Studio のインストール方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "62581245"
 
 ## <a name="supported-versions-of-visual-studio"></a>サポートされている Visual Studio のバージョン
 
-Windows では R Tools for Visual Studio (RTVS) は、[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) および [Visual Studio 2015 Update 3 (以降)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接ダウンロード) の両方の Community (無料)、Professional、Enterprise の各エディションでサポートされています。
+Windows では R Tools for Visual Studio (RTVS) は、[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) および [Visual Studio 2015 Update 3 (以降)](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) (直接ダウンロード) の両方の Community (無料)、Professional、Enterprise の各エディションでサポートされています。
 
 現在、Visual Studio for Mac では RTVS はサポートされていません。
 
@@ -38,15 +38,15 @@ Visual Studio Test Professional や SQL Server Management Studio などの製品
 
 ## <a name="install-rtvs-in-visual-studio-2017"></a>Visual Studio 2017 で RTVS をインストールする
 
-1. Visual Studio インストーラーを実行して、**[変更]** オプションを選びます (詳しくは、[Visual Studio の変更](../install/modify-visual-studio.md)に関するページをご覧ください)。 Visual Studio をまだインストールしていない場合は、[Visual Studio のインストール](../install/install-visual-studio.md)に関するページをご覧ください。 Windows 7 の場合、Visual Studio 2017 バージョン *15.2 ビルド 26430.12* 以降を表示するには、インストーラーを更新する必要があります。
+1. Visual Studio インストーラーを実行して、 **[変更]** オプションを選びます (詳しくは、[Visual Studio の変更](../install/modify-visual-studio.md)に関するページをご覧ください)。 Visual Studio をまだインストールしていない場合は、[Visual Studio のインストール](../install/install-visual-studio.md)に関するページをご覧ください。 Windows 7 の場合、Visual Studio 2017 バージョン *15.2 ビルド 26430.12* 以降を表示するには、インストーラーを更新する必要があります。
 
 1. **[データ サイエンスと分析のアプリケーション]** ワークロードを選択します。
 
     ![VS2017 の [データ サイエンスと分析のアプリケーション] ワークロード](media/installation-data-science-workload.png)
 
-1. 同じワークロード名で、右側にその他のオプションを設定します。 既定では、このワークロードには F# と Python のサポートが含まれていることに注意してください。 R の場合、少なくとも **[R 言語サポート]**、**[R 開発ツールのランタイム サポート]**、および **[Microsoft R クライアント]** を選択する必要があります。
+1. 同じワークロード名で、右側にその他のオプションを設定します。 既定では、このワークロードには F# と Python のサポートが含まれていることに注意してください。 R の場合、少なくとも **[R 言語サポート]** 、 **[R 開発ツールのランタイム サポート]** 、および **[Microsoft R クライアント]** を選択する必要があります。
 
-RTVS は次の場所にインストールされます: *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* ここで *\<version>* は通常、`2017` であり、*\<edition>* は `Community`、`Professional`、または `Enterprise` です。
+RTVS は次の場所にインストールされます: *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* ここで *\<version>* は通常、`2017` であり、 *\<edition>* は `Community`、`Professional`、または `Enterprise` です。
 
 ## <a name="install-rtvs-in-visual-studio-2015"></a>Visual Studio 2015 で RTVS をインストールする
 

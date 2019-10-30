@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998638"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888570"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown ドキュメントの作成
 
@@ -24,7 +24,7 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
 ## <a name="using-r-markdown"></a>R Markdown の使用
 
 1. Visual Studio を閉じます。
-1. (1 回のみ) [pandoc.org](http://pandoc.org/installing.html) の `pandoc` をインストールします。
+1. (1 回のみ) [pandoc.org](https://pandoc.org/installing.html) の `pandoc` をインストールします。
 1. Visual Studio を再起動すると、pandoc のインストールが選択されます。
 1. `knitr` および `rmarkdown` パッケージをインストールします。インストールは、[インタラクティブ ウィンドウ](interactive-repl-for-r-in-visual-studio.md)から実行できます。
 
@@ -34,7 +34,7 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
 
     ```
 
-1. 新しい R Markdown ファイルを作成します。それには、**[ファイル]**、**[新規]**、**[ファイル]** メニュー コマンドの順に移動し、**[R]** を選択し、一覧から **[R Markdown]** を選択します。 プロジェクトのコンテキストで、ソリューション エクスプローラー内のプロジェクトを右クリックし、**[R Markdown を追加]** を選択します (または、**[追加]**、**[新しいアイテム]** の順に移動し、一覧から **[R Markdown]** を選択します)。
+1. 新しい R Markdown ファイルを作成します。それには、 **[ファイル]** 、 **[新規]** 、 **[ファイル]** メニュー コマンドの順に移動し、 **[R]** を選択し、一覧から **[R Markdown]** を選択します。 プロジェクトのコンテキストで、ソリューション エクスプローラー内のプロジェクトを右クリックし、 **[R Markdown を追加]** を選択します (または、 **[追加]** 、 **[新しいアイテム]** の順に移動し、一覧から **[R Markdown]** を選択します)。
 
 1. 新しいファイルの既定の内容は次のとおりです。
 
@@ -64,8 +64,8 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
 
 ## <a name="previews"></a>プレビュー
 
-Visual Studio 2017 バージョン 15.5 以降では、R Markdown のライブ プレビューを自動的に提供します。 エディターとプレビュー間の自動同期を有効にするには、**[R Tools]**、**[Markdown]**、**[自動同期]** の順に選択します (**Ctrl**+**Shift**+**Y**)。 自動同期を使用していない場合は、**[R Tools]**、**[Markdown]**、**[R Markdown プレビューのリロード]** の順に選択し、プレビューを更新できます。
+Visual Studio 2017 バージョン 15.5 以降では、R Markdown のライブ プレビューを自動的に提供します。 エディターとプレビュー間の自動同期を有効にするには、 **[R Tools]** 、 **[Markdown]** 、 **[自動同期]** の順に選択します (**Ctrl**+**Shift**+**Y**)。 自動同期を使用していない場合は、 **[R Tools]** 、 **[Markdown]** 、 **[R Markdown プレビューのリロード]** の順に選択し、プレビューを更新できます。
 
-また、エディター内を右クリックし、**[プレビュー]** コマンドのいずれかを選択すると、ファイルを HTML、PDF、Microsoft Word の形式でプレビューすることもできます。 **[R Tools]** の **[Markdown]** メニューからも同じコマンドが利用できます。 (Visual Studio の以前のバージョンでは、これらのコマンドは **[R Tools]** の **[発行]** メニューにあります)。
+また、エディター内を右クリックし、 **[プレビュー]** コマンドのいずれかを選択すると、ファイルを HTML、PDF、Microsoft Word の形式でプレビューすることもできます。 **[R Tools]** の **[Markdown]** メニューからも同じコマンドが利用できます。 (Visual Studio の以前のバージョンでは、これらのコマンドは **[R Tools]** の **[発行]** メニューにあります)。
 
 ![RMarkdown ライブ プレビューおよびその他のプレビュー メニュー コマンド](media/rmarkdown-live-preview.png)
