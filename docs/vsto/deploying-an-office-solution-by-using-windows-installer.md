@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551720"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986149"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows インストーラーを使用した Office ソリューションの配置
 
@@ -59,15 +59,15 @@ Visual Studio を使用して Windows インストーラーを作成すると、
 
 ClickOnce を使用して Office ソリューションを配置する方法の詳細については、「 [clickonce を使用した office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)」を参照してください。
 
-@No__t_0 を使用して Windows インストーラーファイルを作成する方法の詳細については、「 [Windows インストーラーを使用した Visual Studio 2010 Tools For Office ソリューションの配置](http://go.microsoft.com/fwlink/?LinkId=201807)」を参照してください。
+[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]を使用して Windows インストーラーファイルを作成する方法の詳細については、「 [Windows インストーラーを使用した Visual Studio 2010 Tools For Office ソリューションの配置](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))」を参照してください。
 
 ## <a name="Download"></a>サンプルのダウンロード
 このトピックでは、次のダウンロード可能なサンプルを参照します。
 
 |サンプル<br /><br />|説明<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|32 ビット版または 64 ビット版の Office を実行しているコンピューターにインストールできる Excel VSTO アドイン。<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|32 ビット版または 64 ビット版の Office を実行しているコンピューターにインストールできる Excel ドキュメントレベルのカスタマイズ。<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|32 ビット版または 64 ビット版の Office を実行しているコンピューターにインストールできる Excel VSTO アドイン。<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|32 ビット版または 64 ビット版の Office を実行しているコンピューターにインストールできる Excel ドキュメントレベルのカスタマイズ。<br /><br />|
 
 ## <a name="ApplySecurity"></a>ソリューションに信頼を付与する方法の決定
 ユーザーのコンピューターでソリューションを実行する前に、次の方法のいずれかで信頼を付与する必要があります。そうしない場合は、ユーザーはソリューションをインストールするときに、信頼プロンプトに応答する必要が生じます。
@@ -231,9 +231,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 10. **デスクトップ**フォルダーから、 *Visual Studio 2010 Tools for Office Runtime. prq*ファイルをコンピューター上の次のいずれかのディレクトリにコピーします。
 
-   32ビットオペレーティングシステムの場合: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
+   32ビットオペレーティングシステムの場合: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
 
-   64ビットオペレーティングシステムの場合: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites 条件 \\*
+   64ビットオペレーティングシステムの場合: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites 条件\\*
 
 11. InstallShield プロジェクトの **[Redistributable]** ページで、次の図に示すように、再頒布可能コンポーネントの一覧を更新するために **[Refresh]** をクリックします。
 
@@ -510,4 +510,4 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 - [カスタムドキュメントプロパティの概要](../vsto/custom-document-properties-overview.md)
 - [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)
 - [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)
-- [Windows インストーラーを使用して Visual Studio 2010 Tools for Office ソリューションをデプロイする](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [Windows インストーラーを使用して Visual Studio 2010 Tools for Office ソリューションをデプロイする](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

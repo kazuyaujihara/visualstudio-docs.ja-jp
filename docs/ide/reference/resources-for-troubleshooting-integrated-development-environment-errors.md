@@ -93,12 +93,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655556"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919075"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
 
@@ -119,7 +119,7 @@ ms.locfileid: "72655556"
 
 ## <a name="product-support"></a>製品のサポート
 
-他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](http://go.microsoft.com/fwlink/?linkid=1782) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[Visual Studio フィードバック オプション](../../ide/feedback-options.md)」ページをご覧ください。
+他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](https://support.microsoft.com/en-us) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[Visual Studio フィードバック オプション](../../ide/feedback-options.md)」ページをご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

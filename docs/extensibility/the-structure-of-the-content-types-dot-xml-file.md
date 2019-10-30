@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718720"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983039"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types] .xml ファイルの構造
 VSIX パッケージ内のコンテンツの種類に関する情報を格納します。 Visual Studio では、[Content_Types] .xml ファイルを使用してパッケージをインストールしますが、ファイル自体はインストールしません。
 
 > [!NOTE]
-> このトピックは、VSIX パッケージで使用される [Content_Type] .xml ファイルにのみ適用されますが、[Content_Types] .xml ファイルの種類は、 *Open パッケージング規則 (OPC)* 標準の一部です。 詳細については、MSDN Web サイトの「 [OPC: データをパッケージ化するための新しい標準](http://go.microsoft.com/fwlink/?LinkID=148207)」を参照してください。
+> このトピックは、VSIX パッケージで使用される [Content_Type] .xml ファイルにのみ適用されますが、[Content_Types] .xml ファイルの種類は、 *Open パッケージング規則 (OPC)* 標準の一部です。 詳細については、MSDN Web サイトの「 [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)」を参照してください。
 
 ## <a name="attributes-and-elements"></a>属性および要素
  次のセクションでは、ルート要素とその属性および子要素について説明します。
@@ -48,7 +48,7 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
 | http://schemas.openformats.org/package/2006/content-types | コンテンツタイプスキーマの場所。 |
 
 ### <a name="child-elements"></a>子要素
- @No__t_0 要素には、任意の数の `Default` 要素を含めることができます。
+ `Types` 要素には、任意の数の `Default` 要素を含めることができます。
 
 |要素|説明|
 |-------------|-----------------|
@@ -102,4 +102,4 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
 ## <a name="see-also"></a>関連項目
 - [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)
 - [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: データをパッケージ化するための新しい標準](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)

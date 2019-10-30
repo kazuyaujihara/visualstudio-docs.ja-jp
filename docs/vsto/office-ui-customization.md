@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 15c7061030bec6aebca9cdc63d0cd0e0c79cc9aa
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254140"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985697"
 ---
 # <a name="office-ui-customization"></a>Office UI のカスタマイズ
   Microsoft Office アプリケーションのユーザー インターフェイス (UI) は、Visual Studio の  Office Developer Tools を使用してカスタマイズできます。 以下のトピックでは、カスタマイズできる UI 機能について説明します。
@@ -43,15 +43,15 @@ ms.locfileid: "71254140"
 ## <a name="Comparison"></a>UI 機能の比較
  次の表では、Microsoft Office プロジェクトでカスタマイズできる主な UI 機能を比較します。
 
-|機能|サポートされているプロジェクトの種類|サポートされる Microsoft Office アプリケーション|
+|特性|サポートされているプロジェクトの種類|サポートされる Microsoft Office アプリケーション|
 |-------------|-----------------------------|---------------------------------------------|
 |[操作] ウィンドウ|ドキュメント レベルのカスタマイズ|Excel<br /><br /> 単語|
 |カスタム作業ウィンドウ|VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 単語<br /><br /> Excel|
-|カスタム リボンの UI|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> 単語<br /><br /> Visio|
-|Backstage ビュー|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]。<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> 単語<br /><br /> Visio|
+|カスタム リボンの UI|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> [プロジェクト]<br /><br /> 単語<br /><br /> Visio|
+|Backstage ビュー|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> [プロジェクト]<br /><br /> 単語<br /><br /> Visio|
 |Outlook フォーム領域|VSTO アドイン|Outlook|
 |ドキュメントのコントロール|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> 単語|
-|ショートカット メニュー|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> 単語<br /><br /> Visio<br /><br /> Excel|
+|ショートカット メニュー|ドキュメント レベルのカスタマイズ<br /><br /> VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> [プロジェクト]<br /><br /> 単語<br /><br /> Visio<br /><br /> Excel|
 
 ## <a name="Actions"></a>操作ウィンドウとカスタム作業ウィンドウ
  作業ウィンドウは、通常、Microsoft Office アプリケーションのウィンドウの一辺にドッキングされているユーザー インターフェイス ウィンドウです。 ほぼすべての Microsoft Office アプリケーションには組み込みの作業ウィンドウがあります。 作業ウィンドウの例として、Word のヘルプ作業ウィンドウがあります。
@@ -76,7 +76,7 @@ ms.locfileid: "71254140"
 
  Visual Studio には、Backstage ビューをカスタマイズできるデザイナーや API が用意されていません。 ただし、**リボン (xml)** 項目を Office プロジェクトに追加する場合は、Xml をリボン xml ファイルに追加して、Backstage ビューをカスタマイズできます。 **リボン (xml)** 項目の詳細については、「[リボン xml](../vsto/ribbon-xml.md)」を参照してください。
 
- Backstage ビューのカスタマイズの詳細については、「[開発者向け office 2010 backstage ビューの概要](http://go.microsoft.com/fwlink/?LinkId=182189)」および「[開発者向けの office 2010 Backstage ビューのカスタマイズ](http://go.microsoft.com/fwlink/?LinkId=182188)」を参照してください。
+ Backstage ビューのカスタマイズの詳細については、「[開発者向け office 2010 backstage ビューの概要](/previous-versions/office/developer/office-2010/ee691833(v=office.14))」および「[開発者向けの office 2010 Backstage ビューのカスタマイズ](/previous-versions/office/developer/office-2010/ee815851(v=office.14))」を参照してください。
 
 ## <a name="FormRegion"></a>Outlook フォーム領域
  標準の Microsoft Office Outlook フォームにカスタム機能を追加するには、フォーム領域を使用します。 フィールドまたはコントロールを追加して既存のフォームを拡張するフォーム領域を作成できます。 Visual Studio で Office 開発ツールを使用して新しいフォーム領域を作成する場合、フォーム領域には Windows フォーム コントロールのみを使用できます。 Outlook で設計したフォーム領域をインポートする場合、ネイティブ Outlook コントロールのみを使用できます。
@@ -93,7 +93,7 @@ ms.locfileid: "71254140"
  詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」および「 [Office ドキュメントでの Windows フォームコントロールの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)」を参照してください。
 
 ## <a name="Shortcut"></a>ショートカットメニュー
- ドキュメント ウィンドウやアプリケーション ウィンドウを右クリックすると、ショートカット メニューが表示されます。 ユーザーがドキュメント、ブック、またはホスト コントロールを右クリックするなど、イベントが発生した後に表示されるようにショートカット メニューを設定することができます。 ショートカット メニューには、さまざまなメニュー コマンドやコントロールを追加できます。 ショートカット メニューを作成するには、XML を使用します。 Office プロジェクトに**リボン (xml)** 項目を追加すると、リボン xml ファイルに xml を追加してショートカットメニューを作成できます。 XML を使用してショートカットメニューを作成する方法[の詳細については、「方法:ショートカットメニュー](../vsto/how-to-add-commands-to-shortcut-menus.md)にコマンドを追加します。
+ ドキュメント ウィンドウやアプリケーション ウィンドウを右クリックすると、ショートカット メニューが表示されます。 ユーザーがドキュメント、ブック、またはホスト コントロールを右クリックするなど、イベントが発生した後に表示されるようにショートカット メニューを設定することができます。 ショートカット メニューには、さまざまなメニュー コマンドやコントロールを追加できます。 ショートカット メニューを作成するには、XML を使用します。 Office プロジェクトに**リボン (xml)** 項目を追加すると、リボン xml ファイルに xml を追加してショートカットメニューを作成できます。 XML を使用してショートカットメニューを作成する方法の詳細については、「[方法: ショートカットメニューにコマンドを追加](../vsto/how-to-add-commands-to-shortcut-menus.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
@@ -102,6 +102,6 @@ ms.locfileid: "71254140"
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
 - [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)
 - [Office ソリューションでの WPF コントロールの使用](../vsto/using-wpf-controls-in-office-solutions.md)
-- [方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [方法: リボンに [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
 - [方法: アドインのユーザーインターフェイスエラーを表示する](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [チュートリアル: Windows フォームを使用してデータを収集する](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [チュートリアル: Windows フォームを使用したデータの収集](../vsto/walkthrough-collecting-data-using-a-windows-form.md)

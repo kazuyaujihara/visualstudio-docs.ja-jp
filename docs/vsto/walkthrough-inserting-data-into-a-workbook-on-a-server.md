@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: サーバー上のブックにデータを挿入します。'
+title: 'チュートリアル: サーバー上のブックにデータを挿入する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,116 +16,116 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8d9dcd22ca124ee5ea4002277f91071727a3e9e1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826134"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985424"
 ---
-# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックにデータを挿入します。
-  このチュートリアルを使用して起動することがなく、Microsoft Office Excel ブックにキャッシュされているデータセットにデータを挿入する方法、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラス。
+# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックにデータを挿入する
+  このチュートリアルでは、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> クラスを使用して Excel を起動することなく、Microsoft Office Excel ブックにキャッシュされているデータセットにデータを挿入する方法について説明します。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  このチュートリアルでは、次の作業について説明します。
 
-- AdventureWorksLT データベースからデータを含むデータセットを定義します。
+- AdventureWorksLT データベースのデータを含むデータセットを定義する。
 
-- Excel ブック プロジェクトと、コンソール アプリケーション プロジェクトで、データセットのインスタンスを作成しています。
+- Excel ブックプロジェクトとコンソールアプリケーションプロジェクトでデータセットのインスタンスを作成する。
 
-- 作成、<xref:Microsoft.Office.Tools.Excel.ListObject>ブック内のデータセットにバインドされています。
+- ブック内のデータセットにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> を作成する。
 
-- ブックのデータ キャッシュにデータセットを追加します。
+- ブック内のデータセットをデータキャッシュに追加します。
 
-- 起動することがなく、コンソール アプリケーションでコードを実行して、キャッシュされたデータセットにデータを挿入します。
+- Excel を起動せずに、コンソールアプリケーションでコードを実行して、キャッシュされたデータセットにデータを挿入する。
 
-  このチュートリアルでは、開発用コンピューターに、コードを実行していることを前提としていますが、Excel がインストールされていないサーバーでこのチュートリアルで示されるコードを使用できます。
+  このチュートリアルでは、開発用コンピューターでコードを実行していることを前提としていますが、このチュートリアルで示すコードは、Excel がインストールされていないサーバーで使用できます。
 
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- Microsoft SQL Server または AdventureWorksLT サンプル データベースがアタッチされている Microsoft SQL Server Express の実行中のインスタンスへのアクセス。 AdventureWorksLT データベースをダウンロードすることができます、 [CodePlex web サイト](http://go.microsoft.com/fwlink/?linkid=87843)します。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
+- AdventureWorksLT サンプルデータベースがアタッチされている Microsoft SQL Server または Microsoft SQL Server Express の実行中のインスタンスへのアクセス。 AdventureWorksLT データベースは、 [CodePlex の web サイト](https://archive.codeplex.com/?p=SqlServerSamples)からダウンロードできます。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
 
-  - データベースをアタッチするには、SQL Server Management Studio または SQL Server Management Studio Express を使用して、参照してください。[方法。データベース (SQL Server Management Studio) をアタッチする](/sql/relational-databases/databases/attach-a-database)します。
+  - SQL Server Management Studio または SQL Server Management Studio Express を使用してデータベースをアタッチする方法については、「[データベースをアタッチする方法 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)」を参照してください。
 
-  - コマンドラインを使用してデータベースをアタッチする、次を参照してください。[方法。SQL Server Express データベース ファイルを添付](/previous-versions/sql/)します。
+  - コマンドラインを使用してデータベースをアタッチする方法については、「[方法: SQL Server Express にデータベースファイルをアタッチ](/previous-versions/sql/)する」を参照してください。
 
-## <a name="create-a-class-library-project-that-defines-a-dataset"></a>データセットを定義するクラス ライブラリ プロジェクトを作成します。
- Excel ブック プロジェクトと、コンソール アプリケーションで同じデータセットを使用するには、これらのプロジェクトの両方で参照されている別のアセンブリにデータセットを定義する必要があります。 このチュートリアルでは、クラス ライブラリ プロジェクトで、データセットを定義します。
+## <a name="create-a-class-library-project-that-defines-a-dataset"></a>データセットを定義するクラスライブラリプロジェクトを作成する
+ Excel ブックプロジェクトとコンソールアプリケーションで同じデータセットを使用するには、これらのプロジェクトの両方によって参照される別のアセンブリにデータセットを定義する必要があります。 このチュートリアルでは、クラスライブラリプロジェクトにデータセットを定義します。
 
-### <a name="to-create-the-class-library-project"></a>クラス ライブラリ プロジェクトを作成するには
+### <a name="to-create-the-class-library-project"></a>クラスライブラリプロジェクトを作成するには
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
 2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
-3. 展開テンプレート ペインで**Visual c#** または**Visual Basic**、 をクリックし、 **Windows**します。
+3. [テンプレート] ペインで、 **[ C#ビジュアル**] または **[Visual Basic]** を展開し、 **[Windows]** をクリックします。
 
-4. プロジェクト テンプレートの一覧で選択**クラス ライブラリ**します。
+4. プロジェクトテンプレートの一覧で **[クラスライブラリ]** を選択します。
 
-5. **名前**ボックスに「 **AdventureWorksDataSet**します。
+5. **[名前]** ボックスに「 **AdventureWorksDataSet**」と入力します。
 
-6. をクリックして**参照**に移動し、 *%UserProfile%\My Documents* (for Windows XP 以降) または *%UserProfile%\Documents* (Windows Vista) のフォルダー、および順にクリックします**フォルダーを選択します**します。
+6. **[参照]** をクリックし、 *%UserProfile%\My ドキュメント*(windows XP 以前の場合) または *%UserProfile%\Documents* (windows Vista の場合) フォルダーに移動して、 **[フォルダーの選択]** をクリックします。
 
-7. **新しいプロジェクト** ダイアログ ボックスでは必ず、**ソリューションのディレクトリを作成** チェック ボックスが選択されていません。
+7. **[新しいプロジェクト]** ダイアログボックスで、 **[ソリューションのディレクトリを作成]** する チェックボックスがオフになっていることを確認します。
 
 8. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **AdventureWorksDataSet**プロジェクトを**ソリューション エクスプ ローラー**開くと、 **Class1.cs**または**Class1.vb**コード ファイル。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 **AdventureWorksDataSet**プロジェクトが**ソリューションエクスプローラー**に追加され、 **Class1.cs**または**Class1**コードファイルが開きます。
 
-9. **ソリューション エクスプ ローラー**を右クリックして**Class1.cs**または**Class1.vb**、 をクリックし、**削除**します。 このチュートリアルのこのファイルが不要です。
+9. **ソリューションエクスプローラー**で、 **Class1.cs**または**Class1**を右クリックし、 **[削除]** をクリックします。 このチュートリアルでは、このファイルは必要ありません。
 
-## <a name="define-a-dataset-in-the-class-library-project"></a>クラス ライブラリ プロジェクトでデータセットを定義します。
- SQL Server 2005 用の AdventureWorksLT データベースからデータを含む型指定されたデータセットを定義します。 このチュートリアルの後半では、Excel ブック プロジェクトと、コンソール アプリケーション プロジェクトからこのデータセットを参照します。
+## <a name="define-a-dataset-in-the-class-library-project"></a>クラスライブラリプロジェクトでのデータセットの定義
+ SQL Server 2005 の AdventureWorksLT データベースのデータを含む、型指定されたデータセットを定義します。 このチュートリアルの後半では、Excel ブックプロジェクトとコンソールアプリケーションプロジェクトからこのデータセットを参照します。
 
- データセットが、*型指定された dataset* AdventureWorksLT データベースの Product テーブル内のデータを表します。 型指定されたデータセットの詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)します。
+ データセットは、AdventureWorksLT データベースの Product テーブルのデータを表す、*型指定*されたデータセットです。 型指定されたデータセットの詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」を参照してください。
 
-### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>クラス ライブラリ プロジェクトで指定されたデータセットを定義するには
+### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>クラスライブラリプロジェクトで型指定されたデータセットを定義するには
 
-1. **ソリューション エクスプ ローラー**、クリックして、 **AdventureWorksDataSet**プロジェクト。
+1. **ソリューションエクスプローラー**で、 **AdventureWorksDataSet**プロジェクトをクリックします。
 
-2. 場合、**データソース**ウィンドウが表示されない、メニュー バーで 表示することによって、**ビュー** > **その他の Windows**  >  **データ ソース**します。
+2. **[データソース]** ウィンドウが表示されていない場合は、メニューバーで [ > **他の Windows** > **データソース**の**表示**] をクリックして表示します。
 
 3. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
 
 4. **[データベース]** をクリックして、 **[次へ]** をクリックします。
 
-5. AdventureWorksLT データベースに既存の接続があれば、この接続を選択し、をクリックして**次**します。
+5. AdventureWorksLT データベースへの既存の接続がある場合は、この接続を選択し、 **[次へ]** をクリックします。
 
-    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、「[方法 :データをデータベースに接続する](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)します。
+    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、「[方法: データベース内のデータに接続する](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)」を参照してください。
 
 6. **[アプリケーション構成ファイルへの接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
-7. **データベース オブジェクトの選択** ページで、展開**テーブル**選択**Product (SalesLT)** します。
+7. **[データベースオブジェクトの選択]** ページで、 **[テーブル]** を展開し、 **[Product (saleslt)]** を選択します。
 
 8. **[完了]** をクリックします。
 
-    *AdventureWorksLTDataSet.xsd*ファイルに追加されます、 **AdventureWorksDataSet**プロジェクト。 このファイルでは、次の項目を定義します。
+    *Adventureworksltdataset.xsd*ファイルが**AdventureWorksDataSet**プロジェクトに追加されます。 このファイルでは、次の項目を定義します。
 
-   - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの Product テーブルの内容を表します。
+   - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベース内の Product テーブルの内容を表します。
 
-   - という名前の TableAdapter`ProductTableAdapter`します。 この TableAdapter データを読み書きするために使用できます、`AdventureWorksLTDataSet`します。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
+   - `ProductTableAdapter`という名前の TableAdapter。 この TableAdapter を使用して、`AdventureWorksLTDataSet`のデータの読み取りと書き込みを行うことができます。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
 
      これらのオブジェクトは、どちらもこのチュートリアルの後半で使用します。
 
-9. **ソリューション エクスプ ローラー**を右クリックして**AdventureWorksDataSet**クリック**ビルド**。
+9. **ソリューションエクスプローラー**で、 **[AdventureWorksDataSet]** を右クリックし、 **[ビルド]** をクリックします。
 
      プロジェクトのビルドでエラーが発生しないことを確認します。
 
-## <a name="create-an-excel-workbook-project"></a>Excel ブック プロジェクトを作成します。
- データへのインターフェイスの Excel ブック プロジェクトを作成します。 作成するが、このチュートリアルの後半で、<xref:Microsoft.Office.Tools.Excel.ListObject>データを表示して、ブック内のデータ キャッシュに、データセットのインスタンスが追加されます。
+## <a name="create-an-excel-workbook-project"></a>Excel ブックプロジェクトを作成する
+ データへのインターフェイスの Excel ブックプロジェクトを作成します。 このチュートリアルの後半では、データを表示する <xref:Microsoft.Office.Tools.Excel.ListObject> を作成し、データセットのインスタンスをブックのデータキャッシュに追加します。
 
-### <a name="to-create-the-excel-workbook-project"></a>Excel ブック プロジェクトを作成するには
+### <a name="to-create-the-excel-workbook-project"></a>Excel ブックプロジェクトを作成するには
 
-1. **ソリューション エクスプ ローラー**を右クリックし、 **AdventureWorksDataSet**ソリューション、 をポイント**追加**、 をクリックし、**新しいプロジェクト**します。
+1. **ソリューションエクスプローラー**で、 **AdventureWorksDataSet**ソリューションを右クリックし、 **[追加]** をポイントして、 **[新しいプロジェクト]** をクリックします。
 
 2. テンプレート ペインで、 **[Visual C#]** または **[Visual Basic]** を展開してから、 **[Office/SharePoint]** を展開します。
 
@@ -133,165 +133,165 @@ ms.locfileid: "67826134"
 
 4. プロジェクト テンプレートのリストで、 **[Excel 2010 ブック]** または **[Excel 2013 ブック]** プロジェクトを選択します。
 
-5. **名前**ボックスに「 **AdventureWorksReport**します。 場所を変更しないでください。
+5. **[名前]** ボックスに「 **AdventureWorksReport**」と入力します。 場所は変更しないでください。
 
 6. **[OK]** をクリックします。
 
      **Visual Studio Tools for Office プロジェクト ウィザード** が開きます。
 
-7. いることを確認**新しい文書を作成**が選択されているし、をクリックして**OK**します。
+7. [**新しいドキュメントを作成**する] が選択されていることを確認し、[ **OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 表示されます、 **AdventureWorksReport**デザイナーでブックを追加し、 **AdventureWorksReport**プロジェクトを**ソリューション エクスプ ローラー**します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] により、デザイナーで**AdventureWorksReport**ブックが開き、 **AdventureWorksReport**プロジェクトが**ソリューションエクスプローラー**に追加されます。
 
-## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Excel ブック プロジェクトのデータ ソースにデータセットを追加します。
- データセットを表示するには、Excel ブックで、前に、Excel ブック プロジェクトのデータ ソースにデータセットを追加する必要があります。
+## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Excel ブックプロジェクトのデータソースにデータセットを追加する
+ Excel ブックでデータセットを表示するには、まず、Excel ブックプロジェクトのデータソースにデータセットを追加する必要があります。
 
-### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Excel ブック プロジェクトのデータ ソースにデータセットを追加するには
+### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Excel ブックプロジェクトのデータソースにデータセットを追加するには
 
-1. **ソリューション エクスプ ローラー**、ダブルクリックして**Sheet1.cs**または**Sheet1.vb**下、 **AdventureWorksReport**プロジェクト。
+1. **ソリューションエクスプローラー**で、 **AdventureWorksReport**プロジェクトの下にある**Sheet1.cs**または**Sheet1**をダブルクリックします。
 
-     ブックがデザイナーで開きます。
+     デザイナーでブックが開きます。
 
 2. **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。
 
      **データ ソース構成ウィザード**が開きます。
 
-3. クリックして**オブジェクト**、順にクリックします**次**します。
+3. **[オブジェクト]** をクリックし、 **[次へ]** をクリックします。
 
-4. **オブジェクトを選択するバインド** ページで、をクリックする**参照の追加**します。
+4. **[バインド先のオブジェクトを選択]** してください ページで、 **[参照の追加]** をクリックします。
 
-5. **プロジェクト**] タブで [ **AdventureWorksDataSet**順にクリックします**OK**。
+5. **[プロジェクト]** タブで、 **[AdventureWorksDataSet]** をクリックし、 **[OK]** をクリックします。
 
-6. 下、 **AdventureWorksDataSet**の名前空間、 **AdventureWorksDataSet**アセンブリ、 をクリックして**AdventureWorksLTDataSet**順にクリックします**完了**.
+6. **AdventureWorksDataSet**アセンブリの**AdventureWorksDataSet**名前空間で、 **[adventureworksltdataset.xsd]** をクリックし、 **[完了]** をクリックします。
 
-     **データソース**ウィンドウが開いたら、および**AdventureWorksLTDataSet**データ ソースの一覧に追加されます。
+     **[データソース]** ウィンドウが開き、 **adventureworksltdataset.xsd**がデータソースの一覧に追加されます。
 
-## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>データセットのインスタンスにバインドされた listobject コントロールを作成します。
- ブックでは、データセットを表示するには、作成、<xref:Microsoft.Office.Tools.Excel.ListObject>データセットのインスタンスにバインドされています。 データ バインド コントロールの詳細については、次を参照してください。 [Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)します。
+## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>データセットのインスタンスにバインドされた ListObject を作成する
+ ブックにデータセットを表示するには、データセットのインスタンスにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> を作成します。 コントロールをデータにバインドする方法の詳細については、「[データを Office ソリューションのコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
-### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>データセットのインスタンスにバインドされた listobject コントロールを作成するには
+### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>データセットのインスタンスにバインドされた ListObject を作成するには
 
-1. **データソース**ウィンドウで、展開、 **AdventureWorksLTDataSet**ノードの下**AdventureWorksDataSet**します。
+1. **[データソース]** ウィンドウで、 **[AdventureWorksDataSet]** の下の **[adventureworksltdataset.xsd]** ノードを展開します。
 
-2. 選択、**製品**ノードを選択し、表示されるドロップダウン矢印をクリックします。 **ListObject**ドロップダウン リストでします。
+2. **Product**ノードを選択し、表示されるドロップダウン矢印をクリックして、ドロップダウンリストで **[ListObject]** を選択します。
 
-     ドロップダウン矢印が表示されない場合は、ブックがデザイナーで開いていることを確認します。
+     ドロップダウン矢印が表示されない場合は、ブックがデザイナーで開かれていることを確認します。
 
-3. ドラッグ、**製品**テーブルのセル A1 にします。
+3. **Product**テーブルをセル A1 にドラッグします。
 
-     A<xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール`productListObject`セル A1 から始まる、ワークシート上に作成されます。 同時に、 `adventureWorksLTDataSet` という名前のデータセット オブジェクトと、 <xref:System.Windows.Forms.BindingSource> という名前の `productBindingSource` がプロジェクトに追加されます。 <xref:Microsoft.Office.Tools.Excel.ListObject> が <xref:System.Windows.Forms.BindingSource>にバインドされ、さらにこれがデータセット オブジェクトにバインドされます。
+     `productListObject` という名前の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールがワークシートに作成され、セル A1 から開始されます。 同時に、 `adventureWorksLTDataSet` という名前のデータセット オブジェクトと、 <xref:System.Windows.Forms.BindingSource> という名前の `productBindingSource` がプロジェクトに追加されます。 <xref:Microsoft.Office.Tools.Excel.ListObject> が <xref:System.Windows.Forms.BindingSource>にバインドされ、さらにこれがデータセット オブジェクトにバインドされます。
 
-## <a name="add-the-dataset-to-the-data-cache"></a>データ キャッシュにデータセットを追加します。
- ブック内のデータセットにアクセスする Excel ブック プロジェクトの外側のコードを有効にするには、データ キャッシュにデータセットを追加する必要があります。 データ キャッシュの詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)と[データ キャッシュ](../vsto/caching-data.md)します。
+## <a name="add-the-dataset-to-the-data-cache"></a>データセットをデータキャッシュに追加する
+ Excel ブックプロジェクトの外部にあるコードで、ブック内のデータセットにアクセスできるようにするには、データセットをデータキャッシュに追加する必要があります。 データキャッシュの詳細については、「[ドキュメントレベルのカスタマイズでのキャッシュデータ](../vsto/cached-data-in-document-level-customizations.md)」と「[データのキャッシュ](../vsto/caching-data.md)」を参照してください。
 
-### <a name="to-add-the-dataset-to-the-data-cache"></a>データ キャッシュにデータセットを追加するには
+### <a name="to-add-the-dataset-to-the-data-cache"></a>データセットをデータキャッシュに追加するには
 
-1. デザイナーで、次のようにクリックします。 **adventureWorksLTDataSet**します。
+1. デザイナーで、 **[adventureworksltdataset.xsd]** をクリックします。
 
-2. **プロパティ**ウィンドウで、設定、**修飾子**プロパティを**パブリック**します。
+2. **[プロパティ]** ウィンドウで、 **[修飾子]** プロパティを **[パブリック]** に設定します。
 
-3. 設定、 **CacheInDocument**プロパティを**True**します。
+3. **CacheInDocument**プロパティを**True**に設定します。
 
 ## <a name="checkpoint"></a>チェックポイント
- ビルドおよびコンパイルして、エラーなく実行できることを確認します。 Excel ブック プロジェクトを実行します。
+ Excel ブックプロジェクトをビルドして実行し、エラーなしでコンパイルおよび実行されることを確認します。
 
 ### <a name="to-build-and-run-the-project"></a>プロジェクトをビルドして実行するには
 
-1. **ソリューション エクスプ ローラー**を右クリックし、 **AdventureWorksReport**プロジェクトで、選択**デバッグ**、 をクリックし、**新しいインスタンスを開始**します。
+1. **ソリューションエクスプローラー**で、 **AdventureWorksReport**プロジェクトを右クリックし、 **[デバッグ]** 、 **[新しいインスタンスを開始]** の順にクリックします。
 
-     プロジェクトをビルドし、ブックが Excel で開きます。 <xref:Microsoft.Office.Tools.Excel.ListObject>で**Sheet1**が空、ため、`adventureWorksLTDataSet`データ キャッシュ内のオブジェクトはまだありませんデータ。 次のセクションでは、設定するコンソール アプリケーションを使用します、`adventureWorksLTDataSet`データを持つオブジェクト。
+     プロジェクトがビルドされ、Excel でブックが開きます。 **Sheet1**の <xref:Microsoft.Office.Tools.Excel.ListObject> は空です。データキャッシュ内の `adventureWorksLTDataSet` オブジェクトにはまだデータがありません。 次のセクションでは、コンソールアプリケーションを使用して、`adventureWorksLTDataSet` オブジェクトにデータを設定します。
 
-2. Excel を終了します。 変更を保存できません。
+2. Excel を終了します。 変更を保存しないでください。
 
-## <a name="create-a-console-application-project"></a>コンソール アプリケーション プロジェクトを作成します。
- 使用してブックのキャッシュされたデータセットにデータを挿入するコンソール アプリケーション プロジェクトを作成します。
+## <a name="create-a-console-application-project"></a>コンソールアプリケーションプロジェクトの作成
+ ブックのキャッシュされたデータセットにデータを挿入するために使用するコンソールアプリケーションプロジェクトを作成します。
 
-### <a name="to-create-the-console-application-project"></a>コンソール アプリケーション プロジェクトを作成するには
+### <a name="to-create-the-console-application-project"></a>コンソールアプリケーションプロジェクトを作成するには
 
-1. **ソリューション エクスプ ローラー**を右クリックし、 **AdventureWorksDataSet**ソリューション、 をポイント**追加**、 をクリックし、**新しいプロジェクト**します。
+1. **ソリューションエクスプローラー**で、 **AdventureWorksDataSet**ソリューションを右クリックし、 **[追加]** をポイントして、 **[新しいプロジェクト]** をクリックします。
 
-2. **プロジェクトの種類**ウィンドウで、展開**Visual c#** または**Visual Basic**、 をクリックし、 **Windows**します。
+2. **[プロジェクトの種類]** ペインで、 **[ C#ビジュアル]** または **[Visual Basic]** を展開し、 **[Windows]** をクリックします。
 
-3. **テンプレート**ペインで、**コンソール アプリケーション**します。
+3. **[テンプレート]** ペインで、 **[コンソールアプリケーション]** を選択します。
 
-4. **名前**ボックスに「 **datawriter の各**します。 場所を変更しないでください。
+4. **[名前]** ボックスに「 **datawriter**」と入力します。 場所は変更しないでください。
 
 5. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **datawriter の各**プロジェクトを**ソリューション エクスプ ローラー**開くと、 **Program.cs**または**Module1.vb**コード ファイル。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Datawriter**プロジェクトを**ソリューションエクスプローラー**に追加し、 **Program.cs**または module1.vb コードファイルを開き**ます。**
 
-## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>コンソール アプリケーションを使用して、キャッシュされたデータセットにデータを追加します。
- 使用して、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>データをブックにキャッシュされたデータセットを作成するコンソール アプリケーション内のクラス。
+## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>コンソールアプリケーションを使用して、キャッシュされたデータセットにデータを追加する
+ コンソールアプリケーションの <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> クラスを使用して、ブック内のキャッシュされたデータセットにデータを設定します。
 
 ### <a name="to-add-data-to-the-cached-dataset"></a>キャッシュされたデータセットにデータを追加するには
 
-1. **ソリューション エクスプ ローラー**を右クリックし、 **datawriter の各**プロジェクトし、クリックして**参照の追加**します。
+1. **ソリューションエクスプローラー**で、 **datawriter**プロジェクトを右クリックし、 **[参照の追加]** をクリックします。
 
-2. **.NET** ] タブで [ **Microsoft.VisualStudio.Tools.Applications.ServerDocument**します。
+2. **[.Net]** タブで、 **[VisualStudio. ServerDocument]** を選択します。
 
 3. **[OK]** をクリックします。
 
-4. **ソリューション エクスプ ローラー**を右クリックし、 **datawriter の各**プロジェクトし、クリックして**参照の追加**します。
+4. **ソリューションエクスプローラー**で、 **datawriter**プロジェクトを右クリックし、 **[参照の追加]** をクリックします。
 
-5. **プロジェクト** タブで  **AdventureWorksDataSet**、 をクリック**OK**します。
+5. **[プロジェクト]** タブで **[AdventureWorksDataSet]** を選択し、 **[OK]** をクリックします。
 
-6. 開く、 *Program.cs*または*Module1.vb*ファイルがコード エディター。
+6. コードエディターで Program.cs*ファイルまたは*module1.vb ファイルを開きます。
 
-7. 次の追加**を使用して**(c#) のまたは**Imports** (Visual Basic) のステートメントをコード ファイルの先頭にします。
+7. コードファイルの先頭に、 C#次の using (for) または**Imports** (for Visual Basic) ステートメント**を**追加します。
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
 8. `Main` メソッドに次のコードを追加します。 このコードは、次のオブジェクトを宣言します。
 
-   - インスタンス、`AdventureWorksLTDataSet`と`ProductTableAdapter`型で定義されている、 **AdventureWorksDataSet**プロジェクト。
+   - **AdventureWorksDataSet**プロジェクトで定義されている `AdventureWorksLTDataSet` および `ProductTableAdapter` 型のインスタンス。
 
-   - ビルド フォルダー内の AdventureWorksReport ブックへのパス、 **AdventureWorksReport**プロジェクト。
+   - **AdventureWorksReport**プロジェクトの build フォルダー内の AdventureWorksReport ブックへのパス。
 
-   - A<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>ブック内のデータ キャッシュへのアクセスに使用するオブジェクト。
+   - ブック内のデータキャッシュにアクセスするために使用する <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> オブジェクト。
 
      > [!NOTE]
-     > 次のコードを持つブックを使用していることを想定しています、 *.xlsx*ファイル拡張子。 プロジェクトのブックに別のファイル拡張子がある場合は、必要に応じて、パスを変更します。
+     > 次のコードは、 *.xlsx*ファイル拡張子を持つブックを使用していることを前提としています。 プロジェクト内のブックのファイル拡張子が異なる場合は、必要に応じてパスを変更します。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
 
-9. 次のコードを追加、`Main`前の手順で追加したコードの後のメソッド。 このコードは次のタスクを実行します。
+9. 前の手順で追加したコードの後に、`Main` メソッドに次のコードを追加します。 このコードは次のタスクを実行します。
 
-   - テーブル アダプターを使用して型指定された dataset オブジェクトを塗りつぶします。
+   - このメソッドは、テーブルアダプターを使用して、型指定された dataset オブジェクトにデータを格納します。
 
-   - 使用して、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>のプロパティ、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>ブックのキャッシュされたデータセットにアクセスするクラス。
+   - また、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> クラスの <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> プロパティを使用して、ブック内のキャッシュされたデータセットにアクセスします。
 
-   - 使用して、<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A>メソッド ローカル型指定されたデータセットのデータをキャッシュされたデータセットを作成します。
+   - <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> メソッドを使用して、キャッシュされたデータセットに、型指定されたローカルデータセットのデータを設定します。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
      [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
 
-10. **ソリューション エクスプ ローラー**を右クリックし、 **datawriter の各**プロジェクトをポイントして、**デバッグ**、 をクリックし、**新しいインスタンスを開始**します。
+10. **ソリューションエクスプローラー**で、 **datawriter**プロジェクトを右クリックして **[デバッグ]** をポイントし、 **[新しいインスタンスを開始]** をクリックします。
 
-     プロジェクトをビルドし、コンソール アプリケーションがローカルのデータセットと、アプリケーションは、ブックのキャッシュされたデータセットにデータを保存するときに、いくつかのステータス メッセージを表示します。 キーを押して**Enter**アプリケーションを終了します。
+     プロジェクトがビルドされ、コンソールアプリケーションによって、ローカルデータセットがいっぱいになったときと、アプリケーションがブック内のキャッシュされたデータセットにデータを保存したときに、いくつかのステータスメッセージが表示されます。 Enter**キーを**押してアプリケーションを終了します。
 
-## <a name="test-the-workbook"></a>ブックをテストします。
- ブックを開くと、<xref:Microsoft.Office.Tools.Excel.ListObject>にコンソール アプリケーションを使用して、キャッシュされたデータセットに追加されたデータが表示されます。
+## <a name="test-the-workbook"></a>ブックをテストする
+ ブックを開くと、コンソールアプリケーションを使用して、キャッシュされたデータセットに追加されたデータが <xref:Microsoft.Office.Tools.Excel.ListObject> に表示されるようになります。
 
 ### <a name="to-test-the-workbook"></a>ブックをテストするには
 
 1. まだ開いている場合は、Visual Studio デザイナーで AdventureWorksReport ブックを閉じます。
 
-2. ファイル エクスプ ローラーでのビルド フォルダー内にある AdventureWorksReport ブックを開く、 **AdventureWorksReport**プロジェクト。 既定では、ビルド フォルダーは、次の場所のいずれかでは。
+2. エクスプローラーで、 **AdventureWorksReport**プロジェクトの build フォルダーにある AdventureWorksReport ブックを開きます。 既定では、ビルドフォルダーは次のいずれかの場所にあります。
 
-    - *%UserProfile%\My Documents\AdventureWorksReport\bin\Debug* (for Windows XP 以降)
+    - *%UserProfile%\My Documents\AdventureWorksReport\bin\Debug* (Windows XP およびそれ以前のバージョン)
 
-    - *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (Windows Vista) の場合
+    - *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (Windows Vista の場合)
 
-3. いることを確認、<xref:Microsoft.Office.Tools.Excel.ListObject>ブックを開いた後に、データを設定します。
+3. ブックを開いた後、<xref:Microsoft.Office.Tools.Excel.ListObject> にデータが入力されていることを確認します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-これらのトピックからキャッシュされたデータの処理に関する詳細を確認できます。
+キャッシュされたデータの操作の詳細については、次のトピックを参照してください。
 
-- 起動することがなくキャッシュされたデータセット内のデータを変更します。 詳細については、「[チュートリアル:サーバー上のブックにキャッシュされたデータを変更する](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)します。
+- Excel を起動せずに、キャッシュされたデータセット内のデータを変更する。 詳細については、「[チュートリアル: サーバー上のブックにキャッシュされたデータを変更](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: サーバー上のブックにキャッシュされたデータを変更します。](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [チュートリアル: サーバー上のブックでキャッシュされたデータを変更する](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: da437b974eff9beb671f5fe889bec427f9f85f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989757"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910512"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 
@@ -46,7 +46,7 @@ ms.locfileid: "62989757"
  マネージド ヒープの合計サイズが既定の制限値に近づくと、通常、メモリ管理のオーバーヘッドが増加し、アプリケーションの応答性とスケーラビリティに影響するようになります。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
- [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[[マーク](../profiling/marks-view.md)] ビューに移動します。 **.NET CLR Memory\\# Bytes in all Heaps** 列および **# Total committed bytes** 列を探します。 マネージド メモリの割り当てが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 **# Bytes in all Heaps** 列の値を、**.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections**、**.NET CLR Memory\\# of Gen 2 Collections** の各列で報告されたガベージ コレクションの割合と比較し、マネージド メモリ割り当てのパターンがガベージ コレクションの割合に影響を与えるかどうかを確認します。
+ [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[[マーク](../profiling/marks-view.md)] ビューに移動します。 **.NET CLR Memory\\# Bytes in all Heaps** 列および **# Total committed bytes** 列を探します。 マネージド メモリの割り当てが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 **# Bytes in all Heaps** 列の値を、 **.NET CLR Memory\\# of Gen 0 Collections**、 **.NET CLR Memory\\# of Gen 1 Collections**、 **.NET CLR Memory\\# of Gen 2 Collections** の各列で報告されたガベージ コレクションの割合と比較し、マネージド メモリ割り当てのパターンがガベージ コレクションの割合に影響を与えるかどうかを確認します。
 
  .NET Framework アプリケーションでは、共通言語ランタイムによって、マネージド ヒープの合計サイズが、プロセス アドレス空間のプライベート領域部分の最大サイズの半分よりわずかに小さいサイズに制限されます。 32 ビット コンピューター上で実行している 32 ビット プロセスの場合、プロセスのアドレス空間のプライベート領域の上限は 2 GB です。 マネージド ヒープの合計サイズがその既定の制限値に近づくと、メモリ管理のオーバーヘッドが増加し、アプリケーションのパフォーマンスが低下する可能性があります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "62989757"
 
 - マネージド メモリ リソースのアプリケーションによる使用を最適化する
 
-   - または -
+   または
 
 - 32 ビット プロセスの仮想メモリの最大サイズに関するアーキテクチャ上の制約を解除する手順を実行する
 
@@ -64,7 +64,7 @@ ms.locfileid: "62989757"
 
   [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)を使用して、これらの割り当てが行われた実行パスを判断します。
 
-  ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの .NET Framework の技術記事、「[ガベージ コレクタの基本とパフォーマンスのヒント](http://go.microsoft.com/fwlink/?LinkId=177946)」を参照してください。
+  ガベージ コレクションのパフォーマンスを向上する方法の詳細については、Microsoft Web サイトの .NET Framework の技術記事、「[ガベージ コレクタの基本とパフォーマンスのヒント](/previous-versions/dotnet/articles/ms973837(v=msdn.10))」を参照してください。
 
   プロセス アドレス空間のプライベート部分のサイズに関する仮想メモリのアーキテクチャ上の制約を解除するには、64 ビット コンピューター上でこの 32 ビット プロセスを実行してみてください。  64 ビット コンピューター上で実行されている 32 ビット プロセスの場合、最大 4 GB のプライベート仮想メモリを取得できます。
 

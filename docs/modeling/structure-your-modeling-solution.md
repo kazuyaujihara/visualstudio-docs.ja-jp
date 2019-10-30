@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748212"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985219"
 ---
 # <a name="structure-your-modeling-solution"></a>モデリング ソリューションの構築
 
@@ -30,7 +30,7 @@ ms.locfileid: "72748212"
 
 ### <a name="to-divide-an-application-into-layers"></a>1 つのアプリケーションを複数のレイヤーに分割するには
 
-1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](http://go.microsoft.com/fwlink/?LinkId=196681)」の「application アーキタイプ」で説明しています。
+1. Web アプリケーション、サービス アプリケーション、デスクトップ アプリケーションなど、アプリケーションの構造に基づいて、ソリューションの構造を決定します。 さまざまな一般的なアーキテクチャについ[ては、「Microsoft アプリケーションアーキテクチャガイド](/previous-versions/msp-n-p/ee658107(v=pandp.10))」の「application アーキタイプ」で説明しています。
 
 2. Visual Studio ソリューションを作成します。ここでは、アーキテクチャソリューションを呼び出します。 このソリューションは、システムの全体設計の作成に使われます。 このソリューションにはモデルは含まれますが、コードは含まれません。
 
@@ -92,7 +92,7 @@ ms.locfileid: "72748212"
 
 ### <a name="to-create-a-solution-template"></a>ソリューション テンプレートを作成するには
 
-1. [テンプレートのエクスポートウィザードをダウンロードしてインストール](http://go.microsoft.com/fwlink/?LinkId=196686)します。
+1. [テンプレートのエクスポートウィザードをダウンロードしてインストール](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)します。
 
 2. 将来のプロジェクトの開始点として使用するソリューション構造を作成します。
 

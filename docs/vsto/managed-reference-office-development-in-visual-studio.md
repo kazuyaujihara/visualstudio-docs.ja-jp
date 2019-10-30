@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551772"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985766"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>マネージ参照 (Visual Studio での Office 開発)
-  このセクションには、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]を対象とする Office プロジェクトで使用される名前空間と型についての API リファレンス ドキュメントが含まれています。 .NET Framework 3.5 を対象とする Office プロジェクトで使用される名前空間と型に関する API リファレンスドキュメントについては、Visual Studio ドキュメント[http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)の「」を参照してください。
+  このセクションには、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](includes/net-v45-md.md)]を対象とする Office プロジェクトで使用される名前空間と型についての API リファレンス ドキュメントが含まれています。 .NET Framework 3.5 を対象とする Office プロジェクトで使用される名前空間と型に関する API リファレンスドキュメントについては、Visual Studio ドキュメントの「[マネージリファレンス (Visual studio での office 開発)」の次のリファレンスセクションを参照してください。)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -64,14 +64,14 @@ ms.locfileid: "69551772"
 
  <xref:Microsoft.VisualStudio.Tools.Applications.Runtime>
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]によってスローされる可能性のある大部分の例外、ドキュメント レベルのカスタマイズでデータのキャッシュに使用できるクラス、Visual Studio インフラストラクチャの一部であるその他の API が含まれています。
+ [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)]によってスローされる可能性のある大部分の例外、ドキュメント レベルのカスタマイズでデータのキャッシュに使用できるクラス、Visual Studio インフラストラクチャの一部であるその他の API が含まれています。
 
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>
 
  Office プロジェクトのビルドに使用される MSBuild タスク クラスが含まれています。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio tools for Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
-- [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
+- [Visual Studio tools for Office runtime の概要](visual-studio-tools-for-office-runtime-overview.md)
+- [Visual Studio &#40;での Office 開発の概要&#41;](getting-started-office-development-in-visual-studio.md)
+- [Office 開発のサンプルとチュートリアル](office-development-samples-and-walkthroughs.md)
+- [Office ソリューションの設計と作成](designing-and-creating-office-solutions.md)

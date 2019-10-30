@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654088"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984302"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio の視覚化およびモデリング SDK で作成されたドメイン固有言語 (DSL) では、ユーザーが要素をコピーして貼り付けるときの動作を変更できます。
@@ -86,7 +86,7 @@ DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.ProcessOnMenuCopyCo
 DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
 
  **コピーと貼り付けを使用して図形のレイアウトを保持します。**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)の例をご覧ください。
 
  この効果を得るには、コピーした ElementGroupPrototype に図形とコネクタを追加します。 オーバーライドする最も便利なメソッドは ElementOperations.CreateElementGroupPrototype() です。 そのためには、次のコードを Dsl プロジェクトに追加します。
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **現在のカーソル位置など、選択した場所に図形を貼り付けます。**
-ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)の例をご覧ください。
+ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)の例をご覧ください。
 
  この効果を得るには、`ClipboardCommandSet.ProcessOnMenuPasteCommand()` をオーバーライドし、`ElementOperations.Merge()` の場所固有のバージョンを使用します。 そのためには、次のコードを DslPackage プロジェクトに追加します。
 
@@ -229,7 +229,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   変更内容はコピーする要素とイメージの両方に影響します。
 
 ## <a name="programming-copy-and-paste-behavior"></a>コピーと貼り付け動作のプログラミング
- オブジェクトのコピー、貼り付け、作成、および削除に関する DSL の動作の多くは、図と結合された <xref:Microsoft.VisualStudio.Modeling.ElementOperations> のインスタンスによって管理されます。 @No__t_0 から独自のクラスを派生させ、ダイアグラムクラスの <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> プロパティをオーバーライドすることによって、DSL の動作を変更できます。
+ オブジェクトのコピー、貼り付け、作成、および削除に関する DSL の動作の多くは、図と結合された <xref:Microsoft.VisualStudio.Modeling.ElementOperations> のインスタンスによって管理されます。 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> から独自のクラスを派生させ、ダイアグラムクラスの <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> プロパティをオーバーライドすることによって、DSL の動作を変更できます。
 
 > [!TIP]
 > プログラムコードを使用したモデルのカスタマイズの詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [要素作成処理および要素移動処理のカスタマイズ](../modeling/customizing-element-creation-and-movement.md)
 - [方法: ドラッグ アンド ドロップ ハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [サンプル: VMSDK 回路図のサンプル](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [サンプル: VMSDK 回路図のサンプル](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

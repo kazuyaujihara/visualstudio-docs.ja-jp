@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69d795fe9e4243bbce51e1e137bb6704492bae32
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551278"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985512"
 ---
 # <a name="visio-solutions"></a>Visio ソリューション
   Visual Studio には、Microsoft Office Visio の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用して、Visio の自動化、Visio 機能の拡張、または Visio ユーザー インターフェイス (UI) のカスタマイズが可能です。
 
  VSTO アドインの詳細については、「vsto アドインの[プログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)」と「 [Vsto アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。Microsoft Office を使用したプログラミングの初心者の場合は、「 [Visual Studio &#40;&#41;での Office 開発の概要](../vsto/getting-started-office-development-in-visual-studio.md)」を参照してください。
 
- **適用対象:** このトピックの情報は、Visio 2010 の VSTO アドインのプロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
+ **対象:** このトピックの情報は、Visio 2010 の VSTO アドインのプロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -68,10 +68,10 @@ ms.locfileid: "69551278"
 - [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
-- [方法: Visual Studio での Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
-- [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)
+- [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)
 - [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
 - [Visio オブジェクトモデルの概要](../vsto/visio-object-model-overview.md)
-- [Office 開発における Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199017)
+- [Office 開発における Visio 2010](/previous-versions/office/developer/office-2010/ff604964(v=office.14))

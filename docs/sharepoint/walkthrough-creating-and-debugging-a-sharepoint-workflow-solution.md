@@ -1,5 +1,5 @@
 ---
-title: 作成して SharePoint ワークフロー ソリューションをデバッグする.
+title: SharePoint ワークフローソリューションの作成 & デバッグ
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,163 +16,163 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401056"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985061"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>チュートリアル: 作成し、SharePoint ワークフロー ソリューションのデバッグ
-  このチュートリアルでは、基本的なシーケンシャル ワークフロー テンプレートを作成する方法を示します。 ワークフローは、ドキュメントが確認されたかどうかを判断する共有ドキュメント ライブラリのプロパティを確認します。 ドキュメントをレビューすると、ワークフローが終了します。
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>チュートリアル: SharePoint ワークフローソリューションの作成とデバッグ
+  このチュートリアルでは、基本的なシーケンシャルワークフローテンプレートを作成する方法について説明します。 ワークフローは、共有ドキュメントライブラリのプロパティをチェックして、ドキュメントがレビューされているかどうかを確認します。 ドキュメントがレビューされている場合は、ワークフローが終了します。
 
  このチュートリアルでは、次の作業について説明します。
 
-- SharePoint リスト定義シーケンシャル ワークフロー プロジェクトを作成する[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で SharePoint リスト定義のシーケンシャルワークフロープロジェクトを作成します。
 
-- ワークフロー アクティビティを作成します。
+- ワークフローアクティビティを作成しています。
 
-- ワークフロー アクティビティのイベントを処理します。
+- ワークフローアクティビティイベントの処理。
 
 > [!NOTE]
-> このチュートリアルでは、シーケンシャル ワークフロー プロジェクトでは、プロセスはステート マシンのワークフロー プロジェクトに同じです。
+> このチュートリアルではシーケンシャルワークフロープロジェクトを使用しますが、ステートマシンワークフロープロジェクトでもプロセスは同じです。
 >
-> また、コンピューター可能性がありますさまざまな名前や場所が一部の Visual Studio のユーザー インターフェイス要素次の手順で。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> また、次の手順では、Visual Studio のユーザーインターフェイス要素の一部で、コンピューターの名前または場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - サポート対象エディションの Microsoft Windows および SharePoint。
 
 - Visual Studio
 
-## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>SharePoint の共有ドキュメント ライブラリにプロパティを追加します。
- 内のドキュメントのレビュー状況を追跡するために、**共有ドキュメント**ライブラリ、SharePoint サイトで共有ドキュメントの 3 つの新しいプロパティを作成します: `Status`、 `Assignee`、および`Review Comments`します。 これらのプロパティを定義、 **Shared Documents**ライブラリ。
+## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>SharePoint 共有ドキュメントライブラリにプロパティを追加する
+ **共有ドキュメント**ライブラリ内のドキュメントのレビューステータスを追跡するには、SharePoint サイト上の共有ドキュメントに対して、`Status`、`Assignee`、および `Review Comments`の3つの新しいプロパティを作成します。 これらのプロパティは、**共有ドキュメント**ライブラリで定義します。
 
-#### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>SharePoint の共有にプロパティを追加するには、と、ドキュメント ライブラリ
+#### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>SharePoint 共有ドキュメントライブラリにプロパティを追加するには
 
-1. Http:// などの SharePoint サイトを開きます。\<システム名 >/SitePages/Home.aspx、Web ブラウザーでします。
+1. Http://\<system name >/SitePages/Home.aspx などの SharePoint サイトを Web ブラウザーで開きます。
 
-2. クイック起動バーで、次のように選択します。 **SharedDocuments**します。
+2. クイック起動 バーで、 **Shareddocuments** を選択します。
 
-3. 選択**ライブラリ**上、**ライブラリ ツール**リボンをクリックして、**列の作成**新しい列を作成するには、リボン ボタンをクリックします。
+3. **[ライブラリツール]** リボンの **[ライブラリ]** を選択し、リボンの **[列の作成]** ボタンをクリックして新しい列を作成します。
 
-4. 列の名前**Document Status**、その型に設定**選択肢 (メニューから選択する)** 、次の 3 つの選択肢を指定し、選択、 **OK**ボタン。
+4. 列に "**ドキュメントの状態**" という名前を設定し、その種類を **[選択] (メニューから選択)** に設定します。次の3つの選択肢を指定し、 **[OK]** をクリックします。
 
-    - **確認が必要な**
+    - **レビューが必要**
 
-    - **確認完了**
+    - **レビュー完了**
 
     - **要求された変更**
 
-5. 2 つの列を作成し、名前を付けます**担当者**と**レビュー コメント**します。 複数行のテキストとして、テキストの単一行として担当者列の型と、レビュー コメント列の型を設定します。
+5. さら**に 2**つの列を作成し、担当者に名前を付けると共に、**コメントをレビュー**します。 担当者の列の種類を1行のテキストとして設定し、レビューコメント列の種類を複数行のテキストとして設定します。
 
-## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>チェック アウトを必要とせずに編集するドキュメントを有効にします。
- その内容を確認することがなく、ドキュメントを編集するときに、ワークフロー テンプレートをテストしやすくなります。次の手順では、オプションを有効にする SharePoint サイトを構成します。
+## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>チェックアウトせずにドキュメントを編集できるようにする
+ ドキュメントをチェックアウトせずに編集できる場合は、ワークフローテンプレートをテストする方が簡単です。次の手順では、これを有効にするように SharePoint サイトを構成します。
 
-#### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>それらをチェック アウトしないで編集するドキュメントを有効にするには
+#### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>チェックアウトせずにドキュメントを編集できるようにするには
 
-1. クイック起動バーで、 **Shared Documents**リンク。
+1. クイック起動バーで、 **[共有ドキュメント]** リンクを選択します。
 
-2. **ライブラリ ツール**リボンで、選択、**ライブラリ**タブをクリックして、**ライブラリの設定**を表示するボタン、 **ドキュメントライブラリの設定**ページ。
+2. **[ライブラリツール]** リボンで、 **[ライブラリ]** タブを選択し、 **[ライブラリの設定]** ボタンをクリックして **[ドキュメントライブラリの設定]** ページを表示します。
 
-3. **全般設定**セクションで、選択、**バージョン設定**表示へのリンク、**バージョン設定**ページ。
+3. **[全般設定**] セクションで、 **[バージョン管理の設定]** リンクを選択して、 **[バージョン管理の設定]** ページを表示します。
 
-4. いることを確認の設定**ドキュメントを編集する前にチェック アウトを必要と**は**いいえ**します。 そうでない場合に変更して**いいえ**選択し、 **OK**ボタン。
+4. **[編集可能にする前にドキュメントをチェックアウトする必要]** があります の設定が **[いいえ]** になっていることを確認します。 そうでない場合は、 **[いいえ]** に変更し、 **[OK]** をクリックします。
 
 5. ブラウザーを閉じます。
 
-## <a name="create-a-sharepoint-sequential-workflow-project"></a>SharePoint シーケンシャル ワークフロー プロジェクトを作成します。
- シーケンシャル ワークフローは、最後のアクティビティが終了するまで順番に実行する一連の手順を実行します。 この手順では、共有ドキュメント、リストに適用されるシーケンシャル ワークフローを作成します。 ワークフロー ウィザードでは、サイト定義またはリスト定義のいずれかでワークフローを関連付けることができ、ワークフローを開始するかを判断することができます。
+## <a name="create-a-sharepoint-sequential-workflow-project"></a>SharePoint シーケンシャルワークフロープロジェクトを作成する
+ シーケンシャルワークフローは、最後のアクティビティが終了するまで順番に実行される一連のステップです。 この手順では、共有ドキュメントリストに適用されるシーケンシャルワークフローを作成します。 ワークフローウィザードを使用して、ワークフローをサイト定義またはリスト定義のいずれかに関連付けることができます。これにより、ワークフローをいつ開始するかを決定できます。
 
-#### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>SharePoint シーケンシャル ワークフロー プロジェクトを作成するには
+#### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>SharePoint シーケンシャルワークフロープロジェクトを作成するには
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**ファイル** > **新規** > **プロジェクト**を表示する、**新しいプロジェクト** ダイアログ ボックス。
+2. メニューバーで [**ファイル** > **新しい** > **プロジェクト**] を選択し、 **[新しいプロジェクト]** ダイアログボックスを表示します。
 
-3. **Visual C#** または **Visual Basic** 下の **SharePoint** ノードを展開し、 **2010** ノードを選択します。
+3. **[ビジュアルC# ]** または **[Visual Basic]** の下にある **[SharePoint]** ノードを展開し、 **[2010]** ノードを選択します。
 
-4. **テンプレート**ウィンドウで、選択、 **SharePoint 2010 プロジェクト**テンプレート。
+4. **[テンプレート]** ペインで、[ **SharePoint 2010] プロジェクト**テンプレートを選択します。
 
-5. **名前**ボックスに、入力**MySharePointWorkflow**選択し、 **OK**ボタン。
+5. **[名前]** ボックスに「 **mysharepointworkflow** 」と入力し、 **[OK]** をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード**が表示されます。
 
-6. **デバッグのサイトとセキュリティのレベルを指定**ページで、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックして、 **[完了]** ボタンをクリックします信頼レベルと既定のサイトです。
+6. **[デバッグ用のサイトとセキュリティレベルの指定]** ページで、 **[ファームソリューションとして配置]** する オプションを選択し、 **[完了]** をクリックして信頼レベルと既定のサイトを受け入れます。
 
-     この手順では、ファーム ソリューションでは、ワークフロー プロジェクトでのみ利用可能なオプションとして、ソリューションの信頼レベルを設定します。 詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
+     この手順では、ソリューションの信頼レベルをファームソリューションとして設定します。これは、ワークフロープロジェクトに使用できる唯一のオプションです。 詳細については、「[サンドボックスソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)」を参照してください。
 
-7. **ソリューション エクスプ ローラー**をプロジェクト ノードを選択し、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
+7. **ソリューションエクスプローラー**で、プロジェクトノードを選択し、メニューバーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
-8. いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+8. **ビジュアルC#**  または  **Visual Basic**で、**SharePoint** ノードを展開し、**2010** ノードを選択します。
 
-9. **テンプレート**ウィンドウで、選択、**シーケンシャル ワークフロー (ファーム ソリューションのみ)** テンプレートを選択し、**追加**ボタン。
+9. **[テンプレート]** ペインで、 **[シーケンシャルワークフロー (ファームソリューションのみ)]** テンプレートを選択し、 **[追加]** をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード**が表示されます。
 
-10. **デバッグ ワークフローの名前を指定** ページで、既定の名前 (**MySharePointWorkflow - Workflow1**)。 既定のワークフロー テンプレートの型値の保持**リスト ワークフロー**、選択し、 **[次へ]** ボタンをクリックします。
+10. **[デバッグ用のワークフロー名の指定]** ページで、既定の名前 (**mysharepointworkflow-workflow1.xaml**) をそのまま使用します。 既定のワークフローテンプレートの種類 の値をそのままにして **ワークフローの一覧表示** を選択し、**次へ** をクリックします。
 
-11. **Visual Studio デバッグ セッションでワークフローを自動的に関連付けるようでしょうか。** ページで、選択、**次**ボタンの既定の設定のままにします。
+11. **[デバッグセッションに自動的にワークフローを関連付けますか?]** ページで、 **[次へ]** をクリックして、すべての既定の設定をそのまま使用します。
 
-     この手順は、共有ドキュメント ライブラリを自動的にワークフローを関連付けます。
+     このステップでは、ワークフローが自動的に共有ドキュメントライブラリに関連付けられます。
 
-12. **、ワークフローを開始する方法についての条件を指定する** ページで、既定のオプションで選択したままにして、**ワークフローの開始をする方法でしょうか**セクションと、選択、 **の完了。** ボタンをクリックします。
+12. **[ワークフローの開始方法の条件の指定]** ページで、 **[ワークフローの開始方法]** を選択してください セクションで既定のオプションを選択したままにして、 **[完了]** をクリックします。
 
-     このページでは、ワークフローの開始を指定することができます。 既定では、ユーザー手動での開始時に、SharePoint またはワークフローが関連付けられている項目が作成されたときにいずれかのワークフローを開始します。
+     このページでは、ワークフローの開始時点を指定できます。 既定では、ユーザーが SharePoint で手動で開始したとき、またはワークフローが関連付けられているアイテムが作成されたときに、ワークフローが開始されます。
 
-## <a name="create-workflow-activities"></a>ワークフロー アクティビティを作成します。
- 1 つ以上のワークフローが含まれて*アクティビティ*を実行するアクションを表します。 ワークフロー デザイナーを使用すると、ワークフローのアクティビティを調整します。 この手順では、ワークフローに、2 つのアクティビティを追加します。HandleExternalEventActivity と OnWorkFlowItemChanged です。 これらのアクティビティ内のドキュメントのレビュー状況の監視、 **Shared Documents**一覧
+## <a name="create-workflow-activities"></a>ワークフローアクティビティの作成
+ ワークフローには、実行するアクションを表す1つ以上の*アクティビティ*が含まれています。 ワークフローデザイナーを使用して、ワークフローのアクティビティを並べ替えます。 この手順では、HandleExternalEventActivity と OnWorkFlowItemChanged の2つのアクティビティをワークフローに追加します。 これらのアクティビティは、 **[共有ドキュメント]** リスト内のドキュメントのレビューステータスを監視します。
 
-#### <a name="to-create-workflow-activities"></a>ワークフロー アクティビティを作成するには
+#### <a name="to-create-workflow-activities"></a>ワークフローアクティビティを作成するには
 
-1. ワークフローは、ワークフロー デザイナーに表示する必要があります。 そうでない場合は、開く、か**Workflow1.cs**または**Workflow1.vb**で**ソリューション エクスプ ローラー**します。
+1. ワークフローがワークフローデザイナーに表示されます。 そうでない場合は、**ソリューションエクスプローラー**で**Workflow1.cs**または**workflow1.xaml**を開きます。
 
-2. デザイナーで、選択、 **OnWorkflowActivated1**アクティビティ。
+2. デザイナーで、 **[OnWorkflowActivated1]** アクティビティを選択します。
 
-3. **プロパティ**ウィンドウで、入力**onWorkflowActivated**横に、 **Invoked**プロパティ、Enter キーを押します。
+3. **[プロパティ]** ウィンドウで、**呼び出さ**れたプロパティの横に「 **onworkflowactivated 化**」と入力し、enter キーを押します。
 
-     コード エディターが開き、され、onWorkflowActivated という名前のイベント ハンドラー メソッドは、Workflow1 のコード ファイルに追加されます。
+     コードエディターが開き、onWorkflowActivated 化という名前のイベントハンドラーメソッドが Workflow1.xaml コードファイルに追加されます。
 
-4. ワークフロー デザイナーに戻り、ツールボックスを開き、展開、 **Windows Workflow v3.0**ノード。
+4. ワークフローデザイナーに戻り、[ツールボックス] を開き、[ **Windows workflow** v1.0] ノードを展開します。
 
-5. **Windows Workflow v3.0**のノード、**ツールボックス**、次の一連の手順のいずれかを実行します。
+5. **ツールボックス**の [ **Windows Workflow** v1.0] ノードで、次のいずれかの手順を実行します。
 
-    1. ショートカット メニューを開き、**中**アクティビティを選び、**コピー**します。 ワークフロー デザイナーで下にある行のショートカット メニューを開き、 **onWorkflowActivated1**アクティビティを選び、**貼り付け**。
+    1. **While**アクティビティのショートカットメニューを開き、 **[コピー]** を選択します。 ワークフローデザイナーで、 **onWorkflowActivated1**アクティビティの下にある行のショートカットメニューを開き、 **[貼り付け]** を選択します。
 
-    2. ドラッグ、**中**からのアクティビティ、**ツールボックス**をワークフロー デザイナーでは、下の行に、アクティビティを接続し、 **onWorkflowActivated1**アクティビティ。
+    2. **[While]** アクティビティを**ツールボックス**からワークフローデザイナーにドラッグし、アクティビティを**onWorkflowActivated1**アクティビティの下の行に接続します。
 
-6. 選択、 **WhileActivity1**アクティビティ。
+6. **WhileActivity1**アクティビティを選択します。
 
-7. **プロパティ**ウィンドウで、設定**条件**コード条件をします。
+7. **[プロパティ]** ウィンドウで、 **[条件]** を「コード条件」に設定します。
 
-8. 展開、**条件**プロパティ、入力**isWorkflowPending** 、子の横にある**条件**プロパティ、Enter キーを押します。
+8. **Condition**プロパティを展開し、子**条件**プロパティの横に「 **isworkflowpending** 」と入力して、enter キーを押します。
 
-     コード エディターが開き isWorkflowPending という名前のメソッドは、Workflow1 のコード ファイルに追加されます。
+     コードエディターが開き、isWorkflowPending という名前のメソッドが Workflow1.xaml コードファイルに追加されます。
 
-9. ワークフロー デザイナーに戻り、ツールボックスを開き、展開、 **SharePoint ワークフロー**ノード。
+9. ワークフローデザイナーに戻り、ツールボックス を開いて、 **SharePoint ワークフロー** ノードを展開します。
 
-10. **SharePoint ワークフロー**のノード、**ツールボックス**、次の一連の手順のいずれかを実行します。
+10. **ツールボックス**の **[SharePoint Workflow]** ノードで、次のいずれかの手順を実行します。
 
-    - ショートカット メニューを開き、 **OnWorkflowItemChanged**アクティビティを選び、**コピー**します。 内の行のショートカット メニューを開き、ワークフロー デザイナーで、 **whileActivity1**アクティビティを選び、**貼り付け**します。
+    - **Onworkflowitemchanged**アクティビティのショートカットメニューを開き、 **[コピー]** を選択します。 ワークフローデザイナーで、 **whileActivity1**アクティビティ内の行のショートカットメニューを開き、 **[貼り付け]** を選択します。
 
-    - ドラッグ、 **OnWorkflowItemChanged**からのアクティビティ、**ツールボックス**をワークフロー デザイナーでは、内の行に、アクティビティを接続し、 **whileActivity1**アクティビティ。
+    - **[ツールボックス]** から **[Onworkflowitemchanged]** アクティビティをワークフローデザイナーにドラッグし、アクティビティを**whileActivity1**アクティビティ内の行に接続します。
 
-11. 選択、 **onWorkflowItemChanged1**アクティビティ。
+11. **OnWorkflowItemChanged1**アクティビティを選択します。
 
-12. **プロパティ**ウィンドウは、次の表に示すように、プロパティを設定します。
+12. **[プロパティ]** ウィンドウで、次の表に示すようにプロパティを設定します。
 
-    |プロパティ|[値]|
+    |property|[値]|
     |--------------|-----------|
     |**CorrelationToken**|**workflowToken**|
-    |**呼び出される**|**さらに onWorkflowItemChanged**|
+    |**まし**|**onWorkflowItemChanged**|
 
-## <a name="handle-activity-events"></a>アクティビティ イベントを処理します。
- 最後に、各アクティビティからドキュメントの状態を確認します。 ドキュメントをレビューすると、ワークフローが完了しました。
+## <a name="handle-activity-events"></a>アクティビティイベントの処理
+ 最後に、各アクティビティからドキュメントの状態を確認します。 ドキュメントがレビューされている場合、ワークフローは終了します。
 
-#### <a name="to-handle-activity-events"></a>アクティビティ イベントを処理するには
+#### <a name="to-handle-activity-events"></a>アクティビティイベントを処理するには
 
-1. *Workflow1.cs*または*Workflow1.vb*の先頭に次のフィールドを追加、`Workflow1`クラス。 このフィールドは、ワークフローが終了したかどうかを確認するアクティビティで使用されます。
+1. *Workflow1.cs*または*workflow1.xaml*で、次のフィールドを `Workflow1` クラスの先頭に追加します。 このフィールドは、ワークフローが終了したかどうかを判断するためにアクティビティで使用されます。
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +182,7 @@ ms.locfileid: "66401056"
     Boolean workflowPending = true;
     ```
 
-2. `Workflow1` クラスに次のメソッドを追加します。 このメソッドの値をチェックする、`Document Status`ドキュメントが確認されたかどうかを判断するドキュメントの一覧のプロパティ。 場合、`Document Status`プロパティに設定されて`Review Complete`、`checkStatus`メソッドのセット、`workflowPending`フィールドを**false**ワークフローが完了する準備であることを示します。
+2. `Workflow1` クラスに次のメソッドを追加します。 このメソッドは、ドキュメントリストの [`Document Status`] プロパティの値をチェックして、ドキュメントが確認されているかどうかを確認します。 `Document Status` プロパティが `Review Complete`に設定されている場合、`checkStatus` メソッドは `workflowPending` フィールドを**false**に設定して、ワークフローが完了する準備ができていることを示します。
 
     ```vb
     Private Sub checkStatus()
@@ -200,7 +200,7 @@ ms.locfileid: "66401056"
     }
     ```
 
-3. 次のコードを追加、`onWorkflowActivated`と`onWorkflowItemChanged`メソッドを呼び出す、`checkStatus`メソッド。 ワークフローの開始時、`onWorkflowActivated`メソッドの呼び出し、`checkStatus`ドキュメントが既に確認されているかどうかを判断するメソッド。 かどうか確認されていませんが、ワークフローが続行されます。 ドキュメントが保存されると、`onWorkflowItemChanged`メソッドの呼び出し、`checkStatus`メソッドは、ドキュメントが確認されたかどうかを確認します。 中に、`workflowPending`にフィールドが設定されている**true**ワークフローが実行を継続します。
+3. `onWorkflowActivated` メソッドと `onWorkflowItemChanged` メソッドに次のコードを追加して、`checkStatus` メソッドを呼び出します。 ワークフローが開始されると、`onWorkflowActivated` メソッドは `checkStatus` メソッドを呼び出して、ドキュメントが既にレビューされているかどうかを確認します。 レビューされていない場合、ワークフローは続行されます。 ドキュメントを保存すると、`onWorkflowItemChanged` メソッドは `checkStatus` メソッドを再度呼び出して、ドキュメントがレビューされているかどうかを判断します。 `workflowPending` フィールドが**true**に設定されている間、ワークフローは引き続き実行されます。
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +226,7 @@ ms.locfileid: "66401056"
     }
     ```
 
-4. 次のコードを追加、`isWorkflowPending`の状態を確認する方法、`workflowPending`プロパティ。 ドキュメントが保存されるたびに、 **whileActivity1**アクティビティが呼び出す、`isWorkflowPending`メソッド。 このメソッドは、検査、<xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A>のプロパティ、<xref:System.Workflow.Activities.ConditionalEventArgs>を決定するオブジェクトかどうか、 **WhileActivity1**アクティビティの続行または完了する必要があります。 プロパティ設定されている場合**true**アクティビティが継続します。 それ以外の場合、アクティビティが完了し、ワークフローは完了します。
+4. `isWorkflowPending` メソッドに次のコードを追加して、`workflowPending` プロパティの状態を確認します。 **WhileActivity1**アクティビティは、ドキュメントが保存されるたびに `isWorkflowPending` メソッドを呼び出します。 このメソッドは、<xref:System.Workflow.Activities.ConditionalEventArgs> オブジェクトの <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> プロパティを調べて、 **WhileActivity1**アクティビティを続行するか終了するかを決定します。 プロパティが**true**に設定されている場合、アクティビティは続行されます。 それ以外の場合は、アクティビティが終了し、ワークフローが終了します。
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)
@@ -243,51 +243,51 @@ ms.locfileid: "66401056"
 
 5. プロジェクトを保存します。
 
-## <a name="test-the-sharepoint-workflow-template"></a>SharePoint ワークフロー テンプレートをテストします。
- デバッガーを起動するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、SharePoint サーバーにワークフロー テンプレートをデプロイし、使用して、ワークフローを関連付けます、 **Shared Documents**一覧。 ワークフローをテストするには、内のドキュメントから、ワークフローのインスタンスを開始、 **Shared Documents**一覧。
+## <a name="test-the-sharepoint-workflow-template"></a>SharePoint ワークフローテンプレートをテストする
+ デバッガーを起動すると、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によってワークフローテンプレートが SharePoint サーバーに配置され、ワークフローが**共有ドキュメント**の一覧に関連付けられます。 ワークフローをテストするには、 **[共有ドキュメント]** リストのドキュメントからワークフローのインスタンスを開始します。
 
-#### <a name="to-test-the-sharepoint-workflow-template"></a>SharePoint ワークフロー テンプレートをテストするには
+#### <a name="to-test-the-sharepoint-workflow-template"></a>SharePoint ワークフローテンプレートをテストするには
 
-1. *Workflow1.cs*または*Workflow1.vb*、横にブレークポイントを設定、 **onWorkflowActivated**メソッド。
+1. *Workflow1.cs*または*Workflow1.xaml*で、 **onworkflowactivated 化**メソッドの横にブレークポイントを設定します。
 
-2. 選択、 **F5**キー、ソリューションをビルドして実行します。
+2. F5 キーを**押し**て、ソリューションをビルドして実行します。
 
      SharePoint サイトが表示されます。
 
-3. SharePoint でのナビゲーション ウィンドウで、 **Shared Documents**リンク。
+3. SharePoint のナビゲーションウィンドウで、 **[共有ドキュメント]** リンクを選択します。
 
-4. **Shared Documents**ページで、選択、**ドキュメント**リンクを**ライブラリ ツール**タブをクリックして、**ドキュメントのアップロード**ボタン.
+4. **[共有ドキュメント]** ページで、 **[ライブラリツール]** タブの **[ドキュメント]** リンクを選択し、 **[ドキュメントのアップロード]** ボタンを選択します。
 
-5. **ドキュメントのアップロード** ダイアログ ボックスで、選択、**参照**ボタン、任意のドキュメント ファイルを選択して、選択、**オープン**ボタンをクリックし、選択し、 **ok**ボタンをクリックします。
+5. **[ドキュメントのアップロード]** ダイアログボックスで、 **[参照]** ボタンをクリックし、任意のドキュメントファイルを選択し、 **[開く]** ボタンをクリックして、 **[OK]** をクリックします。
 
-     選択したドキュメントをアップロード、 **Shared Documents**ボックスの一覧し、ワークフローを開始します。
+     これにより、選択したドキュメントが**共有ドキュメント**の一覧にアップロードされ、ワークフローが開始されます。
 
-6. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、デバッガーをブレークポイントで横に中断することを確認、`onWorkflowActivated`メソッド。
+6. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で、`onWorkflowActivated` メソッドの横にあるブレークポイントでデバッガーが停止することを確認します。
 
-7. 選択、 **F5**キーの実行を続行します。
+7. F5 キーを**押し**て実行を続行します。
 
-8. ここでは、ドキュメントの設定を変更できますが、値のままにして、既定ここでを選択して、**保存**ボタンをクリックします。
+8. ここでドキュメントの設定を変更することはできますが、 **[保存]** ボタンを選択すると、ここでは既定値のままにしておきます。
 
-     戻ります、 **Shared Documents**既定の SharePoint Web サイトのページ。
+     これにより、既定の SharePoint Web サイトの **[共有ドキュメント]** ページに戻ります。
 
-9. **Shared Documents**ことを確認します ページで、下にある値、 **MySharePointWorkflow - Workflow1**に設定されている列**で進行状況**します。 これは、ワークフローが進行中であると、ドキュメントが確認を待っていることを示します。
+9. **[共有ドキュメント]** ページで、 **[mysharepointworkflow-workflow1.xaml]** 列の下の値が **[処理**中] に設定されていることを確認します。 これは、ワークフローが進行中であり、ドキュメントがレビューを待機していることを示します。
 
-10. **Shared Documents**  ページで、ドキュメントが表示されたらを選択し、矢印を選択、**プロパティの編集**メニュー項目。
+10. **[共有ドキュメント]** ページで、ドキュメントを選択し、表示される矢印をクリックして、 **[プロパティの編集]** メニュー項目を選択します。
 
-11. 設定**Document Status**に**Review Complete**、選択し、**保存**ボタンをクリックします。
+11. **[ドキュメントの状態]** を **[レビュー完了]** に設定し、 **[保存]** をクリックします。
 
-     戻ります、 **Shared Documents**既定の SharePoint Web サイトのページ。
+     これにより、既定の SharePoint Web サイトの **[共有ドキュメント]** ページに戻ります。
 
-12. **Shared Documents**ことを確認します ページで、下にある値、 **Document Status**に設定されている列**Review Complete**します。 更新、 **Shared Documents**ページおよびことを確認します下にある値、 **MySharePointWorkflow - Workflow1**に設定されている列**完了**します。 これが示すワークフローが完了し、ドキュメントを確認します。
+12. **[共有ドキュメント]** ページで、 **[ドキュメントの状態]** 列の下の値が **[完了の確認]** に設定されていることを確認します。 **[共有ドキュメント]** ページを更新し、 **[mysharepointworkflow-workflow1.xaml]** 列の下の値が **[完了]** に設定されていることを確認します。 これは、ワークフローが完了し、ドキュメントがレビューされたことを示します。
 
-## <a name="next-steps"></a>次の手順
- これらのトピックからワークフロー テンプレートを作成する方法の詳細を確認できます。
+## <a name="next-steps"></a>次のステップ
+ ワークフローテンプレートを作成する方法の詳細については、次のトピックを参照してください。
 
-- SharePoint ワークフロー アクティビティの詳細については、次を参照してください。 [SharePoint Foundation のワークフロー アクティビティ](http://go.microsoft.com/fwlink/?LinkId=178992)します。
+- SharePoint ワークフローアクティビティの詳細については、「 [Sharepoint Foundation のワークフローアクティビティ](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14))」を参照してください。
 
-- Windows Workflow Foundation アクティビティの詳細については、次を参照してください。 [System.Workflow.Activities Namespace](http://go.microsoft.com/fwlink/?LinkId=178993)します。
+- Windows Workflow Foundation アクティビティの詳細については、「system.string[名前空間](/dotnet/api/system.workflow.activities&view=netframework-4.8)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint ワークフロー ソリューションを作成します。](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [SharePoint ワークフローソリューションの作成](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)

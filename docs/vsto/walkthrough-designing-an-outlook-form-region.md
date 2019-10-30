@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a346686ee89862abef046c066614eddce1cf3a3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255758"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985465"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>チュートリアル: Outlook フォーム領域のデザイン
   カスタム フォーム領域は、標準またはカスタムの Microsoft Office Outlook フォームを拡張します。 このチュートリアルでは、連絡先アイテムのインスペクター ウィンドウに新しいページとして表示するカスタム フォーム領域をデザインします。 このフォーム領域では、アドレス情報を Windows Live Local Search の Web サイトに送信することによって、連絡先に設定された個々の住所の地図を表示します。 フォーム領域の詳細については、「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
@@ -39,27 +39,27 @@ ms.locfileid: "71255758"
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]以降。
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] 以降。
 
-  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")このトピックのビデオ版については[、ビデオ「方法:Outlook フォーム領域](http://go.microsoft.com/fwlink/?LinkID=140824)をデザインします。
+  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")このトピックのビデオ版については、「[方法: Outlook フォーム領域をデザイン](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90))する」を参照してください。
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>新しい Outlook VSTO アドインプロジェクトを作成する
  まず、基本的な VSTO アドイン プロジェクトを作成します。
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>新しい Outlook VSTO アドイン プロジェクトを作成するには
 
-1. で[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 **mapitaddin**という名前の Outlook VSTO アドインプロジェクトを作成します。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で、 **Mapitaddin**という名前の Outlook VSTO アドインプロジェクトを作成します。
 
 2. **[新しいプロジェクト]** ダイアログ ボックスの **[ソリューションのディレクトリを作成]** チェック ボックスをオンにします。
 
 3. プロジェクトを任意のディレクトリに保存します。
 
-     詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Outlook VSTO アドインプロジェクトへのフォーム領域の追加
  Outlook VSTO アドイン ソリューションには、1 つ以上の Outlook フォーム領域アイテムを格納できます。 **新しい Outlook フォーム領域**ウィザードを使用して、プロジェクトにフォーム領域アイテムを追加します。
@@ -122,7 +122,7 @@ ms.locfileid: "71255758"
 
     `MapItFactory` という名前のフォーム領域ファクトリ クラスが公開されます。
 
-3. `MapItFactory_FormRegionInitializing` イベント ハンドラーに次のコードを追加します。 このイベント ハンドラーは、ユーザーが連絡先アイテムを開いたときに呼び出されます。 次のコードは、連絡先アイテムに住所が含まれているかどうかを判定します。 連絡先アイテムに住所が含まれていない場合、このコード<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>は<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>クラスのプロパティを**true**に設定し、フォーム領域は表示されません。 それ以外の場合は、VSTO アドインで <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> イベントが発生し、フォーム領域が表示されます。
+3. `MapItFactory_FormRegionInitializing` イベント ハンドラーに次のコードを追加します。 このイベント ハンドラーは、ユーザーが連絡先アイテムを開いたときに呼び出されます。 次のコードは、連絡先アイテムに住所が含まれているかどうかを判定します。 連絡先アイテムに住所が含まれていない場合、このコードは <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> クラスの <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> プロパティを**true**に設定し、フォーム領域は表示されません。 それ以外の場合は、VSTO アドインで <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> イベントが発生し、フォーム領域が表示されます。
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
@@ -167,7 +167,7 @@ ms.locfileid: "71255758"
 
      Map It フォーム領域が開き、Local Search の Web サイトが表示されます。 **ビジネス**、**自宅**、および**その他の**アドレスは、スクラッチパッドに表示されます。 スクラッチ パッドで、地図を表示する住所を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Outlook アプリケーションの UI をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
 - Outlook アイテムのリボンをカスタマイズする方法については、「 [outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)する」を参照してください。
@@ -180,4 +180,4 @@ ms.locfileid: "71255758"
 - [方法: フォーム領域を Outlook アドインプロジェクトに追加する](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [フォーム領域を Outlook メッセージクラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Outlook フォーム領域のカスタムアクション](../vsto/custom-actions-in-outlook-form-regions.md)
-- [方法: Outlook にフォーム領域が表示されないようにする](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [方法: Outlook でフォーム領域が表示されないようにする](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

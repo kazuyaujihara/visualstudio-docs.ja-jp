@@ -1,5 +1,5 @@
 ---
-title: '方法: Backstage ビューにコントロールを追加します。 '
+title: '方法: Backstage ビューにコントロールを追加する '
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,33 +20,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826782"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986011"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>方法: Backstage ビューにコントロールを追加します。
-  リボン デザイナーを使用して、クリックすると表示されるメニューにコントロールを追加、**ファイル**タブ。コントロールに追加する、アプリケーションを実行すると、**ファイル**タブ表示という名前のグループ**アドイン**します。
+# <a name="how-to-add-controls-to-the-backstage-view"></a>方法: Backstage ビューにコントロールを追加する
+  リボンデザイナーを使用すると、 **[ファイル]** タブをクリックしたときに表示されるメニューにコントロールを追加できます。アプリケーションを実行すると、 **[ファイル]** タブに追加したコントロールに、**アドイン**という名前のグループが表示されます。
 
- Visual Studio でリボン デザイナーを使用して、組み込みのコントロールの前後にコントロールを配置できません。 ビルトイン コントロールは、Backstage ビューで既に表示されているコントロールです。 組み込みのコントロールの前後にコントロールを配置する場合は、リボン XML を使用する必要があります。 詳細については**リボン (XML)** を参照してください[リボン XML](../vsto/ribbon-xml.md)します。 Backstage ビューをカスタマイズする方法の詳細については、次を参照してください。[開発者向け Office 2010 の Backstage ビュー](http://go.microsoft.com/fwlink/?LinkId=182189)と[開発者向け Office 2010 の Backstage ビューをカスタマイズ](http://go.microsoft.com/fwlink/?LinkId=182188)します。
+ Visual Studio のリボンデザイナーを使用して、組み込みコントロールの前または後にコントロールを配置することはできません。 ビルトイン コントロールは、Backstage ビューで既に表示されているコントロールです。 組み込みコントロールの前または後にコントロールを配置する場合は、リボン XML を使用する必要があります。 **リボン (xml)** の詳細については、「[リボン xml](../vsto/ribbon-xml.md)」を参照してください。 Backstage ビューのカスタマイズの詳細については、「[開発者向け office 2010 backstage ビューの概要](/previous-versions/office/developer/office-2010/ee691833(v=office.14))」および「[開発者向けの office 2010 Backstage ビューのカスタマイズ](/previous-versions/office/developer/office-2010/ee815851(v=office.14))」を参照してください。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-controls-to-backstage-view"></a>Backstage ビューにコントロールを追加するには
 
-1. デザイン ビューで、リボン項目を開きます。
+1. デザインビューでリボン項目を開きます。
 
-     追加する方法については、**リボン (ビジュアル デザイナー)** をプロジェクトに項目を参照してください[方法。リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。
+     **リボン (ビジュアルデザイナー)** 項目をプロジェクトに追加する方法については、「[方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。
 
-2. リボン デザイナーで、クリックして、**ファイル**タブ。
+2. リボンデザイナーで、 **[ファイル]** タブをクリックします。
 
-     メニュー デザイナーが表示されます。 このデザイン サーフェイスにコントロールが含まれていません。
+     メニューデザイナーが表示されます。 このデザインサーフェイスには、コントロールは含まれていません。
 
-3. **Office リボン コントロール**のタブ、**ツールボックス**、次のコントロールのいずれかをメニュー デザイナーにドラッグします。
+3. **ツールボックス**の **[Office リボンコントロール]** タブから、次のコントロールのいずれかをメニューデザイナーにドラッグします。
 
-    - ボタン
+    - Button
 
     - CheckBox
 
@@ -60,11 +60,11 @@ ms.locfileid: "62826782"
 
     - ToggleButton
 
-4. メニューの新しい位置に移動するコントロールをドラッグします。
+4. コントロールをドラッグして、メニューの新しい位置に移動します。
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
 - [リボン デザイナー](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
-- [方法: 開始するリボンをカスタマイズします。](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [リボン XML](../vsto/ribbon-xml.md)
+- [方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

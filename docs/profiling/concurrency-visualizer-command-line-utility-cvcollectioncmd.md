@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406143"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911203"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)
 コンカレンシー ビジュアライザーのコマンド ライン ユーティリティ (*CVCollectionCmd.exe*) を使用して、コマンド ラインからトレースを収集することで、Visual Studio 用のコンカレンシー ビジュアライザーでトレースを表示できます。 これらのツールは、Visual Studio がインストールされていないコンピューターで使用できます。
 
 > [!NOTE]
-> Visual Studio 2013 以降、コンカレンシー ビジュアライザーは任意の拡張機能となっています。 (以前は、Visual Studio に含まれていました。)ダウンロード センターから [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) をダウンロードできます。
+> Visual Studio 2013 以降、コンカレンシー ビジュアライザーは任意の拡張機能となっています。 (以前は、Visual Studio に含まれていました。)ダウンロード センターから [Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) をダウンロードできます。
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>コンカレンシー ビジュアライザーのコマンド ライン ユーティリティのダウンロード
- コマンド ライン ユーティリティをダウンロードしてインストールするには、[Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) に移動して指示に従います。 既定では、*CVCollectionCmd.exe* のインストール先は %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers) となっています。
+ コマンド ライン ユーティリティをダウンロードしてインストールするには、[Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) に移動して指示に従います。 既定では、*CVCollectionCmd.exe* のインストール先は %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers) となっています。
 
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd を使用したトレースの収集
  トレースを収集するには、CVCollectionCmd でアプリを起動するか、CVCollectionCmd にアタッチします。 オプションについては、以下のコマンド リファレンスを参照してください。 次に例を示します。
@@ -68,7 +68,7 @@ ms.locfileid: "63406143"
 | MinorVersion | 構成ファイルのマイナー バージョンを指定します。 | [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] プロジェクトの場合は、0 を指定する必要があります。 0 が指定されていない場合、ユーティリティは機能しません。 |
 | IncludeEnvSymbolPath | 環境シンボル パス (_NT_SYMBOL_PATH) を使用するかどうかを判別する値を設定します。 | -   True<br />-   False |
 | DeleteEtlsAfterAnalysis | 分析の完了時に ETL ファイルを削除するかどうかを判別する値を設定します。 | -   True<br />-   False |
-| SymbolPath | シンボル サーバーのパスを指定します。 詳細については、「 [Microsoft のシンボル サーバーを使用して、デバッグ シンボル ファイルを入手するには](http://go.microsoft.com/fwlink/?LinkID=149389)」を参照してください。 | ディレクトリ名または URL。 |
+| SymbolPath | シンボル サーバーのパスを指定します。 詳細については、「 [Microsoft のシンボル サーバーを使用して、デバッグ シンボル ファイルを入手するには](/windows/win32/dxtecharts/debugging-with-symbols)」を参照してください。 | ディレクトリ名または URL。 |
 | Markers | マーカー プロバイダーのリストが格納されます。 | 0 個以上の MarkerProvider 要素を格納できます。 |
 | MarkerProvider | 単一のマーカー プロバイダーを指定します。 | 以下の要素が含まれている必要があります。<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 以下の要素を含めることができます。<br /><br /> -   Categories<br />-   IsEnabled |
 | レベル | MarkerProvider の重要度レベルを設定します。 | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |

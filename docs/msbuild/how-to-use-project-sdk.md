@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 0be8f9ed17bf4474307a639bb75f409da2ff1638
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852240"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911302"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
 
@@ -107,7 +107,7 @@ ms.locfileid: "67852240"
    このリゾルバーは、製品の一部である `Microsoft.NET.Sdk` や `Microsoft.NET.Sdk.Web` などのプロジェクト SDK の場所を特定します。
 3. 既定のリゾルバー。MSBuild と共にインストールされた SDK を解決します。
 
-NuGet ベースの SDK リゾルバーでは、[global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) でバージョンを指定することができます。これによって、個々のプロジェクトではなく、ある場所内のプロジェクト SDK のバージョンを制御できます。
+NuGet ベースの SDK リゾルバーでは、[global.json](/dotnet/core/tools/global-json) でバージョンを指定することができます。これによって、個々のプロジェクトではなく、ある場所内のプロジェクト SDK のバージョンを制御できます。
 
 ```json
 {

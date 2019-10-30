@@ -12,49 +12,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f0b748e80726d69e5b826982596a0a32675bd7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d215849036e76cb51080775f5ea55e1eb0b28c56
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352274"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981691"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX パッケージの構造
-VSIX パッケージは、 *.vsix*メタデータ Visual Studio と共に、1 つまたは複数の Visual Studio 拡張が含まれるファイルを使用して分類および拡張機能をインストールします。 そのメタデータが含まれている VSIX マニフェストで、 *[Content_Types] .xml*ファイル。 1 つまたは複数が、VSIX パッケージに含めることもできます*Extension.vsixlangpack*を提供するファイルがローカライズされたセットアップのテキストと、依存関係をインストールする追加の VSIX パッケージを含めることができます。
+VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を含む *.vsix*ファイルで、visual studio が拡張機能を分類およびインストールするために使用するメタデータと共に使用されます。 このメタデータは、VSIX マニフェストと *[Content_Types] .xml*ファイルに格納されています。 VSIX パッケージには、ローカライズされたセットアップテキストを提供するための*vsixlangpack*ファイルが1つ以上含まれている場合があります。また、依存関係をインストールするための vsix パッケージが追加されている場合もあります。
 
- VSIX パッケージの形式では、Open Packaging Conventions (OPC) 標準に従います。 パッケージと共にバイナリやサポート ファイルに含まれる、 *[Content_Types] .xml*ファイルと *.vsix*マニフェスト ファイル。 1 つの VSIX パッケージには、複数のプロジェクトまたは複数のパッケージを独自のマニフェストの出力を含めることができます。
+ VSIX パッケージ形式は、Open パッケージング規約 (OPC) 標準に従います。 パッケージには、バイナリおよびサポートファイルと、 *[Content_Types] .xml*ファイルと *.vsix*マニフェストファイルが含まれています。 1つの VSIX パッケージに、複数のプロジェクトの出力、または独自のマニフェストを持つ複数のパッケージが含まれている場合があります。
 
 > [!NOTE]
-> VSIX パッケージに含まれるファイルの名前は、スペースを含める必要がありますいないもとして Uniform Resource Identifier (URI) 内に予約されている文字の下で定義された[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)します。
+> VSIX パッケージに含まれるファイルの名前には、 [\[RFC2396\]](https://www.rfc-editor.org/rfc/rfc2396.txt)で定義されているように、スペースや、Uniform resource IDENTIFIER (URI) で予約されている文字を含めることはできません。
 
 ## <a name="the-vsix-manifest"></a>VSIX マニフェスト
- VSIX マニフェストには、拡張機能のインストール、および次のように、VSX スキーマに関する情報が含まれています。 詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。 VSIX マニフェストの例を次を参照してください。 [PackageManifest element (ルート element, VSX schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)します。
+ VSIX マニフェストには、インストールする拡張機能に関する情報が含まれており、VSX スキーマに従います。 詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。 VSIX マニフェストの例については、「 [PackageManifest 要素 (root 要素、VSX schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)」を参照してください。
 
- VSIX マニフェストを指定する必要があります`extension.vsixmanifest`に含まれる、^ .vsix * ファイル。
+ VSIX マニフェストは、^ .vsix * ファイルに含まれている場合は `extension.vsixmanifest` という名前にする必要があります。
 
 ## <a name="the-content"></a>コンテンツ
- VSIX パッケージには、テンプレート、ツールボックス項目、Vspackage、またはその他の種類の Visual Studio でサポートされている拡張機能を含めることができます。
+ VSIX パッケージには、テンプレート、ツールボックスアイテム、Vspackage、または Visual Studio でサポートされているその他の種類の拡張機能が含まれている場合があります。
 
 ## <a name="language-packs"></a>言語パック
- VSIX パッケージは、1 回以上を含めることができます*Extension.vsixlangpack*ファイルをインストール中にローカライズされたテキストを提供します。 詳細については、次を参照してください。[ローカライズ VSIX パッケージ](../extensibility/localizing-vsix-packages.md)します。
+ VSIX パッケージには、インストール時にローカライズされたテキストを提供するための*vsixlangpack*ファイルが1つ以上含まれている場合があります。 詳細については、「 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)」を参照してください。
 
-## <a name="dependencies-and-references"></a>依存関係および参照
- VSIX パッケージでは、参照として他の VSIX パッケージを含めることができます。 独自の VSIX マニフェストの他の各パッケージがあります。
+## <a name="dependencies-and-references"></a>依存関係と参照
+ VSIX パッケージには、参照として他の VSIX パッケージを含めることができます。 これらの他のパッケージにはそれぞれ、独自の VSIX マニフェストが含まれている必要があります。
 
- ユーザーは、依存関係がある拡張機能をインストールしようとすると、インストーラーは、ユーザー システムで、必要なアセンブリがインストールされていることを確認します。 必要なアセンブリが見つからない場合**拡張機能と更新**不足しているアセンブリの一覧を表示します。
+ 依存関係がある拡張機能をユーザーがインストールしようとすると、インストーラーは必要なアセンブリがユーザーシステムにインストールされていることを確認します。 必要なアセンブリが見つからない場合は、**拡張機能と更新プログラム**によって、不足しているアセンブリの一覧が表示されます。
 
- 1 つまたは複数の拡張機能マニフェストが含まれている場合[参照](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100))要素、**拡張機能と更新**システムにインストールされている拡張機能への参照をそれぞれのマニフェストを比較し、インストール、インストールされていない場合は、拡張機能を参照します。 参照先の拡張機能の以前のバージョンがインストールされている場合、新しいバージョンに置き換わります。
+ 拡張機能マニフェストに1つ以上の[参照](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100))要素が含まれている場合、**拡張機能と更新プログラム**によって、各参照のマニフェストがシステムにインストールされている拡張機能と比較され、参照されている拡張機能がまだインストールされていない場合はインストールされます。ら. 以前のバージョンの参照されている拡張機能がインストールされている場合は、新しいバージョンで置き換えられます。
 
- マルチ プロジェクト ソリューション内のプロジェクトには、同じソリューションで別のプロジェクトへの参照が含まれている場合、VSIX パッケージには、そのプロジェクトの依存関係が含まれています。 この動作をオーバーライドするには、内部のプロジェクトをクリックでの参照 をクリックして、**プロパティ**ウィンドウで、設定、**出力の VSIX にグループが含まれる**プロパティを`BuiltProjectOutputGroup`。
+ 複数プロジェクトのソリューション内のプロジェクトに、同じソリューション内の別のプロジェクトへの参照が含まれている場合、VSIX パッケージにはそのプロジェクトの依存関係が含まれます。 この動作をオーバーライドするには、内部プロジェクトの参照をクリックし、**プロパティ** ウィンドウで、**VSIX に含まれる出力グループ** プロパティを `BuiltProjectOutputGroup`に設定します。
 
- VSIX パッケージ内の参照アセンブリのサテライト Dll を含めるには追加`SatelliteDllsProjectOutputGroup`を**出力の VSIX にグループが含まれる**プロパティ。
+ 参照されたアセンブリのサテライト Dll を VSIX パッケージに含めるには、 **vsix プロパティに含まれる出力グループ**に `SatelliteDllsProjectOutputGroup` を追加します。
 
 ## <a name="installation-location"></a>インストール場所
- インストール中に、**拡張機能と更新**下のフォルダーに、VSIX パッケージの内容を探します *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*します。
+ インストール中、**拡張機能と更新プログラム**によって、 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*の下のフォルダーにある VSIX パッケージの内容が検索されます。
 
- 既定では、インストールにのみ適用されます、現在のユーザーのため *%localappdata%* はユーザー固有のディレクトリです。 ただし、設定した場合、 [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)するマニフェストの要素`True`で、拡張機能がインストールされます<em>.\\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>コンピューターのすべてのユーザーに利用可能になります。
+ 既定では、 *% Localappdata%* はユーザー固有のディレクトリであるため、インストールは現在のユーザーにのみ適用されます。 ただし、マニフェストの[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)要素を `True`に設定した場合、拡張機能は<em>..\\</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>にインストールされ、コンピューターのすべてのユーザーが使用できるようになります。
 
-## <a name="contenttypesxml"></a>[Content_Types].xml
- *[Content_Types] .xml*ファイルが展開済みファイルの種類を識別する *.vsix*ファイル。 Visual Studio は、パッケージのインストール中にこのファイルを使用しますが、ファイル自体ではインストールされません。 このファイルの詳細については、次を参照してください。 [[Content_types] .xml ファイルの構造](the-structure-of-the-content-types-dot-xml-file.md)します。
+## <a name="content_typesxml"></a>[Content_Types] .xml
+ *[Content_Types] .xml*ファイルは、展開された *.vsix*ファイル内のファイルの種類を識別します。 Visual Studio では、パッケージのインストール時にこのファイルを使用しますが、ファイル自体はインストールしません。 このファイルの詳細については、「 [[Content_types] .xml ファイルの構造](the-structure-of-the-content-types-dot-xml-file.md)」を参照してください。
 
- A *[Content_Types] .xml* Open Packaging Conventions (OPC) 標準でファイルが必要です。 OPC の詳細については、次を参照してください[OPC:。データをパッケージ化するための新しい標準](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/)MSDN Web サイト。
+ Open パッケージング規約 (OPC) 標準では、 *[Content_Types] .xml*ファイルが必要です。 OPC の詳細については、「 [opc: データをパッケージ化するための新しい標準](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/)」を参照してください。

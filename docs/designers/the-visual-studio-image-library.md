@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6cb64c3dad56c291b229dfee6cc2816e574b69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0fc3719f57e91ddd602bdb6eeb382bf5885a81a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634838"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888430"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Image Library
 
 Visual Studio Image Library には、Microsoft Visual Studio、Microsoft Windows、Office system などの Microsoft ソフトウェアに表示されるアプリケーション イメージが格納されています。 この 1,000 を超えるイメージのセットを使用して、Microsoft ソフトウェアと同じ外観のソフトウェアを作成できます。
 
-[Visual Studio Image Library をダウンロードする](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[Visual Studio Image Library をダウンロードする](http://www.microsoft.com/download/details.aspx?id=35825)
 
 イメージ ライブラリは、共通の要素、アクション、注釈、アイコン、オブジェクトという 5 つのカテゴリに分割されています。 共通の要素およびアイコンについては、PDF 形式のリリース ノート ファイルが含まれています。 リリース ノート ファイルには、アプリケーションでこれらのイメージを適切に使用する方法に関する情報が含まれています。
 

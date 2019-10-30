@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798371"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910147"
 ---
 # <a name="performance-session-properties"></a>パフォーマンス セッションのプロパティ
 
@@ -44,7 +44,7 @@ ms.locfileid: "62798371"
 
 この設定では、バイナリの一覧から選択したり、バイナリの開始順序を指定したりできます。
 
-詳細については、「[方法 :開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)」を参照してください
+詳細については、[開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)」を参照してください
 
 ## <a name="sampling"></a>サンプリング
 
@@ -56,12 +56,12 @@ ms.locfileid: "62798371"
 - パフォーマンス カウンター - 低レベルのパフォーマンスの問題
 - 使用できるパフォーマンス カウンターに基づいて、その他のサンプル イベントを指定できます
 
-詳細については、「[方法 :サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)
+詳細については、[サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>2 項
 この設定では、インストルメント化されたバイナリを別の位置に再配置するかどうかを指定できます。 たとえば、*My.DLL* のプロファイリングを行っていて、インストルメント化されたバイナリを再配置しないことを選択した場合、*My.DLL* のバックアップ コピーが *My.Orig.DLL* という名前で作成されます。 その後、*My.DLL* にデータ収集用のプローブが挿入されて変更されます。 インストルメント化されたバイナリを再配置することにした場合、元のバイナリの名前は変更されず、インストルメント化されたバイナリは指定された位置にコピーされ、インストルメンテーション時に使用されます。
 
-詳細については、「[方法 :開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)」を参照してください
+詳細については、[開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)」を参照してください
 
 ## <a name="tier-interactions"></a>階層の相互作用
 
@@ -81,11 +81,11 @@ ms.locfileid: "62798371"
 
 この設定では、インストルメンテーション プロファイリング メソッドを使用しているときの CPU パフォーマンス カウンターに関するデータを収集できます。 汎用性のあるパフォーマンス カウンターは、CPU の設計やメーカーにかかわらず使用できます。 プラットフォーム イベントは、CPU の設計やメーカーに固有です。 オンチップ パフォーマンス カウンターの詳細については、該当するプロセッサのマニュアルを参照してください。
 
-詳細については、「[方法 :CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)
+詳細については、[CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Windows イベント
 
-プロファイリング中は、イベント トレース プロバイダーからデータを収集できます。 データは、*VSPerfReport.exe* コマンド ライン ツールの `/calltrace` オプションを使用して表示できます。 Windows イベント トレーシング (ETW) の詳細については、[イベント トレーシング](http://go.microsoft.com/fwlink/?linkid=90752)に関する記事を参照してください。
+プロファイリング中は、イベント トレース プロバイダーからデータを収集できます。 データは、*VSPerfReport.exe* コマンド ライン ツールの `/calltrace` オプションを使用して表示できます。 Windows イベント トレーシング (ETW) の詳細については、[イベント トレーシング](/windows/win32/etw/about-event-tracing)に関する記事を参照してください。
 
 詳細については次を参照してください:
 
@@ -95,9 +95,9 @@ ms.locfileid: "62798371"
 
 ## <a name="windows-counters"></a>Windows カウンター
 
-このオプションを使用すると、Windows パフォーマンス モニターのカウンターからデータを収集できます。 このデータを収集するには、**[Windows カウンターの収集]** チェック ボックスをオンにします。 収集の間隔は、**[収集間隔]** ボックスで設定します。 **[カウンター カテゴリ]** と **[インスタンス]** も使用できます。 既定の Windows パフォーマンス モニターのカウンターの一部が有効になります。
+このオプションを使用すると、Windows パフォーマンス モニターのカウンターからデータを収集できます。 このデータを収集するには、 **[Windows カウンターの収集]** チェック ボックスをオンにします。 収集の間隔は、 **[収集間隔]** ボックスで設定します。 **[カウンター カテゴリ]** と **[インスタンス]** も使用できます。 既定の Windows パフォーマンス モニターのカウンターの一部が有効になります。
 
- 詳細については、「[方法 :Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)」を参照してください。
+ 詳細については、[Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)」を参照してください。
 
 ## <a name="advanced"></a>詳細設定
 

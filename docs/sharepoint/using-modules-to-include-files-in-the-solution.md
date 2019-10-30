@@ -1,5 +1,5 @@
 ---
-title: モジュールを使用して、ソリューションにファイルを含める |Microsoft Docs
+title: モジュールを使用したソリューションへのファイルの追加 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,20 +14,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f8f2aa6c5d86af2424a811b6167829cefdb6fb5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007842"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985301"
 ---
-# <a name="use-modules-to-include-files-in-the-solution"></a>モジュールを使用して、ソリューションにファイルを含める
-  新しいマスター ページなど、そのファイルの種類に関係なく、SharePoint サーバーにファイルをデプロイする場合がありますである可能性があります。 これを行うには、使用することができます*モジュール*(と混同しないように[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]モジュールのコード)。 モジュールは、SharePoint ソリューション内のファイルのコンテナーです。 ソリューションを展開するときは、モジュール内のファイルが SharePoint サーバーの指定したフォルダーにコピーされます。
+# <a name="use-modules-to-include-files-in-the-solution"></a>モジュールを使用してソリューションにファイルを含める
+  ファイルの種類 (新しいマスターページなど) に関係なく、SharePoint サーバーにファイルを配置することが必要になる場合があります。 これを行うには、*モジュール*を使用できます ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] コードモジュールと混同しないでください)。 モジュールは、SharePoint ソリューション内のファイルのコンテナーです。 ソリューションを配置すると、モジュール内のファイルが SharePoint サーバー上の指定されたフォルダーにコピーされます。
 
-## <a name="module-items-and-elements"></a>モジュールのアイテムと要素
- モジュールを作成するには、プロジェクトに追加でを選択して、**新しい項目の追加** ダイアログ ボックス。 次に、変更、 *Elements.xml*システムに配置されている場所とそのファイルが SharePoint サーバーにコピーする必要がありますが、配置するファイルの名前を含むファイル。
+## <a name="module-items-and-elements"></a>モジュールの項目と要素
+ モジュールを作成するには、 **[新しい項目の追加]** ダイアログボックスでモジュールを選択して、プロジェクトに追加します。 次に、*要素 .xml*ファイルを変更して、配置するファイルの名前、システム上の場所、および SharePoint サーバー上でのコピー先ファイルの名前を含めます。
 
- 次の例に示します、 *Elements.xml*モジュール ファイル。
+ モジュールの*Elements .xml*ファイルの例を次に示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,26 +39,26 @@ ms.locfileid: "63007842"
 
 ```
 
- 新しく作成されたモジュールには、次の既定のファイルが含まれます。
+ 新しく作成されたモジュールには、次の既定のファイルが含まれています。
 
 |ファイル名|説明|
 |---------------|-----------------|
-|*Elements.xml*|モジュールの定義ファイル。|
-|*Sample.txt*|モジュール内のファイルの例として機能するプレース ホルダー ファイル。|
+|*Elements .xml*|モジュールの定義ファイルです。|
+|*サンプル .txt*|モジュール内のファイルの例として機能するプレースホルダーファイル。|
 
- *Elements.xml*ファイルには、次の要素が含まれています。
+ *Elements .xml*ファイルには、次の要素が含まれています。
 
 |要素名|説明|
 |------------------|-----------------|
-|Elements|すべてのモジュールで定義されている要素が含まれます。|
-|Module|Module 要素が 1 つの属性を持つ*名前*の形式で、モジュールの名前を指定する`<Module Name="Module1">`します。<br /><br /> モジュールの名前を変更する場合 (またはその*フォルダー名*プロパティ)、Module 要素内の名前を手動で更新する必要があります。<br /><br /> モジュールの要素で、ファイルのサブディレクトリを指定する場合[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) がそれらの一致するディレクトリ構造を自動的に作成されます。|
-|ファイル|ファイルの要素が 2 つのパラメーター、*パス*と*Url*します。<br /><br /> パス:名前と、SharePoint ソリューション ファイルの場所。 形式は、`Path="Module1\Sample.txt"`します。<br /><br /> -Url:SharePoint サーバー上のファイルの配置場所です。 形式は、`Url="Module1/Sample.txt"`します。<br /><br /> 種類:2 つの設定を持つ省略可能な属性。*GhostableInLibrary*と*Ghostable*します。 形式は、`Type="GhostableInLibrary"`します。 指定する*GhostableInLibrary*ファイルはライブラリに追加されたときに、ファイルを伴う一覧項目と共に sharepoint ドキュメント ライブラリに追加することを意味します。 指定する*Ghostable*によりドキュメント ライブラリの外部の SharePoint に追加するファイル。|
+|Elements|モジュールで定義されているすべての要素が含まれます。|
+|Module|Module 要素には、`<Module Name="Module1">`の形式でモジュールの名前を指定する単一の属性*name*があります。<br /><br /> モジュール (またはその*フォルダー名*プロパティ) の名前を変更する場合は、モジュール要素内の名前を手動で更新する必要があることに注意してください。<br /><br /> Module 要素内のファイルのサブディレクトリを指定すると、[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) によって、対応するディレクトリ構造が自動的に作成されます。|
+|ファイル|File 要素には、*パス*と*Url*という2つのパラメーターがあります。<br /><br /> -Path: SharePoint ソリューション内のファイルの名前と場所。 形式は、`Path="Module1\Sample.txt"`です。<br /><br /> -Url: SharePoint サーバー上でファイルが配置される場所。 形式は、`Url="Module1/Sample.txt"`です。<br /><br /> -Type: *GhostableInLibrary*と*Ghostable*の2つの設定を持つ省略可能な属性です。 形式は、`Type="GhostableInLibrary"`です。 *GhostableInLibrary*を指定すると、ファイルがライブラリに追加されたときにファイルに付随するリスト項目と共に、SharePoint のドキュメントライブラリに追加されます。 *Ghostable*を指定すると、ファイルがドキュメントライブラリの外部の SharePoint に追加されます。|
 
- 展開する各ファイルには、個別が必要です。`<File>`要素エントリの*Elements.xml*します。
+ 配置する各ファイルには、 *Elements .xml*に個別の `<File>` 要素エントリが必要です。
 
 ## <a name="see-also"></a>関連項目
-- [方法: モジュールを使用して、ファイルを含める](../sharepoint/how-to-include-files-by-using-a-module.md)
-- [操作方法：ファイルをプロビジョニングします。](http://go.microsoft.com/fwlink/?LinkID=144271)
+- [方法: モジュールを使用してファイルを含める](../sharepoint/how-to-include-files-by-using-a-module.md)
+- [方法: ファイルを準備する](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
 - [SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

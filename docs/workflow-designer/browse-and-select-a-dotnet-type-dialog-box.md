@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650720"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985349"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650720"
 - <xref:System.Activities.Statements.TryCatch> アクティビティに catch を追加する。
 
 > [!NOTE]
-> 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 詳細については、「[ジャグ配列](http://go.microsoft.com/fwlink/?LinkId=195226)と[多次元配列](http://go.microsoft.com/fwlink/?LinkId=195227)」を参照してください。
+> 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 詳細については、「[ジャグ配列](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90))と[多次元配列](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90))」を参照してください。
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>型ブラウザーでの値型または参照型の選択
 
@@ -67,7 +67,7 @@ ms.locfileid: "72650720"
 
 1. 入力**操作**は <xref:System.OperationCanceledException> と一致しますが、<xref:System.InvalidOperationException> は一致しません。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
-2. 型指定**ジェネリック**は <xref:System.GenericUriParser> に一致しますが、<xref:System.Collections.Generic> 名前空間の型には一致しません。 @No__t_0 名前空間の型を検索するには、名前空間の完全修飾名を入力します。
+2. 型指定**ジェネリック**は <xref:System.GenericUriParser> に一致しますが、<xref:System.Collections.Generic> 名前空間の型には一致しません。 <xref:System.Collections.Generic> 名前空間の型を検索するには、名前空間の完全修飾名を入力します。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>型ブラウザー ダイアログを使用したサービス コントラクトの選択
 

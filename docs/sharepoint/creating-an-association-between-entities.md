@@ -1,5 +1,5 @@
 ---
-title: エンティティ間のアソシエーションを作成する |Microsoft Docs
+title: エンティティ間の関連付けの作成 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,61 +21,61 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952894"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981085"
 ---
-# <a name="create-an-association-between-entities"></a>エンティティ間のアソシエーションを作成します。
-  関連付けを作成して、ビジネス データ接続 (BDC) モデルのエンティティ間のリレーションシップを定義することができます。 Visual Studio では、各関連付けについての情報をモデルのコンシューマーに提供するメソッドを生成します。 これらのメソッドは、SharePoint web パーツ、リスト、またはユーザー インターフェイス (UI) でデータ間の関係を表示するカスタム アプリケーションで使用できます。
+# <a name="create-an-association-between-entities"></a>エンティティ間の関連付けを作成する
+  関連付けを作成することによって、Business Data Connectivity (BDC) モデルのエンティティ間のリレーションシップを定義できます。 Visual Studio では、モデルのコンシューマーに各アソシエーションに関する情報を提供するメソッドが生成されます。 これらのメソッドは、SharePoint web パーツ、リスト、またはカスタムアプリケーションで、ユーザーインターフェイス (UI) にデータリレーションシップを表示するために使用できます。
 
-## <a name="create-an-association"></a>関連付けを作成します。
- 選択して、アソシエーションを作成、**アソシエーション**Visual Studio でのコントロール**ツールボックス**、最初のエンティティ (ソース エンティティと呼ばれます) を選択し、別のエンティティを選択し (と呼ばれる、転送先エンティティの場合)。 関連付けの詳細を定義することができます、**関連付けエディター**します。 詳細については、「[方法 :エンティティ間のアソシエーションを作成する](../sharepoint/how-to-create-an-association-between-entities.md)します。
+## <a name="create-an-association"></a>関連付けを作成する
+ 関連付けを作成するには、Visual Studio の **[ツールボックス]** で **[関連付け]** コントロールを選択し、最初のエンティティ (ソースエンティティと呼ばれます) を選択して、2番目のエンティティ (送信先エンティティと呼ばれます) を選択します。 アソシエーション**エディター**でアソシエーションの詳細を定義できます。 詳細については、「[方法: エンティティ間の関連付けを作成する](../sharepoint/how-to-create-an-association-between-entities.md)」を参照してください。
 
-## <a name="association-methods"></a>関連付けメソッド
- SharePoint ビジネス データ web パーツなどのアプリケーションでは、エンティティのサービス クラスでメソッドを呼び出して、関連付けを使用します。 選択して、エンティティのサービス クラスにメソッドを追加することができます、**関連付けエディター**します。
+## <a name="association-methods"></a>アソシエーションメソッド
+ SharePoint ビジネスデータ web パーツなどのアプリケーションは、エンティティのサービスクラスのメソッドを呼び出すことによって、アソシエーションを使用します。 エンティティのサービスクラスにメソッドを追加するには、**アソシエーションエディター**で選択します。
 
- 既定で、**関連付けエディター**元とコピー先のエンティティ、アソシエーションのナビゲーション メソッドを追加します。 ソース エンティティ、アソシエーションのナビゲーション メソッドには、移行先のエンティティの一覧を取得するコンシューマーができます。 転送先エンティティで、アソシエーションのナビゲーション メソッドでは、転送先エンティティに関連するソース エンティティを取得するコンシューマーを使用します。
+ 既定では、**関連付けエディター**は、ソースエンティティとターゲットエンティティにアソシエーションナビゲーションメソッドを追加します。 ソースエンティティのアソシエーションナビゲーションメソッドを使用すると、コンシューマーはターゲットエンティティの一覧を取得できます。 ターゲットエンティティのアソシエーションナビゲーションメソッドを使用すると、コンシューマーは、送信先エンティティに関連付けられているソースエンティティを取得できます。
 
- 適切な情報を返すには、各メソッドにコードを追加する必要があります。 他の種類の高度なシナリオをサポートするメソッドを追加することもできます。 これらの各方法の詳細については、次を参照してください。[サポートされている操作](http://go.microsoft.com/fwlink/?LinkId=169286)します。
+ これらの各メソッドにコードを追加して、適切な情報を返す必要があります。 さらに高度なシナリオをサポートするために、他の種類のメソッドを追加することもできます。 これらの各方法の詳細については、「[サポートされる操作](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14))」を参照してください。
 
 ## <a name="types-of-associations"></a>関連付けの種類
- 2 つの種類のアソシエーションを作成するには、BDC デザイナーに: 外部キーに基づくアソシエーションおよび外部キーを使用しないアソシエーション。
+ BDC デザイナーでは、外部キーベースの関連付けと外部キーなしの関連付けの2種類の関連付けを作成できます。
 
-### <a name="foreign-key-based-association"></a>外部キー ベースの関連付け
- 外部キーに基づくアソシエーションを作成するには、転送先エンティティで定義されている記述子を入力するソース エンティティの識別子に関連します。 この関係により、モデルのコンシューマーは、ユーザーの拡張 UI を提供します。 たとえば、ユーザーが、ドロップダウン リストで顧客を表示できる販売注文を作成できるように Outlook でフォームまたは、ユーザーが顧客のプロファイル ページを開くことができるようにする SharePoint での販売注文の一覧。
+### <a name="foreign-key-based-association"></a>外部キーベースの関連付け
+ ソースエンティティの識別子を、送信先エンティティで定義されている型記述子に関連付けることによって、外部キーベースの関連付けを作成できます。 このリレーションシップを使用すると、モデルのコンシューマーはユーザーに対して高度な UI を提供できます。 たとえば、ユーザーがドロップダウンリストに顧客を表示できる販売注文を作成できるようにする、Outlook のフォームなどです。または、ユーザーが顧客のプロファイルページを開くことができるようにする、SharePoint の販売注文の一覧。
 
- 外部キーに基づくアソシエーションを作成するには、識別子に関連して、同じ名前と型を共有する記述子を入力します。 間の外部キー ベースの関連付けを作成するなど、`Contact`エンティティと`SalesOrder`エンティティ。 `SalesOrder`エンティティを返します、 `ContactID` Finder または Specificfinder メソッドの戻り値パラメーターの一部として記述子を入力します。 両方の型記述子の表示で、**関連付けエディター**します。 間に外部キーに基づくリレーションシップを作成する、`Contact`エンティティと`SalesOrder`、エンティティを選択して、`ContactID`これらの各フィールドの横にある識別子。
+ 外部キーベースの関連付けを作成するには、同じ名前と型を共有する識別子と型記述子を関連付けます。 たとえば、`Contact` エンティティと `SalesOrder` エンティティの間に外部キーベースの関連付けを作成することができます。 `SalesOrder` エンティティは、Finder または特定の Finder メソッドの戻りパラメーターの一部として `ContactID` 型記述子を返します。 両方の型記述子が**関連付けエディター**に表示されます。 `Contact` エンティティと `SalesOrder` エンティティの間に外部キーベースのリレーションシップを作成するには、これらの各フィールドの横にある `ContactID` 識別子を選択します。
 
- 変換先のエンティティのコレクションを返すソース エンティティの関連付けのナビゲーター メソッドにコードを追加します。 次の例では、取引先担当者の販売注文を返します。
+ 変換先エンティティのコレクションを返すソースエンティティの Association Navigator メソッドにコードを追加します。 次の例では、連絡先の販売注文を返します。
 
  [!code-csharp[SP_BDC#7](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#7)]
  [!code-vb[SP_BDC#7](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#7)]
 
- ソースのエンティティを返す転送先エンティティの関連付けのナビゲーター メソッドにコードを追加します。 次の例では、販売注文に関連する連絡先を返します。
+ ソースエンティティを返す宛先エンティティの Association Navigator メソッドにコードを追加します。 次の例では、販売注文に関連付けられている連絡先を返します。
 
  [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>外部キーなしの関連付け
- アソシエーションを作成するにはフィールド型記述子に識別子を割り当てられません。 ソース エンティティは転送先エンティティとの直接的なリレーションシップを持っていない場合に、このような関連付けを作成します。 たとえば、`SalesOrderDetail`テーブルに主キーにマップされる外部キーがありません、`Contact`テーブル。
+ 識別子をフィールド型記述子にマップせずにアソシエーションを作成できます。 ソースエンティティに宛先エンティティとの直接的な関係がない場合は、この種類の関連付けを作成します。 たとえば、`SalesOrderDetail` テーブルには、`Contact` テーブルの主キーにマップされる外部キーがありません。
 
- 内の情報を表示する場合、`SalesOrderDetail`に関連するテーブルを`Contact`、間の外部キーを使用しない関連付けを作成することができます、`Contact`エンティティと`SalesOrderDetail`エンティティ。
+ `Contact`に関連する `SalesOrderDetail` テーブルに情報を表示する場合は、`Contact` エンティティと `SalesOrderDetail` エンティティの間に外部キーなし関連付けを作成できます。
 
- アソシエーションのナビゲーション方法で、`Contact`エンティティ、戻り値、`SalesOrderDetail`エンティティ、テーブルを結合することで、またはストアド プロシージャを呼び出すことによって。
+ `Contact` エンティティの Association ナビゲーションメソッドで、テーブルを結合するか、ストアドプロシージャを呼び出すことによって、`SalesOrderDetail` エンティティを返します。
 
- 次の例では、テーブルを結合してすべての販売注文の詳細を返します。
+ 次の例では、テーブルを結合して、すべての販売注文の詳細を返します。
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- アソシエーションのナビゲーション メソッドで、`SalesOrderDetail`エンティティを返す、関連する`Contact`します。 次に例を示します。
+ `SalesOrderDetail` エンティティの Association ナビゲーションメソッドで、関連する `Contact`を返します。 次に例を示します。
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
 ## <a name="see-also"></a>関連項目
-- [ビジネス データ接続モデルを設計します。](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [方法: エンティティ間のアソシエーションを作成します。](../sharepoint/how-to-create-an-association-between-entities.md)
+- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [方法: エンティティ間の関連付けを作成する](../sharepoint/how-to-create-an-association-between-entities.md)

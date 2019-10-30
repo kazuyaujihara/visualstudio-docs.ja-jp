@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムによってブックからワークシートを削除します。'
+title: '方法: プログラムによってブックからワークシートを削除する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ecc39e72a336c390c85f1caf2c80c6643acbb61
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04c7eafd99d122c0b502e4b804b050bf7c59761f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412528"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985825"
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>方法: プログラムによってブックからワークシートを削除します。
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>方法: プログラムによってブックからワークシートを削除する
   ブック内の任意のワークシートを削除できます。 ワークシートを削除するには、Worksheet ホスト項目を使用するか、ブックの Sheets コレクションを使用してワークシートにアクセスします。
 
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+ [!INCLUDE[appliesto_xlalldocapp](includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="use-the-worksheet-host-item"></a>ワークシート ホスト項目を使用します。
+## <a name="use-the-worksheet-host-item"></a>ワークシートのホスト項目を使用する
  デザイン時にドキュメント レベルのカスタマイズでワークシートが追加された場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> メソッドを使用して特定のワークシートを削除します。 以下のコードは、Worksheet ホスト項目を直接参照して、ブックからワークシートを削除します。
 
 > [!IMPORTANT]
@@ -36,40 +36,40 @@ ms.locfileid: "63412528"
 > - Excel 2010 ブック
 > - Excel 2010 テンプレート
 >
->   他の種類のプロジェクトでこのタスクを実行する場合への参照を追加する必要があります、 **[microsoft.office.interop.excel]** アセンブリ、その後は、ブックを開くし、ワークシートを削除するアセンブリのクラスを使用する必要があります。 詳細については、「[方法 :Office アプリケーション プライマリ相互運用機能アセンブリを介して](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)と[Excel 2010 プライマリ相互運用機能アセンブリ リファレンス](http://go.microsoft.com/fwlink/?LinkId=189585)します。
+>   このタスクを他の種類のプロジェクトで実行する場合は、そのアセンブリへの参照を追加する必要があり**ます。その**後、そのアセンブリのクラスを使用してブックを開き、ワークシートを削除する必要があります。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md)」および「 [Excel 2010 プライマリ相互運用機能アセンブリのリファレンス](office-primary-interop-assemblies.md)」を参照してください。
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Worksheet ホスト項目を使用してワークシートを削除するには
 
-1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> の `Sheet1` メソッドを呼び出します。
+1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> の `Sheet1`メソッドを呼び出します。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
+     [!code-csharp[Trin_VstcoreExcelAutomation#17](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
+     [!code-vb[Trin_VstcoreExcelAutomation#17](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
 
-## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの Sheets コレクションを使用して、
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの Sheets コレクションを使用する
  次の場合は、Microsoft Office Excel の <xref:Microsoft.Office.Interop.Excel.Sheets> コレクションを使用してワークシートにアクセスします。
 
 - VSTO アドインでワークシートを削除する場合。
 
 - 削除するワークシートがドキュメント レベルのカスタマイズで実行時に作成された場合。
 
-  次のコードのインデックス番号でシートを参照することによってブックからワークシートを削除します、**シート**コレクション。 このコードは、新しいワークシートがプログラミングによって作成されたことを前提としています。
+  次のコードで**は、シートコレクションの**インデックス番号を使用してシートを参照することにより、ブックからワークシートを削除します。 このコードは、新しいワークシートがプログラミングによって作成されたことを前提としています。
 
 > [!IMPORTANT]
-> 他の種類のプロジェクトでこのタスクを実行する場合への参照を追加する必要があります、 **[microsoft.office.interop.excel]** アセンブリ、その後は、ブックを開くし、ワークシートを削除するアセンブリのクラスを使用する必要があります。 詳細については、「[方法 :Office アプリケーション プライマリ相互運用機能アセンブリを介して](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)と[Excel 2010 プライマリ相互運用機能アセンブリ リファレンス](http://go.microsoft.com/fwlink/?LinkId=189585)します。
+> このタスクを他の種類のプロジェクトで実行する場合は、そのアセンブリへの参照を追加する必要があり**ます。その**後、そのアセンブリのクラスを使用してブックを開き、ワークシートを削除する必要があります。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md)」および「 [Excel 2010 プライマリ相互運用機能アセンブリのリファレンス](office-primary-interop-assemblies.md)」を参照してください。
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの Sheets コレクションを使用してワークシートを削除するには
 
 1. <xref:Microsoft.Office.Interop.Excel.Sheets> コレクションの <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> メソッドを呼び出します。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
+     [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
+     [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートを非表示します。](../vsto/how-to-programmatically-hide-worksheets.md)
-- [方法: プログラムによってブック内のワークシートを移動します。](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
-- [方法: プログラムによってワークシートを選択します。](../vsto/how-to-programmatically-select-worksheets.md)
-- [方法: プログラムで新しいワークシートをブックに追加します。](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [Worksheet ホスト項目](../vsto/worksheet-host-item.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
-- [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [ワークシートを操作する](working-with-worksheets.md)
+- [方法: プログラムによってワークシートを非表示にする](how-to-programmatically-hide-worksheets.md)
+- [方法: プログラムによってブック内のワークシートを移動する](how-to-programmatically-move-worksheets-within-workbooks.md)
+- [方法: プログラムによってワークシートを選択する](how-to-programmatically-select-worksheets.md)
+- [方法: プログラムによって新しいワークシートをブックに追加する](how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [ワークシートホスト項目](worksheet-host-item.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](global-access-to-objects-in-office-projects.md)
+- [ホスト項目とホストコントロールのプログラム上の制限事項](programmatic-limitations-of-host-items-and-host-controls.md)

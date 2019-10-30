@@ -1,5 +1,5 @@
 ---
-title: '方法: ショートカット メニュー コマンドを追加します。'
+title: '方法: ショートカットメニューにコマンドを追加する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,25 +13,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826406"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986025"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>方法: ショートカット メニュー コマンドを追加します。
-  このトピックでは、VSTO アドインを使用して Office アプリケーションのショートカット メニューにコマンドを追加する方法を示します。
+# <a name="how-to-add-commands-to-shortcut-menus"></a>方法: ショートカットメニューにコマンドを追加する
+  このトピックでは、VSTO アドインを使用して Office アプリケーションのショートカットメニューにコマンドを追加する方法について説明します。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Office のショートカット メニューにコマンドを追加するには
 
-1. **[リボン XML]** 項目をドキュメント レベルのプロジェクトまたは VSTO アドイン プロジェクトに追加します。 詳細については、「[方法 :リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。 イン
+1. **[リボン XML]** 項目をドキュメント レベルのプロジェクトまたは VSTO アドイン プロジェクトに追加します。 詳細については、「[方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。 イン
 
 2. **ソリューション エクスプローラー**で、 **ThisAddin.cs** または **ThisAddin.vb**を選択します。
 
-3. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コード エディターで **ThisAddin** クラス ファイルが開きます。
 
@@ -40,15 +40,15 @@ ms.locfileid: "62826406"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルの名前は*Ribbon1.xml*します。
+5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには*ribbon1.vb*という名前が付けられています。
 
-6. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+6. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コード エディターでリボン XML ファイルが開きます。
 
 7. コード エディターで、ショートカット メニューとショートカット メニューに追加するコントロールを記述する XML を追加します。
 
-     次の例では、ボタン、メニュー、および Gallery コントロールを Word ドキュメントのショートカット メニューに追加します。 このショートカット メニューのコントロール ID は、ContextMenuText です。 Office 2010 ショートカットのコントロールの完全な一覧については、ID を参照してください[Office 2010 ヘルプ ファイル。Office fluent ユーザー インターフェイスのコントロール id](http://go.microsoft.com/fwlink/?LinkID=181052)します。
+     次の例では、ボタン、メニュー、および Gallery コントロールを Word ドキュメントのショートカット メニューに追加します。 このショートカット メニューのコントロール ID は、ContextMenuText です。 Office 2010 のショートカットコントロール ID の完全な一覧については、「 [office の2010ヘルプファイル: office fluent ユーザーインターフェイスコントロールの識別子](https://www.microsoft.com/download/details.aspx?id=6627)」を参照してください。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "62826406"
 
 8. **ソリューション エクスプローラー**で、 **MyRibbon.cs** または **MyRibbon.vb**を選択します。
 
-9. コールバック メソッドを追加、`Ribbon1`を処理する各コントロールのクラス。
+9. 処理する各コントロールの `Ribbon1` クラスにコールバックメソッドを追加します。
 
      次のコールバック メソッドは、 **[My Button]** ボタンを処理します。 このコードは、アクティブ ドキュメントの現在のカーソル位置に文字列を追加します。
 
@@ -81,6 +81,6 @@ ms.locfileid: "62826406"
 
 ## <a name="see-also"></a>関連項目
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
-- [チュートリアル: ブックマークのショートカット メニューを作成します。](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [チュートリアル: ブックマークのショートカットメニューを作成する](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)
-- [Office 2010 でのコンテキスト メニューをカスタマイズします。](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [Office 2010 でショートカットメニューをカスタマイズする](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

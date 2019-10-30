@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556756"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919087"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio フィードバック オプション
 
@@ -30,7 +30,7 @@ ms.locfileid: "64556756"
 
 ::: moniker range="vs-2019"
 
-Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、**[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]**、**[フィードバックの送信]**、**[問題の報告]** の順に選択します。
+Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、 **[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[問題の報告]** の順に選択します。
 
 ![Visual Studio 2019 IDE の [フィードバックの送信] アイコン](./media/vs-2019/send-feedback-icon.png)
 
@@ -40,7 +40,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ::: moniker range="vs-2017"
 
-Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、**[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** > **[フィードバックの送信]** > **[問題の報告]** の順に選択します。
+Visual Studio を使用していて問題 &mdash; クラッシュ、パフォーマンスの低下、予期しない動作など &mdash; が発生した場合は、 **[問題を報告する]** ツールを使ってお知らせください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]**  >  **[フィードバックの送信]**  >  **[問題の報告]** の順に選択します。
 
 ![Visual Studio 2019 IDE の [フィードバックの送信] アイコン](./media/send-feedback-icon.png)
 
@@ -52,7 +52,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ::: moniker range="vs-2019"
 
-追加または改善のご要望がございましたら、**機能の提案**ツールでお伝えください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]**、**[フィードバックの送信]**、**[機能の提案]** の順に選択します。
+追加または改善のご要望がございましたら、**機能の提案**ツールでお伝えください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[機能の提案]** の順に選択します。
 
 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
@@ -60,7 +60,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ::: moniker range="vs-2017"
 
-改善のご要望がございましたら、**提案の送信**ツールでお伝えください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]**、**[フィードバックの送信]**、**[提案の送信]** の順に選択します。
+改善のご要望がございましたら、**提案の送信**ツールでお伝えください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[提案の送信]** の順に選択します。
 
 次に、Visual Studio によって[開発者コミュニティ](https://developercommunity.visualstudio.com) ページがブラウザーで開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
@@ -75,7 +75,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 ドキュメントの改善でご協力いただける場合、方法が 2 つあります。
 
 * ページの下部にある **[このページは役に立ちましたか]** フィードバック ボタンを選択します。 このボタンは、すべてのドキュメント ページに表示されます。
-* [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) の Visual Studio ページについてフィードバックをいただける場合、GitHub アカウントをご使用ください。 その場合、**[フィードバックの送信]** で **[このページ]** ボタンを選択します。このボタンもページの一番下にあります。
+* [docs.microsoft.com](/visualstudio/) の Visual Studio ページについてフィードバックをいただける場合、GitHub アカウントをご使用ください。 その場合、 **[フィードバックの送信]** で **[このページ]** ボタンを選択します。このボタンもページの一番下にあります。
 
 ## <a name="contact-microsoft-support"></a>Microsoft サポートに問い合わせる
 

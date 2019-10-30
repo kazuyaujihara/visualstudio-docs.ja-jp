@@ -1,5 +1,5 @@
 ---
-title: サーバー エクスプ ローラー:SharePoint 接続 ノードの拡張
+title: サーバー エクスプローラー：SharePoint 接続ノードの拡張
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,50 +13,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a40c20b92dc221dfab566240d27912b2b7e58be
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824160"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984997"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>チュートリアル: サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルへの呼び出し
-  このチュートリアルの拡張機能から SharePoint クライアント オブジェクト モデルを呼び出す方法、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 SharePoint クライアント オブジェクト モデルを使用する方法の詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>チュートリアル: サーバーエクスプローラー拡張機能での SharePoint クライアントオブジェクトモデルの呼び出し
+  このチュートリアルでは、**サーバーエクスプローラー**の  **sharepoint 接続**ノードの拡張機能から sharepoint クライアントオブジェクトモデルを呼び出す方法について説明します。 SharePoint クライアントオブジェクトモデルの使用方法の詳細については、「 [sharepoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)」を参照してください。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- 作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]拡張機能を拡張する、 **SharePoint 接続**のノード**サーバー エクスプ ローラー**次の方法で。
+- 次の方法で**サーバーエクスプローラー**の [ **SharePoint 接続**のノードを拡張する [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の拡張機能を作成します。
 
-  - 拡張機能の追加、 **Web パーツ ギャラリー**内の各 SharePoint サイト ノード下にノード**サーバー エクスプ ローラー**します。 この新しいノードには、サイトの Web パーツ ギャラリーでは、各 Web パーツを表す子ノードが含まれています。
+  - 拡張機能により、**サーバーエクスプローラー**の各 SharePoint サイトノードの下に**Web パーツギャラリー**ノードが追加されます。 この新しいノードには、サイトの Web パーツギャラリー内の各 Web パーツを表す子ノードが含まれています。
 
-  - 拡張機能は、新しい種類の Web パーツ インスタンスを表すノードを定義します。 この新しいノードの種類は、新しい子ノードの基礎**Web パーツ ギャラリー**ノード。 新しい Web パーツのノードの種類の情報が表示されます、**プロパティ**ノードが表す Web パーツのウィンドウ。
+  - 拡張機能は、Web パーツのインスタンスを表す新しい種類のノードを定義します。 この新しいノードタイプは、[新しい**Web パーツギャラリー** ] ノードの下にある子ノードの基礎となります。 新しい Web パーツノード型では、ノードが表す Web パーツに関する情報が **[プロパティ]** ウィンドウに表示されます。
 
-- 拡張機能をデプロイする Visual Studio Extension (VSIX) パッケージを作成します。
+- 拡張機能を配置するための Visual Studio Extension (VSIX) パッケージをビルドします。
 
-- デバッグと、拡張機能をテストします。
+- 拡張機能のデバッグとテスト。
 
 > [!NOTE]
-> このチュートリアルで作成した拡張機能の拡張機能で作成するよう[チュートリアル。Web パーツを表示するサーバー エクスプ ローラーを拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)します。 そのチュートリアルは、SharePoint サーバー オブジェクト モデルを使用しますが、このチュートリアルは、クライアント オブジェクト モデルを使用して同じタスクを実行します。
+> このチュートリアルで作成する拡張機能は、[チュートリアルで作成する拡張機能に似ています。Web パーツの](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)を表示するようにサーバーエクスプローラーを拡張します。 このチュートリアルでは、SharePoint サーバーオブジェクトモデルを使用しますが、このチュートリアルでは、クライアントオブジェクトモデルを使用して同じタスクを行います。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
 
 - サポート対象エディションの Windows、SharePoint、Visual Studio。
 
-- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk、拡張機能を配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- Visual Studio SDK。 このチュートリアルでは、SDK の**Vsix プロジェクト**テンプレートを使用して、拡張機能を配置する vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- SharePoint クライアント オブジェクト モデルを使用します。 詳細については、次を参照してください。[マネージ クライアント オブジェクト モデル](http://go.microsoft.com/fwlink/?LinkId=177797)します。
+- SharePoint クライアントオブジェクトモデルの使用。 詳細については、「管理された[クライアントオブジェクトモデル](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))」を参照してください。
 
-- SharePoint web パーツ。 詳細については、次を参照してください。 [Web パーツの概要](http://go.microsoft.com/fwlink/?LinkId=177803)します。
+- SharePoint の Web パーツ。 詳細については、「 [Web パーツの概要](/previous-versions/office/ms432401(v=office.14))」を参照してください。
 
-## <a name="create-the-projects"></a>プロジェクトを作成します。
- このチュートリアルを完了するには、2 つのプロジェクトを作成する必要があります。
+## <a name="create-the-projects"></a>プロジェクトを作成する
+ このチュートリアルを完了するには、次の2つのプロジェクトを作成する必要があります。
 
-- VSIX プロジェクトを配置するための VSIX パッケージを作成、**サーバー エクスプ ローラー**拡張機能。
+- **サーバーエクスプローラー**拡張機能を配置する vsix パッケージを作成する vsix プロジェクト。
 
-- 実装するクラス ライブラリ プロジェクト、**サーバー エクスプ ローラー**拡張機能。
+- **サーバーエクスプローラー**拡張機能を実装するクラスライブラリプロジェクト。
 
   この 2 つのプロジェクトを作成することから始めます。
 
@@ -66,99 +66,99 @@ ms.locfileid: "67824160"
 
 2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選び、**拡張**。
+3. **[新しいプロジェクト]** ダイアログボックスで、**ビジュアルC#** または**Visual Basic**ノードを展開し、 **[機能拡張]** を選択します。
 
     > [!NOTE]
-    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **機能拡張**ノードは、VISUAL Studio SDK をインストールした場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
-4. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5**で .NET Framework のバージョンの一覧。
+4. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で **[.NET Framework 4.5]** を選択します。
 
-     SharePoint ツール拡張機能では、このバージョンの .NET Framework の機能が必要です。
+     SharePoint ツール拡張機能には、このバージョンの .NET Framework の機能が必要です。
 
-5. 選択、 **VSIX プロジェクト**テンプレート。
+5. **[VSIX プロジェクト]** テンプレートを選択します。
 
-6. **名前**ボックスに「 **WebPartNode**、選択し、 **OK**ボタン。
+6. **[名前]** ボックスに「 **webpartnode**」と入力し、 **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **WebPartNode**プロジェクトを**ソリューション エクスプ ローラー**します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、**ソリューションエクスプローラー**に**webpartnode**プロジェクトを追加します。
 
 #### <a name="to-create-the-extension-project"></a>拡張機能プロジェクトを作成するには
 
-1. **ソリューション エクスプ ローラー**、ソリューション ノードのショートカット メニューを開き、**追加**を選び、**新しいプロジェクト**します。
+1. **ソリューションエクスプローラー**で、ソリューションノードのショートカットメニューを開き、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
 
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選び、 **Windows**します。
+2. **[新しいプロジェクト]** ダイアログボックスで、  **C#ビジュアル**または**Visual Basic**ノードを展開し、 **[Windows]** を選択します。
 
-3. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5**で .NET Framework のバージョンの一覧。
+3. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で **[.NET Framework 4.5]** を選択します。
 
-4. プロジェクト テンプレートの一覧で選択**クラス ライブラリ**します。
+4. プロジェクトテンプレートの一覧で、 **[クラスライブラリ]** を選択します。
 
-5. **名前**ボックスに、入力**WebPartNodeExtension**、選択し、 **OK**ボタン。
+5. **[名前]** ボックスに「 **webpartnodeextension**」と入力し、 **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **WebPartNodeExtension**プロジェクトがソリューションにし、既定の Class1 コード ファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は、 **Webpartnodeextension**プロジェクトをソリューションに追加し、既定の Class1 コードファイルを開きます。
 
 6. Class1 コード ファイルをプロジェクトから削除します。
 
-## <a name="configure-the-extension-project"></a>拡張機能プロジェクトを構成します。
- 拡張機能を作成するコードを記述する前に、コード ファイルと、プロジェクトにアセンブリ参照を追加する必要があり、既定の名前空間を更新する必要があります。
+## <a name="configure-the-extension-project"></a>拡張機能プロジェクトの構成
+ 拡張機能を作成するコードを記述する前に、コードファイルとアセンブリ参照をプロジェクトに追加する必要があります。また、既定の名前空間を更新する必要があります。
 
 #### <a name="to-configure-the-project"></a>プロジェクトを構成するには
 
-1. **WebPartNodeExtension**プロジェクトに、SiteNodeExtension および WebPartNodeTypeProvider という 2 つのコード ファイルを追加します。
+1. **Webpartnodeextension**プロジェクトで、Sitare Deextension と WebPartNodeTypeProvider という名前の2つのコードファイルを追加します。
 
-2. WebPartNodeExtension プロジェクトのショートカット メニューを開き、選択し、**参照の追加**します。
+2. WebPartNodeExtension プロジェクトのショートカットメニューを開き、[参照の**追加**] を選択します。
 
-3. **参照マネージャー - WebPartNodeExtension**  ダイアログ ボックスで、選択、 **Framework**ノード、および System.ComponentModel.Composition および System.Windows.Forms のチェック ボックスをオンアセンブリ。
+3. **[参照マネージャー-WebPartNodeExtension]** ダイアログボックスで、 **[フレームワーク]** ノードを選択し、system.componentmodel アセンブリおよび system.string アセンブリのチェックボックスをオンにします。
 
-4. 選択、**拡張**ノードは、次のアセンブリの各チェック ボックスを選択し、、 **OK**ボタン。
+4. **[拡張機能]** ノードを選択し、次の各アセンブリのチェックボックスをオンにして、 **[OK]** をクリックします。
 
-    - Microsoft.SharePoint.Client
+    - Microsoft. SharePoint. Client
 
-    - Microsoft.SharePoint.Client.Runtime
+    - Microsoft. SharePoint. Client. Runtime
 
     - Microsoft.VisualStudio.SharePoint
 
-5. ショートカット メニューを開き、 **WebPartNodeExtension**プロジェクトを選び、**プロパティ**します。
+5. **Webpartnodeextension**プロジェクトのショートカットメニューを開き、 **[プロパティ]** を選択します。
 
      **プロジェクト デザイナー**が開きます。
 
 6. **[アプリケーション]** タブを選択します。
 
-7. **既定の名前空間**ボックス (c#) または**ルート名前空間**(Visual Basic) をボックスに、入力**ServerExplorer.SharePointConnections.WebPartNode**します。
+7. **[既定の名前空間]** C#ボックス () または **[ルート名前空間]** ボックス (Visual Basic) で、「 **Serverexplorer. sharepointconnections. webpartnode**」と入力します。
 
-## <a name="create-icons-for-the-new-nodes"></a>新しいノードのアイコンを作成します。
- 2 つのアイコンを作成、**サーバー エクスプ ローラー**拡張機能: 新しいアイコン**Web パーツ ギャラリー**ノードと各子 Web パーツのノードの下のもう 1 つのアイコン、 **Web パーツ ギャラリー**ノードです。 このチュートリアルで後でこれらのアイコンをノードに関連付けられるコードを記述します。
+## <a name="create-icons-for-the-new-nodes"></a>新しいノードのアイコンを作成する
+ **サーバーエクスプローラー**拡張機能用に2つのアイコンを作成します。新しい**web パーツギャラリー**ノードのアイコンと、 **web パーツギャラリー**ノードの下にある子 Web パーツノードごとに別のアイコンがあります。 このチュートリアルの後半では、これらのアイコンをノードに関連付けるコードを記述します。
 
 #### <a name="to-create-icons-for-the-nodes"></a>ノードのアイコンを作成するには
 
-1. **プロジェクト デザイナー** WebPartNodeExtension プロジェクトの選択、**リソース**タブ。
+1. WebPartNodeExtension プロジェクトの**プロジェクトデザイナー**で、 **[リソース]** タブを選択します。
 
-2. リンクを選択**このプロジェクトに既定のリソース ファイルが含まれていません。ここをクリックすると、1 つを作成します。**
+2. このプロジェクトに既定のリソースファイルが含まれていない **リンクを選択します。ここをクリックして作成します。**
 
-     Visual Studio では、リソース ファイルを作成し、デザイナーで開かれます。
+     Visual Studio によってリソースファイルが作成され、デザイナーで開かれます。
 
-3. デザイナーの上部にある矢印をクリックしてで、**リソースの追加**メニュー コマンドを選び、**新しいアイコンの追加**します。
+3. デザイナーの上部で、 **[リソースの追加]** メニューコマンドの矢印をクリックし、 **[新しいアイコンの追加]** を選択します。
 
-4. 入力**WebPartsNode**新しいアイコンの名前を付けて、**追加**ボタン。
+4. 新しいアイコン名として「 **Webpartsnode** 」と入力し、 **[追加]** ボタンを選択します。
 
-     新しいアイコンが表示、**イメージ エディター**します。
+     **イメージエディター**に新しいアイコンが表示されます。
 
-5. 設計を容易に認識できるように、16 x 16 版のアイコンを編集します。
+5. アイコンの16x16 バージョンを編集して、簡単に認識できるデザインを作成します。
 
-6. アイコンのサイズは 32 x 32 のバージョンのショートカット メニューを開き、選択し、**イメージ タイプの削除**します。
+6. 32x32 バージョンのアイコンのショートカットメニューを開き、 **[イメージの種類の削除]** を選択します。
 
-7. 手順 3. ~ 7. プロジェクトのリソースへの 2 つ目のアイコンを追加して、このアイコンを名前**WebPart**します。
+7. 手順 3. ~ 7. を繰り返して、プロジェクトリソースに2つ目のアイコンを追加し、このアイコン**WebPart**という名前を指定します。
 
-8. **ソリューション エクスプ ローラー**の**リソース**のフォルダー、 **WebPartNodeExtension**プロジェクトで、選択*WebPartsNode.ico*します。
+8. **ソリューションエクスプローラー**、 **webpartnodeextension**プロジェクトの**Resources**フォルダーで、[ *webpartnodeextension*] を選択します。
 
-9. **プロパティ**ウィンドウを開いて、**ビルド アクション**一覧を選び、**埋め込みリソース**します。
+9. **[プロパティ]** ウィンドウで、 **[ビルドアクション]** ボックスの一覧を開き、 **[埋め込みリソース]** を選択します。
 
-10. 最後の 2 つの手順を繰り返します*WebPart.ico*します。
+10. *WebPart*の最後の2つの手順を繰り返します。
 
-## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>サーバー エクスプ ローラー web パーツのギャラリーのノードを追加します。
- 新しいを追加するクラスを作成**Web パーツ ギャラリー**ノードを各 SharePoint サイト ノード。 クラスの実装、新しいノードを追加する、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>インターフェイス。 既存のノードでの動作を拡張するときに、このインターフェイスを実装**サーバー エクスプ ローラー**ノードに新しい子ノードを追加するなど。
+## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Web パーツギャラリーノードをサーバーエクスプローラーに追加します。
+ 新しい**Web パーツギャラリー**ノードを各 SharePoint サイトノードに追加するクラスを作成します。 新しいノードを追加するために、クラスは <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> インターフェイスを実装します。 新しい子ノードをノードに追加するなど、**サーバーエクスプローラー**の既存のノードの動作を拡張する場合は常に、このインターフェイスを実装します。
 
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>サーバー エクスプ ローラーに web パーツのギャラリーのノードを追加するには
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Web パーツギャラリーノードをサーバーエクスプローラーに追加するには
 
-1. 次のコードを貼り付け、 **SiteNodeExtension**のコード ファイル、 **WebPartNodeExtension**プロジェクト。
+1. 次のコードを、 **Webpartnodeextension**プロジェクトの**sitモジュール deextension**コードファイルに貼り付けます。
 
     > [!NOTE]
     > このコードを追加した直後は、いくつかのコンパイル エラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
@@ -166,122 +166,122 @@ ms.locfileid: "67824160"
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
 
-## <a name="define-a-node-type-that-represents-a-web-part"></a>Web パーツを表すノード型を定義します。
- Web パーツを表すノードの新しい型を定義するクラスを作成します。 Visual Studio は、下の子ノードを表示するこの新しいノードの種類を使用して、 **Web パーツ ギャラリー**ノード。 これらの子ノードは、SharePoint サイト上の 1 つの Web パーツを表します。
+## <a name="define-a-node-type-that-represents-a-web-part"></a>Web パーツを表すノードの種類を定義する
+ Web パーツを表す新しい型のノードを定義するクラスを作成します。 Visual Studio では、この新しいノードタイプを使用して、 **Web パーツギャラリー**ノードの下に子ノードを表示します。 これらの各子ノードは、SharePoint サイト上の1つの Web パーツを表します。
 
- 新しいノードの種類をクラスが実装を定義する、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>インターフェイス。 内のノードの新しい型を定義するときに、このインターフェイスを実装**サーバー エクスプ ローラー**します。
+ 新しいノード型を定義するために、クラスは <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> インターフェイスを実装します。 **サーバーエクスプローラー**で新しい種類のノードを定義する場合は、常にこのインターフェイスを実装します。
 
-#### <a name="to-define-the-web-part-node-type"></a>Web パーツのノード型を定義するには
+#### <a name="to-define-the-web-part-node-type"></a>Web パーツノードの種類を定義するには
 
-1. 次のコードを貼り付け、 **WebPartNodeTypeProvider**のコード ファイル、 **WebPartNodeExtension**プロジェクト。
+1. 次のコードを、 **Webpartnodeextension**プロジェクトの**Webpartnodetypeprovider**コードファイルに貼り付けます。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
 
 ## <a name="checkpoint"></a>チェックポイント
- この時点で、チュートリアルでは、すべてのコードを**Web パーツ ギャラリー**ノードは、プロジェクトのようになりました。 ビルド、 **WebPartNodeExtension**プロジェクトをエラーなしにコンパイルできるかどうかを確認します。
+ このチュートリアルのこの時点で、 **Web パーツギャラリー**ノードのすべてのコードがプロジェクト内にあります。 **Webpartnodeextension**プロジェクトをビルドして、エラーが発生せずにコンパイルされるようにします。
 
 #### <a name="to-build-the-project"></a>プロジェクトをビルドするには
 
-1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **WebPartNodeExtension**プロジェクトを選び、**ビルド**します。
+1. **ソリューションエクスプローラー**で、 **webpartnodeextension**プロジェクトのショートカットメニューを開き、 **[ビルド]** を選択します。
 
-## <a name="create-a-vsix-package-to-deploy-the-extension"></a>拡張機能をデプロイするため、VSIX パッケージを作成します。
- 拡張機能を配置するには、ソリューションで VSIX プロジェクトを使用して VSIX パッケージを作成します。 最初に、プロジェクトに含まれている source.extension.vsixmanifest ファイルを変更することで、VSIX パッケージを構成します。 ソリューションをビルドして VSIX パッケージを作成します。
+## <a name="create-a-vsix-package-to-deploy-the-extension"></a>拡張機能を配置するための VSIX パッケージの作成
+ 拡張機能を配置するには、ソリューションで VSIX プロジェクトを使用して VSIX パッケージを作成します。 まず、プロジェクトに含まれている source.extension.vsixmanifest ファイルを変更して、VSIX パッケージを構成します。 次に、ソリューションをビルドして VSIX パッケージを作成します。
 
 #### <a name="to-configure-the-vsix-package"></a>VSIX パッケージを構成するには
 
-1. **ソリューション エクスプ ローラー**の**WebPartNode**プロジェクトを開き、 **source.extension.vsixmanifest**マニフェスト エディターでファイル。
+1. **ソリューションエクスプローラー**の **[webpartnode]** プロジェクトで、マニフェストエディターの**source.extension.vsixmanifest**ファイルを開きます。
 
-     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。
+     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
 
-2. **製品名**ボックスに、入力**for サーバー エクスプ ローラー Web パーツのギャラリー ノード**します。
+2. **[製品名]** ボックスに、**サーバーエクスプローラーの Web パーツギャラリーノード**を入力します。
 
-3. **作成者**ボックスに、入力**Contoso**します。
+3. **[作成者]** ボックスに「 **Contoso**」と入力します。
 
-4. **説明**ボックスに、入力**サーバー エクスプ ローラーで、[SharePoint 接続] ノードにカスタム Web パーツ ギャラリー ノードを追加します。** します。
+4. **説明** ボックスに「」と入力して、 **サーバーエクスプローラーの SharePoint 接続 ノードに カスタム Web パーツギャラリー ノードを追加**します。
 
-5. **資産** タブ、エディターの選択、**新規**ボタンをクリックします。
+5. エディターの **[アセット]** タブで、 **[新規]** ボタンをクリックします。
 
-6. **新しい資産の追加** ダイアログ ボックスで、**型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
+6. **[新しい資産の追加]** ダイアログボックスの **[種類]** ボックスの一覧で、 **[VisualStudio]** を選択します。
 
     > [!NOTE]
-    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
+7. **[ソース]** ボックスの一覧で、**現在のソリューション内のプロジェクト**を選択します。
 
-8. **プロジェクト**一覧で、選択**WebPartNodeExtension**、選択し、 **OK**ボタン。
+8. **[プロジェクト]** ボックスの一覧で **[webpartnodeextension]** を選択し、 **[OK]** をクリックします。
 
-9. メニュー バーで、**ビルド** > **ソリューションのビルド**、ソリューションがエラーなしでコンパイルされるかどうかを確認します。
+9. メニューバーで [**ビルド** > **ビルド**] を選択し、ソリューションがエラーなしでコンパイルされることを確認します。
 
-10. WebPartNode プロジェクトのビルド出力フォルダーに今すぐ WebPartNode.vsix ファイルが含まれていることを確認します。
+10. WebPartNode プロジェクトのビルド出力フォルダーに、WebPartNode .vsix ファイルが含まれていることを確認します。
 
      既定では、ビルド出力フォルダーは ..\bin\Debug で、プロジェクト ファイルが格納されているフォルダーの下にあります。
 
-## <a name="test-the-extension"></a>拡張機能をテストします。
- 新しいテストする準備が整いました**Web パーツ ギャラリー**ノード**サーバー エクスプ ローラー**します。 最初に、Visual Studio の実験用インスタンスで拡張機能プロジェクトのデバッグを開始します。 使用して、新しい**Web パーツ**Visual Studio の実験用インスタンスでノード。
+## <a name="test-the-extension"></a>拡張機能をテストする
+ これで、**サーバーエクスプローラー**で新しい**Web パーツギャラリー**ノードをテストする準備ができました。 まず、Visual Studio の実験用インスタンスで拡張機能プロジェクトのデバッグを開始します。 次に、Visual Studio の実験用インスタンスの [新しい**Web パーツ**] ノードを使用します。
 
 #### <a name="to-start-debugging-the-extension"></a>拡張機能のデバッグを開始するには
 
-1. 管理者の資格情報で Visual Studio を再起動し、開き、 **WebPartNode**ソリューション。
+1. 管理者資格情報を使用して Visual Studio を再起動し、 **Webpartnode**ソリューションを開きます。
 
-2. WebPartNodeExtension プロジェクトで開き、 **SiteNodeExtension**コード ファイル、およびコードの最初の行にブレークポイントを追加し、`NodeChildrenRequested`と`CreateWebPartNodes`メソッド。
+2. WebPartNodeExtension プロジェクトで、 **Sit\n deextension**コードファイルを開き、`NodeChildrenRequested` および `CreateWebPartNodes` メソッドの最初のコード行にブレークポイントを追加します。
 
-3. 選択、 **F5**キー デバッグを開始します。
+3. F5 キーを**押し**てデバッグを開始します。
 
-     Visual Studio では、Server Explorer\1.0 の %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web パーツ ギャラリーのノードの拡張機能を拡張機能をインストールし、Visual Studio の実験用インスタンスを開始します。 このインスタンスの Visual Studio でプロジェクト項目をテストします。
+     Visual Studio によって、サーバー Explorer\1.0 の%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Part Gallery ノード拡張機能がインストールされ、Visual Studio の実験用インスタンスが開始されます。 このインスタンスの Visual Studio でプロジェクト項目をテストします。
 
 #### <a name="to-test-the-extension"></a>拡張機能をテストするには
 
-1. メニュー バーで、Visual Studio の実験用インスタンスで次のように選択します。**ビュー** > **サーバー エクスプ ローラー**します。
+1. Visual Studio の実験用インスタンスのメニューバーで、[ > の**表示**]**サーバーエクスプローラー**を選択します。
 
-2. 下のテストに使用する SharePoint サイトが表示されることを確認、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 表示されない場合は、次の手順に従います。
+2. テストに使用する SharePoint サイトが**サーバーエクスプローラー**の **[sharepoint 接続]** ノードの下に表示されていることを確認します。 一覧に表示されていない場合は、次の手順を実行します。
 
-    1. ショートカット メニューを開き**SharePoint 接続**を選び、**接続の追加**します。
+    1. **SharePoint 接続**のショートカットメニューを開き、 **[接続の追加]** を選択します。
 
-    2. **SharePoint 接続の追加** ダイアログ ボックスで、接続、および選択する SharePoint サイトの URL を入力、 **OK**ボタン。
+    2. **[Sharepoint 接続の追加]** ダイアログボックスで、接続先の sharepoint サイトの URL を入力し、 **[OK]** をクリックします。
 
-         開発用コンピューターに SharePoint サイトを指定する入力 **http://localhost** します。
+         開発用コンピューターで SharePoint サイトを指定するには、「 **http://localhost** 」と入力します。
 
-3. (これは、サイトの URL が表示されます) のサイト接続ノードを展開し、子サイトのノードを展開 (たとえば、**チーム サイト**)。
+3. サイトの接続ノード (サイトの URL が表示されます) を展開し、子サイトノード (たとえば、 **[チームサイト]** ) を展開します。
 
-4. Visual Studio の他のインスタンス内のコードを以前に設定したブレークポイントで停止することを確認、`NodeChildrenRequested`メソッドを選択し、 **F5**プロジェクトのデバッグを続行するキー。
+4. Visual Studio のもう一方のインスタンスのコードが `NodeChildrenRequested` メソッドで設定したブレークポイントで停止していることを確認し、 **F5**キーを押してプロジェクトのデバッグを続行します。
 
-5. Visual Studio の実験用インスタンスの展開、 **Web パーツ ギャラリー**ノードで、最上位のサイト ノード下に表示されます。
+5. Visual Studio の実験用インスタンスで、最上位サイトノードの下に表示される **[Web パーツギャラリー]** ノードを展開します。
 
-6. Visual Studio の他のインスタンス内のコードを以前に設定したブレークポイントで停止することを確認、`CreateWebPartNodes`メソッドを選択し、 **F5**プロジェクトのデバッグを続行するキー。
+6. Visual Studio のもう一方のインスタンスのコードが `CreateWebPartNodes` メソッドで設定したブレークポイントで停止していることを確認し、 **F5**キーを押してプロジェクトのデバッグを続行します。
 
-7. Visual Studio の実験用インスタンスの下に接続されているサイト上のすべての Web パーツが表示されることを確認します、 **Web パーツ ギャラリー**ノード**サーバー エクスプ ローラー**します。
+7. Visual Studio の実験用インスタンスで、接続されたサイトのすべての Web パーツが**サーバーエクスプローラー**の **[Web パーツギャラリー]** ノードの下に表示されていることを確認します。
 
-8. Web パーツのショートカット メニューを開き、選択し、**プロパティ**します。
+8. Web パーツのショートカットメニューを開き、 **[プロパティ]** をクリックします。
 
-9. **プロパティ**ウィンドウで、Web パーツの詳細が表示されることを確認します。
+9. **[プロパティ]** ウィンドウで、Web パーツの詳細が表示されていることを確認します。
 
-10. **サーバー エクスプ ローラー**、同じ Web パーツのショートカット メニューを開き、選択し、**メッセージを表示する**します。
+10. **サーバーエクスプローラー**で、同じ Web パーツのショートカットメニューを開き、[メッセージの**表示**] を選択します。
 
-     メッセージ ボックスが表示されますが、選択、 **OK**ボタンをクリックします。
+     表示されるメッセージボックスで、 **[OK]** をクリックします。
 
-## <a name="uninstall-the-extension-from-visual-studio"></a>Visual Studio から拡張機能をアンインストールします。
+## <a name="uninstall-the-extension-from-visual-studio"></a>Visual Studio から拡張機能をアンインストールする
  拡張機能のテストが完了したら、Visual Studio からアンインストールします。
 
 #### <a name="to-uninstall-the-extension"></a>拡張機能をアンインストールするには
 
-1. メニュー バーで、Visual Studio の実験用インスタンスで次のように選択します。**ツール** > **拡張機能と更新**します。
+1. Visual Studio の実験用インスタンスのメニューバーで、 **[ツール]** [ > の**拡張機能と更新プログラム**] の順に選択します。
 
      **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
-2. 拡張機能の一覧で選択**for サーバー エクスプ ローラー Web パーツ ギャラリーのノード**、選択し、**アンインストール**ボタンをクリックします。
+2. 拡張機能の一覧で、[**サーバーエクスプローラー] の [Web パーツギャラリー] ノード**を選択し、 **[アンインストール]** をクリックします。
 
-3. ダイアログ ボックスが表示されますが、選択、**はい**ボタンをクリックします。
+3. 表示されるダイアログボックスで、 **[はい]** をクリックします。
 
-4. 選択、**今すぐ再起動**アンインストールを完了するボタンをクリックします。
+4. **[今すぐ再起動]** ボタンをクリックして、アンインストールを完了します。
 
-     プロジェクト アイテムもアンインストールされます。
+     プロジェクト項目もアンインストールされます。
 
-5. Visual Studio (実験用インスタンスと WebPartNode ソリューションが開いている Visual Studio のインスタンス) の両方のインスタンスを閉じます。
+5. Visual Studio の両方のインスタンス (実験用インスタンスと、WebPartNode ソリューションが開いている Visual Studio のインスタンス) を閉じます。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張します。](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [チュートリアル: Web パーツを表示するサーバー エクスプ ローラーを拡張します。](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)
-- [アイコンまたはその他のイメージの作成&#40;アイコン用イメージ エディター&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [アイコンまたはその他の&#40;イメージイメージエディターを作成する&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

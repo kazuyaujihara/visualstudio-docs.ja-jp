@@ -1,5 +1,5 @@
 ---
-title: '方法: データを使用した ListObject コントロールの塗りつぶし'
+title: '方法: ListObject コントロールにデータを読み込む'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255892"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985919"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>方法: データを使用した ListObject コントロールの塗りつぶし
+# <a name="how-to-fill-listobject-controls-with-data"></a>方法: ListObject コントロールにデータを読み込む
   データ バインディングを使用すると、ドキュメントにデータをすばやく追加できます。 リスト オブジェクトにデータをバインドした後、リスト オブジェクトを切断すると、データは表示されますが、データ ソースとのバインドは解除されます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。SharePoint リストに接続されている Excel でリストを作成しますか](http://go.microsoft.com/fwlink/?LinkID=130263)。
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>ListObject コントロールにデータをバインドするには
 
@@ -62,9 +60,9 @@ ms.locfileid: "71255892"
 - [実行時に VSTO アドインの Word 文書と Excel ブックを拡張する](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [方法: ListObject 列をデータにマップする](../vsto/how-to-map-listobject-columns-to-data.md)
-- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
+- [方法: データに ListObject 列をマップする](../vsto/how-to-map-listobject-columns-to-data.md)
+- [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject コントロール](../vsto/listobject-control.md)
 - [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [方法: データベースのデータをワークシートに設定する](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [方法: サービスからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [方法: データベースのデータをワークシートに読み込む](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [方法: サービスのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821722"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888713"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools をコンテナーにインストールする
 
@@ -30,9 +30,9 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
 
 ## <a name="before-you-begin"></a>始める前に
 
-以下では、[Docker](https://www.docker.com/what-docker) に関するある程度の知識をお持ちであることが想定されています。 Windows 上での Docker の実行にまだ慣れていない場合は、[Windows 上での Docker エンジンのインストールと構成](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)方法をご確認ください。
+以下では、[Docker](https://www.docker.com/what-docker) に関するある程度の知識をお持ちであることが想定されています。 Windows 上での Docker の実行にまだ慣れていない場合は、[Windows 上での Docker エンジンのインストールと構成](/virtualization/windowscontainers/manage-docker/configure-docker-daemon)方法をご確認ください。
 
-以下の基本イメージはサンプルであり、お客様のシステムでは機能しない場合があります。 ご自身の環境に対してどの基本イメージを使うべきか判断するには、「[Windows コンテナーバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」をご覧ください。
+以下の基本イメージはサンプルであり、お客様のシステムでは機能しない場合があります。 ご自身の環境に対してどの基本イメージを使うべきか判断するには、「[Windows コンテナーバージョンの互換性](/virtualization/windowscontainers/deploy-containers/version-compatibility)」をご覧ください。
 
 ## <a name="create-and-build-the-dockerfile"></a>Dockerfile を作成してビルドする
 
@@ -93,7 +93,7 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
    >
    > Visual Studio 2017 バージョン 15.8 以前 (すべての製品) は、mcr.microsoft.com/windows/servercore:1809 以降には適切にインストールされません。 エラーは表示されません。
    >
-   > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
+   > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
    > [!WARNING]
    > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行されない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.8 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
-   > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
+   > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
    ::: moniker-end
 

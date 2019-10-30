@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959527"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024719"
 ---
 # <a name="edit-python-code"></a>Python コードの編集
 
@@ -25,13 +25,13 @@ ms.locfileid: "62959527"
 
 Visual Studio でのコードの編集に関する全般的な説明については、「[コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)」をご覧ください。 また、コードの特定のセクションに注意を集中するのに役立つ、[アウトライン](../ide/outlining.md)についての記事もご覧ください。
 
-また、各モジュールで定義されている Python クラスとそれらのクラスで定義されている関数を調べるために、Visual Studio **オブジェクト ブラウザー**を使うことができます (**[表示]** > **[その他のウィンドウ]** > **[オブジェクト ブラウザー]** の順に選択するか、**Ctrl** + **W** > **J** キーを押す)。
+また、各モジュールで定義されている Python クラスとそれらのクラスで定義されている関数を調べるために、Visual Studio **オブジェクト ブラウザー**を使うことができます ( **[表示]**  >  **[その他のウィンドウ]**  >  **[オブジェクト ブラウザー]** の順に選択するか、**Ctrl** + **W** > **J** キーを押す)。
 
 ## <a name="intellisense"></a>IntelliSense
 
 IntelliSense により、[入力候補](#completions)、[シグネチャ ヘルプ](#signature-help)、[クイック ヒント](#quick-info)、[コードの色分け表示](#code-coloring)が提供されます。 Visual Studio 2017 バージョン 15.7 以降では、[型ヒント](#type-hints)もサポートされています。
 
-パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、**[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md#intellisense-tab)」を参照)。
+パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、 **[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md)」を参照)。
 
 Visual Studio 2017 バージョン 15.6 以降では、別の手段を使用して、データベースに依存しない IntelliSense 入力候補が提供されています。
 
@@ -72,7 +72,7 @@ Visual Studio 2017 バージョン 15.6 以降では、別の手段を使用し�
 ![Visual Studio エディターのデコレーターの入力候補](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> 入力候補の動作は、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[Python]** > **[詳細設定]** で構成できます。 この設定の **[検索文字列に基づいてリストをフィルターする]** では、入力の際に入力候補がフィルター処理されます (既定ではオンになっています)。また、**[メンバーの入力候補にメンバーの共通部分を表示する]** では、可能性のあるすべての型でサポートされている入力候補のみが表示されます (既定ではオフになっています)。 「[Options - completion results](python-support-options-and-settings-in-visual-studio.md#completion-results)」(オプション - メンバー入力候補の結果) を参照してください。
+> 入力候補の動作は、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[詳細設定]** で構成できます。 この設定の **[検索文字列に基づいてリストをフィルターする]** では、入力の際に入力候補がフィルター処理されます (既定ではオンになっています)。また、 **[メンバーの入力候補にメンバーの共通部分を表示する]** では、可能性のあるすべての型でサポートされている入力候補のみが表示されます (既定ではオフになっています)。 「[Options - completion results](python-support-options-and-settings-in-visual-studio.md#completion-results)」(オプション - メンバー入力候補の結果) を参照してください。
 
 ### <a name="type-hints"></a>型ヒント
 
@@ -88,7 +88,7 @@ Python 3.5 以降の "型ヒント" ([PEP 484](https://www.python.org/dev/peps/p
 
 ![型ヒントを示す IntelliSense の入力候補](media/code-editing-type-hints2.png)
 
-エラーは通常実行時まで表示されないため、プロジェクト全体の型ヒントを検証すると役立ちます。 このために、Visual Studio では、**ソリューション エクスプローラー**の **[Python]** > **[Mypy の実行]** のコンテキスト メニュー コマンドを通じて、業界標準の MyPy ツールが統合されています。
+エラーは通常実行時まで表示されないため、プロジェクト全体の型ヒントを検証すると役立ちます。 このために、Visual Studio では、**ソリューション エクスプローラー**の **[Python]**  >  **[Mypy の実行]** のコンテキスト メニュー コマンドを通じて、業界標準の MyPy ツールが統合されています。
 
 ![ソリューション エクスプローラーで MyPy コンテキスト メニュー コマンドを実行する](media/code-editing-type-hints-run-mypy.png)
 
@@ -111,15 +111,15 @@ commas_to_colons(1)
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> バージョン 3.5 より前の Python の場合、Visual Studio では、Typeshed "*スタブ ファイル*" (*.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
+> バージョン 3.5 より前の Python の場合、Visual Studio では、Typeshed "*スタブ ファイル*" ( *.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
 >
 > 現時点では、Visual Studio ではコメントの型ヒントはサポートされていません。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> バージョン 3.5 より前の Python の場合、Visual Studio では、Typeshed "*スタブ ファイル*" (*.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
+> バージョン 3.5 より前の Python の場合、Visual Studio では、Typeshed "*スタブ ファイル*" ( *.pyi*) を使用して提供される型ヒントも表示されます。 スタブ ファイルは、コードに直接型ヒントを含めたくない場合や、型ヒントを直接使用しないライブラリ用に型ヒントを作成する場合に使用します。 詳細については、mypy プロジェクト wiki で「[Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)」 (Python モジュール用のスタブを作成する) を参照してください。
 >
-> Visual Studio には、Python 2 および 3 用の Typeshed ファイルのバンドル セットが含まれているので、追加のダウンロードは必要ありません。 ただし、異なるファイルのセットを使いたい場合は、**[ツール]** > **[オプション]** > **[Python]** > **[言語サーバー]** オプションでパスを指定できます。 [言語サーバーのオプション](python-support-options-and-settings-in-visual-studio.md#language-server-options)に関する記事をご覧ください。
+> Visual Studio には、Python 2 および 3 用の Typeshed ファイルのバンドル セットが含まれているので、追加のダウンロードは必要ありません。 ただし、異なるファイルのセットを使いたい場合は、 **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[言語サーバー]** オプションでパスを指定できます。 [言語サーバーのオプション](python-support-options-and-settings-in-visual-studio.md#language-server-options)に関する記事をご覧ください。
 >
 > 現時点では、Visual Studio ではコメントの型ヒントはサポートされていません。
 ::: moniker-end
@@ -131,7 +131,7 @@ commas_to_colons(1)
 ![Visual Studio エディターのシグネチャ ヘルプ](media/code-editing-signature-help.png)
 
 > [!Tip]
-> シグネチャ ヘルプを無効にするには、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[Python]** > **[全般]** に移動し、**[ステートメント入力候補]** > **[パラメーター情報]** をオフにします。
+> シグネチャ ヘルプを無効にするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[全般]** に移動し、 **[ステートメント入力候補]**  >  **[パラメーター情報]** をオフにします。
 
 ### <a name="quick-info"></a>クイック ヒント
 
@@ -145,16 +145,16 @@ commas_to_colons(1)
 
 ![Visual Studio エディターのコードと構文の色分け表示](media/code-editing-code-coloring.png)
 
-色をカスタマイズするには、**[ツール]** > **[オプション]** > **[環境]** > **[フォントおよび色]** に移動し、**[表示アイテム]** の一覧で **Python** のエントリを変更します。
+色をカスタマイズするには、 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[フォントおよび色]** に移動し、 **[表示アイテム]** の一覧で **Python** のエントリを変更します。
 
 ![Visual Studio のフォント オプションと色オプション](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> コードの色分け表示を無効にするには、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[Python]** > **[詳細設定]** に移動し、**[その他のオプション]** > **[Color names based on type]\(種類に基づく色の名前\)** をオフにします。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション ∸ その他のオプション) を参照してください。
+> コードの色分け表示を無効にするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[詳細設定]** に移動し、 **[その他のオプション]**  >  **[Color names based on type]\(種類に基づく色の名前\)** をオフにします。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション ∸ その他のオプション) を参照してください。
 
 ## <a name="code-snippets"></a>コード スニペット
 
-コード スニペットはファイルに挿入できるコード フラグメントであり、ショートカットを入力して **Tab** キーを押すか、**[編集]** > **[IntelliSense]** > **[コード スニペットの挿入]** と **[ブロックの挿入]** コマンドを使用して **[Python]** を選び、目的のスニペットを選択することで、ファイルに挿入できます。
+コード スニペットはファイルに挿入できるコード フラグメントであり、ショートカットを入力して **Tab** キーを押すか、 **[編集]**  >  **[IntelliSense]**  >  **[コード スニペットの挿入]** と **[ブロックの挿入]** コマンドを使用して **[Python]** を選び、目的のスニペットを選択することで、ファイルに挿入できます。
 
 たとえば、`class` は、クラス定義を挿入するコード スニペットのショートカットです。 `class` を入力すると、そのスニペットが自動入力候補一覧に表示されます。
 
@@ -166,11 +166,11 @@ commas_to_colons(1)
 
 ### <a name="menu-commands"></a>メニュー コマンド
 
-**[編集]** > **[IntelliSense]** > **[コード スニペットの挿入]** メニュー コマンドを使用する場合は、次のように、まず、**[Python]** を選択してからスニペットを選びます。
+**[編集]**  >  **[IntelliSense]**  >  **[コード スニペットの挿入]** メニュー コマンドを使用する場合は、次のように、まず、 **[Python]** を選択してからスニペットを選びます。
 
 ![[コード スニペットの挿入] コマンドによるコード スニペットの選択](media/code-editing-code-snippet-insert.png)
 
-**[編集]** > **[IntelliSense]** > **[ブロックの挿入]** コマンドも、テキスト エディター内の現在の選択範囲を、選択済みの構造体の要素内に配置します。 たとえば、次のようなコードがあるとします。
+**[編集]**  >  **[IntelliSense]**  >  **[ブロックの挿入]** コマンドも、テキスト エディター内の現在の選択範囲を、選択済みの構造体の要素内に配置します。 たとえば、次のようなコードがあるとします。
 
 ```python
 sum = 0
@@ -178,13 +178,13 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-このコードを選択し、**[ブロックの挿入]** コマンドを選択すると、使用可能なスニペットの一覧が表示されます。 一覧から **def** を選択すると、選択済みのコードが関数定義内に配置され、強調表示されている関数の名前と引数の間を **Tab** キーを使用して移動できます。
+このコードを選択し、 **[ブロックの挿入]** コマンドを選択すると、使用可能なスニペットの一覧が表示されます。 一覧から **def** を選択すると、選択済みのコードが関数定義内に配置され、強調表示されている関数の名前と引数の間を **Tab** キーを使用して移動できます。
 
 ![コード スニペットに対する [ブロックの挿入] コマンドの使用](media/code-editing-code-snippet-surround-with.png)
 
 ### <a name="examine-available-snippets"></a>利用可能なスニペットを調べる
 
-利用可能なコード スニペットは、**コード スニペット マネージャー**で確認できます。これを開くには、**[ツール]** > **[コード スニペット マネージャー]** メニュー コマンドを使用し、言語として **[Python]** を選択します。
+利用可能なコード スニペットは、**コード スニペット マネージャー**で確認できます。これを開くには、 **[ツール]**  >  **[コード スニペット マネージャー]** メニュー コマンドを使用し、言語として **[Python]** を選択します。
 
 ![Visual Studio のコード スニペット マネージャー](media/code-editing-code-snippets-manager.png)
 
@@ -194,7 +194,7 @@ for x in range(1, 100):
 
 ## <a name="navigate-your-code"></a>コードの移動
 
-Visual Studio の Python のサポートとして、ソース コードが提供されているライブラリを含め、[ナビゲーション バー](#navigation-bar)、[**[定義へ移動]**](#go-to-definition)、[**[移動]**](#navigate-to)、[**[すべての参照の検索]**](#find-all-references) など、コード内をすばやく移動するためのいくつかの手段が用意されています。 また、Visual Studio の [**オブジェクト ブラウザー**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser)も使用できます。
+Visual Studio の Python のサポートとして、ソース コードが提供されているライブラリを含め、[ナビゲーション バー](#navigation-bar)、[ **[定義へ移動]** ](#go-to-definition)、[ **[移動]** ](#navigate-to)、[ **[すべての参照の検索]** ](#find-all-references) など、コード内をすばやく移動するためのいくつかの手段が用意されています。 また、Visual Studio の [**オブジェクト ブラウザー**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser)も使用できます。
 
 ### <a name="navigation-bar"></a>[ナビゲーション バー]
 
@@ -203,7 +203,7 @@ Visual Studio の Python のサポートとして、ソース コードが提供
 ![Visual Studio エディターのナビゲーション バー](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> ナビゲーション バーを非表示にするには、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[Python]** > **[全般]** に移動し、**[設定]** > **[ナビゲーション バー]** をオフにします。
+> ナビゲーション バーを非表示にするには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[全般]** に移動し、 **[設定]**  >  **[ナビゲーション バー]** をオフにします。
 
 ### <a name="go-to-definition"></a>[定義へ移動]
 
@@ -213,7 +213,7 @@ Visual Studio の Python のサポートとして、ソース コードが提供
 
 ### <a name="navigate-to"></a>移動
 
-**[編集]** > **[移動]** コマンド (**Ctrl** + **,** キー) を使用すると、エディター内に検索ボックスが表示されます。ボックスに任意の文字列を入力すると、その文字列を含む関数、クラス、変数を定義するコード内の一致候補が表示されます。 この機能は **[定義へ移動]** の機能と似ていますが、識別子の使用場所を探す必要がありません。
+**[編集]**  >  **[移動]** コマンド (**Ctrl** + **,** キー) を使用すると、エディター内に検索ボックスが表示されます。ボックスに任意の文字列を入力すると、その文字列を含む関数、クラス、変数を定義するコード内の一致候補が表示されます。 この機能は **[定義へ移動]** の機能と似ていますが、識別子の使用場所を探す必要がありません。
 
 任意の名前をダブルクリックするか、方向キーで選択して **Enter** キーを押すと、その識別子の定義に移動します。
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a0310a37d8d68a9c65298a69f5d0e19ed37bec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936635"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912001"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001:連結には StringBuilder を使用してください
 
@@ -41,4 +41,4 @@ ms.locfileid: "62936635"
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  **[エラー一覧]** ウィンドウに表示されたメッセージをダブルクリックして、サンプリング プロファイル データの[関数の詳細ビュー](../profiling/function-details-view.md)に移動します。 文字列連結を最も頻繁に使用するプログラムをセクションを特定します。 頻繁な文字列連結など、複雑な文字列操作には StringBuilder クラスを使用します。
 
- 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](http://go.microsoft.com/fwlink/?LinkId=177817)」の「[文字列処理](http://go.microsoft.com/fwlink/?LinkId=177816)」を参照してください。
+ 文字列の使用方法の詳細については、Microsoft Patterns and Practices (マイクロソフトのパターンと手法) ライブラリの[第 5 章「マネージド コード パフォーマンスの向上](/previous-versions/msp-n-p/ff647790(v=pandp.10))」の「[文字列処理](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26)」を参照してください。

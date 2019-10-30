@@ -1,5 +1,5 @@
 ---
-title: '方法: エンティティ モデルを追加する |Microsoft Docs'
+title: '方法: モデルにエンティティを追加する |Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b1a7ec1eab5cdcf2e415a4803c51c9da91be29c9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431243"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985240"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>方法: エンティティ モデルを追加します。
-  エンティティを作成するには、Visual Studio からエンティティ コントロールを追加**ツールボックス**ビジネス データ接続 (BDC) をデザイナーにします。
+# <a name="how-to-add-an-entity-to-a-model"></a>方法: モデルにエンティティを追加する
+  エンティティを作成するには、Visual Studio の**ツールボックス**から Business Data CONNECTIVITY (BDC) デザイナーにエンティティコントロールを追加します。
 
-### <a name="to-add-an-entity-to-the-model"></a>モデルにエンティティを追加するには
+### <a name="to-add-an-entity-to-the-model"></a>エンティティをモデルに追加するには
 
-1. BDC プロジェクトを作成するか、既存の BDC プロジェクトを開きます。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+1. BDC プロジェクトを作成するか、既存の BDC プロジェクトを開きます。 詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
-2. **ツールボックス**から、 **BusinessDataCatalog**グループで、追加、**エンティティ**コントロールをデザイナーにします。
+2. **ツールボックス**の**BusinessDataCatalog**グループから、**エンティティ**コントロールをデザイナーに追加します。
 
-     デザイナーで新しいエンティティが表示されます。 Visual Studio の追加、`<Entity>`プロジェクト内の BDC モデル ファイルの xml 要素。 エンティティ要素の属性に関する詳細については、次を参照してください。[エンティティ](http://go.microsoft.com/fwlink/?LinkId=169296)します。
+     新しいエンティティがデザイナーに表示されます。 Visual Studio により、プロジェクト内の BDC モデルファイルの XML に `<Entity>` 要素が追加されます。 エンティティ要素の属性の詳細については、「 [entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14))」を参照してください。
 
-3. デザイナーで、エンティティのショートカット メニューを開き、選択**追加**を選び、**識別子**します。
+3. デザイナーで、エンティティのショートカットメニューを開き、 **[追加]** を選択し、 **[識別子]** を選択します。
 
      エンティティに新しい識別子が表示されます。
 
     > [!NOTE]
-    > エンティティとの識別子の名前を変更することができます、**プロパティ**ウィンドウ。
+    > エンティティの名前と識別子は、 **[プロパティ]** ウィンドウで変更できます。
 
-4. クラスでは、エンティティのフィールドを定義します。 プロジェクトに新しいクラスを追加するか、オブジェクト リレーショナル デザイナー (O/R デザイナー) などの他のツールを使用して作成された既存のクラスを使用します。 次の例では、連絡先をという名前のエンティティ クラスを示します。
+4. クラスのエンティティのフィールドを定義します。 新しいクラスをプロジェクトに追加するか、またはオブジェクトリレーショナルデザイナー (O/R デザイナー) などの他のツールを使用して作成された既存のクラスを使用することができます。 Contact という名前のエンティティクラスの例を次に示します。
 
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: Creator メソッドを追加します。](../sharepoint/how-to-add-a-creator-method.md)
-- [方法: Deleter メソッドを追加します。](../sharepoint/how-to-add-a-deleter-method.md)
-- [方法: Updater メソッドを追加します。](../sharepoint/how-to-add-an-updater-method.md)
-- [方法: Finder メソッドを追加します。](../sharepoint/how-to-add-a-finder-method.md)
-- [方法: 特定の Finder メソッドを追加します。](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)
+- [方法: 削除子メソッドを追加する](../sharepoint/how-to-add-a-deleter-method.md)
+- [方法: Updater メソッドを追加する](../sharepoint/how-to-add-an-updater-method.md)
+- [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)
+- [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)

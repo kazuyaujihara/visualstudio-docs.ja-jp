@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481915"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982909"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -37,11 +37,11 @@ C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes
 
 **Visual Studio 2017 以降 (すべてのエディション)** :
 
-- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、[方法:Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
+- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、[Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
 
-- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、[方法:Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
+- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、[Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
 
-- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、[方法:Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
+- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、[Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
 
 **Visual Studio 2015 以前**
 
@@ -79,7 +79,7 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 
 ### <a name="link-to-object-or-library-files"></a>オブジェクトまたはライブラリ ファイルのリンク
 
-テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)」を参照してください。
+テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](unit-testing-existing-cpp-applications-with-test-explorer.md)」を参照してください。
 
 ### <a name="add-include-directives-for-header-files"></a>ヘッダー ファイルの #include ディレクティブを追加する
 
@@ -92,7 +92,7 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 ### <a name="write-test-methods"></a>テスト メソッドを作成する
 
 > [!NOTE]
-> ここでは、C/C++ の Microsoft 単体テスト フレームワークの構文を示します。 詳細については、「[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)」を参照してください。 Google Test については、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するドキュメントをご覧ください。 Boost.Test については、「[Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)」 (Boost Test ライブラリ: 単体テスト フレームワーク) を参照してください。
+> ここでは、C/C++ の Microsoft 単体テスト フレームワークの構文を示します。 詳細については、「[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)」を参照してください。 Google Test については、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するドキュメントをご覧ください。 Boost.Test については、「[Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)」 (Boost Test ライブラリ: 単体テスト フレームワーク) を参照してください。
 
 テスト プロジェクトの *.cpp* ファイルには、テスト コード記述方法の例として、スタブ クラスとメソッドの定義が含まれます。 シグネチャで TEST_CLASS および TEST_METHOD マクロが使われていることに注意してください。これにより、 **[テスト エクスプローラー]** ウィンドウでメソッドを見つけることができます。
 

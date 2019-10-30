@@ -1,5 +1,5 @@
 ---
-title: プロパティ ページ |Microsoft Docs
+title: プロパティページ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,70 +12,70 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48809f0e8dd65c5a6ecd47f2874498ebba694a2a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51487b35686da9676f201a157ddb8e47afb75ce8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341522"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725055"
 ---
-# <a name="property-pages"></a>プロパティ ページ
-ユーザーは、表示し、プロパティ ページを使用して、プロジェクトの構成に依存して、独立系のプロパティを変更できます。 A**プロパティ ページ**でボタンが有効になっている、**プロパティ**ウィンドウまたはソリューション エクスプ ローラー ツールバーの選択したオブジェクトのプロパティ ページのビューを提供するオブジェクト。 プロパティ ページでは、環境によって作成され、ソリューションとプロジェクトの利用します。 することができます、ただし、使用可能にするプロジェクト項目が構成依存のプロパティを使用します。 プロジェクト内のファイルを正しくビルドする別のコンパイラ スイッチの設定を必要とする場合は、この機能を使用する可能性があります。
+# <a name="property-pages"></a>[プロパティ ページ]
+ユーザーは、プロパティページを使用して、プロジェクトの構成に依存し、依存しないプロパティを表示および変更できます。 選択したオブジェクトのプロパティページビューを提供するオブジェクトの**プロパティウィンドウまた**はソリューションエクスプローラーツールバーで、 **[プロパティページ]** ボタンが有効になります。 プロパティページは環境によって作成され、ソリューションとプロジェクトで使用できます。 ただし、構成に依存するプロパティを使用するプロジェクトアイテムに対しても使用できます。 この機能は、プロジェクト内のファイルが、正しくビルドするために異なるコンパイラスイッチ設定を必要とする場合に使用できます。
 
-## <a name="using-property-pages"></a>プロパティ ページの使用
- プロパティ ページがまだ表示されている (たとえば、プロジェクトをソリューション) から選択が変更された場合は、情報のページで、新しい選択範囲のプロパティを表示する変更表示されます。 プロパティ ページをサポートするオブジェクトのプロパティがない場合は、プロパティ ページが空です。
+## <a name="using-property-pages"></a>プロパティページの使用
+ プロパティページが既に表示されていて、選択内容が変更された場合 (たとえば、ソリューションからプロジェクトに変更した場合)、ページに表示される情報が変更され、新しい選択項目のプロパティが表示されます。 プロパティページをサポートするプロパティがオブジェクトに存在しない場合、プロパティページは空になります。
 
- 複数のオブジェクトが選択されている場合、プロパティ ページには、選択したすべてのアイテムのプロパティの積集合が表示されます。 選択した項目に構成に依存するプロパティが含まれていないかどうか、**プロパティ ページ**ソリューション エクスプ ローラー ツールバーのボタンがクリックされると、[プロパティ] ウィンドウにフォーカスが変更されます。 [プロパティ] ウィンドウと選択範囲に関連する詳細については、次を参照してください。[拡張プロパティ](../../extensibility/internals/extending-properties.md)します。
+ 複数のオブジェクトが選択されている場合、プロパティページには、選択したすべての項目のプロパティの共通部分が表示されます。 選択した項目に構成に依存するプロパティが含まれておらず、ソリューションエクスプローラー ツールバーの **プロパティページ** ボタンがクリックされると、プロパティウィンドウにフォーカスが移動します。 プロパティウィンドウと選択に関する詳細については、「[プロパティの拡張](../../extensibility/internals/extending-properties.md)」を参照してください。
 
- 複数のオブジェクトのプロパティが表示されますが、[プロパティ] ページの値を変更して場合、が最初に異なると、個々 のオブジェクトのプロパティが表示されていたときに、ページが空白場合でも、新しい値に設定のすべてのオブジェクトの値は。
+ 複数のオブジェクトに対してプロパティが表示され、プロパティページで値を変更した場合、オブジェクトのすべての値は、最初は異なる場合でも新しい値に設定され、個々のオブジェクトのプロパティが表示されたときにそのページは空白になります。
 
- 2 つの一般的な種類があります**ProjectProperty ページ** ダイアログ ボックスで使用できる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 Visual Basic プロジェクトの場合、最初になど、プロパティ ページは表示フィールドの形式を使用して次のスクリーン ショットに示すようにします。 1 秒間、後でこのセクションで示す、プロパティ ページのホスト プロパティ グリッド プロパティ ウィンドウに似ています。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]で使用できる **[Projectproperty Pages]** ダイアログボックスには、次の2つの一般的な種類があります。 たとえば、Visual Basic プロジェクトでは、次のスクリーンショットに示すように、フィールド形式を使用してプロパティページが表示されます。 2番目のセクションでは、プロパティページが、[プロパティ] ウィンドウに表示されるのと同様のプロパティグリッドをホストしています。
 
- ![Visual Basic プロパティ ページ](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")フィールドの形式とツリー構造を持つプロジェクト プロパティ ページ ダイアログ ボックス
+ ![Visual Basic プロパティページ](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")フィールド形式とツリー構造を持つ [プロジェクトプロパティページ] ダイアログボックス
 
- プロパティ ページ ダイアログ ボックスのツリー構造を使用して組み込まれていない<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>します。 によって渡されたレベル名に基づいて、環境、<xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>インターフェイスは、それを構築します。
+ [プロパティページ] ダイアログボックスのツリー構造は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>を使用して作成されません。 環境は、<xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> によって渡されるレベル名と <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> インターフェイスに基づいて構築されます。
 
- 使用できる 2 つの最上位のカテゴリは[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロパティ ページ。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のプロパティページで使用できるトップレベルのカテゴリは2つだけです。
 
-- 一般的なプロパティは、選択したオブジェクトまたはオブジェクトの構成に依存しない情報が表示されます。 その結果、一般的なプロパティのサブカテゴリのいずれかを選択した場合、構成、プラットフォーム、および Configuration Manager のオプション ダイアログ ボックスの上部には使用できません。
+- [共通プロパティ]: 選択したオブジェクトの構成に依存しない情報が表示されます。 その結果、[共通プロパティ] サブカテゴリの1つを選択した場合、ダイアログボックスの上部にある [構成]、[プラットフォーム]、および [Configuration Manager] オプションは使用できません。
 
-- ソリューションまたはプロジェクトのデバッグ、最適化、およびビルドのパラメーターに関連する構成に依存する情報を含む構成のプロパティ。
+- 構成プロパティ。ソリューションまたはプロジェクトのデバッグ、最適化、およびビルドパラメーターに関連する構成に依存する情報が含まれています。
 
-  その他の最上位のカテゴリを作成することはできませんの実装のどちらか一方を表示しないように選択できます`IVsPropertyPage`します。 たとえば、オブジェクトを表示するには、任意の構成に依存しないプロパティがない場合、一般的なプロパティのカテゴリを表示しないようにすることもできます。 場合、一般的なプロパティを表示する`ISpecifyPropertyPages`を実装するときに、項目の参照オブジェクトと構成のプロパティから実装`ISpecifyPropertyPages`構成オブジェクト (実装するオブジェクト`IVsCfg`、 `IVsProjectCfg`、および関連します。インターフェイスの場合)。
+  追加の最上位レベルのカテゴリを作成することはできませんが、`IVsPropertyPage`の実装に表示しないように選択できます。 たとえば、オブジェクトに対して表示する構成に依存しないプロパティがない場合は、[共通プロパティ] カテゴリを表示しないように選択できます。 構成オブジェクト (`IVsCfg`、`IVsProjectCfg`、および関連するインターフェイスを実装するオブジェクト) に `ISpecifyPropertyPages` を実装するときに、項目の参照オブジェクトと構成プロパティから `ISpecifyPropertyPages` が実装されている場合は、共通プロパティを表示します。
 
-  最上位のカテゴリの下に表示される各カテゴリは、個別のプロパティ ページを表します。 Category と subcategory 使用できるエントリ ダイアログ ボックスでは、実装によって決まります`ISpecifyPropertyPages`と`IVsPropertyPage`します。
+  最上位レベルのカテゴリの下に表示される各カテゴリは、個別のプロパティページを表します。 ダイアログボックスで使用できるカテゴリおよびサブカテゴリのエントリは、`ISpecifyPropertyPages` と `IVsPropertyPage`の実装によって決まります。
 
-  `IDispatch` オブジェクトのプロパティ ページの実装に表示されるプロパティを持つ選択コンテナー内のアイテム`ISpecifyPropertyPages`クラス Id の一覧を列挙します。 クラス Id が変数として渡される`ISpecifyPropertyPages`プロパティ ページをインスタンス化に使用されます。 クラス Id の一覧に渡されます`IVsPropertyPage` ダイアログ ボックスの左側のツリー構造を作成します。 プロパティ ページ、パス情報を`IDispatch`を実装するオブジェクト`ISpecifyPropertyPages`が各ページの情報を入力するとします。
+  プロパティページに表示されるプロパティを持つ選択コンテナー内の項目の `IDispatch` オブジェクトは、クラス Id の一覧を列挙する `ISpecifyPropertyPages` を実装します。 クラス Id は `ISpecifyPropertyPages` に変数として渡され、プロパティページをインスタンス化するために使用されます。 クラス Id の一覧も `IVsPropertyPage` に渡され、ダイアログボックスの左側にツリー構造が作成されます。 次に、プロパティページは `ISpecifyPropertyPages` を実装する `IDispatch` オブジェクトに情報を渡し、各ページの情報を入力します。
 
-  参照オブジェクトのプロパティを使用して取得`IDispatch`選択コンテナー内の各オブジェクト。
+  参照オブジェクトのプロパティは、選択コンテナー内の各オブジェクトの `IDispatch` を使用して取得されます。
 
-  実装する`Help::DisplayTopicFromF1Keyword`VSPackage で、[ヘルプ] ボタンの機能を提供します。
+  VSPackage に `Help::DisplayTopicFromF1Keyword` を実装すると、[ヘルプ] ボタンの機能が提供されます。
 
-  詳細については、次を参照してください。`IDispatch`と`ISpecifyPropertyPages`、MSDN ライブラリ。
+  詳細については、MSDN ライブラリの「`IDispatch`」および「`ISpecifyPropertyPages`」を参照してください。
 
-  プロパティ ページの 2 つ目の種類が表示されますサンプル ホストで、プロパティ グリッドのフォームに次のスクリーン ショットで示すよう。
+  サンプルに表示されるプロパティページの2番目の種類は、次のスクリーンショットに示すように、プロパティグリッドのフォームをホストします。
 
-  ![VC プロパティ ページ](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")プロパティ グリッドでプロパティ ページ ダイアログ ボックス
+  ![VC プロパティページ](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")プロパティグリッドがある [プロパティページ] ダイアログボックス
 
-  インターフェイス`IVSMDPropertyBrowser`と`IVSMDPropertyGrid`(vsmanaged.h で宣言) を作成し、ダイアログ ボックスまたはウィンドウ内のプロパティ グリッドを設定するために使用します。
+  インターフェイス `IVSMDPropertyBrowser` および `IVSMDPropertyGrid` (vsmanaged .h で宣言) は、ダイアログボックスまたはウィンドウ内でプロパティグリッドを作成および設定するために使用されます。
 
-  プロジェクトのアーキテクチャが大幅に変わったの過去のバージョンから[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 具体的には、プロジェクトの概念がアクティブに変更します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、アクティブなプロジェクトの概念はありません。 前の開発環境では、アクティブなプロジェクトは、プロジェクトをビルドおよび配置のコマンドは、コンテキストに関係なくに既定値はでした。 ソリューションの制御し、調停ビルド コマンドおよび deploy コマンドを次に、どのプロジェクトに適用されます。
+  プロジェクトのアーキテクチャは、以前のバージョンの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]から大幅に変更されています。 特に、アクティブなプロジェクトの概念は変更されています。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]には、アクティブなプロジェクトの概念はありません。 以前の開発環境では、コンテキストに関係なく、ビルドおよび配置コマンドが既定で適用されるプロジェクトとして、アクティブなプロジェクトがありました。 ここで、ソリューションによって、ビルドおよび配置コマンドがどのプロジェクトに適用されるかを制御および判別します。
 
-  アクティブなプロジェクトいたは 3 つの方法のいずれかでキャプチャされたようになりました。
+  以前にアクティブなプロジェクトは、次の3つの方法のいずれかでキャプチャされるようになりました。
 
-- スタートアップ プロジェクト
+- スタートアッププロジェクト
 
-   ユーザーは、f5 キーを押すか、ビルド メニューから実行を選択するときに開始されるソリューションのプロパティ ページからプロジェクトを指定できます。 これは、ソリューション エクスプ ローラーで太字のフォントでその名前が表示されることの意味では、古いアクティブなプロジェクトと同様の方法で機能します。
+   ユーザーが F5 キーを押したとき、または [ビルド] メニューの [実行] を選択したときに開始される、ソリューションのプロパティページからプロジェクトまたはプロジェクトを指定できます。 これは、古いアクティブプロジェクトと同様の方法で動作します。これは、名前が太字のフォントでソリューションエクスプローラーに表示されることを意味します。
 
-   オートメーション モデルのプロパティとしてスタートアップ プロジェクトを取得するには呼び出すことによって`DTE.Solution.SolutionBuild.StartupProjects`します。 呼び出すことで、VSPackage、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>メソッド。 `IVsSolutionBuildManager` サービスとして利用できます`QueryService`SID_SVsSolutionBuildManager にします。 詳細については、次を参照してください。[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)と[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。
+   スタートアッププロジェクトは、`DTE.Solution.SolutionBuild.StartupProjects`を呼び出すことによって、オートメーションモデルのプロパティとして取得できます。 VSPackage では、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> または <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> メソッドを呼び出します。 `IVsSolutionBuildManager` は、SID_SVsSolutionBuildManager で `QueryService` ことによってサービスとして利用できます。 詳細については、「[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)と[ソリューション構成](../../extensibility/internals/solution-configuration.md)」を参照してください。
 
-- アクティブなソリューションのビルド構成
+- アクティブソリューションビルド構成
 
-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] アクティブ ソリューション構成を実装して、オートメーション モデルで使用できるは`DTE.Solution.SolutionBuild.ActiveConfiguration`します。 ソリューション構成では、(各プロジェクトは複数の構成を異なる名前で、複数のプラットフォーム上に持つことができます)、ソリューション内の各プロジェクトの 1 つのプロジェクト構成を含むコレクションです。 ソリューションのプロパティ ページに関連する詳細については、次を参照してください。[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、アクティブなソリューション構成があります。この構成は、`DTE.Solution.SolutionBuild.ActiveConfiguration`を実装することによって、オートメーションモデルで使用できます。 ソリューション構成は、ソリューション内のプロジェクトごとに1つのプロジェクト構成を含むコレクションです (各プロジェクトは複数の構成を持つことができ、複数のプラットフォームでは名前が異なる場合があります)。 ソリューションのプロパティページに関する詳細については、「[ソリューションの構成](../../extensibility/internals/solution-configuration.md)」を参照してください。
 
 - 現在選択されているプロジェクト
 
-   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>プロジェクト階層し、プロジェクト項目または選択した項目を取得します。 DTE から使用すると、`SelectedItems.SelectedItem.Project`と`SelectedItems.SelectedItem.ProjectItem`メソッド。 コアでこれらの見出しの下のサンプル コードがある[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ドキュメント。
+   プロジェクト階層とプロジェクト項目、または選択した項目を取得するには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> メソッドを実装します。 DTE からは、`SelectedItems.SelectedItem.Project` メソッドと `SelectedItems.SelectedItem.ProjectItem` メソッドを使用します。 コア [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ドキュメントには、これらの見出しの下にサンプルコードがあります。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>

@@ -1,5 +1,5 @@
 ---
-title: For SharePoint アプリケーション ページの作成 |Microsoft Docs
+title: SharePoint 用のアプリケーションページを作成する |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,62 +16,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443544"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981098"
 ---
-# <a name="create-application-pages-for-sharepoint"></a>For SharePoint アプリケーション ページを作成します。
-  *アプリケーション ページ*は SharePoint Web サイトで使用するために設計された ASP.NET Web ページです。 アプリケーション ページは、ASP.NET ページの特殊な種類です。 アプリケーション ページと標準の ASP.NET ページの主な違いは、アプリケーション ページに、SharePoint のマスター ページとマージされるコンテンツが含まれています。 マスター ページには、サイト上の他のページと同じ外観と動作を共有するアプリケーション ページことができます。
+# <a name="create-application-pages-for-sharepoint"></a>SharePoint のアプリケーションページの作成
+  *アプリケーションページ*は、SharePoint web サイトで使用できるように設計された ASP.NET web ページです。 アプリケーションページは特殊な種類の ASP.NET ページです。 アプリケーションページと標準 ASP.NET ページの主な違いは、アプリケーションページに SharePoint マスターページとマージされたコンテンツが含まれていることです。 マスターページを使用すると、アプリケーションページは、サイト上の他のページと同じ外観と動作を共有できます。
 
- Visual Studio では、デザイナーを使用してアプリケーション ページをデザインすることができます。 デザイナーでは、マスター ページで定義されている各コンテンツのプレース ホルダーのコンテンツ領域が表示されます。 アプリケーション ページをデザインするには、これらの領域にコントロールをドラッグします。
+ Visual Studio では、デザイナーを使用してアプリケーションページをデザインできます。 デザイナーには、マスターページで定義されている各コンテンツプレースホルダーのコンテンツ領域が表示されます。 これらのコンテンツ領域にコントロールをドラッグすることで、アプリケーションページをデザインできます。
 
-## <a name="application-pages"></a>アプリケーション ページ
- アプリケーション ページは、サイトのページが特定の 1 つのサイトには、サーバー上のすべてのサイトで共有されます。 詳細については、 [SharePoint ページの種類](http://go.microsoft.com/fwlink/?LinkID=211584)します。
+## <a name="application-pages"></a>アプリケーションページ
+ アプリケーションページは、サーバー上のすべてのサイトで共有されます。一方、サイトページは、1つのサイトに固有です。 詳細については、「 [SharePoint ページの種類](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))」を参照してください。
 
- 既定では、SharePoint サイトを作成するときに表示されるページのほとんどは、サイトのページは。 サイトのページは、SharePoint ページのライブラリに追加できます。 ユーザーは、SharePoint Designer などのツールを使用して、[サイト] ページをカスタマイズできます。 [サイト] ページでは、動的 Web パーツ、および Web パーツの領域などの機能もホストできます。
+ 既定では、SharePoint サイトを作成するときに表示されるページのほとんどは、サイトページです。 サイトページは、SharePoint ページライブラリに追加できます。 ユーザーは、SharePoint デザイナーなどのツールを使用してサイトページをカスタマイズできます。 サイトページでは、動的 Web パーツ、Web パーツゾーンなどの機能もホストできます。
 
- アプリケーション ページには、これらの操作を実行できません。 ただし、アプリケーション ページは、ページを作成する場合は、カスタム コードを含むページの最適な型です。 サイト ページにカスタム コードを追加できますが、コードは、ユーザーは、SharePoint Designer などのツールを使用して、ページをカスタマイズした場合に実行を停止します。
+ アプリケーションページでは、これらの処理を行うことはできません。 ただし、ページにカスタムコードを含める場合は、アプリケーションページを作成することをお勧めします。 サイトページにカスタムコードを追加できますが、ユーザーが SharePoint デザイナーなどのツールを使用してページをカスタマイズすると、コードの実行が停止します。
 
 > [!NOTE]
-> Visual Studio では提供されませんする際に役立つテンプレートは、SharePoint サイトのサイト ページを作成します。 詳細については、次を参照してください。 [SharePoint ページの種類](http://go.microsoft.com/fwlink/?LinkID=211584)します。
+> Visual Studio には、SharePoint サイトのサイトページを作成するのに役立つテンプレートは用意されていません。 詳細については、「 [SharePoint ページの種類](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))」を参照してください。
 
-## <a name="create-an-application-page"></a>アプリケーション ページを作成します。
- アプリケーション ページを作成するには追加、**アプリケーション ページ**を SharePoint プロジェクト項目。 アプリケーション ページを作成するときに Visual Studio は、次のフォルダーをプロジェクトに追加します。
+## <a name="create-an-application-page"></a>アプリケーションページを作成する
+ アプリケーションページを作成するには、**アプリケーションページ**アイテムを SharePoint プロジェクトに追加します。 アプリケーションページを作成すると、Visual Studio によって次のフォルダーがプロジェクトに追加されます。
 
 |フォルダー|説明|
 |------------|-----------------|
-|レイアウト|SharePoint のファイル システムの _layouts 仮想ディレクトリにマップされます。|
-|レイアウトのサブフォルダー|アプリケーション ページを構成するファイルが含まれています。 既定では、このフォルダーには、プロジェクトと同じ名前があります。 このフォルダーは、いつでも変更できます。 プロジェクトを実行するときに、Visual Studio は、SharePoint のファイル システムの _layouts 仮想ディレクトリにこのフォルダーを展開します。|
+|レイアウト|SharePoint ファイルシステムの _layouts 仮想ディレクトリにマップされます。|
+|レイアウトサブフォルダー|アプリケーションページを構成するファイルが含まれます。 既定では、このフォルダーの名前はプロジェクトと同じです。 このフォルダーの名前はいつでも変更できます。 プロジェクトを実行すると、Visual Studio によってこのフォルダーが SharePoint ファイルシステムの _layouts 仮想ディレクトリに配置されます。|
 
- Visual Studio では、プロジェクトに次のファイルが追加されます。
+ Visual Studio によって、次のファイルがプロジェクトに追加されます。
 
 |ファイル|説明|
 |----------|-----------------|
-|ASP.NET ページファイル (*.aspx*)|ページを定義する XML マークアップが含まれています。|
-|アプリケーション ページ コード ファイル|アプリケーション ページで、分離コードが含まれています。 このファイルにイベントを処理するコードを追加します。|
-|アプリケーション ページ デザイナー コード ファイル|デザイナーによって生成されるコードが含まれています。 このファイルを直接編集しないでください。|
+|ASP.NET ページファイル ( *.aspx*)|ページを定義する XML マークアップを格納します。|
+|アプリケーションページのコードファイル|アプリケーションページの背後にあるコードを含みます。 イベントを処理するコードをこのファイルに追加します。|
+|アプリケーションページデザイナーコードファイル|デザイナーによって生成されるコードが含まれています。 このファイルは直接編集しないでください。|
 
-## <a name="design-and-debug-an-application-page"></a>デザインおよびアプリケーション ページのデバッグ
- Visual Studio のデザイナー ビューを使用して、アプリケーション ページの内容をデザインします。 プロジェクトでアプリケーション ページを開くときに、このデザイナーが表示されます (またはショートカット メニューを選択し、ダブルクリックして**開く**) 選択し、**デザイン**の下部にあるボタンエディター。
+## <a name="design-and-debug-an-application-page"></a>アプリケーションページをデザインおよびデバッグする
+ Visual Studio のデザイナービューを使用して、アプリケーションページの内容をデザインします。 このデザイナーは、プロジェクトのアプリケーションページを開いたときに表示されます (ダブルクリックするか、ショートカットメニューを開き、 **[開く]** をクリックします)。その後、エディターの下部にある **[デザイン]** ボタンをクリックします。
 
 > [!NOTE]
-> ページを作成するだけで、**ソース**デザイナーのビュー。 **デザイン**アプリケーション ページ用のデザイナー ビューが無効になっています。
+> ページのデザインは、デザイナーの**ソース**ビューでのみ行うことができます。 デザイナーの**デザイン**ビューは、アプリケーションページでは無効になっています。
 
- Visual Studio での他の SharePoint プロジェクト項目をデバッグする場合と同様に、アプリケーション ページをデバッグできます。 Visual Studio デバッガーを開始すると、SharePoint サイトが開きます。
+ Visual Studio で他の SharePoint プロジェクトアイテムをデバッグする場合と同じように、アプリケーションページをデバッグできます。 Visual Studio デバッガーを開始すると、SharePoint サイトが開きます。
 
- アプリケーション ページを表示する必要があります手動でに移動するアプリケーション ページの場所 (例: http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx)。
+ アプリケーションページを表示するには、アプリケーションページの場所 (例: http://<em>Server_Name</em>/_Layouts/*Project_Name*/applicationpage1. aspx) に手動で移動する必要があります。
 
- SharePoint プロジェクトをデバッグする方法の詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。
+ SharePoint プロジェクトをデバッグする方法の詳細については、「 [sharepoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」を参照してください。
 
-## <a name="choose-a-master-page"></a>マスター ページを選択します。
- 既定で、**アプリケーション ページ**項目が、プロジェクトのデバッグを使用しているサイトのマスター ページを参照します。 V4.master という名前のページがその一覧に検索することができます、**マスタ ページ ギャラリ**の SharePoint サイト。
+## <a name="choose-a-master-page"></a>マスターページの選択
+ 既定では、**アプリケーションページ**アイテムは、プロジェクトのデバッグに使用しているサイトのマスターページを参照します。 このページには「v4. master」という名前が付けられ、SharePoint サイトの**マスターページギャラリー**に一覧表示されます。
 
- 設定して、アプリケーション ページによって使用されるマスター ページを明示的に変更できる、`MasterPageFile`属性は、アプリケーションの`Page`要素。 (例: `MasterPageFile="~/_layouts/applicationv4.master"`)。 実際には、動的なマスター ページは、SharePoint サーバーで有効になっていない場合は、この属性を設定する必要があります。 SharePoint のマスター ページの詳細については、次を参照してください。[マスター ページ](http://go.microsoft.com/fwlink/?LinkID=169281)します。
+ アプリケーションのページで使用されるマスターページを明示的に変更するには、アプリケーションの `Page` 要素の `MasterPageFile` 属性を設定します。 (例: `MasterPageFile="~/_layouts/applicationv4.master"`)。 実際、SharePoint サーバーで動的なマスターページが有効になっていない場合は、この属性を設定する必要があります。 SharePoint のマスターページの詳細については、「[マスターページ](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint Foundation の開発の詳細](http://go.microsoft.com/fwlink/?LinkID=182103)
+- [SharePoint Foundation 開発の詳細](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [ASP.NET 概要](/aspnet/overview)
 - [ASP.NET Web ページ](/aspnet/web-pages/index)
