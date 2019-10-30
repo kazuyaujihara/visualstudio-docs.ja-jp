@@ -21,44 +21,44 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060387"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919102"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>マイクロソフトのアクセシビリティ製品とサービス
 
 Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 このページでは、障碍があるユーザーが Microsoft Windows をさらに使いやすくするためのユーザー補助機能、製品、サービスについて説明しています。
 
 > [!IMPORTANT]
-> このページの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されることがあります。 米国外でこの製品を入手した場合には、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431) サイトにアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このページで説明されている製品とサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が他の言語で参照できます。
+> このページの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されることがあります。 米国外でこの製品を入手した場合には、[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/) サイトにアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このページで説明されている製品とサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が他の言語で参照できます。
 
 ## <a name="windows"></a> Windows のユーザー補助機能
 
-Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
+Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)を参照してください。
 
 ### <a name="free-step-by-step-tutorials"></a>無料の操作手順チュートリアル
 
 Microsoft では、アクセシビリティに関するオプションの選択とコンピューターの設定について、詳細な手順を示すチュートリアルを用意しています。 この情報は、マウス、キーボード、または両方を組み合わせて使用する方法がわかるよう、2 種類の手順が並べて示してあります。
 
-Microsoft 製品のステップバイステップ チュートリアルを参照するには、[マイクロソフト アクセシビリティ](http://go.microsoft.com/fwlink/?LinkId=8431) Web サイトを参照してください。
+Microsoft 製品のステップバイステップ チュートリアルを参照するには、[マイクロソフト アクセシビリティ](https://www.microsoft.com/accessibility/) Web サイトを参照してください。
 
 ### <a name="assistive-technology-products-for-windows"></a>Windows の支援技術製品
 
-障碍のある方がコンピューターを使いやすいように、さまざまな支援技術製品が提供されています。 Windows で使用できる支援技術製品のカタログを[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)で検索できます。
+障碍のある方がコンピューターを使いやすいように、さまざまな支援技術製品が提供されています。 Windows で使用できる支援技術製品のカタログを[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)で検索できます。
 
 ユーザー補助技術を使用する場合には、ユーザー補助技術製品の販売元に連絡し、ソフトウェアおよびハードウェアの互換性について確認してからアップグレードしてください。
 
 ## <a name="altfortmats"></a> 代替形式のドキュメント
 
-印刷形式のドキュメントの判読または取り扱いが困難な方のために、多くの Microsoft 製品については、いっそう利用しやすい形式でのドキュメントが用意されています。 ユーザー補助技術製品の索引が、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)に示されています。
+印刷形式のドキュメントの判読または取り扱いが困難な方のために、多くの Microsoft 製品については、いっそう利用しやすい形式でのドキュメントが用意されています。 ユーザー補助技術製品の索引が、[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)に示されています。
 
 また、Microsoft の追加のパブリケーションを Learning Ally から入手することもできます。 Learning Ally は、これらのドキュメントを、同社の配布サービスに登録した正規メンバーに配布します。 入手可能な Microsoft 製品ドキュメントや Microsoft Press 発行書籍については、次の連絡先にお問い合わせください。
 
 > Learning Ally<br />
-> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Learning Ally Web サイト: [http://www.learningally.org](http://www.learningally.org/)
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Learning Ally Web サイト: [http://www.learningally.org](https://learningally.org/)
 
 Web アドレスは変更される可能性があるため、ここで示した Web サイトに接続できない場合があります。
 
@@ -74,7 +74,7 @@ Microsoft Support Services は、サービスを利用された時点におけ�
 
 ## <a name="moreinfo"></a> 詳細情報
 
-コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかに関する詳細については、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
+コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかに関する詳細については、[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)を参照してください。
 
 ::: moniker range="vs-2017"
 

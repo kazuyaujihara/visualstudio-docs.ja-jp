@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107884"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024698"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -160,4 +160,4 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 
 - **イメージ リサイザー** – この関数は、コンテナーに BLOB が追加されるたびに異なるサイズのイメージを作成します。 このテンプレートは、トリガーに対するパスと接続文字列、小さいイメージ出力、および中くらいのイメージ出力を受け取ります。
 
-- **SAS トークン** – この関数は、特定の Azure Storage コンテナーおよび BLOB 名に対して SAS トークンを生成します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 **アクセス権**も設定する必要があります。 承認レベルは、関数に API キーが必要かどうか、および使用するキーを制御します。関数は関数キーを使います。管理者は、マスター キーを使います。 詳しくは、「[C# Azure Function for generating SAS tokens](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/)」(SAS トークンを生成するための C# Azure Function) サンプルをご覧ください。
+- **SAS トークン** – この関数は、特定の Azure Storage コンテナーおよび BLOB 名に対して SAS トークンを生成します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 **アクセス権**も設定する必要があります。 承認レベルは、関数に API キーが必要かどうか、および使用するキーを制御します。関数は関数キーを使います。管理者は、マスター キーを使います。 詳しくは、「[C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/)」(SAS トークンを生成するための C# Azure Function) サンプルをご覧ください。
