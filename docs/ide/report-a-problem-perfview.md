@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: ca2e44c41952a251d747f80fe27732c1d9dbd18b
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: c1e8a0ca18a857a71fb9cfb6b79a18fef40191a4
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481950"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919161"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>PerfView で ETL トレースを収集する
 
@@ -42,4 +42,4 @@ PerfView は、[Windows イベント トレーシング](/windows/desktop/ETW/ev
 
 PerfView を使って保存できるのは、そのバッファーに収まる最新のデータのみです。 そのため、Visual Studio がフリーズしたり、速度が低下したりしたら、できるだけ早く収集を停止するようにしてください。 問題が発生した後 30 秒以上収集を行わないようにしてください。
 
-詳細については、[Channel9 のPerfView チュートリアル](http://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command)に関するページをご覧ください。
+詳細については、[Channel9 のPerfView チュートリアル](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command)に関するページをご覧ください。

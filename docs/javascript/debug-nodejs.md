@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589144"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888696"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio で JavaScript アプリまたは TypeScript アプリをデバッグする
 
@@ -64,7 +64,7 @@ Visual Studio からデバッガーをアタッチし、クライアント側の
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。 **[デバッグ]** ツールバーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)を参照してください。
+    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。 **[デバッグ]** ツールバーから **[ブラウザーの選択]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-preview)を参照してください。
 
     ::: moniker-end
 

@@ -8,12 +8,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659745"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982812"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim を使用して単体テストのためにアプリを分離する
 
@@ -525,4 +525,4 @@ shim は、.NET 基本クラス ライブラリ **mscorlib** および **System*
 
 - [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost のブログ:Visual Studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [1 時間 16 分の動画:Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [1 時間 16 分の動画:Visual Studio 2012 で Fakes を利用し、テスト不可能なコードをテストする](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

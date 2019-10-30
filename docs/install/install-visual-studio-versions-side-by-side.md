@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974723"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888687"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -44,7 +44,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 * 複数のバージョンの Visual Studio がコンピューターにインストールされている場合、そのうちの 1 つのバージョンをアンインストールすると、すべてのバージョンの Visual Studio のファイルの関連付けが削除されます。
 
-* すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) またはソフトウェア発行者から入手した拡張機能を再インストールする必要があります。
+* すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) またはソフトウェア発行者から入手した拡張機能を再インストールする必要があります。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework のバージョンと複数バージョンのインストール
 

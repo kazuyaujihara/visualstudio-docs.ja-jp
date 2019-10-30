@@ -18,12 +18,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75faa3e4d38f961c38b23a95765d6466e008714f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748898"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919044"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>クラス デザイナーでの C++ コードの使用
 
@@ -84,7 +84,7 @@ C++ プロジェクトの場合、ソース ファイルでの変更がクラス
 
 ### <a name="troubleshoot-other-error-messages"></a>その他のエラー メッセージのトラブルシューティング
 
-MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 [Visual Studio クラス デザイナー フォーラム](http://go.microsoft.com/fwlink/?linkid=160754)を参照してください。
+MSDN (Microsoft Developer Network) のパブリック フォーラムでは、エラーや警告のトラブルシューティングに役立つ情報を参照できます。 [Visual Studio クラス デザイナー フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)を参照してください。
 
 ## <a name="limitations-for-c-code-elements"></a>C++ コード要素の制限事項
 

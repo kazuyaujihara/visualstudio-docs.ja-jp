@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681295"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888652"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio で JavaScript と TypeScript のコードをソリューションまたはプロジェクトなしで開発します
 
@@ -74,7 +74,7 @@ Visual Studio 2017 以降では、[プロジェクトまたはソリューショ
 
 テスト ランナーは、どのテスト フレームワークを使用するかを判断するため、ローカルにインストールされたパッケージを列挙します。
 サポートされているフレームワークのいずれも認識されない場合は、テスト ランナーは *ExportRunner* を既定にします。 その他のサポートされているフレームワークは次のとおりです。
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))

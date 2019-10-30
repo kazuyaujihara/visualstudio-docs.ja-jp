@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633998"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888471"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>ゲームとアプリ用の 3D アセットを操作する
 
@@ -46,11 +46,11 @@ Visual Studio のモデル エディターを使用すると、さまざまな�
 グラフ ベースのシェーダー デザイン ツールである Visual Studio のシェーダー デザイナーを使用すると、HLSL プログラミングに関する知識がなくてもカスタムの視覚効果を作成できます。
 
 > [!NOTE]
-> DirectX プログラミングの開始方法について詳しくは、[DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633) に関するページをご覧ください。 DirectX ベースのアプリをデバッグする方法について詳しくは、「[グラフィックス診断 (DirectX グラフィックスのデバッグ)](../debugger/graphics/visual-studio-graphics-diagnostics.md)」をご覧ください。
+> DirectX プログラミングの開始方法について詳しくは、[DirectX](/windows/win32/directx) に関するページをご覧ください。 DirectX ベースのアプリをデバッグする方法について詳しくは、「[グラフィックス診断 (DirectX グラフィックスのデバッグ)](../debugger/graphics/visual-studio-graphics-diagnostics.md)」をご覧ください。
 
 ## <a name="directx-version-compatibility"></a>DirectX のバージョンの互換性
 
-Visual Studio では、DirectX を使用して 2D アセットおよび 3D アセットをレンダリングします。 DirectX 11 のレンダラーと Windows Advanced Rasterization Platform (WARP) ソフトウェアのレンダラーのいずれかを選択できます。 DirectX 11 のレンダラーを使用すると、DirectX 11 および DirectX 10 の各 GPU 上でハードウェア アクセラレータによる高性能レンダリングを実行できます。 WARP レンダラーを使用すると、最新式のグラフィックス ハードウェアを搭載していないコンピューターからグラフィックス ハードウェアを内蔵しているコンピューターまで、多様な種類のコンピューターとアセットが確実に連動するようになります。 WARP について詳しくは、「[Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634)」(Windows Advanced Rasterization Platform (WARP) ガイド) をご覧ください。
+Visual Studio では、DirectX を使用して 2D アセットおよび 3D アセットをレンダリングします。 DirectX 11 のレンダラーと Windows Advanced Rasterization Platform (WARP) ソフトウェアのレンダラーのいずれかを選択できます。 DirectX 11 のレンダラーを使用すると、DirectX 11 および DirectX 10 の各 GPU 上でハードウェア アクセラレータによる高性能レンダリングを実行できます。 WARP レンダラーを使用すると、最新式のグラフィックス ハードウェアを搭載していないコンピューターからグラフィックス ハードウェアを内蔵しているコンピューターまで、多様な種類のコンピューターとアセットが確実に連動するようになります。 WARP について詳しくは、「[Windows Advanced Rasterization Platform (WARP) Guide](/windows/win32/direct3darticles/directx-warp)」(Windows Advanced Rasterization Platform (WARP) ガイド) をご覧ください。
 
 ## <a name="related-topics"></a>関連トピック
 
