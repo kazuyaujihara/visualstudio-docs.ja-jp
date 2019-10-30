@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb4e57d1186b42ac1ed4807faf150d1af9090c69
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255571"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985435"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>チュートリアル: Outlook でデザインされたフォーム領域をインポートする
   このチュートリアルでは、Microsoft Office Outlook でフォーム領域をデザインし、そのフォーム領域を **[新しいフォーム領域]** ウィザードを使用して Outlook VSTO アドイン プロジェクトにインポートする方法について説明します。 Outlook でフォーム領域をデザインすると、Outlook データにバインドされたネイティブ Outlook コントロールをフォーム領域に追加できます。 フォーム領域をインポートした後で、各コントロールのイベントを処理できます。
@@ -35,7 +35,7 @@ ms.locfileid: "71255571"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -45,7 +45,6 @@ ms.locfileid: "71255571"
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。Visual Studio 2008 を使用して Outlook フォーム領域を作成しますか](http://go.microsoft.com/fwlink/?LinkID=130305)。
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Outlook でフォーム領域デザイナーを使用してフォーム領域をデザインする
  この手順では、Outlook でフォーム領域をデザインします。 次に、そのフォーム領域を [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]にインポートできるように見つけやすい場所に保存します。
 
@@ -55,7 +54,7 @@ ms.locfileid: "71255571"
 
 1. Microsoft Office Outlook を起動します。
 
-2. Outlook の **[開発者]** タブで、 **[フォームのデザイン]** をクリックします。 詳細については、「[方法 :リボン](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)に [開発者] タブを表示します。
+2. Outlook の **[開発者]** タブで、 **[フォームのデザイン]** をクリックします。 詳細については、「[方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
 3. **[フォームのデザイン]** ボックスで、 **[タスク]** をクリックし、 **[開く]** をクリックします。
 
@@ -124,7 +123,7 @@ ms.locfileid: "71255571"
 
 3. プロジェクトを既定のプロジェクト ディレクトリに保存します。
 
-     詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
 ## <a name="import-the-form-region"></a>フォーム領域をインポートする
  **[新しい Outlook フォーム領域]** ウィザードを使用して、Outlook でデザインしたフォーム領域を Outlook VSTO アドイン プロジェクトにインポートできます。
@@ -187,7 +186,7 @@ ms.locfileid: "71255571"
 
    - フォーム領域のリスト ボックスを各依存タスクの現在の完了ステータスで更新します。
 
-   - 隠しテキスト フィールドを解析して、各依存タスクの件名を取得します。 次に、 `FindTaskBySubjectName`ヘルパー `Microsoft.Office.Interop.Outlook.TaskItem`メソッドを呼び出し、各タスクの件名を渡すことによって、 *Tasks*フォルダー内の各を検索します。
+   - 隠しテキスト フィールドを解析して、各依存タスクの件名を取得します。 次に、`FindTaskBySubjectName` ヘルパーメソッドを呼び出し、各タスクの件名を渡すことによって、 *Tasks*フォルダー内の各 `Microsoft.Office.Interop.Outlook.TaskItem` を検索します。
 
    - 依存タスクのリスト ボックスに `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 値と `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 値を追加します。
 
@@ -242,10 +241,10 @@ ms.locfileid: "71255571"
 
      今度は、 **[このタスクは次のタスクに依存する]** リスト ボックスに **[50% Complete -- 依存タスク]** と表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Outlook アプリケーションの UI をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
-- マネージコントロールをビジュアルデザイナーにドラッグしてフォーム領域の外観をデザインする方法の詳細については[、「チュートリアル:Outlook フォーム領域](../vsto/walkthrough-designing-an-outlook-form-region.md)をデザインします。
+- マネージコントロールをビジュアルデザイナーにドラッグしてフォーム領域の外観をデザインする方法の詳細については、「[チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)」を参照してください。
 
 - Outlook アイテムのリボンをカスタマイズする方法については、「 [outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)する」を参照してください。
 
@@ -259,4 +258,4 @@ ms.locfileid: "71255571"
 - [方法: フォーム領域を Outlook アドインプロジェクトに追加する](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [フォーム領域を Outlook メッセージクラスに関連付ける](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Outlook フォーム領域のカスタムアクション](../vsto/custom-actions-in-outlook-form-regions.md)
-- [方法: Outlook にフォーム領域が表示されないようにする](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [方法: Outlook でフォーム領域が表示されないようにする](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プロジェクト タスク リスト定義の配置 |Microsoft Docs'
+title: 'チュートリアル: プロジェクトタスク一覧 Definition | の配置Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,167 +12,167 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 854037d096ceac01969bcb0ec2e074f4cd24a2f3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784232"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983863"
 ---
-# <a name="walkthrough-deploy-a-project-task-list-definition"></a>チュートリアル: プロジェクト タスク リスト定義を展開します。
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>チュートリアル: プロジェクトタスクリスト定義の配置
 
-このチュートリアルは、使用する方法を示します[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]を作成、カスタマイズ、デバッグ、およびプロジェクトのタスクを追跡するために SharePoint リストを展開します。
+このチュートリアルでは、[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] を使用して、プロジェクトタスクを追跡するための SharePoint リストを作成、カスタマイズ、デバッグ、および配置する方法について説明します。
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - サポート対象エディションの Microsoft Windows および SharePoint。
 
-- Visual Studio 2017 または Azure DevOps サービスです。
+- Visual Studio 2017 または Azure DevOps Services。
 
-## <a name="create-a-sharepoint-list"></a>SharePoint リストを作成します。
+## <a name="create-a-sharepoint-list"></a>SharePoint リストを作成する
 
-SharePoint リストのプロジェクトを作成し、リスト定義をタスクに関連付けます。
+SharePoint リストプロジェクトを作成し、リスト定義をタスクに関連付けます。
 
-1. 開く、**新しいプロジェクト** ダイアログ ボックスで、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+1. **[新しいプロジェクト]** ダイアログボックスを開き、 **[SharePoint]** ノードを展開して、 **[2010]** ノードを選択します。
 
-2. **テンプレート**ウィンドウで、選択、 **SharePoint 2010 プロジェクト**名では、プロジェクト テンプレートは、 **ProjectTaskList**、選択し、 **OK**ボタンをクリックします。
+2. **[テンプレート]** ペインで、[ **SharePoint 2010] プロジェクト**テンプレートを選択し、プロジェクトに**projecttasklist**という名前を指定して、 **[OK]** をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード**が表示されます。
 
-3. デバッグについては、使用するローカルの SharePoint サイトを指定選択、**ファーム ソリューションとして配置**オプション ボタンをクリックして、**完了**ボタンをクリックします。
+3. デバッグに使用するローカル SharePoint サイトを指定し、 **[ファームソリューションとして配置]** する オプションボタンをクリックして、 **[完了]** をクリックします。
 
-4. プロジェクトのショートカット メニューを開き、選択し、**追加** > **新しい項目の**します。
+4. プロジェクトのショートカットメニューを開き、[**新しい項目**の**追加** > ] を選択します。
 
-5. **テンプレート**ウィンドウで、選択、**一覧**テンプレートを選択し、**追加**ボタン。
+5. **[テンプレート]** ペインで、**リスト**テンプレートを選択し、 **[追加]** をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード**が表示されます。
 
-6. **の一覧を表示する名前ですか?** ボックスに、入力**プロジェクト タスク リスト**します。
+6. [**一覧に表示する名前**を指定してください] ボックスに、「 **Project タスク一覧**」と入力します。
 
-7. 選択、**の既存のリストの種類を基にカスタマイズ可能なリストを作成する**オプション ボタン、およびその後、その一覧で次のように選択します。**タスク**、選択し、**完了**ボタンをクリックします。
+7. **[既存のリストの種類に基づいてカスタマイズ可能ではないリストを作成する]** オプションボタンを選択し、一覧で **[タスク]** を選択し、 **[完了]** をクリックします。
 
-     表示される一覧、機能、およびパッケージ**ソリューション エクスプ ローラー**します。
+     リスト、機能、およびパッケージが**ソリューションエクスプローラー**に表示されます。
 
-## <a name="add-an-event-receiver"></a>イベント レシーバーを追加します。
+## <a name="add-an-event-receiver"></a>イベントレシーバーを追加する
 
-自動的に期限を設定するイベント レシーバーを追加するタスク一覧で日付とタスクの説明。 次の手順では、イベント レシーバーとしてリスト インスタンスに単純なイベント ハンドラーを追加します。
+タスク一覧では、タスクの期限と説明を自動的に設定するイベントレシーバーを追加できます。 次の手順では、単純なイベントハンドラーをイベントレシーバーとしてリストインスタンスに追加します。
 
-1. プロジェクト ノードのショートカット メニューを開き、選択**追加**を選び、**新しい項目の**します。
+1. プロジェクトノードのショートカットメニューを開き、 **[追加]** 、 **[新しい項目]** の順に選択します。
 
-2. SharePoint テンプレートの一覧で選択、**イベント レシーバー**テンプレート、し、名前を**ProjectTaskListEventReceiver**します。
+2. SharePoint テンプレートの一覧で、 **[イベントレシーバー]** テンプレートを選択し、「 **Projecttasklisteventreceiver**」という名前を指定します。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード**が表示されます。
 
-3. **イベント レシーバー設定の選択**ページで、選択**リスト項目イベント**でイベント レシーバーの種類として、**イベント レシーバーの種類がする**一覧。
+3. **[イベントレシーバー設定の選択]** ページで、イベントレシーバー **[の]** 種類 ボックスの一覧から **[リスト項目イベント]** を選択します。
 
-4. **イベント ソースとなる項目**一覧で、選択**タスク**します。
+4. **[イベントソース]** ボックスの一覧で、 **[タスク]** を選択します。
 
-5. 、処理するイベントの一覧で、横にチェック ボックス**項目が追加されました**、選択し、**完了**ボタンをクリックします。
+5. 処理するイベントの一覧で、**項目**の横にあるチェックボックスをオンにし、 **[完了]** をクリックします。
 
-     新しいイベント レシーバーのノードがという名前のコード ファイルをプロジェクトに追加**ProjectTaskListEventReceiver**します。
+     新しいイベントレシーバーノードが、 **Projecttasklisteventreceiver**という名前のコードファイルと共にプロジェクトに追加されます。
 
-6. コードを追加して、`ItemAdded`メソッドで、 **ProjectTaskListEventReceiver**コード ファイル。 新しいタスクを追加すると、毎回、期限、説明、既定値が、タスクに追加されます。 既定の期限の日付が 2009 年 7 月 1 日です。
+6. **Projecttasklisteventreceiver**コードファイルの `ItemAdded` メソッドにコードを追加します。 新しいタスクが追加されるたびに、既定の期限日と説明がタスクに追加されます。 既定の期限は2009年7月1日です。
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
 
-## <a name="customize-the-project-task-list-feature"></a>プロジェクト タスク リストの機能をカスタマイズします。
+## <a name="customize-the-project-task-list-feature"></a>プロジェクトタスク一覧機能のカスタマイズ
 
-SharePoint ソリューションを作成するときに自動的に作成機能は、既定のプロジェクト項目。 フィーチャー デザイナーを使用して、SharePoint サイトのプロジェクト タスク リストの設定をカスタマイズできます。
+SharePoint ソリューションを作成すると、Visual Studio によって既定のプロジェクト項目の機能が自動的に作成されます。 フィーチャーデザイナーを使用して、SharePoint サイトのプロジェクトタスク一覧の設定をカスタマイズできます。
 
-1. **ソリューション エクスプ ローラー**、展開**機能**します。
+1. **ソリューションエクスプローラー**で、 **[機能]** を展開します。
 
-2. ショートカット メニューを開き**Feature1**を選び、**ビュー デザイナー**します。
+2. **Feature1.feature**のショートカットメニューを開き、 **[デザイナーの表示]** を選択します。
 
-3. **タイトル**ボックスに、入力**プロジェクト タスク リスト機能**します。
+3. **[タイトル]** ボックスに「 **Project タスク一覧機能**」と入力します。
 
-4. **スコープ**一覧で、選択**Web**します。
+4. **[スコープ]** ボックスの一覧で **[Web]** を選択します。
 
-5. **プロパティ**ウィンドウで、入力**1.0.0.0**の値として、**バージョン**プロパティ。
+5. **[プロパティ]** ウィンドウで、 **[バージョン]** プロパティの値として「 **1.0.0.0** 」と入力します。
 
-## <a name="customize-the-project-task-list-package"></a>プロジェクト タスク リストのパッケージをカスタマイズします。
+## <a name="customize-the-project-task-list-package"></a>プロジェクトタスク一覧パッケージのカスタマイズ
 
-SharePoint プロジェクトを作成するときに Visual Studio でパッケージに既定のプロジェクト項目が含まれている機能が自動的に追加します。 パッケージ デザイナーを使用して、SharePoint サイトのプロジェクト タスク リストの設定をカスタマイズできます。
+SharePoint プロジェクトを作成すると、既定のプロジェクト項目を含む機能が Visual Studio によって自動的にパッケージに追加されます。 パッケージデザイナーを使用して、SharePoint サイトのプロジェクトタスク一覧の設定をカスタマイズできます。
 
-1. **SolutionExplorer**、ショートカット メニューを開き**パッケージ**を選び、**ビュー デザイナー**します。
+1. **Solutionexplorer**で、 **[パッケージ]** のショートカットメニューを開き、 **[デザイナーの表示]** を選択します。
 
-2. **名前**ボックスに、入力**ProjectTaskListPackage**します。
+2. **[名前]** ボックスに、「 **Projecttasklistpackage**」と入力します。
 
-3. 選択、 **Web サーバーのリセット**チェック ボックスをオンします。
+3. **[Web サーバーのリセット]** チェックボックスをオンにします。
 
-## <a name="build-and-test-the-project-task-list"></a>ビルドし、テスト プロジェクトのタスク一覧
+## <a name="build-and-test-the-project-task-list"></a>プロジェクトタスクリストのビルドとテスト
 
-プロジェクトを実行すると、SharePoint サイトが開きます。 ただし、タスク一覧の場所に、手動で移動する必要があります。
+プロジェクトを実行すると、SharePoint サイトが開きます。 ただし、手動でタスク一覧の場所に移動する必要があります。
 
-1. 選択、 **F5**キーをビルドして、プロジェクト タスク リストを展開します。
+1. F5 キーを**押し**て、プロジェクトのタスク一覧をビルドおよび配置します。
 
      SharePoint サイトが開きます。
 
-2. 選択、**ホーム**タブ。
+2. **[ホーム]** タブを選択します。
 
-3. 左のサイド バーで、選択、**プロジェクト タスク リスト**リンク。
+3. 左側のサイドバーで、 **[プロジェクトタスク一覧]** リンクを選択します。
 
-     プロジェクト タスク リスト ページが表示されます。
+     [プロジェクトのタスク一覧] ページが表示されます。
 
-4. **リスト ツール** タブで、選択、**項目**タブ。
+4. **[リストツール]** タブで、 **[項目]** タブを選択します。
 
-5. **項目**グループで、選択、**新しい項目の**ボタンをクリックします。
+5. **[項目]** グループで、 **[新しい項目]** ボタンをクリックします。
 
-6. **タイトル**テキスト ボックスに、入力**Task1**します。
+6. **[タイトル]** ボックスに「 **Task1**」と入力します。
 
-7. 選択、**保存**ボタンをクリックします。
+7. **[保存]** ボタンをクリックします。
 
-     サイトが更新された後、 **Task1**タスクは、2009 年 7 月 1 日の期限日が表示されます。
+     サイトが更新されると、 **Task1**タスクに期限日7/1/2009 が表示されます。
 
-8. 選択**Task1**します。
+8. **[Task1]** を選択します。
 
-     タスクの詳細なビューが表示されたら、説明は、「重要なタスクがこの。」を示しています。
+     タスクの詳細ビューが表示され、説明に "これは重要なタスクです。" と表示されます。
 
-## <a name="deploy-the-project-task-list"></a>プロジェクト タスク リストを展開します。
+## <a name="deploy-the-project-task-list"></a>プロジェクトタスク一覧の配置
 
-ビルドして、プロジェクト タスク リストをテストした後を展開、*ローカル システム*または*リモート システム*します。 ローカル システムは、別のコンピューターのリモート システムには、ソリューションを開発した同じコンピューターです。
+プロジェクトタスクリストをビルドしてテストしたら、それを*ローカルシステム*または*リモートシステム*に配置できます。 ローカルシステムは、ソリューションを開発したコンピューターと同じですが、リモートシステムは別のコンピューターです。
 
-### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>ローカル システムにプロジェクトのタスクの一覧を展開するには
+### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>ローカルシステムにプロジェクトタスク一覧を配置するには
 
-Visual Studio メニュー バーで、**ビルド** > **ソリューションの配置**します。
+Visual Studio のメニューバーで、 **[ビルド]**  >  **[ソリューションの配置]** の順に選択します。
 
-Visual Studio、IIS アプリケーション プールのリサイクル、以前のバージョンのソリューションを取り消します、ソリューション パッケージのコピー (*.wsp*) を SharePoint にファイルを開き、その機能をアクティブにします。 SharePoint でソリューションを使えるようになりました。 展開の構成手順の詳細については、次を参照してください。[方法。SharePoint の配置構成を編集](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)します。
+Visual Studio は IIS アプリケーションプールをリサイクルし、ソリューションの既存のバージョンを取り消し、ソリューションパッケージ ( *.wsp*) ファイルを SharePoint にコピーして、機能をアクティブ化します。 これで、SharePoint でソリューションを使用できるようになりました。 配置構成の手順の詳細については、「[方法: SharePoint の配置構成を編集する](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)」を参照してください。
 
-### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>リモート システムにプロジェクトのタスクの一覧を展開するには
+### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>リモートシステムにプロジェクトタスク一覧を配置するには
 
-1. Visual Studio メニュー バーで、**ビルド** > **発行**します。
+1. Visual Studio のメニューバーで、[**ビルド** > **発行**] を選択します。
 
-2. **発行** ダイアログ ボックスで、選択、**ファイル システムに公開**オプション ボタンをクリックします。
+2. **[発行]** ダイアログボックスで、 **[ファイルシステムに発行する]** オプションボタンをクリックします。
 
-     ターゲットの場所を変更することができます、**発行**省略記号ボタンをクリックしてダイアログ ボックス![省略記号アイコン](../sharepoint/media/ellipsisicon.gif "省略記号アイコン")別の場所に移動します。
+     **[発行]** ダイアログボックスで目的の場所を変更するには、省略記号ボタンの![省略記号アイコン](../sharepoint/media/ellipsisicon.gif "省略記号アイコン")をクリックし、別の場所に移動します。
 
-3. 選択、**発行**ボタンをクリックします。
+3. **[発行]** をクリックします。
 
-     A *.wsp*ソリューションのファイルが作成されます。
+     ソリューションの *.wsp*ファイルが作成されます。
 
-4. コピー、 *.wsp*リモート SharePoint システムへのファイル。
+4. *.Wsp*ファイルをリモートの SharePoint システムにコピーします。
 
-5. PowerShell を使用して`Add-SPUserSolution`リモートの SharePoint のインストール パッケージをインストールするコマンド。 (ファーム ソリューションでは、使用、`Add-SPSolution`コマンド)。
+5. PowerShell `Add-SPUserSolution` コマンドを使用して、リモートの SharePoint インストールにパッケージをインストールします。 (ファームソリューションの場合は、`Add-SPSolution` コマンドを使用します)。
 
      たとえば、`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` のようにします。
 
-6. PowerShell を使用して`Install-SPUserSolution`ソリューションを配置するコマンド。 (ファーム ソリューションでは、使用、`Install-SPSolution`コマンド)。
+6. PowerShell `Install-SPUserSolution` コマンドを使用して、ソリューションを配置します。 (ファームソリューションの場合は、`Install-SPSolution` コマンドを使用します)。
 
      たとえば、`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` のようにします。
 
-     リモート展開の詳細については、次を参照してください。[を使用してソリューション](http://go.microsoft.com/fwlink/?LinkId=217680)と[の追加と SharePoint 2010 での PowerShell を使用したソリューションの配置](http://go.microsoft.com/fwlink/?LinkId=217682)します。
+     リモート配置の詳細については、「SharePoint 2010 での[ソリューションの使用](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14))と[PowerShell を使用したソリューションの追加と配置](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-カスタマイズし、次のトピックからの SharePoint ソリューションをデプロイする方法の詳細を確認できます。
+SharePoint ソリューションをカスタマイズおよび展開する方法の詳細については、次のトピックを参照してください。
 
-- [チュートリアル: For SharePoint のサイト列、コンテンツの種類、および一覧を作成します。](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [チュートリアル: SharePoint のサイト列、コンテンツタイプ、およびリストの作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [方法: イベント レシーバーを作成します。](../sharepoint/how-to-create-an-event-receiver.md)
+- [方法: イベントレシーバーを作成する](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [SharePoint Server 2010 用の Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)
+- [SharePoint Server 用 Windows PowerShell 2010](/powershell/module/sharepoint-server/&view=sharepoint-ps)
 
 ## <a name="see-also"></a>関連項目
-[パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+[SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27abf8470527e4e5de5c05ca3438a8471b7c80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667777"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985276"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus を使用してモデルを統合する
 
@@ -36,15 +36,13 @@ ModelBus により、モデルまたはモデル内の特定の要素への一�
 
 ### <a name="expose"></a>DSL 定義をモデルバスに公開するには
 
-1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、「[視覚化とモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=185579)」を参照してください。
+1. DSL 定義ファイルを開きます。 デザイン画面を右クリックし、 **[Modelbus の有効化]** をクリックします。
 
-2. DSL 定義ファイルを開きます。 デザイン画面を右クリックし、 **[Modelbus の有効化]** をクリックします。
+2. ダイアログボックスで、 **[この DSL を ModelBus に公開する]** を選択します。 この DSL のモデルを公開すると同時に他の DSL への参照を利用する場合は、両方のオプションを選択できます。
 
-3. ダイアログボックスで、 **[この DSL を ModelBus に公開する]** を選択します。 この DSL のモデルを公開すると同時に他の DSL への参照を利用する場合は、両方のオプションを選択できます。
+3. **[OK]** をクリックします。 新しいプロジェクト "ModelBusAdapter" が DSL ソリューションに追加されます。
 
-4. **[OK]** をクリックします。 新しいプロジェクト "ModelBusAdapter" が DSL ソリューションに追加されます。
-
-5. テキスト テンプレートから DSL にアクセスする場合、新しいプロジェクトで AdapterManager.tt を変更する必要があります。 コマンドやイベント ハンドラーなどの他のコードから DSL にアクセスする場合はこの手順を省略します。 詳細については、「[テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
+4. テキスト テンプレートから DSL にアクセスする場合、新しいプロジェクトで AdapterManager.tt を変更する必要があります。 コマンドやイベント ハンドラーなどの他のコードから DSL にアクセスする場合はこの手順を省略します。 詳細については、「[テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
 
    1. AdapterManagerBase の基本クラスを[Vstexttemplatingmodelingadaptermanager](/previous-versions/ee844317(v=vs.140))に変更します。
 
@@ -56,9 +54,9 @@ ModelBus により、モデルまたはモデル内の特定の要素への一�
 
       テキスト テンプレートと他のコードの両方から DSL にアクセスするには、変更したアダプターと変更していないアダプターの 2 つが必要です。
 
-6. **[すべてのテンプレートの変換]** をクリックします。
+5. **[すべてのテンプレートの変換]** をクリックします。
 
-7. ソリューションをリビルドします。
+6. ソリューションをリビルドします。
 
    これで ModelBus がこの DSL のインスタンスを開くことができるようになります。
 
@@ -76,9 +74,9 @@ Visual Studio ModelBus アダプターは、既定では、要素の guid を使
 
 3. モデル バス参照を作成する各クラスについて、次の操作を実行します。
 
-    クラス ノードをクリックし、プロパティウィンドウの **シリアル化 Id** が `true` に設定されていることを確認します。
+    クラス ノードをクリックし、プロパティウィンドウの **シリアル化 ID** が `true`に設定されていることを確認します。
 
-   または、GUID ではなく要素名を使用して要素を特定する場合、生成されたアダプターの各部をオーバーライドできます。 アダプター クラス内の次のメソッドをオーバーライドします。
+   また、要素名を使用して Guid ではなく要素を識別する場合は、生成されたアダプターの部分をオーバーライドできます。 アダプター クラス内の次のメソッドをオーバーライドします。
 
 - `GetElementId` をオーバーライドし、使用する ID を返します。 このメソッドは参照を作成するときに呼び出されます。
 
@@ -124,7 +122,7 @@ DSL が別の DSL への参照を使用できるようにするには、まず�
 
 2. モデルまたはモデル内の要素に対して、適切な**種類の ModelBusReference**を選択します。
 
-3. ファイル ダイアログ フィルター文字列に、`Family Tree files |*.ftree` のような文字列を入力します。 公開される DSL のファイル拡張子を置き換えます。
+3. ファイル ダイアログ フィルター文字列に、`Family Tree files |*.ftree` のような文字列を入力します。 公開されている DSL のファイル拡張子を置き換えます。
 
 4. モデル内の要素を参照する場合、ユーザーが選択可能な型の一覧を追加します (たとえば、Company.FamilyTree.Person)。
 

@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860f322724618ddb99bd9ab39eeefa488d9a71c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666891"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981251"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 テキスト テンプレートの作成
 テキスト テンプレートには、そのテンプレートから生成されるテキストが含まれます。 たとえば、web ページを作成するテンプレートには、"\<html >..." が含まれます。HTML ページの他のすべての標準部分。 テンプレートに挿入される*コントロールブロック*は、プログラムコードのフラグメントです。 コントロール ブロックはさまざまな値を提供すると共に、テキストの一部を条件付きにしたり、繰り返したりできるようにします。
@@ -236,7 +236,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **ナビゲート可能なモデルとしてファイルを読み込み**ます。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 また、 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)を使用して、XML データを読み取ることができる一連のクラスを作成することもできます。
+ **ナビゲート可能なモデルとしてファイルを読み込み**ます。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 また、 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)を使用して、XML データを読み取ることができる一連のクラスを作成することもできます。
 
  **ダイアグラムまたはフォームでモデルファイルを編集します。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] には、モデルを図または Windows フォームとして編集できるツールが用意されています。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]では、モデルの構造を反映した、厳密に型指定されたクラスのセットも作成できます。 詳細については、「[ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 

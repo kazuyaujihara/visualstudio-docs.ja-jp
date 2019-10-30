@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747287"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911258"
 ---
 # <a name="link-task"></a>Link タスク
 Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
@@ -65,7 +65,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   マニフェスト ファイルの `dependency` セクションに置かれる属性を指定します。
 
-  詳細については、「[/MANIFESTDEPENDENCY (マニフェストの依存関係を指定する)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)」を参照してください。 「[Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)」(パブリッシャー構成ファイル) も参照してください。
+  詳細については、「[/MANIFESTDEPENDENCY (マニフェストの依存関係を指定する)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)」を参照してください。 「[Publisher configuration files](/windows/desktop/SbsCs/publisher-configuration-files)」(パブリッシャー構成ファイル) も参照してください。
 
 - **AdditionalOptions**
 

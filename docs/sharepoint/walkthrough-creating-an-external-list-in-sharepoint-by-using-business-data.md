@@ -1,5 +1,5 @@
 ---
-title: ビジネス データを使用して、SharePoint に外部リストを作成します。
+title: ビジネスデータを使用した SharePoint での外部リストの作成
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,170 +19,170 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: d670215d6a46003315992201c64c23185be7d715
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401067"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984662"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>チュートリアル: ビジネス データを使用して SharePoint に外部リストを作成します。
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>チュートリアル: ビジネスデータを使用した SharePoint での外部リストの作成
 
-バック エンド サーバー アプリケーション、Web サービス、およびデータベースからビジネス データを表示するビジネス データ接続 (BDC) サービスを有効にします。
+Business Data Connectivity (BDC) サービスを使用すると、SharePoint で、バックエンドサーバーアプリケーション、Web サービス、およびデータベースのビジネスデータを表示できます。
 
-このチュートリアルでは、サンプル データベース内の連絡先に関する情報を返しますという、BDC サービスのモデルを作成する方法を示します。 このモデルを使用して、外部リストを SharePoint で作成したが、します。
+このチュートリアルでは、サンプルデータベースの連絡先に関する情報を返す BDC サービスのモデルを作成する方法について説明します。 次に、このモデルを使用して、SharePoint に外部リストを作成します。
 
 このチュートリアルでは、次の作業について説明します。
 
-- プロジェクトを作成します。
+- プロジェクトを作成しています。
 - モデルにエンティティを追加します。
-- Finder メソッドを追加します。
-- Specificfinder メソッドを追加します。
-- プロジェクトをテストします。
+- Finder メソッドを追加しています。
+- 特定の Finder メソッドを追加します。
+- プロジェクトをテストしています。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - サポート対象エディションの Windows と SharePoint
 
-- AdventureWorks サンプル データベースへのアクセス。 AdventureWorks データベースをインストールする方法の詳細については、次を参照してください。 [SQL Server サンプル データベース](http://go.microsoft.com/fwlink/?LinkID=117483)します。
+- AdventureWorks サンプルデータベースへのアクセス。 AdventureWorks データベースをインストールする方法の詳細については、「 [SQL Server サンプルデータベース](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)」を参照してください。
 
-## <a name="create-a-project-that-contains-a-bdc-model"></a>BDC モデルを含むプロジェクトを作成します。
+## <a name="create-a-project-that-contains-a-bdc-model"></a>BDC モデルを含むプロジェクトを作成する
 
-1. Visual Studio でメニュー バー、**ファイル** > **新規** > **プロジェクト**します。
+1. Visual Studio のメニューバーで、[**ファイル** > **新しい** > **プロジェクト**] を選択します。
 
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-2. いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**項目。
+2. **ビジュアルC#**  または  **Visual Basic**で、**SharePoint** ノードを展開し、**2010** 項目を選択します。
 
-3. **テンプレート**ウィンドウで、選択**SharePoint 2010 プロジェクト**、プロジェクトに名前を**AdventureWorksTest**、選択し、 **OK**ボタン.
+3. **[テンプレート]** ペインで、 **[SharePoint 2010 プロジェクト]** を選択し、プロジェクトに**AdventureWorksTest**という名前を指定して、 **[OK]** をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。 このウィザードでは、プロジェクトをデバッグして、ソリューションの信頼レベルの設定に使用するサイトを指定できます。
+     **SharePoint カスタマイズウィザード**が表示されます。 このウィザードでは、プロジェクトをデバッグし、ソリューションの信頼レベルを設定するために使用するサイトを指定できます。
 
-4. 選択、**ファーム ソリューションとして配置**信頼レベルを設定するオプション ボタンをクリックします。
+4. [**ファームソリューションとして配置**する] オプションボタンをクリックして、信頼レベルを設定します。
 
-5. 選択、**完了**を既定のローカル SharePoint サイトを受け入れるようにボタンをクリックします。
+5. **[完了]** をクリックして、既定のローカル SharePoint サイトを受け入れます。
 
-6. **ソリューション エクスプ ローラー**、SharePoint プロジェクト ノードを選択します。
+6. **ソリューションエクスプローラー**で、[SharePoint プロジェクト] ノードを選択します。
 
 7. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが開きます。
 
-8. **テンプレート**ウィンドウで、選択**ビジネス データ接続モデル (ファーム ソリューションのみ)** 、プロジェクトに名前を**AdventureWorksContacts**、を選択し**追加**ボタンをクリックします。
+8. **[テンプレート]** ペインで、 **[ビジネスデータ接続モデル (ファームソリューションのみ)]** を選択し、プロジェクトに**AdventureWorksContacts**という名前を指定して、 **[追加]** をクリックします。
 
-## <a name="add-data-access-classes-to-the-project"></a>データ アクセス クラスをプロジェクトに追加します。
+## <a name="add-data-access-classes-to-the-project"></a>データアクセスクラスをプロジェクトに追加する
 
-1. メニュー バーで、**ツール** > **データベースへの接続**します。
+1. メニューバーで、 **[ツール]** 、[**データベースへの接続** > ] の順に選択します。
 
      **[接続の追加]** ダイアログ ボックスが表示されます。
 
-2. SQL Server の AdventureWorks サンプル データベースへの接続を追加します。
+2. SQL Server AdventureWorks サンプルデータベースへの接続を追加します。
 
-     詳細については、次を参照してください。[接続接続の追加/変更 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)します。
+     詳細については、「[接続の追加/変更 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)」を参照してください。
 
 3. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
 4. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
-5. **インストールされたテンプレート**ウィンドウで、選択、**データ**ノード。
+5. **[インストールされたテンプレート]** ペインで、 **[データ]** ノードを選択します。
 
-6. **テンプレート**ウィンドウで、選択**LINQ to SQL クラス**します。
+6. **[テンプレート]** ペインで、 **[LINQ to SQL クラス]** を選択します。
 
-7. **名前**ボックスで、指定**AdventureWorks**、選択し、**追加**ボタンをクリックします。
+7. **[名前]** ボックスに「 **AdventureWorks**」と入力し、 **[追加]** をクリックします。
 
-     .Dbml ファイルがプロジェクトに追加し、オブジェクト リレーショナル デザイナー (O/R デザイナー) を開きます。
+     .Dbml ファイルがプロジェクトに追加され、オブジェクトリレーショナルデザイナー (O/R デザイナー) が開きます。
 
-8. メニュー バーで、**ビュー** > **サーバー エクスプ ローラー**します。
+8. メニューバーで、[ > の**表示**]**サーバーエクスプローラー**を選択します。
 
-9. **サーバー エクスプ ローラー**、AdventureWorks サンプル データベースを表すノードを展開し、展開、**テーブル**ノード。
+9. **サーバーエクスプローラー**で、AdventureWorks サンプルデータベースを表すノードを展開し、 **[テーブル]** ノードを展開します。
 
-10. 追加、 **(Person) にお問い合わせください**O/R デザイナーにテーブルです。
+10. O/R デザイナーに**Contact (Person)** テーブルを追加します。
 
-     エンティティ クラスが作成され、デザイン サーフェイスに表示されます。 エンティティ クラスには、Contact (Person) テーブルの列にマップされるプロパティがあります。
+     エンティティ クラスが作成され、デザイン サーフェイスに表示されます。 エンティティクラスには、Contact (Person) テーブルの列にマップされるプロパティがあります。
 
-## <a name="remove-the-default-entity-from-the-bdc-model"></a>BDC モデルからの既定のエンティティを削除します。
+## <a name="remove-the-default-entity-from-the-bdc-model"></a>BDC モデルから既定のエンティティを削除する
 
-**Business Data Connectivity モデル**プロジェクト モデルでは、Entity1 をという名前の既定のエンティティを追加します。 このエンティティを削除します。 後で、新しいエンティティを追加します。 以降では、空のモデルは、このチュートリアルを完了に必要な手順の数を減らします。
+**ビジネスデータ接続モデル**プロジェクトによって、Entity1 という名前の既定のエンティティがモデルに追加されます。 このエンティティを削除します。 後で、新しいエンティティを追加します。 空のモデルから開始すると、このチュートリアルを完了するために必要な手順の数が減ります。
 
-1. **ソリューション エクスプ ローラー**、展開、 **BdcModel1**ノード、および順に開いて、 *BdcModel1.bdcm*ファイル。
+1. **ソリューションエクスプローラー**で、 **[BdcModel1]** ノードを展開し、 *BdcModel1*ファイルを開きます。
 
-2. Business Data Connectivity モデル ファイルは、BDC デザイナーで開きます。
+2. BDC デザイナーでビジネスデータ接続モデルファイルが開きます。
 
-3. デザイナーで、ショートカット メニューを開き、 **Entity1**を選び、**削除**します。
+3. デザイナーで**Entity1**のショートカットメニューを開き、 **[削除]** を選択します。
 
-4. **ソリューション エクスプ ローラー**、ショートカット メニューを開き*Entity1.vb* (Visual Basic) でまたは*Entity1.cs* (c# で) を選び、**削除**.
+4. **ソリューションエクスプローラー**で、 *Entity1* (Visual Basic) または*Entity1.cs* (のC#場合) のショートカットメニューを開き、 **[削除]** を選択します。
 
-5. ショートカット メニューを開き*Entity1Service.vb* (Visual Basic) でまたは*Entity1Service.cs* (で c#)、し**削除**します。
+5. *Entity1Service* (Visual Basic) または*Entity1Service.cs* (のC#場合) のショートカットメニューを開き、 **[削除]** を選択します。
 
-## <a name="add-an-entity-to-the-model"></a>エンティティ モデルを追加します。
+## <a name="add-an-entity-to-the-model"></a>エンティティをモデルに追加する
 
-モデルにエンティティを追加します。 エンティティを追加するには、Visual Studio から**ツールボックス**BDC デザイナーにします。
+エンティティをモデルに追加します。 エンティティは、Visual Studio の**ツールボックス**から BDC デザイナーに追加できます。
 
 1. メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。
 
-2. **BusinessDataConnectivity**のタブ、**ツールボックス**、追加、**エンティティ**BDC デザイナーにします。
+2. **ツールボックス**の **[BusinessDataConnectivity]** タブで、BDC デザイナーに**エンティティ**を追加します。
 
-     デザイナーで新しいエンティティが表示されます。 Visual Studio は、という名前のファイルを追加します。 *EntityService.vb* (Visual Basic) でまたは*EntityService.cs* (で C# の場合) をプロジェクトにします。
+     新しいエンティティがデザイナーに表示されます。 Visual Studio によって、 *Entityservice .vb*という名前のファイル (Visual Basic)または EntityService.cs C#(の場合) がプロジェクトに追加されます。
 
-3. メニュー バーで、**ビュー** > **プロパティ** > **ウィンドウ**します。
+3. メニューバーで、[ > の**プロパティ** > **ウィンドウ**の**表示**] を選択します。
 
-4. **プロパティ**ウィンドウで、設定、**名前**プロパティの値を**連絡先**します。
+4. **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を「 **Contact**」に設定します。
 
-5. デザイナーで、エンティティのショートカット メニューを開き、選択**追加**を選び、**識別子**します。
+5. デザイナーで、エンティティのショートカットメニューを開き、 **[追加]** を選択し、 **[識別子]** を選択します。
 
      エンティティに新しい識別子が表示されます。
 
-6. **プロパティ**ウィンドウで、識別子の名前を変更**ContactID**します。
+6. **[プロパティ]** ウィンドウで、識別子の名前を**ContactID**に変更します。
 
-7. **型名**一覧で、選択**System.Int32**します。
+7. **型名** ボックスの一覧で、system.string**を選択し**ます。
 
-## <a name="add-a-specific-finder-method"></a>Specificfinder メソッドを追加します。
+## <a name="add-a-specific-finder-method"></a>特定の Finder メソッドを追加する
 
-特定の連絡先を表示する BDC サービスを有効にするには、Specificfinder メソッドを追加する必要があります。 ユーザーがリストの項目を選択し、選択したときに、BDC サービスが Specificfinder メソッドを呼び出す、**ビュー項目**リボンのボタンをクリックします。
+BDC サービスで特定の連絡先を表示できるようにするには、特定の Finder メソッドを追加する必要があります。 ユーザーがリスト内の項目を選択し、リボンの **[項目の表示]** ボタンを選択すると、BDC サービスは特定の Finder メソッドを呼び出します。
 
-使用して、Contact エンティティを Specificfinder メソッドを追加、 **BDC メソッドの詳細**ウィンドウ。 特定のエンティティを返すには、メソッドにコードを追加します。
+**[BDC メソッドの詳細]** ウィンドウを使用して、Contact エンティティに特定の Finder メソッドを追加します。 特定のエンティティを返すには、メソッドにコードを追加します。
 
-1. BDC デザイナーで、選択、**連絡先**エンティティ。
+1. BDC デザイナーで、 **Contact**エンティティを選択します。
 
-2. メニュー バーで、**ビュー** > **その他の Windows** > **BDC メソッドの詳細**します。
+2. メニューバーで、[**他のウィンドウ**を表示 > ] を選択し > **BDC メソッドの詳細**を**表示**します。
 
-     BDC メソッドの詳細ウィンドウが開きます。
+     [BDC メソッドの詳細] ウィンドウが開きます。
 
-3. **メソッドを追加する**一覧で、選択**特定 Finder メソッドの作成**です。
+3. **[メソッドの追加]** の一覧で、 **[特定の Finder メソッドの作成]** を選択します。
 
-     Visual Studio では、モデルに、次の要素を追加します。 これらの要素、 **BDC メソッドの詳細**ウィンドウ。
+     Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、 **[BDC メソッドの詳細]** ウィンドウに表示されます。
 
-    - ReadItem をという名前のメソッド。
+    - ReadItem という名前のメソッド。
 
     - メソッドの入力パラメーター。
 
-    - メソッドの戻り値のパラメーター。
+    - メソッドの戻りパラメーター。
 
     - 各パラメーターの型記述子。
 
-    - メソッドのメソッドのインスタンス。
+    - メソッドのメソッドインスタンス。
 
-4. **BDC メソッドの詳細**ウィンドウで、について表示される一覧を開き、**連絡先**記述子を入力し、**編集**します。
+4. **[BDC メソッドの詳細]** ウィンドウで、**連絡先**の種類の記述子に対して表示される一覧を開き、 **[編集]** を選択します。
 
-     **BDC エクスプ ローラー**が開き、モデルの階層ビューを提供します。
+     **BDC エクスプローラー**が開き、モデルの階層ビューが表示されます。
 
-5. **プロパティ**ウィンドウで、次に、一覧を開き、 **TypeName**プロパティ、選択、**現在のプロジェクト**、タブをクリックして、 **にお問い合わせください**プロパティ。
+5. **[プロパティ]** ウィンドウで、 **[TypeName]** プロパティの横にある一覧を開き、 **[現在のプロジェクト]** タブを選択し、 **[Contact]** プロパティを選択します。
 
-6. **BDC エクスプ ローラー**のショートカット メニューを開き、**連絡先**を選び、**型記述子の追加**。
+6. **BDC エクスプローラー**で、**連絡先**のショートカットメニューを開き、 **[型記述子の追加]** を選択します。
 
-     という新しい型記述子**TypeDescriptor1**に表示されます、 **BDC エクスプ ローラー**します。
+     **TypeDescriptor1**という名前の新しい型記述子が**BDC エクスプローラー**に表示されます。
 
-7. **プロパティ**ウィンドウで、設定、**名前**プロパティの値を**ContactID**します。
+7. **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を**ContactID**に設定します。
 
-8. 次に、一覧を開き、 **TypeName**プロパティを選び、 **Int32**。
+8. **[TypeName]** プロパティの横にある一覧を開き、 **[Int32]** を選択します。
 
-9. 横に、一覧を開き、**識別子**プロパティを選び、 **ContactID**します。
+9. **識別子**プロパティの横にある一覧を開き、 **[ContactID]** を選択します。
 
-10. 手順 6 の各次のフィールドの型記述子を作成する.
+10. 手順 6. を繰り返して、次の各フィールドの型記述子を作成します。
 
-    |名前|型の名前|
+    |名|型の名前|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
@@ -193,90 +193,90 @@ ms.locfileid: "66401067"
     |PasswordHash|System.String|
     |PasswordSalt|System.String|
 
-11. BDC デザイナーでの**連絡先**エンティティ、オープン、 **ReadItem**メソッド。
+11. BDC デザイナーの**Contact**エンティティで、 **ReadItem**メソッドを開きます。
 
-     連絡先のサービス コード ファイルでは、コード エディターで開きます。
+     コードエディターで Contact service コードファイルが開きます。
 
-12. `ContactService`クラス、置換、`ReadItem`メソッドを次のコード。 このコードは次のタスクを実行します。
+12. `ContactService` クラスで、`ReadItem` メソッドを次のコードに置き換えます。 このコードは次のタスクを実行します。
 
     - AdventureWorks データベースの Contact テーブルからレコードを取得します。
 
-    - BDC サービスには、Contact エンティティを返します。
+    - BDC サービスに Contact エンティティを返します。
 
     > [!NOTE]
-    > 値を置き換える、`ServerName`フィールドに、サーバーの名前。
+    > `ServerName` フィールドの値をサーバーの名前に置き換えます。
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="add-a-finder-method"></a>Finder メソッドを追加します。
+## <a name="add-a-finder-method"></a>Finder メソッドを追加する
 
-一覧で、連絡先を表示する BDC サービスを有効にするには、Finder メソッドを追加する必要があります。 使用して、Contact エンティティを Finder メソッドを追加、 **BDC メソッドの詳細**ウィンドウ。 BDC サービスに返すエンティティのコレクションには、メソッドにコードを追加します。
+BDC サービスが連絡先を一覧に表示できるようにするには、Finder メソッドを追加する必要があります。 **[BDC メソッドの詳細]** ウィンドウを使用して、Contact エンティティに Finder メソッドを追加します。 BDC サービスにエンティティのコレクションを返すには、メソッドにコードを追加します。
 
-1. BDC デザイナーで、**連絡先**エンティティ。
+1. BDC デザイナーで、 **Contact**エンティティを選択します。
 
-2. **BDC メソッドの詳細**ウィンドウ、折りたたみ、 **ReadItem**ノード。
+2. **[BDC メソッドの詳細]** ウィンドウで、 **[ReadItem]** ノードを折りたたみます。
 
-3. **メソッドを追加する**下にある、 **ReadList**メソッド選択**Finder メソッドの作成**です。
+3. **Readlist**メソッドの下にある **[メソッドの追加]** の一覧で、 **[Finder メソッドの作成]** を選択します。
 
-     Visual Studio では、メソッド、戻りパラメーター、および型記述子を追加します。
+     Visual Studio によって、メソッド、戻りパラメーター、および型記述子が追加されます。
 
-4. BDC デザイナーでの**連絡先**エンティティ、オープン、 **ReadList**メソッド。
+4. BDC デザイナーの**Contact**エンティティで、 **readlist**メソッドを開きます。
 
-     連絡先サービスのコード ファイルでは、コード エディターで開きます。
+     連絡先サービスのコードファイルがコードエディターで開きます。
 
-5. `ContactService`クラス、置換、`ReadList`メソッドを次のコード。 このコードは次のタスクを実行します。
+5. `ContactService` クラスで、`ReadList` メソッドを次のコードに置き換えます。 このコードは次のタスクを実行します。
 
    - AdventureWorks データベースの Contacts テーブルからデータを取得します。
 
-   - BDC サービスには、Contact エンティティの一覧を返します。
+   - BDC サービスに対する連絡先エンティティの一覧を返します。
 
      > [!NOTE]
-     > 値を置き換える、`ServerName`フィールドに、サーバーの名前。
+     > `ServerName` フィールドの値をサーバーの名前に置き換えます。
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="test-the-project"></a>プロジェクトをテストします。
+## <a name="test-the-project"></a>プロジェクトをテストする
 
-プロジェクトを実行するときに、SharePoint サイトが表示され、Visual Studio は、ビジネス データ接続サービスにモデルを追加します。 Contact エンティティを参照する SharePoint の外部リストを作成します。 一覧で、AdventureWorks データベースで連絡先データが表示されます。
+プロジェクトを実行すると、SharePoint サイトが開き、Visual Studio によってモデルがビジネスデータ接続サービスに追加されます。 連絡先エンティティを参照する外部リストを SharePoint に作成します。 AdventureWorks データベースの連絡先のデータが一覧に表示されます。
 
 > [!NOTE]
-> ソリューションをデバッグする前に、SharePoint のセキュリティ設定を変更する必要があります。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+> ソリューションをデバッグする前に、SharePoint でセキュリティ設定を変更することが必要になる場合があります。 詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 1. **F5** キーを押します。
 
      SharePoint サイトが開きます。
 
-2. **サイトの操作**メニューで、選択、**オプションより**コマンド。
+2. **[サイトの操作]** メニューの その **[他のオプション]** をクリックします。
 
-3. **作成**ページで、選択、**外部リスト**テンプレートを選択し、**作成**ボタン。
+3. **[作成]** ページで、 **[外部リスト]** テンプレートを選択し、 **[作成]** ボタンを選択します。
 
-4. カスタム リストの名前**連絡先**します。
+4. カスタムリストの**連絡先**に名前を指定します。
 
-5. 次に、参照ボタンを選択、**外部コンテンツ タイプ**フィールド。
+5. **外部コンテンツタイプ** フィールドの横にある 参照 ボタンをクリックします。
 
-6. **外部コンテンツ タイプ ピッカー**  ダイアログ ボックスで、選択、 **AdventureWorksContacts.BdcModel1.Contact**項目を選び、**作成**ボタンをクリックします。
+6. **[外部コンテンツタイプの選択]** ダイアログボックスで、 **AdventureWorksContacts**項目を選択し、 **[作成]** ボタンをクリックします。
 
-     SharePoint では、AdventureWorks サンプル データベースからの連絡先を格納する外部リストを作成します。
+     SharePoint では、AdventureWorks サンプルデータベースの連絡先を含む外部リストが作成されます。
 
-7. Specificfinder メソッドをテストするには、一覧に連絡先を選択します。
+7. 特定の Finder メソッドをテストするには、一覧で連絡先を選択します。
 
-8. リボンで、選択、**項目**、タブをクリックして、**ビュー項目**コマンド。
+8. リボンで **[項目]** タブを選択し、項目の **[表示]** コマンドを選択します。
 
-     選択した連絡先の詳細については、フォームに表示されます。
+     選択した連絡先の詳細がフォームに表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-これらのトピックから SharePoint の BDC サービスのモデルを設計する方法の詳細を確認できます。
+SharePoint で BDC サービスのモデルを設計する方法の詳細については、次のトピックを参照してください。
 
-- [方法: Creator メソッドを追加](../sharepoint/how-to-add-a-creator-method.md)します。
-- [方法: Updater メソッドを追加](../sharepoint/how-to-add-an-updater-method.md)します。
-- [方法: Deleter メソッドを追加](../sharepoint/how-to-add-a-deleter-method.md)します。
+- [方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)
+- [方法: Updater メソッドを追加する](../sharepoint/how-to-add-an-updater-method.md)
+- [方法: 削除子メソッドを追加する](../sharepoint/how-to-add-a-deleter-method.md)
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
-[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)
-[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)
- [SharePoint ビジネス データを統合します。](../sharepoint/integrating-business-data-into-sharepoint.md)
+ビジネスデータ接続モデル[を設計](../sharepoint/designing-a-business-data-connectivity-model.md)
+ビジネスデータ[接続モデルを作成](../sharepoint/creating-a-business-data-connectivity-model.md)する
+[BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)
+[ビジネスデータを SharePoint に統合](../sharepoint/integrating-business-data-into-sharepoint.md)する

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653846"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024828"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 
@@ -217,7 +217,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 1. [単体テスト コード](../test/unit-test-your-code.md)に関連付けられたアプリケーション コードに移動します。
 
-2. CodeLens テスト インジケーターを読み込むためにアプリケーションをまだビルドしていない場合は、ビルドします。 [ビルド済みアセンブリでの検出](../test/test-explorer-faq.md#assembly-based-discovery)がオンになっていることを確認します。
+2. CodeLens テスト インジケーターを読み込むためにアプリケーションをまだビルドしていない場合は、ビルドします。 
 
 3. コード用のテストをレビューするには、**Alt** + **3** キーを押します。
 
@@ -352,8 +352,7 @@ CodeLens では、異なるバージョン の Lync または Skype はインス
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q:ソリューションを最初に開いたときに、ファイルに CodeLens テスト インジケーターが表示されなくなります。 これを読み込むにはどうすればよいですか。
 
-**A:** プロジェクトをリビルドし、ファイルに読み込む CodeLens テスト インジケーターを取得します。 [ビルド済みアセンブリでの検出](../test/test-explorer-faq.md#assembly-based-discovery
-)がオンになっていることを確認します。 パフォーマンスを向上させるため、Visual Studio では、コード ファイルが読み込まれるときにテスト インジケーターのソース情報がフェッチされなくなります。 テスト インジケーターは、ビルド後、または**テスト エクスプローラー**でダブルクリックしてテストに移動するときに読み込まれます。
+**A:** プロジェクトをリビルドし、ファイルに読み込む CodeLens テスト インジケーターを取得します。 パフォーマンスを向上させるため、Visual Studio では、コード ファイルが読み込まれるときにテスト インジケーターのソース情報がフェッチされなくなります。 テスト インジケーターは、ビルド後、または**テスト エクスプローラー**でダブルクリックしてテストに移動するときに読み込まれます。
 
 ## <a name="see-also"></a>関連項目
 

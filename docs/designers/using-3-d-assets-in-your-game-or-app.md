@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634531"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888497"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>方法: ゲームまたはアプリで 3D アセットを使用する
 
@@ -97,7 +97,7 @@ Visual Studio のツールを使用して 3D アセットを作成したら、�
 
 |プロパティ|説明|
 |--------------|-----------------|
-|**圧縮**|出力ファイルで使用される圧縮の種類を指定します。<br /><br /> 使用可能なオプションは次のとおりです。<br /><br /> -   **圧縮なし**<br />-   **BC1_UNORM 圧縮**<br />-   **BC1_UNORM_SRGB 圧縮**<br />-   **BC2_UNORM 圧縮**<br />-   **BC2_UNORM_SRGB 圧縮**<br />-   **BC3_UNORM 圧縮**<br />-   **BC3_UNORM_SRGB 圧縮**<br />-   **BC4_UNORM 圧縮**<br />-   **BC4_SNORM 圧縮**<br />-   **BC5_UNORM 圧縮**<br />-   **BC5_SNORM 圧縮**<br />-   **BC6H_UF16 圧縮**<br />-   **BC6H_SF16 圧縮**<br />-   **BC7_UNORM 圧縮**<br />-   **BC7_UNORM_SRGB 圧縮**<br /><br /> DirectX のさまざまなバージョンでサポートされている圧縮形式について詳しくは、「[Programming Guide for DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265)」(DXGI のプログラミング ガイド) をご覧ください。|
+|**圧縮**|出力ファイルで使用される圧縮の種類を指定します。<br /><br /> 使用可能なオプションは次のとおりです。<br /><br /> -   **圧縮なし**<br />-   **BC1_UNORM 圧縮**<br />-   **BC1_UNORM_SRGB 圧縮**<br />-   **BC2_UNORM 圧縮**<br />-   **BC2_UNORM_SRGB 圧縮**<br />-   **BC3_UNORM 圧縮**<br />-   **BC3_UNORM_SRGB 圧縮**<br />-   **BC4_UNORM 圧縮**<br />-   **BC4_SNORM 圧縮**<br />-   **BC5_UNORM 圧縮**<br />-   **BC5_SNORM 圧縮**<br />-   **BC6H_UF16 圧縮**<br />-   **BC6H_SF16 圧縮**<br />-   **BC7_UNORM 圧縮**<br />-   **BC7_UNORM_SRGB 圧縮**<br /><br /> DirectX のさまざまなバージョンでサポートされている圧縮形式について詳しくは、「[Programming Guide for DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews)」(DXGI のプログラミング ガイド) をご覧ください。|
 |Convert to pre-multiplied alpha format (前乗算されたアルファ形式に変換)|出力ファイルで前乗算されたアルファ形式に変換する場合は **[はい]** を、その他の場合は **[いいえ]** を選択します。 出力ファイルのみが変更され、ソース イメージは変更されません。|
 |**MIPS の生成**|完全な MIPMAP チェーンをビルド時に生成し、出力ファイルに含める場合は、 **[あり]** 、それ以外は **[なし]** 。 **[なし]** をクリックすると、ソース ファイルに既に MIPMAP チェーンが含まれている場合は、出力ファイルに MIPMAP チェーンが含まれます。それ以外の場合は、出力ファイルに MIPMAP チェーンは含まれません。|
 |**Content Output\(コンテンツ出力\)**|出力ファイルの名前を指定します。 **重要:** 出力ファイルのファイル名拡張子を変更しても、ファイル形式には影響しません。|
@@ -122,7 +122,7 @@ Visual Studio のツールを使用して 3D アセットを作成したら、�
 
 ### <a name="use-textures-and-images"></a>テクスチャとイメージを使用する
 
-Direct3D には、テクスチャ リソースを作成するための機能があります。 Direct3D 11 では、D3DX11 ユーティリティ ライブラリには、イメージ ファイルからテクスチャ リソースとリソース ビューを直接作成するための追加の機能が用意されています。 Direct3D 11 のテクスチャ リソースを作成する方法について詳しくは、「[Textures](http://go.microsoft.com/fwlink/p/?LinkID=246267)」(テクスチャ) をご覧ください。 D3DX11 ライブラリを使用してイメージ ファイルからテクスチャ リソースまたはリソース ビューを作成する方法の詳細については、「[How to:Initialize a texture from a file](http://go.microsoft.com/fwlink/p/?LinkId=246268)」(方法: ファイルからテクスチャを初期化する) を参照してください。
+Direct3D には、テクスチャ リソースを作成するための機能があります。 Direct3D 11 では、D3DX11 ユーティリティ ライブラリには、イメージ ファイルからテクスチャ リソースとリソース ビューを直接作成するための追加の機能が用意されています。 Direct3D 11 のテクスチャ リソースを作成する方法について詳しくは、「[Textures](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures)」(テクスチャ) をご覧ください。 D3DX11 ライブラリを使用してイメージ ファイルからテクスチャ リソースまたはリソース ビューを作成する方法の詳細については、「[How to:Initialize a texture from a file](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to)」(方法: ファイルからテクスチャを初期化する) を参照してください。
 
 ### <a name="use-3d-models"></a>3D モデルを使用する
 
@@ -130,7 +130,7 @@ Direct3D 11 には、3D モデルからリソースを作成する機能があ�
 
 ### <a name="use-shaders"></a>シェーダーを使用する
 
-Direct3D には、シェーダー リソースを作成してプログラム可能なグラフィックス パイプラインにバインドするための関数が用意されています。 Direct3D のシェーダー リソースを作成してパイプラインにバインドする方法について詳しくは、「[HLSL のプログラミング ガイド](http://go.microsoft.com/fwlink/p/?LinkID=261521)」をご覧ください。
+Direct3D には、シェーダー リソースを作成してプログラム可能なグラフィックス パイプラインにバインドするための関数が用意されています。 Direct3D のシェーダー リソースを作成してパイプラインにバインドする方法について詳しくは、「[HLSL のプログラミング ガイド](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide)」をご覧ください。
 
 プログラミング可能なグラフィックス パイプラインでは、パイプラインの各ステージは、理解できる方法で書式設定された結果を、パイプラインの次のステージに渡す必要があります。 シェーダー デザイナーができることはピクセル シェーダーの作成のみであるため、受け取ったデータが要求する形式であることを確認するのはアプリケーションです。 複数のプログラミング可能なシェーダーのステージは、ピクセル シェーダー前に発生し、ジオメトリック変換 (頂点シェーダー、ハル シェーダー、ドメインのシェーダー、およびジオメトリ シェーダー) を実行します。 プログラミング不可能なテセレーション ステージもピクセル シェーダーの前に発生します。 ピクセル シェーダーの直前にどのステージがある場合でも、結果を以下の形式で渡す必要があります。
 

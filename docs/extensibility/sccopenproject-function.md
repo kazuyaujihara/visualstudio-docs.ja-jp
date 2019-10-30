@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebb8f4250b4ef4c022c5c21d748e025ca31e35a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6aa4a715f8d1b87aa831f6a315f07a19e5d4f46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353599"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721056"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 関数
-この関数は、既存のソース管理プロジェクトを開きますか、新しいを作成します。
+この関数は、既存のソース管理プロジェクトを開くか、新しいプロジェクトを作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,78 +41,78 @@ SCCRTN SccOpenProject (
 #### <a name="parameters"></a>パラメーター
  pvContext
 
-[in]ソース管理プラグイン コンテキスト構造体。
+からソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
 
  lpUser
 
-[入力、出力] (NULL ターミネータを含めた SCC_USER_SIZE を超過しない)、ユーザーの名前。
+[入力、出力]ユーザーの名前 (NULL 終端文字を含む、SCC_USER_SIZE を超えることはできません)。
 
  lpProjName
 
-[in]プロジェクトの名前を識別する文字列。
+からプロジェクトの名前を識別する文字列。
 
  lpLocalProjPath
 
-[in]プロジェクトの作業フォルダーへのパス。
+からプロジェクトの作業フォルダーへのパス。
 
  lpAuxProjPath
 
-[入力、出力]プロジェクト (NULL ターミネータを含めた SCC_AUXPATH_SIZE を超過しない) を識別する、省略可能の補助文字列。
+[入力、出力]\(NULL 終端文字を含む) プロジェクトを識別する補助文字列 (SCC_AUXPATH_SIZE を超えることはできません)。
 
  lpComment
 
-[in]作成される新しいプロジェクトにコメントします。
+から作成する新しいプロジェクトにコメントを追加します。
 
  lpTextOutProc
 
-[in]ソース管理プラグインからの出力テキストを表示するオプションのコールバック関数。
+からソース管理プラグインからのテキスト出力を表示するオプションのコールバック関数。
 
  dwFlags
 
-[in]信号をプロジェクトがソースに不明の場合に作成する新しいプロジェクトが必要かどうかを制御プラグイン。 値の組み合わせを指定できます`SCC_OP_CREATEIFNEW`と `SCC_OP_SILENTOPEN.`
+からプロジェクトがソース管理プラグインに対して不明な場合に、新しいプロジェクトを作成する必要があるかどうかを通知します。 値は `SCC_OP_CREATEIFNEW` との組み合わせにすることができ `SCC_OP_SILENTOPEN.`
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
 |[値]|説明|
 |-----------|-----------------|
-|SCC_OK|プロジェクトを開くときに成功しました。|
+|SCC_OK|プロジェクトを開く操作に成功します。|
 |SCC_E_INITIALIZEFAILED|プロジェクトを初期化できませんでした。|
-|SCC_E_INVALIDUSER|ユーザーは、ソース管理システム ログオンできませんでした。|
-|SCC_E_COULDNOTCREATEPROJECT|呼び出しの前に、プロジェクトがありませんでした `SCC_OPT_CREATEIFNEW`フラグを設定したが、プロジェクトを作成できませんでした。|
-|SCC_E_PROJSYNTAXERR|無効なプロジェクトの構文です。|
-|SCC_E_UNKNOWNPROJECT|プロジェクトがソース管理プラグインは、認識できない、`SCC_OPT_CREATEIFNEW`フラグが設定されませんでした。|
-|SCC_E_INVALIDFILEPATH|無効であるか使用できないファイルのパス。|
-|SCC_E_NOTAUTHORIZED|この操作を実行できません。|
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。 再試行をお勧めします。|
-|SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムは初期化されませんでした。|
+|SCC_E_INVALIDUSER|ユーザーは、ソース管理システムにログインできませんでした。|
+|SCC_E_COULDNOTCREATEPROJECT|呼び出しの前にプロジェクトが存在しませんでした。 `SCC_OPT_CREATEIFNEW` フラグが設定されましたが、プロジェクトを作成できませんでした。|
+|SCC_E_PROJSYNTAXERR|プロジェクトの構文が無効です。|
+|SCC_E_UNKNOWNPROJECT|プロジェクトがソース管理プラグインに対して不明であり、`SCC_OPT_CREATEIFNEW` フラグが設定されていません。|
+|SCC_E_INVALIDFILEPATH|ファイルパスが無効であるか、使用できません。|
+|SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|
+|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
+|SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムが初期化されませんでした。|
 
-## <a name="remarks"></a>Remarks
- ユーザー名を渡すことが IDE (`lpUser`)、またはポインターで空の文字列に渡すことがありますだけです。 ユーザー名がある場合、ソース管理プラグインとして使用してください、既定値。 ただし、名前が渡されなかった場合、または指定した名前、ログインに失敗した場合は、プラグイン ログインするユーザーにメッセージを表示してで有効な名前を返す`lpUser`有効なログインを受信すると`.`プラグインは、ユーザー名文字列を変更可能性がありますので、、IDE は常にサイズのバッファーを割り当てます (`SCC_USER_LEN`+1 または SCC_USER_SIZE で、null 終端文字のスペースが含まれています)。
-
-> [!NOTE]
-> 最初のアクションを実行する必要があります、IDE への呼び出しがあります、`SccOpenProject`関数または[SccGetProjPath](../extensibility/sccgetprojpath-function.md)します。 このため、これらの両方に同一ある`lpUser`パラメーター。
-
- `lpAuxProjPath` `lpProjName` 、ソリューション ファイルから読み取られますへの呼び出しから返された、または、`SccGetProjPath`関数。 これらのパラメーターは、ソース管理プラグインをプロジェクトに関連付ける文字列を含むし、プラグインにのみ意味があります。 ソリューション ファイルにこのような文字列がないと、ユーザーが参照するように要求されていない場合 (は、文字列を返しますが、`SccGetProjPath`関数)、IDE は、両方の空の文字列を渡す`lpAuxProjPath`と`lpProjName`とでこれらの値を更新する必要がありますプラグインのときにこの関数を返します。
-
- `lpTextOutProc` ソース管理プラグイン コマンドの結果の出力を表示できるようにするための IDE によって提供されるコールバック関数へのポインターです。 このコールバック関数がで詳しく説明されている[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)します。
+## <a name="remarks"></a>コメント
+ IDE はユーザー名 (`lpUser`) を渡すことができます。または、単に空の文字列へのポインターを渡すこともできます。 ユーザー名がある場合は、ソース管理プラグインで既定値として使用する必要があります。 ただし、名前が渡されなかった場合、またはログインが指定された名前で失敗した場合は、プラグインによってユーザーにログインを求めるメッセージが表示され、有効なログイン`.` を受信したときに `lpUser` に有効な名前が返されます。これは、プラグインによってユーザー名の文字列が変更されるためです。IDE は常にサイズのバッファー (`SCC_USER_LEN`+ 1 または SCC_USER_SIZE のバッファーを割り当てます。これには null 終端文字のスペースが含まれます)。
 
 > [!NOTE]
-> 設定する必要がありますが、ソース管理プラグインでは、この利用しようとして場合、`SCC_CAP_TEXTOUT`フラグ、 [SccInitialize](../extensibility/sccinitialize-function.md)します。 フラグが設定されていない場合、または IDE では、この機能をサポートしていない場合`lpTextOutProc`なります`NULL`します。
+> IDE が実行する必要のある最初のアクションは、`SccOpenProject` 関数または[Sccgetprojpath](../extensibility/sccgetprojpath-function.md)を呼び出すことができます。 このため、両方に同じ `lpUser` パラメーターがあります。
 
- `dwFlags`パラメーターは、開いているプロジェクトが現在存在していないことに、結果を制御します。 2 つのビットフラグから成る`SCC_OP_CREATEIFNEW`と`SCC_OP_SILENTOPEN`します。 関数は、既に開いているプロジェクトが存在する場合は、単にプロジェクトが開きますを返します`SCC_OK`します。 プロジェクトが存在しない場合、`SCC_OP_CREATEIFNEW`フラグがオンで、ソース管理プラグインは、ソース管理システムで、プロジェクトを作成、それを開いて、および返す`SCC_OK`します。 場合と、プロジェクトが存在しない場合、`SCC_OP_CREATEIFNEW`フラグがオフ、プラグインする必要がありますし、確認、`SCC_OP_SILENTOPEN`フラグ。 フラグがオンがない場合、プラグイン求めることができます、プロジェクト名のユーザー。 フラグがであるかどうか、プラグインを返すだけ`SCC_E_UNKNOWNPROJECT`です。
+ `lpAuxProjPath` と`lpProjName` は、ソリューションファイルから読み取られるか、または `SccGetProjPath` 関数の呼び出しから返されます。 これらのパラメーターには、ソース管理プラグインによってプロジェクトに関連付けられ、プラグインにのみ意味がある文字列が含まれています。 このような文字列がソリューションファイルに含まれておらず、ユーザーが参照するように求められていない場合 (`SccGetProjPath` 関数を通じて文字列が返される場合)、IDE は `lpAuxProjPath` と `lpProjName`の両方に空の文字列を渡します。また、次の場合は、これらの値がプラグインによって更新されることを想定します。この関数はを返します。
+
+ `lpTextOutProc` は、コマンドの結果の出力を表示するために IDE によってソース管理プラグインに提供されるコールバック関数へのポインターです。 このコールバック関数の詳細については、「 [Lptextoutproc](../extensibility/lptextoutproc.md)」を参照してください。
+
+> [!NOTE]
+> ソース管理プラグインがこの機能を利用することを意図している場合は、 [Sccinitialize](../extensibility/sccinitialize-function.md)で `SCC_CAP_TEXTOUT` フラグを設定する必要があります。 このフラグが設定されていない場合、または IDE がこの機能をサポートしていない場合は、`lpTextOutProc` が `NULL`されます。
+
+ `dwFlags` パラメーターは、開いているプロジェクトが現在存在していないイベントの結果を制御します。 2つの bitflags、`SCC_OP_CREATEIFNEW` と `SCC_OP_SILENTOPEN`で構成されます。 開いているプロジェクトが既に存在する場合、この関数は単にプロジェクトを開き、`SCC_OK`を返します。 プロジェクトが存在せず、`SCC_OP_CREATEIFNEW` フラグがオンの場合、ソース管理プラグインは、ソース管理システムでプロジェクトを作成して開き、`SCC_OK`を返すことができます。 プロジェクトが存在しない場合、`SCC_OP_CREATEIFNEW` フラグがオフの場合、プラグインは `SCC_OP_SILENTOPEN` フラグを確認する必要があります。 このフラグがオンになっていない場合は、プラグインによってユーザーにプロジェクト名の入力が求められることがあります。 このフラグがオンの場合、プラグインは単に `SCC_E_UNKNOWNPROJECT`を返す必要があります。
 
 ## <a name="calling-order"></a>呼び出し順序
- イベントの通常のコースでは、 [SccInitialize](../extensibility/sccinitialize-function.md)ソース コントロール セッションを最初に呼び出されるとします。 セッションはへの呼び出しで構成される`SccOpenProject`、その他のソース管理プラグイン API 関数呼び出しの後におよびへの呼び出しが中止、 [SccCloseProject](../extensibility/scccloseproject-function.md)します。 このようなセッションは、前に何度も繰り返すことが、 [SccUninitialize](../extensibility/sccuninitialize-function.md)が呼び出されます。
+ 通常のイベントでは、最初に[Sccinitialize](../extensibility/sccinitialize-function.md)を呼び出してソース管理セッションを開きます。 セッションは、`SccOpenProject`の呼び出しの後に、その他のソース管理プラグイン API 関数の呼び出しで構成され、 [Scccloseproject](../extensibility/scccloseproject-function.md)の呼び出しで終了します。 このようなセッションは、 [Sccuninitialize](../extensibility/sccuninitialize-function.md)解除が呼び出される前に何度も繰り返される場合があります。
 
- ソース管理プラグインのセットがある場合、`SCC_CAP_REENTRANT`ビット`SccInitialize`、上のセッションの順序は、並列で何度も繰り返し可能性があります使用し、します。 異なる`pvContext`構造体で、異なるセッションを追跡する`pvContext`は一度に 1 つ開いているプロジェクトに関連付けられています。 に基づいて、`pvContext`パラメーター、プラグインを調べるどのプロジェクトが、特定の呼び出しで参照されています。 場合は、機能のビット`SCC_CAP_REENTRANT`が設定されていない nonreentrant ソース管理プラグインは、複数のプロジェクトを操作する機能に制限されます。
+ ソース管理プラグインが `SccInitialize`で `SCC_CAP_REENTRANT` ビットを設定した場合、上記のセッションシーケンスは並列で何度も繰り返される可能性があります。 さまざまな `pvContext` 構造は、一度に1つの開いているプロジェクトに各 `pvContext` が関連付けられている、さまざまなセッションを追跡します。 `pvContext` パラメーターに基づいて、プラグインは特定の呼び出しで参照されているプロジェクトを特定できます。 機能ビット `SCC_CAP_REENTRANT` が設定されていない場合、非再入可能なソース管理プラグインは、複数のプロジェクトで作業できるように制限されます。
 
 > [!NOTE]
-> `SCC_CAP_REENTRANT`ビットは、ソース管理プラグイン API のバージョン 1.1 で導入されました。 設定されていないか、バージョン 1.0 では無視され、すべてのバージョン 1.0 ソース管理プラグインは nonreentrant と見なされます。
+> `SCC_CAP_REENTRANT` ビットは、ソース管理プラグイン API のバージョン1.1 で導入されました。 バージョン1.0 では設定されていないか、または無視され、すべてのバージョン1.0 ソース管理プラグインは再入可能でないと見なされます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

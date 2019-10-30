@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efe99e4d12ea4ace6d6c996b816dc315c502fa47
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255564"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985495"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでの複合データバインディング
   VSTO アドイン プロジェクトでは、ホスト コントロールと Windows フォーム コントロールにデータをバインドできます。 このチュートリアルでは、Microsoft Office Excel ワークシートにコントロールを追加して、そのコントロールを実行時にデータにバインドする方法を示します。
@@ -34,18 +34,18 @@ ms.locfileid: "71255564"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- `AdventureWorksLT` サンプル データベースがアタッチされた SQL Server 2005 または SQL Server 2005 Express の実行中のインスタンスへのアクセス。 データベースは`AdventureWorksLT` 、 [CodePlex web サイト](http://go.microsoft.com/fwlink/?LinkId=115611)からダウンロードできます。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
+- `AdventureWorksLT` サンプル データベースがアタッチされた SQL Server 2005 または SQL Server 2005 Express の実行中のインスタンスへのアクセス。 `AdventureWorksLT` データベースは、 [SQL Server Samples github リポジトリ](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)からダウンロードできます。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
 
-  - SQL Server Management Studio または SQL Server Management Studio Express を使用してデータベースをアタッチ[する方法については、「」を参照してください。データベースをアタッチします (](/sql/relational-databases/databases/attach-a-database)SQL Server Management Studio)。
+  - SQL Server Management Studio または SQL Server Management Studio Express を使用してデータベースをアタッチする方法については、「[データベースをアタッチする方法 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)」を参照してください。
 
-  - コマンドラインを使用してデータベースをアタッチする方法[については、「」を参照してください。SQL Server Express](/previous-versions/sql/)にデータベースファイルをアタッチします。
+  - コマンドラインを使用してデータベースをアタッチする方法については、「[方法: SQL Server Express にデータベースファイルをアタッチ](/previous-versions/sql/)する」を参照してください。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
  まず、Excel VSTO アドイン プロジェクトを作成します。
@@ -54,7 +54,7 @@ ms.locfileid: "71255564"
 
 1. Visual Basic または C# を使用して、 **Populating Worksheets from a Database**という名前の Excel VSTO アドイン プロジェクトを作成します。
 
-     詳細については、「[方法 :Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)で Office プロジェクトを作成します。
+     詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      Visual Studio により、 `ThisAddIn.vb` ファイルまたは `ThisAddIn.cs` ファイルが開かれ、 **Populating Worksheets from a Database** プロジェクトが **ソリューション エクスプローラー**に追加されます。
 
@@ -63,7 +63,7 @@ ms.locfileid: "71255564"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>型指定されたデータセットをプロジェクトに追加するには
 
-1. **[データソース]** ウィンドウが表示されていない場合は、メニューバーの [**他の Windows** > **データソース**の**表示** > ] をクリックして表示します。
+1. **[データソース]** ウィンドウが表示されていない場合は、メニューバーで [ > **他の Windows** > **データソース**の**表示**] をクリックして表示します。
 
 2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
 
@@ -83,7 +83,7 @@ ms.locfileid: "71255564"
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの **Address (SalesLT)** テーブルの内容を表します。
 
-   - という名前`AddressTableAdapter`の TableAdapter。 この TableAdapter を使用して、の`AdventureWorksLTDataSet`データの読み取りと書き込みを行うことができます。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
+   - `AddressTableAdapter`という名前の TableAdapter。 この TableAdapter を使用して、`AdventureWorksLTDataSet`のデータの読み取りと書き込みを行うことができます。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
 
      これらのオブジェクトは、どちらもこのチュートリアルの後半で使用します。
 
@@ -132,13 +132,13 @@ ms.locfileid: "71255564"
 
 - [Office ソリューションのデータ](../vsto/data-in-office-solutions.md)
 - [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [方法: データベースのデータをワークシートに設定する](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [方法: データベースのデータをワークシートに読み込む](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [方法: データベースのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [方法: サービスからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [方法: オブジェクトからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [方法: サービスのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [方法: オブジェクトのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [方法: ワークシート内のデータベースレコードをスクロールする](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 - [方法: ホストコントロールのデータを使用してデータソースを更新する](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [チュートリアル: ドキュメントレベルのプロジェクトでの単純なデータバインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Office ソリューションのローカルデータベースファイルの使用の概要](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)

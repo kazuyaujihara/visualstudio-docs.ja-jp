@@ -1,5 +1,5 @@
 ---
-title: ビジネス データ接続モデルの設計 |Microsoft Docs
+title: ビジネスデータ接続モデルを設計する |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,118 +13,118 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431282"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984467"
 ---
-# <a name="design-a-business-data-connectivity-model"></a>ビジネス データ接続モデルを設計します。
-  モデル ファイルへのエンティティとメソッドを追加することで、ビジネス データ接続 (BDC) サービスのモデルを開発できます。 エンティティには、データ フィールドのコレクションについて説明します。 たとえば、エンティティは、データベース内のテーブルを表すことができます。 メソッドは、追加、削除、またはエンティティによって表されるデータの更新などのタスクを実行します。 詳細については、次を参照してください。 [SharePoint ビジネス データを統合](../sharepoint/integrating-business-data-into-sharepoint.md)します。
+# <a name="design-a-business-data-connectivity-model"></a>ビジネスデータ接続モデルを設計する
+  エンティティとメソッドをモデルファイルに追加することによって、Business Data Connectivity (BDC) サービスのモデルを開発できます。 エンティティは、データフィールドのコレクションを記述します。 たとえば、エンティティはデータベース内のテーブルを表すことができます。 メソッドは、エンティティによって表されるデータの追加、削除、更新などのタスクを実行します。 詳細については、「 [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)」を参照してください。
 
-## <a name="add-entities"></a>エンティティを追加します。
- エンティティを追加するにはドラッグまたはコピーして、**エンティティ**Visual Studio から**ツールボックス**BDC デザイナーにします。 詳細については、「[方法 :エンティティ モデルを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)します。
+## <a name="add-entities"></a>エンティティの追加
+ エンティティを追加するには、Visual Studio の**ツールボックス**から BDC デザイナーに**エンティティ**をドラッグまたはコピーします。 詳細については、「[方法: モデルにエンティティを追加](../sharepoint/how-to-add-an-entity-to-a-model.md)する」を参照してください。
 
- クラスでは、エンティティのフィールドを定義します。 たとえば、という名前のフィールドを追加する場合があります`Address`を`Customer`クラス。 プロジェクトに新しいクラスを追加するか、オブジェクト リレーショナル デザイナー (O/R デザイナー) などの他のツールを使用して作成された既存のクラスを使用します。 エンティティの名前と、エンティティを表すクラスの名前は一致する必要はありません。 クラスは、モデル内のメソッドを定義するときに、エンティティに関連します。
+ クラスのエンティティのフィールドを定義します。 たとえば、`Address` という名前のフィールドを `Customer` クラスに追加することができます。 新しいクラスをプロジェクトに追加するか、またはオブジェクトリレーショナルデザイナー (O/R デザイナー) などの他のツールを使用して作成された既存のクラスを使用することができます。 エンティティの名前と、エンティティを表すクラスの名前が一致している必要はありません。 モデルでメソッドを定義するときに、クラスをエンティティに関連付けます。
 
-## <a name="add-methods"></a>メソッドを追加します。
- BDC サービスは、ユーザーを表示、追加、更新、またはリストや、モデルに基づく Web パーツで情報を削除するときに、モデルのメソッドを呼び出します。 メソッドは、タスクごとに、ユーザーが実行できるモデルに追加する必要があります。 メソッドの作成から 5 つの基本的なメソッドの型のいずれかを選択して、 **BDC メソッドの詳細**ウィンドウ。 次の表では、BDC モデルの 5 つの基本的な方法について説明します。
+## <a name="add-methods"></a>メソッドの追加
+ ユーザーがモデルに基づくリストまたは Web パーツの情報を表示、追加、更新、または削除すると、BDC サービスはモデル内のメソッドを呼び出します。 ユーザーが実行できるタスクごとに、モデルにメソッドを追加する必要があります。 **[BDC メソッドの詳細]** ウィンドウで、5つの基本メソッドの種類のいずれかを選択して、メソッドを作成します。 次の表では、BDC モデルの5つの基本的な方法について説明します。
 
 |メソッド|説明|
 |------------|-----------------|
-|ファインダー|エンティティ インスタンスのコレクションを返します。 ユーザーがリストまたは Web パーツを開いたときに呼び出されます。 詳細については、「[方法 :Finder メソッドを追加](../sharepoint/how-to-add-a-finder-method.md)します。|
-|SpecificFinder|特定のエンティティ インスタンスを返します。 リスト内の特定の項目の詳細を表示するときに呼び出されます。 詳細については、「[方法 :特定の Finder メソッドを追加](../sharepoint/how-to-add-a-specific-finder-method.md)します。|
-|Creator|エンティティのデータ ソースに新しいデータを追加します。 ユーザーが選択すると呼び出されます、**新しい項目の**モデルに基づいているリストのリボンのボタンをクリックします。 詳細については、「[方法 :Creator メソッドを追加](../sharepoint/how-to-add-a-creator-method.md)します。|
-|Updater|一覧内のデータを変更します。 ユーザー一覧の情報を更新するときに呼び出されます。 詳細については、「[方法 :Updater メソッドを追加](../sharepoint/how-to-add-an-updater-method.md)します。|
-|Deleter|データを削除します。 ユーザーの一覧から項目を削除するときに呼び出されます。 詳細については、「[方法 :Deleter メソッドを追加](../sharepoint/how-to-add-a-deleter-method.md)します。|
+|周り|エンティティインスタンスのコレクションを返します。 ユーザーがリストまたは Web パーツを開いたときに呼び出されます。 詳細については、「[方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)」を参照してください。|
+|SpecificFinder|特定のエンティティインスタンスを返します。 ユーザーがリスト内の特定の項目の詳細を表示するときに呼び出されます。 詳細については、「[方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)」を参照してください。|
+|Creator|エンティティのデータソースに新しいデータを追加します。 モデルに基づくリストのリボンの **[新しい項目]** ボタンをユーザーが選択すると呼び出されます。 詳細については、「[方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)」を参照してください。|
+|Updater|リスト内のデータを変更します。 ユーザーがリスト内の情報を更新するときに呼び出されます。 詳細については、「[方法: Updater メソッドを追加する](../sharepoint/how-to-add-an-updater-method.md)」を参照してください。|
+|Deleter|データを削除します。 ユーザーがリストから項目を削除したときに呼び出されます。 詳細については、「[方法: 削除子メソッドを追加する](../sharepoint/how-to-add-a-deleter-method.md)」を参照してください。|
 
-## <a name="define-method-parameters"></a>メソッドのパラメーターを定義します。
- メソッドを作成するときに、Visual Studio は、メソッドの種類に適切な入力と出力のパラメーターを追加します。 これらのパラメーターは、単なるプレース ホルダーです。 ほとんどの場合、それらで渡すか、正しい種類のデータを返すようにパラメーターを変更する必要があります。 たとえば、既定では、Finder メソッドは文字列を返します。 ほとんどの場合、エンティティのコレクションを返すように Finder メソッドの戻り値パラメーターを変更したいです。 パラメーターの型記述子を変更することによって実現できます。 型記述子は、パラメーターのデータ型を記述する属性のコレクションです。 詳細については、「[方法 :パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)します。
+## <a name="define-method-parameters"></a>メソッドパラメーターの定義
+ メソッドを作成すると、Visual Studio によって、メソッドの型に適した入力パラメーターと出力パラメーターが追加されます。 これらのパラメーターは単なるプレースホルダーです。 ほとんどの場合、パラメーターを変更して渡すか、正しい型のデータを返すようにする必要があります。 たとえば、既定では、Finder メソッドは文字列を返します。 ほとんどの場合、エンティティのコレクションを返すように Finder メソッドの戻りパラメーターを変更します。 これを行うには、パラメーターの型記述子を変更します。 型記述子は、パラメーターのデータ型を記述する属性のコレクションです。 詳細については、「[方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
 
- Visual Studio では、モデルのパラメーターの型記述子をコピーすることができます。 たとえば、という名前の型記述子を定義する場合があります`CustomerTD`の戻り値パラメーターの`GetCustomer`メソッド。 コピーすることができます、`CustomerTD`入力記述子、 **BDC エクスプ ローラー**の入力パラメーターには、その型記述子を貼り付けると、`CreateCustomer`メソッド。 こうと、同じ型記述子を 2 回以上定義する必要がなくなります。
+ Visual Studio では、モデル内のパラメーター間で型記述子をコピーできます。 たとえば、`GetCustomer` メソッドの戻りパラメーターに `CustomerTD` という名前の型記述子を定義する場合があります。 **BDC エクスプローラー**で `CustomerTD` 型記述子をコピーし、その型記述子を `CreateCustomer` メソッドの入力パラメーターに貼り付けることができます。 これにより、同じ型記述子を複数回定義する必要がなくなります。
 
-## <a name="method-instances"></a>メソッド インスタンス
- メソッドを作成するときに、Visual Studio は、既定のメソッドのインスタンスを追加します。 メソッドのインスタンスは、メソッド、およびパラメーターの既定値への参照です。 1 つのメソッドは、メソッドの複数のインスタンスでことができます。 各インスタンスは、既定値のセットと、メソッド シグネチャの組み合わせです。 詳細については、「[方法 :パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)します。
+## <a name="method-instances"></a>メソッドインスタンス
+ メソッドを作成すると、Visual Studio によって既定のメソッドインスタンスが追加されます。 メソッドインスタンスは、メソッドへの参照と、パラメーターの既定値を加えたものです。 1つのメソッドには、複数のメソッドインスタンスを含めることができます。 各インスタンスは、メソッドシグネチャと一連の既定値を組み合わせたものです。 詳細については、「[方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
 
- プロジェクトを実行するメソッドのインスタンスは、SharePoint リストの上のドロップダウン リストに表示されます。 ユーザーは、データを表示するメソッドのインスタンスを選択できます。
+ プロジェクトを実行すると、SharePoint リストの上のドロップダウンリストにメソッドインスタンスが表示されます。 ユーザーは、メソッドインスタンスを選択してデータを表示できます。
 
- メソッドのインスタンスには、既定値を追加するには、モデルの XML を直接変更があります。 詳細については、次を参照してください。 [DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279)します。
+ メソッドインスタンスに既定値を追加するには、モデルの XML を直接変更する必要があります。 詳細については、「 [DefaultValue](/previous-versions/office/developer/sharepoint-2010/ee559319(v=office.14))」を参照してください。
 
-## <a name="add-filter-descriptors"></a>フィルター記述子を追加します。
- モデルのコンシューマーは、いくつかの条件に一致するエンティティのインスタンスを取得する必要があります。 この機能を有効にするには、メソッドにフィルター記述子を追加できます。 フィルター記述子は、モデルのコンシューマーを実行する前に、メソッドに値を渡すことによってメソッドの結果セットをフィルター処理を有効にします。 詳細については、「[方法 :外部システムからインスタンスを制限する操作にフィルター パラメーターを追加](http://go.microsoft.com/fwlink/?LinkID=169267)します。
+## <a name="add-filter-descriptors"></a>フィルター記述子の追加
+ モデルのコンシューマーは、何らかの条件に一致するエンティティのインスタンスを取得することが必要になる場合があります。 この機能を有効にするには、メソッドにフィルター記述子を追加します。 フィルター記述子を使用すると、モデルコンシューマーは、実行前にメソッドに値を渡すことによって、メソッドの結果セットをフィルター処理できます。 詳細については、「[方法: フィルターパラメーターを操作に追加して、外部システムからインスタンスを制限する](/previous-versions/office/developer/sharepoint-2010/ee554889(v=office.14))」を参照してください。
 
- SharePoint では、フィルター値を指定するユーザーを有効にするいくつかの機能を提供します。 たとえば、ビジネス データ Web パーツは、フィルター テキスト ボックスを提供します。 ユーザーは、テキスト ボックスに値を入力して、リスト内のデータを制限できます。 メソッドにフィルター記述子を追加する方法の詳細については、次を参照してください。[方法。Finder メソッドにフィルター記述子を追加](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)します。
+ SharePoint には、ユーザーがフィルター値を提供できるようにする機能がいくつか用意されています。 たとえば、ビジネスデータ Web パーツはフィルターテキストボックスを提供します。 ユーザーは、テキストボックスに値を入力することによって、リスト内のデータを制限できます。 メソッドにフィルター記述子を追加する方法の詳細については、「[方法: フィルター記述子を Finder メソッドに追加](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)する」を参照してください。
 
-### <a name="filter-descriptor-properties"></a>記述子のプロパティをフィルター処理します。
- 値を設定する必要があります、**関連付けられた型記述子**、**名前**、および**型**フィルター記述子のプロパティ。 その他のすべてのプロパティは省略可能です。
+### <a name="filter-descriptor-properties"></a>フィルター記述子のプロパティ
+ フィルター記述子の**関連付けられている型記述子**、**名前**、および**型**プロパティの値を設定する必要があります。 その他のすべてのプロパティは省略可能です。
 
- **関連付けられた型記述子**プロパティに関連する入力パラメーター、フィルター記述子。 ユーザーがフィルター値と、ときに、BDC サービスは、入力パラメーターを使用してメソッドにその値を渡します。
+ **関連付けられている型記述子**プロパティは、フィルター記述子を入力パラメーターに関連付けます。 ユーザーがフィルター値を指定すると、BDC サービスは入力パラメーターを使用してその値をメソッドに渡します。
 
- **型**プロパティが使用するフィルターのパターンについて説明します。 SharePoint では、選択したフィルター パターンはユーザー インターフェイス (UI) で表示されるテキストに影響します。 たとえば、テキスト比較子のフィルター パターン**と等しい**ビジネス データ Web パーツの上のコントロールとして表示されます。 各フィルター パターンの詳細については、次を参照してください。[のフィルターでサポートされる型、BDC](http://go.microsoft.com/fwlink/?LinkId=169287)します。
+ **Type**プロパティは、使用するフィルターパターンを表します。 SharePoint では、選択したフィルターパターンが、ユーザーインターフェイス (UI) に表示されるテキストに影響します。 たとえば、比較子フィルターパターンの場合、テキスト**は**ビジネスデータ Web パーツ上のコントロールとして表示されます。 各フィルター処理パターンの詳細については、「 [BDC でサポートされるフィルターの種類](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))」を参照してください。
 
- フィルター記述子のプロパティの詳細については、次を参照してください。 [FilterDescriptor](http://go.microsoft.com/fwlink/?LinkID=169280)します。
+ フィルター記述子のプロパティの詳細については、「 [FilterDescriptor](/previous-versions/office/developer/sharepoint-2010/ee557835(v=office.14))」を参照してください。
 
-### <a name="provide-default-values"></a>既定値を提供します。
- 場合によっては、ユーザーはフィルター値を指定していない可能性があります。 メソッドのインスタンスに既定値を追加するか、メソッドのコードで、既定値を設定して、既定値を行うことができます。 メソッド インスタンスを既定値を追加する方法の詳細については、次を参照してください。 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)します。 メソッドのコードで、入力パラメーターの既定値を設定する方法の例は、次を参照してください。[方法。Finder メソッドにフィルター記述子を追加](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)します。
+### <a name="provide-default-values"></a>既定値を指定する
+ 場合によっては、ユーザーがフィルター値を提供しないことがあります。 既定値を指定するには、メソッドインスタンスに既定値を追加するか、メソッドのコードに既定値を設定します。 メソッドインスタンスに既定値を追加する方法の詳細については、「 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))」を参照してください。 メソッドのコードで入力パラメーターの既定値を設定する方法の例については、「[方法: フィルター記述子を Finder メソッドに追加](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)する」を参照してください。
 
-## <a name="validate-the-model"></a>モデルを検証します。
- 開発中に、モデルを検証できます。 Visual Studio は、想定どおりに動作してから、モデルを妨げる可能性のある問題を特定します。 Visual Studio でこれらの問題が表示される**エラー一覧**します。
+## <a name="validate-the-model"></a>モデルを検証する
+ 開発中にモデルを検証することができます。 Visual Studio は、モデルが想定どおりに動作しない原因となる可能性がある問題を特定します。 これらの問題は、Visual Studio**エラー一覧**に表示されます。
 
- モデルを検証するには、BDC デザイナーのショートカット メニューを開き、して**検証**です。 表示されるモデルにエラーが含まれている場合、**エラー一覧**します。 リストにエラーをダブルクリックしてエラーが発生したコードにカーソルをすばやく移動できます。 代わりに、選択することができます、 **F8**または**Shift**+**F8**前方または後方の一覧でエラーの手順を繰り返しキー。
+ モデルを検証するには、BDC デザイナーのショートカットメニューを開き、 **[検証]** をクリックします。 モデルにエラーが含まれている場合は、**エラー一覧**に表示されます。 エラーが含まれているコードにカーソルをすばやく移動するには、一覧のエラーをダブルクリックします。 別の方法として、 **f8**キーまたは Shift キーを押し+**f8**キーを繰り返し押して、一覧のエラーを順方向または逆方向に**移動**することもできます。
 
- 検証エラーは、何らかの方法でモデルのルールに違反しているときに発生します。 たとえば場合、 **IsCollection**型記述子のプロパティに設定されて**true**が子の型記述子がないので、検証エラーが表示されます。 Visual Studio に表示されるいくつかのエラーを理解する BDC モデルのルールを参照する必要があります**エラー一覧**します。 BDC モデルのルールの詳細については、次を参照してください。 [BDCMetadata スキーマ](http://go.microsoft.com/fwlink/?LinkID=169275)します。
+ 検証エラーは、何らかの方法でモデルのルールに違反した場合に発生する可能性があります。 たとえば、型記述子の**IsCollection**プロパティが**true**に設定されていても、子の型記述子が存在しない場合、検証エラーが表示されます。 場合によっては、Visual Studio**エラー一覧**に表示されるいくつかのエラーを理解するために、BDC モデルの規則を参照する必要があります。 BDC モデルのルールの詳細については、「 [BDCMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))」を参照してください。
 
-## <a name="debug-the-solution-that-contains-the-model"></a>モデルを含むソリューションをデバッグします。
- Visual Studio 内のコードをデバッグする場合と、コードをデバッグすることができます。 コードをデバッグするには、任意の場所、コードにブレークポイントを設定し、デバッガーを起動します。 Visual Studio では、SharePoint サイトを開きます。 SharePoint では、リストや、ビジネス データを使用する Web パーツを作成します。 次に、ステップ、コード実行することができます。 SharePoint プロジェクトのデバッグの詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。
+## <a name="debug-the-solution-that-contains-the-model"></a>モデルを含むソリューションをデバッグする
+ Visual Studio でコードをデバッグするのと同じように、コードをデバッグできます。 コードをデバッグするには、コード内の任意の場所にブレークポイントを設定し、デバッガーを起動します。 SharePoint サイトが開きます。 SharePoint で、ビジネスデータを使用するリストまたは Web パーツを作成します。 次に、コードをステップ実行できます。 SharePoint プロジェクトのデバッグの詳細については、「 [sharepoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」を参照してください。
 
- プロジェクトに追加するカスタム アセンブリのコードをデバッグすることもできます。 ただし、カスタム アセンブリ内のコードをデバッグするには、ソリューション パッケージにアセンブリを追加する必要があります。 詳細については、「[方法 :追加およびその他のアセンブリを削除](../sharepoint/how-to-add-and-remove-additional-assemblies.md)します。
+ また、プロジェクトに追加するカスタムアセンブリのコードをデバッグすることもできます。 ただし、カスタムアセンブリ内のコードをデバッグするには、ソリューションパッケージにアセンブリを追加する必要があります。 詳細については、「[方法: 追加のアセンブリを追加および削除](../sharepoint/how-to-add-and-remove-additional-assemblies.md)する」を参照してください。
 
- カスタム アセンブリをプロジェクトに追加する方法の詳細については、次を参照してください。[方法。BDC 機能にカスタム アセンブリを含める](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)します。
+ カスタムアセンブリをプロジェクトに追加する方法の詳細については、「[方法: BDC 機能にカスタムアセンブリを含める](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)」を参照してください。
 
-### <a name="configure-bdc-security"></a>BDC のセキュリティを構成します。
- ソリューションをデバッグする前に、SharePoint のセキュリティ設定を変更する必要があります。 これらの設定を変更するには、ビジネス データ接続サービス アプリケーションで SharePoint 2010 サーバーの全体管理 Web サイトを開きます。 **メタデータ ストアのアクセス許可を設定** ダイアログ ボックスでは、ユーザー アカウントを追加し、次のオプションのいずれかを選択します。
+### <a name="configure-bdc-security"></a>BDC のセキュリティを構成する
+ ソリューションをデバッグする前に、SharePoint でセキュリティ設定を変更することが必要になる場合があります。 これらの設定を変更するには、SharePoint 2010 サーバーの全体管理 Web サイトでビジネスデータ接続サービスアプリケーションを開きます。 **[メタデータストアのアクセス許可の設定]** ダイアログボックスで、ユーザーアカウントを追加し、次のいずれかのオプションを選択します。
 
 |タスク|オプション|
 |----------|------------|
-|BDC サービス モデルを展開できます。|編集|
-|外部リストとを使用して Web パーツを作成するには、コンテンツ タイプで、モデル (エンティティ)。|クライアントで選択可能|
-|作成するには、読み取り、更新、およびエンティティ データを削除します。|実行|
+|モデルを BDC サービスにデプロイするには|編集|
+|モデルで外部コンテンツタイプ (エンティティ) を使用してリストを作成し、Web パーツします。|選択可能なクライアント|
+|エンティティデータの作成、読み取り、更新、および削除を行います。|実行|
 
- これらの設定の詳細については、次を参照してください。[ビジネス データ接続サービス管理](http://go.microsoft.com/fwlink/?LinkID=178883)します。
+ これらの設定の詳細については、「[ビジネスデータ接続サービスの管理](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14))」を参照してください。
 
- 個々 のモデルまたは外部コンテンツ タイプのセキュリティ アクセス許可を設定することもできます。 モデルのセキュリティ アクセス許可を設定する方法の詳細については、次を参照してください。 [BDC モデル管理](http://go.microsoft.com/fwlink/?LinkID=178884)します。 外部コンテンツ タイプのセキュリティ アクセス許可を設定する方法の詳細については、次を参照してください。[外部コンテンツ タイプを管理](http://go.microsoft.com/fwlink/?LinkID=178885)します。
+ また、個々のモデルまたは外部コンテンツタイプに対してセキュリティのアクセス許可を設定することもできます。 モデルのセキュリティアクセス許可を設定する方法の詳細については、「 [BDC モデル管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14))」を参照してください。 外部コンテンツタイプのセキュリティアクセス許可を設定する方法の詳細については、「[外部コンテンツタイプの管理](/previous-versions/office/sharepoint-server-2010/ee524076(v=office.14))」を参照してください。
 
 > [!NOTE]
-> これらの設定を使用して、ローカル SharePoint サーバーでのソリューションをデバッグします。 実稼働 SharePoint サーバーで BDC に関連するセキュリティ設定を構成する方法の詳細については、次を参照してください。 [Business Data Connectivity Services セキュリティの概要](http://go.microsoft.com/fwlink/?LinkID=178886)します。
+> ローカルの SharePoint サーバー上のソリューションをデバッグするには、これらの設定を使用します。 運用 SharePoint サーバーで BDC 関連のセキュリティ設定を構成する方法の詳細については、「[ビジネスデータ接続サービスのセキュリティの概要](/previous-versions/office/sharepoint-server-2010/ee661743(v=office.14))」を参照してください。
 
-### <a name="retract-models-that-become-corrupt"></a>破損したモデルを取り消し
- 最初に、デバッガーを起動する Visual Studio では、SharePoint にモデル全体がデプロイされます。 毎回その後、Visual Studio 展開の間で行った変更を SharePoint でモデルを更新します。
+### <a name="retract-models-that-become-corrupt"></a>破損したモデルを取り消す
+ デバッガーを初めて起動すると、Visual Studio によってモデル全体が SharePoint に配置されます。 その後は、Visual Studio によって SharePoint のモデルが更新され、デプロイの間に加えられた変更が反映されます。
 
- Visual Studio を SharePoint からモデルを完全に取り消す必要がある場合がある可能性があります。 たとえば、モデルが壊れて可能性があります。  SharePoint にモデルを再デプロイするには設定、**増分更新**にモデルのプロパティ**False**、し、デバッガーを起動します。 **増分更新**プロパティに表示されます、**プロパティ**ウィンドウ内のモデルを表すノードを選択すると、 **BDC エクスプ ローラー**します。 モデルの名前は、既定では、 **BdcModel1**します。
+ Visual Studio で SharePoint からモデルを完全に取り消すことが必要になる場合があります。 たとえば、モデルが破損している可能性があります。  モデルを SharePoint に再配置するには、モデルの "**増分更新**" プロパティを**False**に設定し、デバッガーを起動します。 **BDC エクスプローラー**でモデルを表すノードを選択すると、 **[プロパティ]** ウィンドウに **[増分更新]** プロパティが表示されます。 既定では、モデルの名前は**BdcModel1**です。
 
-### <a name="change-identifier-names-of-entities-in-the-model"></a>モデル内のエンティティの識別子の名前を変更します。
- モデルは、デプロイ後に識別子の名前を変更する場合は、配置エラーが発生する可能性があります。 設定してこのエラーを解決することはできません、**増分更新**にモデルのプロパティ**False**します。 モデルを手動で取り消すし、もう一度ソリューションをデプロイする必要があります。 詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。 設定してこのエラーを回避することができます、**増分更新**プロパティを**False**最初に、モデルをデプロイする前にします。
+### <a name="change-identifier-names-of-entities-in-the-model"></a>モデル内のエンティティの識別子名を変更する
+ モデルの配置後に識別子の名前を変更すると、デプロイエラーが発生することがあります。 このエラーを解決するには、モデルの "**増分更新**" プロパティを**False**に設定します。 モデルを手動で取り消してから、ソリューションをもう一度配置する必要があります。 詳細については、「 [SharePoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」を参照してください。 このエラーを回避するには、最初にモデルを配置する前に "**増分更新**" プロパティを**False**に設定します。
 
-## <a name="locate-documentation-for-bdc-model-elements"></a>BDC モデル要素のドキュメントを見つける
- Visual Studio では、エンティティごとに、モデルに XML 要素を追加メソッド、またはその他の項目を作成します。 要素の属性がプロパティとして表示されます、**プロパティ**ウィンドウ。 要素と属性、モデルを設計する際に Visual Studio が生成する方法については、次を参照してください。 [BDCMetadata スキーマ](http://go.microsoft.com/fwlink/?LinkID=169275)します。
+## <a name="locate-documentation-for-bdc-model-elements"></a>BDC モデル要素のドキュメントを検索する
+ Visual Studio では、作成した各エンティティ、メソッド、またはその他のアイテムのモデルに XML 要素が追加されます。 要素の属性は、 **[プロパティ]** ウィンドウにプロパティとして表示されます。 モデルの設計時に Visual Studio によって生成される要素と属性の詳細については、「 [BDCMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)|視覚的に、bdc モデルを設計するために使用できるツールについて説明します。|
-|[方法: エンティティ モデルを追加します。](../sharepoint/how-to-add-an-entity-to-a-model.md)|外部コンテンツの種類、または、エンティティ モデルを追加する方法を示します。|
-|[方法: Finder メソッドを追加します。](../sharepoint/how-to-add-a-finder-method.md)|ユーザー一覧や Web パーツでエンティティの一覧を表示できるようにするメソッドを追加する方法を示します。|
-|[方法: 特定の Finder メソッドを追加します。](../sharepoint/how-to-add-a-specific-finder-method.md)|ユーザーが特定のエンティティの詳細を表示できるようにするメソッドを追加する方法を示します。|
-|[方法: Creator メソッドを追加します。](../sharepoint/how-to-add-a-creator-method.md)|メソッドにより、リストや Web パーツから直接データ ソースにレコードを追加するユーザーを追加する方法を示します。|
-|[方法: Deleter メソッドを追加します。](../sharepoint/how-to-add-a-deleter-method.md)|メソッドにより、リストのユーザー インターフェイス (UI) または Web パーツでオプションを使用してデータ ソースからデータを削除するユーザーを追加する方法を示します。|
-|[方法: Updater メソッドを追加します。](../sharepoint/how-to-add-an-updater-method.md)|ユーザー一覧や Web パーツから直接データ ソース内のデータ レコードを変更できるようにするメソッドを追加する方法を示します。|
-|[方法: メソッドにパラメーターを追加します。](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Visual Studio でメソッドの詳細 ウィンドウを使用して、メソッドに入力パラメーターと戻り値パラメーターを追加する方法を示します。|
-|[方法: パラメーターの型記述子を定義します。](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|モデルのパラメーターのデータ型を定義する方法を示します。|
-|[方法: メソッド インスタンスを定義します。](../sharepoint/how-to-define-a-method-instance.md)|BDC を実行するメソッドのインスタンスを作成する方法を示します。|
-|[方法: Finder メソッドにフィルター記述子を追加します。](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Finder メソッドによって返されるインスタンスの数を制限するユーザーを有効にする方法を示します。|
-|[エンティティ間の関連付けの作成](../sharepoint/creating-an-association-between-entities.md)|モデルのエンティティ間のリレーションシップを定義する方法について説明します。 ビジネス データ Web パーツ、外部リスト、およびカスタム アプリケーションは、ユーザー インターフェイス (UI) でこれらのデータ リレーションシップを表示できます。|
-|[方法: エンティティ間のアソシエーションを作成します。](../sharepoint/how-to-create-an-association-between-entities.md)|モデルのエンティティ間のリレーションシップを定義する方法を示します。|
-|[チュートリアル: ビジネス データを使用して sharepoint の外部リストを作成します。](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|作成して、SharePoint の外部リストで連絡先を表示するモデルをテストする方法を説明する手順について説明します。|
-|[SharePoint ビジネス データを統合します。](../sharepoint/integrating-business-data-into-sharepoint.md)|作成して、BDC サービスのモデルのデザインの概要を示します。|
+|[BDC モデルのデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)|BDC のモデルを視覚的に設計するために使用できるツールについて説明します。|
+|[方法: モデルにエンティティを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)|外部コンテンツの種類 (エンティティ) をモデルに追加する方法について説明します。|
+|[方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)|ユーザーがリストまたは Web パーツのエンティティの一覧を表示できるようにするメソッドを追加する方法について説明します。|
+|[方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)|特定のエンティティの詳細をユーザーが表示できるようにするメソッドを追加する方法について説明します。|
+|[方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)|ユーザーがリストまたは Web パーツから直接データソースにレコードを追加できるようにするメソッドを追加する方法について説明します。|
+|[方法: 削除子メソッドを追加する](../sharepoint/how-to-add-a-deleter-method.md)|ユーザーがリストまたは Web パーツのユーザーインターフェイス (UI) のオプションを使用してデータソースからデータを削除できるようにするメソッドを追加する方法について説明します。|
+|[方法: Updater メソッドを追加する](../sharepoint/how-to-add-an-updater-method.md)|ユーザーがデータソースのデータレコードをリストまたは Web パーツから直接変更できるようにするメソッドを追加する方法について説明します。|
+|[方法: メソッドにパラメーターを追加する](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Visual Studio の [メソッドの詳細] ウィンドウを使用して、入力パラメーターと戻りパラメーターをメソッドに追加する方法について説明します。|
+|[方法: パラメーターの型記述子を定義する](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|モデルでパラメーターのデータ型を定義する方法について説明します。|
+|[方法: メソッドインスタンスを定義する](../sharepoint/how-to-define-a-method-instance.md)|BDC で実行されるメソッドのインスタンスを作成する方法について説明します。|
+|[方法: Finder メソッドにフィルター記述子を追加する](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Finder メソッドによって返されるインスタンスの数をユーザーが制限できるようにする方法について説明します。|
+|[エンティティ間の関連付けの作成](../sharepoint/creating-an-association-between-entities.md)|モデル内のエンティティ間のリレーションシップを定義する方法について説明します。 ビジネスデータ Web パーツ、外部リスト、およびカスタムアプリケーションでは、これらのデータリレーションシップをユーザーインターフェイス (UI) に表示できます。|
+|[方法: エンティティ間の関連付けを作成する](../sharepoint/how-to-create-an-association-between-entities.md)|モデル内のエンティティ間のリレーションシップを定義する方法について説明します。|
+|[チュートリアル: ビジネスデータを使用して SharePoint の外部リストをするする](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|SharePoint 外部リストに連絡先を表示するモデルを作成してテストする方法について、手順を追って説明します。|
+|[SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)|BDC サービスのモデルの作成と設計の概要について説明します。|

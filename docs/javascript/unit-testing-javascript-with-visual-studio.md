@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787973"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888632"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
 
 Node.js Tools For Visual Studio を使用すると、いくつかの一般的な JavaScript フレームワークを使用して、単体テストを記述して実行できます。コマンド プロンプトに切り替える必要はありません。
 
 次のフレームワークがサポートされます。
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))

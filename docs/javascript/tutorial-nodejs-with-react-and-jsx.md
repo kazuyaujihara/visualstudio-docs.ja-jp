@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589151"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888674"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -390,7 +390,7 @@ Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (�
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。 **[デバッグ]** ツールバーから **[ブラウザーの選択...]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)を参照してください。
+    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。 **[デバッグ]** ツールバーから **[ブラウザーの選択...]** を選択し、 **[追加]** を選択した後、 **[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](/visualstudio/releases/2019/release-notes-preview)を参照してください。
 
     ::: moniker-end
 

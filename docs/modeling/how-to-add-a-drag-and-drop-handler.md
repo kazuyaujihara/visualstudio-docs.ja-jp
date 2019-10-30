@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d20436eb7efb1d3f4212e8fc3a3ed9a3234c4114
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667226"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985096"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-このメソッドは、マウスポインターがこの図形または図の上にあるときにユーザーがマウスボタンを離すと呼び出されます。これは、以前に `None` 以外の値に `e.Effect` 設定されて `OnDragOver(DiagramDragEventArgs e)` た場合に呼び出されます。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-このメソッドは、マウスポインターがこの図形または図の上にあるときにユーザーがマウスボタンを離すと呼び出されます。これは、以前に `None`以外の値に `e.Effect` 設定されて `OnDragOver(DiagramDragEventArgs e)` た場合に呼び出されます。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -146,7 +146,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
     }
     ```
 
-     UML 図形を受け入れるには、テストを実行して UML 図形クラスの GUID を決定します。 通常、どの図でも要素の種類には複数あることに注意してください。 また、DSL または UML 図からドラッグするオブジェクトは図形であり、モデル要素ではありません。
+     UML 図形を受け入れるには、実験で UML 図形クラスの Guid を確認します。 通常、どの図でも要素の種類には複数あることに注意してください。 また、DSL または UML 図からドラッグするオブジェクトは図形であり、モデル要素ではありません。
 
 `DiagramDragEventArgs` には、現在のマウス ポインターの位置およびユーザーが CTRL、ALT、SHIFT のうちどのキーを押したのかを示すプロパティも含まれます。
 
@@ -160,11 +160,9 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ソース DSL に Visual Studio モデルバスでアクセスできるようにします。
 
-1. Visual Studio モデル バス拡張機能をまだインストールしていない場合はダウンロードしてインストールします。 詳細については、「[視覚化とモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=185579)」を参照してください。
+1. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン画面を右クリックし、 **[Modelbus の有効化]** をクリックします。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
 
-2. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン画面を右クリックし、 **[Modelbus の有効化]** をクリックします。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
-
-3. **[すべてのテンプレートの変換]** をクリックし、ソリューションをリビルドします。
+2. **[すべてのテンプレートの変換]** をクリックし、ソリューションをリビルドします。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>ソース DSL からオブジェクトを送信するには
 

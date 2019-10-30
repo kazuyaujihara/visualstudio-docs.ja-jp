@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745319"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910325"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>高性能コンピューティング (HPC) クラスターでのプロファイリング
 
@@ -34,7 +34,7 @@ Visual Studio のプロファイリング ツールのサンプリング メソ�
 
 HPC 計算ノード上でプロファイリングを実行する前に、次の操作を実行する必要があります。
 
-- Visual Studio と同じコンピューター上に Microsoft HPC Pack 2008 をインストールします。 HPC クラスターの一部を構成するコンピューターである必要はありません。 [Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkID=177414)で HPC Pack をインストールできます。
+- Visual Studio と同じコンピューター上に Microsoft HPC Pack 2008 をインストールします。 HPC クラスターの一部を構成するコンピューターである必要はありません。 [Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=4812)で HPC Pack をインストールできます。
 
 - .NET Framework 4 とスタンドアロン バージョンのプロファイル ツールを HPC 計算ノードにインストールします。 Visual Studio のインストール メディアで、.NET Framework とスタンドアロン プロファイラーの両方のインストール プログラムを入手できます。 **メモ** .NET Framework をインストールし終えたら、プロファイル ツールをインストールする前に、計算ノードを再起動する必要があります。
 

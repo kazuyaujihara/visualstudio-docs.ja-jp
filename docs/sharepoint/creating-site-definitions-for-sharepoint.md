@@ -1,5 +1,5 @@
 ---
-title: For SharePoint のサイト定義の作成 |Microsoft Docs
+title: SharePoint のサイト定義を作成する |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,50 +13,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a75b7143412d360a7663e7cf94a1244d66d15a2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580976"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984524"
 ---
-# <a name="create-site-definitions-for-sharepoint"></a>SharePoint のサイト定義を作成します。
-  SharePoint サイト定義プロジェクト[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を作成することができます、*サイト定義*、新しい SharePoint サイトの基盤として機能します。 だけでなく、これらの定義は、SharePoint サイトも既定の内容と機能の動作と外観を決定します。 定義では、事前構成済みのリスト、コンテンツの種類、イベント レシーバー、イメージ、およびその他のアイテムを配置できます。 SharePoint には、たとえば、ブログなどのいくつかのサイト定義が含まれます。 ブログ サイト定義に基づいてサイトを作成するときに、サイトには、リスト、Web パーツ、およびブログ サイトを必要とするその他の項目が含まれています。
+# <a name="create-site-definitions-for-sharepoint"></a>SharePoint のサイト定義の作成
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の SharePoint サイト定義プロジェクトを使用すると、新しい SharePoint サイトの基盤として機能する*サイト定義*を作成できます。 これらの定義では、SharePoint サイトの外観と動作だけでなく、既定のコンテンツと機能も決定されます。 定義では、事前に構成されたリスト、コンテンツタイプ、イベントレシーバー、画像、およびその他のアイテムを含めることができます。 SharePoint には、たとえば、ブログなどのいくつかのサイト定義が含まれています。 ブログサイト定義に基づいてサイトを作成する場合、サイトには、ブログサイトに必要なリスト、Web パーツ、およびその他のアイテムが含まれています。
 
- サイト定義の詳細については、次を参照してください。[サイト テンプレートと定義](http://go.microsoft.com/fwlink/?LinkId=179134)します。
+ サイト定義の詳細については、「[サイトテンプレートと定義](/previous-versions/office/developer/sharepoint-2010/ms434313(v=office.14))」を参照してください。
 
 ## <a name="site-definition-projects"></a>サイト定義プロジェクト
- サイト定義プロジェクトで[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint サイトに必要な基本的なファイルのみを提供する; 既定の機能は提供されません。 ファイルとする機能を提供するコンテンツを追加する必要があります。 作成に必要なファイルを追加して、手動でサイトを構築できます。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] のサイト定義プロジェクトは、SharePoint サイトに必要な基本的なファイルのみを提供します。既定の機能は用意されていません。 必要な機能を提供するために、ファイルとコンテンツを追加する必要があります。 必要なファイルを作成して追加することによって、サイトを手動でビルドできます。
 
-## <a name="feature-stapling"></a>ホチキス止め機能
- サイト定義の作成の利点の 1 つ[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]が自動的に使用する*ホチキス止め機能*します。 ホチキス止めの機能は、機能をサイト定義自体でその機能を埋め込む代わりのサイト定義にアタッチします。 これを行うには、元のサイト定義を変更することがなく、サイト定義を使用して作成されたすべてのサイトに機能を追加することができます。 詳細については、次を参照してください。[ホチキス止め機能](http://go.microsoft.com/fwlink/?LinkID=119283)します。
+## <a name="feature-stapling"></a>機能のホチキス止め
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] でサイト定義を作成する利点の1つは、*機能のホチキス止め*を自動的に使用することです。 機能のホチキス止めは、サイト定義自体に機能を埋め込むのではなく、サイト定義に機能をアタッチします。 これにより、元のサイト定義を変更せずに、サイト定義を使用して作成されたサイトに機能を追加できます。 詳細については、「[機能のホチキス止め](/previous-versions/office/developer/sharepoint-2007/bb861862(v=office.12))」を参照してください。
 
-## <a name="site-definition-project-components"></a>サイト定義プロジェクトのコンポーネント
- 次の既定のファイルを追加サイト定義ソリューションを作成するときにその**SiteDefinition**ノード。
+## <a name="site-definition-project-components"></a>サイト定義プロジェクトコンポーネント
+ サイト定義ソリューションを作成すると、次の既定のファイルが**Sitedefinition**ノードに追加されます。
 
 |ファイル名|説明|
 |---------------|-----------------|
-|*default.aspx*|新しい SharePoint サイトの既定の ASPX ホーム ページ。|
-|*onet.xml*|新しいサイトの構成のコンポーネント、サイト定義のテンプレート、および既定の動作を指定します。 これらの設定は、コンテンツの種類を有効になっている既定のリスト ビューで、ドキュメント テンプレートのファイルなどの属性を含めるし、Web サイトに含まれているパーツ。 既定で、`Modules`セクションには、SharePoint サイトとその構成に追加するファイルが一覧表示されます。|
-|*webtemp_\<SiteDefinitionName>.xml*|表示されるサイト定義構成を指定します、**テンプレートの選択**のセクション、**新しい SharePoint サイト**ページ。|
+|*default.aspx*|新しい SharePoint サイトの既定の ASPX ホームページ。|
+|*onet.xml*|新しいサイトの構成、サイト定義テンプレートのコンポーネント、および既定の動作を指定します。 これらの設定には、有効になっているコンテンツの種類、既定のリストビュー、ドキュメントテンプレートファイル、およびサイトに含まれる Web パーツなどの属性を含めることができます。 既定では、[`Modules`] セクションには、SharePoint サイトに追加するファイルとその構成方法が表示されます。|
+|*webtemp_\<SiteDefinitionName > .xml*|**[新しい SharePoint サイト]** ページの **[テンプレートの選択]** セクションに表示されるサイト定義の構成を指定します。|
 
- 既定では、すべてのサイト定義が格納されている、 *\<ドライブ: > \Program Files\Common \microsoft shared \web Server Extensions\14\TEMPLATE\SiteTemplates*フォルダー。 各サイトの定義が、それぞれのサブフォルダーです。
+ 既定では、すべてのサイト定義は、 *\<drive: >/Files\Common are Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*フォルダーに格納されます。 各サイト定義には、独自のサブフォルダーがあります。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[チュートリアル: 基本的なサイト定義プロジェクトを作成します。](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|基本的なサイト定義プロジェクトの作成を追って[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。|
-|[方法: カスタム サイト定義と構成を作成します。](http://go.microsoft.com/fwlink/?LinkId=183309)|既存のサイト定義をコピーして、コピーを変更し、SharePoint でカスタム サイト定義を作成する方法について説明します。|
-|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|使用可能なサイト定義を指定する元のファイルについて説明します、**テンプレートの選択**のセクション、**新しい SharePoint サイト**ページ。|
-|[SharePoint ソリューションをローカライズします。](../sharepoint/localizing-sharepoint-solutions.md)|グローバルに使用できる、SharePoint ソリューションを準備する方法について説明します。|
-|[For SharePoint の web パーツを作成します。](../sharepoint/creating-web-parts-for-sharepoint.md)|ユーザーが変更できる SharePoint ページの部分を作成する方法について説明します。|
-|[Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成します。](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|アプリケーション ページと Web パーツで実行される再利用可能なコントロールを作成する方法について説明します。|
-|[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|プロジェクトで Web ページを開くときに表示されるデザイナーを使用する方法について説明します。|
-|[ASP.NET Web ページの概要](http://go.microsoft.com/fwlink/?LinkId=178726)|構造についての一般的な情報を提供します[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]Web ページ、ページの処理方法[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]、どのように[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]ページが XHTML 標準に準拠しているマークアップを表示します。|
-|[ASP.NET Web ページの構文](http://go.microsoft.com/fwlink/?LinkId=178727)|ASP.NET ページを構成するマークアップ要素について説明します。|
-|[ASP.NET Web Pages のプログラミング](http://go.microsoft.com/fwlink/?LinkId=178728)|内のイベント ハンドラーを作成する方法についての情報を提供します[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]ページとクライアント スクリプトを操作する方法。|
-|[Windows SharePoint Services でのプログラミング](http://go.microsoft.com/fwlink/?LinkId=178729)|提供されているマネージ オブジェクト モデルを使用する方法について説明します[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]します。|
+|[チュートリアル: 基本サイト定義プロジェクトの作成](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で基本的なサイト定義プロジェクトを作成する手順について説明します。|
+|[方法: カスタムサイト定義と構成を作成する](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|既存のサイト定義をコピーし、そのコピーを変更することによって、SharePoint でカスタムサイト定義を作成する方法について説明します。|
+|[*WebTemp*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|**[新しい SharePoint サイト]** ページの **[テンプレートの選択]** セクションで使用できるサイト定義を指定する元のファイルについて説明します。|
+|[SharePoint ソリューションのローカライズ](../sharepoint/localizing-sharepoint-solutions.md)|SharePoint ソリューションをグローバルに使用できるように準備する方法について説明します。|
+|[SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)|SharePoint ページの一部を作成して、ユーザーが変更できるようにする方法について説明します。|
+|[Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|アプリケーションページおよび Web パーツで実行される再利用可能なコントロールを作成する方法について説明します。|
+|[Visual Web Developer](/previous-versions/visualstudio/visual-studio-2010/ms178093(v=vs.100))|プロジェクトで Web ページを開いたときに表示されるデザイナーの使用方法について説明します。|
+|[ASP.NET Web ページの概要](/previous-versions/aspnet/428509ah(v=vs.100))|[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] の Web ページの構造、[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]によるページの処理方法、および XHTML 標準に準拠したマークアップを [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ページで表示する方法に関する一般的な情報を提供します。|
+|[ASP.NET Web ページの構文](/previous-versions/aspnet/k33801s3(v=vs.100))|ASP.NET ページを構成するマークアップ要素について説明します。|
+|[プログラミング ASP.NET Web ページ](/previous-versions/aspnet/0yt4zca8(v=vs.100))|[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ページでイベントハンドラーを作成する方法と、クライアントスクリプトを使用する方法について説明します。|
+|[Windows SharePoint Services でのプログラミング](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]に用意されているマネージオブジェクトモデルの使用方法について説明します。|
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: '方法: リボンのタブの位置を変更します。'
+title: '方法: リボンのタブの位置を変更する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,53 +12,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826733"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985988"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>方法: リボンのタブの位置を変更します。
-  使用して、リボンのカスタム タブの順序を変更することができます、**タブ コレクション エディター**します。 リボン上の組み込みタブの前後には、カスタム タブを配置することができます。 組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、**データ**タブは、Excel の組み込みタブ。
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>方法: リボンのタブの位置を変更する
+  リボンのカスタムタブの順序は、**タブコレクションエディター**を使用して変更できます。 リボンの組み込みタブの前または後にカスタムタブを配置できます。 組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、 **[データ]** タブは Excel の組み込みタブです。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>リボンのタブの順序を変更するには
 
-1. リボン コード ファイルを選択します (*.vb*または *.cs*ファイル) で**ソリューション エクスプ ローラー**します。
+1. **ソリューションエクスプローラー**でリボンコードファイル ( *.vb*または *.cs*ファイル) を選択します。
 
-2. **ビュー**  メニューのをクリックして**デザイナー**します。
+2. **[表示]** メニューの **[デザイナー]** をクリックします。
 
-3. リボン デザイナーを右クリックし、をクリックし、**プロパティ**します。
+3. リボンデザイナーを右クリックし、 **[プロパティ]** をクリックします。
 
-4. **プロパティ**ウィンドウで、**タブ**プロパティ、省略記号ボタンをクリックし、(![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイルデザイナー楕円"))。
+4. **[プロパティ]** ウィンドウで、 **[タブ]** プロパティを選択し、省略記号ボタン (![ASP.NET mobile designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
 
-     **タブ コレクション エディター**が表示されます。
+     **タブコレクションエディター**が表示されます。
 
-5. **タブ コレクション エディター**の**メンバー**一覧で、移動またはをクリックし、下向きの矢印をタブ オーダーを変更するタブを選択します。
+5. **タブコレクションエディター**の **[メンバー]** ボックスの一覧で、移動するタブを選択し、上矢印または下矢印をクリックしてタブオーダーを変更します。
 
-### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>リボン上の組み込みタブの前後にタブを配置するには
+### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>リボン上の組み込みタブの前または後にタブを配置するには
 
-1. リボン デザイナーでは、カスタム タブを選択します。
+1. リボンデザイナーで、[カスタム] タブを選択します。
 
-2. **プロパティ**ウィンドウで、展開、 **ControlId**プロパティ、いることを確認しの値、 **[controlidtype]** プロパティに設定されて**カスタム**.
+2. **[プロパティ]** ウィンドウで、 **[ControlId]** プロパティを展開し、制御 **[lidtype]** プロパティの値が "**カスタム**" に設定されていることを確認します。
 
-3. **プロパティ**ウィンドウで、展開、**位置**プロパティ。
+3. **[プロパティ]** ウィンドウで、 **[位置]** プロパティを展開します。
 
-4. 設定、 **PositionType**プロパティを適切な値。
+4. **Positiontype**プロパティを適切な値に設定します。
 
-    - **BeforeOfficeId**組み込みタブを指定する前に、グループを配置します。
+    - **Beforeofficeid**は、指定された組み込みタブの前にグループを配置します。
 
-    - **AfterOfficeId**指定の組み込みタブの後、グループに配置します。
+    - **Afterofficeid**は、指定された組み込みタブの後にグループを配置します。
 
-5. 設定、 **OfficeId**プロパティを組み込みタブのコントロール ID。
+5. **Officeid**プロパティを組み込みタブのコントロール ID に設定します。
 
-     コントロール Id の一覧は、次を参照してください。 [Office 2010 ヘルプ ファイル。Office fluent ユーザー インターフェイスのコントロール id](http://go.microsoft.com/fwlink/?LinkID=181052)します。
+     コントロール Id の一覧については、「 [office 2010 のヘルプファイル: office fluent ユーザーインターフェイスコントロールの識別子](https://www.microsoft.com/download/details.aspx?id=6627)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
 - [リボン デザイナー](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
-- [チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [チュートリアル: リボン XML を使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [リボン XML](../vsto/ribbon-xml.md)
+- [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

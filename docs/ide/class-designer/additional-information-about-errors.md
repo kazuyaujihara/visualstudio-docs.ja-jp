@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631912"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919055"
 ---
 # <a name="class-designer-errors"></a>クラス デザイナーのエラー
 
@@ -44,7 +44,7 @@ ms.locfileid: "72631912"
 以下のリソースで、その他のエラーや警告に関して役立つ情報を参照できます。
 
 - 「[Visual C++ コードの使用](working-with-visual-cpp-code.md)」には、クラス ダイアグラムでの C++ の表示に関するトラブルシューティング情報が含まれます。
-- [Visual Studio クラス デザイナー フォーラム](http://go.microsoft.com/fwlink/?LinkId=160754)は、**クラス デザイナー**に関する質問のためのフォーラムです。
+- [Visual Studio クラス デザイナー フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)は、**クラス デザイナー**に関する質問のためのフォーラムです。
 
 ## <a name="see-also"></a>関連項目
 

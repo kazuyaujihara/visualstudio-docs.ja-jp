@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aca6c91724e26059011c1044c9a2d501c7995bc5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255834"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986168"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office ソリューションのコントロールにデータをバインドする
   Microsoft Office Word 文書または Microsoft Office Excel ワークシート上の Windows フォーム コントロールや *ホスト コントロール* を、データ ソースにバインドできます。この場合、コントロールには自動的にデータが表示されます。 アプリケーション レベルのプロジェクトとドキュメント レベルのプロジェクトの両方で、コントロールにデータをバインドできます。
@@ -33,8 +33,6 @@ ms.locfileid: "71255834"
  ホスト コントロールは、Word や Excel のオブジェクト モデルにあるオブジェクトを拡張します。たとえば、Word のコンテンツ コントロールや Excel の名前付き範囲が挙げられます。 詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
  Windows フォーム コントロールとホスト コントロールはいずれも Windows フォームのデータ バインディング モデルを使用します。このモデルでは、データセットやデータ テーブルなどのデータ ソースに対して *単純データ バインディング* と *複合データ バインディング* の両方がサポートされます。 Windows フォームでのデータバインディングモデルの詳細については、「[データバインドと Windows フォーム](/dotnet/framework/winforms/data-binding-and-windows-forms)」を参照してください。
-
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、操作方法を参照してください。Excel でデータベースのデータを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130287)。
 
 ## <a name="simple-data-binding"></a>単純データ バインディング
  単純データ バインディングは、コントロール プロパティが、データ テーブル内の値など、単一のデータ要素にバインドされる場合に存在します。 たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールは、データセット内のフィールドにバインドできる <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> プロパティを持ちます。 データセット内のフィールドが変更されると、名前付き範囲内の値も変更されます。 <xref:Microsoft.Office.Tools.Word.XMLNodes> コントロールを除くすべてのホスト コントロールが、単純データ バインディングをサポートしています。 <xref:Microsoft.Office.Tools.Word.XMLNodes> コントロールはコレクションであるため、データ バインディングをサポートしません。
@@ -46,7 +44,7 @@ ms.locfileid: "71255834"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
 
- 単純なデータバインディングを示すチュートリアルについ[ては、「チュートリアル:ドキュメントレベル](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)のプロジェクトでの単純なデータバインディングと[チュートリアル:Vsto アドインプロジェクトの vsto アドインプロジェクト](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)の単純なデータバインディング。
+ 単純なデータバインディングを示すチュートリアルについては、「チュートリアル: ドキュメントレベルのプロジェクトの[ドキュメントレベルのプロジェクトの単純なデータバインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)」と「チュートリアル: vsto アドインプロジェクトの[vsto アドインプロジェクトの単純なデータバインディング](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)」を参照してください。
 
 ## <a name="complex-data-binding"></a>複合データ バインディング
  複合データ バインディングは、コントロール プロパティが、データ テーブル内の複数の列など、複数のデータ要素にバインドされる場合に存在します。 Excel の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは、複合データ バインディングをサポートする唯一のホスト コントロールです。 ただし、複合データ バインディングをサポートする Windows フォーム コントロールが数多くあります ( <xref:System.Windows.Forms.DataGridView> コントロールなど)。
@@ -58,7 +56,7 @@ ms.locfileid: "71255834"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
 
- 複雑なデータバインディングを示すチュートリアルについ[ては、「チュートリアル:ドキュメントレベルのプロジェクトのドキュメントレベルのプロジェクト](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)での複合データバインディングと[チュートリアル:Vsto アドインプロジェクトの vsto アドインプロジェクト](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)での複合データバインディング。
+ 複雑なデータバインディングを示すチュートリアルについては、「チュートリアル: ドキュメントレベルのプロジェクトの[ドキュメントレベルのプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)」と「チュートリアル: vsto アドインプロジェクトの[vsto アドインプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)」を参照してください。
 
 ## <a name="display-data-in-documents-and-workbooks"></a>ドキュメントとブックにデータを表示する
  ドキュメント レベルのプロジェクトでは、Windows フォームで使用する場合と同じように **[データ ソース]** ウィンドウを使用して、文書やブックにデータ バインド コントロールを簡単に追加できます。 **[データソース]** ウィンドウの使用方法の詳細については、「 [Visual Studio でデータに Windows フォームコントロールをバインドする](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)」および「[新しいデータソースを追加](../data-tools/add-new-data-sources.md)する」を参照してください。
@@ -73,20 +71,20 @@ ms.locfileid: "71255834"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>デザイン時にドキュメントレベルのプロジェクトのデータをバインドする
  以下のトピックでは、デザイン時にデータをバインドする例を示しています。
 
-- [方法: データベースのデータをワークシートに設定する](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [方法: データベースのデータをワークシートに読み込む](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
 - [方法: データベースのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
-- [方法: オブジェクトからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [方法: オブジェクトのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
-- [方法: サービスからのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [方法: サービスのデータをドキュメントに読み込む](../vsto/how-to-populate-documents-with-data-from-services.md)
 
 - [方法: ワークシート内のデータベースレコードをスクロールする](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>VSTO アドインプロジェクトでのデータのバインド
  VSTO アドイン プロジェクトでは、コントロールを追加できるのは実行時だけです。 以下のトピックでは、実行時にデータをバインドする例を示しています。
 
-- [チュートリアル: VSTO アドインプロジェクトでの単純なデータバインディング](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [チュートリアル: VSTO アドインプロジェクトでの単純データバインディング](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
 - [チュートリアル: VSTO アドインプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
@@ -97,7 +95,7 @@ ms.locfileid: "71255834"
 
  <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールを使用して複合データ バインディングを実行するときは、メモリ内データ ソースを明示的に更新する必要はありません。 この場合には、コードを追加しなくても、メモリ内データ ソースに変更が自動的に送信されます。
 
- 詳細については、「[方法 :ホストコントロール](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)のデータを使用してデータソースを更新します。
+ 詳細については、「[方法: ホストコントロールのデータを使用してデータソースを更新](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [データバインディングと Windows フォーム](/dotnet/framework/winforms/data-binding-and-windows-forms)

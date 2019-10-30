@@ -1,5 +1,5 @@
 ﻿---
-title: プロジェクトのテンプレート、第 2 部でのサイト列プロジェクト項目を作成します。
+title: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 9e53cc877a4e462a458f3bfd455ed222c3b2e17b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401102"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984669"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>チュートリアル: プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成します。
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)
   SharePoint プロジェクト項目のカスタム種類を定義し、Visual Studio でその種類をプロジェクト テンプレートと関連付けてから、テンプレート用のウィザードを用意することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクト項目を含む新しいプロジェクトを作成するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
 
- このチュートリアルでは、」に示した Site Column プロジェクト テンプレートにウィザードを追加[チュートリアル。プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)します。 ウィザードが (その基本型とグループ) など、サイト内の列に関する情報を収集およびにこの情報を追加します。 ユーザーが Site Column プロジェクトを作成するとき、 *Elements.xml*で新しいプロジェクト ファイル。
+ このチュートリアルでは、「[チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)」で説明されている [サイト列] プロジェクトテンプレートにウィザードを追加します。 ユーザーがサイト列プロジェクトを作成すると、ウィザードはサイトの列 (基本型やグループなど) に関する情報を収集し、この情報を新しいプロジェクトの*要素 .xml*ファイルに追加します。
 
  このチュートリアルでは、次のタスクについて説明します。
 
@@ -29,7 +29,7 @@ ms.locfileid: "66401102"
 
 - Visual Studio の SharePoint プロジェクト用の組み込みウィザードと似たカスタム ウィザードの UI を定義します。
 
-- 2 つ作成*SharePoint コマンド*ウィザードの実行中にローカル SharePoint サイトへの呼び出しに使用します。 SharePoint コマンドは、SharePoint サーバー オブジェクト モデルの API を呼び出すために Visual Studio 拡張機能で使用できるメソッドです。 詳細については、次を参照してください。 [SharePoint オブジェクト モデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
+- ウィザードの実行中にローカル SharePoint サイトを呼び出すために使用される2つの*sharepoint コマンド*を作成する。 SharePoint コマンドは、SharePoint サーバー オブジェクト モデルの API を呼び出すために Visual Studio 拡張機能で使用できるメソッドです。 詳細については、「 [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)」を参照してください。
 
 - 置き換え可能パラメーターを使用して、ウィザードで収集したデータで SharePoint プロジェクト ファイルを初期化します。
 
@@ -38,24 +38,24 @@ ms.locfileid: "66401102"
 - ウィザードをデバッグおよびテストします。
 
 > [!NOTE]
-> 一連のサンプル ワークフローは、次を参照してください。 [SharePoint workflow のサンプル](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)します。
+> 一連のサンプルワークフローについては、「 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルを実行する必要がありますまず SiteColumnProjectItem ソリューション実行して作成した[チュートリアル。プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)します。
+## <a name="prerequisites"></a>必要条件
+ このチュートリアルを実行するには、まず「[チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)」](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)を完了して、SiteColumnProjectItem ソリューションを作成する必要があります。
 
  また、このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
 
 - サポート対象エディションの Windows、SharePoint、Visual Studio。
 
-- Visual Studio SDK。 このチュートリアルでは、 **VSIX プロジェクト**sdk プロジェクト アイテムを配置するための VSIX パッケージを作成するテンプレート。 詳細については、次を参照してください。 [Visual Studio での SharePoint ツールを拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)します。
+- Visual Studio SDK。 このチュートリアルでは、SDK の**Vsix プロジェクト**テンプレートを使用して、プロジェクト項目を配置する vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- Visual Studio のプロジェクトおよび項目テンプレート用のウィザード。 詳細については、「[方法 :プロジェクト テンプレートにウィザードを使用して](../extensibility/how-to-use-wizards-with-project-templates.md)と<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>インターフェイス。
+- Visual Studio のプロジェクトおよび項目テンプレート用のウィザード。 詳細については、「[方法: プロジェクトテンプレート](../extensibility/how-to-use-wizards-with-project-templates.md)と <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスを使用してウィザードを使用する」を参照してください。
 
-- SharePoint のサイト内の列。 詳細については、次を参照してください。[列](http://go.microsoft.com/fwlink/?LinkId=183547)します。
+- SharePoint のサイト内の列。 詳細については、「[列](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))」を参照してください。
 
-## <a name="understand-the-wizard-components"></a>ウィザードのコンポーネントを理解します。
+## <a name="understand-the-wizard-components"></a>ウィザードのコンポーネントについて
  このチュートリアルで説明されているウィザードには、いくつかのコンポーネントが含まれています。 次の表は、これらのコンポーネントについての説明です。
 
 |コンポーネント|説明|
@@ -66,8 +66,8 @@ ms.locfileid: "66401102"
 |プロジェクト署名マネージャー|これは、`ProjectSigningManager` という名前のヘルパー クラスであり、新しい各プロジェクト インスタンスで新しい key.snk ファイルを作成するためにウィザード実装によって使用されます。|
 |SharePoint コマンド|これらは、ウィザードの実行中にローカル SharePoint サイトへの呼び出しを行うためにウィザード データ モデルによって使用されるメソッドです。 SharePoint コマンドは .NET Framework 3.5 をターゲットとする必要があるため、これらのコマンドは他のウィザード コードとは異なるアセンブリに実装されます。|
 
-## <a name="create-the-projects"></a>プロジェクトを作成します。
- このチュートリアルを完了するにはいくつかのプロジェクトで作成した SiteColumnProjectItem ソリューションに追加する必要があります[チュートリアル。プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):
+## <a name="create-the-projects"></a>プロジェクトを作成する
+ このチュートリアルを完了するには、「[チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (パート 1:)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)」で作成した SiteColumnProjectItem ソリューションにいくつかのプロジェクトを追加する必要があります。
 
 - WPF プロジェクト。 このプロジェクトで、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスを実装し、ウィザードの UI を定義します。
 
@@ -79,50 +79,50 @@ ms.locfileid: "66401102"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で、SiteColumnProjectItem ソリューションを開きます。
 
-2. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SiteColumnProjectItem**ソリューション ノードを選択**追加**を選び、 **の新しいプロジェクト**.
+2. **ソリューションエクスプローラー**で、 **SiteColumnProjectItem**ソリューションノードのショートカットメニューを開き、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
 
-3. 上部にある、**新しいプロジェクトの追加** ダイアログ ボックスで、ことを確認します **.NET Framework 4.5** .NET Framework のバージョンの一覧でを選択します。
+3. **[新しいプロジェクトの追加]** ダイアログボックスの上部で、.NET Framework のバージョンの一覧で **.NET Framework 4.5**が選択されていることを確認します。
 
-4. **Visual C#** ノードまたは **Visual Basic** ノードを展開し、 **Windows**ノードを選択します。
+4. **C#ビジュアル**ノードまたは **[Visual Basic]** ノードを展開し、 **[Windows]** ノードを選択します。
 
-5. プロジェクト テンプレートの一覧で選択**WPF ユーザー コントロール ライブラリ**、プロジェクトに名前を**ProjectTemplateWizard**、選択し、 **OK**ボタン。
+5. プロジェクトテンプレートの一覧で **[WPF ユーザーコントロールライブラリ]** を選択し、プロジェクトに**projecttemplatewizard**という名前を指定して、 **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **ProjectTemplateWizard**プロジェクトがソリューションに既定の UserControl1.xaml ファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 **Projecttemplatewizard**プロジェクトをソリューションに追加し、既定の UserControl1 ファイルを開きます。
 
 6. UserControl1.xaml ファイルをプロジェクトから削除します。
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>SharePoint コマンド プロジェクトを作成するには
 
-1. **ソリューション エクスプ ローラー**、SiteColumnProjectItem ソリューション ノードのショートカット メニューを開き、**追加**を選び、**新しいプロジェクト**します。
+1. **ソリューションエクスプローラー**で、SiteColumnProjectItem ソリューションノードのショートカットメニューを開き、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
 
-2. 上部にある、**新しいプロジェクトの追加** ダイアログ ボックスで、選択 **.NET Framework 3.5**で .NET Framework のバージョンの一覧。
+2. **[新しいプロジェクトの追加]** ダイアログボックスの上部にある .NET Framework のバージョンの一覧で **[.NET Framework 3.5]** を選択します。
 
-3. **Visual C#** ノードまたは **Visual Basic** ノードを展開し、 **Windows**ノードを選択します。
+3. **C#ビジュアル**ノードまたは **[Visual Basic]** ノードを展開し、 **[Windows]** ノードを選択します。
 
-4. 選択、**クラス ライブラリ**プロジェクト テンプレート、プロジェクトの名前**SharePointCommands**、選択し、 **OK**ボタン。
+4. **[クラスライブラリ]** プロジェクトテンプレートを選択し、プロジェクトに**sharepointcommands**という名前を指定して、 **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 追加、 **SharePointCommands**プロジェクトがソリューションにし、既定の Class1 コード ファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 **Sharepointcommands**プロジェクトがソリューションに追加され、既定の Class1 コードファイルが開きます。
 
 5. Class1 コード ファイルをプロジェクトから削除します。
 
-## <a name="configure-the-projects"></a>プロジェクトを構成します。
+## <a name="configure-the-projects"></a>プロジェクトを構成する
  ウィザードを作成する前に、いくつかのコード ファイルとアセンブリ参照をプロジェクトに追加する必要があります。
 
 #### <a name="to-configure-the-wizard-project"></a>ウィザード プロジェクトを構成するには
 
-1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ProjectTemplateWizard**プロジェクト ノードを選び、**プロパティ**します。
+1. **ソリューションエクスプローラー**で、 **projecttemplatewizard**プロジェクトノードのショートカットメニューを開き、 **[プロパティ]** を選択します。
 
-2. **プロジェクト デザイナー** で、Visual C＃プロジェクトの場合は **アプリケーション** タブを、Visual Basic プロジェクトの場合は **コンパイル** タブを選択します。
+2. **プロジェクトデザイナー**で、Visual Basic プロジェクトのビジュアルC#プロジェクトまたは **コンパイル** タブの アプリケーション タブを選択します。
 
 3. ターゲット フレームワークが .NET Framework 4.5 Client Profile ではなく .NET Framework 4.5 に設定されていることを確認します。
 
-     詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+     詳細については、「[方法: .NET Framework のバージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
 
-4. ショートカット メニューを開き、 **ProjectTemplateWizard**プロジェクトで、選択**追加**を選び、**新しい項目の**します。
+4. **Projecttemplatewizard**プロジェクトのショートカットメニューを開き、 **[追加]** 、 **[新しい項目]** の順に選択します。
 
-5. 選択、**ウィンドウ (WPF)** 項目でアイテムの名前を付けます**WizardWindow**、選択し、**追加**ボタンをクリックします。
+5. [**ウィンドウ (WPF)]** 項目を選択し、[アイテム**ウィザード] ウィンドウ**に名前を指定して、 **[追加]** ボタンをクリックします。
 
-6. 2 つ追加**ユーザー コントロール (WPF)** 項目をプロジェクトには、という名前を付けます**Page1**と**Page2**します。
+6. 2つの**ユーザーコントロール (WPF)** 項目をプロジェクトに追加し、 **Page1**と**Page2**という名前を指定します。
 
 7. 次の名前で 4 つのコード ファイルをプロジェクトに追加します。
 
@@ -134,9 +134,9 @@ ms.locfileid: "66401102"
 
     - CommandIds
 
-8. ショートカット メニューを開き、 **ProjectTemplateWizard**プロジェクト ノードを選び、**参照の追加**します。
+8. **Projecttemplatewizard**プロジェクトノードのショートカットメニューを開き、[参照の**追加**] を選択します。
 
-9. 展開、**アセンブリ**ノードで、選択、**拡張**ノード、し、次のアセンブリの横にあるチェック ボックスを選択。
+9. **[アセンブリ]** ノードを展開し、 **[拡張機能]** ノードを選択して、次のアセンブリの横にあるチェックボックスをオンにします。
 
     - EnvDTE
 
@@ -152,50 +152,50 @@ ms.locfileid: "66401102"
 
     - Microsoft.VisualStudio.TemplateWizardInterface
 
-10. 選択、 **OK**アセンブリをプロジェクトに追加するボタンをクリックします。
+10. **[OK** ] をクリックして、アセンブリをプロジェクトに追加します。
 
-11. **ソリューション エクスプ ローラー**下で、**参照**のフォルダー、 **ProjectTemplateWizard**プロジェクトで、選択**EnvDTE**します。
+11. **ソリューションエクスプローラー**で、 **projecttemplatewizard**プロジェクトの **[参照]** フォルダーの下にある **[EnvDTE]** を選択します。
 
-12. **プロパティ** ウィンドウの値を変更、 **Embed Interop Types**プロパティを**False**します。
+12. **[プロパティ]** ウィンドウで、 **[相互運用機能型の埋め込み]** プロパティの値を**False**に変更します。
 
-13. Visual Basic プロジェクトを開発している場合は、プロジェクトにインポート ProjectTemplateWizard 名前空間を使用して、**プロジェクト デザイナー**します。
+13. Visual Basic プロジェクトを開発している場合は、プロジェクト**デザイナー**を使用して、プロジェクトに ProjectTemplateWizard 名前空間をインポートします。
 
-     詳細については、「[方法 :追加またはインポートされた名前空間を削除する&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)します。
+     詳細については、「[方法: インポートされた&#40;名前&#41;空間を追加または削除する Visual Basic](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)」を参照してください。
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>SharePointcommands プロジェクトを構成するには
 
-1. **ソリューション エクスプ ローラー**、選択、 **SharePointCommands**プロジェクト ノード。
+1. **ソリューションエクスプローラー**で、 **[sharepointcommands]** プロジェクトノードを選択します。
 
-2. メニュー バーで、**プロジェクト**、**既存項目の追加**します。
+2. メニューバーで、 **[プロジェクト]** 、 **[既存項目の追加]** の順に選択します。
 
-3. **既存項目の追加**] ダイアログ ボックスで、ProjectTemplateWizard プロジェクトのコード ファイルを含むフォルダーを参照し、[、 **CommandIds**コード ファイル。
+3. **[既存項目の追加]** ダイアログボックスで、ProjectTemplateWizard プロジェクトのコードファイルが格納されているフォルダーを参照し、次**に、そのコードファイル**を選択します。
 
-4. 横にある矢印を選択、**追加**ボタンをクリックし、選択し、**リンクとして追加**表示されたメニュー オプション。
+4. **[追加]** ボタンの横にある矢印をクリックし、表示されるメニューの **[リンクとして追加]** オプションを選択します。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] コード ファイルを追加、 **SharePointCommands**プロジェクトにリンクとして。 コード ファイルにある、 **ProjectTemplateWizard**ファイル内のコードは、プロジェクトではコンパイルも、 **SharePointCommands**プロジェクト。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] により、コードファイルが**Sharepointcommands**プロジェクトにリンクとして追加されます。 コードファイルは**Projecttemplatewizard**プロジェクトにありますが、ファイル内のコードは**sharepointcommands**プロジェクトでもコンパイルされます。
 
-5. **SharePointCommands**プロジェクトに、Commands という別のコード ファイルを追加します。
+5. **Sharepointcommands**プロジェクトで、Commands という名前の別のコードファイルを追加します。
 
-6. SharePointCommands プロジェクトを選択し、次に、メニュー バーで、次のように選択します。**プロジェクト** > **参照の追加**します。
+6. SharePointCommands プロジェクトを選択し、メニューバーで **[プロジェクト]** を選択し >  **[参照の追加]** をクリックします。
 
-7. 展開、**アセンブリ**ノードで、選択、**拡張**ノード、し、次のアセンブリの横にあるチェック ボックスを選択。
+7. **[アセンブリ]** ノードを展開し、 **[拡張機能]** ノードを選択して、次のアセンブリの横にあるチェックボックスをオンにします。
 
     - Microsoft.SharePoint
 
     - Microsoft.VisualStudio.SharePoint.Commands
 
-8. 選択、 **OK**アセンブリをプロジェクトに追加するボタンをクリックします。
+8. **[OK** ] をクリックして、アセンブリをプロジェクトに追加します。
 
-## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>ウィザード モデル、署名マネージャー、および SharePoint コマンド Id を作成します。
+## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>ウィザードモデル、署名マネージャー、および SharePoint コマンド Id の作成
  ProjectTemplateWizard プロジェクトにコードを追加して、サンプルの次のコンポーネントを実装します。
 
-- SharePoint コマンド ID。 これらは、ウィザードによって使用される SharePoint コマンドを識別する文字列です。 このチュートリアルで後で、コマンドを実装する SharePointCommands プロジェクトにコードを追加します。
+- SharePoint コマンド ID。 これらは、ウィザードによって使用される SharePoint コマンドを識別する文字列です。 このチュートリアルの後半で、SharePointCommands プロジェクトにコードを追加してコマンドを実装します。
 
 - ウィザード データ モデル。
 
 - プロジェクト署名マネージャー。
 
-  これらのコンポーネントの詳細については、次を参照してください。[ウィザード コンポーネントを理解して](#understand-the-wizard-components)します。
+  これらのコンポーネントの詳細については、「[ウィザードのコンポーネント](#understand-the-wizard-components)について」を参照してください。
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>SharePoint コマンド ID を定義するには
 
@@ -218,7 +218,7 @@ ms.locfileid: "66401102"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]
 
-## <a name="create-the-wizard-ui"></a>ウィザードの UI を作成します。
+## <a name="create-the-wizard-ui"></a>ウィザード UI を作成する
  ウィザード ウィンドウの UI と、ウィザード ページの UI を提供する 2 つのユーザー コントロールを定義する XAML を追加し、ウィンドウとユーザー コントロールの動作を定義するコードを追加します。 作成するウィザードは、Visual Studio の SharePoint プロジェクト用の組み込みウィザードに似ています。
 
 > [!NOTE]
@@ -226,16 +226,16 @@ ms.locfileid: "66401102"
 
 #### <a name="to-create-the-wizard-window-ui"></a>ウィザード ウィンドウの UI を作成するには
 
-1. ProjectTemplateWizard プロジェクトで、WizardWindow.xaml ファイルのショートカット メニューを開きし、**開く**デザイナーでウィンドウを開きます。
+1. ProjectTemplateWizard プロジェクトで、WizardWindow .xaml ファイルのショートカットメニューを開き、 **[開く]** をクリックしてデザイナーでウィンドウを開きます。
 
 2. デザイナーの XAML ビューで、現在の XAML を次の XAML に置き換えます。 この XAML は、見出しを含む UI、ウィザード ページが含まれる <xref:System.Windows.Controls.Grid>、およびウィンドウの下部に示されるナビゲーション ボタンを定義します。
 
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    > この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 カスタムの WPF ダイアログ ボックスを Visual Studio に追加する場合は、ダイアログ ボックスをこのクラスから派生し、スタイルを他の Visual Studio ダイアログ ボックスと一貫させ、発生する可能性のあるモーダル ダイアログの問題を回避することをお勧めします。 詳細については、次を参照してください。[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)します。
+    > この XAML で作成されるウィンドウは、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基底クラスから派生します。 カスタムの WPF ダイアログ ボックスを Visual Studio に追加する場合は、ダイアログ ボックスをこのクラスから派生し、スタイルを他の Visual Studio ダイアログ ボックスと一貫させ、発生する可能性のあるモーダル ダイアログの問題を回避することをお勧めします。 詳細については、「[モーダルダイアログボックスの作成と管理](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)」を参照してください。
 
-3. Visual Basic プロジェクトを開発する場合は、削除、`ProjectTemplateWizard`から名前空間、`WizardWindow`内のクラス名、`x:Class`の属性、`Window`要素。 この要素は XAML の 1 行目にあります。 完了したら、最初の行は次の例のようになります。
+3. Visual Basic プロジェクトを開発している場合は、`Window` 要素の `x:Class` 属性の `WizardWindow` クラス名から `ProjectTemplateWizard` 名前空間を削除します。 この要素は XAML の 1 行目にあります。 完了すると、最初の行は次の例のようになります。
 
     ```xml
     <Window x:Class="WizardWindow"
@@ -250,7 +250,7 @@ ms.locfileid: "66401102"
 
 #### <a name="to-create-the-first-wizard-page-ui"></a>1 つ目のウィザード ページの UI を作成するには
 
-1. ProjectTemplateWizard プロジェクトで、Page1.xaml ファイルのショートカット メニューを開きし、**開く**をデザイナーで、ユーザー コントロールを開きます。
+1. ProjectTemplateWizard プロジェクトで、Page1 ファイルのショートカットメニューを開き、 **[開く]** をクリックしてデザイナーでユーザーコントロールを開きます。
 
 2. デザイナーの XAML ビューで、現在の XAML を次の XAML に置き換えます。 この XAML で定義している UI には、ユーザーがデバッグに使用するローカル サイトの URL を入力できるテキスト ボックスが含まれます。 この UI には、ユーザーがプロジェクトをサンドボックス化するかどうかを指定できるオプション ボタンも含まれます。
 
@@ -269,7 +269,7 @@ ms.locfileid: "66401102"
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>2 つ目のウィザード ページの UI を作成するには
 
-1. ProjectTemplateWizard プロジェクトで、Page2.xaml ファイルのショートカット メニューを開きし、**開く**します。
+1. ProjectTemplateWizard プロジェクトで、Page2 ファイルのショートカットメニューを開き、 **[開く]** を選択します。
 
      ユーザー コントロールがデザイナーで開きます。
 
@@ -288,7 +288,7 @@ ms.locfileid: "66401102"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]
 
-## <a name="implement-the-wizard"></a>ウィザードを実装します。
+## <a name="implement-the-wizard"></a>ウィザードを実装する
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスを実装することで、ウィザードの主要機能を定義します。 このインターフェイスは、ウィザードの起動および終了時と、ウィザードの実行中の特定のタイミングで Visual Studio によって呼び出されるメソッドを定義します。
 
 #### <a name="to-implement-the-wizard"></a>ウィザードを実装するには
@@ -300,12 +300,12 @@ ms.locfileid: "66401102"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]
 
-## <a name="create-the-sharepoint-commands"></a>SharePoint コマンドを作成します。
+## <a name="create-the-sharepoint-commands"></a>SharePoint コマンドを作成する
  SharePoint サーバー オブジェクト モデルを呼び出す 2 つのカスタム コマンドを作成します。 一方のコマンドは、ウィザードでユーザーが入力するサイトの URL が有効かどうかを判断します。 もう一方のコマンドは、指定した SharePoint サイトからすべてのフィールドの型を取得して、ユーザーが新しいサイト内の列の基本として使用するフィールドの型を選択できるようにします。
 
 #### <a name="to-define-the-sharepoint-commands"></a>SharePoint コマンドを定義するには
 
-1. **SharePointCommands**プロジェクトで、コマンドのコード ファイルを開きます。
+1. **Sharepointcommands**プロジェクトで、Commands コードファイルを開きます。
 
 2. このファイルの内容全体を次のコードで置き換えます。
 
@@ -319,16 +319,16 @@ ms.locfileid: "66401102"
 
 1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
-## <a name="removing-the-keysnk-file-from-the-project-template"></a>プロジェクト テンプレートから key.snk ファイルを削除します。
- [チュートリアル。プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)、作成したプロジェクト テンプレートには、各 Site Column プロジェクト インスタンスに署名するために使用される key.snk ファイルが含まれています。 ウィザードでプロジェクトごとに新しい key.snk ファイルが生成されるようになったため、この key.snk ファイルはもう必要ありません。 プロジェクト テンプレートから key.snk ファイルを削除し、このファイルへの参照を削除します。
+## <a name="removing-the-keysnk-file-from-the-project-template"></a>プロジェクトテンプレートからのキー .snk ファイルの削除
+ [「チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md))」では、作成したプロジェクトテンプレートに、各サイト列プロジェクトインスタンスの署名に使用されるキー .snk ファイルが含まれています。 ウィザードでプロジェクトごとに新しい key.snk ファイルが生成されるようになったため、この key.snk ファイルはもう必要ありません。 プロジェクト テンプレートから key.snk ファイルを削除し、このファイルへの参照を削除します。
 
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>プロジェクト テンプレートから key.snk ファイルを削除するには
 
-1. **ソリューション エクスプ ローラー**下で、 **SiteColumnProjectTemplate**ノード、ショートカット メニューを開き、 **key.snk**ファイルを選び、 **の削除**.
+1. **ソリューションエクスプローラー**の **[SiteColumnProjectTemplate]** ノードで、**キーの .snk**ファイルのショートカットメニューを開き、 **[削除]** を選択します。
 
-2. 確認ダイアログ ボックスが表示されますが、選択、 **OK**ボタンをクリックします。
+2. 確認のダイアログボックスが表示されたら、 **[OK]** をクリックします。
 
-3. で、 **SiteColumnProjectTemplate**ノード、SiteColumnProjectTemplate.vstemplate ファイルを開くし、そこから次の要素を削除します。
+3. **SiteColumnProjectTemplate**ノードの下で、SiteColumnProjectTemplate ファイルを開き、そこから次の要素を削除します。
 
     ```xml
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>
@@ -336,7 +336,7 @@ ms.locfileid: "66401102"
 
 4. ファイルを保存して閉じます。
 
-5. 下、 **SiteColumnProjectTemplate**ノードで、ProjectTemplate.csproj または ProjectTemplate.vbproj ファイルを開くし、次を削除して`PropertyGroup`からの要素。
+5. **SiteColumnProjectTemplate**ノードの下で、projecttemplate .csproj ファイルまたは projecttemplate .vbproj ファイルを開き、そこから次の `PropertyGroup` 要素を削除します。
 
     ```xml
     <PropertyGroup>
@@ -353,34 +353,34 @@ ms.locfileid: "66401102"
 
 7. ファイルを保存して閉じます。
 
-## <a name="associating-the-wizard-with-the-project-template"></a>プロジェクト テンプレートと、ウィザードの関連付け
- これで、ウィザードを実装している、ウィザードを関連付ける必要があります、 **Site Column**プロジェクト テンプレート。 これを行うために必要となる手順は次の 3 つです。
+## <a name="associating-the-wizard-with-the-project-template"></a>ウィザードとプロジェクトテンプレートの関連付け
+ ウィザードの実装が完了したので、ウィザードを **[サイト列]** プロジェクトテンプレートに関連付ける必要があります。 これを行うために必要となる手順は次の 3 つです。
 
 1. ウィザード アセンブリに厳密な名前で署名します。
 
 2. ウィザード アセンブリの公開キー トークンを取得します。
 
-3. ウィザード アセンブリへの参照を追加の .vstemplate ファイルで、 **Site Column**プロジェクト テンプレート。
+3. **サイト列**プロジェクトテンプレートの .vstemplate ファイルに、ウィザードアセンブリへの参照を追加します。
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>ウィザード アセンブリに厳密な名前で署名するには
 
-1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ProjectTemplateWizard**プロジェクトを選び、**プロパティ**します。
+1. **ソリューションエクスプローラー**で、 **projecttemplatewizard**プロジェクトのショートカットメニューを開き、 **[プロパティ]** を選択します。
 
-2. **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。
+2. **[署名]** タブで、 **[アセンブリの署名]** チェックボックスをオンにします。
 
-3. **厳密な名前キー ファイルを選択して**一覧で、選択 **\<新規作成 >** します。
+3. [**厳密な名前のキーファイルを選択**してください] ボックスの一覧の [ **\<新規作成] を選択します。>** 。
 
-4. **厳密な名前キーの作成** ダイアログ ボックスで、チェック ボックスをオフに、新しいキー ファイルの名前を入力、**キーファイルをパスワードで保護する**チェック ボックスをオンにして、 **ok**ボタン。
+4. **[厳密な名前キーの作成]** ダイアログボックスで、新しいキーファイルの名前を入力し、 **[キーファイルをパスワードで保護]** する チェックボックスをオフにして、 **[OK]** をクリックします。
 
-5. ショートカット メニューを開き、 **ProjectTemplateWizard**プロジェクトを選び、**ビルド**ProjectTemplateWizard.dll ファイルを作成します。
+5. **Projecttemplatewizard**プロジェクトのショートカットメニューを開き、 **[ビルド]** をクリックして、projecttemplatewizard .dll ファイルを作成します。
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>ウィザード アセンブリの公開キー トークンを取得するには
 
-1. **[スタート] メニュー**、選択**すべてのプログラム**、選択**Microsoft Visual Studio**、選択**Visual Studio Tools**を選択し、**開発者コマンド プロンプト**します。
+1. [**スタート] ボタン**をクリックし、 **[すべてのプログラム]** 、 **[Microsoft Visual Studio]** 、 **[Visual Studio Tools]** 、 **[開発者コマンドプロンプト]** の順に選択します。
 
      Visual Studio コマンド プロンプト ウィンドウが開きます。
 
-2. 次のコマンドを実行して交換*PathToWizardAssembly*開発用コンピューター上で ProjectTemplateWizard プロジェクト用にビルドされた ProjectTemplateWizard.dll アセンブリへの完全パスで。
+2. 次のコマンドを実行します。 *PathToWizardAssembly*は、開発用コンピューター上の projecttemplatewizard プロジェクトのビルドされた projecttemplatewizard .dll アセンブリへの完全パスに置き換えます。
 
     ```cmd
     sn.exe -T PathToWizardAssembly
@@ -392,9 +392,9 @@ ms.locfileid: "66401102"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>.vstemplate ファイルにウィザード アセンブリへの参照を追加するには
 
-1. **ソリューション エクスプ ローラー**、展開、 **SiteColumnProjectTemplate**プロジェクト ノード、SiteColumnProjectTemplate.vstemplate ファイルを開きます。
+1. **ソリューションエクスプローラー**で、 **SiteColumnProjectTemplate**プロジェクトノードを展開し、SiteColumnProjectTemplate ファイルを開きます。
 
-2. ファイルの末尾の近くで、次の `WizardExtension` 要素を `</TemplateContent>` タグと `</VSTemplate>` タグの間に追加します。 置換、*トークン*の値、`PublicKeyToken`前の手順で取得した公開キー トークンの属性。
+2. ファイルの末尾の近くで、次の `WizardExtension` 要素を `</TemplateContent>` タグと `</VSTemplate>` タグの間に追加します。 `PublicKeyToken` 属性の*トークン*値を、前の手順で取得した公開キートークンに置き換えます。
 
     ```xml
     <WizardExtension>
@@ -403,18 +403,18 @@ ms.locfileid: "66401102"
     </WizardExtension>
     ```
 
-     詳細については、`WizardExtension`要素を参照してください[WizardExtension 要素&#40;Visual Studio テンプレート&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)します。
+     `WizardExtension` 要素の詳細については、「 [WizardExtension &#40;Element Visual Studio&#41;Templates](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)」を参照してください。
 
 3. ファイルを保存して閉じます。
 
-## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>プロジェクト テンプレートの Elements.xml ファイルに置き換え可能パラメーターを追加します。
- いくつかの置き換え可能パラメーターを追加、 *Elements.xml* SiteColumnProjectTemplate プロジェクトでのファイル。 これらのパラメーターは、前に定義した `RunStarted` クラスの `SiteColumnProjectWizard` メソッドで初期化されます。 Visual Studio によって自動的にこれらのパラメーターで置き換えられますユーザーが Site Column プロジェクトを作成するとき、 *Elements.xml*ウィザードでユーザーが指定した値を持つ新しいプロジェクトのファイル。
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>置き換え可能パラメーターをプロジェクトテンプレートの Elements .xml ファイルに追加する
+ SiteColumnProjectTemplate プロジェクトの*要素 .xml*ファイルに置き換え可能なパラメーターをいくつか追加します。 これらのパラメーターは、前に定義した `RunStarted` クラスの `SiteColumnProjectWizard` メソッドで初期化されます。 ユーザーがサイト列プロジェクトを作成すると、Visual Studio によって、新しいプロジェクトの*Elements .xml*ファイル内のこれらのパラメーターが、ウィザードで指定した値に自動的に置き換えられます。
 
- 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムによって定義されて初期化される組み込みパラメーターを使用することもできます。 詳細については、次を参照してください。[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)します。
+ 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムによって定義されて初期化される組み込みパラメーターを使用することもできます。 詳細については、「[置換可能なパラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置き換え可能パラメーターを Elements.xml ファイルに追加するには
 
-1. SiteColumnProjectTemplate プロジェクトでの内容を置き換える、 *Elements.xml*を次の XML ファイル。
+1. SiteColumnProjectTemplate プロジェクトで、*要素 .xml*ファイルの内容を次の xml に置き換えます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -432,38 +432,38 @@ ms.locfileid: "66401102"
 
 2. ファイルを保存して閉じます。
 
-## <a name="add-the-wizard-to-the-vsix-package"></a>VSIX パッケージをウィザードに追加します。
+## <a name="add-the-wizard-to-the-vsix-package"></a>VSIX パッケージにウィザードを追加する
  Site Column プロジェクト テンプレートが含まれる VSIX パッケージと共にウィザードを配置するには、ウィザード プロジェクトと SharePoint コマンド プロジェクトへの参照を VSIX プロジェクトの source.extension.vsixmanifest ファイルに追加します。
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>VSIX パッケージにウィザードを追加するには
 
-1. **ソリューション エクスプ ローラー**の**SiteColumnProjectItem**プロジェクトで、ショートカット メニューを開き、 **source.extension.vsixmanifest**ファイルを選び、 **オープン**します。
+1. **ソリューションエクスプローラー**の**SiteColumnProjectItem**プロジェクトで、 **source.extension.vsixmanifest**ファイルのショートカットメニューを開き、 **[開く]** を選択します。
 
      Visual Studio によってマニフェスト エディターでファイルが開きます。
 
-2. **資産** タブ、エディターの選択、**新規**ボタンをクリックします。
+2. エディターの **[アセット]** タブで、 **[新規]** ボタンをクリックします。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     **[新しい資産の追加]** ダイアログボックスが表示されます。
 
-3. **型**一覧で、選択 **[microsoft.visualstudio.assembly]** します。
+3. **[種類]** ボックスの一覧で、 **[VisualStudio]** を選択します。
 
-4. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
+4. **[ソース]** ボックスの一覧で、**現在のソリューション内のプロジェクト**を選択します。
 
-5. **プロジェクト**一覧で、選択**ProjectTemplateWizard**、選択し、 **OK**ボタン。
+5. **[プロジェクト]** ボックスの一覧で **[projecttemplatewizard]** を選択し、 **[OK]** をクリックします。
 
-6. **資産** タブ、エディターの選択、**新規**もう一度ボタンをクリックします。
+6. エディターの **[アセット]** タブで、 **[新規]** ボタンをもう一度クリックします。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     **[新しい資産の追加]** ダイアログボックスが表示されます。
 
-7. **型**一覧で、入力**SharePoint.Commands.v4**します。
+7. [種類] ボックスの一覧で、 **「** **SharePoint. コマンド. v4**」と入力します。
 
-8. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
+8. **[ソース]** ボックスの一覧で、**現在のソリューション内のプロジェクト**を選択します。
 
-9. **プロジェクト**一覧で、選択、 **SharePointCommands**プロジェクトを選び、 **OK**ボタンをクリックします。
+9. **[プロジェクト]** ボックスの一覧で **[sharepointcommands]** プロジェクトを選択し、 **[OK]** をクリックします。
 
-10. メニュー バーで、**ビルド** > **ソリューションのビルド**、ソリューションがエラーなしでビルドされるかどうかを確認します。
+10. メニューバーで [**ビルド** > **ビルド**] を選択し、ソリューションがエラーなしでビルドされることを確認します。
 
-## <a name="test-the-wizard"></a>ウィザードをテストします。
+## <a name="test-the-wizard"></a>ウィザードをテストする
  これで、ウィザードをテストする準備ができました。 まず、Visual Studio の実験用インスタンスで SiteColumnProjectItem ソリューションのデバッグを開始します。 次に、Visual Studio の実験用インスタンスで、Site Column プロジェクトのウィザードをテストします。 最後に、プロジェクトをビルドして実行し、サイト内の列が正常に機能することを確認します。
 
 #### <a name="to-start-debugging-the-solution"></a>ソリューションのデバッグを開始するには
@@ -472,75 +472,75 @@ ms.locfileid: "66401102"
 
 2. ProjectTemplateWizard プロジェクトで、SiteColumnProjectWizard コード ファイルを開き、`RunStarted` メソッド内のコードの 1 行目にブレークポイントを追加します。
 
-3. メニュー バーで、**デバッグ** > **例外**します。
+3. メニューバーで、 **[デバッグ]**  >  **[例外]** の順に選択します。
 
-4. **例外** ダイアログ ボックスに、必ず、**スローされるとき**と**user-unhandled**のチェック ボックスを**Common Language Runtime Exceptions**クリアされますが、クリックして、 **OK**ボタンをクリックします。
+4. **[例外]** ダイアログボックスで、**共通言語ランタイムの例外**の**スロー**されたチェックボックスと**ユーザーが処理しない**チェックボックスがオフになっていることを確認し、 **[OK]** をクリックします。
 
-5. 選択してデバッグを開始、 **F5**キーか、メニュー バーで**デバッグ** > **デバッグの開始**します。
+5. F5 キーを**押す**か、メニューバーで [ > **デバッグ**]、[デバッグの**開始**] の順に選択して、デバッグを開始します。
 
      Visual Studio によって、拡張機能が %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 にインストールされ、Visual Studio の実験用インスタンスが開始されます。 このインスタンスの Visual Studio でプロジェクト項目をテストします。
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Visual Studio でウィザードをテストするには
 
-1. メニュー バーで、Visual Studio の実験用インスタンスで次のように選択します。**ファイル** > **新規** > **プロジェクト**します。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル** > **新しい** > **プロジェクト**] を選択します。
 
-2. プロジェクト テンプレートがサポートする言語に応じて、**Visual C#** ノードまたは**Visual Basic** ノードを展開し、**SharePoint** ノードを展開し、**2010**ノードを選択します。
+2. **ビジュアルC#** ノードまたは **[Visual Basic]** ノードを展開します (プロジェクトテンプレートでサポートされている言語によって異なります)。次に、 **[SharePoint]** ノードを展開し、 **[2010]** ノードを選択します。
 
-3. プロジェクト テンプレートの一覧で選択**Site Column**、プロジェクトに名前を**SiteColumnWizardTest**、選択し、 **[ok]** ボタンをクリックします。
+3. プロジェクトテンプレートの一覧で **[サイト列]** を選択し、プロジェクトに**SiteColumnWizardTest**という名前を指定して、 **[OK]** をクリックします。
 
 4. Visual Studio のもう一方のインスタンスで、先ほど `RunStarted` メソッドに設定したブレークポイントで、コードが停止していることを確認します。
 
-5. 選択して、プロジェクトのデバッグを続行、 **F5**キーか、メニュー バーで**デバッグ** > **続行**します。
+5. F5 キーを**押す**か、メニューバーで [**デバッグ** > **続行**] を選択して、プロジェクトのデバッグを続けます。
 
-6. **SharePoint カスタマイズ ウィザード**、デバッグに使用するサイトの URL を入力し、、**次**ボタンをクリックします。
+6. **SharePoint カスタマイズウィザード**で、デバッグに使用するサイトの URL を入力し、 **[次へ]** をクリックします。
 
-7. 2 ページ目で、 **SharePoint カスタマイズ ウィザード**、次の選択を行います。
+7. **SharePoint カスタマイズウィザード**の2ページ目で、次の選択を行います。
 
-   - **型**一覧で、選択**ブール**します。
+   - **[種類]** ボックスの一覧で **[ブール]** を選択します。
 
-   - **グループ**一覧で、選択**Custom Yes/No Columns**します。
+   - **[グループ]** ボックスの一覧で、[**カスタム]、[いいえ]、[列なし**] の順に選択します。
 
-   - **名前**ボックスに、入力**My Yes/No Column**、選択し、**完了**ボタンをクリックします。
+   - **[名前]** ボックスに **「My Yes/No Column**」と入力し、 **[完了]** をクリックします。
 
-     **ソリューション エクスプ ローラー**、新しいプロジェクトが表示され、プロジェクト項目の名前が含まれて**Field1**、Visual Studio プロジェクトの表示と*Elements.xml*ファイルがエディターでします。
+     **ソリューションエクスプローラー**に、新しいプロジェクトが表示され、 **Field1**という名前のプロジェクト項目が含まれます。 Visual Studio は、エディターでプロジェクトの*要素 .xml*ファイルを開きます。
 
-8. いることを確認*Elements.xml*ウィザードで指定した値が含まれています。
+8. ウィザードで指定した値が*要素 .xml*に含まれていることを確認します。
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>SharePoint でサイト内の列をテストするには
 
-1. Visual Studio の実験用インスタンスの選択、 **F5**キー。
+1. Visual Studio の実験用インスタンスで、F5 キーを**押し**ます。
 
-     サイト内の列がパッケージ化され、SharePoint に配置されるサイト、**サイトの URL**プロジェクトのプロパティを指定します。 Web ブラウザーには、このサイトの既定のページが表示されます。
+     サイト列がパッケージ化され、プロジェクトの **[サイト URL]** プロパティによって指定された SharePoint サイトに配置されます。 Web ブラウザーには、このサイトの既定のページが表示されます。
 
     > [!NOTE]
-    > 場合、**スクリプト デバッグが無効**選択 ダイアログ ボックスが表示されたら、**はい**クリックしてプロジェクトのデバッグを続行します。
+    > **[スクリプトデバッグを無効]** にする ダイアログボックスが表示された場合は、 **[はい]** をクリックしてプロジェクトのデバッグを続行します。
 
-2. **サイトの操作**] メニューの [選択**サイト設定**します。
+2. **[サイトの操作]** メニューで、 **[サイトの設定]** を選択します。
 
-3. サイトの設定] ページで、[**ギャラリー**、選択、**サイト列**リンク。
+3. サイトの設定 ページの **ギャラリー** で、**サイト列** リンクを選択します。
 
-4. サイト内の列の一覧であることを確認、 **Custom Yes/No Columns**グループにはという列が含まれています**My Yes/No Column**、web ブラウザーを閉じます。
+4. サイト列の一覧で、 **[カスタムの yes/No columns]** グループに " **My Yes/no column**" という名前の列が含まれていることを確認し、web ブラウザーを閉じます。
 
-## <a name="clean-up-the-development-computer"></a>開発用コンピューターをクリーンアップします。
+## <a name="clean-up-the-development-computer"></a>開発用コンピューターのクリーンアップ
  プロジェクト項目のテストが終わったら、プロジェクト テンプレートを Visual Studio の実験用インスタンスから削除します。
 
 #### <a name="to-clean-up-the-development-computer"></a>開発コンピューターをクリーンアップするには
 
-1. メニュー バーで、Visual Studio の実験用インスタンスで次のように選択します。**ツール** > **拡張機能と更新**します。
+1. Visual Studio の実験用インスタンスのメニューバーで、 **[ツール]** [ > の**拡張機能と更新プログラム**] の順に選択します。
 
      **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
-2. 拡張機能の一覧で選択**Site Column**、選択し、**アンインストール**ボタンをクリックします。
+2. 拡張機能の一覧で **[サイト列]** を選択し、 **[アンインストール]** をクリックします。
 
-3. ダイアログ ボックスが表示されますが、選択、**はい**ボタンをクリックして、拡張機能をアンインストールすることを確認します、**今すぐ再起動**アンインストールを完了するボタン。
+3. 表示されるダイアログボックスで、 **[はい]** をクリックして拡張機能をアンインストールすることを確認し、 **[今すぐ再起動]** ボタンをクリックしてアンインストールを完了します。
 
 4. Visual Studio の実験用インスタンスと、CustomActionProjectItem ソリューションが開いているインスタンスの両方を閉じます。
 
-     デプロイする方法については[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、拡張機能を参照してください[Visual Studio 拡張機能の配布](/visualstudio/extensibility/shipping-visual-studio-extensions)します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 拡張機能をデプロイする方法の詳細については、「 [Visual Studio 拡張機能の配布](/visualstudio/extensibility/shipping-visual-studio-extensions)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [チュートリアル: プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
-- [カスタム SharePoint プロジェクト項目の種類を定義します。](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
+- [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint プロジェクト項目の項目テンプレートとプロジェクト テンプレートの作成](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)
 - [方法: プロジェクト テンプレートでウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654035"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984271"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズと拡張
 
@@ -37,10 +37,10 @@ Visual Studio モデリングと視覚化 SDK (VMSDK) には、モデリング�
 |モデル要素のさまざまなクラスは、図に似ています。初期の高さ、幅、色、ツールヒントなどのプロパティを共有します。|図形またはコネクタクラス間の継承を使用します。 派生図形と派生ドメインクラス間のマッピングは、親のマッピングの詳細を継承します。<br /><br /> または、異なるドメインクラスを同じ shape クラスにマップします。|
 |モデル要素のクラスは、さまざまな図形コンテキストによって表示されます。|複数のシェイプクラスを同じドメインクラスにマップします。 ソリューションをビルドするときに、エラー報告に従って、使用する図形を決定するために要求されたコードを指定します。|
 |図形の色またはフォントなどのその他の機能は、現在の状態を示します。|「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> 公開されたプロパティを更新するルールを作成します。 「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。<br /><br /> または、OnAssociatedPropertyChanged () を使用して、リンク矢印やフォントなどの公開されていない機能を更新します。|
-|状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()` をオーバーライドします。 @No__t_0 の例を参照してください。|
+|状態を示すために変更された図形のアイコン。|DSL の詳細ウィンドウで、デコレータマッピングの表示を設定します。 同じ位置で複数のイメージのデコレーターを検索します。 「[モデルを反映するための図形とコネクタの更新」を](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)参照してください。<br /><br /> または、`ImageField.GetDisplayImage()` をオーバーライドします。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>の例を参照してください。|
 |任意の図形に背景画像を設定する|InitializeInstanceResources () をオーバーライドして、固定された ImageField を追加します。|
 |図形を任意の深さに入れ子にする|再帰的な埋め込みツリーを設定します。 図形を含めるように BoundsRules を定義します。|
-|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](http://go.microsoft.com/fwlink/?LinkID=186128)」を参照してください。|
+|要素の境界上の固定ポイントでコネクタをアタッチします。|図の小さなポートで表される埋め込みのターミナル要素を定義します。 BoundsRules を使用して、適切なポートを修正します。 回路図のサンプルについては、「[視覚化およびモデリング SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)」を参照してください。|
 |テキストフィールド他の値から派生した値が表示されます。|テキストデコレータを計算済みまたはカスタムのストレージドメインプロパティにマップします。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。|
 |モデル要素間または図形間での変更の反映|「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。|
 |ストアの外部にある他の Visual Studio 拡張機能などのリソースに変更を反映します。|「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。|

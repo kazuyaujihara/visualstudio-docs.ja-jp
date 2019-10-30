@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b8b9ad4677d580d495c72866be57712476d6a9c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576214"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985325"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 コードブロック内の指定された文字の型情報とアンカー位置を返します。 これにより、メンバーの IntelliSense、グローバルリスト、およびパラメーターのヒントに関する情報が提供されます。  
@@ -81,14 +81,14 @@ HRESULT GetInfoFromContext(
  この値は、現在の位置を含むコンテキストが関数呼び出しであり、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。 それ以外の場合、結果は未定義になります。  
   
  `pmemid`  
- 入出力@No__t_0 out パラメーターの型によって定義される関数の MEMBERID。  
+ 入出力`IProvideMultipleClassInfo``ppunk` out パラメーターの型によって定義される関数の MEMBERID。  
   
  この値は、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。  
   
  `piCurrentParameter`  
  入出力現在の位置を格納しているパラメーターのインデックス。 現在の位置が関数名にある場合は、-1 が返されます。  
   
- @No__t_0 値は、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。  
+ `piCurrentParameter` 値は、`dwListTypesRequested` に SCRIPT_CMPL_PARAMLIST が含まれている場合にのみ設定されます。  
   
  `ppunk`  
  型情報。 `IProvideMultipleClassInfo` オブジェクトの形式で提供されます。  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="see-also"></a>関連項目  
- [IProvideMultipleClassInfo インターフェイス](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
+ [IProvideMultipleClassInfo インターフェイス](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor インターフェイス](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255639"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985785"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO アドインのパフォーマンスを向上させる
   Office アプリケーション用に作成した VSTO アドインを最適化して、そのアドインの開始、終了、また、項目を開くなどのタスクの実行を素早く行えるようにして、ユーザー エクスペリエンスを向上させることができます。 VSTO アドインが Outlook を対象にしている場合は、不十分なパフォーマンスが原因で VSTO アドインが無効にされる可能性を低くすることができます。 次の方針を導入すると、VSTO アドインのパフォーマンスを向上させることができます。
@@ -28,7 +28,7 @@ ms.locfileid: "71255639"
 
 - [負荷の高い操作を単独の実行スレッドで実行](#Perform)。
 
-  Outlook VSTO アドインを最適化する方法の詳細については、「 [Vsto アドインを有効にするためのパフォーマンス条件](http://go.microsoft.com/fwlink/?LinkID=266503)」を参照してください。
+  Outlook VSTO アドインを最適化する方法の詳細については、「 [Vsto アドインを有効にするためのパフォーマンス条件](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling)」を参照してください。
 
 ## <a name="Load"></a> 必要に応じた VSTO アドインの読み込み
  次の状況でのみ読み込まれるように VSTO アドインを構成できます。
@@ -51,13 +51,13 @@ ms.locfileid: "71255639"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>必要に応じて VSTO アドインを読み込むように Windows インストーラー ソリューションを構成するには
 
-1. レジストリで`LoadBehavior` 、 **_Root_\\\Software\Microsoft\Office_ApplicationName_/Addins\\_アドイン ID_** キーのエントリを**0x10**に設定します。
+1. レジストリで、 **_ルート_\Software\Microsoft\Office\\_ApplicationName_\\_アドイン ID_** キーの `LoadBehavior` エントリを**0x10**に設定します。
 
      詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>ソリューションのデバッグ中に必要に応じて VSTO アドインを読み込むようにソリューションを構成するには
 
-1. `LoadBehavior` **_ルート_\Software\Microsoft\Office_ApplicationName \_ アドイン IDキーのエントリを0x10 に設定するスクリプトを作成します。\\\\**
+1. **_ルート_\Software\Microsoft\Office\\_ApplicationName_\\_アドイン ID_** キーの `LoadBehavior` エントリを**0x10**に設定するスクリプトを作成します。
 
      このスクリプトの例を次のコードに示します。
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255639"
 
     ```
 
-     C#プロジェクトでビルド後のイベントを作成する方法については、 [「方法:ビルド&#40;イベントを指定&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)します。 C.
+     プロジェクトでビルド後のイベントを作成する方法の詳細については、「[方法: ビルド&#40;イベント&#35;を指定](../ide/how-to-specify-build-events-csharp.md)する」を参照してください。 C#
 
-     Visual Basic プロジェクトでビルド後のイベントを作成する方法の詳細については[、「」を参照してください。&#40;&#41;VisualBasic](../ide/how-to-specify-build-events-visual-basic.md)ビルドイベントを指定します。
+     Visual Basic プロジェクトでビルド後のイベントを作成する方法の詳細については、「[方法: ビルドイベント&#40;を&#41;指定する Visual Basic](../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
 
 ## <a name="Publish"></a>Windows インストーラーを使用した Office ソリューションの発行
  Windows インストーラーを使用してソリューションを発行した場合、Visual Studio 2010 Tools for Office runtime は、VSTO アドインが読み込まれるときに次の手順を省略します。
@@ -98,9 +98,9 @@ ms.locfileid: "71255639"
   詳細については、「 [Windows インストーラーを使用した Office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-windows-installer.md)」を参照してください。
 
 ## <a name="Bypass"></a>リボンリフレクションのバイパス
- を使用[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]してソリューションをビルドする場合は、ソリューションを配置するときに、ユーザーが Visual Studio 2010 Tools for Office runtime の最新バージョンをインストールしていることを確認してください。 リボンのカスタマイズを見つけるために、以前のバージョンの VSTO ランタイムがソリューションアセンブリに反映されています。 このプロセスを実行すると、VSTO アドインの読み込み速度がさらに低下する可能性があります。
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]を使用してソリューションをビルドする場合は、ソリューションを配置するときに、ユーザーが Visual Studio 2010 Tools for Office runtime の最新バージョンをインストールしていることを確認してください。 リボンのカスタマイズを見つけるために、以前のバージョンの VSTO ランタイムがソリューションアセンブリに反映されています。 このプロセスを実行すると、VSTO アドインの読み込み速度がさらに低下する可能性があります。
 
- 別の方法として、Visual Studio 2010 Tools for Office runtime のすべてのバージョンがリフレクションを使用してリボンのカスタマイズを識別できないようにすることもできます。 この戦略に従うには、 `CreateRibbonExtensibility`メソッドをオーバーライドし、明示的にリボンオブジェクトを返します。 VSTO アドインにリボンのカスタマイズが含まれていない場合`null`は、メソッド内でを返します。
+ 別の方法として、Visual Studio 2010 Tools for Office runtime のすべてのバージョンがリフレクションを使用してリボンのカスタマイズを識別できないようにすることもできます。 この戦略に従うには、`CreateRibbonExtensibility` メソッドをオーバーライドし、リボンオブジェクトを明示的に返します。 VSTO アドインにリボンのカスタマイズが含まれていない場合は、メソッド内の `null` を返します。
 
  次の例では、フィールドの値に基づいてリボンオブジェクトを返します。
 

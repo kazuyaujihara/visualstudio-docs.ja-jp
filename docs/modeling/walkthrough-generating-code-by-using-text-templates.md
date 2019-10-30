@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666931"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984404"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用してコードを生成する
 
@@ -28,7 +28,7 @@ System.Xml 名前空間は、XML ドキュメントを読み込み、メモリ�
 このプロジェクト例では、テンプレートでサンプル XML ファイルを読み取り、ノードの各型に対応するクラスを生成します。 手入力のコードでは、これらのクラスを使用して XML ファイルを操作できます。 また、同じノード型を使用する他のファイルでも、アプリケーションを実行できます。 サンプル XML ファイルの目的は、アプリケーションで対応できるようにするすべてのノード型の例を提供することです。
 
 > [!NOTE]
-> Visual Studio に含まれているアプリケーション[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)は、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
+> Visual Studio に含まれているアプリケーション[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)は、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。
 
 サンプル ファイルは次のとおりです。
 
@@ -270,7 +270,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Visual Studio API にアクセスする
 
-@No__t_1 ディレクティブの `hostspecific` 属性を設定すると、テンプレートは Visual Studio API にアクセスできるようになります。 テンプレートでは、これを使用してプロジェクト ファイルの場所を取得することにより、テンプレート コードでの絶対パスの使用を避けることができます。
+`<#@template#>` ディレクティブの `hostspecific` 属性を設定すると、テンプレートは Visual Studio API にアクセスできるようになります。 テンプレートでは、これを使用してプロジェクト ファイルの場所を取得することにより、テンプレート コードでの絶対パスの使用を避けることができます。
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

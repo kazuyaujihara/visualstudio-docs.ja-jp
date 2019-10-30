@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662933"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981130"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>依存関係図を使用したコードの検証
 
@@ -52,7 +52,7 @@ ms.locfileid: "72662933"
 
 この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-Visual Studio またはコマンドプロンプトから、開いている依存関係図からコードを手動で検証できます。 ローカルビルドまたは Azure Pipelines ビルドを実行するときに、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: 依存関係図を使用したアーキテクチャの設計と検証」を](http://go.microsoft.com/fwlink/?LinkID=252073)参照してください。
+Visual Studio またはコマンドプロンプトから、開いている依存関係図からコードを手動で検証できます。 ローカルビルドまたは Azure Pipelines ビルドを実行するときに、コードを自動的に検証することもできます。 「 [Channel 9 ビデオ: 依存関係図を使用したアーキテクチャの設計と検証」を](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)参照してください。
 
 > [!IMPORTANT]
 > Team Foundation Server (TFS) を使用してレイヤー検証を実行する場合は、ビルドサーバーに同じバージョンの Visual Studio もインストールする必要があります。

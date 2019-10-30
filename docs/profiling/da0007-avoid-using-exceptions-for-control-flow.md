@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 088b42862065f031347f51bec791ec866b6fb87e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5330ea0494636130f3bc28c28d0e46bfc524bfb8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936495"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024658"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007:制御フローでの例外の使用を避けてください
 
@@ -38,7 +38,7 @@ ms.locfileid: "62936495"
 ## <a name="rule-description"></a>規則の説明
  例外ハンドラーを使用して、プログラム実行を中断するエラーやその他のイベントをキャッチするのは良い方法ですが、通常のプログラム実行ロジックの一部として例外ハンドラーを使用すると負荷が高くなる可能性があるため、避けてください。 ほとんどの場合、例外は、あまり発生することのない、予期しない状況に対してのみ使用する必要があります。 値を返すときに通常のプログラム フローの一部として例外を使用しないでください。 多くの場合、値を検証し、条件付きロジックを使用して問題の原因となっているステートメントの実行を中断することで、例外の発生を抑えることができます。
 
- 詳細については、MSDN の **Microsoft Patterns and Practices** (マイクロソフトのパターンと手法) ライブラリの「**Improving .NET Application Performance and Scalability**」 (.NET アプリケーションのパフォーマンスとスケーラビリティの向上) の 「**Chapter 5 — Improving Managed Code Performance**」 (第 5 章マネージド コード パフォーマンスの向上) の 「[Exception Management](http://go.microsoft.com/fwlink/?LinkID=177825)」 (例外管理) を参照してください。
+ 詳細については、MSDN の **Microsoft Patterns and Practices** (マイクロソフトのパターンと手法) ライブラリの「**Improving .NET Application Performance and Scalability**」 (.NET アプリケーションのパフォーマンスとスケーラビリティの向上) の 「**Chapter 5 — Improving Managed Code Performance**」 (第 5 章マネージド コード パフォーマンスの向上) の 「[Exception Management](/previous-versions/msp-n-p/ff647790(v=pandp.10)#exception-management)」 (例外管理) を参照してください。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[マーク] ビューに移動します。 **.NET CLR Exceptions(@ProcessInstance)\\# of Excels Thrown / sec** の測定値が含まれる列を見つけます。 例外処理の頻度が他よりも高い特定のプログラム実行フェーズがあるかどうかを確認します。 サンプリング プロファイルを使用して、頻繁な例外を生成する throw ステートメントおよび try/catch ブロックを識別してください。 必要に応じて、ロジックを catch ブロックに追加すると、最も頻繁に処理されている例外を見分けることができます。 可能な場合は、頻繁に実行される throw ステートメントまたは catch ブロックを、簡単なフロー制御ロジックまたは検証コードと置き換えてください。

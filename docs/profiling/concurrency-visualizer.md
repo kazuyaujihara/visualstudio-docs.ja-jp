@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128131"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912029"
 ---
 # <a name="concurrency-visualizer"></a>コンカレンシー ビジュアライザー
 
@@ -29,7 +29,7 @@ ms.locfileid: "71128131"
 >
 > - [Visual Studio 2017 用コンカレンシー ビジュアライザー](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)拡張機能をダウンロードします。
 > - [Visual Studio 2015 用コンカレンシー ビジュアライザー](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015)拡張機能をダウンロードします。
-> - [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) をダウンロードします。
+> - [Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) をダウンロードします。
 >
 > [コンカレンシー ビジュアライザーのコマンド ライン ユーティリティ (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) を使用して、コマンド ラインからトレースを収集することで、Visual Studio 2015 用のコンカレンシー ビジュアライザーでトレースを表示できます。 このツールは、Visual Studio がインストールされていないコンピューターで使用できます。
 
@@ -38,7 +38,7 @@ ms.locfileid: "71128131"
 > [!NOTE]
 > コンカレンシー ビジュアライザーでは、Web プロジェクトはサポートされません。
 
-コンカレンシー ビジュアライザーは、[Windows イベント トレーシング](http://go.microsoft.com/fwlink/?LinkId=234579)の機能に依存しています。
+コンカレンシー ビジュアライザーは、[Windows イベント トレーシング](/windows/win32/etw/event-tracing-portal)の機能に依存しています。
 
 ## <a name="related-topics"></a>関連トピック
 
@@ -48,7 +48,7 @@ ms.locfileid: "71128131"
 |[スレッド ビュー](../profiling/threads-view-parallel-performance.md)|プログラム内のスレッド間の対話を分析する方法について説明します。|
 |[コア ビュー](../profiling/cores-view.md)|コア間のスレッドの移行を分析する方法について説明します。|
 |[適切に動作しないマルチスレッド アプリケーションの一般的なパターン](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|いくつかの一般的なパターンについて説明し、それらがどのようにコンカレンシー ビジュアライザーに表示されるかを示します。|
-|[Visual Studio での並行開発に関するブログ](http://go.microsoft.com/fwlink/?LinkId=235385)|コンカレンシー ビジュアライザーのヒントとベスト プラクティスについて説明します。|
+|[Visual Studio での並行開発に関するブログ](https://blogs.msdn.microsoft.com/visualizeparallel/)|コンカレンシー ビジュアライザーのヒントとベスト プラクティスについて説明します。|
 |[パフォーマンス レポートのビュー](../profiling/performance-report-views.md)|Visual Studio プロファイリング ツールのレポートおよびビューに関するリファレンス情報を提供します。|
 |[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)|ソース コードをインストルメント化してコンカレンシー ビジュアライザーに追加情報を表示する方法について説明します。|
 |[コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|コンカレンシー ビジュアライザーのコマンド ライン ユーティリティ (CVCollectionCmd.exe) を使用して、Visual Studio がインストールされていないコンピューター上でトレースを収集および処理する方法について説明します。|

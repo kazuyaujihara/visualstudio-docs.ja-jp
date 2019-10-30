@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262953"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911884"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 と Windows Server 2012 アプリケーションのパフォーマンス ツール
 
@@ -72,7 +72,7 @@ Visual Studio がインストールされていないデバイスを含めて、
 
 Visual Studio がインストールされていないデバイスでアプリケーションをプロファイリングするには、次のいずれかを実行します。
 
-- [MSDN Web サイト](http://go.microsoft.com/fwlink/?LinkID=219549)から、Visual Studio 用のリモート ツールの一部としてツールをダウンロードします。
+- [MSDN Web サイト](https://visualstudio.microsoft.com/#downloads+d-additional-software)から、Visual Studio 用のリモート ツールの一部としてツールをダウンロードします。
 
 - 既存の Visual Studio コンピューターから、スタンドアロンのプロファイラー ツール インストール プログラムをコピーして実行します。 プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 リモート コンピューターのオペレーティング システム (x86/x64) に対応するセットアップ プログラムを選択します。
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787877"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816526"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典
 
@@ -82,5 +82,5 @@ IDE をダウンロードするには:
 ## <a name="next-steps"></a>次の手順
 Visual Studio をインストールしたら、次のような他の重要な特典を必ずアクティブにしてください。
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure クレジット](vs-azure.md)
+- [Azure DevTest の個人クレジット](vs-azure.md)
 - [Windows 開発者アカウント](vs-windows-dev.md)

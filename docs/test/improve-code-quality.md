@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e57feede5963b9efc04f98f4c7ba3adfb1eb49b1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653281"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984645"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio のテスト ツール
 
@@ -68,7 +68,7 @@ IntelliTest は、マネージド コードの単体テストとテスト デー
 コード カバレッジは、テスト エクスプローラーを使用してテスト メソッドを実行する場合のオプションです。 結果テーブルには、各アセンブリ、クラス、およびメソッドで実行されたコードの割合が表示されます。 また、ソース エディターには、どのコードがテストされたかが表示されます。
 
 * [コード カバレッジを使用した、テストされるコード割合の確認](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Visual Studio での単体テスト、コード カバレッジおよびコード クローン分析 (ラボ)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Visual Studio での単体テスト、コード カバレッジおよびコード クローン分析 (ラボ)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [コード カバレッジ分析のカスタマイズ](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -86,7 +86,7 @@ IntelliTest は、マネージド コードの単体テストとテスト デー
 * [UI オートメーションを使用してコードをテストする](use-ui-automation-to-test-your-code.md)
 * [コード化された UI テストの作成、編集、および保守の概要](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [コード化された UI テストを使用して UWP アプリをテストする](test-uwp-app-with-coded-ui-test.md)
-* [Visual Studio Enterprise でのコード化された UI テストの概要 (ラボ)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Visual Studio Enterprise でのコード化された UI テストの概要 (ラボ)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>ロード テスト
 

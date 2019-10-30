@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e42b5156ced1c01995882e3250c7243c18d24d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658373"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984446"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 ドメイン固有言語は、自分のコンピューターまたは他のコンピューターにインストールできます。 Visual Studio は、ターゲットコンピューターに既にインストールされている必要があります。
@@ -68,7 +68,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
  MSI ファイルおよびその他の展開オプションの詳細については、「[アプリケーション、サービス、およびコンポーネントの展開](../deployment/deploying-applications-services-and-components.md)」を参照してください。
 
- MSI をビルドするには、Visual Studio ソリューションにセットアッププロジェクトを追加します。 セットアッププロジェクトを作成する最も簡単な方法は、CreateMsiSetupProject.tt テンプレートを使用することです。このテンプレートは、 [Vmsdk サイト](http://go.microsoft.com/fwlink/?LinkID=186128)からダウンロードできます。
+ MSI をビルドするには、Visual Studio ソリューションにセットアッププロジェクトを追加します。 セットアッププロジェクトを作成する最も簡単な方法は、CreateMsiSetupProject.tt テンプレートを使用することです。このテンプレートは、 [Vmsdk サイト](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)からダウンロードできます。
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>DSL を MSI に展開するには
 
@@ -76,7 +76,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
    1. DslPackage\source.extension.tt を開く
 
-   2. @No__t_0 する前に、次の行を挿入します。
+   2. `<SupportedProducts>`する前に、次の行を挿入します。
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -96,7 +96,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
    - **[ビルド]** メニューの **[Configuration Manager]** を開き、 **[リリース]** や **[デバッグ]** など、ビルドする構成を選択します。
 
-4. [視覚化とモデリング SDK のホームページ](http://go.microsoft.com/fwlink/?LinkID=186128)にアクセスし、 **[ダウンロード]** タブから**CreateMsiSetupProject.tt**をダウンロードします。
+4. [視覚化とモデリング SDK のホームページ](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)にアクセスし、 **[ダウンロード]** タブから**CreateMsiSetupProject.tt**をダウンロードします。
 
 5. Dsl プロジェクトに**CreateMsiSetupProject.tt**を追加します。
 
@@ -126,7 +126,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
     - ファイルをダブルクリックすると、Visual Studio が起動し、dsl エディターで DSL ファイルが開きます。
 
-    必要に応じて、テキストテンプレートを使用する代わりに、手動でセットアッププロジェクトを作成することもできます。 この手順を含むチュートリアルについては、[視覚化とモデリング SDK ラボ](http://go.microsoft.com/fwlink/?LinkId=208878)の第5章を参照してください。
+    必要に応じて、テキストテンプレートを使用する代わりに、手動でセットアッププロジェクトを作成することもできます。 この手順を含むチュートリアルについては、[視覚化とモデリング SDK ラボ](https://code.msdn.microsoft.com/DSLToolsLab/Release/ProjectReleases.aspx?ReleaseId=4207)の第5章を参照してください。
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>MSI からインストールされた DSL をアンインストールするには
 
