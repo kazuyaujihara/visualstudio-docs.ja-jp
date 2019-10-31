@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936899"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061142"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -29,7 +29,7 @@ Visual Studio IDE や Azure DevOps Server などの開発者ツールでは、Vi
 
 Visual Studio サブスクリプションからダウンロードされた開発者以外の製品 (SQL、Windows、SharePoint など) は、メインストリーム サポートのみの対象となります。 これらの製品は、アプリケーションを設計、開発、テスト、またはデモンストレーションする開発環境に対してのみライセンスされます。 これらの製品は、運用環境に対してはライセンスされません。
 
-製品レベルの説明 - 指定した製品のサポートにサポート プランを使用できない場合は (コード: 8)、 **[使用できないサポートプラン]** を展開します。 お客様のサポート契約は、選択した製品バージョンには使用できません。
+製品レベルの説明: **[Unavailable support plans]\(使用不可のサポート プラン\)** を展開します。 **[Support plan cannot be used for support on the specified product (Code: 8)]\(サポート プランは指定した製品のサポートには使用できません (コード: 8)\)** が表示される場合、お客様のサポート契約は、選択した製品バージョンには使用できません。
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
 1. [https://my.visualstudio.com/Benefits](https://my.visualstudio.com/Benefits ) に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Azure DevOps と Azure で使用するために Visual Studio サブスクリプションに代替 ID を追加する方法
-ms.openlocfilehash: 5a496af29e520b72e24348a68692efc582fff600
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681227"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816560"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio サブスクライバー向けの ID
 Visual Studio サブスクリプションをアクティブ化すると、アクティベーション中に使用した ID (またはログイン) が Visual Studio サブスクリプションとリンクされます。 これにより、Microsoft は [Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps、および Azure でユーザーを認識することができます。
@@ -19,7 +19,7 @@ Visual Studio サブスクリプションをアクティブ化すると、アク
 Azure DevOps では、ユーザーがログインするたびに Visual Studio サブスクリプションの状態を確認し、登録している各組織内で自動的に機能を付与します。
 これらの機能はサブスクライバーの特典に含まれているため、Visual Studio サブスクリプションにリンクされている ID を使用すれば、ユーザーは無料で任意の Azure DevOps 組織のメンバーとして追加されます。
 
-Azure では、サブスクライバーの特典である[月単位の Azure クレジット](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)をアクティブ化すると、Visual Studio サブスクリプションの状態が確認されます。
+Azure では、サブスクライバーの特典である[月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)をアクティブ化すると、Visual Studio サブスクリプションの状態が確認されます。
 
 [Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)内で、アクティベーション中に使用した ID に加えて、**代替 ID** を追加できる可能性があります。 サブスクリプションをアクティブ化するために Microsoft アカウントを使用した場合、代替 ID を追加することが許可されています。 このように、(Visual Studio、Office 365、または会社や学校のネットワークのログインに使用する) 職場または学校のアカウントを追加することもできます。これにより、個人用アカウントと職場または学校のアカウントの両方を使用して Azure DevOps にアクセスできるようになります。
 

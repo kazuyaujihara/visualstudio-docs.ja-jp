@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f921ce292e34147d54af977567373634610becfd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b7794b4dd300cf66ea894227f9346e80ee68085
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637285"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924505"
 ---
 # <a name="get-started-with-wpf"></a>WPF の使用を開始する
 
@@ -27,12 +27,13 @@ Windows Presentation Foundation (WPF) は、デスクトップ クライアン�
 |-|-|
 |すぐに使用を開始する…|[チュートリアル: 初めての WPF デスクトップ アプリケーション](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |XAML デザイン ツールの比較|[Visual Studio および Blend for Visual Studio での XAML の設計](../designers/designing-xaml-in-visual-studio.md)|
-|.NET の初心者向け|[.NET の概要](/dotnet/framework/get-started/overview)<br /><br /> [アプリケーションの基本事項](/dotnet/standard/application-essentials)<br /><br /> [Visual C# と Visual Basic の概要](../ide/quickstart-visual-basic-console.md)|
-|WPF の詳細な説明...|[WPF の概要](../designers/introduction-to-wpf.md)<br /><br /> [XAML の概要 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [コントロール](/dotnet/framework/wpf/controls/)<br /><br /> [データバインディングの概要](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
-|Windows フォームの開発者向け|[Windows フォーム コントロールおよび同等の WPF コントロール](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF と Windows フォームの相互運用性に関してサポートするシナリオ](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
+|.NET の初心者向け|[.NET のガイド](/dotnet/standard/)<br /><br />[アプリケーションの基本事項](/dotnet/standard/application-essentials)<br /><br />[Visual C# 入門](../ide/quickstart-csharp-console.md)|
+|WPF の詳細な説明...|[WPF の概要](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML の概要 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[コントロール](/dotnet/framework/wpf/controls/)<br /><br />[データバインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[LINQ to XML による WPF のデータ バインディング](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
+|Windows フォームの開発者向け|[Windows フォーム コントロールおよび同等の WPF コントロール](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF と Windows フォームの相互運用性に関してサポートするシナリオ](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>関連項目
 
+- [WPF のデスクトップ ガイド](/dotnet/desktop-wpf/overview/index)
 - [クラス ライブラリ (WPF)](/dotnet/framework/wpf/class-library-wpf)
 - [WPF コミュニティ リソース](/dotnet/framework/wpf/getting-started/community-feedback)
 - [アプリ開発の概要](/dotnet/framework/wpf/app-development/index)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 9d1b81e35cdf08aef82c6e9c070d7127cb2debd5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128137"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911906"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP アプリのネットワーク使用量を分析する
 Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http API](/uwp/api/windows.web.http) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。
@@ -50,7 +50,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 
  **[ネットワーク]** の詳細ビューには、[概要] ビューのネットワーク操作に関する詳細情報が表示されます。
 
- ![ネットワーク ツールの詳細ペイン](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
+ ![ネットワーク ツールの詳細ウィンドウ](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
 |||
 |-|-|
@@ -74,7 +74,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 ## <a name="see-also"></a>関連項目
 
 - [デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Visual Studio ブログ:Visual Studio のネットワーク インスペクターの紹介](http://go.microsoft.com/fwlink/?LinkId=535022)
+- [Visual Studio ブログ:Visual Studio のネットワーク インスペクターの紹介](https://devblogs.microsoft.com/visualstudio/)
 - [Channel 9 ビデオ:Visual Studio 診断ツール - 新しいネットワーク プロファイラー](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d1703fb5386c7b29446b621d2e83f9486e93dd3d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679260"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806913"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 
 ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次のいずれかの方法を使用して、Azure App Service または Azure App Service Linux (コンテナーを使用) に発行します。
 
-* アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops) で Azure DevOps を使用します。
+* アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops) で Azure DevOps を使用します。
 
 * アプリの 1 回限り (または手動) のデプロイの場合は、Visual Studio の**発行**ツールを使用して、Azure App Service または App Service for Linux (コンテナーを使用) に ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリをデプロイします。 Python アプリの場合は、[Python - Azure App Service への発行](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページの手順に従います。
 
@@ -39,11 +39,11 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 1. **[発行先を選択]** ダイアログ ボックスで、 **[App Service]** を選びます。
 
-    ![Azure App Service を選択する](../deployment/media/quickstart-publish-azure.png "Azure App Service を選択する")
+    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-azure.png "Azure App Service を選ぶ")
 
 1. **[発行]** を選びます。 **[App Service の作成]** ダイアログ ボックスが表示されます。 必要に応じて、Azure アカウントでサインインすると、既定のアプリ サービス設定がフィールドに取り込まれます。
 
-    ![App Service の作成](../deployment/media/quickstart-publish-settings-app-service.png "Azure App Service の作成")
+    ![App Service の作成](../deployment/media/quickstart-publish-settings-app-service.png "Azure App Service を作成する")
 
 1. **[作成]** を選択します。 Visual Studio によってアプリが Azure App Service にデプロイされ、ブラウザに Web アプリが読み込まれます。 プロジェクト プロパティの **[発行]** ウィンドウに、サイト URL とその他の詳細が示されます。
 
@@ -51,7 +51,7 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-上記の手順では、リソース グループに Azure リソースを作成しました。 今後、これらのリソースを必要としない場合は、リソース グループを削除することでリソースを削除できます。
+前の手順では、リソース グループ内に Azure リソースを作成しました。 今後、これらのリソースを必要としない場合は、リソース グループを削除することでリソースを削除できます。
 Azure portal の左側のメニューから、 **[リソース グループ]** 、 **[myResourceGroup]** の順に選択します。
 リソース グループ ページで、リストされたリソースが削除対象であることを確認します。
 **[削除]** を選択し、テキスト ボックスに「**myResourceGroup**」と入力してから、 **[削除]** を選びます。

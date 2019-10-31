@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 4119e188a265660b805c1ce404cb909f600fb30a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787847"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816412"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -46,4 +46,4 @@ WhiteSource Bolt を Visual Studio Marketplace で無料で入手できるよう
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月々の Azure クレジット](vs-azure.md)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
+Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](vs-azure.md)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
