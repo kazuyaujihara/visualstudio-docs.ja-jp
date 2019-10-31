@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-ms.openlocfilehash: 7241a63d51ecba2dd47995f39e98f8676e949f60
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 961cd646ecf0ed9c34c734292491c5f3a8e67480
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606041"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816382"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 必ず[クラウド サブスクリプションの特典と価格を比較](https://visualstudio.microsoft.com/vs/pricing/)して、各 Visual Studio サブスクリプションの特典、クラウドと標準の Visual Studio サブスクリプションの比較、サブスクライバー特典の詳細などを理解してください。
@@ -76,12 +76,12 @@ A: サブスクリプションの*各タイプ内*で 6 番目以降のすべて
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
 ## <a name="other-questions"></a>その他の質問
-### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q:Visual Studio サブスクライバーとしての毎月の Azure クレジットを使って、さらに Visual Studio クラウド サブスクリプションを購入できますか。
-A: いいえ、Visual Studio サブスクライバーとしての[毎月の Azure クレジット](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)を、Visual Studio Marketplace での購入の支払いに使うことはできません。 Visual Studio クラウド サブスクリプションのすべての購入は、クレジット カードに課金されます。
+### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q:Visual Studio サブスクライバーとして毎月の Azure DevTest の個人クレジットを使って、さらに Visual Studio クラウド サブスクリプションを購入できますか。
+A: いいえ、Visual Studio サブスクライバーとして[月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)を使って、Visual Studio Marketplace での購入を支払うことはできません。 Visual Studio クラウド サブスクリプションのすべての購入は、クレジット カードに課金されます。
 購入を行う前に、[使用制限を解除する](https://azure.microsoft.com/pricing/spending-limits/)必要があります。
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Q:クラウド サブスクリプションの年間プランと月間プランは何が違うのですか。
-A: クラウド サブスクリプション月間プランには、Visual Studio に加えて Azure DevOps Services と TFS の使用が含まれます。 クラウド サブスクリプション年間プランにもこれらは含まれますが、それだけでなく、開発のテストを目的とするインストールと実行のための Windows および他の Microsoft ソフトウェアの使用、Azure サービスでの実験およびクラウドでの開発とテストのために使用できる毎月の Azure クレジット、トレーニング、サポート、その他のサブスクライバー特典が含まれます。
+A: クラウド サブスクリプション月間プランには、Visual Studio に加えて Azure DevOps Services と TFS の使用が含まれます。 クラウド サブスクリプション年間プランにもこれらは含まれますが、それだけでなく、開発とテストを目的とするインストールと実行のための Windows および他の Microsoft ソフトウェアの使用、Azure サービスでの実験およびクラウドでの開発とテストのために使用できる月単位の Azure DevTest の個人クレジット、トレーニング、サポート、その他のサブスクライバー特典が含まれます。
 [クラウド サブスクリプションの特典と価格を比較する](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Q:Visual Studio クラウド サブスクリプションを購入した場合、新しいバージョンの Visual Studio を入手できますか。

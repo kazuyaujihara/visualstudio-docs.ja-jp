@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929757"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816566"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -57,7 +57,7 @@ Action Pack では、パートナーは **Visual Studio Professional (MPN) サ�
 
 また、Visual Studio Professional (MPN) サブスクライバーは、SQL Server Developer Edition など、開発用のソフトウェアをダウンロードおよび使用することもできます。
 
-Visual Studio Professional (MPN) サブスクリプションには、商用に提供されている Visual Studio サブスクリプションで利用できる、Azure DevOps Services 特典、月単位の Azure クレジット、テクニカル サポート、トレーニング、またはその他のサブスクライバー特典は含まれません。
+Visual Studio Professional (MPN) サブスクリプションには、商用に提供されている Visual Studio サブスクリプションで利用できる、Azure DevOps Services 特典、Azure DevTest の個人クレジット、テクニカル サポート、トレーニング、またはその他のサブスクライバー特典は含まれません。
 
 ## <a name="internal-use-only-restriction"></a>内部使用のみの制限
 

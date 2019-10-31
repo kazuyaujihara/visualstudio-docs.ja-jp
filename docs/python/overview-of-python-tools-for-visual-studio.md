@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154954"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061162"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -40,7 +40,7 @@ Visual Studio は、Windows 上の強力な Python IDE です。 Visual Studio �
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio では、Python バージョン 2.7 だけでなくバージョン 3.5 以降もサポートされます。 Visual Studio を使って、他のバージョンの Python で記述されたコードを編集することはできますが、それらのバージョンは公式にはサポートされておらず、IntelliSense やデバッグなどの機能が動作しない可能性があります。
+> Visual Studio では、Python バージョン 2.7 だけでなくバージョン 3.5 から 3.7 もサポートされます。 Visual Studio を使って、他のバージョンの Python で記述されたコードを編集することはできますが、それらのバージョンは公式にはサポートされておらず、IntelliSense やデバッグなどの機能が動作しない可能性があります。 Python バージョン 3.8 のサポートはまだ開発中です。サポートについての具体的な詳細については、[GitHub のイシュー](https://github.com/microsoft/PTVS/issues/5822)でご確認ください。
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>複数のインタープリターのサポート

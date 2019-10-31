@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Visual Studio サブスクリプションに含まれる Azure の特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681671"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816451"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
-Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月々の Azure クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
+Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
@@ -78,9 +78,9 @@ A: Visual Studio サブスクリプションに関連付けられている Azure
 
 **推奨アクション:**
 
-Visual Studio の Azure クレジットと割引の使用を続けるには、次のいずれかの手順を行います。
+Visual Studio の Azure DevTest の個人クレジットと割引の使用を続けるには、次のいずれかの手順を行います。
 
-チームまたは組織の誰かが代理でサブスクリプションを購入する場合、組織の Visual Studio 管理者に連絡し、Azure クレジットに必要な月額を与える Visual Studio サブスクリプションを依頼します。   前のサブスクリプションが割り当てられたものと同じユーザー ID に新しいサブスクリプションを割り当てるように管理者に依頼してください。Azure サブスクリプションを転送する必要がなくなります。
+チームまたは組織の誰かが代理でサブスクリプションを購入する場合、組織の Visual Studio 管理者に連絡し、Azure DevTest の個人クレジットに必要な金額を与える Visual Studio サブスクリプションを依頼します。   前のサブスクリプションが割り当てられたものと同じユーザー ID に新しいサブスクリプションを割り当てるように管理者に依頼してください。Azure サブスクリプションを転送する必要がなくなります。
 
 サブスクリプションを直接購入できる場合、次のいずれかを行ってください。
 1. Visual Studio Marketplace から Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) または Visual Studio [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) のクラウド年間サブスクリプションを購入します。

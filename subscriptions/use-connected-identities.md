@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法について説明します
-ms.openlocfilehash: d0d30092f34a3cb17b41455612cd336af3e58d30
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 1a862caa1f984f5d22f041a6f0cbff6534d8cc1c
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686267"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816580"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで接続済み ID を使用する方法
 職場または学校を介して Visual Studio サブスクリプションを受け取り、Microsoft アカウント (MSA) を使用してサインインする場合は、サブスクリプション管理者が組織の Azure Active Directory (Azure AD) の ID に MSA を接続できます。  これにより、サブスクリプションに含まれる特典の一部にアクセスする方法が変わります。 
@@ -26,7 +26,7 @@ ms.locfileid: "71686267"
 管理者が MSA を Azure AD ID に接続した後、Azure AD に依存する特典にアクセスするには、Azure AD ID を使用してサブスクライバー ポータル (https://my.visualstudio.com ) にサインインする必要があります。  次の設定があります。
 - Visual Studio IDE
 - Azure DevOps
-- Azure クレジット
+- Azure DevTest の個人クレジット
 
 ## <a name="how-to-access-benefits-using-your-msa"></a>MSA を使用して特典にアクセスする方法
 Pluralsight、LinkedIn、CloudPilot など、Visual Studio サブスクリプションで提供される多くの特典については、パートナーの Web サイトでユーザー アカウントを実際に作成します。  このようなアカウントの場合、アカウントの作成時に使用した ID を引き続き使用する必要があります。  たとえば、MSA を使用して Pluralsight 特典をアクティブ化した場合、Pluralsight トレーニングを行うときは、サブスクライバー ポータルへのサインインに使用する ID とは関係なく、MSA を引き続き使用する必要があります。  
@@ -39,4 +39,4 @@ Visual Studio サブスクリプションに代替アカウントを追加する
 A: 管理者に問い合わせる方法の詳細については、[サブスクリプション管理者への問い合わせ](contact-my-admin.md)に関するページを参照してください。  
 
 ## <a name="next-steps"></a>次の手順
-管理者が Azure AD と MSA のアカウントを接続した後は、[サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)に正常にサインインできることと、Azure DevOps、Visual Studio、Azure クレジットなどのアクセス特典にアクセスできることを確認することをお勧めします。 
+管理者が Azure AD と MSA のアカウントを接続した後は、[サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)に正常にサインインできることと、Azure DevOps、Visual Studio、Azure DevTest の個人クレジットなどの特典にアクセスできることを確認することをお勧めします。 
