@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787788"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816419"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -63,4 +63,4 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-Azure は個人用の開発/テスト向けサンドボックスです。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。 毎月のクレジットで Azure の使用を開始するには、[Azure 特典](vs-azure.md)をアクティブ化してください。
+Azure は個人用の開発/テスト向けサンドボックスです。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。 Azure DevTest の個人クレジットの使用を開始するには、[Azure 特典](vs-azure.md)をアクティブ化してください。

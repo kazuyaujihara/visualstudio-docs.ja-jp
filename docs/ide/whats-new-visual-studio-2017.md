@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925904"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919143"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -196,7 +196,7 @@ Visual Studio でプロジェクトを操作する際に、コードを迅速に
 
 Visual Studio には、C++ Core ガイドラインの配信、C++11 および C++ 機能の拡張サポートを追加することによるコンパイラの更新、C++ ライブラリへの機能の追加および更新など、いくつかの改善が加えられています。 また、C++ IDE やインストールのワークロードなどのパフォーマンスも改善しました。
 
-同時に 250 以上のバグを修正し、コンパイラおよびツールの問題をレポートしてきました。その多くは [C++ の開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/62/index.html "C++ の開発者コミュニティ") を通じてお客様から寄せられたものです。
+同時に 250 以上のバグを修正し、コンパイラおよびツールのイシューをレポートしてきました。その多くは [C++ の開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/62/index.html "C++ の開発者コミュニティ")を通じてお客様から寄せられたものです。
 
 詳細については、「[What's new for Visual C++ in Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)」 (Visual 2017 での Visual C++ の新機能) ページを参照してください。
 
@@ -243,7 +243,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 "Azure 開発" ワークロードの一部として、コンパイル済みの C# クラス ライブラリを利用して Azure Functions を開発するためのツールを追加しました。 ローカルの開発マシンでビルドし、実行し、デバッグし、Visual Studio から Azure に直接公開できます。
 
-詳細については、「[Azure Functions Tools for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs)」 (Visual Studio の Azure Functions ツール) ページを参照してください。
+詳細については、「[Azure Functions Tools for Visual Studio](/azure/azure-functions/functions-develop-vs)」 (Visual Studio の Azure Functions ツール) ページを参照してください。
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>ライブ Azure アプリケーションでスナップショットとログポイントを使用して、ライブ ASP.NET アプリをデバッグする
 
@@ -269,7 +269,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 **15.5 の新機能**:Visual Studio 2017 バージョン 15.5 では、Windows 10 Fall Creators Update SDK (10.0.16299.0) の最適なサポートが提供されます。 また、Windows 10 Fall Creators Update により、UWP 開発者のための数多くの機能が強化されます。 最も大きな変更点をいくつか以下に示します。 
 
 * **.NET Standard 2.0 のサポート**<br/>Windows 10 Fall Creators Update は、アプリ配置を効率化するだけでなく、.NET Standard 2.0 サポートを提供する Windows 10 の最初のリリースとなります。 実際には、[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) は、すべての .NET プラットフォームで実装できる基本クラス ライブラリの参照実装です。 .NET Standard の目的は、.NET 開発者が作業用に選択したすべての .NET プラットフォームでコードをできるだけ簡単に共有できるようにすることです。
-* **UWP と Win32 の両方に長所**<br/>[デスクトップ ブリッジ](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)を使用して Windows 10 プラットフォームを改善しました。これにより、現在のフォーカスが UWP、WPF、Windows Forms、または Xamarin のいずれにあるかに関係なく、すべての .NET 開発者は Windows 10 を改善することができます。 Visual Studio 2017 バージョン 15.5 の新しいアプリ パッケージング プロジェクト タイプを使用することで、UWP プロジェクトの場合と同じように、WPF または Windows Forms プロジェクトの Windows アプリケーション パッケージを作成できます。 アプリをパッケージ化すると、Windows 10 アプリ配置のすべての利点が得られ、Microsoft Store (コンシューマー アプリケーションの場合) または Microsoft Store for Business と Education を通じて配布することができます。 パッケージ化されたアプリは完全な UWP API 画面とデスクトップ上の Win32 API の両方にアクセスできるため、WPF および Windows Forms アプリケーションを UWP API および Windows 10 の機能で段階的に最新化できるようになりました。 さらに、すべての Win32 機能を使用して、デスクトップ上で点灯する UWP アプリケーションに Win32 コンポーネントを含めることができます。
+* **UWP と Win32 の両方に長所**<br/>[デスクトップ ブリッジ](/windows/uwp/porting/desktop-to-uwp-root)を使用して Windows 10 プラットフォームを改善しました。これにより、現在のフォーカスが UWP、WPF、Windows Forms、または Xamarin のいずれにあるかに関係なく、すべての .NET 開発者は Windows 10 を改善することができます。 Visual Studio 2017 バージョン 15.5 の新しいアプリ パッケージング プロジェクト タイプを使用することで、UWP プロジェクトの場合と同じように、WPF または Windows Forms プロジェクトの Windows アプリケーション パッケージを作成できます。 アプリをパッケージ化すると、Windows 10 アプリ配置のすべての利点が得られ、Microsoft Store (コンシューマー アプリケーションの場合) または Microsoft Store for Business と Education を通じて配布することができます。 パッケージ化されたアプリは完全な UWP API 画面とデスクトップ上の Win32 API の両方にアクセスできるため、WPF および Windows Forms アプリケーションを UWP API および Windows 10 の機能で段階的に最新化できるようになりました。 さらに、すべての Win32 機能を使用して、デスクトップ上で点灯する UWP アプリケーションに Win32 コンポーネントを含めることができます。
 
 UWP の詳細については、「[ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)」を参照してください。
 
@@ -323,12 +323,12 @@ DevOps 機能を SQL Server データベース開発に拡張するために、V
 
 Visual Studio 2017 Enterprise に付属:
 
-* [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) は、移行スクリプトの開発、ソース管理によるデータベースの変更管理、アプリケーション変更と並行した SQL Server データベース変更の配置の安全な自動化に役立ちます。
-* [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) を利用すると、インテリジェントなコード入力候補機能により、SQL を短時間で正確に記述できます。 SQL Prompt は、データベース、システム オブジェクト、キーワードをオートコンプリートし、入力と同時に列の入力候補を提案します。 列の名前やエイリアスを覚える必要がないため、結果として、間違いが少なく、読みやすいコードが完成します。
+* [Redgate ReadyRoll Core](https://www.red-gate.com/products/sql-development/sql-change-automation/?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) は、移行スクリプトの開発、ソース管理によるデータベースの変更管理、アプリケーション変更と並行した SQL Server データベース変更の配置の安全な自動化に役立ちます。
+* [Redgate SQL Prompt Core](https://www.red-gate.com/products/sql-development/sql-prompt/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) を利用すると、インテリジェントなコード入力候補機能により、SQL を短時間で正確に記述できます。 SQL Prompt は、データベース、システム オブジェクト、キーワードをオートコンプリートし、入力と同時に列の入力候補を提案します。 列の名前やエイリアスを覚える必要がないため、結果として、間違いが少なく、読みやすいコードが完成します。
 
 Visual Studio 2017 のすべてのエディションに付属:
 
-* [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) では、複数のデータベースから SQL のフラグメントやオブジェクトをすばやく見つけることができ、生産性が向上します。
+* [Redgate SQL Search](https://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) では、複数のデータベースから SQL のフラグメントやオブジェクトをすばやく見つけることができ、生産性が向上します。
 
 詳細については、ブログの投稿「[Redgate Data Tools in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/)」 (Visual Studio 2017 の Redgate Data Tools) を参照してください。
 

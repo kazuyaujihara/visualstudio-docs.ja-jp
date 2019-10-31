@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128157"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806916"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "71128157"
 
 - **ASP.NET**、**ASP.NET Core**、**Python**、**Node.js**:次のいずれかの方法を使用して、Azure App Service または Azure App Service Linux (コンテナーを使用) に発行します。
 
-  - アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops) で Azure DevOps を使用します。
+  - アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops) で Azure DevOps を使用します。
 
   - アプリを一回だけ (手動で) 配置する場合、Visual Studio の **[発行]** ツールを使用します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "71128157"
 
   **[発行]** ツールを使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[発行]** を選択します。 (発行プロファイルを以前に構成している場合、 **[新しいプロファイルの作成]** をクリックする必要があります。)[発行] ダイアログ ボックスで、 **[App Service]** または **[Azure Virtual Machines]** を選択し、構成手順に従います。
 
-  ![Azure App Service を選択する](../deployment/media/quickstart-publish-azure.png "Azure App Service を選択する")
+  ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-azure.png "Azure App Service を選ぶ")
 
   Visual Studio 2017 バージョン 15.7 以降では、ASP.NET Core アプリを **Linux 用 App Service** に配置できます。
 
@@ -81,7 +81,7 @@ ms.locfileid: "71128157"
 
     Visual Studio に発行プロファイルをインポートする方法については、[発行設定のインポートと IIS への配置](../deployment/tutorial-import-publish-settings-iis.md)に関するページを参照してください。
 
-    ASP.NET のアプリケーションとサービスは他にもさまざまな方法で配置できます。 詳細については、[ASP.NET の Web アプリケーション/サービスを配置する](http://www.asp.net/aspnet/overview/deployment)方法に関するページをご覧ください。
+    ASP.NET のアプリケーションとサービスは他にもさまざまな方法で配置できます。 詳細については、[ASP.NET の Web アプリケーション/サービスを配置する](/aspnet/mvc/overview/deployment/)方法に関するページをご覧ください。
 
 - **Windows デスクトップ**: ClickOnce 配置を使用し、Web サーバーまたはネットワーク ファイル共有に Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLI については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
 
@@ -118,7 +118,7 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
    Visual Studio 2019 については、[WiX Toolset Visual Studio 2019 Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension) を取得します。
    ::: moniker-end
 
-- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていないことに注意してください。今後の使用可能性については、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
+- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていないことに注意してください。今後の使用可能性については、[Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
 
 - MSI または EXE インストーラー パッケージはセットアップ プロジェクト (vdproj) を使用して作成できます。 このオプションを使用するには、[Visual Studio Installer Projects 拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)をインストールします。
 

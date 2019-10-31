@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128235"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910348"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>デバッガーなしでメモリ使用量を分析する
 
@@ -40,7 +40,7 @@ ms.locfileid: "71128235"
 
 1. **[メモリ使用量]** 、 **[開始]** の順に選択します。
 
-   ![メモリ使用量診断セッションを開始する](../profiling/media/memuse_start_diagnosticssession.png "メモリ使用量診断セッションを開始する")
+   ![メモリ使用量診断セッションの開始](../profiling/media/memuse_start_diagnosticssession.png "メモリ使用量診断セッションの開始")
 
 ### <a name="monitor-memory-use"></a>メモリ使用量の監視
 
@@ -60,7 +60,7 @@ ms.locfileid: "71128235"
 
 レポートを作成せずに監視セッションを停止する場合は、単に診断ウィンドウを閉じます。 スナップショットの収集が完了したとき、またはスナップショットを取得したときにレポートを生成するには、 **[コレクションの停止]** を選択します。
 
-![[コレクションの停止]](../profiling/media/memuse__stopcollection.png "[コレクションの停止]")
+![コレクションの停止](../profiling/media/memuse__stopcollection.png "コレクションの停止")
 
 ## <a name="memory-usage-reports"></a>メモリ使用量レポート
 
@@ -78,10 +78,10 @@ ms.locfileid: "71128235"
 
 |||
 |-|-|
-|![手順 1](../profiling/media/procguid_1.png "ProcGuid_1")|スナップショット取得時のメモリ内のバイトの合計数。<br /><br /> このリンクを選択すると、スナップショットの詳細レポートが各種類のインスタンスの合計サイズ順に並べ替えて表示されます。|
-|![手順 2](../profiling/media/procguid_2.png "ProcGuid_2")|スナップショット取得時のメモリ内のオブジェクトの合計数。<br /><br /> このリンクを選択すると、スナップショットの詳細レポートが各種類のインスタンス数の順に並べ替えて表示されます。|
-|![手順 3](../profiling/media/procguid_3.png "ProcGuid_3")|このスナップショットと前のスナップショットとのメモリ オブジェクトの合計サイズの差。 <br /><br /> 正の数はこのスナップショットのメモリ サイズが前のものより大きいことを意味し、負の数はサイズがより小さいことを意味します。 **[ベースライン]** は、スナップショットが診断セッションで最初のものであることを意味します。 **[No Difference]\(相違なし\)** は、差が 0 であることを意味します。<br /><br /> このリンクを選択すると、スナップショットの相違レポートが各種類のインスタンスの合計サイズの差の順に並べ替えて表示されます。|
-|![手順 4](../profiling/media/procguid_4.png "ProcGuid_4")|このスナップショットと前のスナップショットとのメモリ オブジェクトの合計数の差。<br /><br /> このリンクを選択すると、スナップショットの相違レポートが各種類のインスタンスの合計数の差の順に並べ替えて表示されます。|
+|![ステップ 1](../profiling/media/procguid_1.png "ProcGuid_1")|スナップショット取得時のメモリ内のバイトの合計数。<br /><br /> このリンクを選択すると、スナップショットの詳細レポートが各種類のインスタンスの合計サイズ順に並べ替えて表示されます。|
+|![ステップ 2](../profiling/media/procguid_2.png "ProcGuid_2")|スナップショット取得時のメモリ内のオブジェクトの合計数。<br /><br /> このリンクを選択すると、スナップショットの詳細レポートが各種類のインスタンス数の順に並べ替えて表示されます。|
+|![ステップ 3](../profiling/media/procguid_3.png "ProcGuid_3")|このスナップショットと前のスナップショットとのメモリ オブジェクトの合計サイズの差。 <br /><br /> 正の数はこのスナップショットのメモリ サイズが前のものより大きいことを意味し、負の数はサイズがより小さいことを意味します。 **[ベースライン]** は、スナップショットが診断セッションで最初のものであることを意味します。 **[No Difference]\(相違なし\)** は、差が 0 であることを意味します。<br /><br /> このリンクを選択すると、スナップショットの相違レポートが各種類のインスタンスの合計サイズの差の順に並べ替えて表示されます。|
+|![ステップ 4](../profiling/media/procguid_4.png "ProcGuid_4")|このスナップショットと前のスナップショットとのメモリ オブジェクトの合計数の差。<br /><br /> このリンクを選択すると、スナップショットの相違レポートが各種類のインスタンスの合計数の差の順に並べ替えて表示されます。|
 
 ## <a name="memory-usage-snapshot-reports"></a>メモリ使用量のスナップショット レポート
 
@@ -119,14 +119,14 @@ ms.locfileid: "71128235"
 
  スナップショットの詳細レポートでは、診断セッションで得られた 1 つのスナップショットについて説明されます。 レポートを開くには、スナップショット ウィンドウでサイズまたはオブジェクトのリンクを選択します。
 
- ![スナップショット ウィンドウのスナップショット レポートへのリンク](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "スナップショット ウィンドウのスナップショット レポートへのリンク")
+ ![スナップショット ウィンドウにあるスナップショット レポートへのリンク](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "スナップショット ウィンドウにあるスナップショット レポートへのリンク")
 
 両方のリンクで同じレポートが開きます。 **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 サイズ リンクでは、 **[包括サイズ (バイト)]** 列でレポートが並べ替えられます。 オブジェクト リンクでは、 **[カウント]** 列でレポートが並べ替えられます。 レポートが開いた後で並べ替え列や順序を変更することができます。
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [マネージド ヒープ] ツリー (スナップショットの詳細レポート)
  **[マネージド ヒープ]** ツリーには、メモリ内に保持されているオブジェクトの種類が一覧表示されます。 種類名を展開すると、サイズ順に、その種類の最大のインスタンスが 10 個表示されます。 種類またはインスタンスを選ぶと、選んだ項目の **[ルートのパス]** ツリーと **[参照されたオブジェクト]** ツリーが表示されます。
 
- ![[マネージド ヒープ] ツリー](../profiling/media/memuse__snapshotdetails_managedheaptree.png "[マネージド ヒープ] ツリー")
+ ![マネージド ヒープ ツリー](../profiling/media/memuse__snapshotdetails_managedheaptree.png "マネージド ヒープ ツリー")
 
 スナップショットの詳細レポートの **[マネージド ヒープ]** ツリーには、次の列があります。
 
@@ -148,7 +148,7 @@ ms.locfileid: "71128235"
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [参照された型] ツリーまたは [参照されたオブジェクト] ツリー (スナップショットの詳細レポート)
 **[参照された型]** ツリーまたは **[参照されたオブジェクト]** ツリーには、選んだ型またはインスタンスによって参照されるオブジェクトが表示されます。
 
-![インスタンスの [参照されたオブジェクト] ツリー](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "インスタンスの [参照されたオブジェクト] ツリー")
+![インスタンスの参照されたオブジェクト ツリー](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "インスタンスの参照されたオブジェクト ツリー")
 
 スナップショットの詳細レポートの **[参照された型]** ツリーには、次の列があります。 **[参照されたオブジェクト]** ツリーには、 **[参照数]** 列はありません。
 
@@ -166,13 +166,13 @@ ms.locfileid: "71128235"
 
 両方のリンクで同じレポートが開きます。 レポートの **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 サイズ リンクでは、 **[包括サイズの相違 (バイト)]** 列でレポートが並べ替えられます。 オブジェクト リンクでは、 **[数の相違]** 列でレポートが並べ替えられます。 レポートが開いた後で並べ替え列や順序を変更することができます。
 
- ![スナップショット ウィンドウの相違レポートへのリンク](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "スナップショット ウィンドウの相違レポートへのリンク")
+ ![スナップショット ウィンドウにある相違レポートへのリンク](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "スナップショット ウィンドウにある相違レポートへのリンク")
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [マネージド ヒープ] ツリー (スナップショットの相違レポート)
 
  **[マネージド ヒープ]** ツリーには、メモリ内に保持されているオブジェクトの種類が一覧表示されます。 型名を展開すると、サイズ順に、その型の最大のインスタンス 10 個が表示されます。 種類またはインスタンスを選ぶと、選んだ項目の **[ルートのパス]** ツリーと **[参照されたオブジェクト]** ツリーが表示されます。
 
- ![相違レポートにある種類の [マネージド ヒープ] ツリー](../profiling/media/memuse_snapshotdiff_type_heap.png "相違レポートにある種類の [マネージド ヒープ] ツリー")
+ ![相違レポートにある種類のマネージド ヒープ ツリー](../profiling/media/memuse_snapshotdiff_type_heap.png "相違レポートにある種類のマネージド ヒープ ツリー")
 
 スナップショットの相違レポートの **[マネージド ヒープ]** ツリーには、次の列があります。
 
@@ -199,7 +199,7 @@ ms.locfileid: "71128235"
 
 **[参照された型]** ツリーまたは **[参照されたオブジェクト]** ツリーには、選んだ型またはインスタンスによって参照されるオブジェクトが表示されます。
 
-![相違レポートの [参照された型]](../profiling/media/memuse_snapshotdiff_referencedtypes.png "相違レポートの [参照された型]")
+![相違レポート内で参照された型](../profiling/media/memuse_snapshotdiff_referencedtypes.png "相違レポート内で参照された型")
 
 スナップショットの相違レポートの **[参照された型]** ツリーには、次の列があります。 **[参照されたオブジェクト]** ツリーには、 **[インスタンス]** 、 **[サイズ (バイト)]** 、 **[包括サイズ (バイト)]** 、および **[モジュール]** という列があります。
 
@@ -219,4 +219,4 @@ ms.locfileid: "71128235"
 - [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)
 - [C++、C#、または Visual Basic を使った UWP アプリのパフォーマンスのベスト プラクティス](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Visual Studio で新しいメモリ使用量ツールを使用するメモリの問題の診断](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+- [Visual Studio で新しいメモリ使用量ツールを使用するメモリの問題の診断](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)
