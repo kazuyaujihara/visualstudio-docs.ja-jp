@@ -1,6 +1,6 @@
 ---
-title: デバッガーでトレースポイントを使用する |Microsoft Docs
-ms.date: 9/17/2019
+title: トレースポイントを使用して情報を記録する |Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516395"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187302"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのトレースポイントの使用
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio でトレースポイントを使用して出力ウィンドウに情報を記録する
 
-トレースポイントを使用すると、コードの変更や停止を行わずに、構成可能な条件の下で出力ウィンドウに情報を記録できます。 この機能はマネージコードとネイティブコードの両方でサポートされています。またC#、JavaScript やなどのいくつかの言語でもサポートされています。
+トレースポイントを使用すると、コードの変更や停止を行わずに、構成可能な条件の下で出力ウィンドウに情報を記録できます。 この機能は、マネージ言語 (C#、Visual Basic F#) とネイティブコードの両方でサポートされています。また、JavaScript や Python などの言語でもサポートされています。
 
 ## <a name="let39s-take-an-example"></a>例&#39;を見てみましょう
 
@@ -75,7 +75,7 @@ ms.locfileid: "72516395"
 | $CALLER | 関数名の呼び出し |
 | $CALLSTACK | [呼び出し履歴] |
 | $FUNCTION | 現在の関数名 |
-| $PID | プロセス ID |
+| $PID | [プロセス ID] |
 | $PNAME | プロセス名 |
 | $TID | スレッド ID |
 | $TNAME   | スレッド名 |
@@ -92,7 +92,7 @@ ms.locfileid: "72516395"
 
 ![条件式が True です](../debugger/media/conditionalexpressionistrue.png "条件式が True です")
 
-@No__t_0 ループの繰り返しが変化したときに counter の値を印刷する場合は、 **[変更された場合]** オプションを選択し、メッセージテキストボックスに「`i`」と入力します。
+`for` ループの繰り返しが変化したときに counter の値を印刷する場合は、 **[変更された場合]** オプションを選択し、メッセージテキストボックスに「`i`」と入力します。
 
 ![変更時の条件式](../debugger/media/conditionalexpressionwhenchanged.png "変更時の条件式")
 
@@ -111,7 +111,7 @@ ms.locfileid: "72516395"
 ![条件式のヒットカウント](../debugger/media/conditionalexpressionhitcount.png "条件式のヒットカウント")
 
 ### <a name="filter"></a>フィルター
-フィルター条件として、に表示されるデバイス、プロセス、またはスレッドの出力を指定します。
+フィルター条件として、に対して出力されるデバイス、プロセス、またはスレッドを指定します。
 
 ![条件式フィルター](../debugger/media/conditionalexpressionfilter.png "条件式フィルター")
 
@@ -129,7 +129,7 @@ ms.locfileid: "72516395"
 
 トレースポイントは、クリーンでスムーズなエクスペリエンスを実現することを目的としていますが、使用するタイミングに注意する必要がある考慮事項がいくつかあります。
 
-オブジェクトのプロパティまたは属性を検査するときに、その値が変化することがあります。 これは、トレースポイント機能自体に起因するバグではありませんが、トレースポイントを使用してオブジェクトを検査することで、これらの偶発的な変更を回避することはできません。
+オブジェクトのプロパティまたは属性を検査するときに、その値が変化することがあります。 検査中に値が変化した場合、トレースポイント機能自体に起因するバグではありません。 ただし、トレースポイントを使用してオブジェクトを検査しても、これらの偶発的な変更は回避されません。
 
 **アクション**メッセージボックスで式を評価する方法は、現在開発に使用している言語とは異なる場合があります。 たとえば、文字列を出力する場合、通常は `Debug.WriteLine()` または `console.log()` を使用する場合でも、メッセージを引用符で囲む必要はありません。 また、出力式の中かっこ構文 (`{ }`) も、開発言語で値を出力する場合とは異なる場合があります。 (ただし、中かっこ (`{ }`) 内の内容は、開発言語の構文を使用して記述する必要があります。
 

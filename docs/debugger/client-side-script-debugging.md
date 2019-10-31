@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745696"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188700"
 ---
 # <a name="client-side-script-debugging"></a>クライアント側スクリプトのデバッグ
 Visual Studio デバッガーには、ASP.NET ページ内のクライアント側スクリプトのエラーを検出および修正するための包括的なデバッグ環境が用意されています。
@@ -61,7 +61,7 @@ Visual Studio デバッガーには、ASP.NET ページ内のクライアント�
 
 ## <a name="see-also"></a>関連項目
 
-- [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](how-to-enable-debugging-for-aspnet-applications.md)
 - [スクリプト デバッグの制約](../debugger/limitations-on-script-debugging.md)
 - [[変数] ウィンドウ](../debugger/debugger-windows.md)
 - [イミディエイト ウィンドウ](../ide/reference/immediate-window.md)

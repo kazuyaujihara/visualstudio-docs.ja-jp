@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649410"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188806"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "72649410"
 [FxCopAnalyzers NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)には、いくつかのコードメトリックス[アナライザー](roslyn-analyzers-overview.md)の規則が含まれています。
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
-- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
 - [CA1506](ca1506-avoid-excessive-class-coupling.md)
 
@@ -60,7 +60,7 @@ FxCop アナライザーパッケージのコードメトリックスルール�
    CA1502: 10
    ```
 
-   この例では、ルール[CA1502](ca1502-avoid-excessive-complexity.md)は、メソッドのサイクロマティック複雑度が10を超える場合に起動するように構成されています。
+   この例では、ルール[CA1502](ca1502.md)は、メソッドのサイクロマティック複雑度が10を超える場合に起動するように構成されています。
 
 3. Visual Studio の **[プロパティ]** ウィンドウまたはプロジェクトファイルで、構成ファイルのビルドアクションを[**additionalfiles**](../ide/build-actions.md#build-action-values)としてマークします。 (例:
 
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-出力ファイル名をオーバーライドするには、`/p:MetricsOutputFile=<filename>` を指定します。 @No__t_1 を指定して、[レガシスタイルの](#previous-versions)コードメトリックスデータを取得することもできます。 (例:
+出力ファイル名をオーバーライドするには、`/p:MetricsOutputFile=<filename>` を指定します。 `/p:LEGACY_CODE_METRICS_MODE=true`を指定して、[レガシスタイルの](#previous-versions)コードメトリックスデータを取得することもできます。 (例:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -261,7 +261,7 @@ Visual Studio 2015 には、 *metrics .exe*とも呼ばれるコマンドライ�
 
 新しいコマンドラインコードメトリックスツールでは、`LinesOfCode` メトリックの精度と信頼性が向上しています。 Codegen の違いに依存せず、ツールセットやランタイムが変更されても変更されません。 新しいツールでは、空白行やコメントなど、実際のコード行がカウントされます。
 
-@No__t_0 や `MaintainabilityIndex` などの他のメトリックでは、以前のバージョンの*metrics*と同じ数式が使用されますが、新しいツールでは中間言語 (IL) 命令ではなく `IOperations` (論理ソースの命令) の数がカウントされます。 これらの数値は、Visual Studio IDE と以前のバージョンの*Metrics*によって生成された数値と若干異なります。
+`CyclomaticComplexity` や `MaintainabilityIndex` などの他のメトリックでは、以前のバージョンの*metrics*と同じ数式が使用されますが、新しいツールでは中間言語 (IL) 命令ではなく `IOperations` (論理ソースの命令) の数がカウントされます。 これらの数値は、Visual Studio IDE と以前のバージョンの*Metrics*によって生成された数値と若干異なります。
 
 ## <a name="see-also"></a>関連項目
 

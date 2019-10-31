@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984970"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189159"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 2)
   SharePoint プロジェクト項目のカスタムの種類を定義し、Visual Studio の項目テンプレートに関連付けると、テンプレートのウィザードを指定することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクトにプロジェクト項目の新しいインスタンスを追加するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -79,7 +79,7 @@ ms.locfileid: "72984970"
 
 2. **プロジェクトデザイナー**で、ターゲットフレームワークが .NET Framework 4.5 に設定されていることを確認します。
 
-     ビジュアルC#プロジェクトの場合は、 **[アプリケーション]** タブでこの値を設定できます。Visual Basic プロジェクトの場合は、 **[コンパイル]** タブでこの値を設定できます。詳細については、「[方法: .NET Framework のバージョンをターゲット](../ide/how-to-target-a-version-of-the-dotnet-framework.md)にする」を参照してください。
+     ビジュアルC#プロジェクトの場合は、 **[アプリケーション]** タブでこの値を設定できます。Visual Basic プロジェクトの場合は、 **[コンパイル]** タブでこの値を設定できます。詳細については、「[方法: .NET Framework のバージョンをターゲット](../ide/visual-studio-multi-targeting-overview.md)にする」を参照してください。
 
 3. **Itemtemplatewizard**プロジェクトで、**ウィンドウ (WPF)** 項目をプロジェクトに追加し、その項目に**wizardwindow**という名前を指定します。
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984970"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > この XAML で作成されるウィンドウは、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基底クラスから派生します。 カスタム WPF ダイアログボックスを Visual Studio に追加する場合は、Visual Studio の他のダイアログボックスとの一貫性のあるスタイルを持つように、このクラスからダイアログボックスを派生させ、モーダルダイアログボックスで発生する可能性のある問題を回避することをお勧めします。 詳細については、「[モーダルダイアログボックスの作成と管理](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)」を参照してください。
+    > この XAML で作成されるウィンドウは、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基底クラスから派生します。 カスタム WPF ダイアログボックスを Visual Studio に追加する場合は、Visual Studio の他のダイアログボックスとの一貫性のあるスタイルを持つように、このクラスからダイアログボックスを派生させ、モーダルダイアログボックスで発生する可能性のある問題を回避することをお勧めします。 詳細については、「[モーダルダイアログボックスの作成と管理](../extensibility/creating-and-managing-modal-dialog-boxes.md)」を参照してください。
 
 3. Visual Basic プロジェクトを開発している場合は、`Window` 要素の `x:Class` 属性の `WizardWindow` クラス名から `ItemTemplateWizard` 名前空間を削除します。 この要素は XAML の 1 行目にあります。 完了すると、最初の行は次のコードのようになります。
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984970"
     </WizardExtension>
     ```
 
-     `WizardExtension` 要素の詳細については、「 [WizardExtension &#40;Element Visual Studio&#41;Templates](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)」を参照してください。
+     `WizardExtension` 要素の詳細については、「 [WizardExtension &#40;Element Visual Studio&#41;Templates](../extensibility/wizardextension-element-visual-studio-templates.md)」を参照してください。
 
 3. ファイルを保存して閉じます。
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984970"
 - [チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [方法: プロジェクト テンプレートでウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [既定のカスタム動作の場所と Id](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536080"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188618"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio でのデバッガーの生産性に関するヒントとテクニックについて説明します。
 
@@ -35,13 +35,13 @@ ms.locfileid: "72536080"
 
 Visual Studio でサポートされているほとんどの言語で、デバッグ セッション中にコードを編集し、デバッグを続行できます。 この機能を使用するには、デバッガーの一時停止中にカーソルを使用してコードをクリックし、編集を行い、**F5**、**F10**、または **F11** キーを押してデバッグを続行します。
 
-![エディットコンティニュのデバッグ](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![エディット コンティニュのデバッグ](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 機能の使用および機能制限の詳細については、[エディット コンティニュ](../debugger/edit-and-continue.md)に関するページを参照してください。
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>XAML コードを編集してデバッグを続行する
 
-デバッグ セッション中に XAML コードを変更するには、[XAML ホット リロードで実行中の XAML コードを記述およびデバッグする](xaml-hot-reload.md)方法に関するページを参照してください。
+デバッグ セッション中に XAML コードを変更するには、[XAML ホット リロードで実行中の XAML コードを記述およびデバッグする](../xaml-tools/xaml-hot-reload.md)方法に関するページを参照してください。
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>再現するのが困難な問題をデバッグする
 
@@ -96,13 +96,13 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
 関数の戻り値を表示するには、コードのステップ実行中に **[自動変数]** ウィンドウに表示される関数を確認します。 関数の戻り値を表示するには、関心のある関数が既に実行されていることを確認します (関数呼び出しで現在停止している場合は、 **F10**キーを1回押します)。 ウィンドウが閉じている場合は、 **[デバッグ > Windows > 自動変数]** を使用して **[自動]** 変数 ウィンドウを開きます。
 
-![自動変数ウィンドウ](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![[自動変数] ウィンドウ](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 また、 **[イミディエイト]** ウィンドウに関数を入力して、戻り値を表示することもできます。 ( **Windows > イミディエイトでデバッグ >** 使用して開きます)。
 
 ![イミディエイト ウィンドウ](../debugger/media/dbg-tips-immediate-window.png "イミディエイトウィンドウ")
 
-@No__t_3 など、 **[ウォッチ]** ウィンドウと **[イミディエイト]** ウィンドウで[擬似変数](../debugger/pseudovariables.md)を使用することもできます。
+`$ReturnValue`など、 **[ウォッチ]** ウィンドウと **[イミディエイト]** ウィンドウで[擬似変数](../debugger/pseudovariables.md)を使用することもできます。
 
 ## <a name="string_visualizer"></a>ビジュアライザー内の文字列の検査
 
@@ -140,6 +140,7 @@ Visual Studio でサポートされているほとんどの言語で、デバッ
 
     [[並列スタック] ウィンドウ](../debugger/get-started-debugging-multithreaded-apps.md)でスレッドの場所を表示することもできます。
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Web サービスとネットワークリソース (UWP) のペイロードを調べる
 
 UWP アプリでは、`Windows.Web.Http` API を使用して実行されたネットワーク操作を分析できます。 このツールを使用すると、web サービスとネットワークリソースをデバッグできます。 ツールを使用するには、 **[デバッグ > パフォーマンスプロファイラー]** を選択します。 **[ネットワーク]** を選択し、 **[開始]** を選択します。 アプリで、`Windows.Web.Http` を使用するシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
@@ -151,6 +152,7 @@ UWP アプリでは、`Windows.Web.Http` API を使用して実行されたネ�
 ![ネットワーク使用率ツールの詳細情報](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 詳細については、「[ネットワーク使用率](../profiling/network-usage.md)」を参照してください。
+::: moniker-end
 
 ## <a name="modules_window"></a>デバッガーをアプリにアタッチする方法 (C#、 C++、Visual Basic、 F#) について理解を深める
 

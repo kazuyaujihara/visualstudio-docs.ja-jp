@@ -1,5 +1,5 @@
 ---
-title: ホスティング プロセスのデバッグと |Microsoft Docs
+title: デバッグとホストプロセス |Microsoft Docs
 ms.date: 08/01/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852474"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188458"
 ---
 # <a name="debugging-and-the-hosting-process"></a>プロセスのデバッグとホスト
 Visual Studio のホスト プロセスでは、デバッガーのパフォーマンスを向上させ、部分信頼のデバッグやデザイン時の式の評価など、新しいデバッガー機能が使用できるようになりました。 必要に応じてホスト プロセスを無効にすることもできます。 次のセクションでは、ホスト プロセスがある場合とない場合のデバッグの違いについて説明します。
 
 > [!NOTE]
-> Visual Studio 2017 以降、ホスト プロセスを使用してデバッグするためのオプションが不要し、が削除されました。 詳細については、次を参照してください。[デバッグ。Visual Studio 2017 目的は、最も嫌いなジョブの処理速度に](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)します。
+> Visual Studio 2017 以降では、ホスティングプロセスを使用してデバッグするオプションは不要になり、削除されました。 詳細については、「[デバッグ: Visual Studio 2017 を使用すると最もお気に入りのジョブを高速化する」を](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)参照してください。
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>部分信頼のデバッグと ClickOnce のセキュリティ
- 部分信頼のデバッグにはホスト プロセスが必要です。 ホスト プロセスを無効にすると、 **[プロジェクトのプロパティ]** の **[セキュリティ]** ページで部分信頼が有効になっている場合でも、部分信頼のデバッグは機能しません。 詳細については、「[方法 :部分的に信頼されたアプリケーションをデバッグする](/visualstudio/debugger/debugger-security)。
+ 部分信頼のデバッグにはホスト プロセスが必要です。 ホスト プロセスを無効にすると、 **[プロジェクトのプロパティ]** の **[セキュリティ]** ページで部分信頼が有効になっている場合でも、部分信頼のデバッグは機能しません。 詳細については、「[方法: 部分信頼アプリケーションをデバッグ](debugger-security.md)する」を参照してください。
 
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式評価
  デザイン時の式では、常にホスト プロセスが使用されます。 **[プロジェクトのプロパティ]** でホスト プロセスを無効にすると、クラス ライブラリ プロジェクトでデザイン時の式の評価も無効になります。 他のプロジェクトの種類では、デザイン時の式の評価は無効になりません。 代わりに、Visual Studio で実際の実行可能ファイルが起動され、ホスト プロセスを使用せずにデザイン時の評価に使用されます。 この違いがあるため、結果も異なる可能性があります。
@@ -43,4 +43,4 @@ Visual Studio のホスト プロセスでは、デバッガーのパフォー�
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: 部分的に信頼されたアプリケーションをデバッグする](/visualstudio/debugger/debugger-security)
+- [方法 : 部分信頼アプリケーションをデバッグする](debugger-security.md)

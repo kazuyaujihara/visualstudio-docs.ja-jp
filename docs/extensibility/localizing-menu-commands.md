@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252644"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186278"
 ---
 # <a name="localize-menu-commands"></a>メニューコマンドのローカライズ
 
@@ -76,7 +76,7 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 ## <a name="localize-other-text-resources"></a>その他のテキストリソースのローカライズ
 
-コマンド名以外のテキストリソースは、リソース (*.resx*) ファイルで定義されています。
+コマンド名以外のテキストリソースは、リソース ( *.resx*) ファイルで定義されています。
 
 1. *VSPackage*の名前を*VSPackage*に変更します。
 
@@ -112,7 +112,7 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 ローカライズされたリソースを組み込むには、 *assemblyinfo.cs*ファイルとプロジェクトファイルを変更する必要があります。
 
-1. **ソリューションエクスプローラー**の [**プロパティ**] ノードで、エディターの*assemblyinfo.cs*または*assemblyinfo*を開きます。
+1. **ソリューションエクスプローラー**の **[プロパティ]** ノードで、エディターの*assemblyinfo.cs*または*assemblyinfo*を開きます。
 
 2. 次のエントリを追加します。
 
@@ -126,7 +126,7 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 4. エディターでプロジェクトファイルを開きます。
 
-5. ルート `Project` 要素に、既定の言語に一致する `UICulture` 要素を持つ @no__t 1 要素を追加します。
+5. ルート `Project` 要素に、既定の言語に一致する `UICulture` 要素を持つ `PropertyGroup` 要素を追加します。
 
     ```xml
     <PropertyGroup>
@@ -136,9 +136,9 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
      これにより、Windows Presentation Foundation (WPF) コントロールの既定の UI カルチャとして英語 (米国) が設定されます。
 
-6. @No__t-1 要素を含む `ItemGroup` 要素を見つけます。
+6. `EmbeddedResource` 要素を含む `ItemGroup` 要素を見つけます。
 
-7. *VSPackage*を呼び出す `EmbeddedResource` 要素で、次のように、@no__t 要素を `VSPackage.en-US.Resources` に設定されている `LogicalName` 要素に置き換えます。
+7. *VSPackage*を呼び出す `EmbeddedResource` 要素で、次のように、`ManifestResourceName` 要素を `VSPackage.en-US.Resources`に設定されている `LogicalName` 要素に置き換えます。
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,9 +147,9 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
     </EmbeddedResource>
     ```
 
-8. ローカライズされた各言語について、`VsPackage.en-US` の `EmbeddedResource` 要素をコピーし、コピーの**Include**属性と**logicalname**要素をターゲットのロケールに設定します。
+8. ローカライズされた言語ごとに、`VsPackage.en-US`の `EmbeddedResource` 要素をコピーし、コピーの**Include**属性と**logicalname**要素をターゲットのロケールに設定します。
 
-9. 次の例に示すように、ローカライズされた @no__t 0 の各要素に、`Menus.ctmenu` を指す @no__t 1 要素を追加します。
+9. 次の例に示すように、ローカライズされた各 `VSCTCompile` 要素に、`Menus.ctmenu`を指す `ResourceName` 要素を追加します。
 
     ```xml
     <ItemGroup>
@@ -161,11 +161,11 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 10. プロジェクトファイルを保存し、プロジェクトを再度読み込みます。
 
-11. プロジェクトをビルドする。
+11. プロジェクトをビルドします。
 
      これにより、各言語のメインアセンブリとリソースアセンブリが作成されます。 デプロイプロセスのローカライズの詳細については、「 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [メニューとコマンドを拡張する](../extensibility/extending-menus-and-commands.md)
-- [MenuCommands とOleMenuCommand](../extensibility/menucommands-vs-olemenucommands.md)
 - [アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)

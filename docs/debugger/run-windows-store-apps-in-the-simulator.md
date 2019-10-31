@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ae0b559f4684fd4fd8b9eabff4b46b1defb5ef1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 263759cc463bf21afa20877db320b4c83f1dc761
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911336"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187526"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>シミュレーターで UWP アプリを実行する
 
@@ -143,7 +143,9 @@ UWP アプリ用の Visual Studio シミュレーターは、ローカルコン�
 
 [ネットワーク情報のサンプル](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
+::: moniker range="vs-2017"
 [エネルギー使用の分析](../profiling/analyze-energy-use-in-store-apps.md)
+::: moniker-end
 
 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
@@ -159,4 +161,4 @@ UWP アプリ用の Visual Studio シミュレーターは、ローカルコン�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio からアプリを実行](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio からアプリを実行](debugging-windows-store-and-windows-universal-apps.md)

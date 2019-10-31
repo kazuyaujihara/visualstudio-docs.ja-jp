@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911357"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187737"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
 Visual Studio*グラフィックス診断*は、Direct3D アプリのレンダリングとパフォーマンスの問題を記録して分析するための一連のツールです。 グラフィックス診断は、Windows PC でローカルに実行されているアプリ、Windows デバイス エミュレーターで実行されているアプリ、あるいはリモート PC またはデバイスで実行されているアプリに対して使用できます。
@@ -38,7 +38,7 @@ Visual Studio*グラフィックス診断*は、Direct3D アプリのレンダ�
 
  [グラフィックス情報のキャプチャ](capturing-graphics-information.md)グラフィックス診断を使用してアプリのレンダリングの問題を調査するには、まず、アプリが DirectX を使用する方法に関する情報を記録します。 アプリが通常どおりに実行されているときの記録セッション中に関心があるフレームを "*キャプチャ*" (つまり、選択) します。 キャプチャには、フレームがレンダリングされる方法に関する詳細情報が含まれています。 キャプチャした情報をグラフィックス ログのドキュメントとして保存し、後で調べたり、チームの他のメンバーと共有したりできます。
 
- [GPU 使用率](gpu-usage.md)グラフィックス診断を使用してアプリをプロファイリングするには、GPU 使用率ツールを使用します。 GPU 使用率ツールを、CPU 使用率など、他のプロファイリング ツールと連携して使用すると、アプリのパフォーマンスの問題を引き起こしている可能性のある CPU および GPU のアクティビティを、問題と関連付けることができます。
+ [GPU 使用率](../../profiling/gpu-usage.md)グラフィックス診断を使用してアプリをプロファイリングするには、GPU 使用率ツールを使用します。 GPU 使用率ツールを、CPU 使用率など、他のプロファイリング ツールと連携して使用すると、アプリのパフォーマンスの問題を引き起こしている可能性のある CPU および GPU のアクティビティを、問題と関連付けることができます。
 
  [グラフィックスログドキュメント](graphics-log-document.md)記録されたグラフィックスログの確認を開始するには、グラフィックスログのドキュメントウィンドウを使用して、キャプチャしたフレーム (または特定のピクセル) を選択します。これにより、影響を受ける*イベント*(つまり、DirectX API 呼び出し) を詳細に確認できます。
 
@@ -66,5 +66,5 @@ Visual Studio*グラフィックス診断*は、Direct3D アプリのレンダ�
 
 | Title | 説明 |
 | - | - |
-| [デバッガー機能ツアー](/visualstudio/debugger/debugger-feature-tour) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のデバッグ機能を紹介します。 |
+| [デバッガー機能ツアー](../debugger-feature-tour.md) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のデバッグ機能を紹介します。 |
 | [DirectX のグラフィックスとゲーム](/windows/win32/directx) | DirectX グラフィックスの手法を説明する文書を提供します。 |

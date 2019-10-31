@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26435db42e3214bb19438226faba0db0e5ac0f4f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649594"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188823"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop アナライザーの規則のスコープオプション
 
@@ -21,9 +21,9 @@ ms.locfileid: "72649594"
 これらの構成オプションは、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージのバージョン2.6.3 以降で使用できます。
 
 > [!TIP]
-> FxCopAnalyzers パッケージの特定のバージョンで使用できるすべてのオプションの一覧を表示するには、パッケージの*documentation*フォルダーにある*Analyzer Configuration.md*ファイルを参照してください。 ファイルは *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> Configuration.md*にあります。 この構成ドキュメントファイルは、バージョン2.6.5 以降では、パッケージの各バージョンに含まれています。 次に、 *Analyzer Configuration.md*ファイルでオプションを記述する方法の例を示します。
+> FxCopAnalyzers パッケージの特定のバージョンで使用できるすべてのオプションの一覧を表示するには、パッケージの*documentation*フォルダーにある*Analyzer Configuration.md*ファイルを参照してください。 ファイルは *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>/documentation/Analyzer Configuration.md*にあります。 この構成ドキュメントファイルは、バージョン2.6.5 以降では、パッケージの各バージョンに含まれています。 次に、 *Analyzer Configuration.md*ファイルでオプションを記述する方法の例を示します。
 >
-> オプション名: `sufficient_IterationCount_for_weak_KDF_algorithm` \
+> オプション名: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > オプション値: 整数値 \
 > 既定値: 構成可能な各規則に固有 (ほとんどの規則に対して既定では ' 10万 ') \
 > 例 : `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
@@ -38,10 +38,10 @@ ms.locfileid: "72649594"
 
 | 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| 値を返さない非同期メソッドを無視するかどうか | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
+| 値を返さない非同期メソッドを無視するかどうか | `true`<br/>`false` | `false` | [CA2007](ca2007.md) |
 
 > [!NOTE]
-> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `skip_async_void_methods` でした。
+> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `skip_async_void_methods`でした。
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
@@ -50,10 +50,10 @@ ms.locfileid: "72649594"
 | 1文字の[型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)をルールから除外するかどうかを指定します。たとえば、`Collection<S>` の `S` です。 | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `allow_single_letter_type_parameters` でした。
+> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前は `allow_single_letter_type_parameters`でした。
 
 ## <a name="output_kind"></a>output_kind
 
 | 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| この型のアセンブリを生成するプロジェクト内のコードを分析する必要があることを指定します。 | @No__t_0 列挙型の1つまたは複数のフィールド<br/><br/>複数の値はコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| この型のアセンブリを生成するプロジェクト内のコードを分析する必要があることを指定します。 | <xref:Microsoft.CodeAnalysis.OutputKind> 列挙型の1つまたは複数のフィールド<br/><br/>複数の値はコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007.md) |

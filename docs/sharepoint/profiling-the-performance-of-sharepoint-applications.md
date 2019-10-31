@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc337b1ac753c214ad2484c26c9149e9a1a6ca04
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981201"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189209"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint アプリケーションのパフォーマンスのプロファイリング
 
@@ -55,7 +55,7 @@ Web パフォーマンス テストでは、エンド ユーザーが SharePoint
 
 ## <a name="test-user-interfaces"></a>テストユーザーインターフェイス
 
-コード化された UI テストでは、ユーザー インターフェイス (UI) を介して SharePoint アプリケーションが自動的に実行されます。 これらのテストでは、ボタン、メニューなどの UI コントロールが正しく動作するかどうかを確認します。 この種類のテストは、検証や他のロジックが Web ページなどの UI で実行されている場合に特に便利です。 また、コード化された UI テストを使用して、手動テストを自動化することもできます。 SharePoint アプリケーションのコード化された UI テストは、他の種類のアプリケーションのテストを作成するときと同じ方法で作成します。 詳細については、「[コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)」を参照してください。
+コード化された UI テストでは、ユーザー インターフェイス (UI) を介して SharePoint アプリケーションが自動的に実行されます。 これらのテストでは、ボタン、メニューなどの UI コントロールが正しく動作するかどうかを確認します。 この種類のテストは、検証や他のロジックが Web ページなどの UI で実行されている場合に特に便利です。 また、コード化された UI テストを使用して、手動テストを自動化することもできます。 SharePoint アプリケーションのコード化された UI テストは、他の種類のアプリケーションのテストを作成するときと同じ方法で作成します。 詳細については、「[コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 
@@ -64,7 +64,7 @@ Web パフォーマンス テストでは、エンド ユーザーが SharePoint
 |[チュートリアル: SharePoint アプリケーションのプロファイリング](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|SharePoint アプリケーションのサンプリング プロファイル分析を実行する方法を示します。|
 |[リリース前のアプリのパフォーマンス テスト](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|SharePoint アプリケーションのストレス テストに役立つロード テストを作成する方法について説明します。|
 |[コードの単体テスト](../test/unit-test-your-code.md)|単体テストを使用してコードの論理エラーを検出する方法について説明します。|
-|[コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|SharePoint アプリケーションのユーザー インターフェイスをテストする方法について説明します。|
+|[コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|SharePoint アプリケーションのユーザー インターフェイスをテストする方法について説明します。|
 
 ## <a name="see-also"></a>関連項目
 

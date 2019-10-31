@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349704"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188097"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio でのデバッグタスクの検索
 
@@ -43,11 +43,15 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>特定の反復処理でループ内のコードを一時停止する
 
-**ヒットカウント**を条件として使用して、ブレークポイントを設定します。 詳細については、「[ヒットカウント](using-breakpoints.md#hit-count)」を参照してください。
+**ヒットカウント**を条件として使用して、ブレークポイントを設定します。 詳細については、「[ヒットカウント](using-breakpoints.md#set-a-hit-count-condition)」を参照してください。
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>関数名がわかっているものの、その位置を把握していないときに、関数の開始時にコードを一時停止します
 
 これを行うには、関数のブレークポイントを使用します。 詳細については、「[関数ブレークポイントの設定](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)」を参照してください。
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>同じ名前の複数の関数の先頭でコードを一時停止します
+
+同じ名前 (オーバーロードされた関数、または異なるプロジェクトの関数) を持つ複数の関数がある場合は、[関数のブレークポイント](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)を使用できます。
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>ブレークポイントの管理と追跡
 
@@ -101,11 +105,15 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 
 ### <a name="edit-code-during-a-debugging-session"></a>デバッグセッション中のコードの編集
 
-[エディットコンティニュ](edit-and-continue.md)を使用します。 XAML の場合は、 [Xaml ホットリロード](xaml-hot-reload.md)を使用します。
+[エディットコンティニュ](edit-and-continue.md)を使用します。 XAML の場合は、 [Xaml ホットリロード](../xaml-tools/xaml-hot-reload.md)を使用します。
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>コードを変更せずに出力ウィンドウにメッセージを送信する
 
 トレースポイントを設定します。 詳細については、「[トレースポイントの使用](using-tracepoints.md)」を参照してください。
+
+## <a name="view-the-order-in-which-functions-are-called"></a>関数が呼び出される順序を表示する
+
+「[呼び出し履歴を表示する方法」を](how-to-use-the-call-stack-window.md)参照してください。
 
 ### <a name="debug-on-remote-machines"></a>リモートコンピューターでのデバッグ
 

@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87efc24ef148600c31dbb07d7517f9235306102
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cdea5b3cbf99ab8213c320acc82665816062dca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650414"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189632"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>方法: ワークフロープロジェクトに新しい項目を追加する
 
@@ -26,7 +26,7 @@ ms.locfileid: "72650414"
 | アクティビティ | 他のアクティビティで構成されるアクティビティ。 この項目を選択すると、新しいプロジェクトの **[アクティビティライブラリ]** テンプレートを選択したときに取得したものと同じ XAML ファイルがプロジェクトに追加されます。 この手順の詳細については、「[ワークフロープロジェクトの作成](creating-a-workflow-project.md)」を参照してください。 |
 | アクティビティ デザイナー | アクティビティのデザイン時の操作をカスタマイズするデザイナー。 この項目を選択すると、新しいプロジェクトに対して **[アクティビティデザイナーライブラリ]** テンプレートを選択したときに取得したものと同じファイルがプロジェクトに追加されます。 |
 | Code アクティビティ | コードに記述される実行ロジックを含むアクティビティ。 <xref:System.Activities.CodeActivity.Execute%2A> メソッドのオーバーライドを含むソース コード ファイルは既に自動的に生成されています。 |
-| WCF ワークフロー サービス | ワークフロー アクティビティを使用して作成された [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] サービス。 この項目を選択すると、新しいプロジェクトの**WCF ワークフローサービスアプリケーション**テンプレートを選択したときに取得したものと同じファイルがプロジェクトに追加されます。 この手順の詳細については、「[方法: WCF ワークフローサービスアプリケーションを作成](/visualstudio/workflow-designer/creating-a-workflow-project)する」を参照してください。 |
+| WCF ワークフロー サービス | ワークフロー アクティビティを使用して作成された [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] サービス。 この項目を選択すると、新しいプロジェクトの**WCF ワークフローサービスアプリケーション**テンプレートを選択したときに取得したものと同じファイルがプロジェクトに追加されます。 この手順の詳細については、「[方法: WCF ワークフローサービスアプリケーションを作成](creating-a-workflow-project.md)する」を参照してください。 |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>ワークフロー プロジェクトに新しい項目を追加するには
 

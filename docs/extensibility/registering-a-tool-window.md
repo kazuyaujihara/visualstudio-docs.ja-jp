@@ -1,5 +1,5 @@
 ---
-title: ツール ウィンドウの登録 |Microsoft Docs
+title: ツールウィンドウの登録 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334324"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186260"
 ---
-# <a name="register-a-tool-window"></a>ツール ウィンドウを登録します。
-使用して、ツール ウィンドウを登録する<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>と<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>します。
+# <a name="register-a-tool-window"></a>ツールウィンドウを登録する
+<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> と <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>を使用して、ツールウィンドウを登録できます。
 
 ## <a name="example"></a>例
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 上記のコードで、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>登録、`PersistedWindowPane`と`DynamicWindowPane`ツール ウィンドウが Visual Studio を使用します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これを書き込みます、`DontForceCreate`値、`ToolWindows`システム レジストリのキー。 詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。
+ 上記のコードでは、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> によって `PersistedWindowPane` と `DynamicWindowPane` ツールウィンドウが Visual Studio に登録されます。 永続化されたツールウィンドウはドッキングされ、**ソリューションエクスプローラー**でタブが付けられます。また、動的ウィンドウには、既定の開始位置とサイズが指定されます。 動的ウィンドウは一時的に作成されます。これは、起動時に作成されないことを示します。 これにより、システムレジストリの `ToolWindows` キーに `DontForceCreate` 値が書き込まれます。 詳細については、「[ツールウィンドウの表示構成](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)」を参照してください。

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981714"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189221"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint ソリューションのローカライズ
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981714"
 |言語に依存しないリソース ファイル|特定の言語にはローカライズされているが特定のカルチャにはローカライズされていない文字列を含むリソース ファイル (たとえば、フランス語の場合は "fr")。|
 |言語固有のリソース ファイル|特定の言語とカルチャにローカライズされた文字列を含むリソース ファイル (たとえば、フランス語 (カナダ) の場合は "fr-CA")。|
 
- 詳細については、「[ローカリゼーション用リソースの階層編成](../ide/hierarchical-organization-of-resources-for-localization.md)」を参照してください。
+ 詳細については、「[ローカリゼーション用リソースの階層編成](../ide/globalizing-and-localizing-applications.md)」を参照してください。
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で開発する SharePoint プロジェクトで既定のリソースファイルを指定するには、リソースファイルを追加するときに、 **[リソースの追加]** ダイアログボックスの カルチャ ボックスの一覧で **[インバリアント言語 (不変国)]** を選択します。
 

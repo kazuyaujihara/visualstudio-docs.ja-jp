@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806164"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188837"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -276,7 +276,7 @@ ms.locfileid: "72806164"
 
 | CheckId | 警告 | 説明 |
 |---------| - | - |
-| CA2007 | [CA2007: タスクを直接待機しない](ca2007-do-not-directly-await-task.md) | 非同期メソッドは、<xref:System.Threading.Tasks.Task> を直接[待機](/dotnet/csharp/language-reference/keywords/await)します。 非同期メソッドが <xref:System.Threading.Tasks.Task> を直接待機する場合、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 継続の意図を示すために <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> を呼び出すことを検討してください。 |
+| CA2007 | [CA2007: タスクを直接待機しない](ca2007.md) | 非同期メソッドは、<xref:System.Threading.Tasks.Task> を直接[待機](/dotnet/csharp/language-reference/keywords/await)します。 非同期メソッドが <xref:System.Threading.Tasks.Task> を直接待機する場合、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 継続の意図を示すために <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> を呼び出すことを検討してください。 |
 | CA1000 | [CA1000: ジェネリック型の静的メンバーを宣言しません](../code-quality/ca1000.md) | ジェネリック型の静的メンバーを呼び出すときには、その型の型引数も指定する必要があります。 推論をサポートしないジェネリック インスタンス メンバーを呼び出すときには、そのメンバーに型引数を指定する必要があります。 この 2 つの場合、型引数を指定するときに使用される構文は異なりますが、混同される可能性があります。 |
 | CA1001 | [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001.md) | クラスが System.IDisposable 型であるインスタンス フィールドを宣言および実装していますが、IDisposable を実装していません。 IDisposable フィールドを宣言するクラスは間接的にアンマネージ リソースを所有しているため、IDisposable インターフェイスを実装する必要があります。 |
 | CA1002 | [CA1002: ジェネリック リストを公開しません](../code-quality/ca1002.md) | < (Of \< (T >) >) は、継承ではなくパフォーマンスを目的として設計されたジェネリックコレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
