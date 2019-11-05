@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ea1c1bfa34399f4a2428aec2f51f97c9884216
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5fa926b21171c3e09b5a0f4d74e9415da090bf2f
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189064"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569076"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタムエディターへの機能の追加
 カスタムエディターを作成したら、それにさらに機能を追加できます。
@@ -38,7 +38,7 @@ ms.locfileid: "73189064"
 
 4. エディターでドキュメントビューのオブジェクトウィンドウを管理するために、埋め込み先でのアクティブ化または簡略化された埋め込みを使用するかどうかを決定します。
 
-     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された[埋め込み](../extensibility/simplified-embedding.md)と[インプレースアクティブ化](../extensibility/in-place-activation.md)」を参照してください。
+     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された[埋め込み](../extensibility/simplified-embedding.md)と[インプレースアクティブ化](/visualstudio/misc/in-place-activation?view=vs-2015)」を参照してください。
 
 5. コマンドを処理するための <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> インターフェイスを実装します。
 

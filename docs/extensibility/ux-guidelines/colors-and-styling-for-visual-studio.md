@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188881"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568964"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -340,7 +340,7 @@ Windows では、テキスト、背景、およびイメージの色のコント
 
 VSPackage は、カスタムカテゴリを使用してフォントや色を制御したり、[フォントおよび色] プロパティページで項目を表示したりできます。 このメカニズムを使用する場合、Vspackage は[IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider)インターフェイスとそれに関連するインターフェイスを実装する必要があります。
 
-原則として、このメカニズムを使用して、既存のすべての表示項目とそれらを含むカテゴリを変更できます。 ただし、テキストエディターのカテゴリまたはその表示項目の変更には使用しないでください。 [テキストエディター] カテゴリの詳細については、「[フォントおよび色の概要](../font-and-color-overview.md)」を参照してください。
+原則として、このメカニズムを使用して、既存のすべての表示項目とそれらを含むカテゴリを変更できます。 ただし、テキストエディターのカテゴリまたはその表示項目の変更には使用しないでください。 [テキストエディター] カテゴリの詳細については、「[フォントおよび色の概要](/visualstudio/extensibility/font-and-color-overview?view=vs-2015)」を参照してください。
 
 カスタムカテゴリまたは表示項目を実装するには、VSPackage が次の条件を満たす必要があります。
 

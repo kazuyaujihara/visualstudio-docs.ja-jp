@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c30279683a6d367ede31c00133e6fbf8c293e5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186756"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568875"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>カスタムエディターでのドキュメントデータとドキュメントビュー
 カスタムエディターは、ドキュメントデータオブジェクトとドキュメントビューオブジェクトの2つの部分で構成されます。 名前が示すように、ドキュメントデータオブジェクトは表示されるテキストデータを表します。 同様に、ドキュメントビューオブジェクト (または "ビュー") は、ドキュメントデータオブジェクトを表示する1つまたは複数のウィンドウを表します。
@@ -34,7 +34,7 @@ ms.locfileid: "73186756"
 
  IDE は、実行中のドキュメントテーブル内の各エントリの項目識別子 (ItemID) を照合することによって、イベント (たとえば、ドキュメントを含むソリューションが閉じられたとき) をビューに通知します。 詳細については、「 [document table の実行](../extensibility/internals/running-document-table.md)」を参照してください。
 
- カスタムエディターのビューを作成するには、2つのオプションがあります。 1つは、埋め込み先アクティブ化モデルです。このモデルでは、ActiveX コントロールまたはドキュメントデータオブジェクトを使用して、ビューがウィンドウでホストされます。 2つ目は、簡略化された埋め込みモデルです。ビューは [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でホストされ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> はウィンドウコマンドを処理するために実装されます。 インプレースアクティブ化モデルの詳細については、「[インプレースアクティブ化](../extensibility/in-place-activation.md)」を参照してください。 簡略化された埋め込みモデルについては、「簡略化された[埋め込み](../extensibility/simplified-embedding.md)」を参照してください。
+ カスタムエディターのビューを作成するには、2つのオプションがあります。 1つは、埋め込み先アクティブ化モデルです。このモデルでは、ActiveX コントロールまたはドキュメントデータオブジェクトを使用して、ビューがウィンドウでホストされます。 2つ目は、簡略化された埋め込みモデルです。ビューは [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でホストされ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> はウィンドウコマンドを処理するために実装されます。 インプレースアクティブ化モデルの詳細については、「[インプレースアクティブ化](/visualstudio/misc/in-place-activation?view=vs-2015)」を参照してください。 簡略化された埋め込みモデルについては、「簡略化された[埋め込み](../extensibility/simplified-embedding.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

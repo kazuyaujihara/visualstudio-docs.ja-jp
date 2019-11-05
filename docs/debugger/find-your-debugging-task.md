@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188097"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599296"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio でのデバッグタスクの検索
 
@@ -102,6 +102,10 @@ C++では、[データブレークポイント](using-breakpoints.md#BKMK_set_a_
 デバッガーのオプションとデバッガーのプロジェクト設定を構成するには、「[デバッガーの設定と準備](debugger-settings-and-preparation.md)」を参照してください。
 
 ## <a name="additional-tasks"></a>その他のタスク
+
+### <a name="fix-an-exception"></a>例外を修正する
+
+「[例外の修正](write-better-code-with-visual-studio.md#fix-an-exception)」を参照してください。
 
 ### <a name="edit-code-during-a-debugging-session"></a>デバッグセッション中のコードの編集
 

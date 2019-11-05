@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187571"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568916"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio での UWP アプリでの HTML と CSS のデバッグ
 
@@ -182,7 +182,7 @@ DOM Explorer を使用すると次のことができます。
 14. メインウィンドウで、[`width: 100px;height: 100px;`] をダブルクリックし、 **del**キーを押して、 **enter キーを押します。** デバッグセッションを停止していなくても、Enter キーを押すとすぐに、新しい値がアプリに反映されます。
 
     > [!IMPORTANT]
-    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、「 [DOM Explorer を使用](quickstart-debug-html-and-css.md)した DOM Explorer およびデバッグレイアウト[を使用した CSS スタイルのデバッグ](../debugger/debug-css-styles-using-dom-explorer.md)」を参照してください。
+    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** の各タブに表示される値も更新できます。
 
 15. アプリを選択するか、Alt + Tab キーを押してアプリに切り替えます。
 
@@ -255,6 +255,7 @@ DOM Explorer を使用すると次のことができます。
 > Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。
 
 ## <a name="see-also"></a>関連項目
+
 - [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)
 - [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)
