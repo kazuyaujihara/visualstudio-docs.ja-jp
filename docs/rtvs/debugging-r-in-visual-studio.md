@@ -8,22 +8,22 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939278"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189254"
 ---
 # <a name="debug-r-in-visual-studio"></a>Visual Studio で R をデバッグする
 
-R Tools for Visual Studio (RTVS) は、Visual Studio の全デバッグ機能と統合されています (「[Feature Tour of the Visual Studio Debugger](/visualstudio/debugger/debugger-feature-tour)」(Visual Studio デバッガーの機能ツアー) を参照してください)。 このサポートには、ブレークポイント、実行中のプロセスへのアタッチ、変数の検査と監視、コール スタックの検査が含まれます。 この記事では、R および RTVS に固有のデバッグの機能について説明します。
+R Tools for Visual Studio (RTVS) は、Visual Studio の全デバッグ機能と統合されています (「[Feature Tour of the Visual Studio Debugger](../debugger/debugger-feature-tour.md)」(Visual Studio デバッガーの機能ツアー) を参照してください)。 このサポートには、ブレークポイント、実行中のプロセスへのアタッチ、変数の検査と監視、コール スタックの検査が含まれます。 この記事では、R および RTVS に固有のデバッグの機能について説明します。
 
-R プロジェクトのスタートアップ R ファイルに対するデバッガーの起動は、他のプロジェクト タイプと同じです。**[デバッグ]** の **[デバッグ開始]**、**F5** キー、またはデバッグ ツールバーの **[Source startup file]\(ソース スタートアップ ファイル\)** を使います。
+R プロジェクトのスタートアップ R ファイルに対するデバッガーの起動は、他のプロジェクト タイプと同じです。 **[デバッグ]** の **[デバッグ開始]** 、**F5** キー、またはデバッグ ツールバーの **[Source startup file]\(ソース スタートアップ ファイル\)** を使います。
 
 ![R のデバッガー開始ボタン](media/debugger-start-button.png)
 
-スタートアップ ファイルを変更するには、ソリューション エクスプローラーでファイルを右クリックして、**[R スタートアップ スクリプトとして設定]** を選びます。
+スタートアップ ファイルを変更するには、ソリューション エクスプローラーでファイルを右クリックして、 **[R スタートアップ スクリプトとして設定]** を選びます。
 
 いずれの場合も、デバッガーを開始すると、ファイルが対話型ウィンドウに "ソース化" されます。これは、ファイルが読み込まれて、次の対話型ウィンドウの出力のように、そこで実行されることを意味します。
 
@@ -35,7 +35,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 この例では、スクリプトのソース指定に `rtvs::debug_source` 関数が使用されています。 RTVS はデバッグの準備でコードを変更する必要があるため、この関数が必要です。 RTVS のソース指定コマンドを使用し、デバッガーをアタッチすると、Visual Studio で `rtvs::debug_source` が自動的に使用されます。
 
-また、対話型ウィンドウから、**[R Tools]**、**[セッション]** の順に選択して **[デバッガーのアタッチ]** コマンドを使用するか、**[デバッグ]** の **[R Interactive にアタッチ]** コマンドを使用するか、ツールバーの **[デバッガーのアタッチ]** コマンドを使用して直接、デバッガーを手動でアタッチすることもできます。 その場合は、ユーザーがデバッグするファイルをソース化する必要があります。 ソース ファイルを手動で指定するには、R で通常の `source` コマンドではなく、`rtvs::debug_source` を使用してください。
+また、対話型ウィンドウから、 **[R Tools]** 、 **[セッション]** の順に選択して **[デバッガーのアタッチ]** コマンドを使用するか、 **[デバッグ]** の **[R Interactive にアタッチ]** コマンドを使用するか、ツールバーの **[デバッガーのアタッチ]** コマンドを使用して直接、デバッガーを手動でアタッチすることもできます。 その場合は、ユーザーがデバッグするファイルをソース化する必要があります。 ソース ファイルを手動で指定するには、R で通常の `source` コマンドではなく、`rtvs::debug_source` を使用してください。
 
 デバッガーと対話型ウィンドウの間のこの接続により、異なるパラメーター値での関数の呼び出し (およびデバッグ) のような作業が簡単になります。 たとえば、ソース化されたファイル (つまり、セッションに読み込まれているファイル) に、次のような関数があるものとします。
 

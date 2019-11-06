@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: badb06b8c3eea5158054ba4c32f72e51dae0d60d
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816362"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568908"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio のコンテナー ツール
 
@@ -148,6 +148,6 @@ Kubernetes については、「[Deploy a Docker container app to Azure Kubernet
 
 サービスの実装と、コンテナーを操作するための Visual Studio ツールの使用方法について詳しくは、以下の記事をご覧ください。
 
-[ローカルの Docker コンテナーでアプリをデバッグする](vs-azure-tools-docker-edit-and-refresh.md)
+[ローカルの Docker コンテナーでアプリをデバッグする](edit-and-refresh.md)
 
-[Visual Studio を使用して ASP.NET Docker コンテナーをコンテナー レジストリにデプロイする](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Visual Studio を使用して ASP.NET Docker コンテナーをコンテナー レジストリにデプロイする](hosting-web-apps-in-docker.md)
