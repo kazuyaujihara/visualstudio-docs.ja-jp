@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798393"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189347"
 ---
 # <a name="performance-session-overview"></a>パフォーマンス セッションの概要
 この概要では、プロファイリングの基本について説明します。 パフォーマンス作業を初めて行う開発者は、すぐに成果を上げてコードのパフォーマンスを向上させるうえで [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールがいかに役立つかを理解できます。 プロファイリングの経験がある開発者は、プロファイリング ツールに関する特定の機能やプロセスの概要を確認できます。
@@ -51,7 +51,7 @@ ms.locfileid: "62798393"
 ## <a name="collect-profiling-data"></a>プロファイリング データの収集
  プロファイリング データの収集は、**パフォーマンス エクスプローラー**から開始します。 プロファイリングを停止して再開することにより、収集するデータの量を制限できます。 既に実行されているプロセスにアタッチすることもできます。
 
- アプリケーションが開始されるとすぐ、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE に **[データ収集コントロール]** ウィンドウが表示されます。 **[データ収集コントロール]** ウィンドウで、収集プロセスを停止してから再開して、アプリケーションの特定の部分をプロファイリングできます。 また、**[データ収集コントロール]** ウィンドウを使用して、収集されるデータにマークを挿入することもできます。 マークはプロファイル ビューに表示されるユーザー定義データ ポイントであり、マークを使ってプロファイル データをフィルター処理できます。
+ アプリケーションが開始されるとすぐ、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE に **[データ収集コントロール]** ウィンドウが表示されます。 **[データ収集コントロール]** ウィンドウで、収集プロセスを停止してから再開して、アプリケーションの特定の部分をプロファイリングできます。 また、 **[データ収集コントロール]** ウィンドウを使用して、収集されるデータにマークを挿入することもできます。 マークはプロファイル ビューに表示されるユーザー定義データ ポイントであり、マークを使ってプロファイル データをフィルター処理できます。
 
  ターゲット アプリケーションがシャットダウンすると、プロファイリング ツールはプロファイリング データ ファイル (*.vsp) を生成し、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE に概要レポート ビューを表示します。
 
@@ -75,4 +75,4 @@ ms.locfileid: "62798393"
 
 ## <a name="see-also"></a>関連項目
 - [概要](../profiling/overviews-performance-tools.md)
-- [チュートリアル: パフォーマンスの問題を特定する](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [チュートリアル: パフォーマンスの問題を特定する](beginners-guide-to-cpu-sampling.md)

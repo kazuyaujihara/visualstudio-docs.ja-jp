@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eacf41d20164e4526e4f7bf5c2493dde0a00a2b3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426845"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189364"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>方法: スタンドアロンのプロファイラーをインストールする
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE をインストールしなくても実行できるコマンドライン ベースのスタンドアロン プロファイラーを利用できます。 このような状況は、コンピューターに開発環境がインストールされていないときに発生します。 たとえば、本稼働中の Web サーバーには開発環境をインストールするべきではありません。
@@ -40,7 +40,7 @@ ms.locfileid: "63426845"
    > [!NOTE]
    > vsinstr.exe の利用状況情報が表示された場合、すべてが正しく設定されています。 vsinstr.exe またはその依存関係の 1 つが見つからないというエラーが表示された場合、手順 2 のとおりにパスが正しく設定されていることを確認してください。
 
-4. シンボル サーバーを設定します。**_NT_SYMBOL_PATH** 変数を **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** に設定してください。
+4. シンボル サーバーを設定します。 **_NT_SYMBOL_PATH** 変数を **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** に設定してください。
 
 5. システム環境変数を利用してシンボル サーバーを設定したら、新しいコマンド プロンプトでコマンドライン プロファイラー ツールを実行します。 実行後、新しい環境変数が適用されます。 [コマンド プロンプト] ウィンドウで、次のコマンド ラインを入力します。
 
@@ -54,6 +54,6 @@ ms.locfileid: "63426845"
 ## <a name="see-also"></a>関連項目
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [チュートリアル: サンプリングを使ったコマンド ライン プロファイリング](../profiling/walkthrough-command-line-profiling-using-sampling.md)
-- [チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)
+- [チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング](command-line-profiling-of-stand-alone-applications.md)
 - [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

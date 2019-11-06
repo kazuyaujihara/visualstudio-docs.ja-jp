@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253203"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188776"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Visual Studio コンテナー ツールの構成方法
 
@@ -71,4 +71,4 @@ Visual Studio の設定を使用すると、Visual Studio での Docker コン�
 
 ## <a name="next-steps"></a>次の手順
 
-この[概要](visual-studio-tools-for-docker.md)で、Visual Studio でのコンテナーの操作の詳細について確認します。
+この[概要](overview.md)で、Visual Studio でのコンテナーの操作の詳細について確認します。

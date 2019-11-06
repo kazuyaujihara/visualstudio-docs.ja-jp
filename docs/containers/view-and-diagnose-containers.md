@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535629"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188727"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "72535629"
 左側にはローカル コンピューター上のコンテナーの一覧が表示されます。 ソリューションに関連付けられているコンテナーは **[ソリューション コンテナー]** に表示されます。 右側には、 **[環境]** 、 **[ポート]** 、 **[ログ]** 、および **[ファイル]** のタブがあるウィンドウが表示されます。
 
 > [!TIP]
-> **[コンテナー]** ツール ウィンドウをドッキングする場所は Visual Studio で簡単にカスタマイズすることができます。 「[Visual Studio のウィンドウ レイアウトをカスタマイズする](/visualstudio/ide/customizing-window-layouts-in-visual-studio)」を参照してください。 デバッガーが実行されているときに、既定で **[コンテナー]** ウィンドウは **[ウォッチ]** ウィンドウにドッキングされます。
+> **[コンテナー]** ツール ウィンドウをドッキングする場所は Visual Studio で簡単にカスタマイズすることができます。 「[Visual Studio のウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)」を参照してください。 デバッガーが実行されているときに、既定で **[コンテナー]** ウィンドウは **[ウォッチ]** ウィンドウにドッキングされます。
 
 ## <a name="view-environment-variables"></a>環境変数を表示する
 

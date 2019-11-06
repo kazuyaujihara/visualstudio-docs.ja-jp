@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634921"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188940"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法: プロジェクトを構成してターゲット プラットフォームを設定する
 
@@ -112,7 +112,7 @@ x86 バージョンと x64 バージョンの両方を持つ .NET アセンブ�
 > Visual Studio 2017 では、プロジェクト ファイルを編集するには先にプロジェクトをアンロードする必要があります。 プロジェクトをアンロードするには、プロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** を選択します。 編集が完了したら、変更内容を保存し、プロジェクト ノードを右クリックして **[プロジェクトの再読み込み]** を選択してプロジェクトを再度読み込みます。
 ::: moniker-end
 
-プロジェクト ファイルの詳細は、「[MSBuild プロジェクト ファイル スキーマ リファレンス](/visualstudio/msbuild/msbuild-project-file-schema-reference)」を参照してください。
+プロジェクト ファイルの詳細は、「[MSBuild プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

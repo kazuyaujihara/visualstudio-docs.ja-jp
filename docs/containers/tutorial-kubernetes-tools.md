@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126113"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188760"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes ツールの概要
 
@@ -137,7 +137,7 @@ Visual Studio の開始ウィンドウで、*Kubernetes* を検索し、 **[Kube
 
    ![[発行] メニュー項目のスクリーンショット](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. **[発行]** 画面で、発行先として **[コンテナー レジストリ]** を選択し、画面の指示に従ってコンテナー レジストリを選択します。 コンテナー レジストリをまだ持っていない場合は、Visual Studio から **[新しい Azure コンテナー レジストリを作成する]** を選択して作成します。 詳細については、[Azure Container Registry へのコンテナーの発行](vs-azure-tools-docker-hosting-web-apps-in-docker.md)に関する記事を参照してください。
+2. **[発行]** 画面で、発行先として **[コンテナー レジストリ]** を選択し、画面の指示に従ってコンテナー レジストリを選択します。 コンテナー レジストリをまだ持っていない場合は、Visual Studio から **[新しい Azure コンテナー レジストリを作成する]** を選択して作成します。 詳細については、[Azure Container Registry へのコンテナーの発行](hosting-web-apps-in-docker.md)に関する記事を参照してください。
 
    ![[発行先を選択] 画面のスクリーンショット](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 
