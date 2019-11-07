@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981950"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661859"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint プロジェクトとプロジェクト項目テンプレート
   以下のセクションでは、SharePoint プロジェクトとプロジェクト項目の使用可能なテンプレート、およびそれらの使用方法について説明します。
@@ -132,7 +132,7 @@ ms.locfileid: "72981950"
  *ステートマシンワークフロー*は、ビジネスロジックの状態、遷移、およびアクションのセットです。 ステート マシン ワークフローに含まれる各ステップは、順番に実行されるのではなく、アクションおよび状態によってトリガーされます。 シーケンシャル ワークフローと同様に、ステート マシン ワークフローは、リストやドキュメントなどの SharePoint アイテムに関連付けられます。 サイト レベル (グローバル) のワークフローまたはリスト レベル (ローカル) のワークフローを作成できることも、シーケンシャル ワークフローと同じです。 ワークフローを自動的に開始するか手動で開始するかを選択することもできます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「 [sharepoint ワークフローソリューションの作成](../sharepoint/creating-sharepoint-workflow-solutions.md)」、「 [sharepoint Server 2010 のワークフロー](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))」、および「[新機能: ワークフローの機能強化](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))」を参照してください。
 
 ### <a name="user-control-farm-solution-only"></a>ユーザーコントロール (ファームソリューションのみ)
- *ユーザーコントロール*は、他の ASP.NET コントロールや SharePoint コントロールを追加できる、再利用可能なカスタムコントロールです。 ユーザー コントロールは、SharePoint で実行されるアプリケーション ページと Web パーツに追加できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「 [Web パーツまたはアプリケーションページの再利用可能なコントロールの作成](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019)」を参照してください。
+ *ユーザーコントロール*は、他の ASP.NET コントロールや SharePoint コントロールを追加できる、再利用可能なカスタムコントロールです。 ユーザー コントロールは、SharePoint で実行されるアプリケーション ページと Web パーツに追加できます。 このプロジェクト項目は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「 [Web パーツまたはアプリケーションページの再利用可能なコントロールの作成](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages)」を参照してください。
 
 ### <a name="visual-web-part"></a>視覚的 web パーツ
  *視覚的 web パーツ*プロジェクト項目には、*要素 .xml*定義ファイル、 **Web パーツ**項目、および**ユーザーコントロール**項目が含まれています。 ビジュアル web パーツの外観をデザインするには、Visual Studio の [ツールボックス] からユーザーコントロールの画面にコントロールをドラッグまたはコピーします。 詳細については、「方法: デザイナーとビルドブロックを[使用して SharePoint web パーツを作成](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)する[: Web パーツ](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))」を参照してください。
