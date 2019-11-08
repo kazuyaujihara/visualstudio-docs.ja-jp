@@ -44,5 +44,5 @@
   items:
     - name: package.json の構成
       href: configure-packages-with-package-json.md
-    - name: JavaScript と TypeScript の Wiki ドキュメント
-      href: 'https://github.com/Microsoft/nodejstools/wiki'
+    - name: JavaScript と TypeScript のドキュメントのリポジトリ
+      href: 'https://github.com/Microsoft/JSTSdocs'
