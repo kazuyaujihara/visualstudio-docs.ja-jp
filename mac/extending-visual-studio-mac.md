@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac の拡張
 description: Visual Studio for Mac の機能は、拡張機能パッケージというモジュールを使用して拡張できます。 このガイドの最初の第 1 部では、ドキュメントに日時を挿入する単純な Visual Studio for Mac 拡張機能パッケージを作成します。 このガイドの第 2 部では、拡張機能パッケージ システムの基礎と、Visual Studio for Mac の基礎を形成するコア API の一部を紹介します。
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691656"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716842"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -135,7 +135,7 @@ public enum DateInserterCommands
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-開発に使用できる領域の範囲については、「[Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference)」(拡張機能ツリー リファレンス) と「[API Overview](http://monodevelop.com/Developers/Articles/API_Overview)」(API の概要) を参照してください。 高度な拡張機能パッケージを構築する場合は、[開発者向け](http://monodevelop.com/Developers/Articles)の記事も参照してください。 カスタマイズ可能な領域の一部を次に示します。
+開発に使用できる領域の範囲については、「[Extension Tree Reference](https://www.monodevelop.com/developers/articles/extension-tree-reference/)」(拡張機能ツリー リファレンス) と「[API Overview](https://www.monodevelop.com/developers/articles/api-overview/)」(API の概要) を参照してください。 高度な拡張機能パッケージを構築する場合は、[開発者向け](https://www.monodevelop.com/developers/articles/)の記事も参照してください。 カスタマイズ可能な領域の一部を次に示します。
 
 * パッド
 * キー バインド スキーム
@@ -174,13 +174,13 @@ Visual Studio と Visual Studio for Mac 間でのエディターの共有によ�
 
 Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、共有エディターそのものをもっと理解しておくと役立ちます。 この理解を深めるのに役立ついくつかのリソースを次に示します。
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [エディターでの MEF](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [エディターの内部](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [言語サービスとエディターの拡張ポイント](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [エディターでの MEF](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [エディターの内部](/visualstudio/extensibility/inside-the-editor)
+* [言語サービスとエディターの拡張ポイント](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [エディターのアーキテクチャ紹介ビデオ](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-これらのリソースを利用して理解しておく必要がある主要な概念は、[`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) と [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview) です。
+これらのリソースを利用して理解しておく必要がある主要な概念は、[`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) と [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) です。
 
 * `ITextBuffer` は、時間の経過と共に変更される可能性があるテキストのメモリ内表現です。 `ITextBuffer` の `CurrentSnapshot` プロパティは、バッファ内の現在のコンテンツの "*不変の*" 表現である `ITextSnapshot` インスタンスを返します。 バッファーで編集が行われると、CurrentSnapshot プロパティが最新のバージョンに更新されます。 アナライザーで任意のスレッドのテキスト スナップショットを検査して、その内容が変更されないことを保証できます。
 

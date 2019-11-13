@@ -5,18 +5,18 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: 7135dd05c687e3caed3ee64618ff71c093f4cd63
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: d35bfed901dca960ae21b4e2cf2fa75067c1b3ee
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322578"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715934"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 
 ASP.NET Core プロジェクトを開発するときは、launchSettings.json ファイルの内容をカスタマイズすることで、開発シナリオ内でプロジェクトを開始する方法を構成できます。 Visual Studio for Mac では、プロジェクト オプション UI を使用するか、ファイルを直接編集することで、このファイルを更新できます。 このファイルは、Windows 上で Visual Studio を実行する場合、または `dotnet` を使用してコマンド ラインから実行する場合に使用できる構成ファイルと同じです。 このファイルは、プロジェクトの Properties フォルダーの下に保存されます。
 
-詳細については、「[ASP.NET Core で複数の環境を使用する](https://docs.microsoft.com/aspnet/core/fundamentals/environments)」を参照してください。 この記事では、Visual Studio for Mac でこのファイルを更新する方法について説明します。
+詳細については、「[ASP.NET Core で複数の環境を使用する](/aspnet/core/fundamentals/environments)」を参照してください。 この記事では、Visual Studio for Mac でこのファイルを更新する方法について説明します。
 
 ## <a name="update-the-start-configuration-by-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用して開始構成を更新する
 
@@ -35,7 +35,7 @@ Visual Studio for Mac で launchSettings.json ファイルを直接編集する�
 
 ## <a name="configure-environment-variables"></a>環境変数を構成する
 
-グリッドを使用して、環境変数の値を指定することができます。 これらの環境変数は、Visual Studio for Mac 内でアプリケーションを起動するときに設定されます。 ASP.NET Core アプリケーションを開発する場合は、特殊な `ASPNETCORE_ENVIRONMENT` 環境変数に注意する必要があります。 詳細については、「[ASP.NET Core で複数の環境を使用する](https://docs.microsoft.com/aspnet/core/fundamentals/environments)」を参照してください。
+グリッドを使用して、環境変数の値を指定することができます。 これらの環境変数は、Visual Studio for Mac 内でアプリケーションを起動するときに設定されます。 ASP.NET Core アプリケーションを開発する場合は、特殊な `ASPNETCORE_ENVIRONMENT` 環境変数に注意する必要があります。 詳細については、「[ASP.NET Core で複数の環境を使用する](/aspnet/core/fundamentals/environments)」を参照してください。
 
 
 ## <a name="configure-the-start-url"></a>開始 URL を構成する
