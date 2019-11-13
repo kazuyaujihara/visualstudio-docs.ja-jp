@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c9b150c55e54b851e96e3bfb22e5e9a77646f7d7
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7d9cfbcafc90340d15172dd0d862ef9904fd6715
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872257"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716114"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
@@ -32,7 +32,7 @@ iOS Designer は Visual Studio for Mac と完全に統合されているので�
 
 ![iOS Storyboard デザイナー](media/intro-image30.png)
 
-iOS Designer の使用方法については、[Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) に関するガイドを参照してください。
+iOS Designer の使用方法については、[Designer](/xamarin/ios/user-interface/designer/?tabs=macos) に関するガイドを参照してください。
 
 ### <a name="mac"></a>Mac
 

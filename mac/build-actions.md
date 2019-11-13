@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128446"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714401"
 ---
 # <a name="build-actions"></a>ビルド アクション
 
@@ -35,7 +35,7 @@ Visual Studio for Mac でビルドできるプロジェクトの一般的なビ�
 |--|--|--|
 | **Compile** | 任意 | ファイルはソース ファイルとして C# コンパイラに渡されます。|
 | **コンテンツ** | .NET、Xamarin | ASP.NET プロジェクトの場合、展開時に、これらのファイルはサイトの一部として含まれます。 Xamarin.iOS プロジェクトと Xamarin.Mac プロジェクトの場合、アプリ バンドルに含まれます。|
-| **Embedded Resource** | .NET | ファイルは、アセンブリに埋め込むリソースとして C# コンパイラに渡されます。 `System.Reflection` 名前空間の [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream) を使用すると、アセンブリからファイルを読み取ることができます。|
+| **Embedded Resource** | .NET | ファイルは、アセンブリに埋め込むリソースとして C# コンパイラに渡されます。 `System.Reflection` 名前空間の [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream) を使用すると、アセンブリからファイルを読み取ることができます。|
 | **None** | 任意 | このファイルはいかなる形でもビルドに含まれません。IDE から簡単にアクセスできるようにプロジェクトに含まれています。 この値は、"ReadMe" ファイルなどのドキュメント ファイルで使用できます。|
 
 > [!NOTE]

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189310"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661931"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
 
@@ -94,7 +94,7 @@ Windows 向けには、Community、Professional、Enterprise という 3 つの�
     Visual Studio 2019 以降では、コードに対する Visual Studio プロジェクトを作成しなくても、Python コードが含まれるフォルダーを開き、IntelliSense やデバッグなどの機能を利用することができます。
 ::: moniker-end
 
-- [Visual Studio を使用して共同作業する](/visualstudio/liveshare/use/vs)
+- [Visual Studio を使用して共同作業する](/visualstudio/liveshare/)
   
     Visual Studio Live Share を使うと、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集したりデバッグしたりできます。 
 
