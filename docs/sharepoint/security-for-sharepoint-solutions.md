@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984181"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983776"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint ソリューションのセキュリティ
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint アプリケーションのセキュリティを強化するために、次の機能が組み込まれています。
 
 ## <a name="safe-control-entries"></a>安全なコントロールエントリ
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] で作成されたすべての SharePoint プロジェクトアイテムには、安全なコントロールのコレクションを表す "**安全なコントロールエントリ**" プロパティがあります。 **セーフ**サブプロパティを使用すると、セキュリティで保護されていると考えられるコントロールを指定できます。 詳細については、「[プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)する」および「[安全な Web パーツの指定](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19)」を参照してください。
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] で作成されたすべての SharePoint プロジェクトアイテムには、安全なコントロールのコレクションを表す "**安全なコントロールエントリ**" プロパティがあります。 **セーフ**サブプロパティを使用すると、セキュリティで保護されていると考えられるコントロールを指定できます。 詳細については、「[プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)する」および「[安全な Web パーツの指定](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts)」を参照してください。
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 属性
  既定では、ランタイムコードアクセスセキュリティ (CAS) システムによって完全に信頼されているアプリケーションのみが、共有マネージコードアセンブリにアクセスできます。 完全に信頼されたアセンブリを AllowPartiallyTrustedCallers 属性でマークすると、部分的に信頼されたアセンブリにアクセスできるようになります。
