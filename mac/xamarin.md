@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211476"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714481"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
@@ -22,7 +22,7 @@ Visual Studio for Mac バージョン 8.3 以降では、Xamarin.Forms 用の XA
 
 **Visual Studio > [基本設定] > [プロジェクト] > [Xamarin ホット リロード]** で **[Enable Xamarin Hot Reload]\(Xamarin ホット リロードを有効にする\)** チェックボックスをオンすることで、XAML ホット リロードを有効にすることができます。
 
-ホット リロードの詳細については、ドキュメント内の [Xamarin. Forms の XAML ホット リロードについてのガイド](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload)を参照してください。
+ホット リロードの詳細については、ドキュメント内の [Xamarin. Forms の XAML ホット リロードについてのガイド](/xamarin/xamarin-forms/xaml/hot-reload)を参照してください。
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ iOS Designer は Visual Studio for Mac と完全に統合されているので�
 
 ![iOS Storyboard デザイナー](media/intro-image30.png)
 
-iOS Designer の使用方法については、[Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) に関するガイドを参照してください。
+iOS Designer の使用方法については、[Designer](/xamarin/ios/user-interface/designer/?tabs=macos) に関するガイドを参照してください。
 
 ### <a name="mac"></a>Mac
 

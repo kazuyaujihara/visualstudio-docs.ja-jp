@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734919"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187917"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の概要
 Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレンダリングとパフォーマンスを記録し、問題を分析するためのツール セットです。 グラフィックス診断は、Windows PC またはリモート PC またはデバイス上でローカルに実行されているアプリで使用できます。
@@ -52,7 +52,7 @@ Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレ
 ### <a name="gpu-usage"></a>GPU 使用率
  グラフィックス診断では、Direct3D アプリのパフォーマンスのプロファイリングを行うこともできます。 グラフィックス イベントを詳細に記録している間は正確なプロファイリング データを取得できないことがあるため、この診断は Graphics Analyzer による調査で使用するフレームのキャプチャとは別個に行います。
 
- 詳細については、「[GPU 使用率](/visualstudio/profiling/gpu-usage)」を参照してください。
+ 詳細については、「[GPU 使用率](../../profiling/gpu-usage.md)」を参照してください。
 
 ### <a name="directx-control-panel"></a>DirectX コントロール パネル
  DirectX コントロール パネルは、DirectX の動作を変更するために使用できる、DirectX のコンポーネントです。たとえば、DirectX のランタイム コンポーネントのデバッグ バージョンを有効にする、報告されるデバッグ メッセージの種類を選択する、および処理能力の低いハードウェアをエミュレートするために一部のグラフィックス ハードウェア機能が使用されないようにすることができます。 DirectX に対するこのレベルの制御は、DirectX アプリケーションのデバッグとテストに役立ちます。 Visual Studio から DirectX コントロール パネルにアクセスできます。

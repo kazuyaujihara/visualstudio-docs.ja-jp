@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ee2d7470a14836d7369fb916c06f2a8172c4e6b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551629"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189716"
 ---
 # <a name="design-and-create-office-solutions"></a>Office ソリューションの設計と作成
 
@@ -31,9 +31,9 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="create-office-projects"></a>Office プロジェクトを作成する
- 開始する前に、要件を決定し、最適なソリューションの種類を探します。 たとえば、アプリケーションを使用するたびに作成した Office ソリューションを実行する必要がある場合は、VSTO アドインが最適です。 コードが 1 つのドキュメントと緊密に統合されている場合は、ドキュメント レベルのカスタマイズを作成します。 これらのプロジェクト タイプは、Visual Studio のプロジェクト テンプレートとして利用できます。 Visual Studio に含まれる Office プロジェクトテンプレートの詳細については、「 [office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。 Office プロジェクトを作成する方法の詳細について[は、「方法:Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+ 開始する前に、要件を決定し、最適なソリューションの種類を探します。 たとえば、アプリケーションを使用するたびに作成した Office ソリューションを実行する必要がある場合は、VSTO アドインが最適です。 コードが 1 つのドキュメントと緊密に統合されている場合は、ドキュメント レベルのカスタマイズを作成します。 これらのプロジェクト タイプは、Visual Studio のプロジェクト テンプレートとして利用できます。 Visual Studio に含まれる Office プロジェクトテンプレートの詳細については、「 [office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。 Office プロジェクトを作成する方法の詳細については、「[方法: Visual Studio で office プロジェクトを作成](../vsto/how-to-create-office-projects-in-visual-studio.md)する」を参照してください。
 
- Office プロジェクトには、Visual Studio の他の種類のプロジェクトとは異なる機能とプロジェクト項目があります。 たとえば、ドキュメント レベルのプロジェクトを作成した場合は、プロジェクト内の文書またはブックを Visual Studio 内部で開いて編集できます。 詳細については、「[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。
+ Office プロジェクトには、Visual Studio の他の種類のプロジェクトとは異なる機能とプロジェクト項目があります。 たとえば、ドキュメント レベルのプロジェクトを作成した場合は、プロジェクト内の文書またはブックを Visual Studio 内部で開いて編集できます。 詳細については、「 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。
 
 ## <a name="choose-a-net-framework-version"></a>.NET Framework のバージョンを選択してください
  要件に最適なプロジェクトの種類を選択した後に、開発工程で使用する .NET Framework のバージョンを選択できます。 Office プロジェクトでは、次のバージョンの .NET Framework を対象にすることができます。
@@ -44,13 +44,13 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  ソリューションを実行するエンドユーザーのコンピューターでは、プロジェクト用に選択した .NET Framework バージョンが必要です。 たとえば、プロジェクトがを対象[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]としている場合、エンドユーザーのコンピューターにはが必要です。 この例では、エンドユーザーのコンピューターに .NET Framework 3.5 のみがインストールされている場合、ソリューションは実行されません。
+  ソリューションを実行するエンドユーザーのコンピューターでは、プロジェクト用に選択した .NET Framework バージョンが必要です。 たとえば、プロジェクトが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]を対象としている場合は、エンドユーザーのコンピューターに [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] が必要です。 この例では、エンドユーザーのコンピューターに .NET Framework 3.5 のみがインストールされている場合、ソリューションは実行されません。
 
   .NET Framework 3.5 を対象とする VSTO アドイン プロジェクトを移行する場合、インストールした Office のバージョンに応じて、Visual Studio によってプロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更されます。
 
-  ただし、プロジェクトで特定の機能を使用している場合は、Visual Studio によるターゲット フレームワークの変更後に、プロジェクトのコードの一部を変更することが必要になる場合があります。 ターゲットフレームワークを変更する方法の詳細については[、「」を参照してください.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。 プロジェクトで行う必要がある変更の詳細については、「 [.NET Framework 4 以降への Office ソリューションの移行](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)」を参照してください。
+  ただし、プロジェクトで特定の機能を使用している場合は、Visual Studio によるターゲット フレームワークの変更後に、プロジェクトのコードの一部を変更することが必要になる場合があります。 ターゲットフレームワークを変更する方法の詳細については、「[方法: .NET Framework のバージョンをターゲット](../ide/visual-studio-multi-targeting-overview.md)にする」を参照してください。 プロジェクトで行う必要がある変更の詳細については、「 [.NET Framework 4 以降への Office ソリューションの移行](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)」を参照してください。
 
-  Visual Studio によってプロジェクトのターゲット .NET Framework が変更され、ClickOnce を使用してソリューションを配置している場合は、 **[必須コンポーネント]** ダイアログボックスでも、対応するバージョンの .NET Framework を選択してください。 プロジェクトのターゲット フレームワークを変更しても、この選択内容は自動的には変わりません。 詳細については、「[方法 :Office ソリューション](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)を実行するには、エンドユーザーのコンピューターに必須コンポーネントをインストールします。
+  Visual Studio によってプロジェクトのターゲット .NET Framework が変更され、ClickOnce を使用してソリューションを配置している場合は、 **[必須コンポーネント]** ダイアログボックスでも、対応するバージョンの .NET Framework を選択してください。 プロジェクトのターゲット フレームワークを変更しても、この選択内容は自動的には変わりません。 詳細については、「[方法: Office ソリューションを実行するためにエンドユーザーのコンピューターに必須コンポーネントをインストールする](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)」を参照してください。
 
 > [!NOTE]
 > .NET Framework 3.5 以前を [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] を使用して作成した Office プロジェクトの対象にすることはできません。 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] を使用して作成した Office プロジェクトには、[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] で導入された機能が必要です。
@@ -63,12 +63,12 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 ### <a name="understand-the-client-profile"></a>クライアントプロファイルについて
  .NET Framework Client Profile は、完全な .NET Framework のサブセットです。 .NET Framework のクライアント機能のみを使用し、Office ソリューションをできる限り迅速に配置する必要がある場合は、.NET Framework Client Profile を対象にすることができます。 詳細については、「 [.NET Framework client profile](/dotnet/framework/deployment/client-profile)」を参照してください。
 
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] を対象とする Office プロジェクトを作成するときに、既定で [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] が対象となります。 完全な [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 用に開発する場合は、プロジェクトを作成した後でこのオプションを設定する必要があります。 詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] を対象とする Office プロジェクトを作成するときに、既定で [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] が対象となります。 完全な [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 用に開発する場合は、プロジェクトを作成した後でこのオプションを設定する必要があります。 詳細については、「[方法: .NET Framework のバージョンをターゲットにする](../ide/visual-studio-multi-targeting-overview.md)」を参照してください。
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Microsoft Office の64ビット版のソリューションを作成する
  Microsoft Office には、64 ビットと 32 ビットのエディションがあります。 いずれかのエディションで実行できる Office ソリューションを作成するには、プロジェクトのプラットフォームターゲット設定を **[ANY CPU]** に設定する必要があります。 これは、Office プロジェクトの既定値です。 詳細については、「 [Office ソリューションのビルド](../vsto/building-office-solutions.md)」を参照してください。
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] には、64 ビットと 32 ビットの別個のバージョンがあり、それぞれ Microsoft Office の 64 ビットおよび 32 ビットのエディションによって使用されます。 詳細については、[Visual Studio Tools for Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)を参照してください。
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] には、64 ビットと 32 ビットの別個のバージョンがあり、それぞれ Microsoft Office の 64 ビットおよび 32 ビットのエディションによって使用されます。 詳細については、「 [Visual Studio Tools for Office ランタイムの概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)」を参照してください。
 
 ## <a name="assemblies-in-office-solutions"></a>Office ソリューションのアセンブリ
  Visual Studio の Office 開発ツールを使用して Office プロジェクトを作成した場合、記述したコードは最終的にアセンブリにコンパイルされます。 アセンブリは、共有サーバーまたはクライアントコンピューター上のディレクトリに配置されます。
@@ -93,7 +93,7 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 
 ## <a name="see-also"></a>関連項目
 - [Office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)
-- [方法: Visual Studio での Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)
 - [Office プロジェクトのプロパティ](../vsto/properties-in-office-projects.md)
 - [さまざまなバージョンの Microsoft Office でソリューションを実行する](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)
@@ -101,7 +101,7 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 - [Office ソリューションのアプリケーションマニフェストと配置マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)
 - [方法: Office ソリューションの構成情報を設定する](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)
 - [Visual Studio 内での Office 機能の使用](../vsto/using-office-functionality-inside-of-visual-studio.md)
-- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
 - [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)

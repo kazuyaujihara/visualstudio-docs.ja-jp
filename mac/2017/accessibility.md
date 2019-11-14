@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988376"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714421"
 ---
 # <a name="accessibility"></a>ユーザー補助
 
@@ -30,7 +30,7 @@ Visual Studio for Mac のユーザー補助機能は、既定では無効にな�
 
 1. **[Visual Studio] > [ユーザー設定] > [その他] > [アクセシビリティ]** の順に移動します。
 
-2. 次の図で示すように、**[Enable Accessibility]\(アクセシビリティを有効にする\)** チェックボックスを選択します。
+2. 次の図で示すように、 **[Enable Accessibility]\(アクセシビリティを有効にする\)** チェックボックスを選択します。
 
     ![[Enable Accessibility]\(アクセシビリティを有効にする\) チェックボックス](media/accessibility-image1.png)
 
@@ -46,7 +46,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 ## <a name="how-to-use-keyboard-navigation"></a>方法: キーボード ナビゲーションを使用する
 
-キーボード ナビゲーションを有効にするには、**[システム環境設定] > [キーボード] > [ショートカット]** のフル キーボード アクセス オプションを、**[すべてコントロール]** に設定します。
+キーボード ナビゲーションを有効にするには、 **[システム環境設定] > [キーボード] > [ショートカット]** のフル キーボード アクセス オプションを、 **[すべてコントロール]** に設定します。
 
 ![macOS の [システム環境設定] パネル](media/accessibility-image2.png)
 
@@ -75,7 +75,7 @@ UI VoiceOver コマンドの間を移動するには、次のコマンドを使�
 macOS の VoiceOver の使用方法に関する概要については、次のガイドをご覧ください。
 
 - [VoiceOver の概要](https://help.apple.com/voiceover/info/guide/10.12/)
-- [macOS の VoiceOver コマンド](http://lab.dotjay.com/notes/voiceover-commands/)
+- [macOS の VoiceOver コマンド](https://lab.dotjay.com/notes/voiceover-commands/)
 
 ## <a name="see-also"></a>関連項目
 

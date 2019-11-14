@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730555"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568916"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio での UWP アプリでの HTML と CSS のデバッグ
 
@@ -30,7 +30,7 @@ Visual Studio では、JavaScript アプリに総合的なデバッグ機能が�
 
 DOM 検査ツールが提供する対話式のデバッグ モデルを使用すると、レンダリングされる HTML および CSS のコードを表示および変更できます。 これらはすべてデバッガーを停止して再起動することなく実行できます。
 
-JavaScript コンソールウィンドウの使用やブレークポイントの設定など、JavaScript のその他のデバッグ機能の詳細については、「[クイックスタート:](../debugger/quickstart-debug-javascript-using-the-console.md) [Visual Studio で](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)の javascript およびデバッグアプリのデバッグ」を参照してください。
+JavaScript コンソールウィンドウの使用やブレークポイントの設定など、JavaScript のその他のデバッグ機能の詳細については、「[クイックスタート:](../debugger/quickstart-debug-javascript-using-the-console.md) [Visual Studio で](debugging-windows-store-and-windows-universal-apps.md)の javascript およびデバッグアプリのデバッグ」を参照してください。
 
 ## <a name="InspectingDOM"></a> ライブ DOM の検査
 DOM Explorer ではレンダリングされるページのビューが示され、DOM Explorer を使用すると値を変更して結果をすぐに確認できます。 これにより、デバッガーを停止して再起動することなく変更をテストできます。 この方法でページと対話するときはプロジェクトのソース コードは変更されないので、必要なコード修正が見つかったら、ソース コードを変更します。
@@ -182,7 +182,7 @@ DOM Explorer を使用すると次のことができます。
 14. メインウィンドウで、[`width: 100px;height: 100px;`] をダブルクリックし、 **del**キーを押して、 **enter キーを押します。** デバッグセッションを停止していなくても、Enter キーを押すとすぐに、新しい値がアプリに反映されます。
 
     > [!IMPORTANT]
-    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、「 [DOM Explorer を使用](../debugger/debug-layout-using-dom-explorer.md)した DOM Explorer およびデバッグレイアウト[を使用した CSS スタイルのデバッグ](../debugger/debug-css-styles-using-dom-explorer.md)」を参照してください。
+    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** の各タブに表示される値も更新できます。
 
 15. アプリを選択するか、Alt + Tab キーを押してアプリに切り替えます。
 
@@ -255,7 +255,8 @@ DOM Explorer を使用すると次のことができます。
 > Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+
+- [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)
 - [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)
 - [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

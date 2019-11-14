@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981697"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568837"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK を使用すると、visual Studio の機能を拡張したり、新しい機能を Visual Studio に統合したりできます。 拡張機能は、他のユーザーや Visual Studio Marketplace にも配布できます。 Visual Studio を拡張する方法の一部を次に示します。
@@ -74,9 +74,10 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
 - [拡張 (Visual Studio を)](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>関連項目
+
 - [メニューコマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ: アドインを VSPackage 拡張機能に変換する](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [FAQ: アドインを VSPackage 拡張機能に変換する](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
 - [マネージコード内の複数のスレッドを管理する](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [メニューとコマンドを拡張する](../extensibility/extending-menus-and-commands.md)
 - [ツールバーにコマンドを追加する](../extensibility/adding-commands-to-toolbars.md)
@@ -93,5 +94,4 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
 - [Visual Studio 拡張機能を出荷する](../extensibility/shipping-visual-studio-extensions.md)
 - [Visual Studio SDK の内部](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Visual Studio SDK のサポート](../extensibility/support-for-the-visual-studio-sdk.md)
-- [アーカイブ](../extensibility/archive.md)
 - [Visual Studio SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)

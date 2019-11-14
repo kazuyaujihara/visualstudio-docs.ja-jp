@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e8ccaaf877c04b3d58fc6d54bb658c2cef77b6f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985307"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661893"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint ソリューションのトラブルシューティング
   以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、「 [SharePoint 2007 ワークフローソリューションのデバッグ](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)」を参照してください。
@@ -172,9 +172,9 @@ ms.locfileid: "72985307"
 ### <a name="resolution"></a>解像度
  この問題を解決するには、モデルを手動で削除した後、ソリューションを再び配置します。  モデルを削除するには、次のどちらかのツールを使用します。
 
-- SharePoint 2010 サーバーの全体管理。 詳細については、Microsoft TechNet Web サイトの「 [BDC モデル管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#deleteamodel)」を参照してください。
+- SharePoint 2010 サーバーの全体管理。 詳細については、Microsoft TechNet Web サイトの「 [BDC モデル管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model)」を参照してください。
 
-- Windows PowerShell。 モデルを削除するには、コマンドプロンプトで「 **SPBusinessDataCatalogModel**」と入力します。 詳細については、Microsoft TechNet Web サイトの「[一般的なコマンドレット (SharePoint Server 2010)](/powershell/module/sharepoint-server/&view=sharepoint-ps) 」を参照してください。
+- Windows PowerShell。 モデルを削除するには、コマンドプロンプトで「 **SPBusinessDataCatalogModel**」と入力します。 詳細については、Microsoft TechNet Web サイトの「[一般的なコマンドレット (SharePoint Server 2010)](/powershell/module/sharepoint-server) 」を参照してください。
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>SharePoint で視覚的 web パーツを表示しようとするとエラーが表示される
  この問題は、ユーザーコントロールの**Path**プロパティが文字列 "controltemplates\\" で始まっていない場合に発生します。
@@ -281,4 +281,4 @@ ms.locfileid: "72985307"
 
 - [SharePoint のパッケージ化と配置のトラブルシューティング](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
+- [Visual Studio でのデバッグ](../debugger/debugger-feature-tour.md)

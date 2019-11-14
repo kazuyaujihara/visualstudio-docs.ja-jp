@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891138"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189549"
 ---
 # <a name="add-tags-to-project-templates"></a>プロジェクト テンプレートにタグを追加する
 
@@ -40,9 +40,9 @@ ms.locfileid: "67891138"
 
 次のいずれかの操作を行うときに、プロジェクト テンプレートの *.vstemplate* XML でタグを追加または編集できます。
 
-* [テンプレートのエクスポート] ウィザードを使って[新しいプロジェクト テンプレートを作成する](/visualstudio/ide/how-to-create-project-templates)。
-* [既存のプロジェクト テンプレートを更新する](/visualstudio/ide/how-to-update-existing-templates)。
-* [新しい VSIX プロジェクト テンプレートを作成する](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)。
+* [テンプレートのエクスポート] ウィザードを使って[新しいプロジェクト テンプレートを作成する](how-to-create-project-templates.md)。
+* [既存のプロジェクト テンプレートを更新する](how-to-update-existing-templates.md)。
+* [新しい VSIX プロジェクト テンプレートを作成する](../extensibility/getting-started-with-the-vsix-project-template.md)。
 
 ## <a name="syntax"></a>構文
 
@@ -147,7 +147,7 @@ Visual C# アプリケーションのプロジェクト テンプレートのメ
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [プロジェクト テンプレートと項目テンプレートを作成する](/visualstudio/ide/creating-project-and-item-templates)
-- [プロジェクト テンプレートと項目テンプレートのカスタマイズ](/visualstudio/ide/customizing-project-and-item-templates)
-- [VSIX プロジェクト テンプレートの概要](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクト テンプレートと項目テンプレートを作成する](creating-project-and-item-templates.md)
+- [プロジェクト テンプレートと項目テンプレートのカスタマイズ](customizing-project-and-item-templates.md)
+- [VSIX プロジェクト テンプレートの概要](../extensibility/getting-started-with-the-vsix-project-template.md)

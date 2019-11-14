@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: ショートカット キー (HTML および JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: クライアント側スクリプト
-              items:
-                - name: クライアント側スクリプトのデバッグ
-                  href: client-side-script-debugging.md
-                - name: スクリプト デバッグの制約
-                  href: limitations-on-script-debugging.md
-                - name: アタッチ (スクリプト)
-                  items:
-                    - name: スクリプトにアタッチする
-                      href: how-to-attach-to-script.md
-                    - name: '警告 :スクリプト デバッグが無効'
-                      href: warning-script-debugging-disabled.md
+            - name: '警告 :スクリプト デバッグが無効'
+              href: warning-script-debugging-disabled.md
         - name: WCF サービス
           items:
             - name: WCF サービスをデバッグする

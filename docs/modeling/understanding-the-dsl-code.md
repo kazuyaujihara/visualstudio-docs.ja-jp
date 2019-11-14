@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747388"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189450"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL コードについて
 
@@ -39,7 +39,7 @@ ms.locfileid: "72747388"
 
  DSL を理解するために生成されたコードを調べてみることをお勧めします。 生成されたファイルを表示するには、ソリューション エクスプローラーで *.tt ファイルを展開します。
 
- @No__t_0 の .tt ファイルには、生成されるコードがほとんど含まれていません。 その代わりに、それらは `<#include>` ディレクティブを使用して共有テンプレート ファイルを含みます。 共有ファイルは、 **COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**にあります。
+ \*の .tt ファイルには、生成されるコードがほとんど含まれていません。 その代わりに、それらは `<#include>` ディレクティブを使用して共有テンプレート ファイルを含みます。 共有ファイルは、 **COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**にあります。
 
  DSL ソリューションに独自のプログラム コードを追加する場合、生成されたコード フォルダーの外の別ファイルに追加します。 **カスタムコード**フォルダーを作成することもできます。 (新しいコード ファイルをカスタム フォルダーに追加する場合、必ず初期コード スケルトン内の名前空間を修正してください)
 
@@ -192,7 +192,7 @@ ms.locfileid: "72747388"
 
  `CommandSet.cs`
 
- ダイアグラムに表示される右クリックメニューコマンド。 この設定の適用または設定への追加が可能です。 このファイルはコマンドのコードを含みます。 メニュー上のコマンドの場所は Commands.vsct ファイルにより決定されます。 詳細については、「[ユーザーコマンドとアクションの記述](../modeling/writing-user-commands-and-actions.md)」を参照してください。
+ ダイアグラムに表示される右クリックメニューコマンド。 この設定の適用または設定への追加が可能です。 このファイルはコマンドのコードを含みます。 メニュー上のコマンドの場所は Commands.vsct ファイルにより決定されます。 詳細については、「[ユーザーコマンドとアクションの記述](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)」を参照してください。
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 図の右クリック (コンテキスト) メニュー、 **[編集]** メニューなど、メニューの標準メニューコマンドを検索します。 コマンドのコードは CommandSet.cs にあります。 標準コマンドを再配置または変更して、独自のコマンドを追加できます。 詳細については、「[ユーザーコマンドとアクションの記述](../modeling/writing-user-commands-and-actions.md)」を参照してください。
+ 図の右クリック (コンテキスト) メニュー、 **[編集]** メニューなど、メニューの標準メニューコマンドを検索します。 コマンドのコードは CommandSet.cs にあります。 標準コマンドを再配置または変更して、独自のコマンドを追加できます。 詳細については、「[ユーザーコマンドとアクションの記述](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)」を参照してください。
 
  `ModelExplorer.cs`
 

@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416867"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713946"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>方法: ビルドからプロジェクトを除外する
 
@@ -53,6 +53,19 @@ ms.locfileid: "68416867"
 6. **[標準]** ツール バーで、 **[ソリューション構成]** ボックスのアクティブな構成が、新しいソリューション構成であることを確認します。
 
 7. メニュー バーから、 **[ビルド]**  >  **[ソリューションのリビルド]** の順に選びます。
+
+## <a name="skipped-projects"></a>スキップされたプロジェクト
+
+ビルド中にプロジェクトがスキップされる場合があります。これらのプロジェクトは最新ではないか、構成から除外されているためです。 Visual Studio では、MSBuild を使用してプロジェクトをビルドします。 ファイルのタイムスタンプから判断して、出力が入力よりも古い場合、MSBuild はターゲットのみをビルドします。 強制的にリビルドするには、コマンド **[ビルド]**  >  **[ソリューションのリビルド]** を使用します。
+
+Visual Studio の **[出力]** ウィンドウの **[ビルド]** ペインでは、最新であったプロジェクトの数、正常にビルドされた数、失敗した数、スキップされた数が報告されます。 スキップされた数に、最新だったためにビルドされなかったプロジェクトは含まれません。 アクティブな構成から除外されたプロジェクトは、ビルド時にスキップされます。 ビルド出力には、プロジェクトがスキップされることを示すメッセージが表示されます。
+
+```output
+2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
+2>Project not selected to build for this solution configuration
+```
+
+プロジェクトがスキップされた理由を確認するには、アクティブな構成 (前の例では `Debug x86`) を見つけ、 **[ビルド]**  >  **[構成マネージャー]** を選択します。 この記事で説明されているように、構成ごとにスキップされるプロジェクトを表示または変更できます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -7,12 +7,12 @@ ms.date: 06/20/2018
 ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
-ms.openlocfilehash: 26b943d94f11adbc4415e552d2a6b3a73bb95c81
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 66461beec5fa619c33e0d33aeb4e57bfefd43d96
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328377"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715679"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>Visual Studio 2017 for Mac (バージョン 7) を Visual Studio 2019 for Mac (バージョン 8.0) に更新する
 
@@ -22,9 +22,9 @@ Visual Studio 2019 for Mac では、まったく新しい C# エディター、�
 - [Visual Studio 2019 for Mac バージョン 8.1 が利用できるようになりました (および 8.2 のプレビュー)](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-version-8-1-is-now-available-and-a-preview-for-8-2/)
 
 > [!IMPORTANT]
-> Visual Studio 2017 for Mac **バージョン 7.7.3** には既知の問題があり、アップデーターで "更新プログラム情報の取得中にエラーが発生しました" と継続的に表示されます。 これが発生する場合は、[Visual Studio for Mac をダウンロード](https://visualstudio.microsoft.com/vs/mac/)し、Visual Studio 2019 for Mac を[インストールする](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019)手順に従ってください。 これにより、Visual Studio 2017 for Mac の既存のインスタンスが上書きされることに注意してください。
+> Visual Studio 2017 for Mac **バージョン 7.7.3** には既知の問題があり、アップデーターで "更新プログラム情報の取得中にエラーが発生しました" と継続的に表示されます。 これが発生する場合は、[Visual Studio for Mac をダウンロード](https://visualstudio.microsoft.com/vs/mac/)し、Visual Studio 2019 for Mac を[インストールする](/visualstudio/mac/installation?view=vsmac-2019)手順に従ってください。 これにより、Visual Studio 2017 for Mac の既存のインスタンスが上書きされることに注意してください。
 
-最新バージョンを入手するには、 **[Visual Studio] > [更新の確認...]** を参照して[アップデーター](https://docs.microsoft.com/visualstudio/mac/update?view=vsmac-2017)を使用します。
+最新バージョンを入手するには、 **[Visual Studio] > [更新の確認...]** を参照して[アップデーター](/visualstudio/mac/update?view=vsmac-2017)を使用します。
 
 ![アップデーター ダイアログ](media/update-vsmac-updater.png)
 

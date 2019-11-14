@@ -1,5 +1,5 @@
 ---
-title: Windows のドキュメント |Microsoft Docs
+title: ドキュメントウィンドウ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 844176b2db6074a33ac2e612c47d3779031836df
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5d29d64090320a8f62491209773145c024564efa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345474"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186631"
 ---
 # <a name="document-windows"></a>ドキュメント ウィンドウ
-Visual Studio で、*ドキュメント ウィンドウ*はマルチ ドキュメント インターフェイス (MDI) ウィンドウに関連付けられている子フレーム ウィンドウです。 ドキュメント ウィンドウは、通常、表示やソース コードまたはテキストの変更を使用しますが、その他の機能の種類をホストすることもできます。 ドキュメント ウィンドウ:
+Visual Studio では、*ドキュメントウィンドウ*は、マルチドキュメントインターフェイス (MDI) ウィンドウに関連付けられている、フレーム化された子ウィンドウです。 通常、ドキュメントウィンドウは、ソースコードまたはテキストの表示と変更に使用されますが、他の機能型をホストすることもできます。 ドキュメントウィンドウ:
 
-- 同時に複数のファイルを表示できるように、MDI 親内の別の水平または垂直タブ グループに整理できます。
+- は、複数のファイルを同時に表示できるように、親 MDI の個別の水平または垂直タブグループに整理できます。
 
-- 任意の順序で MDI 親にドッキングできます。
+- 親 MDI の任意の順序でドッキングできます。
 
-- 自由にフロートすることができます。
+- 自由にフローティングできます。
 
-- その他の MDI ウィンドウのタブ オーダー内でリンクされています。
+- タブオーダーで他の MDI ウィンドウにリンクされています。
 
-  グループ化のためのコマンドをドッキングとフローティング見つかりますドキュメント ウィンドウ タブのショートカット メニュー上。
+  グループ化、ドッキング、フローティングのコマンドは、[ドキュメントウィンドウ] タブのショートカットメニューにあります。
 
-  Visual Studio でウィンドウの動作の詳細については、次を参照してください。[ウィンドウ レイアウトをカスタマイズ](../../ide/customizing-window-layouts-in-visual-studio.md)します。
+  Visual Studio でのウィンドウの動作の詳細については、「[ウィンドウレイアウトをカスタマイズ](../../ide/customizing-window-layouts-in-visual-studio.md)する」を参照してください。
 
-## <a name="document-window-implementation"></a>ドキュメント ウィンドウの実装
- ドキュメント ウィンドウは、エディターの実装によって作成されます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス エディターをインスタンス化の一部としてドキュメント ウィンドウを作成します。 詳細については、次を参照してください。[レガシー インターフェイス エディター](../../extensibility/legacy-interfaces-in-the-editor.md)します。
+## <a name="document-window-implementation"></a>ドキュメントウィンドウの実装
+ ドキュメントウィンドウは、エディターを実装することによって作成されます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> インターフェイスは、エディターのインスタンス化の一部としてドキュメントウィンドウを作成します。 詳細については、「[従来のインターフェイス](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)」を参照してください。
 
 > [!NOTE]
-> 後方の提供をウィンドウ内のナビゲーションのポイントに転送は、実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>インターフェイス。 テキスト エディターでは、ドキュメント内のナビゲーションのポイントを識別するためにテキスト マーカーが使用されます。
+> ウィンドウに後方移動ナビゲーションポイントを提供するには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> インターフェイスを実装します。 テキストエディターでは、ドキュメント内のナビゲーションポイントを識別するためにテキストマーカーが使用されます。
 
-## <a name="the-running-document-table"></a>実行中の document テーブル
- IDE では、実行されているドキュメント テーブル (RDT) を使用して、すべてのドキュメント ウィンドウの状態を追跡します。 RDT は、どのドキュメントを windows にソリューションを閉じたときなど、または、ファイルが編集されているときに、イベントの通知メカニズムです。 詳細については、次を参照してください。 [document テーブルを実行している](../../extensibility/internals/running-document-table.md)します。
+## <a name="the-running-document-table"></a>実行中のドキュメントテーブル
+ IDE は、実行中のドキュメントテーブル (RDT) を使用して、すべてのドキュメントウィンドウの状態を追跡します。 RDT は、ドキュメントウィンドウにイベントが通知されるメカニズムです。たとえば、ソリューションが閉じられた場合や、ファイルが編集された場合などです。 詳細については、「 [document table の実行](../../extensibility/internals/running-document-table.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ドキュメントの読み込みの遅延](../../extensibility/internals/delayed-document-loading.md)

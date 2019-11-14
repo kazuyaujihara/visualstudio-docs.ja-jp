@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985061"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983724"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>チュートリアル: SharePoint ワークフローソリューションの作成とデバッグ
   このチュートリアルでは、基本的なシーケンシャルワークフローテンプレートを作成する方法について説明します。 ワークフローは、共有ドキュメントライブラリのプロパティをチェックして、ドキュメントがレビューされているかどうかを確認します。 ドキュメントがレビューされている場合は、ワークフローが終了します。
@@ -285,7 +285,7 @@ ms.locfileid: "72985061"
 
 - SharePoint ワークフローアクティビティの詳細については、「 [Sharepoint Foundation のワークフローアクティビティ](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14))」を参照してください。
 
-- Windows Workflow Foundation アクティビティの詳細については、「system.string[名前空間](/dotnet/api/system.workflow.activities&view=netframework-4.8)」を参照してください。
+- Windows Workflow Foundation アクティビティの詳細については、「system.string[名前空間](/dotnet/api/system.windows.media.color)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ワークフローソリューションの作成](../sharepoint/creating-sharepoint-workflow-solutions.md)

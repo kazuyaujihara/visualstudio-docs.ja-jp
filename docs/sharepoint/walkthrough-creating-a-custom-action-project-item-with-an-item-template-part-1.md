@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984985"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189179"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)
   Visual Studio の SharePoint プロジェクト システムは、プロジェクト項目の種類を独自に作成することによって拡張することができます。 このチュートリアルでは、sharepoint プロジェクトに追加できるプロジェクトアイテムを作成して、SharePoint サイトにカスタムアクションを作成します。 カスタムアクションは、SharePoint サイトの **[サイトの操作]** メニューにメニュー項目を追加します。
@@ -218,7 +218,7 @@ ms.locfileid: "72984985"
     </VSTemplate>
     ```
 
-     このファイルには、項目テンプレートの内容と動作が定義されています。 このファイルの内容の詳細については、「 [Visual Studio テンプレートスキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)」を参照してください。
+     このファイルには、項目テンプレートの内容と動作が定義されています。 このファイルの内容の詳細については、「 [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。
 
 4. **ソリューションエクスプローラー**で、 **ItemTemplate**プロジェクトのショートカットメニューを開き、 **[追加]** 、 **[新しい項目]** の順に選択します。
 
@@ -455,6 +455,6 @@ ms.locfileid: "72984985"
 - [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)
-- [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)
 - [アイコンまたはその他の&#40;イメージイメージエディターを作成する&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

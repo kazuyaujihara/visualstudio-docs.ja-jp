@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962926"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715878"
 ---
 # <a name="create-razor-web-apps"></a>Razor Web アプリの作成
 
-このガイドでは、最初の Razor Web アプリの作成に関する概要について説明します。 詳しいガイダンスが必要であれば、「[ASP.NET Core での Razor ページの概要](https://docs.microsoft.com/aspnet/core/razor-pages/index)」を参照してください。
+このガイドでは、最初の Razor Web アプリの作成に関する概要について説明します。 詳しいガイダンスが必要であれば、「[ASP.NET Core での Razor ページの概要](/aspnet/core/razor-pages/index)」を参照してください。
 
 Visual Studio for Mac には、 *.cshtml* ファイルでの IntelliSense や構文の強調表示など、Razor 編集のサポートが用意されています。 Visual Studio 2019 for Mac 8.3+ の新機能として、Razor ファイル内で IntelliSense がコンテキストを認識できるようになりました。ドキュメント内で現在編集中の言語に一致する IntelliSense が表示されます。
 
@@ -36,7 +36,7 @@ Visual Studio for Mac には、 *.cshtml* ファイルでの IntelliSense や構
    Visual Studio for Mac により、お客様のプロジェクトがコード レイアウト ウィンドウで開かれます。
 1. **Command + Option + F5** キーを使用し、デバッグなしでプロジェクトを実行します。
 
-   Visual Studio で [Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel) が起動し、ブラウザーが開いて `https://localhost:5001` にアクセスし、初めての Razor Web アプリが表示されます。
+   Visual Studio で [Kestrel](/aspnet/core/fundamentals/servers/kestrel) が起動し、ブラウザーが開いて `https://localhost:5001` にアクセスし、初めての Razor Web アプリが表示されます。
 
    ![Safari での Razor Web アプリ](media/razor-webapp.png)
 
@@ -50,7 +50,7 @@ Razor Web アプリには次の構成要素が含まれています。
    - HTML マークアップと Razor 構文のための " *\*.cshtml*" ファイル。
    - ページ イベントを処理するための C# コードビハインドの " *\*.cshtml.cs*" ファイル。
 
-サポート ファイルには、アンダー スコアで始まる名前が付けられます。 たとえば、_Layout.cshtml ファイルでは、すべてのページに共通の UI 要素が構成されます。 このファイルでは、ページの上部に表示されるナビゲーション メニューと下部に表示される著作権の通知が設定されます。 詳細については、「[ASP.NET Core でのレイアウト](https://docs.microsoft.com/aspnet/core/mvc/views/layout)」をご覧ください。
+サポート ファイルには、アンダー スコアで始まる名前が付けられます。 たとえば、_Layout.cshtml ファイルでは、すべてのページに共通の UI 要素が構成されます。 このファイルでは、ページの上部に表示されるナビゲーション メニューと下部に表示される著作権の通知が設定されます。 詳細については、「[ASP.NET Core でのレイアウト](/aspnet/core/mvc/views/layout)」をご覧ください。
 
 ### <a name="launch-settings"></a>起動設定
 
@@ -60,20 +60,20 @@ Razor Web アプリには次の構成要素が含まれています。
 
 *appSettings.json* ファイルには、接続文字列などの構成データが含まれています。
 
-構成について詳しくは、[ASP.NET での構成ガイド](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index)に関する記事をご覧ください。
+構成について詳しくは、[ASP.NET での構成ガイド](/aspnet/core/fundamentals/configuration/index)に関する記事をご覧ください。
 
 ### <a name="wwwroot-folder"></a>wwwroot フォルダー
 
-このフォルダーには、HTML ファイル、JavaScript ファイル、CSS ファイルなど、静的ファイルが含まれています。 詳細については、「[ASP.NET Core の静的ファイル](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)」をご覧ください。
+このフォルダーには、HTML ファイル、JavaScript ファイル、CSS ファイルなど、静的ファイルが含まれています。 詳細については、「[ASP.NET Core の静的ファイル](/aspnet/core/fundamentals/static-files)」をご覧ください。
 
 ### <a name="programcs"></a>Program.cs
 
-このファイルには、プログラムのエントリ ポイントが含まれています。 詳細については、「[ASP.NET Core の Web ホスト](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host)」をご覧ください。
+このファイルには、プログラムのエントリ ポイントが含まれています。 詳細については、「[ASP.NET Core の Web ホスト](/aspnet/core/fundamentals/host/web-host)」をご覧ください。
 
 ### <a name="startupcs"></a>Startup.cs
 
-このファイルには、cookie に対する同意をアプリで要求するかなど、アプリの動作を構成するコードが含まれています。 詳細については、「[ASP.NET Core でのアプリケーションのスタートアップ](https://docs.microsoft.com/aspnet/core/fundamentals/startup)」をご覧ください。
+このファイルには、cookie に対する同意をアプリで要求するかなど、アプリの動作を構成するコードが含まれています。 詳細については、「[ASP.NET Core でのアプリケーションのスタートアップ](/aspnet/core/fundamentals/startup)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 
-Razor Web アプリの作成に関するより包括的なガイドについては、「[ASP.NET Core での Razor ページの概要](https://docs.microsoft.com/aspnet/core/razor-pages/index)」をご覧ください。
+Razor Web アプリの作成に関するより包括的なガイドについては、「[ASP.NET Core での Razor ページの概要](/aspnet/core/razor-pages/index)」をご覧ください。

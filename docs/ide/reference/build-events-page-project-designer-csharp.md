@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789824"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714383"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 
@@ -77,11 +77,19 @@ ms.locfileid: "72789824"
 </PropertyGroup>
 ```
 
-Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、**PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
+.NET Core プロジェクトでは、Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、**PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 これらのターゲットは、MSBuild によって認識される、**BeforeTargets** と **AfterTargets** の属性を使用します。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+ビルド後のイベントの場合は、`PostBuild` の名前を使用して、属性 `AfterTargets` を `PostBuildEvent` に設定します。
+
+```xml
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
 </Target>
 ```
 

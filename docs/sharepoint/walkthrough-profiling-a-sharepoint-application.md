@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981154"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189125"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>チュートリアル: SharePoint アプリケーションのプロファイリング
   このチュートリアルでは、Visual Studio のプロファイル ツールを使用し、SharePoint アプリケーションのパフォーマンスを最適化する方法について説明します。 アプリケーション例は SharePoint フィーチャー イベント レシーバーで、これにはフィーチャー イベント レシーバーのパフォーマンスを低下させるアイドル ループが含まれています。 Visual Studio プロファイラーを使用すると、プロジェクトの最も負荷の高い (実行速度が遅い) 部分を特定し、除去することができます。これは、*ホットパス*とも呼ばれます。
@@ -197,7 +197,7 @@ ms.locfileid: "72981154"
 
 2. **パフォーマンスウィザード**のいずれかのページで、プロファイリングの方法を **[CPU サンプリング]** のままにし、 **[次へ]** をクリックします。
 
-     他のプロファイル方法は、より高度なプロファイルを行う場合に使用できます。 詳細については、「[パフォーマンス収集方法について](/visualstudio/profiling/understanding-performance-collection-methods)」を参照してください。
+     他のプロファイル方法は、より高度なプロファイルを行う場合に使用できます。 詳細については、「[パフォーマンス収集方法について](../profiling/understanding-performance-collection-methods.md)」を参照してください。
 
 3. **パフォーマンスウィザード**の2ページ目で、プロファイルターゲットを**profiletest**のままにし、 **[次へ]** をクリックします。
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981154"
      これで、アイドル ループへの呼び出しが削除されたため、機能のアクティブ化がより高速になりました。 このことは、サンプル プロファイル レポートに反映されます。
 
 ## <a name="see-also"></a>関連項目
-- [パフォーマンス エクスプ ローラー](/visualstudio/profiling/performance-explorer)
-- [パフォーマンス セッションの概要](/visualstudio/profiling/performance-session-overview)
-- [パフォーマンス プロファイリングのビギナーズ ガイド](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
+- [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)
+- [パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)
 - [Visual Studio Profiler でアプリケーションのボトルネックを見つける](https://msdn.microsoft.com/magazine/cc337887.aspx)

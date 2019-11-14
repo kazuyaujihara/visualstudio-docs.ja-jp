@@ -202,8 +202,6 @@
               href: how-to-open-standard-editors.md
             - name: 開いているドキュメントのエディターを開く
               href: how-to-open-editors-for-open-documents.md
-        - name: XAML デザイナーの拡張性の移行に関するガイド
-          href: xaml-designer-extensibility-migration.md
 - name: プロジェクトを拡張する
   items:
     - name: プロジェクトを拡張する

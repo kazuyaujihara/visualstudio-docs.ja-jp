@@ -8,18 +8,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01727901f5ce063a16954f98914833ba39f8ab5d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650446"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189679"
 ---
 # <a name="flowchart-activity-designers"></a>フローチャート アクティビティ デザイナー
 
 ワークフローデザイナーには、ワークフローを構築するときに使用できるシステム指定のアクティビティが多数含まれています。 このセクションでは、ワークフロー内のフローチャートの管理を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>辞書／辞典／その他
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>
@@ -33,7 +33,7 @@ ms.locfileid: "72650446"
 
  [制御フロー](../workflow-designer/control-flow-activity-designers.md)
 
- [アクティビティ デザイナーの使用](../workflow-designer/using-the-activity-designers.md)
+ [アクティビティ デザイナーの使用](control-flow-activity-designers.md)
 
  [Messaging](../workflow-designer/messaging-activity-designers.md)
 

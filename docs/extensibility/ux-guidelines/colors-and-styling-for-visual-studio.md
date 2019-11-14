@@ -8,123 +8,123 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faded3e4a541ad899306e40bf9d46bf96a6b8ace
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338347"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568964"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
-## <a name="use-color-in-visual-studio"></a>Visual Studio での色を使用します。
+## <a name="use-color-in-visual-studio"></a>Visual Studio での色の使用
 
-Visual Studio で、色は、主に装飾としてだけでなく、通信ツールとして使用されます。 必要がある場合の予約し、最小限の色を使用します。
+Visual Studio では、色は主に装飾としてではなく、通信ツールとして使用されます。 色を最小にして、次のような状況で予約します。
 
-- 意味や所属 (たとえば、プラットフォームや言語の修飾子を) 通信します。
+- 意味または所属 (プラットフォームや言語の修飾子など) の通信
 
-- (たとえば、状態の変更を示す) の注意をひきつける
+- 注目 (状態の変化を示すなど)
 
-- 読みやすさを向上させるし、UI を移動するためのランドマークの提供
+- 読みやすさを向上させ、UI 内を移動するための目印を提供する
 
 - 魅力を増やす
 
-Visual Studio での UI 要素に色を割り当てるのいくつかのオプションが存在します。 場合によっては難しい図を使用することになっているオプションを判断またはそれを正しく使用する方法。 このトピックに役立ちます。
+Visual Studio の UI 要素に色を割り当てるには、いくつかのオプションがあります。 場合によっては、使用するオプションや、正しく使用する方法を判断するのが困難な場合があります。 このトピックでは、次のことについて説明します。
 
-- Visual Studio での色を定義するために使用するシステムのさまざまなサービスを把握します。
+- Visual Studio での色の定義に使用されるさまざまなサービスとシステムについて説明します。
 
-- 指定された要素の適切なオプションを選択します。
+- 特定の要素に対して適切なオプションを選択します。
 
-- 正しく選択したオプションを使用します。
+- 選択したオプションを正しく使用してください。
 
 > [!NOTE]
-> ありませんハードコーディング 16 進数、RGB、または、UI 要素に色のシステム カラーにします。 サービスを使用すると、柔軟性が hue をチューニングします。 さらに、サービス、することができなくのテーマの切り替え機能を活用するために[VSColor service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)します。
+> 16進数、RGB、またはシステムカラーを UI 要素にハードコーディングしないでください。 サービスを使用すると、色合いを柔軟に調整できます。 さらに、サービスがないと、 [VSColor サービス](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)のテーマ切り替え機能を利用できなくなります。
 
-### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio のインターフェイスの要素に色を割り当てる方法
+### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio のインターフェイス要素に色を割り当てる方法
 
-UI 要素に最も適した方法を選択します。
+UI 要素に最適な方法を選択します。
 
-| UI | メソッド | でしょうか。 |
+| UI | メソッド | どのようなものでしょうか。 |
 | --- | --- | --- |
-| 埋め込まれているか、スタンドアロンのダイアログ ボックス。 | **システム カラー** | コモン ダイアログのコントロールのようなオペレーティング システムの色と、UI 要素の外観を定義できるようにするシステムの名前。 |
-| VS 環境全体と一致するカスタム UI があり、カテゴリおよび共有のトークンの意味と一致する UI 要素があります。 | **一般的な共有色** | 特定の UI 要素の既存の定義済みの色のトークン名 |
-| 個々 の機能や機能のグループがあるし、同様の要素の色を共有することはありません。 | **カスタム色** | 色のトークン名を領域に固有の他の UI と共有することはできません。 |
-| エンドユーザー (たとえば、テキスト エディターまたはデザイナーの特殊化されたウィンドウ)、UI またはコンテンツをカスタマイズすることを許可するには。 | **エンドユーザーのカスタマイズ**<br /><br />**(ツール&gt;オプション ダイアログ ボックス)** | 設定の"フォントおよび色 ページで定義されている、**ツール&gt;オプション**ダイアログまたは UI 機能の 1 つに固有の特殊化されたページ。 |
+| ダイアログボックスが埋め込まれています。 | **システムカラー** | オペレーティングシステムが UI 要素の色と外観を定義できるシステム名 (コモンダイアログコントロールなど)。 |
+| VS 環境全体と一貫性を持たせ、共有トークンのカテゴリとセマンティックの意味に一致する UI 要素があるカスタム UI があること。 | **共通の共有色** | 特定の UI 要素の既存の定義済みの色のトークン名 |
+| 個々の機能または機能グループがあり、類似の要素に対して共有色はありません。 | **色のカスタマイズ** | 領域に固有であり、他の UI と共有することを意図していない色トークン名 |
+| エンドユーザーが UI またはコンテンツ (たとえば、テキストエディターや特殊なデザイナーウィンドウなど) をカスタマイズできるようにする。 | **エンドユーザーのカスタマイズ**<br /><br />**(ツール &gt; オプション ダイアログ)** | [**ツール &gt; オプション**] ダイアログボックスの [フォントおよび色] ページ、または1つの UI 機能に固有の特別なページで定義された設定。 |
 
 ### <a name="visual-studio-themes"></a>Visual Studio のテーマ
 
-Visual Studio 機能の 3 つの異なる配色テーマ: 明色、暗色、青。 また、ユーザー補助用に設計されたシステム全体の配色テーマは、ハイ コントラスト モードを検出します。
+Visual Studio には、3つの異なる色のテーマ (明るい、暗い、および blue) が用意されています。 また、ハイコントラストモードも検出されます。これは、ユーザー補助向けに設計されたシステム全体の配色テーマです。
 
-ユーザーは、Visual Studio の最初の使用時にテーマを選択するように求められますに移動して、後でテーマを切り替えができるように**ツール&gt;オプション&gt;環境&gt;全般**から新しいテーマを選択して"配色テーマ ドロップダウン メニュー。
+ユーザーは、Visual Studio を初めて使用するときにテーマを選択するように求められます。また、[ **&gt; ツール] [オプション] [&gt; 環境 &gt; 全般**] の順に移動し、[配色テーマ] ドロップダウンメニューから新しいテーマを選択することで、テーマを切り替えることができます。
 
-ユーザーはコントロール パネルを使用してもいくつかのハイ コントラスト テーマの 1 つに、システム全体を切り替えます。 ユーザーは、ハイ コントラストのテーマを選択する場合 Visual Studio の色のテーマ セレクターに影響しません Visual Studio での色が、ハイ コントラスト モードを終了するときに、テーマの変更が保存されます。 ハイ コントラスト モードの詳細については、次を参照してください。[ハイ コントラストの選択色](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)します。
+また、ユーザーはコントロールパネルを使用して、システム全体をいくつかのハイコントラストテーマのいずれかに切り替えることもできます。 ユーザーがハイコントラストテーマを選択した場合、visual studio の配色テーマセレクターは Visual Studio の色に影響しなくなります。ただし、ユーザーがハイコントラストモードを終了すると、テーマの変更は保存されます。 ハイコントラストモードの詳細については、「[ハイコントラスト色の選択](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)」を参照してください。
 
-### <a name="the-vscolor-service"></a>VSColor service
+### <a name="the-vscolor-service"></a>VSColor サービス
 
-Visual Studio では、各 Visual Studio のテーマの色の値を含む名前付きエントリに、UI 要素の色の値をバインドすることができます VSColor service と呼ばれる環境の色サービスを提供します。 これにより、色は、現在ユーザーが選択したテーマやシステム ハイ コントラスト モードを反映するように自動的に変更します。 サービスの使用は、すべての色のテーマに関連する変更の実装が 1 つの場所で処理され、サービスからの一般的な共有色を使用している場合、UI が自動的に Visual Studio の将来のバージョンで新しいテーマを反映ことを意味します。
+Visual Studio には、VSColor サービスと呼ばれる環境カラーサービスが用意されています。これにより、UI 要素の色の値を、Visual Studio の各テーマの色の値を含む名前付きのエントリにバインドできます。 これにより、現在のユーザーが選択したテーマまたはシステムハイコントラストモードを反映するように、色が自動的に変更されます。 サービスを使用することは、テーマに関連するすべての色の変更の実装が1か所で処理されることを意味します。また、サービスから共通の共有色を使用している場合、今後のバージョンの Visual Studio では、UI に新しいテーマが自動的に反映されます。
 
 ### <a name="implementation"></a>実装
 
-Visual Studio のソース コードには、トークンの名前と各テーマのそれぞれの色の値の一覧が含まれているいくつかのパッケージ定義ファイルが含まれています。 色のサービスでは、これらのパッケージ定義ファイルで定義されている VSColors を読み取ります。 これらの色が XAML マークアップまたはコードで参照されているし、そこにいずれかで、`IVsUIShell5.GetThemedColor`メソッドまたは DynamicResource マッピングします。
+Visual Studio のソースコードには、トークン名のリストと各テーマのそれぞれの色の値を含む、いくつかのパッケージ定義ファイルが含まれています。 カラーサービスは、これらのパッケージ定義ファイルで定義されている VSColors を読み取ります。 これらの色は、XAML マークアップまたはコードで参照された後、`IVsUIShell5.GetThemedColor` メソッドまたは DynamicResource マッピングのいずれかによって読み込まれます。
 
-### <a name="system-colors"></a>システム カラー
+### <a name="system-colors"></a>システムカラー
 
-一般的なコントロールは、既定でシステム カラーを参照します。 埋め込みまたはスタンドアロン ダイアログを作成するときのように、システム カラーを使用するように UI の場合は、何もする必要はありません。
+コモンコントロールは、既定でシステムカラーを参照します。 埋め込みまたはスタンドアロンのダイアログを作成する場合のように、UI でシステムカラーを使用する場合は、何もする必要はありません。
 
-### <a name="common-shared-colors-in-the-vscolor-service"></a>VSColor service での一般的な共有色
+### <a name="common-shared-colors-in-the-vscolor-service"></a>VSColor サービスの共通共有色
 
-インターフェイスの要素には、全体的な Visual Studio 環境を反映する必要があります。 設計する UI コンポーネントに適した一般的な共有の色を再利用して、インターフェイスが Visual Studio の他のインターフェイスと一致して、テーマが追加または更新されること、色が自動的に更新することを確認します。
+インターフェイス要素は、Visual Studio 環境全体を反映している必要があります。 デザインする UI コンポーネントに適した共通の共有色を再利用することによって、インターフェイスが他の Visual Studio インターフェイスと一貫性があること、およびテーマが追加または更新されたときに色が自動的に更新されることを確認します。
 
-一般的な共有色を使用する前に、それらを正しく使用する方法を理解することを確認します。 一般的な共有色の不適切な使用すると、ユーザーの混乱やフラストレーション一貫性のない経験する可能性がありますが、
+共通の共有色を使用する前に、それらを正しく使用する方法を理解しておく必要があります。 共通の共有色が不適切に使用されていると、ユーザーのエクスペリエンスが一貫していないか、混乱を招く可能性があります。
 
-### <a name="user-customizable-colors"></a>ユーザーがカスタマイズできる色
+### <a name="user-customizable-colors"></a>ユーザーがカスタマイズ可能な色
 
-参照トピック[エンドユーザーの色を公開します。](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+参照:[エンドユーザーの色の公開](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-場合によっては、コード エディターまたはデザイン画面を作成する場合と同様に、UI をカスタマイズするには、エンドユーザーを許可するされます。 カスタマイズ可能な UI コンポーネントがある、**フォントおよび色**のセクション、**ツール&gt;オプション**ダイアログ ボックスで、ユーザーが、前景色、背景色、またはその両方を変更する選択できます。
+場合によっては、コードエディターやデザインサーフェイスを作成するときなど、エンドユーザーが UI をカスタマイズできるようにする必要があります。 カスタマイズ可能な UI コンポーネントは、[**ツール &gt; オプション**] ダイアログボックスの **[フォントおよび色]** セクションにあります。ユーザーは、前景色、背景色、またはその両方を変更することができます。
 
-![ツール&gt;オプション ダイアログ ボックス](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />ツール&gt;オプション ダイアログ ボックス
+![ツール &gt; オプション ダイアログ](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />ツール &gt; オプション ダイアログ
 
-## <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a>VSColor サービス
 
-Visual Studio では、VSColor service またはシェル カラー サービスとも呼ばれる環境の色サービスを提供します。 このサービスでは、各テーマの色を含む名前と値の色に、UI 要素の色の値をバインドできます。 すべての UI 要素の色は自動的に現在のユーザーが選択したテーマを反映するように変更し、UI は、環境の色のサービスにバインドされているようにと統合される新しいテーマ将来のバージョンの Visual Studio ように、VSColor サービスを使用する必要があります。
+Visual Studio には、VSColor サービスまたはシェルカラーサービスとも呼ばれる環境カラーサービスが用意されています。 このサービスを使用すると、UI 要素の色の値を、各テーマの色を含む名前と値の色セットにバインドできます。 すべての UI 要素に対して VSColor サービスを使用する必要があります。これにより、現在のユーザーが選択したテーマを反映するように色が自動的に変更されるようになります。また、環境カラーサービスにバインドされた UI は、今後のバージョンの Visual Studio で新しいテーマと統合されるようになります。
 
 ### <a name="how-the-service-works"></a>サービスのしくみ
 
-環境の色のサービスでは、UI コンポーネントの .pkgdef で定義されている VSColors を読み取ります。 これら VSColors XAML マークアップまたはコードで参照されるといずれかで読み込まれて、`IVsUIShell5.GetThemedColor`または`DynamicResource`マッピングします。
+環境カラーサービスは、UI コンポーネントの pkgdef で定義されている VSColors を読み取ります。 これらの VSColors は、XAML マークアップまたはコードで参照され、`IVsUIShell5.GetThemedColor` または `DynamicResource` のいずれかのマッピングによって読み込まれます。
 
-![環境の色のサービス アーキテクチャ](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302 a_EnvironmentColorServiceArchitecture")<br />環境の色のサービス アーキテクチャ
+![環境カラーサービスのアーキテクチャ](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")<br />環境の色のサービス アーキテクチャ
 
 ### <a name="accessing-the-service"></a>サービスへのアクセス
 
-アクセスするトークンの色の種類に応じて、VSColor service を使用している必要があるコードの種類をいくつかのさまざまな方法はあります。
+VSColor サービスにアクセスするには、使用している色トークンの種類と使用しているコードの種類に応じて、さまざまな方法があります。
 
 #### <a name="predefined-environment-colors"></a>定義済みの環境の色
 
-##### <a name="from-native-code"></a>ネイティブ コードから
+##### <a name="from-native-code"></a>ネイティブコードから
 
-シェルへのアクセスを提供するサービスを提供する、`COLORREF`の色。 サービス/インターフェイスは次のとおりです。
+シェルには、色の `COLORREF` へのアクセスを提供するサービスが用意されています。 サービス/インターフェイスは次のとおりです。
 
 ```
 IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ```
 
-ファイル VSShell80.idl、列挙体で`__VSSYSCOLOREX`がシェルの色の定数。 これを使用するとして渡すインデックス値から値のいずれかの`enum __VSSYSCOLOREX`で文書化されている MSDN または通常のインデックス番号を Windows システム API、 `GetSysColor`、受け入れます。 これが 2 番目のパラメーターに使用する必要がある色の RGB 値返されます。
+VSShell80 ファイルでは、列挙 `__VSSYSCOLOREX` にシェルの色定数が含まれています。 これを使用するには、MSDN に記載されている `enum __VSSYSCOLOREX` の値のいずれか、または Windows システム API (`GetSysColor`) が受け入れる標準のインデックス番号をインデックス値として渡します。 この操作を行うと、2番目のパラメーターで使用する色の RGB 値が返されます。
 
-必要な場合は、ペンまたは新しい色のブラシを保存するには、 `AdviseBroadcastMessages` (から Visual Studio シェル) をリッスンし、`WM_SYSCOLORCHANGE`と`WM_THEMECHANGED`メッセージ。
+ペンまたはブラシを新しい色で格納する場合は、(Visual Studio シェルから) `AdviseBroadcastMessages` し、`WM_SYSCOLORCHANGE` メッセージと `WM_THEMECHANGED` メッセージをリッスンする必要があります。
 
-ネイティブ コードで、色のサービスにアクセスするには、次のように呼び出しを行います。
+ネイティブコードで color service にアクセスするには、次のような呼び出しを行います。
 
 ```
 pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 ```
 
 > [!NOTE]
-> `COLORREF`によって返される値`GetVSSysColorEx()`だけ R、G を含むテーマの色の B コンポーネント。 テーマのエントリは、透明度を使用して、アルファ チャネル値を返す前に破棄されます。 そのため、関心のある環境の色を透過なチャネルが重要となる場所で使用する場合は、使用してください`IVsUIShell5.GetThemedColor`の代わりに`IVsUIShell2::GetVSSysColorEx`、このトピックの後半で説明します。
+> `GetVSSysColorEx()` によって返される `COLORREF` 値には、テーマの色の R、G、B のコンポーネントだけが含まれています。 テーマエントリで透明度を使用している場合は、を返す前にアルファチャネル値が破棄されます。 したがって、必要な環境の色を透明度チャネルが重要な場所で使用する必要がある場合は、このトピックの後半で説明するように、`IVsUIShell2::GetVSSysColorEx`ではなく `IVsUIShell5.GetThemedColor` を使用する必要があります。
 
-##### <a name="from-managed-code"></a>マネージ コードから
+##### <a name="from-managed-code"></a>マネージコードから
 
-ネイティブ コード VSColor service へのアクセスはとても簡単です。 マネージ コードで作業している場合、サービスを使用する方法を決定するはたいへん。 念頭に、このプロセスを示す c# コード スニペットを示します。
+ネイティブコードを介して VSColor サービスにアクセスするのは非常に簡単です。 ただし、マネージコードを使用して作業している場合は、サービスの使用方法を決定するのが難しい場合があります。 この点を念頭に置いて、 C#このプロセスを示すコードスニペットを次に示します。
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -147,15 +147,15 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 }
 ```
 
-Visual Basic で作業している場合は、次のコマンドを使用します。
+Visual Basic で作業している場合は、次を使用します。
 
 ```vb
 Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 ```
 
-##### <a name="from-wpf-ui"></a>WPF の UI から
+##### <a name="from-wpf-ui"></a>WPF UI から
 
-アプリケーションのエクスポート値を Visual Studio の色にバインドできます`ResourceDictionary`します。 カラー テーブルからのリソースを使用して、XAML で環境フォント データへのバインドの例を次に示します。
+アプリケーションの `ResourceDictionary`にエクスポートされた値を使用して、Visual Studio の色にバインドできます。 次の例では、color テーブルのリソースと、XAML の環境フォントデータへのバインドを使用します。
 
 ```xml
 <Style TargetType="{x:Type Button}">
@@ -168,11 +168,11 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 </Style>
 ```
 
-#### <a name="helper-classes-and-methods-for-managed-code"></a>ヘルパー クラスとマネージ コードのメソッド
+#### <a name="helper-classes-and-methods-for-managed-code"></a>マネージコードのヘルパークラスとヘルパーメソッド
 
-マネージ コード、シェルの Managed Package Framework ライブラリの (`Microsoft.VisualStudio.Shell.12.0.dll`)、いくつかヘルパー クラスのテーマが適用された色の使用を促進することにはが含まれています。
+マネージコードの場合、シェルのマネージパッケージフレームワークライブラリ (`Microsoft.VisualStudio.Shell.12.0.dll`) には、テーマが適用された色の使用を容易にするヘルパークラスがいくつか含まれています。
 
-ヘルパー メソッド、 `Microsoft.VisualStudio.Shell.VsColors` MPF でクラスが含まれて`GetThemedGDIColor()`と`GetThemedWPFColor()`します。 これらのヘルパー メソッドとしてテーマのエントリの色の値を返す`System.Drawing.Color`または`System.Windows.Media.Color`WinForms と WPF の UI で使用します。
+MPF の `Microsoft.VisualStudio.Shell.VsColors` クラスのヘルパーメソッドには、`GetThemedGDIColor()` と `GetThemedWPFColor()`があります。 これらのヘルパーメソッドは、WinForms または WPF UI で使用する `System.Drawing.Color` または `System.Windows.Media.Color`としてテーマエントリの色の値を返します。
 
 ```csharp
 IVsUIShell5 shell5;
@@ -221,14 +221,14 @@ public static System.Windows.Media.Color GetThemedWPFColor(this IVsUIShell5 vsUI
 }
 ```
 
-クラスが指定の WPF 色リソース キーの VSCOLOR 識別子を取得することもできまたはその逆です。
+クラスを使用して、指定された WPF 色リソースキーの VSCOLOR 識別子を取得することもできます。また、その逆も可能です。
 
 ```csharp
 public static string GetColorBaseKey(int vsSysColor);
 public static bool TryGetColorIDFromBaseKey(string baseKey, out int vsSysColor);
 ```
 
-メソッド`VsColors`クラスが呼び出されるたびに、色の値を返す VSColor service をクエリします。 色の値として取得する`System.Drawing.Color`のメソッドを使用する代わりにパフォーマンスを向上させるには、 `Microsoft.VisualStudio.PlatformUI.VSThemeColor` VSColor service から取得した色の値がキャッシュされているクラス。 クラスでは、内部的にシェルのブロードキャスト メッセージ イベントをサブスクライブし、テーマ変更イベントが発生した場合、キャッシュされた値を破棄します。 また、クラスを提供します。テーマの変更をサブスクライブする NET に適したイベントです。 使用して、 `ThemeChanged` 、新しいハンドラーを追加して、イベント、`GetThemedColor()`色を取得するメソッドの値を`ThemeResourceKeys`関心のあります。 このようなサンプル コードになります。
+`VsColors` クラスのメソッドは、VSColor サービスに対してクエリを実行し、呼び出されるたびに色の値を返します。 色の値を `System.Drawing.Color`として取得するには、代わりに、パフォーマンス向上のために、VSColor サービスから取得した色の値をキャッシュする `Microsoft.VisualStudio.PlatformUI.VSThemeColor` クラスのメソッドを使用することをお勧めします。 クラスは、シェルブロードキャストメッセージイベントに対して内部でサブスクライブし、テーマ変更イベントが発生したときにキャッシュされた値を破棄します。 また、クラスにはが用意されています。テーマの変更をサブスクライブするための NET 対応イベント。 `ThemeChanged` イベントを使用して新しいハンドラーを追加し、`GetThemedColor()` メソッドを使用して目的の `ThemeResourceKeys` の色の値を取得します。 サンプルコードは次のようになります。
 
 ```csharp
 public MyWindowPanel()
@@ -267,170 +267,170 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-## <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
+## <a name="BKMK_ChoosingHighContrastColors"></a>ハイコントラスト色の選択
 
 ### <a name="overview"></a>概要
 
-Windows では、画面上のより明確に表示される要素を行うテキスト、背景、およびイメージの色のコントラストを向上させるいくつかのハイ コントラストのシステム レベル テーマを使用します。 ユーザー補助上の理由から、ユーザーは、ハイ コントラストのテーマに切り替えるときに、Visual Studio のインターフェイスの要素が正しく応答することが重要です。
+Windows では、テキスト、背景、およびイメージの色のコントラストを向上させる、ハイコントラストのシステムレベルのテーマをいくつか使用しています。これにより、要素が画面上でより明確に表示されるようになります。 ユーザー補助の理由により、ユーザーがハイコントラストテーマに切り替えたときに、Visual Studio のインターフェイス要素が正しく応答することが重要です。
 
-ごく少数のシステム カラーは、ハイ コントラスト テーマで使用できます。 色の名前をシステムを選択する場合は、次のヒントに注意してください。
+ハイコントラストのテーマに使用できるシステムカラーは少数です。 システムの色の名前を選択するときは、次のヒントに注意してください。
 
-- **色のシステム カラーを同じ意味を持つ選択**色分けは要素として。 たとえば、ウィンドウ内のテキストのハイ コントラストの配色を選択する場合は、WindowText と ControlText いないを使用します。
+- 色付けする要素と**同じセマンティックの意味を持つシステムカラーを選択し**ます。 たとえば、ウィンドウ内のテキストのハイコントラスト色を選択する場合は、ControlText ではなく WindowText を使用します。
 
-- **前景と背景のペアを選択**一緒またはすべてのハイ コントラスト テーマで、色の選択が動作することを確信はできません。
+- **前景色と背景の組み合わせを選択**するか、またはすべてのハイコントラストテーマで色の選択が機能することを確信できません。
 
-- **UI のどの部分が最も重要な判断し、コンテンツ領域の目立つことを確認します。** カラー バリアントをさまざまなコンテンツ領域がないため、強力な境界線の色の使用は、コンテンツ領域を定義する一般的な色の色合いにわずかな違いを区別は通常、詳細の多くは失われます。
+- **UI のどの部分が最も重要であるかを判断し、コンテンツ領域が確実に表示されるようにします。** 色の色合いの微妙な違いは通常は区別されないので、さまざまなコンテンツ領域の色のバリエーションが存在しないので、強い境界線の色を使用するとコンテンツ領域を定義するのが一般的です。
 
-### <a name="system-color-set"></a>システム カラー セット
+### <a name="system-color-set"></a>システムカラーセット
 
-ある表[WPF チーム ブログ。SystemColors 参照](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/)のシステム色の名前、および対応する色合いがテーマごとに表示される完全なセットを示します。
+[「WPF チームブログ: SystemColors リファレンス](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/)」の表は、システムカラー名の完全なセットと、各テーマに表示される対応する色相を示しています。
 
-Ui、色のセットを制限するこれを適用するときに *「標準」のテーマで存在していた微妙な詳細情報が失われることが必要ですが*します。 ツール ウィンドウ内の領域を区別するために使用されるグレー色が微妙には、UI の例を次に示します。 ハイ コントラスト モードで表示される同じウィンドウと組み合わせると、すべての背景は同じ色合いをこれらの領域の枠線は単独で境界線で示されますを確認できます。
+この限られた色のセットを UI に適用する場合*は、"通常の" テーマに含まれていた微妙な詳細が失われることが予想さ*れます。 次に示すのは、ツールウィンドウ内の領域を区別するために使用される細い灰色の色を持つ UI の例です。 ハイコントラストモードで表示されている同じウィンドウと組み合わせて使用すると、すべての背景が同じ色合いであり、それらの領域の枠線が境界線だけで示されていることがわかります。
 
-![微妙な方法の詳細な例は、ハイ コントラストに失われます](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303 a_PropertiesWindow")<br />微妙な方法の詳細な例は、ハイ コントラストに失われます
+![ハイコントラストでの微妙な詳細の消失の例](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303-a_PropertiesWindow")<br />ハイコントラストでの微妙な詳細の消失の例
 
-#### <a name="choosing-text-colors-in-an-editor"></a>エディターでテキストの色を選択します。
+#### <a name="choosing-text-colors-in-an-editor"></a>エディターでのテキストの色の選択
 
-色分けされたテキストでは、エディターまたはデザイン サーフェイスを類似した項目のグループを識別しやすくすることができますのような意味を示すために使用されます。 ハイ コントラスト テーマでは、ただしがありません 4 つ以上のテキストの色を区別する機能。 WindowText、GrayText および HotTrackText は WindowBackground サーフェスで使用できる唯一の色です。 3 色以上を使用することはできませんので、ハイ コントラスト モードで表示する最も重要な相違点を慎重に選択します。
+色分けされたテキストは、エディターまたはデザインサーフェイスで、類似した項目のグループを簡単に識別できるように、意味を示すために使用されます。 ただし、ハイコントラストのテーマでは、3つ以上のテキスト色を区別する機能がありません。 Windowtext サーフェイスで使用できるのは、WindowText、グレーのテキスト、およびホットトラックテキストのみです。 3色以上を使用することはできないため、ハイコントラストモードでは、表示する最も重要な違いを慎重に選択してください。
 
-ハイ コントラスト テーマごとに表示される、エディターの画面で許可されているトークン名ごとの色相:
+各ハイコントラストテーマに表示される、エディター画面で使用できる各トークン名の色相。
 
-![ハイ コントラスト エディターの比較](../../extensibility/ux-guidelines/media/030303-b_hceditorcomparison.png "030303 b_HCEditorComparison")<br />ハイ コントラスト エディターの比較
+![ハイコントラストエディターの比較](../../extensibility/ux-guidelines/media/030303-b_hceditorcomparison.png "030303-b_HCEditorComparison")<br />ハイ コントラスト エディターの比較
 
-青のテーマでのエディターの画面の例:
+青のテーマでのエディター画面の例を次に示します。
 
-![青のテーマでのエディター](../../extensibility/ux-guidelines/media/030303-c_editorblue.png "030303 c_EditorBlue")<br />青のテーマでのエディター
+![青のテーマでのエディター](../../extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />青のテーマでのエディター
 
-![ハイコントラスト #1 のテーマでのエディター](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303 d_EditorHC1")<br />ハイコントラスト #1 のテーマでのエディター
+![ハイコントラスト #1 テーマのエディター](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />ハイコントラスト #1 テーマのエディター
 
 ### <a name="usage-patterns"></a>使用パターン
 
-多くの一般的な UI 要素では、定義されているハイ コントラストの色が既にあります。 UI 要素が、同様のコンポーネントと一致するように、独自のシステム色の名前を選択するときにこれらの使用状況パターンを参照することができます。
+多くの一般的な UI 要素にはハイコントラストの色が既に定義されています。 独自のシステムカラー名を選択するときに、これらの使用パターンを参照して、UI 要素と同様のコンポーネントとの一貫性を保つことができます。
 
-| システム カラー | 使用法 |
+| システムカラー | 使用方法 |
 | --- | --- |
-| ActiveCaption | アクティブな IDE と rafted ウィンドウ ボタンのグリフ ホバーとキーを押します<br />IDE および rafted ウィンドウのタイトル バーの背景<br />既定のステータス バーの背景 |
-| ActiveCaptionText | -アクティブな IDE と rafted のウィンドウのタイトル バーの前景 (テキストとグリフ)<br />背景し、枠線のホバー時およびキーを押してアクティブなウィンドウのボタンの |
-| コントロール | -既定値を制御し、ドロップダウン ボタンの背景を無効になっているコンボ ボックス、ドロップダウン リスト、および検索<br />-ターゲットのボタンの背景をドッキングします。<br />コマンド バーの背景<br />ツール ウィンドウの背景 |
-| ControlDark | -IDE 背景<br />メニューとコマンド バーの区切り記号<br />コマンド バーの境界線<br />メニューの影<br />-ツール ウィンドウ タブの既定し、マウス ポインターの境界線との区切り記号<br />-ドキュメント オーバーフロー ボタンの背景では、<br />ドッキング ターゲット グリフの境界 |
-| ControlDarkDark |-フォーカスされていない、選択されているドキュメント タブ ウィンドウ |
-| ControlLight |自動的に隠す タブの境界線<br />-コンボ ボックスとドロップダウン リストの枠線<br />-ターゲットの背景や罫線をドッキングします。 |
-| ControlLightLight | -選択された状態でフォーカスがある一時的な境界線 |
-| ControlText | -コンボ ボックスとドロップダウン リストのグリフ<br />ツール ウィンドウが選択されていないタブのテキスト |
-| GrayText |-コンボ ボックスとドロップダウン リストの境界線、グリフのドロップダウン リスト、テキスト、およびメニュー項目のテキストを無効になります。<br />-無効なメニューのテキスト<br />検索コントロール '検索オプション' ヘッダー テキスト<br />検索コントロール」セクションの区切り記号 |
-| ハイライト | -すべてのホバーし、押された背景や罫線、コンボ ボックス ドロップダウン ボタンの背景とドキュメント ウェルのオーバーフロー ボタンの境界線を除く<br />-選択した項目の背景 |
-| HighlightText | -すべてのホバー時および押された foregrounds (テキストとグリフ)<br />-限定的なツール ウィンドウとドキュメント タブ ウィンドウ コントロールの前景<br />-限定的なツール ウィンドウのタイトル バーの境界線<br />フォーカスがある、選択した一時的なタブの前景色<br />Hover でキーを押してドキュメント ウェルのオーバーフロー ボタンの境界線<br />-選択したアイコンの境界線|
-| ホット トラック | -スクロール バーのつまみの背景と境界線でキーを押します<br />-スクロール バーの矢印のグリフでキーを押します |
-| InactiveCaption | -非アクティブな IDE と rafted ウィンドウ ボタンのグリフ ホバー<br />IDE および rafted ウィンドウのタイトル バーの背景<br />-無効な検索コントロールの背景色 |
-| InactiveCaptionText | -非アクティブな IDE と rafted windows タイトル バーの前景 (テキストとグリフ)<br />-非アクティブなウィンドウのボタンの背景と境界線ホバー<br />-フォーカスされていないツール ウィンドウのボタンの背景や罫線<br />-無効な検索コントロールの前景 |
-| メニュー | ドロップダウン メニューの背景<br />チェックされ、無効にされたチェック マークの背景 |
-| MenuText | ドロップダウン メニューの境界線<br />-のチェック マーク<br />メニュー グリフ<br />ドロップダウン メニューのテキスト<br />-選択したアイコンの境界線 |
-| スクロール バー | -スクロール バー、スクロール バーの矢印の背景、すべての状態 |
-| [Window] | 自動的に隠す タブの背景<br />メニュー バーし、コマンド シェルフの背景<br />-フォーカスされていないか、選択されていないドキュメント ウィンドウ タブの背景と開いていると、一時的なタブのドキュメントの境界線<br />-フォーカスされていないツール ウィンドウのタイトル バーの背景<br />ツール ウィンドウ タブの背景を両方選択し、選択解除 |
-| WindowFrame | -IDE の枠線 |
-| WindowText | 自動的に隠す タブの前景色<br />-選択したツール ウィンドウ タブの前景色<br />-フォーカスされていないドキュメント ウィンドウ タブ、フォーカスされていない、または未選択の一時的なタブの前景色<br />-既定の前景を表示し、マウス ポインターをツリー未選択のグリフの上<br />-ツール ウィンドウの選択されているタブ境界線<br />-スクロール バーのつまみの背景、境界線、およびグリフ |
+| Activecap | -ホバー時のアクティブな IDE と rafted のウィンドウボタンのグリフ<br />-IDE および rafted ウィンドウのタイトルバーの背景<br />-既定のステータスバーの背景 |
+| ActiveCaptionText | -アクティブな IDE および rafted ウィンドウ (タイトルバーの前景) (テキストとグリフ)<br />-ホバー時と押したときのアクティブなウィンドウボタンの背景と境界線 |
+| Control | -コンボボックス、ドロップダウンリスト、および検索コントロールの既定値と無効な背景 (ドロップダウンボタンを含む)<br />-ドッキングターゲットボタンの背景<br />-コマンドバーの背景<br />-ツールウィンドウの背景 |
+| ControlDark | -IDE の背景<br />-メニューとコマンドバーの区切り記号<br />-コマンドバーの境界線<br />-メニューの影<br />-ツールウィンドウタブの既定とホバーの境界線と区切り記号<br />-ドキュメントウェルオーバーフローボタンの背景<br />-ドックターゲットのグリフの境界線 |
+| 制御-Ldarkkdark |-見る、選択したドキュメントタブウィンドウ |
+| ControlLight |-[自動的に隠す] タブの枠線<br />-コンボボックスとドロップダウンリストの境界線<br />-ドッキングターゲットの背景と境界線 |
+| Control電球 | -選択、フォーカスされた仮罫線 |
+| ControlText | -コンボボックスとドロップダウンリストのグリフ<br />-ツールウィンドウの選択が解除したタブのテキスト |
+| グレーのテキスト |-コンボボックスおよびドロップダウンリストが無効になっている境界線、ドロップダウングリフ、テキスト、およびメニュー項目のテキスト<br />-無効になったメニューテキスト<br />-検索コントロールの ' 検索オプション ' ヘッダーテキスト<br />-検索コントロールセクション区切り記号 |
+| ハイライト | -ホバーと押されたすべての背景と境界線 (コンボボックスのドロップダウンボタンの背景とドキュメントウェルオーバーフローボタンの境界線を除く)<br />-選択された項目の背景 |
+| HighlightText | -すべてのホバーと押された foregrounds (テキストとグリフ)<br />フォーカスされているツールウィンドウとドキュメントタブウィンドウコントロールの前景<br />-フォーカスがあるツールウィンドウのタイトルバーの境界線<br />フォーカス、選択された一時的なタブの前景<br />-マウスポインターを置いて押すと、ドキュメントウェルのオーバーフローボタンの境界線<br />-選択されたアイコンの境界線|
+| ホットトラック | -押されたときのスクロールバーのつまみの背景と境界線<br />-押されるときのスクロールバーの矢印グリフ |
+| Inactivecap | -非アクティブな IDE と rafted のウィンドウボタンのグリフ (ホバー時)<br />-IDE および rafted ウィンドウのタイトルバーの背景<br />-無効になった検索コントロールの背景 |
+| InactiveCaptionText | -非アクティブな IDE および rafted windows タイトルバーの前景 (テキストとグリフ)<br />-非アクティブウィンドウボタンの背景およびホバー時の境界線<br />-見るツールウィンドウボタンの背景と境界線<br />-無効になった検索コントロールの前景 |
+| メニュー | -ドロップダウンメニューの背景<br />-Checked および disabled チェックマークの背景 |
+| MenuText | -ドロップダウンメニューの枠線<br />-チェックマーク<br />-メニューグリフ<br />-ドロップダウンメニューのテキスト<br />-選択されたアイコンの境界線 |
+| スクロール バー | -スクロールバーとスクロールバーの矢印の背景、すべての状態 |
+| [Window] | -[自動的に隠す] タブの背景<br />-メニューバーとコマンドシェルフの背景<br />-見るまたは選択されていないドキュメントウィンドウタブの背景とドキュメントの境界線 (開いているタブと仮のタブの両方)<br />-見るツールウィンドウのタイトルバーの背景<br />-ツールウィンドウタブの背景 (選択されているか選択されていません) |
+| WindowFrame | -IDE の境界線 |
+| WindowText | -[自動的に隠す] タブの前景<br />-選択したツールウィンドウタブの前景<br />-見るドキュメントウィンドウのタブと見るまたは選択されていない一時的なタブの前景<br />-ツリービューの既定の前景と選択されていないグリフにマウスポインターを合わせる<br />-ツールウィンドウの選択したタブの枠線<br />-スクロールバーのつまみの背景、罫線、およびグリフ |
 
-## <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
+## <a name="BKMK_ExposingColorsForEndUsers"></a>公開 (エンドユーザーの色を)
 
 ### <a name="overview"></a>概要
 
-コード エディターまたはデザイン画面を作成するときと同様に、UI をカスタマイズしてエンドユーザーに許可するする場合があります。 これを行う最も一般的な方法を使用して、**ツール&gt;オプション**ダイアログ。 UI の特殊なコントロールを必要とする高度な専門、しない限り、カスタマイズを提示する最も簡単な方法は、**フォントおよび色**内でページ、**環境**ダイアログ ボックスのセクション。 カスタマイズして公開する各要素の前景色、背景色、またはその両方を変更するユーザーを選択できます。
+場合によっては、コードエディターやデザインサーフェイスを作成するときのように、エンドユーザーが UI をカスタマイズできるようにする必要があります。 これを行う最も一般的な方法は、[**ツール &gt; オプション**] ダイアログボックスを使用することです。 特別な制御を必要とする高度に特殊化された UI がない限り、カスタマイズを表示する最も簡単な方法は、ダイアログの **[環境]** セクション内の **[フォントおよび色]** ページを使用することです。 カスタマイズのために公開する要素ごとに、ユーザーは前景色、背景色、またはその両方を変更することができます。
 
-### <a name="building-a-vspackage-for-your-customizable-colors"></a>VSPackage、カスタマイズ可能な色の構築
+### <a name="building-a-vspackage-for-your-customizable-colors"></a>カスタマイズ可能な色のための VSPackage の構築
 
-VSPackage では、フォントと色カスタム カテゴリを制御でき、[フォントおよび色のプロパティ] ページの項目を表示することができます。 このメカニズムを使用して、Vspackage を実装する必要があります、 [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider)インターフェイスとその関連するインターフェイス。
+VSPackage は、カスタムカテゴリを使用してフォントや色を制御したり、[フォントおよび色] プロパティページで項目を表示したりできます。 このメカニズムを使用する場合、Vspackage は[IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider)インターフェイスとそれに関連するインターフェイスを実装する必要があります。
 
-原則として、既存のすべての表示項目およびそれらが含まれているカテゴリを変更するこのメカニズムを使用できます。 ただし、その使わないでテキスト エディターのカテゴリまたはその表示項目を変更します。 テキスト エディターのカテゴリの詳細については、次を参照してください。[フォントと色の概要](../font-and-color-overview.md)します。
+原則として、このメカニズムを使用して、既存のすべての表示項目とそれらを含むカテゴリを変更できます。 ただし、テキストエディターのカテゴリまたはその表示項目の変更には使用しないでください。 [テキストエディター] カテゴリの詳細については、「[フォントおよび色の概要](/visualstudio/extensibility/font-and-color-overview?view=vs-2015)」を参照してください。
 
-カスタム カテゴリを実装または項目を表示、VSPackage では次の必要があります。
+カスタムカテゴリまたは表示項目を実装するには、VSPackage が次の条件を満たす必要があります。
 
-- **作成するか、レジストリ内のカテゴリを特定します。** IDE の実装、**フォントおよび色**プロパティ ページでは、この情報を使用して、特定のカテゴリをサポートしているサービスのクエリを正常にします。
+- **レジストリでカテゴリを作成または識別します。** IDE の **[フォントおよび色]** プロパティページの実装では、この情報を使用して、特定のカテゴリをサポートするサービスを正しく照会します。
 
-- **作成または (省略可能) のレジストリ内のグループを識別します。** 2 つ以上のカテゴリの和集合を表すグループを定義すると便利な場合があります。 グループが定義されている場合、IDE によって自動的にサブカテゴリをマージし、配布グループ内のアイテムの表示。
+- **レジストリでグループを作成または指定します (省略可能)。** 2つ以上のカテゴリの和集合を表すグループを定義すると便利な場合があります。 グループが定義されている場合、IDE はサブカテゴリを自動的にマージし、グループ内の表示項目を配布します。
 
-- **IDE のサポートを実装します。**
+- **IDE サポートを実装します。**
 
 - **フォントと色の変更を処理します。**
 
-#### <a name="to-create-or-identify-categories"></a>作成またはカテゴリを識別するには
+#### <a name="to-create-or-identify-categories"></a>カテゴリを作成または識別するには
 
-カテゴリのレジストリ エントリの特殊な型を構築`[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]`場所`<Category>`カテゴリのローカライズされていない名前を指定します。
+`[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` の下に特別な種類のカテゴリレジストリエントリを構築します。 `<Category>` は、カテゴリのローカライズされていない名前です。
 
-2 つの値を使用してレジストリを設定します。
+次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 型 | データ | 説明 |
+| 名 | [種類] | データ | 説明 |
 | --- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage のサービスの GUID |
+| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
- レジストリで指定されたサービスの実装を提供する必要があります[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)の対応するカテゴリ。
+ レジストリに指定されたサービスは、対応するカテゴリの[Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)の実装を提供する必要があります。
 
-#### <a name="to-create-or-identify-groups"></a>グループを作成または識別するのには
+#### <a name="to-create-or-identify-groups"></a>グループを作成または識別するには
 
-カテゴリのレジストリ エントリの特殊な型を構築`[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]`場所`<group>`はローカライズされていないグループの名前です。
+`[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` の下に特別な種類のカテゴリレジストリエントリを作成します。 `<group>` は、グループのローカライズされていない名前です。
 
-2 つの値を使用してレジストリを設定します。
+次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 型 | データ | 説明 |
+| 名 | [種類] | データ | 説明 |
 |--- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage のサービスの GUID |
+| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
-レジストリで指定されたサービスの実装を提供する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>の対応するグループ。
+レジストリに指定されたサービスは、対応するグループの <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> の実装を提供する必要があります。
 
-![照会先との実装](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304 a_FontAndColorGroup")<br />実装 `IVsFontAndColorGroup`
+![IVsFontAndColorGroup の実装](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />`IVsFontAndColorGroup` の実装
 
-### <a name="to-implement-ide-support"></a>IDE のサポートを実装するには
+### <a name="to-implement-ide-support"></a>IDE サポートを実装するには
 
-実装[GetObject](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject)、いずれかが返されます、 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)インターフェイスまたは<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>インターフェイスの各カテゴリの IDE にまたはグループの GUID が指定されています。
+[GetObject](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject)を実装します。これにより、指定されたカテゴリまたはグループ GUID ごとに、 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)インターフェイスまたは <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> インターフェイスが IDE に返されます。
 
-すべてのカテゴリをサポートしています、VSPackage 実装の別のインスタンス、 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)インターフェイス。
+サポートされているすべてのカテゴリに対して、VSPackage は[Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)インターフェイスの個別のインスタンスを実装します。
 
-メソッドの実装を通じて[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)を使用して IDE を提供する必要があります。
+[Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)を使用して実装されたメソッドは、IDE に次のものを提供する必要があります。
 
-- カテゴリの表示項目の一覧
+- カテゴリ内の表示項目の一覧
 
 - 表示項目のローカライズ可能な名前
 
-- カテゴリの各メンバーの情報を表示します。
+- カテゴリの各メンバーの情報を表示する
 
 > [!NOTE]
-> すべてのカテゴリには、少なくとも 1 つの表示項目を含める必要があります。
+> すべてのカテゴリには、少なくとも1つの表示項目を含める必要があります。
 
-IDE を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>いくつかのカテゴリの共用体を定義するインターフェイス。
+IDE では、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> インターフェイスを使用して、複数のカテゴリの和集合を定義します。
 
-その実装を使用して IDE を提供します。
+この実装では、IDE を次のように提供します。
 
 - 特定のグループを構成するカテゴリの一覧
 
-- インスタンスへのアクセス[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)グループ内の各カテゴリのサポート
+- グループ内の各カテゴリをサポートしている[Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)のインスタンスへのアクセス
 
 - ローカライズ可能なグループ名
 
 #### <a name="updating-the-ide"></a>IDE の更新
 
-IDE では、フォントと色の設定に関する情報をキャッシュします。 そのため、IDE のフォントと色の構成の変更、後に、ベスト プラクティスをキャッシュが最新であることを確認します。
+IDE では、フォントおよび色の設定に関する情報がキャッシュされます。 そのため、IDE のフォントと色の構成を変更した後は、キャッシュが最新であることを確認することをお勧めします。
 
-キャッシュの更新を行う、 [IvsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager)インターフェイスし、実行のグローバルまたはだけで選択した項目を指定できます。
+キャッシュの更新は[Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager)インターフェイスを介して行われ、グローバルに、または選択した項目でのみ実行できます。
 
 ### <a name="handling-font-and-color-changes"></a>フォントと色の変更の処理
 
-VSPackage を表示するテキストの色づけを正しくサポートするには、VSPackage のサポートの色づけサービスは、フォントおよび色のプロパティ ページで加えられたユーザーによる変更に応答する必要があります。
+VSPackage によって表示されるテキストの色付けを適切にサポートするには、VSPackage をサポートする色付けサービスが、[フォントおよび色] プロパティページでユーザーが開始した変更に応答する必要があります。
 
-これを行うには、VSPackage では次の必要があります。
+これを行うには、VSPackage で次の操作を行う必要があります。
 
-- **IDE で生成されたイベントを処理する**実装することによって、 [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)インターフェイス。 IDE では、次のユーザーの変更、フォントおよび色 ページの適切なメソッドを呼び出します。 たとえば、呼び出す、 [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged)メソッドが新しいフォントが選択されている場合。
+- [Ivsfontandcolorevents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)インターフェイスを実装して、 **IDE によって生成されたイベントを処理**します。 IDE は、[フォントおよび色] ページをユーザーが変更した後、適切なメソッドを呼び出します。 たとえば、新しいフォントが選択されている場合、 [Onfontchanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged)メソッドを呼び出します。
 
   **または**
 
-- **IDE の変更をポーリング**します。 これは、システムによって実装されるを通して実行[IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)インターフェイス。 主に、永続化のサポートには、 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem)メソッドは、表示項目のフォントと色の情報を取得できます。 フォントおよび色の設定の詳細については、MSDN の記事を参照してください。[にアクセスする格納されているフォントと色の設定](../accessing-stored-font-and-color-settings.md)します。
+- **変更については、IDE をポーリング**します。 これは、システムによって実装された[Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)インターフェイスを使用して実行できます。 主に永続化のサポートのために、 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem)メソッドは表示項目のフォントと色の情報を取得できます。 フォントと色の設定の詳細については、MSDN の記事「格納されている[フォントと色の設定にアクセス](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015)する」を参照してください。
 
 > [!NOTE]
-> ポーリングの結果が正しいことを確認するを使用して、 [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager)インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)インターフェイス。
+> ポーリング結果が正しいことを確認するには、 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager)インターフェイスを使用して、 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)インターフェイスの取得メソッドを呼び出す前に、キャッシュフラッシュと更新が必要かどうかを判断します。
 
-#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>インターフェイスを実装することがなく、カスタムのフォントと色のカテゴリを登録します。
+#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>インターフェイスを実装せずにカスタムフォントおよびカラーカテゴリを登録する
 
-次のコード例では、カスタム フォントを登録し、インターフェイスを実装することがなくカテゴリの色の方法を示します。
+次のコード例は、インターフェイスを実装せずにカスタムフォントおよびカラーカテゴリを登録する方法を示しています。
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp Tool Window]
@@ -441,15 +441,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
     "NameID"=dword:00000064
 ```
 
-このコード例。
+このコード例では、次のようになります。
 
-- `"NameID"` パッケージにローカライズされたカテゴリ名のリソース ID を =
+- `"NameID"` = パッケージ内のローカライズされたカテゴリ名のリソース ID
 - `"ToolWindowPackage"` = パッケージ GUID
-- `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"` 一例は、実際の値は、実装側によって提供される新しい GUID を指定できます。
+- `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"` はほんの一例であり、実際の値は、実装者が提供する新しい GUID にすることができます。
 
-### <a name="set-the-font-and-color-property-category-guid"></a>フォントおよび色プロパティ カテゴリ GUID を設定します。
+### <a name="set-the-font-and-color-property-category-guid"></a>フォントと色のプロパティカテゴリ GUID を設定する
 
-次のコード例では、カテゴリの Guid の設定を示します。
+次のコード例は、カテゴリ Guid の設定を示しています。
 
 ```csharp
 // m_pView is your IVsTextView
