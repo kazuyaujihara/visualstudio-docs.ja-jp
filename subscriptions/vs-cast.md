@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: c55891b9aacb81c5169a9082f7e1fd1d922eda92
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816443"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983736"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio Enterprise サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure への移行に対してアプリケーションのクラウド レディネスを識別したり、移行中および移行後のアプリの進行状況を監視できます。
@@ -76,7 +76,9 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 30 日間 5 つのアプリを評価|  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise with GitHub Enterprise  | VL | 30 日間 5 つのアプリを評価|  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                             |  N/A          |
+| Visual Studio Professional with GitHub Enterprise | VL                                       | 使用できません                                                             |  N/A          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
@@ -98,6 +100,6 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-サブスクリプションに付属している Azure 特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。
+サブスクリプションに付属している Azure DevTest の個人クレジット特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。
 
 また、Greg の電子メールに記載されている、デモ、ユーザー ガイド、チュートリアルのビデオをチェックすることを忘れないでください。

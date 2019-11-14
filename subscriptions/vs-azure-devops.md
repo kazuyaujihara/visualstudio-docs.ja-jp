@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314158"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983689"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -25,7 +25,9 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Pipelines (セルフホステッド)       |  はい          |
-| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール、                                        | Azure Boards & Repos (Basic)                                                            |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise   | VL| Azure Boards & Repos (Basic)、Azure Test Plans、Azure Pipelines (セルフホステッド)       |  はい          |
+| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                        | Azure Boards & Repos (Basic)                                                            |  はい          |
+| Visual Studio Professional with GitHub Enterprise | VL| Azure Boards & Repos (Basic)                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
 ||
@@ -49,3 +51,5 @@ Azure DevOps 機能に関する詳細情報:
 - [Azure Boards & Repos (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+[Azure DevTest の個人クレジット](vs-azure.md)をアクティブ化する方法について説明します。

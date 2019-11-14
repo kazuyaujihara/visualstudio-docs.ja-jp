@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950638"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713930"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose のビルド プロパティ
 
@@ -35,6 +35,8 @@ ms.locfileid: "71950638"
 
 | プロパティ名 | 場所 | 説明 | 既定値  |
 |---------------|----------|-------------|----------------|
+|AdditionalComposeFiles|dcproj|すべてのコマンドで docker-compose.exe に追加の Compose ファイルがセミコロンで区切られたリストで送信されるように指定します。 docker-compose プロジェクト ファイル (dcproj) からの相対パスが許可されます。|-|
+|DockerComposeBaseFilePath|dcproj|docker-compose ファイルのファイル名の最初の部分を *.yml* 拡張子なしで指定します。 次に例を示します。 <br>1.DockerComposeBaseFilePath = null/undefined: 基本ファイル パス *docker-compose* を使用します。ファイル名は *docker-compose.yml* および *docker-compose.override.yml* になります<br>2. DockerComposeBaseFilePath = *mydockercompose*: ファイル名は *mydockercompose.yml* および *mydockercompose.override.yml* になります<br> 3.DockerComposeBaseFilePath = *..\mydockercompose*: ファイルが 1 レベル上に移動します。 |docker-compose|
 |DockerComposeBuildArguments|dcproj|`docker-compose build` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--parallel --pull` |
 |DockerComposeDownArguments|dcproj|`docker-compose down` コマンドに渡す追加のパラメーターを指定します。 たとえば、`--timeout 500`|-|  
 |DockerComposeProjectPath|csproj または vbproj|docker-compose プロジェクト (dcproj) ファイルの相対パス。 docker-compose.yml ファイルに格納されている関連イメージ ビルド設定を見つける目的で、サービス プロジェクトの公開時にこのプロパティを設定します。|-|
