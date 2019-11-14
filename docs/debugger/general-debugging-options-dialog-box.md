@@ -1,6 +1,6 @@
 ---
 title: '[全般] ([オプション] ダイアログボックス-[デバッグ])Microsoft Docs'
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569069"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072715"
 ---
 # <a name="general-debugging-options"></a>一般的なデバッグオプション
 
@@ -137,6 +137,12 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 - **[アプリケーションにランタイムツールを表示**]: デバッグ中の XAML アプリケーションのメインウィンドウのツールバーに、**ライブビジュアルツリー**のコマンドが表示されます。 このオプションは、Visual Studio 2015 Update 2 で導入されました。
 
 - **Xaml ホットリロードの有効化**: アプリの実行時に xaml コードと共に Xaml ホットリロード機能を使用できるようにします。 (この機能は、以前は "XAML エディットコンティニュ" と呼ばれていました)
+
+::: moniker range=">= vs-2019" 
+- **[マイ XAML のみを有効にする**]: visual Studio 2019 バージョン16.4 以降では、既定で**ライブビジュアルツリー**には、ユーザーコードとして分類された XAML のみが表示されます。 このオプションを無効にすると、生成されたすべての XAML コードがツールに表示されます。
+
+- **要素が選択されたときに選択モードをオフにする**Visual Studio 2019 バージョン16.4 以降では、要素が選択されると、アプリ内ツールバー要素セレクターボタン (**選択の有効化**) がオフになります。 このオプションを無効にした場合、[アプリ内] ツールバーボタンを再度クリックするまで、要素の選択はオンのままになります。
+::: moniker-end
 
 **デバッグ中に診断ツールを有効にする**: デバッグ中に **[診断ツール]** ウィンドウが表示されます。
 
