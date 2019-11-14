@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666621"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189555"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XAML]、[その他]
 
@@ -52,7 +52,7 @@ ms.locfileid: "72666621"
 
 ## <a name="errors-and-warnings"></a>エラーと警告
 
-エラーと警告が自動的に生成されるタイミングを制御するには、この設定を使用します。 詳細については、「[XAML のエラーと警告](../../designers/xaml-errors-warnings.md)」をご覧ください。
+エラーと警告が自動的に生成されるタイミングを制御するには、この設定を使用します。 詳細については、「[XAML のエラーと警告](../../xaml-tools/xaml-errors-warnings.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ede811cf2e9d900a0c78aca2214b43bd8438fe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984700"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189172"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -433,7 +433,7 @@ ms.locfileid: "72984700"
 
    - 名前空間 "<http://schemas.microsoft.com/developer/vstemplate/2005>" を使用します。 このソリューション内の他のプロジェクトファイルには、"<http://schemas.microsoft.com/developer/msbuild/2003>" 名前空間が使用されています。 このため、XML スキーマ警告メッセージが生成されますが、このチュートリアルでは、これらを無視できます。
 
-     *.Vstemplate*ファイルの内容の詳細については、「 [Visual Studio テンプレートスキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)」を参照してください。
+     *.Vstemplate*ファイルの内容の詳細については、「 [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。
 
 2. ファイルを保存して閉じます。
 

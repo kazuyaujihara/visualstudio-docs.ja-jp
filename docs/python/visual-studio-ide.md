@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983688"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661931"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
 
@@ -26,7 +26,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、テ
 
 これは Python プロジェクトを開いている状態の Visual Studio の画像です。使用頻度の高い主なツール ウィンドウがいくつか開かれています。
 
-- [**ソリューション エクスプローラー**](../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](/visualstudio/get-started/tutorial-projects-solutions)にまとめ、コードを整理できます。
+- [**ソリューション エクスプローラー**](../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](../get-started/tutorial-projects-solutions.md)にまとめ、コードを整理できます。
   - **ソリューション エクスプローラー**と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
 
   ::: moniker range=">=vs-2019"
@@ -94,7 +94,7 @@ Windows 向けには、Community、Professional、Enterprise という 3 つの�
     Visual Studio 2019 以降では、コードに対する Visual Studio プロジェクトを作成しなくても、Python コードが含まれるフォルダーを開き、IntelliSense やデバッグなどの機能を利用することができます。
 ::: moniker-end
 
-- [Visual Studio を使用して共同作業する](/visualstudio/liveshare/use/vs)
+- [Visual Studio を使用して共同作業する](/visualstudio/liveshare/)
   
     Visual Studio Live Share を使うと、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集したりデバッグしたりできます。 
 

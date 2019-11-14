@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911393"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188672"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio で Just-in-time デバッガーを使用してデバッグする
 
@@ -104,7 +104,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
 この例では、 [NullReferenceException](/dotnet/api/system.nullreferenceexception)をスロー C#するコンソールアプリを Visual Studio で作成します。
 
-1. Visual Studio で、 *ThrowsNullException*とC#いう名前のコンソールアプリ (**新しい** > **プロジェクト** > **Visual C#**  > **コンソールアプリケーション** > **ファイル**) を作成します。 Visual Studio でのプロジェクトの作成の詳細については、「[チュートリアル: 簡単なアプリケーションの作成](/visualstudio/get-started/csharp/tutorial-wpf)」を参照してください。
+1. Visual Studio で、 *ThrowsNullException*とC#いう名前のコンソールアプリ (**新しい** > **プロジェクト** > **Visual C#**  > **コンソールアプリケーション** > **ファイル**) を作成します。 Visual Studio でのプロジェクトの作成の詳細については、「[チュートリアル: 簡単なアプリケーションの作成](../get-started/csharp/tutorial-wpf.md)」を参照してください。
 
 1. Visual Studio でプロジェクトを開くときに、 *Program.cs*ファイルを開きます。 Main () メソッドを次のコードに置き換えます。このコードは、コンソールに線を出力し、NullReferenceException をスローします。
 

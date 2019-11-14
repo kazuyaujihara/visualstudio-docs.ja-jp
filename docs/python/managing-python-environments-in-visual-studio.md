@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024709"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661939"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
@@ -124,7 +124,7 @@ Visual Studio は、グローバル環境、仮想環境、および conda 環�
 
 Visual Studio には、プロジェクトの仮想環境を作成するための直接的なサポートが提供されています。 たとえば、*requirements.txt* を含むプロジェクトを開く場合、またはそのファイルを含むテンプレートからプロジェクトを作成する場合、Visual Studio では、自動的に仮想環境が作成され、それらの依存関係がインストールされるというメッセージが表示されます。
 
-開いているプロジェクト内には、いつでも新しい仮想環境を作成できます。 **ソリューション エクスプローラー**でプロジェクト ノードを展開し、 **[Python 環境]** ノードを右クリックし、[仮想環境を追加] を選択します。 詳細については、「[仮想環境を作成する](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1)」を参照してください。
+開いているプロジェクト内には、いつでも新しい仮想環境を作成できます。 **ソリューション エクスプローラー**でプロジェクト ノードを展開し、 **[Python 環境]** ノードを右クリックし、[仮想環境を追加] を選択します。 詳細については、「[仮想環境を作成する](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1)」を参照してください。
 
 Visual Studio には、仮想環境から *requirements.txt* ファイルを生成し、他のコンピューターで環境を簡単に再作成するためのコマンドも用意されています。 詳しくは、「[仮想環境を使用する](selecting-a-python-environment-for-a-project.md#use-virtual-environments)」をご覧ください。
 

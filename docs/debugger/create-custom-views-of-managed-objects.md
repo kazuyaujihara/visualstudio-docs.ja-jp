@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745636"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188646"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>管理オブジェクト (C#、Visual Basic、 F# C++/cli) のカスタムビューを作成する
 Visual Studio でデバッガーの変数ウィンドウにデータ型を表示する方法をカスタマイズできます。
@@ -41,10 +41,10 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
 
 ## <a name="visualizers"></a>ビジュアライザー
 
-マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法: ビジュアライザーを記述](/visualstudio/debugger/create-custom-visualizers-of-data)する」を参照してください。
+マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法: ビジュアライザーを記述](create-custom-visualizers-of-data.md)する」を参照してください。
 
 > [!NOTE]
-> コードC++の場合、「[デバッガーでのオブジェクトのカスタムビューの作成C++ ](/visualstudio/debugger/create-custom-views-of-native-objects)」で説明されているように、Natvis フレームワークを使用してカスタムデータ型の展開を追加できます。
+> コードC++の場合、「[デバッガーでのオブジェクトのカスタムビューの作成C++ ](create-custom-views-of-native-objects.md)」で説明されているように、Natvis フレームワークを使用してカスタムデータ型の展開を追加できます。
 
 ## <a name="see-also"></a>関連項目
 

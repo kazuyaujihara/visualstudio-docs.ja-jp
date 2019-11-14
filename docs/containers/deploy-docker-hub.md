@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 267e0c1ed1ac3911aad2161f186bf4a482f069b6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "71126023"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188750"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub に配置する
 
@@ -45,7 +45,7 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 
 ## <a name="next-steps"></a>次の手順
 
-[Azure Container Registry へのデプロイ](vs-azure-tools-docker-hosting-web-apps-in-docker.md) に関するページに記載されている手順を行い、[Azure Container Registry](/azure/container-registry/) に発行します。
+[Azure Container Registry へのデプロイ](hosting-web-apps-in-docker.md) に関するページに記載されている手順を行い、[Azure Container Registry](/azure/container-registry/) に発行します。
 
 [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops) を使用して、継続的インテグレーションおよび継続的配信 (CI/CD) を設定します。
 

@@ -6,24 +6,24 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96474925c5411d76395cb60ab1ad4851c1cbfa19
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931880"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715941"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin を使ったデバッグ
 
 Visual Studio for Mac には、Xamarin.iOS、Xamarin.Mac、Xamarin.Android アプリケーションのデバッグをサポートするネイティブ デバッガーが備わっています。
 
-Visual Studio for Mac では、Visual Studio for Mac ですべてのプラットフォームでマネージド コードをデバッグするために、Mono ランタイムに実装されている [*Mono Soft Debugger*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/) を使用しています。
+Visual Studio for Mac では、Visual Studio for Mac ですべてのプラットフォームでマネージド コードをデバッグするために、Mono ランタイムに実装されている [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/) を使用しています。
 
 ## <a name="the-debugger"></a>デバッガー
 
-Visual Studio for Mac では、すべての Xamarin アプリケーションのマネージド コード (C# または F#) をデバッグするために Mono Soft Debugger を使用しています。 Mono Soft Debugger は通常のデバッガーとは異なり、Mono ランタイムに組み込まれている協調的なデバッガーです。生成されるコードと Mono ランタイムは IDE と連携され、デバッグ機能を使用できます。 Mono ランタイムはワイヤ プロトコルを介してデバッグ機能を公開しています。詳細については、[Mono のドキュメント](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)を参照してください。
+Visual Studio for Mac では、すべての Xamarin アプリケーションのマネージド コード (C# または F#) をデバッグするために Mono Soft Debugger を使用しています。 Mono Soft Debugger は通常のデバッガーとは異なり、Mono ランタイムに組み込まれている協調的なデバッガーです。生成されるコードと Mono ランタイムは IDE と連携され、デバッグ機能を使用できます。 Mono ランタイムはワイヤ プロトコルを介してデバッグ機能を公開しています。詳細については、[Mono のドキュメント](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)を参照してください。
 
-[LLDB]( http://lldb.llvm.org/index.html) や [GDB]( https://www.gnu.org/software/gdb/) などのハード デバッガーの場合、デバッグ済みのプログラムの知識や連携を使用せずにプログラムを制御しますが、ネイティブ iOS または Android コードをデバッグする必要があり、Xamarin アプリケーションをデバッグするときには便利なことがあります。
+[LLDB](https://lldb.llvm.org/index.html) や [GDB](https://www.gnu.org/software/gdb/) などのハード デバッガーの場合、デバッグ済みのプログラムの知識や連携を使用せずにプログラムを制御しますが、ネイティブ iOS または Android コードをデバッグする必要があり、Xamarin アプリケーションをデバッグするときには便利なことがあります。
 
 ## <a name="using-the-debugger"></a>デバッガーの使用
 
@@ -37,7 +37,7 @@ IDE でブレークポイントを設定するには、エディターで、中�
 
 ![余白でのブレークポイントの設定](media/debugging-image0.png)
 
-コードに設定したすべてのブレークポイントを表示するには、**[ブレークポイント] パッド**を開きます。
+コードに設定したすべてのブレークポイントを表示するには、 **[ブレークポイント] パッド**を開きます。
 
 ![ブレークポイントの一覧](media/debugging-image0a.png)
 
@@ -57,13 +57,13 @@ IDE でブレークポイントを設定するには、エディターで、中�
 
 ## <a name="conditional-breakpoints"></a>条件付きブレークポイント
 
-ブレークポイントが発生する状況を指示した規則を設定することもできます。これは*条件付きブレークポイント*の追加とも呼ばれます。 条件付きブレークポイントを設定するには、**[ブレークポイントのプロパティ] ウィンドウ**にアクセスします。アクセスする方法は 2 つあります。
+ブレークポイントが発生する状況を指示した規則を設定することもできます。これは*条件付きブレークポイント*の追加とも呼ばれます。 条件付きブレークポイントを設定するには、 **[ブレークポイントのプロパティ] ウィンドウ**にアクセスします。アクセスする方法は 2 つあります。
 
 * 新しい条件付きブレークポイントを追加するには、ブレークポイントを設定するコードの行番号の左にあるエディターの余白を右クリックし、[ブレークポイントの作成] を選択します。
 
  ![ブレークポイント コンテキスト メニュー](media/debugging-image4.png)
 
-* 既存のブレークポイントに条件を追加するには、ブレークポイントを右クリックし、**[ブレークポイントのプロパティ]** を選択します。または **[ブレークポイント]** パッドで、次の図の [ブレークポイントの編集] ボタンを選択します。
+* 既存のブレークポイントに条件を追加するには、ブレークポイントを右クリックし、 **[ブレークポイントのプロパティ]** を選択します。または **[ブレークポイント]** パッドで、次の図の [ブレークポイントの編集] ボタンを選択します。
 
  ![[ブレークポイント] パッドで既存のブレークポイントを編集する](media/debugging-image5.png)
 
@@ -90,7 +90,7 @@ Xamarin 製品には、Mono のクラス ライブラリのソース コード�
 
 この機能はデバッグ中に消費されるメモリが多いため、既定ではオフです。
 
-この機能を有効にするには、**[Visual Studio for Mac] > [ユーザー設定] > [デバッガー]** に移動し、**[プロジェクト コードのみをデバッグする。フレームワーク コードにはステップ インしない。]** オプションを次の図のように**オフ**にします。
+この機能を有効にするには、 **[Visual Studio for Mac] > [ユーザー設定] > [デバッガー]** に移動し、 **[プロジェクト コードのみをデバッグする。フレームワーク コードにはステップ インしない。]** オプションを次の図のように**オフ**にします。
 
 ![[フレームワーク コードにはステップ インしない] オプション](media/debugging-image8.png)
 

@@ -12,16 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0540ac17ca64f24ead19b8b3655175d12fa42e41
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253977"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189753"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office ソリューションでの WPF コントロールの使用
 
-Visual Studio の Office 開発ツールを使用して作成されたソリューションは、Windows フォーム コントロールを使用して直接操作することを前提としていますが、ソリューションで WPF コントロールを使用することもできます。 Windows Presentation Foundation (WPF) は、ユーザー インターフェイスをデザインするときに Windows フォームの代わりとして使用できます。 WPF では、UI、メディア、および文書を取り込むための新しい手法として、Extensible Application Markup Language (XAML) というマークアップ言語を使用します。 詳細については、「 [WPF の概要](../designers/introduction-to-wpf.md)」を参照してください。
+Visual Studio の Office 開発ツールを使用して作成されたソリューションは、Windows フォーム コントロールを使用して直接操作することを前提としていますが、ソリューションで WPF コントロールを使用することもできます。 Windows Presentation Foundation (WPF) は、ユーザー インターフェイスをデザインするときに Windows フォームの代わりとして使用できます。 WPF では、UI、メディア、および文書を取り込むための新しい手法として、Extensible Application Markup Language (XAML) というマークアップ言語を使用します。 詳細については、「 [WPF の概要](/dotnet/framework/wpf/introduction-to-wpf)」を参照してください。
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -53,11 +53,11 @@ Office ソリューションの UI 要素に WPF コントロールを直接追�
 
 5. 操作ウィンドウ、フォーム領域、またはカスタム作業ウィンドウをプロジェクトに追加します。
 
-    - フォーム領域の場合は、 **Outlook フォーム領域**アイテムをプロジェクトに追加します。 詳細については、「[方法 :フォーム領域を Outlook アドインプロジェクト](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)に追加します。
+    - フォーム領域の場合は、 **Outlook フォーム領域**アイテムをプロジェクトに追加します。 詳細については、「[方法: フォーム領域を Outlook アドインプロジェクトに追加](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)する」を参照してください。
 
-    - 操作ウィンドウの場合は、**操作ウィンドウコントロール**または**ユーザーコントロール**アイテムをプロジェクトに追加します。 詳細については、「[方法 :Word 文書または Excel ブック](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)に操作ウィンドウを追加します。
+    - 操作ウィンドウの場合は、**操作ウィンドウコントロール**または**ユーザーコントロール**アイテムをプロジェクトに追加します。 詳細については、「[方法: Word 文書または Excel ブックに操作ウィンドウを追加](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)する」を参照してください。
 
-    - カスタム作業ウィンドウの場合は、**ユーザーコントロール**項目をプロジェクトに追加します。 詳細については、「[方法 :カスタム作業ウィンドウをアプリケーション](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)に追加します。
+    - カスタム作業ウィンドウの場合は、**ユーザーコントロール**項目をプロジェクトに追加します。 詳細については、「[方法: カスタム作業ウィンドウをアプリケーションに追加](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)する」を参照してください。
 
 6. **[ツールボックス]** の [ *ProjectName* **WPF ユーザーコントロール**] タブから、操作ウィンドウ、フォーム領域、またはカスタム作業ウィンドウのデザイナーに WPF ユーザーコントロールをドラッグします。
 
@@ -110,9 +110,9 @@ Windows フォーム コントロールおよびフォーム上での WPF のホ
 
 Visual Studio でデザイン時に WPF コントロールを Windows フォーム コントロールおよびフォームに追加する方法の詳細については、以下のトピックを参照してください。
 
-- [チュートリアル: デザイン時に Windows フォームに新しい WPF コンテンツを作成する](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [チュートリアル: デザイン時の Windows フォームでの新しい WPF コンテンツの作成](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
-- [チュートリアル: デザイン時に Windows フォームに WPF コンテンツを配置する](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [チュートリアル: デザイン時の Windows フォームでの WPF コンテンツの配置](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
 - [チュートリアル: WPF コンテンツのスタイルを適用する](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 

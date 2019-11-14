@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa62baf020751a175b24f47a93b3e7280fb76fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647650"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188975"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>クラス ダイアグラムおよびクラスの詳細情報のウィンドウでのキーボードとマウスのショートカット
 
@@ -105,4 +105,4 @@ ms.locfileid: "72647650"
 - [型メンバーの作成および構成](creating-and-configuring-type-members.md)
 - [キーボード主体で操作する方法](../reference/how-to-use-the-keyboard-exclusively.md)
 - [Visual Studio の既定のキーボード ショートカット](../default-keyboard-shortcuts-in-visual-studio.md)
-- [Blend でのキーボード ショートカット](../../designers/keyboard-shortcuts-in-blend.md)
+- [Blend でのキーボード ショートカット](../../xaml-tools/keyboard-shortcuts-in-blend.md)

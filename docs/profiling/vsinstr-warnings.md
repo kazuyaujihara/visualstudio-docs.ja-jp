@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822909"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189299"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr の警告
 次の表に、*VSInstr.exe* ツールで発行される警告をリストします。 NOWARN オプションに警告番号を指定することで、警告を非表示にできます。
 
 |警告番号|説明|
 |--------------------|-----------------|
-|**VSP1026**|カバレッジでは、MSCorLib を参照していないライブラリはサポートされていません。 これは、多くの場合、移植可能なライブラリが該当します。<br /><br />.NET Core ではコマンド ライン オプション [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) が必要です。|
+|**VSP1026**|カバレッジでは、MSCorLib を参照していないライブラリはサポートされていません。 これは、多くの場合、移植可能なライブラリが該当します。<br /><br />.NET Core ではコマンド ライン オプション [/EnableCodeCoverage](../test/vstest-console-options.md) が必要です。|
 |**VSP2000**|内部エラーです。 この実行可能ファイルのモジュール ファイル名を取得できません。|
 |**VSP2001**|\<assembly name> は、厳密な名前付きのアセンブリです。 実行するには、再署名する必要があります。<br /><br /> この警告は、署名付きのアセンブリがインストルメントされたときに発生します。 *sn.exe* ツールを使用して、バイナリを再署名するか、厳密な名前の必要性を一時的に無効にすることができます。 詳細については、「[Sn.exe (厳密名ツール)](/dotnet/framework/tools/sn-exe-strong-name-tool)」を参照してください。|
 |**VSP2002**|ファイル \<filename> で関数 \<funcname> が見つかりませんでした。<br /><br /> この警告は、関数が指定したファイルで見つからない場合に発生します。|

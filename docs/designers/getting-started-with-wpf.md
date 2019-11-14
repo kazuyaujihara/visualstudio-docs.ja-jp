@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7794b4dd300cf66ea894227f9346e80ee68085
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924505"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187136"
 ---
 # <a name="get-started-with-wpf"></a>WPF の使用を開始する
 
@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) は、デスクトップ クライアン�
 |Subject|記事|
 |-|-|
 |すぐに使用を開始する…|[チュートリアル: 初めての WPF デスクトップ アプリケーション](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
-|XAML デザイン ツールの比較|[Visual Studio および Blend for Visual Studio での XAML の設計](../designers/designing-xaml-in-visual-studio.md)|
+|XAML デザイン ツールの比較|[Visual Studio および Blend for Visual Studio での XAML の設計](../xaml-tools/designing-xaml-in-visual-studio.md)|
 |.NET の初心者向け|[.NET のガイド](/dotnet/standard/)<br /><br />[アプリケーションの基本事項](/dotnet/standard/application-essentials)<br /><br />[Visual C# 入門](../ide/quickstart-csharp-console.md)|
 |WPF の詳細な説明...|[WPF の概要](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML の概要 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[コントロール](/dotnet/framework/wpf/controls/)<br /><br />[データバインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[LINQ to XML による WPF のデータ バインディング](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Windows フォームの開発者向け|[Windows フォーム コントロールおよび同等の WPF コントロール](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF と Windows フォームの相互運用性に関してサポートするシナリオ](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio のコマンドの Guid および Id |Microsoft Docs
+title: Visual Studio コマンドの Guid と Id |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,53 +14,53 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7670eacc875bf7c5437d9bb92cc1932753093bd
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329184"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186643"
 ---
-# <a name="guids-and-ids-of-visual-studio-commands"></a>コマンドの Guid と Visual Studio の Id
-Visual Studio 統合開発環境 (IDE) で含まれているコマンドの GUID と ID の値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、次を参照してください。 [IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。
+# <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio コマンドの Guid と Id
+Visual Studio 統合開発環境 (IDE) に含まれるコマンドの GUID と ID の値は、Visual Studio SDK の一部としてインストールされる、vsct ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
 
- 定義されている IDE オブジェクトを操作する方法の詳細についての *.vsct*ファイルを参照してください[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)します。
+ *Vsct*ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」を参照してください。
 
-## <a name="find-a-command-definition"></a>コマンドの定義が見つかりません
- Visual Studio では、1000 台以上のコマンドを定義するためすべてここに列挙するは実用的ではありません。 代わりに、以下の手順を実行するコマンドの定義を探します。
+## <a name="find-a-command-definition"></a>コマンド定義の検索
+ Visual Studio では、1000を超えるコマンドが定義されているため、ここですべてを一覧表示するのは現実的ではありません。 代わりに、次の手順に従ってコマンドの定義を検索します。
 
 ### <a name="to-locate-a-command-definition"></a>コマンド定義を検索するには
 
-1. Visual Studio で、次のファイルを開く、 *< Visual Studio SDK インストール パス\>\VisualStudioIntegration\Common\Inc\\* フォルダー。*SharedCmdDef.vsct*、 *ShellCmdDef.vsct*、 *VsDbgCmdUsed.vsct*、 *Venusmenu.vsct*します。
+1. Visual Studio で、 *< Visual STUDIO SDK のインストールパス\>\VisualStudioIntegration\Common\Inc\\* フォルダーにある次のファイルを開きます。 *vsct*、 *shellcmddef. vsct*、 *vsdbgcmdused。 vsct*、 *[ベンダー]。 vsct*。
 
-    ほとんどの Visual Studio のコマンドがで定義されている*SharedCmdDef.vsct*と*ShellCmdDef.vsct*します。 *VsDbgCmdUsed.vsct* 、デバッガーに関連するコマンドを定義し、 *Venusmenu.vsct* Web 開発に固有のコマンドを定義します。
+    ほとんどの Visual Studio コマンドは、 *Sharedcmddef. vsct*および*shellcmddef. vsct*で定義されています。 *Vsdbgcmdused。 vsct*は、デバッガーに関連するコマンドと、[] を定義し*ます。 Vsct*は、Web 開発に固有のコマンドを定義します。
 
-2. コマンドがメニュー項目の場合は、メニュー項目の内容を正確に注意してください。 コマンドがツールバーのボタンの場合は、それを一時停止するときに表示されるツールヒント テキストを注意してください。
+2. コマンドがメニュー項目の場合は、メニュー項目のテキストを正確に確認します。 コマンドがツールバーのボタンである場合は、一時停止したときに表示されるツールヒントのテキストを確認します。
 
-3. キーを押して**Ctrl**+**F**を開く、**検索** ダイアログ ボックス。
+3. **Ctrl**+**F**キーを押して、 **[検索]** ダイアログボックスを開きます。
 
-4. **検索**ボックスに、手順 2. でメモしたテキストを入力します。
+4. [**検索**する文字列] ボックスに、手順2でメモしたテキストを入力します。
 
-5. いることを確認**すべての開いているドキュメント**に表示される、**ファイルの場所**ボックス。
+5. すべての**開い**ているドキュメントが **[検索対象]** ボックスに表示されていることを確認します。
 
-6. をクリックして、**次を検索**で、テキストが選択されるまで、`<Strings>`のセクションを[ボタン要素](../../extensibility/button-element.md)します。
+6. [ボタン要素](../../extensibility/button-element.md)の `<Strings>` セクションでテキストが選択されるまで、 **[次を検索]** ボタンをクリックします。
 
-    `<Button>`コマンドが含まれている要素がコマンド定義。
+    コマンドが表示される `<Button>` 要素は、コマンド定義です。
 
-   コマンドの定義が見つかったら、別のメニューまたはツールバーのコマンドのコピーを配置を作成して、 [CommandPlacement 要素](../../extensibility/commandplacement-element.md)を持つ同じ`guid`と`id`コマンドと値。 詳細については、次を参照してください。[ボタンの再利用可能なグループ作成](../../extensibility/creating-reusable-groups-of-buttons.md)です。
+   コマンドの定義が見つかったら、コマンドと同じ `guid` と `id` の値を持つ[Commandplacement 要素](../../extensibility/commandplacement-element.md)を作成することによって、コマンドのコピーを別のメニューまたはツールバーに配置できます。 詳細については、「[再利用可能なボタンのグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)」を参照してください。
 
 ### <a name="special-cases"></a>特殊なケース
- 次の場合、メニュー テキストまたはツールヒントのテキストが一致しない一致コマンド定義でです。
+ 次の場合、メニューテキストまたはツールヒントのテキストが、コマンド定義の内容と正確に一致しない可能性があります。
 
-- など、下線付きの文字を含むメニュー項目、**印刷**コマンドを**ファイル**をメニュー、 *P*下線が引かれます。
+- **[ファイル]** メニューの **[印刷]** コマンドなど、下線付きの文字を含むメニュー項目。 *P*は下線付きで表示されます。
 
-     前にアンパサンド文字 (&) メニュー項目名の文字を表示、下線が引かれました。 ただし、 *.vsct*ファイルはアンパサンド (&) を使用して、特殊文字を指定し、として表示するには、アンパサンドをスペルする必要があることが必要ですが XML で記述された *&amp;amp;* します。 そのため、 *.vsct*ファイル、**印刷**としてコマンドが表示される *&amp;amp;印刷*します。
+     メニュー項目名のアンパサンド (&) 文字の前にある文字は、下線付きで表示されます。 ただし、vsct ファイルは XML で記述されて*います。* XML では、アンパサンド (&) 文字を使用して特殊文字を指定し、表示されるアンパサンドを *&amp;amp;* としてスペル入力する必要があります。 したがって、 *vsct*ファイルでは、 **Print**コマンドは *&amp;amp; として表示されます。印刷*。
 
-- コマンドのテキストを動的をなどが含まれない**保存**\<現在のファイル名\>で項目などのメニュー項目を動的に生成されると、**最近使ったファイル**一覧。
+- [\<の現在のファイル名\>の**保存**] などの動的なテキストを含むコマンドと、動的に生成されたメニュー項目 ( **[最近使ったファイル]** の一覧の項目など)。
 
-     動的テキストを検索する確実な方法はありません。 代わりを参照して目的のコマンドをホストするグループを検索[Guid と Visual Studio の Id のメニュー](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)または[Guid と Visual Studio の Id のツールバー](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)、およびそのグループの ID で検索します。 コマンドの定義としてグループを持たないかどうか、[親要素](../../extensibility/parent-element.md)、検索*SharedCmdPlace.vsct*と*ShellCmdPlace.vsct* (または*VsDbgCmdPlace.vsct*のデバッガー コマンド) を`<CommandPlacement>`コマンドの親を設定する要素。 *SharedCmdPlace.vsct*、 *ShellCmdPlace.vsct*、および*VsDbgCmdPlace.vsct*では、 *\<Visual Studio SDK インストール パス\>\VisualStudioIntegration\Common\Inc\\* フォルダー。
+     動的テキストを検索するための信頼性の高い方法はありません。 代わりに、visual [studio のメニューの guid と id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) 、または[visual studio のツールバーの guid と](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)id を参照して、目的のコマンドをホストするグループを検索し、そのグループの ID を検索します。 コマンド定義にグループが[親要素](../../extensibility/parent-element.md)として含まれていない場合は、の親を設定する `<CommandPlacement>` 要素に対して、 *sharedcmdplace Vsct*と*Shellcmdplace* (または*vsdbgcmdplace* ) vsct を検索します。メニュー. *Sharedcmdplace。 vsct*、 *Shellcmdplace*、および*vsdbgcmdplace*は、 *\<Visual Studio SDK のインストールパス\>\VisualStudioIntegration\Common\Inc\\* フォルダーにあります。
 
 ## <a name="see-also"></a>関連項目
-- [Menucommand とOleMenuCommand](../../extensibility/menucommands-vs-olemenucommands.md)
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)
+
+- [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [VSCT XML スキーマリファレンス](../../extensibility/vsct-xml-schema-reference.md)

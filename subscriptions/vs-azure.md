@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816451"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983768"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -41,9 +41,11 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 ## <a name="eligibility"></a>特典を受ける条件
 |                 サブスクリプション レベル/プログラム                 |           特長           |                         更新可能かどうか                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 ドルのクレジット/月     |                             はい                             ||
+|              Visual Studio Enterprise Standard               |     150 ドルのクレジット/月     |                             はい                             |
+|              Visual Studio Enterprise with GitHub Enterprise               |     150 ドルのクレジット/月     |                             はい                             |
 |               Visual Studio Enterprise - 月間プラン               |        使用できません        |                                                             |
 |             Visual Studio Professional Standard              |     50 ドルのクレジット/月      |                             はい
+|              Visual Studio Professional with GitHub Enterprise              |     150 ドルのクレジット/月     |                             はい                             |
 |              Visual Studio Professional - 月間プラン              |        使用できません        |                                                             |
 |                    Visual Studio Test Pro                    |     50 ドルのクレジット/月      |                             はい                             |
 |                        MSDN Platforms                        |     100 ドルのクレジット/月     |                             はい                             |

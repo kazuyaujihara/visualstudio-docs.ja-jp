@@ -10,50 +10,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec9009f3c331da608c22d38f35a08e157e878771
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af1fa0222be9630a495a43204d7a973341190131
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312966"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186670"
 ---
-# <a name="extend-the-editor-and-language-services"></a>エディターと言語サービスを拡張します。
-独自のエディターに (IntelliSense) などの言語サービスの機能を追加し、Visual Studio コード エディターのほとんどの機能を拡張できます。  拡張することができますの完全な一覧を参照してください。[言語サービスとエディターの拡張機能ポイント](../extensibility/language-service-and-editor-extension-points.md)します。
+# <a name="extend-the-editor-and-language-services"></a>エディターと言語サービスの拡張
+独自のエディターに言語サービス機能 (IntelliSense など) を追加し、Visual Studio コードエディターのほとんどの機能を拡張することができます。  拡張できるものの完全な一覧については、「[言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)」を参照してください。
 
- ほとんどのエディター機能を拡張するには、Managed Extensibility Framework (MEF) を使用します。 たとえば、エディター機能を拡張するが構文の色分け表示の場合は、MEF を記述できます*コンポーネント パーツ*分類する別の色分け表示と処理にする方法を定義します。 エディターには、同じ機能の複数の拡張機能もサポートしています。
+ ほとんどのエディター機能は、Managed Extensibility Framework (MEF) を使用して拡張します。 たとえば、拡張するエディター機能が構文の色分けになっている場合は、異なる色の色分けを必要とする分類とその処理方法を定義する MEF*コンポーネントのパート*を記述できます。 エディターでは、同じ機能の複数の拡張機能もサポートされています。
 
- エディターのプレゼンテーション層に基づく、Windows Presentation Framework (WPF)。 WPF では、柔軟なテキストの書式設定のグラフィックス ライブラリを提供しもグラフィックスとアニメーションなどの視覚エフェクトを提供します。
+ エディタープレゼンテーションレイヤーは、Windows Presentation Framework (WPF) に基づいています。 WPF には柔軟なテキスト書式設定用のグラフィックスライブラリが用意されています。また、グラフィックスやアニメーションなどの視覚エフェクトも用意されています。
 
- Visual Studio SDK は、アダプターと呼ばれる*shim*以前のバージョン用に作成された Vspackage をサポートするためにします。 ただし、既存の VSPackage があればより優れたパフォーマンスと信頼性を取得する新しいテクノロジに更新することお勧めします。
+ Visual Studio SDK には、以前のバージョン用に記述された Vspackage をサポートするための*shim*と呼ばれるアダプターが用意されています。 ただし、既存の VSPackage がある場合は、パフォーマンスと信頼性を向上させるために、新しいテクノロジに更新することをお勧めします。
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
-|[言語サービスとエディターの拡張機能を概要します。](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|エディターの拡張機能を作成する方法について説明します。|
-|[エディター内で](../extensibility/inside-the-editor.md)|エディターの一般的な構造を説明し、その機能の一部を示します。|
-|[エディターでの managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|エディターでの Managed Extensibility Framework (MEF) を使用する方法について説明します。|
-|[言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)|エディターの拡張ポイントを一覧表示します。 拡張機能ポイントは、拡張可能なエディター機能を表します。|
-|[チュートリアル: ビューの表示要素、コマンド、および設定 (ガイド) を作成します。](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|手順について説明し、コードを特定の表示幅を確保するための列のガイド線を描画するビューの表示要素の構築について説明します。  読み取りと設定の書き込みだけでなくを宣言して、コマンド ウィンドウから呼び出すことができるコマンドの実装にも表示されます。|
-|[エディターのインポート](../extensibility/editor-imports.md)|拡張機能をインポートするサービスの一覧を表示します。|
-|[エディターにレガシ コードを改変します。](../extensibility/adapting-legacy-code-to-the-editor.md)|エディターを拡張する (事前に Visual Studio 2010) のレガシ コードを改変するさまざまな方法について説明します。|
-|[従来の言語サービスを移行します。](../extensibility/internals/migrating-a-legacy-language-service.md)|基づく VSPackage での言語サービスを移行する方法について説明します。|
-|[チュートリアル: コンテンツの種類をファイル名拡張子にリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|コンテンツの種類をファイル名拡張子にリンクする方法を示しています。|
-|[チュートリアル: 余白のグリフを作成します。](../extensibility/walkthrough-creating-a-margin-glyph.md)|余白にアイコンを追加する方法を示します。|
-|[チュートリアル: テキストを強調表示します。](../extensibility/walkthrough-highlighting-text.md)|使用する方法を示します*タグ*テキストを強調表示します。|
-|[チュートリアル: アウトラインを追加します。](../extensibility/walkthrough-outlining.md)|特定の種類の中かっこのアウトラインを追加する方法を示します。|
-|[チュートリアル: 対応するかっこの表示](../extensibility/walkthrough-displaying-matching-braces.md)|対応する中かっこを強調表示する方法を示します。|
-|[チュートリアル: クイック ヒントを表示します。](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|プロパティ、メソッド、およびイベントなどのコードの要素について説明するクイック ヒント ポップアップを表示する方法を示します。|
-|[チュートリアル: シグネチャ ヘルプを表示します。](../extensibility/walkthrough-displaying-signature-help.md)|シグネチャのパラメーターの型と数に関する情報を提供するポップアップを表示する方法を示します。|
-|[チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)|ステートメント入力候補を実装する方法を示します。|
-|[チュートリアル: コード スニペットを実装します。](../extensibility/walkthrough-implementing-code-snippets.md)|コード スニペットの展開を実装する方法を示します。|
-|[チュートリアル: 電球候補を表示します。](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|コード修正候補の電球を表示する方法を示します。|
-|[チュートリアル: エディター拡張機能でシェル コマンドを使用します。](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|VSPackage にメニュー コマンドを MEF コンポーネントと関連付ける方法を示しています。|
-|[チュートリアル: エディター拡張機能でショートカット キーを使用します。](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|VSPackage でのメニューのショートカットを MEF コンポーネントに関連付ける方法を示しています。|
-|[MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)|Managed Extensibility Framework (MEF) についての情報を提供します。|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Windows Presentation Foundation (WPF) についての情報を提供します。|
+|[言語サービスとエディターの拡張機能を使ってみる](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|エディターの拡張機能を作成する方法について説明します。|
+|[エディター内](../extensibility/inside-the-editor.md)|エディターの一般的な構造について説明し、その機能の一部を示します。|
+|[エディターでの Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|エディターで Managed Extensibility Framework (MEF) を使用する方法について説明します。|
+|[言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)|エディターの拡張点を一覧表示します。 拡張ポイントは、拡張可能なエディター機能を表します。|
+|[チュートリアル: ビューの表示要素、コマンド、および設定の作成 (列ガイド)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|コードを特定の表示幅に維持できるように、列ガイドの線を描画するビューの表示項目の構築について説明します。  また、設定の読み取りと書き込みに加え、コマンドウィンドウから呼び出すことができるコマンドの宣言と実装についても説明します。|
+|[エディターのインポート](../extensibility/editor-imports.md)|拡張機能がインポートできるサービスを一覧表示します。|
+|[従来のコードをエディターに適応させる](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|従来のコードを調整するためのさまざまな方法について説明します (Visual Studio 2010 より前)。|
+|[従来の言語サービスを移行する](../extensibility/internals/migrating-a-legacy-language-service.md)|VSPackage ベースの言語サービスを移行する方法について説明します。|
+|[チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|コンテンツタイプをファイル名拡張子にリンクする方法について説明します。|
+|[チュートリアル: 余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)|余白にアイコンを追加する方法について説明します。|
+|[チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)|*タグ*を使用してテキストを強調表示する方法について説明します。|
+|[チュートリアル: アウトラインの追加](../extensibility/walkthrough-outlining.md)|特定の種類の中かっこのアウトラインを追加する方法について説明します。|
+|[チュートリアル: 一致する中かっこの表示](../extensibility/walkthrough-displaying-matching-braces.md)|一致する中かっこを強調表示する方法について説明します。|
+|[チュートリアル: QuickInfo ツールヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|プロパティ、メソッド、イベントなどのコードの要素を記述する QuickInfo ポップアップを表示する方法について説明します。|
+|[チュートリアル: 署名のヘルプを表示する](../extensibility/walkthrough-displaying-signature-help.md)|署名のパラメーターの数と型に関する情報を提供するポップアップを表示する方法について説明します。|
+|[チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)|ステートメント入力候補を実装する方法について説明します。|
+|[チュートリアル: コードスニペットの実装](../extensibility/walkthrough-implementing-code-snippets.md)|コードスニペットの拡張を実装する方法について説明します。|
+|[チュートリアル: 電球の提案を表示する](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|コード候補の電球を表示する方法について説明します。|
+|[チュートリアル: エディター拡張機能でシェルコマンドを使用する](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|VSPackage のメニューコマンドを MEF コンポーネントに関連付ける方法について説明します。|
+|[チュートリアル: エディター拡張機能でのショートカットキーの使用](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|VSPackage のメニューショートカットを MEF コンポーネントに関連付ける方法について説明します。|
+|[MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)|Managed Extensibility Framework (MEF) に関する情報を提供します。|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Windows Presentation Foundation (WPF) に関する情報を提供します。|
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>辞書／辞典／その他
  Visual Studio エディターには、次の名前空間が含まれています。
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

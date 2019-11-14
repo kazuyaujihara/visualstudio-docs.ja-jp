@@ -1,5 +1,5 @@
 ---
-title: 実行中の ASP.NET プロセスの検索 |Microsoft Docs
+title: 実行中の ASP.NET process を検索する |Microsoft Docs
 ms.date: 11/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 27221a4ae47b9fb06130b550ceb6d3cc1f00dce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906805"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187660"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>ASP.NET プロセスの名前を見つける
 
-デバッグ、実行中に[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]アプリに Visual Studio デバッガーをアタッチする必要があります、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]名前で処理します。
+実行中の [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリをデバッグするには、Visual Studio デバッガーを名前で [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] プロセスにアタッチする必要があります。
 
-**確認するには、プロセスは、ASP.NET アプリを実行しています。**
+**ASP.NET アプリを実行しているプロセスを確認するには、次の手順を実行します。**
 
-1. アプリが実行されている、Visual Studio で、次のように選択します。**デバッグ** > **プロセスにアタッチ**します。
+1. アプリを実行している状態で、Visual Studio で **デバッグ** > **プロセスにアタッチ** を選択します。
 
-1. **プロセスにアタッチ**ダイアログ ボックスで、型プロセスの最初の文字が次の一覧から名前または検索ボックスに入力します。 ASP.NET アプリの実行を実行している 1 つです。 アプリをデバッグするには、そのプロセスにアタッチします。
+1. **[プロセスにアタッチ]** ダイアログボックスで、次の一覧にあるプロセス名の最初の文字を入力するか、検索ボックスに入力します。 実行されているものは、ASP.NET アプリを実行しているアプリケーションです。 アプリケーションをデバッグするには、そのプロセスにアタッチします。
 
-    - *w3wp.exe* 6.0 以降、IIS です。
-    - *aspnet_wp.exe*は IIS の以前のバージョン。
-    - *iisexpress.exe* IISExpress です。
-    - *dotnet.exe* ASP.NET Core です。
-    - *inetinfo.exe*インプロセスで実行されている古い ASP アプリケーションです。
+    - w3wp.exe*は IIS 6.0 以降です。*
+    - *aspnet_wp.exe*は、以前のバージョンの IIS です。
+    - *iisexpress*は iisexpress です。
+    - *dotnet*は ASP.NET Core です。
+    - *inetinfo.exe*は、インプロセスで実行されている古い ASP アプリケーションです。
 
 >[!NOTE]
->Visual Studio 2012 以前[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]コードがファイル システム上にあるし、テスト サーバーで実行*WebDev.WebServer.exe*または*WebDev.WebServer40.exe*します。 この場合は、ローカル デバッグにアタッチ*WebDev.WebServer.exe*または*WebDev.WebServer40.exe*の代わりに、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]プロセス。
+>Visual Studio 2012 以前の [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] コードは、ファイルシステム上に配置し、テストサーバー *Webdev.* WebServer40 または*webdev. .exe*で実行できます。 この場合、ローカルデバッグの場合は、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] プロセスではなく、WebServer40 または*Webdev. .exe*に*アタッチします*。
 
 **関連項目:**
 
 - [実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Web アプリケーションのリモート デバッグの前提条件](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)
+- [Web アプリケーションをリモートデバッグするための前提条件](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [システム要件](../debugger/aspnet-debugging-system-requirements.md)
 - [ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

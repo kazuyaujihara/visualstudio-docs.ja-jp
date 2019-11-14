@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018718"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925958"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>方法: _Analysis_assume を使用して追加のコード情報を指定する
 
@@ -25,16 +25,16 @@ C/C++ code のコード分析ツールにヒントを提供して、分析プロ
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr`-true に評価されると想定される任意の式。
+`expr`-true と評価されることを想定している任意の式。
 
 コード分析ツールでは、式によって表される条件が、関数が出現する位置で true であることを前提としています。また、変数への代入などによって、式が変更されるまでは true のままです。
 
 > [!NOTE]
-> `_Analysis_assume` はコードの最適化に影響しません。 コード分析ツールの外部では、`_Analysis_assume` は非 op として定義されます。
+> `_Analysis_assume` は、コードの最適化には影響しません。 コード分析ツールの外部では、`_Analysis_assume` は no op として定義されます。
 
 ## <a name="example"></a>例
 
-次のコードでは `_Analysis_assume` を使用して、コード分析の警告[C6388](../code-quality/c6388.md)を修正します。
+次のコードでは、`_Analysis_assume` を使用して、コード分析の警告[C6388](../code-quality/c6388.md)を修正します。
 
 ```cpp
 #include<windows.h>
@@ -52,7 +52,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    __analysis_assume(pc == NULL);
+    _Analysis_assume(pc == NULL);
     f(pc);
 }
 ```

@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730433"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187547"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio でコンソールを使用して JavaScript をデバッグする
 
@@ -44,7 +44,7 @@ JavaScript コンソール ウィンドウを使うと次の作業ができま�
 > [!TIP]
 > 閉じた JavaScript コンソール ウィンドウを再び開くには、 **[デバッグ]** >  **[ウィンドウ]**  > **JavaScript コンソール** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。
 
-JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、「[アプリを更新する (JavaScript)](../debugger/refresh-an-app-javascript.md)」を参照してください。 DOM Explorer の使用やブレークポイントの設定など、JavaScript のその他のデバッグ機能の詳細については、「クイックスタート: [Visual Studio で](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)の[HTML および CSS](../debugger/quickstart-debug-html-and-css.md)およびデバッグアプリのデバッグ」を参照してください。
+JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、「[アプリを更新する (JavaScript)](../debugger/refresh-an-app-javascript.md)」を参照してください。 DOM Explorer の使用やブレークポイントの設定など、JavaScript のその他のデバッグ機能の詳細については、「クイックスタート: [Visual Studio で](debugging-windows-store-and-windows-universal-apps.md)の[HTML および CSS](../debugger/quickstart-debug-html-and-css.md)およびデバッグアプリのデバッグ」を参照してください。
 
 ## <a name="InteractiveConsole"></a> JavaScript コンソール ウィンドウを使用したデバッグ
 次の手順では、 `FlipView` アプリを作成し、JavaScript のコード エラーを対話的にデバッグする方法を示します。
@@ -144,7 +144,7 @@ JavaScript コンソール ウィンドウを使用すると、デバッガー�
 
     アプリが実行されますが、イメージがありません。 JavaScript コンソール ウィンドウの APPHOST のエラーは、イメージがないことを示します。
 
-9. @No__t_0 アプリが実行されている状態で、コンソールウィンドウの入力プロンプトで `Data.items` を入力し ("> >" 記号の横)、enter キーを押します。
+9. `FlipView` アプリが実行されている状態で、コンソールウィンドウの入力プロンプトで `Data.items` を入力し ("> >" 記号の横)、enter キーを押します。
 
     `items` オブジェクトのビジュアライザーがコンソール ウィンドウに表示されます。 これは、 `items` オブジェクトがインスタンス化されて、現在のスクリプト コンテキストで使用できることを示します。 コンソール ウィンドウでは、オブジェクトのノードをクリックしてプロパティの値を表示できます (方向キーを使用します)。 `items._data` オブジェクトをクリックすると、次の図に示すように、イメージ ソースの参照が正しくないことがわかります。 既定のイメージ (logo.png) がまだオブジェクト内に存在し、不明のイメージと予期されるイメージが混在しています。
 
@@ -250,7 +250,7 @@ JavaScript コンソール ウィンドウを使用すると、1 回につき、
 `cd` コマンドを使用して実行コンテキストを切り替えることもできますが、別の実行コンテキストの名前を知っている必要があります。また、使用する参照がスコープ内になければなりません。 **[ターゲット]** リストを使用すると、別の実行コンテキストに簡単にアクセスできます。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio でのアプリのデバッグ](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
 - [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

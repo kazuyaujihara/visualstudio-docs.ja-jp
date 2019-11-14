@@ -6,22 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 8132a7f92986b853ffc2b20b93d0db34f7ac1880
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108110"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715896"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>カスタム EditorConfig ファイルの作成と編集
 
-Visual Studio for Mac では、[EditorConfig](http://editorconfig.org/) ファイルをプロジェクトまたはソリューションに追加して、そのコードベースを使用するすべてのユーザーに一貫したコーディング スタイルを使用させることができます。 EditorConfig ファイルで宣言された設定は、Visual Studio for Mac テキスト エディターのグローバルな設定より優先されます。 プロジェクトまたはコードベース内で EditorConfig ファイルを使用すると、プロジェクトのコード記述スタイル、優先設定、警告を設定できます。 このファイルはコードベースの一部であるため、すべてのユーザーが使用している IDE またはコード エディターに関わらず、より容易にプロジェクトのコーディング方法に従うことができます。
+Visual Studio for Mac では、[EditorConfig](https://editorconfig.org/) ファイルをプロジェクトまたはソリューションに追加して、そのコードベースを使用するすべてのユーザーに一貫したコーディング スタイルを使用させることができます。 EditorConfig ファイルで宣言された設定は、Visual Studio for Mac テキスト エディターのグローバルな設定より優先されます。 プロジェクトまたはコードベース内で EditorConfig ファイルを使用すると、プロジェクトのコード記述スタイル、優先設定、警告を設定できます。 このファイルはコードベースの一部であるため、すべてのユーザーが使用している IDE またはコード エディターに関わらず、より容易にプロジェクトのコーディング方法に従うことができます。
 
-[EditorConfig](http://editorconfig.org/) ファイルは、Visual Studio 2017 など、さまざまな IDE やコード エディターでサポートされています。
+[EditorConfig](https://editorconfig.org/) ファイルは、Visual Studio 2017 など、さまざまな IDE やコード エディターでサポートされています。
 
 ## <a name="supported-settings"></a>サポートされる設定
 
-Visual Studio for Mac のエディターは、[EditorConfig プロパティ](http://editorconfig.org/#supported-properties)の次のコア セットをサポートしています。
+Visual Studio for Mac のエディターは、[EditorConfig プロパティ](https://editorconfig.org/#supported-properties)の次のコア セットをサポートしています。
 
 - `indent_style`
 - `indent_size`
@@ -134,7 +134,7 @@ csharp_new_line_before_open_brace = none
 
 ![EditorConfig 設定の適用後](media/editorconfig-image5.png)
 
-利用できる EditorConfig 設定に関する詳細については、「[EditorConfig の .NET コーディング規則の設定](/visualstudio/ide/editorconfig-code-style-settings-reference)」という記事と、公式ドキュメントの[サポート プロパティ](http://editorconfig.org/#supported-properties)に関するセクションを参照してください。
+利用できる EditorConfig 設定に関する詳細については、「[EditorConfig の .NET コーディング規則の設定](/visualstudio/ide/editorconfig-code-style-settings-reference)」という記事と、公式ドキュメントの[サポート プロパティ](https://editorconfig.org/#supported-properties)に関するセクションを参照してください。
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig 設定のオーバーライド
 

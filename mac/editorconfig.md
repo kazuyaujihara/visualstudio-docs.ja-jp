@@ -6,22 +6,22 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8115715950881168e282cd205ea2dd3e64d89f97
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108295"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716893"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>カスタム EditorConfig ファイルの作成と編集
 
-Visual Studio for Mac では、[EditorConfig](http://editorconfig.org/) ファイルをプロジェクトまたはソリューションに追加して、そのコードベースを使用するすべてのユーザーに一貫したコーディング スタイルを使用させることができます。 EditorConfig ファイルで宣言された設定は、Visual Studio for Mac テキスト エディターのグローバルな設定より優先されます。 プロジェクトまたはコードベース内で EditorConfig ファイルを使用すると、プロジェクトのコード記述スタイル、優先設定、警告を設定できます。 このファイルはコードベースの一部であるため、すべてのユーザーが使用している IDE またはコード エディターに関わらず、より容易にプロジェクトのコーディング方法に従うことができます。
+Visual Studio for Mac では、[EditorConfig](https://editorconfig.org/) ファイルをプロジェクトまたはソリューションに追加して、そのコードベースを使用するすべてのユーザーに一貫したコーディング スタイルを使用させることができます。 EditorConfig ファイルで宣言された設定は、Visual Studio for Mac テキスト エディターのグローバルな設定より優先されます。 プロジェクトまたはコードベース内で EditorConfig ファイルを使用すると、プロジェクトのコード記述スタイル、優先設定、警告を設定できます。 このファイルはコードベースの一部であるため、すべてのユーザーが使用している IDE またはコード エディターに関わらず、より容易にプロジェクトのコーディング方法に従うことができます。
 
-[EditorConfig](http://editorconfig.org/) ファイルは、Visual Studio など、さまざまな IDE やコード エディターでサポートされています。
+[EditorConfig](https://editorconfig.org/) ファイルは、Visual Studio など、さまざまな IDE やコード エディターでサポートされています。
 
 ## <a name="supported-settings"></a>サポートされる設定
 
-Visual Studio for Mac のエディターは、[EditorConfig プロパティ](http://editorconfig.org/#supported-properties)の次のコア セットをサポートしています。
+Visual Studio for Mac のエディターは、[EditorConfig プロパティ](https://editorconfig.org/#supported-properties)の次のコア セットをサポートしています。
 
 - `indent_style`
 - `indent_size`
@@ -40,7 +40,7 @@ EditorConfig は、C# の[コーディング規則](/visualstudio/ide/editorconf
 
 1. Visual Studio for Mac でプロジェクトを開きます。 EditorConfig ファイルを追加するソリューションまたはプロジェクト ノードのいずれかを選択します。 ソリューション ディレクトリにファイルを追加すると、ソリューション内のすべてのプロジェクトに .editorconfig の設定が適用されます。
 
-2. ノードを右クリックして **[追加]、[新しいファイル]** の順に選択し、 **[新しいファイル]** ダイアログを開きます。
+2. ノードを右クリックして **[追加]、[新しいファイル]** の順に選択し、**[新しいファイル]** ダイアログを開きます。
 
     ![コンテンツ メニュー項目](media/editorconfig-image0.png)
 
@@ -79,17 +79,17 @@ EditorConfig は、C# の[コーディング規則](/visualstudio/ide/editorconf
 
 プロジェクトの既存の `.editorconfig` ファイルを再利用すると便利な場合があります。 既存のファイルを追加するには、次を実行します。
 
-1. それを追加するフォルダーを右クリックし、 **[追加]、[ファイルの追加]** の順に選択します。
+1. それを追加するフォルダーを右クリックし、**[追加]、[ファイルの追加]** の順に選択します。
 
 2. 必要なファイルのディレクトリに移動します。
 
 3. macOS では、(`.editorconfig` などの) `.` で始まるファイルは隠しファイルであるため、**Command + Shift + .** を押して `.editorconfig` ファイルを表示します。
 
-4. `.editorconfig` ファイルを選択し、 **[開く]** をクリックします。
+4. `.editorconfig` ファイルを選択し、**[開く]** をクリックします。
 
     ![新しいファイルを追加するウィンドウ](media/editorconfig-image3b.png)
 
-5. 次のダイアログが表示されたら、 **[ファイルをディレクトリにコピーする]** オプションを選択し、 **[OK]** を選択します。
+5. 次のダイアログが表示されたら、**[ファイルをディレクトリにコピーする]** オプションを選択し、**[OK]** を選択します。
 
     ![[ファイルをフォルダーに追加する] ダイアログ オプション](media/editorconfig-image3.png)
 
@@ -122,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 「[EditorConfig 設定のオーバーライド](#override-editorconfig-settings)」セクションに説明されているように、`root` を `true` に設定すると、このファイルがコードベースの一番上のファイルとしてフラグを設定され、プロジェクトでそれより上の `.editorconfig` ファイルは無視されます。
 
-各セクションには角括弧 ( **[ ]** ) が付き、後続のプロパティが付属するファイルの型に関する情報が指定されます。
+各セクションには角括弧 (**[ ]**) が付き、後続のプロパティが付属するファイルの型に関する情報が指定されます。
 
 上の例では、一部の設定がプロジェクトのすべてのファイルに適用されます。その他の設定は C# ファイルにのみ追加されます。 下のスクリーンショットでは、`.editorconfig` 設定の適用前後を確認できます。
 
@@ -134,7 +134,7 @@ csharp_new_line_before_open_brace = none
 
 ![EditorConfig 設定の適用後](media/editorconfig-image5.png)
 
-利用できる EditorConfig 設定に関する詳細については、「[EditorConfig の .NET コーディング規則の設定](/visualstudio/ide/editorconfig-code-style-settings-reference)」という記事と、公式ドキュメントの[サポート プロパティ](http://editorconfig.org/#supported-properties)に関するセクションを参照してください。
+利用できる EditorConfig 設定に関する詳細については、「[EditorConfig の .NET コーディング規則の設定](/visualstudio/ide/editorconfig-code-style-settings-reference)」という記事と、公式ドキュメントの[サポート プロパティ](https://editorconfig.org/#supported-properties)に関するセクションを参照してください。
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig 設定のオーバーライド
 

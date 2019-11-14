@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647869"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189076"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -186,7 +186,7 @@ Visual Studio エディターでは、型やメソッドなどの定義の検査
 ## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [プロジェクトとソリューションについて学習する](tutorial-projects-solutions.md)
+> [プロジェクトとソリューションについて学習する](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>関連項目
 

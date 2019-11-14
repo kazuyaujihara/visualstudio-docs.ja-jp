@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919143"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189602"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -386,7 +386,7 @@ Visual Studio を向上させることができる提案がある場合、また
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio 2017 リリース ノート](/visualstudio/releasenotes/vs2017-relnotes)
-* [Visual Studio 2017 SDK の新機能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
+* [Visual Studio 2017 SDK の新機能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Visual C++ の新機能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# の新機能](/dotnet/csharp/whats-new)
 * [Team Foundation Server の新機能](/tfs/server/whats-new?view=vsts)

@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2a3f4429341ecdba26dab2f95415332f9cb2eca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728829"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187272"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 リモートデバッグモニターがリモートコンピューターに適切に設定されていないか、ネットワークの問題またはファイアウォールの存在によりリモートコンピューターにアクセスできないために、このメッセージが表示されることがあります。
 
 > [!IMPORTANT]
-> 製品のバグが原因でこのメッセージが表示されたと思われる場合は、[この問題](../ide/how-to-report-a-problem-with-visual-studio.md)を Visual Studio に報告してください。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。
+> 製品のバグが原因でこのメッセージが表示されたと思われる場合は、[この問題](../ide/how-to-report-a-problem-with-visual-studio.md)を Visual Studio に報告してください。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/feedback-options.md) 」を参照してください。
 
 ## <a name="specificerrors"></a>詳細なエラーメッセージは何ですか?
 
-@No__t_0 メッセージは汎用です。 通常、より具体的なメッセージがエラー文字列に含まれ、問題の原因を特定したり、より正確な修正プログラムを検索したりするのに役立ちます。 メインエラーメッセージに追加される一般的なエラーメッセージのいくつかを次に示します。
+`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` メッセージは汎用です。 通常、より具体的なメッセージがエラー文字列に含まれ、問題の原因を特定したり、より正確な修正プログラムを検索したりするのに役立ちます。 メインエラーメッセージに追加される一般的なエラーメッセージのいくつかを次に示します。
 
 - [デバッガーがリモートコンピューターに接続できません。デバッガーは、指定されたコンピューター名を解決できませんでした](#cannot_connect)
 - [接続要求がリモートデバッガーによって拒否されました](#rejected)

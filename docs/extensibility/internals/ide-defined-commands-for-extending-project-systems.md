@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e406fb5ba9f221fa22faadfecaa8f0baaefebf75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c8be1cff099a713413957cfa5f8b3f383ca4bae
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727345"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186331"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>プロジェクト システムを拡張するための IDE 定義コマンド
 プロジェクトシステムを拡張する場合は、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE によって提供されるコマンドとコマンドグループを使用できます。
@@ -70,6 +70,6 @@ ms.locfileid: "72727345"
 |IDG_VS_CTXT_PROJECT_PROPERTIES|**[プロジェクトのプロパティ]** ダイアログボックスへのアクセスを提供するコマンド。|
 
 ## <a name="see-also"></a>関連項目
+
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [MenuCommands と OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)
 - [再利用可能なボタンのグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)

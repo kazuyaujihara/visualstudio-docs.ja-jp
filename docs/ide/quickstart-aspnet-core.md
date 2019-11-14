@@ -2,7 +2,7 @@
 title: C# に ASP.NET Core Web アプリを作成する
 description: Visual Studio で C# および ASP.NET Core を使用して Hello World の Web アプリを作成する方法について、段階的に説明します。
 ms.custom: mvc,seodec18
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
+ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516894"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753977"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する
 
@@ -120,6 +120,8 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="create-and-run-the-app"></a>アプリの作成と実行
 
+::: moniker range="vs-2017"
+
 1. **ソリューション エクスプローラー**で、**Pages** フォルダーを展開し、**About.cshtml** を選択します。
 
    ![ソリューション エクスプローラーから About.cshtml ファイルを選択する](../ide/media/csharp-aspnet-about-page-html-file.png)
@@ -168,6 +170,41 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
   ![Visual Studio で単純な C# ASP.NET Core Web アプリを作成して実行する方法を示すアニメーション .gif ファイルを表示](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 このクイック スタートは完了しました。 C#、ASP.NET Core、Visual Studio IDE (統合開発環境) について少しはご理解いただけたかと思います。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. **ソリューション エクスプローラー**で、**Pages** フォルダーを展開し、**Index.cshtml** を選択します。
+
+   ![ソリューション エクスプローラーから Index.cshtml ファイルを選択する](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+
+   このファイルは、Web アプリの **Home** という名前のページに対応します。これは Web ブラウザーで実行されます。
+
+   ![Web アプリの About ページ](../ide/media/vs-2019/csharp-aspnet-index-page.png)
+
+   エディターには、**Home** ページに表示されるテキストの HTML コードが表示されます。
+
+   ![Visual Studio エディターの Home ページの Index.cshtml ファイル内の HTML コード](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+
+1. "ようこそ" のテキストを "**Hello World!** " に変更します。
+
+   ![Visual Studio エディターで、"ようこそ" という既定の HTML コードが "Hello World" になるように変更します](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+
+1. **IIS Express** を選択するか、**Ctrl**+**F5** キーを押してアプリを実行し、Web ブラウザーで開きます。
+
+   ![Visual Studio の [IIS Express] ボタンを選択する](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
+
+   > [!NOTE]
+   > **"Web サーバー 'IIS Express' に接続できませんでした"** というエラー メッセージ、または SSL 証明書に関するエラー メッセージが表示された場合は、Visual Studio を閉じます。 次に、右クリック コンテキスト メニューから **[管理者として実行]** オプションを使用して Visual Studio を開きます。 その後、アプリケーションをもう一度実行します。
+
+1. Web ブラウザーで、**Home** ページに更新されたテキストが含まれていることを確認します。
+
+   ![加えた変更が含まれる更新後の Home ページを表示する](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+
+1. Web ブラウザーを閉じます。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>次の手順
 
